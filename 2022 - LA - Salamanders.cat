@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="  XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <constraints>
@@ -467,7 +467,7 @@
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="ce52-8553-5fe4-a475" name="1) Melee Options:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="ce52-8553-5fe4-a475" name="1) Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ac5-5bcc-7563-22a4">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c2d-8bb7-e274-1c1c" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3da6-9245-c23f-41b8" type="min"/>
@@ -493,18 +493,35 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="b4a7-c7a7-9adb-dd5a" name="2) Ranged Options:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="b4a7-c7a7-9adb-dd5a" name="2) Ranged Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5ea-d4ff-92d9-c034">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="599c-723a-7917-cff8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6eb3-9389-ea95-66d7" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="599c-723a-7917-cff8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="7ab5-4102-b635-708d" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="599c-723a-7917-cff8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ab5-4102-b635-708d" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eb3-9389-ea95-66d7" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="07bc-1cd0-b38a-e782" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                <entryLink id="07bc-1cd0-b38a-e782" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="3e8b-5920-89dc-8bdb" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                <entryLink id="3e8b-5920-89dc-8bdb" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -515,9 +532,13 @@
             <selectionEntryGroup id="ca9b-aacb-7bb3-0667" name="One model may exchange either their Combi-bolter or Dragonscale Shield with:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b537-84b5-8d8e-1404" type="max"/>
+                <constraint field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5be1-a957-9af0-3bfb" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="b1bb-6ec3-4402-f9d9" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a9e5-436d-136b-6ec4" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -552,7 +573,7 @@
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="5aec-2671-da16-e919" name="1) Melee Options:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="5aec-2671-da16-e919" name="1) Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c167-f4c9-6ab3-7a15">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="982e-7d12-4379-5538" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6f0-ced1-d4d9-a2d8" type="min"/>
@@ -580,28 +601,49 @@
             </selectionEntryGroup>
             <selectionEntryGroup id="4a62-eb83-337a-5daa" name="One model may exchange either their Combi-bolter or Dragonscale Shield with:" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff5e-afcb-e186-b5e3" type="max"/>
+                <constraint field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff5e-afcb-e186-b5e3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="382a-d2ad-f3e5-0998" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="4c7d-c23c-41ce-0b12" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4826-a730-1b04-74dd" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3c0f-5bb3-8489-5c68" name="2) Ranged Options:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="3c0f-5bb3-8489-5c68" name="2) Ranged Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5df0-2fc6-a4ac-2fcf">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="599c-723a-7917-cff8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0978-66a2-363a-6557" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="599c-723a-7917-cff8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e54a-5fee-f1d7-1dc8" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="599c-723a-7917-cff8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0978-66a2-363a-6557" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e54a-5fee-f1d7-1dc8" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="6176-c633-6203-d255" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                <entryLink id="6176-c633-6203-d255" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="c3be-d3a2-7d71-bf0e" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                <entryLink id="c3be-d3a2-7d71-bf0e" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -624,7 +666,11 @@
             <entryLink id="9a77-82bb-35c7-ad9a" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry"/>
             <entryLink id="f489-0fd9-fa96-2acb" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="hidden" value="true"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="6775-8379-8d6b-9614" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
@@ -633,14 +679,15 @@
           <entryLinks>
             <entryLink id="15d8-2b31-3173-523b" name="Dragonscale Shield" hidden="false" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5.0"/>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b1-9a31-ce7d-22a6" type="max"/>
               </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -823,7 +870,7 @@
             </profile>
           </profiles>
         </entryLink>
-        <entryLink id="bc8e-4fe8-003b-7976" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+        <entryLink id="bc8e-4fe8-003b-7976" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba4c-5848-4df8-f151" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="323b-ffdc-bea2-e0ec" type="min"/>

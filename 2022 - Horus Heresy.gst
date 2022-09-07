@@ -5839,6 +5839,27 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9417-90a9-e0f0-d395" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="db8e-3554-c97b-5fc2" name="Disintegrator (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Instant Death, Gets Hot, One Shot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f949-e5f5-c106-0780" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+        <infoLink id="dac4-dbc7-1cf5-66b7" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="de1d-379e-6fa7-af8e" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="97d6-6068-a318-716b" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -7617,6 +7638,9 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7681,6 +7705,9 @@ Limitations
 • All Compulsory Troops choices in a Detachment using this Rite of War must be Legion Reconnaissance Squads or Legion Scout Squads.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ed1f-9473-df70-4544" name="Angel&apos;s Wrath" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -7695,6 +7722,9 @@ Limitations
 • A Detachment using this Rite of War may not select any Fortification choices.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2c36-fde3-14ed-4db4" name="Sky-Hunter Phalanx" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -7710,6 +7740,9 @@ Limitations
 • A Detachment using this Rite of War may not select any Fortification choices.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1977-49f2-7910-f177" name="Drop Pod Assault" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -7726,6 +7759,9 @@ Limitations
           <infoLinks>
             <infoLink id="9cb5-9daa-e818-d268" name="Drop Pod Assault" hidden="false" targetId="2f15-a12b-bb92-2e39" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4ca1-b02c-e2c7-5f09" name="Pride Of The Legion" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -7742,6 +7778,9 @@ Limitations
 • An army using this Rite of War may not include more non-Infantry units than it does Infantry units.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Aaasult" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -7759,6 +7798,9 @@ Limitations
           <infoLinks>
             <infoLink id="ac52-9a84-3f78-930c" name="Subterranean Assault" hidden="false" targetId="33d4-d46d-7f47-3ad2" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ccb7-6c5c-76ce-5b77" name="Armoured Spearhead" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -7776,6 +7818,9 @@ Limitations
 • This Rite of War may only be selected for an army’s Primary Detachment.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="da46-48b5-6cc5-9d8b" name="Brethren Of Iron" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -7791,6 +7836,9 @@ Limitations
 • A model with the Forge Lord Legiones Consularis upgrade must be taken as the Compulsory HQ choice for an army using this Rite of War (but need not be chosen as the army Warlord). Note that this will preclude certain other characters from being included in the Detachment, and means in most cases that both a Legion Praetor and a Legion Forge Lord must be taken.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b5b7-3410-a8e5-95a6" name="Fury Of The Ancients" publicationId="a716-c1c4-7b26-8424" page="103" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -7809,6 +7857,9 @@ Limitations
 • An army whose Primary Detachment is using this Rite of War may not roll to Seize the Initiative.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="907e-21b4-1aef-10be" name="Steel Fist (DA)" publicationId="817a-6288-e016-7469" page="153" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -7836,6 +7887,9 @@ Limitations
 • If the Primary Detachment of an army is using this Rite of War, the army’s Warlord must have the Ironwing Unit Sub-type or be Lion El’Jonson.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b01c-f5a0-9f68-605a" name="The Eskaton Imperative (DA)" publicationId="817a-6288-e016-7469" page="153" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -7864,6 +7918,9 @@ Limitations
 • Detachments using this Rite of War may not take Fortification choices.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7a4d-26dd-c703-2723" name="The Storm Of War (DA)" publicationId="817a-6288-e016-7469" page="154" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -7893,6 +7950,9 @@ Limitations
 • If the Primary Detachment of an army is using this Rite of War, the army’s Warlord must have the Stormwing Unit Sub-type or be Lion El’Jonson.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="06cc-c559-d71e-b75e" name="The Unbroken Vow (DA)" publicationId="817a-6288-e016-7469" page="154" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -7918,6 +7978,9 @@ Limitations
 • If the Primary Detachment of an army is using this Rite of War, the army’s Warlord must have the Deathwing Unit Sub-type or be Lion El’Jonson.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="20d9-ae98-5324-6bb3" name="The Seeker&apos;s Arrow (DA)" publicationId="817a-6288-e016-7469" page="155" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -7945,6 +8008,9 @@ Limitations
 • If the Primary Detachment of an army is using this Rite of War, the army’s Warlord must have the Ravenwing Unit Sub-type or be Lion El’Jonson.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b500-803d-772c-5e10" name="Serpent&apos;s Bane (DA)" publicationId="817a-6288-e016-7469" page="155" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -7972,6 +8038,9 @@ Limitations
 • If the Primary Detachment of an army is using this Rite of War, the army’s Warlord must have the Firewing Unit Sub-type or be Lion El’Jonson.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ce40-b353-8eb4-ab42" name="Chogorian Brotherhood (WS)" publicationId="817a-6288-e016-7469" page="179" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -7997,6 +8066,9 @@ Limitations
 • A Detachment using this Rite of War may not include any Heavy Support or Fortification choices, unless those choices are entirely composed of models with the Flyer Sub-type.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9289-ff79-2e32-99b2" name="The Black Watch (SW)" publicationId="817a-6288-e016-7469" page="198" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8023,6 +8095,9 @@ Limitations
 • This Rite of War may only be used by an army that has the Loyalist Allegiance.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="a2cf-c464-bfdd-4467" name="The Sagyar Mazan (WS)" publicationId="817a-6288-e016-7469" page="179" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8048,6 +8123,9 @@ Limitations
 • A Detachment using this Rite of War may not include any Heavy Support that are not composed entirely of models with the Infantry Unit Type, or any Fortification or Primarch choices regardless of Unit Type.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7f55-5d02-ba77-243d" name="The Pale Hunters (SW)" publicationId="817a-6288-e016-7469" page="199" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8073,6 +8151,9 @@ Limitations
 • At least one unit from a Detachment using this Rite of War must be assigned to a Flanking Assault.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2218-2d6d-cba0-b8ab" name="The Bloodied Claw (SW)" publicationId="817a-6288-e016-7469" page="199" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8097,6 +8178,9 @@ Limitations
 • During the turn in which the controlling player has declared the Bloody Claw, all units that include one or more models with the Legiones Astartes (Space Wolves) special rule in this Detachment capable of Charging must always attempt to Charge an enemy unit in the Assault phase if there are any eligible targets in range and line of sight. If multiple eligible targets are available, the controlling player may choose which to declare a Charge against.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e5ae-fd1c-729d-d855" name="The Stone Gauntlet (IF)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8124,6 +8208,9 @@ Limitations
 • A Detachment using this Rite of War cannot take more Elites and Fast Attack choices in total than they have Troops choices in the Detachment. So, for example, a Detachment with three Troops choices could take three choices made up of Fast Attack, Elites, or a combination of the two.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5b44-6cf1-6fc3-74b2" name="Strike Force (IF)" publicationId="817a-6288-e016-7469" page="227" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8149,6 +8236,9 @@ Limitations
 • A Detachment using this Rite of War may not take Fortification choices.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2573-bb4c-e468-dd81" name="Templar Assault (IF)" publicationId="817a-6288-e016-7469" page="227" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8175,6 +8265,9 @@ Limitations
 • Detachments using this Rite of War cannot take more Elites and Fast Attack choices in total than they have Troops choices in the Detachment. So, for example, a Detachment with three Troops choices could take three choices made up of Fast Attack, Elites, or a combination of the two.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7857-5f9d-6c9e-50c1" name="The Day Of Revelation (BA)" publicationId="817a-6288-e016-7469" page="251" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8202,6 +8295,9 @@ Limitations
 • A Detachment using this Rite of War may not include any models with the Subterranean Assault special rule.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d8e9-ff9b-f862-b065" name="The Day Of Sorrows (BA)" publicationId="817a-6288-e016-7469" page="252" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8228,6 +8324,9 @@ Limitations
 • No units from a Detachment using this Rite of War may be assigned to a Deep Strike Assault, Subterranean Assault or Flanking Assault, and may not be placed in Reserves at the beginning of the battle (although models may enter Reserves after play has begun).</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7a71-011d-fcdb-82dd" name="Company Of Bitter Iron (IH)" publicationId="817a-6288-e016-7469" page="277" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8254,6 +8353,9 @@ Limitations
 • An army with any Detachment using this Rite of War may not include Ferrus Manus.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="296a-89a3-2269-2093" name="The Head Of The Gorgon (IH)" publicationId="817a-6288-e016-7469" page="277" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8282,6 +8384,9 @@ Limitations
 • An army in which any Detachment is using this Rite of War may not attempt to Seize the Initiative.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b23c-e41d-1ffe-1a38" name="The Logos Lectora (UM)" publicationId="817a-6288-e016-7469" page="293" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8314,6 +8419,9 @@ LOGOS LECTORA COMMANDS
 - Regroup: All models with the Infantry Unit Type and the Legiones Astartes (Ultramarines) special rule may re-roll failed Leadership tests made to regroup while Falling Back and any failed Reserves rolls.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4f28-17db-c659-1539" name="The Covenant Of Fire (SAL)" publicationId="817a-6288-e016-7469" page="310" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8339,6 +8447,9 @@ Limitations
 • A Detachment using this Rite of War must include a Legion Centurion, Legion Cataphractii Centurion or Legion Tartaros Centurion with the Legion Champion Consul upgrade.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="41b5-73f0-cdc9-1f83" name="The Awakening Fire (SAL)" publicationId="817a-6288-e016-7469" page="310" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8366,6 +8477,9 @@ Limitations
 • An army in which a Detachment is using this Rite of War may not include Vulkan.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="c030-15b8-323b-f17b" name="Decapitation Strike (RG)" publicationId="817a-6288-e016-7469" page="329" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8391,6 +8505,9 @@ Limitations
 • A Detachment using this Rite of War may not take Fortification choices.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="12f2-df1a-525f-7957" name="Liberation Force (RG)" publicationId="817a-6288-e016-7469" page="329" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8418,6 +8535,9 @@ Limitations
 • An army whose Primary Detachment is using this Rite of War must include an Allied Detachment that is selected from the Solar Auxillia or Imperialis Militia army lists that includes at least four units.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="7a43-6793-013b-1af6" name="The Maru Skara (EC)" publicationId="09c5-eeae-f398-b653" page="153" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8444,6 +8564,9 @@ Limitations
 • Detachments using this Rite of War must take a Legion Centurion, Legion Cataphractii Centurion, or Legion Tartaros Centurion with the Legion Champion or Phoenix Warden Consul upgrade as a HQ choice.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e221-0a54-9f94-988f" name="IIIrd Company Elite (EC)" publicationId="09c5-eeae-f398-b653" page="153" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8468,6 +8591,9 @@ Limitations
 • All models with the Character Unit Sub-type in a Detachment using this Rite of War must have a Surgical Augment (either bought as part of an upgrade to the unit, using the rules for this Rite of War, or bought separately using the rules presented in The Armoury of the Emperor’s Children).</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1d51-72ff-c102-09d3" name="The Hammer Of Olympia (IW)" publicationId="09c5-eeae-f398-b653" page="178" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8496,6 +8622,9 @@ Limitations
               <description>A model with this special rule may add one to the number of shots fired when making a Shooting Attack with a shrapnel bolter or shrapnel pistol (but not with shrapnel cannon or Gravis shrapnel cannon or any other ‘Bolt’ weapon).</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5d75-f1c7-d6a7-a055" name="The Ironfire (IW)" publicationId="09c5-eeae-f398-b653" page="179" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8523,6 +8652,9 @@ Limitations
 • A Detachment with this Rite of War must include a model with the Legiones Consularis special rule that has the Siege Breaker upgrade.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e20d-6f02-d7d5-395f" name="Terror Assault (NL)" publicationId="09c5-eeae-f398-b653" page="197" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8549,6 +8681,9 @@ Limitations
 • An army whose Primary Detachment has this Rite of War may not include any Lords of War choices or models with the Super-heavy Sub-type.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="64a2-0d7a-e716-e67f" name="The Swift Blade (NL)" publicationId="09c5-eeae-f398-b653" page="197" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8574,6 +8709,9 @@ Limitations
 • A Detachment using this Rite of War may not take any units that include one or more models with the Heavy, Bombard, Slow, Super-heavy or Artillery Unit Sub-types.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="9c83-69fb-8066-a773" name="The Crimson Path (WE)" publicationId="09c5-eeae-f398-b653" page="217" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8599,6 +8737,9 @@ Limitations
 • A Detachment using this Rite of War may include only a single Heavy Support choice.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="50cf-edf5-d39a-8943" name="Berseker Assault (WE)" publicationId="09c5-eeae-f398-b653" page="217" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8626,6 +8767,9 @@ Limitations
 • An army that includes a Detachment using this Rite of War may not also include an Allied Detachment.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d3b5-da3a-8c3b-3faf" name="The Reaping (DG)" publicationId="09c5-eeae-f398-b653" page="235" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8651,6 +8795,9 @@ Limitations
 • No unit in a Detachment using this Rite of War may be assigned to a Deep Strike Assault, Subterranean Assault or Flanking Assault (and units which must deploy by this method therefore cannot be chosen as part of the Detachment).</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6e1e-8616-6e4a-173d" name="Creeping Death (DG)" publicationId="09c5-eeae-f398-b653" page="235" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8677,6 +8824,9 @@ Limitations
 • The army using this Rite of War must include a Legion Centurion, Legion Cataphractii Centurion or Legion Tartaros Centurion with the Siege Breaker Legion Consul upgrade.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="373b-ce5a-ddc5-cf8f" name="The Achaean Configuration (TS)" publicationId="09c5-eeae-f398-b653" page="257" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8703,6 +8853,9 @@ Limitations
 • A Detachment using this Rite of War must include at least one model with the Legiones Consularis special rule that has selected the Legion Praevian upgrade.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="0fa2-d71c-9cdb-86cb" name="The Guard Of The Crimson King (TS)" publicationId="09c5-eeae-f398-b653" page="257" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8727,6 +8880,9 @@ Limitations
 • This Rite of War may not be used by an Allied Detachment.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="fbe5-123b-cb17-6049" name="The Long March (SoH)" publicationId="09c5-eeae-f398-b653" page="283" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8752,6 +8908,9 @@ Limitations
 • A Detachment with this Rite of War may not include any models with the Heavy Unit Sub-type, unless they enter play from Reserves or begin the battle Embarked upon a model with the Transport Sub-type.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e6ec-f3e6-760c-f9bb" name="The Black Reaving (SoH)" publicationId="09c5-eeae-f398-b653" page="283" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8777,6 +8936,9 @@ Limitations
 • A Detachment using this Rite of War must include more Fast Attack choices than Heavy Support choices.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="e864-ddc1-da3a-138e" name="Last Of The Serrated Sun (WB)" publicationId="09c5-eeae-f398-b653" page="305" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8804,6 +8966,9 @@ Limitations
 • An army that includes a Detachment using this Rite of War must have the Traitor Allegiance.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8813-9063-c930-0a4b" name="The Dark Brethren (WB)" publicationId="09c5-eeae-f398-b653" page="305" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8828,6 +8993,9 @@ Limitations
 • An army that includes a Detachment using this Rite of War must have the Traitor Allegiance.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1af3-e23e-8831-e011" name="The Coils Of The Hydra (AL)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8848,6 +9016,9 @@ Limitations
 • A Detachment using this Rite War must include a number of units selected without the use of the Rewards of Treachery special rule equal to or greater than the number of units selected using the Rewards of Treachery special rule. These units must begin the battle in Reserves, or assigned to a Deep Strike Assault, Subterranean Assault or Flanking Assault or other deployment option that requires them to start in Reserves.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4342-923b-e0dd-9e87" name="Headhunter Leviathal (AL)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -8868,6 +9039,9 @@ Limitations
 • A Detachment using this Rite of War must include more Fast Attack choices than Heavy Support choices.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>

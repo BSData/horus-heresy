@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="5" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -3148,9 +3148,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <profiles>
             <profile id="2b2b-6a5d-8e25-8dfa" name="Castellax" publicationId="bde1-6db1-163b-3b76" page="37" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <modifiers>
-                <modifier type="increment" field="f111-2ce5-dd12-d6b0" value="1">
+                <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
                   <conditions>
-                    <condition field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2121-ee7c-8ac9-5133" type="equalTo"/>
+                    <condition field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
+                  <conditions>
+                    <condition field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3196,44 +3201,85 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="ef5c-5de1-f9e9-cee9" name="B) May Exchange both Melee Weapons for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4489-7b65-efb9-4aa8">
+            <selectionEntryGroup id="ef5c-5de1-f9e9-cee9" name="B) May Exchange both Melee Weapons for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="af01-d4da-d454-2d29">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fd7-68b0-a7d5-b8b5" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2475-8aae-97e6-b889" type="min"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="4489-7b65-efb9-4aa8" name="Shock Charger" hidden="false" collective="false" import="true" targetId="3234-492f-9ebf-f23c" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Two Shock Charger"/>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="3534-5161-38c0-2e9d" name="Siege Wrecker" hidden="false" collective="false" import="true" targetId="178d-8a3a-bfda-7443" type="selectionEntry"/>
-                <entryLink id="d14d-8ddf-a1c7-8391" name="Power Blade Array" hidden="false" collective="false" import="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Two Power Blade Array"/>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
+              <selectionEntries>
+                <selectionEntry id="cf13-fe20-b0a5-88e3" name="Siege Wrecker &amp; Shock Charger" hidden="false" collective="false" import="true" type="upgrade">
+                  <entryLinks>
+                    <entryLink id="c874-628d-f075-71b0" name="Siege Wrecker" hidden="false" collective="true" import="true" targetId="178d-8a3a-bfda-7443" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d98-c81c-d3ff-a863" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dddf-41f4-a971-5dcf" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="ac2a-9e7e-e955-9460" name="Shock Charger" hidden="false" collective="true" import="true" targetId="3234-492f-9ebf-f23c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b79-7ce4-bd06-a0ae" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f09-8bc0-268a-a4d5" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b48d-19d0-6116-af9d" name="Two Power Blade Arrays*" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="5163-d31f-e2ff-b4f2" name="Two Power Blade Arrays*" publicationId="bde1-6db1-163b-3b76" page="37" hidden="false">
+                      <description>A Castellax with two power blade arrays gains an additional Attack.</description>
+                    </rule>
+                  </rules>
+                  <entryLinks>
+                    <entryLink id="53f7-0e77-0d69-7639" name="Power Blade Array" hidden="false" collective="false" import="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef6c-fd23-95da-b815" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8428-80d0-ef90-ce59" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="af01-d4da-d454-2d29" name="Two Shock Chargers*" hidden="false" collective="false" import="true" type="upgrade">
+                  <rules>
+                    <rule id="5592-2df6-fcd5-a9f2" name="Two Shock Chargers*" publicationId="bde1-6db1-163b-3b76" page="37" hidden="false">
+                      <description>*A Castellax with two shock chargers gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
+                    </rule>
+                  </rules>
+                  <entryLinks>
+                    <entryLink id="046f-df9b-f1a2-85f0" name="Shock Charger" hidden="false" collective="false" import="true" targetId="3234-492f-9ebf-f23c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0437-cdbd-ea42-71ef" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb05-ed4d-61f3-965b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="f012-80da-f40b-3cbd" name="C) Shock Charger / Power Blades may Exchange In-Built Bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8081-f97c-b25c-affd">
               <modifiers>
-                <modifier type="increment" field="c6d4-44b8-d12d-4ca7" value="2.0">
+                <modifier type="increment" field="c6d4-44b8-d12d-4ca7" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2121-ee7c-8ac9-5133" repeats="1" roundUp="false"/>
-                    <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3234-492f-9ebf-f23c" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b48d-19d0-6116-af9d" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af01-d4da-d454-2d29" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="0a49-dc8a-95be-56d5" value="2.0">
+                <modifier type="increment" field="0a49-dc8a-95be-56d5" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3234-492f-9ebf-f23c" repeats="1" roundUp="false"/>
-                    <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2121-ee7c-8ac9-5133" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="af01-d4da-d454-2d29" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="ab78-91e2-bb5c-9da3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b48d-19d0-6116-af9d" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="decrement" field="c6d4-44b8-d12d-4ca7" value="2.0"/>
+                <modifier type="decrement" field="c6d4-44b8-d12d-4ca7" value="1.0"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6d4-44b8-d12d-4ca7" type="min"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a49-dc8a-95be-56d5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a49-dc8a-95be-56d5" type="max"/>
               </constraints>
               <entryLinks>
                 <entryLink id="8081-f97c-b25c-affd" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
@@ -3390,6 +3436,18 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
           <profiles>
             <profile id="c21f-a007-c5e0-83ea" name="Domitar" publicationId="bde1-6db1-163b-3b76" page="31" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
+                  <conditions>
+                    <condition field="selections" scope="200f-3379-95a3-c3a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
+                  <conditions>
+                    <condition field="selections" scope="200f-3379-95a3-c3a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
@@ -3678,15 +3736,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       </costs>
     </selectionEntry>
     <selectionEntry id="2903-fef6-e839-368b" name="Thanatar Siege-automata Maniple" publicationId="bde1-6db1-163b-3b76" page="46" hidden="false" collective="false" import="true" type="unit">
-      <rules>
-        <rule id="eccf-b13c-2b8f-6939" name="Thanatar Maniple" publicationId="bde1-6db1-163b-3b76" page="110" hidden="false">
-          <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated asa single unit.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="d13c-fa11-113a-6b4b" name="Automata Unit-type:" hidden="false" targetId="d8ab-8e21-e193-63ba" primary="false"/>
         <categoryLink id="ae51-75de-b9f6-61c2" name="Cybernetica Sub-type:" hidden="false" targetId="2440-b64e-cb24-87f0" primary="false"/>
-        <categoryLink id="140c-e71f-33aa-62da" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
         <categoryLink id="0f64-8711-75d2-ad9b" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -3712,6 +3764,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce6c-c4a0-3622-b76b" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15c6-ecce-8258-7e00" type="max"/>
           </constraints>
+          <rules>
+            <rule id="c149-a9f6-4cbe-aa10" name="Thanatar Maniple" publicationId="bde1-6db1-163b-3b76" page="110" hidden="false">
+              <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated asa single unit.</description>
+            </rule>
+          </rules>
           <selectionEntryGroups>
             <selectionEntryGroup id="3a98-3aba-8cca-3ce8" name="A single Thanatar-Cavas in the Maniple may be replaced with a Thanatar Calix" hidden="false" collective="false" import="true" defaultSelectionEntryId="5331-31f3-87ed-5ebe">
               <constraints>
@@ -3722,18 +3779,30 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <selectionEntry id="5331-31f3-87ed-5ebe" name="Thanatar Cavas" hidden="false" collective="false" import="true" type="upgrade">
                   <profiles>
                     <profile id="891f-90ee-c496-ce0d" name="Thanatar Cavas" publicationId="bde1-6db1-163b-3b76" page="46" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                      <modifiers>
+                        <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
+                          <conditions>
+                            <condition field="selections" scope="2903-fef6-e839-368b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
+                          <conditions>
+                            <condition field="selections" scope="2903-fef6-e839-368b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                       <characteristics>
-                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Light)</characteristic>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Heavy)</characteristic>
                         <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
                         <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                        <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
-                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                        <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
-                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
                         <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                         <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
-                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -3788,18 +3857,30 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   </constraints>
                   <profiles>
                     <profile id="df17-9de2-31bf-f684" name="Thanatar Calix" publicationId="bde1-6db1-163b-3b76" page="46" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                      <modifiers>
+                        <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
+                          <conditions>
+                            <condition field="selections" scope="2903-fef6-e839-368b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
+                          <conditions>
+                            <condition field="selections" scope="2903-fef6-e839-368b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                       <characteristics>
-                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Light)</characteristic>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Heavy)</characteristic>
                         <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
                         <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                        <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
-                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                        <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
-                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
                         <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                         <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
-                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -3928,13 +4009,25 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <categoryLink id="e468-fb52-fd0d-7af6" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="59fd-998f-8190-baec" name="Vorax" publicationId="bde1-6db1-163b-3b76" page="42" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="6711-d580-b463-bc7e" name="Vorax" publicationId="bde1-6db1-163b-3b76" page="42" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e36f-739b-f761-a69c" type="min"/>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c0f-624e-fac5-81c6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ade9-d7ad-8024-68dc" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5505-f1cf-a3e4-60d6" type="max"/>
           </constraints>
           <profiles>
-            <profile id="244c-1e6b-3768-3c13" name="Vorax" publicationId="bde1-6db1-163b-3b76" page="42" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="c5ce-739c-885a-960b" name="Vorax" publicationId="bde1-6db1-163b-3b76" page="42" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <modifiers>
+                <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
+                  <conditions>
+                    <condition field="selections" scope="f144-1079-11ff-019d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
+                  <conditions>
+                    <condition field="selections" scope="f144-1079-11ff-019d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Light)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
@@ -3951,13 +4044,13 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="2acb-042e-9147-1084" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+            <infoLink id="963f-8d5b-228b-aee8" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Fleet (2)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="d381-1f2b-bce2-4aab" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
-            <infoLink id="4d08-9bbf-6883-4c83" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink id="05fa-5f99-01fa-8186" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+            <infoLink id="bac5-1453-370b-d20f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
               </modifiers>
@@ -3967,22 +4060,22 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="337a-c368-c0d1-361f" name="Power Blade Array with In-Built Rotar Cannon" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cff3-2ddf-4024-f463" name="Two Power Blade Arrays with In-Built Rotar Cannons" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bef-1121-946c-b117" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a805-35c0-a4e5-67c9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a440-7ca1-4048-6005" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e98-54a5-27f5-62d1" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="cbf7-102c-b2d4-3666" name="Power Blade Array" hidden="false" collective="false" import="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
+            <entryLink id="c311-0ae9-b3d6-2ca4" name="Power Blade Array" hidden="false" collective="true" import="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd1c-0ed9-0008-5f5c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e854-42d7-abd3-237d" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a932-5045-69d6-37cb" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1500-724d-9062-8de1" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="069b-2935-fc1a-2440" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry">
+            <entryLink id="f4fc-e562-6969-7d11" name="Rotor Cannon" hidden="false" collective="true" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0705-697d-f8b6-39e6" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6216-1851-0944-da3b" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed98-65b1-1bee-06b1" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77fb-c42d-ae64-6b18" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -3992,49 +4085,51 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="57c4-4fa1-cf37-a599" name="One in Three Vorax in the unit, may exchange its Lightning Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="1eec-44ae-e1a2-1766">
+        <selectionEntryGroup id="c99b-a219-75af-8360" name="1 in 3 may exchange Lightning Gun for Irad Cleanser" hidden="false" collective="false" import="true" defaultSelectionEntryId="790e-ea6f-ecbc-d374">
           <modifiers>
-            <modifier type="increment" field="5d48-0036-be14-baa6" value="1.0">
+            <modifier type="decrement" field="3429-9e15-406c-1f0b" value="1.0"/>
+            <modifier type="increment" field="87fd-4c2e-8d99-e5cb" value="1.0">
               <repeats>
-                <repeat field="selections" scope="f144-1079-11ff-019d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59fd-998f-8190-baec" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f144-1079-11ff-019d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="f11e-82b3-b9b8-28e6" value="1.0">
+            <modifier type="increment" field="3429-9e15-406c-1f0b" value="1.0">
               <repeats>
-                <repeat field="selections" scope="f144-1079-11ff-019d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59fd-998f-8190-baec" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="f144-1079-11ff-019d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f11e-82b3-b9b8-28e6" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d48-0036-be14-baa6" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3429-9e15-406c-1f0b" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87fd-4c2e-8d99-e5cb" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="0915-bf0a-d991-9150" name="Irad-Cleanser" hidden="false" collective="false" import="true" targetId="b3c5-237f-e1d2-d9f8" type="selectionEntry">
+            <entryLink id="790e-ea6f-ecbc-d374" name="Lightning Gun" hidden="false" collective="true" import="true" targetId="f65c-633a-5865-7f6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e82f-cbeb-63e9-116a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bfea-5a9f-3cc8-147a" name="Irad-Cleanser" hidden="false" collective="false" import="true" targetId="b3c5-237f-e1d2-d9f8" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" field="15a4-488c-1f42-b018" value="1.0">
+                <modifier type="increment" field="80be-28b5-97f0-9437" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="f144-1079-11ff-019d" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59fd-998f-8190-baec" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="f144-1079-11ff-019d" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15a4-488c-1f42-b018" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80be-28b5-97f0-9437" type="max"/>
               </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
             </entryLink>
-            <entryLink id="1eec-44ae-e1a2-1766" name="Lightning Gun" hidden="false" collective="false" import="true" targetId="f65c-633a-5865-7f6b" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="73a6-8d5c-4352-35c0" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
+        <entryLink id="03c7-9ccc-e943-5c5e" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="f144-1079-11ff-019d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59fd-998f-8190-baec" type="greaterThan"/>
+                <condition field="selections" scope="f144-1079-11ff-019d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -4549,6 +4644,387 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9faf-7242-dc40-c3e5" name="Incunabulan Jet Pack" publicationId="bde1-6db1-163b-3b76" page="130" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="49e3-0125-7461-31f6" name="Incunabulan Jet Pack" publicationId="bde1-6db1-163b-3b76" page="130" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with Incunabulan jet packs may choose to increase its Move Characteristic by +6&quot; and ignore terrain while Moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Incunabulan jet packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to Move during the Movement phase, a unit composed entirely of models with Incunabulan jet packs may make an additional Move of 6&quot; during the Shooting phase. This Move must be taken after the unit has completed any Shooting Attacks, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain in the same manner as moves made using a Incunabulan jet pack in the Movement phase.
+Any model with an Incunabulan jet pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead. Models with an Incunabulan jet pack may Embark on models with the Transport Unit Sub-type, contrary to the normal Transport rules, but still must take into account their size due to the Bulky (X) special rule.
+During any Reaction that allows a unit to Move, a unit composed entirely of models with Incunabulan jet packs increases the distance of that Move by 6 and allows it to ignore terrain in the same manner as other Incunabulan jet pack moves.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="c38c-c6f1-faa2-2d6a" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="aee4-9a2d-e7b0-3359" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2 or 3)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6fcf-8cdd-fd59-3363" name="Jet Infantry:" hidden="false" targetId="0b85-37e7-40ef-7388" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="30b5-2dcd-6b27-067c" name="Utan Jump Booster" publicationId="bde1-6db1-163b-3b76" page="130" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="94a1-e8ec-8bb1-1d1c" name="Utan Jump Booster" publicationId="bde1-6db1-163b-3b76" page="130" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with Utan jump boosters may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance, see the Horus Heresy: Age of Darkness rulebook, page 181). In addition, the unit ignores terrain while Moving and Charging. A unit that ends or begins its movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Utan jump boosters, and treats all Difficult Terrain as Dangerous Terrain.
+A unit composed entirely of models with Utan jump boosters may not Run. During Reactions made in any Phase, a unit composed entirely of models with Utan jump boosters may not activate them to gain any bonus to their Movement Characteristic. Any model with an Utan jump booster also gains the Deep Strike special rule. Additionally, models with an Utan jump booster may Embark on models with the Transport Unit Sub-type, contrary to the normal Transport rules, but still must take into account their Unit Type and their size due to the Bulky (X) special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7210-9d7a-e39a-7ef8" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="18da-a26c-bdd4-8a5f" name="Rad Furnace" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a491-f0a7-4128-1e84" name="Rad Furnace" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any melee Hits allocated to models locked in combat with one or more units that include a model with a rad furnace require one lower result To Wound than they would normally, to a minimum of 2+. This effect is not cumulative with itself if more than one model in a combat has a rad furnace. Models with rad furnaces are immune to the effects of rad grenades, the Rad-phage special rule and the rad furnaces of models they are locked in combat with. In addition, Hits from weapons with the Rad-phage special rule that are allocated to a model with a rad furnace only successfully wound on a To Wound roll of a 6+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc95-1744-94e2-2c52" name="Prehensile Dataspike" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a18f-cc83-7c96-9ad0" name="Prehensile Dataspike" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (4+), Murderous Strike (6+), Reach (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f5b6-3658-50da-3184" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3023-845e-ebc2-ea6e" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="dc2b-c9fa-bebe-e051" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reach (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="71cf-978d-0444-a3f1" name="Lucifex" publicationId="bde1-6db1-163b-3b76" page="119" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="6ada-1b1d-a0ab-391d" name="Lucifex" publicationId="bde1-6db1-163b-3b76" page="119" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Fleshbane, Rad-phage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2176-0408-f2ae-5a07" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+        <infoLink id="42f5-77a4-22be-8392" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d14-047a-bc9c-5d00" name="Irradiation Engine" publicationId="bde1-6db1-163b-3b76" page="119" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e842-c681-5a2c-b33d" name="Irradiation Engine" publicationId="bde1-6db1-163b-3b76" page="119" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Fleshbane, Rad-phage, Torrent (12&quot;)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9b78-9cb8-b92f-b553" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+        <infoLink id="7ed6-4778-94ba-2c28" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
+        <infoLink id="04d5-b937-8376-8e30" name="Torrent (X)" hidden="false" targetId="5cfb-fc94-e6db-43b8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Torrent (12&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="22dd-5ea8-a078-fd88" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6491-5e10-ba7e-e0d3" name="Las-lock" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3284-5778-fb70-5f43" name="Las-lock" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3519-b118-7c6e-2343" name="Photon Thruster" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e5b3-3ecf-f310-e629" name="Photon Thruster" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Blind, Lance, Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4941-db15-07f7-cdf8" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+        <infoLink id="9329-c4d0-e4d4-89b5" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
+        <infoLink id="8a98-70a4-be07-664a" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c651-d95e-6aa9-c3de" name="Graviton Imploder" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="14fd-3c03-871d-8882" name="Graviton Imploder" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Graviton Pulse*, Concussive (1), Haywire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ce43-602e-424b-cd35" name="Graviton Pulse" hidden="false" targetId="5b9c-2738-616c-abdf" type="rule"/>
+        <infoLink id="4fb8-7ee9-44bb-e204" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c304-d90b-4d5f-868a" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2397-a3fd-81e6-4ced" name="Conversion Beamer" publicationId="bde1-6db1-163b-3b76" page="115" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8fec-3374-8f9e-3999" name="Conversion Beamer (1)" publicationId="bde1-6db1-163b-3b76" page="115" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Up to 18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9e43-3980-4c10-4b88" name="Conversion Beamer (2)" publicationId="bde1-6db1-163b-3b76" page="115" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">More than 18&quot;-42&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Blind</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6501-0f61-f551-79eb" name="Conversion Beamer (3)" publicationId="bde1-6db1-163b-3b76" page="115" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">More than 42&quot;-72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Blind</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="115a-86e7-896f-b872" name="Graviton Pulsar" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="55ff-edab-513a-1c36" name="Graviton Pulsar" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">*</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Blast (3&quot;), Concussive (1), Graviton Pulse*, Haywire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1714-99b1-7326-7609" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="928a-e20d-5788-ddaf" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d35e-3bda-2270-3fde" name="Graviton Pulse" hidden="false" targetId="5b9c-2738-616c-abdf" type="rule"/>
+        <infoLink id="fb9a-58f9-d015-9a78" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0dd0-0edf-9526-cc6b" name="Volkite Veuglaire" publicationId="bde1-6db1-163b-3b76" page="119" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3807-1122-4d21-e4df" name="Volkite Veuglaire" publicationId="bde1-6db1-163b-3b76" page="119" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="566b-4fc6-9d5c-10cd" name="Pulsar-Fusil" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8f41-f592-7d19-105c" name="Pulsar-Fusil" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 4, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7eff-579d-f126-e7d3" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0575-c2d8-d3c5-d38f" name="Lorica Thallax" publicationId="bde1-6db1-163b-3b76" page="124" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0751-8d7c-eb3a-aa5b" name="Lorica Thallax" publicationId="bde1-6db1-163b-3b76" page="124" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Lorica Thallax confers a 4+ Armour Save. In addition, a unit that includes any models with Lorica Thallax may not make Sweeping Advances.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="4cc0-c7df-7157-6bf0" name="Volkite Incinerator" publicationId="bde1-6db1-163b-3b76" page=" &amp; 123" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="169a-febb-72f0-ad32" name="Volkite incinerator (Ranged)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f5e-4add-c78a-0929" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a6d-fa94-2b4c-eff3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6771-2e74-2cc2-3a80" name="Volkite incinerator (Ranged)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2bca-f8d1-dc31-245a" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="9149-00e8-dd49-c213" name="Volkite incinerator (Melee)" hidden="false" collective="true" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0df-ff1f-55f5-5c8f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c102-6153-af74-05c4" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bec3-1e3b-7c06-bc10" name="Volkite incinerator (Melee)" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Instant Death, Prisoned</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="e26b-cddc-2eeb-4320" name="Prisoned" publicationId="bde1-6db1-163b-3b76" hidden="false">
+              <description>A weapon with this special rule may only target models with the Infantry Unit Type, and a model attacking with a weapon with this special rule makes only a single attack (regardless of any other factors).</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="e4db-a990-aa36-e516" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="9033-c395-43b3-5612" name="Arc Scourge" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8d18-694a-4a47-498f" name="Arc Scourge" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rampage (D3), Disruption (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="062c-cfbf-608d-f0d0" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rampage (D3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="81aa-3408-7179-421d" name="Disruption (X)" hidden="false" targetId="4eb9-9e5e-bb27-3644" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Disruption (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9978-8a9e-ab4b-5e0f" name="Light Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="34ec-dac5-0fc4-3ee6" name="Light Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="3d50-2f85-06ff-6aee" name="Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e28e-91f4-86a4-15a6" name="Close Combat Weapon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
@@ -4901,6 +5377,9 @@ When deployed onto the battlefield (either at the start of the battle or when ar
     </rule>
     <rule id="0893-4bd0-d5a1-14db" name="Patris Cybernetica" publicationId="bde1-6db1-163b-3b76" page="106" hidden="false">
       <description>An Independent Character with this special rule may join a unit composed of models with the Automata Unit Type or Monstrous Unit Sub-type. However they cannot join a unit which contains models of any other Unit Type if the model with this rule also has the Automata or Dreadnought Unit Type, or the Monstrous Unit Sub-type.</description>
+    </rule>
+    <rule id="50f4-db05-3e45-467f" name="Djinn-Sight" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
+      <description>When making Shooting Attacks, djinn-sight reduces the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on). Additionally, Infiltrators may not be set up within 24&quot; of units with this special rule, regardless of line of sight.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
