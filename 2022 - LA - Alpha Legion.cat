@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <constraints>
@@ -7,20 +7,6 @@
       </constraints>
     </categoryEntry>
   </categoryEntries>
-  <selectionEntries>
-    <selectionEntry id="a1f5-1d6d-acb1-d888" name="Rewards of Treachery" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c912-48ac-8379-8a6f" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6adb-8f1a-1abc-c97d" type="min"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="cfdf-2176-3870-f8c1" name="Legion" hidden="false" collective="false" import="true" targetId="4a48-4935-246d-0c2e" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
   <entryLinks>
     <entryLink id="e317-e9d1-4af8-8de5" name=" XX: Alpha Legion" hidden="false" collective="false" import="true" targetId="c0df-c1fa-5ddc-9ee5" type="selectionEntry">
       <constraints>
@@ -30,6 +16,23 @@
       <categoryLinks>
         <categoryLink id="e87e-6482-7fb1-d401" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4468-6b05-89df-92c9" name="Rewards of Treachery" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a55-15b9-4ff6-e4cf" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="400c-4f11-d6ab-a665" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="fb80-a015-c2da-9d72" name="New CategoryLink" hidden="false" targetId="2275-5253-2421-7383" primary="true"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="b935-123f-ef5d-3bc1" name="Legion" hidden="false" collective="false" import="true" targetId="4a48-4935-246d-0c2e" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </entryLink>
     <entryLink id="ce80-6491-c668-2eb3" name="Crimson Paladins" hidden="true" collective="false" import="true" targetId="33fe-9683-bde5-95ca" type="selectionEntry">
       <modifiers>
