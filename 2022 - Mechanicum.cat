@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <constraints>
@@ -1813,6 +1813,117 @@
               <entryLinks>
                 <entryLink id="9a8a-bcda-9600-142d" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry"/>
                 <entryLink id="659a-8ca9-a97f-4500" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f961-063c-f8a2-6f2d" name="Servo Arms and other options" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="8fe0-02cf-f34d-c225" value="1.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df96-3b30-f3c7-43ff" type="equalTo"/>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8a9-8d49-0ed1-846d" type="equalTo"/>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df96-3b30-f3c7-43ff" type="equalTo"/>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8a9-8d49-0ed1-846d" type="equalTo"/>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc86-5720-7b03-5fd9" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fe0-02cf-f34d-c225" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="6940-130e-f973-8451" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                            <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df96-3b30-f3c7-43ff" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="dfa4-ffd3-da9b-c3e5" name="Servo-Arm with Prehensile Data-Spike" hidden="true" collective="false" import="true" targetId="981f-5ffe-b686-0491" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5e62-8d7e-a487-0490" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                                <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df96-3b30-f3c7-43ff" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="63f4-9d0e-30c1-fc96" name="Conversion Beamer" hidden="false" collective="false" import="true" targetId="2397-a3fd-81e6-4ced" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6489-2dd9-918b-be99" name="Graviton Imploder" hidden="false" collective="false" import="true" targetId="c651-d95e-6aa9-c3de" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="435f-4040-3c58-c767" name="Prehensile Dataspike" hidden="false" collective="false" import="true" targetId="dc95-1744-94e2-2c52" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8a9-8d49-0ed1-846d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="4128-1c04-6110-be1e" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8a9-8d49-0ed1-846d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4128-1c04-6110-be1e" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
