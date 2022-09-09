@@ -3121,6 +3121,11 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d1e-3881-2cab-53c8" type="max"/>
@@ -3156,8 +3161,7 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
               <profiles>
                 <profile id="dd64-b7ca-3234-4e42" name="The Mobius Configuration" publicationId="09c5-eeae-f398-b653" page="332" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected for a model with the Loyalist Allegiance.
-An army whose Warlord has this Trait counts any Allied Detachment that has any version of the Legiones Astartes (X) special rule as though it had the Fellow Warriors level of Alliance, regardless of the variant of the Legiones Astartes (X) special rule it has. Units from this Allied Detachment that are removed as casualties do not score Victory points for the opposing player, regardless of the Mission Objectives in play, and if all models that were part of the Allied Detachment have been removed as casualties at the end of the battle, the controlling player gains +1 Victory point. No unit in the Allied Detachment may make Reactions of any kind, but the first unit in the Primary Detachment to make a Reaction each turn does not use up a point of the controlling player’s Reaction Allotment when making that Reaction.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">An army whose Warlord has this Trait counts any Allied Detachment that has any version of the Legiones Astartes (X) special rule as though it had the Fellow Warriors level of Alliance, regardless of the variant of the Legiones Astartes (X) special rule it has. Units from this Allied Detachment that are removed as casualties do not score Victory points for the opposing player, regardless of the Mission Objectives in play, and if all models that were part of the Allied Detachment have been removed as casualties at the end of the battle, the controlling player gains +1 Victory point. No unit in the Allied Detachment may make Reactions of any kind, but the first unit in the Primary Detachment to make a Reaction each turn does not use up a point of the controlling player’s Reaction Allotment when making that Reaction.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>

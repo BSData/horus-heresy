@@ -2188,9 +2188,22 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7f03-6720-21ba-0d7b" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="6088-2073-3138-1861" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dfb2-b0f6-107f-1159" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0b5-480f-7385-ff75" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6088-2073-3138-1861" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="bc90-0aa8-57b0-e60a" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">

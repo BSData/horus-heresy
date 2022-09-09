@@ -3796,9 +3796,22 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="bb85-3277-2090-6576" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="33b5-39af-0fe4-c964" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be57-6917-cbe5-b571" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb45-3d02-e3e4-1157" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33b5-39af-0fe4-c964" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="e68a-342f-5397-dff3" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">

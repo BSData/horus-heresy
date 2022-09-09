@@ -2574,9 +2574,22 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="7923-f342-c07f-4967" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5388-67a6-5038-df3f" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="654b-f635-7e72-3df3" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="515c-9429-af06-0499" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5388-67a6-5038-df3f" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="e4d4-6150-e03a-7fe4" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">
@@ -2635,7 +2648,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e342-15ec-af4b-a00a" name="  VIII: Night Lords" publicationId="09c5-eeae-f398-b653" page="196" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="e342-15ec-af4b-a00a" name="  VIII: Night Lords " publicationId="09c5-eeae-f398-b653" page="196" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2648,7 +2661,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e6b-d354-f587-8b8a" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="84a2-6533-2d3b-5880" name="Warmonger (Traitor only)" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="84a2-6533-2d3b-5880" name="Warmonger (Traitor only) (PLACEHOLDER)" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -2671,7 +2684,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bfaf-01c3-416b-afcc" name="Flaymaster" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bfaf-01c3-416b-afcc" name="Flaymaster (PLACEHOLDER)" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8a64-3c90-7182-e55f" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e141-f63d-5c6f-c223" type="max"/>
@@ -2687,7 +2700,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="58bf-c972-77f3-6fbc" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="58bf-c972-77f3-6fbc" name="Jadhek Clanlord (PLACEHOLDER)" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b58b-0bac-aeb4-c083" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d1e6-5292-623d-a5c1" type="max"/>

@@ -2251,9 +2251,22 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="5e14-ad5c-00c3-8c3e" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="b095-a9b5-7531-1be6" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a42a-52d4-46da-c446" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="02f2-9abb-d177-d133" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b095-a9b5-7531-1be6" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="f0f7-0200-2e07-ca57" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">

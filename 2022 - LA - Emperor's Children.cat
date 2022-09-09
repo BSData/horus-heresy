@@ -2436,9 +2436,22 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="0cb4-896e-a455-243b" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="2eea-3d53-05e7-90cd" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b1c-6110-d10c-e91f" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be96-f5bc-be80-e9ab" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2eea-3d53-05e7-90cd" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="2a07-d5d3-1dba-efda" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">

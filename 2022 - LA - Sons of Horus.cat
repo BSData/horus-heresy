@@ -2532,9 +2532,22 @@ remains in play and regains 1D3 Wounds.</description>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="9c74-1002-8103-2848" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="3a20-a888-7f54-7286" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="783e-d904-abb7-00dc" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e6e0-417d-9d9d-b7eb" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a20-a888-7f54-7286" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="b474-58db-0107-eb00" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">

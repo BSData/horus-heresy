@@ -1709,7 +1709,7 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a825-305b-4c29-19a3" type="max"/>
       </constraints>
       <rules>
-        <rule id="e61b-37aa-0364-68da" name="Corax&apos;s Shame" hidden="false"/>
+        <rule id="e61b-37aa-0364-68da" name="Corax&apos;s Shame (PLACEHOLDER)" hidden="false"/>
       </rules>
       <infoLinks>
         <infoLink id="033d-e381-5c7f-02f8" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
@@ -2015,9 +2015,22 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="40ca-b143-a04e-4083" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="4bb6-bc4f-1115-c5d7" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e427-717b-ae53-0264" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="74c3-ae34-d7bc-cad8" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bb6-bc4f-1115-c5d7" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="b483-aff7-34d4-6421" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">
