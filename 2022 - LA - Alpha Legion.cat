@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <constraints>
@@ -909,6 +909,15 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="35cc-ad2e-7808-03f4" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="a1f6-6ccd-6b3e-aba2" type="selectionEntryGroup"/>
+        <entryLink id="9c83-c217-aeb9-b37b" name="Retinue" hidden="false" collective="false" import="true" targetId="09f9-933c-a88e-6e38" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="ea7b-3257-1195-c916" name="Centurion, Cataphractii " hidden="false" collective="false" import="true" targetId="3766-ea98-0aa7-62d0" type="selectionEntry">
@@ -922,6 +931,15 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="4c7f-801b-9b25-2ffb" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="a1f6-6ccd-6b3e-aba2" type="selectionEntryGroup"/>
+        <entryLink id="c1b6-16f6-5c19-359a" name="Retinue" hidden="false" collective="false" import="true" targetId="09f9-933c-a88e-6e38" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="2656-d573-fed9-0490" name="Centurion, Tartaros " hidden="false" collective="false" import="true" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
@@ -935,6 +953,15 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="6a6c-812f-ce8f-e826" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="a1f6-6ccd-6b3e-aba2" type="selectionEntryGroup"/>
+        <entryLink id="b495-ad40-bec7-7f4d" name="Retinue" hidden="false" collective="false" import="true" targetId="09f9-933c-a88e-6e38" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="2f88-d6b1-dd8a-ecc0" name="Cerberus Squadron" hidden="false" collective="false" import="true" targetId="137a-e079-34cd-8161" type="selectionEntry">
@@ -2392,6 +2419,9 @@ The Instrument has two profiles. Pick which profile is used every time the weapo
               </costs>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
