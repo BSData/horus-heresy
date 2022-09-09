@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="16" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="17" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 18th, 2022"/>
@@ -3609,6 +3609,12 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="4d0c-a485-33c7-91e9" name="Machinator Array" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false">
+          <description>A model with a machinator array makes two additional attacks in the Assault phase. These attacks are made using the weapon profiles shown below.
+Additionally, a machinator array incorporates a flamer and a meltagun. A model with the Battlesmith special rule may add +2 to their Repair roll result if they also have a machinator array.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="0957-0668-422b-48eb" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
         <infoLink id="1491-5048-962a-7705" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
@@ -3618,6 +3624,20 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
           </modifiers>
         </infoLink>
       </infoLinks>
+      <entryLinks>
+        <entryLink id="6b55-8875-1775-0b7f" name="Flamer" hidden="false" collective="false" import="true" targetId="fb37-a292-46bf-0b70" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ccd-1400-f28c-5560" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f30-a784-3775-7d33" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="35fa-7ef5-6ff2-a48b" name="Meltagun" hidden="false" collective="false" import="true" targetId="7447-495d-4b86-c92c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d16-9a88-51a8-412d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9532-bd13-5fd3-0a7a" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -3901,6 +3921,11 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule id="bd9a-eb07-35d3-20be" name="Servo-Arm" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false">
+          <description>A model with a servo-arm may make a single additional attack in the Assault phase as well as any they would normally be eligible to make. These attacks are made using the weapon profiles shown below.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="271c-be14-3872-1989" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
       </infoLinks>
@@ -5892,6 +5917,46 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7447-495d-4b86-c92c" name="Meltagun" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="0a61-50d7-1874-ea17" name="Meltagun" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ef66-d4bf-e850-74de" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fb37-a292-46bf-0b70" name="Flamer" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="c060-1fea-0006-5328" name="Flamer" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1219-e8f2-946c-0503" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
