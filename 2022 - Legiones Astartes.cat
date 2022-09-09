@@ -33817,25 +33817,15 @@ During a Reaction made in any Phase, a player may not choose to activate a model
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
       <modifiers>
-        <modifier type="increment" field="41ff-12f0-9676-ce29" value="1.0">
-          <conditions>
-            <condition field="selections" scope="e90d-e5a8-f42d-da84" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="a590-7c00-0ec0-dce9" value="1.0">
-          <conditions>
-            <condition field="selections" scope="e90d-e5a8-f42d-da84" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
-          </conditions>
-        </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="e90d-e5a8-f42d-da84" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ff-12f0-9676-ce29" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a590-7c00-0ec0-dce9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ff-12f0-9676-ce29" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a590-7c00-0ec0-dce9" type="min"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="2d37-e793-bc77-37de" name="Stormwing" hidden="false" collective="false" import="true" type="upgrade">
