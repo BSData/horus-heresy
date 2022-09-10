@@ -4119,15 +4119,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     <selectionEntry id="ed76-dace-31e4-b174" name="Chainaxe" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="03be-5d55-d05a-771d" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25a2-7a52-632a-6b2c" type="instanceOf"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <profiles>
@@ -7906,7 +7900,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="54c1-9eab-ee0e-2fac" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
+                <entryLink id="54c1-9eab-ee0e-2fac" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6b2-7567-ac6e-6e56" type="max"/>
                   </constraints>
@@ -9068,7 +9062,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="a6d4-6303-56db-9ed4" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
+                <entryLink id="a6d4-6303-56db-9ed4" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd4-0dcd-67e7-5f18" type="max"/>
                   </constraints>
@@ -14943,6 +14937,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="c071-739d-589c-3e0c" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="8eb3-6645-8321-61fb" name="5) Mobility:" hidden="false" collective="false" import="true">
               <modifiers>
@@ -15020,7 +15017,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d8-2d9b-7702-b123" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="bc74-6578-8ac5-7707" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
+                <entryLink id="bc74-6578-8ac5-7707" name="Chainsword" hidden="false" collective="false" import="true" targetId="eb13-c744-eba0-77be" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6d6-f454-6cd8-eed8" type="max"/>
                   </constraints>
@@ -15747,61 +15744,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="73ea-7e8d-96d7-d695" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="b258-61fd-7012-66ac" name="3) May take a ranged weapon:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d73d-a1d4-c7db-c54d" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="165d-375f-17eb-c7ca" name="Master-crafted asphyx bolter" hidden="false" collective="false" import="true" type="upgrade">
-                  <infoLinks>
-                    <infoLink id="efe6-4ade-f684-9894" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink id="748e-c001-1a4a-24cf" name="Asphyx Bolter" hidden="false" collective="false" import="true" targetId="88c0-4623-9da3-f2b5" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4451-e9ab-035b-2ca4" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5216-a627-0479-418c" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="6.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="fbf6-b464-6c49-85bf" name="Master-crafted bolter" hidden="false" collective="false" import="true" type="upgrade">
-                  <infoLinks>
-                    <infoLink id="28e4-6edb-9f14-b254" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink id="7e94-8c06-acf2-15ce" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0192-c743-6e4d-a7bc" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dea2-0cfc-0318-23cb" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8316-07f9-c2b1-8c09" name="Master-crafted shrapnel bolter" hidden="false" collective="false" import="true" type="upgrade">
-                  <infoLinks>
-                    <infoLink id="b246-add4-c516-eddf" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                  </infoLinks>
-                  <entryLinks>
-                    <entryLink id="8732-6d9d-6763-e0e3" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="1941-21b5-932c-74d6" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ce-689b-afa7-029e" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2668-04f0-a2fe-cdc5" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink id="0468-8071-fb75-f6a8" name="Magna Combi-Weapon" hidden="false" collective="false" import="true" targetId="e5b1-83e5-7272-a59e" type="selectionEntry">
                   <costs>
@@ -15858,6 +15808,39 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="4542-cce4-56c2-ae3d" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="1941-21b5-932c-74d6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Master-crafted Shrapnel Bolter"/>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink id="5941-3ef6-aa9b-68d7" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="01fb-5cb7-6f89-fc6a" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Master-crafted Bolter"/>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink id="245f-8a5a-525b-e8c9" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bd12-83be-45be-490f" name="Asphyx Bolter" hidden="false" collective="false" import="true" targetId="88c0-4623-9da3-f2b5" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Master-crafted Asphyx Bolter"/>
+                  </modifiers>
+                  <infoLinks>
+                    <infoLink id="93c3-d426-2bde-f284" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="6.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="42f8-0772-dc33-1bf7" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="d29d-8b18-ad8b-2d2d">
@@ -15866,7 +15849,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2439-bbfa-f7cf-821c" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="5c5d-64fe-0f41-8f15" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
+                <entryLink id="5c5d-64fe-0f41-8f15" name="Graviton Crusher" hidden="true" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
@@ -15885,9 +15875,174 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="a62f-d832-9366-5c37" name="Achea Force Axe" hidden="false" collective="false" import="true" targetId="d27f-9247-2c27-4450" type="selectionEntry"/>
-                <entryLink id="4b93-be97-d700-9ff4" name="Achea Force Maul" hidden="false" collective="false" import="true" targetId="126d-534d-dcb0-e931" type="selectionEntry"/>
-                <entryLink id="e66c-be6c-1bb0-3747" name="Achea Force Sword" hidden="false" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry"/>
+                <entryLink id="a62f-d832-9366-5c37" name="Achea Force Axe" hidden="true" collective="false" import="true" targetId="d27f-9247-2c27-4450" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="4b93-be97-d700-9ff4" name="Achea Force Maul" hidden="true" collective="false" import="true" targetId="126d-534d-dcb0-e931" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="e66c-be6c-1bb0-3747" name="Achea Force Sword" hidden="true" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="9e8e-ed8e-b795-16c2" name="Calibanite Warblade" hidden="true" collective="false" import="true" targetId="88ee-fc77-42ea-872d" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="06ea-33ce-8fb6-c7a0" name="Chainblade" hidden="true" collective="false" import="true" targetId="8391-79c8-31ff-3705" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d43b-3bc9-d85f-aa2d" name="Chainglaive" hidden="true" collective="false" import="true" targetId="2f96-d817-5180-9453" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2328-b164-9181-c037" name="Frost Weapon" hidden="true" collective="false" import="true" targetId="6f32-38ed-35d7-d758" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1a59-2842-dc8f-da76" name="Graviton Mace" hidden="true" collective="false" import="true" targetId="74db-af77-bc35-b62a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="fd10-e22d-1710-3ec6" name="Carsoran Power Axe" hidden="true" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="b21d-ae23-1cee-f64d" name="Headsman&apos;s Axe" hidden="true" collective="false" import="true" targetId="4178-09b6-7569-5ca3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="78f0-643a-4d14-a384" name="Perdition Weapon" hidden="true" collective="false" import="true" targetId="d93a-033b-233b-453a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e274-1a94-5c76-e6e2" name="Phoenix Power Spear" hidden="true" collective="false" import="true" targetId="356b-300e-d83d-72b8" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7508-83fa-ea7b-52ce" name="Phoenix Rapier" hidden="true" collective="false" import="true" targetId="868d-b957-c9ae-d3f2" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="c284-ccee-9840-e2a2" name="Power Glaive" hidden="true" collective="false" import="true" targetId="d917-8a5f-8459-8b0f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="812f-8705-7094-0d71" name="Power Scythe" hidden="true" collective="false" import="true" targetId="2166-369e-0757-6f98" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="4d06-bfb8-3315-71b1" name="Tainted Weapon" hidden="true" collective="false" import="true" targetId="e01b-5f42-a67b-c97f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9192-581b-f084-c977" name="4) May take (Wargear):" hidden="false" collective="false" import="true">
@@ -20391,18 +20546,27 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="b9c7-ae94-6fc9-dbde" name="Chainsword Options:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f891-9a18-d412-04d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="714a-c20c-fc6e-deaf" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c115-94aa-19ec-fcd3" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
+            <entryLink id="c7c7-f105-ad5b-8800" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry"/>
+            <entryLink id="0734-2fd9-16c8-0561" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="17ba-4233-f065-6a21" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0828-326e-e4fc-8d71" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfa3-a9b4-df14-9f91" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="250b-1dfa-21bf-223d" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e68-1095-9e26-8e9e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7981-b77b-bb67-d038" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="bfe7-1eaa-aa27-c09b" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
