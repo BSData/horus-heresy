@@ -4289,7 +4289,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="fffa-369b-8a93-c728" name="A Legion Rhino Transport may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="fffa-369b-8a93-c728" name="May take:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="961c-385f-7d83-ca96" name="One Hull (Front) Mounted hunter-killer missile" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4349,7 +4349,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="47e5-11c7-4b21-4f29" name="A Legion Rhino Transport may take one of the following pintle mounts:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="47e5-11c7-4b21-4f29" name="Pintle-weaponry" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a27-d42e-6154-e9d6" type="max"/>
           </constraints>
@@ -5603,7 +5603,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <categoryLink id="8666-e935-a90b-ef1e" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="e473-c75b-6c1c-4495" name="May Take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="e473-c75b-6c1c-4495" name="3) May Take:" hidden="false" collective="false" import="true">
               <selectionEntries>
                 <selectionEntry id="0ae4-771f-9349-15ee" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -5655,13 +5655,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="c795-97a0-3f44-b3be" name="Hull (Front) Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d76d-4972-4321-9bce">
+            <selectionEntryGroup id="c795-97a0-3f44-b3be" name="1) Hull (Front) Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d76d-4972-4321-9bce">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ce-b4bf-03a9-cda1" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62d6-f0f0-f6ae-6f7c" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="d76d-4972-4321-9bce" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+                <entryLink id="d76d-4972-4321-9bce" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="c88b-fe44-34a3-97e1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975e-14eb-caed-4b5b" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink id="1a42-7f40-72cd-0024" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
@@ -5670,7 +5678,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="6e7e-665a-48e8-32a3" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="fe9f-b75d-7913-d80b" name="Sponson Mounted Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1fbe-5706-be0d-8d99">
+            <selectionEntryGroup id="fe9f-b75d-7913-d80b" name="2) Sponson Mounted Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1fbe-5706-be0d-8d99">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b05f-4126-34de-567a" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d4-947b-3bf4-f091" type="max"/>
@@ -5845,7 +5853,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <categoryLink id="e659-8bae-056e-7bf3" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="9fba-1911-69f1-4077" name="May Take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="9fba-1911-69f1-4077" name="4) May Take:" hidden="false" collective="false" import="true">
               <selectionEntries>
                 <selectionEntry id="79c2-2c26-4b4c-33a1" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -5897,7 +5905,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="5eae-e444-f5c2-ff16" name="Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="5eae-e444-f5c2-ff16" name="3) Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc8-5cd5-1622-5b19" type="max"/>
               </constraints>
@@ -6016,7 +6024,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="4e04-dc8e-9e05-ea5c" name="Hull (Front) Mounted Weapon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ab5-87d0-d8ab-38c7">
+            <selectionEntryGroup id="4e04-dc8e-9e05-ea5c" name="1) Hull (Front) Mounted Weapon:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ab5-87d0-d8ab-38c7">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fdf-cae8-1ac0-05cb" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4c2-1611-43f8-3ee1" type="max"/>
@@ -6031,7 +6039,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="c943-3873-42c4-b00d" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3b1a-f2e5-5187-6004" name="Sponson Mounted Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a46c-c7b7-fe9b-6caf">
+            <selectionEntryGroup id="3b1a-f2e5-5187-6004" name="2) Sponson Mounted Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a46c-c7b7-fe9b-6caf">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a974-d436-d7f4-a9be" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="929a-1054-7306-3304" type="max"/>
@@ -16836,7 +16844,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <categoryLink id="8b77-ae5c-8bac-f9e0" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="5b1e-5fa8-bf4c-9339" name="3) May take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="5b1e-5fa8-bf4c-9339" name="4) May take:" hidden="false" collective="false" import="true">
               <selectionEntries>
                 <selectionEntry id="541a-bffb-2d99-ff36" name="One Hull (Front) Mounted hunter-killer missile" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -17032,6 +17040,83 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="eede-d691-d242-40c4" name="3) Pintle-weaponry" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94f-9419-cef1-25a4" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="bfc9-d659-d2fd-12f8" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="65b1-af12-d087-bec5" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="56bf-98bf-5d2a-9f33" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ae44-79a2-49ee-a270" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8a50-382f-a912-dd5d" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8122-439d-441c-6f89" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7fa6-b2c4-c75b-8109" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4f7e-b415-f752-5c7e" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0106-e976-112d-7560" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fd93-8463-c702-24b8" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="fee9-0059-f44f-0cf4" name="Minor Combi-Weapon - Alchem Flamer" hidden="false" collective="false" import="true" targetId="b941-687c-c95e-31a6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2dc5-cd0f-5c0b-2cee" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="49b4-1638-4158-7a7a" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bba1-bd1a-0b17-7284" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5df1-b4b1-272b-349e" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
@@ -17127,18 +17212,27 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6e6-f551-1c08-6407" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="665e-73f5-7c13-b5c7" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="7296-30e6-0103-f2c7" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89e6-f3bf-f6a8-5021" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1caf-2157-1d7e-7369" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="2e50-c789-cfbc-93a8" name="Helical Targeting Array" hidden="false" collective="false" import="true" targetId="ff29-460e-a589-a376" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60e7-2e42-160c-0d94" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e762-8cac-a004-4b6f" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="934b-f099-5936-7756" name="Blessed Auto-simulacra" hidden="true" collective="false" import="true" targetId="dc49-518b-0f77-5e3e" type="selectionEntry">
                   <modifiers>
@@ -17148,6 +17242,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8958-1004-0b53-f7d2" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -17162,6 +17259,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5e50-e186-db38-cb0b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36a9-7e2d-f209-6e79" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
@@ -17328,7 +17426,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <categoryLink id="532a-184b-6633-a933" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="ea31-6d06-3a9a-8bf8" name="Sponson Mounted Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="50f8-01b2-554c-f3c8">
+            <selectionEntryGroup id="ea31-6d06-3a9a-8bf8" name="1) Sponson Mounted Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="50f8-01b2-554c-f3c8">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4304-fc61-0efb-6a72" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3cf-3806-4d75-949c" type="max"/>
@@ -17424,7 +17522,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="9ac2-321d-6149-548d" name="May Take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="9ac2-321d-6149-548d" name="3) May Take:" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink id="e2a3-a45d-d591-46ea" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                   <constraints>
@@ -17471,7 +17569,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="9089-320f-1575-a217" name="Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="9089-320f-1575-a217" name="2) Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea9-6968-54d8-fa87" type="max"/>
               </constraints>
