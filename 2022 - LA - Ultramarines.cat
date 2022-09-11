@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="8" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="  XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <constraints>
@@ -1384,45 +1384,6 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="eeca-f669-4ad1-3dee" name="Fulmentarus Terminators" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b55-80ef-766f-c72b" type="max"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a28f-d299-a700-38de" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="7230-f2a9-b158-d896" name="Fulmentarus Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="bd38-274a-5896-0b41" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="937b-eef1-9ed1-bf14">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c73-d398-e328-d55a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c42d-3654-19b4-7171" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="937b-eef1-9ed1-bf14" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry"/>
-                <entryLink id="66db-fdb7-5225-3865" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry"/>
-                <entryLink id="e9a0-bbaf-0678-63d6" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="0ca3-4024-dbe5-6be3" name="Fulmentarus Decurion" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac5b-9ad8-4fc3-1a4d" type="max"/>
@@ -1446,74 +1407,49 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup id="7df2-f403-dfa4-a651" name="Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce94-7b1d-0771-31af">
+            <selectionEntryGroup id="7df2-f403-dfa4-a651" name="Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="435c-ba08-f299-6063">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ad2-13b6-b3df-bda9" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a566-c8f7-9462-b74a" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="ce94-7b1d-0771-31af" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry"/>
+                <entryLink id="ce94-7b1d-0771-31af" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                 <entryLink id="ae7d-faa3-7cd2-2c8a" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="bc2d-4699-2841-e2ab" name="Chainfist" hidden="false" collective="false" import="true" targetId="7347-c5b1-5da3-a78f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="816f-af79-8cc6-d306" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2518-c1a9-b56c-af23" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+                <entryLink id="3e83-f294-47aa-485a" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+                <entryLink id="435c-ba08-f299-6063" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b8d5-5852-0911-a025" name="Fulmentarus missile array (with Splinter andHellfire plasma missiles)" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dcc-95fe-4c62-a7b4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff59-ccd3-8870-acb8" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e8e3-2ca8-e8bb-a503" name="Fulmentarus missile array (Splinter missiles)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Breaching (6+), Pinning</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="c74f-e122-9077-7ad1" name="Fulmentarus missile array (Hellfire plasma missiles)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, (Brutal (2)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="63a3-0093-59ae-4061" name="Peritarch targeter" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2922-39b5-735d-16cc" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eb8-cb25-a520-5dfb" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="1951-b2ab-0588-5cc2" name="Peritarch targeter" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-              <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Peritarch targeter may activate it at the start of any of their own turns before any models are moved. Once the Peritarch targeter is activated, the unit affected may not move but gains the Guided Fire and Night Vision special rules until the start of the controlling player’s next turn. A unit that has activated a Peritarch targeter may not make any Reactions other than the Interceptor or Overwatch Reaction, unless it can draw a line of sight to any models in the unit that triggered the Reaction. In addition, all models in a unit that has activated a Peritarch targeter must use the same missile type for any attacks made for the duration of that player turn. </characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="129a-8f0e-e23c-87d4" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule"/>
-          </infoLinks>
+          <entryLinks>
+            <entryLink id="7d3d-2768-10ed-14b0" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc1c-8edd-ba6b-9f2d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9364-36ad-07fb-93cf" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="758b-5c20-3c0e-d20e" name="One Fulmentarus Terminator may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="758b-5c20-3c0e-d20e" name="2) One Fulmentarus Terminator may take:" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2eb-943e-799c-ea33" type="max"/>
           </constraints>
@@ -1525,18 +1461,274 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="2b95-e997-fe5b-6ece" name="3) Dedicated Transport" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="568b-e800-1cf0-15e4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="d1c0-ed7d-4ccd-ef9e" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="7fb0-6302-d46f-029d" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="4789-0438-f81a-a52e" name="Land Raider Spartan" hidden="false" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry"/>
+            <entryLink id="655a-7b92-4437-f057" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="7fb0-6302-d46f-029d" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="40a2-52bc-f6c5-e0cf" name="1) Fulmentarus Terminators" hidden="false" collective="false" import="true" defaultSelectionEntryId="af54-e19a-6e39-3308">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b84f-3c73-5e6f-a0ff" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="706d-59c0-aa46-d897" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="af54-e19a-6e39-3308" name="Fulmentarus Terminator w/Power Sword" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="22dc-a491-a158-0087" name="Fulmentarus Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="6578-81c9-67bc-215c" name="Power Sword" hidden="false" collective="false" import="true" targetId="9b46-befc-c28c-acc5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d26-5281-5992-8753" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2861-5bfc-29e6-3d40" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="2cca-9c63-bc48-0ea8" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="229c-f292-7e3d-f044" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d559-3cf8-a2e3-ef09" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a76-60cb-f573-64a9" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6209-7e08-1c9f-f440" name="Fulmentarus Terminator w/Power Axe" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="8159-c2d2-1304-2bc4" name="Fulmentarus Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="d71c-d3ff-3fdd-0b3d" name="Power Axe" hidden="false" collective="false" import="true" targetId="50ad-ed4b-7407-6878" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7380-58f7-ed9e-aa90" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4582-961c-8bf6-e458" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="eba9-8baa-0a16-9ed0" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="229c-f292-7e3d-f044" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24b3-6677-1f9a-2a66" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c62-3095-3ea4-cf2f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e38f-329f-6a2f-2c17" name="Fulmentarus Terminator w/Power Lance" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="db40-6617-1181-97b1" name="Fulmentarus Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="d11b-8835-cf29-6894" name="Power Lance" hidden="false" collective="false" import="true" targetId="59ff-b406-c60a-37c1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dca0-92cd-d554-2334" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97d7-9908-64cf-9285" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="387c-af9b-c602-e89b" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="229c-f292-7e3d-f044" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffc9-c677-5dc2-2259" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b94-4471-093f-1601" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5b75-16e1-76fc-2db1" name="Fulmentarus Terminator w/Power Maul" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="fc4a-7f5f-a4c3-c595" name="Fulmentarus Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="7c74-ab70-960e-3f37" name="Power Maul" hidden="false" collective="false" import="true" targetId="4970-6869-5278-bd8b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66f8-74c4-3209-f0e5" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c64-2788-9dd7-574d" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="79a4-e697-55f0-18c7" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="229c-f292-7e3d-f044" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f46-fea0-620d-1364" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3348-e81d-c8b2-812d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="24b1-c85f-8c31-36d7" name="Fulmentarus Terminator w/Power Fist" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="4f1e-5299-08f6-b189" name="Fulmentarus Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="3547-0e26-36e4-75a1" name="Power Fist" hidden="false" collective="false" import="true" targetId="3d40-c41d-0b62-94d2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40ac-46b3-ab03-a387" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a69-807a-fea9-6e57" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="096f-e5ad-9358-ab56" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="229c-f292-7e3d-f044" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3613-25f9-4989-3622" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d6a-04a8-521c-adb7" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e153-e0b3-912e-b6b8" name="Fulmentarus Terminator w/Chainfist" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="c001-db89-433b-a98a" name="Fulmentarus Terminator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="cfd6-9a27-8d5a-638b" name="Chainfist" hidden="false" collective="false" import="true" targetId="5b03-d988-8964-48a8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fed1-9841-0d28-f3a2" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c76a-813e-36e4-78aa" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3482-4e88-9685-c4fa" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="229c-f292-7e3d-f044" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3284-08f7-bd8f-0b06" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9b3-f355-9137-e4b1" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="a2eb-5d3f-6e20-2590" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="405f-5c09-2bc5-fc98" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa55-433b-ef45-9563" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="6689-670a-9681-6768" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9ea-9e83-af17-9c89" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ea-2285-a1d6-1c11" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5cb0-88eb-5376-c2d3" name="Peritarch targeter" hidden="false" collective="false" import="true" targetId="35c3-a948-99df-5477" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="399d-5db2-d248-14a5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d6f-ec6a-2326-45a7" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1a85-19bd-f92d-29a0" name="Fulmentarus missile array (with Splinter and Hellfire plasma missiles)" hidden="false" collective="false" import="true" targetId="5441-6fff-b5ac-615f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c2e-ee94-da0b-948f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b04a-3a4f-2402-104f" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -2257,6 +2449,195 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
         <infoLink id="6a6c-5ad8-54ae-d6f1" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="35c3-a948-99df-5477" name="Peritarch Targeter" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c367-46db-77ea-de07" name="Peritarch Targeter" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Peritarch Targeter may activate it at the start of any of their own turns before any models are moved. Once the Peritarch Targeter is activated, the unit affected may not move but gains the Guided Fire and Night Vision special rules until the start of the controlling player’s next turn. A unit that has activated a Peritarch Targeter may not make any Reactions other than the Interceptor or Overwatch Reaction, unless it can draw a line of sight to any models in the unit that triggered the Reaction. In addition, all models in a unit that has activated a Peritarch Targeter must use the same missile type for any attacks made for the duration of that player turn. </characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="fa13-e2d8-6a34-415a" name="Guided Fire" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
+        <infoLink id="e489-92bc-dd76-d969" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5441-6fff-b5ac-615f" name="Fulmentarus missile array (with Splinter and Hellfire plasma missiles)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b99a-e882-f98f-b227" name="Fulmentarus missile array (Splinter missiles)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Breaching (6+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="efb1-06c5-2100-7e1b" name="Fulmentarus missile array (Hellfire plasma missiles)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="33cd-9791-9f8d-53fa" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9e76-879f-e560-948c" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="048e-a2ee-5e99-9f74" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b03-d988-8964-48a8" name="Chainfist" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="195e-2a5e-a274-df9b" name="Chainfist" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2x</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3493-536c-e4f4-1b83" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="c903-fb94-7d9b-addc" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melee)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="229c-f292-7e3d-f044" name="Combi-Bolter" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="8a0b-1b45-701a-d925" name="Combi-bolter" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1148-dbc2-e554-9d4b" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3d40-c41d-0b62-94d2" name="Power Fist" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="9583-7419-d394-64d3" name="Power Fist" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Specialist Weapon</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d268-8835-c196-6e80" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="164f-9af2-ed49-c4cc" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b46-befc-c28c-acc5" name="Power Sword" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="cc61-8590-aa0d-07bd" name="Power Sword" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6d12-e0f0-0f0e-224b" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4970-6869-5278-bd8b" name="Power Maul" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="c4db-91b3-b912-d1c2" name="Power Maul" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="50ad-ed4b-7407-6878" name="Power Axe" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="7f75-e034-9dfb-f8a1" name="Power Axe" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="aa50-70b6-a65a-37ca" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59ff-b406-c60a-37c1" name="Power Lance" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="443c-2421-ff2a-9ecf" name="Power Lance" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5c1c-7629-faa1-9a2c" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Reach (1)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
