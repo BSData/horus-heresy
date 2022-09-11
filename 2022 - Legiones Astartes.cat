@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="50" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="51" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -34348,7 +34348,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <categoryLink id="d5d1-9ec0-5b7b-ca10" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="d4f8-2397-36ce-f43e" name="2) Sergeant may take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="d4f8-2397-36ce-f43e" name="4) Sergeant may take:" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink id="4fe6-32f5-5219-32ab" name="Cyber-Familiar" hidden="false" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
                   <modifiers>
@@ -34422,47 +34422,12 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="7e39-f046-6176-d552" name="1) Bolt Pistol/Chainsword Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f18-534f-6799-9efb">
-              <modifiers>
-                <modifier type="set" field="4a5e-1df7-9fc9-337c" value="1.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
-                        <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" field="73f3-fd84-761a-4b9d" value="1.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
-                        <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+            <selectionEntryGroup id="7e39-f046-6176-d552" name="1) Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f18-534f-6799-9efb">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a5e-1df7-9fc9-337c" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73f3-fd84-761a-4b9d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a5e-1df7-9fc9-337c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73f3-fd84-761a-4b9d" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="745e-0c67-6a5e-508c" name="Chainsword" hidden="false" collective="false" import="true" targetId="eb13-c744-eba0-77be" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="d183-8952-96f0-ae81" value="0.0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="upgrade" type="greaterThan"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ada-99e7-626b-39b4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d183-8952-96f0-ae81" type="min"/>
-                  </constraints>
-                </entryLink>
                 <entryLink id="742e-7d4f-935c-2a77" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63c9-97f1-6962-0bb6" type="max"/>
@@ -34528,14 +34493,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb86-c9c7-9ec9-6520" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="a9f7-d725-ce15-8c72" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89a4-c3de-e3b8-71df" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
                 <entryLink id="124c-1d0a-6567-b310" name="Graviton Pistol" hidden="false" collective="false" import="true" targetId="0087-19d3-eca0-cc75" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b0-9276-b3cf-f4fe" type="max"/>
@@ -34559,18 +34516,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
-                </entryLink>
-                <entryLink id="80c0-be09-efd9-dfe0" name="Chainaxe" hidden="true" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ee6-70b9-6b13-5889" type="max"/>
-                  </constraints>
                 </entryLink>
                 <entryLink id="c50b-3a0f-2e95-4329" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
                   <constraints>
@@ -34633,25 +34578,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cec1-cbae-f93a-2b0d" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="88d1-b044-5527-d7ff" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b0-4b79-dd4b-d516" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="3bc7-f2bb-b6b2-0ff3" name="Pair of Raven&apos;s Talons" hidden="true" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da4e-a009-ec11-e818" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3a2e-2f35-330d-60ae" name="Armor" hidden="false" collective="false" import="true" defaultSelectionEntryId="d6d3-4ec4-3829-4970">
+            <selectionEntryGroup id="3a2e-2f35-330d-60ae" name="3) Armor" hidden="false" collective="false" import="true" defaultSelectionEntryId="d6d3-4ec4-3829-4970">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15da-8290-bd65-b4af" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73be-9f04-0bce-44d8" type="min"/>
@@ -34668,6 +34597,117 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <entryLink id="d6d3-4ec4-3829-4970" name="Power Armour" hidden="false" collective="false" import="true" targetId="2d9d-480e-7c14-1a6f" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c6a-cb6f-62a4-dddf" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="73e9-e500-7623-2820" name="0) Chainsword:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a434-1e2b-f090-aee9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b821-cdcc-f4b7-d592" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0bca-1a2d-6357-1240" name="Chainsword" hidden="false" collective="false" import="true" targetId="eb13-c744-eba0-77be" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea2d-fcab-889f-0d8e" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f800-4e7d-db05-87be" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9985-82c9-dd3c-c61e" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2292-06eb-52fd-d5ee" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7d5a-0f06-9602-a458" name="Lightning Claw" hidden="false" collective="false" import="true" targetId="6923-4e42-5691-b13f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ac80-37e4-4536-3c77" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="73d4-4544-bf76-583e" name="Power Fist" hidden="false" collective="false" import="true" targetId="a3e1-d633-dff9-028b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7836-deb7-c393-a170" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a878-fb07-8d77-164f" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="72ba-d2df-d98b-8b5d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06d9-f338-5ff6-5ae1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7743-f9b5-30d7-01ef" name="Graviton Pistol" hidden="false" collective="false" import="true" targetId="0087-19d3-eca0-cc75" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1828-33c7-0d40-9c77" name="Dragon&apos;s Breath Pistol" hidden="false" collective="false" import="true" targetId="c1cb-0fa7-0d39-73ae" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1114-6b7e-0b54-22f4" name="Raven&apos;s Talon" hidden="false" collective="false" import="true" targetId="09d8-64f5-1936-e8ab" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a6ac-d5a0-2165-8f8c" name="Chainaxe" hidden="true" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e992-ac59-4442-71ff" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="04eb-2e67-5564-c742" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9b8e-32bd-1018-2f08" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="693a-dcf2-e8a9-fc49" name="Warpfire Pistol" hidden="false" collective="false" import="true" targetId="a94d-1f53-2902-0237" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a489-9e98-b18c-bf1e" name="Inferno Pistol" hidden="false" collective="false" import="true" targetId="dcd1-8b2a-9d97-40ef" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="dfe4-f73b-4bb9-f20e" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="218c-1b89-d321-da6d" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c64c-b683-5910-f4bf" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
