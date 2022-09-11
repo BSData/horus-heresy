@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <constraints>
@@ -552,7 +552,7 @@
             </entryLink>
             <entryLink id="a186-7ee1-b717-10f4" name="Incunabulan Jet Pack" hidden="false" collective="false" import="true" targetId="9faf-7242-dc40-c3e5" type="selectionEntry">
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
               </costs>
             </entryLink>
             <entryLink id="a1a0-135e-7b69-5882" name="Conversion Beamer" hidden="false" collective="false" import="true" targetId="2397-a3fd-81e6-4ced" type="selectionEntry">
@@ -3957,12 +3957,32 @@ At the beginning of each of the controlling player’s Shooting phases for the r
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="0b1c-2ad2-7337-b78f" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule"/>
-        <infoLink id="ba28-ab7f-71e0-4aa8" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule"/>
+        <infoLink id="0b1c-2ad2-7337-b78f" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Adamantium Will (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ba28-ab7f-71e0-4aa8" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battlesmith (3+)"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="5024-4c05-644f-2031" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
-        <infoLink id="38b5-f285-16ac-9f4a" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule"/>
-        <infoLink id="ad1d-bb37-41e5-8b3e" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule"/>
-        <infoLink id="b47d-4e14-ffb2-4aec" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
+        <infoLink id="38b5-f285-16ac-9f4a" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ad1d-bb37-41e5-8b3e" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b47d-4e14-ffb2-4aec" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="204f-2d12-b48e-4f4c" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
         <infoLink id="e5d8-c080-adcd-3c9b" name="Patris Cybernetica" hidden="false" targetId="0893-4bd0-d5a1-14db" type="rule"/>
         <infoLink id="4e05-29af-baba-ee5a" name="Pride of Place" hidden="false" targetId="f83c-9442-8102-5da4" type="rule"/>
