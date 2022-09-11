@@ -1668,6 +1668,24 @@
           <infoLinks>
             <infoLink id="a05f-2480-a5ad-7241" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule"/>
             <infoLink id="6fee-56ad-7222-f038" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+            <infoLink id="6799-4f62-1dab-6bcc" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="e144-44a3-23c9-0727" name="Wrecker" hidden="false" targetId="ba77-a802-55df-da67" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="02be-cd76-9a50-d755" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
@@ -1952,6 +1970,24 @@
           </constraints>
           <infoLinks>
             <infoLink id="3c59-e74f-f057-b248" name="Guardian Unit Sub-type" hidden="false" targetId="a686-026f-6674-102e" type="rule"/>
+            <infoLink id="ad23-36c5-01cb-b0e9" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="e06e-7970-2a73-27ad" name="Wrecker" hidden="false" targetId="ba77-a802-55df-da67" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="0811-7d31-715c-ef42" name="Automata Unit-type:" hidden="false" targetId="d8ab-8e21-e193-63ba" primary="false"/>
@@ -2011,7 +2047,28 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e154-ad80-9ac4-8044" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="f117-68df-5af9-d08f" name="Triaros Armoured Conveyor " hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry"/>
+            <entryLink id="f117-68df-5af9-d08f" name="Triaros Armoured Conveyor " hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry">
+              <infoLinks>
+                <infoLink id="dc7b-1b55-e348-4211" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="49ec-e942-519f-718b" name="Wrecker" hidden="false" targetId="ba77-a802-55df-da67" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="3809-6add-1c91-5262" name="Techno-Arcana (for all Tech-Priests and Magos Auxilia in unit)" publicationId="bde1-6db1-163b-3b76" page="29" hidden="false" collective="false" import="true">
@@ -2918,21 +2975,33 @@ This unit may be upgraded freely as described in their profile, though they may 
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1832-76df-32c9-39b8" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="ca30-e98b-aa02-79f5" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="f0d1-332b-c719-ede7" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46fb-0ccb-cf1e-5552" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="a4eb-de4f-a2fc-375e" name="Irad-Cleanser" hidden="false" collective="false" import="true" targetId="b3c5-237f-e1d2-d9f8" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1709-c2d3-fa7b-0a82" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
             </entryLink>
             <entryLink id="2a2a-f36f-6f31-cc36" name="Meltagun" hidden="false" collective="false" import="true" targetId="4ebd-57e0-3560-e568" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="720b-5743-c863-b759" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
