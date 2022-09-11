@@ -988,9 +988,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <profiles>
         <profile id="dd47-98c1-af82-88f3" name="Æther-rune Armour " publicationId="817a-6288-e016-7469" page="200" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any model with both the Legiones Astartes (Space Wolves) and Independent Character special rules that does not have the Unique Unit sub-type may exchange artificer armour for Æther-rune armour for +25 points each.
-
-Æther-rune armour confers a 2+ Armour Save. In addition, it increases the Wounds Characteristic of a model with it by +1 and grants the Adamantium Will (4+) special rule to that model</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Æther-rune armour confers a 2+ Armour Save. In addition, it increases the Wounds Characteristic of a model with it by +1 and grants the Adamantium Will (4+) special rule to that model.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7807,6 +7805,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0759-a4bb-a15b-7cef" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="57ee-1126-32a9-5672" value="4">
+                  <conditions>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3125-5faa-cb08-e4ec" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
@@ -8312,6 +8315,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </selectionEntries>
               <entryLinks>
                 <entryLink id="102d-3f7d-958d-f5d7" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry"/>
+                <entryLink id="4923-9ccf-abab-9da6" name="Æther-rune Armour" hidden="false" collective="false" import="true" targetId="3125-5faa-cb08-e4ec" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -8984,6 +8992,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1a-275e-e691-5b92" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="57ee-1126-32a9-5672" value="3">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3125-5faa-cb08-e4ec" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
@@ -9569,6 +9582,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
+                </entryLink>
+                <entryLink id="7509-9b7c-63f4-d61f" name="Æther-rune Armour" hidden="false" collective="false" import="true" targetId="3125-5faa-cb08-e4ec" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a28d-408e-c833-9055" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -33991,10 +34016,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
     </selectionEntry>
     <selectionEntry id="ea5b-25e4-9c56-38dd" name="Contemptor Dreadnought (Mortificator) " hidden="false" collective="false" import="true" type="model">
       <comment>Mortificator requires Min0/Max1, but the unit requires Min1/Max3; this is only a problem cause I can&apos;t just link Contemptor inside of the Talon cause the Talon needs to check for Shrapnel Cannon constraints among its models.</comment>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b7f0-68a5-898b-5b16" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d5ec-c32c-2325-44ed" type="min"/>
-      </constraints>
       <profiles>
         <profile id="c865-160d-53f7-e07d" name="Contemptor Dreadnought" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <modifiers>
@@ -34520,7 +34541,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <entryLink id="df55-a841-73fa-b829" name="Tainted Maul" hidden="false" collective="false" import="true" targetId="5b6e-b0b2-35ca-5e67" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3cbf-9466-2558-2c22" name="0) Legiones Consularis" hidden="false" collective="false" import="true" defaultSelectionEntryId="d3d6-dfc2-4da2-54cc">
+    <selectionEntryGroup id="3cbf-9466-2558-2c22" name=" Legiones Consularis" hidden="false" collective="false" import="true" defaultSelectionEntryId="d3d6-dfc2-4da2-54cc">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c424-773c-1558-f760" type="min"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02ad-d3dc-564c-7630" type="max"/>
@@ -36072,6 +36093,9 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efdd-b677-18ba-1683" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+          </costs>
         </entryLink>
         <entryLink id="8c6c-7028-af50-2cdd" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
           <constraints>
@@ -36219,7 +36243,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
         <entryLink id="2d2b-3092-fd34-60e5" name="Force Staff" hidden="false" collective="false" import="true" targetId="5132-9034-5e79-13c8" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="244a-2a7c-1349-94e7" name="0) Consul Additional Wargear and Options" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="244a-2a7c-1349-94e7" name=" Consul Additional Wargear and Options" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="e55a-1ccb-141c-398d" name="(Chaplain) Master craft one weapon to represent a Crozius Arcanum" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
