@@ -14,7 +14,7 @@
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
   </costTypes>
   <profileTypes>
-    <profileType id="4bb2-cb95-e6c8-5a21" name="Unit">
+    <profileType id="4bb2-cb95-e6c8-5a21" name=" Unit">
       <characteristicTypes>
         <characteristicType id="ddd7-6f5c-a939-b69e" name="Unit Type"/>
         <characteristicType id="893e-2d76-8f04-44e5" name="Move"/>
@@ -42,7 +42,7 @@
         <characteristicType id="347e-ee4a-764f-6be3" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="2fae-b053-3f78-e7b2" name="Vehicle">
+    <profileType id="2fae-b053-3f78-e7b2" name=" Vehicle">
       <characteristicTypes>
         <characteristicType id="e555-4aed-dfcc-c0b4" name="Unit Type"/>
         <characteristicType id="3614-4a2d-bffb-90e4" name="Move"/>
