@@ -2571,10 +2571,15 @@
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="f6d5-234c-4237-efb4" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="65ce-ef0f-b616-fb56" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="26f5-0c38-36c5-5f66" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6d5-234c-4237-efb4" type="min"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="a031-a816-817c-c73b" name="  IV: Iron Warriors" publicationId="09c5-eeae-f398-b653" page="176" hidden="true" collective="false" import="true">
@@ -2643,63 +2648,10 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="c09c-6aac-d6ff-0fcf" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c577-e6e0-9c5b-e089" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c4d2-42d5-05e2-6d08" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="45e4-a42f-93b0-6c6d" name="Stoic Defender" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="697e-e0f1-4153-4098" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e2e-3c1b-2cac-310e" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="22bb-389e-3148-4130" name="Stoic Defender" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord or any friendly unit joined by a Warlord with this Trait makes a Shooting attack, the target unit must make a Pinning test if it suffers any unsaved Wounds. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a8f1-8a44-031f-da3f" name="Ever-vigilant" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="53b5-19d7-c6dc-b3d2" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e166-7d3e-71e9-c827" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="6730-9910-8bb6-3320" name="Ever-vigilant" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord, and any unit it has joined, Runs during the Movement phase, it adds the value of the Warlord’s Initiative Characteristic, increased by 1, to the distance moved, rather than the lowest Initiative Characteristic in the unit. In addition, an army whose Warlord has this Trait may make an additional Reaction during their  opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="875e-3e51-ca47-ab9d" name="Bloody-handed" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dc14-0fe3-a865-bc92" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5a4-5715-91e5-f700" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="87b7-68c1-d4d4-551e" name="Bloody-handed" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any combat with at least one friendly model within 12&quot; of this Warlord, or a combat which includes this Warlord, gains a bonus of +1 to the number of Wounds caused for the purposes of combat resolution. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1e29-d8a9-f323-a90f" name="    Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>

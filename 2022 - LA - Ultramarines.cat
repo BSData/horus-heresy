@@ -2673,66 +2673,9 @@ player’s turn as long as Roboute Guilliman has not been removed as a casualty.
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a42a-52d4-46da-c446" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="02f2-9abb-d177-d133" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b095-a9b5-7531-1be6" type="min"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f0f7-0200-2e07-ca57" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="369d-39cb-cc7a-00c6" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="34e8-97f8-e191-c481" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1057-462f-0b98-7e8e" name="Stoic Defender" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a3ef-7a73-87c7-ebb2" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f48-c2d5-1451-0a86" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="b985-98a2-e1bc-3156" name="Stoic Defender" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord or any friendly unit joined by a Warlord with this Trait makes a Shooting attack, the target unit must make a Pinning test if it suffers any unsaved Wounds. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="dac8-3229-852f-7dce" name="Ever-vigilant" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4264-b6e2-efb8-b612" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d80-2e3f-b6ed-fd73" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="5bd0-8db5-3825-f05b" name="Ever-vigilant" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord, and any unit it has joined, Runs during the Movement phase, it adds the value of the Warlord’s Initiative Characteristic, increased by 1, to the distance moved, rather than the lowest Initiative Characteristic in the unit. In addition, an army whose Warlord has this Trait may make an additional Reaction during their  opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="cf3e-b142-b2e4-282a" name="Bloody-handed" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="13a5-428b-a788-39ef" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4db5-48a3-fe9e-b78c" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="d79a-6cfb-8a46-e2ca" name="Bloody-handed" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any combat with at least one friendly model within 12&quot; of this Warlord, or a combat which includes this Warlord, gains a bonus of +1 to the number of Wounds caused for the purposes of combat resolution. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup id="94cc-0bba-dbab-26f4" name=" XIII: Ultramarines" publicationId="817a-6288-e016-7469" page="292" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -2813,6 +2756,9 @@ Once per battle, a Warlord with this Warlord Trait may, at the start of any one 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="18a7-66b3-8db8-72cd" name="    Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>

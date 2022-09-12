@@ -8210,6 +8210,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="d084-58a6-01a8-9a2a" name="Iron-Father" hidden="false" collective="false" import="true" targetId="4655-4447-299c-8fe2" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8f1c-19e3-51c3-6ed6" name="5) Armor Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="102d-3f7d-958d-f5d7">
@@ -8276,11 +8285,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf8a-86e8-9de6-9df1" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d032-adf5-b65a-a555" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="d96a-89f7-c896-f924" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0466-f37c-7909-ca0b" type="max"/>
               </constraints>
             </entryLink>
             <entryLink id="59f0-e979-121e-fea1" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
@@ -8464,6 +8468,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="d54b-a6f0-0284-2e10" name="Iron-Father" hidden="false" collective="false" import="true" targetId="4655-4447-299c-8fe2" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -8666,6 +8679,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="a6b9-fca9-ab9c-58c1" name="Iron-Father" hidden="false" collective="false" import="true" targetId="4655-4447-299c-8fe2" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -34379,6 +34401,47 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4655-4447-299c-8fe2" name="Iron-Father" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="05d9-dd17-b2ba-e101" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="a776-bdbf-6dff-aa5d" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Feel No Pain (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6e94-3776-6d25-d30f" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battlesmith (3+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="a9ca-16b0-72a2-74da" name="Cyber-Familiar" hidden="false" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f8-5ff6-a048-eb8b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85af-56ce-a2d5-23d4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="614b-c3f7-5607-32b8" name="Machinator Array" hidden="false" collective="false" import="true" targetId="66f5-697c-605c-f1bb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df4-2430-d24f-9892" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec62-5835-5c93-bc30" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
