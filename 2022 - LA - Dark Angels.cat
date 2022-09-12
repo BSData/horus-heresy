@@ -2962,27 +2962,7 @@ special rule.</description>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="96f9-c03c-52e5-6cca" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="d8be-9eda-0921-25df" name="May take:" hidden="false" collective="false" import="true">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1290-2d41-3b71-8ebc" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="aafe-9bbe-499d-adae" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="58b3-2c07-6f2b-0bab" name="Chain Bayonet" hidden="false" collective="false" import="true" targetId="bd82-cef6-67f8-19b5" type="selectionEntry">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                </entryLink>
+                <entryLink id="96f9-c03c-52e5-6cca" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3076,27 +3056,7 @@ special rule.</description>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="74c9-413f-760c-39da" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="c310-4c46-7dd6-f8bf" name="May take:" hidden="false" collective="false" import="true">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e41-542a-6ca7-7761" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="de00-3f62-a9a9-ed45" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
-                          </costs>
-                        </entryLink>
-                        <entryLink id="7fb6-cbf3-355e-611b" name="Chain Bayonet" hidden="false" collective="false" import="true" targetId="bd82-cef6-67f8-19b5" type="selectionEntry">
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                </entryLink>
+                <entryLink id="74c9-413f-760c-39da" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
                 <entryLink id="55b8-ab05-454e-a2e2" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -3159,6 +3119,30 @@ special rule.</description>
           <entryLinks>
             <entryLink id="c362-6e92-0e32-efff" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
             <entryLink id="7121-772b-89a9-f772" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7f47-e4dd-75c0-84ef" name="Any model with a Bolter may take:" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="increment" field="e1a2-7cbd-f918-57d1" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="a9b5-ef4c-31db-4104" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ade-0c02-5612-252b" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1a2-7cbd-f918-57d1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a78f-670c-48db-451b" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b7c3-75e5-7d1d-64fc" name="Chain Bayonet" hidden="false" collective="false" import="true" targetId="bd82-cef6-67f8-19b5" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
