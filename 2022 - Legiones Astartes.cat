@@ -14390,8 +14390,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="16da-3b9e-d257-591a" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry"/>
-                <entryLink id="a4dc-f5a4-399d-b937" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry"/>
+                <entryLink id="16da-3b9e-d257-591a" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a4dc-f5a4-399d-b937" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="c363-1c4d-6ea1-e5d6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="ded9-9fa6-bbba-100e" name="Chainsword" hidden="false" collective="false" import="true" targetId="eb13-c744-eba0-77be" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
@@ -14417,7 +14425,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="b00e-a624-b284-f482" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry"/>
+                <entryLink id="b00e-a624-b284-f482" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="b472-0a94-32f2-68fe" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
@@ -14791,7 +14803,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="5a5c-d6c5-0407-b7ca" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry"/>
+                    <entryLink id="5a5c-d6c5-0407-b7ca" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -14846,6 +14862,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup id="6a4b-5547-21e5-f62a" name="1) Heavy/Special Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="9907-9a12-9cdb-d4f7">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bd0-9ccb-1b4d-df79" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f22f-5dc7-7841-012a" type="min"/>
+                  </constraints>
                   <entryLinks>
                     <entryLink id="9907-9a12-9cdb-d4f7" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
                       <costs>
@@ -14902,12 +14922,12 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="6c6e-2287-2230-166b" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="efae-cd0d-a9f1-8be4" type="selectionEntry">
+                    <entryLink id="6c6e-2287-2230-166b" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="4fa7-7715-385f-6e2d" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="4e1e-d48b-0f56-b474" type="selectionEntry">
+                    <entryLink id="4fa7-7715-385f-6e2d" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                       </costs>
@@ -14920,7 +14940,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                           </conditions>
                         </modifier>
                         <modifier type="set" field="name" value="Missile Launcher (w/ frag, krak, flak, and stasis missiles)">
-                          <comment></comment>
                           <conditions>
                             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fae4-6429-a591-d82f" type="equalTo"/>
                           </conditions>
@@ -14951,6 +14970,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </entryLinks>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="317d-19b7-b7bc-9ecc" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="87c9-7a5d-0668-8e86" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -15095,8 +15124,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd43-1e02-fc4a-f7fe" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="4a56-b520-18b4-c37c" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry"/>
-                    <entryLink id="3f90-6fbe-8414-e549" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry"/>
+                    <entryLink id="4a56-b520-18b4-c37c" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="a6d2-b3a9-6d2c-1f6f" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3f90-6fbe-8414-e549" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="c363-1c4d-6ea1-e5d6" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="319d-27e3-b04d-8b35" name="2) Extra Melee Weapon:" hidden="false" collective="false" import="true">
@@ -15139,7 +15176,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="5b06-7832-971b-4d8c" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry"/>
+                    <entryLink id="5b06-7832-971b-4d8c" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="2376-af96-e101-e712" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -19674,7 +19715,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="4b0c-c736-9dae-bdde" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="efae-cd0d-a9f1-8be4" type="selectionEntry"/>
+            <entryLink id="4b0c-c736-9dae-bdde" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c130-44c2-8689-5be5" name="3) One Legionary may take:" hidden="false" collective="false" import="true">
@@ -19797,22 +19838,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4e1e-d48b-0f56-b474" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="4f94-3844-bde4-694d" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="3aae-b65d-3dbc-6f2e" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="efae-cd0d-a9f1-8be4" name="Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink id="c05d-471a-f429-5fb3" name="Heavy Flamer (all)" hidden="false" collective="false" import="true" targetId="f707-d86b-f862-003a" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="36a7-1c39-670c-5fec" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -24551,12 +24576,27 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89bb-5243-5d9e-f7c6" type="min"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="1be7-81be-a0db-4aed" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="efae-cd0d-a9f1-8be4" type="selectionEntry">
+                    <entryLink id="1be7-81be-a0db-4aed" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
                     <entryLink id="071c-4152-16e2-28e7" name="Proteus assault cannon" hidden="false" collective="false" import="true" targetId="da1a-85ed-813f-829a" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="c139-f6f1-a739-600a" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3dba-1ba8-57a7-4468" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="2f20-7b8b-b3bd-0f5b" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                       </costs>
@@ -25907,21 +25947,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ab6f-9089-b5a1-f345" name="One Legion Spatha attack bike may take:" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4234-91db-19dc-a279" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="aeda-fe87-5b0f-7001" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3bd-9cce-6d91-0477" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="cc7e-d36d-d4ee-25ee" name="1) Spatha Combat Bike Weaponry." hidden="false" collective="false" import="true" defaultSelectionEntryId="da06-7115-9200-c8b0">
@@ -25943,8 +25968,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8386-7110-6341-04e6" type="min"/>
           </constraints>
           <entryLinks>
-            <entryLink id="ea58-34cc-521a-b079" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
-            <entryLink id="da06-7115-9200-c8b0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="4e1e-d48b-0f56-b474" type="selectionEntry"/>
+            <entryLink id="ea58-34cc-521a-b079" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="da06-7115-9200-c8b0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="4d72-1cc1-8bee-aa88" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975e-14eb-caed-4b5b" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="f7bc-6a0b-b856-0611" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -25955,6 +25992,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
               </costs>
             </entryLink>
+            <entryLink id="f74a-5170-5a72-22a2" name="Shrapnel Cannon" hidden="false" collective="false" import="true" targetId="975e-14eb-caed-4b5b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3c0f-883a-0088-f61e" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry"/>
+            <entryLink id="5933-0e86-c10f-5f07" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
+            <entryLink id="4dec-b767-c96b-fdbb" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="ba75-6e7b-fc74-f866" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
@@ -26002,6 +26047,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <entryLink id="6390-0fd0-15ae-4b31" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="733d-ad62-625a-e413" name="One Legion Spatha attack bike may take:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="1674-c173-085e-c790" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12ce-8c05-7f4d-4a0e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -29422,7 +29479,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="55ff-15aa-670a-ac45" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="efae-cd0d-a9f1-8be4" type="selectionEntry">
+                <entryLink id="55ff-15aa-670a-ac45" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
@@ -29555,6 +29612,14 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                   <modifiers>
                     <modifier type="set" field="name" value="Hull (Front) Mounted Shrapnel Cannon"/>
                   </modifiers>
+                </entryLink>
+                <entryLink id="0c7d-67ce-ac99-c83c" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Iliastus Assault Cannon"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -34785,6 +34850,28 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="c363-1c4d-6ea1-e5d6" name="Pair of Raven&apos;s Talons" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="0ff3-04fc-7d33-1c76" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="2e88-50a2-a108-5a41" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="4979-1f37-1808-403a" name="Raven&apos;s Talons" hidden="false" targetId="05e6-0ba3-9b32-b77e" type="profile"/>
+        <infoLink id="5082-a08b-aa77-e541" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -36598,7 +36685,8 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3aae-b65d-3dbc-6f2e" name="Heavy Bolter (all)" hidden="false" collective="false" import="true" defaultSelectionEntryId="d15a-4432-a97a-64df">
+    <selectionEntryGroup id="3aae-b65d-3dbc-6f2e" name="Heavy Bolter (all)" hidden="true" collective="false" import="true" defaultSelectionEntryId="d15a-4432-a97a-64df">
+      <comment>This is just so people know what should go where; anything with a Heavy Bolter can swap for these.</comment>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1347-d456-97ca-d810" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2257-9147-b0a6-e571" type="min"/>
@@ -36611,22 +36699,6 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
         </entryLink>
         <entryLink id="c285-ac00-9a37-f820" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
         <entryLink id="d15a-4432-a97a-64df" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="f707-d86b-f862-003a" name="Heavy Flamer (all)" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7a4-9714-d7c2-d571">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2a0-1521-947f-9966" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbe0-f0a0-5572-d4cc" type="min"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="d4fa-df71-1ca0-2eb2" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry"/>
-        <entryLink id="bee5-e016-18c2-890e" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
-        <entryLink id="f4b8-724b-5e4d-1f2e" name="Iliastus Asssult Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="b7a4-9714-d7c2-d571" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="bd1f-b4a4-3517-31e4" name="Power Weapon (Basic)" hidden="false" collective="false" import="true">
@@ -36779,7 +36851,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="72ca-f414-b854-9bc6" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="efae-cd0d-a9f1-8be4" type="selectionEntry">
+            <entryLink id="72ca-f414-b854-9bc6" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
               <modifiers>
                 <modifier type="append" field="name" value="(twin-linked)"/>
               </modifiers>
@@ -36788,6 +36860,39 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7a46-f01f-58a8-8cb2" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="(twin-linked)"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="11d3-0f1a-61a4-0c14" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="c7b7-f69b-9d8b-6d95" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="(twin-linked)"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="bec3-d48c-c329-9740" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="9658-ecf0-b951-4c77" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+              <modifiers>
+                <modifier type="append" field="name" value="(twin-linked)"/>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="0ed8-3084-affb-0d18" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -37133,6 +37238,23 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="1fc7-5784-1078-69af" name="Heavy Flamer (all)" hidden="true" collective="false" import="true">
+      <comment>This is just so people know what should go where; anything with a Heavy Flamer can swap for these.</comment>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="428b-2541-4e9a-9423" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d521-2662-004e-c410" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="902c-3bd6-ab57-3c04" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry"/>
+        <entryLink id="8f49-1a6d-13b5-4664" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry"/>
+        <entryLink id="afc0-f87c-e10c-58e8" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="35b6-c0b4-2129-0b40" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
