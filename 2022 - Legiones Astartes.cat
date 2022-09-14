@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="43" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="43" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -9677,9 +9677,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0759-a4bb-a15b-7cef" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="57ee-1126-32a9-5672" value="4">
+                <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
                   <conditions>
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3125-5faa-cb08-e4ec" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="f111-2ce5-dd12-d6b0" value="1">
+                  <conditions>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93af-e204-255b-b095" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10155,6 +10160,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="6dc7-e136-c868-dc1d" name="Berserker" hidden="true" collective="false" import="true" targetId="93af-e204-255b-b095" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8f1c-19e3-51c3-6ed6" name="5) Armor Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="102d-3f7d-958d-f5d7">
@@ -10283,6 +10297,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Heavy, Character, Skirmish)">
                   <conditions>
                     <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0759-a4bb-a15b-7cef" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="f111-2ce5-dd12-d6b0" value="1">
+                  <conditions>
+                    <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93af-e204-255b-b095" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10417,6 +10436,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="d96d-47fb-1117-902b" name="Berserker" hidden="true" collective="false" import="true" targetId="93af-e204-255b-b095" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -10494,6 +10522,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Skirmish)">
                   <conditions>
                     <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0759-a4bb-a15b-7cef" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="f111-2ce5-dd12-d6b0" value="1">
+                  <conditions>
+                    <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93af-e204-255b-b095" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10624,6 +10657,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="590f-818e-348d-4a4e" name="Berserker" hidden="true" collective="false" import="true" targetId="93af-e204-255b-b095" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -10889,6 +10931,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <modifier type="set" field="57ee-1126-32a9-5672" value="3">
                   <conditions>
                     <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3125-5faa-cb08-e4ec" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="f111-2ce5-dd12-d6b0" value="1">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93af-e204-255b-b095" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -11656,6 +11703,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="f743-6785-dfa6-d7c7" name="Berserker" hidden="false" collective="false" import="true" targetId="93af-e204-255b-b095" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -16938,6 +17000,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1c4-f1e2-2f66-6d38" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="f111-2ce5-dd12-d6b0" value="1">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93af-e204-255b-b095" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character)</characteristic>
@@ -17197,6 +17264,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="2143-394a-205e-8e9a" name="Berserker" hidden="false" collective="false" import="true" targetId="93af-e204-255b-b095" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                            <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -19937,7 +20019,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <profiles>
             <profile id="7d35-2180-6b99-7396" name="Legion Tartaros Centurion" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <modifiers>
-                <modifier type="set" field="cc42-7ed5-7092-5c84" value="6">
+                <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -19979,6 +20061,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Skirmish)">
                   <conditions>
                     <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b1c4-f1e2-2f66-6d38" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="f111-2ce5-dd12-d6b0" value="1">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93af-e204-255b-b095" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -20240,6 +20327,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="177f-ff00-9d1c-5cbe" name="Berserker" hidden="false" collective="false" import="true" targetId="93af-e204-255b-b095" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -24230,7 +24332,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a775-1df4-df1c-1c7d" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="5092-4226-8e27-28dc" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+                <entryLink id="5092-4226-8e27-28dc" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="deea-102f-8fbe-e2e5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="975e-14eb-caed-4b5b" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
                 <entryLink id="6754-4f19-8546-4d19" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
                 <entryLink id="f03d-3b2c-06a5-85c1" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
                   <costs>
@@ -24251,6 +24361,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e67-d221-4914-dd7a" type="max"/>
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e78-cc66-d161-32dc" type="min"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -24285,9 +24398,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </constraints>
             </entryLink>
             <entryLink id="57c5-717b-87e8-b29c" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
-              </costs>
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -38502,6 +38619,24 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="93af-e204-255b-b095" name="Berserker" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f756-af03-d0b0-789d" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="ebd8-7d66-bd74-8c0c" name="Ravening Madmen" hidden="false" targetId="1864-f270-d462-ecb5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
