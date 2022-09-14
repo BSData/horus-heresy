@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="42" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="43" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -28238,83 +28238,170 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="124f-0ced-9231-bba4" name="Tarantula Sentry Gun Battery" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntries>
-        <selectionEntry id="97a1-db56-eb44-5fc3" name="Tarantula Sentry Guns" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="124f-0ced-9231-bba4" name="Tarantula Sentry Gun Battery" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="bc9a-a8db-6452-5063" name="Automated Artillery Sub-type" hidden="false" targetId="c036-66e2-4e07-c2b8" type="rule"/>
+        <infoLink id="9afa-cfc0-dc04-767c" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (4)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="126f-c78f-2f94-0bdd" name="Sentry Protocols" hidden="false" targetId="97aa-da60-3ccc-7152" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d336-17f0-8acd-e800" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2d6c-d5b2-c713-2f69" name="All Tarantula Sentry Guns in the unit may take:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="28f7-e08a-07ec-5ff4" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f016-60b8-a3ef-4590" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5665-f511-809b-7f8b" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="3417-5053-6208-5700" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c7e4-02f9-b2d1-d47d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cf1-5b62-da32-16f7" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d0e2-561d-728f-50c3" name=" Tarantula Sentry Guns" hidden="false" collective="false" import="true" defaultSelectionEntryId="da1a-43e7-8cd4-e540">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8bd-2125-0aa8-c778" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d06-6814-e339-b816" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a0-e438-76e3-11dc" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cece-9a2e-79ae-d03d" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="9e7d-2c6b-2c75-c608" name="Tarantula Sentry Guns" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e"> Infantry (Automated Artillery)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="cac3-3360-7929-5d7e" name="Sentry Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e37-f521-7785-b2ab">
-              <infoLinks>
-                <infoLink id="6e06-e04b-586c-1684" name="Automated Artillery Sub-type" hidden="false" targetId="c036-66e2-4e07-c2b8" type="rule"/>
-                <infoLink id="cb2e-9489-43bb-8ba7" name="Sentry Protocols" hidden="false" targetId="97aa-da60-3ccc-7152" type="rule"/>
-              </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="da1a-43e7-8cd4-e540" name="Tarantula w/Heavy Bolters" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ed8-ee55-7d65-322d" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="633b-ed59-22a7-663d" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e"> Infantry (Automated Artillery)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="2a44-cc97-3235-4b8b" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
               <entryLinks>
-                <entryLink id="9e37-f521-7785-b2ab" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+                <entryLink id="333d-83c0-78f2-d61f" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="6024-6953-b8f4-ce63" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="2x Heavy Bolters"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2424-7f9d-274f-1c26" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68ce-b416-1f1e-ec31" type="min"/>
+                  </constraints>
                 </entryLink>
-                <entryLink id="698d-6bde-16bb-4e97" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2708-d71b-c816-faa4" name="Tarantula w/Lascannons" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4655-8a7c-3459-744b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fffb-1df3-8e2e-73b6" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e"> Infantry (Automated Artillery)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="09dc-9427-6c58-5a7e" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <entryLinks>
+                <entryLink id="77a1-0831-d420-0699" name="Lascannon" hidden="false" collective="false" import="true" targetId="8621-4e12-b3d2-116f" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="2x Lascannons"/>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e942-c243-d650-8f66" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74b8-c978-9545-a77b" type="min"/>
+                  </constraints>
                 </entryLink>
-                <entryLink id="27be-5b51-8472-ba90" name="Hyperios Missile Launcher" hidden="false" collective="false" import="true" targetId="9346-19d2-3fa3-ad2a" type="selectionEntry"/>
               </entryLinks>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="7cdd-8204-16e8-7ef7" name="May take:" hidden="false" collective="false" import="true">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3f9d-5f61-5362-cc4b" name="Tarantula w/Hyperios Missile Launcher" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3553-bbd8-7f10-f1cd" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="c6d4-398c-7efc-5372" name="Tarantula Sentry Gun" publicationId="d0df-7166-5cd3-89fd" page="16" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e"> Infantry (Automated Artillery)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="97dc-4f30-fb2c-fac1" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
               <entryLinks>
-                <entryLink id="68c5-ed93-daf3-8747" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+                <entryLink id="a6b4-5038-0850-7827" name="Hyperios Missile Launcher" hidden="false" collective="false" import="true" targetId="9346-19d2-3fa3-ad2a" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ec6-694a-87b3-1b8d" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee67-c128-309c-d934" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5848-aea1-e399-894a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fb1-772b-8a20-ef5f" type="min"/>
                   </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="19b6-2d4d-42e9-42a1" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5b3-1cc2-29ee-5a54" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0c9e-0ddb-9483-8ec2" type="min"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
                 </entryLink>
               </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9346-19d2-3fa3-ad2a" name="Hyperios Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9346-19d2-3fa3-ad2a" name="Hyperios Missile Launcher" hidden="false" collective="true" import="true" type="upgrade">
       <profiles>
         <profile id="5d95-c9c7-6850-162d" name="Hyperios Missile Launcher" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -34848,6 +34935,39 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8621-4e12-b3d2-116f" name="Lascannon" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="44d1-e628-b336-bcc7" name="Lascannon" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="97d9-2851-ef48-10d5" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6024-6953-b8f4-ce63" name="Heavy Bolter" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="9a57-f51e-3629-c00e" name="Heavy Bolter" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c363-1c4d-6ea1-e5d6" name="Pair of Raven&apos;s Talons" hidden="true" collective="false" import="true" type="upgrade">
