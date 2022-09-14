@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c01b-0224-f806-0d23" name="2022 - Titan Legions" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c01b-0224-f806-0d23" name="2022 - Titan Legions" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="aebe-bed9-b32f-a8ea" name="Titan Maniple" hidden="false">
       <categoryLinks>
@@ -25,6 +25,11 @@
           <constraints>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9657-b309-85f1-3a34" type="max"/>
             <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d51d-0b0c-e7f2-da44" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2717-b5f0-3a34-a731" name="Titan Legion Min Troop/LoW" hidden="false" targetId="4086-0589-f010-e688" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d5-a398-a21f-aa97" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -65,8 +70,8 @@
     </entryLink>
     <entryLink id="fc74-4887-4a56-b156" name="Secutarii Axiarch" hidden="false" collective="false" import="false" targetId="b08e-55fe-3e1d-913b" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="20c9-4414-e920-bb1d" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="1bbb-eefa-3c7a-a644" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="38b9-d50b-cb5c-3f9d" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="08fe-a1c3-8026-bb5b" name="Secutarii Hoplite Phalanx" hidden="false" collective="false" import="false" targetId="f4cc-a854-5467-45cf" type="selectionEntry">
