@@ -831,7 +831,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65d8-0392-0de1-6820" type="max"/>
       </constraints>
       <profiles>
-        <profile id="e9c4-70b0-428e-2d3e" name="Vulkan" publicationId="817a-6288-e016-7469" page="314" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+        <profile id="e9c4-70b0-428e-2d3e" name="Vulkan" publicationId="817a-6288-e016-7469" page="314" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -853,13 +853,11 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="f67d-64fb-108b-4425" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
         <infoLink id="9855-2de1-1749-7fe0" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="It Will Not Die (4+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="9f64-1d6f-3b6e-9d87" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="97f1-63ad-b403-6ae7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -896,8 +894,8 @@
         </selectionEntry>
         <selectionEntry id="0b0a-6d48-9513-fbbf" name="The Furnace&apos;s Heart" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bb1-578b-e0fe-e04a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dc0-9e4f-f81d-55ce" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c3f-97f7-be13-09de" type="max"/>
           </constraints>
           <profiles>
             <profile id="3a16-fd7b-1980-53c2" name="The Furnace&apos;s Heart" publicationId="817a-6288-e016-7469" page="315" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -939,12 +937,21 @@
         <entryLink id="ee55-740f-5176-67e0" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c782-6733-4ebc-a5bb" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ace-2e5f-cd90-f745" type="min"/>
           </constraints>
-          <rules>
-            <rule id="628e-7441-423f-f7f7" name="Warlord: Sire of the Salamanders" publicationId="817a-6288-e016-7469" page="314" hidden="false">
-              <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) special rule in the same army as Vulkan gain the Stubborn special rule. In addition, an army with Vulkan as its Warlord gains an additional Reaction in the opposing player&apos;s Shooting phase as long as Vulkan has not been removed as a casualty.</description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile id="ae6c-bdeb-868e-698b" name="Sire of the Salamanders" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) special rule in the same army as Vulkan gain the Stubborn special rule. In addition, an army with Vulkan as its Warlord gains an additional Reaction in the opposing player&apos;s Shooting phase as long as Vulkan has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+        <entryLink id="9729-c225-9b38-e741" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ca3-c8b5-982e-c8ff" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22be-1ff5-91c7-8d7d" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -976,7 +983,7 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb78-1203-8b64-cf3c" type="min"/>
           </constraints>
           <profiles>
-            <profile id="43f3-26bc-ec9d-40af" name="Pyroclasts" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="43f3-26bc-ec9d-40af" name="Pyroclasts" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -1002,7 +1009,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75c0-5a2c-caf0-1a48" type="min"/>
           </constraints>
           <profiles>
-            <profile id="73e1-2cf6-ef77-011d" name="Pyroclast Warden" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="73e1-2cf6-ef77-011d" name="Pyroclast Warden" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -1188,7 +1195,7 @@
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dee5-edd6-5dd8-237a" type="min"/>
           </constraints>
           <profiles>
-            <profile id="906d-a6e2-3a9d-06cb" name="Firedrake" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="906d-a6e2-3a9d-06cb" name="Firedrake" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
@@ -1294,7 +1301,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd7b-4588-ade8-b5ac" type="min"/>
           </constraints>
           <profiles>
-            <profile id="6d1a-2120-51a7-406c" name="Firedrake Master" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="6d1a-2120-51a7-406c" name="Firedrake Master" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
@@ -1442,7 +1449,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="05bb-a7ee-45fa-877a" type="max"/>
       </constraints>
       <profiles>
-        <profile id="03c1-b57e-9f00-23a6" name="Cassian Dracos Reborn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+        <profile id="03c1-b57e-9f00-23a6" name="Cassian Dracos Reborn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Heavy, Unique)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
@@ -1473,7 +1480,6 @@
       </rules>
       <infoLinks>
         <infoLink id="61e5-b6c9-2ba2-c317" name="Ferromantic Deflector" hidden="false" targetId="7884-e18a-16ee-068c" type="profile"/>
-        <infoLink id="f519-be14-82e4-042f" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5331-cf6a-8ca6-dc20" name="Dreadnought Unit-type:" hidden="false" targetId="4280-4963-02b5-e31d" primary="true"/>
@@ -1540,7 +1546,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="918e-d896-4cbf-4b53" type="max"/>
       </constraints>
       <profiles>
-        <profile id="4307-c42a-fc2f-5651" name="Lord Chaplain Nomus Rhy&apos;Tan" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+        <profile id="4307-c42a-fc2f-5651" name="Lord Chaplain Nomus Rhy&apos;Tan" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -1557,7 +1563,6 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="5cd8-9002-a68a-7198" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
         <infoLink id="61ab-fc87-edda-aab7" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="4c76-c529-12b4-d083" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="af12-4093-15a8-1270" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
@@ -1650,6 +1655,12 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2184-eed5-4497-8364" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="5bbc-3c8d-025b-4a37" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42a0-d2cd-f14e-78a3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a013-8f9e-9e53-f47d" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215.0"/>
@@ -1660,7 +1671,7 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad8d-9fdb-7550-1d9d" type="max"/>
       </constraints>
       <profiles>
-        <profile id="cb39-0702-a198-6f3a" name="Xiaphas Jurr" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+        <profile id="cb39-0702-a198-6f3a" name="Xiaphas Jurr" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -1675,12 +1686,12 @@
             <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
+        <profile id="c78b-a45b-7ff4-f6f4" name="Prophet of the Flame" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="0982-427b-1d4a-d07c">Xiaphas Jurr has the Pyromancy discipline but counts as having Leadership 7 for the purposes of making Psychic checks.</characteristic>
+          </characteristics>
+        </profile>
       </profiles>
-      <rules>
-        <rule id="903d-5066-fcd4-6646" name="Prophet of the Flame" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false">
-          <description>Xiaphas Jurr has the Pyromancy discipline but counts as having Leadership 7 for the purposes of making Psychic checks.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="3180-2202-fd13-8a8a" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="4460-a5a9-4d10-ecb4" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
@@ -1770,11 +1781,13 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a43c-4dd6-0187-b9ed" type="max"/>
           </constraints>
-          <rules>
-            <rule id="ce14-6a37-9500-4a7b" name="Warlord: Beacon of Hope" hidden="false">
-              <description>As long as Xiaphas Jurr has not been removed from play, is in Reserve or Embarked upon a model with the Transport Sub-type, a single friendly unit comprised of models with the Legiones Astartes (Salamanders) special rules may choose to use Xiaphas Jurr’s unmodified Leadership value instead of their own, when making a Morale check or Pinning test in any turn.</description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile id="9609-d25d-0456-a8cf" name="Beacon of Hope" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">As long as Xiaphas Jurr has not been removed from play, is in Reserve or Embarked upon a model with the Transport Sub-type, a single friendly unit comprised of models with the Legiones Astartes (Salamanders) special rules may choose to use Xiaphas Jurr’s unmodified Leadership value instead of their own, when making a Morale check or Pinning test in any turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
       <costs>
