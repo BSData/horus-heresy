@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -835,7 +835,13 @@
     </entryLink>
     <entryLink id="9d6f-9f11-1095-5ab8" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="true" targetId="7669-a6c0-7f86-e641" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="8046-4d50-ccbe-b09e" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
+        <categoryLink id="de3d-153c-8b6a-ee1b" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="c965-8eea-54a5-dbbe" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bf98-3ce4-bbae-27f4" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="true" targetId="7669-a6c0-7f86-e641" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b426-11a9-a374-dc73" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -857,7 +863,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f64-f31e-4308-e6a4" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c52c-95f8-5247-dbe5" name="Calas Typhon" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="c52c-95f8-5247-dbe5" name="Calas Typhon" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character, Unique, Psyker)
 </characteristic>
@@ -1047,13 +1053,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7427-bdfa-c359-ebb8" name="Mortarion" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="031f-3c06-53e7-0ee3" type="max"/>
       </constraints>
@@ -1064,7 +1063,7 @@
       <selectionEntries>
         <selectionEntry id="4106-fc7b-3756-ae9a" name="Mortarion" hidden="false" collective="false" import="true" type="model">
           <profiles>
-            <profile id="b27d-c9d8-fa58-207a" name="Mortarion" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="b27d-c9d8-fa58-207a" name="Mortarion" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -1212,6 +1211,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
         <entryLink id="f100-5ea6-0653-7bb7" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a5b-701f-bf05-2c14" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2c2-191a-1362-b9a4" type="min"/>
           </constraints>
           <profiles>
             <profile id="4f47-b860-15fb-4ff7" name="Sire of the Death Guard" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
@@ -1244,7 +1244,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <constraint field="selections" scope="parent" value="14.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f390-efb2-81f3-b2cf" type="max"/>
           </constraints>
           <profiles>
-            <profile id="02a9-59ef-1da4-2f90" name="Mortus Poisoner" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="02a9-59ef-1da4-2f90" name="Mortus Poisoner" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -1270,7 +1270,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d70e-45fd-ef9e-3bc0" type="max"/>
           </constraints>
           <profiles>
-            <profile id="50b3-6803-e865-8605" name="Poison-master" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="50b3-6803-e865-8605" name="Poison-master" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <modifiers>
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
@@ -1552,7 +1552,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a5-ed23-c039-0954" type="max"/>
           </constraints>
           <profiles>
-            <profile id="04f4-5254-1797-cff3" name="Chem-master" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="04f4-5254-1797-cff3" name="Chem-master" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
@@ -1667,7 +1667,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e5e-8e3e-fc6d-d924" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3bd5-9c83-fb86-f6a7" name="Grave Warden" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="3bd5-9c83-fb86-f6a7" name="Grave Warden" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
@@ -1760,7 +1760,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f47c-aed4-2beb-6417" type="max"/>
       </constraints>
       <profiles>
-        <profile id="dd5e-f503-609a-2353" name="Crysos Morturg" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+        <profile id="dd5e-f503-609a-2353" name="Crysos Morturg" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique, Psyker, Heavy)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -1922,7 +1922,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ecc-5681-8f65-1628" type="max"/>
       </constraints>
       <profiles>
-        <profile id="460f-7d2b-eaef-5abf" name="Marshal Durak Rask" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+        <profile id="460f-7d2b-eaef-5abf" name="Marshal Durak Rask" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique, Heavy)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -2078,7 +2078,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4e7c-0d36-b8ef-9b30" type="max"/>
           </constraints>
           <profiles>
-            <profile id="25f9-7e83-0a6d-51d1" name="Deathshroud" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="25f9-7e83-0a6d-51d1" name="Deathshroud" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -2234,66 +2234,9 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dfb2-b0f6-107f-1159" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0b5-480f-7385-ff75" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6088-2073-3138-1861" type="min"/>
       </constraints>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bc90-0aa8-57b0-e60a" name="    Generic Warlord Traits" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0c4-b7cc-e8b5-3861" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ca2e-8281-be3b-fa00" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2192-0f30-c982-0fd9" name="Stoic Defender" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1d6b-8500-6a5b-0e55" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da0f-2c1b-cb91-a95e" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="99dd-082b-da1d-5229" name="Stoic Defender" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord or any friendly unit joined by a Warlord with this Trait makes a Shooting attack, the target unit must make a Pinning test if it suffers any unsaved Wounds. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="1560-7d62-e747-041e" name="Ever-vigilant" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8041-1a0f-a6e2-092a" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b9b-d41c-ba4d-cd2e" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c0ef-0ba8-58d5-2580" name="Ever-vigilant" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord, and any unit it has joined, Runs during the Movement phase, it adds the value of the Warlord’s Initiative Characteristic, increased by 1, to the distance moved, rather than the lowest Initiative Characteristic in the unit. In addition, an army whose Warlord has this Trait may make an additional Reaction during their  opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ef0c-09f2-cd3e-45dd" name="Bloody-handed" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ba3-48ce-781d-d4c2" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5590-d28b-3e49-9f79" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7537-6f41-d3ce-972c" name="Bloody-handed" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any combat with at least one friendly model within 12&quot; of this Warlord, or a combat which includes this Warlord, gains a bonus of +1 to the number of Wounds caused for the purposes of combat resolution. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
         <selectionEntryGroup id="9207-442b-b932-4e2f" name=" XIV: Death Guard" publicationId="09c5-eeae-f398-b653" page="234" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -2304,7 +2247,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="57b4-dc58-2717-a7ee" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="20e2-c085-3013-a541" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b92-9836-7b04-3648" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="4b55-f3ef-3b53-9a94" name="The Reaper’s Visage (Traitor only)" publicationId="09c5-eeae-f398-b653" page="234" hidden="false" collective="false" import="true" type="upgrade">
@@ -2366,6 +2309,9 @@ Any enemy unit with at least one model within 12&quot; of a Warlord with this Tr
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="7890-e1c6-2bc7-dfdf" name="    Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

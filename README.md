@@ -53,6 +53,12 @@ This allows us to get an accurate model count and keeps everything consistent
 * Liber Astartes
 * Liber Hereticus
 * "Both Astartes Army books" refers to the first section of both of the above books, as they are identical
+* Libre Mechanicum
+* Exemplary Battles in the Age of Darkness: The Scouring of Gilden's Star - https://www.warhammer-community.com/wp-content/uploads/2022/06/TLbrp4me5GEfL37Q.pdf
+* Legacies of The Age of Darkness - https://www.warhammer-community.com/wp-content/uploads/2022/07/iazzsaaE4LtT5jQk.pdf
+* Exemplary Battles Unit Update - https://www.warhammer-community.com/wp-content/uploads/2022/07/LCsIqZpsSaQaS5he.pdf
+* Ka'bandha Rules - https://www.warhammer-community.com/wp-content/uploads/2022/07/4uwEurgnIRQCzWHE.pdf
+* Exemplary Battles in the Age of Darkness: The Battle ofTrisolian: Vengeful Spirit - https://www.warhammer-community.com/wp-content/uploads/2022/07/6i9CeSwKmbWmzac4.pdf
 
 ### For 1.0
 

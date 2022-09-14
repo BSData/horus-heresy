@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="20" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="20" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <infoLinks>
@@ -997,31 +997,43 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius (PLACEHOLDER)" hidden="false" collective="false" import="true" type="model">
+      <comment> (WEAPONS NEED PROFILES)</comment>
       <profiles>
-        <profile id="3679-27a6-38ce-1715" name="Sanguinius" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="3679-27a6-38ce-1715" name="Sanguinius" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="384a-287a-50ae-ba39" name="Angelic Presence" hidden="false"/>
-        <rule id="1703-b985-b67c-004c" name="Great Wings" hidden="false"/>
+        <rule id="384a-287a-50ae-ba39" name="Angelic Presence" hidden="false">
+          <description>Any friendly units that are locked in combat and have at least one model within 6&quot; of Sanguinius, as well as Sanguinius and any unit he has joined, may add +1 to the total number of successful Wounds caused for the purposes of resolving which side has won a combat (this does not stack with any other rules that increase the
+Assault result).</description>
+        </rule>
+        <rule id="1703-b985-b67c-004c" name="Great Wings" hidden="false">
+          <description>At the start of the controlling player’s Movement phase, or when deployed as part of a Deep Strike Assault, Sanguinius’ Movement Characteristic may be set to a value of 14 for the duration of the controlling player’s turn (referred to as ‘activating’ this special rule). This allows Sanguinius to move up to 14&quot;, regardless of the Movement Characteristic shown on his profile and gain any other benefits of a Movement Characteristic of 14 (including the bonus to Charge distance). In addition, Sanguinius may move over Impassable Terrain, vertical terrain or friendly and enemy models or units without penalty while using this special rule, but may not end his movement in Impassable Terrain or within 1&quot; of any model from a unit Sanguinius is not part of. If Sanguinius ends or begins his movement or a Charge in Dangerous Terrain he must take a Dangerous Terrain test when employing this special rule, and treats all Difficult Terrain as Dangerous Terrain.
+Sanguinius may still Run on a turn when his wings have been activated. When making a Run move after having activated his wings, add Sanguinius’ Initiative Characteristic to 14 to determine how far he may move – ignoring terrain and other models while making a Run move with activated wings as noted above, but he may not make Shooting Attacks or declare a Charge in the same turn in which Sanguinius has Run as per the normal rules for Running. Sanguinius’ wings may not be activated to gain any bonus to Sanguinius’ Movement Characteristic during a Reaction.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="b1d6-f7af-626b-ae5f" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
-        <infoLink id="c6f2-ae8a-c22f-dd58" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
         <infoLink id="93b9-52c4-31ed-a8cd" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
-            <modifier type="append" field="name" value="6"/>
+            <modifier type="set" field="name" value="Bulky (6)"/>
           </modifiers>
         </infoLink>
         <infoLink id="aebf-6de7-429f-727c" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
-        <infoLink id="d9e5-ab63-1b47-26f5" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="eb7d-aff3-ce83-30e5" name="The Regalia Resplendant" hidden="false" collective="false" import="true" type="upgrade">
@@ -1030,12 +1042,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e23-269d-702b-35d2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="2af5-04fb-474b-9308" name="The Regalia Resplendant" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="2af5-04fb-474b-9308" name="The Regalia Resplendant" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Regalia Resplendent provides a 2+ Armour Save and a 4+ Invulnerable Save, and allows any failed Invulnerable Saves made on a turn in which Sanguinius Charges to be re-rolled.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1081,30 +1090,6 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="6322-1568-a1e6-0fa4" name="Sire of the Blood Angels" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="30ef-4cec-c31a-8f74" value="1.0">
-              <conditions>
-                <condition field="selections" scope="2c54-82c1-c1e4-3aee" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="2c54-82c1-c1e4-3aee" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30ef-4cec-c31a-8f74" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b7-7c79-4c3c-d435" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="6f4f-d437-6c7f-ab60" name="Warlord: Sire of the Blood Angels" hidden="false"/>
-          </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="2df4-a271-b4a1-7b49" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
@@ -1113,7 +1098,25 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48bf-f4b8-3d1e-24be" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="cbf3-f5d0-2786-65bc" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+        <entryLink id="cbf3-f5d0-2786-65bc" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f5b-13e7-367c-03fd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eeb-c50e-4b35-bd33" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="e25c-ffa8-50ef-91a8" name="Sire of the Blood Angels (PLACEHOLDER)" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+        <entryLink id="7a90-618d-b9a5-79f6" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ae-b69c-87e8-16ef" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d011-5fa4-3df8-75e0" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="485.0"/>
@@ -1250,7 +1253,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d87-9277-4db4-1e40" type="max"/>
           </constraints>
           <profiles>
-            <profile id="f374-1497-2b0b-70ce" name="Crimson Exemplar" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="f374-1497-2b0b-70ce" name="Crimson Exemplar" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -1346,7 +1349,7 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c57-b300-5bd2-65df" type="min"/>
           </constraints>
           <profiles>
-            <profile id="735c-55d6-860a-f857" name="Crimson Paladins" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="735c-55d6-860a-f857" name="Crimson Paladins" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -1645,13 +1648,11 @@
       <infoLinks>
         <infoLink id="287e-842f-fa00-9c37" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="9d73-b5f5-7d29-eba0" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
-        <infoLink id="83bc-e0f8-9dac-f64a" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
         <infoLink id="62fa-224a-16e8-75ff" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="2"/>
           </modifiers>
         </infoLink>
-        <infoLink id="ee41-9312-002f-a751" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="64a7-e7b9-b689-b20c" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -1698,9 +1699,6 @@
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc00-3563-f64e-a3c4" type="min"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a81a-4fbe-1646-d06d" type="max"/>
           </constraints>
-          <rules>
-            <rule id="fd98-41ac-2643-cd54" name="Warlord: Archein of Wisdom" hidden="false"/>
-          </rules>
           <selectionEntryGroups>
             <selectionEntryGroup id="22d0-70ac-8353-879a" name=" IX: Blood Angels" hidden="false" collective="false" import="true">
               <constraints>
@@ -2086,7 +2084,22 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
           </constraints>
         </entryLink>
         <entryLink id="808c-4860-ff66-9733" name="Retinue" hidden="false" collective="false" import="true" targetId="6307-ed53-0ac4-0212" type="selectionEntryGroup"/>
-        <entryLink id="9ca8-b3b2-7f0f-f37a" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+        <entryLink id="9ca8-b3b2-7f0f-f37a" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d34c-598e-511d-1eb4" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="fa48-4084-488b-fd92" name="Archein of Wisdom" hidden="false">
+              <description>If Chapter Master Raldoron is selected as the army’s Warlord then his Warlord Trait may be selected from the Core Warlord Traits or from any Legion specific Warlord Trait from any of the following Legions (counting as though Raldoron and all other models with the Legiones Astartes (Blood Angels) special rule in the same Detachment possesses the appropriate variant of the Legiones Astartes special rule, this does not grant them any of that variant’s rules or effects but only allows them to benefit from the effects of the selected Warlord Trait): White Scars, Imperial Fists, Space Wolves, Ultramarines, Iron Hands, Raven Guard and Salamanders. This does not include any Warlord Traits available only to specific named characters, or a Warlord Trait that requires the Traitor Allegiance may not be selected.</description>
+            </rule>
+          </rules>
+        </entryLink>
+        <entryLink id="ec11-34f3-2fc6-7d88" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6a0-7fc3-b7fe-9efd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73fa-9e12-ff7c-4a2c" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="180.0"/>
@@ -2110,14 +2123,12 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
       <infoLinks>
         <infoLink id="901c-bb1a-646c-6ea7" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
         <infoLink id="333e-456d-2400-6c40" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-        <infoLink id="e4c6-36d4-71ee-6a56" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
         <infoLink id="ead6-c3eb-3aac-157d" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
           <modifiers>
             <modifier type="append" field="name" value="1"/>
           </modifiers>
         </infoLink>
         <infoLink id="6e1c-b267-05c0-d4e2" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
-        <infoLink id="145e-e230-178e-15f4" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="31ae-7034-a2db-dc40" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -2125,7 +2136,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
         <categoryLink id="8059-18d2-a192-f6bd" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="cae6-5863-3f61-2a37" name="Lament and Grief" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cae6-5863-3f61-2a37" name="Lament and Grief (PLACEHOLDER)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9307-784d-3a06-6737" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2380-b744-1125-b0e5" type="min"/>
@@ -2144,7 +2155,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ac7a-84d8-03ec-117c" name="The Spiritum Sanguis" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ac7a-84d8-03ec-117c" name="The Spiritum Sanguis (PLACEHOLDER)" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3783-6d42-da4c-f291" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c7a-4ede-a1a7-457d" type="min"/>
@@ -2159,30 +2170,6 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
               </characteristics>
             </profile>
           </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="6947-3fb9-ddb6-4b6c" name="Exarch of the High Host" hidden="true" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="98d4-555a-6911-7c1a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="3f65-fb85-96f7-32a0" value="1.0">
-              <conditions>
-                <condition field="selections" scope="98d4-555a-6911-7c1a" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f65-fb85-96f7-32a0" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13a8-cf0e-2fcf-8607" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="2028-d920-0def-33e3" name="Exarch of the High Host" hidden="false"/>
-          </rules>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -2232,7 +2219,20 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
           </constraints>
         </entryLink>
         <entryLink id="e1a0-6845-0fd9-d859" name="Retinue" hidden="false" collective="false" import="true" targetId="6307-ed53-0ac4-0212" type="selectionEntryGroup"/>
-        <entryLink id="52fc-490d-5d9b-fd91" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+        <entryLink id="52fc-490d-5d9b-fd91" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="634c-4052-0407-e871" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="8d9e-78c0-a1f4-eb2c" name="Exarch of the High Host (PLACEHOLDER)" hidden="false"/>
+          </rules>
+        </entryLink>
+        <entryLink id="cd01-ba9c-0f0a-933e" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4837-d669-e84f-25b2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c266-63ba-79d2-ee5a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
@@ -2262,7 +2262,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b81-843d-f703-5f05" type="max"/>
           </constraints>
           <profiles>
-            <profile id="afe5-4d27-657e-f447" name="Arch-Erelim" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="afe5-4d27-657e-f447" name="Arch-Erelim" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -2497,7 +2497,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a59-4292-45ab-de3d" type="min"/>
           </constraints>
           <profiles>
-            <profile id="8355-50ba-838d-158e" name="Erelim" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="8355-50ba-838d-158e" name="Erelim" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -2647,7 +2647,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ee0-99ef-00dd-315c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="af35-5ccf-088e-e9b2" name="Dawnbreaker Champion" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="af35-5ccf-088e-e9b2" name="Dawnbreaker Champion" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -2761,7 +2761,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
           <selectionEntries>
             <selectionEntry id="6cc7-6e76-c402-7c2b" name="Dawnbreaker w/ Equinox Power Blade Case" hidden="false" collective="true" import="true" type="upgrade">
               <profiles>
-                <profile id="13ce-3207-bb2e-eaf0" name="Dawnbreaker" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                <profile id="13ce-3207-bb2e-eaf0" name="Dawnbreaker" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -2821,7 +2821,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             </selectionEntry>
             <selectionEntry id="c1fb-61b4-5212-ecfb" name="Dawnbreaker w/ Falling-Star Power Spear" hidden="false" collective="true" import="true" type="upgrade">
               <profiles>
-                <profile id="e7de-3ade-8f9a-9c0c" name="Dawnbreaker" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                <profile id="e7de-3ade-8f9a-9c0c" name="Dawnbreaker" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -3117,12 +3117,12 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d4e-a7a7-ed1e-714b" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8545-d13b-480b-69a2" type="min"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1405-b02e-bcf6-8ddc" type="max"/>
       </constraints>
       <selectionEntryGroups>
         <selectionEntryGroup id="d194-9ef1-942f-417d" name=" IX: Blood Angels" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d30f-595a-e373-1ad8" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0aca-6319-d08e-3e5d" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="2b52-0f19-a4f2-c9c4" name="Encarmine Paladin" hidden="false" collective="false" import="true" type="upgrade">
