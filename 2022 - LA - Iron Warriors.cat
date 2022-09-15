@@ -2396,7 +2396,7 @@
         <categoryLink id="2c06-dd4a-568c-f5f3" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9d1e-8246-4cef-5387" name="Dominators" hidden="false" collective="false" import="true" defaultSelectionEntryId="3285-cc6e-1b0f-15a9">
+        <selectionEntryGroup id="9d1e-8246-4cef-5387" name="1) Dominators" hidden="false" collective="false" import="true" defaultSelectionEntryId="3285-cc6e-1b0f-15a9">
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da1b-76a7-ebe9-d816" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e834-2b85-a95f-2244" type="min"/>
@@ -2541,6 +2541,21 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9940-d3c9-e304-42df" name="2) Dedicated Transport" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="1bfa-2413-beb9-5f32" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a876-9f23-c9c7-7d41" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0175-4999-cdb3-4218" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
