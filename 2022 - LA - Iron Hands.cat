@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="8" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="9" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="  X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <constraints>
@@ -39,21 +39,18 @@
       <categoryLinks>
         <categoryLink id="4352-3cd4-e3da-54fa" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="5628-344a-7f03-95bf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="a6cc-0043-82f4-20f4" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e1ce-d9b7-2ea1-760b" name="Medusan Immortal Squad" hidden="false" collective="false" import="false" targetId="f9e4-0da2-5049-df81" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="028c-19b9-ccdf-9229" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="3f2e-25c7-b685-51db" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="01ed-67ea-cdc1-b2e2" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="de83-37e7-9228-0b81" name="Gorgon Terminator Squad" hidden="false" collective="false" import="false" targetId="ea50-6315-7a52-f560" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="26b1-401b-c49d-a163" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="0ac3-4093-1c72-a6c2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="e78f-9b56-5432-ae85" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="acbb-d53d-6be7-eef8" name="Ferrus Manus" hidden="false" collective="false" import="false" targetId="554b-1024-a345-0d14" type="selectionEntry">
@@ -67,7 +64,6 @@
       <categoryLinks>
         <categoryLink id="84ec-691d-8d75-7998" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
         <categoryLink id="4198-15b1-372c-89c8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="cfaa-df97-506a-12e7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2dbc-c2bc-600f-0c06" name="Apothecarion Detachment" hidden="false" collective="false" import="false" targetId="81df-ffd4-a32b-b4a1" type="selectionEntry">
@@ -83,6 +79,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="75b9-a14d-71c6-c1c3" name="Assault Squad" hidden="false" collective="false" import="false" targetId="a8e9-70e1-b8bc-8ee2" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="531a-be7b-d57c-54bc" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="a743-76f5-596b-b2f4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -111,12 +119,23 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="1c2c-b39d-a574-e0c1" name="Bombard Sub-type:" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
         <categoryLink id="1b48-5870-0014-271a" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
-        <categoryLink id="4838-5f74-0a1c-bf9e" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="b204-d1e3-78bc-448e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ccd5-7195-3de9-39e4" name="Breacher Squad" hidden="false" collective="false" import="false" targetId="ad97-c090-fa67-696f" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0c09-eed2-c6ce-455f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="0116-7fce-ff42-fe7f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -239,7 +258,6 @@
     <entryLink id="441c-ddc8-3d17-9db6" name="Damocles Command Rhino" hidden="false" collective="false" import="false" targetId="e337-8239-5e92-7f5f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="f918-fd61-e41a-e9c0" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
-        <categoryLink id="5e9b-f6bd-5996-f08c" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="4e42-ca8c-97e0-6ea6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -256,6 +274,18 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="2395-c646-99b6-1777" name="Despoiler Squad" hidden="false" collective="false" import="false" targetId="4357-930e-165a-a6e3" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c780-1b7a-0929-5223" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="0366-c15a-ffdc-62de" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -271,29 +301,31 @@
     <entryLink id="19a2-1290-e7e5-8e08" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="false" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="417b-dbb5-bec6-e1f0" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
-        <categoryLink id="894b-25bd-7ae8-a300" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="f936-0064-b47d-0555" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="071e-77a5-ee6a-a920" name="Falchion" hidden="false" collective="false" import="false" targetId="1fe8-7386-9509-d2d8" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="7abd-e634-26fb-60a3" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="cc55-492f-0300-bd31" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7576-7c97-0d6f-0e29" name="Fellblade" hidden="false" collective="false" import="false" targetId="9c3c-f15a-9a1f-c0d0" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="2e4c-2f9a-b6c3-1443" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="9456-af88-1cb7-c951" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6f34-4910-1f0d-135d" name="Fire Raptor Gunship" hidden="false" collective="false" import="false" targetId="f6e1-24e2-fbdb-c5ef" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="b1eb-06fb-765d-08d3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="0293-1474-ec56-1264" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="abec-5c83-73e2-5418" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="68f5-4813-a2bd-e9aa" name="Glaive" hidden="false" collective="false" import="false" targetId="04e0-f69f-f759-b0b3" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ba17-bb90-131c-570a" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="2b60-d0f8-a4ac-43ce" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ad5a-8d7b-66ac-b648" name="Heavy Support Squad" hidden="false" collective="false" import="false" targetId="bac9-5389-e2e7-0b1f" type="selectionEntry">
@@ -360,7 +392,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="38eb-f183-e981-92d8" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
-        <categoryLink id="63d0-16c1-9888-1654" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="162b-4449-21f6-ff6f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="72a7-17b3-fff3-1c5a" name="Legion Banehammer" hidden="true" collective="false" import="false" targetId="1240-c71c-3a60-cf20" type="selectionEntry">
@@ -373,7 +405,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="77f7-6263-51a4-0ba6" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
-        <categoryLink id="e9cb-da42-1d3d-0f5e" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="cc9a-f0ce-ddf7-4b31" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d710-dc61-52f2-c32e" name="Legion Macharius Heavy Tank Squadron" hidden="false" collective="false" import="false" targetId="36ed-ca59-0d95-d85c" type="selectionEntry">
@@ -438,7 +470,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="f6e1-a675-3d27-e26f" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
-        <categoryLink id="1ddf-892f-0230-a11c" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="788b-d547-1eae-1d0f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8e2e-97f0-d89f-9855" name="Legion Stormlord" hidden="true" collective="false" import="false" targetId="0887-0f66-2c7e-a5ba" type="selectionEntry">
@@ -451,7 +483,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="1fc4-e84a-3234-08b3" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
-        <categoryLink id="c68a-87f8-3a26-6860" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="80b6-4b14-2f4f-f57a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f78e-acbe-e0ef-3f9a" name="Legion Stormsword" hidden="true" collective="false" import="false" targetId="8e67-8f84-730c-2778" type="selectionEntry">
@@ -464,7 +496,7 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="2fdf-1912-95e9-2a15" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
-        <categoryLink id="b899-0590-5110-bcb2" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="be83-2df4-f1c2-e45f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="798e-c8c7-1a7c-795a" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
@@ -476,6 +508,7 @@
     <entryLink id="163e-01af-2fd1-1c45" name="Mastodon" hidden="false" collective="false" import="false" targetId="7f24-2b72-9128-5330" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="087c-966b-e42a-22cd" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="371a-2b24-a9d6-1166" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1364-f4c8-53dc-2f0b" name="Medusa Squadron" hidden="true" collective="false" import="false" targetId="24c8-5f6a-d48a-27b7" type="selectionEntry">
@@ -487,9 +520,8 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="3f52-c6c6-4e49-fead" name="Bombard Sub-type:" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
         <categoryLink id="959d-19e4-ec90-7ec8" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
-        <categoryLink id="af04-903d-f121-0bf4" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="8bd9-79cd-330f-49e0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f1a5-3987-25ff-8129" name="Mortalis Destroyer Squad" hidden="false" collective="false" import="false" targetId="dbd4-930e-e003-9449" type="selectionEntry">
@@ -588,6 +620,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="eb63-a37e-895d-9a79" name="Reconnaissance Squad" hidden="false" collective="false" import="false" targetId="6db7-6e88-877e-35ca" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="5cc7-810b-0d3e-63dc" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="f6e0-5868-53b2-5d5e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -606,6 +645,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="477f-108c-303a-fc0b" name="Scout Squad" hidden="false" collective="false" import="false" targetId="9b10-b657-a65a-9d60" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="afdb-e293-67c7-4748" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="aaee-7ce8-137e-a5df" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -626,7 +672,6 @@
     <entryLink id="be5f-a69e-5831-c359" name="Sicaran Omega Squadron" hidden="false" collective="false" import="false" targetId="c88b-fe44-34a3-97e1" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="afd9-5c5c-db16-996f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="9ab6-4ab2-a05c-3730" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="7e8c-7024-3a84-4378" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
@@ -639,7 +684,6 @@
     <entryLink id="be5b-081f-76e6-2f75" name="Sicaran Squadron" hidden="false" collective="false" import="false" targetId="706a-9532-f06d-00ed" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fc36-b4d6-0bcd-4518" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="8f89-2b72-a5c0-f656" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="f681-f9b9-80e8-316a" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
@@ -658,6 +702,7 @@
     <entryLink id="4713-5110-f8f9-269e" name="Sokar Stormbird" hidden="false" collective="false" import="false" targetId="f403-630f-71ae-5a7d" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="ee31-00d9-9130-cce6" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="6350-3358-7460-b373" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="31e7-41bc-dac7-267c" name="Spatha Attack Bike Squadron" hidden="false" collective="false" import="false" targetId="4d72-1cc1-8bee-aa88" type="selectionEntry">
@@ -676,10 +721,22 @@
     <entryLink id="5944-cb4e-8d33-7d57" name="Storm Eagle Gunship" hidden="false" collective="false" import="false" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="dbbf-7484-4f53-9da7" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
-        <categoryLink id="562e-c292-ffe7-b3ba" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="b3bc-a9ec-3e00-79be" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="591d-7932-3aa6-5aaa" name="Tactical Squad" hidden="false" collective="false" import="false" targetId="aa72-63e4-bc60-4611" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9f8c-79f2-ce3f-2934" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="bcf3-01d8-1987-9cee" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -701,7 +758,6 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="bace-e3f9-545c-5856" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
         <categoryLink id="6b29-deb4-4c36-3517" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
         <categoryLink id="34c0-9279-1cb8-3620" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
@@ -729,14 +785,12 @@
       <categoryLinks>
         <categoryLink id="6441-874e-5580-ee68" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="4900-7ae1-3710-27fa" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="8aaf-45bf-4bae-ca60" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4882-f7c6-bb2a-1149" name="Terminator Tartaros Squad" hidden="false" collective="false" import="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="fecf-acab-f5c9-18e2" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="1c8a-b4be-4122-6e09" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="32ef-dbd8-1b17-20d1" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f50d-3ded-be21-4dfd" name="Thunderbolt Fighter" hidden="false" collective="false" import="false" targetId="5d24-1e9a-ad9d-95ca" type="selectionEntry">
@@ -755,6 +809,7 @@
     <entryLink id="6cc4-b71c-19d3-fbf9" name="Thunderhawk Gunship" hidden="false" collective="false" import="false" targetId="8754-3a4f-213b-bdc0" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="96a5-968a-66d4-b487" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="e156-5f36-9d0f-4a9a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0d04-7fb4-1b16-4e46" name="Tylos Rubio" hidden="false" collective="false" import="false" targetId="56bf-2c6d-a0fa-a145" type="selectionEntry">
@@ -798,14 +853,29 @@
       </modifiers>
       <categoryLinks>
         <categoryLink id="8722-856a-826c-84b3" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
-        <categoryLink id="5f64-ab72-5e81-c07a" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
-        <categoryLink id="f868-f851-e20d-aed2" name="Bombard Sub-type:" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
+        <categoryLink id="efaf-72c1-6376-af2f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="52be-3800-aa3f-3077" name="Xiphon Interceptor" hidden="false" collective="false" import="false" targetId="596b-5478-e079-59ab" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="0ffe-2e1c-a8bc-7023" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="2a69-e3df-9913-6f1b" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bcea-53b5-c7b1-4233" name="Seeker Squad" hidden="true" collective="false" import="false" targetId="58e6-f9cc-4c46-e258" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="b9e9-3d4a-f9e7-b8c6" name="Legiones Astartes (Iron Hands) " hidden="false" targetId="2e45-4b61-44fb-260b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7df1-c6fb-ca38-bb32" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="56d9-39b6-a7b5-9b38" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -827,9 +897,10 @@
         <infoLink id="db91-3a2e-46b5-3998" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="61d4-5e58-36c9-9f32" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false"/>
         <categoryLink id="9593-8dda-915e-8ef4" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink id="0de3-d934-b836-a40c" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="5df3-9231-c29a-5bf6" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
+        <categoryLink id="9bfa-f05f-d04f-e983" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="175c-be5a-9f30-7a03" name="Gorgon Hammerbearer" hidden="false" collective="false" import="true" type="model">
@@ -1155,7 +1226,9 @@
         <infoLink id="68c9-ea5b-8dbf-55ce" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="1bd4-40cb-dd60-a550" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false"/>
+        <categoryLink id="922a-9c91-509f-36fd" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="b0a0-c02f-f97d-8b78" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="221e-a4f5-b097-1747" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c831-444b-9325-de3b" name="Immortal Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -1567,7 +1640,8 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbac-3de7-7dbd-15c1" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="e1e5-95e5-40c2-6e26" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false"/>
+        <categoryLink id="ea33-c875-88be-d428" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="9014-262a-9067-0e59" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6b2c-960f-6914-2c01" name="Ferrus Manus" hidden="false" collective="false" import="true" type="upgrade">
@@ -1731,9 +1805,9 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e96-f78b-5bbc-f13d" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="e549-4739-d1b7-8507" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false"/>
         <categoryLink id="f1af-c02b-85f4-4611" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-        <categoryLink id="e07c-741f-a596-fad1" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+        <categoryLink id="4cb3-dd41-3d7c-685e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="d41e-871d-300d-cb4b" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9aef-f396-b30d-8cd0" name="Iron Father Autek Mor" hidden="false" collective="false" import="true" type="upgrade">
@@ -1894,7 +1968,9 @@
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7b9a-32a2-58e0-b6dc" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="0a37-199d-ac29-af4a" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false"/>
+        <categoryLink id="66f5-3b86-bd2f-710f" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="b22b-21c0-8c4b-d804" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="87be-a40d-63fe-1eed" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="94ef-185a-f5bc-cc1c" name="Shadrak Meduson" hidden="false" collective="false" import="true" type="upgrade">
