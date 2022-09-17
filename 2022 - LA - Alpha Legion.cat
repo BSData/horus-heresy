@@ -1960,6 +1960,20 @@
         <categoryLink id="3e95-ab10-bf35-f965" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="f09e-404b-0014-15ea" name="Autilon Skorr" hidden="false" collective="false" import="true" targetId="b470-1f0d-f0b5-ceeb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9100-0528-4fb3-498f" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="d60c-df86-9cb1-55cd" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="92d0-76a4-36ac-6286" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="6161-d387-f086-0958" name="Lernaean Terminator Squad" publicationId="09c5-eeae-f398-b653" page="338" hidden="false" collective="false" import="true" type="unit">
@@ -3356,6 +3370,109 @@
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b470-1f0d-f0b5-ceeb" name="Autilon Skorr" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="16ba-a7bf-5295-2795" name="Autilon Skorr" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6b55-fabc-88e0-6d2a" name="Honour the Legion" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="0982-427b-1d4a-d07c">Once per battle, at the start of any of the controlling player’s turns, this rule may be activated. Once activated, take a Leadership test using the Leadership Characteristic 10: if passed then all friendly units that are Pinned or Falling Back and have at least one model that can draw line of sight to the model with this special rule immediately rally, and are no longer Pinned or Falling Back and may act normally this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="070f-f851-49aa-f55f" name="Legiones Astartes (Alpha Legion) " hidden="false" targetId="2a9e-be1f-d6c1-0ec4" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="da79-fbde-669b-8da5" name="Rime-shard" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e36-14fa-1dfe-0efb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e3e-e52a-70f5-95d2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8f13-5bd1-025d-90ba" name="Rime-shard" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Master-crafted</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="f3dd-a4a5-4d7e-586d" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+            <infoLink id="463e-909f-5724-6334" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="1308-d9e0-7290-847d" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fbc-d29d-ae31-bdd4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43ba-bfcb-0cbb-2ae3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7848-3e8c-214d-5ab5" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7127-a71c-020c-0a57" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d4f-583b-7110-f223" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bb89-544d-65dc-6724" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b8-c520-4b45-4901" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b182-0b14-1b0b-bbca" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3757-079f-3787-381d" name="Refractor Field" hidden="false" collective="false" import="true" targetId="a06a-55a5-070b-1d0e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4d7-2c0c-8176-4755" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a97-321f-c606-0d51" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ae63-1f21-ac63-91ed" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fc9-8945-c3e4-99ea" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77fd-ed1e-1195-15ca" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="54ca-3475-fb7e-cb47" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa3f-7f2b-ec81-d900" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c141-0e0f-74e0-978a" name="Desperate for Glory" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">On Game Turn One Autilon Skorr has Feel No Pain (6+), increasing to Feel No Pain (5+) on Game Turn Two and Feel No Pain (4+) on Game Turn Three and successive turns until the end of the battle. In addition, the controlling player of an army with Autilon Skorr as its Warlord may select one Phase at the start of the battle, before any models are deployed onto the battlefield. During the chosen Phase of their opponent’s turn, Autilon Skorr and any unit he has joined may make a Reaction without expending any of the army’s Reaction Allotment as long as Autilon Skorr has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+        <entryLink id="39c2-97b2-3863-bfb8" name="Retinue" hidden="false" collective="false" import="true" targetId="09f9-933c-a88e-6e38" type="selectionEntryGroup"/>
+        <entryLink id="6493-5acf-e490-322c" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6afd-234e-59d2-cb59" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="526c-a489-9e44-121f" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
