@@ -792,7 +792,7 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="greaterThan"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1540,13 +1540,14 @@
         <categoryLink id="cc12-9fd8-6d7f-0da2" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="368b-85cb-1202-69f6" name="Nullificator Squad" hidden="false" collective="false" import="true" targetId="954d-cf8e-eefd-27a6" type="selectionEntry">
+    <entryLink id="368b-85cb-1202-69f6" name="Nullificator Squad" hidden="true" collective="false" import="true" targetId="954d-cf8e-eefd-27a6" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1919,7 +1920,7 @@
         <categoryLink id="864c-2f86-9c9e-69e6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f06a-1330-a62d-8fe4" name="Basilisk Squadron" hidden="true" collective="false" import="true" targetId="8b8a-e685-5b8b-c08f" type="selectionEntry">
+    <entryLink id="f06a-1330-a62d-8fe4" name="Legion Basilisk Squadron" hidden="true" collective="false" import="true" targetId="8b8a-e685-5b8b-c08f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1963,13 +1964,27 @@
         <categoryLink id="f400-1820-e157-cc75" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3067-6d02-c8ea-a03b" name="Land Raider Achilles Squadron" hidden="false" collective="false" import="true" targetId="4996-8971-603f-e2a2" type="selectionEntry">
+    <entryLink id="3067-6d02-c8ea-a03b" name="Land Raider Achilles Squadron" hidden="true" collective="false" import="true" targetId="4996-8971-603f-e2a2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e315-bff8-bbf6-6c8c" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
         <categoryLink id="3b5c-963d-23c0-3aea" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="aba4-6878-0788-a3dc" name="Land Raider Phobos Squadron" hidden="false" collective="false" import="true" targetId="681a-7426-96af-caac" type="selectionEntry">
+    <entryLink id="aba4-6878-0788-a3dc" name="Land Raider Phobos Squadron" hidden="true" collective="false" import="true" targetId="681a-7426-96af-caac" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="90a6-9ae7-d542-1774" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
         <categoryLink id="4225-b067-c405-4143" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -2092,7 +2107,7 @@
         <categoryLink id="9b1a-4f40-03fe-2954" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c5a2-61b9-4bcc-db25" name="Medusa Squadron" hidden="true" collective="false" import="true" targetId="24c8-5f6a-d48a-27b7" type="selectionEntry">
+    <entryLink id="c5a2-61b9-4bcc-db25" name="Legion Medusa Squadron" hidden="true" collective="false" import="true" targetId="24c8-5f6a-d48a-27b7" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -2105,12 +2120,17 @@
         <categoryLink id="470c-9306-46e2-6c8b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="51bb-8682-066b-c838" name="Nathaniel Garro" hidden="false" collective="false" import="true" targetId="0583-258d-f0a0-2170" type="selectionEntry">
+    <entryLink id="51bb-8682-066b-c838" name="Nathaniel Garro" hidden="true" collective="false" import="true" targetId="0583-258d-f0a0-2170" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-          </conditions>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2175,7 +2195,7 @@
         <categoryLink id="94cb-c54d-d366-cc58" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2e0a-2e35-22a8-b267" name="Thunderbolt Fighter" hidden="true" collective="false" import="true" targetId="5d24-1e9a-ad9d-95ca" type="selectionEntry">
+    <entryLink id="2e0a-2e35-22a8-b267" name="Legion Thunderbolt Fighter" hidden="true" collective="false" import="true" targetId="5d24-1e9a-ad9d-95ca" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -2246,10 +2266,16 @@
     </entryLink>
     <entryLink id="f09e-404b-0014-15ea" name="Autilon Skorr" hidden="false" collective="false" import="true" targetId="b470-1f0d-f0b5-ceeb" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan"/>
-          </conditions>
+        <modifier type="set" field="hidden" value="true"/>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3704,6 +3730,9 @@
             <infoLink id="f3dd-a4a5-4d7e-586d" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
             <infoLink id="463e-909f-5724-6334" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
