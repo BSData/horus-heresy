@@ -211,6 +211,14 @@
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="f72b-147a-d2ad-801a" name="Thunderhawk Transporter" hidden="false" collective="false" import="true" targetId="4925-7f11-1510-1d87" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f543-2702-3d5f-f297" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="bf2b-da91-9b4c-a56f" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="82f5-cca1-51a0-31dd" name="Venom Spheres" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -39100,6 +39108,129 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4925-7f11-1510-1d87" name="Thunderhawk Transporter" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="8780-6d3f-f535-fa94" name="Thunderhawk Transporter" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Hover, Lumbering, Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">18&quot;</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">9</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">22</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on each side of the cockpit section.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d417-9807-e16e-7336" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
+        <infoLink id="39ad-c208-272f-09b6" name="Legiones Astartes (X)" hidden="false" targetId="61cf-75c2-56cd-2a31" type="rule"/>
+        <infoLink id="39cf-0a3c-a069-92e7" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
+        <infoLink id="3895-f4a2-5828-6616" name="Transport Bay" hidden="false" targetId="0662-8b8d-38e8-60f8" type="rule"/>
+        <infoLink id="c568-c5c6-ac39-fbbe" name="Auxiliary Vehicle Bay" hidden="false" targetId="8837-14e8-344a-1f39" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Two Auxiliary Vehicle Bays"/>
+            <modifier type="append" field="description" value="In addition to being able to be used independently, both Legion Thunderhawk Transporter Auxiliary Vehicle Bays can be used together to transport a model with the Vehicle Unit Type and a starting Hull Point value of up to 8."/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a5fc-b6db-e921-d284" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="6334-c09a-f991-977f" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="91bb-aa07-3b2c-d990" name="Four Turret Mounted heavy bolters" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd6a-a0f6-0154-d91d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f23b-7f4a-d786-46a7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ee33-6fc7-cc8d-6125" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d47-8190-0e21-7994" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55b5-b8f0-b6b1-571e" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c238-c347-6a61-6c29" name="May take one of the following:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceab-fefe-4a46-ac69" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6977-757d-0c9e-4aa0" name="Ramjet Diffraction Grid" hidden="false" collective="false" import="true" targetId="a884-7de7-32c4-3ef6" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="341c-5468-90ff-452f" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8a99-671b-32a3-3bf1" name="Wing Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="19f4-3255-fc46-35c8">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fa3-57b9-4264-ef41" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f9a-ec74-f848-14bc" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="15ab-77cf-3f7e-08e8" name="One Hull (Front) Mounted macro-bomb cluster" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="b540-d6f3-e7b6-c5c8" name="Macro-Bomb Cluster" hidden="false" collective="false" import="true" targetId="c3a9-3ba5-0488-0482" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c651-785f-cb7e-e0fb" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db0f-1d4f-758e-2e88" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="19f4-3255-fc46-35c8" name="Six Hull (Front) Mounted hellstrike missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="8ba3-7aec-1f59-9b28" name="Hellstrike Missile" hidden="false" collective="false" import="true" targetId="5e24-bdca-a89c-0f40" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6467-95f6-9b11-65cd" type="min"/>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="143b-86ba-933e-f56c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2998-fa7b-b59e-acd1" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+        <entryLink id="66bf-2b11-30a0-45e7" name="Blessed Auto-simulacra" hidden="true" collective="false" import="true" targetId="dc49-518b-0f77-5e3e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
