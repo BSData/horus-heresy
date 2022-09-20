@@ -42,8 +42,12 @@ Great, thank you! Please [Report a bug][bug report] - you can also suggest enhan
 
 In general, we remove the "Legion" prefix from units.
 
-We create a unit entry for each unit, and a model entry within that unit (even if it's a single model unit.
-This allows us to get an accurate model count and keeps everything consistent
+We create a unit entry for each unit, and a model entry within that unit (even if it's a single model unit).
+This allows us to get an accurate model count and keeps everything consistent.
+
+We have two filters for expanded units, exemplary and legacy units.
+On UNITS we default them to hidden hidden and add a modifier with constraint to set "Hidden to False" if "Equal to 1 selection in force of <> on". Ensure "And all child selections is checked".
+On UPGRADES, we default the option to not hidden, and set "Hidden to True" if the "off" condition is selected.
 
 ## References
 
@@ -53,12 +57,15 @@ This allows us to get an accurate model count and keeps everything consistent
 * Liber Astartes
 * Liber Hereticus
 * "Both Astartes Army books" refers to the first section of both of the above books, as they are identical
-* Libre Mechanicum
-* Exemplary Battles in the Age of Darkness: The Scouring of Gilden's Star - https://www.warhammer-community.com/wp-content/uploads/2022/06/TLbrp4me5GEfL37Q.pdf
-* Legacies of The Age of Darkness - https://www.warhammer-community.com/wp-content/uploads/2022/07/iazzsaaE4LtT5jQk.pdf
-* Exemplary Battles Unit Update - https://www.warhammer-community.com/wp-content/uploads/2022/07/LCsIqZpsSaQaS5he.pdf
-* Ka'bandha Rules - https://www.warhammer-community.com/wp-content/uploads/2022/07/4uwEurgnIRQCzWHE.pdf
-* Exemplary Battles in the Age of Darkness: The Battle ofTrisolian: Vengeful Spirit - https://www.warhammer-community.com/wp-content/uploads/2022/07/6i9CeSwKmbWmzac4.pdf
+* Liber Mechanicum
+* [Exemplary Battles - The Scouring of Gildens Star PDF](https://www.warhammer-community.com/wp-content/uploads/2022/06/TLbrp4me5GEfL37Q.pdf)
+* [Legacies of The Age of Darkness PDF](https://www.warhammer-community.com/wp-content/uploads/2022/07/9J4DcGojzqbwATyy.pdf)
+* [Exemplary Battles of Age of Darkness: Unit Update PDF](https://www.warhammer-community.com/wp-content/uploads/2022/07/LCsIqZpsSaQaS5he.pdf)
+* [Ka'bandha Rules](https://www.warhammer-community.com/wp-content/uploads/2022/07/4uwEurgnIRQCzWHE.pdf)
+* [Exemplary Battles in the Age of Darkness: The Battle of Trisolian: Vengeful Spirit](https://www.warhammer-community.com/wp-content/uploads/2022/07/6i9CeSwKmbWmzac4.pdf])
+* [Exemplary Battles in the Age of Darkness: The Axandrai IV Incident](https://www.warhammer-community.com/wp-content/uploads/2022/09/3mVvZrTG9XOWeVxv.pdf) 
+* Zone Mortalis (White Dwarf 477)
+
 
 ### For 1.0
 
