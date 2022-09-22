@@ -4236,20 +4236,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </selectionEntry>
             <selectionEntry id="8b28-bdec-1540-5a47" name=" Legionaries (collective)" hidden="false" collective="false" import="true" type="model">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db53-8568-775f-1ab9" type="atLeast"/>
-                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
-                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1941-21b5-932c-74d6" type="atLeast"/>
-                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb41-0199-e8e8-622b" type="atLeast"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
               <profiles>
                 <profile id="5bf2-8597-cc05-f7c5" name="Legionary" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
                   <modifiers>
@@ -5036,6 +5022,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <entryLinks>
                     <entryLink id="6946-e27f-9950-feea" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="f751-2e0d-353e-3886" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc7-0140-d475-a546" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
                       </costs>
@@ -5053,8 +5042,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                           </conditionGroups>
                         </modifier>
                       </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6491-c56c-e1a7-b798" type="max"/>
+                      </constraints>
                     </entryLink>
                     <entryLink id="de24-4703-a919-1d0d" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="fb41-0199-e8e8-622b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c773-1274-658b-43b6" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
@@ -5067,16 +5062,25 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <entryLinks>
                     <entryLink id="ce29-58d1-7161-6172" name="Chainsword" hidden="false" collective="false" import="true" targetId="b5b7-b50a-ac86-9173" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb8-ee51-1646-a59e" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
                     <entryLink id="c1cf-80eb-c604-8ecc" name="Chainaxe" hidden="false" collective="false" import="true" targetId="3a0d-c3bb-dc59-a4c3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a7e-3d46-13ad-525b" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
                     <entryLink id="a6a0-16e2-4766-0f4f" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="394d-2287-e1bc-2ba1" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8714-a303-0940-b5c1" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
                       </costs>
@@ -11390,7 +11394,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="3a70-5ba0-7914-683a" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ef23-ca32-6fe5-b736" name=" Legion Despoiler Sergeant" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="ef23-ca32-6fe5-b736" name="  Legion Despoiler Sergeant" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd81-a985-7559-eed3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5a3-2709-77e8-6572" type="min"/>
@@ -11815,6 +11819,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <entryLinks>
                     <entryLink id="41c2-e459-bd8e-f0fd" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="f751-2e0d-353e-3886" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ae-e60b-8ec4-c7c0" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
                       </costs>
@@ -11832,8 +11839,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                           </conditionGroups>
                         </modifier>
                       </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c80-3bce-b4cc-c4ff" type="max"/>
+                      </constraints>
                     </entryLink>
                     <entryLink id="0c4a-b80a-5d0d-4c21" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="fb41-0199-e8e8-622b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="882f-0ada-a151-1d70" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
@@ -11859,23 +11872,43 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                           </conditionGroups>
                         </modifier>
                       </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4d4-c7fe-e5f4-4654" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
                       </costs>
                     </entryLink>
                     <entryLink id="b6f1-a24f-9fef-dc47" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="a997-efd7-a0a9-759d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3ff5-6012-4683-ec7a" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="0dc3-e8c0-5200-a164" name="Chainaxe" hidden="false" collective="false" import="true" targetId="3a0d-c3bb-dc59-a4c3" type="selectionEntry"/>
-                    <entryLink id="1c7b-f534-f24f-3ea9" name="Chainsword" hidden="false" collective="false" import="true" targetId="b5b7-b50a-ac86-9173" type="selectionEntry"/>
+                    <entryLink id="0dc3-e8c0-5200-a164" name="Chainaxe" hidden="false" collective="false" import="true" targetId="3a0d-c3bb-dc59-a4c3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faa1-e3cb-fbec-dbd3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1c7b-f534-f24f-3ea9" name="Chainsword" hidden="false" collective="false" import="true" targetId="b5b7-b50a-ac86-9173" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8476-b9ad-8a78-8145" type="max"/>
+                      </constraints>
+                    </entryLink>
                     <entryLink id="6e8f-fe19-3e9d-5418" name="Fenrisian Axe" hidden="false" collective="false" import="true" targetId="394d-2287-e1bc-2ba1" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6317-77b7-8cff-ff13" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
                     </entryLink>
                     <entryLink id="618c-29bc-e5e3-8fc1" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="fb41-0199-e8e8-622b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a676-31ec-46e1-42b5" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
@@ -12173,7 +12206,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="ad69-ee1e-ec47-c17e" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8725-b9d1-1e86-0364" name=" Legion Breacher Sergeant" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="8725-b9d1-1e86-0364" name="  Legion Breacher Sergeant" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="940c-1065-4f0e-5229" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a445-be26-95ae-c0b0" type="min"/>
@@ -12608,6 +12641,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <entryLinks>
                     <entryLink id="4db1-5fcf-9612-2a2c" name="Asphyx Bolter" hidden="false" collective="false" import="true" targetId="dcef-d670-b47a-adfa" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7828-1dd4-f72e-4d07" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
                       </costs>
@@ -12625,13 +12661,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                           </conditionGroups>
                         </modifier>
                       </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6bab-a170-0dec-8183" type="max"/>
+                      </constraints>
                     </entryLink>
                     <entryLink id="4e72-71fc-2965-89b0" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="db53-8568-775f-1ab9" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69ac-8ddb-9618-5834" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
                     </entryLink>
                     <entryLink id="2cab-4ab5-e553-47db" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="5c82-c306-9c5c-5908" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1534-73eb-8540-549c" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
@@ -12645,6 +12690,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <entryLinks>
                     <entryLink id="44e6-e40c-9a87-fdca" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="f751-2e0d-353e-3886" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4f31-af55-2146-4005" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
                       </costs>
@@ -12662,8 +12710,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                           </conditionGroups>
                         </modifier>
                       </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1032-cede-9ecc-920b" type="max"/>
+                      </constraints>
                     </entryLink>
                     <entryLink id="618e-2780-077c-b01e" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="fb41-0199-e8e8-622b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7676-56a0-1e87-54b3" type="max"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
@@ -12675,7 +12729,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9702-eb05-83dc-dfd9" name="Breacher W/ Options" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="9702-eb05-83dc-dfd9" name="Breacher w/ Options" hidden="false" collective="false" import="true" type="model">
               <profiles>
                 <profile id="5f15-10b8-10f1-38aa" name="Breacher" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
                   <modifiers>
@@ -13543,7 +13597,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="f887-300a-daae-7e57" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8867-1af4-01f7-da72" name=" Legion Scout" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="8867-1af4-01f7-da72" name="Legion Scout" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="001f-3753-e853-116a" type="max"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e391-7729-f343-6910" type="min"/>
