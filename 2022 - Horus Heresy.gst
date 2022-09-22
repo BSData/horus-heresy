@@ -314,7 +314,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       <rules>
         <rule id="df15-2b9e-8437-3295" name="Daemon Unit-type" hidden="false">
           <description>• All Daemon models have their Strength and Toughness modified by a value determined by the current Game Turn: +1 on Game Turns 1 &amp; 2, +/-0 on Game Turns 3 &amp; 4, -1 on Game Turns 5 &amp; 6, and -2 on Game Turns 7+.
-• All Daemon models have the Fear special rule.
+• All Daemon models have the Fear (1) special rule.
 • Any Hits inflicted on a model of the Daemon Unit Type by a weapon with the Force special rule gain the Instant Death special rule as well.
 • All Daemon models are immune to the effects of the Fear special rule, automatically pass Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a Daemon unit fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed.
 • No model that is not also of the Daemon Unit Type may join a unit that includes a Daemon model.</description>
@@ -4556,7 +4556,7 @@ Fire Point (Front 4)</characteristic>
                 <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
                 <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
                 <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">6</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
                 <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
 Hull Mounted (Front) Heavy Bolter
 Hull Mounted (Left) Heavy Bolter
@@ -9392,7 +9392,7 @@ A model that causes Fear is not itself immune to Fear and will still suffer a pe
     <rule id="b48c-d7e1-2a83-2f5b" name="Fearless" publicationId="e77a-823a-da94-16b9" page="238" hidden="false">
       <description>Units with one or more models with the Fearless special rule automatically pass Pinning tests. Regroup tests and Morale checks.In addition, models with the Fearless special rule ignore the effects of the Fear special rule.
 
-However, units containing one or more models with the Fearess special rule cannot use any Reactions hat grant a Cover Save, Armour Save, Invulnerable Save or Damage Mitigation roll of any kind, and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule (see page 188). If a unit has become Pinned and then gains the Fearless special rule,all the effects of being Pinned are immediately cancelled.</description>
+However, units containing one or more models with the Fearess special rule cannot use any Reactions that grant a Cover Save, Armour Save or Invulnerable Save, and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule (see page 188). If a unit has become Pinned and then gains the Fearless special rule,all the effects of being Pinned are immediately cancelled.</description>
     </rule>
     <rule id="ec46-ff29-32e0-c2aa" name="Feel No Pain (X)" publicationId="e77a-823a-da94-16b9" page="238" hidden="false">
       <description>When a model with this special rule suffers an unsaved Wound, it can make a special Feel No Pain roll to avoid being Wounded (this is a special Saving Throw which is made after unsaved Wounds are suffered).
@@ -9739,13 +9739,11 @@ For example, a weapon with the Torrent (18) special rule must place the narrow e
       <description>A unit with at least one model with this special rule automatically passes Dangerous Terrain tests.</description>
     </rule>
     <rule id="10c3-fdb0-089f-ca65" name="Shrouded (X)" publicationId="e77a-823a-da94-16b9" page="247" hidden="false">
-      <description>When a model with this special rule suffers an unsaved Wound, it can make a special Shrouded roll to avoid being wounded (this is not a Saving Throw and so can be used against attacks that state that ‘no Saves of any kind are allowed’). Shrouded rolls may not be taken against Melee Attacks or against attacks with the Ignores Cover special rule.
-
-Roll a D6 each time an unsaved Wound is suffered. On a result that is equal to or greater than the value in brackets, the unsaved Wound is discounted – treat it as having been Saved. On any other result, the Wound is taken as normal. For example, a unit with the special rule Shrouded (6+) would need to score a 6 in order to discount a Wound inflicted upon it.
-
-If on any unit this rule is presented simply as Shrouded, without a value in brackets, then count it as Shrouded (6+).
-
-This is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound (see page 174).</description>
+      <description>When a model with this special rule suffers an unsaved Wound, Glancing Hit or Penetrating Hit, it can make a special Shrouded roll to ignore it (this is not a Saving Throw and so can be used against attacks that state that &apos;no Saves of any kind are allowed&apos;). Shrouded rolls may not be taken against Melee Attacks, against attacks with the Ignores Cover special rule or for models with the Fearless special rule.
+Roll a D6 each time an unsaved Wound, Glancing Hit or Penetrating Hit is suffered by a model with this special rule. On a result that is equal to or greater than the value in brackets, that unsaved Wound, Glancing Hit or Penetrating Hit is ignored. On any other result, the Wound, Glancing Hit or Penetrating Hit is applied as normal. For example, a unit with the special rule Shrouded (6+) would need to score a 6 in order to ignore a Wound, Glancing Hit or Penetrating Hit inflicted upon it.
+If on any unit this rule is presented simply as Shrouded, without a value in brackets, then count it as Shrouded (6+)
+This is a Damage Mitigation roll - any model may make only a single Damage Mitigation roll of any type for any given Wound, Glancing Hit or Penetrating Hit (see page 174).
+</description>
     </rule>
     <rule id="aacf-9a7e-982d-b793" name="Scout" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
       <description>After both sides have deployed (including Infiltrators), but before the first player begins their first turn, a unit containing at least one model with this special rule can choose to redeploy. If the unit is Infantry, Artillery, Dreadnought or Automata, each model can redeploy anywhere entirely within 6&quot; of its current position. If it is any other Unit Type, each model can instead redeploy anywhere entirely within 12&quot; of its current position. During this redeployment, Scouts can move outside the owning player’s Deployment Zone, but must remain more than 9&quot; away from any enemy unit. A unit that makes a Scout redeployment cannot Charge in the first Game Turn. A unit cannot Embark or Disembark as part of a Scout redeployment.
