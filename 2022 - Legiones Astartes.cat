@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="48" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="51" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -3619,6 +3619,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="240b-61e9-f6cc-56fa" name="New CategoryLink" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="1571-4b68-f416-00ea" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="4138-d106-960e-94e0" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="638c-a192-24e6-1604" name=" Legion Tactical Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -11392,6 +11393,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="176f-2693-896f-9748" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="3a70-5ba0-7914-683a" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="3cfb-f16e-35b6-c89d" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ef23-ca32-6fe5-b736" name="  Legion Despoiler Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -12204,6 +12206,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="ebd3-8853-ca06-24e5" name="New CategoryLink" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="d5a1-47f5-0e3c-716d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="ad69-ee1e-ec47-c17e" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="39df-bd14-1a10-1f88" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8725-b9d1-1e86-0364" name="  Legion Breacher Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -13005,6 +13008,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="78f2-3b93-045e-9fff" name="New CategoryLink" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="da59-0c31-03f1-ae38" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="95f4-7bc2-449f-5dd3" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4d0d-06f9-4989-439e" name=" Legion Recon Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -21784,7 +21788,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="c75d-53c6-7ae2-f5cf" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+            <categoryLink id="f19e-a74c-d86c-6ff1" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="871c-d47a-4a6c-7a32" name="Sgt Options" hidden="false" collective="false" import="true">
@@ -25929,6 +25933,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="aa7f-bd4c-5231-d459" name="Terminator Indomitus Squad" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="89b9-6f89-73a2-4e98" name="Pride of the Legion" publicationId="d0df-7166-5cd3-89fd" page="18" hidden="false">
+          <description>Any Legion Terminator Indomitus Squads taken in a Detachment with the Pride of the Legion Rite of War lose the Support Squad special rule and gain the Line Sub-type.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="9744-7613-6a6f-2621" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="88b4-f414-3ff6-a7f2" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
@@ -25937,7 +25946,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <modifier type="set" field="name" value="Bulky (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="000f-9e04-08d3-63aa" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
+        <infoLink id="000f-9e04-08d3-63aa" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="f2fa-16dd-9ff8-3933" name="Legiones Astartes (X)" hidden="false" targetId="61cf-75c2-56cd-2a31" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -28558,15 +28575,15 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="5fd0-134b-8420-c55f" name="Sponson Weapon Options" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="5fd0-134b-8420-c55f" name="Sponson Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="c153-e051-bb9a-8a17">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faa6-bd75-07a2-fa5e" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28d2-0725-45fa-39e9" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c153-e051-bb9a-8a17" name="Two Sponson Mounted lascannon arrays" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="c153-e051-bb9a-8a17" name="Two Sponson Lascannons" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
-                <entryLink id="e1e6-d6b4-5d07-e4bf" name="Lascannon Array" hidden="false" collective="false" import="true" targetId="e0b7-d184-f049-8c4b" type="selectionEntry">
+                <entryLink id="e1e6-d6b4-5d07-e4bf" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc8-aef9-30a7-ffa2" type="min"/>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="128f-d838-3fe1-b984" type="max"/>
@@ -28577,46 +28594,20 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="6bd2-a776-9b19-60fb" name="Two Sponson Mounted laser destroyers" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="1f89-66a4-c25f-a2f4" name="Laser Destroyer" hidden="false" collective="false" import="true" targetId="5534-6388-c8bb-945f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8618-446c-3f08-69f5" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="478a-5d24-2849-d2c1" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="688b-b0fb-f183-b931" name="Centreline Mounted Weapon Options" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="688b-b0fb-f183-b931" name="Two Sponson Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="8a99-a730-dd4e-ed24">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9291-748c-7365-472d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02a7-cfc1-0cef-89e9" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="8a99-a730-dd4e-ed24" name="Centreline Mounted twin-linked heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="8a99-a730-dd4e-ed24" name="Two Sponson Mounted twin-linked heavy bolter" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="c011-4e98-07b4-cb75" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba06-1bda-34ee-1bcd" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f89-60d8-d7a3-e1a2" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7935-bcc3-46a1-04e7" name="Centreline Mounted twin-linked heavy flamer" hidden="false" collective="false" import="true" type="upgrade">
-              <entryLinks>
-                <entryLink id="e129-6236-6fc5-db49" name="Twin-linked Heavy-Flamer" hidden="false" collective="false" import="true" targetId="18ea-34ad-326b-281b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89ee-8bcb-8d49-1b5b" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c68-1492-f17c-76ba" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -29590,41 +29581,33 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab6d-f6d7-6d2b-4698" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="41fe-8b8b-4f79-0f79" name="Skystrike Missile" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="name" value="4x Hull (Front) Mounted Skystrike missiles"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95e5-cb6e-dc7c-bb82" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="391d-4ea1-fee9-962e" name="Skystrike Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
-                  </characteristics>
-                </profile>
-              </profiles>
+            <selectionEntry id="dc9e-82b1-81a2-00f6" name="Four Hull (Front) Mounted Skystrike missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="00da-d3e4-6033-df98" name="Skystrike Missile" hidden="false" collective="false" import="true" targetId="423f-5e6d-4427-a348" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d6-4959-5b31-0a60" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f17-95d7-09ac-5386" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="2de7-f4f6-60fd-81e0" name="Hellstrike Missile" hidden="false" collective="false" import="true" targetId="5e24-bdca-a89c-0f40" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="4x Hull (Front) Mounted Hellstrike missiles"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4eb-858b-37f5-8312" type="max"/>
-              </constraints>
+            <selectionEntry id="eefc-e94d-0c98-7306" name="Four Hull (Front) Mounted Hellstrike Missile" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="e1e4-dc44-2937-3c52" name="Hellstrike Missile" hidden="false" collective="false" import="true" targetId="5e24-bdca-a89c-0f40" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bde-b566-d998-7ff4" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3071-9c3f-7c92-0864" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -29774,27 +29757,14 @@ containing the model that failed its Check. If the Psyker survives Perils of the
               </costs>
             </selectionEntry>
             <selectionEntry id="482c-fc47-84da-d2d1" name="Four Hull (Front) Mounted Skystrike missiles" hidden="false" collective="false" import="true" type="upgrade">
-              <selectionEntries>
-                <selectionEntry id="15d4-f7e4-940c-c8bc" name="Skystrike Missile" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="690d-2725-2b47-411b" name="Skystrike Missile" hidden="false" collective="false" import="true" targetId="423f-5e6d-4427-a348" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d51-20c8-2ecd-9982" type="max"/>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65a7-8539-3228-4743" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c37-2609-faca-0045" type="min"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f90-7e5e-5807-6a24" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="6dec-e403-cf65-c5a4" name="Skystrike Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
               </costs>
@@ -29862,58 +29832,72 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d060-a1b5-56f0-f419" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="59a0-e125-4f8e-03e2" name="Kraken Penetrator Missile" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="name" value="4x Hull (Front) Mounted Kraken penetrator missiles"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ccb-0d56-e052-a634" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="08d5-001e-2312-e21a" name="Kraken Penetrator Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Ranged), One Use</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="d820-3ef3-790d-ed29" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule"/>
-                <infoLink id="7a90-4196-054d-2f9b" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="df04-0c91-316b-8ba5" name="Sunfury Missile" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="name" value="4x Hull (Front) Mounted Sunfury missiles"/>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0644-e177-cc1d-2846" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="be9d-4160-c300-b580" name="Sunfury Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Breaching (4+), Gets Hot, One Use</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="4a52-8831-5721-0e13" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-                <infoLink id="a8f9-66fb-7242-93dd" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Breaching (4+)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
+            <selectionEntry id="ab68-ee0c-bba7-0e2f" name="Two Hull (Front Mounted Sunfury missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="6625-4ed8-be15-a431" name="Sunfury Missile" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95ef-81b0-87f5-c672" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e64b-1438-50a2-7324" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="1e15-5868-5dd8-4ef3" name="Sunfury Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Breaching (4+), Gets Hot, One Use</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="7ad9-3446-bb54-2e46" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                    <infoLink id="75a2-e2c8-c3ed-37dc" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Breaching (4+)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="aaf6-1a72-3881-816c" name="Two Hull (Front Mounted Kraken Penetrator missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="1cd8-2765-4b3b-5d08" name="Kraken Penetrator Missile" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eff-a5e1-661b-66e0" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="541e-ef08-f01d-5065" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="53ff-caa6-f300-2ca0" name="Kraken Penetrator Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Ranged), One Use</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="a6e7-d1e4-f966-3484" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Armourbane (Ranged)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="4671-aeba-62ac-19e4" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -29943,6 +29927,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
           </modifiers>
         </infoLink>
         <infoLink id="126f-c78f-2f94-0bdd" name="Sentry Protocols" hidden="false" targetId="97aa-da60-3ccc-7152" type="rule"/>
+        <infoLink id="ee1c-585d-3d84-6db2" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d336-17f0-8acd-e800" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -31448,36 +31437,22 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="536f-6f9f-b573-5973" name="1) Main Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c75d-bcc0-9689-689a">
+            <selectionEntryGroup id="536f-6f9f-b573-5973" name="1) Main Hull Weapon" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eee4-57f7-f943-b7f7" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bd9-cf40-7486-608d" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="9648-3d91-ca65-32c0" name="Vanquisher battlecannon (PLACEHOLDER)" hidden="false" collective="false" import="true" type="upgrade">
-                  <comment>GW hasn&apos;t released stats for this yet, apparently.</comment>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Hull (Front) Mounted Vanquisher battlecannon"/>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="c75d-bcc0-9689-689a" name="Battlecannon (PLACEHOLDER)" hidden="false" collective="false" import="true" type="upgrade">
-                  <comment>GW hasn&apos;t released stats for this yet, apparently.</comment>
-                  <modifiers>
-                    <modifier type="set" field="name" value="Hull (Front) Mounted battlecannon"/>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <entryLinks>
                 <entryLink id="f0f5-8d69-c098-28b5" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="2x Hull (Front) Mounted Gravis lascannon"/>
                   </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c75d-bcc0-9689-689a" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="7638-4f76-51f0-b0fa" type="selectionEntry"/>
+                <entryLink id="9648-3d91-ca65-32c0" name="Vanquisher Battle Cannon" hidden="false" collective="false" import="true" targetId="196c-cb26-f3e0-e0db" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -33502,6 +33477,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <categoryLink id="c3d3-52b0-def7-592d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="b857-6717-ae82-50fc" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="45c3-04df-2fcc-c0e5" name="Jump Infantry:" hidden="false" targetId="eee8-3c7c-2762-e33e" primary="false"/>
+        <categoryLink id="c531-9282-85ea-930a" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e6b7-06f3-c392-64c0" name=" Legion Assault Sergeant" hidden="false" collective="false" import="true" type="model">
@@ -36792,9 +36768,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="eca1-3ce2-f1f1-171b" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+        <entryLink id="eca1-3ce2-f1f1-171b" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="name" value="4x Turret Mounted heavy bolters"/>
+            <modifier type="set" field="name" value="4x Turret Mounted Twin-Linked heavy bolters"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc19-2fce-14be-6cc7" type="max"/>
@@ -37416,28 +37392,42 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3e69-4bb1-ba3d-784e" name="Missile Choice:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e171-26f1-1719-b50a">
+        <selectionEntryGroup id="3e69-4bb1-ba3d-784e" name="Missile Choice:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c3c2-2b60-05f0-5025">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11d7-9061-1257-eade" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c7a-054f-8682-3ab4" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f572-f014-f806-f6a7" name="Skystrike Missile" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="name" value="8x Hull (Front) Mounted Skystrike missiles"/>
-              </modifiers>
+            <selectionEntry id="c3c2-2b60-05f0-5025" name="Eight Hull (Front) Mounted Hellstrike missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="9fdb-4c78-4397-10af" name="Hellstrike Missile" hidden="false" collective="false" import="true" targetId="5e24-bdca-a89c-0f40" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e7-e2ac-2241-7512" type="min"/>
+                    <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc96-83a2-4685-a21d" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b9ac-894c-89ed-6894" name="Eight Hull (Front) Mounted Skystrike Missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry id="e66f-d3b5-10e0-f8a5" name="Skystrike Missile" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a40a-bb24-ef85-6360" type="min"/>
+                    <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aa7-1f61-701d-5ec0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="e171-26f1-1719-b50a" name="Hellstrike Missile" hidden="false" collective="false" import="true" targetId="5e24-bdca-a89c-0f40" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="8x Hull (Front) Mounted Hellstrike missiles"/>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -37942,6 +37932,9 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="0eea-93e5-acc0-6fba" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
           </costs>
