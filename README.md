@@ -58,14 +58,18 @@ On UPGRADES, we default the option to not hidden, and set "Hidden to True" if th
 * Liber Hereticus
 * "Both Astartes Army books" refers to the first section of both of the above books, as they are identical
 * Liber Mechanicum
+* [Legacies of The Age of Darkness Legions v1.1 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/RZRGS5ADYjwUb7Ry.pdf)
+* [Legacies of The Age of Darkness: Mechanicum v1.0 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/WJKYil2FehoZxrD9.pdf)
+* [Exemplary Battles of Age of Darkness: Unit Update v1.1 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/n10JM7pGRr4EyfIh.pdf)
 * [Exemplary Battles - The Scouring of Gildens Star PDF](https://www.warhammer-community.com/wp-content/uploads/2022/06/TLbrp4me5GEfL37Q.pdf)
-* [Legacies of The Age of Darkness PDF](https://www.warhammer-community.com/wp-content/uploads/2022/07/9J4DcGojzqbwATyy.pdf)
-* [Exemplary Battles of Age of Darkness: Unit Update PDF](https://www.warhammer-community.com/wp-content/uploads/2022/07/LCsIqZpsSaQaS5he.pdf)
-* [Ka'bandha Rules](https://www.warhammer-community.com/wp-content/uploads/2022/07/4uwEurgnIRQCzWHE.pdf)
 * [Exemplary Battles in the Age of Darkness: The Battle of Trisolian: Vengeful Spirit](https://www.warhammer-community.com/wp-content/uploads/2022/07/6i9CeSwKmbWmzac4.pdf])
 * [Exemplary Battles in the Age of Darkness: The Axandrai IV Incident](https://www.warhammer-community.com/wp-content/uploads/2022/09/3mVvZrTG9XOWeVxv.pdf) 
+* [Ka'bandha Rules](https://www.warhammer-community.com/wp-content/uploads/2022/07/4uwEurgnIRQCzWHE.pdf)
 * Zone Mortalis (White Dwarf 477)
-
+* Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/7AX0peoK6m7C7uzw.pdf)
+* Liber Astartes Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf)
+* Liber Hereticus Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf)
+* Liber Mechanicum Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf)
 
 ### For 1.0
 

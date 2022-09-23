@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="18" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="19" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
-    <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 18th, 2022"/>
-    <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 18th, 2022"/>
-    <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" shortName="LA - Traitor" publicationDate="June 18th, 2022"/>
-    <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books" publicationDate="June 18th, 2022"/>
-    <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness" shortName="LotAoD"/>
-    <publication id="09b3-d525-cdea-260c" name="Exemplary Battles of Age of Darkness" shortName="EBoAoD"/>
-    <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles - The Scouring of Gildens Star" shortName="EBoAoD - TSoGS"/>
-    <publication id="bde1-6db1-163b-3b76" name="Liber Mechanicum - Forces of the Omnissiah Army Book" shortName="Mech" publicationDate="August 20th, 2022"/>
+    <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
+    <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
+    <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" shortName="LA - Traitor" publicationDate="June 2022"/>
+    <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books" publicationDate="June 2022"/>
+    <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions  Astartes v1.1" shortName="LotAoD -LA" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RZRGS5ADYjwUb7Ry.pdf"/>
+    <publication id="09b3-d525-cdea-260c" name="Exemplary Battles of Age of Darkness v1.1" shortName="EBoAoD" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/n10JM7pGRr4EyfIh.pdf"/>
+    <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles - The Scouring of Gildens Star" shortName="EBoAoD - TSoGS" publicationDate="June 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/06/TLbrp4me5GEfL37Q.pdf"/>
+    <publication id="bde1-6db1-163b-3b76" name="Liber Mechanicum - Forces of the Omnissiah Army Book" shortName="Mech" publicationDate="August 2022"/>
+    <publication id="3886-76e5-438f-159f" name="Legacies of The Age of Darkness: Mechanicum v1.0" shortName="LotAoD -Mech" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/WJKYil2FehoZxrD9.pdf"/>
+    <publication id="4489-2b8c-7790-8b5b" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0" shortName="Main Rules Errata and FAQ V1.0" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/7AX0peoK6m7C7uzw.pdf"/>
+    <publication id="63fa-add3-0752-5ffc" name="Liber Astartes Errata and FAQ V1.0" shortName="LA - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf"/>
+    <publication id="8200-f05a-6e7d-9326" name="Liber Mechanicum Errata and FAQ V1.0" shortName="LM - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf"/>
+    <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus Astartes Errata and FAQ V1.0" shortName="LH - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -2043,9 +2048,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ac0-ef19-fed7-ea88" name="Turbo-Laser Destructor**" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5ac0-ef19-fed7-ea88" name="Turbo-Laser Destructor" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="34f1-b3c4-112d-5f6e" name="Turbo-Laser Destructor**" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="34f1-b3c4-112d-5f6e" name="Turbo-Laser Destructor" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">96&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
@@ -2058,7 +2063,6 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <infoLink id="825e-27b1-ee08-4bc8" name="Destroyer" hidden="false" targetId="44d6-09b2-3bd3-b2d6" type="rule"/>
         <infoLink id="ad67-b373-e6f4-47db" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="7532-b85b-3c29-20bf" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
-        <infoLink id="6283-8eda-b550-c151" name="**Turbo-Laser issue" hidden="false" targetId="2ac7-9784-9b0f-182b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -5583,9 +5587,9 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f947-d7f1-40bd-f425" name="Twin-linked Turbo Laser-Destructor**" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f947-d7f1-40bd-f425" name="Twin-linked Turbo Laser-Destructor" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="7638-24f4-5d50-19a4" name="Twin-linked Turbo-Laser Destructor**" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="7638-24f4-5d50-19a4" name="Twin-linked Turbo-Laser Destructor" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">96&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
@@ -5598,7 +5602,6 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
         <infoLink id="89df-a615-155d-b9e0" name="Destroyer" hidden="false" targetId="44d6-09b2-3bd3-b2d6" type="rule"/>
         <infoLink id="7eb5-3a0c-7678-8195" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="c702-a2c4-ac1f-2d72" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-        <infoLink id="45ab-52e4-d6d4-1bf3" name="**Turbo-Laser issue" hidden="false" targetId="2ac7-9784-9b0f-182b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -6105,6 +6108,68 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ba40-62e6-2111-e938" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1191-ed3c-422f-51b0" type="min"/>
       </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="423f-5e6d-4427-a348" name="Skystrike Missile" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2da8-deb2-1ef3-28ae" name="Skystrike Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Skyfire, Sunder, One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ad73-0129-03a1-71a8" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
+        <infoLink id="7b63-001f-1b4c-96cf" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="88e0-df74-d1fb-753d" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7638-4f76-51f0-b0fa" name="Battle Cannon" publicationId="d0df-7166-5cd3-89fd" page="29" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7d29-66bb-2c6c-bd1f" name="Battle Cannon" publicationId="d0df-7166-5cd3-89fd" page="29" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1b98-e720-d21f-5c12" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="3460-c89e-6aaa-a409" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="196c-cb26-f3e0-e0db" name="Vanquisher Battle Cannon" publicationId="d0df-7166-5cd3-89fd" page="29" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f625-6ab5-ba47-8b90" name="Vanquisher Battle Cannon" publicationId="d0df-7166-5cd3-89fd" page="29" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4ad3-a282-06cf-21e2" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="9daa-0fd4-f2a9-7bec" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -10112,9 +10177,6 @@ models with the Fortification Unit Type. Each model with
 the Fortification Unit Type is always considered a separate
 unit (excepting only Multi-part fortifications, see page 225 of
 Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
-    </rule>
-    <rule id="2ac7-9784-9b0f-182b" name="**Turbo-Laser issue" hidden="false">
-      <description>The UK digital and Physcal versions of the Mech book had the wrong stats printed (lowering the S to 10 and AP to 3, as well as removing Ignores Cover). The correct value was in other versions of the book such as the German version which are the same as the stats presented in the Legion books.</description>
     </rule>
     <rule id="c41f-6ac9-6909-44c4" name="Catastrophic Destruction" publicationId="bde1-6db1-163b-3b76" page="103" hidden="false">
       <description>When destroyed, a model with this special rule resolves Catastrophic Damage at AP 1.</description>
