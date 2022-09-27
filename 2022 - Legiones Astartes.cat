@@ -4630,6 +4630,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="03f1-8ed9-9867-8d18" name="Rhino Transport" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="ab48-605d-a6cc-7ad6" name="Legion Rhino Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14&quot;</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Legion Rhino Transport has one Access Point on each side of the hull and one at the rear.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
       <infoLinks>
         <infoLink id="73a1-60c3-e3d9-6afe" name="Repair" hidden="false" targetId="857b-1adc-8233-6c55" type="rule"/>
         <infoLink id="a2d2-a807-99bb-a49f" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
@@ -4638,35 +4653,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="e07d-b552-90ef-c096" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="4048-d50e-f863-8094" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="baa7-a991-0755-959a" name="Legion Rhino Transport" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e903-4c24-ad77-5be3" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7122-ce08-7f86-3c8c" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="cf21-6abe-f6ad-32e4" name="Legion Rhino Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
-                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14&quot;</characteristic>
-                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
-                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
-                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Legion Rhino Transport has one Access Point on each side of the hull and one at the rear.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="1eff-307a-b098-db41" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="fffa-369b-8a93-c728" name="May take:" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -4821,7 +4807,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dc49-518b-0f77-5e3e" name="Blessed Auto-simulacra" publicationId="817a-6288-e016-7469" page="278" hidden="false" collective="false" import="true" type="upgrade">
@@ -8070,7 +8056,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="9c02-a9fe-a9c9-039f" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="305c-37ae-3cda-349b" name="Land Raider Spartan" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="305c-37ae-3cda-349b" name="Land Raider Spartan" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebab-656d-6913-85b7" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4f8-0d83-cec7-874e" type="min"/>
@@ -20881,7 +20867,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="2e40-97f7-d4a9-ff9e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1b10-460e-e75a-3ffd" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="1b10-460e-e75a-3ffd" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cdd-7966-b51d-55c0" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a24e-b8f5-1b41-a6b5" type="max"/>
@@ -21989,7 +21975,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8aa5-ff31-7de7-19d4" name="Storm Eagle Gunship" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8aa5-ff31-7de7-19d4" name="Storm Eagle Gunship" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="364c-030d-be45-c981" name="Storm Eagle Gunship" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
           <characteristics>
@@ -24876,7 +24862,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="850.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c123-bdc6-a6ba-79a2" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c123-bdc6-a6ba-79a2" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="2a46-a372-d986-d0eb" name="Land Raider Proteus Carrier" publicationId="a716-c1c4-7b26-8424" page="76" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
           <characteristics>
@@ -30223,7 +30209,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="681a-7426-96af-caac" name="Land Raider Phobos Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="681a-7426-96af-caac" name="Land Raider Phobos Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="b053-4b8e-8514-cb3f" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="c478-ab4e-1a65-2daa" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
