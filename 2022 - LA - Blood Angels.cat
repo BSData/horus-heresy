@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="21" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="22" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <categoryLinks>
@@ -1076,7 +1076,7 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius (PLACEHOLDER)" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="model">
       <comment> (WEAPONS NEED PROFILES)</comment>
       <profiles>
         <profile id="3679-27a6-38ce-1715" name="Sanguinius" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
@@ -1131,25 +1131,6 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="729a-45a0-2f61-f453" name="The Blade Encarmine" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7251-a8a6-75f9-2698" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c240-3fe9-9798-ca16" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="7676-f9d8-e84e-9ec9" name="The Blade Encarmine" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="bcee-5c0c-f7ad-d9f0" name="Infernus" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="567d-1b9b-6523-7b5f" type="min"/>
@@ -1158,10 +1139,10 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
           <profiles>
             <profile id="897a-8a0f-f0a0-84b2" name="Infernus" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Armorbane (melta), One Shot</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1170,6 +1151,75 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9e6f-2a15-74a0-f47c" name="Blade Encarmine:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0789-ba05-6708-7694" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1af2-ea97-c596-1447" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4067-76aa-eb28-b3ec" name="The Blade Encarmine" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c94-92ec-76ee-5761" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2a40-64c9-2027-f48c" name="The Blade Encarmine" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rage (2), Rampage (2), Murderous Strike (5+), Shred, Master Crafted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="aa76-0f93-c020-d477" name="Spear of Telesto and Moonsliver Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b7-877d-e7d0-74f9" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="17ef-57f9-09be-af76" name="Spear of Telesto" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Master-Crafted, Lance, Exoshock (4+)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b70a-d860-eefd-5381" name="Moonsliver Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-Crafted, Blind, Duellist&apos;s Edge (1), Moonsilver</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="6d7f-15d3-ec08-4dcd" name="Spear of Telesto (Shooting)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Exoshock (4+), Instant Death, Lance</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="8779-8f95-2b12-38c9" name="Spear of Telesto" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0982-427b-1d4a-d07c">Once per battle, in the Shooting phase, in lieu of making any other Shooting Attacks, Sanguinius may make a Shooting Attack using the Spear of Telesto, using the profile below. Should he choose to do this, he may not make either Shooting Attacks or Melee Attacks with the Spear of Telesto for the remainder of the battle:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="29c4-3e8d-3f66-26a7" name="Moonsilver" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
+                  <characteristics>
+                    <characteristic name="Description" typeId="0982-427b-1d4a-d07c">Any unsaved Wound caused against a model with the Daemon Unit Type or Psyker Sub-type is instead counted as two Wounds. Wounds caused in excess of the model&apos;s remaining Wounds do not spill over to other models.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="2df4-a271-b4a1-7b49" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
           <constraints>
@@ -1183,9 +1233,9 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eeb-c50e-4b35-bd33" type="min"/>
           </constraints>
           <profiles>
-            <profile id="e25c-ffa8-50ef-91a8" name="Sire of the Blood Angels (PLACEHOLDER)" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+            <profile id="e25c-ffa8-50ef-91a8" name="Sire of the Blood Angels" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All friendly models with the Legiones Astartes (Blood Angels) special rule in the same army as Sanguinius that either deploys as part of a Deep Strike Assault (or any other deployment method that requires the Deep Strike special rule) or has a Legion Warhawk jump pack gain +1 Weapon Skill on any turn in which they make a successful Charge. In addition, an army with Sanguinius as its Warlord gains an additional Reaction in the opposing player&apos;s Movement phase as long as Sanguinius has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1203,19 +1253,29 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
     </selectionEntry>
     <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="3016-8dba-083b-e98b" name="Judicar Aster Crohne" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="3016-8dba-083b-e98b" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="808d-da54-f3db-be02" name="Ghost of Saiph" hidden="false"/>
-        <rule id="46e0-ce72-f798-0bb0" name="Virtue of Judgement" hidden="false"/>
-        <rule id="b761-ace5-6017-d658" name="Bitter Duty" hidden="false"/>
+        <rule id="808d-da54-f3db-be02" name="Ghost of Saiph" hidden="false">
+          <description>The first time Judiciar Aster Crohne loses his last wound, or otherwise removed as a casualty, roll a D6. On a 4+, he is placed in Reserves with a single Wound remaining instead of being removed or destroyed. If he enters Reserves on or after turn 4, then he may enter play automatically at the start of the controlling player’s following turn.</description>
+        </rule>
+        <rule id="46e0-ce72-f798-0bb0" name="Virtue of Judgement" hidden="false">
+          <description>At the start of the battle, once both players have deployed their armies, including any units with the Infiltrator special rule, Judiciar Aster Crohne’s controlling player may select D3 enemy units – these units are considered ‘Marked for Judgement’. Judiciar Aster Crohne, Blood Angels Angel’s Tears, Legion Destroyers or Legion Mortalis Destroyers with the Legiones Astartes (Blood Angels) special rule in the Detachment that Judiciar Aster Crohne is part of, gain the Shred special rule when making attacks with a weapon with the Flame type, against units that are Marked for Judgement.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="fc76-e97f-b4d4-e19e" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
@@ -1226,6 +1286,7 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
           </modifiers>
         </infoLink>
         <infoLink id="b5fb-e24a-7e45-3cb7" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+        <infoLink id="c3f1-c79c-87d2-f4eb" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9443-2cc4-be17-c3d0" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -1241,10 +1302,10 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
           <profiles>
             <profile id="d624-d513-266a-128e" name="Saiphan shard-axe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+),  Duelist&apos;s Edge (1)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1307,7 +1368,9 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
     </selectionEntry>
     <selectionEntry id="33fe-9683-bde5-95ca" name="Crimson Paladins" hidden="false" collective="false" import="true" type="unit">
       <rules>
-        <rule id="e7b7-06df-ae02-5617" name="The Blood is Forever" hidden="false"/>
+        <rule id="e7b7-06df-ae02-5617" name="The Blood is Forever" hidden="false">
+          <description>While locked in combat with a unit that outnumbers them, a Crimson Paladin unit gains the Feel No Pain (5+) special rule. If outnumbered by more than twice their own number then they instead gain the Feel No Pain (4 +) special rule. Any model with the Independent Character special rule that joins this squad does not gain this special rule and does not count for the purposes of determining when the unit is outnumbered. Each Crimson Paladin and Crimson Exemplar is counted as two models as they have the Bulky (2) special rule (and likewise, any enemy models with a variant of the Bulky (X) rule count as the number of models they would for the purposes of Transport Capacity). If locked in combat with more than one enemy unit, add the size of all enemy units together to decide if the Crimson Paladins are outnumbered.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="cbb3-ebde-f2e8-54b9" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
@@ -1472,6 +1535,9 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc3-08c1-e44c-533f" type="max"/>
                         <constraint field="selections" scope="33fe-9683-bde5-95ca" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="04d4-d85b-a9b9-6052" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="b42b-0298-2344-2ff3" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                       <modifiers>
@@ -1485,6 +1551,9 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cc4-c2e2-d12b-7a41" type="max"/>
                         <constraint field="selections" scope="33fe-9683-bde5-95ca" value="2.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="92a5-1182-7671-4b33" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="0d96-6e8c-b627-6ea1" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                   </entryLinks>
@@ -1650,6 +1719,18 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff49-5284-8b4e-9ca1" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ab4-a852-40be-43d1" type="min"/>
           </constraints>
+          <profiles>
+            <profile id="a227-2691-30af-c97b" name="Incaedius booster pack" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
+              <characteristics>
+                <characteristic name="Description" typeId="0982-427b-1d4a-d07c">A massive rocket booster pack is installed on the rear torso of the Contemptor-Incendius, with enough fuel for a single prolonged burn. This is used either to drop the Dreadnought from orbit, or to allow it to cover the distance to the foe in a series of long leaps. Once its fuel is exhausted, the booster pack is purged from the Dreadnought&apos;s chassis by a system of explosive bolts, allowing the war machine to fight freely.
+The Incaendius booster pack may be used once per battle in one of two ways; these options are mutually exclusive and the use of one means the other may not be used in that battle:
+Deep Strike: At the start of the battle, before any models are deployed onto the battlefield, the controlling player may choose to place the Contemptor-Incendius Dreadnought into Reserves and give it the Deep Strike special rule. It may then take part in a Deep Strike Assault or another deployment that requires the use of the Deep Strike special rule.
+Shock Assault: The controlling player may opt to deploy the Contemptor-Incendius Dreadnought as normal, in this case the use of the Incaendius booster pack may be declared once per battle at the start of any of the controlling player&apos;s Movement phases, including the first. When activated, the Contemptor-Incendius Dreadnought&apos;s Movement Characteristic is set to 12&quot; and gains the Hammer of Wrath (2) special rule for the duration of the controlling player&apos;s turn. While this effect is active, the Contemptor-Incendius Dreadnought may ignore all other models and terrain freely while moving, but may not end its Move in Impassable Terrain or within 1&quot; of another model. However, if the model begins or ends that Movement phase in Difficult Terrain, it must take a Dangerous Terrain test. While the Incendius booster pack is activated the model may not Run.
+Note that any Contemptor-Incendius Dreadnought selected as part of a Detachment using the Day of Revelation
+Rite of War must use the Deep Strike option and must be assigned to a Deep Strike Assault.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -1666,6 +1747,16 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
               <modifiers>
                 <modifier type="append" field="name" value=", Pair"/>
               </modifiers>
+              <profiles>
+                <profile id="cfe7-16ca-d0ee-891e" name="Talon of Perdition" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Brutal (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
@@ -1713,12 +1804,19 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
     </selectionEntry>
     <selectionEntry id="59f7-9abf-c171-e9e4" name="Chapter Master Raldoron" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="848e-4fab-588a-b8f0" name="Chapter Master Raldoron" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="848e-4fab-588a-b8f0" name="Chapter Master Raldoron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Unique, Character)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1745,10 +1843,10 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
           <profiles>
             <profile id="a03f-f127-0fcc-95e4" name="The Encarmine Warblade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-Crafted, Shred, Murderous Strike (5+)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2184,18 +2282,27 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
     </selectionEntry>
     <selectionEntry id="98d4-555a-6911-7c1a" name="Dominion Zephon" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="5956-601d-0c41-91a3" name="Dominion Zephon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="5956-601d-0c41-91a3" name="Dominion Zephon" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Unique, Character)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="d6f9-0148-5c6e-5e87" name="Bitter Duty" hidden="false"/>
-        <rule id="308f-78bb-90b4-76f9" name="Paragon of Restoration" hidden="false"/>
+        <rule id="308f-78bb-90b4-76f9" name="Paragon of Restoration" hidden="false">
+          <description>Installed in Zephon&apos;s body by the apocryphal techo-ministrations of Arkhan Land, these intricate bionic enhancements can heal even the most grievous wounds over time and prevent their host-body from slipping into death&apos;s embrace.
+The Paragon of Restoration gives Dominion Zephon the Feel No Pain (5+) special rule. In addition, the first time in any battle that Dominion Zephon loses his last Wound, or is otherwise removed from play as a casualty, the controlling player must immediately roll a D6. On a result of 4+, he remains in play with a single Wound remaining instead of being removed or destroyed.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="901c-bb1a-646c-6ea7" name="Legiones Astartes (Blood Angels) " hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
@@ -2206,6 +2313,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
           </modifiers>
         </infoLink>
         <infoLink id="6e1c-b267-05c0-d4e2" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="6544-cea9-9c06-ba7c" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="31ae-7034-a2db-dc40" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -2214,7 +2322,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
         <categoryLink id="9f7b-e6db-ff1f-ad62" name="Jump Infantry:" hidden="false" targetId="eee8-3c7c-2762-e33e" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="cae6-5863-3f61-2a37" name="Lament and Grief (PLACEHOLDER)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="cae6-5863-3f61-2a37" name="Lament and Grief" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9307-784d-3a06-6737" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2380-b744-1125-b0e5" type="min"/>
@@ -2222,10 +2330,10 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
           <profiles>
             <profile id="bd02-53fa-b4d3-8a75" name="Lament and Grief" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 3, Deflagrate, Blind</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2233,7 +2341,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ac7a-84d8-03ec-117c" name="The Spiritum Sanguis (PLACEHOLDER)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ac7a-84d8-03ec-117c" name="The Spiritum Sanguis" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3783-6d42-da4c-f291" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c7a-4ede-a1a7-457d" type="min"/>
@@ -2241,10 +2349,10 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
           <profiles>
             <profile id="a090-842a-a421-8c01" name="The Spiritum Sanguis" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Reaping Blow (1), Master Crafted</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2301,9 +2409,14 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="634c-4052-0407-e871" type="max"/>
           </constraints>
-          <rules>
-            <rule id="8d9e-78c0-a1f4-eb2c" name="Exarch of the High Host (PLACEHOLDER)" hidden="false"/>
-          </rules>
+          <profiles>
+            <profile id="d317-03bf-f28e-13ac" name="Exarch of the High Host" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If Dominion Zephon is the army&apos;s Warlord then a Legion Destroyer Assault Squad may be selected as part of the same HQ choice.
+A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as Dominion Zephon. The Retinue Squad must be deployed with Dominion Zephon deployed as part of the unit and Dominion Zephon may not voluntarily leave the Retinue Squad during play. All models in a Legion Destroyer Assault Squad chosen using this Warlord Trait gain the Chosen Warriors special rule. If this option is selected then no other unit may be selected for Dominion Zephon using the Retinue special rule. In addition, an army with Dominion Zephon as its Warlord may make an additional Reaction in the opposing player&apos;s Assault phase as long as Dominion Zephon has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
         <entryLink id="cd01-ba9c-0f0a-933e" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
           <constraints>
