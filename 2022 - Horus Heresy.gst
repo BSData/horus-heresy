@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="19" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="20" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -9740,9 +9740,6 @@ An Independent Character without the Infiltrate special rule cannot join a unit 
     </rule>
     <rule id="3d6b-9e0b-56f0-8a1e" name="Lance" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
       <description>Weapons with the Lance special rule count Vehicle Armour Values that are higher than 12 as 12.</description>
-    </rule>
-    <rule id="61cf-75c2-56cd-2a31" name="Legiones Astartes (X)" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
-      <description>Any unit with this special rule will have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in other Horus Heresy – Age of Darkness publications. A Space Marine unit may only have one such ‘named’ rule, e.g., Legiones Astartes (Sons of Horus). Space Marine units from a different Legion may only be included in an army using an Allied Detachment (see page 281) and in conjunction with the Allies in the Age of Darkness chart found on page 282.</description>
     </rule>
     <rule id="be87-f0e5-7446-972b" name="Lingering Death" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
       <description>When a Blast weapon with this rule is used, after the attack is resolved leave the Blast marker in play for the rest of the game and mark it with a counter of some kind. This area is now treated as Dangerous Terrain for all models with a Toughness value.</description>
