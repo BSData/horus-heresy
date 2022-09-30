@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="22" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="22" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <categoryLinks>
@@ -497,7 +497,7 @@
     <entryLink id="2952-bb84-4426-c9a7" name="Predator Squadron " hidden="false" collective="false" import="false" targetId="45fd-df3e-9bc4-60b6" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e87d-dc05-0063-e2b7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="ca60-4c44-4d6e-5adc" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="213b-34bb-5d9c-3f0b" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="da99-9ed2-998e-ead8" name="Proteus Land Speeder Squadron" hidden="false" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
@@ -1074,6 +1074,32 @@
         <categoryLink id="febc-bfee-27ba-5db3" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="f983-a88b-b170-fe04" name="Master of Armor" hidden="false" collective="false" import="true" targetId="0e4e-1b9a-6b38-e575" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="92ce-5ee5-9a06-904f" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="9cc0-c1a8-8c5b-0b01" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="b31a-66ab-b8e6-5df0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1231-26aa-03af-1794" name="Predator Squadron " hidden="false" collective="false" import="true" targetId="45fd-df3e-9bc4-60b6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="54c3-bbd9-c80f-6c0c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="10fe-a627-3353-bff8" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="08a5-32b7-1f42-ee01" name="Sicaran Squadron" hidden="false" collective="false" import="true" targetId="706a-9532-f06d-00ed" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5b15-e1d8-79d1-78f4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e98c-cf57-ddf1-1f83" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="model">
@@ -1216,6 +1242,9 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
