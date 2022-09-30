@@ -4389,7 +4389,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="18ea-34ad-326b-281b" name="Twin-linked Heavy-Flamer" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="18ea-34ad-326b-281b" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="7f77-a047-7f45-f56a" name="Twin-linked Heavy Flamer" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -5740,9 +5740,9 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aafc-7435-8805-0e0f" name="Medusa mortar" publicationId="d0df-7166-5cd3-89fd" page="26" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="aafc-7435-8805-0e0f" name="Medusa Mortar" publicationId="d0df-7166-5cd3-89fd" page="26" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="27dd-e9b5-2f18-b4fa" name="Medusa mortar" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="27dd-e9b5-2f18-b4fa" name="Medusa Mortar" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
