@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <constraints>
@@ -345,7 +345,7 @@
         <categoryLink id="ff26-0ed6-3de9-4c30" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="db9e-a946-5ad7-a81f" name="Land Raider Phobos " hidden="true" collective="false" import="true" targetId="ad56-a7fc-a815-aebf" type="selectionEntry">
+    <entryLink id="db9e-a946-5ad7-a81f" name="Mechanicum Land Raider Phobos " hidden="true" collective="false" import="true" targetId="ad56-a7fc-a815-aebf" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -356,6 +356,45 @@
       <categoryLinks>
         <categoryLink id="af46-73e9-95b5-ecb9" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
         <categoryLink id="5e30-0ad2-6f7f-6943" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="134c-75ba-ebdb-d54c" name="Ordo Reductor Minotaur Battery (incomplete)" hidden="true" collective="false" import="true" targetId="ebf8-fbe4-1473-7903" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1f73-6e2d-c3f3-f53c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e795-e3e7-17d4-cfc3" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f092-9b7c-0ece-5f1a" name="Ordo Reductor Artillery Tank Battery (incomplete)" hidden="true" collective="false" import="true" targetId="6353-c4c3-d099-002e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5b9e-14a0-d63d-ee8a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2363-773b-54f6-4940" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="75ab-47e9-3e7d-1fcb" name="Macrocarid Explorator (incomplete)" hidden="true" collective="false" import="true" targetId="bd83-b47d-1f37-1159" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6b3d-b497-866a-d8a0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a12c-791f-fbf5-c999" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4786,6 +4825,9 @@ removed as a casualty.�</characteristic>
               <infoLinks>
                 <infoLink id="13de-6cd5-4013-7fe0" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -4970,6 +5012,9 @@ removed as a casualty.�</characteristic>
                   <infoLinks>
                     <infoLink id="04e9-e0a4-dbd5-7325" name="Heavy Bolter" hidden="false" targetId="d96e-a893-dc91-7f8b" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -5010,6 +5055,9 @@ removed as a casualty.�</characteristic>
                     <infoLink id="5d8a-c2f6-6066-9479" name="Lascannon" hidden="false" targetId="603c-2961-bc8c-ed2d" type="profile"/>
                     <infoLink id="d059-098f-3abd-c1ea" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -5055,6 +5103,9 @@ removed as a casualty.�</characteristic>
                   <infoLinks>
                     <infoLink id="89c8-e593-5738-941d" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -5125,6 +5176,9 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="236f-2118-c8e3-7d6c" name="Haemonculite Cyber-corpus" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5138,6 +5192,9 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ff20-37a4-ddd3-3249" name="Twin-linked Maxima Bolter" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5443,6 +5500,150 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd83-b47d-1f37-1159" name="Macrocarid Explorator" publicationId="3886-76e5-438f-159f" page="7" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="bf44-a73f-e84f-2132" name="Macrocarid Explorator" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">26</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point on each side of the hull.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="daa0-ec06-30b1-ca27" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
+        <infoLink id="af5f-020a-8142-d9e6" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cfaa-e6aa-efcd-a369" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="2fa0-e6a3-e7c8-efb0" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9fcc-a5f0-7ac8-b1c2" name="May take:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="a7db-7ba9-770e-d134" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b47-0a93-6ebb-1690" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="91b6-dd91-366e-be0f" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e85-a377-99b8-fc9a" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1084-2820-ad80-f602" name="May exhange its Two Hull (Front) Mounted Lascannons for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0ea4-ebcd-ed8a-d849">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a28-cf9a-d79d-cef3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dfc-5496-145d-6974" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0ea4-ebcd-ed8a-d849" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hull (Front) Mounted Lascannons"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="83b0-f118-be75-5a53" name="Twin-linked Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="ac88-bcf4-d7b4-5c56" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hull (Front) Mounted Twin-linked Mauler Bolt Cannons"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1283-bcc2-9558-82e2" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="3adf-7150-9ee6-b2de" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hull (Front) Mounted Twin-linked Lascannons"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="4e17-3b91-43c1-5350" name="Irradiation Engine" hidden="false" collective="false" import="true" targetId="5d14-047a-bc9c-5d00" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Two Hull (Front) Mounted Irradiation Engines"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1d80-2aca-d726-46bc" name="May echange its Hull (Front) Mounted Mauler Bolt Cannon for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="95a7-7cc8-886c-5a56">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3cc-3c16-1090-32d1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e88-3850-0f96-ba41" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="95a7-7cc8-886c-5a56" name="Mauler Bolt Cannon" hidden="false" collective="false" import="true" targetId="7478-2c29-dfc4-f4cf" type="selectionEntry"/>
+            <entryLink id="e228-4cc2-0aec-3f9c" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="170d-44e0-455c-8207" type="selectionEntry"/>
+            <entryLink id="225e-af1c-ea2e-f226" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry"/>
+            <entryLink id="de4b-81b0-96a2-74ef" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="19cf-72b2-ae3d-1b0a" name="Conversion Beamer" hidden="false" collective="false" import="true" targetId="2397-a3fd-81e6-4ced" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="6774-b819-9b57-5231" name="Graviton Imploder" hidden="false" collective="false" import="true" targetId="c651-d95e-6aa9-c3de" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d68a-da3e-c6e1-591c" name="Twin-linked Phased Plasma-Fusil" hidden="false" collective="false" import="true" targetId="9ef1-d661-3df6-919c" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="38bd-7566-9a4b-c8eb" name="Twin-linked Irad-Cleanser" hidden="false" collective="false" import="true" targetId="4809-8b31-d492-85bb" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c361-60bd-444f-99c8" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f64-0d14-f1cc-f18d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3338-d1f3-c16e-a2fc" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="320.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6353-c4c3-d099-002e" name="Ordo Reductor Artillery Tank Battery (incomplete)" publicationId="3886-76e5-438f-159f" page="8" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="d424-806b-eacc-5647" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ebf8-fbe4-1473-7903" name="Ordo Reductor Minotaur Battery (incomplete)" publicationId="3886-76e5-438f-159f" page="10" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="d639-ec72-f829-d01f" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="280.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
