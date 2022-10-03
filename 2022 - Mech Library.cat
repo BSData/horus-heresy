@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="9" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="10" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -1050,7 +1050,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066">36-180&quot;</characteristic>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">14</characteristic>
                         <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (9&quot;), Sunder</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10&quot;), Sunder</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -5643,6 +5643,77 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="14.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7967-2b30-7a55-1ac9" name="Mars-Colossus Bombard" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e6f3-ef88-c33d-ae57" name="Mars-Colossus Bombard" publicationId="3886-76e5-438f-159f" page="9" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;-72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance1, Barrage, Large Blast (5&quot;), Pinning, Ignores Cover</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ea80-805b-ddc8-db57" name="Ordnance" hidden="false" targetId="6c55-22c8-1b01-2105" type="rule"/>
+        <infoLink id="c39c-f5dd-4a33-22b8" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="9f39-3c74-f8aa-7d63" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="655b-b583-fc24-19ba" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="fbc3-b924-7ba4-01cb" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f2fc-27b6-983d-092b" name="Gravis Melta Cannon Array" publicationId="3886-76e5-438f-159f" page="9" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="54d5-2527-df78-5068" name="Gravis Melta Cannon Array" publicationId="3886-76e5-438f-159f" page="9" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Armourbane (Melta), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="79eb-6c18-482c-09f5" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a528-f93e-42e1-47c8" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cbd7-2fa5-1aba-e754" name="Twin-linked Earthshaker Cannon" publicationId="3886-76e5-438f-159f" page="10" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="be9f-6bae-4cc7-a29b" name="Twin-linked Earthshaker Cannon" publicationId="3886-76e5-438f-159f" page="10" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">240&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1, Barrage, Large Blast (5&quot;), Shred, Pinning, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1313-6106-0185-5d31" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="a226-7836-c084-0dce" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Blast (5&quot;)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="73f0-961c-ca8e-e746" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="4cef-5492-42cb-ac6e" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="2932-916d-7c44-2540" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
@@ -5860,6 +5931,13 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
           </costs>
         </selectionEntry>
         <selectionEntry id="5e62-8d7e-a487-0490" name="Malagra" publicationId="bde1-6db1-163b-3b76" page="100" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d95-f9d1-440a-67bd" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <rules>
             <rule id="ddb0-51e0-9185-1b5f" name="Malagra" publicationId="bde1-6db1-163b-3b76" page="100" hidden="false">
               <description>• Ictus Insidiae: Any models with the Character Unit Sub-type in a Detachment that includes a model with this special rule may upgrade a machinator array or servo-arm they are equipped with to include an in-built prehensile data-spike for +10 points.
@@ -5891,6 +5969,13 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
           </costs>
         </selectionEntry>
         <selectionEntry id="8305-5ac6-f395-e570" name="Myrmidax" publicationId="bde1-6db1-163b-3b76" page="101" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d95-f9d1-440a-67bd" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <rules>
             <rule id="e4ad-3f1e-c347-5d0a" name="Myrmidax" publicationId="bde1-6db1-163b-3b76" page="101" hidden="false">
               <description>• Avatar of Destruction: A single Thanatar Siege-automata Maniple unit consisting of a single model may be taken as a non-Compulsory HQ choice in a Detachment that includes a model with this special rule. This model must be replaced with a Thanatar-Calix and may not take the Paragon of Metal upgrade. While wholly within 6&quot; of a Thanatar-Calix taken as an HQ choice in this way, friendly Myrmidon Secutor Hosts and Myrmidon Destructor Hosts gain the Line Unit Sub-type and add +1 to the Wounds score used to determine if they win a combat in the Assault phase.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="21" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="22" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -5217,7 +5217,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">120&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">14</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (9&quot;), Sunder</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 1, Apocalyptic Blast (10&quot;), Sunder</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -5237,7 +5237,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">60&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 2, Apocalyptic Blast (9&quot;), Pinning, Shell Shock (1)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Destroyer 2, Apocalyptic Blast (10&quot;), Pinning, Shell Shock (1)</characteristic>
           </characteristics>
         </profile>
       </profiles>
