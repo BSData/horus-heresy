@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="16" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="16" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="   V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <constraints>
@@ -1536,7 +1536,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e37e-09ea-50c6-2daa" name="Kyzagan Assualt Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e37e-09ea-50c6-2daa" name="Kyzagan Assault Speeder Squadron" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="c506-b0b4-47ec-6f9d" name="Legiones Astartes (White Scars) " hidden="false" targetId="4b54-8bd0-9fdd-cbc4" type="rule"/>
         <infoLink id="9346-5998-1eca-3eef" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
@@ -1579,24 +1579,18 @@
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink id="dead-c1f0-6ab4-7818" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b9ed-cea4-b9bb-281d" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="43ff-1354-e17c-df7d" name="Any model may take up to two Hunter-killer Missiles:" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="increment" field="c443-a3e0-c5f0-27a8" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="set" field="name" value="2x Hunter-Killer Missile"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c443-a3e0-c5f0-27a8" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2365,7 +2359,7 @@
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2), Specialist Weapon, Reapon Blow (1), Hammerhand</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2), Specialist Weapon, Reaping Blow (1), Hammerhand</characteristic>
               </characteristics>
             </profile>
             <profile id="27d5-8b06-17d1-1c89" name="Hammerhand" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -2382,6 +2376,20 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="c287-41d1-fcf2-65de" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaping Blow (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="23e1-3a51-6dab-fc75" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Brutal (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="2640-7801-5d7f-f828" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+            <infoLink id="d079-303a-e4cc-0b2f" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>

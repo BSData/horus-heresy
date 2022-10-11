@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="55" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="55" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -3773,7 +3773,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="b2de-10d9-f7de-c517" name="Bayonet:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="b2de-10d9-f7de-c517" name="1.5) Bayonet:" hidden="false" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -5418,6 +5418,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="70eb-e4da-8b3f-f065" name="Outrider Squadron" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="ea28-4e70-3907-dd03" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+        <infoLink id="71b3-f745-2abc-2ea5" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
+        <infoLink id="8ccd-e19f-4357-402d" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="2a0a-16f7-36a7-f414" name="Skirmish:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
         <categoryLink id="ca35-8e83-c135-9eaf" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -8263,11 +8268,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d640-8e72-3460-7264" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="06f7-edea-4a4f-35eb" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec72-30e9-d9db-fbec" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="52c6-fa78-2333-e836" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
                   <constraints>
@@ -8489,9 +8500,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </modifier>
                   </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
                 </entryLink>
                 <entryLink id="2aa6-ed38-ddc9-60fa" name="Cult Arcana Discipline" hidden="true" collective="false" import="true" targetId="d25a-f9ee-4a45-916e" type="selectionEntry">
                   <modifiers>
@@ -8641,11 +8649,8 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <modifier type="set" field="hidden" value="false"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1af-8fed-2c86-1049" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f1af-8fed-2c86-1049" type="max"/>
               </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -10413,6 +10418,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="e22f-8171-3d53-dd17" name="Terminator Lightning Claws:" hidden="false" collective="false" import="true" targetId="eeb8-0216-3d95-f0da" type="selectionEntryGroup"/>
                 <entryLink id="81b2-4680-77ee-9819" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
                 <entryLink id="80ec-59cf-a35c-add1" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+                <entryLink id="977d-aac0-dff8-c420" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b540-3499-968f-e720" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -10459,6 +10469,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="525d-f535-ad1f-6052" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup"/>
                 <entryLink id="5b4f-021a-390d-3065" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
                 <entryLink id="6c33-de84-463c-cc2f" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+                <entryLink id="018f-2863-ea27-90a7" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ce6-30b5-8d85-2e99" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -11055,6 +11070,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="1177-993b-0f96-0ab9" name="Terminator Lightning Claws:" hidden="false" collective="false" import="true" targetId="eeb8-0216-3d95-f0da" type="selectionEntryGroup"/>
                 <entryLink id="400e-58a2-bc27-49d7" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
                 <entryLink id="98fd-67c7-34b9-e82f" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+                <entryLink id="375c-6e8c-dcf3-d004" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0194-a1ac-f80d-f41d" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -11101,6 +11121,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="9188-7da9-82b5-863b" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup"/>
                 <entryLink id="a0ea-7fed-fa70-0008" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
                 <entryLink id="102b-8fd3-951a-ac19" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+                <entryLink id="0d61-3aba-e226-02c9" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e748-e7f2-6ffc-fa0a" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -16899,6 +16924,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="ef04-4814-adce-0bc9" name="0) Legion-specific Wargear" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="95ae-eafa-dbf1-565c" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca9d-a80d-6b23-4d99" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="6767-404e-f31a-44d9" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
@@ -17112,7 +17146,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="c07d-488c-2b29-46e7" name="2) Bolt Pistol:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="c07d-488c-2b29-46e7" name="2) Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e85e-4bb5-2e16-78d7">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a4-9b08-e68e-63f2" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ac5-b88c-3b0c-2d47" type="max"/>
@@ -17818,6 +17852,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="dd94-534c-3675-31b0" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d06-f1ba-c4d5-f121" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -22731,6 +22770,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <infoLink id="3e58-208c-8acd-1c58" name="Harbingers of the Legion" hidden="false" targetId="6ab3-174e-0869-da70" type="rule"/>
         <infoLink id="af07-8c2d-7318-3f61" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
         <infoLink id="8a1d-2130-6827-60d8" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="33a4-3343-835c-e714" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="75e1-504c-336a-7c0a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -25636,7 +25676,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b511-e3bc-a12d-e0a6" name="Nullificator Sergeant" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="b511-e3bc-a12d-e0a6" name=" Nullificator Sergeant" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66b5-ec93-c39d-4692" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a50-cf10-e7ff-ca0a" type="max"/>
@@ -25716,6 +25756,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="80a0-0731-4308-e2c3" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+            <entryLink id="0074-c258-2821-025a" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c31b-d961-037e-8d9e" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
@@ -25935,7 +25980,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
                 <entryLink id="e844-44ed-af33-4c9f" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="d00e-7fbc-c412-122b" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -25945,7 +25990,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
                 <entryLink id="9c06-9104-9738-4b37" name="Gravis Plasma Cannon" hidden="false" collective="false" import="true" targetId="32ad-6250-29c7-5466" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="309e-5033-3899-93b6" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
@@ -25976,8 +26021,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="b331-9e1a-0528-bfa9" name="Gravis Missile Launcher" hidden="false" collective="false" import="true" targetId="c2b4-503b-5732-a8a2" type="selectionEntry"/>
-                <entryLink id="3103-2bbd-6d54-7492" name="Flamestorm Cannon" hidden="false" collective="false" import="true" targetId="af97-b307-a484-4fbe" type="selectionEntry"/>
+                <entryLink id="b331-9e1a-0528-bfa9" name="Gravis Missile Launcher" hidden="false" collective="false" import="true" targetId="c2b4-503b-5732-a8a2" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3103-2bbd-6d54-7492" name="Flamestorm Cannon" hidden="false" collective="false" import="true" targetId="af97-b307-a484-4fbe" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8e1b-1b4d-f49b-8f4a" name="Dragon&apos;s Breath Cannon" hidden="false" collective="false" import="true" targetId="b077-7064-6ee1-5951" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="d276-79d0-2989-80dd" name="2) Weapon Option 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f35-46b7-e7fb-9d8d">
@@ -25997,7 +26055,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
                 <entryLink id="f5fb-ee23-cf29-4383" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="bb47-c453-cff3-e7ff" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry">
@@ -26007,7 +26065,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
                 <entryLink id="2559-2ca2-86b1-fda3" name="Gravis Plasma Cannon" hidden="false" collective="false" import="true" targetId="32ad-6250-29c7-5466" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="3b62-63e3-809a-358c" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
@@ -26038,8 +26096,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="64c8-8348-260f-27ba" name="Gravis Missile Launcher" hidden="false" collective="false" import="true" targetId="c2b4-503b-5732-a8a2" type="selectionEntry"/>
-                <entryLink id="41b3-1e54-be42-9dd8" name="Flamestorm Cannon" hidden="false" collective="false" import="true" targetId="af97-b307-a484-4fbe" type="selectionEntry"/>
+                <entryLink id="64c8-8348-260f-27ba" name="Gravis Missile Launcher" hidden="false" collective="false" import="true" targetId="c2b4-503b-5732-a8a2" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="41b3-1e54-be42-9dd8" name="Flamestorm Cannon" hidden="false" collective="false" import="true" targetId="af97-b307-a484-4fbe" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="dde8-628e-4373-e740" name="Dragon&apos;s Breath Cannon" hidden="false" collective="false" import="true" targetId="b077-7064-6ee1-5951" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -26201,6 +26272,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="d15f-3abf-3718-a330" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+                <entryLink id="97ca-f8b0-330e-005f" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5194-8df1-f700-3669" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
@@ -26305,6 +26381,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="fd51-4689-8c4c-a0fe" name="Prosperine Arcana:" hidden="false" collective="false" import="true" targetId="e6a0-3ea2-f7ca-411f" type="selectionEntryGroup"/>
+                <entryLink id="88fa-b753-abe1-209a" name="Master-craft one weapon" hidden="false" collective="false" import="true" targetId="3d6e-5c80-d195-0f2e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9886-1438-261d-1b15" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
@@ -27679,7 +27760,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <infoLink id="0528-fcac-7d0f-6157" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d25a-f9ee-4a45-916e" name="Cult Arcana Discipline" hidden="true" collective="false" import="true" type="upgrade">
@@ -27892,7 +27973,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="17e4-41b2-ab13-65be" name="2) Bolt Pistol Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="17cf-dd72-b1e9-9ce2">
+        <selectionEntryGroup id="17e4-41b2-ab13-65be" name="2) Bolt Pistol Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="d861-d2fc-5945-51a0">
           <modifiers>
             <modifier type="increment" field="7d03-782f-d1df-8809" value="1.0">
               <repeats>
@@ -27932,7 +28013,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="733d-ad62-625a-e413" name="One Legion Spatha attack bike may take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="733d-ad62-625a-e413" name="3) One Legion Spatha Attack Bike may take:" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="1674-c173-085e-c790" name="Legion Vexilla" hidden="false" collective="false" import="true" targetId="21b1-2a90-9826-1782" type="selectionEntry">
               <constraints>
@@ -31894,7 +31975,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="96a4-abb8-aa87-c97a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="a58b-3293-d55c-ebc2" name=" Destroyer Sergeant" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="a58b-3293-d55c-ebc2" name="  Destroyer Sergeant" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb7e-8667-f6a5-a757" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83b7-9fd8-1cfb-b38c" type="min"/>
