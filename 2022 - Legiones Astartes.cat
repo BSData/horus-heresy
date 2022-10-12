@@ -8296,6 +8296,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="c07d-93e5-e962-e6e9" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2820-e9cc-1021-acbd" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fb94-51ab-dd77-b7a1" name="3) May take:" hidden="false" collective="false" import="true">
@@ -9793,6 +9801,26 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1ca4-2bec-e9c9-cc75" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7962-e835-2ae5-c6f1" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8108-914a-b694-930e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -14966,6 +14994,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="3277-6f8a-d42e-c224" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="a1d0-2a7a-e2c0-8764" name="3) May take:" hidden="false" collective="false" import="true">
@@ -18444,6 +18477,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="b5be-afc8-b7f5-af0d" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a622-1782-21dd-73e9" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -40625,6 +40663,23 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
         <entryLink id="ffc3-a076-08cc-aa5c" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="f11c-8768-46ee-372c" name="Terranic Greatsword" hidden="true" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
