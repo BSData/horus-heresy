@@ -8296,6 +8296,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="c07d-93e5-e962-e6e9" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2820-e9cc-1021-acbd" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fb94-51ab-dd77-b7a1" name="3) May take:" hidden="false" collective="false" import="true">
@@ -9793,6 +9801,26 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1ca4-2bec-e9c9-cc75" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7962-e835-2ae5-c6f1" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8108-914a-b694-930e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -13697,27 +13725,27 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d4a-149f-2863-4bc2" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="6de4-d4ed-7f18-dfb4" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
+                <entryLink id="6de4-d4ed-7f18-dfb4" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="1527-1b03-8c19-a544" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="cc98-8596-c713-516c" type="selectionEntry">
+                <entryLink id="1527-1b03-8c19-a544" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="5ed9-1bc3-4d8f-0826" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="b0b1-c35d-5c81-a54d" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="34c4-db99-db36-0f2a" type="selectionEntry">
+                <entryLink id="b0b1-c35d-5c81-a54d" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="0da0-7929-7b86-75bc" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="aa3c-f5a5-9ce9-1497" type="selectionEntry">
+                <entryLink id="0da0-7929-7b86-75bc" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="dd06-55b3-1c77-1e1d" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="29da-bd57-8646-16ea" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="7e5c-3d25-5c88-32e0" type="selectionEntry">
+                <entryLink id="29da-bd57-8646-16ea" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
@@ -13752,11 +13780,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="000c-3f73-511f-15d7" name="Astartes Shotgun" hidden="false" collective="false" import="true" targetId="6f79-5cf4-a689-7269" type="selectionEntry"/>
-                <entryLink id="602b-a201-9ebe-f908" name="Chainsword" hidden="false" collective="false" import="true" targetId="eb13-c744-eba0-77be" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
+                <entryLink id="602b-a201-9ebe-f908" name="Chainsword" hidden="false" collective="false" import="true" targetId="eb13-c744-eba0-77be" type="selectionEntry"/>
                 <entryLink id="c30d-29a0-0311-b605" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -14964,6 +14988,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="6d27-e7db-ed80-5e65" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3277-6f8a-d42e-c224" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -18446,6 +18475,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="a622-1782-21dd-73e9" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fc74-64f9-2f79-42b0" name="3) May take:" hidden="false" collective="false" import="true">
@@ -20052,12 +20086,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
               </costs>
             </entryLink>
-            <entryLink id="3897-bcd6-f795-5789" name="Twin-linked Heavy-Flamer" hidden="false" collective="false" import="true" targetId="18ea-34ad-326b-281b" type="selectionEntry">
+            <entryLink id="3897-bcd6-f795-5789" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="18ea-34ad-326b-281b" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="name" value="Hull (Front) Mounted Twin-linked Heavy Flamer"/>
               </modifiers>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d211-811a-79bd-3212" name="Twin-linked Heavy Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="8dbf-d9fa-6fbc-07af" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Hull (Front) Mounted Twin-linked Heavy Dragon&apos;s Breath Flamer"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -20460,7 +20502,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <modifier type="set" field="name" value="2x Iliastus Assault Cannons"/>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="16ad-36f9-e731-324d" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
@@ -20483,7 +20525,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
                 <entryLink id="92cf-e3b4-8516-0dda" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="sHeavy Alchem Flamer"/>
+                    <modifier type="set" field="name" value="2x Heavy Alchem Flamers"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="1826-58fd-1529-b4df" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
@@ -20499,7 +20541,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <modifier type="set" field="name" value="2x Shrapnel Cannons"/>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="4.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="c5ff-7616-763a-3522" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="170d-44e0-455c-8207" type="selectionEntry">
@@ -25118,8 +25160,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="bb49-c8b3-ac6d-66d4" name="Twin-linked Heavy-Flamer" hidden="false" collective="false" import="true" targetId="18ea-34ad-326b-281b" type="selectionEntry"/>
+            <entryLink id="bb49-c8b3-ac6d-66d4" name="Twin-linked Heavy Flamer" hidden="false" collective="false" import="true" targetId="18ea-34ad-326b-281b" type="selectionEntry"/>
             <entryLink id="9d6b-4a72-62ea-1317" name="Twin-linked Heavy Bolter" hidden="false" collective="false" import="true" targetId="d03c-9f7e-84fa-d6e8" type="selectionEntry"/>
+            <entryLink id="2569-5380-0841-fe7d" name="Twin-linked Heavy Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="8dbf-d9fa-6fbc-07af" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="1aff-f646-45aa-9c37" name="3) May take:" hidden="false" collective="false" import="true">
@@ -40625,6 +40668,23 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
         <entryLink id="ffc3-a076-08cc-aa5c" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="f11c-8768-46ee-372c" name="Terranic Greatsword" hidden="true" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
