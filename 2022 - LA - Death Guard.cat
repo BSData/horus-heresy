@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -1519,7 +1519,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ee15-87c8-0df5-5c2a" name="Poison-master" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="ee15-87c8-0df5-5c2a" name=" Poison-master" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3286-13f9-dcfc-f6c3" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d70e-45fd-ef9e-3bc0" type="max"/>
@@ -1608,6 +1608,14 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5476-79ac-556b-aa05" name="Toxin Bombs" hidden="false" collective="false" import="true" targetId="987b-9177-dde0-bf9b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fbf-562c-c5ff-4316" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -1828,7 +1836,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <categoryLink id="b08c-77b8-5038-a9cc" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="79e4-c3dc-af82-c169" name="Ranged Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5f54-71b6-2b16-551c">
+            <selectionEntryGroup id="79e4-c3dc-af82-c169" name="2) Ranged Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5f54-71b6-2b16-551c">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4037-d1a2-ccae-a0a5" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9422-7b1d-5e1c-53b0" type="min"/>
@@ -1885,19 +1893,27 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
                 <entryLink id="5f54-71b6-2b16-551c" name="Assault Grenade Launcher" hidden="false" collective="false" import="true" targetId="804c-f802-8c3f-8885" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f6ef-eab6-5dbf-2568" name="May take:" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7db6-390f-a62a-8c45" type="max"/>
-              </constraints>
+            <selectionEntryGroup id="f6ef-eab6-5dbf-2568" name="3) May take:" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink id="4151-cc08-f06e-0797" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcde-5a07-8075-d1ae" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="82a7-93e3-ce49-9dfd" name="Toxin Bombs" hidden="false" collective="false" import="true" targetId="987b-9177-dde0-bf9b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9265-57d6-55b6-e1e6" type="max"/>
+                  </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="de7f-2043-d161-681f" name="Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="860d-6fe3-84b4-4aab">
+            <selectionEntryGroup id="de7f-2043-d161-681f" name="1) Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="860d-6fe3-84b4-4aab">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fddf-0b43-99a6-9bf2" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1740-ce16-d7c3-0e51" type="max"/>
