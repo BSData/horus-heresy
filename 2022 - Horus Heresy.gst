@@ -117,17 +117,6 @@
     <categoryEntry id="9b5d-fac7-799b-d7e7" name="Troops:" hidden="false"/>
     <categoryEntry id="20ef-cd01-a8da-376e" name="Fast Attack:" hidden="false"/>
     <categoryEntry id="7031-469a-1aeb-eab0" name="Heavy Support:" hidden="false">
-      <modifiers>
-        <modifier type="set" field="44e4-e4cd-0438-b836" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e4-e4cd-0438-b836" type="min"/>
       </constraints>
@@ -564,6 +553,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
