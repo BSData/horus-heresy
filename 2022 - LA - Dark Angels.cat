@@ -2,23 +2,6 @@
 <catalogue id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="13" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="6305-99cb-5a76-be11" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
-            <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" type="instanceOf"/>
-          </conditions>
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f87-b709-2c56-cefd" type="atLeast"/>
-                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="097a-5712-c173-0477" type="atLeast"/>
-                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6650-b0cd-fb32-b405" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <entryLinks>
         <entryLink id="d274-0351-f20d-61e2" name="Legion Centurion" hidden="false" collective="false" import="true" targetId="c681-938e-6d11-cd43" type="selectionEntry"/>
         <entryLink id="b8f4-ce92-3e7b-46bd" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
@@ -231,9 +214,17 @@
         <categoryLink id="f1fa-fed8-1461-7cfc" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="005b-dfcd-398c-45c1" name="Centurion (Storm of War)" hidden="false" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="79e6-ae67-22cc-24e7" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6650-b0cd-fb32-b405" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b22e-eb46-f89e-dc41" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18e4-7d20-667c-409b" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -442,12 +433,12 @@
         <categoryLink id="73c0-3b11-5105-6f71" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5d58-b1ba-af89-a8ab" name="Centurion (Storm of War)" hidden="false" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="5d58-b1ba-af89-a8ab" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
-                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="atLeast"/>
+                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1337,6 +1328,21 @@
         <categoryLink id="e4ff-1e49-4ec4-eb6d" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="4dcd-2da0-6459-75fb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a70a-39f3-b1ce-61e0" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6650-b0cd-fb32-b405" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0007-b0ef-f5e8-48e7" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="08cf-4821-926b-6e00" name="Despoiler Squad" hidden="true" collective="false" import="true" targetId="4357-930e-165a-a6e3" type="selectionEntry">
       <modifiers>
@@ -1347,9 +1353,24 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="5d4c-8216-02fb-a96d" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false"/>
+        <categoryLink id="5d4c-8216-02fb-a96d" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="f601-7817-4d0c-da54" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="2e29-eede-e8ab-25e3" name="Centurion (Storm of War)" hidden="false" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fef-6274-06e4-a849" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="a015-c49d-a619-bafa" name="Assault Squad" hidden="true" collective="false" import="true" targetId="a8e9-70e1-b8bc-8ee2" type="selectionEntry">
       <modifiers>
@@ -1360,9 +1381,24 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="a9ae-a0cb-6e28-cec9" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="false"/>
+        <categoryLink id="a9ae-a0cb-6e28-cec9" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
         <categoryLink id="91a9-ca66-6195-a18e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="2cd1-393d-21d2-4fb9" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6650-b0cd-fb32-b405" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e791-92fb-5c2e-f81f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="9c72-8e1d-abf7-5b93" name="Tactical Squad" hidden="true" collective="false" import="true" targetId="aa72-63e4-bc60-4611" type="selectionEntry">
       <modifiers>
@@ -1376,6 +1412,21 @@
         <categoryLink id="348d-ed8c-2a2c-170b" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="d226-8c29-dd7f-d2d7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="07f6-10a8-4a78-54dc" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                <condition field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f1b-c03e-9634-ba26" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
