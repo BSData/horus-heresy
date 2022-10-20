@@ -217,6 +217,11 @@
         <categoryLink id="b656-a898-3480-f03b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="5912-789a-05ee-bcd7" name="Centurion (Storm of War)" hidden="false" collective="false" import="true" targetId="c691-eb74-9fa6-c2b4" type="selectionEntry"/>
+    <entryLink id="0862-b7e7-d324-2a7d" name="Despoiler Squad (Compulsory)" hidden="false" collective="false" import="true" targetId="b17a-d8b5-e501-ee01" type="selectionEntry"/>
+    <entryLink id="c6c9-7f34-280a-3c72" name="Tactical Squad (Compulsory)" hidden="false" collective="false" import="true" targetId="3385-6c59-12e1-3fab" type="selectionEntry"/>
+    <entryLink id="c2d1-7d6f-2c91-3041" name="Breacher Squad (Compulsory)" hidden="false" collective="false" import="true" targetId="becf-6018-c0fc-874d" type="selectionEntry"/>
+    <entryLink id="873a-d968-98bb-3b4d" name="Assault Squad (Compulsory)" hidden="false" collective="false" import="true" targetId="82e5-0799-3098-b6eb" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="82f5-cca1-51a0-31dd" name="Venom Spheres" hidden="false" collective="false" import="true" type="upgrade">
@@ -39319,7 +39324,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="82e5-0799-3098-b6eb" name="Assault Squad (Compulsory)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="82e5-0799-3098-b6eb" name="Assault Squad (Compulsory)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -39603,7 +39608,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4d2e-a69b-dfd4-db20" name="0) Legionaries" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="4d2e-a69b-dfd4-db20" name="0) Legionaries" hidden="false" collective="false" import="true" defaultSelectionEntryId="727f-14ba-2cd4-4b87">
           <constraints>
             <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b16-5adf-94f4-2372" type="max"/>
             <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e946-76af-ff38-f15d" type="min"/>
@@ -39628,7 +39633,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="a0dc-ea43-6b8e-c5fd" name="Bolt Pistol" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="a0dc-ea43-6b8e-c5fd" name="Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="ac78-6d08-2ec8-7a99">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65bb-f452-3cba-a211" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcf7-cadc-a08f-b24c" type="max"/>
@@ -39641,7 +39646,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="49ee-3585-2369-0759" name="Chainsword:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="49ee-3585-2369-0759" name="Chainsword:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec53-ce6b-a263-3bcc">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="251c-fe0e-3af6-b178" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5744-6ee7-b829-1cab" type="max"/>
@@ -39678,7 +39683,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="3f98-4fbc-28d9-9712" name="Chainsword:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="3f98-4fbc-28d9-9712" name="Chainsword:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2d1d-e06c-c6c0-86ce">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a444-b15a-2dce-c7dc" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd32-47bc-c3ec-c16d" type="max"/>
@@ -39748,7 +39753,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="ee18-c8e0-d3e7-9739" name="Bolt Pistol" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="ee18-c8e0-d3e7-9739" name="Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="7943-c710-1a66-f1ad">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c536-6de1-d25b-bf2c" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b7-151f-69ca-2bbf" type="max"/>
@@ -39904,7 +39909,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="37.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="becf-6018-c0fc-874d" name="Breacher Squad (Compulsory)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="becf-6018-c0fc-874d" name="Breacher Squad (Compulsory)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -39955,7 +39960,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             <categoryLink id="f6f9-f7e2-65d5-deee" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="4ffa-122d-f02f-8bd5" name="1) Bolter Options" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="4ffa-122d-f02f-8bd5" name="1) Bolter Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="6039-f220-90f1-1999">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f10-e734-e023-c61c" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1da-7afe-389a-c170" type="min"/>
@@ -39994,7 +39999,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 <entryLink id="6039-f220-90f1-1999" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="febc-3880-7088-3907" name="2) Bolt Pistol Options" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="febc-3880-7088-3907" name="2) Bolt Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="3761-b1e1-ee03-c38f">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34d0-d065-b27f-2ba0" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b796-745e-2910-3dbe" type="min"/>
@@ -40028,7 +40033,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 <entryLink id="3761-b1e1-ee03-c38f" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f2b9-4a8f-9a22-d301" name="3) Melee Weapons" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="f2b9-4a8f-9a22-d301" name="3) Melee Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="ca55-d306-eb43-bdca">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0df0-52f6-d258-3978" type="max"/>
               </constraints>
@@ -40090,7 +40095,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="df1f-0879-203d-fecb" name="4) Armor" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="df1f-0879-203d-fecb" name="4) Armor" hidden="false" collective="false" import="true" defaultSelectionEntryId="8dac-e0ca-4b3b-0e5f">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4f0-61e2-8ff0-2946" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dfa-5d46-b084-55cb" type="min"/>
@@ -40143,7 +40148,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="832c-81ab-e626-8a87" name="0) Bolter: " hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="832c-81ab-e626-8a87" name="0) Bolter: " hidden="false" collective="false" import="true" defaultSelectionEntryId="1498-882b-5751-8a7b">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be86-393a-ec1a-3b70" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57d4-c3c2-3a78-3840" type="max"/>
@@ -40164,7 +40169,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="f9a7-102e-f0ca-618c" name="1) Bolt Pistol:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="f9a7-102e-f0ca-618c" name="1) Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e03d-8818-c795-bfee">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3a5-1f33-ead6-61e5" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="842d-4231-68d9-8580" type="max"/>
@@ -40201,7 +40206,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="e0e8-da10-15ec-787c" name="0) Bolter: " hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="e0e8-da10-15ec-787c" name="0) Bolter: " hidden="false" collective="false" import="true" defaultSelectionEntryId="a819-4f6f-4996-7873">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26b5-2479-ae41-1754" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45aa-d4a9-aa2d-c0b7" type="max"/>
@@ -40251,7 +40256,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="3258-c8e4-46f5-9dba" name="1) Bolt Pistol:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="3258-c8e4-46f5-9dba" name="1) Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="937e-44ef-4635-8f1b">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df44-4d4f-dd88-3bb9" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0037-96ea-830d-ba46" type="max"/>
@@ -40367,8 +40372,11 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="b17a-d8b5-e501-ee01" name="Despoiler Squad (Compulsory)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b17a-d8b5-e501-ee01" name="Despoiler Squad (Compulsory)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -40422,7 +40430,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             <categoryLink id="a201-f346-ace2-ae27" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="b512-1cce-d092-21de" name="2) Chainsword" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="b512-1cce-d092-21de" name="2) Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="2e27-516a-a05b-a028">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a9b-e8f7-94c8-8d2d" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd5d-a276-2829-f9c6" type="min"/>
@@ -40516,7 +40524,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="8494-03c3-327b-d70d" name="1) Bolt Pistol" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="8494-03c3-327b-d70d" name="1) Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="ff77-ce99-bf96-94d3">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="186f-cbaa-9725-38f3" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f6-9fda-6ebf-77a0" type="min"/>
@@ -40574,7 +40582,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="9a4f-205a-18fa-09c5" name="3) Armor:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="9a4f-205a-18fa-09c5" name="3) Armor:" hidden="false" collective="false" import="true" defaultSelectionEntryId="3f44-1d1a-b9f0-216f">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c6e-b9fc-d41e-ded3" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f1c-cd06-d6d7-7706" type="max"/>
@@ -40627,7 +40635,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="c14b-1fac-8fcc-2dba" name="Bolt Pistol:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="c14b-1fac-8fcc-2dba" name="Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8b1a-115f-6152-e4a4">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ce-4c05-817f-6761" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af1a-6ce4-96e4-4dbc" type="min"/>
@@ -40640,7 +40648,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="d2cb-36c7-22cc-bd52" name="Chainsword:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="d2cb-36c7-22cc-bd52" name="Chainsword:" hidden="false" collective="false" import="true" defaultSelectionEntryId="bcca-beaa-dd4e-9201">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c398-3e2a-62f4-b271" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b7-9f6b-b154-a045" type="min"/>
@@ -40693,7 +40701,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </profile>
               </profiles>
               <selectionEntryGroups>
-                <selectionEntryGroup id="862e-71da-1834-fde2" name="Bolt Pistol:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="862e-71da-1834-fde2" name="Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="e062-5746-eaf5-3f90">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a811-c376-f013-397b" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1c7-131c-ef7f-ea1c" type="min"/>
@@ -40743,7 +40751,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     <entryLink id="e062-5746-eaf5-3f90" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="0037-8a06-09dc-de26" name="Chainsword:" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="0037-8a06-09dc-de26" name="Chainsword:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2524-9412-5f2b-768e">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48b1-d980-7e85-495a" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c299-98f8-e340-ddaa" type="min"/>
@@ -40912,7 +40920,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3385-6c59-12e1-3fab" name="Tactical Squad (Compulsory)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="3385-6c59-12e1-3fab" name="Tactical Squad (Compulsory)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -40966,7 +40974,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             <categoryLink id="df69-296a-3f3f-7170" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="84f8-e164-e76f-de71" name="3) Melee Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="84f8-e164-e76f-de71" name="3) Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="316e-288d-4345-54da">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dde-60ec-5530-d051" type="max"/>
               </constraints>
@@ -40998,7 +41006,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="5a2f-b5c6-0fde-202f" name="2) Bolt Pistol:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="5a2f-b5c6-0fde-202f" name="2) Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4112-b2c4-d611-9c8f">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97cd-72dd-4f7d-2601" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3e0-f87a-968a-b91c" type="min"/>
@@ -41032,7 +41040,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 <entryLink id="4112-b2c4-d611-9c8f" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="842b-6044-3d67-9061" name="1) Bolter:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="842b-6044-3d67-9061" name="1) Bolter:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6c5e-e9c0-e287-05e6">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95a3-55cc-8db2-ebc7" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3666-a585-dca8-badd" type="min"/>
@@ -41091,7 +41099,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="a848-e994-d341-1e9c" name="4) Armor:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="a848-e994-d341-1e9c" name="4) Armor:" hidden="false" collective="false" import="true" defaultSelectionEntryId="3901-124d-7bad-6b04">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0622-55af-2937-e215" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebbe-9803-dcdf-4149" type="max"/>
@@ -41202,7 +41210,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="c6e9-a308-f516-f35f" name="Bolter" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="c6e9-a308-f516-f35f" name="Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="3698-4265-5215-0bb6">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3036-25d8-58fd-3778" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41b0-370e-4f21-0cba" type="min"/>
@@ -41260,7 +41268,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="450f-ce6d-0348-c533" name="Bolt Pistol" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="450f-ce6d-0348-c533" name="Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="110d-3da8-30a5-e146">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51a4-22ef-1cda-3ec3" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05f0-64d3-ad69-4c5b" type="min"/>
@@ -41335,7 +41343,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="2d05-3010-dbfb-bc66" name="Bolt Pistol" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="2d05-3010-dbfb-bc66" name="Bolt Pistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec3d-9191-31c1-0693">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="773c-12d9-4102-2a4a" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e59-168d-2945-6bdb" type="min"/>
@@ -41348,7 +41356,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup id="3666-12d0-037b-de38" name="Bolter" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="3666-12d0-037b-de38" name="Bolter" hidden="false" collective="false" import="true" defaultSelectionEntryId="a147-9494-c300-5bc9">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="514b-8397-e317-03aa" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b679-39c0-d8f0-e6c2" type="min"/>
@@ -41426,7 +41434,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c691-eb74-9fa6-c2b4" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="c691-eb74-9fa6-c2b4" name="Centurion (Storm of War)" hidden="false" collective="false" import="true" type="unit">
       <entryLinks>
         <entryLink id="cdf6-0406-804b-e6d3" name="Legion Centurion" hidden="false" collective="false" import="true" targetId="c681-938e-6d11-cd43" type="selectionEntry">
           <categoryLinks>
@@ -41439,6 +41447,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         </entryLink>
         <entryLink id="62e3-b018-d071-7b6d" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
