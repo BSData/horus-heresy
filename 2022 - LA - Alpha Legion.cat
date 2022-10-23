@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="25" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="27" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <constraints>
@@ -2504,9 +2504,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f912-9416-39ea-b3fc" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d2f7-3019-371b-64e4" type="max"/>
-      </constraints>
       <profiles>
         <profile id="28c0-5b02-c7a6-4ea1" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
@@ -3091,8 +3088,25 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac93-cadf-7798-b832" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8654-833c-cc25-62e3" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
+            <entryLink id="8654-833c-cc25-62e3" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="c53f-92ec-a805-ec68" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry"/>
+            <entryLink id="ccac-a09d-e1b5-0016" name="Storm Eagle Gunship" hidden="true" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
