@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="  XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <constraints>
@@ -16,11 +16,15 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -64,7 +68,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175.0"/>
       </costs>
     </entryLink>
-    <entryLink id="79f4-181d-3ce9-f37b" name="Reaver Aggressor Squad" hidden="false" collective="false" import="false" targetId="af3a-334f-152f-d55f" type="selectionEntry">
+    <entryLink id="79f4-181d-3ce9-f37b" name="Reaver Agressor Squad" hidden="false" collective="false" import="false" targetId="af3a-334f-152f-d55f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -90,10 +94,14 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -131,7 +139,7 @@
     </entryLink>
     <entryLink id="c121-2d4a-e85e-14c7" name="Justaerin Terminator Squad" hidden="false" collective="false" import="false" targetId="c45d-ade3-6b28-68a2" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
           </conditions>
@@ -204,14 +212,10 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -239,11 +243,15 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -272,14 +280,10 @@
     </entryLink>
     <entryLink id="fe52-c4e3-2387-07b6" name="Centurion, Cataphractii " hidden="false" collective="false" import="false" targetId="3766-ea98-0aa7-62d0" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -333,14 +337,10 @@
     </entryLink>
     <entryLink id="9230-f176-32b2-7d8d" name="Command Squad, Cataphractii" hidden="false" collective="false" import="false" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -374,14 +374,10 @@
     </entryLink>
     <entryLink id="5326-0dc2-99cd-5a7b" name="Deredeo Dreadnought Talon" hidden="false" collective="false" import="false" targetId="bfdf-831f-2171-c1e7" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -446,14 +442,10 @@
     </entryLink>
     <entryLink id="5f51-164d-60e0-ab13" name="Heavy Support Squad" hidden="false" collective="false" import="false" targetId="bac9-5389-e2e7-0b1f" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -463,14 +455,10 @@
     </entryLink>
     <entryLink id="a340-af9c-0234-641c" name="Javelin Squadron" hidden="false" collective="false" import="false" targetId="deea-102f-8fbe-e2e5" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -653,14 +641,10 @@
     </entryLink>
     <entryLink id="a70c-faf4-f59d-47c1" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -717,11 +701,15 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -748,14 +736,10 @@
     </entryLink>
     <entryLink id="b5c1-305a-2799-adc0" name="Praetor, Cataphractii" hidden="false" collective="false" import="false" targetId="1b79-1951-5a63-4b9e" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -806,14 +790,10 @@
     </entryLink>
     <entryLink id="c076-17e8-8918-b464" name="Rapier Battery" hidden="false" collective="false" import="false" targetId="23e4-c64b-65b4-c8a5" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -972,14 +952,10 @@
     </entryLink>
     <entryLink id="f5ff-653e-2803-6fff" name="Terminator Cataphractii Squad" hidden="false" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -993,11 +969,15 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1102,7 +1082,7 @@
         <categoryLink id="28cc-a586-d1a5-07d4" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0e1d-fa87-3467-c137" name="Reaver Aggressor Squad" hidden="false" collective="false" import="true" targetId="af3a-334f-152f-d55f" type="selectionEntry">
+    <entryLink id="0e1d-fa87-3467-c137" name="Reaver Agressor Squad" hidden="false" collective="false" import="true" targetId="af3a-334f-152f-d55f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -1701,7 +1681,7 @@ the entire set of models before they are separated and must be applied to all mo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc7-5650-d4c5-dece" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="974b-cafd-675d-822c" name="Chainaxe" hidden="false" collective="false" import="true" targetId="9115-e75c-8372-6caa" type="selectionEntry">
+                <entryLink id="974b-cafd-675d-822c" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="694d-b737-ed78-5cab" type="max"/>
                   </constraints>
@@ -1929,7 +1909,7 @@ the entire set of models before they are separated and must be applied to all mo
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="5392-95b9-10b8-e9e7" name="Power Maul" hidden="false" collective="false" import="true" targetId="5052-12fb-ff41-bc78" type="selectionEntry">
+                    <entryLink id="5392-95b9-10b8-e9e7" name="Power Maul" hidden="false" collective="false" import="true" targetId="98e8-f217-dea9-0493" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99ef-00c7-57fb-0f0c" type="max"/>
                       </constraints>
@@ -1937,7 +1917,7 @@ the entire set of models before they are separated and must be applied to all mo
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="d0db-5011-370f-f359" name="Power Sword" hidden="false" collective="false" import="true" targetId="de9e-d8d5-2772-307f" type="selectionEntry">
+                    <entryLink id="d0db-5011-370f-f359" name="Power Sword" hidden="false" collective="false" import="true" targetId="fa06-cac0-3d98-125e" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d24-2eec-e826-8541" type="max"/>
                       </constraints>
@@ -1945,7 +1925,7 @@ the entire set of models before they are separated and must be applied to all mo
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="1115-f321-30cf-aa1a" name="Power Lance" hidden="false" collective="false" import="true" targetId="1fc3-8c26-09e3-b8e2" type="selectionEntry">
+                    <entryLink id="1115-f321-30cf-aa1a" name="Power Lance" hidden="false" collective="false" import="true" targetId="fca3-4ec1-c581-1ba3" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1703-358e-f129-18c5" type="max"/>
                       </constraints>
@@ -1953,7 +1933,7 @@ the entire set of models before they are separated and must be applied to all mo
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="ecbe-3b11-861d-7b14" name="Power Axe" hidden="false" collective="false" import="true" targetId="2bf8-266c-b2bc-e92f" type="selectionEntry">
+                    <entryLink id="ecbe-3b11-861d-7b14" name="Power Axe" hidden="false" collective="false" import="true" targetId="ef98-66ac-fcaf-c15d" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a55-6eac-81c5-138c" type="max"/>
                       </constraints>
@@ -1969,7 +1949,7 @@ the entire set of models before they are separated and must be applied to all mo
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e06a-e658-5772-14a7" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="4fe8-921e-3e0a-e142" name="Chainaxe" hidden="false" collective="false" import="true" targetId="d727-22bd-d5a5-d756" type="selectionEntry">
+                    <entryLink id="4fe8-921e-3e0a-e142" name="Chainaxe" hidden="false" collective="false" import="true" targetId="3a0d-c3bb-dc59-a4c3" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a7c-b601-37f3-a6b5" type="max"/>
                       </constraints>
@@ -2119,7 +2099,7 @@ the entire set of models before they are separated and must be applied to all mo
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c848-0fa4-a6db-c67e" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="4a11-b7fc-8bfd-40e1" name="Chainaxe" hidden="false" collective="false" import="true" targetId="9115-e75c-8372-6caa" type="selectionEntry">
+                    <entryLink id="4a11-b7fc-8bfd-40e1" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5951-65b3-b9ca-a994" type="max"/>
                       </constraints>
@@ -2631,6 +2611,23 @@ remains in play and regains 1D3 Wounds.</description>
           </constraints>
           <selectionEntries>
             <selectionEntry id="d9c2-8eaa-a071-6524" name="Justaerin" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="46b2-7f6f-7859-c042" name="Justaerin" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <selectionEntryGroups>
                 <selectionEntryGroup id="6691-b178-4930-7f35" name="1) Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="76d1-3491-8cfa-c785">
                   <constraints>
@@ -2711,6 +2708,9 @@ remains in play and regains 1D3 Wounds.</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9292-4c64-a125-adc0" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="abe0-c112-95a4-eb37" name="Justaerin" hidden="false" targetId="46b2-7f6f-7859-c042" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="2c01-4f2c-4719-5c37" name="1) Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ac79-e75c-c4be-e1b6">
                   <constraints>
@@ -2781,6 +2781,9 @@ remains in play and regains 1D3 Wounds.</description>
               </costs>
             </selectionEntry>
             <selectionEntry id="3c6e-f814-9806-3453" name="Justaerin w/Pair of Lightning Claws" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="bf5d-56de-8ae4-0d95" name="Justaerin" hidden="false" targetId="46b2-7f6f-7859-c042" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="522d-390c-6cdb-25a3" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="405f-030d-0343-ade8" type="selectionEntry">
                   <constraints>
@@ -2794,6 +2797,9 @@ remains in play and regains 1D3 Wounds.</description>
               </costs>
             </selectionEntry>
             <selectionEntry id="3856-ef30-d865-30a6" name="Justaerin w/Pair of Lightning Claws, Grenade Harness" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="d2da-f8b0-57f3-787f" name="Justaerin" hidden="false" targetId="46b2-7f6f-7859-c042" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="cb03-ad32-953a-ec74" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="405f-030d-0343-ade8" type="selectionEntry">
                   <constraints>
@@ -2826,6 +2832,9 @@ remains in play and regains 1D3 Wounds.</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad28-34fd-94b7-29a0" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="42ce-b7b3-b834-a6f6" name="Justaerin" hidden="false" targetId="46b2-7f6f-7859-c042" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="0b9d-0946-e85d-9b63" name="1) Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7a6-016d-899f-c0cf">
                   <constraints>
@@ -3023,49 +3032,6 @@ remains in play and regains 1D3 Wounds.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d727-22bd-d5a5-d756" name="Chainaxe" hidden="false" collective="true" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="8a24-d8da-32fe-28ee" name="Chainaxe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="9b73-d1c9-7ea0-447b" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9115-e75c-8372-6caa" name="Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="811d-bd9d-f380-1a6f" name="Chainaxe" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="d37c-289b-9a51-61b8" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="a472-3ded-51a3-44a0" name="Power Fist" hidden="false" collective="true" import="true" type="upgrade">
       <profiles>
         <profile id="535f-c84b-5978-ceaa" name="Power Fist" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -3080,74 +3046,6 @@ remains in play and regains 1D3 Wounds.</description>
       <infoLinks>
         <infoLink id="e0e1-8304-721e-aa22" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
         <infoLink id="fe93-23c0-b21b-17cf" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry id="2bf8-266c-b2bc-e92f" name="Power Axe" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="0347-3501-d875-2621" name="Power Axe" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="8967-d3bf-528b-716c" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry id="1fc3-8c26-09e3-b8e2" name="Power Lance" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="a826-34ca-fcf0-40db" name="Power Lance" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="1af3-ce72-6882-5242" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Reach (1)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry id="5052-12fb-ff41-bc78" name="Power Maul" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="8062-7c85-ab47-6f87" name="Power Maul" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="de9e-d8d5-2772-307f" name="Power Sword" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="36ed-9274-1f52-a624" name="Power Sword" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="068e-94d9-969b-5f2d" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Rending (6+)"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -3177,6 +3075,9 @@ remains in play and regains 1D3 Wounds.</description>
         </infoLink>
         <infoLink id="5f69-5216-346b-50ac" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="20d9-83b9-c533-7048" name="Charnabal Sabre" hidden="false" collective="true" import="true" type="upgrade">
       <profiles>
@@ -3201,6 +3102,9 @@ remains in play and regains 1D3 Wounds.</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6f53-4c43-ba83-4b2f" name="Charnabal Tabar" hidden="false" collective="true" import="true" type="upgrade">
       <profiles>
@@ -3225,6 +3129,9 @@ remains in play and regains 1D3 Wounds.</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="af3a-334f-152f-d55f" name="Reaver Agressor Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3323,7 +3230,7 @@ remains in play and regains 1D3 Wounds.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71a5-7198-6cf2-5702" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="b493-ef06-0b8e-8af5" name="Chainaxe" hidden="false" collective="false" import="true" targetId="9115-e75c-8372-6caa" type="selectionEntry">
+                <entryLink id="b493-ef06-0b8e-8af5" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="110a-be16-0350-73dc" type="max"/>
                   </constraints>
@@ -3535,7 +3442,7 @@ remains in play and regains 1D3 Wounds.</description>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="3e3e-091b-2b04-b662" name="Power Maul" hidden="false" collective="false" import="true" targetId="5052-12fb-ff41-bc78" type="selectionEntry">
+                    <entryLink id="3e3e-091b-2b04-b662" name="Power Maul" hidden="false" collective="false" import="true" targetId="98e8-f217-dea9-0493" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5e-640b-3c64-67d9" type="max"/>
                       </constraints>
@@ -3543,7 +3450,7 @@ remains in play and regains 1D3 Wounds.</description>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="9d3c-05e1-f655-83d4" name="Power Sword" hidden="false" collective="false" import="true" targetId="de9e-d8d5-2772-307f" type="selectionEntry">
+                    <entryLink id="9d3c-05e1-f655-83d4" name="Power Sword" hidden="false" collective="false" import="true" targetId="fa06-cac0-3d98-125e" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53c-8e0c-1c78-2743" type="max"/>
                       </constraints>
@@ -3551,7 +3458,7 @@ remains in play and regains 1D3 Wounds.</description>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="ca51-7aa7-b893-4382" name="Power Lance" hidden="false" collective="false" import="true" targetId="1fc3-8c26-09e3-b8e2" type="selectionEntry">
+                    <entryLink id="ca51-7aa7-b893-4382" name="Power Lance" hidden="false" collective="false" import="true" targetId="fca3-4ec1-c581-1ba3" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5729-380b-852c-771a" type="max"/>
                       </constraints>
@@ -3559,7 +3466,7 @@ remains in play and regains 1D3 Wounds.</description>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="4acf-1d83-746b-ef04" name="Power Axe" hidden="false" collective="false" import="true" targetId="2bf8-266c-b2bc-e92f" type="selectionEntry">
+                    <entryLink id="4acf-1d83-746b-ef04" name="Power Axe" hidden="false" collective="false" import="true" targetId="ef98-66ac-fcaf-c15d" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d034-2339-edaa-7444" type="max"/>
                       </constraints>
@@ -3575,7 +3482,7 @@ remains in play and regains 1D3 Wounds.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e91-13e5-c32d-967c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="5ceb-53fa-ff47-908f" name="Chainaxe" hidden="false" collective="false" import="true" targetId="d727-22bd-d5a5-d756" type="selectionEntry">
+                    <entryLink id="5ceb-53fa-ff47-908f" name="Chainaxe" hidden="false" collective="false" import="true" targetId="3a0d-c3bb-dc59-a4c3" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e841-68e5-7b15-8cf8" type="max"/>
                       </constraints>
@@ -3725,7 +3632,7 @@ remains in play and regains 1D3 Wounds.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4b7-8e10-52c1-ebb2" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="768d-bb27-e6e9-48ae" name="Chainaxe" hidden="false" collective="false" import="true" targetId="9115-e75c-8372-6caa" type="selectionEntry">
+                    <entryLink id="768d-bb27-e6e9-48ae" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="430c-9c82-632c-73a8" type="max"/>
                       </constraints>
@@ -3860,40 +3767,28 @@ remains in play and regains 1D3 Wounds.</description>
         <entryLink id="8a6b-c862-f210-ef44" name="Command Squad" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
         <entryLink id="1d47-f8b8-ca8f-f960" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="ddb3-29af-c3e2-0cf6" name="Justaerin Terminator Squad" hidden="false" collective="false" import="true" targetId="c45d-ade3-6b28-68a2" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
         <entryLink id="2631-1552-aff5-64f0" name="Chieftain Squad" hidden="false" collective="false" import="true" targetId="0c73-9141-d1b4-6a40" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3999,33 +3894,6 @@ A Warlord with this Trait may only join a unit composed entirely of models with 
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="9714-3b10-54a0-01a4" name="    Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="80a2-af0e-6225-347f" name="Power Weapon" hidden="false" collective="true" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf3-aae9-e35c-be38" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="be32-6c79-ce4d-33b4" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a845-a785-67d6-780d" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="924c-f68b-6578-4943" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6272-6f01-8326-da7b" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="42a7-2d2d-c397-88e5" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4198-2cd9-d4ac-340e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="f496-4ca7-f22b-5427" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8109-2eb3-0a82-7afa" type="max"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
