@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="22" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="25" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -116,7 +116,11 @@
     <categoryEntry id="7aee-565f-b0ae-294e" name="Elites:" hidden="false"/>
     <categoryEntry id="9b5d-fac7-799b-d7e7" name="Troops:" hidden="false"/>
     <categoryEntry id="20ef-cd01-a8da-376e" name="Fast Attack:" hidden="false"/>
-    <categoryEntry id="7031-469a-1aeb-eab0" name="Heavy Support:" hidden="false"/>
+    <categoryEntry id="7031-469a-1aeb-eab0" name="Heavy Support:" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e4-e4cd-0438-b836" type="min"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="a24f-12d8-36c1-f477" name="Fortification:" hidden="false">
       <rules>
         <rule id="e565-4ba5-114c-cf22" name="Building Damage Table" publicationId="e77a-823a-da94-16b9" page="226" hidden="false">
@@ -486,6 +490,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -548,6 +553,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
