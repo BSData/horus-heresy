@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="15" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="15" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="7653-8041-8d1c-c872" name="Dreadwing Interemptor Squad" hidden="false" collective="false" import="false" targetId="3008-e8ed-9e97-71c9" type="selectionEntry">
       <categoryLinks>
@@ -197,6 +197,17 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="23fa-3424-893c-9004" name="Infiltrate" hidden="true" targetId="0e32-5b92-a95a-8464" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fd3-ae87-f006-a71a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="58f4-5efb-796b-85bd" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="e451-4053-070a-8c83" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -215,6 +226,15 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18e4-7d20-667c-409b" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink id="a055-36b9-fb2f-e0c5" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </entryLink>
@@ -236,11 +256,33 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="45bb-b829-1557-461d" name="Infiltrate" hidden="true" targetId="0e32-5b92-a95a-8464" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fd3-ae87-f006-a71a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="4dc9-6765-9e9d-cec2" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="3cab-3815-a10e-ef74" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="911f-0dfb-085a-2b17" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a7d8-e403-b8e0-6333" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="73eb-db6c-9c3f-7406" name="Castra Ferrum Dreadnought Talon" hidden="true" collective="false" import="false" targetId="daf7-b23b-5474-5836" type="selectionEntry">
       <modifiers>
@@ -405,6 +447,17 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="bdaf-831d-ceea-ec39" name="Infiltrate" hidden="true" targetId="0e32-5b92-a95a-8464" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fd3-ae87-f006-a71a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="9e92-b0e9-a0ad-fab5" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="8080-1ad9-81bd-ae25" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -423,6 +476,15 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e08-f5ed-9b27-a9fc" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink id="e2a8-8869-0e70-9fac" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </entryLink>
@@ -754,6 +816,17 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="3bd4-abbf-d656-c4d6" name="Infiltrate" hidden="true" targetId="0e32-5b92-a95a-8464" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fd3-ae87-f006-a71a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="33ce-33a3-824e-7449" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="fbe0-87e9-18d3-d36e" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -773,13 +846,44 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9be-e644-7185-9884" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="b58a-dace-ecfc-f5df" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="533f-a106-ed1b-f457" name="Tactical Support Squad" hidden="false" collective="false" import="false" targetId="50ed-5869-643d-1ac5" type="selectionEntry">
+      <infoLinks>
+        <infoLink id="c981-9db5-aa28-5513" name="Infiltrate" hidden="true" targetId="0e32-5b92-a95a-8464" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fd3-ae87-f006-a71a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="b3d9-83c2-da09-fdcb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="6992-7d8d-606c-8b27" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="e98d-b4c7-90e4-7a2c" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="c49b-35e7-4119-d223" name="Techmarine Covenant" hidden="false" collective="false" import="false" targetId="d39f-99d5-f7a4-7b86" type="selectionEntry">
       <categoryLinks>
@@ -813,10 +917,32 @@
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="795c-652b-8c70-3da2" name="Infiltrate" hidden="true" targetId="0e32-5b92-a95a-8464" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fd3-ae87-f006-a71a" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="203c-456b-22b5-c12f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="2f3b-bb86-38b1-732b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="f0aa-28d8-dd90-eb8d" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="1431-cf29-f3a6-9a24" name="Terminator Tartaros Squad" hidden="false" collective="false" import="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
       <categoryLinks>
@@ -4405,6 +4531,12 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="3fd3-ae87-f006-a71a" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="true" id="ca59-c6b1-68fc-9199" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5678-4147-f166-b59d" type="max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
