@@ -497,7 +497,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0ca-ca8a-f177-7ba1" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b0ca-ca8a-f177-7ba1" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d82b-1980-74f8-5dac" name="Allied Detachment" hidden="false"/>
