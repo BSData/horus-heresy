@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="26" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -21,10 +21,14 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -48,14 +52,10 @@
     </entryLink>
     <entryLink id="dc48-119e-d8cc-26e9" name="Grave Warden Terminator Squad" hidden="false" collective="false" import="false" targetId="be32-77c9-fe55-7dc0" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -71,10 +71,14 @@
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -90,11 +94,15 @@
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -156,7 +164,7 @@
         <categoryLink id="8fdc-4b16-e930-5a29" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="3986-d74e-fc23-0d92" name="Basilisk Squadron" hidden="true" collective="false" import="false" targetId="8b8a-e685-5b8b-c08f" type="selectionEntry">
+    <entryLink id="3986-d74e-fc23-0d92" name="Legion Basilisk Squadron" hidden="true" collective="false" import="false" targetId="8b8a-e685-5b8b-c08f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -181,14 +189,10 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -216,11 +220,15 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -249,14 +257,10 @@
     </entryLink>
     <entryLink id="11e9-7781-707f-d4a5" name="Centurion, Cataphractii " hidden="false" collective="false" import="false" targetId="3766-ea98-0aa7-62d0" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -310,14 +314,10 @@
     </entryLink>
     <entryLink id="6124-e860-1360-d4a4" name="Command Squad, Cataphractii" hidden="false" collective="false" import="false" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -351,14 +351,10 @@
     </entryLink>
     <entryLink id="5127-a941-5fe2-155b" name="Deredeo Dreadnought Talon" hidden="false" collective="false" import="false" targetId="bfdf-831f-2171-c1e7" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -423,14 +419,10 @@
     </entryLink>
     <entryLink id="a260-1302-3355-5a51" name="Heavy Support Squad" hidden="false" collective="false" import="false" targetId="bac9-5389-e2e7-0b1f" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -440,14 +432,10 @@
     </entryLink>
     <entryLink id="2285-cb66-db81-cf76" name="Javelin Squadron" hidden="false" collective="false" import="false" targetId="deea-102f-8fbe-e2e5" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -630,14 +618,10 @@
     </entryLink>
     <entryLink id="d27d-e3be-c85a-467b" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -651,7 +635,7 @@
         <categoryLink id="c760-bd0b-3cdc-6f46" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="50b4-e9f5-dcf5-80bc" name="Medusa Squadron" hidden="true" collective="false" import="false" targetId="24c8-5f6a-d48a-27b7" type="selectionEntry">
+    <entryLink id="50b4-e9f5-dcf5-80bc" name="Legion Medusa Squadron" hidden="true" collective="false" import="false" targetId="24c8-5f6a-d48a-27b7" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -676,11 +660,15 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -725,14 +713,10 @@
     </entryLink>
     <entryLink id="f009-4a6f-2372-d502" name="Praetor, Cataphractii" hidden="false" collective="false" import="false" targetId="1b79-1951-5a63-4b9e" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -762,7 +746,7 @@
         <categoryLink id="2e77-5129-a623-52d1" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4570-1d63-b161-86da" name="Primaris-Lightning Strike Fighter" hidden="true" collective="false" import="false" targetId="5fdc-bbd1-5610-2a50" type="selectionEntry">
+    <entryLink id="4570-1d63-b161-86da" name="Legion Primaris-Lightning Strike Fighter" hidden="true" collective="false" import="false" targetId="5fdc-bbd1-5610-2a50" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -783,14 +767,10 @@
     </entryLink>
     <entryLink id="6d99-d6e2-4836-5b15" name="Rapier Battery" hidden="false" collective="false" import="false" targetId="23e4-c64b-65b4-c8a5" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -949,14 +929,10 @@
     </entryLink>
     <entryLink id="2e04-1055-0e5f-c413" name="Terminator Cataphractii Squad" hidden="false" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -966,11 +942,15 @@
     </entryLink>
     <entryLink id="1043-8d0f-2838-9f79" name="Terminator Indomitus Squad" hidden="true" collective="false" import="false" targetId="aa7f-bd4c-5231-d459" type="selectionEntry">
       <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
               </conditions>
             </conditionGroup>
@@ -988,7 +968,7 @@
         <categoryLink id="659b-6e8c-97c7-1bfc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="6c25-69a3-62eb-3f42" name="Thunderbolt Fighter" hidden="true" collective="false" import="false" targetId="5d24-1e9a-ad9d-95ca" type="selectionEntry">
+    <entryLink id="6c25-69a3-62eb-3f42" name="Legion Thunderbolt Fighter" hidden="true" collective="false" import="false" targetId="5d24-1e9a-ad9d-95ca" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1771,9 +1751,42 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d18e-60b4-dca9-0707" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="586e-e624-2a3f-d751" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry"/>
-            <entryLink id="d486-3437-1eb4-5aad" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry"/>
-            <entryLink id="642c-6f66-621d-0f77" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry"/>
+            <entryLink id="586e-e624-2a3f-d751" name="Rhino Transport" hidden="false" collective="false" import="true" targetId="03f1-8ed9-9867-8d18" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="d486-3437-1eb4-5aad" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="642c-6f66-621d-0f77" name="Termite Assault Drill" hidden="false" collective="false" import="true" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="a6ef-b7dc-a3d2-3a10" name="Storm Eagle Gunship" hidden="true" collective="false" import="true" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2517,14 +2530,10 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
       <entryLinks>
         <entryLink id="0897-7492-0847-588c" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
