@@ -460,10 +460,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7c9b-b9ab-9a40-8eb5" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c56b-a798-4feb-6a5a" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c20-f209-f005-8e10" type="max"/>
-      </constraints>
       <infoLinks>
         <infoLink id="8793-db69-dca1-f952" name="Cataphractii Terminator Armour" hidden="false" targetId="7d3b-41e9-887f-7085" type="profile"/>
       </infoLinks>
@@ -716,9 +712,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <profiles>
         <profile id="88e2-1e62-c54b-28c9" name="Cyber Hawk" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any model with both the Legiones Astartes (White Scars) and Independent Character special rules that does not also have the Unique Sub-type may take a cyber-hawk for +10 points.
-
-At the start of any turn in which the controlling player is the Active player, a model with a cyber-hawk may select one enemy unit with at least one model within 24&quot;. When making Shooting Attacks against that unit, the model with the cyberhawk and all models in any unit it has joined may re-roll all failed To Hit rolls of ‘1’ and, when declaring a Charge targeting the chosen enemy unit, the model with the cyber-hawk, and any unit it has joined, may add +1 to their Charge roll</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of any turn in which the controlling player is the Active player, a model with a cyber-hawk may select one enemy unit with at least one model within 24&quot;. When making Shooting Attacks against that unit, the model with the cyberhawk and all models in any unit it has joined may re-roll all failed To Hit rolls of ‘1’ and, when declaring a Charge targeting the chosen enemy unit, the model with the cyber-hawk, and any unit it has joined, may add +1 to their Charge roll</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -774,11 +768,7 @@ At the start of any turn in which the controlling player is the Active player, a
       <profiles>
         <profile id="721f-029b-84cb-ad49" name="Shamshir Jetbike " hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any model with both the Legiones Astartes (White Scars) and Independent Character special rules, but not the Unique Sub-type, may exchange a Legion Scimitar jetbike for a Legion Shamshir jetbike for no additional points cost. A Legion Shamshir jetbike has one scatterbolt launcher. In addition, a model with a Legion Shamshir jetbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn. 
-
-A model with the Infantry Unit Type that selects a Legion Shamshir jetbike as an upgrade must change its Unit Type to Cavalry (Antigrav), keeping any other Unit Sub-types it previously had, changes its Movement Characteristic to 15*, gains the Firing Protocols (2) and Hammer of Wrath (1) special rules and improves its Armour Save to 2+ if it was worse.
-
-*The additional Movement granted by the Legiones Astartes (White Scars) special rule is included.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a Legion Shamshir Jetbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7830,6 +7820,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="cc0d-30bd-1844-5658" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4f3-1058-e7fe-e9e9" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="e117-2281-fcea-ddc4" name="4) May take one of the following:" hidden="false" collective="false" import="true">
@@ -8202,6 +8200,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="name" value="Warsmith">
+              <conditions>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Iron-Father">
+              <conditions>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4655-4447-299c-8fe2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Jarl">
+              <conditions>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4606-34cf-86b7-fb89" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e1a-a8bc-1c40-3dca" type="min"/>
@@ -8220,6 +8233,26 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0759-a4bb-a15b-7cef" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Cavalry (Character, Psyker, Antigrav)">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Cavalry (Character, Antigrav)">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                        <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="567d-4386-3196-ca89" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
                 <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
                   <conditions>
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3125-5faa-cb08-e4ec" type="equalTo"/>
@@ -8229,6 +8262,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <conditions>
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93af-e204-255b-b095" type="equalTo"/>
                   </conditions>
+                </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Cavalry (Character, Skirmish, Antigrav)">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                        <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0759-a4bb-a15b-7cef" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <characteristics>
@@ -8532,6 +8575,24 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="e254-77a1-6dae-14a0" name="Scimitar Jetbike" hidden="false" collective="false" import="true" targetId="6fb4-adf6-dbe8-86af" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6d2-b3a9-6d2c-1f6f" type="equalTo"/>
+                            <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
+                            <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4108-5f37-0b50-b419" name="Shamshir Jetbike" hidden="false" collective="false" import="true" targetId="567d-4386-3196-ca89" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
@@ -8862,6 +8923,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="name" value="Iron-Father">
+              <conditions>
+                <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4655-4447-299c-8fe2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Jarl">
+              <conditions>
+                <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4606-34cf-86b7-fb89" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f35-d6cb-d5f8-cb90" type="max"/>
@@ -9052,6 +9123,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="5ac7-91ec-6c49-64cc" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="65ca-51eb-5464-7a87">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f29-15c4-c6f3-248a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d766-afdf-0dca-2009" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="65ca-51eb-5464-7a87" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
+                <entryLink id="20e3-f08c-7cf8-624b" name="Gorgon Terminator Armour" hidden="false" collective="false" import="true" targetId="16ca-e521-1c1b-0716" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="5aba-6e0b-db50-0d75" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
@@ -9062,7 +9147,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="bbda-c1bd-ff4f-50cd" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
             <entryLink id="c640-f691-2bda-3b6a" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" targetId="8b46-faad-df3a-6929" type="selectionEntryGroup"/>
             <entryLink id="51ab-96aa-5095-d60b" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" targetId="bb49-6a88-7ffa-6aa7" type="selectionEntryGroup"/>
             <entryLink id="a402-8989-2991-049e" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
@@ -9071,7 +9155,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0de1-6602-ba9c-b949" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="ebd6-b35c-f3cb-e37a" name="3) May swap both ranged and melee for:" hidden="false" collective="false" import="true" targetId="bf84-ba90-0a9c-fc3d" type="selectionEntryGroup"/>
+            <entryLink id="ebd6-b35c-f3cb-e37a" name="Terminator Lightning Claws (Optional)" hidden="false" collective="false" import="true" targetId="bf84-ba90-0a9c-fc3d" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135.0"/>
@@ -9112,7 +9196,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <modifiers>
             <modifier type="set" field="name" value="Warsmith">
               <conditions>
-                <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ddb-2b80-2369-5fa8" type="equalTo"/>
+                <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Jarl">
+              <conditions>
+                <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4606-34cf-86b7-fb89" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Iron-Father">
+              <conditions>
+                <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4655-4447-299c-8fe2" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -9958,6 +10052,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="efd6-5193-b2c2-3b65" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cb4-116f-e20c-309c" type="max"/>
                   </constraints>
@@ -10304,7 +10405,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="b2ac-6e9d-8241-e337" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry"/>
-                <entryLink id="8ad7-d62f-fb62-33e6" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="e6cc-bfce-a4d9-301c" type="selectionEntry">
+                <entryLink id="8ad7-d62f-fb62-33e6" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
@@ -10332,6 +10433,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="9eee-53f4-b50b-de61" name="Æther-Fire Pistol" hidden="false" collective="false" import="true" targetId="ae13-0ae8-a3ba-f6ff" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="dd2a-524b-1f79-ee00" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -12892,7 +12998,8 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         </modifier>
                       </modifiers>
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="532e-6e3d-343d-ed42" type="max"/>
+                        <constraint field="selections" scope="ad97-c090-fa67-696f" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="532e-6e3d-343d-ed42" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ef-5706-3412-7041" type="max"/>
                       </constraints>
                       <entryLinks>
                         <entryLink id="cf67-cc23-70b1-a958" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
@@ -15199,7 +15306,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <categoryLink id="fd98-9485-d2c2-1cad" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="d85c-6ae4-b3d9-41bb" name="1) Ranged Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="d935-4ccc-5515-a677">
+            <selectionEntryGroup id="d85c-6ae4-b3d9-41bb" name="3) Ranged Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="d935-4ccc-5515-a677">
               <modifiers>
                 <modifier type="set" field="72b5-df94-ca24-13dd" value="0.0">
                   <conditions>
@@ -15320,7 +15427,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="7b6f-796c-4a69-7279" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="e6cc-bfce-a4d9-301c" type="selectionEntry">
+                <entryLink id="7b6f-796c-4a69-7279" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
@@ -15355,9 +15462,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="4541-1c9d-086a-2a45" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="a1d0-2a7a-e2c0-8764" name="3) May take:" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="a1d0-2a7a-e2c0-8764" name="4) May take:" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink id="4d92-d199-28ba-a6b6" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
                   <constraints>
@@ -15478,15 +15590,23 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="05da-62ba-0153-fdc6" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce38-573e-cf56-fedd">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9282-a383-cf4a-f7d2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33b2-cbf9-e3cc-619d" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ce38-573e-cf56-fedd" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
+                <entryLink id="c49a-a94c-7ffc-ce25" name="Gorgon Terminator Armour" hidden="false" collective="false" import="true" targetId="16ca-e521-1c1b-0716" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="4b0b-de4d-9785-1b83" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f45b-498f-f796-7739" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="08f8-ff43-def5-5a5e" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0e8d-6b82-dd60-3b98" name="3) May swap both ranged and melee for:" hidden="false" collective="false" import="true" targetId="bf84-ba90-0a9c-fc3d" type="selectionEntryGroup">
+            <entryLink id="0e8d-6b82-dd60-3b98" name="Terminator Lightning Claws (Optional)" hidden="false" collective="false" import="true" targetId="bf84-ba90-0a9c-fc3d" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -18253,6 +18373,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="6.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="416b-f905-302b-f76c" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="42f8-0772-dc33-1bf7" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="d29d-8b18-ad8b-2d2d">
@@ -18882,7 +19007,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="6c0b-1b4b-7225-6607" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="e6cc-bfce-a4d9-301c" type="selectionEntry">
+                <entryLink id="6c0b-1b4b-7225-6607" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
@@ -18915,6 +19040,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="a622-1782-21dd-73e9" name="Terranic Greatsword" hidden="false" collective="false" import="true" targetId="68b3-a64c-a609-6615" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ab45-cf42-b802-fc0a" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -26481,7 +26611,12 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="00fa-8a14-fa20-13b7" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
+        <entryLink id="00fa-8a14-fa20-13b7" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6df-0408-87d3-b585" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa19-903c-19f4-f039" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="8d96-7f83-ebce-8d40" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -27020,7 +27155,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="8b1b-d2b7-d060-f1dc" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="e6cc-bfce-a4d9-301c" type="selectionEntry">
+                    <entryLink id="8b1b-d2b7-d060-f1dc" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
@@ -27038,6 +27173,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </costs>
                     </entryLink>
                     <entryLink id="bb44-775a-b465-39a0" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="d0f8-39eb-a69c-1e9e" name="Graviton Crusher" hidden="false" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
@@ -27182,7 +27322,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="74c5-3354-8016-ffc4" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="e6cc-bfce-a4d9-301c" type="selectionEntry">
+                    <entryLink id="74c5-3354-8016-ffc4" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
@@ -27307,7 +27447,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="db52-7769-8528-2044" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="e6cc-bfce-a4d9-301c" type="selectionEntry">
+                    <entryLink id="db52-7769-8528-2044" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
@@ -28420,9 +28560,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="4cd6-3857-3e36-5cae" name="Gorgon Terminator Armour" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="a0a6-77b4-1932-4a4a" name="Gorgon Terminator Armour" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any Legion Cataphractii Praetor or Legion Cataphractii Centurion may exchange their Legion Cataphractii Terminator armour for Gorgon Terminator armour at no additional points cost. </characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Gorgon Terminator armour confers a 2+ Armour Save, a 5+ Invulnerable Save and the Feel No Pain (5+) special rule (this does not stack with any other variant of the Feel No Pain (X) special rule a model may have – if a model has more than one variant of this special rule the controlling player must choose one to use).
+Additionally, at the end of any Phase in which a model with Gorgon Terminator armour has passed at least one Armour Save or Invulnerable Save, roll a D6. On the result of a 4+, all enemy units with at least one model within 6&quot; of the model with Gorgon Terminator armour must test as if they had been hit by a weapon with the Blind special rule. Any unit that is composed entirely of models with Gorgon Terminator armour are immune to this effect.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -37248,6 +37389,17 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                               </costs>
                             </entryLink>
+                            <entryLink id="f8dd-3bf6-1b73-c18e" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
+                              <modifiers>
+                                <modifier type="set" field="name" value="Graviton Gun (with suspensor web)"/>
+                              </modifiers>
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f94-1688-d4b4-095d" type="max"/>
+                              </constraints>
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                              </costs>
+                            </entryLink>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -38009,6 +38161,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="5c8c-b51d-88f7-fea1" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="374c-1f91-01a0-9b30" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
               </costs>
             </entryLink>
           </entryLinks>

@@ -2016,6 +2016,27 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9b3e-93f6-eec4-7f16" name="Dedicated Transport" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="be32-77c9-fe55-7dc0" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24c7-d615-4141-2228" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2028-2a00-715c-909b" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d230-5938-5cd2-f065" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="0c3f-4b30-04d7-7685" name="Assault Grenade Launcher" hidden="false" collective="false" import="true" targetId="804c-f802-8c3f-8885" type="selectionEntry">
           <constraints>
