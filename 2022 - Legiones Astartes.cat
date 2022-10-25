@@ -10520,12 +10520,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </infoLink>
         <infoLink id="f8ab-cf6d-9da3-5a91" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
         <infoLink id="c405-ddd9-40d3-5b72" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-        <infoLink id="65c2-694b-1921-28f7" name="Heart of the Legion" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+        <infoLink id="9fd6-1cfb-203a-2662" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
-              </conditions>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
+                    <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64e9-c749-f596-402a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -11018,9 +11023,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <infoLink id="1720-0d25-d495-f3d9" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
+                    <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64e9-c749-f596-402a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -15784,12 +15794,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <infoLinks>
         <infoLink id="18b6-f65d-5d60-d317" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="297d-7e23-67dd-a0e5" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
-        <infoLink id="584b-53b3-313d-ec26" name="Heart of the Legion" hidden="true" targetId="c0dd-9002-2ebd-f96d" type="rule">
+        <infoLink id="ed87-936a-ae97-05ac" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
-              </conditions>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
+                    <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64e9-c749-f596-402a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
