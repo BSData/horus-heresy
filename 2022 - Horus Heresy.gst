@@ -478,7 +478,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
               </conditions>
             </conditionGroup>
@@ -744,16 +744,70 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
   </selectionEntries>
   <entryLinks>
     <entryLink id="39b5-294b-f075-d42d" name="Fortified Wall (Strongpoint)" hidden="false" collective="false" import="true" targetId="4a54-c437-ba4b-be6b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="d7ec-95a3-173d-ca65" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7488-dcd5-3230-57d7" name="Imperial Bunker" hidden="false" collective="false" import="true" targetId="5157-f309-77f9-1256" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="38c2-9688-ede4-f626" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="427d-eb8e-dbbd-87a2" name="Defence Line" hidden="false" collective="false" import="true" targetId="ea91-0572-393c-e925" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="86ff-083e-ce6d-8284" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
@@ -762,6 +816,174 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       <categoryLinks>
         <categoryLink id="9fb6-1837-1414-95a7" name="New CategoryLink" hidden="false" targetId="d82b-1980-74f8-5dac" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="ffeb-34e6-ea59-170c" name="Firestorm Redoubt" hidden="false" collective="false" import="true" targetId="ad29-7efd-9c94-ac08" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="c3fd-09fe-2ac7-2183" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" targetId="8e99-19e1-b84a-db0b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f1d1-ca61-ae6b-4d33" name="Void Shield Generator" hidden="false" collective="false" import="true" targetId="fa45-1d74-9584-5bd5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="026e-1405-50cc-e19b" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" targetId="a7fa-db40-52ee-b359" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="dd67-c6ce-04e4-8dc2" name="Fortress Of Redemption" hidden="false" collective="false" import="true" targetId="6392-ce9d-29a7-1851" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="d8a1-2527-d538-bdfb" name="Aquila Strongpoint" hidden="false" collective="false" import="true" targetId="e13d-9ef8-9b0d-bc22" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="01dc-d34a-1988-3919" name="Primus Redoubt" hidden="false" collective="false" import="true" targetId="2d87-bde8-08d5-ae82" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="91a3-bce0-aa49-e830" name="Hammerfall Bunker" hidden="false" collective="false" import="true" targetId="d5f5-a83b-ed8e-61c0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -6805,6 +7027,471 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
       <infoLinks>
         <infoLink id="0622-4c40-5c53-58c0" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ad29-7efd-9c94-ac08" name="Firestorm Redoubt" publicationId="d0df-7166-5cd3-89fd" page="96" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="efb6-8bd9-1819-2be5" name="Firestorm Redoubt" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77b0-850a-bcea-5e3b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0b3-9322-0a82-c7cc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9f3a-d26d-1e55-da7b" name="Firestorm Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">10, Two Access Points at the Rear</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (Front 6)
+Two Turret Mounted Lascannons</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="44a7-74e6-31b6-b5db" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="13f6-8f16-5d89-5e95" name="Turret Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c8e7-8282-36c0-8532">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb95-6056-cdb0-4b8a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a7e-bde5-2196-c338" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c8e7-8282-36c0-8532" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e99-19e1-b84a-db0b" name="Vengeance Weapon Battery" publicationId="d0df-7166-5cd3-89fd" page="97" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="aae4-f940-dab5-adc3" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5986-fa5f-15dd-bd2a" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad73-9eba-ac61-edd8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="281f-35c7-478d-0036" name="Vengeance Weapon Battery" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
+Hull Mounted (Front) Heavy Bolter
+Hull Mounted (Left) Heavy Bolter
+Hull Mounted (Right) Heavy Bolter
+Hull Mounted (Rear) Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b851-5322-6b68-0094" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8415-fcc7-5d6f-f1d0" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92b7-3224-8b11-63a7" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a5-f5b8-bf69-60b6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ba76-07af-4f91-52dd" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bb59-a561-af8f-6e49" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0409-a109-feb3-5f2a" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2a8c-0c0c-2df1-4b73" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa45-1d74-9584-5bd5" name="Void Shield Generator" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="601a-6bac-8d1c-852d" name="Void Shield Generator" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d4e-84ba-d35f-009f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ad8-4915-faba-0435" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="4e71-9b3a-62ea-d317" name="Void Shield Generator" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
+Hull Mounted (Front) Heavy Bolter
+Hull Mounted (Left) Heavy Bolter
+Hull Mounted (Right) Heavy Bolter
+Hull Mounted (Rear) Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="cbbe-3f76-7bfb-0ab3" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2d01-844e-a9cf-447d" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1e0-2a94-61c7-49ec" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6666-452c-504d-74e4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5a93-8182-04de-a12f" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="61e3-a391-e1ee-b782" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="846c-78c7-ae68-36a6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="fee3-2cd4-00eb-c748" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d5f5-a83b-ed8e-61c0" name="Hammerfall Bunker" publicationId="d0df-7166-5cd3-89fd" page="96" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="b2bd-6b46-862b-963f" name="Hammerfall Bunker" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9330-7e06-3f2d-4e3e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b138-70e2-8fc7-c543" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ff62-bd82-d8b8-563e" name="Hammerfall Bunker" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
+Hull Mounted (Front) Heavy Bolter
+Hull Mounted (Left) Heavy Bolter
+Hull Mounted (Right) Heavy Bolter
+Hull Mounted (Rear) Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e158-e7bf-f08f-1d13" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a2ac-a5fa-9bd1-d0b9" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e29-c9d0-ab01-d4d9" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d6a-2284-b43e-794e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3990-bac9-2297-0d96" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ad71-9162-262f-a55c" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f570-c057-7677-ad1d" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ab88-46b5-9f0e-31b4" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2d87-bde8-08d5-ae82" name="Primus Redoubt" publicationId="d0df-7166-5cd3-89fd" page="102" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="f1ce-eb71-2f3b-7374" name="Primus Redoubt" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aec-aab8-8ea2-112f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ddc-3ed0-2f7c-7dd2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b008-f1eb-234f-cb05" name="Primus Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
+Hull Mounted (Front) Heavy Bolter
+Hull Mounted (Left) Heavy Bolter
+Hull Mounted (Right) Heavy Bolter
+Hull Mounted (Rear) Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="dbd8-8dbc-78fb-bdd5" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ea6e-cdd6-c4bd-852e" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c9-68f1-431c-4461" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e00-b8d2-4ba9-7692" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ccde-bfc0-6e86-1604" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bb28-3f2b-6d2a-6218" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="447b-8ac6-c127-7f5c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c829-970c-920d-9a19" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e13d-9ef8-9b0d-bc22" name="Aquila Strongpoint" publicationId="d0df-7166-5cd3-89fd" page="101" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="83c7-6487-5923-edac" name="Aquila Strongpoint" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c84b-16cf-f860-361b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dcc-f902-69da-8fc3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="159a-fc88-28da-4080" name="Aquila Strongpoint" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
+Hull Mounted (Front) Heavy Bolter
+Hull Mounted (Left) Heavy Bolter
+Hull Mounted (Right) Heavy Bolter
+Hull Mounted (Rear) Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="002a-2eb1-d4a6-5b31" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="520c-85b2-817c-7ba7" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b3-b9fb-9f18-5212" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c7f-3d81-7166-fbee" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="79c1-6bcd-41ad-da37" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="273a-f0a8-cf13-e642" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1233-6953-cdae-0380" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="f559-0aae-e75f-73b9" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6392-ce9d-29a7-1851" name="Fortress Of Redemption" publicationId="d0df-7166-5cd3-89fd" page="100" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="560c-59f8-d40c-351e" name="Fortress Of Redemption" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d64-8b09-535b-d38d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5e1-dd03-e3bf-fe61" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3ada-879c-de30-daba" name="Fortress Of Redemption" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
+Hull Mounted (Front) Heavy Bolter
+Hull Mounted (Left) Heavy Bolter
+Hull Mounted (Right) Heavy Bolter
+Hull Mounted (Rear) Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="006a-508c-6998-194e" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1a77-5096-f577-8643" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6e6-b395-1ee7-3e00" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d5a-8cdf-0217-94f5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="92ce-db94-5da8-56e8" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="3136-8728-b373-232e" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3573-802a-deb6-4568" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c644-edd8-939e-215d" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a7fa-db40-52ee-b359" name="Skyshield Landing Pad" publicationId="d0df-7166-5cd3-89fd" page="99" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="989e-b824-7f23-90c5" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3969-175d-22ab-7cf3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2d0-cfe3-5107-00a9" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9aa2-4b90-db59-65f3" name="Skyshield Landing Pad" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
+Hull Mounted (Front) Heavy Bolter
+Hull Mounted (Left) Heavy Bolter
+Hull Mounted (Right) Heavy Bolter
+Hull Mounted (Rear) Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="95a7-b902-d3c4-214b" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="526d-b156-5705-9c03" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef6d-f0ac-905d-c569" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05f1-1635-7621-ffa7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="132c-277e-64cf-5623" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7c45-4816-57f1-4c43" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ea0-cb69-e385-9071" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b5f4-6083-5a4d-fefc" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
