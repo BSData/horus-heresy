@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="27" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="28" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -4758,7 +4758,7 @@ Fire Point (Front 4)</characteristic>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5157-f309-77f9-1256" name="Imperial Bunker" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" type="unit">
@@ -7032,35 +7032,25 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
       </costs>
     </selectionEntry>
     <selectionEntry id="ad29-7efd-9c94-ac08" name="Firestorm Redoubt" publicationId="d0df-7166-5cd3-89fd" page="96" hidden="false" collective="false" import="true" type="unit">
-      <selectionEntries>
-        <selectionEntry id="efb6-8bd9-1819-2be5" name="Firestorm Redoubt" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77b0-850a-bcea-5e3b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0b3-9322-0a82-c7cc" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="9f3a-d26d-1e55-da7b" name="Firestorm Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building)</characteristic>
-                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
-                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
-                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
-                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
-                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">10, Two Access Points at the Rear</characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (Front 6)
+      <profiles>
+        <profile id="2795-a146-5fb9-2870" name="Firestorm Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">10, Two Access Points at the Rear</characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (Front 6)
 Two Turret Mounted Lascannons</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="44a7-74e6-31b6-b5db" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="06ae-92c5-0f41-c8e4" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+        <infoLink id="3c11-995f-fafe-fcf7" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="13f6-8f16-5d89-5e95" name="Turret Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c8e7-8282-36c0-8532">
           <constraints>
@@ -7073,7 +7063,7 @@ Two Turret Mounted Lascannons</characteristic>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e99-19e1-b84a-db0b" name="Vengeance Weapon Battery" publicationId="d0df-7166-5cd3-89fd" page="97" hidden="false" collective="false" import="true" type="unit">
@@ -7081,17 +7071,17 @@ Two Turret Mounted Lascannons</characteristic>
         <selectionEntry id="aae4-f940-dab5-adc3" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5986-fa5f-15dd-bd2a" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad73-9eba-ac61-edd8" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad73-9eba-ac61-edd8" type="max"/>
           </constraints>
           <profiles>
             <profile id="281f-35c7-478d-0036" name="Vengeance Weapon Battery" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
-                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
-                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
-                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
-                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
-                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">2</characteristic>
                 <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
                 <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
 Hull Mounted (Front) Heavy Bolter
@@ -7102,398 +7092,305 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="b851-5322-6b68-0094" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+            <infoLink id="e382-ce92-773a-f9ab" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c449-ec4e-fdc8-0ff5" name="Turret Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="546a-bd8a-537c-4883">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8083-7879-1419-3fb6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="751e-e32c-f586-3106" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="546a-bd8a-537c-4883" name="Skyreaper Battery" hidden="false" collective="false" import="true" targetId="b871-3399-9d59-838f" type="selectionEntry"/>
+                <entryLink id="4565-965e-80be-3e61" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="8415-fcc7-5d6f-f1d0" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92b7-3224-8b11-63a7" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39a5-f5b8-bf69-60b6" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ba76-07af-4f91-52dd" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="bb59-a561-af8f-6e49" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0409-a109-feb3-5f2a" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2a8c-0c0c-2df1-4b73" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa45-1d74-9584-5bd5" name="Void Shield Generator" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" collective="false" import="true" type="unit">
-      <selectionEntries>
-        <selectionEntry id="601a-6bac-8d1c-852d" name="Void Shield Generator" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d4e-84ba-d35f-009f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ad8-4915-faba-0435" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4e71-9b3a-62ea-d317" name="Void Shield Generator" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
-                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
-                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
-                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
-                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
-                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
-Hull Mounted (Front) Heavy Bolter
-Hull Mounted (Left) Heavy Bolter
-Hull Mounted (Right) Heavy Bolter
-Hull Mounted (Rear) Heavy Bolter</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="cbbe-3f76-7bfb-0ab3" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2d01-844e-a9cf-447d" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1e0-2a94-61c7-49ec" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6666-452c-504d-74e4" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="5a93-8182-04de-a12f" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="61e3-a391-e1ee-b782" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="846c-78c7-ae68-36a6" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="fee3-2cd4-00eb-c748" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <profiles>
+        <profile id="cb9f-fdc9-32a6-0771" name="Void Shield Generator" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"></characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c850-d8a1-99f1-5c9f" name="Advanced Reaction: Void Shield Envelope" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Void Shield Envelope: Thie Advanced Reaction may be made during the Shooting phase whenever an enemy unit targets a friendly unit that has at least half of its models within 6&quot; of a friendly Void Shield Generator with a Shooting Attack, excluding friendly units that include any models with the Monstrous, Gargantuan, Knight, Titan, Super-heavy of Flyer Sub-types. Before the Active player has resolved any Hit rolls, the Reactive player mayu choose to expend one of their Reactions for that Phase to have the unit targeted by the Shooting Attack gain the Shrouded (4+) special rule until the end of the Shooting phase. Note that this Advanced Reaction does not improve any existing instances of the Shoudled (X) special rule that a unit may have. The unit that has gained the Shoulded (4+) special rule as a result of this Reaction does not count as having made a Reaction, and mayb itself make a Reaction provided it would otherwise be able to do so, and the Reactive player has sufficient Reaction allotment remaining in that Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d3f1-89b6-2b8b-fa43" name="Void Shield Projector" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false">
+          <description>The controlling player of a model with a Void Shield Projector may make the Void Shield Evvelope Advanced Reaction.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6f06-f26e-f287-e9ba" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+        <infoLink id="f251-79f0-4a14-fcdd" name="Void Shields" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Void Shields (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d5f5-a83b-ed8e-61c0" name="Hammerfall Bunker" publicationId="d0df-7166-5cd3-89fd" page="96" hidden="false" collective="false" import="true" type="unit">
-      <selectionEntries>
-        <selectionEntry id="b2bd-6b46-862b-963f" name="Hammerfall Bunker" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9330-7e06-3f2d-4e3e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b138-70e2-8fc7-c543" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="ff62-bd82-d8b8-563e" name="Hammerfall Bunker" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
-                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
-                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
-                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
-                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
-                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
-Hull Mounted (Front) Heavy Bolter
-Hull Mounted (Left) Heavy Bolter
-Hull Mounted (Right) Heavy Bolter
-Hull Mounted (Rear) Heavy Bolter</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="e158-e7bf-f08f-1d13" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <profiles>
+        <profile id="915d-5819-74d9-cd85" name="Hammerfall Bunker" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"></characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">One Turret Mounted Cyclone Missile Launcher (with Frag, Krak and Flakk missiles)
+Hull Mounted (Front) Mounted Twin-linked Heavy Bolter or Heavy Flamers
+Hull Mounted (Left) Mounted Twin-linked Heavy Bolter or Heavy Flamers
+Hull Mounted (Right) Mounted Twin-linked Heavy Bolter or Heavy Flamers
+Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0c41-2dac-1c20-8170" name="Hammerfall Strike" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
+          <description>A model with this special rule is deployed anywhere within the controlling player&apos;s deplyment zone, more than 12&quot; away from any enemy models, after models with the Scout of Infiltrate special rules. If both players have models with this special rule, roll off to see who will deploy them first.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="af2f-a797-a259-ec68" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+      </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a2ac-a5fa-9bd1-d0b9" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="a2ac-a5fa-9bd1-d0b9" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c496-e4dc-1ee7-09d9">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e29-c9d0-ab01-d4d9" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d6a-2284-b43e-794e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e29-c9d0-ab01-d4d9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d6a-2284-b43e-794e" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="3990-bac9-2297-0d96" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="ad71-9162-262f-a55c" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f570-c057-7677-ad1d" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ab88-46b5-9f0e-31b4" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
+          <selectionEntries>
+            <selectionEntry id="c496-e4dc-1ee7-09d9" name="Four Heavy Bolters (1 Front, 1 Left, 1 Right, 1 Rear)" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="b32e-6f20-c603-8124" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dce-da5c-81bc-f578" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f993-2d89-e7e9-9479" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry id="748c-f054-4045-b610" name="Four Heavy Flamers (1 Front, 1 Left, 1 Right, 1 Rear)" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="fc08-e8d7-0e37-431e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d8c-9974-e583-ec47" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f8e-37ce-e769-fe3c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2d87-bde8-08d5-ae82" name="Primus Redoubt" publicationId="d0df-7166-5cd3-89fd" page="102" hidden="false" collective="false" import="true" type="unit">
-      <selectionEntries>
-        <selectionEntry id="f1ce-eb71-2f3b-7374" name="Primus Redoubt" hidden="false" collective="false" import="true" type="model">
+      <profiles>
+        <profile id="f8ca-5e97-f247-e19c" name="Primus Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Massive, Building)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">3</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">50, Two Access Points, one at the front and one at the rear.</characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Hull Mounted (Front) Twin-linked Turbo-laser Destructor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="17ef-b91a-a251-2ee3" name="Garrison Vault" publicationId="d0df-7166-5cd3-89fd" page="102" hidden="false">
+          <description>If a model has a Transport Capacity and the Garrison Vault special rule, then it may transport any number of Infantry units (plus any Characters that have joined the units), so long as the number of models in the Embarked units do not exceed the model&apos;s Transport Capacity. Some models when the Garrison Vault special rule may be able to transport other units in additiona to Infantry. Where this is true, the model&apos;s profile will note exactly which units may Embark on this building.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6ffd-0663-cb84-00cc" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+        <infoLink id="869e-9953-4686-cc0b" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
+        <infoLink id="4ed1-65ce-80da-2159" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+        <infoLink id="591c-79f5-37f5-4be8" name="Massive Fortification" hidden="false" targetId="d6af-0c88-b1e5-d76f" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="7217-1c09-e03d-586e" name="Twin-linked Turbo Laser-Destructor" hidden="false" collective="false" import="true" targetId="f947-d7f1-40bd-f425" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hull (Front) mounted Twin-linked Turbo Laser-Destructor"/>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aec-aab8-8ea2-112f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ddc-3ed0-2f7c-7dd2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ee-5f72-8ff8-329e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f74-ffab-bb07-985b" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="b008-f1eb-234f-cb05" name="Primus Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
-                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
-                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
-                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
-                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
-                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
-Hull Mounted (Front) Heavy Bolter
-Hull Mounted (Left) Heavy Bolter
-Hull Mounted (Right) Heavy Bolter
-Hull Mounted (Rear) Heavy Bolter</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="dbd8-8dbc-78fb-bdd5" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="ea6e-cdd6-c4bd-852e" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c9-68f1-431c-4461" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e00-b8d2-4ba9-7692" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="ccde-bfc0-6e86-1604" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="bb28-3f2b-6d2a-6218" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="447b-8ac6-c127-7f5c" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c829-970c-920d-9a19" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="700.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e13d-9ef8-9b0d-bc22" name="Aquila Strongpoint" publicationId="d0df-7166-5cd3-89fd" page="101" hidden="false" collective="false" import="true" type="unit">
-      <selectionEntries>
-        <selectionEntry id="83c7-6487-5923-edac" name="Aquila Strongpoint" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c84b-16cf-f860-361b" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dcc-f902-69da-8fc3" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="159a-fc88-28da-4080" name="Aquila Strongpoint" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
-                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
-                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
-                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
-                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
-                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
-Hull Mounted (Front) Heavy Bolter
-Hull Mounted (Left) Heavy Bolter
-Hull Mounted (Right) Heavy Bolter
-Hull Mounted (Rear) Heavy Bolter</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="002a-2eb1-d4a6-5b31" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="520c-85b2-817c-7ba7" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b3-b9fb-9f18-5212" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c7f-3d81-7166-fbee" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="79c1-6bcd-41ad-da37" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="273a-f0a8-cf13-e642" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1233-6953-cdae-0380" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="f559-0aae-e75f-73b9" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
+      <profiles>
+        <profile id="d362-f086-1dea-b586" name="Aquila Strongpoint" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Massive, Building)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">6</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">30, One Access Point at the rear</characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a709-c030-322c-5858" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+        <infoLink id="2cec-afb6-6a49-95af" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
+        <infoLink id="9a3e-0dca-e20e-fc3a" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+        <infoLink id="ad9e-9cca-afbe-c5d3" name="Massive Fortification" hidden="false" targetId="d6af-0c88-b1e5-d76f" type="rule"/>
+        <infoLink id="22db-8af6-3d45-cd2b" name="Orbital Defences" hidden="false" targetId="1bdb-7155-7c6e-61e8" type="rule"/>
+      </infoLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6392-ce9d-29a7-1851" name="Fortress Of Redemption" publicationId="d0df-7166-5cd3-89fd" page="100" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="c770-ca11-bea0-7c68" name="Multi-part Fortifications" hidden="false" targetId="eaa0-9ac0-9de9-32e0" type="rule"/>
+      </infoLinks>
       <selectionEntries>
-        <selectionEntry id="560c-59f8-d40c-351e" name="Fortress Of Redemption" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="560c-59f8-d40c-351e" name="Tower" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d64-8b09-535b-d38d" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5e1-dd03-e3bf-fe61" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3ada-879c-de30-daba" name="Fortress Of Redemption" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+            <profile id="3ada-879c-de30-daba" name="Tower" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
                 <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
-                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
-                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
-                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
-                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
-Hull Mounted (Front) Heavy Bolter
-Hull Mounted (Left) Heavy Bolter
-Hull Mounted (Right) Heavy Bolter
-Hull Mounted (Rear) Heavy Bolter</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"></characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
             <infoLink id="006a-508c-6998-194e" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+            <infoLink id="2e0f-a0f6-50cb-ac48" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
-          </costs>
         </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1a77-5096-f577-8643" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
+        <selectionEntry id="1332-1487-ac2c-3921" name="Bunker Annex" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6e6-b395-1ee7-3e00" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d5a-8cdf-0217-94f5" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="92ce-db94-5da8-56e8" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="3136-8728-b373-232e" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3573-802a-deb6-4568" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c644-edd8-939e-215d" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a7fa-db40-52ee-b359" name="Skyshield Landing Pad" publicationId="d0df-7166-5cd3-89fd" page="99" hidden="false" collective="false" import="true" type="unit">
-      <selectionEntries>
-        <selectionEntry id="989e-b824-7f23-90c5" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3969-175d-22ab-7cf3" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2d0-cfe3-5107-00a9" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e3-88ea-55c6-0656" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b5-023f-e01e-4ac7" type="max"/>
           </constraints>
           <profiles>
-            <profile id="9aa2-4b90-db59-65f3" name="Skyshield Landing Pad" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+            <profile id="2e57-ef1d-d4dd-027c" name="Bunker Annex" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
-                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
-                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
-                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
-                <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
-                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
-Hull Mounted (Front) Heavy Bolter
-Hull Mounted (Left) Heavy Bolter
-Hull Mounted (Right) Heavy Bolter
-Hull Mounted (Rear) Heavy Bolter</characteristic>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12, One Access Point at the side</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="95a7-b902-d3c4-214b" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+            <infoLink id="c7fc-b903-cb63-d978" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+            <infoLink id="6e1e-22b4-14ba-fc4e" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
-          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8f53-b7d8-a591-3eb0" name="Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b67d-5c95-e901-1a1e" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="f174-58c7-e558-72fb" name="Oribital Defences" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="5f5d-3645-ce04-39f4" name="Orbital Defences" hidden="false" targetId="1bdb-7155-7c6e-61e8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="a704-4b67-da81-7334" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted Icarus Lascannon"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="526d-b156-5705-9c03" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef6d-f0ac-905d-c569" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05f1-1635-7621-ffa7" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="132c-277e-64cf-5623" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="7c45-4816-57f1-4c43" name="May take a single Emplacment Mounted Icarus Lascannon on its battlements" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ea0-cb69-e385-9071" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b5f4-6083-5a4d-fefc" name="Icarus Lascannon" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a7fa-db40-52ee-b359" name="Skyshield Landing Pad" publicationId="d0df-7166-5cd3-89fd" page="99" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="27f6-eb07-0b35-d3ba" name="Skyshield Landing Pad" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"></characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="90dd-7db1-46b8-0b02" name="Landing Zone Beacon" publicationId="d0df-7166-5cd3-89fd" page="99" hidden="false">
+          <description>If the first model placed on the battlefield when performing a Deep Strike Assault is place on the battlements of a Fortification with this special rule, that has been included as part of the controlling player&apos;s army, the model does not scatter and can be placed as if a result of Hit had been rolled. Once this first unit has been deployed, roll a D6. On the roll of a &quot;1&quot;, the Deep Strike Assault anywhere within 24&quot; of the first unit without scattering, though no model may be within 1&quot; of an enemy model or within Impassable Terrain. If the roll is a &quot;2&quot; or higher, then the controlling player deployed each other unit anywhere within 6&quot; of the first, though no model may be within 1&quot; of an enemy model of within impassable terrain - if there is no space to deploy a unit within 6&quot; of the first, then the opposing player deploys that unit as if it was part of a Disordered drop.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ce80-1c10-f9a4-f0b2" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+        <infoLink id="e372-b4c1-f65c-782d" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -11428,6 +11325,9 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
 • A unit that includes one or more models with the Automated Artillery Sub-type may not Run,  declare or otherwise make Charge moves, or make Reactions.
 • A unit that includes one or more models with the Automated Artillery Sub-type may not make  Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
 • A unit that includes one or more models with this Unit Sub-type may never hold or deny an Objective.</description>
+    </rule>
+    <rule id="1bdb-7155-7c6e-61e8" name="Orbital Defences" publicationId="d0df-7166-5cd3-89fd" page="101" hidden="false">
+      <description>Once per battle, during their turn,m the controlling player may declare that they will activate their Orbital Defences. Until the end of the opposiing player&apos;s next turn, any Reserve rolls that the opposiing player makes suffer a penalty of -1 and all rolls made by the opposing player to determine if any Deep Strike Assaults, Outflanking Assault or Subterranean Assaults are Disordered fail on the roll of 1-3 rather than just the result of a &quot;1&quot; (neither of these effects stack with other special rules that modify Reserves rolls of Disordered rolls, and the controlling player must choose one effect to apply). In addition, if the opposing player of a player whose army includes one of more models with the Orbital Defences special rule declares a Drop Pod Assault, the then controlling player of the models with the Orbital Defences special rule may roll a dice when the Drop Pod Assault is resolved. The controlling player of the models with the Orbital Defences special rule may select a number of enemy models with the Orbital Assault Vehicle special rule equal to the result of the dice roll, each of the models selected suffers a single Str 8 Ap 2 Hit after it is deplyed onto the battlefield.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
