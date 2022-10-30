@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="65" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="66" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -8589,7 +8589,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="54c1-9eab-ee0e-2fac" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
+                <entryLink id="54c1-9eab-ee0e-2fac" name="Chainaxe" hidden="true" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6b2-7567-ac6e-6e56" type="max"/>
                   </constraints>
@@ -10020,7 +10027,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="a6d4-6303-56db-9ed4" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
+                <entryLink id="a6d4-6303-56db-9ed4" name="Chainaxe" hidden="true" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cd4-0dcd-67e7-5f18" type="max"/>
                   </constraints>
@@ -15682,6 +15696,25 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbb6-ad37-049f-9be5" type="max"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="6c9d-22a3-ea29-4955" name="Force Weapon" hidden="true" collective="false" import="true" targetId="a9c2-6881-3391-9622" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                            <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+                            <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="184b-375e-34a0-1c0e" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ebdd-46f1-6836-8322" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd4b-5b1d-92ef-7a0f">
@@ -19418,10 +19451,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="9add-a8fb-d8dc-6085" name="Force Weapon" hidden="true" collective="false" import="true" targetId="a9c2-6881-3391-9622" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
-                        <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="69fc-a6ab-d7a8-0e83" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+                            <condition field="selections" scope="69fc-a6ab-d7a8-0e83" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -19504,6 +19543,25 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="306f-6e75-d6c8-ab29" name="Force Weapon" hidden="true" collective="false" import="true" targetId="a9c2-6881-3391-9622" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="69fc-a6ab-d7a8-0e83" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+                            <condition field="selections" scope="69fc-a6ab-d7a8-0e83" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6698-83e1-b5c0-012c" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -27590,7 +27648,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b8a-56f3-bcb1-e76b" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="7ac3-d234-f96a-f924" name="Helical Targeting Array" hidden="false" collective="false" import="true" targetId="ff29-460e-a589-a376" type="selectionEntry">
@@ -27598,7 +27656,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53cb-3b4b-728f-db55" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="3eee-9556-18d9-c6f0" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
