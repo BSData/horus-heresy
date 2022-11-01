@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="28" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="29" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -7125,8 +7125,8 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
             <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
             <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"></characteristic>
-            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"/>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
           </characteristics>
         </profile>
         <profile id="c850-d8a1-99f1-5c9f" name="Advanced Reaction: Void Shield Envelope" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
@@ -7162,7 +7162,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
             <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
             <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"></characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"/>
             <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">One Turret Mounted Cyclone Missile Launcher (with Frag, Krak and Flakk missiles)
 Hull Mounted (Front) Mounted Twin-linked Heavy Bolter or Heavy Flamers
 Hull Mounted (Left) Mounted Twin-linked Heavy Bolter or Heavy Flamers
@@ -7195,6 +7195,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="748c-f054-4045-b610" name="Four Heavy Flamers (1 Front, 1 Left, 1 Right, 1 Rear)" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
@@ -7205,6 +7208,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7265,7 +7271,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
             <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">6</characteristic>
             <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">30, One Access Point at the rear</characteristic>
-            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
           </characteristics>
         </profile>
       </profiles>
@@ -7299,8 +7305,8 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
                 <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
                 <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
                 <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">5</characteristic>
-                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"></characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"/>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
               </characteristics>
             </profile>
           </profiles>
@@ -7308,6 +7314,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <infoLink id="006a-508c-6998-194e" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
             <infoLink id="2e0f-a0f6-50cb-ac48" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1332-1487-ac2c-3921" name="Bunker Annex" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -7324,7 +7333,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
                 <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
                 <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">5</characteristic>
                 <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12, One Access Point at the side</characteristic>
-                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
               </characteristics>
             </profile>
           </profiles>
@@ -7359,6 +7368,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -7375,8 +7387,8 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
             <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
             <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
-            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"></characteristic>
-            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"></characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"/>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
           </characteristics>
         </profile>
       </profiles>
@@ -9128,9 +9140,9 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ed1f-9473-df70-4544" name="Angel&apos;s Wrath" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ed1f-9473-df70-4544" name="Angel&apos;s Wrath^" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="b1c3-5494-add9-d9bf" name="Angel&apos;s Wrath" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false">
+            <rule id="b1c3-5494-add9-d9bf" name="Angel&apos;s Wrath^" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false">
               <description>Effects
 • Any unit in a Detachment using this Rite of War eligible to take a Legion Rhino Transport as a Dedicated Transport may instead take a Legion Storm Eagle Gunship as a Dedicated Transport.
 • For any model with the Vehicle Unit Type and both the Flyer and Transport Sub-types from a Detachment that is using this Rite of War, and that is in Reserve, the controlling player may choose to automatically have them enter play at the start of their first turn without making a Reserves roll. If they are not brought into play on Turn One then Reserves rolls are made for the models normally from Turn Two onwards.
@@ -9138,7 +9150,9 @@ Limitations
 • All models with the Infantry Unit Type in a Detachment using this Rite of War that do not have jump packs of any kind must begin the battle Embarked upon a model with the Vehicle Unit Type and both the Flyer and Transport Sub-types.
 • All models with both the Infantry Unit Type and a jump pack of any kind in a Detachment using this Rite of War must begin the battle in Reserves, but may be assigned to a Deep Strike Assault as normal.
 • A Detachment using this Rite of War may not include any models with the Vehicle Unit Type that do not also have the Flyer Sub-type.
-• A Detachment using this Rite of War may not select any Fortification choices.</description>
+• A Detachment using this Rite of War may not select any Fortification choices.
+
+^Manually check restrictions and limitations)</description>
             </rule>
           </rules>
           <costs>
@@ -9163,16 +9177,18 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1977-49f2-7910-f177" name="Drop Pod Assault" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1977-49f2-7910-f177" name="Drop Pod Assault^" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="384d-9b91-037d-0890" name="Drop Pod Assault" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false">
+            <rule id="384d-9b91-037d-0890" name="Drop Pod Assault^" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false">
               <description>Effects
 • All units in a Detachment using this Rite of War eligible to take a Legion Rhino Transport or Legion Land Raider Proteus Carrier Dedicated Transport may instead select Legion Drop Pods or Legion Dreadclaw Drop Pods as Dedicated Transports.
-• When taken as part of a Detachment using this Rite of War, any units composed of models with the Dreadnought Unit Type must be given either Legion Dreadclaw Drop Pods or Legion Dreadnought Drop Pods as Dedicated Transports and may not be selected in units of more than one model.
+• When taken as part of a Detachment using this Rite of War, any units composed of models with the Dreadnought Unit Type must be given either Legion Dreadclaw Drop Pods or Legion Dreadnought Drop Pods as Dedicated Transports and may not be selected in units of more than one model. 
 Limitations
 • All units in a Detachment using this Rite of War selected with Legion Drop Pods, Legion Dreadnought Drop Pods or Legion Dreadclaw Drop Pods as Dedicated Transports must deploy by means of a Drop Pod Assault (see page 99).
 • A Detachment using this Rite of War may not select any Fortification choices.
-• Any models selected as part of a Detachment that do not have a Legion Drop Pod, Legion Dreadnought Drop Pod or Legion Dreadclaw Drop Pod as a Dedicated Transport, or are Embarked on a Legion Kharybdis Assault Claw, must be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).</description>
+• Any models selected as part of a Detachment that do not have a Legion Drop Pod, Legion Dreadnought Drop Pod or Legion Dreadclaw Drop Pod as a Dedicated Transport, or are Embarked on a Legion Kharybdis Assault Claw, must be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).
+
+^Manually check restrictions and limitations)</description>
             </rule>
           </rules>
           <infoLinks>
@@ -9231,7 +9247,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ccb7-6c5c-76ce-5b77" name="Armoured Spearhead" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ccb7-6c5c-76ce-5b77" name="Armoured Spearhead^" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="cfb9-4307-47d9-4bbb" value="0.0">
               <conditions>
@@ -9243,7 +9259,7 @@ Limitations
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfb9-4307-47d9-4bbb" type="max"/>
           </constraints>
           <rules>
-            <rule id="a1d0-0e6a-db7e-bbcd" name="Armoured Spearhead" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false">
+            <rule id="a1d0-0e6a-db7e-bbcd" name="Armoured Spearhead^" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false">
               <description>Effects
 • All units in a Detachment using this Rite of War eligible to take a Legion Rhino Transport as a Dedicated Transport may instead select a Legion Land Raider Proteus Carrier as a Dedicated Transport if they number ten models or less.
 • Legion Predator Squadrons in a Detachment using this Rite of War may be selected as Troops choices.
@@ -9254,7 +9270,9 @@ Limitations
 • All units in a Detachment using this Rite of War with the Infantry Type must begin the battle Embarked upon a model with the Transport Sub-type; any Infantry models in a Detachment using this Rite of War, both those deployed on the battlefield and in Reserves, that are not Embarked upon a model with the Transport Subtype at the beginning of the controlling player’s first turn must be removed as casualties.
 • A Detachment using this Rite of War may not select any Fortification choices.
 • A Detachment using this Rite of War may not include any models with a Movement Characteristic of 0 or ‘-’.
-• This Rite of War may only be selected for an army’s Primary Detachment.</description>
+• This Rite of War may only be selected for an army’s Primary Detachment.
+
+^Manually check restrictions and limitations)</description>
             </rule>
           </rules>
           <costs>
