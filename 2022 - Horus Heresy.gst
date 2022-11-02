@@ -9242,9 +9242,9 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Assault" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Assault^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Aaasult" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
+            <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Aaasult^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
               <description>Effects
 • All units in this Detachment eligible to take a Legion Rhino Transport as a Dedicated Transport may instead select a Legion Termite Assault Drill as a Dedicated Transport.
 • Legion Termite Assault Drills may be selected as Fast Attack choices and Heavy Support choices in a Detachment with this Rite of War.
@@ -9252,7 +9252,9 @@ Limitations
 Limitations
 • All Infantry units that do not have a version of the Bulky (X) special rule in a Detachment using this Rite of War must begin the battle Embarked on a Legion Termite Assault Drill.
 • A Detachment using this Rite of War may not select any Fortification choices.
-• Any models selected as part of a Detachment using this Rite of War that are not Legion Termite Assault Drills, or Embarked on a Legion Termite Assault Drill, may not be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).</description>
+• Any models selected as part of a Detachment using this Rite of War that are not Legion Termite Assault Drills, or Embarked on a Legion Termite Assault Drill, may not be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).
+
+^Manually check Limitations on deployment)</description>
             </rule>
           </rules>
           <infoLinks>
