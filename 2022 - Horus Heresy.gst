@@ -9289,7 +9289,7 @@ Limitations
 • A Detachment using this Rite of War may not include any models with a Movement Characteristic of 0 or ‘-’.
 • This Rite of War may only be selected for an army’s Primary Detachment.
 
-^Manually check restrictions and limitations)</description>
+^Manually check limitations on Deployement</description>
             </rule>
           </rules>
           <costs>
