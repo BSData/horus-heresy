@@ -186,7 +186,21 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false"/>
+    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="9658-3768-cea2-6062" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36c3-e85e-97cc-c503" repeats="1" roundUp="true"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9658-3768-cea2-6062" type="min"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Sub-type:" hidden="false">
       <rules>
         <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
@@ -623,6 +637,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8810-8109-85db-93e4" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="2545-86dd-f928-73f3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
