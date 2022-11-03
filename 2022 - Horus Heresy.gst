@@ -186,7 +186,21 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false"/>
+    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="9658-3768-cea2-6062" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36c3-e85e-97cc-c503" repeats="1" roundUp="true"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9658-3768-cea2-6062" type="min"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Sub-type:" hidden="false">
       <rules>
         <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
@@ -623,6 +637,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8810-8109-85db-93e4" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="2545-86dd-f928-73f3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
@@ -9152,7 +9167,7 @@ Limitations
 • A Detachment using this Rite of War may not include any models with the Vehicle Unit Type that do not also have the Flyer Sub-type.
 • A Detachment using this Rite of War may not select any Fortification choices.
 
-^Manually check restrictions and limitations)</description>
+^Manually check restrictions and limitations</description>
             </rule>
           </rules>
           <costs>
@@ -9227,9 +9242,9 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Assault" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Assault^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Aaasult" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
+            <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Aaasult^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
               <description>Effects
 • All units in this Detachment eligible to take a Legion Rhino Transport as a Dedicated Transport may instead select a Legion Termite Assault Drill as a Dedicated Transport.
 • Legion Termite Assault Drills may be selected as Fast Attack choices and Heavy Support choices in a Detachment with this Rite of War.
@@ -9237,7 +9252,9 @@ Limitations
 Limitations
 • All Infantry units that do not have a version of the Bulky (X) special rule in a Detachment using this Rite of War must begin the battle Embarked on a Legion Termite Assault Drill.
 • A Detachment using this Rite of War may not select any Fortification choices.
-• Any models selected as part of a Detachment using this Rite of War that are not Legion Termite Assault Drills, or Embarked on a Legion Termite Assault Drill, may not be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).</description>
+• Any models selected as part of a Detachment using this Rite of War that are not Legion Termite Assault Drills, or Embarked on a Legion Termite Assault Drill, may not be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).
+
+^Manually check Limitations on deployment)</description>
             </rule>
           </rules>
           <infoLinks>
@@ -9272,7 +9289,7 @@ Limitations
 • A Detachment using this Rite of War may not include any models with a Movement Characteristic of 0 or ‘-’.
 • This Rite of War may only be selected for an army’s Primary Detachment.
 
-^Manually check restrictions and limitations)</description>
+^Manually check limitations on Deployement</description>
             </rule>
           </rules>
           <costs>
