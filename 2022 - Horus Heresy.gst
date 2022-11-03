@@ -9167,7 +9167,7 @@ Limitations
 • A Detachment using this Rite of War may not include any models with the Vehicle Unit Type that do not also have the Flyer Sub-type.
 • A Detachment using this Rite of War may not select any Fortification choices.
 
-^Manually check restrictions and limitations)</description>
+^Manually check restrictions and limitations</description>
             </rule>
           </rules>
           <costs>
