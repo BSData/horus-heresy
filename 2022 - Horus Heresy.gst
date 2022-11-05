@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="27" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="29" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -186,7 +186,21 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false"/>
+    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="9658-3768-cea2-6062" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36c3-e85e-97cc-c503" repeats="1" roundUp="true"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9658-3768-cea2-6062" type="min"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Sub-type:" hidden="false">
       <rules>
         <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
@@ -478,8 +492,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -623,6 +638,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8810-8109-85db-93e4" type="min"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="2545-86dd-f928-73f3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
@@ -744,16 +760,70 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
   </selectionEntries>
   <entryLinks>
     <entryLink id="39b5-294b-f075-d42d" name="Fortified Wall (Strongpoint)" hidden="false" collective="false" import="true" targetId="4a54-c437-ba4b-be6b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="d7ec-95a3-173d-ca65" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7488-dcd5-3230-57d7" name="Imperial Bunker" hidden="false" collective="false" import="true" targetId="5157-f309-77f9-1256" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="38c2-9688-ede4-f626" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="427d-eb8e-dbbd-87a2" name="Defence Line" hidden="false" collective="false" import="true" targetId="ea91-0572-393c-e925" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="86ff-083e-ce6d-8284" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
@@ -762,6 +832,174 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       <categoryLinks>
         <categoryLink id="9fb6-1837-1414-95a7" name="New CategoryLink" hidden="false" targetId="d82b-1980-74f8-5dac" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="ffeb-34e6-ea59-170c" name="Firestorm Redoubt" hidden="false" collective="false" import="true" targetId="ad29-7efd-9c94-ac08" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="c3fd-09fe-2ac7-2183" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" targetId="8e99-19e1-b84a-db0b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f1d1-ca61-ae6b-4d33" name="Void Shield Generator" hidden="false" collective="false" import="true" targetId="fa45-1d74-9584-5bd5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="026e-1405-50cc-e19b" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" targetId="a7fa-db40-52ee-b359" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="dd67-c6ce-04e4-8dc2" name="Fortress Of Redemption" hidden="false" collective="false" import="true" targetId="6392-ce9d-29a7-1851" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="d8a1-2527-d538-bdfb" name="Aquila Strongpoint" hidden="false" collective="false" import="true" targetId="e13d-9ef8-9b0d-bc22" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="01dc-d34a-1988-3919" name="Primus Redoubt" hidden="false" collective="false" import="true" targetId="2d87-bde8-08d5-ae82" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="91a3-bce0-aa49-e830" name="Hammerfall Bunker" hidden="false" collective="false" import="true" targetId="d5f5-a83b-ed8e-61c0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -4536,7 +4774,7 @@ Fire Point (Front 4)</characteristic>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5157-f309-77f9-1256" name="Imperial Bunker" publicationId="e77a-823a-da94-16b9" page="228" hidden="false" collective="false" import="true" type="unit">
@@ -6809,6 +7047,380 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ad29-7efd-9c94-ac08" name="Firestorm Redoubt" publicationId="d0df-7166-5cd3-89fd" page="96" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="2795-a146-5fb9-2870" name="Firestorm Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">10, Two Access Points at the Rear</characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (Front 6)
+Two Turret Mounted Lascannons</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="06ae-92c5-0f41-c8e4" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+        <infoLink id="3c11-995f-fafe-fcf7" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="13f6-8f16-5d89-5e95" name="Turret Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c8e7-8282-36c0-8532">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb95-6056-cdb0-4b8a" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a7e-bde5-2196-c338" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="c8e7-8282-36c0-8532" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e99-19e1-b84a-db0b" name="Vengeance Weapon Battery" publicationId="d0df-7166-5cd3-89fd" page="97" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="aae4-f940-dab5-adc3" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5986-fa5f-15dd-bd2a" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad73-9eba-ac61-edd8" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="281f-35c7-478d-0036" name="Vengeance Weapon Battery" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">2</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Fire Point (One per hull arc, 2)
+Hull Mounted (Front) Heavy Bolter
+Hull Mounted (Left) Heavy Bolter
+Hull Mounted (Right) Heavy Bolter
+Hull Mounted (Rear) Heavy Bolter</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e382-ce92-773a-f9ab" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c449-ec4e-fdc8-0ff5" name="Turret Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="546a-bd8a-537c-4883">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8083-7879-1419-3fb6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="751e-e32c-f586-3106" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="546a-bd8a-537c-4883" name="Skyreaper Battery" hidden="false" collective="false" import="true" targetId="b871-3399-9d59-838f" type="selectionEntry"/>
+                <entryLink id="4565-965e-80be-3e61" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa45-1d74-9584-5bd5" name="Void Shield Generator" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="cb9f-fdc9-32a6-0771" name="Void Shield Generator" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"/>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
+          </characteristics>
+        </profile>
+        <profile id="c850-d8a1-99f1-5c9f" name="Advanced Reaction: Void Shield Envelope" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Void Shield Envelope: Thie Advanced Reaction may be made during the Shooting phase whenever an enemy unit targets a friendly unit that has at least half of its models within 6&quot; of a friendly Void Shield Generator with a Shooting Attack, excluding friendly units that include any models with the Monstrous, Gargantuan, Knight, Titan, Super-heavy of Flyer Sub-types. Before the Active player has resolved any Hit rolls, the Reactive player mayu choose to expend one of their Reactions for that Phase to have the unit targeted by the Shooting Attack gain the Shrouded (4+) special rule until the end of the Shooting phase. Note that this Advanced Reaction does not improve any existing instances of the Shoudled (X) special rule that a unit may have. The unit that has gained the Shoulded (4+) special rule as a result of this Reaction does not count as having made a Reaction, and mayb itself make a Reaction provided it would otherwise be able to do so, and the Reactive player has sufficient Reaction allotment remaining in that Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d3f1-89b6-2b8b-fa43" name="Void Shield Projector" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false">
+          <description>The controlling player of a model with a Void Shield Projector may make the Void Shield Evvelope Advanced Reaction.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6f06-f26e-f287-e9ba" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+        <infoLink id="f251-79f0-4a14-fcdd" name="Void Shields" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Void Shields (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d5f5-a83b-ed8e-61c0" name="Hammerfall Bunker" publicationId="d0df-7166-5cd3-89fd" page="96" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="915d-5819-74d9-cd85" name="Hammerfall Bunker" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">3</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"/>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">One Turret Mounted Cyclone Missile Launcher (with Frag, Krak and Flakk missiles)
+Hull Mounted (Front) Mounted Twin-linked Heavy Bolter or Heavy Flamers
+Hull Mounted (Left) Mounted Twin-linked Heavy Bolter or Heavy Flamers
+Hull Mounted (Right) Mounted Twin-linked Heavy Bolter or Heavy Flamers
+Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0c41-2dac-1c20-8170" name="Hammerfall Strike" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
+          <description>A model with this special rule is deployed anywhere within the controlling player&apos;s deplyment zone, more than 12&quot; away from any enemy models, after models with the Scout of Infiltrate special rules. If both players have models with this special rule, roll off to see who will deploy them first.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="af2f-a797-a259-ec68" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a2ac-a5fa-9bd1-d0b9" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c496-e4dc-1ee7-09d9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e29-c9d0-ab01-d4d9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d6a-2284-b43e-794e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c496-e4dc-1ee7-09d9" name="Four Heavy Bolters (1 Front, 1 Left, 1 Right, 1 Rear)" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="b32e-6f20-c603-8124" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dce-da5c-81bc-f578" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f993-2d89-e7e9-9479" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="748c-f054-4045-b610" name="Four Heavy Flamers (1 Front, 1 Left, 1 Right, 1 Rear)" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="fc08-e8d7-0e37-431e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d8c-9974-e583-ec47" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f8e-37ce-e769-fe3c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2d87-bde8-08d5-ae82" name="Primus Redoubt" publicationId="d0df-7166-5cd3-89fd" page="102" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="f8ca-5e97-f247-e19c" name="Primus Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Massive, Building)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">3</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">14</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">10</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">50, Two Access Points, one at the front and one at the rear.</characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698">Hull Mounted (Front) Twin-linked Turbo-laser Destructor</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="17ef-b91a-a251-2ee3" name="Garrison Vault" publicationId="d0df-7166-5cd3-89fd" page="102" hidden="false">
+          <description>If a model has a Transport Capacity and the Garrison Vault special rule, then it may transport any number of Infantry units (plus any Characters that have joined the units), so long as the number of models in the Embarked units do not exceed the model&apos;s Transport Capacity. Some models when the Garrison Vault special rule may be able to transport other units in additiona to Infantry. Where this is true, the model&apos;s profile will note exactly which units may Embark on this building.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6ffd-0663-cb84-00cc" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+        <infoLink id="869e-9953-4686-cc0b" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
+        <infoLink id="4ed1-65ce-80da-2159" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+        <infoLink id="591c-79f5-37f5-4be8" name="Massive Fortification" hidden="false" targetId="d6af-0c88-b1e5-d76f" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="7217-1c09-e03d-586e" name="Twin-linked Turbo Laser-Destructor" hidden="false" collective="false" import="true" targetId="f947-d7f1-40bd-f425" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Hull (Front) mounted Twin-linked Turbo Laser-Destructor"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ee-5f72-8ff8-329e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f74-ffab-bb07-985b" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="700.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e13d-9ef8-9b0d-bc22" name="Aquila Strongpoint" publicationId="d0df-7166-5cd3-89fd" page="101" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="d362-f086-1dea-b586" name="Aquila Strongpoint" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Massive, Building)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">6</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">30, One Access Point at the rear</characteristic>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a709-c030-322c-5858" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+        <infoLink id="2cec-afb6-6a49-95af" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
+        <infoLink id="9a3e-0dca-e20e-fc3a" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+        <infoLink id="ad9e-9cca-afbe-c5d3" name="Massive Fortification" hidden="false" targetId="d6af-0c88-b1e5-d76f" type="rule"/>
+        <infoLink id="22db-8af6-3d45-cd2b" name="Orbital Defences" hidden="false" targetId="1bdb-7155-7c6e-61e8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6392-ce9d-29a7-1851" name="Fortress Of Redemption" publicationId="d0df-7166-5cd3-89fd" page="100" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="c770-ca11-bea0-7c68" name="Multi-part Fortifications" hidden="false" targetId="eaa0-9ac0-9de9-32e0" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="560c-59f8-d40c-351e" name="Tower" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d64-8b09-535b-d38d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5e1-dd03-e3bf-fe61" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3ada-879c-de30-daba" name="Tower" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"/>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="006a-508c-6998-194e" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+            <infoLink id="2e0f-a0f6-50cb-ac48" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1332-1487-ac2c-3921" name="Bunker Annex" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e3-88ea-55c6-0656" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5b5-023f-e01e-4ac7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2e57-ef1d-d4dd-027c" name="Bunker Annex" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building)</characteristic>
+                <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
+                <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
+                <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
+                <characteristic name="Rear" typeId="5915-639f-15d6-230e">13</characteristic>
+                <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d">12, One Access Point at the side</characteristic>
+                <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c7fc-b903-cb63-d978" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+            <infoLink id="6e1e-22b4-14ba-fc4e" name="Building Sub-type" hidden="false" targetId="01ec-a939-c01a-8a87" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8f53-b7d8-a591-3eb0" name="Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b67d-5c95-e901-1a1e" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="f174-58c7-e558-72fb" name="Oribital Defences" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="5f5d-3645-ce04-39f4" name="Orbital Defences" hidden="false" targetId="1bdb-7155-7c6e-61e8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="a704-4b67-da81-7334" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Turret Mounted Icarus Lascannon"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a7fa-db40-52ee-b359" name="Skyshield Landing Pad" publicationId="d0df-7166-5cd3-89fd" page="99" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="27f6-eb07-0b35-d3ba" name="Skyshield Landing Pad" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
+            <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
+            <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
+            <characteristic name="Rear" typeId="5915-639f-15d6-230e">12</characteristic>
+            <characteristic name="HP" typeId="3ec4-e581-338c-dfb1">4</characteristic>
+            <characteristic name="Transport Capacity" typeId="6faf-828d-4a08-151d"/>
+            <characteristic name="Fire Points" typeId="9d06-02d5-cc06-9698"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="90dd-7db1-46b8-0b02" name="Landing Zone Beacon" publicationId="d0df-7166-5cd3-89fd" page="99" hidden="false">
+          <description>If the first model placed on the battlefield when performing a Deep Strike Assault is place on the battlements of a Fortification with this special rule, that has been included as part of the controlling player&apos;s army, the model does not scatter and can be placed as if a result of Hit had been rolled. Once this first unit has been deployed, roll a D6. On the roll of a &quot;1&quot;, the Deep Strike Assault anywhere within 24&quot; of the first unit without scattering, though no model may be within 1&quot; of an enemy model or within Impassable Terrain. If the roll is a &quot;2&quot; or higher, then the controlling player deployed each other unit anywhere within 6&quot; of the first, though no model may be within 1&quot; of an enemy model of within impassable terrain - if there is no space to deploy a unit within 6&quot; of the first, then the opposing player deploys that unit as if it was part of a Disordered drop.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ce80-1c10-f9a4-f0b2" name="Battlements" hidden="false" targetId="a03c-5d6f-c219-4f3f" type="rule"/>
+        <infoLink id="e372-b4c1-f65c-782d" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -8544,9 +9156,9 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ed1f-9473-df70-4544" name="Angel&apos;s Wrath" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ed1f-9473-df70-4544" name="Angel&apos;s Wrath^" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="b1c3-5494-add9-d9bf" name="Angel&apos;s Wrath" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false">
+            <rule id="b1c3-5494-add9-d9bf" name="Angel&apos;s Wrath^" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false">
               <description>Effects
 • Any unit in a Detachment using this Rite of War eligible to take a Legion Rhino Transport as a Dedicated Transport may instead take a Legion Storm Eagle Gunship as a Dedicated Transport.
 • For any model with the Vehicle Unit Type and both the Flyer and Transport Sub-types from a Detachment that is using this Rite of War, and that is in Reserve, the controlling player may choose to automatically have them enter play at the start of their first turn without making a Reserves roll. If they are not brought into play on Turn One then Reserves rolls are made for the models normally from Turn Two onwards.
@@ -8554,7 +9166,9 @@ Limitations
 • All models with the Infantry Unit Type in a Detachment using this Rite of War that do not have jump packs of any kind must begin the battle Embarked upon a model with the Vehicle Unit Type and both the Flyer and Transport Sub-types.
 • All models with both the Infantry Unit Type and a jump pack of any kind in a Detachment using this Rite of War must begin the battle in Reserves, but may be assigned to a Deep Strike Assault as normal.
 • A Detachment using this Rite of War may not include any models with the Vehicle Unit Type that do not also have the Flyer Sub-type.
-• A Detachment using this Rite of War may not select any Fortification choices.</description>
+• A Detachment using this Rite of War may not select any Fortification choices.
+
+^Manually check restrictions and limitations</description>
             </rule>
           </rules>
           <costs>
@@ -8579,16 +9193,18 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1977-49f2-7910-f177" name="Drop Pod Assault" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1977-49f2-7910-f177" name="Drop Pod Assault^" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="384d-9b91-037d-0890" name="Drop Pod Assault" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false">
+            <rule id="384d-9b91-037d-0890" name="Drop Pod Assault^" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false">
               <description>Effects
 • All units in a Detachment using this Rite of War eligible to take a Legion Rhino Transport or Legion Land Raider Proteus Carrier Dedicated Transport may instead select Legion Drop Pods or Legion Dreadclaw Drop Pods as Dedicated Transports.
-• When taken as part of a Detachment using this Rite of War, any units composed of models with the Dreadnought Unit Type must be given either Legion Dreadclaw Drop Pods or Legion Dreadnought Drop Pods as Dedicated Transports and may not be selected in units of more than one model.
+• When taken as part of a Detachment using this Rite of War, any units composed of models with the Dreadnought Unit Type must be given either Legion Dreadclaw Drop Pods or Legion Dreadnought Drop Pods as Dedicated Transports and may not be selected in units of more than one model. 
 Limitations
 • All units in a Detachment using this Rite of War selected with Legion Drop Pods, Legion Dreadnought Drop Pods or Legion Dreadclaw Drop Pods as Dedicated Transports must deploy by means of a Drop Pod Assault (see page 99).
 • A Detachment using this Rite of War may not select any Fortification choices.
-• Any models selected as part of a Detachment that do not have a Legion Drop Pod, Legion Dreadnought Drop Pod or Legion Dreadclaw Drop Pod as a Dedicated Transport, or are Embarked on a Legion Kharybdis Assault Claw, must be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).</description>
+• Any models selected as part of a Detachment that do not have a Legion Drop Pod, Legion Dreadnought Drop Pod or Legion Dreadclaw Drop Pod as a Dedicated Transport, or are Embarked on a Legion Kharybdis Assault Claw, must be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).
+
+^Manually check restrictions and limitations)</description>
             </rule>
           </rules>
           <infoLinks>
@@ -8627,9 +9243,9 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Assault" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Assault^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Aaasult" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
+            <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Aaasult^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
               <description>Effects
 • All units in this Detachment eligible to take a Legion Rhino Transport as a Dedicated Transport may instead select a Legion Termite Assault Drill as a Dedicated Transport.
 • Legion Termite Assault Drills may be selected as Fast Attack choices and Heavy Support choices in a Detachment with this Rite of War.
@@ -8637,7 +9253,9 @@ Limitations
 Limitations
 • All Infantry units that do not have a version of the Bulky (X) special rule in a Detachment using this Rite of War must begin the battle Embarked on a Legion Termite Assault Drill.
 • A Detachment using this Rite of War may not select any Fortification choices.
-• Any models selected as part of a Detachment using this Rite of War that are not Legion Termite Assault Drills, or Embarked on a Legion Termite Assault Drill, may not be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).</description>
+• Any models selected as part of a Detachment using this Rite of War that are not Legion Termite Assault Drills, or Embarked on a Legion Termite Assault Drill, may not be placed into Reserve and cannot take part in any alternative deployments (such as Deep Strike Assaults or Flanking Assaults).
+
+^Manually check Limitations on deployment)</description>
             </rule>
           </rules>
           <infoLinks>
@@ -8647,7 +9265,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ccb7-6c5c-76ce-5b77" name="Armoured Spearhead" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ccb7-6c5c-76ce-5b77" name="Armoured Spearhead^" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="cfb9-4307-47d9-4bbb" value="0.0">
               <conditions>
@@ -8659,7 +9277,7 @@ Limitations
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfb9-4307-47d9-4bbb" type="max"/>
           </constraints>
           <rules>
-            <rule id="a1d0-0e6a-db7e-bbcd" name="Armoured Spearhead" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false">
+            <rule id="a1d0-0e6a-db7e-bbcd" name="Armoured Spearhead^" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false">
               <description>Effects
 • All units in a Detachment using this Rite of War eligible to take a Legion Rhino Transport as a Dedicated Transport may instead select a Legion Land Raider Proteus Carrier as a Dedicated Transport if they number ten models or less.
 • Legion Predator Squadrons in a Detachment using this Rite of War may be selected as Troops choices.
@@ -8670,7 +9288,9 @@ Limitations
 • All units in a Detachment using this Rite of War with the Infantry Type must begin the battle Embarked upon a model with the Transport Sub-type; any Infantry models in a Detachment using this Rite of War, both those deployed on the battlefield and in Reserves, that are not Embarked upon a model with the Transport Subtype at the beginning of the controlling player’s first turn must be removed as casualties.
 • A Detachment using this Rite of War may not select any Fortification choices.
 • A Detachment using this Rite of War may not include any models with a Movement Characteristic of 0 or ‘-’.
-• This Rite of War may only be selected for an army’s Primary Detachment.</description>
+• This Rite of War may only be selected for an army’s Primary Detachment.
+
+^Manually check limitations on Deployement</description>
             </rule>
           </rules>
           <costs>
@@ -10741,6 +11361,9 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
 • A unit that includes one or more models with the Automated Artillery Sub-type may not Run,  declare or otherwise make Charge moves, or make Reactions.
 • A unit that includes one or more models with the Automated Artillery Sub-type may not make  Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
 • A unit that includes one or more models with this Unit Sub-type may never hold or deny an Objective.</description>
+    </rule>
+    <rule id="1bdb-7155-7c6e-61e8" name="Orbital Defences" publicationId="d0df-7166-5cd3-89fd" page="101" hidden="false">
+      <description>Once per battle, during their turn,m the controlling player may declare that they will activate their Orbital Defences. Until the end of the opposiing player&apos;s next turn, any Reserve rolls that the opposiing player makes suffer a penalty of -1 and all rolls made by the opposing player to determine if any Deep Strike Assaults, Outflanking Assault or Subterranean Assaults are Disordered fail on the roll of 1-3 rather than just the result of a &quot;1&quot; (neither of these effects stack with other special rules that modify Reserves rolls of Disordered rolls, and the controlling player must choose one effect to apply). In addition, if the opposing player of a player whose army includes one of more models with the Orbital Defences special rule declares a Drop Pod Assault, the then controlling player of the models with the Orbital Defences special rule may roll a dice when the Drop Pod Assault is resolved. The controlling player of the models with the Orbital Defences special rule may select a number of enemy models with the Orbital Assault Vehicle special rule equal to the result of the dice roll, each of the models selected suffers a single Str 8 Ap 2 Hit after it is deplyed onto the battlefield.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
