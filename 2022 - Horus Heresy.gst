@@ -9244,7 +9244,7 @@ Limitations
         </selectionEntry>
         <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Assault^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
-            <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Aaasult^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
+            <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Assault^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
               <description>Effects
 • All units in this Detachment eligible to take a Legion Rhino Transport as a Dedicated Transport may instead select a Legion Termite Assault Drill as a Dedicated Transport.
 • Legion Termite Assault Drills may be selected as Fast Attack choices and Heavy Support choices in a Detachment with this Rite of War.
