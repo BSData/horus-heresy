@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="30" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="31" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -523,6 +523,26 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
 • A Unit that includes only modesl with the Close-order Sub-type may move up to half its movement Characteristic and make Shooting Attacks using weapons with the Heavy type as if they had remained stationary. Such a unit may also declare a Charge in the same turn they make Shooting Attacks with Heavy or Rapid Fire weapons.</description>
         </rule>
       </rules>
+    </categoryEntry>
+    <categoryEntry id="56e1-5570-47b0-d824" name="Brethren of Iron Restriction" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="3c50-e0db-a243-7859" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="3c50-e0db-a243-7859" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2fda-455f-d34d-97e0" repeats="3" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c50-e0db-a243-7859" type="max"/>
+      </constraints>
     </categoryEntry>
   </categoryEntries>
   <forceEntries>
@@ -5690,6 +5710,23 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       </costs>
     </selectionEntry>
     <selectionEntry id="cc2a-46fe-bbf3-6ba2" name="Paragon of Metal" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="7eb3-aecd-82f4-f2cb" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="5a1f-7479-f67d-bcba" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5a1f-7479-f67d-bcba" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eb3-aecd-82f4-f2cb" type="max"/>
