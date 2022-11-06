@@ -38,6 +38,16 @@ Great, thank you! Please [Report a bug][bug report] - you can also suggest enhan
 
 ## Standards
 
+### .cattemplate? and what are all the template_id_ comments?
+A .cattemplate file is a .cat file, renamed to .cattemplate, used by [BSCOPY][https://github.com/nstephenh/BSCopy]
+
+We can use bscopy to keep all 18 legions up to date with generic units and rites of war.
+It builds a "map" of source to target ids in comments. If you copy a node with a comment that has an ID in it,
+please delete the comment. 
+
+If you want to add something generic to all 18 legions, rename the .cattemplate to .cat, edit it to add the new unit, 
+rename the file back to .cat, and then run BSCopy's copy_changes_from_template or ask @NStephenH#0001 in discord.
+
 ### For 2.0
 
 In general, we remove the "Legion" prefix from units.

@@ -1829,9 +1829,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <profile id="82d4-f8af-c0fd-0c55" name="Escaton Power Claw " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2x</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Murderous Strike (6+), Unwiedly, Specialist Weapon</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Murderous Strike (6+), Unwieldy, Specialist Weapon</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4601,8 +4601,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <profiles>
         <profile id="3290-c851-e9ac-a8d2" name="Trophies of Judgement" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Confers the Fear (1) special rule to models with Trophies Of Judgement.
-</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Confers the Fear (1) special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6265,7 +6264,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <profiles>
         <profile id="6f43-10f9-5c6a-6db6" name="Preysight" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">All models in a unit with a Preysight upgrade gain the Night Vision special rule</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Confers the Night Vision special rule.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7858,6 +7857,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="d664-5692-cd41-f9be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5ac-3da6-a69b-f6b8" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="6399-5c65-7833-1025">
+          <conditions>
+            <condition field="selections" scope="d664-5692-cd41-f9be" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5ac-3da6-a69b-f6b8" type="greaterThan"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6cb7-533a-0bf3-29b0" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -7901,6 +7905,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Dreadnought (Line)">
+                  <conditions>
+                    <condition field="selections" scope="d664-5692-cd41-f9be" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5ac-3da6-a69b-f6b8" type="greaterThan"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <characteristics>
@@ -8224,7 +8233,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d5ac-3da6-a69b-f6b8" name="Fuiry of the Ancients Compulsory Troops" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d5ac-3da6-a69b-f6b8" name="Fury of the Ancients Compulsory Troops" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
@@ -8576,67 +8585,72 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="03be-5d55-d05a-771d" name="Praetor" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="name" value="Warsmith">
-          <conditions>
-            <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
-          <conditions>
-            <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5ef-e7a2-a480-3f5a" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="eee8-3c7c-2762-e33e">
-          <conditions>
-            <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e42-9815-97e4-3386" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
-          <conditionGroups>
-            <conditionGroup type="and">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Add Category (X)</comment>
+          <modifiers>
+            <modifier type="add" field="category" value="eee8-3c7c-2762-e33e">
               <conditions>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="equalTo"/>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="equalTo"/>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="equalTo"/>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e42-9815-97e4-3386" type="atLeast"/>
               </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
-          <conditionGroups>
-            <conditionGroup type="or">
+            </modifier>
+            <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="equalTo"/>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="equalTo"/>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="atLeast"/>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="atLeast"/>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="9231-183c-b97b-63f9">
               <conditions>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="atLeast"/>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="atLeast"/>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="atLeast"/>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5ef-e7a2-a480-3f5a" type="atLeast"/>
               </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <categoryLinks>
         <categoryLink id="555c-4c0c-29a0-082a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d862-5767-da41-cff0" name="Legion Praetor" hidden="false" collective="false" import="true" type="model">
-          <modifiers>
-            <modifier type="set" field="name" value="Warsmith">
-              <conditions>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Iron-Father">
-              <conditions>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4655-4447-299c-8fe2" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Jarl">
-              <conditions>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4606-34cf-86b7-fb89" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <comment>Set Name to (X)</comment>
+              <modifiers>
+                <modifier type="set" field="name" value="Jarl">
+                  <conditions>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4606-34cf-86b7-fb89" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Iron-Father">
+                  <conditions>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4655-4447-299c-8fe2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Warsmith">
+                  <conditions>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e1a-a8bc-1c40-3dca" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b3c-ec8d-3ad5-bcff" type="max"/>
@@ -8794,14 +8808,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="55ea-02c7-7bc5-acea" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3602-3853-9629-1967" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-                  </costs>
-                </entryLink>
                 <entryLink id="a5ef-e7a2-a480-3f5a" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e31-567f-8c8f-4fe4" type="max"/>
@@ -8930,6 +8936,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="c0ee-9167-b5ce-e7aa" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3b2-04a6-3d5e-8572" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="41de-ea40-b8d8-2fc8" name="Escaton Power Claw" hidden="false" collective="false" import="true" targetId="3504-bed7-057b-603b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e59e-44b9-3698-4f5a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="fb94-51ab-dd77-b7a1" name="3) May take:" hidden="false" collective="false" import="true">
@@ -9023,6 +9045,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                             <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08e4-5e02-da82-f296" type="equalTo"/>
                             <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="atLeast"/>
                             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a723-2b6f-6e58-8b71" name="Corvid Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="874d-6440-0698-f6e7" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -9245,6 +9283,45 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1ec9-0ed9-5e31-f31a" name="Cyber-Familiar" hidden="true" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a715-9965-801c-280f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ae43-8dcc-33cb-caf1" name="Cameleoline" hidden="false" collective="false" import="true" targetId="9a64-04fb-d978-67f0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dd4-f72c-534f-1acf" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="f791-1cce-5ede-359f" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="bde7-7c77-5973-cd52" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32d0-00e7-3d4a-962b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="cba3-4afd-c837-d6fc" name="Lords of Murder" hidden="false" collective="false" import="true" targetId="2b85-7073-16f5-0ea2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8eb1-a810-6b38-9964" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -9575,6 +9652,37 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="c84b-6568-1636-1dd8" name="Cyber-Familiar" hidden="true" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5357-aed2-c810-b2e5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3989-23f6-0990-014d" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="bde7-7c77-5973-cd52" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3396-0731-ba2b-6edf" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1389-f4a7-ebdc-e4cf" name="Lords of Murder" hidden="false" collective="false" import="true" targetId="2b85-7073-16f5-0ea2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="efae-3c89-40c2-55c3" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="5ac7-91ec-6c49-64cc" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="65ca-51eb-5464-7a87">
@@ -9867,6 +9975,37 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="36e7-19ca-4841-c542" name="Cyber-Familiar" hidden="true" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1389-1252-7eec-2817" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1766-2e59-1a6f-24ac" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="bde7-7c77-5973-cd52" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87a3-83c8-6fe9-3789" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4818-ed8b-b6ea-b510" name="Lords of Murder" hidden="false" collective="false" import="true" targetId="2b85-7073-16f5-0ea2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5a6e-d1a1-a632-cdc0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -9913,179 +10052,189 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="25a2-7a52-632a-6b2c" name="Centurion" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="add" field="category" value="eee8-3c7c-2762-e33e">
-          <conditions>
-            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a3f-5c9e-f4d6-c92d" type="atLeast"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8ac-7465-70fb-70fb" type="atLeast"/>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f152-51f5-b509-2d9c" type="atLeast"/>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9924-004c-e683-877b" type="atLeast"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f152-51f5-b509-2d9c" type="equalTo"/>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9924-004c-e683-877b" type="equalTo"/>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8ac-7465-70fb-70fb" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
-          <conditions>
-            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5670-f70b-eda6-0cfa" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <selectionEntries>
-        <selectionEntry id="c681-938e-6d11-cd43" name="Legion Centurion" publicationId="a716-c1c4-7b26-8424" page="22" hidden="false" collective="false" import="true" type="model">
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Add Category (X)</comment>
           <modifiers>
-            <modifier type="set" field="name" value="Forge Lord">
+            <modifier type="add" field="category" value="9231-183c-b97b-63f9">
               <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="equalTo"/>
+                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5670-f70b-eda6-0cfa" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="name" value="Champion">
+            <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8ac-7465-70fb-70fb" type="atLeast"/>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f152-51f5-b509-2d9c" type="atLeast"/>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9924-004c-e683-877b" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="eee8-3c7c-2762-e33e">
               <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05a2-a69e-0c9e-1544" type="equalTo"/>
+                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a3f-5c9e-f4d6-c92d" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="name" value="Vigilator">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27e9-630d-4cf4-6d68" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Pathfinder">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a28d-408e-c833-9055" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Librarian">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Master of Signals">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Esoterist">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Castellan">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7962-e835-2ae5-c6f1" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Praevian ">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c8b-1020-32f3-3b2a" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Mortificator">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Chaplain">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Herald">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6d0-40f1-d82f-c01e" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Delegatus">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Siege Breaker">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9335-7da8-087e-30de" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Primus Medicae">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7df3-04e8-c056-47cb" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Armistos">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f5-cbc4-58e0-ed6e" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Moritat">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="384d-df82-14cb-f918" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Paladin of Hekatonystika">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f69-f2bd-fe7e-12c4" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Warmonger">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6cc-2e7f-16e3-e66c" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Stormseer">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Saboteur">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2a0-636c-9918-f851" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Dark Emissary">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84ac-ebaf-8c66-3c1d" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Pack Thegn">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aab9-d1c0-a5cb-9788" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Speaker of the Dead">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9ab-2cc5-4507-eded" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Phoenix Warden">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5aff-6654-f53b-c5ac" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Caster of Runes">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Diabolist">
-              <conditions>
-                <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1a-275e-e691-5b92" type="equalTo"/>
-              </conditions>
+            <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f152-51f5-b509-2d9c" type="equalTo"/>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9924-004c-e683-877b" type="equalTo"/>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8ac-7465-70fb-70fb" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+      <selectionEntries>
+        <selectionEntry id="c681-938e-6d11-cd43" name="Legion Centurion" publicationId="a716-c1c4-7b26-8424" page="22" hidden="false" collective="false" import="true" type="model">
+          <modifierGroups>
+            <modifierGroup>
+              <comment>Set Name to (X)</comment>
+              <modifiers>
+                <modifier type="set" field="name" value="Warmonger">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6cc-2e7f-16e3-e66c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Delegatus">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Armistos">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31f5-cbc4-58e0-ed6e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Pathfinder">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a28d-408e-c833-9055" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Librarian">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Stormseer">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Dark Emissary">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="84ac-ebaf-8c66-3c1d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Forge Lord">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Champion">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05a2-a69e-0c9e-1544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Herald">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6d0-40f1-d82f-c01e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Speaker of the Dead">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e9ab-2cc5-4507-eded" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Siege Breaker">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9335-7da8-087e-30de" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Saboteur">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2a0-636c-9918-f851" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Primus Medicae">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7df3-04e8-c056-47cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Vigilator">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27e9-630d-4cf4-6d68" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Caster of Runes">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Esoterist">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Pack Thegn">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aab9-d1c0-a5cb-9788" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Praevian ">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c8b-1020-32f3-3b2a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Chaplain">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Diabolist">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4e1a-275e-e691-5b92" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Castellan">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7962-e835-2ae5-c6f1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Master of Signals">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35ac-992e-97a7-1612" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Phoenix Warden">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5aff-6654-f53b-c5ac" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Paladin of Hekatonystika">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f69-f2bd-fe7e-12c4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Moritat">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="384d-df82-14cb-f918" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Mortificator">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66bd-5b8f-c477-e633" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fa1-692e-d639-4769" type="max"/>
@@ -10584,6 +10733,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="02e2-8413-2644-edf9" name="Escaton Power Claw" hidden="false" collective="false" import="true" targetId="3504-bed7-057b-603b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6ce-a301-a574-a84e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="525d-defc-1b29-0886" name="2) May take one:" hidden="false" collective="false" import="true">
@@ -10796,6 +10953,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditionGroups>
                     </modifier>
                   </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="a783-0565-2f6e-6c3e" name="Corvid Pattern Jump Pack" hidden="false" collective="false" import="true" targetId="874d-6440-0698-f6e7" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
                   </costs>
@@ -11072,6 +11234,57 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2fb2-c857-5766-aad8" name="Cyber-Familiar" hidden="true" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d4e8-d65d-250c-58cd" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="01f2-5fd2-66eb-d36b" name="Cameleoline" hidden="false" collective="false" import="true" targetId="9a64-04fb-d978-67f0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="greaterThan"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3c8b-1020-32f3-3b2a" type="greaterThan"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8397-a103-2b95-b7a6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c87f-77b6-ab3d-faa3" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="bde7-7c77-5973-cd52" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d08-3b95-16e8-6ed1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="f9c6-16c2-1834-d2e5" name="Lords of Murder" hidden="false" collective="false" import="true" targetId="2b85-7073-16f5-0ea2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3783-de0e-c4fd-2413" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -16138,63 +16351,68 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="da79-9588-cc7f-e02f" name="Legion Cataphractii Centurion" hidden="false" collective="false" import="true" type="model">
-          <modifiers>
-            <modifier type="set" field="name" value="Delegatus">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Chaplain">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Esoterist">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Primus Medicae">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7df3-04e8-c056-47cb" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Librarian">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Forge Lord">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Siege Breaker">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9335-7da8-087e-30de" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Mortificator">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Primus Nullificator">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Champion">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05a2-a69e-0c9e-1544" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Herald">
-              <conditions>
-                <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6d0-40f1-d82f-c01e" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <comment>Set Name to (X)</comment>
+              <modifiers>
+                <modifier type="set" field="name" value="Forge Lord">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Siege Breaker">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9335-7da8-087e-30de" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Primus Nullificator">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Delegatus">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Herald">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6d0-40f1-d82f-c01e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Chaplain">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Esoterist">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Primus Medicae">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7df3-04e8-c056-47cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Mortificator">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Librarian">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Champion">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05a2-a69e-0c9e-1544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c118-13df-a496-1a6b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4459-694b-245b-b190" type="min"/>
@@ -16462,6 +16680,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="f8e6-bf04-0df7-2c2f" name="Escaton Power Claw" hidden="false" collective="false" import="true" targetId="3504-bed7-057b-603b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="a1d0-2a7a-e2c0-8764" name="4) May take:" hidden="false" collective="false" import="true">
@@ -16597,6 +16820,37 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4d3c-3404-f8c3-7546" name="Cyber-Familiar" hidden="true" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a23c-837c-ad54-192a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ebfa-fec9-1ae8-ef0b" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="bde7-7c77-5973-cd52" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c977-e3c8-b3ae-4109" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="097e-401c-88bf-77f8" name="Lords of Murder" hidden="false" collective="false" import="true" targetId="2b85-7073-16f5-0ea2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6264-2e48-388b-43d1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -20060,63 +20314,68 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="69fc-a6ab-d7a8-0e83" name="Legion Tartaros Centurion" hidden="false" collective="false" import="true" type="model">
-          <modifiers>
-            <modifier type="set" field="name" value="Delegatus">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Chaplain">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Esoterist">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Primus Medicae">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7df3-04e8-c056-47cb" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Librarian">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Forge Lord">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Siege Breaker">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9335-7da8-087e-30de" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Mortificator">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Phoenix Warden">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5aff-6654-f53b-c5ac" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Champion">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05a2-a69e-0c9e-1544" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Herald">
-              <conditions>
-                <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6d0-40f1-d82f-c01e" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <comment>Set Name to (X)</comment>
+              <modifiers>
+                <modifier type="set" field="name" value="Esoterist">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Herald">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6d0-40f1-d82f-c01e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Phoenix Warden">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5aff-6654-f53b-c5ac" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Forge Lord">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Delegatus">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Champion">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05a2-a69e-0c9e-1544" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Chaplain">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4831-6948-851c-3925" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Primus Medicae">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7df3-04e8-c056-47cb" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Librarian">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Siege Breaker">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9335-7da8-087e-30de" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Mortificator">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="368d-0cdc-5ce6-eb38" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf28-2763-0f5c-cd19" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fa0-1f29-a152-226b" type="min"/>
@@ -20371,24 +20630,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="306f-6e75-d6c8-ab29" name="Force Weapon" hidden="true" collective="false" import="true" targetId="a9c2-6881-3391-9622" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="69fc-a6ab-d7a8-0e83" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
-                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
-                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
-                            <condition field="selections" scope="69fc-a6ab-d7a8-0e83" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6698-83e1-b5c0-012c" type="max"/>
-                  </constraints>
+                <entryLink id="742f-9750-b3eb-5a6a" name="Escaton Power Claw" hidden="false" collective="false" import="true" targetId="3504-bed7-057b-603b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -20525,6 +20770,37 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1a97-7752-cfc5-6969" name="Cyber-Familiar" hidden="true" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="greaterThan"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6eba-1361-3770-d301" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c4a7-cf67-9be0-a002" name="Trophies of Judgement" hidden="false" collective="false" import="true" targetId="bde7-7c77-5973-cd52" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ed-0883-0f29-355f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="545b-4274-4809-7d7d" name="Lords of Murder" hidden="false" collective="false" import="true" targetId="2b85-7073-16f5-0ea2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ac7c-65a4-618b-7114" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -42114,6 +42390,44 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9a64-04fb-d978-67f0" name="Cameleoline" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc8-d770-7563-510a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b72c-52d2-1355-b4e1" name="Cameleoline" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Confers the Shrouded (6+) special rule, or improves an existing version of the Shrouded (X) special rule by one step (from 5+ to 4+, for example).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="2b85-7073-16f5-0ea2" name="Lords of Murder" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab19-3453-807e-0a29" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8af4-84a0-d4f4-eac1" name="Bloody Murder" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
+          <characteristics>
+            <characteristic name="Description" typeId="0982-427b-1d4a-d07c">When a unit composed entirely of models with this special rule declares a Charge targeting a unit that is Pinned or Falling Back, the Charge roll gains an additional +1 modifier, and if the Charge is successful then all models in the Charging unit gain +1 Attack for the duration of the turn in which that Charge is made.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -44014,6 +44328,23 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
           </costs>
         </entryLink>
+        <entryLink id="20af-b7ba-f1ee-7d0a" name="Escaton Power Claw" hidden="true" collective="false" import="true" targetId="3504-bed7-057b-603b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="bb49-6a88-7ffa-6aa7" name="Terminator Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0a9-4f05-4261-68ad">
@@ -44312,7 +44643,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b1c4-f1e2-2f66-6d38" name="(Pack Thegn) Grant Consul the Skirmish Sub-type" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b1c4-f1e2-2f66-6d38" name="(Pack Thegn) Grant unit the Skirmish Sub-type" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
