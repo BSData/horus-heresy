@@ -9234,7 +9234,7 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cf3e-1d75-6f91-651f" name="Rites of War (Text Only / Work in Progress)" publicationId="a716-c1c4-7b26-8424" page="" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="cf3e-1d75-6f91-651f" name="Rites of War (Legion Universal RoWs done, Legion Specific ones TBC)" publicationId="a716-c1c4-7b26-8424" page="" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="797b-0bd6-8cbf-f25a" type="max"/>
       </constraints>
