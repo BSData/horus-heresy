@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="31" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="31" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <constraints>
@@ -2057,15 +2057,24 @@
           <comment>    node_id_4dce-8632-4f7c-813e</comment>
           <conditionGroups>
             <conditionGroup type="and">
-              <comment>    node_id_8a71-3995-4155-ac33</comment>
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
                   <comment>    node_id_d206-f2ce-41b8-945a</comment>
                 </condition>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
-                  <comment>    node_id_2e02-cf1c-4a71-861c</comment>
-                </condition>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <comment>    node_id_8a71-3995-4155-ac33</comment>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
+                      <comment>    node_id_2e02-cf1c-4a71-861c</comment>
+                    </condition>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                      <comment>    node_id_a02c-8632-499f-827c</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -3706,6 +3715,7 @@
         <categoryLink id="63ff-0a92-42ab-ae8c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="204c-7b0f-4fb9-b1b3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="85e6-cb31-427c-a040" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink id="2ddb-e541-8186-a9d2" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0b90-3598-42e3-b090" name="Proteus Land Speeder Squadron" hidden="true" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
@@ -3728,6 +3738,7 @@
       <categoryLinks>
         <categoryLink id="68dd-fc0f-4fde-8adc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="74ca-dd4f-46be-8be7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="6531-ccb1-08b0-1263" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a264-dc07-4ac0-ac76" name="Terminator Cataphractii Squad" hidden="true" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
@@ -3973,6 +3984,7 @@
         <categoryLink id="3e2a-23ae-e695-fe44" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="8d82-ffb7-78ea-a738" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="d9a2-fab8-fc39-519c" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="029c-d948-ebee-92cf" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="958a-03ca-8655-eae5" name="Inner Circle Knights Cenobium - Order of the Broken Claws" hidden="true" collective="false" import="false" targetId="b9ad-ab3e-437e-c373" type="selectionEntry">
@@ -3988,16 +4000,12 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="append" field="name" value="(Reserve Only)">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b8c4-d391-1923-5453" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="08d9-7458-36d1-acb8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="51f2-3067-7f13-01d0" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="f15b-7db5-2d7e-3f80" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="f96d-4a86-c8e9-1e07" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2c19-a7f8-32f2-e417" name="Crimson Paladins" hidden="true" collective="false" import="false" targetId="33fe-9683-bde5-95ca" type="selectionEntry">
@@ -4017,6 +4025,7 @@
         <categoryLink id="2cad-851e-b956-4c62" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="9f7d-7e1a-5938-c7bd" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="14f0-1ec4-c30a-1aaf" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="1be5-3480-944f-6505" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7200-dc48-7576-d2e0" name="Lernaean Terminator Squad" hidden="true" collective="false" import="false" targetId="6161-d387-f086-0958" type="selectionEntry">
@@ -4038,6 +4047,7 @@
       <categoryLinks>
         <categoryLink id="b998-8d46-edcc-9d40" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="4c15-48b6-2aea-97b0" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="e87d-750d-86df-48ac" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="06c7-8e25-0e3d-8394" name="Deathshroud Terminator Squad" hidden="true" collective="false" import="false" targetId="7669-a6c0-7f86-e641" type="selectionEntry">
@@ -4061,6 +4071,7 @@
         <categoryLink id="0632-42c5-8fe0-b831" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="fdf3-aa59-c103-8aee" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="d3a9-508f-dad6-245b" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="9f03-849f-9a34-cdc0" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2e69-3c18-2485-f692" name="Deathshroud Terminator Squad" hidden="true" collective="false" import="false" targetId="7669-a6c0-7f86-e641" type="selectionEntry">
@@ -4104,6 +4115,7 @@
         <categoryLink id="89a0-d63e-1704-a361" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="cf79-ea38-4ce8-4326" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="b107-9d15-016a-d275" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="3b8e-008b-785f-2eca" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1aa6-f26e-f531-a867" name="Gorgon Terminator Squad" hidden="true" collective="false" import="false" targetId="ea50-6315-7a52-f560" type="selectionEntry">
@@ -4123,6 +4135,7 @@
         <categoryLink id="e75e-58ab-dd00-0943" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="450d-5fe5-ce1e-ca6f" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="4c13-6cea-fb61-f879" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="3bc9-bff1-7db6-fcf5" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8cc9-1290-ebdb-adad" name="Dominator Cohort" hidden="true" collective="false" import="false" targetId="1bfa-2413-beb9-5f32" type="selectionEntry">
@@ -4133,6 +4146,9 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4142,6 +4158,7 @@
         <categoryLink id="b217-605f-cdc9-3261" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="0a8f-2b63-3053-9c0f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="558d-7ef0-ffd2-1195" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="3606-ab0e-6106-c6e4" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c5ac-30db-d16e-102a" name="Atramentar Squad" hidden="true" collective="false" import="false" targetId="12d3-9df0-4118-997f" type="selectionEntry">
@@ -4161,6 +4178,7 @@
         <categoryLink id="9ae9-93c8-5a9f-6729" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="eae7-7a27-2c1b-2b8e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="f0c3-7f9b-ee5e-112f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="1d4a-5fb3-d145-b874" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dd24-6cd2-ac56-cc3d" name="Contekar Terminator Squad" hidden="true" collective="false" import="false" targetId="837e-c3ca-437e-dfbf" type="selectionEntry">
@@ -4180,6 +4198,7 @@
         <categoryLink id="93df-22ad-b57b-eb33" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="2ac5-c29b-4ed7-d0e4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="8298-378b-2d74-1b16" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="3eae-6f57-8ad3-1a41" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b9cc-7b0e-cbd4-55b2" name="Deliverers Squad" hidden="true" collective="false" import="false" targetId="5d1d-8348-ed95-d366" type="selectionEntry">
@@ -4202,6 +4221,7 @@
         <categoryLink id="eca6-16fd-c40b-9d2a" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="9c42-852c-8a35-e087" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="07bf-f9f7-0ae4-eef0" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="7c8b-5edf-3437-3fae" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f2e0-99b9-e0ac-5f31" name="Firedrake Terminator Squad" hidden="true" collective="false" import="false" targetId="6775-8379-8d6b-9614" type="selectionEntry">
@@ -4223,6 +4243,7 @@
         <categoryLink id="40b8-0153-aed3-a46f" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="9d5b-e6fa-20bc-3633" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="ea25-c00c-c903-323d" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="e976-5b92-923e-109f" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="147d-f426-a093-df0b" name="Fulmentarus Terminator Squad" hidden="true" collective="false" import="false" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
@@ -4244,6 +4265,7 @@
         <categoryLink id="073d-85bf-5671-655e" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="83b6-ebef-2a51-7e4e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="2458-d10e-33ca-8a0a" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="92aa-3145-3e7c-46b1" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="4fae-4091-45a4-c787" name="Ebon Keshig Cohort" hidden="true" collective="false" import="false" targetId="eb44-e977-2ce5-b239" type="selectionEntry">
@@ -4265,6 +4287,7 @@
         <categoryLink id="7a2b-c127-97e6-515e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="0508-7155-7284-7b78" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="4438-2d5f-d813-d11e" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="fcd6-ef0f-ec7f-c22d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3b86-2122-0a2e-7daa" name="Red Butchers" hidden="true" collective="false" import="false" targetId="1987-2aa5-929b-979e" type="selectionEntry">
@@ -4286,6 +4309,49 @@
         <categoryLink id="017e-0179-47a7-56f4" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
         <categoryLink id="39c3-05db-50d1-4ab3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="45d8-21af-6a42-98cf" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="5966-2d25-fcfb-00ed" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4d25-0a9f-a9ed-82ee" name="Justaerin Terminator Squad" hidden="true" collective="false" import="false" targetId="c45d-ade3-6b28-68a2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="16a4-d2be-0dbe-09fc" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="a051-95bc-7cd3-dec4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="57f9-8cc0-32be-baa9" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="567b-6c06-037c-a0dc" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b96f-2ff8-d337-ce66" name="Varagyr Wolf Guard Terminator Squad" hidden="true" collective="false" import="false" targetId="9359-61a5-fcdb-c28e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>    node_id_9a69-0fdc-4957-8982</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="24b9-f70e-6b34-3d46" name="Rewards of Trechery" hidden="false" targetId="2275-5253-2421-7383" primary="false"/>
+        <categoryLink id="6415-7c44-93f0-2a34" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="fafa-5803-08bd-1055" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="6210-8c16-4ae7-510e" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

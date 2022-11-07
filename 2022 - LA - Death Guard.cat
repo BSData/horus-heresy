@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -1520,15 +1520,24 @@
           <comment>    node_id_4dce-8632-4f7c-813e</comment>
           <conditionGroups>
             <conditionGroup type="and">
-              <comment>    node_id_8a71-3995-4155-ac33</comment>
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
                   <comment>    node_id_d206-f2ce-41b8-945a</comment>
                 </condition>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
-                  <comment>    node_id_2e02-cf1c-4a71-861c</comment>
-                </condition>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <comment>    node_id_8a71-3995-4155-ac33</comment>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
+                      <comment>    node_id_2e02-cf1c-4a71-861c</comment>
+                    </condition>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                      <comment>    node_id_a02c-8632-499f-827c</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -2597,6 +2606,7 @@
         <categoryLink id="63ff-0a92-42ab-ae8c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="204c-7b0f-4fb9-b1b3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="85e6-cb31-427c-a040" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink id="0281-8957-1b18-1e6c" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d3cf-12f9-4548-81e1" name="Proteus Land Speeder Squadron" hidden="true" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
@@ -2619,6 +2629,7 @@
       <categoryLinks>
         <categoryLink id="68dd-fc0f-4fde-8adc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="74ca-dd4f-46be-8be7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="fd5b-c567-bd28-2753" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="3bdb-7e8a-4455-8f3d" name="Terminator Cataphractii Squad" hidden="true" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
@@ -2839,6 +2850,7 @@
       <categoryLinks>
         <categoryLink id="baec-86df-8f5a-a9ef" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="0c5c-52d7-ab57-d3a7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="70f9-3d17-01e1-bacb" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="  XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <constraints>
@@ -1532,15 +1532,24 @@
           <comment>    node_id_4dce-8632-4f7c-813e</comment>
           <conditionGroups>
             <conditionGroup type="and">
-              <comment>    node_id_8a71-3995-4155-ac33</comment>
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
                   <comment>    node_id_d206-f2ce-41b8-945a</comment>
                 </condition>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
-                  <comment>    node_id_2e02-cf1c-4a71-861c</comment>
-                </condition>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <comment>    node_id_8a71-3995-4155-ac33</comment>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
+                      <comment>    node_id_2e02-cf1c-4a71-861c</comment>
+                    </condition>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                      <comment>    node_id_a02c-8632-499f-827c</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -2568,6 +2577,7 @@
         <categoryLink id="63ff-0a92-42ab-ae8c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="204c-7b0f-4fb9-b1b3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="85e6-cb31-427c-a040" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink id="589c-fa50-73d4-0b2d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7a76-6c0e-4a6d-9a8d" name="Proteus Land Speeder Squadron" hidden="true" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
@@ -2590,6 +2600,7 @@
       <categoryLinks>
         <categoryLink id="68dd-fc0f-4fde-8adc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="74ca-dd4f-46be-8be7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="3eb3-0f00-c135-10be" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c025-ed50-44c5-adbd" name="Terminator Cataphractii Squad" hidden="true" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
@@ -2810,6 +2821,7 @@
       <categoryLinks>
         <categoryLink id="74b2-7eb7-071c-de33" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="8e3e-8774-ff55-716b" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="52f7-4996-75b4-4da2" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

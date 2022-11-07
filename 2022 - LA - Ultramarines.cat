@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="16" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="17" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="  XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <constraints>
@@ -1562,15 +1562,24 @@
           <comment>    node_id_4dce-8632-4f7c-813e</comment>
           <conditionGroups>
             <conditionGroup type="and">
-              <comment>    node_id_8a71-3995-4155-ac33</comment>
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
                   <comment>    node_id_d206-f2ce-41b8-945a</comment>
                 </condition>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
-                  <comment>    node_id_2e02-cf1c-4a71-861c</comment>
-                </condition>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <comment>    node_id_8a71-3995-4155-ac33</comment>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
+                      <comment>    node_id_2e02-cf1c-4a71-861c</comment>
+                    </condition>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                      <comment>    node_id_a02c-8632-499f-827c</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -2598,6 +2607,7 @@
         <categoryLink id="63ff-0a92-42ab-ae8c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="204c-7b0f-4fb9-b1b3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="85e6-cb31-427c-a040" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink id="1132-dd05-eea0-2bae" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="65e8-a17e-4151-9d1e" name="Proteus Land Speeder Squadron" hidden="true" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
@@ -2620,6 +2630,7 @@
       <categoryLinks>
         <categoryLink id="68dd-fc0f-4fde-8adc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="74ca-dd4f-46be-8be7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="f331-45ea-08d6-9291" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="162f-65be-4d8d-8506" name="Terminator Cataphractii Squad" hidden="true" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
@@ -2839,6 +2850,7 @@
       <categoryLinks>
         <categoryLink id="183c-2fd2-9d53-9507" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="0c03-bd1c-dd05-8321" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="c611-75bd-b9fe-4096" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
