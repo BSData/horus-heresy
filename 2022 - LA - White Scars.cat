@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="19" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="20" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="   V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <constraints>
@@ -1595,15 +1595,24 @@
           <comment>    node_id_4dce-8632-4f7c-813e</comment>
           <conditionGroups>
             <conditionGroup type="and">
-              <comment>    node_id_8a71-3995-4155-ac33</comment>
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
                   <comment>    node_id_d206-f2ce-41b8-945a</comment>
                 </condition>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
-                  <comment>    node_id_2e02-cf1c-4a71-861c</comment>
-                </condition>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <comment>    node_id_8a71-3995-4155-ac33</comment>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
+                      <comment>    node_id_2e02-cf1c-4a71-861c</comment>
+                    </condition>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                      <comment>    node_id_a02c-8632-499f-827c</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -2661,6 +2670,7 @@
         <categoryLink id="63ff-0a92-42ab-ae8c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="204c-7b0f-4fb9-b1b3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="85e6-cb31-427c-a040" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink id="6c98-a1d5-a715-057d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a1a7-a686-4727-9886" name="Proteus Land Speeder Squadron" hidden="true" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
@@ -2683,6 +2693,7 @@
       <categoryLinks>
         <categoryLink id="68dd-fc0f-4fde-8adc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="74ca-dd4f-46be-8be7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="f440-c4c9-c0d3-d456" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="1c70-979e-4078-b74a" name="Terminator Cataphractii Squad" hidden="true" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
@@ -2902,17 +2913,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
-              <comment>    node_id_b932-667a-4b43-8331</comment>
-            </condition>
-          </conditions>
-        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="9fb2-b1b3-3c15-28fe" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="ebd7-76b9-2ffc-00c0" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="33d8-6696-a240-273a" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="98bd-c9ea-3759-760d" name="Outrider Squadron" hidden="true" collective="false" import="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
@@ -2938,6 +2943,7 @@
         </categoryLink>
         <categoryLink id="ed2b-3736-8e9d-7051" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="e803-81d6-72fc-283c" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink id="4a5a-10ef-bc04-b211" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f71f-f33f-c0c7-ff01" name="Outrider Squadron" hidden="true" collective="false" import="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">

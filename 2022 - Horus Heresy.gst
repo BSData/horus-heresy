@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="31" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="32" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -10057,13 +10057,12 @@ Limitations
           <rules>
             <rule id="1e19-5ce3-8e98-d75e" name="The Logos Lectora" publicationId="817a-6288-e016-7469" page="293" hidden="false">
               <description>Effects
-• A Detachment using this Rite of War may take Medusan Immortals Squads as Troops choices.
-• All models in any Medusan Immortal Squad selected as a Troops choice in a Detachment using this Rite of War gain the Line Unit Sub-type and the Heart of the Legion special rule.
-• All models in a Detachment using this Rite of War with both the Legiones Astartes (Iron Hands) and Bitter Duty special rules also gain the Hatred (Traitors) special rule. 
-• Any models with both the Independent Character and Legiones Astartes (Iron Hands) special rules may be given the Bitter Duty special rule for no additional cost.
+• At the beginning of each turn in which the controlling player of a Detachment using this Rite of War is the Active player, that player may select one of the Logos Lectora Commands that follow, but may not select the same Command twice in a row (however, each command may be selected more than once in a single battle as long as it is not selected twice in a row, without a different Logos Lectora Command being selected before any command is repeated). The effects of this Command are applied to all models in the army with both the Legiones Astartes (Ultramarines) special rule and the Infantry Unit Type, and last until the start of the controlling player’s next turn as the Active player:
+
 Limitations
-• This Rite of War may only be used by an army that has the Loyalist Allegiance.
-• An army with any Detachment using this Rite of War may not include Ferrus Manus.
+• Detachments using this Rite of War must take an additional Compulsory HQ choice in addition to that usually required by their Force Organisation chart, and this additional Compulsory choice must be either a Master of Signal Consul or a Legion Damocles Command Rhino.
+• Detachments using this Rite of War must take an additional Compulsory Troops choice in addition to that usually required by their Force Organisation chart.
+• Units which are part of a Detachment using this Rite of War may not deploy using the Infiltrate special rule or enter play via a Deep Strike Assault, Subterranean Assault or Flanking Assault (normal Reserves are, however, allowed). This means that certain units which may only enter play in this fashion, such as Legion Drop Pods, may not be taken as part of the Detachment.
 
 LOGOS LECTORA COMMANDS
 - Full March: All models with the Infantry Unit Type and the Legiones Astartes (Ultramarines) special rule must increase their Movement Characteristic by +2, but reduce their Ballistic Skill and Weapon Skill Characteristics by -1.

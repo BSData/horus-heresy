@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="28" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="29" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>    template_id_5798-3fc7-4d4c-ad41</comment>
@@ -2560,6 +2560,7 @@
         <categoryLink id="0dee-430e-458e-a030" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false">
           <comment>    template_id_85e6-cb31-427c-a040</comment>
         </categoryLink>
+        <categoryLink id="63f7-4b34-0502-f667" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dfcd-6644-5852-87a2" name="Proteus Land Speeder Squadron" hidden="true" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
@@ -2586,6 +2587,7 @@
         <categoryLink id="249e-844f-4b48-885e" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
           <comment>    template_id_74ca-dd4f-46be-8be7</comment>
         </categoryLink>
+        <categoryLink id="4050-1f05-7633-743c" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="0070-dd42-02b5-2d95" name="Nullificator Squad" hidden="true" collective="false" import="false" targetId="954d-cf8e-eefd-27a6" type="selectionEntry">
@@ -2595,15 +2597,24 @@
           <comment>    node_id_4dce-8632-4f7c-813e</comment>
           <conditionGroups>
             <conditionGroup type="and">
-              <comment>    node_id_8a71-3995-4155-ac33</comment>
               <conditions>
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
                   <comment>    node_id_d206-f2ce-41b8-945a</comment>
                 </condition>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
-                  <comment>    node_id_2e02-cf1c-4a71-861c</comment>
-                </condition>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <comment>    node_id_8a71-3995-4155-ac33</comment>
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
+                      <comment>    node_id_2e02-cf1c-4a71-861c</comment>
+                    </condition>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                      <comment>    node_id_a02c-8632-499f-827c</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
@@ -2718,6 +2729,7 @@
       <categoryLinks>
         <categoryLink id="2107-cb19-8471-dcc7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="7bb4-00df-bb76-55c2" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="4cf1-6f09-8cae-9d30" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6a40-f9ed-c05d-5013" name="Termite Assault Drill" hidden="true" collective="false" import="false" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
@@ -2823,7 +2835,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="7c2f-748e-931f-f850" name="Deathstorm Drop Pod Squadron" hidden="false" collective="false" import="true" targetId="af13-fb4e-b792-61a3" type="selectionEntry">
+    <entryLink id="7c2f-748e-931f-f850" name="Deathstorm Drop Pod Squadron" hidden="false" collective="false" import="false" targetId="af13-fb4e-b792-61a3" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <comment>    node_id_7cf3-8a72-4f82-8cdc</comment>
@@ -3247,53 +3259,128 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <categoryLink id="310b-bcb8-52f5-55e7" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="59c2-658e-99fa-9d85" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="42c3-773b-4122-7898">
+            <selectionEntryGroup id="59c2-658e-99fa-9d85" name="Arms" hidden="false" collective="false" import="true" defaultSelectionEntryId="6e37-c972-f6a5-cff0">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dc7-b49f-9533-052d" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b8-551c-6580-c51c" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="42c3-773b-4122-7898" name="Power Weapon and Shield" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2f4a-9a32-7d23-3a04" name="Sunset blade &amp; Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e66-0d35-40ec-069c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e27-7406-1172-9f7f" type="max"/>
                   </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="7c11-669e-fd86-8725" name="CP PW" hidden="false" collective="false" import="true" defaultSelectionEntryId="778f-99e9-1c85-9383">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc4c-b274-28e0-ec97" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79f2-bc1a-e348-6ab8" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="67d2-0557-df7e-d990" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
-                        <entryLink id="fb09-4921-6c02-11ba" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
-                        <entryLink id="419a-45ef-fee4-81ea" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
-                        <entryLink id="778f-99e9-1c85-9383" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
-                        <entryLink id="1223-8176-a9f1-34d6" name="Sunset blade" hidden="false" collective="false" import="true" targetId="2fd3-e09f-173f-6b0a" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b5-eed9-0a44-06f7" type="max"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
                   <entryLinks>
-                    <entryLink id="b2c8-f3e1-2498-0549" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="298b-c5d8-2fb0-9dd4" type="selectionEntry">
+                    <entryLink id="4fc6-7a47-20cb-7e21" name="Power Sword" hidden="false" collective="false" import="true" targetId="fa06-cac0-3d98-125e" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a16e-40b2-2667-6dca" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e86-8544-9e40-7f5d" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1427-ee4a-af8b-abfa" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5b50-e4b2-f97c-75ef" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="2c28-e406-0988-c855" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="ab60-6c57-8191-dbdb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a28-dd56-86f5-2d4b" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6228-1cb4-5cc3-c0fb" type="min"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
+                </selectionEntry>
+                <selectionEntry id="95b0-eee7-ebd4-8e1d" name="Power Axe &amp; Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aed3-d756-8dbd-81d8" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="253c-93ca-4e32-105f" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="ab60-6c57-8191-dbdb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be4b-e82b-5769-7ba4" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d243-13fe-d4a2-2030" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1bb5-c7f7-3b34-4f41" name="Power Axe" hidden="false" collective="false" import="true" targetId="ef98-66ac-fcaf-c15d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae0a-814a-09a5-d543" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c7a-7850-4339-db44" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry id="b8de-0743-0a05-7c96" name="Power Maul &amp; Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf6b-25b7-ea25-24f0" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="8d55-cf00-2516-b2e6" name="Power Maul" hidden="false" collective="false" import="true" targetId="98e8-f217-dea9-0493" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="29c6-b4a5-fd6f-8380" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e3b-2fbf-efd1-3ea3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1ebb-9144-30d2-cda0" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="ab60-6c57-8191-dbdb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="421b-2ed9-73ed-eae8" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1466-f30b-05dd-4dd3" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry id="8c82-1948-4f1e-7c69" name="Power Lance &amp; Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02ec-9b96-be22-d2a0" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f462-c3e5-2577-ac12" name="Power Lance" hidden="false" collective="false" import="true" targetId="fca3-4ec1-c581-1ba3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="060a-4626-134e-5aa8" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6834-5413-68cb-f3d9" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="127e-4cc1-1cab-0ca5" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="ab60-6c57-8191-dbdb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a194-e464-8f35-cb88" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f143-0c67-e6d5-5a58" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry id="6e37-c972-f6a5-cff0" name="Power Sword and Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8896-dd8b-d7a8-6daa" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2c1b-b1d2-c5b2-75d8" name="Sunset blade" hidden="false" collective="false" import="true" targetId="6610-61aa-211a-8bc3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d4fd-e028-907c-7182" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7204-552a-dd9c-d65f" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="a013-caf6-74ee-c9e9" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" targetId="ab60-6c57-8191-dbdb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b338-ad64-74cb-70d2" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6396-e9e7-9933-56d4" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="7b3e-5b83-848d-41d6" name="Perdition Weapon" hidden="false" collective="false" import="true" targetId="e909-feba-d9e9-1efa" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" field="9b7c-2bb2-5687-cefe" value="0.0"/>
-                  </modifiers>
+                <entryLink id="83af-6d3e-77c8-dfec" name="Axe Of Perdition" hidden="false" collective="false" import="true" targetId="0478-8201-90fc-bfd5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="86e4-5647-82ec-334e" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="878f-3611-6c4d-3d30" name="Blade Of Perdition" hidden="false" collective="false" import="true" targetId="7830-e9d6-7e07-ad2f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bc7-95de-bc06-d8e9" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="c77f-441d-cb3c-d06b" name="Maul Of Perdition" page="" hidden="false" collective="false" import="true" targetId="1ea3-9a76-1597-a49a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a39-8537-4747-ad66" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="cd71-4671-2bc3-c28e" name="Spear Of Perdition" hidden="false" collective="false" import="true" targetId="cb7e-e113-9008-6bdc" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0def-a7ee-bed3-229b" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -3307,7 +3394,12 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="4bd6-067b-d0fa-3196" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
+            <entryLink id="4bd6-067b-d0fa-3196" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2f6a-59da-60e4-18c3" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e827-28d7-d8bc-d5ea" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -3397,7 +3489,12 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d86-3868-07f0-583c" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="62db-98d1-9d87-17f0" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
+                <entryLink id="62db-98d1-9d87-17f0" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8c04-5c57-998a-6c6f" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a60-3240-1b11-3b27" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
@@ -4395,15 +4492,69 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e177-069b-d7a6-7a85" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="220a-dbe5-2dcb-60c5" name="Power Weapon (Basic)" hidden="false" collective="false" import="true" targetId="bd1f-b4a4-3517-31e4" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" field="c4e0-9351-6028-69a1" value="0.0"/>
-                  </modifiers>
+                <entryLink id="a0de-144c-9773-6b73" name="Axe Of Perdition" hidden="false" collective="false" import="true" targetId="0478-8201-90fc-bfd5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="25c9-819f-587d-cfaa" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
                 </entryLink>
-                <entryLink id="0bca-2d71-49e6-54db" name="Perdition Weapon" hidden="false" collective="false" import="true" targetId="e909-feba-d9e9-1efa" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" field="9b7c-2bb2-5687-cefe" value="0.0"/>
-                  </modifiers>
+                <entryLink id="d763-5dba-ff77-31b4" name="Blade Of Perdition" hidden="false" collective="false" import="true" targetId="7830-e9d6-7e07-ad2f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8038-2dac-5608-f8eb" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bb77-7643-255d-8a48" name="Maul Of Perdition" page="" hidden="false" collective="false" import="true" targetId="1ea3-9a76-1597-a49a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adcf-d60b-a6cf-6735" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b4b4-5d7e-a105-153b" name="Spear Of Perdition" hidden="false" collective="false" import="true" targetId="cb7e-e113-9008-6bdc" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b17a-5b6e-5ec8-71b2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="31ec-74e1-b832-8853" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a0e3-5f90-9f80-5696" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4792-c7d5-e094-aec4" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="50e4-6478-6b75-db28" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2b2d-5ac7-bf23-8ccc" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="37ea-b535-ac92-3f09" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ba6f-12a9-38a6-8fe5" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="20c8-bbce-a13a-633d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -4446,6 +4597,9 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f610-fb14-742b-e3bb" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="d876-904d-a371-d7d7" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
                   <constraints>
@@ -4604,7 +4758,11 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                   </costs>
                 </entryLink>
                 <entryLink id="a23c-4f5d-3dbb-b09d" name="Rotor Cannon" hidden="false" collective="false" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry"/>
-                <entryLink id="1aa9-6fc2-2cca-0e65" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry"/>
+                <entryLink id="1aa9-6fc2-2cca-0e65" name="Heavy Chainsword" hidden="false" collective="false" import="true" targetId="ba92-3eda-3a71-dabb" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="164c-51e0-d015-94e7" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cc26-a8e6-f955-c182" type="max"/>
@@ -4755,15 +4913,57 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="398e-54da-c85e-98f3" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="ce08-2761-d474-744e" name="Perdition Weapon" hidden="false" collective="false" import="true" targetId="e909-feba-d9e9-1efa" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" field="9b7c-2bb2-5687-cefe" value="0.0"/>
-                  </modifiers>
+                <entryLink id="0628-9b72-add8-4350" name="Axe Of Perdition" hidden="false" collective="false" import="true" targetId="0478-8201-90fc-bfd5" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3b6d-c630-c0ca-2b69" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
                 </entryLink>
-                <entryLink id="414a-6ad2-4523-e19c" name="Power Weapon (Basic)" hidden="false" collective="false" import="true" targetId="bd1f-b4a4-3517-31e4" type="selectionEntryGroup">
-                  <modifiers>
-                    <modifier type="set" field="c4e0-9351-6028-69a1" value="0.0"/>
-                  </modifiers>
+                <entryLink id="d200-273c-0846-869d" name="Blade Of Perdition" hidden="false" collective="false" import="true" targetId="7830-e9d6-7e07-ad2f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09e9-8939-15a7-8443" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="eeb3-1d16-e50d-497f" name="Maul Of Perdition" page="" hidden="false" collective="false" import="true" targetId="1ea3-9a76-1597-a49a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5786-1d8e-a12b-6ca0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0c21-5b8c-3eae-ca52" name="Spear Of Perdition" hidden="false" collective="false" import="true" targetId="cb7e-e113-9008-6bdc" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="92b4-3be3-9e55-340a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1ef3-8269-3842-e3d0" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0a5d-cf0e-1ef6-dee5" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="9ef6-8a26-ecc0-e1d0" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="67e0-adad-d3d8-221c" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3957-5fe1-83e5-e091" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2e79-b877-ffaa-38c0" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="ae3e-6236-6085-7ff7" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e78-98d1-4835-3132" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -5079,6 +5279,37 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
       </profiles>
       <infoLinks>
         <infoLink id="445f-37fe-5208-2146" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6610-61aa-211a-8bc3" name="Sunset blade" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="f337-1e46-57f8-58a0" name="Sunset Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="68fa-f20a-d482-a033" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="6e0b-bf70-b075-b2f5" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ab60-6c57-8191-dbdb" name="Coriolis Pattern Power Shield" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c7b0-9979-03d9-5006" name="Coriolis Pattern Power Shield" hidden="false" targetId="d202-9b09-d8ec-152f" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
