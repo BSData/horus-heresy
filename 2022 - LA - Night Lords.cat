@@ -4207,13 +4207,9 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2fd-c252-9a53-66fc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e466-5a29-f758-fe04" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="a29d-d13d-18b5-f994" name="Sire of the Night Lords" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-              <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models with the Infantry, Dreadnought or Cavalry Unit Type and Legiones Astartes (Night lords) special rule in the same army as Konrad Curze gain the Night Vision and Bloody Murder special rules and are immune to the effects of the Fear (X) special rule. In addition,  an army with Konrad Curze as it Warlord gain an additional Reaction in the Movement phase as long as Konrad Curze has not been removed as a casualty.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <entryLinks>
+            <entryLink id="d6b4-a6a2-a2e1-3912" name="Sire of the Night Lords" hidden="false" collective="false" import="true" targetId="f4d2-060e-097d-8afc" type="selectionEntry"/>
+          </entryLinks>
         </entryLink>
         <entryLink id="fc46-d124-4287-f24e" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
           <constraints>
@@ -4367,6 +4363,53 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="64da-2062-c2fd-ef53" name="Dedicated Transport:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf98-2c39-b16f-009b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9d24-f04f-77db-0e1a" name="Land Raider Proteus Carrier" hidden="false" collective="false" import="true" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="837e-c3ca-437e-dfbf" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3640-6cce-b040-51d7" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dcfc-f313-6ea2-2133" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="28a7-58f7-6584-22de" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                        <condition field="selections" scope="837e-c3ca-437e-dfbf" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3640-6cce-b040-51d7" type="greaterThan"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d144-9550-eee0-aaaf" type="max"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>

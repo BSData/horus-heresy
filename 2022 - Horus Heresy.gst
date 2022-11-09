@@ -230,6 +230,33 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
             <modifier type="set" field="name" value="Feel No Pain (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="b838-4db8-a27a-e478" name="Bloody Murder" hidden="false" targetId="5072-2b33-d062-210f" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b426-d42f-be9e-f9ef" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3c2a-d1c1-8440-9661" name="Immune to Fear (X) (Sire of the Night Lords)" hidden="false" targetId="ac97-b57a-3244-a9fb" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Sub-type:" hidden="false">
@@ -241,6 +268,35 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
 • No model that is not also of the Cavalry Unit Type may join a unit that includes a Cavalry model.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="693b-9336-1977-ff12" name="Bloody Murder" hidden="false" targetId="5072-2b33-d062-210f" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d829-3cbe-f415-b6b1" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6b45-501e-f1b8-d3a5" name="Immune to Fear (X) (Sire of the Night Lords)" hidden="false" targetId="ac97-b57a-3244-a9fb" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry id="e2b6-b770-784c-9e95" name="Vehicle:" hidden="false"/>
     <categoryEntry id="23eb-0b9e-0857-e965" name="Vehicle Unit:" hidden="false"/>
@@ -336,6 +392,24 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       </rules>
       <infoLinks>
         <infoLink id="7163-a73e-7f6d-2357" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink id="394d-2487-9e30-7504" name="Bloody Murder" hidden="false" targetId="5072-2b33-d062-210f" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b6b2-36a9-13ed-03e0" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4d2-060e-097d-8afc" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="0d4f-ff28-d819-a512" name="Deep Strike:" hidden="false">
@@ -7587,6 +7661,22 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f4d2-060e-097d-8afc" name="Sire of the Night Lords" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8922-a9ba-3e18-7cad" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fc1-473f-6846-1c9f" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8936-025b-336c-6810" name="Sire of the Night Lords" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+          <characteristics>
+            <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models with the Infantry, Dreadnought or Cavalry Unit Type and Legiones Astartes (Night lords) special rule in the same army as Konrad Curze gain the Night Vision and Bloody Murder special rules and are immune to the effects of the Fear (X) special rule. In addition,  an army with Konrad Curze as it Warlord gain an additional Reaction in the Movement phase as long as Konrad Curze has not been removed as a casualty.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -11531,6 +11621,12 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
         <modifier type="append" field="description" value="In Sagyar Mazan, all models with both the Legiones Astartes (WhiteScars) and Kharash special rules in a Detachment using this Rite of War gain the Fearless special rule for theduration of any Assault phase in which they make asuccessful Charge."/>
       </modifiers>
       <description>No enemy player may ever score any Victory points for the destruction of a unit with this special rule regardless of the scenario player or any victory conditions in effect. In addition, a model with this special rule may not join any unit that is not composed entirely of models that also have the Kharash special rule, nor may a model that does not have the Kharash special rule join a unit that includes any models with that special rule.</description>
+    </rule>
+    <rule id="5072-2b33-d062-210f" name="Bloody Murder" publicationId="09c5-eeae-f398-b653" page="199" hidden="false">
+      <description>When a unit composed entirely of models with the special rule declares a Charge targeting a unit that is Pinned or Falling Back, the Charge roll gains an additional +1 modifier, and if the Charge is succesful then all models in the Charging unit gain +1 Attack for the duration of the turn in which that Charge is made.</description>
+    </rule>
+    <rule id="ac97-b57a-3244-a9fb" name="Immune to Fear (X) (Sire of the Night Lords)" publicationId="d640-8853-3dd7-26a6" page="200" hidden="false">
+      <description>Immune to the effects of the Fear (X) special rule.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
