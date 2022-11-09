@@ -21082,37 +21082,127 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f42d-6f3b-4898-27dc" name="3) Hull Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="02a9-990a-cf07-a47e">
+            <selectionEntryGroup id="f42d-6f3b-4898-27dc" name="3) Hull Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="716f-3bbf-5eee-0028">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24b3-9bb0-a1dd-445f" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7167-f42f-8fb4-4412" type="min"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="02a9-990a-cf07-a47e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry id="9494-ae83-2d17-1566" name="1x Heavy Flamer + 1x Iliastus Assault Cannon" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="name" value="2x Heavy Flamers"/>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="increment" field="298d-1329-b01b-3342" value="1.0">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
-                </entryLink>
-                <entryLink id="29d2-8a59-75c2-eec8" name="Volkite Caliver" hidden="false" collective="false" import="true" targetId="9250-490f-abeb-b901" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="298d-1329-b01b-3342" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="809b-ee43-8881-43c9" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1e9-8bac-0147-a839" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5041-4717-0f0b-a652" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="8280-224b-0ec4-0940" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdce-ca01-145e-c10e" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="927b-69de-5ef6-0d91" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry id="716f-3bbf-5eee-0028" name="2x Heavy Flamers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f433-ac0d-9602-6932" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="113d-5da1-45bb-afbf" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5a4-e120-5064-9e27" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75a4-994e-8147-64ac" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry id="7d02-34ea-0cb5-85b4" name="2x Iliastus Assault Cannons" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="set" field="name" value="2x Twin-linked Volkite Calivers"/>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="increment" field="b443-9731-1d0c-6bde" value="1.0">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
                   </modifiers>
-                  <infoLinks>
-                    <infoLink id="ff3d-ace8-e4fc-3b8e" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-                  </infoLinks>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b443-9731-1d0c-6bde" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="08db-99e9-4533-b313" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01c9-0d0c-7e0d-7f73" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d26-495e-9b41-c019" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+                <selectionEntry id="3e32-5a8c-6c11-558f" name="2x Twin-linked Volkite Calivers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56db-ac1f-a009-7e03" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0d3d-1785-622d-51e0" name="Volkite Caliver" hidden="false" collective="false" import="true" targetId="9250-490f-abeb-b901" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b2c-77fe-c590-3646" type="max"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3adf-5c5e-2768-51a5" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="0bfa-dce4-cc43-00ee" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+                      </infoLinks>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
-                </entryLink>
-                <entryLink id="e962-71f0-72bb-2a30" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="name" value="2x Iliastus Assault Cannons"/>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
