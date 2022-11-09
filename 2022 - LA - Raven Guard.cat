@@ -3861,40 +3861,11 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink id="db47-f468-7397-5ed1" name="Artificer Armour" hidden="false" collective="true" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+            <entryLink id="db47-f468-7397-5ed1" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="9196-3af7-9545-e62b" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec6f-62e6-8ad1-6fa9" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2023-7ff7-9144-b3ab" type="min"/>
               </constraints>
-            </entryLink>
-            <entryLink id="32c3-fe7c-a262-f756" name="Meltabombs" hidden="true" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="04fe-4d1a-c32c-f7dc" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="58f4-3d8d-f243-6e5d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1f5-16bd-ab2e-2e3a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="58f4-3d8d-f243-6e5d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1f5-16bd-ab2e-2e3a" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6649-f011-842d-491d" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04fe-4d1a-c32c-f7dc" type="min"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="8172-055e-a5cf-19c2" name="Infravisor" hidden="false" collective="false" import="true" targetId="bc5b-fcd7-aeed-e97c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51b4-9fe4-4f55-68b7" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -3909,11 +3880,34 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
           </constraints>
           <selectionEntries>
             <selectionEntry id="f1f5-16bd-ab2e-2e3a" name="Meltabombs" hidden="false" collective="false" import="true" type="upgrade">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10.0">
+                  <repeats>
+                    <repeat field="selections" scope="58f4-3d8d-f243-6e5d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a454-113e-f900-cee3" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1062-238b-505f-477c" name="Any Chooser may take" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="ecda-303b-0d1d-ca2d" name="Infravisor" hidden="false" collective="false" import="true" targetId="bc5b-fcd7-aeed-e97c" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="733d-b91e-ff45-70d2" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="58f4-3d8d-f243-6e5d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a454-113e-f900-cee3" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="733d-b91e-ff45-70d2" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -4433,7 +4427,7 @@ Additionally, if selected as part of an army that includes Corvus Corax, no mode
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebfc-6ca5-2b10-f4fd" type="max"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
         </entryLink>
         <entryLink id="4177-71e3-e19d-ab3f" name="Reaper Autocannon" hidden="false" collective="false" import="true" targetId="b87f-48de-6ced-043b" type="selectionEntry">
