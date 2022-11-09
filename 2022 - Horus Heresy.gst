@@ -9228,18 +9228,6 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
         </selectionEntryGroup>
         <selectionEntryGroup id="e8d2-09dd-fce7-2721" name="Legion RoW Warlord Traits" hidden="true" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="2bae-43b8-8238-9539" name="Venerable Ancient (Fury Of The Ancients)" publicationId="a716-c1c4-7b26-8424" page="103" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="a61c-f403-120c-0dc4" name="Venerable Ancient" publicationId="a716-c1c4-7b26-8424" page="103" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-                  <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Contemptor Dreadnought with this upgrade gains the Character Sub-type, the Master of the Legion and Eternal Warrior special rules and an iron halo (increasing its Invulnerable Save to 4+, but not replacing all the effects of the atomantic deflector), but may not select a Command Squad or any other unit using a variant of the Retinue special rule. In addition, it must be selected as the Warlord of an army that includes it.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="5c20-a620-2152-7623" name="Master of Armour (Armoured Spearhead)" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
                 <profile id="338c-2bae-3dd6-3180" name="Master of Armour" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
