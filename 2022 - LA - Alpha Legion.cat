@@ -4448,6 +4448,14 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3d7-8be1-f267-4bed" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink id="97a3-53ee-81fd-387d" name="Power Dagger" hidden="false" collective="false" import="true" targetId="8157-b77c-0dd3-85b2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9742-01eb-0f81-5fd1" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -5399,40 +5407,6 @@
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="47b3-acd0-e43e-cd63" name="Power Dagger" publicationId="09c5-eeae-f398-b653" page="334" hidden="false" collective="true" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <profiles>
-        <profile id="0692-a06a-34b8-050f" name="Power Dagger" publicationId="09c5-eeae-f398-b653" page="334" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sudden Strike (1), Breaching (5+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="2750-8c8f-2dae-3f36" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Sudden Strike (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="c8a3-6591-9060-525b" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (5+)"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1b2e-7f13-38fd-e5c6" name="Banestrike Combi-Bolter" hidden="false" collective="true" import="true" type="upgrade">
