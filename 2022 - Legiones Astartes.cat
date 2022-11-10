@@ -17052,14 +17052,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <constraint field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="184b-375e-34a0-1c0e" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="fbc4-cd3a-f25e-bb5e" name="Vigil Storm Shield" hidden="false" collective="false" import="true" targetId="ec3d-1f0c-d195-a006" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c783-fcb7-f75c-e2b1" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ebdd-46f1-6836-8322" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd4b-5b1d-92ef-7a0f">
@@ -21180,14 +21172,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <constraints>
                     <constraint field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f2d4-41dc-d604-988d" type="max"/>
                   </constraints>
-                </entryLink>
-                <entryLink id="2a48-efed-517a-57a0" name="Vigil Storm Shield" hidden="false" collective="false" import="true" targetId="ec3d-1f0c-d195-a006" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f53-bfa9-684a-9d56" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -45564,20 +45548,14 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                   <conditions>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a8e-0ded-a4dc-2b4e" type="instanceOf"/>
                     <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="58d0-a0fd-d20b-cb1b" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3760-204e-444c-1044" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="decrement" field="d2ee-04cb-5f8a-2642" value="5.0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3760-204e-444c-1044" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1b17-dcd6-0153-3efe" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
           <costs>
