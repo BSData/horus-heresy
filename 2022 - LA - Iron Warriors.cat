@@ -2874,6 +2874,32 @@
         <categoryLink id="14b8-379a-2d2f-2054" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b5ef-d719-5ed6-46b7" name="Iron Circle Maniple" hidden="false" collective="false" import="false" targetId="a6e3-baab-45b9-7fea" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f517-b886-d9e5-2bf5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9967-8b55-7789-04ce" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="20c7-daad-ae5a-c04f" name="Dominator Cohort" hidden="true" collective="false" import="false" targetId="1bfa-2413-beb9-5f32" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0d0a-54b0-b916-906e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1eba-8ed0-5b2b-1af5" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="ac97-c8ce-16ba-9c49" name="Nârik Dreygur" hidden="false" collective="false" import="true" type="model">
@@ -3537,7 +3563,7 @@
           <modifiers>
             <modifier type="set" field="9a5e-8830-1463-1060" value="3.0">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f944-6641-a714-2fe8" type="instanceOf"/>
+                <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbe5-14a5-68a1-544f" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="add" field="category" value="56e1-5570-47b0-d824">
