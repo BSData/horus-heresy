@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="14" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="15" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="70a7-c1ee-bf88-94ab" name="  XVII: Word Bearers" hidden="false" collective="false" import="false" targetId="9dbf-0760-d7ae-f125" type="selectionEntry">
       <constraints>
@@ -2774,6 +2774,11 @@
         <categoryLink id="1a5d-cbc8-418f-91a3" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="c0cb-406f-4b46-9d8d" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="f785-a5d9-f50e-a42b" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ac0-fbef-d266-a924" type="selectionEntryGroup">
+          <comment>    template_id_2a38-6544-4267-b584    template_targetId_7dee-602c-4b47-be09</comment>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="e860-cae8-4aa3-a9c2" name="Contemptor Dreadnought Talon" hidden="true" collective="false" import="false" targetId="d664-5692-cd41-f9be" type="selectionEntry">
       <comment>    template_id_a559-b494-4154-a88a</comment>
@@ -2842,6 +2847,32 @@
       <categoryLinks>
         <categoryLink id="05e0-7fa1-9ea1-ccdb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="775b-fab9-1a23-d77f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="331e-5f84-21a9-6e3a" name="Thallax Cohort" hidden="true" collective="false" import="false" targetId="25c8-3e0f-e22d-a7eb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="11f2-472f-c1d1-9ae9">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6d9f-c3cc-8a95-ebe6" value="3.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d9f-c3cc-8a95-ebe6" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8fd1-008b-5565-6b77" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="9aa2-b288-d4e8-0a62" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3292,6 +3323,22 @@ In addition, once per battle, one friendly unit composed entirely of models with
                   </constraints>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d4e3-c29c-c540-c610" name="Power Dagger" hidden="false" collective="false" import="true" targetId="8157-b77c-0dd3-85b2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35b5-048f-6be0-8ebd" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7fb8-3ec1-a09c-575a" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be80-2e0f-8729-c476" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4205,6 +4252,13 @@ as the Aetheric Lightning Psychic Weapon</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="9cca-47d5-0779-79a2" name="Procurators" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9055-7410-8ffd-b8e7">
+          <conditions>
+            <condition field="selections" scope="9cca-47d5-0779-79a2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="35e0-1a83-5ae2-f9f0" name="Flesh Harvesters" hidden="false">
           <description>Friendly models with the Psychic Disciplines Harbingers of Chaos, Diabolism, or Anathemata within 6&quot; of a model with this special rule may roll an additional D6 and discard the highest result when making Psychic checks. Additionally, in missions that use Victory points the controlling player gains an additional +1 Victory point for every enemy unit that is removed as a casualty as a result of a Sweeping Advance made by a unit made up of models with this special rule.</description>
@@ -4237,6 +4291,13 @@ as the Aetheric Lightning Psychic Weapon</description>
               </constraints>
               <profiles>
                 <profile id="d1bb-8ac0-f862-ee3c" name="Procurant" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Corrupted)">
+                      <conditions>
+                        <condition field="selections" scope="9cca-47d5-0779-79a2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -4493,6 +4554,13 @@ as the Aetheric Lightning Psychic Weapon</description>
               </constraints>
               <profiles>
                 <profile id="e9a3-33ee-2737-65dd" name="Procurator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Corrupted)">
+                      <conditions>
+                        <condition field="selections" scope="9cca-47d5-0779-79a2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -4547,6 +4615,13 @@ as the Aetheric Lightning Psychic Weapon</description>
               </constraints>
               <profiles>
                 <profile id="b052-989a-d426-cf7b" name="Procurator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Corrupted)">
+                      <conditions>
+                        <condition field="selections" scope="9cca-47d5-0779-79a2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -4601,6 +4676,13 @@ as the Aetheric Lightning Psychic Weapon</description>
               </constraints>
               <profiles>
                 <profile id="f939-be80-94b8-971b" name="Procurator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Corrupted)">
+                      <conditions>
+                        <condition field="selections" scope="9cca-47d5-0779-79a2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -4655,6 +4737,13 @@ as the Aetheric Lightning Psychic Weapon</description>
               </constraints>
               <profiles>
                 <profile id="31c9-47d5-4d7e-91c1" name="Procurator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Character, Corrupted)">
+                      <conditions>
+                        <condition field="selections" scope="9cca-47d5-0779-79a2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -4718,6 +4807,14 @@ as the Aetheric Lightning Psychic Weapon</description>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6e1-fb16-7cef-cb76" type="max"/>
               </constraints>
+            </entryLink>
+            <entryLink id="c232-730a-4919-6f23" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="555f-3998-a06e-f415" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2de-211b-0881-f0d3" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
