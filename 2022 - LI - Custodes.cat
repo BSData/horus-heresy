@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="33" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <rules>
@@ -418,272 +418,597 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
         <categoryLink id="32f8-7e42-c31c-ccd5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="938c-a0fe-81b1-0843" name="Legio Custodes" hidden="false" targetId="ccca-a9de-0cd9-f8be" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="9103-f363-a64b-7609" name="Hetaeron Guard" hidden="false" collective="false" import="true" type="model">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="144e-50c0-8ffc-1650" name="Hetaeron Guard" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="481a-1581-793b-ca27" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="762a-7c39-b2d2-5bda" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4463-e5da-9c52-a851" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb4d-0ee9-f13e-a532" type="max"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup id="0341-20ac-639d-4f2d" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d62-248b-f8e4-c51a">
+            <selectionEntryGroup id="73b0-c967-ec6b-74b0" name="1) Hetaeron without Shields" hidden="false" collective="false" import="true" defaultSelectionEntryId="d1c0-9b0e-0222-8e83">
               <modifiers>
-                <modifier type="set" field="89a6-cbe2-550e-293b" value="1.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="9103-f363-a64b-7609" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd49-770c-b509-884f" type="equalTo"/>
-                        <condition field="selections" scope="9103-f363-a64b-7609" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea80-5c4e-ae62-cf8b" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" field="0038-ca9e-0bf7-f7ad" value="1.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="9103-f363-a64b-7609" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bd49-770c-b509-884f" type="equalTo"/>
-                        <condition field="selections" scope="9103-f363-a64b-7609" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ea80-5c4e-ae62-cf8b" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
+                <modifier type="decrement" field="1563-a1cc-e8b0-c05c" value="3.0"/>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89a6-cbe2-550e-293b" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0038-ca9e-0bf7-f7ad" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1563-a1cc-e8b0-c05c" type="min"/>
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="ea80-5c4e-ae62-cf8b" name="One may exchange Meridian Swords for Magisterium Vexilla &amp;:" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="0900-03f8-9f60-23a3" name="Hetaeron w/ Guardian Axe" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8091-b493-9ee4-4f59" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6377-c528-4e3f-f5cf" name="Guardian Axe" hidden="false" collective="false" import="true" targetId="3780-57f7-1eb8-0851" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a218-a94a-ed7b-1852" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="118a-6a5e-0d42-27d9" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="68dd-1247-003e-31d0" name="Hetaeron w/ Guardian Spear" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="455e-ca78-7320-59ab" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c3b0-b490-fc59-0959" name="Guardian Spear" hidden="false" collective="false" import="true" targetId="9e55-ae31-3ba6-d720" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b566-4641-724e-3b7c" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04e6-ee16-dbd4-347a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d1c0-9b0e-0222-8e83" name="Hetaeron w/ Meridian Swords" hidden="false" collective="false" import="true" type="model">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition field="selections" scope="9103-f363-a64b-7609" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f59-3dda-0590-37c7" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
+                    <modifier type="decrement" field="98c1-6851-703c-3ae2" value="3.0"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="76da-acc0-3ffb-6161" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c997-2713-313e-d888" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38c5-e375-7aa6-3f7b" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c1-6851-703c-3ae2" type="min"/>
                   </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="598a-91a3-cd7a-916d" name="Master-Crafted Sentinal Warblade &amp; Vexilla" hidden="false" collective="false" import="true" type="upgrade">
+                  <entryLinks>
+                    <entryLink id="7b02-807e-5990-01e7" name="Meridian Swords" hidden="false" collective="false" import="true" targetId="695d-f7d5-6f32-1d3a" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="76da-acc0-3ffb-6161" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5686-fe3b-9e17-46e0" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5808-8206-581e-8a79" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603f-7109-cc19-261f" type="max"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink id="e3ac-b6fb-332e-6197" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="6909-d6c6-8d05-0e57" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a83-ed26-b281-bff5" type="min"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="669e-ff0d-01f0-67c9" type="max"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="cba0-f23b-7c76-8ed7" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="3ac5-b28c-104a-9de5" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2d0-ead5-31d7-879f" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7d0-037f-8853-d4f8" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d643-d571-5467-a7bf" name="Hetaeron w/ Paragon Blade" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="603d-961a-19b7-0c1c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="665f-1d45-360b-7d55" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="f99c-9468-c0c6-a865" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="082d-51ee-8adf-a8f8" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3185-6444-8fa0-e326" type="min"/>
+                      </constraints>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                       </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5850-f851-2118-c782" name="Master-Crafted Power Sword &amp; Vexilla" hidden="false" collective="false" import="true" type="upgrade">
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9050-4a75-81e6-c20f" name="Hetaeron w/ Pyrithire Spear" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="271d-186d-b22f-9630" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="8569-29e4-4360-f8a1" name="Pyrithire Spear" hidden="false" collective="false" import="true" targetId="4c16-32b1-1a7a-928b" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="76da-acc0-3ffb-6161" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98f4-10c5-98be-0fbf" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ec1-47e9-b4db-209c" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3dc-82cb-9744-8777" type="min"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink id="4711-40e6-7ac2-4e14" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fd3-9105-b2ce-7024" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c6f-6dd6-7bce-5e33" type="min"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="79c1-6ecf-8755-7f92" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="3ac5-b28c-104a-9de5" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e268-8e1a-a897-57fe" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3315-fb3b-741e-569c" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ff4a-b46c-3eeb-c5b6" name="Hetaeron w/ Sentinel Warblade" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47dc-66c0-8cef-682b" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2054-e3a8-ad38-981f" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="0c34-7afc-bced-140f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c15-480c-1c52-e101" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e3-b0f3-609d-9fba" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4ae2-beb7-91aa-75f2" name="Hetaeron w/ Solarite Power Gauntlet" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9377-8eec-eab1-52a8" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="56a5-77fa-6d8c-aa04" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="85f2-5b5a-1526-a121" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d6f-656a-fe9d-b5bf" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09a4-d56a-629b-82c8" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="44a3-8211-6a91-9271" name="Hetaeron w/ Solarite Power Talon" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8537-53de-c95c-c238" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="fab5-4edb-0127-07f4" name="Solarite Power Talon" hidden="false" collective="false" import="true" targetId="d9bd-74cb-097b-14de" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d2c-5c9d-d31a-4572" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2e4-452c-6a48-d355" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="050c-3505-51c6-25f1" name="Hetaeron w/ Two Solarite Power Talons" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e65-c83d-5c95-8bbf" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="7971-7f4e-7908-e2a2" name="Two Solarite Power Talons" hidden="false" collective="false" import="true" targetId="da0b-91f0-8baa-d330" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae1a-9ac1-f8fd-db3a" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f389-ccfc-e871-06d0" type="min"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                       </costs>
-                    </selectionEntry>
-                    <selectionEntry id="3d58-e76c-bafa-cdc6" name="Master-Crafted Power Maul &amp; Vexilla" hidden="false" collective="false" import="true" type="upgrade">
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="27da-bde5-6577-407f" name="Hetaeron w/ Adrasite Spear" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3725-989f-9b01-bc46" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c3d5-70f6-944f-11e5" name="Adrasite Spear" hidden="false" collective="false" import="true" targetId="101f-346d-b8fa-a5c3" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="76da-acc0-3ffb-6161" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c22d-2963-265a-cfe3" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7607-39f0-ec74-5521" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4db-da5d-bd83-cc68" type="min"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink id="0d11-a7e2-751f-739a" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f187-a3b4-83df-771b" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b69a-d7a4-c9c8-95e2" type="min"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="294a-8910-c8d2-f43e" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="3ac5-b28c-104a-9de5" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e1-cfe2-8c19-5db4" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46e3-a31b-61bc-ea62" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="1c72-21e6-3d26-ef76" name="2) Hetaeron with Shields" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="be78-0985-c054-c276" name="Hetaeron w/ Guardian Axe &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cce3-69f6-fb62-9d5d" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="1f7b-7d4b-116c-16bb" name="Guardian Axe" hidden="false" collective="false" import="true" targetId="3780-57f7-1eb8-0851" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1669-815c-d63f-b196" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff4c-8b4a-130f-f9aa" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="2278-0023-cb48-fa1d" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="542b-5c14-ddec-45a8" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7df-e166-1c18-4cb5" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f8c1-dabd-384f-5164" name="Hetaeron w/ Guardian Spear &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd39-fdd3-2e7d-7a69" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="416a-4e01-51ce-3b49" name="Guardian Spear" hidden="false" collective="false" import="true" targetId="9e55-ae31-3ba6-d720" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9caa-962d-05f2-7357" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c40d-fffa-a39f-882f" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="1a38-e288-90a9-b60a" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0ea-46b4-31ee-3b71" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ca0-b4c3-b623-2508" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6295-c32e-3981-a9df" name="Hetaeron w/ Meridian Swords &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9359-db30-ea12-b2de" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="2495-2d6f-cf87-daa3" name="Meridian Swords" hidden="false" collective="false" import="true" targetId="695d-f7d5-6f32-1d3a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e625-d514-bb16-7483" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3185-8dfc-dd7b-2348" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="da75-5fd1-af77-df59" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2af-68ba-03ba-d4fc" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b924-3899-38ae-3596" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2f05-a815-2fcc-5462" name="Hetaeron w/ Paragon Blade &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a05-459c-1634-3eb4" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="ceb0-8052-3dae-bfe7" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="f99c-9468-c0c6-a865" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="254b-1408-b2ef-3384" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3db-55d8-f7c1-1fb6" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="544a-6cdf-853c-45a2" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a076-59b0-731b-0a96" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a2e-0f3d-3755-e6f1" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d1d-1fa5-c4b2-67fc" name="Hetaeron w/ Pyrithire Spear &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d68-54b8-cc7a-a573" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="91e0-37ad-5bd3-89d2" name="Pyrithire Spear" hidden="false" collective="false" import="true" targetId="4c16-32b1-1a7a-928b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e0a-c05e-f94c-7d58" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="160e-dbca-1bbe-5b7a" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="272f-4b9d-3df1-43fd" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3003-9c1b-eb8b-33ca" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2b3-9fc4-743d-7197" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="42ca-34ed-d91a-a5d9" name="Hetaeron w/ Sentinel Warblade &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5687-1d8f-c145-43e9" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="87fe-069a-66eb-eee8" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="0c34-7afc-bced-140f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c393-e160-da12-70ed" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faa7-c438-4aab-89a0" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="169d-b49f-83e0-ddb6" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7024-d971-169c-1590" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf01-9886-c729-2dc8" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f47d-5da4-6c07-7789" name="Hetaeron w/ Solarite Power Gauntlet &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e47-8f79-09d2-205b" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0e1e-f861-93a3-a103" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="85f2-5b5a-1526-a121" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="119f-1295-823a-a68f" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fad3-cc91-30bc-7e80" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="bda5-00bc-1671-65cb" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f5c-a0e1-5ff9-4530" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6797-4af0-09d7-d0c3" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="56e6-585a-a982-eee2" name="Hetaeron w/ Solarite Power Talon &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a09c-31d6-911f-f070" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c677-b0d8-a7c0-9d54" name="Solarite Power Talon" hidden="false" collective="false" import="true" targetId="d9bd-74cb-097b-14de" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="586b-9a5f-a8eb-8a1a" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cf4-1a21-c867-3a85" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="26eb-af64-bc02-119c" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08a0-2e61-5fcf-5e98" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55ef-9e3c-098d-d272" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="87e7-fc17-d0b5-1d04" name="Hetaeron w/ Two Solarite Power Talons &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d85e-59e7-689f-0456" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="6518-c382-31c8-4317" name="Two Solarite Power Talons" hidden="false" collective="false" import="true" targetId="da0b-91f0-8baa-d330" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61b6-11d7-fe76-9779" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99d5-ffd7-011a-f1ae" type="min"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                       </costs>
-                    </selectionEntry>
-                    <selectionEntry id="942e-e1a3-3b2f-2f6b" name="Master-Crafted Power Lance &amp; Vexilla" hidden="false" collective="false" import="true" type="upgrade">
+                    </entryLink>
+                    <entryLink id="9866-d431-1e46-f835" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="76da-acc0-3ffb-6161" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7c6a-8288-3764-2b14" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6cb9-ed8b-9c56-7e35" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e860-f1be-9e4a-4709" type="min"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink id="621b-2c83-9c9a-8386" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b3d-71b9-cc7a-76d3" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d21-8776-af3d-b282" type="min"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="e0ee-b152-ca53-e760" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="3ac5-b28c-104a-9de5" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd84-18e7-bc42-b6d4" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f3-3af1-12f9-7c08" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
-                    </selectionEntry>
-                    <selectionEntry id="deb4-e30c-0a92-8fb6" name="Master-Crafted Power Axe &amp; Vexilla" hidden="false" collective="false" import="true" type="upgrade">
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d30a-9e0a-90a4-b4c0" name="Hetaeron w/ Adrasite Spear &amp; Praesidium Shield" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2de-1134-69bb-7b00" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0412-79e6-7ad0-341e" name="Adrasite Spear" hidden="false" collective="false" import="true" targetId="101f-346d-b8fa-a5c3" type="selectionEntry">
                       <constraints>
-                        <constraint field="selections" scope="76da-acc0-3ffb-6161" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98f0-3718-8bcc-8475" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04f2-a30c-8fd9-e677" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9c2-3d4a-268b-aec2" type="min"/>
                       </constraints>
-                      <entryLinks>
-                        <entryLink id="9e3b-be2d-92d8-1116" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c0d-d13e-e115-a3f4" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c91a-4032-76a8-b4c4" type="min"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="c249-6752-dde7-dee5" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="3ac5-b28c-104a-9de5" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97c2-564a-2ed6-2525" type="max"/>
-                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b49-fba2-61a7-4cd3" type="min"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="7b5a-28f3-53b2-3dde" name="Two Solarite Power Talons" hidden="false" collective="false" import="true" targetId="bd49-770c-b509-884f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5901-5bc8-71b9-081b" type="max"/>
-                  </constraints>
+                    </entryLink>
+                    <entryLink id="2e92-d822-aa8c-38bd" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c77-6fc9-ff50-82bf" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f17-ea1a-3f30-9267" type="min"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
                   </costs>
-                </entryLink>
-                <entryLink id="5f4e-c643-59b4-6c9f" name="Adrasite Spear" hidden="false" collective="false" import="true" targetId="0e0b-dbe3-3d1a-14a9" type="selectionEntry">
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="34f9-9123-78f9-c34a" name="3) Hetaeron with Vexilla &amp;" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2569-feef-f888-f352" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ef43-583e-8ae4-fe0f" name="Hetaeron w/ Master-Crafted Power Axe and Vexilla" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="574f-1c2b-7301-f3be" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b74f-fe54-bcb7-b026" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="3a49-6e55-b5c9-1033" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0127-cd63-3ac0-6b64" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6906-a8d4-7b2d-9d51" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3db3-fae2-da49-f8b2" name="Power Axe" hidden="false" collective="false" import="true" targetId="ef98-66ac-fcaf-c15d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e390-87e8-7ebf-831a" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aee-47bd-8077-4ed7" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
                   </costs>
-                </entryLink>
-                <entryLink id="2c25-16a6-f7e3-14d0" name="Guardian Axe" hidden="false" collective="false" import="true" targetId="1334-e423-944e-9499" type="selectionEntry">
+                </selectionEntry>
+                <selectionEntry id="5ed1-f7ea-c6b6-b27c" name="Hetaeron w/ Master-Crafted Power Lance and Vexilla" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2f5-4866-bcb3-3c45" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ee-e6e1-dd2f-b0a7" type="max"/>
                   </constraints>
-                </entryLink>
-                <entryLink id="7a96-9879-f4e8-5c7d" name="Guardian Spear" hidden="false" collective="false" import="true" targetId="2bb9-0525-4865-407c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1deb-b833-528a-353e" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="7d62-248b-f8e4-c51a" name="Meridian Swords " hidden="false" collective="false" import="true" targetId="9664-33bc-927e-5ba3" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="decrement" field="3b96-a538-7fcb-8187" value="2.0"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b96-a538-7fcb-8187" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fdf-db4a-b82f-521e" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="c07f-3b93-eaf2-bf85" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50b2-2011-2a89-bfa5" type="max"/>
-                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0f91-1bdf-403c-cba4" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d9a-db85-6faa-aab1" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb72-2c11-d05b-c184" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f00c-f67c-5fd4-a8e1" name="Power Lance" hidden="false" collective="false" import="true" targetId="fca3-4ec1-c581-1ba3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc5-18f3-1630-1091" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="247f-ac6e-aa5c-627f" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
                   </costs>
-                </entryLink>
-                <entryLink id="5697-7b5e-7bed-82bb" name="Pyrithire Spear" hidden="false" collective="false" import="true" targetId="4620-e360-7dd2-f908" type="selectionEntry">
+                </selectionEntry>
+                <selectionEntry id="0854-afcf-2739-03c8" name="Hetaeron w/ Master-Crafted Power Maul and Vexilla" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6721-e322-a06a-b45a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="702b-a009-457b-fe33" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="4688-73f8-fb09-1a48" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e27c-448d-d4c8-9af4" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b86-3c74-efc4-df0e" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0f73-6e49-3ab3-de1b" name="Power Maul" hidden="false" collective="false" import="true" targetId="98e8-f217-dea9-0493" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c2f-eb5f-cd22-6b8c" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed2c-ffe2-d661-41f1" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
                   </costs>
-                </entryLink>
-                <entryLink id="b2a1-0fac-22f1-55a5" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="6909-d6c6-8d05-0e57" type="selectionEntry">
+                </selectionEntry>
+                <selectionEntry id="881c-4181-efda-5d3c" name="Hetaeron w/ Master-Crafted Power Sword and Vexilla" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de5d-269a-7c7e-790c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcc7-247f-851c-236f" type="max"/>
                   </constraints>
-                </entryLink>
-                <entryLink id="1bcf-43e9-777e-027f" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="9786-98f2-bdab-5103" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d531-c4c6-a276-d949" type="max"/>
-                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c2fc-e5c6-d3bb-3d6b" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d43-b038-8e8b-f911" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31fa-35a6-06d6-39c0" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="7504-5158-7b5e-aff5" name="Power Sword" hidden="false" collective="false" import="true" targetId="fa06-cac0-3d98-125e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73fe-589e-ac70-9363" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3504-3658-7623-e79a" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85.0"/>
                   </costs>
-                </entryLink>
-                <entryLink id="54b1-7fb5-d92c-c201" name="Solarite Power Talon" hidden="false" collective="false" import="true" targetId="208d-ad3b-4008-334e" type="selectionEntry">
+                </selectionEntry>
+                <selectionEntry id="a601-5e4f-1ab0-59a9" name="Hetaeron w/ Master-Crafted Sentinal Warblade &amp; Vexilla" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b3b-9ea2-72e7-ec3c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96f8-ada5-3e75-a7fb" type="max"/>
                   </constraints>
+                  <entryLinks>
+                    <entryLink id="66c8-e3e3-ca38-dcb6" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="0c34-7afc-bced-140f" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de7-0d8e-e6c1-38eb" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17a1-daca-c31c-c37b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="4ef1-e3f1-8d36-f4d5" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa1c-8fef-eee8-d7f5" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e57-0687-00c4-4c5a" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90.0"/>
                   </costs>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="7296-b68f-aef7-3838" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="6f59-3dda-0590-37c7" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="9103-f363-a64b-7609" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea80-5c4e-ae62-cf8b" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de75-6cda-a8a8-2c65" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="91d0-6274-7727-683f" name="Dedicated Transport (Custodes)" hidden="false" collective="false" import="true" targetId="fe3c-f221-2044-bc2b" type="selectionEntryGroup"/>
       </entryLinks>
@@ -885,6 +1210,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -1363,12 +1691,18 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3f-23ff-b4a3-4758" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6544-6ab9-8cee-c219" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="e516-8b74-cea2-bae4" name="Tarsus Buckler" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2d2-6e11-24ca-de30" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b14-abce-9f97-9fe0" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1382,6 +1716,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9866-8a8e-d8f1-9972" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8df-920d-9ac6-8906" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -1453,7 +1790,11 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e78-f2e8-9e4c-f396" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="a353-d24a-2437-d74e" name="Turret Mounted Illastus Accelerator Cannon" hidden="false" collective="false" import="true" type="upgrade"/>
+                <selectionEntry id="a353-d24a-2437-d74e" name="Turret Mounted Illastus Accelerator Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
                 <selectionEntry id="23ab-75e4-cc9c-e992" name="Turret Mounted Enchanced Arachnus Blaze Cannon" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
@@ -1470,6 +1811,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5787-ff0f-aaab-2ae5" name="Contemptor-Galatus Dreadnought (Placeholder)" publicationId="15a4-fc68-502d-48a9" page="33" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1495,6 +1839,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b563-e299-0850-5367" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e09f-8ceb-588d-c5a2" type="min"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -1505,12 +1852,18 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="36c6-5d33-3e04-01be" name="Gravis Praesidium Shield" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0a0-d09e-202b-4b55" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdf5-c0d5-fa44-f4ae" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -1518,6 +1871,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2fea-f040-7934-ae7a" name="Telemon Heavy Dreadnought (Placeholder)" publicationId="15a4-fc68-502d-48a9" page="34" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1538,6 +1894,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07ed-0e3e-5042-198e" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8260-7205-dbb2-0c91" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -1588,6 +1947,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1a49-8b97-1f6d-3a8d" name="Orion Assault Dropship (Placeholder)" publicationId="15a4-fc68-502d-48a9" page="35" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1607,6 +1969,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e145-3c36-e1eb-5d08" name="Ares Gunship (Placeholder)" publicationId="15a4-fc68-502d-48a9" page="36" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1626,74 +1991,259 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2757-d97b-b315-934a" name="Placeholder Pts Upgrades" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff75-3788-7b06-4a89" type="max"/>
-      </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6f59-3dda-0590-37c7" name="Praesidium Shield" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="bd49-770c-b509-884f" name="Two Solarite Power Talons" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="0e0b-dbe3-3d1a-14a9" name="Adrasite Spear" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="1334-e423-944e-9499" name="Guardian Axe" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="2bb9-0525-4865-407c" name="Guardian Spear" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="9664-33bc-927e-5ba3" name="Meridian Swords " hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="4620-e360-7dd2-f908" name="Pyrithire Spear" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="6909-d6c6-8d05-0e57" name="Sentinel Warblade" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="9786-98f2-bdab-5103" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="208d-ad3b-4008-334e" name="Solarite Power Talon" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="3ac5-b28c-104a-9de5" name="Magisterium Vexilla" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="df30-d357-3ee0-a102" name="Magisterium Vexilla" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="0c34-7afc-bced-140f" name="Sentinel Warblade" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="da0b-91f0-8baa-d330" name="Two Solarite Power Talons" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="d9bd-74cb-097b-14de" name="Solarite Power Talon" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="85f2-5b5a-1526-a121" name="Solarite Power Gauntlet" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="4c16-32b1-1a7a-928b" name="Pyrithire Spear" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="695d-f7d5-6f32-1d3a" name="Meridian Swords " hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="9e55-ae31-3ba6-d720" name="Guardian Spear" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="3780-57f7-1eb8-0851" name="Guardian Axe" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="101f-346d-b8fa-a5c3" name="Adrasite Spear" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="f944-64cf-5589-d29a" name="Infernus Firepike" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="2b1d-a84d-9b3f-8ad6" name="Infernus Firepike" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="b3bf-5df7-9ac4-c0cf" name="Lastrum Storm Bolter" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="9724-e7e9-59b0-8c35" name="Lastrum Storm Bolter" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="6613-a83e-8274-6e06" name="Twin-Linked Adrathic Destructor" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="1887-051d-c262-513b" name="Twin-Linked Adrathic Destructor" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="abcd-6d7c-8232-6bb8" name="Infernus Incinerator" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="0fe1-7553-87cc-d2c5" name="Gravis Power Fist" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="94ed-c2ef-d612-1ef9" name="Corvae Las-Pulser" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="4e51-f06c-0dff-e3e8" name="Praesidium Shield" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="5700-71dd-e321-4697" name="Lastrum Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="97a4-45e2-fa61-bd02" name="Lastrum Bolt Cannon" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="d066-58b3-e43a-b8ad" name="Twin-linked Corvae Las-Pulser" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="7bd8-c2b4-b888-f3df" name="Adrathic Devastator" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="0425-2ab6-977c-8b81" name="Adrathic Devastator" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="b052-d281-1269-9408" name="Twin-Linked Arachnus Blaze Cannon" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="1f5b-6e05-e40b-7305" name="Twin-Linked Arachnus Blaze Cannon" hidden="false" collective="true" import="true" type="upgrade"/>
-    <selectionEntry id="5eb8-dd6c-05ee-17d5" name="Twin-Linked Lastrum Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="53e1-df76-4226-e438" name="Twin-linked Infernus Incinerator" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="0f39-7a65-86f9-e0c0" name="Telemon Cestus and in-built Proteus Plasma Projectors" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6f59-3dda-0590-37c7" name="Praesidium Shield (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd49-770c-b509-884f" name="Two Solarite Power Talons (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e0b-dbe3-3d1a-14a9" name="Adrasite Spear (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1334-e423-944e-9499" name="Guardian Axe (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2bb9-0525-4865-407c" name="Guardian Spear (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9664-33bc-927e-5ba3" name="Meridian Swords (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4620-e360-7dd2-f908" name="Pyrithire Spear (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6909-d6c6-8d05-0e57" name="Sentinel Warblade (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9786-98f2-bdab-5103" name="Solarite Power Gauntlet (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="208d-ad3b-4008-334e" name="Solarite Power Talon (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ac5-b28c-104a-9de5" name="Magisterium Vexilla (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df30-d357-3ee0-a102" name="Magisterium Vexilla (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c34-7afc-bced-140f" name="Sentinel Warblade (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da0b-91f0-8baa-d330" name="Two Solarite Power Talons (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d9bd-74cb-097b-14de" name="Solarite Power Talon (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="85f2-5b5a-1526-a121" name="Solarite Power Gauntlet (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4c16-32b1-1a7a-928b" name="Pyrithire Spear (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="695d-f7d5-6f32-1d3a" name="Meridian Swords (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e55-ae31-3ba6-d720" name="Guardian Spear (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3780-57f7-1eb8-0851" name="Guardian Axe (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="101f-346d-b8fa-a5c3" name="Adrasite Spear (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f944-64cf-5589-d29a" name="Infernus Firepike (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b1d-a84d-9b3f-8ad6" name="Infernus Firepike (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3bf-5df7-9ac4-c0cf" name="Lastrum Storm Bolter (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9724-e7e9-59b0-8c35" name="Lastrum Storm Bolter (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="abcd-6d7c-8232-6bb8" name="Infernus Incinerator (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0fe1-7553-87cc-d2c5" name="Gravis Power Fist (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="94ed-c2ef-d612-1ef9" name="Corvae Las-Pulser (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e51-f06c-0dff-e3e8" name="Praesidium Shield (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5700-71dd-e321-4697" name="Lastrum Bolt Cannon (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="97a4-45e2-fa61-bd02" name="Lastrum Bolt Cannon (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d066-58b3-e43a-b8ad" name="Twin-linked Corvae Las-Pulser (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7bd8-c2b4-b888-f3df" name="Adrathic Devastator (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0425-2ab6-977c-8b81" name="Adrathic Devastator (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b052-d281-1269-9408" name="Twin-Linked Arachnus Blaze Cannon (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f5b-6e05-e40b-7305" name="Twin-Linked Arachnus Blaze Cannon (TBC)" hidden="false" collective="true" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5eb8-dd6c-05ee-17d5" name="Twin-Linked Lastrum Bolt Cannon (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="53e1-df76-4226-e438" name="Twin-linked Infernus Incinerator (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0f39-7a65-86f9-e0c0" name="Telemon Cestus and in-built Proteus Plasma Projectors (TBC)" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="a2b8-1e1f-5094-fe17" name="Telemon Cestus" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="a2b8-1e1f-5094-fe17" name="Telemon Cestus (TBC)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c56-818e-3c8d-4558" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d6f-2162-5a4f-d8b0" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
-        <selectionEntry id="e697-206f-a464-b0b5" name=" Proteus Plasma Projectors" hidden="false" collective="true" import="true" type="upgrade">
+        <selectionEntry id="e697-206f-a464-b0b5" name=" Proteus Plasma Projectors (TBC)" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db3c-6d63-5dcc-e69f" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05e7-0e69-9cbf-6666" type="max"/>
           </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry id="e6cc-a982-98c3-3889" name="Arachnus Storm Cannon" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="fffc-fd3f-63aa-11fb" name="Iliastus Accelerator Culverin" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="a9fc-4298-7b35-8ef4" name="Paragon Glaive" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="e6cc-a982-98c3-3889" name="Arachnus Storm Cannon (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fffc-fd3f-63aa-11fb" name="Iliastus Accelerator Culverin (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a9fc-4298-7b35-8ef4" name="Paragon Glaive (TBC)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f99c-9468-c0c6-a865" name="Paragon Blade" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1985-f503-d41d-0917" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4047-0eac-4a12-7285" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="6968-f31e-4b62-5dfa" name="Paragon Blade" hidden="false" targetId="b581-7729-f3d6-d2fc" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fe3c-f221-2044-bc2b" name="Dedicated Transport (Custodes)" hidden="false" collective="false" import="true">
