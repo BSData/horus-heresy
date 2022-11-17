@@ -218,6 +218,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -229,7 +230,7 @@
         <categoryLink id="f1fa-fed8-1461-7cfc" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="79e6-ae67-22cc-24e7" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="79e6-ae67-22cc-24e7" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="c691-eb74-9fa6-c2b4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -242,6 +243,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18e4-7d20-667c-409b" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="a055-36b9-fb2f-e0c5" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="39db-3517-48bb-514a" name="Breacher Squad" hidden="false" collective="false" import="false" targetId="ad97-c090-fa67-696f" type="selectionEntry">
@@ -253,6 +263,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -268,6 +279,17 @@
         <categoryLink id="3cab-3815-a10e-ef74" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="911f-0dfb-085a-2b17" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="a7d8-e403-b8e0-6333" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="73eb-db6c-9c3f-7406" name="Castra Ferrum Dreadnought Talon" hidden="true" collective="false" import="false" targetId="daf7-b23b-5474-5836" type="selectionEntry">
       <comment>    template_id_0dcb-00a1-424c-a069</comment>
@@ -320,7 +342,7 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="b68c-376d-b2df-be26" name="Hexagrammaton Choice" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+        <entryLink id="b68c-376d-b2df-be26" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
     </entryLink>
     <entryLink id="90da-858e-9bf9-7458" name="Centurion, Cataphractii " hidden="false" collective="false" import="false" targetId="3766-ea98-0aa7-62d0" type="selectionEntry">
@@ -511,6 +533,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -522,7 +545,7 @@
         <categoryLink id="73c0-3b11-5105-6f71" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5d58-b1ba-af89-a8ab" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="5d58-b1ba-af89-a8ab" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="c691-eb74-9fa6-c2b4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -534,6 +557,15 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e08-f5ed-9b27-a9fc" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink id="e2a8-8869-0e70-9fac" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </entryLink>
       </entryLinks>
     </entryLink>
@@ -916,6 +948,20 @@
     </entryLink>
     <entryLink id="7de7-fdfa-c41d-45f3" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>    template_id_5798-3fc7-4d4c-ad41</comment>
+      <infoLinks>
+        <infoLink id="d9f9-2322-1231-67cc" name="Rampage (X)" hidden="true" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="2"/>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d79-a3e4-381f-7b0f" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="fb23-8b6b-0611-ed86" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="eb5d-715f-63b5-af5e" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -1282,6 +1328,17 @@
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                <condition field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="lessThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1293,7 +1350,7 @@
         <categoryLink id="5880-c8f6-27ae-b438" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="fc43-10d6-da0b-bacb" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="fc43-10d6-da0b-bacb" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="c691-eb74-9fa6-c2b4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -1306,6 +1363,15 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9be-e644-7185-9884" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="b58a-dace-ecfc-f5df" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="533f-a106-ed1b-f457" name="Tactical Support Squad" hidden="false" collective="false" import="false" targetId="50ed-5869-643d-1ac5" type="selectionEntry">
@@ -1314,6 +1380,17 @@
         <categoryLink id="b3d9-83c2-da09-fdcb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="6992-7d8d-606c-8b27" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="e98d-b4c7-90e4-7a2c" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="c49b-35e7-4119-d223" name="Techmarine Covenant" hidden="false" collective="false" import="false" targetId="d39f-99d5-f7a4-7b86" type="selectionEntry">
       <comment>    template_id_d202-8e38-4b5e-96a8</comment>
@@ -1362,6 +1439,17 @@
         <categoryLink id="203c-456b-22b5-c12f" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="2f3b-bb86-38b1-732b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="f0aa-28d8-dd90-eb8d" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" targetId="3fd3-ae87-f006-a71a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b500-803d-772c-5e10" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="1431-cf29-f3a6-9a24" name="Terminator Tartaros Squad" hidden="false" collective="false" import="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
       <comment>    template_id_0848-4e03-417a-b224</comment>
@@ -2216,7 +2304,7 @@
         <categoryLink id="4dcd-2da0-6459-75fb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="a70a-39f3-b1ce-61e0" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="a70a-39f3-b1ce-61e0" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="c691-eb74-9fa6-c2b4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2245,7 +2333,7 @@
         <categoryLink id="f601-7817-4d0c-da54" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2e29-eede-e8ab-25e3" name="Centurion (Storm of War)" hidden="false" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="2e29-eede-e8ab-25e3" name="Centurion (Storm of War)" hidden="false" collective="false" import="true" targetId="c691-eb74-9fa6-c2b4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2274,7 +2362,7 @@
         <categoryLink id="91a9-ca66-6195-a18e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2cd1-393d-21d2-4fb9" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="2cd1-393d-21d2-4fb9" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="c691-eb74-9fa6-c2b4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2303,7 +2391,7 @@
         <categoryLink id="d226-8c29-dd7f-d2d7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="07f6-10a8-4a78-54dc" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="6305-99cb-5a76-be11" type="selectionEntry">
+        <entryLink id="07f6-10a8-4a78-54dc" name="Centurion (Storm of War)" hidden="true" collective="false" import="true" targetId="c691-eb74-9fa6-c2b4" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -2360,6 +2448,66 @@
         <categoryLink id="beb7-738e-0985-73fc" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="4fcd-d122-c685-5be7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="d818-df9b-fce6-3bfd" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="44a5-7233-7524-853b" name="Assault Squad (Compulsory)" hidden="true" collective="false" import="true" targetId="82e5-0799-3098-b6eb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b4ea-d47d-0fb0-da26" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="2d17-da86-1138-6c4f" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="1ad3-edeb-3b26-5fd7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6a79-d08d-cdb6-e0df" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="147d-9d6e-297e-ac0d" name="Despoiler Squad (Compulsory)" hidden="true" collective="false" import="true" targetId="b17a-d8b5-e501-ee01" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6697-c468-80ca-baa4" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="00dd-4e75-6b58-f4c8" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="d1da-38fb-2782-b666" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="29d6-4c47-f850-89a6" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="533b-ace7-e664-a66c" name="Breacher Squad (Compulsory)" hidden="true" collective="false" import="true" targetId="becf-6018-c0fc-874d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f675-f94b-1aad-f093" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="6f67-5498-88a2-601d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="7362-ec44-43cc-4ad8" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink id="4e40-2e64-0826-1326" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1306-af62-3adf-5bd8" name="Tactical Squad (Compulsory)" hidden="true" collective="false" import="true" targetId="3385-6c59-12e1-3fab" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a484-7cb8-559e-88f3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="8b33-795e-2814-9e3d" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="b239-b665-9f09-7be5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="8fe8-ef0d-3f37-b448" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7765-ad00-f0c0-c354" name="Nullificator Squad" hidden="true" collective="false" import="false" targetId="954d-cf8e-eefd-27a6" type="selectionEntry">
@@ -4046,6 +4194,20 @@ special rule.</description>
             <modifier type="set" field="name" value="Adamantium Will (3+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="b187-ebe7-1c35-926f" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="9946-61c0-3656-36dd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="359e-1590-1dcc-33d3" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -4347,6 +4509,20 @@ special rule.</description>
         <infoLink id="e95c-b472-45a3-d0e4" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Adamantium Will (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="fce4-14e5-c2dc-27c7" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="b9ad-ab3e-437e-c373" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -5984,6 +6160,18 @@ Legion and Legiones Astartes (Dark Angels) special rules is referred to as the r
         <entryLink id="bc32-07a6-cda5-2aa6" name="Legion Centurion" hidden="false" collective="false" import="true" targetId="c681-938e-6d11-cd43" type="selectionEntry"/>
         <entryLink id="e2e4-4d83-fb92-aed6" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fd3-ae87-f006-a71a" name="Infiltrate (The Serpent&apos;s Bane)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ca59-c6b1-68fc-9199" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5678-4147-f166-b59d" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="71c3-6c06-6514-2cbd" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>

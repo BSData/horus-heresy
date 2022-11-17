@@ -598,14 +598,15 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0ca-ca8a-f177-7ba1" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b0ca-ca8a-f177-7ba1" type="max"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="d82b-1980-74f8-5dac" name="Allied Detachment" hidden="false"/>
