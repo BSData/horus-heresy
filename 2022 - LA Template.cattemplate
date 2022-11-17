@@ -1,0 +1,2177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="a5f8-9711-42a9-84e3" name="LA - Template" revision="1" battleScribeVersion="2.03" authorName="BSCopy Script" authorContact="" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>This is a template (made originally from the blood angels cat) used to copy rites of war to all 18 legions.</readme>
+  <entryLinks>
+    <entryLink id="5798-3fc7-4d4c-ad41" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b084-df23-4f99-812f" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="84fc-9304-4e9e-ab78" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="d06a-7939-4691-9aed" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="831f-3373-456a-8fbc" name="Retinue" hidden="false" collective="false" import="true" targetId="be38-a066-4f8e-ae54" type="selectionEntryGroup"/>
+        <entryLink id="741d-8c09-4211-ada6" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="7dee-602c-4b47-be09" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="c2bc-2985-468b-b512" name="Apothecarion Detachment" hidden="false" collective="false" import="false" targetId="81df-ffd4-a32b-b4a1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c6d4-581f-4746-bec3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2489-ee2a-45dd-b384" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6093-2b4c-41b4-b6c4" name="Arquitor Squadron " hidden="false" collective="false" import="false" targetId="9e46-a480-c382-c49c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_b02f-e65f-4a88-a175</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_b87b-bf35-4238-b7c6</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_1aff-27af-435e-8102</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_fdf9-4906-4180-a39d</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8378-ede4-476d-b657" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="d64f-ad19-426c-adf7" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="df5e-be36-49fa-b942" name="Assault Squad" hidden="false" collective="false" import="false" targetId="a8e9-70e1-b8bc-8ee2" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <comment>    node_id_7fd1-8ce8-4d10-82e7</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_eaae-8c43-4d30-898c</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_f67d-8cf3-424f-b491</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+                  <comment>    node_id_b949-6414-4f3d-b268</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ac26-e639-4d53-9b8b" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="49af-0d08-4c7e-8ce6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="b606-de16-4659-95cd" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5c02-34db-4633-a4e9" name="Breacher Squad" hidden="false" collective="false" import="false" targetId="ad97-c090-fa67-696f" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <comment>    node_id_27a3-1e4c-4b76-a594</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_d59a-dcd0-44fd-b866</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_0c8b-2b92-49ed-98c7</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+                  <comment>    node_id_bafe-f799-41d9-ac85</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_6369-288c-4fec-a640</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_fe53-8858-41dc-8ec4</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3a22-caae-4eea-9bc5" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="f759-f33e-4698-9f8a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="c624-3ae0-46c0-9b06" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d712-0fd7-43d1-b880" name="Centurion" hidden="false" collective="false" import="false" targetId="25a2-7a52-632a-6b2c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2599-24e3-44e5-9568" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="285f-6e56-473b-b2fe" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="685e-022f-4e2f-a568" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2a38-6544-4267-b584" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="7dee-602c-4b47-be09" type="selectionEntryGroup"/>
+        <entryLink id="6e59-4592-47ef-b76d" name="Retinue" hidden="false" collective="false" import="true" targetId="be38-a066-4f8e-ae54" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <comment>    node_id_8287-16ff-46ba-9838</comment>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
+                  <comment>    node_id_81c1-fca9-44dc-ba4c</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="11b1-c617-441a-9f1a" name="Centurion, Cataphractii " hidden="false" collective="false" import="false" targetId="3766-ea98-0aa7-62d0" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bd6a-0cda-4e0f-80ae" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ae75-7cca-4701-9d56" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="e517-62d4-48f7-8174" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fafb-6414-474a-8a09" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="7dee-602c-4b47-be09" type="selectionEntryGroup"/>
+        <entryLink id="a6a6-9bc7-4d4e-86a7" name="Retinue" hidden="false" collective="false" import="true" targetId="be38-a066-4f8e-ae54" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <comment>    node_id_1e43-c980-4508-8ec2</comment>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
+                  <comment>    node_id_4140-36a7-4203-b5e9</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="6e9c-0842-4514-8ea6" name="Centurion, Tartaros " hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fc9d-03d1-4bbd-a1c4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f51c-73d7-4f29-be1c" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="257d-78c0-4bab-ba65" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ac26-33db-40a7-bdba" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="7dee-602c-4b47-be09" type="selectionEntryGroup"/>
+        <entryLink id="dc8e-2801-46d6-84f8" name="Retinue" hidden="false" collective="false" import="true" targetId="be38-a066-4f8e-ae54" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <comment>    node_id_189b-db75-4db6-9fe9</comment>
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35d4-0dcd-f7d2-a6da" type="lessThan">
+                  <comment>    node_id_cbdb-2500-4e13-876a</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="04f7-e2bb-4774-8d08" name="Cerberus Squadron" hidden="false" collective="false" import="false" targetId="137a-e079-34cd-8161" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_b43b-547f-472e-9076</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_8ff9-0498-4540-8552</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_fbfe-931a-489b-a589</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_f4c3-5aa6-4caa-abf2</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_17f8-f055-4c9c-b757</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f1c8-27fd-4f98-8527" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="2b20-1a8b-4753-b657" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3aed-0370-44b8-9b06" name="Contemptor Dreadnought Talon" hidden="false" collective="false" import="false" targetId="d664-5692-cd41-f9be" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_23fa-06dd-49f9-a7db</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_5b26-059e-40b3-9d93</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_f7bf-3a1c-4103-aed8</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="dd44-e0a8-42a8-bdcc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="c5b0-f9ae-468d-924a" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fa0b-c14e-4b81-9dac" name="Damocles Command Rhino" hidden="false" collective="false" import="false" targetId="e337-8239-5e92-7f5f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_8396-e51c-4e2b-bada</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_13bb-9fb5-4580-92cf</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_bfb8-8125-4548-92f5</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_25e3-b8f5-4448-a7c8</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f926-27fd-4a92-97a1" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="82e3-36e1-4e85-8fcb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1408-38d9-406d-a090" name="Deredeo Dreadnought Talon" hidden="false" collective="false" import="false" targetId="bfdf-831f-2171-c1e7" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_658f-b1ad-4347-a998</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_12bc-3db2-4d28-abce</comment>
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_9d83-7691-41d6-8dad</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_add7-ba48-46d4-8a02</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_1fb0-2421-40a4-9e49</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7004-b00d-481f-b740" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4f88-2fc3-491c-bfb7" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8d6c-729f-4250-a5d4" name="Despoiler Squad" hidden="false" collective="false" import="false" targetId="4357-930e-165a-a6e3" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <comment>    node_id_8ed4-376d-4030-9439</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_8a11-c2a0-4335-99ef</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_fa8e-1af7-4d41-ac8c</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+                  <comment>    node_id_94bd-c771-4a85-8581</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="361e-fb90-4b0e-ac3d" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="d4ef-1074-45a9-959e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="febb-f536-4d25-a8ab" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7a36-d995-434a-a787" name="Destroyer Assault Squad" hidden="false" collective="false" import="false" targetId="d30b-59bb-8ae0-36d1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="473b-e812-4158-9416" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="00a2-63ff-4698-a35b" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f8ba-83a9-4d1f-adf6" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="false" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_7cf3-8a72-4f82-8cdc</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_228c-5681-4ce8-b726</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_01bb-8abd-4253-9a4d</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2a08-4432-42ad-bfdb" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="422e-0808-4897-8630" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2708-1e9f-4820-9d53" name="Falchion" hidden="false" collective="false" import="false" targetId="1fe8-7386-9509-d2d8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_1af8-4459-4717-8e3b</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_06b4-92b9-438c-b1a5</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_6c8d-8b28-417b-9a7c</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_715d-8186-4aa6-b40c</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_390e-358c-4f8e-ade8</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f4c0-4396-4f39-a34f" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="1301-8415-490e-8f06" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="87fa-f196-4c2e-9c3b" name="Fellblade" hidden="false" collective="false" import="false" targetId="9c3c-f15a-9a1f-c0d0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_d0c9-9a26-4324-b030</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_4e9e-a61d-42f2-bacb</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_ed9e-b634-4bec-9eb0</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_4614-ad0f-4fba-adaf</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_8d08-24f6-41be-8931</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="caf6-5548-4b89-8102" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="63a3-be61-428d-ab29" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3f8d-8859-4348-bf42" name="Fire Raptor Gunship" hidden="false" collective="false" import="false" targetId="f6e1-24e2-fbdb-c5ef" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_f318-4b03-4767-8c7f</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_b8ef-7245-4df8-a8c4</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_6bce-ec44-48cb-873a</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0678-4fdd-48e6-8f61" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="0d82-10a9-4de2-8ad7" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bbe3-6b87-4619-80dd" name="Glaive" hidden="false" collective="false" import="false" targetId="04e0-f69f-f759-b0b3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_ada1-1e18-4cbc-9598</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_b1d1-ac44-47dd-9159</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_5d64-f00c-4464-891b</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_25f0-f825-4a83-8f0d</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_64b1-9e36-44da-b36a</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d53e-113f-4a40-a3d5" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="1939-76b5-4279-9f8c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="889e-91aa-489a-b766" name="Heavy Support Squad" hidden="false" collective="false" import="false" targetId="bac9-5389-e2e7-0b1f" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_d765-3bb2-4b48-bd12</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_0ca1-cfb4-4a56-ab3b</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e6f7-a6ca-4825-bfc5" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="dbec-e027-4ec1-8514" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a948-21ae-4cfc-a7df" name="Javelin Squadron" hidden="false" collective="false" import="false" targetId="deea-102f-8fbe-e2e5" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_d8ee-81ed-45f9-8b79</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_8f4e-e8cb-4ac9-a415</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cefb-cfd7-4dc8-99c4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a9fd-9d16-4a5e-855c" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4a48-1563-4021-968f" name="Kharybdis Assault Claw" hidden="false" collective="false" import="false" targetId="f64a-90b7-19c8-182a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_e76b-46ca-4ab8-a93d</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_8035-75b8-43bb-97c9</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a56d-347b-4b09-a918" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="96e5-4531-4213-903e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eab9-0e2c-49b9-b8bf" name="Kratos Squadron" hidden="false" collective="false" import="false" targetId="5900-37fc-9339-c1b7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_1fb5-2375-4c22-b41e</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_7d7c-255d-49b6-96b9</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_5321-254b-4890-9bf2</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_ddf8-b8b7-4afb-b6dd</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9441-d79b-4720-9667" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7d7e-32d3-4692-b401" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c6c2-ec4b-4f2b-af9e" name="Land Raider Proteus Carrier Squadron" hidden="false" collective="false" import="false" targetId="b6cd-dd1a-6b2c-41d6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_ae67-ef52-4cac-958c</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_fc61-7306-4d99-acde</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_1be0-67e7-45a1-bdbb</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_42a8-7fda-4e05-af0d</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="565a-1592-491f-8b9b" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="81d5-c14a-42ab-bdde" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="13de-750d-4f98-b462" name="Land Raider Proteus Explorator" hidden="false" collective="false" import="false" targetId="59a6-1cd2-185d-bf57" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_1ae7-c41b-4818-be71</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_08a5-b1bb-4ba1-ba42</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_d677-b5ad-4838-8746</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_537f-bc1f-4aaa-b0dc</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="bc67-ce1f-4004-aeb7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9a45-9699-4475-aeef" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="16af-605d-4499-bb17" name="Land Raider Spartan" hidden="false" collective="false" import="false" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_c28f-4109-44c4-ab64</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_fdc1-a894-48bc-9e7c</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_4936-a68c-4524-9088</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_bb37-ac0c-49ae-9d6f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3afe-cfc0-4da6-a985" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="04a8-6aae-45ae-bd4c" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="904a-21a0-43c7-a61c" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="false" targetId="c2a7-9e2c-fc65-1b78" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_773a-1ea4-41a0-b766</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_9d4d-6fb8-4131-a5a3</comment>
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_e3bc-02f8-4ece-a5ea</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_c371-76d9-4a4d-bc00</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_b4c6-d4ba-4b2e-9b99</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6ea9-a7e5-437d-9e35" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3cec-f053-42ab-a6eb" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="547d-bdfe-4930-9b58" name="Mastodon" hidden="false" collective="false" import="false" targetId="7f24-2b72-9128-5330" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_1e60-42ba-4c8b-9077</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_9860-f593-425e-b89b</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_c842-10e8-4509-8eda</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_ea52-ff41-40f6-8cf3</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_51e6-c5e1-4003-96bc</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4d7c-201f-4c99-b89a" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="10f9-4718-4e07-bb32" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1e13-9ff6-4335-8fbd" name="Mortalis Destroyer Squad" hidden="false" collective="false" import="false" targetId="dbd4-930e-e003-9449" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6140-2404-46f9-bd42" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1c86-fad8-46ec-a0b0" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a369-e639-4d89-8f78" name="Nullificator Squad" hidden="true" collective="false" import="false" targetId="954d-cf8e-eefd-27a6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_0a59-9f36-424f-ab2b</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_24c1-b2de-4c70-b5a2</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_1bf6-db3e-464f-b2d3</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_dd50-50c1-4b42-a47d</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_db4d-af6c-4204-8e6e</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="dc16-16d0-4890-a8e8" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="4b1e-3f1f-49cb-8343" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4654-227a-4d95-8773" name="Outrider Squadron" hidden="false" collective="false" import="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ff9f-01cb-41b9-800e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1315-6051-4a46-b070" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ca44-db38-4377-b4ef" name="Praetor, Cataphractii" hidden="false" collective="false" import="false" targetId="1b79-1951-5a63-4b9e" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_54a4-6ec8-4c61-9c3e</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_f7fd-2d16-4603-a065</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c0ac-4b8c-421c-a21b" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="8db9-079e-4482-b200" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="413c-9273-4308-b546" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bbc4-33fc-4664-a18e" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="7dee-602c-4b47-be09" type="selectionEntryGroup"/>
+        <entryLink id="5c5d-d6ce-4ee4-9846" name="Retinue" hidden="false" collective="false" import="true" targetId="be38-a066-4f8e-ae54" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="e95d-4a2f-45c3-b44e" name="Praetor, Tartaros" hidden="false" collective="false" import="false" targetId="3760-204e-444c-1044" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4c8d-96f6-48f9-9590" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="049c-0fa5-4575-8fa8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7358-52d7-4aae-8e07" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4784-b370-444b-93ae" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="7dee-602c-4b47-be09" type="selectionEntryGroup"/>
+        <entryLink id="fe8f-c701-4ebd-ae76" name="Retinue" hidden="false" collective="false" import="true" targetId="be38-a066-4f8e-ae54" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="59c9-be20-4f7c-b91d" name="Predator Squadron " hidden="true" collective="false" import="false" targetId="45fd-df3e-9bc4-60b6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_7f87-6d3e-4738-b3ee</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo">
+              <comment>    node_id_cd74-309d-4d08-825e</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="32cb-7077-4d54-9f38" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2c35-def7-4c44-9b02" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="0c9a-d272-491c-a4a0" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7425-bfc5-42eb-8dc4" name="Proteus Land Speeder Squadron" hidden="false" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="75a7-dc06-445b-b2dc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e21a-c03b-4885-ac46" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="522a-15ed-443b-a5f3" name="Rapier Battery" hidden="false" collective="false" import="false" targetId="23e4-c64b-65b4-c8a5" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_9a08-5fe6-4010-bbc3</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_72cf-cfce-4e02-b379</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f55b-7555-444b-beee" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="3386-c9ad-4d74-9474" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dbab-5cf8-42c8-9fdb" name="Reconnaissance Squad" hidden="false" collective="false" import="false" targetId="6db7-6e88-877e-35ca" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <comment>    node_id_a0f6-9606-4b75-a2f8</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_94b3-1331-474b-885b</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="79fa-3370-4ae0-9e12" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="bb53-4e65-4fb6-9dd7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cb2e-1a1f-4bed-8fca" name="Sabre Strike Squadron" hidden="false" collective="false" import="false" targetId="133b-e657-437e-f298" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_f8cc-833a-4ac1-bf89</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+              <comment>    node_id_5988-c012-4dad-9a66</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8d82-3279-4481-84bb" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="e25c-925e-4b96-8bb3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="73e7-101a-42d6-b1b2" name="Scorpius Squadon" hidden="false" collective="false" import="false" targetId="47d9-c0d0-12aa-9690" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_6b73-b21c-4e2b-9d14</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_a7fe-cc62-4a6f-a781</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_5be1-1937-4964-a455</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_da1d-b2bc-4117-82a4</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7010-be56-4709-b058" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7379-a740-47ba-a054" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e44f-ea47-43a8-857f" name="Scout Squad" hidden="false" collective="false" import="false" targetId="9b10-b657-a65a-9d60" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <comment>    node_id_dd34-83cf-47d7-b557</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_be88-afef-49b3-bd1e</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="944f-7420-4982-8ea9" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="ea80-0efe-457d-a450" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="58fe-ef91-4e28-9109" name="Seeker Squad" hidden="false" collective="false" import="false" targetId="58e6-f9cc-4c46-e258" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9a36-f261-43cc-9bd1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a648-8396-442a-af59" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ec32-606f-4ca6-adac" name="Sicaran Arcus Squadron" hidden="false" collective="false" import="false" targetId="3b14-e731-0d0f-bfe7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_cb81-0303-4b88-ae53</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_9648-31e3-43aa-8cf3</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_0507-da81-4023-bfcf</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_0e84-54ff-488d-b066</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c6ff-0977-4c92-bb28" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f555-7d39-458f-84c9" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="56c2-bbcb-4385-9b5a" name="Sicaran Omega Squadron" hidden="false" collective="false" import="false" targetId="c88b-fe44-34a3-97e1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_8203-5b00-497b-b939</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_40ee-3e71-4978-b1e4</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_f6a8-f660-46dc-b3c5</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_d988-3af6-48bf-b0a8</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="39e5-eda5-45d1-a643" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6416-21bb-4df4-9de8" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="79c8-6e0e-4175-9916" name="Sicaran Punisher Squadron" hidden="false" collective="false" import="false" targetId="13d9-b56a-6194-d521" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_b03e-5d91-4be3-8adc</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_0443-29c0-46e9-ad1d</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_f2c9-7356-4c27-a22f</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_b0e9-4a9e-4b2b-a9d5</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5528-2dac-4be5-900c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="dc8f-d888-4585-991d" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7f16-dadb-4bbc-bad7" name="Sicaran Squadron" hidden="false" collective="false" import="false" targetId="706a-9532-f06d-00ed" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_1d3c-8e17-489f-9002</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_5725-8bee-4bcc-878d</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_be47-0d6f-49f2-9f4b</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_863c-f3a4-4802-b80c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="899e-b052-4d5b-8c18" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f5e9-cff6-41d2-a016" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2901-7b25-4b31-99a8" name="Sicaran Venator Squadron" hidden="false" collective="false" import="false" targetId="1345-e0db-2fcb-dcc8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_72da-1513-4e02-b595</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_7a48-a3b0-4a26-849b</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_e232-25f3-4cb7-8ab2</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_9aa4-5660-4697-8ab2</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="09cd-2176-40af-bba6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="05e6-7c63-4a35-9ba0" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e940-cd57-49e9-a428" name="Sky-Hunter Squadron" hidden="false" collective="false" import="false" targetId="6263-c696-2f2e-c105" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0dfa-4004-4751-8022" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a669-0f5d-4fd3-811b" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="aceb-c60a-415f-a342" name="Sokar Stormbird" hidden="false" collective="false" import="false" targetId="f403-630f-71ae-5a7d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_09b5-4e3b-4c84-a574</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_32e5-ebba-41fb-9ff2</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_838e-0ccf-4d3a-aabd</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_dfef-0ec2-49fb-a534</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4f60-472b-45a9-ab9e" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="e2e3-af36-45a6-a955" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c9f2-ee68-4c38-9314" name="Spatha Attack Bike Squadron" hidden="true" collective="false" import="false" targetId="4d72-1cc1-8bee-aa88" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_936f-1ef7-472e-840e</comment>
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+              <comment>    node_id_d73d-d52e-4c75-8ac0</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7a55-ecb4-4e5d-b955" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="f28c-710e-4ff8-9810" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5ec5-8a6b-491f-a7f3" name="Storm Eagle Gunship" hidden="false" collective="false" import="false" targetId="8aa5-ff31-7de7-19d4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_a743-0cc2-45ae-a7eb</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_2721-e88d-41f7-bedc</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_e10f-1390-4b33-8fcc</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2008-f1c4-4285-a14f" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="e88b-a95a-4647-af3b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="59ec-0ea0-4fcf-a75a" name="Tactical Squad" hidden="false" collective="false" import="false" targetId="aa72-63e4-bc60-4611" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <comment>    node_id_25d8-330b-4574-b515</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_7836-6878-47a8-8827</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_5ea9-46dd-4a11-9410</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+                  <comment>    node_id_ab5d-961b-4924-a705</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9189-836c-475d-a52e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e1fa-b7d8-47b0-a88a" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="a137-e3c0-4d63-a48c" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7333-e181-4a55-8831" name="Tactical Support Squad" hidden="false" collective="false" import="false" targetId="50ed-5869-643d-1ac5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b1d5-fd75-4f17-bbf4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f221-bf81-4045-849b" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d202-8e38-4b5e-96a8" name="Techmarine Covenant" hidden="false" collective="false" import="false" targetId="d39f-99d5-f7a4-7b86" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="51af-a137-4a1c-97a4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ec1f-c326-40a8-9d1f" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ec78-3ba9-438b-a7e8" name="Terminator Cataphractii Squad" hidden="false" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_c111-feb0-4012-98cd</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_63d7-8427-431d-9ae6</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e707-fde1-457f-91c4" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="ec67-8573-4460-89db" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0848-4e03-417a-b224" name="Terminator Tartaros Squad" hidden="false" collective="false" import="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ac1c-b3bf-4011-918a" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="589c-1d0e-4b7d-be6b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3b77-0148-4975-a6db" name="Thunderhawk Gunship" hidden="false" collective="false" import="false" targetId="8754-3a4f-213b-bdc0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_6087-a5e5-4d3c-9ebd</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_c7e1-5f42-4528-bf07</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_1950-08dc-4544-ab01</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_daf3-31ed-42c0-85dc</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7d4f-547c-43ed-a520" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="f04e-04e8-4891-9b1f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b3aa-4fa3-4270-993b" name="Typhon Squadron" hidden="false" collective="false" import="false" targetId="d06a-3087-af13-ca95" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_d512-fd07-4a29-863a</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_55c6-a35f-485a-9f0d</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_d89e-cf1f-4ceb-b3de</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_e2c9-0d01-403c-900e</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e22a-c5f8-4825-a45f" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="03fc-6a7f-45a5-bcb8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9d03-74fb-4e04-91f4" name="Veteran Squad" hidden="false" collective="false" import="false" targetId="a423-7dd8-3f1b-3e28" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0aff-4f6e-4b03-a23c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7d5a-62e7-43ee-b79b" name="Compulsory Elite:" hidden="false" targetId="bb1f-ae32-b587-c3e1" primary="false"/>
+        <categoryLink id="4986-9157-49f2-b670" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e3b3-8b3e-44d9-94e1" name="Vindicator Squadron" hidden="false" collective="false" import="false" targetId="9245-0776-6747-adb8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_319e-90d4-44a3-8e83</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_28db-d943-4099-9abd</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_1a45-a592-49df-9465</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_bb31-d0b2-4677-928e</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1b86-0977-4a8b-adac" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="b449-403a-4e42-9239" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2275-397b-407d-ae6b" name="Xiphon Interceptor" hidden="false" collective="false" import="false" targetId="596b-5478-e079-59ab" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_fbfa-8d78-4d6d-8a05</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_21f2-0916-46bf-b75a</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_4fbd-633b-4dd6-9fdd</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4f71-446f-4cff-afda" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3f44-8647-43a4-ac22" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="23b2-54e0-4f09-95e5" name="Command Squad" hidden="false" collective="false" import="false" targetId="0aca-632d-1642-8af9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4207-8d8f-4b1a-836b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2b34-077f-4279-86fb" name="Primarch&apos;s Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1064-175d-4616-9c71" name="Avenger Strike Fighter" hidden="true" collective="false" import="false" targetId="b25c-e85c-1c29-9e05" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_7583-6fa0-4089-a19e</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_0e5c-99ab-41d3-a42e</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_c296-e8e8-4a7a-989a</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_8868-5bcb-4604-ba8e</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a009-a597-4b51-b228" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="24f4-9145-4016-80d4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6e95-d5bf-451e-9b8a" name="Legion Basilisk Squadron" hidden="true" collective="false" import="false" targetId="8b8a-e685-5b8b-c08f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_e732-7499-47bf-9748</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_81a5-a959-46b7-baa4</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_7ec3-447a-4644-b012</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_71e2-c430-4c99-a559</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_df7b-3fb9-4f65-9165</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c165-3906-463a-9c73" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="b6d1-d14c-473f-be09" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6bbc-f18a-422d-9e8d" name="Caestus Assault Ram" hidden="true" collective="false" import="false" targetId="67b6-3d17-3b16-a94d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_13b3-ce1e-4f9d-8319</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_d681-9d81-4abd-b11b</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_8a57-e48b-4534-bca5</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_1859-5641-4674-9097</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="251a-df5b-4bfd-ad63" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="4644-98ab-4e3f-b1fd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0dcb-00a1-424c-a069" name="Castra Ferrum Dreadnought Talon" hidden="true" collective="false" import="false" targetId="daf7-b23b-5474-5836" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_591d-d028-4663-918d</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_0482-c5f9-4c95-9597</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_75a7-971d-4978-a83f</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_a7d5-2bfe-4621-ac0c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_9f13-b460-4f27-b0cd</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_31fc-e265-45a7-bb5b</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="67c2-df43-44fc-92d1" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="4136-bb4e-4dd4-99f9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a996-6d12-4d34-9e6a" name="Land Raider Achilles Squadron" hidden="true" collective="false" import="false" targetId="4996-8971-603f-e2a2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_99fc-5fe7-4b37-a62f</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_25f4-f6b8-4b44-8350</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_81f7-2311-4cce-95bc</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_09aa-af2a-4012-91d1</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_00ae-fad3-4df6-9cb9</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f65b-8958-49b3-92a5" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="0451-1929-4942-8c3f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ccdd-5be9-4975-b01d" name="Land Raider Phobos Squadron" hidden="true" collective="false" import="false" targetId="681a-7426-96af-caac" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_edc4-4915-40ba-bbf0</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_105f-ba26-4146-bc54</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_7a2c-a76c-421c-a8a2</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_05c9-0543-47ee-ba81</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_e6ad-f0d7-4627-921b</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c6a8-22a8-4d41-b969" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="03ca-12cc-4e0a-b628" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="30a0-f0af-4285-be06" name="Legion Baneblade" hidden="true" collective="false" import="false" targetId="ee5c-0952-bf95-6333" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_ae19-30c0-43c5-920e</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_6ebe-1bf3-4d78-9dd0</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_a7c4-ee6a-4f0b-8ab0</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_bd85-fa90-47ff-9f84</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_7bd6-9043-4d7e-ba37</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3610-c975-4d55-bdfe" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="2fc2-f636-4c80-9608" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1585-c778-42d8-bd7e" name="Legion Banehammer" hidden="true" collective="false" import="false" targetId="1240-c71c-3a60-cf20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_85c5-d4d9-4b23-9e4d</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_80e8-d50b-4906-8153</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_b93b-d4f1-45eb-8a69</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_e183-f183-4db7-83b5</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_0f39-204a-4217-b896</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_eee9-7bfd-4fea-a1bd</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f81d-9435-4f11-99c1" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="9568-6142-4fdd-be3a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4a67-a1f3-4189-9e6e" name="Legion Macharius Heavy Tank Squadron" hidden="true" collective="false" import="false" targetId="36ed-ca59-0d95-d85c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_005e-6607-4e2c-8dd2</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_7745-260c-4c36-b719</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_ddeb-f4c8-4091-9153</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_4904-fd2f-429f-9cf7</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_faea-b21b-43c5-b918</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b24f-3ae0-4cbb-b016" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="fd26-8e6b-4521-92b9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fc74-1bab-45a7-a988" name="Legion Malcador Assault Tank Squadron" hidden="true" collective="false" import="false" targetId="528b-183f-5e27-8b0c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_6ecb-28e2-43ed-a6a0</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_c067-1118-4d96-b28b</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_250e-23c0-4e43-bf74</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_1553-a6e6-4291-853f</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_aab6-797b-427a-9fd8</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c77f-0819-473b-a8a2" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="89fb-c924-4daf-923d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="98ee-9eac-46c6-8734" name="Legion Minotaur Battery" hidden="true" collective="false" import="false" targetId="6bf4-d9b2-127c-d477" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_d72c-519a-451f-81b6</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_3d16-444c-42c9-aad1</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_f4b2-6371-494b-863a</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_797f-a84b-42f6-8e66</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_0d78-fe38-4829-9b12</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0397-c837-4fea-a527" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="060b-bccb-4776-bd83" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c29e-d469-41e5-a72e" name="Legion Shadowsword" hidden="true" collective="false" import="false" targetId="8a75-acc6-6fd6-90b8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_3c84-6d74-4c42-b38d</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_5b15-7aa4-4897-aaf1</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_3326-31ed-4151-9b37</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_6a0e-1b65-4057-ba5d</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_f8c7-abc9-45ec-955f</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_2538-8dc5-446c-8344</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c1cf-cea4-4278-8f27" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="5f51-2734-4a46-9f72" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0b55-7392-44c0-931c" name="Legion Stormblade" hidden="true" collective="false" import="false" targetId="4ac0-4b85-58da-0907" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_af71-f3ff-49b1-83e9</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_1c9e-b3bf-4e88-a43f</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_6d0d-1b1d-4065-89cf</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_d0b7-8686-491e-9d33</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_7db8-0874-487a-be6f</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_1034-29a0-44b1-a85f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0c16-6841-42b2-b02d" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="602d-2d2d-4ff4-a82a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="019f-e078-4a86-98bb" name="Legion Stormlord" hidden="true" collective="false" import="false" targetId="0887-0f66-2c7e-a5ba" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_22bd-baae-45f9-b366</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_52bd-55de-4d53-ba55</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_df1b-7476-4ab8-8d2f</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_49fa-0dcf-4a61-a5b1</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_b0ea-1443-4993-86e7</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_d2a8-3fbe-448c-9902</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3632-0b5d-4622-ae33" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="da44-7815-4fdd-981c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7649-50e6-43e1-a338" name="Legion Stormsword" hidden="true" collective="false" import="false" targetId="8e67-8f84-730c-2778" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_2bfa-b203-47e2-a828</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_a39b-8a3c-49cf-bf62</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_2a05-07b3-49c5-8145</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_f730-87fb-44bd-b68e</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_2d0e-6c49-4493-a022</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>    node_id_d2e2-50c1-40c3-b4dd</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5ad5-8701-42cd-b2b6" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="20a4-4346-4a3b-a7d4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="92c7-96b3-4ff3-a262" name="Legion Medusa Squadron" hidden="true" collective="false" import="false" targetId="24c8-5f6a-d48a-27b7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_1909-0076-43fa-8ba1</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_a18c-c199-4de0-a83c</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_7678-a2e4-474c-9072</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_9823-4e72-4d96-83fe</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_759e-04a6-4fbe-9c44</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4e52-ad1b-48d4-8eed" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="6979-1ed3-4f1f-a025" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9eed-0620-42da-b8c4" name="Nathaniel Garro" hidden="true" collective="false" import="false" targetId="0583-258d-f0a0-2170" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_4729-bc86-456b-b73d</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_cf0f-e3f4-4fb4-989d</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_1cc8-5611-4d9a-9218</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan">
+                  <comment>    node_id_2e32-ca02-48f0-a8dd</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0af1-d052-4bd7-aab6" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="45ce-e338-43c9-b63e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6998-969d-4312-a9f2" name="Legion Primaris-Lightning Strike Fighter" hidden="true" collective="false" import="false" targetId="5fdc-bbd1-5610-2a50" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_db78-4d49-42ab-954a</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_f14d-9943-47b6-866c</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_8a95-938f-4a07-9727</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_7775-78e1-44cc-87c8</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b822-3417-4613-be37" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="25db-b03f-4881-b310" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ef14-da3d-4b92-99ea" name="Tarantula Sentry Gun Battery" hidden="true" collective="false" import="false" targetId="124f-0ced-9231-bba4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_b743-7a00-43e4-beb8</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_d12f-2c98-4e62-a716</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_d4d7-ba67-47aa-962f</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo">
+                  <comment>    node_id_1637-edee-457a-bb0d</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f203-bc26-421f-b79e" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="a53e-59d9-4ac2-a21f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3705-3a7a-4e90-92cd" name="Terminator Indomitus Squad" hidden="true" collective="false" import="false" targetId="aa7f-bd4c-5231-d459" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_3348-16e4-4a9a-a549</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_bea4-c4a8-4843-b9fe</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_2970-17ff-4be1-91e5</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_503a-46e7-40e7-bd07</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_4555-15e1-43ff-80a0</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fce3-801c-49c8-85d4" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="0c2d-2349-44b6-9831" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b99f-dff7-42f7-a135" name="Legion Thunderbolt Fighter" hidden="true" collective="false" import="false" targetId="5d24-1e9a-ad9d-95ca" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_2f46-a0b6-48a5-a0ee</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_636f-0f8a-43f1-910b</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_c883-39c8-4a74-aeaa</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_0796-e467-4438-89b3</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5a04-9847-4c91-a49a" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+        <categoryLink id="b4b4-daeb-483c-a306" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="513d-c1d7-4928-95ec" name="Tylos Rubio" hidden="true" collective="false" import="false" targetId="56bf-2c6d-a0fa-a145" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_dfdc-f6f6-49d2-a7b3</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_354c-c71f-472f-b268</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_1127-c974-4663-874d</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan">
+                  <comment>    node_id_0843-bef2-4767-8307</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="28e0-91e7-4ada-9fac" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="4448-a712-4dd7-bf6d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="edf3-7f66-40be-9234" name="Whirlwind" hidden="true" collective="false" import="false" targetId="3118-4a9b-afa4-1a73" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_eafa-470f-4c2c-8be3</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_e2ba-a855-4de2-9f46</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_0171-b30d-44ee-9389</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_fdfb-119b-4774-934a</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_3891-9a00-4f8f-b95f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e5df-17d4-4521-9d5b" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="0ecd-4873-4d3a-b28b" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dd8c-cf5d-4edb-a314" name="Seeker Squad" hidden="true" collective="false" import="false" targetId="58e6-f9cc-4c46-e258" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_af15-2c71-4f8b-833e</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_d95a-80b9-4463-af55</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b6b1-886e-4194-8bcd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="51b5-f9c1-4587-8fc7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9e78-3e8a-477d-9920" name="Command Squad, Cataphractii" hidden="false" collective="false" import="false" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_421a-b0ab-45e5-b4a7</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_26f8-b35f-4d47-bcf3</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6577-e0fb-4fda-834e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="5d59-09bf-4566-b7e1" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2029-1f36-432f-a6a1" name="Command Squad, Tartaros " hidden="false" collective="false" import="false" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="aa93-057d-42f6-82d7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="403c-4e9c-4af5-84ec" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ed2f-2214-418e-8562" name="Master of Armour" hidden="true" collective="false" import="false" targetId="0e4e-1b9a-6b38-e575" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_1a71-d890-4fd5-bfbf</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo">
+              <comment>    node_id_e6aa-89f5-49ee-badf</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5b41-a9f0-4801-9dff" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="d64e-e976-4668-bb95" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink id="17a6-f363-4094-9a7c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="abdb-0d0b-4557-996a" name="Predator Squadron " hidden="false" collective="false" import="false" targetId="45fd-df3e-9bc4-60b6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_3c03-a823-4466-9bd6</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_8bbb-f95b-413f-b6f4</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>    node_id_41b0-6b0a-482a-919e</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_e1f7-3cc6-4794-8b6d</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="05ce-cc31-40ad-9320" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f13c-f8e1-4a50-bfe3" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5289-7ab5-4112-9854" name="Sicaran Squadron" hidden="true" collective="false" import="false" targetId="706a-9532-f06d-00ed" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_6baf-f376-469e-a51b</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo">
+              <comment>    node_id_7657-ee27-4ab0-a7af</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fe4f-c8f2-470f-901c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f3f0-973b-4a45-ac41" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9bcf-be6d-48ae-8638" name="Sky-Hunter Squadron" hidden="true" collective="false" import="false" targetId="6263-c696-2f2e-c105" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_3531-57d1-4081-882d</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_f233-2361-4177-8ba7</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="63ff-0a92-42ab-ae8c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="204c-7b0f-4fb9-b1b3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="85e6-cb31-427c-a040" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="60e9-649a-41dc-8dd7" name="Proteus Land Speeder Squadron" hidden="true" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_48bd-f09b-458d-a0aa</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_fea7-9057-491f-a41a</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>    node_id_8dc2-2717-40ff-b152</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="68dd-fc0f-4fde-8adc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="74ca-dd4f-46be-8be7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8579-90c4-43ba-a8b4" name="Nullificator Squad" hidden="true" collective="false" import="false" targetId="954d-cf8e-eefd-27a6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_4dce-8632-4f7c-813e</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>    node_id_8a71-3995-4155-ac33</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_d206-f2ce-41b8-945a</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="greaterThan">
+                  <comment>    node_id_2e02-cf1c-4a71-861c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ec81-bd33-45a8-8550</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              <comment>    node_id_3344-743c-45d3-b930</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4272-9b9d-4c59-95f0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="d85b-1ae7-40d5-9341" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="47ce-b432-4b4a-98da" name="Terminator Cataphractii Squad" hidden="true" collective="false" import="false" targetId="d91a-a3c7-d7be-4293" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_eafb-5453-4dd9-8623</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_41ad-3585-4031-9b76</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3129-6f59-4365-906b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="2bcb-0af1-4aea-9191" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="02ca-5079-4248-b353" name="Veteran Squad" hidden="true" collective="false" import="false" targetId="a423-7dd8-3f1b-3e28" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_ede2-d453-4e34-8cda</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_2907-3215-4b01-96ff</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>    node_id_c90c-959f-40fb-a4cb</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ba2d-50ad-45f1-91c9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="0e88-485e-43c2-8bef" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bfa2-4203-4ad3-b023" name="Terminator Tartaros Squad" hidden="true" collective="false" import="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_409c-0a5d-4ef8-a871</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_7078-c1c7-4af2-b43d</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>    node_id_9a69-0fdc-4957-8982</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1a4c-69b5-4219-8502" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="fba0-3ea7-4eaf-b33a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6e3b-815f-42d7-a0d9" name="Termite Assault Drill" hidden="true" collective="false" import="false" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_9bdf-c865-4c4f-9115</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_51a8-a846-4090-a37f</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_955c-196e-4d75-9f91</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0d5b-be56-47af-a22e" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="2e59-1043-4719-96c4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="52fa-8c3c-49d4-a321" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f22f-aa8d-45c5-b890" name="Termite Assault Drill" hidden="true" collective="false" import="false" targetId="cb30-307a-f0d7-3b13" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_d88d-69db-477d-ad46</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_4d65-b98e-4a78-9dc4</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo">
+                  <comment>    node_id_b5a1-a9eb-45d5-ada9</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1fef-4409-4fab-93fc" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="ca2d-245e-48b4-a1cf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6692-6e39-44f0-ad8e" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fa70-d04e-4683-8eda" name="Venerable Ancient Contemptor Dreadnought" hidden="true" collective="false" import="false" targetId="dad1-0807-e254-d498" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_173d-02e3-4974-a502</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+              <comment>    node_id_9286-579f-4e52-8a67</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9261-acb5-4230-8d89" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1a5d-cbc8-418f-91a3" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="c0cb-406f-4b46-9d8d" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a559-b494-4154-a88a" name="Contemptor Dreadnought Talon" hidden="true" collective="false" import="false" targetId="d664-5692-cd41-f9be" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_642c-0100-4ef3-abd5</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+              <comment>    node_id_3e51-8f78-4faa-9519</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c0b2-dd90-46c1-a2a9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9a94-76fb-4a89-ad5d" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="be38-a066-4f8e-ae54" name="Retinue" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="90e8-296e-44d1-8c57" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="c2e6-af68-4845-9567" name="Command Squad, Tartaros " hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
+        <entryLink id="31b9-9494-4fe5-a2c6" name="Command Squad" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
+        <entryLink id="fcda-7dec-45a7-a11c" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <comment>    node_id_972d-5235-4c49-8eeb</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+                  <comment>    node_id_15da-7bd1-4ceb-b8f0</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7dee-602c-4b47-be09" name="Warlord Traits" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="b923-c7ac-4895-985a" value="1.0">
+          <comment>    node_id_4bd4-0d97-400e-9a80</comment>
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan">
+              <comment>    node_id_e8ea-30f1-4403-b8b1</comment>
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <comment>    node_id_7bac-2c77-47f2-ad72</comment>
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo">
+              <comment>    node_id_0ce1-be1e-4445-94fe</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f06d-b982-486e-90fc" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b923-c7ac-4895-985a" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="e570-95bd-4802-ab86" name="    Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink id="1f71-db51-401f-b023" name="(HH V2) Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>
