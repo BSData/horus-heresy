@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="b3e4-1487-4ab7-7515" name="Alexis Polux " hidden="false" collective="false" import="false" targetId="9229-b4f9-2213-9672" type="selectionEntry">
       <modifiers>
@@ -23,6 +23,9 @@
         <categoryLink id="2c32-d871-9f89-6b91" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="8d13-d219-2715-ad2a" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="91d1-0d94-0411-ec9c" name="Retinue" hidden="false" collective="false" import="true" targetId="446f-102e-289b-bdc5" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="f3a4-1d62-0904-18c5" name="Fafnir Rann" hidden="false" collective="false" import="false" targetId="d483-8c34-3bcb-f1d5" type="selectionEntry">
       <modifiers>
@@ -46,6 +49,9 @@
         <categoryLink id="d3ba-a5cd-59f7-f99a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="e598-efd8-ee80-b4c1" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="ea1a-29a9-7e24-d5f6" name="Retinue" hidden="false" collective="false" import="true" targetId="446f-102e-289b-bdc5" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="a7ed-633f-9b24-83bb" name="Phalanx Warder Squad" hidden="false" collective="false" import="false" targetId="19ce-b8dc-dd40-fee9" type="selectionEntry">
       <modifiers>
@@ -73,6 +79,9 @@
         <categoryLink id="c59c-4b7b-a872-41e7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="f613-1e6d-5e72-52bb" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="af00-d7e9-e5d8-7958" name="Retinue" hidden="false" collective="false" import="true" targetId="446f-102e-289b-bdc5" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="c1a0-4e23-bb48-8b6b" name="Templar Brethren" hidden="false" collective="false" import="false" targetId="6f69-665c-3199-77aa" type="selectionEntry">
       <categoryLinks>
@@ -3344,131 +3353,94 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="34e4-4d23-aba2-6807" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="96ef-3948-ea4e-1bb0" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="4c4d-50db-1458-6da0" name="Sigismund" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="454d-3863-ef62-9eca" name="Death&apos;s Champion" hidden="false">
+          <description>Sigismund and any unit he joins gains a bonus of +2 to all Charge Distances and Sweeping Advance rolls made for the unit. In addition, if Sigismund is present in any Detachment then that Detachment may take Templar Brethren squads as Troops choices.</description>
+        </rule>
+        <rule id="f45a-801b-3494-7cb6" name="Dolorous Fighter" hidden="false">
+          <description>When a Challenge is issued in any combat that includes Sigismund, Sigismund’s controlling player must always accept that Challenge with Sigismund – if the opposing player does not issue a Challenge then Sigismund’s controlling player must do so and must nominate Sigismund to fight in that Challenge. Additionally, when fighting in a Challenge, successful Invulnerable Saves taken against Sigismund’s attacks must be re-rolled.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5597-d7e3-937e-6db8" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Adamantium Will (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ec08-f75e-b050-ab03" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
+        <infoLink id="1443-2899-365f-7fca" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink id="33ce-89c8-fab1-7a2f" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
+        <infoLink id="ceec-7dfb-3406-2c0e" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Precision Strikes (3+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="0f9a-794e-6027-b9cf" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="e5a6-f3dc-73de-2bdb" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="8937-ca79-5a50-90fb" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="856f-8e7b-c416-96bd" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="3825-ece6-4a69-41cb" name="Sigismund" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="56d4-3969-830f-6c01" name="Master-crafted bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc8-2292-cae4-5186" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa8-057b-f8bb-137f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c7b-4771-d923-e737" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1872-23c5-9fa2-8eb2" type="max"/>
           </constraints>
           <profiles>
-            <profile id="0d53-05a1-9d0e-a48a" name="Sigismund" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+            <profile id="2522-27f4-a656-8d73" name="Master-Crafted bolt pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Master-crafted</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="f6fc-f7e4-ccf6-1805" name="Death&apos;s Champion" hidden="false">
-              <description>Sigismund and any unit he joins gains a bonus of +2 to all Charge Distances and Sweeping Advance rolls made for the unit. In addition, if Sigismund is present in any Detachment then that Detachment may take Templar Brethren squads as Troops choices.</description>
-            </rule>
-            <rule id="08ae-c080-c699-d291" name="Dolorous Fighter" hidden="false">
-              <description>When a Challenge is issued in any combat that includes Sigismund, Sigismund’s controlling player must always accept that Challenge with Sigismund – if the opposing player does not issue a Challenge then Sigismund’s controlling player must do so and must nominate Sigismund to fight in that Challenge. Additionally, when fighting in a Challenge, successful Invulnerable Saves taken against Sigismund’s attacks must be re-rolled.</description>
-            </rule>
-          </rules>
           <infoLinks>
-            <infoLink id="2baf-299e-2999-b21d" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
-            <infoLink id="6d99-ba61-d40d-6667" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
-            <infoLink id="a322-a9c1-efe1-1702" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
-            <infoLink id="7731-db8d-fa51-6eeb" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Adamantium Will (3+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="a7a5-b98c-251a-7e68" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Precision Strikes (3+)"/>
-              </modifiers>
-            </infoLink>
+            <infoLink id="1d93-e79e-3379-0e90" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="f52c-c884-92c0-a4cd" name="Master-crafted bolt pistol" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9abf-570d-e7f1-3072" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be7b-4184-a69a-4521" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="1e3d-08a5-f4ab-4d7d" name="Master-Crafted bolt pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Master-crafted</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="24c3-bfdd-857e-f205" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="de58-da54-74a1-e536" name="The Black Sword" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="250e-ffea-1826-2070" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0702-8ed2-1442-6996" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="b940-1db3-d2e0-c95f" name="The Black Sword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Instant Death, Master-crafted</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="e7cc-ccaa-fc73-30af" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
-                <infoLink id="004a-b400-6600-b4ec" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-                <infoLink id="13f5-f576-39b1-e969" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="49f3-d1fd-8962-e42d" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85e0-d73d-b99e-f79b" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a66-6909-adc0-be8d" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0842-43ac-acef-241a" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f15-71e7-07d1-36c5" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8dc-582c-df77-f165" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="37d2-0c32-5e2e-cf67" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14af-d16d-1b28-854a" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e5f-d9a0-0e33-d814" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="883b-d678-74ff-a936" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8a2-c34b-4493-716b" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45ab-3781-e5b2-58aa" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="20e1-e2a6-9074-40cb" name="The Black Sword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff0f-7279-2a31-c040" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e3-e606-aee3-016b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c20a-2b13-a909-ef4b" name="The Black Sword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Instant Death, Master-crafted</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="ecfe-e688-ca6d-92f8" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+            <infoLink id="793b-a141-7ab4-b8bd" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="2073-3134-1f31-fcec" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -3493,7 +3465,30 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bae5-29f8-ae75-c5c1" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="9e12-d8c6-8e48-4c11" name="Retinue" hidden="false" collective="false" import="true" targetId="446f-102e-289b-bdc5" type="selectionEntryGroup"/>
+        <entryLink id="c53f-d8be-ce6c-0c97" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ee1-9c71-d426-bb19" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0df-04b4-340c-907e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="849b-307a-9d2d-d549" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c49c-ab29-673b-c148" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7a8-9636-e8dc-2c5b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d2f8-30a1-ec18-fc62" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a928-b86b-2f75-0a58" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d4d-bd91-b7ce-8d2c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a8f7-c888-74c4-6a52" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0723-487d-200c-75bb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa8-057d-d2c8-7c0c" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="230.0"/>
@@ -3505,94 +3500,41 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7721-fdef-2fe0-7f7c" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e111-dc03-a164-6a76" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="7a5c-7488-1414-ada1" name="Alexis Polux" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy, Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="95f4-2519-0de5-29e2" name="Hammer Blow" hidden="false">
+          <description>During any Fight sub-phase, Alexis Polux’s controlling player may choose to have Alexis Polux make a single attack with the profile &quot;Hammer Blow&quot; (while using this option Alexis Polux may not gain bonus attacks for Charging, additional weapons or from any other special rule)</description>
+        </rule>
+        <rule id="9127-eec5-af47-8715" name="Void Commander" hidden="false">
+          <description>The controlling player may opt to automatically pass or fail any Pinning test made for Alexis Polux and any unit he has joined. In addition, all models in a unit that Alexis Polux joins while in Reserves (see the Combined Reserves Units rule on page 309 of the Horus Heresy: Age of Darkness rulebook) gain the Deep Strike special rule.</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="b9f0-6dd3-7d59-aa1d" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
+        <infoLink id="2954-6f41-8c3c-09bc" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="8d96-6a4a-f91f-d21d" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="93db-ffc9-0558-73e6" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="e823-f428-97c9-b5d7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="0d9a-8f4f-0ec8-6ebc" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="7668-e167-087e-ec1a" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="242a-5d1d-76a7-40d4" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="194d-69e1-55b6-8453" name="Alexis Polux" hidden="false" collective="false" import="true" type="model">
-          <profiles>
-            <profile id="281c-8f66-fd88-399e" name="Alexis Polux" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy, Unique)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="d5ed-fb61-0ad0-3d66" name="Hammer Blow" hidden="false">
-              <description>During any Fight sub-phase, Alexis Polux’s controlling player may choose to have Alexis Polux make a single attack with the profile &quot;Hammer Blow&quot; (while using this option Alexis Polux may not gain bonus attacks for Charging, additional weapons or from any other special rule)</description>
-            </rule>
-            <rule id="1719-25bf-e884-5928" name="Void Commander" hidden="false">
-              <description>The controlling player may opt to automatically pass or fail any Pinning test made for Alexis Polux and any unit he has joined. In addition, all models in a unit that Alexis Polux joins while in Reserves (see the Combined Reserves Units rule on page 309 of the Horus Heresy: Age of Darkness rulebook) gain the Deep Strike special rule.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="e767-8faf-6d38-c1d7" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
-          </infoLinks>
-          <entryLinks>
-            <entryLink id="3c0a-6c75-d0e0-9bba" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d260-60a4-5c4b-1775" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd92-f07b-e14c-0891" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="4687-4e8e-a6e7-5ed3" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dba9-72d8-9d2f-2958" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="452b-f63f-f6ae-e6f8" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="ccfd-c0c1-18ad-51d2" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dfd-3326-0f13-365d" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6599-856e-3c69-5603" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="8317-8265-9578-a4a1" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15ac-4d9c-df5c-08b1" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f55f-6777-c9c7-24df" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="e7d0-0983-6b41-27ef" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="0d1c-227e-a3f8-cd63" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68c5-4fc9-4cda-9346" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4391-7912-6ca7-d189" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="ce2a-13b3-23df-237f" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d16-dd67-cde1-3a75" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8fc-d670-2a13-0297" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="672b-e1e9-6253-ed91" name="Vigil Storm Shield" hidden="false" collective="false" import="true" targetId="ec3d-1f0c-d195-a006" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86e6-d20b-2c80-1c65" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5114-ee70-d5f0-4758" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="02b9-034a-2569-5151" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
@@ -3612,7 +3554,48 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8bb-a526-f80a-cbe7" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="d612-4dfb-1250-9e3c" name="Retinue" hidden="false" collective="false" import="true" targetId="446f-102e-289b-bdc5" type="selectionEntryGroup"/>
+        <entryLink id="ca0b-403f-647b-09b4" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b6-ea6a-df9c-2dad" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db4f-5b4f-bc91-947b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="590a-8cd0-12d2-dc74" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccb6-9781-c636-9c37" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d599-ba43-0577-026d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9328-e511-bd9e-4087" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0a8-bbac-99fa-e302" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f70-b624-73e2-cd30" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6345-f9ea-8402-0798" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c7a-1f3f-206a-51ae" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6057-89c0-8343-c935" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="67f5-9120-ae6e-86ad" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a2-0d4e-7428-c537" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5918-217f-7511-c19f" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3cb0-603b-3bf9-9603" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="b682-2c89-f979-aa74" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf91-b19e-c8f0-d1d6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b3-3111-da70-b793" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a2dc-82bf-1e30-e5c6" name="Vigil Storm Shield" hidden="false" collective="false" import="true" targetId="ec3d-1f0c-d195-a006" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48cd-bf80-76fe-b750" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="107d-f1d6-8267-026a" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
@@ -3623,132 +3606,85 @@
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="37d2-c4e6-e4ec-3210" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e288-2028-da8e-3648" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="4bab-c558-ec2e-9ccb" name="Fafnir Rann" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Unique, Character, Heavy)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d48f-3081-1c72-8a31" name="Executioner&apos;s Tax" hidden="false">
+          <description>When an enemy unit makes a successful Charge that places one or more enemy models in base contact with Fafnir Rann, or any model in a unit Fafnir Rann has joined, that enemy unit suffers D3+3 Str 5 AP- Hits. These attacks hit automatically and are resolved during the Fight sub-phase at Initiative Step 10, but grant no model a Pile-in move and do not benefit from any special rules that Fafnir Rann or any other model in the same unit may have. Hits inflicted by this special rule are allocated as normal for attacks made in an assault.</description>
+        </rule>
+        <rule id="4743-cbd3-d87b-1068" name="Shield Master" hidden="false">
+          <description>When Fafnir Rann is locked in combat and his controlling player has chosen to use the Single Axe profile for The Headsman and The Hunter in that phase, all Hits inflicted by enemy models and allocated to Fafnir Rann must reduce their Strength by -1 (to a minimum of 1). When using the Twinned Axe profile for The Headsman and The Hunter, this special rule grants no benefit, Fafnir Rann is not counted as having a boarding shield for any rules that would grant him benefits for having a boarding shield and Fafnir Rann may ignore the usual restriction for using a weapon with the Two-handed special rule while also having a boarding shield until the end of that Assault phase.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="8ae1-d697-8e62-0961" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
+        <infoLink id="3aa8-fda7-58d0-ac82" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7d2a-1492-8056-3083" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="f860-72fd-d93c-1290" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="7b95-8b9b-38c1-f8fb" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="1715-31a2-3ed9-4522" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="ee7c-041c-cb93-5a14" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0a3e-c822-cc8c-3bef" name="Fafnir Rann" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="5353-20d5-7bd9-9db1" name="The Headsman and The Hunter" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87bb-af20-f689-b619" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7f8-5c51-fc89-745a" type="max"/>
+          </constraints>
           <profiles>
-            <profile id="d439-67cb-cbb1-a257" name="Fafnir Rann" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+            <profile id="71b6-e4af-26e5-e30c" name="Single axe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Unique, Character, Heavy)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shield Master*, Specialist Weapon, Master-crafted</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="e3a6-7ad8-1e47-a678" name="Twinned axe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rampage (2), Specialist Weapon, Two-handed, Master-crafted</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule id="fd2e-1576-229e-204d" name="Executioner&apos;s Tax" hidden="false">
-              <description>When an enemy unit makes a successful Charge that places one or more enemy models in base contact with Fafnir Rann, or any model in a unit Fafnir Rann has joined, that enemy unit suffers D3+3 Str 5 AP- Hits. These attacks hit automatically and are resolved during the Fight sub-phase at Initiative Step 10, but grant no model a Pile-in move and do not benefit from any special rules that Fafnir Rann or any other model in the same unit may have. Hits inflicted by this special rule are allocated as normal for attacks made in an assault.</description>
+            <rule id="db1f-3259-7b23-e3ab" name="Single axe*" hidden="false">
+              <description>*All Hits inflicted by enemy models and allocated to Fafnir Rann must reduce their Strength by -1 (to a minimum of 1) – see the Shield Master special rule for more details.</description>
             </rule>
-            <rule id="e9b2-d9e3-c543-2145" name="Shield Master" hidden="false">
-              <description>When Fafnir Rann is locked in combat and his controlling player has chosen to use the Single Axe profile for The Headsman and The Hunter in that phase, all Hits inflicted by enemy models and allocated to Fafnir Rann must reduce their Strength by -1 (to a minimum of 1). When using the Twinned Axe profile for The Headsman and The Hunter, this special rule grants no benefit, Fafnir Rann is not counted as having a boarding shield for any rules that would grant him benefits for having a boarding shield and Fafnir Rann may ignore the usual restriction for using a weapon with the Two-handed special rule while also having a boarding shield until the end of that Assault phase.</description>
+            <rule id="edb2-10b7-d360-e5c7" name="The Headsman and The Hunter" hidden="false">
+              <description>Fafnir Rann’s power axes, The Headsman and The Hunter, are considered a single weapon with two profiles – one representing Fafnir Rann using a single axe in concert with his shield and one representing Fafnir Rann using both axes at once. In each Fight sub-phase Fafnir Rann’s controlling player must choose one of these two profiles to use for all of Fafnir Rann’s attacks. (Note that the Shield Master special rule allows Fafnir Rann make use of a weapon with the Two-handed special rule despite having a Breaching Shield). 
+
+Both weapons are counted as ‘Power’ weapons for those rules that affect such weapons</description>
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="1b27-b613-6482-ebd0" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
-              </modifiers>
-            </infoLink>
+            <infoLink id="7df1-fccb-0eac-a82d" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule"/>
+            <infoLink id="81bd-aa34-f4bc-ab6f" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+            <infoLink id="00a0-f5a1-e06a-e3ca" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="23e4-6bfd-6bea-0127" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="5f0c-149f-6941-9ac9" name="The Headsman and The Hunter" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eb8-2659-d5eb-a096" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3557-848a-4210-591d" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="abee-6d5f-6378-ae8a" name="Single axe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shield Master*, Specialist Weapon, Master-crafted</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="9446-6807-67b5-6843" name="Twinned axe" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rampage (2), Specialist Weapon, Two-handed, Master-crafted</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="e8d7-00df-7197-b35c" name="Single axe*" hidden="false">
-                  <description>*All Hits inflicted by enemy models and allocated to Fafnir Rann must reduce their Strength by -1 (to a minimum of 1) – see the Shield Master special rule for more details.</description>
-                </rule>
-                <rule id="c731-16b4-5cc0-abdf" name="The Headsman and The Hunter" hidden="false">
-                  <description>Fafnir Rann’s power axes, The Headsman and The Hunter, are considered a single weapon with two profiles – one representing Fafnir Rann using a single axe in concert with his shield and one representing Fafnir Rann using both axes at once. In each Fight sub-phase Fafnir Rann’s controlling player must choose one of these two profiles to use for all of Fafnir Rann’s attacks. (Note that the Shield Master special rule allows Fafnir Rann make use of a weapon with the Two-handed special rule despite having a Breaching Shield). 
-
-Both weapons are counted as ‘Power’ weapons for those rules that affect such weapons</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="ea33-132b-b19f-0797" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule"/>
-                <infoLink id="13dc-5a45-4519-60ac" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
-                <infoLink id="b0dd-6dc3-5fb6-21a5" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-                <infoLink id="8244-a33b-8a47-0270" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="902b-c703-37f1-b851" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9371-b57b-91d1-9df2" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a84c-671c-24e2-ef02" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="c055-6552-4203-d0a8" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ce2-5590-8827-eefc" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea0f-a8f2-7bce-7520" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="02a0-74ae-24c9-25e3" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56c7-f9eb-6718-6e2b" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eac-c999-9344-84ec" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="8bdd-edb0-1d2e-dff0" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a988-438f-2fe5-75f8" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0409-2fed-716b-f19e" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="733f-8442-c54e-17d8" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a4d-1136-3c95-789d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b95c-0fbb-30ef-ac9c" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="cd78-54c7-ae06-c32b" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c873-fdd2-3849-3c87" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8289-b55d-0aeb-3787" type="min"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -3773,7 +3709,42 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cef0-422b-8e54-0568" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="46df-a318-ab20-f5e9" name="Retinue" hidden="false" collective="false" import="true" targetId="446f-102e-289b-bdc5" type="selectionEntryGroup"/>
+        <entryLink id="56b3-fb62-9dda-5d53" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ce4-f68a-b882-0d3c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="091c-9b06-ecdb-9fc5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5158-7dec-3dd4-307c" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="898f-8213-3e64-8084" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="496b-fcb6-b210-9c53" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1a5f-39bd-a463-3c1d" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48aa-c60a-3c5f-06aa" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c29c-7484-5d57-5dd1" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e7d4-7ff6-4b9a-8849" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c79-1154-c881-4133" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cc7-bca4-f396-c1ca" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ca3b-b816-3db3-c0a0" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eee-fe15-ab2c-1a68" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6432-9d2f-d41c-8e6c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c0d8-ed62-9985-4b32" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c080-8a6e-7b8f-c9ea" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89cc-f3b5-3d3d-706d" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175.0"/>
@@ -4147,141 +4118,114 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a7f3-f43c-87a7-1a4d" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6fbe-f4fe-0e81-4211" type="max"/>
       </constraints>
+      <profiles>
+        <profile id="3402-d821-2001-0f39" name="Rogal Dorn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="e3f1-4096-2b8e-b1e5" name="Bulwark of the Imperium" hidden="false">
+          <description>Any successful Charge that targets Rogal Dorn or a unit he joined is always counted as a Disordered Charge.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="7f1a-b7fb-507c-ea29" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
+        <infoLink id="c16c-22c3-ac6f-8801" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
+        <infoLink id="f944-dfc4-f13b-ea47" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink id="b315-02af-098b-55c7" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Furious Charge (2)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c043-4561-4769-2322" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="0895-b881-212f-b491" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="7518-46a4-31f2-3033" name="Rogal Dorn" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="ddda-cf8e-7722-1e7f" name="Storm&apos;s Teeth" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27ee-e24f-ddd3-5592" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffcd-6a96-7458-f46e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8bcf-da5d-2a27-6fbc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73a3-4458-6615-4f64" type="max"/>
           </constraints>
           <profiles>
-            <profile id="351a-fc44-4bc4-81b7" name="Rogal Dorn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+            <profile id="9bb1-c446-850b-04bd" name="Storm&apos;s Teeth" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Murderous Strike (6+), Shred, Reaping Blow (2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="76a3-1242-0767-39f6" name="Bulwark of the Imperium" hidden="false">
-              <description>Any successful Charge that targets Rogal Dorn or a unit he joined is always counted as a Disordered Charge.</description>
-            </rule>
-          </rules>
           <infoLinks>
-            <infoLink id="ae84-4964-40c2-d157" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
-            <infoLink id="9a19-9bb2-de73-61df" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+            <infoLink id="b0f4-a2c3-d417-d765" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+            <infoLink id="6139-dafa-8456-2b89" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Furious Charge (2)"/>
+                <modifier type="set" field="name" value="Murderous Strike (6+)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="86d5-56f7-4dd9-ebe4" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+            <infoLink id="766f-de56-308f-b1c5" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+            <infoLink id="4aa3-606a-ae80-2408" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Reaping Blow (2)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="0d6e-97c4-159a-9d0b" name="Storm&apos;s Teeth" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b16-e7a6-8a55-1e39" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0435-c7ad-7401-acd0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4866-b590-5415-b04d" name="Storm&apos;s Teeth" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Murderous Strike (6+), Shred, Reaping Blow (2)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="c406-687b-171b-07d2" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-                <infoLink id="48ea-1ab1-45cd-fca2" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Murderous Strike (6+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="d9ae-a0b2-7977-ef03" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
-                <infoLink id="452f-d455-e81b-576b" name="Reaping Blow (X)" hidden="false" targetId="bd8c-4f52-d682-1b40" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Reaping Blow (2)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="21f8-784b-2604-3635" name="The Voice of Terra" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b2a-b4b8-d578-67a5" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa61-5293-b280-8b71" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8e95-59c7-552d-cb81" name="The Voice of Terra" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Rending (5+)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="078b-3a1b-275e-f3aa" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Rending (5+)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="5766-9e7f-fce2-c27b" name="The Auric Armour" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cf7-21a1-3c8f-d887" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="251f-97f7-ec75-708f" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="3456-123b-ea89-a9e7" name="The Auric Armour" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-                  <characteristics>
-                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Auric Armour provides Rogal Dorn with 2+ Armour Save and 4+ Invulnable Save. In addition, no attack may wound Rogal Dorn on better than a 4+ regardless of its Strength or special rules.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="c886-9952-fc5d-fe57" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bfc6-e6d9-d3a9-285d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d8d6-f4a1-2d08-fc8c" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="8d33-c123-0393-1017" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5c9c-357d-e326-4f00" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e49d-234f-1cec-f111" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="07e3-73f1-48da-7c90" name="The Auric Armour" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dc5b-8d48-f706-4b82" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8bd6-16e1-4dbd-d1df" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2a53-a28d-d85e-113f" name="The Auric Armour" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Auric Armour provides Rogal Dorn with 2+ Armour Save and 4+ Invulnable Save. In addition, no attack may wound Rogal Dorn on better than a 4+ regardless of its Strength or special rules.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0a4f-3401-3246-bda1" name="The Voice of Terra" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2271-0742-79ec-5569" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="242e-c59b-c147-ea36" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d5a4-9ed9-a03c-e726" name="The Voice of Terra" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Rending (5+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c6ca-d006-7ada-5d6a" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (5+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -4300,6 +4244,18 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
               </characteristics>
             </profile>
           </profiles>
+        </entryLink>
+        <entryLink id="5b5b-f5c0-de27-ca05" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="31a8-243f-47b0-8695" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e169-3af4-fda0-062f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="be70-b2e7-5407-ede8" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f884-3ec9-df42-0a0c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd89-cf78-f08c-0c3d" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
