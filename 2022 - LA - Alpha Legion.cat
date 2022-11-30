@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="31" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="32" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <constraints>
@@ -4440,6 +4440,65 @@
           <categoryLinks>
             <categoryLink id="d584-40d1-2dbf-3d6f" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="352d-6523-412b-c1de" name="Power Dagger" publicationId="09c5-eeae-f398-b653" page="334" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7dd-a9dd-45ab-f334" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a621-0d3b-2487-286d" name="Power Dagger" publicationId="09c5-eeae-f398-b653" page="334" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sudden Strike (1), Breaching (5+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="2dae-9910-054c-0e29" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Sudden Strike (1)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="9233-160c-6449-634c" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Breaching (5+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="75d6-3169-5ca9-992f" name="Venom Spheres" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f29c-c648-fe46-7915" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5675-3144-b504-9896" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="d1ad-e3cd-66de-25af" name="Venom Spheres" publicationId="09c5-eeae-f398-b653" page="334" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 6, Poison (3+), One Shot</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="cf44-7b88-a73f-dd2f" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+                <infoLink id="e492-ee40-d407-112b" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Poisoned (3+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="e762-1d80-a5ba-2417" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="acfe-034f-af46-0f75">
               <constraints>
@@ -4467,20 +4526,6 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82d7-349f-d38c-cdb2" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69a9-8b82-9d69-59e1" type="max"/>
               </constraints>
-            </entryLink>
-            <entryLink id="5513-2ae0-02b4-259c" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee1c-9459-2d33-e14e" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3d7-8be1-f267-4bed" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="97a3-53ee-81fd-387d" name="Power Dagger" hidden="false" collective="false" import="true" targetId="8157-b77c-0dd3-85b2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9742-01eb-0f81-5fd1" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-              </costs>
             </entryLink>
           </entryLinks>
           <costs>
