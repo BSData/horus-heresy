@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="19" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="20" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="  XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <constraints>
@@ -10,17 +10,8 @@
         <categoryLink id="9c1f-9d40-238f-fcd4" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ec0b-803f-6220-45e0" name="Fulmentarus Terminator Squad" hidden="true" collective="false" import="false" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
+    <entryLink id="ec0b-803f-6220-45e0" name="Fulmentarus Terminator Squad" hidden="false" collective="false" import="false" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
@@ -2840,16 +2831,11 @@
     <entryLink id="cb06-9ca2-1e14-74b5" name="Fulmentarus Terminator Squad" hidden="true" collective="false" import="false" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
-                  <comment>    node_id_a02c-8632-499f-827c</comment>
-                </condition>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+              <comment>    node_id_a02c-8632-499f-827c</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
