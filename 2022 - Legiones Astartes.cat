@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="83" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="78" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -675,7 +675,7 @@
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
           </characteristics>
         </profile>
@@ -3661,6 +3661,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <infoLinks>
         <infoLink id="5af3-9ace-5f52-ec8b" name="Fury of the Legion" hidden="false" targetId="56e4-5bbb-91bd-13e0" type="rule"/>
         <infoLink id="95f0-d144-1ce5-89c1" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule"/>
+        <infoLink id="f368-f1a2-c133-8dfc" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="aa72-63e4-bc60-4611" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="240b-61e9-f6cc-56fa" name="New CategoryLink" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3712,6 +3726,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="5bbd-0dd4-e27e-6539" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="35cb-31a0-80f5-3eb1" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -4060,7 +4090,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                             <condition field="selections" scope="aa72-63e4-bc60-4611" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="lessThan"/>
                           </conditions>
                         </conditionGroup>
@@ -4082,9 +4112,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
                         <condition field="selections" scope="aa72-63e4-bc60-4611" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -4985,6 +5015,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     <selectionEntry id="50ed-5869-643d-1ac5" name="Tactical Support Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="2bbb-0037-4d96-a82b" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
+        <infoLink id="4069-91b0-27ed-5ae5" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="50ed-5869-643d-1ac5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="09bf-3b6b-fba1-8fae" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -5035,6 +5079,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="9051-f8c1-94f3-45cc" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="50ed-5869-643d-1ac5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="a996-7100-5c06-3786" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -5302,18 +5362,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="77ab-efcc-c036-ca03" name="Graviton Gun" hidden="true" collective="false" import="true" targetId="5303-5a3e-de51-1707" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-              </costs>
-            </entryLink>
+            <entryLink id="77ab-efcc-c036-ca03" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry"/>
             <entryLink id="9d77-e2c1-fd75-bee9" name="Æther-Fire Blaster" hidden="false" collective="false" import="true" targetId="d078-5f42-c02b-c73d" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10.0">
@@ -5364,19 +5413,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="272a-4bbd-fefa-f0f5" name="Dragon&apos;s Breath Flamer" hidden="false" collective="false" import="true" targetId="d6c6-779a-0b83-fd15" type="selectionEntry"/>
-            <entryLink id="c281-f39a-5cc5-5943" name="Graviton Shredder" hidden="true" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="80b9-e302-660e-4ba0" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="fdf4-6e43-0b7c-ab6b" name="2) Dedicated Transport:" hidden="false" collective="false" import="true">
@@ -5845,6 +5881,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <infoLink id="ea28-4e70-3907-dd03" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
         <infoLink id="71b3-f745-2abc-2ea5" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
         <infoLink id="8ccd-e19f-4357-402d" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="c210-d390-bb4f-8423" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="70eb-e4da-8b3f-f065" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2a0a-16f7-36a7-f414" name="Skirmish:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
@@ -5973,11 +6023,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="2213-5b3c-530d-8dda" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="c9cc-1625-d868-3201" name="3) May take:" hidden="false" collective="false" import="true">
@@ -6041,7 +6086,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
@@ -6049,6 +6094,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="7fab-85fe-0859-59b8" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="70eb-e4da-8b3f-f065" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="b6d4-54a9-76cd-8b9d" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -6143,6 +6204,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="3058-cf99-5e04-f33b" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="a45a-38cc-ab78-796d" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
@@ -6159,11 +6225,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="78b7-4f0e-c018-4069" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="b916-8098-1357-753e" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
@@ -6354,6 +6415,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="08b4-0dc4-d272-47f7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="7ee1-e5c8-570a-223d" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="2b97-8ddf-b330-db12" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e11b-4170-0afd-b025" name="Sicaran Omega" hidden="false" collective="false" import="true" type="model">
@@ -6609,6 +6671,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="5fe4-5ce9-cf62-2d10" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="f060-128a-f58f-c334" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="ba27-0992-9dbc-bed0" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e229-745c-0b62-4472" name="Sicaran " hidden="false" collective="false" import="true" type="model">
@@ -8439,6 +8502,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="6d48-bea4-6fac-1463" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="9c02-a9fe-a9c9-039f" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="f345-053d-c310-3db5" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="305c-37ae-3cda-349b" name="Land Raider Spartan" hidden="false" collective="false" import="true" type="upgrade">
@@ -8689,55 +8753,61 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="03be-5d55-d05a-771d" name="Praetor" hidden="false" collective="false" import="true" type="unit">
-      <modifierGroups>
-        <modifierGroup>
-          <comment>Add Category (X)</comment>
+      <modifiers>
+        <modifier type="set" field="name" value="Warsmith">
+          <conditions>
+            <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+          <conditions>
+            <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5ef-e7a2-a480-3f5a" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="eee8-3c7c-2762-e33e">
+          <conditions>
+            <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e42-9815-97e4-3386" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="equalTo"/>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="equalTo"/>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="atLeast"/>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="atLeast"/>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="2e21-d163-837f-f06c" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
           <modifiers>
-            <modifier type="add" field="category" value="eee8-3c7c-2762-e33e">
+            <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e42-9815-97e4-3386" type="atLeast"/>
-                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="874d-6440-0698-f6e7" type="atLeast"/>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="equalTo"/>
-                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="equalTo"/>
-                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="atLeast"/>
-                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="atLeast"/>
-                    <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="add" field="category" value="9231-183c-b97b-63f9">
-              <conditions>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a5ef-e7a2-a480-3f5a" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="add" field="category" value="9055-7410-8ffd-b8e7">
-              <conditions>
-                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd55-9459-b3b3-5d20" type="equalTo"/>
-              </conditions>
             </modifier>
           </modifiers>
-        </modifierGroup>
-      </modifierGroups>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="555c-4c0c-29a0-082a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
@@ -9622,6 +9692,36 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="1b88-de1a-707d-719d" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                    <condition field="selections" scope="1b79-1951-5a63-4b9e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="68d8-f987-28d4-6b6b" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="1b79-1951-5a63-4b9e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e1e8-360b-92f0-10e3" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink id="e6ff-3685-f0a8-be34" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -9986,6 +10086,36 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="d820-f5c6-1eeb-dc02" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                    <condition field="selections" scope="3760-204e-444c-1044" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="12f4-20f8-7a32-052c" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3760-204e-444c-1044" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="9d49-2d09-dd7c-30c3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="5225-7937-685c-e9db" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -10370,6 +10500,58 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <infoLinks>
+        <infoLink id="3ea4-3d7d-ef34-f0eb" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d79-a3e4-381f-7b0f" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="name" value="Rampage (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5738-8e2a-5df9-bff1" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8e41-edce-8f29-5213" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <selectionEntries>
         <selectionEntry id="c681-938e-6d11-cd43" name="Legion Centurion" publicationId="a716-c1c4-7b26-8424" page="22" hidden="false" collective="false" import="true" type="model">
           <modifierGroups>
@@ -11713,6 +11895,34 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </infoLink>
         <infoLink id="f8ab-cf6d-9da3-5a91" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
         <infoLink id="c405-ddd9-40d3-5b72" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="9fd6-1cfb-203a-2662" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
+                    <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64e9-c749-f596-402a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d594-a6ec-c92e-a9b9" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9c7a-acc7-9230-fcc4" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -11817,6 +12027,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2920-59a3-da7f-60e0" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b92-d030-4bf5-efc5" type="min"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="3664-f70c-7a49-edd7" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="671a-c0ee-d4a0-df80" name=" Tartaros Sergeant w/Lightning Claws" hidden="false" collective="false" import="true" type="model">
               <profiles>
@@ -12402,6 +12628,34 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <modifier type="set" field="name" value="Bulky (2)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="1720-0d25-d495-f3d9" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
+                    <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64e9-c749-f596-402a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="edfd-7cab-6c6b-f72a" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="a545-688e-0342-1a55" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -12690,6 +12944,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f8f-ef73-c705-302a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="836f-f804-6fa4-3953" type="min"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="d6a4-a5cc-e899-2b4f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="1dcd-65fa-34bb-f0e9" name=" Cataphractii Sergeant w/TLC" hidden="false" collective="false" import="true" type="model">
               <profiles>
@@ -12973,6 +13243,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <infoLinks>
         <infoLink id="757d-1944-7229-0b85" name="Spite of the Legion" hidden="false" targetId="ed9b-1320-335f-aa10" type="rule"/>
         <infoLink id="3b31-08b6-4b8a-cd83" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule"/>
+        <infoLink id="c81a-639a-4f7b-ab02" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="4357-930e-165a-a6e3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="176f-2693-896f-9748" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -13019,6 +13303,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="c286-1804-9625-46ee" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="4357-930e-165a-a6e3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="2d71-0b5b-2483-5f08" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -13416,7 +13716,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
                         <condition field="selections" scope="4357-930e-165a-a6e3" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -13880,6 +14180,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="ad97-c090-fa67-696f" name="Breacher Squad" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="2deb-0905-466a-098f" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ad97-c090-fa67-696f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="ebd3-8853-ca06-24e5" name="New CategoryLink" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="d5a1-47f5-0e3c-716d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -13931,6 +14247,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="33e1-95f8-f7bd-3479" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="ad97-c090-fa67-696f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="bbac-7dbd-ca0f-863a" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -14274,7 +14606,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
                         <condition field="selections" scope="ad97-c090-fa67-696f" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7baf-18d9-aa70-9ba8" type="atLeast"/>
                       </conditions>
@@ -14694,6 +15026,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="6ca2-562a-dfaa-1587" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="b6b7-ab3c-3390-4f3f" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="632b-bdad-0bf4-de91" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="cd3f-2ee0-6c17-2a82" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
@@ -14741,6 +15074,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </infoLink>
         <infoLink id="e99b-20d4-2063-3040" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
         <infoLink id="7a21-fcdd-adae-34b8" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+        <infoLink id="6553-525b-8251-6129" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="6db7-6e88-877e-35ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="78f2-3b93-045e-9fff" name="Infantry" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -14787,6 +15134,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="611c-69f4-cfbe-139f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="6db7-6e88-877e-35ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="200c-0f43-1beb-62aa" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -15428,6 +15791,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="9e7c-6757-4ceb-6aac" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="9b10-b657-a65a-9d60" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1b9e-4e93-3914-a6e1" name="New CategoryLink" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -15642,6 +16019,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="7f05-3b24-97c0-6340" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="9b10-b657-a65a-9d60" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="f17a-52a8-4f51-87b0" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -16006,6 +16399,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <infoLink id="02d5-3877-a9dc-a549" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
         <infoLink id="9572-c1be-441e-b2ec" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="127d-d086-c0ad-7fa0" name="Retinue" hidden="false" targetId="6b79-ac44-4d89-2124" type="rule"/>
+        <infoLink id="ea1e-cedc-d4b9-536f" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="0aca-632d-1642-8af9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3e96-ebb7-ea5c-1f67" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -16774,14 +17181,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="0af3-d3cf-d22a-43b3" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="555f-3998-a06e-f415" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9156-b700-f5e8-ee51" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -16811,6 +17210,36 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="3766-ea98-0aa7-62d0" name="Centurion, Cataphractii " publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="02d9-e9f2-4187-48b8" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="615d-acbc-1dc1-5881" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3766-ea98-0aa7-62d0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="e86d-463c-30ea-0722" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="b8e8-4253-0c09-b2ef" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
@@ -17381,8 +17810,8 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="00f3-a40a-f289-9fc1" name="0) Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
-        <entryLink id="8a18-8470-ccc2-0a97" name="0) Consul Additional Wargear and Options" hidden="false" collective="false" import="true" targetId="244a-2a7c-1349-94e7" type="selectionEntryGroup"/>
+        <entryLink id="00f3-a40a-f289-9fc1" name=" Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
+        <entryLink id="8a18-8470-ccc2-0a97" name=" Consul Additional Wargear and Options" hidden="false" collective="false" import="true" targetId="244a-2a7c-1349-94e7" type="selectionEntryGroup"/>
         <entryLink id="36be-ca67-c929-4725" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca74-9d03-cb3b-82ac" type="max"/>
@@ -17404,6 +17833,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </modifiers>
         </infoLink>
         <infoLink id="00f7-b1a0-70ed-05a4" name="Retinue" hidden="false" targetId="6b79-ac44-4d89-2124" type="rule"/>
+        <infoLink id="c278-bbef-9d3b-2b9d" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="58d0-a0fd-d20b-cb1b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6815-a77d-f59b-632f" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -17677,14 +18120,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="af1b-a022-2051-7485" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="555f-3998-a06e-f415" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a62-3b4b-2a9a-4ff1" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -17711,6 +18146,34 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <infoLinks>
         <infoLink id="18b6-f65d-5d60-d317" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="297d-7e23-67dd-a0e5" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+        <infoLink id="ed87-936a-ae97-05ac" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="06cc-c559-d71e-b75e" type="equalTo"/>
+                    <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64e9-c749-f596-402a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="499b-a081-796a-8a18" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="028b-dfb1-e521-2745" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -18515,6 +18978,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40b9-286c-0414-217a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4311-d68b-789e-760c" type="max"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="3cdf-877c-9600-3bd9" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="d537-390a-01de-3e2c" name="  Veteran Sergeant w/Paired Melee Weapons" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="model">
               <profiles>
@@ -19259,6 +19738,36 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="cce5-abbc-64e5-d53a" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="415c-6834-f4d2-d967" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="3909-f00f-2e9f-3ad3" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="415c-6834-f4d2-d967" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="c071-739d-589c-3e0c" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -19568,6 +20077,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <modifier type="set" field="name" value="Precision Shots (4+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="efae-0c4e-45d3-af1c" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="58e6-f9cc-4c46-e258" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="13fc-715d-8968-5d54" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -19819,6 +20342,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="c038-81ab-8113-b71f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="58e6-f9cc-4c46-e258" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="cb22-550a-0414-5b07" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -20368,6 +20907,36 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="7288-5620-91dd-26a8" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="fc32-089e-1c59-70bd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="93f7-7d9d-139f-8f90" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="fc32-089e-1c59-70bd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="73ea-7e8d-96d7-d695" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -20945,6 +21514,36 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="f806-8a4e-d0d6-beaa" name="Centurion, Tartaros " publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="4356-7855-44b4-027f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ba78-00e6-0516-9f3a" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="cccf-e162-2ea4-885a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="1237-8d7a-91b2-1565" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -21503,7 +22102,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </constraints>
         </entryLink>
         <entryLink id="879b-f3c7-c879-e573" name=" Consul Additional Wargear and Options" hidden="false" collective="false" import="true" targetId="244a-2a7c-1349-94e7" type="selectionEntryGroup"/>
-        <entryLink id="a953-f098-cbc1-dd75" name="0) Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
+        <entryLink id="a953-f098-cbc1-dd75" name=" Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
@@ -21830,6 +22429,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="0ea3-c6cc-f348-2226" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="e0a4-78f0-9c7a-7ce1" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="531c-a95a-5884-b114" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="df85-10a0-5927-544d" name="Predator" hidden="false" collective="false" import="true" type="model">
@@ -22216,6 +22816,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="4558-d6c5-a85f-a7b9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="3564-96a9-2207-e4e4" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="5834-6bdd-da0d-1e8c" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f995-c442-9fe1-d209" name="Sicaran Arcus" publicationId="a716-c1c4-7b26-8424" page="71" hidden="false" collective="false" import="true" type="model">
@@ -22488,6 +23089,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="7a3a-cf7f-7e0f-50ec" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="aba4-1e23-a21d-5662" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="048a-2d1e-854c-c64d" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e7ca-0822-d629-6733" name="Sicaran Punisher" hidden="false" collective="false" import="true" type="model">
@@ -22855,6 +23457,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="4456-9ae8-88cc-ba12" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="0b13-a329-b6f4-2e83" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="9555-02fd-1ab1-16f6" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8c66-d5df-654f-e9e8" name="Sicaran Venator" hidden="false" collective="false" import="true" type="model">
@@ -23107,6 +23710,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="ad0e-b2d4-1566-3b4a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="a940-6e68-996d-f176" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="8cda-e93d-10a1-8cbc" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="675b-5d48-ffeb-1116" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="94f8-f071-903e-a4f9" name="2) Pintle mounted Weapon:" hidden="false" collective="false" import="true">
@@ -23352,6 +23956,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="50cb-c9fb-ba26-1fe8" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="5b25-13ef-4868-1ab7" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="a6f5-26f0-8915-dff6" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="2c9c-e3e9-d514-6fa2" name="Vindicator" hidden="false" collective="false" import="true" type="model">
@@ -23647,6 +24252,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="7c5e-2c98-9ff3-b2fa" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="51f1-7e20-8eac-f70c" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="5047-9f69-0da6-3054" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="29b7-c714-0a01-697b" name="Arquitor" hidden="false" collective="false" import="true" type="model">
@@ -23978,6 +24584,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </modifiers>
         </infoLink>
         <infoLink id="ca09-f724-2cbe-f6c1" name="Retinue" hidden="false" targetId="6b79-ac44-4d89-2124" type="rule"/>
+        <infoLink id="3a6e-5360-f369-1667" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="1b17-dcd6-0153-3efe" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2b45-00e1-5c3d-c2e5" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -24252,14 +24872,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="2632-795e-7bae-8c1b" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="555f-3998-a06e-f415" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b75b-7ccc-3a98-7b1f" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -24409,6 +25021,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="1c49-c977-5334-ba23" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="156c-ae25-48d5-1e9d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="1ef8-f347-84e3-b054" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -24458,6 +25081,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="152c-72e3-2cc2-524a" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="7f32-88bb-fc56-eb28" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -25331,6 +25965,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </infoLink>
         <infoLink id="50bc-6c09-e77a-404b" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
         <infoLink id="717a-02f1-3868-b128" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="b524-d1d4-a7ed-a15e" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="6263-c696-2f2e-c105" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6b9a-cce1-8d40-60e4" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -25459,11 +26107,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="68ab-7c27-5147-47e7" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="7d27-0ff1-6be2-050d" name="4) May take:" hidden="false" collective="false" import="true">
@@ -25550,6 +26193,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="e38e-cefc-f79d-1ac3" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="6263-c696-2f2e-c105" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="f19e-a74c-d86c-6ff1" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -25720,11 +26379,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </costs>
                 </entryLink>
                 <entryLink id="7390-a157-57e0-a733" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="c220-dd0c-aa8e-5e2e" name="Alchem Pistol" hidden="false" collective="false" import="true" targetId="1899-9e9e-76dd-a7ba" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
@@ -26069,7 +26723,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1412-8efa-2452-8bc5" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="29bc-6a15-b80d-6d8a" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="e9ed-77d3-3a0a-fa60" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e6da-2d8a-93c6-16fc" name="Proteus Land Speeder" publicationId="a716-c1c4-7b26-8424" page="61" hidden="false" collective="false" import="true" type="model">
@@ -26101,9 +26755,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="04bb-9232-6cae-47f2" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
-          </categoryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="f24c-7b68-d78c-11e2" name="1) Heavy Bolter Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="e8ee-9957-bb72-3155">
               <constraints>
@@ -26341,6 +26992,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="75e1-504c-336a-7c0a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="f730-f34b-420b-afc6" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
+        <categoryLink id="8ef0-7732-fff5-e13f" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f498-772c-158e-206f" name="Javelin Land Speeder" hidden="false" collective="false" import="true" type="model">
@@ -26565,6 +27217,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="86d3-3093-9f34-edee" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="1dad-6367-e309-77a9" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="231f-c5b1-772c-28da" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8547-be6e-bfb0-60b3" name="Cerberus" hidden="false" collective="false" import="true" type="model">
@@ -26906,6 +27559,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="fe38-80b1-1c38-1590" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="85a4-3c3e-2fc2-7234" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="d7ce-752a-8d1a-f07f" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f16c-c9da-4006-35ae" name="Typhon" hidden="false" collective="false" import="true" type="model">
@@ -27217,6 +27871,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="704b-3891-a51f-3057" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="ae99-700e-db56-fc27" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="7852-636a-6edc-9978" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="f397-32c7-924c-cd7a" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="43d4-8f65-a666-b6e3" name="May take:" hidden="false" collective="false" import="true">
@@ -27670,6 +28325,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="37db-48a6-d42c-3fc0" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2dbd-13c2-ed9e-c395" name="1) Hull Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="f831-4ab5-a7ea-f1d5">
           <constraints>
@@ -27979,6 +28637,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="88d9-9034-d534-b855" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="fd9e-c13c-b241-9b51" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="231c-19d1-0097-c872" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="7484-32e3-bcae-500d" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="c830-8055-5fad-7768" name="1) Turret Mounted Equipment" hidden="false" collective="false" import="true" defaultSelectionEntryId="17eb-0577-023d-3735">
@@ -28014,7 +28673,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -28024,6 +28683,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b894-9616-39e0-85ff" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f68f-b4a2-259c-e06a" type="min"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="fcf4-e0d4-ae5b-16b1" name="Blessed Auto-simulacra" hidden="true" collective="false" import="true" targetId="dc49-518b-0f77-5e3e" type="selectionEntry">
               <modifiers>
@@ -28155,6 +28817,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="3f32-f85a-9a93-cf46" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="f2ce-ce8c-5b2a-e655" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="494f-55cb-75d9-3608" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="3df5-d40e-965f-c143" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3f48-e7eb-114c-a774" name="4) May take:" hidden="false" collective="false" import="true">
@@ -28612,6 +29275,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="4346-61f7-6ddb-7db4" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="0163-3f12-80b9-2221" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="eb3d-4f92-8ccb-b662" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="e2d2-500e-9886-f99a" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="985f-caea-1e37-8ac2" name="May take:" hidden="false" collective="false" import="true">
@@ -28858,6 +29522,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="c823-b87e-dfcc-925b" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="8775-c7f6-d071-55c9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="50f0-29ce-cbb3-cc6b" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="e097-5c31-84dd-dc26" name="1) Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d6b-4a72-62ea-1317">
@@ -29352,14 +30017,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </entryLink>
-            <entryLink id="a5de-b664-ba1d-5f15" name="Dark Channeling" hidden="false" collective="false" import="true" targetId="555f-3998-a06e-f415" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e59a-ea9a-fbc3-2370" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
-              </costs>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -29388,7 +30045,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <modifier type="set" field="name" value="Bulky (2)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="c4c0-ddb6-6c5a-f668" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="4036-b363-6d45-9825" name="Hexagrammatic Wards" hidden="false" targetId="5529-bb7a-9448-b1f5" type="rule"/>
         <infoLink id="dd5d-2288-860f-a001" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule">
           <modifiers>
@@ -29398,6 +30054,29 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <conditions>
                     <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" type="notInstanceOf"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c3a-f99e-4226-e519" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="40fc-5176-b7f6-3ff3" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="954d-cf8e-eefd-27a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="19a8-0f4a-9581-9b3e" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="954d-cf8e-eefd-27a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -30079,11 +30758,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="e157-a5a6-4384-f3dd" name="Alchem Cannon" hidden="false" collective="false" import="true" targetId="4f69-44d0-3b45-13e4" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -30173,6 +30847,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="65bd-3197-ef6e-7c7a" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b6c0-167e-21e2-2f1a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -30259,6 +30947,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24fb-b372-3e93-02b3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c40-2696-d313-ced4" type="min"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="0246-efe9-215c-0e71" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="5a9a-e44d-ddcd-463b" name=" Indomitus Sergeant w/Lightning Claws" hidden="false" collective="false" import="true" type="model">
               <profiles>
@@ -30686,7 +31390,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="071c-4152-16e2-28e7" name="Proteus Assault Cannon" hidden="false" collective="false" import="true" targetId="da1a-85ed-813f-829a" type="selectionEntry">
+                    <entryLink id="071c-4152-16e2-28e7" name="Proteus assault cannon" hidden="false" collective="false" import="true" targetId="da1a-85ed-813f-829a" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                       </costs>
@@ -30915,7 +31619,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Rending (6+)</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault, Rending (6+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -31018,6 +31722,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="2112-2112-a19d-f2d6" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="a76e-4fd1-1ba3-6a0e" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="5b5f-51be-0c7c-12b6" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="03fc-218a-dcf7-16aa" name="Scorpius" hidden="false" collective="false" import="true" type="model">
@@ -31305,6 +32010,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="ba88-571f-1c64-4f5b" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="affe-01d1-4cc5-8aa7" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="c9ae-ce2f-c719-79bb" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9194-dfad-b0fd-66b3" name="Kratos" hidden="false" collective="false" import="true" type="model">
@@ -31906,6 +32612,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="7f67-e0ca-2b9d-4b1c" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false"/>
         <categoryLink id="5d80-eb88-5146-595d" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="3d06-f7a7-200e-832c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="53a5-00c9-9deb-3e6e" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="386b-3c90-c349-97d8" name="Deathstorm Drop Pod" hidden="false" collective="false" import="true" type="model">
@@ -32166,6 +32873,20 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
           </modifiers>
         </infoLink>
         <infoLink id="3ad4-12b0-97c0-d07a" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="0fe2-30b1-6051-5a50" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="4d72-1cc1-8bee-aa88" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="995e-aa85-478b-de47" name="Skirmish:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
@@ -32640,6 +33361,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="12f4-8864-ab57-f9f9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="c519-b6ff-7f40-4d69" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="7f7a-19de-90a2-4c95" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="75f9-a24b-f266-a211" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="0bf0-559f-72b9-cfa9" name="4) May take:" hidden="false" collective="false" import="true">
@@ -32883,6 +33605,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="46f1-e90b-bf1d-882c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="5f4a-4ffd-a8a7-2c3e" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="9823-f559-b33c-66e6" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="ace5-a00d-df91-b3d9" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="123c-539a-dca4-5fb2" name="May take:" hidden="false" collective="false" import="true">
@@ -33144,6 +33867,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="6730-3426-65c4-b313" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="2c58-a573-56d4-ec73" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="d6e3-8a15-0d26-6d93" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="2686-8483-fb1a-2121" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6534-8d4a-6593-2806" name="May take:" hidden="false" collective="false" import="true">
@@ -33343,6 +34067,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="3218-f8aa-2242-3c25" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="40ad-88a5-9830-de8c" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="b90d-8751-2096-6845" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="c33b-0f64-591b-e74d" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="baa5-fc7e-f925-4a5d" name="May take:" hidden="false" collective="false" import="true">
@@ -33557,6 +34282,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="0051-5fd8-4005-30c2" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="cb74-1081-9d7d-ec9c" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="c703-dfd8-1371-b64a" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="b858-7d6f-e590-750d" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="00c0-3a7c-15d7-3788" name="May take:" hidden="false" collective="false" import="true">
@@ -33791,6 +34517,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="5907-22d5-cb57-2222" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="1bfc-4442-f18b-c57b" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="f3aa-c912-cb85-0629" name="Bombard Sub-type:" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
+        <categoryLink id="21af-762e-0804-657d" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b4f4-a12a-e7da-3341" name="Pintle mounted Weapon Options" hidden="false" collective="false" import="true">
@@ -33961,6 +34688,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="22a2-27bf-4393-a373" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="5a1c-be86-80f6-e75a" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="3f93-8cb4-0e5b-5212" name="Bombard Sub-type:" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
+        <categoryLink id="37bb-eb25-fd63-e2bd" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8284-84eb-0766-e52a" name="Medusa" hidden="false" collective="false" import="true" type="model">
@@ -34253,6 +34981,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <categoryLink id="94ed-969e-a5ce-0329" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="0644-2894-5f41-865b" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="3f81-0762-9f6e-ad96" name="Bombard Sub-type:" hidden="false" targetId="d5df-57ac-8f3c-097b" primary="false"/>
+        <categoryLink id="a79f-6a84-e1b9-18dc" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="22ac-4249-fe05-dbab" name="Basilisk" hidden="false" collective="false" import="true" type="model">
@@ -35265,6 +35994,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
       <categoryLinks>
         <categoryLink id="b053-4b8e-8514-cb3f" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="c478-ab4e-1a65-2daa" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="0341-3587-73d9-7221" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8bf3-9b8d-578a-38f1" name="Land Raider Phobos " hidden="false" collective="false" import="true" type="model">
@@ -35536,6 +36266,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
       <categoryLinks>
         <categoryLink id="29c9-1260-337f-9318" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="7cbe-d959-214a-a663" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="5c39-f06f-8bec-b6b4" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b0f8-6c2c-125d-8805" name="Land Raider Achilles" hidden="false" collective="false" import="true" type="model">
@@ -35915,6 +36646,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
       <categoryLinks>
         <categoryLink id="4740-ca67-2937-0722" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="901e-f757-8434-fc68" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="3155-1fb6-65d6-0cae" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e41f-865b-9859-5eea" name="Macharius Heavy Tank" hidden="false" collective="false" import="true" type="model">
@@ -36233,6 +36965,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
       <categoryLinks>
         <categoryLink id="ddec-50ef-3b4b-2ecc" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="21f1-ca40-79ab-4374" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="afe3-0645-e825-73a3" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9b42-399b-151e-1aba" name="Minotaur" hidden="false" collective="false" import="true" type="model">
@@ -36380,6 +37113,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
       <categoryLinks>
         <categoryLink id="bd2a-3b6a-6bc2-faf2" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="0fbb-025e-4fde-5df9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="a3e0-87e9-eb60-ce51" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5477-cc2b-ef70-878d" name="Malcador Assault Tank" hidden="false" collective="false" import="true" type="model">
@@ -36711,6 +37445,20 @@ containing the model that failed its Check. If the Psyker survives Perils of the
           </modifiers>
         </infoLink>
         <infoLink id="bec7-e716-1ef5-7f0f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="dd0a-4bc9-0f77-4fb6" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="96a4-abb8-aa87-c97a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -38267,6 +39015,22 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="a8e9-70e1-b8bc-8ee2" name="Assault Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <infoLinks>
+        <infoLink id="03a1-3d16-fbe9-303c" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="c3d3-52b0-def7-592d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="b857-6717-ae82-50fc" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -38313,6 +39077,22 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="daa3-6607-feba-76ff" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a4d-26dd-c703-2723" type="equalTo"/>
+                        <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d37-e793-bc77-37de" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="d5d1-9ec0-5b7b-ca10" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -39049,6 +39829,35 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="7355-8bf2-5f89-1539" name="3) Dedicated Transport:" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9085-2cd1-45c0-816f" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="255b-8fe6-8057-547f" name="Land Raider Spartan" hidden="true" collective="false" import="true" targetId="bac1-f30e-2c04-d27d" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
+                        <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6650-b0cd-fb32-b405" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="dd5b-63e6-9d22-52da" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
@@ -39115,6 +39924,20 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           </modifiers>
         </infoLink>
         <infoLink id="6354-bae4-5600-0cac" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="3e90-5151-f500-d1a3" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="dbd4-930e-e003-9449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ce73-ce2e-305f-269d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -41437,6 +42260,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <infoLinks>
         <infoLink id="afde-172b-93dd-3f84" name="Volatile Plasma Containment" hidden="false" targetId="564b-25f0-6bae-949e" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="958f-9aee-c4b0-c024" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ba7f-1983-eb26-3761" name="Omega-pattern Plasma Blastgun" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -41571,6 +42397,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="405f-176a-b0b0-fa44" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="584c-1391-dc26-2454" name="3) May take:" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -41796,6 +42625,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           </characteristics>
         </profile>
       </profiles>
+      <categoryLinks>
+        <categoryLink id="b0ed-0528-455b-f1fc" name="Non-Flying/Fast/Skimmer Vehicle" hidden="false" targetId="6d0b-fe0e-911e-486f" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="597b-12c7-3a14-cf77" name="Praetor Launcher" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -44228,7 +45060,7 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
             </modifier>
           </modifiers>
           <entryLinks>
-            <entryLink id="dd82-61d5-165c-b8ce" name="Psychic Discipline: Diabolism" hidden="false" collective="false" import="true" targetId="cc56-0599-fe21-9352" type="selectionEntry">
+            <entryLink id="dd82-61d5-165c-b8ce" name="Psychic Discipline: Diabolism" hidden="true" collective="false" import="true" targetId="cc56-0599-fe21-9352" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e63-f0d1-ca74-cc1f" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a780-cb6f-45f1-b563" type="max"/>
@@ -44763,15 +45595,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="1817-1a25-72ab-6fc9" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo"/>
-              </conditions>
-            </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1817-1a25-72ab-6fc9" type="min"/>
-          </constraints>
           <rules>
             <rule id="428f-b139-bec4-f9dc" name="Art of Destruction" hidden="false">
               <description>At the start of each Shooting phase, the controlling player may nominate one friendly unit with at least one model within 6&quot; of a model with this special rule. That unit gains the benefits of the Sunder special rule for the duration of that Shooting phase.</description>
@@ -45605,6 +46429,11 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4f07-3d45-4f28-a0c6" type="instanceOf"/>
+              </conditions>
             </modifier>
           </modifiers>
           <costs>
