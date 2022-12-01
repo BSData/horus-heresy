@@ -3706,8 +3706,8 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             </selectionEntryGroup>
             <selectionEntryGroup id="bc4a-9998-2da4-e061" name="Auxilia" hidden="false" collective="false" import="true" defaultSelectionEntryId="516d-d14f-b11d-2879">
               <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c818-7f8c-68a2-984c" type="min"/>
-                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e3-2bed-a77c-30f1" type="max"/>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c818-7f8c-68a2-984c" type="min"/>
+                <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e3-2bed-a77c-30f1" type="max"/>
               </constraints>
               <selectionEntries>
                 <selectionEntry id="516d-d14f-b11d-2879" name="Auxilia w/ Lasrifle" hidden="false" collective="false" import="true" type="model">
@@ -3770,6 +3770,37 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="0a6f-a9be-407d-b4f0" name="One Auxilia in the unit may be upgraded to have a:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="e7c4-9dc7-527e-811f" name="Auxilia Vexilla" hidden="false" collective="false" import="true" targetId="6f5a-bf56-4bee-ce7e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="a2dc-46c7-3f68-2154" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf3e-d798-0db3-b36a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50f9-219b-3255-5283" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="83bf-6ffa-2aca-bfbd" name="Vox Interlock" hidden="false" collective="false" import="true" targetId="c04e-5624-3615-0660" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089e-9606-151f-eff5" type="max"/>
+                    <constraint field="selections" scope="a2dc-46c7-3f68-2154" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea4f-6281-23b6-fd16" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0b4c-0ada-7d96-c034" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d925-4613-1d80-80dd" type="max"/>
+                    <constraint field="selections" scope="a2dc-46c7-3f68-2154" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b24c-cd32-66b8-22aa" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="3c1b-c6fa-5ea9-0af2" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
@@ -3792,7 +3823,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
