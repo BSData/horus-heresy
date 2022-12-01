@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -2836,7 +2836,7 @@
         <categoryLink id="1258-612f-3f75-322b" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e0ba-94e5-40ba-18cb" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="false" targetId="7669-a6c0-7f86-e641" type="selectionEntry">
+    <entryLink id="e0ba-94e5-40ba-18cb" name="Deathshroud Terminator Squad" hidden="true" collective="false" import="false" targetId="7669-a6c0-7f86-e641" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <comment>    node_id_eafb-5453-4dd9-8623</comment>
@@ -2882,6 +2882,28 @@
       <categoryLinks>
         <categoryLink id="a5c8-4462-8eaf-066d" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="09f2-2f60-0ef0-8d53" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="41d3-ceb3-3c3d-ba0c" name="Grave Warden Terminator Squad" hidden="true" collective="false" import="true" targetId="be32-77c9-fe55-7dc0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_eafb-5453-4dd9-8623</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>    node_id_41ad-3585-4031-9b76</comment>
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c876-68e5-5812-a06c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7361-2367-91dc-1b00" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="95d3-d0a0-d05d-c4b5" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
