@@ -4221,6 +4221,212 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="26e0-55ec-051b-d209" name="Auxilia Armored Tercio" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="d10d-00fa-2cd1-05f0" name="Armoured Command Section" hidden="false" collective="false" import="true" type="unit">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2228-e076-1b62-1a7c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d78a-46f7-caf5-8e8d" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
+            <infoLink id="5c29-5350-e733-08c3" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="e3ab-e60f-111e-82db" name="Leman Russ Command Tank" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69d3-0c8b-9fc0-1dd6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f07b-4a23-f9cb-28a8" name="Leman Russ Command Tank" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+                    <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="04d6-e099-7f49-8f14" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="676f-5cfb-dcf1-e767" name="1) May exchange its Hull (Front) Mounted heavy bolter for one of the following:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="0110-928c-0418-79a2" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
+                    <entryLink id="e3a3-93c1-7e4c-5522" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                    <entryLink id="389d-ce27-b201-ab1b" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                    <entryLink id="a149-f7e0-62ec-7ea0" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="2c55-ed94-7a0e-656e" name="2) May take one of the following:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="eae4-b353-76bb-3412" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                    <entryLink id="9ede-fdd1-0bee-701c" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
+                    <entryLink id="6973-671f-f300-2a09" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="efa4-b5f5-3816-a74f" name="3) May take any of the following:" hidden="false" collective="false" import="true">
+                  <entryLinks>
+                    <entryLink id="54b6-8f05-b521-50e1" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry"/>
+                    <entryLink id="5751-829e-e516-13c4" name="Cognis-Signum" hidden="false" collective="false" import="true" targetId="93b3-2d66-f7a3-be42" type="selectionEntry"/>
+                    <entryLink id="2f94-5bfd-339f-5c9d" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry"/>
+                    <entryLink id="f5b9-e62b-4780-7a6a" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="71a6-0d11-df4d-e41c" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+                <entryLink id="8038-ae15-b435-5732" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="7638-4f76-51f0-b0fa" type="selectionEntry"/>
+                <entryLink id="a919-658b-bb57-68e8" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry"/>
+                <entryLink id="f872-46cb-7a3d-d744" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+        <selectionEntry id="d439-f93b-1d60-42da" name="Leman Russ Strike Squadron" hidden="false" collective="false" import="true" type="unit">
+          <infoLinks>
+            <infoLink id="8396-c201-ca99-08e4" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
+            <infoLink id="987b-17f1-483b-91b8" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="306e-6a9b-6c95-66ad" name="Leman Russ Battle Tank" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b29-a77c-61fb-5b81" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72ff-4be5-fe1f-2b8e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6e6a-d6a8-be1c-889a" name="Leman Russ Battle Tank" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+                    <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="f014-0dba-8fd5-94a2" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="7638-4f76-51f0-b0fa" type="selectionEntry"/>
+                <entryLink id="df82-78b7-7570-f22c" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+                <entryLink id="c336-4568-ad25-ba18" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry"/>
+                <entryLink id="a29a-7a9e-b991-9a78" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8139-7543-c930-3ac4" name="1) All models may exchange their Turret Mounted Battlecannon for one of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="1c63-e64c-22da-941b" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry"/>
+                <entryLink id="7dbf-d668-ffd8-c25f" name="Gravis Autocannon" hidden="false" collective="false" import="true" targetId="8a23-e57d-b4a8-14a9" type="selectionEntry"/>
+                <entryLink id="1893-9493-fc42-2cd0" name="Vanquisher Battle Cannon" hidden="false" collective="false" import="true" targetId="196c-cb26-f3e0-e0db" type="selectionEntry"/>
+                <entryLink id="ccf0-a4ea-be26-b4d8" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="3cde-ec9c-4dbd-9952" name="2) Any model may exchange their Hull (Front) Mounted heavy bolter for one of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="9bc9-f54a-b970-ad34" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
+                <entryLink id="e3d1-f0c3-1f5e-532c" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="a9e6-825d-c626-b9cd" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                <entryLink id="88bc-4927-49e9-6641" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f954-4816-6964-7ea9" name="3) Any model may take one of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="2351-2fc9-431d-839b" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="7fd9-9056-e77c-913e" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
+                <entryLink id="3a6a-ecd8-a2e1-3b25" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="51ca-c720-c186-da39" name="4) Any model may take one of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="924d-b461-b2da-8f7b" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry"/>
+                <entryLink id="39cf-3b6e-90fa-7d86" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry id="fee7-5770-a671-02b9" name="Leman Russ Assault Squadron" hidden="false" collective="false" import="true" type="unit">
+          <infoLinks>
+            <infoLink id="623e-d6e9-4458-5553" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
+            <infoLink id="3266-fc7c-b28b-4e16" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="3e49-6ab6-5e5c-66d8" name="Leman Russ Battle Tank" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d7-cd19-087e-2730" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6e8-8b41-7934-0e6a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="78d0-17dc-982b-8ed1" name="Leman Russ Battle Tank" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
+                    <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink id="ebd8-e7c3-4b0d-947d" name="Demolisher Cannon" hidden="false" collective="false" import="true" targetId="1d4a-05a3-1589-915d" type="selectionEntry"/>
+                <entryLink id="c50a-3986-0086-a6ac" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+                <entryLink id="b343-de0e-b0c2-b313" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry"/>
+                <entryLink id="211e-e7d6-2445-1819" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f10c-83d5-29bc-29c1" name="1) All models may exchange their Turret Demolisher Battlecannon for one of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="18bf-940c-cfe2-6896" name="Volkite Macro-Saker" hidden="false" collective="false" import="true" targetId="ff4d-6e1b-7b44-9b72" type="selectionEntry"/>
+                <entryLink id="61f6-01e2-8a84-658a" name="Executioner Plasma Destroyer" hidden="false" collective="false" import="true" targetId="a25f-20f6-e0d7-7348" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6d61-4c18-ab13-08b2" name="2) Any model may exchange their Hull (Front) Mounted heavy bolter for one of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="8027-39a1-3151-4aec" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
+                <entryLink id="c7f2-a925-a97d-60f7" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="99db-88a4-5b24-dd6b" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                <entryLink id="4142-5db2-ff44-ab01" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="96ae-8104-3075-0d62" name="3) Any model may take one of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="47fb-9f79-f2fb-a6cf" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="bd7f-7613-4965-82d2" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
+                <entryLink id="3461-843e-eb17-b844" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0a2d-bc96-cc55-b54f" name="4) Any model may take one of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="f23d-3801-de6d-b92b" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry"/>
+                <entryLink id="57a8-05e2-d96b-475f" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry id="c00e-2ae8-1577-d77d" name="Auxilia Artillery Tercio" hidden="false" collective="false" import="true" type="unit"/>
+    <selectionEntry id="7040-cbf9-ae05-d34f" name="Malcador Heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit"/>
+    <selectionEntry id="c020-7685-ddf4-a10a" name="Auxilia Armoured Battery" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="087d-b4d7-7770-7c07" name="Valdor Tank Destroyer Squadron" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="2f8d-70ea-fbb2-53e2" name="Cyclops Demolition Section" hidden="false" collective="false" import="true" type="unit"/>
+    <selectionEntry id="b0a8-0f45-9999-b893" name="Malcador Infernus Squadron" hidden="false" collective="false" import="true" type="unit"/>
+    <selectionEntry id="19c9-f8e8-edff-fa8e" name="Stormhammer" hidden="false" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9da6-635b-fa1d-2c2b" name="Cohort Doctrines (Work in Progress)" hidden="false" collective="false" import="true">
