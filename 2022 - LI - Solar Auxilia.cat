@@ -4314,6 +4314,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <selectionEntryGroup id="676f-5cfb-dcf1-e767" name="1) May exchange its Hull (Front) Mounted heavy bolter for one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="cf0d-ccdd-c720-5fb0">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9807-0970-8ead-41b2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a1-1eff-3038-a450" type="min"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="0110-928c-0418-79a2" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
@@ -5107,10 +5108,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <repeat field="selections" scope="bd6a-64a4-9d97-09b5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b755-ef7f-10ba-abcb" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
+                    <modifier type="decrement" field="fb59-bdd3-43b2-0ba0" value="2.0"/>
+                    <modifier type="decrement" field="bf3a-fbb7-73aa-8eb8" value="2.0"/>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb59-bdd3-43b2-0ba0" type="min"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf3a-fbb7-73aa-8eb8" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb59-bdd3-43b2-0ba0" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf3a-fbb7-73aa-8eb8" type="max"/>
                   </constraints>
                   <categoryLinks>
                     <categoryLink id="5e86-e065-dd67-291e" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -5802,10 +5805,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <repeat field="selections" scope="2f8d-70ea-fbb2-53e2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="714a-f792-d6ac-0629" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="067b-8ebc-f848-1ef4" value="1.0"/>
+            <modifier type="decrement" field="08d4-7bbd-ae90-d332" value="1.0"/>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="067b-8ebc-f848-1ef4" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d4-7bbd-ae90-d332" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="067b-8ebc-f848-1ef4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d4-7bbd-ae90-d332" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="1b4c-a3d5-b6b7-ffc2" name="Auxilia Operator" hidden="false" collective="true" import="true" type="model">
