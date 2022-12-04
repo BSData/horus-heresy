@@ -4312,7 +4312,11 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <entryLink id="0110-928c-0418-79a2" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
                     <entryLink id="e3a3-93c1-7e4c-5522" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
                     <entryLink id="389d-ce27-b201-ab1b" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
-                    <entryLink id="a149-f7e0-62ec-7ea0" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                    <entryLink id="a149-f7e0-62ec-7ea0" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
                     <entryLink id="cf0d-ccdd-c720-5fb0" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -4321,9 +4325,21 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d578-8c46-7c99-285c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="eae4-b353-76bb-3412" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                    <entryLink id="9ede-fdd1-0bee-701c" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
-                    <entryLink id="6973-671f-f300-2a09" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                    <entryLink id="eae4-b353-76bb-3412" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="9ede-fdd1-0bee-701c" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="6973-671f-f300-2a09" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="efa4-b5f5-3816-a74f" name="3) May take any of the following:" hidden="false" collective="false" import="true">
@@ -4332,21 +4348,33 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edaf-8079-3a3c-a8c9" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="5751-829e-e516-13c4" name="Cognis-Signum" hidden="false" collective="false" import="true" targetId="93b3-2d66-f7a3-be42" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e1-e222-23db-ff00" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="2f94-5bfd-339f-5c9d" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="655c-f224-bd5c-c595" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="f5b9-e62b-4780-7a6a" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6590-9e7b-b2e7-69c5" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -4377,7 +4405,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4418,7 +4446,11 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <entryLink id="efb9-766b-71c9-ff55" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
                     <entryLink id="a193-dfd5-41ee-17a2" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
                     <entryLink id="bebe-6b0f-a3a7-2609" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
-                    <entryLink id="c54e-0dfd-d196-441a" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                    <entryLink id="c54e-0dfd-d196-441a" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
                     <entryLink id="a28c-0590-7fbd-b76f" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -4434,9 +4466,21 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b16-8f53-f70e-5f76" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="948c-8da6-3c09-e4d8" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                    <entryLink id="41fe-22aa-b68e-3f12" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
-                    <entryLink id="6354-d4ab-7fd8-5edd" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                    <entryLink id="948c-8da6-3c09-e4d8" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="41fe-22aa-b68e-3f12" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="6354-d4ab-7fd8-5edd" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="59b1-0e83-6213-0194" name="4) Any model may take any of the following:" hidden="false" collective="false" import="true">
@@ -4452,6 +4496,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                       <constraints>
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cdf-643e-6768-3f9a" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="f262-366c-b6ee-7dc1" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                       <modifiers>
@@ -4464,6 +4511,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                       <constraints>
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b59d-fd0d-0166-1a2d" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -4504,7 +4554,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         </entryLink>
                       </entryLinks>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -4522,7 +4572,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3fce-bf1a-6369-a386" name="Leman Russ Strike Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -4556,7 +4606,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         </entryLink>
                       </entryLinks>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -4603,7 +4653,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         </entryLink>
                       </entryLinks>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -4629,7 +4679,11 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <entryLink id="891b-afb6-90e8-de53" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
                     <entryLink id="bce8-f470-d2ac-80b7" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
                     <entryLink id="a754-d205-78b7-3dc1" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
-                    <entryLink id="9540-bf9b-20b1-99f4" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                    <entryLink id="9540-bf9b-20b1-99f4" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
                     <entryLink id="5e3b-9f3e-c735-2a69" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -4645,9 +4699,21 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a9-bac8-228c-c1bf" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="ff49-ba9a-ed86-e2ce" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                    <entryLink id="cb25-cc79-84ec-81cd" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
-                    <entryLink id="78b2-5448-c3f0-6671" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                    <entryLink id="ff49-ba9a-ed86-e2ce" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="cb25-cc79-84ec-81cd" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="78b2-5448-c3f0-6671" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="434a-68ea-30a9-6229" name="4) Any model may take any of the following:" hidden="false" collective="false" import="true">
@@ -4663,6 +4729,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                       <constraints>
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d5f-dd10-821b-1fd0" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="f23b-dba2-40e2-ca00" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                       <modifiers>
@@ -4675,20 +4744,20 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                       <constraints>
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b22-d496-66c9-ad85" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="c00e-2ae8-1577-d77d" name="Auxilia Artillery Tercio" hidden="false" collective="false" import="true" type="unit">
       <selectionEntries>
@@ -4924,9 +4993,37 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="0165-4ed7-dc4e-fbf9" name="One Auxilia Veteran in the unit may be upgraded to have a:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="bf14-4926-cdeb-582d" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89dc-88ab-4a26-57da" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5267-54bd-cc99-31ba" name="Auxilia Vexilla" hidden="false" collective="false" import="true" targetId="6f5a-bf56-4bee-ce7e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7089-a04e-6ffe-133a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="525d-5802-e4d3-6eea" name="Command Vox" hidden="false" collective="false" import="true" targetId="7ac4-c39b-5c48-63cb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e35f-f9e8-1a1a-f868" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4976,7 +5073,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <categoryLink id="5d2c-f8d4-8cba-dccc" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
                       </categoryLinks>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -5037,14 +5134,57 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </constraints>
                   <entryLinks>
                     <entryLink id="1541-9d71-0df0-6a9d" name="Gravis Heavy Bolter Battery" hidden="false" collective="false" import="true" targetId="a160-9267-67ac-4546" type="selectionEntry"/>
-                    <entryLink id="2f1f-7f66-9f51-16a4" name="Laser Destroyer" hidden="false" collective="false" import="true" targetId="5534-6388-c8bb-945f" type="selectionEntry"/>
-                    <entryLink id="aab7-9100-081c-19bd" name="Quad Launcher - Frag" hidden="false" collective="false" import="true" targetId="333a-6c28-1031-9134" type="selectionEntry"/>
+                    <entryLink id="2f1f-7f66-9f51-16a4" name="Laser Destroyer" hidden="false" collective="false" import="true" targetId="5534-6388-c8bb-945f" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="25.0">
+                          <repeats>
+                            <repeat field="selections" scope="bd6a-64a4-9d97-09b5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a0-80f4-8c54-79d5" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink id="aab7-9100-081c-19bd" name="Quad Launcher - Frag" hidden="false" collective="false" import="true" targetId="333a-6c28-1031-9134" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
+                          <repeats>
+                            <repeat field="selections" scope="bd6a-64a4-9d97-09b5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a0-80f4-8c54-79d5" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                      </costs>
+                    </entryLink>
                     <entryLink id="2c43-6d56-dc4a-964e" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
                       <comment>Placeholder -- need to add Gravis Multi-Laser entry?</comment>
                     </entryLink>
-                    <entryLink id="9904-5f4f-cbc0-de46" name="Quad Launcher - Incendiary" hidden="false" collective="false" import="true" targetId="8ff6-2222-75b5-ecf7" type="selectionEntry"/>
-                    <entryLink id="ccaa-75d8-1367-2106" name="Quad Launcher - Shatter" hidden="false" collective="false" import="true" targetId="adb6-7963-11bd-e72b" type="selectionEntry"/>
-                    <entryLink id="d06f-4806-6480-6b33" name="Quad Launcher - Splinter" hidden="false" collective="false" import="true" targetId="f7cc-7f11-f82f-1fdf" type="selectionEntry"/>
+                    <entryLink id="9904-5f4f-cbc0-de46" name="Quad Launcher - Incendiary" hidden="false" collective="false" import="true" targetId="8ff6-2222-75b5-ecf7" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="25.0">
+                          <repeats>
+                            <repeat field="selections" scope="bd6a-64a4-9d97-09b5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a0-80f4-8c54-79d5" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink id="ccaa-75d8-1367-2106" name="Quad Launcher - Shatter" hidden="false" collective="false" import="true" targetId="adb6-7963-11bd-e72b" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="40.0">
+                          <repeats>
+                            <repeat field="selections" scope="bd6a-64a4-9d97-09b5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a0-80f4-8c54-79d5" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink id="d06f-4806-6480-6b33" name="Quad Launcher - Splinter" hidden="false" collective="false" import="true" targetId="f7cc-7f11-f82f-1fdf" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="30.0">
+                          <repeats>
+                            <repeat field="selections" scope="bd6a-64a4-9d97-09b5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="47a0-80f4-8c54-79d5" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5062,7 +5202,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <categoryLink id="f78d-8e0b-f4aa-01ea" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="53a6-5d26-7919-9f03" name="Tarantula Sentry Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="842b-6431-73ff-45a2">
+                <selectionEntryGroup id="53a6-5d26-7919-9f03" name="Tarantula Sentry Guns" hidden="false" collective="false" import="true" defaultSelectionEntryId="842b-6431-73ff-45a2">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="716c-b3a9-56a2-27b2" type="min"/>
                     <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a5-7d3a-7f67-7fbc" type="max"/>
@@ -5087,7 +5227,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         </profile>
                       </profiles>
                       <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -5099,9 +5239,24 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </constraints>
                   <entryLinks>
                     <entryLink id="5af5-68c5-61df-0233" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-                    <entryLink id="9e6a-1252-5f90-ed22" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                    <entryLink id="9e6a-1252-5f90-ed22" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
+                          <repeats>
+                            <repeat field="selections" scope="815e-67dd-77e7-9cf4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53a6-5d26-7919-9f03" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                     <entryLink id="48b9-bf18-32f7-c541" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="0ec3-6c91-952c-e0ea" type="selectionEntry">
                       <comment>Placeholder -- Need to add profile for Hyperios Missile Launcher?</comment>
+                      <modifiers>
+                        <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5.0">
+                          <repeats>
+                            <repeat field="selections" scope="815e-67dd-77e7-9cf4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53a6-5d26-7919-9f03" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -5111,18 +5266,21 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a7-3869-b36b-a46e" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="a0e9-8ed3-beb2-972e" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e33-1f10-b9ff-b246" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5164,8 +5322,16 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </constraints>
               <entryLinks>
                 <entryLink id="75b6-40fb-7a3e-7338" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="7638-4f76-51f0-b0fa" type="selectionEntry"/>
-                <entryLink id="c91f-7c64-7365-ced7" name="Vanquisher Battle Cannon" hidden="false" collective="false" import="true" targetId="196c-cb26-f3e0-e0db" type="selectionEntry"/>
-                <entryLink id="3388-068b-9209-4592" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry"/>
+                <entryLink id="c91f-7c64-7365-ced7" name="Vanquisher Battle Cannon" hidden="false" collective="false" import="true" targetId="196c-cb26-f3e0-e0db" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3388-068b-9209-4592" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f953-0c42-c72e-2746" name="Any model in a Malcador Heavy Tank Squadron may exchange its Hull (Front) Mounted heavy bolter for one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="428d-7409-2134-a6c7">
@@ -5192,7 +5358,11 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <entryLink id="a14a-ecad-5a0d-1c1b" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
                 <entryLink id="ecf0-195f-73f3-78e4" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
                 <entryLink id="5c0c-b40e-80fc-c0e6" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
-                <entryLink id="016f-ccba-2975-b223" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                <entryLink id="016f-ccba-2975-b223" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="5c1f-785f-f0e6-d22f" name="Any model may take one of the following:" hidden="false" collective="false" import="true">
@@ -5200,9 +5370,21 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="932e-6b81-cf24-56c1" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="b1d4-6356-484a-9f43" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
-                <entryLink id="69e6-3124-b43d-9655" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                <entryLink id="96df-c981-85d9-116e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                <entryLink id="b1d4-6356-484a-9f43" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="69e6-3124-b43d-9655" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="96df-c981-85d9-116e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9b59-8806-2e0f-dcb0" name="Any model may take any of the following:" hidden="false" collective="false" import="true">
@@ -5211,16 +5393,25 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a68-3156-363d-110b" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="cc7b-ea37-b2cd-a14f" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d538-1b91-e8d7-a920" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="6517-ec83-5df6-7129" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f9d-9811-9134-84c7" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -5239,6 +5430,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </constraints>
             </entryLink>
           </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -5272,6 +5466,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               <categoryLinks>
                 <categoryLink id="de8e-6393-8821-14ce" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
               </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5297,9 +5494,21 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b78d-ef15-b141-8627" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="6d99-adbb-da04-8081" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-            <entryLink id="67db-8544-920e-b5e9" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
-            <entryLink id="b360-a040-ed20-83f4" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+            <entryLink id="6d99-adbb-da04-8081" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="67db-8544-920e-b5e9" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b360-a040-ed20-83f4" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="bd3c-7ca3-b254-598a" name="Any model in an Auxilia Armoured Battery may take any of the following:" hidden="false" collective="false" import="true">
@@ -5315,6 +5524,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e525-9b52-3699-dae1" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
             </entryLink>
             <entryLink id="2536-8ac4-061d-ad43" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
               <modifiers>
@@ -5327,6 +5539,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d29a-933d-6f44-6327" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5367,10 +5582,26 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4311-26b1-7fa8-ca4f" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="d104-c85f-d789-cc02" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
-                <entryLink id="6919-0324-820f-a691" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                <entryLink id="7a15-6f2f-3f3b-f7aa" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="f1d6-ebe1-d236-3f11" type="selectionEntry"/>
-                <entryLink id="aeba-1219-4327-7f10" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                <entryLink id="d104-c85f-d789-cc02" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="6919-0324-820f-a691" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="7a15-6f2f-3f3b-f7aa" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="aeba-1219-4327-7f10" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="a03b-83b9-e6da-e190" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
@@ -5380,16 +5611,25 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18a4-58f2-79a8-6edc" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="4504-ed83-88fc-8ee2" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e1d-d82b-ccad-e8e1" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="1ffe-1c97-31ea-14d5" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6069-3c86-021d-bbd7" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -5398,9 +5638,21 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7e-e0d0-e487-3681" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="7c42-0108-d1a8-ac52" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
-                <entryLink id="e9b0-b455-db80-d51c" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                <entryLink id="d962-38c5-a6d5-eb29" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                <entryLink id="7c42-0108-d1a8-ac52" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e9b0-b455-db80-d51c" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d962-38c5-a6d5-eb29" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -5427,7 +5679,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2f8d-70ea-fbb2-53e2" name="Cyclops Demolition Section" hidden="false" collective="false" import="true" type="unit">
@@ -5479,6 +5731,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5633,16 +5888,25 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb9f-4b27-0297-39c5" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="96fe-dc2c-ba95-44cc" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dd0-0dec-b255-9be2" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
                 </entryLink>
                 <entryLink id="212e-e258-beb7-fb5a" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7a8-7d70-5d06-c630" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -5651,9 +5915,21 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8b3-0e73-b2bf-34f9" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="03ae-649b-1b4e-9a42" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
-                <entryLink id="ee7a-b2e1-36cd-4d8c" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                <entryLink id="0fce-7c15-04f7-d204" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                <entryLink id="03ae-649b-1b4e-9a42" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ee7a-b2e1-36cd-4d8c" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0fce-7c15-04f7-d204" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="66f6-b953-4a12-e33b" name="May exchange both of its Sponson Mounted heavy flamers for one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6eea-2c15-7758-125e">
@@ -5662,10 +5938,26 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="283e-af8a-6325-d0ff" type="max"/>
               </constraints>
               <entryLinks>
-                <entryLink id="ced7-4bd0-05d9-dbca" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-                <entryLink id="3997-4523-946d-e8a4" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
-                <entryLink id="efdc-b4d4-1550-6666" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                <entryLink id="534a-8fd6-1c37-5acb" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                <entryLink id="ced7-4bd0-05d9-dbca" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3997-4523-946d-e8a4" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="efdc-b4d4-1550-6666" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="534a-8fd6-1c37-5acb" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="6eea-2c15-7758-125e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="f1d6-ebe1-d236-3f11" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
@@ -5694,7 +5986,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19c9-f8e8-edff-fa8e" name="Stormhammer" hidden="false" collective="false" import="true" type="upgrade">
