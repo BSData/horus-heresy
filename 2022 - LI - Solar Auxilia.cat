@@ -288,6 +288,12 @@
         <categoryLink id="11f9-5738-0e51-2256" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b543-b159-6b24-a64b" name="Stormhammer" hidden="false" collective="false" import="true" targetId="19c9-f8e8-edff-fa8e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8c54-8f75-3e5d-9bb3" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="6918-6859-f839-7288" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9dd4-325a-c1cb-fac2" name="Solar Auxilia Legate Marshal" hidden="false" collective="false" import="true" type="unit">
@@ -5163,9 +5169,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         </modifier>
                       </modifiers>
                     </entryLink>
-                    <entryLink id="2c43-6d56-dc4a-964e" name="Gravis Multi-Laser" hidden="false" collective="false" import="true" targetId="9938-d8d4-e0cc-b883" type="selectionEntry">
-                      <comment></comment>
-                    </entryLink>
+                    <entryLink id="2c43-6d56-dc4a-964e" name="Gravis Multi-Laser" hidden="false" collective="false" import="true" targetId="9938-d8d4-e0cc-b883" type="selectionEntry"/>
                     <entryLink id="9904-5f4f-cbc0-de46" name="Quad Launcher - Incendiary" hidden="false" collective="false" import="true" targetId="8ff6-2222-75b5-ecf7" type="selectionEntry">
                       <modifiers>
                         <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="25.0">
@@ -6052,7 +6056,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </constraints>
             </entryLink>
             <entryLink id="1398-9e10-4277-e1bf" name="Inferno Gun" hidden="false" collective="false" import="true" targetId="aa57-fc73-86fe-217c" type="selectionEntry">
-              <comment></comment>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ba8-360a-eb70-884b" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3694-d86f-78ac-1750" type="min"/>
@@ -6069,8 +6072,128 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       </costs>
     </selectionEntry>
     <selectionEntry id="19c9-f8e8-edff-fa8e" name="Stormhammer" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="3d2f-5e8e-b753-efe9" name="Stormhammer" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Super-heavy)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10&quot;</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">12</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="8103-298f-c2e8-b5b3" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="66d9-d28d-067b-177e" name="May exchange all of its Hull (Right) Mounted and Hull (Left)Mounted multi-lasers for the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2aeb-24b1-5925-0d54">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12f4-b01a-f58e-df9e" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a980-308f-5bca-10f0" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="cdbf-68b0-4fc1-123c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="3x Hull (Left) and 3x Hull (Right) Mounted Heavy Flamers"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="2aeb-24b1-5925-0d54" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="3x Hull (Left) and 3x Hull (Right) Mounted Multi-Lasers"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="fe89-e0b0-183b-5887" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="3x Hull (Left) and 3x Hull (Right) Mounted Heavy Bolters"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="54e5-efe3-e1d8-d0c5" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="3x Hull (Left) and 3x Hull (Right) Mounted Lascannon"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7456-9ed4-585f-4c52" name="Any model may take one of the following:" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ba3-1331-224a-9ad6" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="2ad0-9ef5-9747-320f" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d0e2-8321-14b6-8d73" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="ed1b-93b8-69b6-170e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dec7-310d-7ed1-055c" name="May take any of the following:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="aedd-75a6-1c8d-ab91" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7df-ab50-e6ab-d60e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="f4fa-aa72-d0cc-2ac4" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98f1-f093-0399-3119" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5f03-fa8d-d4fb-5bc9" name="Stormhammer Cannon" hidden="false" collective="false" import="true" targetId="7106-774e-c031-6902" type="selectionEntry">
+          <comment>Placeholder</comment>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="139b-3c0c-0eb8-cbee" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9867-03ff-6252-bdfc" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3b44-62c9-6452-49c4" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="505b-2338-a923-d61b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fe1-d605-78ba-f23d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d35a-68f8-c289-e246" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Co-axial Mounted Multi-Laser"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c362-30a2-e541-e806" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba5d-97c5-1fb1-cfcc" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3cf9-eb36-3bfe-4970" name="Laspistol" hidden="false" collective="true" import="true" type="upgrade">
