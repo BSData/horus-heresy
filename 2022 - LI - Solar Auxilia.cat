@@ -5215,13 +5215,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
     </selectionEntry>
     <selectionEntry id="c020-7685-ddf4-a10a" name="Auxilia Armoured Battery" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntryGroups>
-        <selectionEntryGroup id="5feb-664a-69b3-8244" name="Auxilia Basilisks" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="5feb-664a-69b3-8244" name="Auxilia Basilisks" hidden="false" collective="false" import="true" defaultSelectionEntryId="779c-c260-4a30-4b3b">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4592-7636-095f-19a4" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c789-692c-a62a-1cb3" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="779c-c260-4a30-4b3b" name="Auxilia Basilisk" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="779c-c260-4a30-4b3b" name="Auxilia Basilisk" hidden="false" collective="true" import="true" type="model">
               <profiles>
                 <profile id="5f1c-3e7c-d39d-aef5" name="Auxilia Basilisk" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
                   <characteristics>
@@ -5249,12 +5249,144 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <entryLink id="5356-9612-2b7f-3f28" name="Medusa Mortar" hidden="false" collective="false" import="true" targetId="aafc-7435-8805-0e0f" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
+        <selectionEntryGroup id="aefd-d3ed-94a7-628a" name="Any model in an Auxilia Armoured Battery may take one of the following:" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="increment" field="b78d-ef15-b141-8627" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c020-7685-ddf4-a10a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5feb-664a-69b3-8244" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b78d-ef15-b141-8627" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6d99-adbb-da04-8081" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+            <entryLink id="67db-8544-920e-b5e9" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
+            <entryLink id="b360-a040-ed20-83f4" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bd3c-7ca3-b254-598a" name="Any model in an Auxilia Armoured Battery may take any of the following:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="8b97-6211-6c3a-20af" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="ea3e-97b2-8677-14b5" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="c020-7685-ddf4-a10a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5feb-664a-69b3-8244" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea3e-97b2-8677-14b5" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2536-8ac4-061d-ad43" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="d29a-933d-6f44-6327" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="c020-7685-ddf4-a10a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5feb-664a-69b3-8244" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d29a-933d-6f44-6327" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="087d-b4d7-7770-7c07" name="Valdor Tank Destroyer Squadron" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="087d-b4d7-7770-7c07" name="Valdor Tank Destroyer Squadron" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="f060-c13e-d979-af0d" name="Valdor Tank Destroyer" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f78-95b4-2c07-cba1" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26a4-8b17-f351-9ecd" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0171-f3c9-092e-8d7b" name="Valdor Tank Destroyer" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Reinforced)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ee78-1a84-41eb-a346" name="May replace its Sponson Mounted heavy bolter with one of the following:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b29-5d65-6eaf-eae2" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4311-26b1-7fa8-ca4f" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="d104-c85f-d789-cc02" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
+                <entryLink id="6919-0324-820f-a691" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="7a15-6f2f-3f3b-f7aa" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="f1d6-ebe1-d236-3f11" type="selectionEntry"/>
+                <entryLink id="aeba-1219-4327-7f10" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e6ff-fddf-c178-0ee5" name="May take any of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="c98b-d941-c380-bd6d" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18a4-58f2-79a8-6edc" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="4504-ed83-88fc-8ee2" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e1d-d82b-ccad-e8e1" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="1ffe-1c97-31ea-14d5" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6069-3c86-021d-bbd7" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="8984-e2a1-07e6-2040" name="Any model may take one of the following:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cba-d08b-745e-47e6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db7e-e0d0-e487-3681" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7c42-0108-d1a8-ac52" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
+                <entryLink id="e9b0-b455-db80-d51c" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="d962-38c5-a6d5-eb29" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="68c5-a8d7-e4f4-8f23" name="Neutron Beam Laser" hidden="false" collective="false" import="true" targetId="dd0e-7604-7063-9cbf" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cae7-4dee-36b9-e755" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b515-47bb-7564-61d8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4acc-98c9-2d93-c4ae" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2d9-5c0f-3678-cad7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77c8-9305-3dca-42af" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d874-111d-b130-8667" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c16a-0bcf-bc22-f82b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2943-dbcd-9c78-92ff" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
