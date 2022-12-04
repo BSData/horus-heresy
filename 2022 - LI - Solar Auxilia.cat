@@ -5102,11 +5102,154 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       </costs>
     </selectionEntry>
     <selectionEntry id="7040-cbf9-ae05-d34f" name="Malcador Heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="be71-2815-0f0e-7740" name="Malcador Heavy Tank" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="075a-debd-8ed2-8224" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6339-417a-33de-49d1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d85b-5161-313e-8863" name="Malcador Heavy Tank" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Reinforced)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0b25-2d71-92ea-358f" name="Any model may exchange its Hull (Front) Mounted battlecannon for one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="75b6-40fb-7a3e-7338">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00d5-e753-8078-0d9c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae0a-1498-d3ee-8a47" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="75b6-40fb-7a3e-7338" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="7638-4f76-51f0-b0fa" type="selectionEntry"/>
+                <entryLink id="c91f-7c64-7365-ced7" name="Vanquisher Battle Cannon" hidden="false" collective="false" import="true" targetId="196c-cb26-f3e0-e0db" type="selectionEntry"/>
+                <entryLink id="3388-068b-9209-4592" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="f953-0c42-c72e-2746" name="Any model in a Malcador Heavy Tank Squadron may exchange its Hull (Front) Mounted heavy bolter for one of the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="428d-7409-2134-a6c7">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1cf-2ca8-382e-4f0f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3496-62e0-0a1d-78d8" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="428d-7409-2134-a6c7" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+                <entryLink id="25a4-9897-2444-056b" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
+                <entryLink id="5abe-ea73-3b21-396e" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="fb66-453c-bc5f-3d1f" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="f1d6-ebe1-d236-3f11" type="selectionEntry"/>
+                <entryLink id="4927-c9e2-22b1-5aec" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+                <entryLink id="dc68-bfa9-7008-eb02" name="Demolisher Cannon" hidden="false" collective="false" import="true" targetId="1d4a-05a3-1589-915d" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="3aef-f336-3b44-7f26" name="Any model may exchange its Hull (side) Mounted heavy bolters for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9020-c4fb-3589-9f16">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b546-23b9-7c07-9d65" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c8-464e-3c0f-cffa" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9020-c4fb-3589-9f16" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
+                <entryLink id="a14a-ecad-5a0d-1c1b" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
+                <entryLink id="ecf0-195f-73f3-78e4" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="5c0c-b40e-80fc-c0e6" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                <entryLink id="016f-ccba-2975-b223" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="5c1f-785f-f0e6-d22f" name="Any model may take one of the following:" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39b7-ddb1-101e-1d73" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="932e-6b81-cf24-56c1" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b1d4-6356-484a-9f43" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry"/>
+                <entryLink id="69e6-3124-b43d-9655" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
+                <entryLink id="96df-c981-85d9-116e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="9b59-8806-2e0f-dcb0" name="Any model may take any of the following:" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="8312-d4fb-8ff4-b25d" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a68-3156-363d-110b" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="cc7b-ea37-b2cd-a14f" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d538-1b91-e8d7-a920" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="6517-ec83-5df6-7129" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f9d-9811-9134-84c7" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="fd7b-33db-4a9b-e47e" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5df3-b0af-92ba-fd8f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e96-bce0-7f56-6410" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="33b0-57fd-fac3-4e65" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8e0-77eb-a2cc-7848" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0e8-ae68-2305-403d" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c020-7685-ddf4-a10a" name="Auxilia Armoured Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5feb-664a-69b3-8244" name="Auxilia Basilisks" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4592-7636-095f-19a4" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c789-692c-a62a-1cb3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="779c-c260-4a30-4b3b" name="Auxilia Basilisk" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="5f1c-3e7c-d39d-aef5" name="Auxilia Basilisk" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Bombard)</characteristic>
+                    <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">10</characteristic>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="de8e-6393-8821-14ce" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="c958-e189-bf9a-0a74" name="All models may exchange their Centerline Mounted Earthshaker cannon for:" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="8750-c276-e393-8d8d" name="Earthshaker cannon" hidden="false" collective="false" import="true" targetId="cc2e-df5f-1778-29d8" type="selectionEntry"/>
+            <entryLink id="5356-9612-2b7f-3f28" name="Medusa Mortar" hidden="false" collective="false" import="true" targetId="aafc-7435-8805-0e0f" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
