@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="20" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="21" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="  XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <constraints>
@@ -10,8 +10,17 @@
         <categoryLink id="9c1f-9d40-238f-fcd4" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ec0b-803f-6220-45e0" name="Fulmentarus Terminator Squad" hidden="false" collective="false" import="false" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
+    <entryLink id="ec0b-803f-6220-45e0" name="Fulmentarus Terminator Squad" hidden="true" collective="false" import="false" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
       <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
@@ -2831,11 +2840,16 @@
     <entryLink id="cb06-9ca2-1e14-74b5" name="Fulmentarus Terminator Squad" hidden="true" collective="false" import="false" targetId="7fb0-6302-d46f-029d" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
-              <comment>    node_id_a02c-8632-499f-827c</comment>
-            </condition>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3211,7 +3225,7 @@
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink id="1214-518c-493a-fbdf" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="9b65-20fa-dde1-c183" type="selectionEntry">
+                <entryLink id="1214-518c-493a-fbdf" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="1a7b-4418-8346-66a7" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="989c-2136-9575-de70" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c44e-e1e2-5f1a-1bf9" type="max"/>
@@ -3250,7 +3264,7 @@
                 </profile>
               </profiles>
               <entryLinks>
-                <entryLink id="8f28-0e2b-3cb9-f47c" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="9b65-20fa-dde1-c183" type="selectionEntry">
+                <entryLink id="8f28-0e2b-3cb9-f47c" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="1a7b-4418-8346-66a7" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c6-781d-e2e7-356b" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52e5-cc04-a1f8-f66d" type="max"/>
@@ -5257,29 +5271,6 @@
           </characteristics>
         </profile>
       </profiles>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9b65-20fa-dde1-c183" name="Plasma Pistol" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="ea33-8fd7-9767-ddc3" name="Plasma Pistol" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (4+), Gets Hot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="88c9-3347-4c23-6691" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Breaching (4+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="2222-4966-2df2-685f" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
