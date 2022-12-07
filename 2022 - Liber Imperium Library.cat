@@ -12,6 +12,16 @@
       </rules>
     </categoryEntry>
     <categoryEntry id="b71a-371d-4401-9dc0" name="Silent Sisterhood (Chamber of Judgement)" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="2bfb-aa33-7e3a-49cb" value="4.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9b6-f66f-e8ee-553e" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bfb-aa33-7e3a-49cb" type="max"/>
+      </constraints>
       <rules>
         <rule id="04a5-fa60-5ebe-aa9d" name="Silent Sisterhood (Chamber of Judgement)" publicationId="15a4-fc68-502d-48a9" page="40" hidden="false">
           <description>All models with this variant of the Silent Sisterhood (X) special rule gain the Fearless special rule when locked in combat with a unit that includes any models with the Psyker Unit Sub-type.</description>
@@ -19,6 +29,16 @@
       </rules>
     </categoryEntry>
     <categoryEntry id="a7e3-4559-7267-8bf6" name="Silent Sisterhood (Chamber of Obivion)" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="5614-9e32-419c-d280" value="4.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b760-8313-847f-1afa" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5614-9e32-419c-d280" type="max"/>
+      </constraints>
       <rules>
         <rule id="c4ce-323b-11a5-c9f6" name="Silent Sisterhood (Chamber of Obivion)" publicationId="15a4-fc68-502d-48a9" page="40" hidden="false">
           <description>All models with this variant of the Silent Sisterhood (X) special rule gain the Fearless special rule when locked in combat with a unit that includes any models with the Daemon Unit Type or Corrupted Unit Sub-type.</description>
@@ -26,6 +46,9 @@
       </rules>
     </categoryEntry>
     <categoryEntry id="b6d7-6924-37fb-dd32" name="Silent Sisterhood (Chamber of Vigilance)" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7aea-e378-bd99-38f6" type="max"/>
+      </constraints>
       <rules>
         <rule id="efd8-4a41-bd4b-058b" name="Silent Sisterhood (Chamber of Vigilance)" publicationId="15a4-fc68-502d-48a9" page="40" hidden="false">
           <description>A unit composed entirely of models with this variant of the Silent Sisterhood (X) special rule may be given one of the following special rules before the start of the battle’s first turn, before any models are deployed: Scout or Infiltrate. When selecting an army using the Sisters of Silence Army List, a unit made up entirely of models with this variant of the Silent Sisterhood (X) special rule may be selected without restriction regardless of which HQ choices are selected for the army.</description>
@@ -41,6 +64,8 @@
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry id="a9b6-f66f-e8ee-553e" name="Judgement HQ" hidden="false"/>
+    <categoryEntry id="b760-8313-847f-1afa" name="Obivion HQ" hidden="false"/>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="abaf-b2fa-1d41-a315" name="Clade Vindicare Assassin" publicationId="15a4-fc68-502d-48a9" page="114" hidden="false" collective="false" import="true" type="unit">
@@ -1026,6 +1051,8 @@
         <categoryLink id="5e7a-fd33-fc06-c2a3" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
         <categoryLink id="3757-51ca-d9a5-915c" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
         <categoryLink id="493c-37a2-9320-5dfc" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="a11d-b1ef-e83a-a120" name="Silent Sisterhood (Chamber of Obivion)" hidden="false" targetId="a7e3-4559-7267-8bf6" primary="false"/>
+        <categoryLink id="ffa9-1235-1750-d024" name="Obivion HQ" hidden="false" targetId="b760-8313-847f-1afa" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1592-b1b2-3d7e-5304" name="Knight Centura" hidden="false" collective="false" import="true" type="model">
@@ -1083,7 +1110,11 @@
               <entryLinks>
                 <entryLink id="6323-b5b9-e057-3906" name="Execution Blade" hidden="false" collective="false" import="true" targetId="adc6-3519-204d-2921" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Execution Blade"/>
+                    <modifier type="set" field="name" value="Master-crafted Execution Blade">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a1c-51fc-d5e6-b4e1" type="max"/>
@@ -1102,7 +1133,11 @@
                 </entryLink>
                 <entryLink id="3db4-c3b1-ad07-d94a" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Power Axe"/>
+                    <modifier type="set" field="name" value="Master-crafted Power Axe">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a75e-caf7-2367-9263" type="max"/>
@@ -1124,7 +1159,11 @@
                 </entryLink>
                 <entryLink id="b8ae-0c67-9815-71a9" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Power Lance"/>
+                    <modifier type="set" field="name" value="Master-crafted Power Lance">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a4a-b031-7bd0-26dd" type="max"/>
@@ -1146,7 +1185,11 @@
                 </entryLink>
                 <entryLink id="75b3-b061-2fda-9aa1" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Power Maul"/>
+                    <modifier type="set" field="name" value="Master-crafted Power Maul">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af92-a94d-c1bc-324d" type="max"/>
@@ -1168,7 +1211,11 @@
                 </entryLink>
                 <entryLink id="2810-85de-5657-b564" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Power Sword"/>
+                    <modifier type="set" field="name" value="Master-crafted Power Sword">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d42-c427-b1aa-9bb7" type="max"/>
@@ -1190,7 +1237,11 @@
                 </entryLink>
                 <entryLink id="ee12-0c73-db62-fad3" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Charnabal Glaive"/>
+                    <modifier type="set" field="name" value="Master-crafted Charnabal Glaive">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3627-8841-29aa-1342" type="max"/>
@@ -1212,7 +1263,11 @@
                 </entryLink>
                 <entryLink id="bb23-dd49-40e5-1004" name="Proteus Neuro-lash" hidden="false" collective="false" import="true" targetId="4d36-dac5-86a1-46cc" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Proteus Neuro-lash"/>
+                    <modifier type="set" field="name" value="Master-crafted Proteus Neuro-lash">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9da0-3d8e-a496-e539" type="max"/>
@@ -1234,7 +1289,11 @@
                 </entryLink>
                 <entryLink id="da79-0214-2c18-af3d" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Charnabal Sabre"/>
+                    <modifier type="set" field="name" value="Master-crafted Charnabal Sabre">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e662-3649-a753-76dc" type="max"/>
@@ -1256,7 +1315,11 @@
                 </entryLink>
                 <entryLink id="9092-8d0a-60aa-cb4d" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Charnabal Tabar"/>
+                    <modifier type="set" field="name" value="Master-crafted Charnabal Tabar">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8f79-d31f-9516-367f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87de-2a26-0e5a-2b2e" type="max"/>
@@ -1285,7 +1348,11 @@
               <entryLinks>
                 <entryLink id="e969-93a1-77b8-8e4d" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Bolt Pistol"/>
+                    <modifier type="set" field="name" value="Master-crafted Bolt Pistol">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9739-6bae-baf2-d658" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="369c-8d32-24f6-768e" type="max"/>
@@ -1304,7 +1371,11 @@
                 </entryLink>
                 <entryLink id="25ab-290b-1325-834a" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Hand Flamer"/>
+                    <modifier type="set" field="name" value="Master-crafted Hand Flamer">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9739-6bae-baf2-d658" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4c7-dedb-6b89-1e07" type="max"/>
@@ -1323,7 +1394,11 @@
                 </entryLink>
                 <entryLink id="b54a-0827-eeda-1c05" name="Needle Pistol" hidden="false" collective="false" import="true" targetId="fdd4-06c7-4608-b07f" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Needle Pistol"/>
+                    <modifier type="set" field="name" value="Master-crafted Needle Pistol">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9739-6bae-baf2-d658" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8bd-5187-a014-6425" type="max"/>
@@ -1345,7 +1420,11 @@
                 </entryLink>
                 <entryLink id="f295-eb57-0c3b-6f0d" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Plasma Pistol"/>
+                    <modifier type="set" field="name" value="Master-crafted Plasma Pistol">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9739-6bae-baf2-d658" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e5-7cbb-cc10-cb51" type="max"/>
@@ -1367,7 +1446,11 @@
                 </entryLink>
                 <entryLink id="26c9-7b84-8331-dba5" name="Archaeotech Pistol" hidden="false" collective="false" import="true" targetId="c22a-ed4d-af68-bf00" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="Master-crafted Archaeotech Pistol"/>
+                    <modifier type="set" field="name" value="Master-crafted Archaeotech Pistol">
+                      <conditions>
+                        <condition field="selections" scope="1592-b1b2-3d7e-5304" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9739-6bae-baf2-d658" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="688a-0bf4-4397-295b" type="max"/>
@@ -1457,6 +1540,16 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="748e-0007-c99e-aec4" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="4690-6571-f6e8-92a7" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="14ce-fd57-1a81-014f" name="Warlord Traits (Sisters of Silience)" hidden="false" collective="false" import="true" targetId="bd47-69ec-0c32-abc2" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
@@ -1686,7 +1779,6 @@
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="2ae6-fc9f-9300-77c7" name="Silent Sisterhood (Chamber of Obivion)" hidden="false" targetId="a7e3-4559-7267-8bf6" primary="false"/>
         <categoryLink id="72f6-efd8-4b99-9005" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="d3a6-616d-1ed7-510c" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
         <categoryLink id="65aa-2cac-8a1b-a325" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
@@ -2454,6 +2546,69 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="bd47-69ec-0c32-abc2" name="Warlord Traits (Sisters of Silience)" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d048-bf93-ca63-6114" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d048-bf93-ca63-6114" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91d0-402b-6866-b706" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7f00-7105-936a-3c22" name="    Sisters of Silence Warlord Traits" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="8971-94c6-fc20-8ffe" name="Maiden of Blood" publicationId="15a4-fc68-502d-48a9" page="40" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="9268-caed-679a-6b05" name="Maiden of Blood" publicationId="15a4-fc68-502d-48a9" page="40" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">At the end of any combat in the Assault phase that includes this Warlord, after all attacks have been made but before the winner is decided, this Warlord’s controlling player can choose to inflict D6 Wounds with an AP value of ‘-’ on the Warlord’s own unit (allocated by the unit’s controlling player, these Wounds are not counted for deciding which side wins the combat). Once these Wounds are resolved, the Warlord and each remaining model in the same unit may make one additional attack each – any Wounds caused are counted for deciding which side wins the combat. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty and may select an additional unit of the Warlord’s Chamber Militant as part of the same Detachment as this Warlord.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1aeb-16e5-5e28-e807" name="Maiden of Resolve" publicationId="15a4-fc68-502d-48a9" page="41" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="8bd8-61e7-7a3b-25ee" name="Maiden of Resolve" publicationId="15a4-fc68-502d-48a9" page="41" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per battle, at the start of any of this Warlord’s controlling player’s turns, the controlling player may activate this Warlord trait. Until the start of the controlling player’s next turn the Warlord and any unit it has joined may not move (either during the Movement phase or as part of a Reaction), but automatically passes all Morale tests and Pinning checks they are called upon to take without any dice being rolled and gains the Feel No Pain (4+) and Eternal Warrior special rules. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Shooting phase as long as the Warlord has not been removed as a casualty and may select an additional unit of the Warlord’s Chamber Militant as part of the same Detachment as this Warlord.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d7c7-4ee3-07e7-f718" name="Maiden of Sorrow" publicationId="15a4-fc68-502d-48a9" page="41" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="8ada-f787-50b5-10e7" name="Maiden of Sorrow" publicationId="15a4-fc68-502d-48a9" page="41" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When this Warlord, and any unit it has joined, suffers an unsaved Wound, the Warlord that has this Trait and all models in a unit it has joined gain a bonus of +1 to their Attacks and Movement Characteristic (to a maximum of +4 to either Characteristic) until the end of the controlling player’s next turn. If this Warlord is removed as a casualty while locked in combat, the opposing player gains no Victory points for it from any Objective or special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty and may select an additional unit of the Warlord’s Chamber Militant as part of the same Detachment as this Warlord.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="a9f9-fb12-10c5-29d1" name="eneric Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
