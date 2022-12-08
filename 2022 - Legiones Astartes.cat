@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="83" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="84" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -444,6 +444,26 @@
       <categoryLinks>
         <categoryLink id="6c72-5e9f-a028-aa94" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="b656-a898-3480-f03b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bc6c-85f6-1b67-4b4e" name="Clade Assassins (Loyalist)" hidden="false" collective="false" import="true" targetId="7363-5a05-4102-24fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="987b-cf34-0bac-145c" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="7716-eca9-016b-5eb8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -29604,92 +29624,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="fbe0-eca3-2aa2-eecc" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="5a2f-2252-bba0-e052" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="925b-d3f3-4d4c-fe67" name="Rapier Carrier (&amp; Gunners)" hidden="false" collective="false" import="true" type="unit">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="119c-570a-ee34-e901" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="990f-cc3a-0cb8-aa3d" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="dcad-6d83-b92c-6fd3" name="Legion Artillerists" hidden="false" targetId="f268-05e5-8fc5-be12" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="25df-49f3-3b53-c4be" name="Rapier Carrier" hidden="false" collective="true" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="79e9-65ce-cb25-2cd4" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c81d-88f2-f586-f377" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="d616-76d1-776b-28a0" name="Rapier Carrier" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Artillery, Heavy)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">4&quot;</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="0eb4-7a54-ba0d-be3b" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Bulky (4)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="9f10-0ad3-e8be-2c38" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9cb7-f45a-8422-0f1b" name="Gunner" hidden="false" collective="true" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="62cc-fc11-6b46-304e" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fbae-d0d5-627f-5b44" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7b9b-ead9-6979-4c37" name="Gunner" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-                  <modifiers>
-                    <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Heavy, Psyker)">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="d4d5-c06f-fac3-1524" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="975a-c83c-1f06-b4c8" name="1) Battery Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="beaa-2d73-874a-0897">
           <constraints>
@@ -29701,7 +29635,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="25.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -29710,7 +29644,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -29719,7 +29653,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -29727,7 +29661,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <entryLink id="beaa-2d73-874a-0897" name="Gravis Heavy Bolter Battery" hidden="false" collective="false" import="true" targetId="a160-9267-67ac-4546" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="1626-ca1e-12bf-300f" name="4) Quad Launcher Shell Options" hidden="true" collective="false" import="true">
+        <selectionEntryGroup id="1626-ca1e-12bf-300f" name="2) Quad Launcher Shell Options" hidden="true" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -29740,7 +29674,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -29752,7 +29686,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -29764,7 +29698,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -29776,7 +29710,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="set" field="hidden" value="false"/>
@@ -29784,86 +29718,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="084a-11e4-5f5f-d75e" type="max"/>
               </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="36e2-d984-7862-cfe4" name="2) Bolt Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="608d-c66b-4571-502b">
-          <modifiers>
-            <modifier type="decrement" field="8d54-3ab9-e247-840e" value="2.0"/>
-            <modifier type="increment" field="32d4-deac-0cec-bc7d" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="8d54-3ab9-e247-840e" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d54-3ab9-e247-840e" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="32d4-deac-0cec-bc7d" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="608d-c66b-4571-502b" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="99ce-9d02-20d2-5be8" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="22ac-171f-b55f-9fbe" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="e5f8-9c5c-cb91-ecdf" name="3) Bolter Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="66c8-9231-9a93-f5a9">
-          <modifiers>
-            <modifier type="increment" field="5933-3d0d-3816-ab01" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="752f-2a2c-7d15-37bd" value="2.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="925b-d3f3-4d4c-fe67" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="752f-2a2c-7d15-37bd" value="2.0"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="752f-2a2c-7d15-37bd" type="min"/>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5933-3d0d-3816-ab01" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="66c8-9231-9a93-f5a9" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1941-21b5-932c-74d6" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="5327-b802-55ad-138f" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="1941-21b5-932c-74d6" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="6a64-ea68-edf7-757d" name="Asphyx Bolter" hidden="false" collective="false" import="true" targetId="88c0-4623-9da3-f2b5" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
-              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -29886,6 +29740,262 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ad63-a5cc-c883-17c6" name="0) Batteries:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4b49-fbfe-8078-cae8">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0615-750d-35f8-a935" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6de-b256-c752-5800" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4b49-fbfe-8078-cae8" name="Rapier Battery w/ Legion Upgrades" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="6958-6025-8929-03fe" name="Legion Artillerists" hidden="false" targetId="f268-05e5-8fc5-be12" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="ae25-6e5b-485b-a749" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
+                <categoryLink id="d914-3851-d945-ec21" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="32fa-a618-ac85-a113" name="Gunner" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87d0-7568-20b6-ac7f" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ecdf-1426-fe85-be74" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="a888-18d0-580d-9b64" name="Gunner" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                      <modifiers>
+                        <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Heavy, Psyker)">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                        <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                        <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="d8d9-a14e-8e73-43fe" name="1) Bolt Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="7992-471c-9579-a05f">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f936-147c-5fcd-35f1" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7aa4-f951-1488-c8f9" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="7992-471c-9579-a05f" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="true">
+                              <conditions>
+                                <condition field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink id="4b2f-7bbe-7ab8-8a67" name="Shrapnel Pistol" hidden="false" collective="false" import="true" targetId="7d72-7f6d-6330-6871" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="ce72-2ab2-455b-b50e" name="Asphyx Bolt Pistol" hidden="false" collective="false" import="true" targetId="07f7-c486-f597-a1b9" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup id="7996-aa7f-c976-c9ab" name="2) Bolter Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="0adf-9279-3177-0711">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b424-8be8-5157-2ec9" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c1e8-fd67-035a-b792" type="max"/>
+                      </constraints>
+                      <entryLinks>
+                        <entryLink id="0adf-9279-3177-0711" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="true">
+                              <conditions>
+                                <condition field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1941-21b5-932c-74d6" type="atLeast"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                        </entryLink>
+                        <entryLink id="a4cf-c059-2b8e-fc59" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="1941-21b5-932c-74d6" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                          </costs>
+                        </entryLink>
+                        <entryLink id="ebcd-9bcb-cd45-08f2" name="Asphyx Bolter" hidden="false" collective="false" import="true" targetId="88c0-4623-9da3-f2b5" type="selectionEntry">
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1e9a-ce18-7e26-13b8" name="Rapier Carrier" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a3f-29e4-28ca-773d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6f2-8240-d40a-d446" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="8aa2-1597-b0c0-1366" name="Rapier Carrier" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                      <characteristics>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Artillery, Heavy)</characteristic>
+                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">4&quot;</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                        <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
+                        <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
+                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="62a4-d403-bc0d-f82d" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Bulky (4)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="cd45-0e6b-4f96-66d7" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="5677-19d0-93b0-d374" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+                <entryLink id="5779-7d71-4be7-af36" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b4a3-4d5c-8ca4-5daf" name="Rapier Battery" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d72-7f6d-6330-6871" type="atLeast"/>
+                    <condition field="selections" scope="23e4-c64b-65b4-c8a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1941-21b5-932c-74d6" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink id="3e9f-4db5-299b-38ce" name="Legion Artillerists" hidden="false" targetId="f268-05e5-8fc5-be12" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="ce2b-c1f0-0e57-3bdd" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
+                <categoryLink id="96f0-6b5f-df67-c602" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="e770-2e1f-f6f4-b0dd" name="Gunner" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f916-8962-825e-20b1" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3b55-c326-8b7c-1513" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="c620-7992-58b3-1b23" name="Gunner" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                      <modifiers>
+                        <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Infantry (Heavy, Psyker)">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <characteristics>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                        <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                        <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <entryLinks>
+                    <entryLink id="8931-ef7c-1733-e389" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fec8-9f3c-e371-9480" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0cd-202e-ec3f-7d9a" type="min"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f3f0-3043-72e4-d438" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d13-5340-2403-9afa" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ec3-7f79-bf7d-4687" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3f17-289d-7a66-4687" name="Rapier Carrier" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4639-cec8-1748-1894" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab04-3b43-9f49-a4f8" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="9f3f-2847-adf1-01b7" name="Rapier Carrier" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                      <characteristics>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Artillery, Heavy)</characteristic>
+                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">4&quot;</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                        <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
+                        <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
+                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="2393-5b91-2eef-6444" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Bulky (4)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="109a-14a8-1d36-3a51" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="361e-909b-442d-3903" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
+                <entryLink id="a10f-9d3a-f989-74ef" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -47166,5 +47276,6 @@ A unit that includes models with this special rule may only be joined by models 
   </sharedRules>
   <catalogueLinks>
     <catalogueLink id="60d6-cab6-4580-b772" name="2022 - Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="e048-9e5e-507c-5bab" name="2022 - LI - Assassins" targetId="4c88-1a81-7e53-0a67" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
