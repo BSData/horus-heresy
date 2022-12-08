@@ -711,6 +711,8 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10268,6 +10270,19 @@ Limitations
 • This Rite of War may only be used by an army that has the Loyalist Allegiance.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="57e3-df46-2845-4212" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Traitors)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="3d41-573e-9c04-e320" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Preferred Enemy (Primarch)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="8de1-8bc2-0ac8-72e5" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -10324,6 +10339,19 @@ Limitations
 • At least one unit from a Detachment using this Rite of War must be assigned to a Flanking Assault.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="05bb-2ae3-f803-d06b" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fleet (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="5467-10e1-d93a-51b4" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rage (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="2e32-3419-51c7-b885" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -10351,6 +10379,19 @@ Limitations
 • During the turn in which the controlling player has declared the Bloody Claw, all units that include one or more models with the Legiones Astartes (Space Wolves) special rule in this Detachment capable of Charging must always attempt to Charge an enemy unit in the Assault phase if there are any eligible targets in range and line of sight. If multiple eligible targets are available, the controlling player may choose which to declare a Charge against.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="7df9-9542-82d1-c4f7" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fleet (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="105d-c421-e2c7-077b" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Furious Charge (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="9a18-5f84-0a74-33eb" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
