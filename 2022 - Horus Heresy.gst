@@ -658,6 +658,12 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry id="f1f2-434e-1348-b25b" name="New CategoryEntry" hidden="false"/>
+    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering" hidden="false"/>
+    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer" hidden="false"/>
+    <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport" hidden="false"/>
+    <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy" hidden="false"/>
+    <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Vehicle" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -711,8 +717,6 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10271,17 +10275,17 @@ Limitations
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="57e3-df46-2845-4212" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+            <infoLink id="2d91-626d-339e-2587" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+            <infoLink id="5402-bde1-1978-81f0" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Hatred (Traitors)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="3d41-573e-9c04-e320" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+            <infoLink id="fd4b-22c4-16db-690d" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Preferred Enemy (Primarch)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="8de1-8bc2-0ac8-72e5" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -10340,17 +10344,17 @@ Limitations
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="05bb-2ae3-f803-d06b" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+            <infoLink id="fa71-e5bf-552c-9d57" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Fleet (2)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="5467-10e1-d93a-51b4" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+            <infoLink id="7e34-7007-2f94-da9e" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
+            <infoLink id="2ee8-1a8e-8fd3-d343" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Rage (2)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="2e32-3419-51c7-b885" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -10380,17 +10384,17 @@ Limitations
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="7df9-9542-82d1-c4f7" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+            <infoLink id="0ffe-c90e-f84d-3522" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Fleet (2)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="105d-c421-e2c7-077b" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+            <infoLink id="ddd0-3fd4-f973-3da4" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Furious Charge (1)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="9a18-5f84-0a74-33eb" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+            <infoLink id="f11e-11f4-0317-f02c" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
