@@ -348,7 +348,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
     <categoryEntry id="030f-3801-4f54-e7f8" name="Compulsory Heavy Support:" hidden="false"/>
     <categoryEntry id="0a04-abac-c606-2d48" name="Compulsory Lord of War:" hidden="false"/>
     <categoryEntry id="1b67-8d3b-283a-1488" name="Compulsory Fortification:" hidden="false"/>
-    <categoryEntry id="9231-183c-b97b-63f9" name="Heavy" hidden="false">
+    <categoryEntry id="9231-183c-b97b-63f9" name="Heavy Sub-type:" hidden="false">
       <constraints>
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd31-bf22-2243-ccc7" type="max"/>
       </constraints>
@@ -564,7 +564,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Vehicles" hidden="false">
+    <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Sub-type:" hidden="false">
       <rules>
         <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="false">
           <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
@@ -658,12 +658,12 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="f1f2-434e-1348-b25b" name="New CategoryEntry" hidden="false"/>
-    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering" hidden="false"/>
-    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer" hidden="false"/>
-    <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport" hidden="false"/>
-    <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy" hidden="false"/>
-    <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Vehicle" hidden="false"/>
+    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering Sub-type:" hidden="false"/>
+    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer Sub-type:" hidden="false"/>
+    <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport Sub-type:" hidden="false"/>
+    <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy Sub-type:" hidden="false"/>
+    <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Sub-type:" hidden="false"/>
+    <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
