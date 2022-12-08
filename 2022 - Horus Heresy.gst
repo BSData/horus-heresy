@@ -652,6 +652,8 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Vehicle" hidden="false"/>
     <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy" hidden="false"/>
     <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer" hidden="false"/>
+    <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport" hidden="false"/>
+    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
