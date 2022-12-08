@@ -8281,14 +8281,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="cc0d-30bd-1844-5658" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4f3-1058-e7fe-e9e9" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-                  </costs>
-                </entryLink>
                 <entryLink id="7c67-a5ff-b2d3-3ffa" name="Warpfire Blaster" hidden="false" collective="false" import="true" targetId="76c7-1d7c-206a-32a5" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c32-e8e9-8adb-d83a" type="max"/>
@@ -29994,6 +29986,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="0ee1-3da3-1e5c-273b" name="Alchem Cannon" hidden="false" collective="false" import="true" targetId="4f69-44d0-3b45-13e4" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="d276-79d0-2989-80dd" name="2) Weapon Option 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="0f35-46b7-e7fb-9d8d">
@@ -41036,14 +41033,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
               </costs>
             </entryLink>
-            <entryLink id="5c8c-b51d-88f7-fea1" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="374c-1f91-01a0-9b30" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
-              </costs>
-            </entryLink>
             <entryLink id="544e-2598-20d2-16b0" name="Warpfire Blaster" hidden="false" collective="false" import="true" targetId="76c7-1d7c-206a-32a5" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a240-473b-5737-b8a6" type="max"/>
@@ -43947,7 +43936,7 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
           </modifiers>
           <rules>
             <rule id="5fb1-c000-121c-b16e" name="Strategic Comms" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false">
-              <description>Once per turn, when any friendly unit is called upon to take a Morale check or Pinning test, that Check may be made using the Leaderhsip Characteristic of the model with this special rule or any other model in the same unit as the model with this special rule. In addition, as long as the model with this special rule is on the battlefield (but not Reserves) then all Reserves rolls made by the controlling player may be re-rolled.</description>
+              <description>At the start of each Game Turn you can declare whether each vox disruptor array in your army is turned on or turned off. While there is at least one model on the battlefield with a vox disruptor array turned on, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault during that turn is Disordered on the roll of a &apos;1&apos;, &apos;2&apos; or &apos;3&apos; instead of iust on a 1&apos;</description>
             </rule>
           </rules>
           <entryLinks>
@@ -44533,6 +44522,14 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
               </modifiers>
             </infoLink>
           </infoLinks>
+          <entryLinks>
+            <entryLink id="a764-0e32-b30d-c3e0" name="Legion Standard" hidden="false" collective="false" import="true" targetId="7e13-cc1f-6bd7-7ac6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0393-42cd-19e4-4b23" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2af-7292-9aea-7f19" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
           </costs>
@@ -44765,7 +44762,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             </modifier>
             <modifier type="set" field="1817-1a25-72ab-6fc9" value="1.0">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
