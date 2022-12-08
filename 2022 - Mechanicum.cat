@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <constraints>
@@ -395,6 +395,19 @@
       <categoryLinks>
         <categoryLink id="6b3d-b497-866a-d8a0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="a12c-791f-fbf5-c999" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fc21-65ad-c05e-4fc9" name="Clade Assassins (Loyalist)" hidden="false" collective="false" import="false" targetId="7363-5a05-4102-24fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c131-9ece-247d-39d7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="c8d6-cac0-a82b-e544" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4823,12 +4836,6 @@ removed as a casualty.�</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90fc-4de7-a2db-ab4b" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="f00e-042e-cb53-305d" name="Las-lock" hidden="false" collective="false" import="true" targetId="6491-5e10-ba7e-e0d3" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e89-b350-d474-b2c4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0153-5180-71f7-0eaa" type="max"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -6550,5 +6557,6 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink id="5f24-4626-71c3-0547" name="2022 - Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="e048-9e5e-507c-5bae" name="2022 - LI - Assassins" targetId="4c88-1a81-7e53-0a67" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

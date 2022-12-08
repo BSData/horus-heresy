@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="83" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="84" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -444,6 +444,26 @@
       <categoryLinks>
         <categoryLink id="6c72-5e9f-a028-aa94" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="b656-a898-3480-f03b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bc6c-85f6-1b67-4b4e" name="Clade Assassins (Loyalist)" hidden="false" collective="false" import="true" targetId="7363-5a05-4102-24fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="987b-cf34-0bac-145c" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="7716-eca9-016b-5eb8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -47110,5 +47130,6 @@ A unit that includes models with this special rule may only be joined by models 
   </sharedRules>
   <catalogueLinks>
     <catalogueLink id="60d6-cab6-4580-b772" name="2022 - Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="e048-9e5e-507c-5bab" name="2022 - LI - Assassins" targetId="4c88-1a81-7e53-0a67" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
