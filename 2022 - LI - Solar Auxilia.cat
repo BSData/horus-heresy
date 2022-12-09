@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -9312,6 +9312,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1d5f-ec6b-d0d9-5538" name="Thunderer Siege Tank Squadron" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -9938,6 +9941,10 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           <modifiers>
             <modifier type="set" field="name" value="2x Sponson Mounted twin-linked Heavy Bolter"/>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fccd-78d6-e69a-2489" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c81-4dc6-673b-4e5a" type="max"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
@@ -10846,6 +10853,10 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6040-4644-dccc-0233" name="Crassus Armoured Assault Transport" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="639a-b59e-17d0-7f48" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e619-b619-688d-ecb3" type="max"/>
+          </constraints>
           <profiles>
             <profile id="14d5-733b-34a2-ce22" name="Crassus Armoured Assault Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
               <characteristics>
@@ -10936,190 +10947,207 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
         <categoryLink id="6245-19c4-15bc-896e" name="Static Artillery" hidden="false" targetId="19f3-8727-02db-3ce5" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="73ea-ed71-830b-8c15" name="1) Earthshaker or Medusa" hidden="false" collective="false" import="true" defaultSelectionEntryId="7b92-c405-80c7-6f81">
+        <selectionEntryGroup id="73ea-ed71-830b-8c15" name="1) Earthshaker or Medusa" hidden="false" collective="false" import="true" defaultSelectionEntryId="4996-c32d-a060-ea90">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab79-6a4e-9581-6a8d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb18-e122-165d-3563" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="7fcf-7b34-7d36-4888" name="Medusa Artillery Platforms" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5b3-afe9-f777-047d" type="min"/>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06a7-fef0-c211-716d" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="0684-cb68-0511-a5f8" name="Artillery Platform" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Static Artillery, Heavy)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="ea2b-724b-c461-c3e8" name="Auxilia Static Artillerists" hidden="false">
-                  <description>A Solar Auxilia Artillery Battery must have at least one Auxilia Gunner per Artillery Platform in order for all Artillery Platforms to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Solar Auxilia Artillery Battery contains fewer Auxilia Gunners than Artillery Platforms, then only a number of Artillery Platforms equal to the number of Auxilia Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Artillery Platforms, then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled (this benefit is lost immediately once the number of Auxilia Gunners is reduced to less than the number of Artillery Platforms in the unit).</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="83cb-418b-37ce-1a4b" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
-              </infoLinks>
+            <selectionEntry id="4996-c32d-a060-ea90" name="Earthshaker Artillery Platforms" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
-                <selectionEntry id="3dbc-840a-0ea8-5aa3" name="Auxilia Gunners" hidden="false" collective="true" import="true" type="model">
+                <selectionEntry id="d464-7884-cdc2-3d27" name="Earthshaker Artillery Platforms" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0678-7629-5e2a-51c2" type="min"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2800-e19a-dc1c-bbfe" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79a0-3fe4-99a5-aa42" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34cb-260c-3f16-61d4" type="min"/>
                   </constraints>
                   <profiles>
-                    <profile id="20a9-977e-f491-d970" name="Auxilia Gunners" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                    <profile id="d976-3125-68a5-8ac2" name="Artillery Platform" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
                       <characteristics>
-                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
-                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
-                        <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                        <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
-                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-                        <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Static Artillery, Heavy)</characteristic>
+                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                        <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
                         <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
                         <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink id="571f-f7f5-e842-36a3" name="Laspistol" hidden="false" collective="false" import="true" targetId="3cf9-eb36-3bfe-4970" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15ec-03f6-2972-0fb1" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17a3-1493-ad2c-ecd4" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="0310-9ef7-7f2d-beee" name="Void Armour" hidden="false" collective="false" import="true" targetId="499b-b86b-3a44-17c6" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29b4-69c0-0cfd-45a1" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41de-2c13-da1a-d70a" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1f9e-0b33-7565-7830" name="Medusa" hidden="false" collective="true" import="true" type="upgrade">
+                  <rules>
+                    <rule id="6056-96bf-7e43-8734" name="Auxilia Static Artillerists" hidden="false">
+                      <description>A Solar Auxilia Artillery Battery must have at least one Auxilia Gunner per Artillery Platform in order for all Artillery Platforms to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Solar Auxilia Artillery Battery contains fewer Auxilia Gunners than Artillery Platforms, then only a number of Artillery Platforms equal to the number of Auxilia Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Artillery Platforms, then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled (this benefit is lost immediately once the number of Auxilia Gunners is reduced to less than the number of Artillery Platforms in the unit).</description>
+                    </rule>
+                  </rules>
                   <infoLinks>
-                    <infoLink id="ccba-6670-e295-86f3" name="Medusa Mortar" hidden="false" targetId="27dd-e9b5-2f18-b4fa" type="profile"/>
-                    <infoLink id="53b7-43e7-8f5d-b276" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
-                    <infoLink id="20e2-1c59-c44a-1130" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-                    <infoLink id="c609-8856-d6c9-4767" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                    <infoLink id="877f-f59c-fbc1-a4f3" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Rending (6+)"/>
-                      </modifiers>
-                    </infoLink>
+                    <infoLink id="cd55-2970-90c8-cea9" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="a458-d885-c32a-18f1" name="Auxilia Gunners" hidden="false" collective="true" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eecd-8b4c-455b-4726" type="min"/>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64af-16a2-01a0-1b6d" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="cdec-8d38-f1bd-12df" name="Auxilia Gunners" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                          <characteristics>
+                            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                            <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                            <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                            <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink id="b64d-6864-15bf-4c10" name="Laspistol" hidden="false" collective="false" import="true" targetId="3cf9-eb36-3bfe-4970" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b02-aaf2-f816-74d6" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29e7-c4f0-dc06-d21f" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="7725-7018-5419-9ffc" name="Void Armour" hidden="false" collective="false" import="true" targetId="499b-b86b-3a44-17c6" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feef-1550-02da-c5df" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adf6-3e56-a892-5e79" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="958d-a7de-99a8-033f" name="Earthshaker" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed4c-2d93-6966-68ad" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea9a-5d79-7002-5c11" type="min"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="b6b3-5206-0a74-841a" name="Earthshaker cannon" hidden="false" targetId="e374-d732-4d08-5952" type="profile"/>
+                        <infoLink id="4bb3-5b7c-cb90-8416" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+                        <infoLink id="38c8-0952-a498-de8e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                        <infoLink id="93b3-6e55-3fe3-3538" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                        <infoLink id="5676-1b33-df68-415a" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100.0"/>
-              </costs>
             </selectionEntry>
-            <selectionEntry id="7b92-c405-80c7-6f81" name="Earthshaker Artillery Platforms" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4942-5346-9932-2413" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="c9a8-4088-fa43-302e" name="Artillery Platform" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Static Artillery, Heavy)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="4e4f-2e15-204d-204c" name="Auxilia Static Artillerists" hidden="false">
-                  <description>A Solar Auxilia Artillery Battery must have at least one Auxilia Gunner per Artillery Platform in order for all Artillery Platforms to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Solar Auxilia Artillery Battery contains fewer Auxilia Gunners than Artillery Platforms, then only a number of Artillery Platforms equal to the number of Auxilia Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Artillery Platforms, then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled (this benefit is lost immediately once the number of Auxilia Gunners is reduced to less than the number of Artillery Platforms in the unit).</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="e091-b604-eb7a-129a" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
-              </infoLinks>
+            <selectionEntry id="eeb1-c295-e7cb-b867" name="Medusa Artillery Platforms" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
-                <selectionEntry id="5bf3-e6a4-75c5-7344" name="Auxilia Gunners" hidden="false" collective="true" import="true" type="model">
+                <selectionEntry id="bcfe-d922-eec8-98f1" name="Medusa Artillery Platforms" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dc4-610f-162a-2663" type="min"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cbc-5590-9291-14ce" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e3d-fcec-1017-5eab" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99e2-8534-d4d6-90af" type="max"/>
                   </constraints>
                   <profiles>
-                    <profile id="7186-7109-aed4-5914" name="Auxilia Gunners" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                    <profile id="9a1a-2dda-d32f-597c" name="Artillery Platform" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
                       <characteristics>
-                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
-                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
-                        <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                        <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
-                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-                        <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Static Artillery, Heavy)</characteristic>
+                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
+                        <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
                         <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
                         <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
-                  <entryLinks>
-                    <entryLink id="77ba-75c6-aa3e-47c7" name="Laspistol" hidden="false" collective="false" import="true" targetId="3cf9-eb36-3bfe-4970" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ab9-781b-10b0-8a65" type="min"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bdb-09ad-03bd-2b26" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="e6dc-a2c9-aba2-29e3" name="Void Armour" hidden="false" collective="false" import="true" targetId="499b-b86b-3a44-17c6" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81bc-9292-8dae-ab9b" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4546-d307-de2b-3ec3" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="af0a-972f-a4c0-fb22" name="Earthshaker" hidden="false" collective="true" import="true" type="upgrade">
+                  <rules>
+                    <rule id="e773-78ae-d47c-56e7" name="Auxilia Static Artillerists" hidden="false">
+                      <description>A Solar Auxilia Artillery Battery must have at least one Auxilia Gunner per Artillery Platform in order for all Artillery Platforms to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Solar Auxilia Artillery Battery contains fewer Auxilia Gunners than Artillery Platforms, then only a number of Artillery Platforms equal to the number of Auxilia Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Artillery Platforms, then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled (this benefit is lost immediately once the number of Auxilia Gunners is reduced to less than the number of Artillery Platforms in the unit).</description>
+                    </rule>
+                  </rules>
                   <infoLinks>
-                    <infoLink id="c319-f68b-64ed-6c7e" name="Earthshaker cannon" hidden="false" targetId="e374-d732-4d08-5952" type="profile"/>
-                    <infoLink id="c609-1b6f-3b5c-0332" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
-                    <infoLink id="d1e1-222f-06a6-5d2b" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-                    <infoLink id="c5e9-6450-2292-bb30" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                    <infoLink id="bdc6-a55d-54b5-99c0" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+                    <infoLink id="61d2-82ad-1e8c-60aa" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="1efe-49b2-407f-0977" name="Auxilia Gunners" hidden="false" collective="true" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd4-d26b-c710-2ded" type="min"/>
+                        <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22a5-c684-fef2-241d" type="max"/>
+                      </constraints>
+                      <profiles>
+                        <profile id="666b-98d4-aeab-f6d5" name="Auxilia Gunners" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                          <characteristics>
+                            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
+                            <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                            <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                            <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <entryLinks>
+                        <entryLink id="0908-c5c5-f05d-f1bd" name="Laspistol" hidden="false" collective="false" import="true" targetId="3cf9-eb36-3bfe-4970" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5949-3b02-0f83-3942" type="min"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2626-7f59-4b06-4a8c" type="max"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink id="cdab-9c5b-614b-cff7" name="Void Armour" hidden="false" collective="false" import="true" targetId="499b-b86b-3a44-17c6" type="selectionEntry">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51c2-a3a4-e694-ec66" type="max"/>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2195-9b38-2625-e72f" type="min"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="5608-a41b-086f-59d6" name="Medusa" hidden="false" collective="true" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0833-50e2-5624-fcd7" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18d4-4f74-1170-8dc0" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="48ed-ddcf-8495-bc70" name="Medusa Mortar" hidden="false" targetId="27dd-e9b5-2f18-b4fa" type="profile"/>
+                        <infoLink id="633f-4562-1d9c-73a1" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+                        <infoLink id="5575-1145-f465-8fec" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+                        <infoLink id="5fb6-a076-f308-efd4" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+                        <infoLink id="fce2-5dfd-6c7b-d134" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                          <modifiers>
+                            <modifier type="set" field="name" value="Rending (6+)"/>
+                          </modifiers>
+                        </infoLink>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
