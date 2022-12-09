@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="b35c-9232-1993-823c" name="Armoured Fist - Leman Russ Strike Squadron" hidden="true" collective="false" import="false" type="upgrade">
       <modifiers>
@@ -6141,7 +6141,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="4472-8cb0-1c2b-90a6" name="Two Turret Mounted Gravis Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="4472-8cb0-1c2b-90a6" name="Turret Mounted Gravis Lascannons" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
                         <entryLink id="85bf-2522-ddd1-409b" name="Gravis Lascannon" hidden="false" collective="false" import="true" targetId="1fe0-7c96-5200-0e39" type="selectionEntry">
                           <constraints>
@@ -7125,6 +7125,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                     </modifier>
                   </modifiers>
                 </infoLink>
+                <infoLink id="bf71-17d3-7a1f-a49a" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+                <infoLink id="79b6-94d8-fd78-69aa" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Firing Protocols (2)"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="0f06-68df-a24d-f08d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -7322,7 +7328,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <entryLink id="dc68-bfa9-7008-eb02" name="Demolisher Cannon" hidden="false" collective="false" import="true" targetId="1d4a-05a3-1589-915d" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3aef-f336-3b44-7f26" name="3) May exchange its Hull (side) Mounted heavy bolters for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9020-c4fb-3589-9f16">
+            <selectionEntryGroup id="3aef-f336-3b44-7f26" name="3) May exchange its Hull (Left) &amp; Hull (Right) Mounted heavy bolters for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9020-c4fb-3589-9f16">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b546-23b9-7c07-9d65" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37c8-464e-3c0f-cffa" type="max"/>
@@ -7330,27 +7336,27 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               <entryLinks>
                 <entryLink id="9020-c4fb-3589-9f16" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="2x Heavy Bolter"/>
+                    <modifier type="set" field="name" value="Hull (Left) &amp; Hull (Right) Mounted Heavy Bolter"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="a14a-ecad-5a0d-1c1b" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="2x Autocannon"/>
+                    <modifier type="set" field="name" value="Hull (Left) &amp; Hull (Right) Mounted Autocannon"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="ecf0-195f-73f3-78e4" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="2x Multi-Laser"/>
+                    <modifier type="set" field="name" value="Hull (Left) &amp; Hull (Right) Mounted Multi-Laser"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="5c0c-b40e-80fc-c0e6" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="2x Heavy Flamer"/>
+                    <modifier type="set" field="name" value="Hull (Left) &amp; Hull (Right) Mounted Heavy Flamer"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="016f-ccba-2975-b223" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
                   <modifiers>
-                    <modifier type="set" field="name" value="2x Lascannon"/>
+                    <modifier type="set" field="name" value="Hull (Left) &amp; Hull (Right) Mounted Lascannon"/>
                   </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>

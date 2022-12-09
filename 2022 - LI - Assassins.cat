@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c88-1a81-7e53-0a67" name="2022 - LI - Assassins" revision="1" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c88-1a81-7e53-0a67" name="2022 - LI - Assassins" revision="2" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="c1fd-3919-f4bf-a990" name="Clade Adamus Assassin" publicationId="15a4-fc68-502d-48a9" page="120" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -209,9 +209,13 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f73-c534-bafe-0f07" type="max"/>
           </constraints>
           <profiles>
-            <profile id="be9b-4c97-4d93-8f9d" name="Polymorphine" publicationId="15a4-fc68-502d-48a9" page="117" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+            <profile id="be9b-4c97-4d93-8f9d" name="Polymorphine" publicationId="15a4-fc68-502d-48a9" page="FAQ" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with polymophine may not be targeted for a Shooting Attack, Charge or Reaction of any kind by an enemy unit as long as the unitwith polymorphine has not made a Shooting Attack at any point in the battle. Once a unit or model with polymorphine has made a Shootin gAttack (including during a Reaction) then polymorphine has no futher effect.</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit composed entirely of models with polymorphine
+may not be targeted for a Shooting Attack, Charge or
+Reaction of any kind by an enemy unit as long as the unit
+with polymorphine has not made an attack of any kind
+during the battle. Once a unit or model with polymorphine has made a Shootin gAttack (including during a Reaction) then polymorphine has no futher effect.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -369,7 +373,7 @@
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Rending (6+), Force, Psy-shock</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Rending (6+), Psy-shock</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -379,7 +383,6 @@
                 <modifier type="set" field="name" value="Rending (6+)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="d6f2-b07d-a5c5-c11f" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
             <infoLink id="6f37-90be-2c76-8d80" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
             <infoLink id="7224-8b40-2056-cd8c" name="Psy-shock" hidden="false" targetId="f372-a365-a036-cbc4" type="rule"/>
           </infoLinks>
@@ -575,7 +578,6 @@
         <categoryLink id="cf7b-537c-daed-5b1e" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
         <categoryLink id="11f6-34ac-6bd1-8a46" name="Assassin Sub-Type" hidden="false" targetId="d615-c0e4-6d17-107e" primary="false"/>
         <categoryLink id="70b1-d663-0455-a3fc" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
-        <categoryLink id="dcd3-dc6f-d3ca-5931" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="67ea-0ed0-690f-55ea" name="Auspectre" publicationId="15a4-fc68-502d-48a9" page="125" hidden="false" collective="false" import="true" type="upgrade">
@@ -652,6 +654,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc8-e16d-f9e0-104d" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="671a-094d-df53-5f32" name="Panoply Of The Assassin" hidden="false" collective="false" import="true" targetId="bc9b-aac0-fdf7-4433" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125.0"/>
