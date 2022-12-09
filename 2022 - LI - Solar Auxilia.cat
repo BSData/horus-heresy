@@ -7596,9 +7596,17 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <entryLink id="428d-7409-2134-a6c7" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
                 <entryLink id="25a4-9897-2444-056b" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
                 <entryLink id="5abe-ea73-3b21-396e" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                <entryLink id="fb66-453c-bc5f-3d1f" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="f1d6-ebe1-d236-3f11" type="selectionEntry"/>
-                <entryLink id="4927-c9e2-22b1-5aec" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
-                <entryLink id="dc68-bfa9-7008-eb02" name="Demolisher Cannon" hidden="false" collective="false" import="true" targetId="1d4a-05a3-1589-915d" type="selectionEntry"/>
+                <entryLink id="fb66-453c-bc5f-3d1f" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+                <entryLink id="4927-c9e2-22b1-5aec" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="dc68-bfa9-7008-eb02" name="Demolisher Cannon" hidden="false" collective="false" import="true" targetId="1d4a-05a3-1589-915d" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="3aef-f336-3b44-7f26" name="3) May exchange its Hull (Left) &amp; Hull (Right) Mounted heavy bolters for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9020-c4fb-3589-9f16">
@@ -8807,6 +8815,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </costs>
             </selectionEntry>
             <selectionEntry id="a959-83a9-88ed-8deb" name="Turret Mounted Twin-linked Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <entryLinks>
                 <entryLink id="d045-b197-7d17-2ab0" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
                   <modifiers>
@@ -8822,10 +8837,17 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9f5d-2c09-e44f-6627" name="Turret Mounted Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
+                  <repeats>
+                    <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <entryLinks>
                 <entryLink id="d67e-2040-07d8-3877" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" targetId="3adf-7150-9ee6-b2de" type="selectionEntry">
                   <modifiers>
@@ -8838,7 +8860,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d822-797e-d15a-435a" name="Turret Mounted Twin-linked Multi-Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -8901,6 +8923,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </costs>
             </selectionEntry>
             <selectionEntry id="5f07-95b6-fbff-d53e" name="Two Sponson Mounted Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10.0">
+                  <repeats>
+                    <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <entryLinks>
                 <entryLink id="10c3-e676-05e5-db63" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
                   <modifiers>
@@ -8913,10 +8942,17 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3e04-7aeb-959d-61ef" name="Two Sponson Mounted Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="20.0">
+                  <repeats>
+                    <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <entryLinks>
                 <entryLink id="aa6a-9730-411d-08aa" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
                   <modifiers>
@@ -8929,10 +8965,17 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="25d6-a17a-5db1-6969" name="Two Sponson Mounted Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10.0">
+                  <repeats>
+                    <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <entryLinks>
                 <entryLink id="8431-6cf1-63dd-8e30" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
                   <modifiers>
@@ -8945,10 +8988,17 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="32ae-5000-8b0a-19ef" name="Two Sponson Mounted Multi-lasers" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10.0">
+                  <repeats>
+                    <repeat field="selections" scope="2918-e98d-0ab1-811b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e067-3e89-30e3-aed8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
               <entryLinks>
                 <entryLink id="c48b-c3ef-5f9f-a1e2" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
                   <modifiers>
@@ -8961,7 +9011,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -11048,6 +11098,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="eeb1-c295-e7cb-b867" name="Medusa Artillery Platforms" hidden="false" collective="false" import="true" type="upgrade">
               <selectionEntries>
@@ -11148,6 +11201,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
