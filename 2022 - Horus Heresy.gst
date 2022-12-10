@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="34" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="35" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -795,6 +795,13 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         </categoryLink>
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of Warzz:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <modifiers>
+            <modifier type="set" field="1db1-1803-cee1-86cb" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1db1-1803-cee1-86cb" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84d6-d8d5-49ec-27fb" type="min"/>
@@ -5733,6 +5740,11 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="5617-ada9-bf10-f9b0" value="5.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5617-ada9-bf10-f9b0" type="max"/>
@@ -9336,6 +9348,16 @@ If, at the start of the controlling player’s Charge sub-phase, there are any e
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="a588-2dfc-d56f-b4da" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="7d37-f586-392f-3b28" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d37-f586-392f-3b28" type="max"/>
@@ -9384,7 +9406,17 @@ may make an additional Reaction during the opposing player’s Assault phase as 
             </selectionEntry>
             <selectionEntry id="f0cd-3b80-db54-a061" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
+                <modifier type="set" field="1b62-0dbe-b9e3-d2f9" value="5.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="ea15-6fca-c029-c284" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4bdb-6754-ee5d-4276" value="5.0">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
                   </conditions>
