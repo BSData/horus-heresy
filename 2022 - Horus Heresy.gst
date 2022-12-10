@@ -782,6 +782,18 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     </categoryEntry>
     <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
     <categoryEntry id="e333-681c-ddca-24f6" name="Crusade " hidden="false"/>
+    <categoryEntry id="4aca-2849-7f41-0200" name="Solar Auxilla" hidden="false">
+      <modifiers>
+        <modifier type="set" field="0c57-9f90-e576-5e7d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0c57-9f90-e576-5e7d" type="min"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -7893,18 +7905,13 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       </costs>
     </selectionEntry>
     <selectionEntry id="f689-fd0d-ffb0-c255" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="0eb9-9a9b-95f8-1134" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e2-2823-321a-2ab1" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f837-7b9c-1cbd-43f5" type="max"/>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eb9-9a9b-95f8-1134" type="min"/>
       </constraints>
+      <categoryLinks>
+        <categoryLink id="e10e-3234-271f-8c37" name="Solar Auxilla" hidden="false" targetId="4aca-2849-7f41-0200" primary="false"/>
+      </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -8301,7 +8308,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e75d-6a73-3087-6846" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e75d-6a73-3087-6846" name="Liberation Force Allies Restriction" hidden="true" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="1ea9-70c2-3277-32cc" value="4.0">
           <conditions>
@@ -8309,6 +8316,11 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </conditions>
         </modifier>
         <modifier type="set" field="e5dd-e961-af2a-56cc" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
           </conditions>
