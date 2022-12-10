@@ -456,6 +456,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3746,6 +3747,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="42bd-8072-fb45-fb5f" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="35cb-31a0-80f5-3eb1" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -5084,6 +5097,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="a5ed-e439-d73b-09b1" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="a996-7100-5c06-3786" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -6112,6 +6137,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="ab35-e864-b223-305b" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="b6d4-54a9-76cd-8b9d" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -8968,6 +9005,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </profiles>
           <infoLinks>
             <infoLink id="4e6f-3180-c5b0-671d" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+            <infoLink id="0eb6-697d-f898-c05d" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="3ff3-a875-b665-d9c2" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -9244,9 +9291,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="fd59-d643-42dc-1aa7" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80c3-250f-9699-f47b" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd59-d643-42dc-1aa7" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="2e42-9815-97e4-3386" name="Warhawk Jump Pack" hidden="false" collective="false" import="true" targetId="a298-8584-70ed-18ce" type="selectionEntry">
@@ -9256,6 +9309,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <conditionGroup type="or">
                           <conditions>
                             <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -9840,6 +9894,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <modifier type="set" field="name" value="Bulky (2)"/>
               </modifiers>
             </infoLink>
+            <infoLink id="c826-30dd-1507-0490" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="55e0-8c05-884e-ba8c" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -10231,6 +10295,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <infoLink id="aae5-61fd-73c1-0724" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Bulky (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="ba61-5024-d3fd-bd05" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -10841,6 +10915,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <infoLinks>
             <infoLink id="4383-5ee3-a507-d62e" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
             <infoLink id="21e0-a06e-2f9e-0b2d" name="Legiones Consularis" hidden="false" targetId="dcc5-b4e0-35c5-0c17" type="rule"/>
+            <infoLink id="f66e-9c9c-369c-2e14" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="c616-84d4-9f5c-db27" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -11420,12 +11504,25 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="18a7-ef39-5d20-dd18" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd52-7830-84d3-a3af" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18a7-ef39-5d20-dd18" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="1a3f-5c9e-f4d6-c92d" name="Warhawk Jump Pack" hidden="false" collective="false" import="true" targetId="a298-8584-70ed-18ce" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
@@ -12217,6 +12314,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="7e43-026f-6a4c-3d20" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="name" value="Fear (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="e046-ff5c-f79f-365a" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
               </categoryLinks>
@@ -12971,6 +13080,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f8f-ef73-c705-302a" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="836f-f804-6fa4-3953" type="min"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="125c-3d4d-8d15-ef25" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="1dcd-65fa-34bb-f0e9" name=" Cataphractii Sergeant w/TLC" hidden="false" collective="false" import="true" type="model">
               <profiles>
@@ -13314,6 +13435,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="a249-1d99-24bb-451e" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="2d71-0b5b-2483-5f08" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -14242,6 +14375,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="75a5-c45e-4213-1efe" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="bbac-7dbd-ca0f-863a" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -15112,6 +15257,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="fded-443d-4569-a7f7" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="200c-0f43-1beb-62aa" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -15981,6 +16138,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="3aec-91c9-effd-896d" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="f17a-52a8-4f51-87b0" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -17345,6 +17514,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </modifiers>
             </infoLink>
             <infoLink id="e72c-4f4a-081a-3f85" name="Legiones Consularis" hidden="false" targetId="dcc5-b4e0-35c5-0c17" type="rule"/>
+            <infoLink id="cd15-e3f7-9769-e06c" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="add6-afbd-601c-8362" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -19214,6 +19393,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="09ad-40a9-c4ea-6872" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="name" value="Fear (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="b2c1-e41d-4284-9218" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
               </categoryLinks>
@@ -19684,6 +19875,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="2f2e-c8dd-e98e-1ff7" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="c071-739d-589c-3e0c" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -20258,6 +20461,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="aca4-9c98-afe5-3aa5" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="cb22-550a-0414-5b07" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -20807,6 +21022,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="0504-6f82-9173-f9b5" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="73ea-7e8d-96d7-d695" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -21564,6 +21791,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </modifiers>
             </infoLink>
             <infoLink id="8d69-59ee-ea05-1514" name="Legiones Consularis" hidden="false" targetId="dcc5-b4e0-35c5-0c17" type="rule"/>
+            <infoLink id="8cb6-d6fb-362c-b0d4" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="cc53-08c1-5201-8d44" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
@@ -24959,6 +25196,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="7011-2e7e-e026-3ac4" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="7f32-88bb-fc56-eb28" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -25245,13 +25494,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="f20c-0dc7-e4bd-d795" name="2) Dedicated Transport:" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ba-77e3-9685-cd64" type="max"/>
           </constraints>
@@ -25858,6 +26100,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="6b9a-cce1-8d40-60e4" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="c641-0dd3-091e-e12d" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
+        <categoryLink id="d231-48d4-4a7e-88c4" name="Antigrav Sub-type" hidden="false" targetId="4303-1348-cce4-9501" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d0b2-a77a-a4f4-0ae1" name="Legion Sky-Hunter" hidden="false" collective="false" import="true" type="model">
@@ -26073,6 +26316,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="1167-904c-34cd-388f" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="f19e-a74c-d86c-6ff1" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -26597,6 +26852,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <categoryLinks>
         <categoryLink id="1412-8efa-2452-8bc5" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="1e92-e87f-a677-398f" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
+        <categoryLink id="0da3-41c4-2fe1-0e83" name="Antigrav Sub-type" hidden="false" targetId="4303-1348-cce4-9501" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="e6da-2d8a-93c6-16fc" name="Proteus Land Speeder" publicationId="a716-c1c4-7b26-8424" page="61" hidden="false" collective="false" import="true" type="model">
@@ -26869,6 +27125,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="75e1-504c-336a-7c0a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="f730-f34b-420b-afc6" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
         <categoryLink id="24a5-f630-33d2-5b96" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="76d8-28cf-6a2e-a993" name="Antigrav Sub-type" hidden="false" targetId="4303-1348-cce4-9501" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f498-772c-158e-206f" name="Javelin Land Speeder" hidden="false" collective="false" import="true" type="model">
@@ -30180,6 +30437,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="ce1d-d220-6c8b-5ec4" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="231f-ecef-2569-5b05" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -30934,6 +31203,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24fb-b372-3e93-02b3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c40-2696-d313-ced4" type="min"/>
           </constraints>
+          <infoLinks>
+            <infoLink id="d2f7-c923-f013-d55f" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="5a9a-e44d-ddcd-463b" name=" Indomitus Sergeant w/Lightning Claws" hidden="false" collective="false" import="true" type="model">
               <profiles>
@@ -37462,6 +37743,18 @@ containing the model that failed its Check. If the Psyker survives Perils of the
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="62d9-21c7-08b1-32cc" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="71e6-f8f4-6b5e-9405" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -39036,6 +39329,18 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="25f2-7d23-0684-8729" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="d5d1-9ec0-5b7b-ca10" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -39897,6 +40202,18 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="524e-621e-35ed-e4d9" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="5d9e-72ae-2fa5-191e" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>

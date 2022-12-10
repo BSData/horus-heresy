@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="f491-c7fa-f6d3-917d" name="Contekar Terminator Squad" hidden="false" collective="false" import="false" targetId="837e-c3ca-437e-dfbf" type="selectionEntry">
       <modifiers>
@@ -9,6 +9,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1636-d8d9-2428-f166" type="greaterThan"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2ce-94c1-242d-2a7f" type="greaterThan"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -27,16 +28,29 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="c700-6253-d5c4-b462" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="dead-a3bc-6447-64ea" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="44dc-815a-7895-cfa0" name="Night Raptor Squad" hidden="false" collective="false" import="false" targetId="9bb8-8fe4-11c1-9e50" type="selectionEntry">
+    <entryLink id="44dc-815a-7895-cfa0" name="Night Raptor Squad" hidden="true" collective="false" import="false" targetId="9bb8-8fe4-11c1-9e50" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
-        <categoryLink id="0de9-ad2e-c5af-664a" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="cb4b-49f7-d796-a3b1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="caaa-5204-d8af-846d" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="daa5-937e-cba4-9c79" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="fb5a-4a13-3b2d-aeda" name="Sevatar" hidden="false" collective="false" import="false" targetId="d2ce-94c1-242d-2a7f" type="selectionEntry">
@@ -46,6 +60,11 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="57a9-a024-e7a3-e8bf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -53,10 +72,18 @@
         <categoryLink id="2f21-d05c-f877-7bf7" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ecad-ff3f-4ef3-d8ae" name="Terror Squad" hidden="false" collective="false" import="false" targetId="53ce-6dc9-aa69-fbaa" type="selectionEntry">
+    <entryLink id="ecad-ff3f-4ef3-d8ae" name="Terror Squad" hidden="true" collective="false" import="false" targetId="53ce-6dc9-aa69-fbaa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
-        <categoryLink id="4edc-3e13-084e-ba81" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="8ce1-4ddc-5784-6fda" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="43cb-1a57-baf5-c366" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="d00f-0db6-3c89-7da8" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6ee2-037b-e211-5d0c" name="Atramentar Squad" hidden="true" collective="false" import="false" targetId="12d3-9df0-4118-997f" type="selectionEntry">
@@ -118,6 +145,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6383-da25-4d31-9d0f" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
@@ -136,6 +168,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -452,6 +489,11 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="4b5e-43ed-44bb-9c45" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -485,6 +527,13 @@
     </entryLink>
     <entryLink id="7129-2a2a-b24d-2223" name="Centurion, Tartaros " hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
       <comment>    template_id_6e9c-0842-4514-8ea6</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="71d3-1c71-4d58-b4f9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_fc9d-03d1-4bbd-a1c4</comment>
@@ -631,6 +680,7 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
                   <comment>    node_id_25e3-b8f5-4448-a7c8</comment>
                 </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1638,19 +1688,41 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="4b61-6cb1-1fbb-ded2" name="Outrider Squadron" hidden="false" collective="false" import="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
+    <entryLink id="4b61-6cb1-1fbb-ded2" name="Outrider Squadron" hidden="true" collective="false" import="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
       <comment>    template_id_4654-227a-4d95-8773</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e031-c589-47f4-8bfd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_ff9f-01cb-41b9-800e</comment>
         </categoryLink>
-        <categoryLink id="f85a-85ff-48a2-954b" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
-          <comment>    template_id_1315-6051-4a46-b070</comment>
-        </categoryLink>
+        <categoryLink id="d083-ec62-83f5-6915" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="4a0e-e4d0-1493-84ed" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="966e-be19-0b84-c8a6" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>    template_id_5798-3fc7-4d4c-ad41</comment>
+      <modifiers>
+        <modifier type="set" field="47ce-b364-cf93-6764" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="654a-5bdc-e542-6ca4" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47ce-b364-cf93-6764" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="654a-5bdc-e542-6ca4" type="min"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="b6e2-a6f7-44a6-983c" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
           <comment>    template_id_b084-df23-4f99-812f</comment>
@@ -1682,6 +1754,11 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5b27-620c-4510-90d7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
@@ -1705,6 +1782,13 @@
     </entryLink>
     <entryLink id="8141-b381-6e35-cf64" name="Praetor, Tartaros" hidden="false" collective="false" import="false" targetId="3760-204e-444c-1044" type="selectionEntry">
       <comment>    template_id_e95d-4a2f-45c3-b44e</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c558-ec22-4fc9-8bfe" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
           <comment>    template_id_4c8d-96f6-48f9-9590</comment>
@@ -2914,6 +2998,29 @@
         <categoryLink id="e6d5-1599-4fa3-98c4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="4e26-f260-25e1-a784" name="Night Raptor Squad" hidden="false" collective="false" import="true" targetId="9bb8-8fe4-11c1-9e50" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="06f0-e8f6-c870-0402" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="2a64-1d3f-e411-c53b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="66e2-53d1-cf15-3acb" name="Terror Squad" hidden="false" collective="false" import="true" targetId="53ce-6dc9-aa69-fbaa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3ab3-2837-3e08-498f" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="bfe0-0539-377d-369d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8149-6159-b69d-2d38" name="Outrider Squadron" hidden="false" collective="false" import="true" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
+      <comment>    template_id_4654-227a-4d95-8773</comment>
+      <categoryLinks>
+        <categoryLink id="c54f-4baf-9c3e-10af" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>    template_id_ff9f-01cb-41b9-800e</comment>
+        </categoryLink>
+        <categoryLink id="8ca3-e7bc-7797-bb0b" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
+          <comment>    template_id_1315-6051-4a46-b070</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d2ce-94c1-242d-2a7f" name="Sevatar" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="unit">
@@ -3156,6 +3263,18 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="8167-8622-68a6-31a0" name="Fear (X)" hidden="true" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fear (1)"/>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="632b-c772-22db-d185" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -3595,6 +3714,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9bb8-8fe4-11c1-9e50" name="Night Raptor Squad" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9b5d-fac7-799b-d7e7">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53ce-6dc9-aa69-fbaa" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="deb7-a315-6298-63ab" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="dec4-fd49-9010-e6f3" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
@@ -3646,6 +3772,18 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="ab71-d956-3e1a-167b" name="Fear (X)" hidden="true" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fear (1)"/>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="3359-c174-6c53-9968" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -4333,6 +4471,18 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="b562-95c7-88c9-2eee" name="Fear (X)" hidden="true" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fear (1)"/>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="bca6-cd04-8a1f-52fa" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -4566,6 +4716,18 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="a0a9-f6c6-b586-3f39" name="Fear (X)" hidden="true" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fear (1)"/>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="b6a9-d248-76ec-f59d" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
@@ -5426,6 +5588,11 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="654b-f635-7e72-3df3" value="5.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="654b-f635-7e72-3df3" type="max"/>
@@ -5439,13 +5606,18 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="3e6b-d354-f587-8b8a" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="36dc-93ee-651e-1ec7" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e6b-d354-f587-8b8a" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="84a2-6533-2d3b-5880" name="Warmonger (Traitor only) (PLACEHOLDER)" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="84a2-6533-2d3b-5880" name="Warmonger (Traitor only) " publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -5460,7 +5632,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
               <profiles>
                 <profile id="f27c-8e0a-dba7-ca64" name="Warmonger" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and any unit he has joined gains a bonus of +1 to all To Hit rolls made when targeting enemy units that include one or more models with the Independent Character special rule and Loyalist Allegiance. Furthermore, if the army that includes a Warlord with this Trait also  includes a Detachment with the Legiones Astartes (Sons of Horus) faction, the Warlord and any unit it joins gains the Fearless special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the Shooting phase as long as the Warlord has not been removed as a  casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5468,7 +5640,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="bfaf-01c3-416b-afcc" name="Flaymaster (PLACEHOLDER)" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="bfaf-01c3-416b-afcc" name="Flaymaster" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8a64-3c90-7182-e55f" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e141-f63d-5c6f-c223" type="max"/>
@@ -5476,7 +5648,8 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
               <profiles>
                 <profile id="ebe4-5c8d-1fdc-945d" name="Flaymaster" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fear (1) special rule, and each time that Warlord is part of a combat that results in all enemy units being destroyed,  by having all their models removed as casualties or as part of a Sweeping Advance, or that is part of a Challenge in which the enemy combatant is removed as a casualty, it increases the value of that special rule by +1 (up to a maximum of Fear (3)). In addition, an army whose Warlord has this Trait
+may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5484,15 +5657,34 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="58bf-c972-77f3-6fbc" name="Jadhek Clanlord (PLACEHOLDER)" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="58bf-c972-77f3-6fbc" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="b58b-0bac-aeb4-c083" value="5.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d7c3-d160-9a45-1e8b" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d1e6-5292-623d-a5c1" value="5.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b58b-0bac-aeb4-c083" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d1e6-5292-623d-a5c1" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7c3-d160-9a45-1e8b" type="min"/>
               </constraints>
               <profiles>
                 <profile id="db4c-07da-4fea-64b3" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models that are part of a unit he joins gain the Counter-attack (1) special rule and ignore all penalties to their Movement and Charge rolls due to Terrain and may re-roll all failed Dangerous Terrain tests they are called upon to make. In addition, an army
+whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
