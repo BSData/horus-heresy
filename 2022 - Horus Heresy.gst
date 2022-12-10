@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="34" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="36" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -137,6 +137,20 @@
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch:" hidden="false">
+      <modifiers>
+        <modifier type="set" field="5835-8a51-b8c1-17c4" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-ff79-2e32-99b2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5835-8a51-b8c1-17c4" type="max"/>
+      </constraints>
       <rules>
         <rule id="a895-3e13-98e4-b67c" name="Primarch Unit-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
           <description>• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
@@ -259,7 +273,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Sub-type:" hidden="false">
+    <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Unit-type:" hidden="false">
       <rules>
         <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
           <description>• Cavalry models cannot be Pinned.
@@ -298,7 +312,22 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="e2b6-b770-784c-9e95" name="Vehicle:" hidden="false"/>
+    <categoryEntry id="e2b6-b770-784c-9e95" name="Vehicle:" hidden="false">
+      <modifiers>
+        <modifier type="set" field="d368-7220-4856-a7f8" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-ff79-2e32-99b2" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d368-7220-4856-a7f8" type="max"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="23eb-0b9e-0857-e965" name="Vehicle Unit:" hidden="false"/>
     <categoryEntry id="bab3-f50d-3e5f-2f78" name="Terminators:" hidden="false"/>
     <categoryEntry id="d8ab-8e21-e193-63ba" name="Automata Unit-type:" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
@@ -324,6 +353,21 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       </rules>
     </categoryEntry>
     <categoryEntry id="d5df-57ac-8f3c-097b" name="Bombard Sub-type:" hidden="false">
+      <modifiers>
+        <modifier type="set" field="b5db-1b13-81a9-66fe" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b5db-1b13-81a9-66fe" type="max"/>
+      </constraints>
       <rules>
         <rule id="6c51-7362-45fb-d084" name="Bombard Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
           <description>• When a model with the Vehicle Unit Type and Bombard Sub-type moves at Combat Speed it may fire any number of Ordnance weapons and may also fire any non-Ordnance weapons normally, ignoring the restrictions of Combat Speed. However, when moving at Cruising Speed it may only fire a single Defensive weapon</description>
@@ -348,7 +392,19 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
     <categoryEntry id="030f-3801-4f54-e7f8" name="Compulsory Heavy Support:" hidden="false"/>
     <categoryEntry id="0a04-abac-c606-2d48" name="Compulsory Lord of War:" hidden="false"/>
     <categoryEntry id="1b67-8d3b-283a-1488" name="Compulsory Fortification:" hidden="false"/>
-    <categoryEntry id="9231-183c-b97b-63f9" name="Heavy" hidden="false">
+    <categoryEntry id="9231-183c-b97b-63f9" name="Heavy Sub-type:" hidden="false">
+      <modifiers>
+        <modifier type="set" field="fd31-bf22-2243-ccc7" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd31-bf22-2243-ccc7" type="max"/>
       </constraints>
@@ -470,6 +526,21 @@ During any Reaction that allows a unit equipped entirely with Jet PAcks to move,
       </rules>
     </categoryEntry>
     <categoryEntry id="6f99-c178-6f9d-fb63" name="Artillery Sub-type:" hidden="false">
+      <modifiers>
+        <modifier type="set" field="0ae6-51c0-d028-a03a" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0ae6-51c0-d028-a03a" type="max"/>
+      </constraints>
       <rules>
         <rule id="a9ea-e2db-2aa3-8a5b" name="Artillery Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
           <description>If a unit that includes any models with the Artillery sub-type has no models without the Artillery sub-type, then all models in the unit are removed from play as casualties immediately.
@@ -564,7 +635,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Vehicles" hidden="false">
+    <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Sub-type:" hidden="false">
       <rules>
         <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="false">
           <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
@@ -650,6 +721,20 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     </categoryEntry>
     <categoryEntry id="11f2-472f-c1d1-9ae9" name="Legiones Astartes" hidden="false"/>
     <categoryEntry id="0faa-1bab-2901-4330" name="Automated Artillery Sub-Type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
+      <modifiers>
+        <modifier type="set" field="98cf-aba1-feac-7081" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98cf-aba1-feac-7081" type="max"/>
+      </constraints>
       <rules>
         <rule id="013d-6065-1cfc-77e5" name="Automated Artillery Sub-Type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
           <description>• A unit that includes one or more models with the Automated Artillery Sub-type may not Run, declare or otherwise make Charge moves, or make Reactions. 
@@ -658,12 +743,45 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="f1f2-434e-1348-b25b" name="New CategoryEntry" hidden="false"/>
-    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering" hidden="false"/>
-    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer" hidden="false"/>
-    <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport" hidden="false"/>
-    <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy" hidden="false"/>
-    <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Vehicle" hidden="false"/>
+    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering Sub-type:" hidden="false"/>
+    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer Sub-type:" hidden="false"/>
+    <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport Sub-type:" hidden="false"/>
+    <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy Sub-type:" hidden="false">
+      <modifiers>
+        <modifier type="set" field="b17b-8b75-59f6-6442" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b17b-8b75-59f6-6442" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Sub-type:" hidden="false">
+      <modifiers>
+        <modifier type="set" field="6098-fe90-8855-def8" value="0.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6098-fe90-8855-def8" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
+    <categoryEntry id="e333-681c-ddca-24f6" name="Crusade " hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -677,6 +795,13 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         </categoryLink>
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of Warzz:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <modifiers>
+            <modifier type="set" field="1db1-1803-cee1-86cb" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1db1-1803-cee1-86cb" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84d6-d8d5-49ec-27fb" type="min"/>
@@ -715,8 +840,11 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -737,12 +865,35 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
                       <comment>    node_id_b932-667a-4b43-8331</comment>
                     </condition>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a621-2c8c-3df0-89d3" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
+                      <comment>    node_id_b932-667a-4b43-8331</comment>
+                    </condition>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -781,6 +932,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -5588,6 +5740,11 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="5617-ada9-bf10-f9b0" value="5.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5617-ada9-bf10-f9b0" type="max"/>
@@ -6585,11 +6742,22 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
             <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="7ae6-be12-f22c-f977" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="ba40-62e6-2111-e938" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb55-4121-bfb2-3348" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ba40-62e6-2111-e938" type="max"/>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1191-ed3c-422f-51b0" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ae6-be12-f22c-f977" type="min"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -7725,9 +7893,17 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       </costs>
     </selectionEntry>
     <selectionEntry id="f689-fd0d-ffb0-c255" name="Solar Auxilia" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="0eb9-9a9b-95f8-1134" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e2-2823-321a-2ab1" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f837-7b9c-1cbd-43f5" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0eb9-9a9b-95f8-1134" type="min"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -8121,6 +8297,28 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="a7b3-255c-54b0-bee4" name="Shotgun" hidden="false" targetId="5511-1787-ac13-5af2" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e75d-6a73-3087-6846" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="1ea9-70c2-3277-32cc" value="4.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="e5dd-e961-af2a-56cc" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5dd-e961-af2a-56cc" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4165-53b4-08f6-ba44" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1ea9-70c2-3277-32cc" type="min"/>
+      </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -9191,6 +9389,16 @@ If, at the start of the controlling player’s Charge sub-phase, there are any e
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="a588-2dfc-d56f-b4da" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="7d37-f586-392f-3b28" value="5.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d37-f586-392f-3b28" type="max"/>
@@ -9212,7 +9420,7 @@ If, at the start of the controlling player’s Charge sub-phase, there are any e
               <profiles>
                 <profile id="71ea-b86f-e00f-86c1" name="Warmonger" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and any unit he has joined gains a bonus of +1 to all To Hit rolls made when targeting enemy units that include one or more models with the Independent Character special rule and Loyalist Allegiance. Furthermore, if the army that includes a Warlord with this Trait also  includes a Detachment with the Legiones Astartes (Sons of Horus) faction, the Warlord and any unit it joins gains the Fearless special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the Shooting phase as long as the Warlord has not been removed as a  casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9228,7 +9436,8 @@ If, at the start of the controlling player’s Charge sub-phase, there are any e
               <profiles>
                 <profile id="24d3-3121-c902-30a7" name="Flaymaster" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fear (1) special rule, and each time that Warlord is part of a combat that results in all enemy units being destroyed,  by having all their models removed as casualties or as part of a Sweeping Advance, or that is part of a Challenge in which the enemy combatant is removed as a casualty, it increases the value of that special rule by +1 (up to a maximum of Fear (3)). In addition, an army whose Warlord has this Trait
+may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9237,14 +9446,33 @@ If, at the start of the controlling player’s Charge sub-phase, there are any e
               </costs>
             </selectionEntry>
             <selectionEntry id="f0cd-3b80-db54-a061" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="1b62-0dbe-b9e3-d2f9" value="5.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="ea15-6fca-c029-c284" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4bdb-6754-ee5d-4276" value="5.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b62-0dbe-b9e3-d2f9" type="max"/>
                 <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4bdb-6754-ee5d-4276" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea15-6fca-c029-c284" type="min"/>
               </constraints>
               <profiles>
                 <profile id="374f-b35c-4dde-ffb6" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca"/>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models that are part of a unit he joins gain the Counter-attack (1) special rule and ignore all penalties to their Movement and Charge rolls due to Terrain and may re-roll all failed Dangerous Terrain tests they are called upon to make. In addition, an army
+whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10255,8 +10483,10 @@ Limitations
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d82b-1980-74f8-5dac" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10400,7 +10630,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e5ae-fd1c-729d-d855" name="The Stone Gauntlet (IF)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e5ae-fd1c-729d-d855" name="Hammerfall Strike Force (IF)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -10414,16 +10644,12 @@ Limitations
             </modifier>
           </modifiers>
           <rules>
-            <rule id="4b8b-3d95-5c0a-522f" name="The Stone Gauntlet" publicationId="817a-6288-e016-7469" page="226" hidden="false">
+            <rule id="4b8b-3d95-5c0a-522f" name="Hammerfall Strike Force" publicationId="817a-6288-e016-7469" page="226" hidden="false">
               <description>Effects
-• Phalanx Warder Squads may be taken as Troops choices for a Detachment using this Rite of War.
-• All models selected as part of a Phalanx Warder Squad in a Detachment using this Rite of War gain the Line Sub-type and Heart of the Legion special rule.
-• Any model in a Detachment using this Rite of War, and with the Legiones Astartes (Imperial Fists) special rule, with a boarding shield, which is in unit coherency with at least two other models that also fit these criteria, may reroll all failed Invulnerable Saves made against Shooting Attacks or attacks made during the Fight sub-phase. This bonus may not be claimed if the unit the model is part of has made a Run move, Charge or a Sweeping Advance move in the current player turn, or is Falling Back.
-• Any model in a Detachment using this Rite of War with the Legiones Astartes (Imperial Fists) special rule, with a boarding shield, which is in unit coherency with at least two other models that also fit these criteria, gains the Hammer of Wrath (1) special rule for the duration of any Assault phase in which a Charge is declared for the unit that model is part of (whether or not the Charge is successful).
-Limitations
-• A Detachment using this Rite of War must select Phalanx Warder Squads to fill all Compulsory Troops choices in the Detachment.
-• A Detachment using this Rite of War may not deploy models using the Deep Strike special rule or otherwise as part of a Deep Strike Assault, Subterranean Assault or Flanking Assault (and units which must deploy by these methods therefore cannot be chosen as part of the Detachment).
-• A Detachment using this Rite of War cannot take more Elites and Fast Attack choices in total than they have Troops choices in the Detachment. So, for example, a Detachment with three Troops choices could take three choices made up of Fast Attack, Elites, or a combination of the two.</description>
+• Phalanx Warder Squads may be taken as Troops choices in a Detachment using this Rite of War.
+• All models in a unit composed entirely of models with the Infantry Unit Type and the Legiones Astartes (Imperial Fists) special rule in a Detachment using this
+Rite of War may be given the Deep Strike special rule for +30 points per unit.
+• All models in a unit composed entirely of models with the Infantry Unit Type upgraded to have the Deep Strike rule in a Detachment using this Rite of War gain the Shrouded (5+) special rule when deployed onto the battlefield as part of a Deep Strike Assault. This effect lasts until the beginning of the controlling player’s next player turn.</description>
             </rule>
           </rules>
           <costs>
@@ -10722,6 +10948,13 @@ Limitations
 • A Detachment using this Rite of War may not take Fortification choices.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="3539-94f0-e44d-b2e2" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Preferred Enemy (independent Character)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -10734,6 +10967,8 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d82b-1980-74f8-5dac" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10881,6 +11116,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d82b-1980-74f8-5dac" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10898,6 +11134,9 @@ Limitations
 • An army whose Primary Detachment has this Rite of War may not include any Lords of War choices or models with the Super-heavy Sub-type.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="c10e-c353-a823-3705" name="Night Fighting" hidden="false" targetId="5305-9807-b158-3c1c" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -10910,6 +11149,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d82b-1980-74f8-5dac" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -11254,6 +11494,36 @@ Limitations
 Limitations
 • All models with the Vehicle Unit Type in a Detachment using this Rite of War must begin play in Reserves.
 • A Detachment using this Rite of War must include more Fast Attack choices than Heavy Support choices.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="95a4-07ae-c2e4-fe33" name="The Stone Gauntlet (IF)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule id="a2c3-f74d-5afe-5e16" name="The Stone Gauntlet" publicationId="817a-6288-e016-7469" page="226" hidden="false">
+              <description>Effects
+• Phalanx Warder Squads may be taken as Troops choices for a Detachment using this Rite of War.
+• All models selected as part of a Phalanx Warder Squad in a Detachment using this Rite of War gain the Line Sub-type and Heart of the Legion special rule.
+• Any model in a Detachment using this Rite of War, and with the Legiones Astartes (Imperial Fists) special rule, with a boarding shield, which is in unit coherency with at least two other models that also fit these criteria, may reroll all failed Invulnerable Saves made against Shooting Attacks or attacks made during the Fight sub-phase. This bonus may not be claimed if the unit the model is part of has made a Run move, Charge or a Sweeping Advance move in the current player turn, or is Falling Back.
+• Any model in a Detachment using this Rite of War with the Legiones Astartes (Imperial Fists) special rule, with a boarding shield, which is in unit coherency with at least two other models that also fit these criteria, gains the Hammer of Wrath (1) special rule for the duration of any Assault phase in which a Charge is declared for the unit that model is part of (whether or not the Charge is successful).
+Limitations
+• A Detachment using this Rite of War must select Phalanx Warder Squads to fill all Compulsory Troops choices in the Detachment.
+• A Detachment using this Rite of War may not deploy models using the Deep Strike special rule or otherwise as part of a Deep Strike Assault, Subterranean Assault or Flanking Assault (and units which must deploy by these methods therefore cannot be chosen as part of the Detachment).
+• A Detachment using this Rite of War cannot take more Elites and Fast Attack choices in total than they have Troops choices in the Detachment. So, for example, a Detachment with three Troops choices could take three choices made up of Fast Attack, Elites, or a combination of the two.</description>
             </rule>
           </rules>
           <costs>
@@ -12114,6 +12384,13 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
     </rule>
     <rule id="ac97-b57a-3244-a9fb" name="Immune to Fear (X) (Sire of the Night Lords)" publicationId="d640-8853-3dd7-26a6" page="200" hidden="false">
       <description>Immune to the effects of the Fear (X) special rule.</description>
+    </rule>
+    <rule id="5305-9807-b158-3c1c" name="Night Fighting" hidden="false">
+      <description>If a mission has the Night Fighting special rule, either player can declare that they wish to fight the battle at night. If either player does so, roll a D6 before deployment: on a 2+, the Night Fighting special rule is in effect during Game Turn 1. At the beginning of Game Turn 2, roll a D6, on the score of a 4+ the Night Fighting special rule is in effect during Game Turn 2 as well. At the end of Game Turn 2, all effects of the Night Fighting special rule cease, and the special rule no longer has any effect, unless another special rule states otherwise. While the Night Fighting special rule is in effect, all units on the battlefield are affected by the following conditions: 
+• All units suffer a -1 penalty to their Leadership and Ballistic Skill.
+• No unit may draw line of sight to any unit that is more than 24&quot; away. Barrage weapons targeting units more than 24&quot; away must re-roll all results of ‘Hit’ on the
+Scatter dice.
+The penalty to Leadership is ignored by any unit with the Fearless or Stubborn special rules. A Primarch unit, or any unit with the Night Vision special rule ignores both the penalties to Leadership and Ballistic Skill and the restrictions on drawing line of sight to other units.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
