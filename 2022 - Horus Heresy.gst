@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="37" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="38" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -11718,7 +11718,7 @@ Gets Hot and Re-rolls
 If a model has the ability to re-roll its rolls To Hit (including because of BS 6+ or the Twin-linked special rule), a Wound is only suffered if the To Hit re-roll is a 1; it may also re-roll Gets Hot results of 1 for weapons that do not roll To Hit.</description>
     </rule>
     <rule id="5b9c-2738-616c-abdf" name="Graviton Pulse" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
-      <description>Instead of rolling To Wound normally with this weapon, any non-Vchiclc model that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
+      <description>Instead of rolling To Wound normally with this weapon, any non-Vehicle model that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
     </rule>
     <rule id="fa1e-0112-943e-b1f6" name="Guided Fire" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
       <description>Any attacks made using a weapon with this special rule do not require line of sight, but must still be within range.</description>
@@ -12291,21 +12291,9 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
       <description> A weapon with this special rule always Wounds Daemons on a 2+ and any successful Invulnerable Saves made by Daemon models against any Wounds it inflicts must be re-rolled.</description>
     </rule>
     <rule id="01ec-a939-c01a-8a87" name="Building Sub-type" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
-      <description>• A model with the Building Sub-type has an Armour Value
-instead of Toughness Characteristic and a reduced profile to
-reflect its limited capabilities. Page 224 of Warhammer: The
-Horus Heresy – Age of Darkness Rulebook presents rules for
-making attacks with or against models with this Unit Sub-
-type.
-• A model with the Building Sub-type uses all of the rules for
-the Transport Sub-type and other models with either the
-Infantry or Primarch Unit Types may Embark or Disembark
-upon them (see page 224 of Warhammer: The Horus Heresy –
-Age of Darkness Rulebook).
-• A model with this Unit Sub-type may never Move or be
-Moved by any special rule or effect – if it is forced to Move
-then it instead suffers the effects of the Total Collapse result
-on the Building Damage table.</description>
+      <description>• A model with the Building Sub-type has an Armour Value instead of Toughness Characteristic and a reduced profile to reflect its limited capabilities. Page 224 of Warhammer: The Horus Heresy – Age of Darkness Rulebook presents rules for making attacks with or against models with this Unit Sub- type.
+• A model with the Building Sub-type uses all of the rules for the Transport Sub-type and other models with either the Infantry or Primarch Unit Types may Embark or Disembark upon them (see page 224 of Warhammer: The Horus Heresy – Age of Darkness Rulebook).
+• A model with this Unit Sub-type may never Move or be Moved by any special rule or effect – if it is forced to Move then it instead suffers the effects of the Total Collapse result on the Building Damage table.</description>
     </rule>
     <rule id="d214-5efb-abbb-649e" name="Emplacement Sub-type" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
       <description>• A model with the Emplacement Sub-type has an Armour
@@ -12320,82 +12308,28 @@ then it instead suffers the effects of the Total Collapse result
 on the Building Damage table.</description>
     </rule>
     <rule id="a09b-30c8-c45e-3655" name="Barricade Sub-type" publicationId="d0df-7166-5cd3-89fd" page="104" hidden="false">
-      <description>• A model (friendly or enemy) in base contact with a model
-with the Barricade Unit Sub-type and at least 25% obscured
-from the attacking unit gains a 5+ Cover Save.
-• Any models (friendly or enemy) that are in base contact
-with the same model with the Barricade Unit Sub-type are
-considered to be in base contact with each other.
-• A unit that declares a Charge targeting an enemy unit that
-has at least one model in base contact with a model with
-the Barricade Unit Sub-type is considered to have charged
-through Difficult Terrain.
-• A model with the Barricade Sub-type has neither a Toughness
-Characteristic or Armour Value and cannot be damaged, or
-wounded and never rolls on either the Vehicle or Building
-Damage tables.
-• A model with the Barricade Sub-type is never counted as a
-unit for the purposes of any Objective or for the purposes of
-the Sudden Death Victory rule.
-• A model with this Unit Sub-type may never Move or be
-Moved by any special rule or effect – if it is forced to Move
-then it is instead removed as a casualty.
-• A model with the Barricade Sub-type may never make
-Shooting Attacks and may only have Emplacement Mounted
-weapons (see page 224 of Warhammer: The Horus Heresy – Age
-of Darkness Rulebook).</description>
+      <description>• A model (friendly or enemy) in base contact with a model with the Barricade Unit Sub-type and at least 25% obscured from the attacking unit gains a 5+ Cover Save.
+• Any models (friendly or enemy) that are in base contact with the same model with the Barricade Unit Sub-type are considered to be in base contact with each other.
+• A unit that declares a Charge targeting an enemy unit that has at least one model in base contact with a model with the Barricade Unit Sub-type is considered to have charged through Difficult Terrain.
+• A model with the Barricade Sub-type has neither a Toughness Characteristic or Armour Value and cannot be damaged, or wounded and never rolls on either the Vehicle or Building Damage tables.
+• A model with the Barricade Sub-type is never counted as a unit for the purposes of any Objective or for the purposes of the Sudden Death Victory rule.
+• A model with this Unit Sub-type may never Move or be Moved by any special rule or effect – if it is forced to Move then it is instead removed as a casualty.
+• A model with the Barricade Sub-type may never make Shooting Attacks and may only have Emplacement Mounted weapons (see page 224 of Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
     </rule>
     <rule id="009e-1748-1af2-06e1" name="Massive Sub-type" publicationId="d0df-7166-5cd3-89fd" page="104" hidden="false">
-      <description>• When rolling on the Building Damage table for a model
-with the Massive Sub-type, ignore any result other than a
-Total Collapse (but the model still suffers a point of Hull
-Point of damage for each Penetrating Hit. If the result of
-rolling on the Building Damage table is Total Collapse, the
-model with the Massive Sub-type suffers an additional D3
-Hull Point damage. When reduced to 0 Hull Points, a model
-with the Massive Sub-type is destroyed, any weapons and
-wargear on the Building are also destroyed and it also suffers
-a Catastrophic Collapse. Any models Embarked upon a
-model with the Massive Sub-type that suffers a Catastrophic
-Collapse are immediately removed as casualties and the
-model with the Massive Sub-type now counts as Ruins and
-may not be Embarked upon.
-• When selecting an army, the combined points value of all
-models with the Massive Sub-type, Lords of War Battlefield
-Role or Primarch Unit Type combined may not exceed 25% of
-the army’s total points limit, unless otherwise specified by the
-mission or Force Organisation chart in use.</description>
+      <description>• When rolling on the Building Damage table for a model with the Massive Sub-type, ignore any result other than a Total Collapse (but the model still suffers a point of Hull Point of damage for each Penetrating Hit. If the result of rolling on the Building Damage table is Total Collapse, the model with the Massive Sub-type suffers an additional D3 Hull Point damage. When reduced to 0 Hull Points, a model with the Massive Sub-type is destroyed, any weapons and wargear on the Building are also destroyed and it also suffers a Catastrophic Collapse. Any models Embarked upon a model with the Massive Sub-type that suffers a Catastrophic Collapse are immediately removed as casualties and the model with the Massive Sub-type now counts as Ruins and may not be Embarked upon.
+• When selecting an army, the combined points value of all models with the Massive Sub-type, Lords of War Battlefield Role or Primarch Unit Type combined may not exceed 25% of the army’s total points limit, unless otherwise specified by the mission or Force Organisation chart in use.</description>
     </rule>
     <rule id="11c9-a7b5-30fb-dc0c" name="Fortification" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
-      <description>• A model with the Fortification Unit Type is a Terrain Piece
-that is selected as part of a player’s army and included as part
-of their Army Roster, and counts as a unit under that player’s
-control for all purposes (including Sudden Death Victories
-and Objectives).
-• A model with this Unit Type that is selected as part of a
-player’s army is always ‘claimed’ and remains under that
-player’s control at all times (see page 223 of Warhammer: The
-Horus Heresy – Age of Darkness Rulebook).
-• A model with the Fortification Unit Type can never be Pinned
-and never take Morale checks or Leadership tests.
-• A model with the Fortification Unit Type can never hold or
-deny objectives.
-• A model with the Fortification Unit Type can never make a
-Reaction of any type.
-• A model with the Fortification Unit Type can never declare
-a Charge or make attacks in the Assault Phase (but can be
-the target of a Charge or attacks by other models in the
+      <description>• A model with the Fortification Unit Type is a Terrain Piece that is selected as part of a player’s army and included as part of their Army Roster, and counts as a unit under that player’s control for all purposes (including Sudden Death Victories and Objectives).
+• A model with this Unit Type that is selected as part of a player’s army is always ‘claimed’ and remains under that player’s control at all times (see page 223 of Warhammer: The Horus Heresy – Age of Darkness Rulebook).
+• A model with the Fortification Unit Type can never be Pinned and never take Morale checks or Leadership tests.
+• A model with the Fortification Unit Type can never hold or deny objectives.
+• A model with the Fortification Unit Type can never make a Reaction of any type.
+• A model with the Fortification Unit Type can never declare a Charge or make attacks in the Assault Phase (but can be the target of a Charge or attacks by other models in the
 Assault Phase).
-• A model with the Fortification Unit Type may attack with
-all weapons it has in each Shooting Phase, targeting a
-single enemy unit unless another special rule allows it to
-do otherwise.
-• A model that has the Fortification Unit Type may not join
-other units, or be joined by any other model, including other
-models with the Fortification Unit Type. Each model with
-the Fortification Unit Type is always considered a separate
-unit (excepting only Multi-part fortifications, see page 225 of
-Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
+• A model with the Fortification Unit Type may attack with all weapons it has in each Shooting Phase, targeting a single enemy unit unless another special rule allows it to do otherwise.
+• A model that has the Fortification Unit Type may not join other units, or be joined by any other model, including other models with the Fortification Unit Type. Each model with the Fortification Unit Type is always considered a separate unit (excepting only Multi-part fortifications, see page 225 of Warhammer: The Horus Heresy – Age of Darkness Rulebook).</description>
     </rule>
     <rule id="c41f-6ac9-6909-44c4" name="Catastrophic Destruction" publicationId="bde1-6db1-163b-3b76" page="103" hidden="false">
       <description>When destroyed, a model with this special rule resolves Catastrophic Damage at AP 1.</description>
