@@ -47,6 +47,11 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f1eb-cf2a-8611-faad" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="350d-03ac-0da9-0c8b" name="The Guard Of The Crimson King (TS) Compulsory HQ" hidden="false">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c7-dc64-dc1b-07d3" type="min"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="2494-402e-655d-d47f" name="Rite of War" hidden="false" collective="false" import="true" type="upgrade">
@@ -8822,6 +8827,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="03be-5d55-d05a-771d" name="Praetor" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <comment>Add Category (X)</comment>
@@ -9814,6 +9831,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd55-9459-b3b3-5d20" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="efe7-1f05-d369-32b4" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
@@ -10217,6 +10244,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <conditions>
             <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd55-9459-b3b3-5d20" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
