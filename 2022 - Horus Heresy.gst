@@ -11472,6 +11472,13 @@ Limitations
 • A Detachment using this Rite of War may include only a single Heavy Support choice.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="af91-a308-9b5e-80d1" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="It Will Not Die (5+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
