@@ -45814,10 +45814,16 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           </categoryLinks>
           <entryLinks>
             <entryLink id="fdc2-d401-2510-d453" name="Astartes Shotgun" hidden="false" collective="false" import="true" targetId="6f79-5cf4-a689-7269" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Master-crafted Astartes Shotgun"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c86-504a-ea5c-33fa" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e93a-c6a3-e263-8791" type="min"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="7b97-24be-0e39-3c50" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
             </entryLink>
             <entryLink id="2f93-d2e2-553f-670b" name="Scout Armour" hidden="false" collective="false" import="true" targetId="b282-55aa-d1e2-ebe7" type="selectionEntry">
               <constraints>
@@ -45876,10 +45882,30 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           <infoLinks>
             <infoLink id="598d-8c9f-e5a4-f2a4" name="Marked For Death" hidden="false" targetId="4f41-4c04-9cd8-c5a1" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="1830-db0c-3c9f-788a" name="Special Rules" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86c0-37d4-1381-be9d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75cb-3194-4ae6-d8b0" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ee9b-5275-8627-1861" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="b014-b991-5932-714d" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry id="d2fb-7bb1-d577-9b98" name="Infilitrate" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="f5d1-8ea8-9c4b-2e98" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="ab85-af17-b1bf-63b4" name="Nemesis Bolter" hidden="false" collective="false" import="true" targetId="c10a-61f8-9c33-fe8a" type="selectionEntry">
               <modifiers>
-                <modifier type="append" field="name" value="(master-crafted)"/>
+                <modifier type="set" field="name" value="Master-crafted Nemesis Bolter"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e352-e639-5c55-982b" type="max"/>
