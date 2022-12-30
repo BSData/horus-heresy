@@ -45033,6 +45033,9 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab6b-6529-2ced-5244" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f77-0642-c5b9-9df0" type="min"/>
       </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -45447,17 +45450,24 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
         </selectionEntry>
         <selectionEntry id="35ac-992e-97a7-1612" name="Master of Signals" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="8f5a-e3ec-734d-23ab" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo"/>
+              </conditions>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25a2-7a52-632a-6b2c" type="notInstanceOf"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8f5a-e3ec-734d-23ab" type="min"/>
+          </constraints>
           <rules>
             <rule id="5fb1-c000-121c-b16e" name="Strategic Comms" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false">
               <description>At the start of each Game Turn you can declare whether each vox disruptor array in your army is turned on or turned off. While there is at least one model on the battlefield with a vox disruptor array turned on, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault during that turn is Disordered on the roll of a &apos;1&apos;, &apos;2&apos; or &apos;3&apos; instead of iust on a 1&apos;</description>
