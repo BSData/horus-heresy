@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="87" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="88" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -7745,6 +7745,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="83ac-f9cf-cc29-00a3" name="Drop Pod" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9a6e-8133-d94a-1f5c" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9a6e-8133-d94a-1f5c" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="febd-7328-3ea8-fc2f" name="Inertial Guidance System" hidden="false" targetId="d222-fde9-51b8-8739" type="rule"/>
         <infoLink id="7278-a30b-5237-7829" name="Impact-reactive Doors" hidden="false" targetId="6c21-dd77-4c93-eeed" type="rule"/>
@@ -7842,6 +7852,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="1ffe-82e4-12db-538d" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="ad98-c5b7-344a-b2d2" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad98-c5b7-344a-b2d2" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="440d-1b43-e5d0-4e98" name="Inertial Guidance System" hidden="false" targetId="d222-fde9-51b8-8739" type="rule"/>
         <infoLink id="4ab2-0edb-0296-12eb" name="Impact-reactive Doors" hidden="false" targetId="6c21-dd77-4c93-eeed" type="rule"/>
@@ -8981,6 +9001,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </infoLinks>
       <categoryLinks>
         <categoryLink id="555c-4c0c-29a0-082a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="7a63-714c-8d20-c004" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d862-5767-da41-cff0" name="Legion Praetor" hidden="false" collective="false" import="true" type="model">
@@ -9539,6 +9560,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f662-22a4-b0b4-3f15" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
+              <categoryLinks>
+                <categoryLink id="ebe8-05b8-8ce2-ad96" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+                <categoryLink id="eaa1-a718-303d-3a67" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+              </categoryLinks>
               <entryLinks>
                 <entryLink id="ab3a-707f-7f67-8804" name="Dragonscale Shield" hidden="true" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
                   <modifiers>
@@ -9564,7 +9589,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="63e4-7f4f-70e7-64fd" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="63e4-7f4f-70e7-64fd" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -10016,7 +10041,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="b8e0-dc95-36b4-0a3f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="b8e0-dc95-36b4-0a3f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -10420,7 +10445,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="3a9d-a0b7-4e30-3f78" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="3a9d-a0b7-4e30-3f78" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -11910,7 +11935,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="a0ce-7130-54f7-edc5" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="a0ce-7130-54f7-edc5" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -17917,7 +17942,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="0fc9-8d7b-c87d-ef5f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="0fc9-8d7b-c87d-ef5f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -22187,7 +22212,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="2973-fa28-948b-8797" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="2973-fa28-948b-8797" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -30170,6 +30195,56 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="b59d-e5b8-7f73-c6f8" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c99d-7474-b00c-17f6" name="Surgical Augment (unit)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b3f-7eff-88df-678c" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0bf-00ad-da84-fa3c" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="e96d-7d0a-05fe-a833" name="Sonic Shriekers (Unit)" hidden="false" collective="false" import="true" targetId="7200-efa6-c232-eb74" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3e5-14d5-869b-411b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="93e6-e918-f10d-639f" name="Sonic Lance (Unit)" hidden="false" collective="false" import="true" targetId="b8b5-3d56-8f42-4b4d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f0c-f848-b052-6668" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5f12-c462-0cff-417d" name="Sub-sonic Pulser Unit)" hidden="false" collective="false" import="true" targetId="a3c0-860a-2b71-c53e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Sub-sonic Pulser (Unit)"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f68-ac49-f51a-7cd0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="b7ac-fadc-079e-b45e" name="Preysight" hidden="false" collective="false" import="true" targetId="b905-4d78-c141-4e63" type="selectionEntry">
               <constraints>
@@ -33052,6 +33127,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="af13-fb4e-b792-61a3" name="Deathstorm Drop Pod Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="7050-1866-b0b5-030e" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7050-1866-b0b5-030e" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="7f67-e0ca-2b9d-4b1c" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false"/>
         <categoryLink id="5d80-eb88-5146-595d" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -44860,6 +44945,77 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b8b5-3d56-8f42-4b4d" name="Sonic Lance (Unit)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9e08-c99e-cdb5-250d" name="Sonic Lance " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template </characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (6+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="da94-fac3-4d7a-ba15" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="cae9-14ab-72a5-ba54" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7200-efa6-c232-eb74" name="Sonic Shriekers (Unit)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0247-367b-9758-715f" name="Sonic Shriekers " page="154" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">During a turn in which a unit with at least one model equipped with sonic shriekers Successfully Charges, or themselves successfully Charged, all models in any enemy unit(s) locked in combat with them suffer a -1 penalty to all To Hit rolls, Models which are immunte to the effect of the Fear (X) special rule are not affected by this modifier.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3c0-860a-2b71-c53e" name="Sub-sonic Pulser Unit)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d8f9-5f16-cb56-5d54" name="Sub-sonic Pulser " hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with this upgrade, and any unit it joins, ignores the penalties to Leadership and Ballistic Skill imposed by the Night Fighting special rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fdb9-b132-5012-2f30" name="Maru Skara HQ (Champion or Phoenix Warden)" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="b5c8-3596-2cbb-1761" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="8f77-0642-c5b9-9df0" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b5c8-3596-2cbb-1761" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab6b-6529-2ced-5244" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f77-0642-c5b9-9df0" type="min"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -45066,7 +45222,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <entryLink id="78be-935f-1458-e8fd" name="Pavoni" hidden="false" collective="false" import="true" targetId="5532-04aa-8302-2038" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="aeb3-6a73-da1d-2b90" name="Surgical Augment" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="aeb3-6a73-da1d-2b90" name="Surgical Augment (unit)" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -45078,12 +45234,25 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="9eb6-371d-de44-c12b" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f0-6d13-3ccb-ec05" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eb6-371d-de44-c12b" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="4852-ee62-1f85-3dc2" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6f99-c178-6f9d-fb63" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a5-1699-4b06-c31a" type="max"/>
           </constraints>
@@ -45091,12 +45260,12 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
           </costs>
         </entryLink>
-        <entryLink id="e855-5157-0264-17c1" name="Sonic Shriekers" hidden="false" collective="false" import="true" targetId="3f61-86fe-eecf-aed7" type="selectionEntry">
+        <entryLink id="e855-5157-0264-17c1" name="Sonic Shriekers (Unit)" hidden="false" collective="false" import="true" targetId="7200-efa6-c232-eb74" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe5e-6f5c-cf7b-4148" type="max"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
           </costs>
         </entryLink>
         <entryLink id="bb4c-2ee2-3b1d-c799" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
@@ -45105,6 +45274,33 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="cec6-a6f4-378f-07a4" name="Sonic Lance (Unit)" hidden="false" collective="false" import="true" targetId="b8b5-3d56-8f42-4b4d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e5b-072a-3b18-6788" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ed2b-8971-e7e8-809d" name="Sonic Shriekers" hidden="false" collective="false" import="true" targetId="3f61-86fe-eecf-aed7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbb0-4253-1dbe-599c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b22b-99c8-2c03-62da" name="Sub-sonic Pulser Unit)" hidden="false" collective="false" import="true" targetId="a3c0-860a-2b71-c53e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Sub-sonic Pulser (Unit)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e5c-c9e3-9e0a-cd41" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -45656,6 +45852,7 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a57-7b36-258e-096c" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink id="58b4-dc5e-e68d-35d3" name="Maru Skara HQ (Champion or Phoenix Warden)" hidden="false" collective="false" import="true" targetId="fdb9-b132-5012-2f30" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
@@ -46193,6 +46390,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="971f-26aa-10df-fbb4" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="f1c3-7e93-64f1-a1b5" name="Maru Skara HQ (Champion or Phoenix Warden)" hidden="false" collective="false" import="true" targetId="fdb9-b132-5012-2f30" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
@@ -47673,6 +47871,55 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           </costs>
         </entryLink>
         <entryLink id="35b6-c0b4-2129-0b40" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ffa3-1a57-1eb4-1818" name="Surgical Augment" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="1937-af39-00f8-763d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf0-36d7-09fb-6daa" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1937-af39-00f8-763d" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="1c8d-f727-0e32-5e34" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec41-14ac-7eb0-73ce" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="8a66-e544-763e-a6d7" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdfd-6264-5007-cc3a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="87f8-c18d-35d7-179d" name="Sonic Shriekers" hidden="false" collective="false" import="true" targetId="3f61-86fe-eecf-aed7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea88-35ec-c1f5-3207" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
