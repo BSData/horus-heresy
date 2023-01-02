@@ -2889,6 +2889,30 @@
         <categoryLink id="fe51-d88d-c607-9870" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="46db-1103-afec-c13d" name="Rampager Squad" hidden="false" collective="false" import="false" targetId="2fb9-74a8-43b0-dd00" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c293-1a6e-3287-c8bd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7d74-ff42-876f-f0d0" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="09e5-f24c-2719-d2c4" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c204-0901-2005-7cba" name="Predator Squadron " hidden="true" collective="false" import="false" targetId="45fd-df3e-9bc4-60b6" type="selectionEntry">
+      <comment>    template_id_59c9-be20-4f7c-b91d</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>    node_id_7f87-6d3e-4738-b3ee</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50cf-edf5-d39a-8943" type="equalTo">
+              <comment>    node_id_cd74-309d-4d08-825e</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="928b-f08c-a155-8962" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f0dc-4c8f-c31e-9bfb" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7a04-bc44-70bb-cb98" name="Red Hand Destroyer Assault Squad" hidden="false" collective="false" import="true" type="unit">
@@ -3942,16 +3966,6 @@
         <modifier type="add" field="category" value="eee8-3c7c-2762-e33e">
           <conditions>
             <condition field="selections" scope="2fb9-74a8-43b0-dd00" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a298-8584-70ed-18ce" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="9b5d-fac7-799b-d7e7">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50cf-edf5-d39a-8943" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50cf-edf5-d39a-8943" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="add" field="category" value="6399-5c65-7833-1025">
