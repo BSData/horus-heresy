@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="87" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="88" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -45,6 +45,30 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f1eb-cf2a-8611-faad" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="350d-03ac-0da9-0c8b" name="The Guard Of The Crimson King (TS) Compulsory HQ" hidden="false">
+      <modifiers>
+        <modifier type="set" field="a0c7-dc64-dc1b-07d3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c7-dc64-dc1b-07d3" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="14bd-5f53-021b-a0f3" name="Praevian Consul (The Achaean Configuration Requirment)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="8e06-18ee-9523-a43d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="373b-ce5a-ddc5-cf8f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8e06-18ee-9523-a43d" type="min"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -8822,6 +8846,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="03be-5d55-d05a-771d" name="Praetor" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <comment>Add Category (X)</comment>
@@ -9814,6 +9850,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd55-9459-b3b3-5d20" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="efe7-1f05-d369-32b4" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
@@ -10218,6 +10264,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd55-9459-b3b3-5d20" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="24dc-79b7-16f5-6db3" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
@@ -10599,6 +10655,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="25a2-7a52-632a-6b2c" name="Centurion" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="set" field="7e1a-0f0a-6d7f-1f19" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="373b-ce5a-ddc5-cf8f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <comment>Add Category (X)</comment>
@@ -10643,6 +10706,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e1a-0f0a-6d7f-1f19" type="min"/>
+      </constraints>
       <infoLinks>
         <infoLink id="5e6c-bc4c-3c23-15d2" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
           <modifiers>
@@ -17969,7 +18035,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="00f3-a40a-f289-9fc1" name="0) Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
+        <entryLink id="00f3-a40a-f289-9fc1" name=" Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
         <entryLink id="8a18-8470-ccc2-0a97" name="0) Consul Additional Wargear and Options" hidden="false" collective="false" import="true" targetId="244a-2a7c-1349-94e7" type="selectionEntryGroup"/>
         <entryLink id="36be-ca67-c929-4725" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
@@ -20946,8 +21012,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="d39f-99d5-f7a4-7b86" name="Techmarine Covenant" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="ff7e-29e9-15ce-eb81" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="373b-ce5a-ddc5-cf8f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff7e-29e9-15ce-eb81" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff7e-29e9-15ce-eb81" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d60-d1f0-a95c-8b26" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ad67-cade-eb63-f8c5" name="Techmarine Covenant" hidden="false" targetId="93e9-2806-e822-bfaf" type="rule"/>
@@ -45672,6 +45746,9 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <infoLink id="328e-31c9-9aa5-89ed" name="Legiones Cybernetica" hidden="false" targetId="a2ef-63a4-3531-db91" type="rule"/>
             <infoLink id="6c18-66c0-7c82-ed9b" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5954-d075-a735-1999" name="Praevian Consul (The Achaean Configuration Requirment)" hidden="false" targetId="14bd-5f53-021b-a0f3" primary="false"/>
+          </categoryLinks>
           <entryLinks>
             <entryLink id="3322-e7ba-5d2e-6bf4" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
               <constraints>
@@ -45751,10 +45828,16 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           </categoryLinks>
           <entryLinks>
             <entryLink id="fdc2-d401-2510-d453" name="Astartes Shotgun" hidden="false" collective="false" import="true" targetId="6f79-5cf4-a689-7269" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Master-crafted Astartes Shotgun"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c86-504a-ea5c-33fa" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e93a-c6a3-e263-8791" type="min"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="7b97-24be-0e39-3c50" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
             </entryLink>
             <entryLink id="2f93-d2e2-553f-670b" name="Scout Armour" hidden="false" collective="false" import="true" targetId="b282-55aa-d1e2-ebe7" type="selectionEntry">
               <constraints>
@@ -45813,10 +45896,36 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           <infoLinks>
             <infoLink id="598d-8c9f-e5a4-f2a4" name="Marked For Death" hidden="false" targetId="4f41-4c04-9cd8-c5a1" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="1830-db0c-3c9f-788a" name="Special Rules" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86c0-37d4-1381-be9d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75cb-3194-4ae6-d8b0" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ee9b-5275-8627-1861" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="b014-b991-5932-714d" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d2fb-7bb1-d577-9b98" name="Infilitrate" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="f5d1-8ea8-9c4b-2e98" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="ab85-af17-b1bf-63b4" name="Nemesis Bolter" hidden="false" collective="false" import="true" targetId="c10a-61f8-9c33-fe8a" type="selectionEntry">
               <modifiers>
-                <modifier type="append" field="name" value="(master-crafted)"/>
+                <modifier type="set" field="name" value="Master-crafted Nemesis Bolter"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e352-e639-5c55-982b" type="max"/>
