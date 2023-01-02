@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="18" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="20" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -491,6 +491,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1500,6 +1505,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="fb58-4d27-43f3-9937" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -1676,6 +1686,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1867,6 +1882,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="8312-1f0d-4b26-b881" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
@@ -1999,6 +2019,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2850,6 +2875,11 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d79-887f-d9af-b6b1" type="max"/>
@@ -2862,6 +2892,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7a04-bc44-70bb-cb98" name="Red Hand Destroyer Assault Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="9f63-cb32-73a5-840e" name="Bearers of the Blood Hand" hidden="false">
           <description>A unit that contains at least one model with this special rule must declare a Charge if able when they begin the Assault phase within 12&quot; of an enemy unit. If there is more than one eligible target, the controlling player chooses the target of any Charges made. Note that this does not allow models with this special rule to Charge a different unit to one that they made a Shooting Attack against in the previous Shooting phase.</description>
@@ -2883,7 +2920,6 @@
       <categoryLinks>
         <categoryLink id="5c3d-505d-be3a-0021" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="ee5e-db50-34f8-2da8" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink id="b191-5eb3-1a15-b3df" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="bb97-5922-24bd-d6ca" name=" Blood Bonded" hidden="false" collective="false" import="true" type="model">
@@ -3409,6 +3445,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="aa6d-c70a-199f-1db5" name="Shabran Darr" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c6f2-ce96-4619-a14e" type="max"/>
       </constraints>
@@ -3456,7 +3499,6 @@
         <categoryLink id="82c7-7ee7-c815-1285" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="6018-e91b-ef03-2ee3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="66fc-9632-84b0-aa90" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="f4b9-64c7-5660-a0c6" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="912e-502f-2838-ef01" name="The Liberator" hidden="false" collective="false" import="true" type="upgrade">
@@ -3550,6 +3592,32 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1987-2aa5-929b-979e" name="Red Butchers" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="1987-2aa5-929b-979e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b3d-cf2e-8db7-3218" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="1987-2aa5-929b-979e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b3d-cf2e-8db7-3218" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="6fdb-6571-8b27-1cee" name="Legiones Astartes (World Eaters) " hidden="false" targetId="405d-019f-9ef6-423c" type="rule"/>
         <infoLink id="b122-34c7-eea2-8d6f" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -3571,7 +3639,6 @@
         <categoryLink id="cf1c-50e5-11f5-a5c0" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="080b-8aab-b802-323a" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
         <categoryLink id="4259-2c1a-9160-12f3" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="59d9-9df2-1e14-403f" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="0ef2-9852-5b60-2ff2" name="Devoured" hidden="false" collective="false" import="true" type="model">
@@ -3893,6 +3960,32 @@
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="2fb9-74a8-43b0-dd00" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e28-2360-9d87-061e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="2fb9-74a8-43b0-dd00" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e28-2360-9d87-061e" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="a803-4071-5d85-92c7" name="Legiones Astartes (World Eaters) " hidden="false" targetId="405d-019f-9ef6-423c" type="rule"/>
         <infoLink id="ed22-c7f9-5c36-1e71" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
@@ -4299,6 +4392,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6352-8efa-0cc4-cfa7" name="Angron" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="426b-a3da-a898-7dd8" type="max"/>
       </constraints>
@@ -4347,7 +4447,6 @@
         <categoryLink id="8d69-ffc8-873e-2e42" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="b990-1902-a070-c6d2" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="a500-e244-4c25-e4aa" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
-        <categoryLink id="ea0e-4517-cd33-58ea" name="Non-Infantry Only" hidden="false" targetId="2bcf-6bbe-58a1-e082" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="646c-85f5-7755-cc45" name="Gorefather &amp; Gorechild" hidden="false" collective="false" import="true" type="upgrade">
@@ -4465,6 +4564,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e812-10d1-b911-90c5" name="Gahlan Surlak" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0606-8335-857a-a6d4" type="max"/>
       </constraints>
@@ -4494,7 +4600,6 @@
         <categoryLink id="9218-c0cc-8dc7-a683" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="6456-b9f2-a391-2c29" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="58d8-8eda-8902-2a74" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="432a-61cf-580c-fde5" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="01fb-10e7-0c43-2b0d" name="Fleshripper" hidden="false" collective="false" import="true" type="upgrade">
@@ -4577,6 +4682,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="e726-7208-d919-a4a1" name="Khârn the Bloody" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="40b6-ae71-99d5-3c02" type="max"/>
       </constraints>
@@ -4615,7 +4727,6 @@
         <categoryLink id="6d76-7591-3f6a-4f2c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="2e2e-a670-504f-7861" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="a72b-1dd1-a0d9-f099" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-        <categoryLink id="cf2d-efb2-71d6-4848" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3017-90ed-f8d5-20fb" name="Melee Weapon" hidden="false" collective="false" import="true">
