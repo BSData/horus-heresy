@@ -23166,20 +23166,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="a2de-4a73-b105-d318" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
+        <selectionEntryGroup id="0f0f-b23a-f95c-6ace" name="Drop Pods" hidden="false" collective="false" import="true">
           <modifiers>
-            <modifier type="set" field="86cd-d61a-ba38-fb08" value="0.0">
+            <modifier type="set" field="91f9-f7a3-c45d-8b85" value="0.0">
               <conditions>
                 <condition field="selections" scope="c2a7-9e2c-fc65-1b78" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac2d-77a1-ecd7-a555" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86cd-d61a-ba38-fb08" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91f9-f7a3-c45d-8b85" type="max"/>
           </constraints>
-        </entryLink>
+          <entryLinks>
+            <entryLink id="cdb3-a358-6b7b-fbc8" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c6e-b30e-6599-abbc" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f451-50e9-034e-166b" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="458c-0002-e097-caa5" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
         <entryLink id="ed4d-9a6d-3ddc-ac29" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -23201,11 +23213,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="20ef-cd01-a8da-376e">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50cf-edf5-d39a-8943" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
