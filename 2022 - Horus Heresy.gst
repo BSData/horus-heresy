@@ -405,7 +405,6 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -862,7 +861,6 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -897,7 +895,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa4b-a703-9dbf-bb6a" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="4240-0870-e7ec-839e" name="Rite of Warzz:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="set" field="1db1-1803-cee1-86cb" value="5.0">
@@ -1164,6 +1162,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -6963,19 +6962,23 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
           </conditions>
         </modifier>
         <modifier type="set" field="7ae6-be12-f22c-f977" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" field="ba40-62e6-2111-e938" value="0.0">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11474,13 +11477,6 @@ Limitations
 • A Detachment using this Rite of War may include only a single Heavy Support choice.</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="af91-a308-9b5e-80d1" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="It Will Not Die (5+)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -11607,8 +11603,9 @@ Limitations
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d82b-1980-74f8-5dac" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
