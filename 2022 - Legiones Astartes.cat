@@ -61,19 +61,23 @@
     </categoryEntry>
     <categoryEntry id="2bcf-6bbe-58a1-e082" name="Non-Infantry Only" hidden="false">
       <modifiers>
-        <modifier type="set" field="8292-97e1-be59-de75" value="-1.0">
+        <modifier type="set" field="8292-97e1-be59-de75" value="0.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="lessThan"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="increment" field="8292-97e1-be59-de75" value="1.0">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db6f-0311-834c-e6ff" repeats="1" roundUp="false"/>
           </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8292-97e1-be59-de75" type="max"/>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8292-97e1-be59-de75" type="max"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
