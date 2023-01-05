@@ -112,6 +112,30 @@
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0af-1478-1380-c01b" type="min"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="350d-03ac-0da9-0c8b" name="The Guard Of The Crimson King (TS) Compulsory HQ" hidden="false">
+      <modifiers>
+        <modifier type="set" field="a0c7-dc64-dc1b-07d3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c7-dc64-dc1b-07d3" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="14bd-5f53-021b-a0f3" name="Praevian Consul (The Achaean Configuration Requirment)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="8e06-18ee-9523-a43d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="373b-ce5a-ddc5-cf8f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8e06-18ee-9523-a43d" type="min"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="2494-402e-655d-d47f" name="Rite of War" hidden="false" collective="false" import="true" type="upgrade">
@@ -9072,6 +9096,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="03be-5d55-d05a-771d" name="Praetor" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <comment>Add Category (X)</comment>
@@ -18518,7 +18554,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="00f3-a40a-f289-9fc1" name="0) Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
+        <entryLink id="00f3-a40a-f289-9fc1" name=" Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
         <entryLink id="8a18-8470-ccc2-0a97" name="0) Consul Additional Wargear and Options" hidden="false" collective="false" import="true" targetId="244a-2a7c-1349-94e7" type="selectionEntryGroup"/>
         <entryLink id="36be-ca67-c929-4725" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
@@ -46941,6 +46977,9 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
             <infoLink id="328e-31c9-9aa5-89ed" name="Legiones Cybernetica" hidden="false" targetId="a2ef-63a4-3531-db91" type="rule"/>
             <infoLink id="6c18-66c0-7c82-ed9b" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5954-d075-a735-1999" name="Praevian Consul (The Achaean Configuration Requirment)" hidden="false" targetId="14bd-5f53-021b-a0f3" primary="false"/>
+          </categoryLinks>
           <entryLinks>
             <entryLink id="3322-e7ba-5d2e-6bf4" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
               <constraints>
@@ -47028,7 +47067,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e93a-c6a3-e263-8791" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="9c1a-016a-1532-ee50" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                <infoLink id="7b97-24be-0e39-3c50" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
               </infoLinks>
             </entryLink>
             <entryLink id="2f93-d2e2-553f-670b" name="Scout Armour" hidden="false" collective="false" import="true" targetId="b282-55aa-d1e2-ebe7" type="selectionEntry">
@@ -47089,23 +47128,23 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <infoLink id="598d-8c9f-e5a4-f2a4" name="Marked For Death" hidden="false" targetId="4f41-4c04-9cd8-c5a1" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="5e1c-fd8a-849a-d161" name="Special Rules" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="1830-db0c-3c9f-788a" name="Special Rules" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fb9-6bd0-2d71-b75e" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71fa-6c9f-d020-a162" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86c0-37d4-1381-be9d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75cb-3194-4ae6-d8b0" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="73f3-dc7d-f12b-1b8d" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="ee9b-5275-8627-1861" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
-                    <infoLink id="b608-76b1-fd84-e666" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+                    <infoLink id="b014-b991-5932-714d" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="43e6-9190-ee71-178d" name="Infilitrate" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="d2fb-7bb1-d577-9b98" name="Infilitrate" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
-                    <infoLink id="771f-dffe-bf8c-24e2" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
+                    <infoLink id="f5d1-8ea8-9c4b-2e98" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
