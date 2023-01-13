@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="88" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="89" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -47,28 +47,69 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f1eb-cf2a-8611-faad" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="350d-03ac-0da9-0c8b" name="The Guard Of The Crimson King (TS) Compulsory HQ" hidden="false">
+    <categoryEntry id="db6f-0311-834c-e6ff" name="Infantry Only" hidden="false">
       <modifiers>
-        <modifier type="set" field="a0c7-dc64-dc1b-07d3" value="1.0">
+        <modifier type="increment" field="80e6-cb32-4c9f-9518" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bcf-6bbe-58a1-e082" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="80e6-cb32-4c9f-9518" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="80e6-cb32-4c9f-9518" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="2bcf-6bbe-58a1-e082" name="Non-Infantry Only" hidden="false">
+      <modifiers>
+        <modifier type="set" field="8292-97e1-be59-de75" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="lessThan"/>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="8292-97e1-be59-de75" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db6f-0311-834c-e6ff" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8292-97e1-be59-de75" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="5472-b476-dcbd-c215" name="The Guard Of The Crimson King (TS) Compulsory HQ" hidden="false">
+      <modifiers>
+        <modifier type="set" field="a3ed-76b4-9d86-4b73" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0c7-dc64-dc1b-07d3" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3ed-76b4-9d86-4b73" type="min"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="14bd-5f53-021b-a0f3" name="Praevian Consul (The Achaean Configuration Requirment)" hidden="false">
+    <categoryEntry id="30e2-956f-1bf5-1110" name="Praevian Consul (The Achaean Configuration Requirment)" hidden="false">
       <modifiers>
-        <modifier type="set" field="8e06-18ee-9523-a43d" value="1.0">
+        <modifier type="set" field="b0af-1478-1380-c01b" value="1.0">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="373b-ce5a-ddc5-cf8f" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8e06-18ee-9523-a43d" type="min"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0af-1478-1380-c01b" type="min"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -227,6 +268,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2f91-acc5-328b-d376" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -246,6 +292,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -267,6 +318,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="73f6-f624-9bb9-4b8e" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -286,6 +342,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -307,6 +368,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e8b5-e501-541a-3432" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -326,6 +392,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -347,6 +418,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6849-516b-9701-6e33" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -366,6 +442,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -387,6 +468,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a7f9-aa17-ef6d-061b" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -407,6 +493,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e768-2478-84ab-b7f7" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -425,6 +516,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -445,6 +541,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="39c6-006d-c8de-0cee" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -463,6 +564,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -484,6 +590,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3729,6 +3840,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="aa72-63e4-bc60-4611" name="Tactical Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="aa72-63e4-bc60-4611" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0531-85dd-feb0-116d" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="aa72-63e4-bc60-4611" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0531-85dd-feb0-116d" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="5af3-9ace-5f52-ec8b" name="Fury of the Legion" hidden="false" targetId="56e4-5bbb-91bd-13e0" type="rule"/>
         <infoLink id="95f0-d144-1ce5-89c1" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule"/>
@@ -4215,11 +4352,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
-                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="lessThan"/>
-                      </conditions>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                            <condition field="selections" scope="aa72-63e4-bc60-4611" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="lessThan"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="aa72-63e4-bc60-4611" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="lessThan"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -5081,6 +5228,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="50ed-5869-643d-1ac5" name="Tactical Support Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="50ed-5869-643d-1ac5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf4-6e43-0b7c-ab6b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="50ed-5869-643d-1ac5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf4-6e43-0b7c-ab6b" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="2bbb-0037-4d96-a82b" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
         <infoLink id="3d2f-694b-bcdf-b3ac" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
@@ -5577,6 +5750,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5962,6 +6136,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="fee9-d520-fed6-fb6f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6500,6 +6679,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="08b4-0dc4-d272-47f7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -6753,6 +6937,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7114,6 +7303,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="2985-d6a8-ea11-0c40" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
@@ -7266,6 +7460,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="bfdf-831f-2171-c1e7" name="Deredeo Dreadnought Talon" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9d47-a878-735c-c251" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink id="7b1c-14d3-0084-fc4a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -7731,6 +7932,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="83ac-f9cf-cc29-00a3" name="Drop Pod" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9a6e-8133-d94a-1f5c" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9a6e-8133-d94a-1f5c" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="febd-7328-3ea8-fc2f" name="Inertial Guidance System" hidden="false" targetId="d222-fde9-51b8-8739" type="rule"/>
         <infoLink id="7278-a30b-5237-7829" name="Impact-reactive Doors" hidden="false" targetId="6c21-dd77-4c93-eeed" type="rule"/>
@@ -7827,6 +8038,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="1ffe-82e4-12db-538d" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="ad98-c5b7-344a-b2d2" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad98-c5b7-344a-b2d2" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="440d-1b43-e5d0-4e98" name="Inertial Guidance System" hidden="false" targetId="d222-fde9-51b8-8739" type="rule"/>
         <infoLink id="4ab2-0edb-0296-12eb" name="Impact-reactive Doors" hidden="false" targetId="6c21-dd77-4c93-eeed" type="rule"/>
@@ -8085,6 +8306,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9055-7410-8ffd-b8e7">
           <conditions>
             <condition field="selections" scope="d664-5692-cd41-f9be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8846,18 +9072,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="03be-5d55-d05a-771d" name="Praetor" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <comment>Add Category (X)</comment>
@@ -8872,13 +9086,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="equalTo"/>
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="equalTo"/>
                     <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8908,6 +9123,45 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <conditions>
                 <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
               </conditions>
+            </modifier>
+            <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="equalTo"/>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="equalTo"/>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3952-66ed-93ea-27ee" type="atLeast"/>
+                        <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4108-5f37-0b50-b419" type="atLeast"/>
+                        <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e254-77a1-6dae-14a0" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="5472-b476-dcbd-c215">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </modifierGroup>
@@ -8952,6 +9206,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </infoLinks>
       <categoryLinks>
         <categoryLink id="555c-4c0c-29a0-082a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="7a63-714c-8d20-c004" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d862-5767-da41-cff0" name="Legion Praetor" hidden="false" collective="false" import="true" type="model">
@@ -9510,6 +9765,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f662-22a4-b0b4-3f15" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
+              <categoryLinks>
+                <categoryLink id="ebe8-05b8-8ce2-ad96" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+                <categoryLink id="eaa1-a718-303d-3a67" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+              </categoryLinks>
               <entryLinks>
                 <entryLink id="ab3a-707f-7f67-8804" name="Dragonscale Shield" hidden="true" collective="false" import="true" targetId="489d-88d0-a0d8-b3e6" type="selectionEntry">
                   <modifiers>
@@ -9535,7 +9794,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="63e4-7f4f-70e7-64fd" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="63e4-7f4f-70e7-64fd" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -9850,7 +10109,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd55-9459-b3b3-5d20" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+        <modifier type="add" field="category" value="5472-b476-dcbd-c215">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -9859,6 +10118,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -9996,7 +10260,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="b8e0-dc95-36b4-0a3f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="b8e0-dc95-36b4-0a3f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -10264,7 +10528,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd55-9459-b3b3-5d20" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="add" field="category" value="350d-03ac-0da9-0c8b">
+        <modifier type="add" field="category" value="5472-b476-dcbd-c215">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
@@ -10273,6 +10537,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -10409,7 +10678,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="3a9d-a0b7-4e30-3f78" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="3a9d-a0b7-4e30-3f78" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -10700,6 +10969,44 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9924-004c-e683-877b" type="equalTo"/>
                     <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8ac-7465-70fb-70fb" type="equalTo"/>
                   </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea5b-25e4-9c56-38dd" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5951-8d5c-dde7-b704" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f152-51f5-b509-2d9c" type="lessThan"/>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9924-004c-e683-877b" type="lessThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f152-51f5-b509-2d9c" type="atLeast"/>
+                        <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9924-004c-e683-877b" type="atLeast"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5951-8d5c-dde7-b704" type="greaterThan"/>
+                        <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea5b-25e4-9c56-38dd" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -11887,7 +12194,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="a0ce-7130-54f7-edc5" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="a0ce-7130-54f7-edc5" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -12119,6 +12426,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2cf-d802-a680-c352" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2cf-d802-a680-c352" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="b8e8-c9dc-7677-8cd8" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
@@ -12848,6 +13181,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6766-d205-3ee9-7543" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6766-d205-3ee9-7543" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="9369-a4cc-c1fa-0baf" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="a864-610c-7dc3-64c2" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
@@ -13464,6 +13823,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="4357-930e-165a-a6e3" name="Despoiler Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="4357-930e-165a-a6e3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef54-aab4-53ae-d96c" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="4357-930e-165a-a6e3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef54-aab4-53ae-d96c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="757d-1944-7229-0b85" name="Spite of the Legion" hidden="false" targetId="ed9b-1320-335f-aa10" type="rule"/>
         <infoLink id="3b31-08b6-4b8a-cd83" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule"/>
@@ -13972,6 +14357,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -14400,6 +14786,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="ad97-c090-fa67-696f" name="Breacher Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="ad97-c090-fa67-696f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50b4-b5ef-c95f-ab51" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="ad97-c090-fa67-696f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50b4-b5ef-c95f-ab51" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="6915-e215-a41f-1c9f" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
           <modifiers>
@@ -14851,6 +15263,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -15238,6 +15651,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6ca2-562a-dfaa-1587" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -15277,6 +15695,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="6db7-6e88-877e-35ca" name="Reconnaissance Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="6db7-6e88-877e-35ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77e9-4e14-63c6-fad7" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="6db7-6e88-877e-35ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77e9-4e14-63c6-fad7" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="9660-4ebf-fe5a-7582" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule">
           <modifiers>
@@ -15912,6 +16356,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -15989,6 +16434,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="9b10-b657-a65a-9d60" name="Scout Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="1e59-9bd4-20c6-6183" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
         <infoLink id="3ae1-247d-2b45-ed67" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
@@ -16597,6 +17049,28 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <conditions>
                 <condition field="selections" scope="0aca-632d-1642-8af9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
                 <condition field="selections" scope="0aca-632d-1642-8af9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="0aca-632d-1642-8af9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                <condition field="selections" scope="0aca-632d-1642-8af9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                <condition field="selections" scope="0aca-632d-1642-8af9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c76-b52e-b055-5ff5" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="0aca-632d-1642-8af9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="lessThan"/>
+                <condition field="selections" scope="0aca-632d-1642-8af9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="lessThan"/>
+                <condition field="selections" scope="0aca-632d-1642-8af9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c76-b52e-b055-5ff5" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -17349,6 +17823,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -17425,6 +17900,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="3766-ea98-0aa7-62d0" name="Centurion, Cataphractii " publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="d8d6-da89-2c24-d032" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
           <modifiers>
@@ -17460,6 +17942,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="b8e8-4253-0c09-b2ef" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink id="4448-0829-a17f-5502" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="b7b3-57a1-d3d8-2be0" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
+        <categoryLink id="4971-18c0-7a6f-b3e6" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="da79-9588-cc7f-e02f" name="Legion Cataphractii Centurion" hidden="false" collective="false" import="true" type="model">
@@ -17867,7 +18350,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="0fc9-8d7b-c87d-ef5f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="0fc9-8d7b-c87d-ef5f" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -18035,7 +18518,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="00f3-a40a-f289-9fc1" name=" Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
+        <entryLink id="00f3-a40a-f289-9fc1" name="0) Legiones Consularis" hidden="false" collective="false" import="true" targetId="3cbf-9466-2558-2c22" type="selectionEntryGroup"/>
         <entryLink id="8a18-8470-ccc2-0a97" name="0) Consul Additional Wargear and Options" hidden="false" collective="false" import="true" targetId="244a-2a7c-1349-94e7" type="selectionEntryGroup"/>
         <entryLink id="36be-ca67-c929-4725" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
@@ -18048,6 +18531,28 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="58d0-a0fd-d20b-cb1b" name="Command Squad, Tartaros " publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f059-2405-bfa0-11cf" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                <condition field="selections" scope="58d0-a0fd-d20b-cb1b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f059-2405-bfa0-11cf" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="12f2-b3b7-fe0d-ff56" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
         <infoLink id="01f9-6381-a13d-64c6" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -18376,6 +18881,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fbf-dba5-5b44-1875" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fbf-dba5-5b44-1875" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="18b6-f65d-5d60-d317" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="297d-7e23-67dd-a0e5" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
@@ -20279,6 +20810,30 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="58e6-f9cc-4c46-e258" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8988-7c51-7802-2ca5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="58e6-f9cc-4c46-e258" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8988-7c51-7802-2ca5" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <infoLinks>
         <infoLink id="df2d-b66a-8e2d-98b5" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
@@ -20972,6 +21527,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -21020,8 +21576,8 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff7e-29e9-15ce-eb81" type="min"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d60-d1f0-a95c-8b26" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff7e-29e9-15ce-eb81" type="min"/>
       </constraints>
       <infoLinks>
         <infoLink id="ad67-cade-eb63-f8c5" name="Techmarine Covenant" hidden="false" targetId="93e9-2806-e822-bfaf" type="rule"/>
@@ -21711,6 +22267,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="f806-8a4e-d0d6-beaa" name="Centurion, Tartaros " publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="535e-fd1a-eee8-43d0" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
           <modifiers>
@@ -21745,6 +22308,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="cccf-e162-2ea4-885a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="1237-8d7a-91b2-1565" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="9db9-a73f-ccf4-06a3" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
+        <categoryLink id="8eb4-6b99-d451-bbae" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="69fc-a6ab-d7a8-0e83" name="Legion Tartaros Centurion" hidden="false" collective="false" import="true" type="model">
@@ -22139,7 +22703,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink id="2973-fa28-948b-8797" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+                <entryLink id="2973-fa28-948b-8797" name="Surgical Augment" hidden="true" collective="false" import="true" targetId="ffa3-1a57-1eb4-1818" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditionGroups>
@@ -22316,6 +22880,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="c2a7-9e2c-fc65-1b78" name="Leviathan Dreadnought Talon" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c543-976f-ef9d-d41e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="9152-5697-6c00-ca89" name="Dreadnought Unit-type:" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
@@ -22595,20 +23166,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="a2de-4a73-b105-d318" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
+        <selectionEntryGroup id="0f0f-b23a-f95c-6ace" name="Drop Pods" hidden="false" collective="false" import="true">
           <modifiers>
-            <modifier type="set" field="86cd-d61a-ba38-fb08" value="0.0">
+            <modifier type="set" field="91f9-f7a3-c45d-8b85" value="0.0">
               <conditions>
                 <condition field="selections" scope="c2a7-9e2c-fc65-1b78" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac2d-77a1-ecd7-a555" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86cd-d61a-ba38-fb08" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91f9-f7a3-c45d-8b85" type="max"/>
           </constraints>
-        </entryLink>
+          <entryLinks>
+            <entryLink id="cdb3-a358-6b7b-fbc8" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c6e-b30e-6599-abbc" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f451-50e9-034e-166b" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="458c-0002-e097-caa5" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
         <entryLink id="ed4d-9a6d-3ddc-ac29" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -22630,6 +23213,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -23018,6 +23606,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="4558-d6c5-a85f-a7b9" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -23288,6 +23881,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -23657,6 +24255,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="4456-9ae8-88cc-ba12" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -23887,6 +24490,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -24154,6 +24762,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -24447,6 +25060,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -24778,6 +25396,28 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="1b17-dcd6-0153-3efe" name="Command Squad, Cataphractii" publicationId="a716-c1c4-7b26-8424" page="28" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa9-d220-698d-8220" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                <condition field="selections" scope="1b17-dcd6-0153-3efe" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa9-d220-698d-8220" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="9979-d687-399a-d9fd" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
         <infoLink id="e54e-9f64-26ec-67ad" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -25236,6 +25876,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f20c-0dc7-e4bd-d795" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f20c-0dc7-e4bd-d795" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="20f6-e319-6939-4a3d" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
           <modifiers>
@@ -25665,6 +26331,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -25927,6 +26594,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5af8-d955-210c-10a3" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -25958,7 +26630,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <categoryLink id="5101-eca4-4a32-4c77" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="6261-4456-2d7b-82b0" name="1) Centreline Mounted Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="6261-4456-2d7b-82b0" name="1) Centreline Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="71fe-26fc-a174-6387">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3792-783d-c54e-b25c" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55a5-c49c-fa68-c212" type="max"/>
@@ -25973,7 +26645,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="916e-a274-7d08-5ee5" name="Volkite Saker" hidden="false" collective="false" import="true" targetId="8aec-80a1-667a-cc15" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="96ec-222d-31e1-d124" name="2) Hull (Front) Weapon" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="96ec-222d-31e1-d124" name="2) Hull (Front) Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="81f2-9232-3dd6-24fa">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d90-adeb-e792-6c3b" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f393-d7cd-938d-17c1" type="min"/>
@@ -26165,6 +26837,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="fee9-d520-fed6-fb6f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -26820,6 +27497,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="29f8-c56d-4902-5d23" name="Xiphon Interceptor" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -26934,6 +27616,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="fee9-d520-fed6-fb6f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -27208,6 +27895,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="6688-04fe-0ef8-ff29" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
@@ -27441,6 +28133,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -27786,6 +28483,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="195a-ea3e-6ddd-377e" name="Crushing Weight" hidden="false" targetId="9eb0-9165-e000-818a" type="rule"/>
@@ -28086,6 +28788,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="0b05-2dc7-b9e1-5a3e" name="Glaive" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -28368,6 +29075,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="8754-3a4f-213b-bdc0" name="Thunderhawk Gunship" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="f471-f5a8-001a-2a5e" name="Thunderhawk Gunship" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
           <characteristics>
@@ -28546,6 +29260,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -28847,6 +29566,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="b7fb-1e71-e236-0be2" name="Mastodon" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -29032,6 +29756,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -29305,6 +30034,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="f403-630f-71ae-5a7d" name="Sokar Stormbird" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="5fb3-5546-93f0-c504" name="Sokar Stormbird" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
           <characteristics>
@@ -29496,6 +30232,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -29983,6 +30724,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="23e4-c64b-65b4-c8a5" name="Rapier Battery" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="6beb-8854-14dd-3db9" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
         <categoryLink id="fbe0-eca3-2aa2-eecc" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -30086,6 +30834,56 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="b59d-e5b8-7f73-c6f8" name="Legiones Unit Upgrades:" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c99d-7474-b00c-17f6" name="Surgical Augment (unit)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b3f-7eff-88df-678c" type="max"/>
+                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0bf-00ad-da84-fa3c" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="e96d-7d0a-05fe-a833" name="Sonic Shriekers (Unit)" hidden="false" collective="false" import="true" targetId="7200-efa6-c232-eb74" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3e5-14d5-869b-411b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="93e6-e918-f10d-639f" name="Sonic Lance (Unit)" hidden="false" collective="false" import="true" targetId="b8b5-3d56-8f42-4b4d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f0c-f848-b052-6668" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5f12-c462-0cff-417d" name="Sub-sonic Pulser Unit)" hidden="false" collective="false" import="true" targetId="a3c0-860a-2b71-c53e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Sub-sonic Pulser (Unit)"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f68-ac49-f51a-7cd0" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="b7ac-fadc-079e-b45e" name="Preysight" hidden="false" collective="false" import="true" targetId="b905-4d78-c141-4e63" type="selectionEntry">
               <constraints>
@@ -30377,6 +31175,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="954d-cf8e-eefd-27a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16a0-0aeb-974a-33a9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="954d-cf8e-eefd-27a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16a0-0aeb-974a-33a9" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="06d8-ea57-0a19-b93a" type="max"/>
       </constraints>
@@ -30756,6 +31580,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9055-7410-8ffd-b8e7">
           <conditions>
             <condition field="selections" scope="daf7-b23b-5474-5836" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="555f-3998-a06e-f415" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -31181,6 +32010,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5372-67ef-f594-305b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5372-67ef-f594-305b" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <rules>
         <rule id="89b9-6f89-73a2-4e98" name="Pride of the Legion" publicationId="d0df-7166-5cd3-89fd" page="18" hidden="false">
           <description>Any Legion Terminator Indomitus Squads taken in a Detachment with the Pride of the Legion Rite of War lose the Support Squad special rule and gain the Line Sub-type.</description>
@@ -32070,6 +32925,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2112-2112-a19d-f2d6" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -32355,6 +33215,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -32907,6 +33772,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <categoryLink id="f9a5-3777-fc4c-4dba" name="Flyer" hidden="false" targetId="4e84-2d57-4986-2b23" primary="false"/>
         <categoryLink id="cec9-319f-7118-7cf8" name="Hover Sub-type" hidden="false" targetId="3a7a-8bb7-b0d3-e2e7" primary="false"/>
         <categoryLink id="9111-2535-4dc3-ad8e" name="Transport" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+        <categoryLink id="23fd-cf06-d154-63db" name="Non-Infantry Only" hidden="false" targetId="2bcf-6bbe-58a1-e082" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="50f2-4e31-2b38-674a" name="Turret Mounted Deathstorm Missile Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -32962,6 +33828,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="af13-fb4e-b792-61a3" name="Deathstorm Drop Pod Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="7050-1866-b0b5-030e" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7050-1866-b0b5-030e" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="7f67-e0ca-2b9d-4b1c" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false"/>
         <categoryLink id="5d80-eb88-5146-595d" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -33169,6 +34045,9 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         </infoLink>
         <infoLink id="cc20-196a-4ebc-7e1e" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cbc7-7866-ccfb-b2df" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="7d01-2d81-485f-25aa" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
           <constraints>
@@ -33211,6 +34090,11 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         <modifier type="add" field="category" value="fee9-d520-fed6-fb6f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -33442,6 +34326,13 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
       </costs>
     </selectionEntry>
     <selectionEntry id="0583-258d-f0a0-2170" name="Nathaniel Garro" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="cbd5-d543-c2a9-fbe7" name="Nathaniel Garro" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
@@ -33566,6 +34457,13 @@ Garro is fighting in a Challenge</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="56bf-2c6d-a0fa-a145" name="Tylos Rubio" publicationId="d0df-7166-5cd3-89fd" page="6" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="21fb-5fb4-7430-24c7" name="Tylos Rubio" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
@@ -33692,6 +34590,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -33935,6 +34838,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -34198,6 +35106,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="ea3f-b365-8ddb-d484" name="Stormblade" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -34395,6 +35308,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -34609,6 +35527,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -34844,6 +35767,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="caa5-278d-5d8f-c074" name="Whirlwind" publicationId="d0df-7166-5cd3-89fd" page="27" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -35028,6 +35956,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -35322,6 +36255,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="94ed-969e-a5ce-0329" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -35603,6 +36541,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="8319-4d8b-93a8-53d9" name="Thunderbolt Fighter" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -35715,6 +36658,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="fee9-d520-fed6-fb6f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -35877,6 +36825,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="cf86-91cb-432a-176b" name="Primaris-Lightning Strike Fighter" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -36011,6 +36964,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="fee9-d520-fed6-fb6f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -36335,6 +37293,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="b053-4b8e-8514-cb3f" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -36604,6 +37567,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -36891,6 +37859,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="63f9-a8e5-ab16-deaf" name="Caestus Assault Ram" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -36983,6 +37956,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -37303,6 +38281,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="ddec-50ef-3b4b-2ecc" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -37448,6 +38431,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="9edf-ad4f-0fe2-9b73">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -37777,6 +38765,13 @@ containing the model that failed its Check. If the Psyker survives Perils of the
       </costs>
     </selectionEntry>
     <selectionEntry id="d30b-59bb-8ae0-36d1" name="Destroyer Assault Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="3821-3eb2-2940-2179" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
         <infoLink id="3db5-2f63-6179-7c14" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
@@ -39380,6 +40375,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="a8e9-70e1-b8bc-8ee2" name="Assault Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="5854-b9b7-2fec-4911" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
           <modifiers>
@@ -40248,6 +41250,32 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="dbd4-930e-e003-9449" name="Mortalis Destroyer Squad" publicationId="a716-c1c4-7b26-8424" hidden="false" collective="false" import="true" type="unit">
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="dbd4-930e-e003-9449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3351-b5ea-4b0d-fd29" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                    <condition field="selections" scope="dbd4-930e-e003-9449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3351-b5ea-4b0d-fd29" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <infoLinks>
         <infoLink id="1845-6dea-afaa-9c05" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
         <infoLink id="9533-4e59-9981-83e1" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
@@ -41634,6 +42662,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                     <conditionGroup type="or">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -42266,6 +43295,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9f39-8e7d-5922-80a5" name="Infantry Only" hidden="false" targetId="db6f-0311-834c-e6ff" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="a9ca-16b0-72a2-74da" name="Cyber-Familiar" hidden="false" collective="false" import="true" targetId="6c85-4601-cf58-7b35" type="selectionEntry">
           <constraints>
@@ -42325,6 +43357,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="5b94-a916-9864-8d15" name="Thunderhawk Transporter" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="8926-acf6-9983-dd9c" name="Thunderhawk Transporter" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
           <characteristics>
@@ -42444,6 +43483,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="6879-98bf-7e9c-7093" name="Legion Marauder Bomber" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="790f-7fc8-2d03-d8f7" name="Marauder Bomber" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
           <characteristics>
@@ -42570,6 +43616,11 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -42712,6 +43763,11 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -42939,6 +43995,11 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="b405-c7a4-2b77-b9c1" name="Praetor Armoured Assault Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -43114,6 +44175,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="cf51-6d23-8764-af94" name="Legion Marauder Destroyer" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="c27f-0ac1-1410-4946" name="Marauder Destroyer" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
           <characteristics>
@@ -44720,6 +45788,80 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="b8b5-3d56-8f42-4b4d" name="Sonic Lance (Unit)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9e08-c99e-cdb5-250d" name="Sonic Lance " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template </characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (6+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="da94-fac3-4d7a-ba15" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="cae9-14ab-72a5-ba54" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7200-efa6-c232-eb74" name="Sonic Shriekers (Unit)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="0247-367b-9758-715f" name="Sonic Shriekers " page="154" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">During a turn in which a unit with at least one model equipped with sonic shriekers Successfully Charges, or themselves successfully Charged, all models in any enemy unit(s) locked in combat with them suffer a -1 penalty to all To Hit rolls, Models which are immunte to the effect of the Fear (X) special rule are not affected by this modifier.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3c0-860a-2b71-c53e" name="Sub-sonic Pulser Unit)" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d8f9-5f16-cb56-5d54" name="Sub-sonic Pulser " hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model equipped with this upgrade, and any unit it joins, ignores the penalties to Leadership and Ballistic Skill imposed by the Night Fighting special rules.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fdb9-b132-5012-2f30" name="Maru Skara HQ (Champion or Phoenix Warden)" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="b5c8-3596-2cbb-1761" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="8f77-0642-c5b9-9df0" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b5c8-3596-2cbb-1761" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab6b-6529-2ced-5244" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f77-0642-c5b9-9df0" type="min"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -44926,7 +46068,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <entryLink id="78be-935f-1458-e8fd" name="Pavoni" hidden="false" collective="false" import="true" targetId="5532-04aa-8302-2038" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="aeb3-6a73-da1d-2b90" name="Surgical Augment" hidden="true" collective="false" import="true">
+    <selectionEntryGroup id="aeb3-6a73-da1d-2b90" name="Surgical Augment (unit)" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -44938,12 +46080,25 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="9eb6-371d-de44-c12b" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f0-6d13-3ccb-ec05" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eb6-371d-de44-c12b" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="4852-ee62-1f85-3dc2" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6f99-c178-6f9d-fb63" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93a5-1699-4b06-c31a" type="max"/>
           </constraints>
@@ -44951,12 +46106,12 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
           </costs>
         </entryLink>
-        <entryLink id="e855-5157-0264-17c1" name="Sonic Shriekers" hidden="false" collective="false" import="true" targetId="3f61-86fe-eecf-aed7" type="selectionEntry">
+        <entryLink id="e855-5157-0264-17c1" name="Sonic Shriekers (Unit)" hidden="false" collective="false" import="true" targetId="7200-efa6-c232-eb74" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe5e-6f5c-cf7b-4148" type="max"/>
           </constraints>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
           </costs>
         </entryLink>
         <entryLink id="bb4c-2ee2-3b1d-c799" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
@@ -44965,6 +46120,33 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="cec6-a6f4-378f-07a4" name="Sonic Lance (Unit)" hidden="false" collective="false" import="true" targetId="b8b5-3d56-8f42-4b4d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e5b-072a-3b18-6788" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ed2b-8971-e7e8-809d" name="Sonic Shriekers" hidden="false" collective="false" import="true" targetId="3f61-86fe-eecf-aed7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbb0-4253-1dbe-599c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b22b-99c8-2c03-62da" name="Sub-sonic Pulser Unit)" hidden="false" collective="false" import="true" targetId="a3c0-860a-2b71-c53e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Sub-sonic Pulser (Unit)"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e5c-c9e3-9e0a-cd41" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -45093,17 +46275,24 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
         </selectionEntry>
         <selectionEntry id="35ac-992e-97a7-1612" name="Master of Signals" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
+            <modifier type="set" field="8f5a-e3ec-734d-23ab" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo"/>
+              </conditions>
+            </modifier>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25a2-7a52-632a-6b2c" type="notInstanceOf"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8f5a-e3ec-734d-23ab" type="min"/>
+          </constraints>
           <rules>
             <rule id="5fb1-c000-121c-b16e" name="Strategic Comms" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false">
               <description>At the start of each Game Turn you can declare whether each vox disruptor array in your army is turned on or turned off. While there is at least one model on the battlefield with a vox disruptor array turned on, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault during that turn is Disordered on the roll of a &apos;1&apos;, &apos;2&apos; or &apos;3&apos; instead of iust on a 1&apos;</description>
@@ -45516,6 +46705,7 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a57-7b36-258e-096c" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink id="58b4-dc5e-e68d-35d3" name="Maru Skara HQ (Champion or Phoenix Warden)" hidden="false" collective="false" import="true" targetId="fdb9-b132-5012-2f30" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
@@ -45741,14 +46931,16 @@ A Legion Primus Nullificator Consul gains the Psyker Sub-type and has only the P
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="add" field="category" value="30e2-956f-1bf5-1110">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="373b-ce5a-ddc5-cf8f" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <infoLinks>
             <infoLink id="328e-31c9-9aa5-89ed" name="Legiones Cybernetica" hidden="false" targetId="a2ef-63a4-3531-db91" type="rule"/>
             <infoLink id="6c18-66c0-7c82-ed9b" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="5954-d075-a735-1999" name="Praevian Consul (The Achaean Configuration Requirment)" hidden="false" targetId="14bd-5f53-021b-a0f3" primary="false"/>
-          </categoryLinks>
           <entryLinks>
             <entryLink id="3322-e7ba-5d2e-6bf4" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
               <constraints>
@@ -45836,7 +47028,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e93a-c6a3-e263-8791" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="7b97-24be-0e39-3c50" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                <infoLink id="9c1a-016a-1532-ee50" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
               </infoLinks>
             </entryLink>
             <entryLink id="2f93-d2e2-553f-670b" name="Scout Armour" hidden="false" collective="false" import="true" targetId="b282-55aa-d1e2-ebe7" type="selectionEntry">
@@ -45897,23 +47089,23 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <infoLink id="598d-8c9f-e5a4-f2a4" name="Marked For Death" hidden="false" targetId="4f41-4c04-9cd8-c5a1" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="1830-db0c-3c9f-788a" name="Special Rules" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="5e1c-fd8a-849a-d161" name="Special Rules" hidden="false" collective="false" import="true">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86c0-37d4-1381-be9d" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="75cb-3194-4ae6-d8b0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fb9-6bd0-2d71-b75e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71fa-6c9f-d020-a162" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="ee9b-5275-8627-1861" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="73f3-dc7d-f12b-1b8d" name="Scout" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
-                    <infoLink id="b014-b991-5932-714d" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+                    <infoLink id="b608-76b1-fd84-e666" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d2fb-7bb1-d577-9b98" name="Infilitrate" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="43e6-9190-ee71-178d" name="Infilitrate" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
-                    <infoLink id="f5d1-8ea8-9c4b-2e98" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
+                    <infoLink id="771f-dffe-bf8c-24e2" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -46088,6 +47280,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="971f-26aa-10df-fbb4" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="f1c3-7e93-64f1-a1b5" name="Maru Skara HQ (Champion or Phoenix Warden)" hidden="false" collective="false" import="true" targetId="fdb9-b132-5012-2f30" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35.0"/>
@@ -47568,6 +48761,55 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           </costs>
         </entryLink>
         <entryLink id="35b6-c0b4-2129-0b40" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ffa3-1a57-1eb4-1818" name="Surgical Augment" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="1937-af39-00f8-763d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bf0-36d7-09fb-6daa" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1937-af39-00f8-763d" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="1c8d-f727-0e32-5e34" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec41-14ac-7eb0-73ce" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="8a66-e544-763e-a6d7" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdfd-6264-5007-cc3a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="87f8-c18d-35d7-179d" name="Sonic Shriekers" hidden="false" collective="false" import="true" targetId="3f61-86fe-eecf-aed7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea88-35ec-c1f5-3207" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
