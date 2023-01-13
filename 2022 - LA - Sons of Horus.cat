@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="21" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="  XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <constraints>
@@ -81,10 +81,18 @@
         <categoryLink id="d2f9-3965-25e2-eaff" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="24ed-4463-3ad8-4da7" name="Reaver Attack Squad" hidden="false" collective="false" import="false" targetId="8b29-bf2a-a814-5642" type="selectionEntry">
+    <entryLink id="24ed-4463-3ad8-4da7" name="Reaver Attack Squad" hidden="true" collective="false" import="false" targetId="8b29-bf2a-a814-5642" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ec-f3e6-760c-f9bb" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
-        <categoryLink id="0789-bb51-f100-dd5e" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="77a5-bc2d-91c4-f76e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e465-788c-463b-7b1c" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="fd37-d09d-cd28-82d8" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="bcf7-3f90-c06a-5208" name="Ezekyle Abaddon" hidden="false" collective="false" import="false" targetId="09df-6357-0a00-80a6" type="selectionEntry">
@@ -2683,6 +2691,9 @@
             <conditionGroup type="or">
               <comment>    node_id_41ad-3585-4031-9b76</comment>
               <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
                   <comment>    node_id_a02c-8632-499f-827c</comment>
                 </condition>
@@ -2691,6 +2702,19 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="5ec4-0a17-c22a-cacb" name="Outflank" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="3129-6f59-4365-906b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="2bcb-0af1-4aea-9191" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -2730,11 +2754,27 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo">
                   <comment>    node_id_9a69-0fdc-4957-8982</comment>
                 </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
+      <infoLinks>
+        <infoLink id="3c6e-5441-cef4-d5dc" name="Outflank" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="1a4c-69b5-4219-8502" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="fba0-3ea7-4eaf-b33a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -2922,6 +2962,44 @@
       <categoryLinks>
         <categoryLink id="20b9-fa17-58be-e4e5" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="e24e-8804-dc14-1461" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9bc2-07ae-24d2-8e41" name="Reaver Attack Squad" hidden="false" collective="false" import="true" targetId="8b29-bf2a-a814-5642" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d332-4f1a-8244-5166" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="6bc7-53c4-cadb-0110" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eb95-6d36-8664-7fdb" name="Justaerin Terminator Squad" hidden="true" collective="false" import="true" targetId="c45d-ade3-6b28-68a2" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="71f8-a68d-56f3-c676" name="Outflank" hidden="true" targetId="bfbf-e75c-49a2-0285" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e5f1-bfce-d4fc-70a5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="60c2-e5ac-eb71-70ff" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4514,6 +4592,15 @@ remains in play and regains 1D3 Wounds.</description>
         </infoLink>
         <infoLink id="3b6a-af09-446f-d659" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
         <infoLink id="835b-d027-2f68-140a" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+        <infoLink id="61a0-2367-2abf-d322" name="Deep Strike" hidden="true" targetId="f1e1-986f-c783-ca9e" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ec-f3e6-760c-f9bb" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="705b-da26-7a7c-2f8c" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
