@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="b36e-8c73-fe83-f087" name="   III: Emperor&apos;s Children" hidden="false" collective="false" import="false" targetId="3edc-a1b9-6dc6-b1ea" type="selectionEntry">
       <constraints>
@@ -2138,6 +2138,9 @@
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
                   <comment>    node_id_d4d7-ba67-47aa-962f</comment>
                 </condition>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo">
+                  <comment>    node_id_1637-edee-457a-bb0d</comment>
+                </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo">
                   <comment>    node_id_1637-edee-457a-bb0d</comment>
                 </condition>
@@ -2930,6 +2933,7 @@
       <categoryLinks>
         <categoryLink id="e306-ea11-e8d7-25e3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="a3ab-1fc9-5341-81be" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="8c33-74be-1555-de49" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -3175,7 +3179,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="2f0a-2a98-64c3-1640" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+            <entryLink id="2f0a-2a98-64c3-1640" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2f-2557-2111-1675" type="max"/>
               </constraints>
@@ -3375,6 +3379,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec4d-5515-966a-cfae" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="7b23-b43b-c8f2-3ea0" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
@@ -3478,6 +3483,44 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="ac80-3c81-43ce-7f1c" name="The Orchestrator may take any of the following:" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a62d-ffcb-5860-cd65" name="Surgical Augment (Unit Character)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c36-7a84-9604-7ca8" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="666b-8dcd-2f3f-8a05" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="1b38-cdd6-2646-bf97" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0207-9413-83f8-d3bc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9cff-84a6-0e9d-71f9" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d45-a39d-aad0-19b8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="7a6b-7bfd-32cf-024d" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
               <constraints>
@@ -3646,6 +3689,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a889-be89-810c-2927" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="02df-96d7-de47-c1e7" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -4465,7 +4509,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a7e-82f6-fada-fc65" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="189f-99b8-ee47-b880" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+            <entryLink id="189f-99b8-ee47-b880" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ce-8d57-1fb3-c8b8" type="max"/>
               </constraints>
@@ -4626,6 +4670,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e787-f856-e9a2-cea0" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="6d14-2b42-0ed6-39b1" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
@@ -4764,7 +4809,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="0067-2b54-c2b6-aeb2" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+            <entryLink id="0067-2b54-c2b6-aeb2" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4499-5a1a-64a1-545d" type="max"/>
               </constraints>
@@ -4911,6 +4956,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4b-1d62-294e-88ba" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="e1b8-5d04-49ac-1bab" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75.0"/>
@@ -5048,7 +5094,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="b4ce-c1f3-a70a-5ef5" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
+            <entryLink id="b4ce-c1f3-a70a-5ef5" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67ad-b48e-2ce3-f1ae" type="max"/>
               </constraints>
@@ -5280,22 +5326,11 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b30-ecd0-090b-db64" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="c120-70c2-a569-fb0f" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="53.0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="304b-4147-436c-ca89" name="Maru Skara HQ" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="1310-f942-951c-d419" value="1.0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a43-6793-013b-1af6" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1310-f942-951c-d419" type="min"/>
-      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
