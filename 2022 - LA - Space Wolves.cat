@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ca15-13de-89cb-bbb2" name="LA -   VI: Space Wolves" revision="21" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ca15-13de-89cb-bbb2" name="LA -   VI: Space Wolves" revision="21" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ff53-69d9-ec0b-9caa" name="   VI: Space Wolves" hidden="false" collective="false" import="false" targetId="4916-965e-8339-44f6" type="selectionEntry">
       <constraints>
@@ -3921,7 +3921,7 @@
         </infoLink>
         <infoLink id="b567-f9a3-91c5-fe8d" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Fleet (2)"/>
+            <modifier type="set" field="name" value="Fleet (2) (Only on turn they entery from flanking assault)"/>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
@@ -3931,7 +3931,16 @@
         </infoLink>
         <infoLink id="f6d1-0602-76dd-04a4" name="Rage (X)" hidden="true" targetId="564d-3550-ae44-2f99" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rage (2)"/>
+            <modifier type="set" field="name" value="Rage (2) (Only on turn they entery from flanking assault)"/>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0079-a4ae-b25c-15c4" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule">
+          <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
@@ -4878,6 +4887,15 @@
         <infoLink id="13de-4792-2727-0d19" name="Rage (X)" hidden="true" targetId="564d-3550-ae44-2f99" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Rage (2)"/>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3a02-a5a6-190e-9d61" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule">
+          <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
