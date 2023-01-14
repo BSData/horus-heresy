@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="92" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="92" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="40" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -134,6 +134,18 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="40a2-dc86-d2e7-36ba" type="min"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="7a92-1a29-c087-51c6" name="Hammer of Olympia (Warsmith or Perturabo)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="f764-db90-35df-a059" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f764-db90-35df-a059" type="min"/>
       </constraints>
     </categoryEntry>
   </categoryEntries>
@@ -969,6 +981,13 @@
       </modifiers>
       <profiles>
         <profile id="8a09-3af3-3818-ca97" name="Gravis Shrapnel Cannon " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <modifiers>
+            <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value=" Reroll 1s to hit (Hammer of Olympia)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -980,6 +999,15 @@
       <infoLinks>
         <infoLink id="954e-697c-269a-162a" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
         <infoLink id="d318-d629-4d3d-23ac" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="4952-d55a-c282-d27f" name="Shrapnel Weapons Reroll 1s (Hammer of Olympia)" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -1240,9 +1268,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           </modifiers>
         </infoLink>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink id="5f9a-15ba-89b2-18bf" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink id="fb88-d0e0-cbde-1da9" name="Scatterbolt Launcher" hidden="false" collective="false" import="true" targetId="2ad6-969c-a486-caa8" type="selectionEntry">
           <constraints>
@@ -1301,9 +1326,6 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
           </modifiers>
         </infoLink>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink id="8384-67b0-1df9-8076" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -1357,9 +1379,6 @@ A model with the Infantry Unit Type that selects a Legion Scimitar jetbike as an
           </modifiers>
         </infoLink>
       </infoLinks>
-      <categoryLinks>
-        <categoryLink id="0cc8-f4f2-3819-c907" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
-      </categoryLinks>
       <entryLinks>
         <entryLink id="5e20-fe7d-10cb-a203" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
           <constraints>
@@ -2892,6 +2911,13 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
       </modifiers>
       <profiles>
         <profile id="6279-c549-1f6c-ed2d" name="Shrapnel Bolter " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <modifiers>
+            <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value=" Reroll 1s to hit (Hammer of Olympia)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -2902,6 +2928,15 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
       </profiles>
       <infoLinks>
         <infoLink id="edc9-b3a8-f32f-a281" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="2bc2-dbb7-2787-6831" name="Shrapnel Weapons Reroll 1s to Hit (Hammer of Olympia)" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -2917,6 +2952,13 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
       </modifiers>
       <profiles>
         <profile id="6092-cebc-6e05-643d" name="Shrapnel Cannon " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <modifiers>
+            <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value=" Reroll 1s to hit (Hammer of Olympia)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -2927,6 +2969,15 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
       </profiles>
       <infoLinks>
         <infoLink id="3b45-9342-cb1b-5000" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="4ac4-3f5f-3654-e0ba" name="Shrapnel Weapons Reroll 1s (Hammer of Olympia)" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -3625,6 +3676,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </modifiers>
       <profiles>
         <profile id="237f-c069-a680-dfae" name="Shrapnel Pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <modifiers>
+            <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value=" Reroll 1s to hit (Hammer of Olympia)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3635,6 +3693,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </profiles>
       <infoLinks>
         <infoLink id="4fd0-16f3-eac2-4367" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="4808-1b22-b952-a453" name="Shrapnel Weapons Reroll 1s (Hammer of Olympia)" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -3924,8 +3991,28 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </modifiers>
         </modifierGroup>
       </modifierGroups>
+      <rules>
+        <rule id="7fa2-fe3e-d241-4590" name="Fury of Olympia" publicationId="09c5-eeae-f398-b653" page="178" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>A model with this special rule may add one to the number of shots fired when making a Shooting Attack with a shrapnel bolter or shrapnel pistol (but not with shrapnel cannon or Gravis shrapnel cannon or any other ‘Bolt’ weapon).</description>
+        </rule>
+      </rules>
       <infoLinks>
-        <infoLink id="5af3-9ace-5f52-ec8b" name="Fury of the Legion" hidden="false" targetId="56e4-5bbb-91bd-13e0" type="rule"/>
+        <infoLink id="5af3-9ace-5f52-ec8b" name="Fury of the Legion" hidden="false" targetId="56e4-5bbb-91bd-13e0" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink id="95f0-d144-1ce5-89c1" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule"/>
         <infoLink id="aa1b-df62-64b9-be58" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
           <modifiers>
@@ -9021,6 +9108,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <infoLinks>
             <infoLink id="12c9-5cb0-62dc-c628" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
             <infoLink id="5aa5-4dd4-8efb-210f" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
+            <infoLink id="a43f-2270-0658-11fc" name="Ignore Crew Shaken and Stunned (Hammer of Olympia)" hidden="false" targetId="6659-e858-cfbf-3ff9" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="d5ba-65fa-1d63-2df7" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
@@ -9246,6 +9342,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry id="03be-5d55-d05a-771d" name="Praetor" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="7a92-1a29-c087-51c6">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+                <condition field="selections" scope="03be-5d55-d05a-771d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <modifierGroups>
         <modifierGroup>
           <comment>Add Category (X)</comment>
@@ -10372,6 +10480,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="7a92-1a29-c087-51c6">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+                <condition field="selections" scope="1b79-1951-5a63-4b9e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="efe7-1f05-d369-32b4" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
@@ -10818,6 +10936,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="7a92-1a29-c087-51c6">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+                <condition field="selections" scope="3760-204e-444c-1044" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb35-21a5-c296-ddd9" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -24027,6 +24155,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="ccfe-7b3f-91a2-bcb6" name="Ignore Crew Shaken and Stunned (Hammer of Olympia)" hidden="false" targetId="6659-e858-cfbf-3ff9" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="8b77-ae5c-8bac-f9e0" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
@@ -25577,6 +25716,17 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="5076-a468-eb81-f30c" name="Ignore Crew Shaken and Stunned (Hammer of Olympia)" hidden="false" targetId="6659-e858-cfbf-3ff9" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <categoryLinks>
             <categoryLink id="a3a3-24e2-ecd4-38fa" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
             <categoryLink id="328a-a860-4be3-e6c8" name="Reinforced Sub-type:" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
@@ -25846,6 +25996,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="1bb5-d88b-e1fe-2984">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d75-f1c7-d6a7-a055" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -31314,6 +31469,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <infoLinks>
         <infoLink id="d071-7a4b-dce8-1467" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
         <infoLink id="cd13-f4ef-53ed-22cd" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
+        <infoLink id="aaf5-6520-9983-0577" name="Ignore Crew Shaken and Stunned (Hammer of Olympia)" hidden="false" targetId="6659-e858-cfbf-3ff9" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c823-b87e-dfcc-925b" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
@@ -35070,10 +35234,6 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
               </modifiers>
             </infoLink>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="9567-10de-6aca-4152" name="Cavalry Sub-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
-            <categoryLink id="3c05-436f-b6d7-44e2" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
           </costs>
@@ -36860,6 +37020,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="1bb5-d88b-e1fe-2984">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d75-f1c7-d6a7-a055" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="22a2-27bf-4393-a373" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -37155,6 +37320,11 @@ containing the model that failed its Check. If the Psyker survives Perils of the
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="1bb5-d88b-e1fe-2984">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d75-f1c7-d6a7-a055" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -42173,6 +42343,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </modifiers>
       <profiles>
         <profile id="ea56-e656-a308-6c29" name="Shrapnel Pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <modifiers>
+            <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value=" Reroll 1s to hit (Hammer of Olympia)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -42183,6 +42360,15 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </profiles>
       <infoLinks>
         <infoLink id="957f-6eba-b3b7-2eb9" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="e16c-45dc-02ff-1735" name="Shrapnel Weapons Reroll 1s (Hammer of Olympia)" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -43848,6 +44034,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </modifiers>
       <profiles>
         <profile id="6b79-93f9-bd65-8b42" name="Shrapnel Bolter " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <modifiers>
+            <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value=" Reroll 1s to hit (Hammer of Olympia)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -43858,6 +44051,15 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </profiles>
       <infoLinks>
         <infoLink id="1475-e25c-81e5-84df" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="42b0-cc19-8041-d5b9" name="Shrapnel Weapons Reroll 1s (Hammer of Olympia)" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d51-72ff-c102-09d3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -46834,7 +47036,7 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a71-011d-fcdb-82dd" type="equalTo"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a71-011d-fcdb-82dd" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -49997,6 +50199,12 @@ A unit that includes models with this special rule may only be joined by models 
     </rule>
     <rule id="ffcb-13b4-9b4c-84da" name="Legiones Astartes (X)" publicationId="e77a-823a-da94-16b9" page="242" hidden="false">
       <description>Any unit with this special rule will have a number of additional special rules and abilities specific to their ‘named’ Legion, all of which will be defined in other Horus Heresy – Age of Darkness publications. A Space Marine unit may only have one such ‘named’ rule, e.g., Legiones Astartes (Sons of Horus). Space Marine units from a different Legion may only be included in an army using an Allied Detachment (see page 281) and in conjunction with the Allies in the Age of Darkness chart found on page 282.</description>
+    </rule>
+    <rule id="6659-e858-cfbf-3ff9" name="Ignore Crew Shaken and Stunned (Hammer of Olympia)" hidden="false">
+      <description>All Legion Predator Squadrons, Legion Vindicator Squadrons, Land Raider Proteus Carriers and Legion Land Raider Spartan models in a Detachment using this Rite of War ignore the effects of the Crew Shaken and Crew Stunned results on the Vehicle Damage table.</description>
+    </rule>
+    <rule id="7ca5-9127-867f-0a57" name="Shrapnel Weapons Reroll 1s to Hit (Hammer of Olympia)" hidden="false">
+      <description>A unit composed entirely of models with the Legiones Astartes (Iron Warriors) special rule that is part of a Detachment using this Rite of War may re-roll all failed To Hit rolls of ‘1’ made for shrapnel pistols, shrapnel bolters, shrapnel cannon and Gravis shrapnel cannon.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>

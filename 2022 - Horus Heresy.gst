@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="39" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="40" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -304,6 +304,24 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Unit-type:" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="1b62-2f0a-dffc-cb7b" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d75-f1c7-d6a7-a055" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="1b62-2f0a-dffc-cb7b" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1bb5-d88b-e1fe-2984" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d75-f1c7-d6a7-a055" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b62-2f0a-dffc-cb7b" type="max"/>
+      </constraints>
       <rules>
         <rule id="b254-c1a5-ac81-5c49" name="Cavalry Sub-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
           <description>• Cavalry models cannot be Pinned.
@@ -896,6 +914,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0c57-9f90-e576-5e7d" type="min"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="1bb5-d88b-e1fe-2984" name="Ironfire Restriction (Arquitors, Basilisks, Medusa)" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
