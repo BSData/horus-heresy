@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="20" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="21" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="  X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <constraints>
@@ -84,6 +84,9 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a71-011d-fcdb-82dd" type="equalTo">
+                  <comment>    node_id_6c8d-8b28-417b-9a7c</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3298,15 +3301,43 @@
             <categoryLink id="ecc9-de7f-c8ba-d75a" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="e878-6b8e-8676-4e2a" name="May exchange his Bolt Pistol/Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="19a7-5f91-e245-aea2">
+            <selectionEntryGroup id="e878-6b8e-8676-4e2a" name="May exchange his Bolter and Bolt Pistol for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="19a7-5f91-e245-aea2">
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea02-e503-f9ad-e6d0" type="max"/>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5def-984f-6321-8b71" type="min"/>
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="93f4-48a0-c38e-403b" name="Bolter/Volkite Charger/Chainsword" hidden="false" collective="false" import="true" defaultSelectionEntryId="3c2c-b1a3-21c2-85bc">
+                  <entryLinks>
+                    <entryLink id="3c2c-b1a3-21c2-85bc" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="f692-ad6b-24d8-0d58" value="0.0"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f692-ad6b-24d8-0d58" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb69-9f18-1170-11c9" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="f1d4-4e36-630f-86cf" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="6f6e-ad55-e093-6503" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e9e-21ed-6be9-85cf" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="f4b2-2271-568b-0767" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad21-3f9a-0cd0-75af" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="19a7-5f91-e245-aea2" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ed48-df85-ed93-36af" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed48-df85-ed93-36af" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="2b24-679c-4f8f-f0e6" name="Volkite Serpenta" hidden="false" collective="false" import="true" targetId="d535-1da8-290d-69a6" type="selectionEntry">
@@ -3341,11 +3372,6 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="7e6d-53da-0340-b9bd" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5eb4-4db8-0759-db21" type="max"/>
-                  </constraints>
-                </entryLink>
                 <entryLink id="10b4-adce-bfc4-c4ca" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da74-ded4-1fb1-c906" type="max"/>
@@ -3353,15 +3379,6 @@
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
-                </entryLink>
-                <entryLink id="b379-f37a-e8b5-ead4" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="a08a-116f-34bf-c1c6" value="0.0"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a879-1eb5-7ce0-fc04" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a08a-116f-34bf-c1c6" type="min"/>
-                  </constraints>
                 </entryLink>
                 <entryLink id="035b-87b2-d28c-04c1" name="Graviton Pistol" hidden="false" collective="false" import="true" targetId="0087-19d3-eca0-cc75" type="selectionEntry">
                   <constraints>
@@ -3395,7 +3412,7 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="c831-444b-9325-de3b" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b379-f37a-e8b5-ead4" type="equalTo"/>
+                        <condition field="selections" scope="c831-444b-9325-de3b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ade-0c02-5612-252b" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -3410,7 +3427,7 @@
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="c831-444b-9325-de3b" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b379-f37a-e8b5-ead4" type="equalTo"/>
+                        <condition field="selections" scope="c831-444b-9325-de3b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ade-0c02-5612-252b" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
