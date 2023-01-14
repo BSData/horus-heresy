@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -4074,6 +4074,10 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="54aa-c66c-5acd-5c7f" name="Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="7c36-da62-e253-d8ca">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be9b-a2e9-44ee-5156" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2c8-23ca-3c8f-4aa9" type="max"/>
+              </constraints>
               <entryLinks>
                 <entryLink id="7c36-da62-e253-d8ca" name="Void Armour" hidden="false" collective="false" import="true" targetId="6112-2c54-ceb5-a24d" type="selectionEntry"/>
                 <entryLink id="a1e4-a130-bdab-d918" name="Reinforced Void Armour " hidden="false" collective="false" import="true" targetId="cc63-5cc3-212a-3d4c" type="selectionEntry">
