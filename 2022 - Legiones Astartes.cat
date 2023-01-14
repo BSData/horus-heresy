@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="92" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="92" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -5678,8 +5678,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
                   </conditions>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15.0">
+                  <repeats>
+                    <repeat field="selections" scope="50ed-5869-643d-1ac5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="097a-5712-c173-0477" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
               <costs>
@@ -5740,8 +5745,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
-                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
                   </conditions>
+                </modifier>
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="15.0">
+                  <repeats>
+                    <repeat field="selections" scope="50ed-5869-643d-1ac5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="097a-5712-c173-0477" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
               <costs>
@@ -10197,6 +10207,31 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="ee67-d5e5-54b4-b3bb" name="Bitter Duty (Company of Bitter Iron)" hidden="false" collective="false" import="true" targetId="8219-e51c-94e0-fc1f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f897-a243-6e1b-12f8" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="dad7-4de0-9f90-9764" name="Cortex Controller" hidden="true" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4655-4447-299c-8fe2" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f18-5792-fe07-eaef" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8f1c-19e3-51c3-6ed6" name="5) Armor Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="102d-3f7d-958d-f5d7">
@@ -10663,6 +10698,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="1409-2748-b991-d9d5" name="Bitter Duty (Company of Bitter Iron)" hidden="false" collective="false" import="true" targetId="8219-e51c-94e0-fc1f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ef2-8705-4a4a-b03d" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="5ac7-91ec-6c49-64cc" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="65ca-51eb-5464-7a87">
@@ -11088,6 +11128,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="3a68-84c2-93b8-3876" name="Bitter Duty (Company of Bitter Iron)" hidden="false" collective="false" import="true" targetId="8219-e51c-94e0-fc1f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36b1-98d2-4891-5dc3" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -12616,6 +12661,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="cddc-9267-2848-0592" name="Bitter Duty (Company of Bitter Iron)" hidden="false" collective="false" import="true" targetId="8219-e51c-94e0-fc1f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4971-e74c-aafb-0fcc" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -18916,6 +18966,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="9352-2a18-502c-948b" name="Bitter Duty (Company of Bitter Iron)" hidden="false" collective="false" import="true" targetId="8219-e51c-94e0-fc1f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a87-605d-bb00-8785" type="max"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="05da-62ba-0153-fdc6" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce38-573e-cf56-fedd">
@@ -19871,6 +19926,13 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </costs>
                     </entryLink>
                     <entryLink id="b4ec-77b3-2418-c34f" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="d2ee-04cb-5f8a-2642" value="17.0">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                       </costs>
@@ -22405,6 +22467,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -22412,6 +22475,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <modifier type="set" field="d2ee-04cb-5f8a-2642" value="20.0">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="d2ee-04cb-5f8a-2642" value="15.0">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -23365,6 +23433,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="5ef3-03a3-912d-24e3" name="Bitter Duty (Company of Bitter Iron)" hidden="false" collective="false" import="true" targetId="8219-e51c-94e0-fc1f" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="922e-a3bb-008d-4050" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -39529,6 +39602,16 @@ containing the model that failed its Check. If the Psyker survives Perils of the
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink id="1e4d-306a-1134-88d9" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Traitors)"/>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a71-011d-fcdb-82dd" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="96a4-abb8-aa87-c97a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -42048,6 +42131,16 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5cb1-adeb-dff0-7b38" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Traitors)"/>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a71-011d-fcdb-82dd" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </infoLink>
@@ -46633,6 +46726,26 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8219-e51c-94e0-fc1f" name="Bitter Duty (Company of Bitter Iron)" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a71-011d-fcdb-82dd" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="0a03-dcdb-269f-b5e2" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
+        <infoLink id="86a8-b5e2-cd5f-fba8" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Traitors)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -47725,6 +47838,16 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <infoLink id="e1bd-0860-175d-df88" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
             <infoLink id="a2d0-56d9-c233-aa79" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule"/>
             <infoLink id="f3b9-07d2-9b1b-67d2" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+            <infoLink id="fd8e-97ca-1ef7-07fb" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Traitors)"/>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a71-011d-fcdb-82dd" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink id="8059-f5d3-7d41-102c" name="Rad Grenades" hidden="false" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">

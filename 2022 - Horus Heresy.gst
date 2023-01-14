@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="38" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="39" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -289,6 +289,16 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Preferred Enemy (Independant Characters)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ffb0-464c-b049-fd9a" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Stubborn (In Your Deployment Zone)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
