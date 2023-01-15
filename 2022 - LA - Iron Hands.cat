@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="22" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="24" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="  X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <constraints>
@@ -101,6 +101,11 @@
         <categoryLink id="84ec-691d-8d75-7998" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
         <categoryLink id="4198-15b1-372c-89c8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="2ad9-8ddd-07ac-2cd0" name="Retinue" hidden="false" collective="false" import="true" targetId="8a62-e4e2-d57f-5c33" type="selectionEntryGroup">
+          <comment>    template_id_fe8f-c701-4ebd-ae76    template_targetId_be38-a066-4f8e-ae54</comment>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="2dbc-c2bc-600f-0c06" name="Apothecarion Detachment" hidden="false" collective="false" import="false" targetId="81df-ffd4-a32b-b4a1" type="selectionEntry">
       <comment>    template_id_c2bc-2985-468b-b512</comment>
@@ -476,49 +481,6 @@
         </categoryLink>
         <categoryLink id="2ced-12a5-4348-b66f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_2b20-1a8b-4753-b657</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="7fbd-8c69-0c5d-8ae0" name="Command Squad" hidden="false" collective="false" import="false" targetId="0aca-632d-1642-8af9" type="selectionEntry">
-      <comment>    template_id_23b2-54e0-4f09-95e5</comment>
-      <categoryLinks>
-        <categoryLink id="127c-2d74-47bb-8f5f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_4207-8d8f-4b1a-836b</comment>
-        </categoryLink>
-        <categoryLink id="1f70-c692-4919-8175" name="Primarch&apos;s Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_2b34-077f-4279-86fb</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="02b9-6b6a-ac24-1614" name="Command Squad, Cataphractii" hidden="false" collective="false" import="false" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
-      <comment>    template_id_9e78-3e8a-477d-9920</comment>
-      <modifiers>
-        <modifier type="append" field="name" value="(Reserve Only)">
-          <comment>    node_id_421a-b0ab-45e5-b4a7</comment>
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
-              <comment>    node_id_26f8-b35f-4d47-bcf3</comment>
-            </condition>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="1f60-a02b-458d-915b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_6577-e0fb-4fda-834e</comment>
-        </categoryLink>
-        <categoryLink id="1186-f153-49c1-a39b" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_5d59-09bf-4566-b7e1</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="993e-8cdb-d3b7-9f4c" name="Command Squad, Tartaros " hidden="false" collective="false" import="false" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry">
-      <comment>    template_id_2029-1f36-432f-a6a1</comment>
-      <categoryLinks>
-        <categoryLink id="70c4-0a82-45d4-a57f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_aa93-057d-42f6-82d7</comment>
-        </categoryLink>
-        <categoryLink id="5bbd-9c26-43d2-8da7" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_403c-4e9c-4af5-84ec</comment>
         </categoryLink>
       </categoryLinks>
     </entryLink>
@@ -3800,6 +3762,7 @@
         <categoryLink id="ea33-c875-88be-d428" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="9014-262a-9067-0e59" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="d7ac-8652-d9dd-8de6" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="4ea5-44d6-046c-15da" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6b2c-960f-6914-2c01" name="Ferrus Manus" hidden="false" collective="false" import="true" type="upgrade">
