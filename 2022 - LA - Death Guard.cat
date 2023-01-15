@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="39" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -13,6 +13,11 @@
         <categoryLink id="44be-4e1f-6984-02f2" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
         <categoryLink id="edd2-1a56-37a4-4b58" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="66ca-39a9-1b99-9840" name="Retinue" hidden="false" collective="false" import="true" targetId="2bcb-6e52-0eb9-9ffe" type="selectionEntryGroup">
+          <comment>    template_id_831f-3373-456a-8fbc    template_targetId_be38-a066-4f8e-ae54</comment>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="72f2-159d-02fd-662b" name="Calas Typhon" hidden="false" collective="false" import="false" targetId="e830-3788-1a0d-0c02" type="selectionEntry">
       <modifiers>
@@ -494,49 +499,6 @@
         </categoryLink>
         <categoryLink id="a612-c826-40aa-aeea" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_2b20-1a8b-4753-b657</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="6542-9165-2e72-f5e6" name="Command Squad" hidden="false" collective="false" import="false" targetId="0aca-632d-1642-8af9" type="selectionEntry">
-      <comment>    template_id_23b2-54e0-4f09-95e5</comment>
-      <categoryLinks>
-        <categoryLink id="3c2e-2fcb-4960-8822" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_4207-8d8f-4b1a-836b</comment>
-        </categoryLink>
-        <categoryLink id="8e62-a341-4670-be46" name="Primarch&apos;s Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_2b34-077f-4279-86fb</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="6124-e860-1360-d4a4" name="Command Squad, Cataphractii" hidden="false" collective="false" import="false" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
-      <comment>    template_id_9e78-3e8a-477d-9920</comment>
-      <modifiers>
-        <modifier type="append" field="name" value="(Reserve Only)">
-          <comment>    node_id_421a-b0ab-45e5-b4a7</comment>
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
-              <comment>    node_id_26f8-b35f-4d47-bcf3</comment>
-            </condition>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="43a8-467a-4822-a9ab" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_6577-e0fb-4fda-834e</comment>
-        </categoryLink>
-        <categoryLink id="ae85-c823-4a29-bf11" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_5d59-09bf-4566-b7e1</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="a7e8-35f5-42bf-eb25" name="Command Squad, Tartaros " hidden="false" collective="false" import="false" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry">
-      <comment>    template_id_2029-1f36-432f-a6a1</comment>
-      <categoryLinks>
-        <categoryLink id="795c-30c1-42a6-9768" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_aa93-057d-42f6-82d7</comment>
-        </categoryLink>
-        <categoryLink id="8415-7326-49f2-8b63" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_403c-4e9c-4af5-84ec</comment>
         </categoryLink>
       </categoryLinks>
     </entryLink>
@@ -2475,12 +2437,6 @@
         <categoryLink id="c965-8eea-54a5-dbbe" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="bf98-3ce4-bbae-27f4" name="Deathshroud Terminator Squad" hidden="false" collective="false" import="false" targetId="7669-a6c0-7f86-e641" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="b426-11a9-a374-dc73" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true"/>
-        <categoryLink id="9101-b7e1-a69a-8690" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="1f21-083f-ed75-5d38" name="Seeker Squad" hidden="true" collective="false" import="false" targetId="58e6-f9cc-4c46-e258" type="selectionEntry">
       <comment>    template_id_dd8c-cf5d-4edb-a314</comment>
       <modifiers>
@@ -3151,6 +3107,7 @@
       <categoryLinks>
         <categoryLink id="b149-05d4-2f7b-a3bd" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="4055-f3db-da41-c441" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="713f-55c6-1fc9-4fca" name="LoW &amp; Primarchs" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="4106-fc7b-3756-ae9a" name="Mortarion" hidden="false" collective="false" import="true" type="model">

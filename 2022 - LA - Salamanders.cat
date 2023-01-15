@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="38" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="  XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <constraints>
@@ -85,6 +85,11 @@
         <categoryLink id="64a8-ba7d-4c9b-3f3e" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
         <categoryLink id="6d75-8f0a-3caa-689d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="bc7a-ac29-6730-32df" name="Retinue" hidden="false" collective="false" import="true" targetId="ec53-0911-52b7-dafa" type="selectionEntryGroup">
+          <comment>    template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="2607-05cd-6852-2f52" name="Xiaphas Jurr" hidden="true" collective="false" import="false" targetId="30b8-05a5-fef7-fe66" type="selectionEntry">
       <modifiers>
@@ -478,49 +483,6 @@
         </categoryLink>
         <categoryLink id="cb13-6872-45b5-86e8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_2b20-1a8b-4753-b657</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="5458-163e-22de-4a00" name="Command Squad" hidden="false" collective="false" import="false" targetId="0aca-632d-1642-8af9" type="selectionEntry">
-      <comment>    template_id_23b2-54e0-4f09-95e5</comment>
-      <categoryLinks>
-        <categoryLink id="8a63-c4d9-4139-9cf4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_4207-8d8f-4b1a-836b</comment>
-        </categoryLink>
-        <categoryLink id="793c-b0a0-4e5d-b164" name="Primarch&apos;s Retinue:" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_2b34-077f-4279-86fb</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="dba9-1176-0331-fc7e" name="Command Squad, Cataphractii" hidden="false" collective="false" import="false" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
-      <comment>    template_id_9e78-3e8a-477d-9920</comment>
-      <modifiers>
-        <modifier type="append" field="name" value="(Reserve Only)">
-          <comment>    node_id_421a-b0ab-45e5-b4a7</comment>
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
-              <comment>    node_id_26f8-b35f-4d47-bcf3</comment>
-            </condition>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="a892-a7ba-4d11-9a36" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_6577-e0fb-4fda-834e</comment>
-        </categoryLink>
-        <categoryLink id="b0d0-d3e5-4358-b231" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_5d59-09bf-4566-b7e1</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="c4ec-a665-f42a-0af3" name="Command Squad, Tartaros " hidden="false" collective="false" import="false" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry">
-      <comment>    template_id_2029-1f36-432f-a6a1</comment>
-      <categoryLinks>
-        <categoryLink id="5ff9-d6a7-450a-af4e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>    template_id_aa93-057d-42f6-82d7</comment>
-        </categoryLink>
-        <categoryLink id="fbc0-c28c-4add-9ec4" name="New CategoryLink" hidden="false" targetId="bbe5-14a5-68a1-544f" primary="true">
-          <comment>    template_id_403c-4e9c-4af5-84ec</comment>
         </categoryLink>
       </categoryLinks>
     </entryLink>
@@ -2894,6 +2856,7 @@
       <categoryLinks>
         <categoryLink id="97f1-63ad-b403-6ae7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="ff2f-d33d-2e7c-9895" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="ac1c-f729-b363-44d6" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b52a-be67-5e91-6268" name="Dawnbringer" hidden="false" collective="false" import="true" type="upgrade">
@@ -4132,19 +4095,24 @@
       <entryLinks>
         <entryLink id="420e-70d3-d9fe-a868" name="Command Squad, Cataphractii" hidden="false" collective="false" import="true" targetId="1b17-dcd6-0153-3efe" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="f7b0-e209-7d07-e62c" name="Tartaros Command Squad (Placeholder Points)" hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
+        <entryLink id="f7b0-e209-7d07-e62c" name="Command Squad, Tartaros " hidden="false" collective="false" import="true" targetId="58d0-a0fd-d20b-cb1b" type="selectionEntry"/>
         <entryLink id="9d06-d7bf-1138-373a" name="Command Squad" hidden="false" collective="false" import="true" targetId="0aca-632d-1642-8af9" type="selectionEntry"/>
+        <entryLink id="bc1c-d3d2-235f-fbe0" name="Firedrake Terminator Squad" hidden="false" collective="false" import="true" targetId="6775-8379-8d6b-9614" type="selectionEntry">
+          <modifiers>
+            <modifier type="append" field="name" value="(Reserve Only)">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
