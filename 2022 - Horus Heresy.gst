@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="41" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="42" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -7,7 +7,7 @@
     <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books" publicationDate="June 2022"/>
     <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions  Astartes v1.1" shortName="LotAoD -LA" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RZRGS5ADYjwUb7Ry.pdf"/>
     <publication id="09b3-d525-cdea-260c" name="Exemplary Battles of Age of Darkness v1.1" shortName="EBoAoD" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/n10JM7pGRr4EyfIh.pdf"/>
-    <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles - The Scouring of Gildens Star" shortName="EBoAoD - TSoGS" publicationDate="June 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/06/TLbrp4me5GEfL37Q.pdf"/>
+    <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles downloads" shortName="" publicationDate="" publisherUrl="https://www.warhammer-community.com/downloads/#the-horus-heresy"/>
     <publication id="bde1-6db1-163b-3b76" name="Liber Mechanicum - Forces of the Omnissiah Army Book" shortName="Mech" publicationDate="August 2022"/>
     <publication id="3886-76e5-438f-159f" name="Legacies of The Age of Darkness: Mechanicum v1.0" shortName="LotAoD -Mech" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/WJKYil2FehoZxrD9.pdf"/>
     <publication id="4489-2b8c-7790-8b5b" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0" shortName="Main Rules Errata and FAQ V1.0" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/7AX0peoK6m7C7uzw.pdf"/>
@@ -195,6 +195,16 @@
     <categoryEntry id="e90d-e5a8-f42d-da84" name="Allegiance:" hidden="false"/>
     <categoryEntry id="36c3-e85e-97cc-c503" name="Unit:" hidden="false"/>
     <categoryEntry id="eee8-3c7c-2762-e33e" name="Jump Infantry:" hidden="false">
+      <modifiers>
+        <modifier type="set" field="f8e4-88af-c312-c551" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f8e4-88af-c312-c551" type="max"/>
+      </constraints>
       <rules>
         <rule id="b420-727a-0d13-33bb" name="Jump Pack" publicationId="e77a-823a-da94-16b9" page="163" hidden="false">
           <description>A unit composed entirely of models with Jump Packs may set its Movement Characteristic to a value of 12 for the duration of the controlling player&apos;s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile, and gain any other benefits of a Movement Characterisic of 12 (including the bonus to Charge Distance, see page 181). In addition, if the controlling player chooses to set the unit&apos;s Movement to 12&quot;, the unit ignores terrain while Moving and Charging, and may move over friendly and enemy models/units. A unit that ends of begins its Movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when emplying Jump Packs, and threats all Difficult Terrain as Dangerous Terrain.
@@ -225,6 +235,18 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9658-3768-cea2-6062" type="min"/>
       </constraints>
+      <rules>
+        <rule id="df64-3c40-5f1a-a101" name="Ignore Ld modifiers on Pinning (The Awakening Fire)" publicationId="817a-6288-e016-7469" page="310" hidden="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) in a Detachment using this Rite of War ignore all modifiers to their Leadership when making Pinning tests.</description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="c2d2-1326-3076-889c" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule">
           <modifiers>
@@ -936,14 +958,23 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
               </conditions>
             </modifier>
             <modifier type="increment" field="1db1-1803-cee1-86cb" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="84d6-d8d5-49ec-27fb" value="1.0">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
