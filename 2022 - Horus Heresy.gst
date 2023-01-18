@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="42" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="43" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -10412,7 +10412,7 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="cf3e-1d75-6f91-651f" name="Rites of War (Legion Universal RoWs done, Legion Specific ones TBC)" publicationId="a716-c1c4-7b26-8424" page="" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="cf3e-1d75-6f91-651f" name="Rites of War" publicationId="a716-c1c4-7b26-8424" page="" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="797b-0bd6-8cbf-f25a" type="max"/>
       </constraints>
@@ -10988,7 +10988,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e5ae-fd1c-729d-d855" name="Hammerfall Strike Force (IF)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e5ae-fd1c-729d-d855" name="Hammerfall Strike Force (IF) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -11042,7 +11042,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2573-bb4c-e468-dd81" name="Templar Assault (IF)" publicationId="817a-6288-e016-7469" page="227" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2573-bb4c-e468-dd81" name="Templar Assault (IF) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="227" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -11071,7 +11071,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7857-5f9d-6c9e-50c1" name="The Day Of Revelation (BA)" publicationId="817a-6288-e016-7469" page="251" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7857-5f9d-6c9e-50c1" name="The Day Of Revelation (BA) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="251" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -11101,7 +11101,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d8e9-ff9b-f862-b065" name="The Day Of Sorrows (BA)" publicationId="817a-6288-e016-7469" page="252" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d8e9-ff9b-f862-b065" name="The Day Of Sorrows (BA) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="252" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -11820,7 +11820,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1af3-e23e-8831-e011" name="The Coils Of The Hydra (AL)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1af3-e23e-8831-e011" name="The Coils Of The Hydra (AL) (INCOMPLETE)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -11843,7 +11843,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4342-923b-e0dd-9e87" name="Headhunter Leviathal (AL)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4342-923b-e0dd-9e87" name="Headhunter Leviathal (AL) (INCOMPLETE)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -11866,7 +11866,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="95a4-07ae-c2e4-fe33" name="The Stone Gauntlet (IF)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="95a4-07ae-c2e4-fe33" name="The Stone Gauntlet (IF) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
