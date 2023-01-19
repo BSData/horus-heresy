@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="31" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="33" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>    template_id_5798-3fc7-4d4c-ad41</comment>
@@ -2683,6 +2683,7 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2907,6 +2908,15 @@
         <categoryLink id="4672-2965-0e73-1d20" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="378f-2d31-19fc-9ec3" name="Ofanim Court" hidden="true" collective="false" import="false" targetId="1f80-8231-f2f7-a825" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="model">
@@ -3093,6 +3103,13 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
       </costs>
     </selectionEntry>
     <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="3016-8dba-083b-e98b" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
@@ -3812,6 +3829,13 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
       </costs>
     </selectionEntry>
     <selectionEntry id="59f7-9abf-c171-e9e4" name="Chapter Master Raldoron" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="848e-4fab-588a-b8f0" name="Chapter Master Raldoron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
           <characteristics>
@@ -5383,6 +5407,145 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1f80-8231-f2f7-a825" name="Ofanim Court" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="eee8-3c7c-2762-e33e">
+          <conditions>
+            <condition field="selections" scope="1f80-8231-f2f7-a825" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a298-8584-70ed-18ce" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="0d4f-ff28-d819-a512">
+          <conditions>
+            <condition field="selections" scope="1f80-8231-f2f7-a825" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a298-8584-70ed-18ce" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b30c-fe0f-bf5c-f932" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="eaab-f392-0f3e-d833" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="aa35-71f4-8032-20b1" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a979-72c1-ca54-f552" name="Ofanim" hidden="false" collective="true" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c5e-da9d-5d2b-82c9" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd76-6e80-c4cf-a4d3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6dd0-8aba-c014-6de3" name="Ofanim" publicationId="d13e-e1ff-5dc7-b84b" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="2da6-f772-ceb8-cf63" name="Shadows of Judgement" publicationId="d13e-e1ff-5dc7-b84b" hidden="false">
+              <description>While involved in a Challenge with a model from any Legiones Astartes Faction, a model with this special rule gains a bonus of +1 to their Initiative, can re-roll failed To Wound rolls and gains the Rending (4+) special rule.</description>
+            </rule>
+            <rule id="584a-3164-9645-3e80" name="The Burning Eyes" publicationId="d13e-e1ff-5dc7-b84b" hidden="false">
+              <description>A model with this special rule may never be the Warlord. An Ofanim Court may be selected as a Retinue Squad in a Detachment that includes at least one model with both the Master of the Legion and Legiones Astartes (Blood Angels) special rules, instead of as an HQ choice. A unit selected as a ‘Retinue Squad’ must have one model with both the Master of the Legion and Legiones Astartes (Blood Angels) special rules from the same Detachment selected by the controlling player as the Ofanim Court’s Leader for the purposes of this special rule. An Ofanim Court selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. An Ofanim Court selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="1865-ce39-d0de-cd2f" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+            <infoLink id="b553-1349-039f-e9cf" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+            <infoLink id="9f86-1e0d-f7b2-9e04" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="2598-1483-0e1e-b1d0" name="Blade of Judgement" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edd4-e695-a9b0-986b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9566-6589-cfad-abae" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9dfe-850f-afe7-769a" name="Blade of Judgement" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Rending (6+), Murderous Strike (6+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="edf9-12c6-83f1-3851" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rending (6+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="0a8d-1b73-c2e6-6a8c" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+                <infoLink id="232f-4217-ebc8-040a" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="64b0-fae1-802c-cf7d" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="9196-3af7-9545-e62b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a35-ec16-fefd-1c3a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d87-7e66-39f5-66d6" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2c3a-78dd-f2fb-b2d3" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="4fd8-9e1f-ae28-3004" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e5b-78ce-c8b8-dc31" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea2a-1ebb-455c-ca3c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5256-5855-07c6-fe35" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="3739-1019-344e-761d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd1d-bca5-ce41-5e28" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d9a-8120-a724-4c5a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="75bc-ab98-bf1d-895b" name="Combat Shield" hidden="false" collective="false" import="true" targetId="7f4a-84b2-f992-4558" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e787-b35c-a129-85e7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e782-aeb5-326f-945c" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="aba9-ad97-c298-2f83" name="Warhawk Jump Pack" hidden="false" collective="false" import="true" targetId="a298-8584-70ed-18ce" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10.0">
+              <repeats>
+                <repeat field="selections" scope="1f80-8231-f2f7-a825" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f535-e9b3-a775-0120" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="6307-ed53-0ac4-0212" name="Retinue" hidden="false" collective="false" import="true">
@@ -5407,6 +5570,15 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             <modifier type="append" field="name" value="(Reserve Only)">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="5a2d-4b80-5fc8-7836" name="Ofanim Court" hidden="true" collective="false" import="true" targetId="1f80-8231-f2f7-a825" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>

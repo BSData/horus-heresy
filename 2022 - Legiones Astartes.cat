@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="95" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="97" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -172,6 +172,26 @@
         <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8049-dd36-8bc8-2120" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="94fd-1303-d10d-6b72" name="Templar Assault / Stone Guantlet (Troops = Max Elite+FA)" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="be5e-0169-4443-ec85" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95a4-07ae-c2e4-fe33" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be5e-0169-4443-ec85" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="2494-402e-655d-d47f" name="Rite of War" hidden="false" collective="false" import="true" type="upgrade">
@@ -280,6 +300,14 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="727e-3e4f-91cb-2703" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -302,6 +330,14 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="8bb4-a24c-9326-02c9" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -323,6 +359,14 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -347,6 +391,14 @@
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -376,6 +428,14 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="4845-9c77-b4c8-0b5b" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -401,6 +461,14 @@
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -430,6 +498,14 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a6f6-5a43-3e72-d5b6" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -455,6 +531,14 @@
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -484,6 +568,14 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3ada-bf78-4587-c8ab" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -509,6 +601,14 @@
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -538,6 +638,14 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="f076-93f0-91f1-277a" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -563,6 +671,14 @@
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -592,6 +708,14 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e768-2478-84ab-b7f7" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -616,6 +740,14 @@
         <modifier type="add" field="category" value="2bcf-6bbe-58a1-e082">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -644,6 +776,14 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="39c6-006d-c8de-0cee" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -670,6 +810,14 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6c72-5e9f-a028-aa94" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
@@ -683,7 +831,7 @@
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
@@ -4378,9 +4526,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="98b2-0701-ed54-dd04" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="aa72-63e4-bc60-4611" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -4627,6 +4780,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="6543-9d1d-f0eb-c1db" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="80a6-5de1-0a9c-136d" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="aa72-63e4-bc60-4611" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0531-85dd-feb0-116d" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="f115-cfc4-4199-f8be" name="0) Legionaries" hidden="false" collective="false" import="true" defaultSelectionEntryId="8b28-bdec-1540-5a47">
@@ -5226,6 +5393,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="ab48-605d-a6cc-7ad6" name="Legion Rhino Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -5622,9 +5797,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="72e2-642c-db7a-7392" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="50ed-5869-643d-1ac5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="50ed-5869-643d-1ac5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -6060,6 +6240,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="4207-1512-7dc1-8c8d" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="412a-9c8f-fe17-6b7d" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="50ed-5869-643d-1ac5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdf4-6e43-0b7c-ab6b" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="097a-5712-c173-0477" name="0) Legionaries" hidden="false" collective="false" import="true" defaultSelectionEntryId="596b-7051-6378-ac8a">
@@ -8037,6 +8231,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="a63c-190a-da0f-cb7f" name="Damocles Command Rhino" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -9184,6 +9386,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6d48-bea4-6fac-1463" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -9549,6 +9759,35 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fa2-d71c-9cdb-86cb" type="equalTo"/>
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2aa6-ed38-ddc9-60fa" type="equalTo"/>
                   </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
+                    <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2e42-9815-97e4-3386" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="0da7-3da4-c5d9-a852">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo">
+                      <comment>    node_id_a02c-8632-499f-827c</comment>
+                    </condition>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="greaterThan"/>
+                        <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="greaterThan"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -10488,6 +10727,27 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="baa7-874a-6f99-62b5" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                                <condition field="selections" scope="03be-5d55-d05a-771d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8f1c-19e3-51c3-6ed6" name="5) Armor Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="102d-3f7d-958d-f5d7">
@@ -10619,6 +10879,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -10996,6 +11261,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="d88e-38bc-f0fa-d12a" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="5ac7-91ec-6c49-64cc" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="65ca-51eb-5464-7a87">
@@ -11088,6 +11362,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -11464,6 +11743,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="2440-6fd6-d537-9f30" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -11642,6 +11930,16 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1a3f-5c9e-f4d6-c92d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
+                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -13069,6 +13367,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="a238-724a-4492-faa7" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -13408,9 +13721,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <entryLink id="58ce-d8d4-5036-c4b3" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                                <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -13562,9 +13880,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <entryLink id="b20a-2ea2-fe21-bb35" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                                <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -13828,6 +14151,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="e02b-ff09-05e4-3e3c" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="7939-21ec-136e-fe76" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="1a8e-0ded-a4dc-2b4e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2cf-d802-a680-c352" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -14434,9 +14771,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <entryLink id="6db6-4b1c-3f55-7c59" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                                <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -14576,9 +14918,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <entryLink id="827f-e13a-a1c0-dd9a" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                                <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -14668,6 +15015,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="737e-1092-3854-b914" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="0e5f-2e75-34d1-3db4" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="d91a-a3c7-d7be-4293" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6766-d205-3ee9-7543" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -14951,9 +15312,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="d66a-629c-de0b-2ebe" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="4357-930e-165a-a6e3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="4357-930e-165a-a6e3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -15148,6 +15514,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="dfae-aa37-408c-cafc" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="07e9-d34c-efd3-44a4" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="4357-930e-165a-a6e3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ef54-aab4-53ae-d96c" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="ef54-aab4-53ae-d96c" name="2) Dedicated Transport:" hidden="false" collective="false" import="true">
@@ -16042,9 +16422,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="7d11-8eca-0bd6-f233" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="ad97-c090-fa67-696f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="ad97-c090-fa67-696f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -16215,6 +16600,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="8b53-d92d-8048-68d5" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="cecf-516f-d180-849c" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ad97-c090-fa67-696f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50b4-b5ef-c95f-ab51" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7baf-18d9-aa70-9ba8" name="0) Breachers" hidden="false" collective="false" import="true" defaultSelectionEntryId="a742-dbba-6c92-7db5">
@@ -16832,9 +17231,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="3aac-d93f-7c18-3322" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="6db7-6e88-877e-35ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="6db7-6e88-877e-35ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -17335,6 +17739,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="8c6a-ca37-f830-783e" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="b8e0-1aa0-5190-4edf" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="6db7-6e88-877e-35ca" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77e9-4e14-63c6-fad7" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="ca4b-245e-a8e2-160b" name="0) The Entire unit may take:" hidden="false" collective="false" import="true">
@@ -17862,9 +18280,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="ee38-6197-20a5-3b33" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="9b10-b657-a65a-9d60" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="9b10-b657-a65a-9d60" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -17943,6 +18366,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="6323-41e5-3997-366a" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="29ba-66da-5285-8e76" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6665-318e-4f3e-5ff0" name="0) The entire unit may take:" hidden="false" collective="false" import="true">
@@ -18886,6 +19318,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink id="621a-4837-9b01-3638" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="0aca-632d-1642-8af9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                        <condition field="selections" scope="0aca-632d-1642-8af9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c76-b52e-b055-5ff5" type="equalTo"/>
+                        <condition field="selections" scope="0aca-632d-1642-8af9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -18958,6 +19406,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -19575,6 +20028,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="c863-a709-5811-e53c" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="05da-62ba-0153-fdc6" name="1) Armour Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="ce38-573e-cf56-fedd">
@@ -19952,6 +20414,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="ce66-2e77-6acb-bd05" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="5413-2e64-164e-48f9" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="58d0-a0fd-d20b-cb1b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f059-2405-bfa0-11cf" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -20057,6 +20533,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="e66d-3eb5-2559-0ab9" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="7dfb-aedf-4713-2f80" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fbf-dba5-5b44-1875" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="8fbf-dba5-5b44-1875" name="2) Dedicated Transport:" hidden="false" collective="false" import="true">
@@ -20973,9 +21463,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <entryLink id="9613-46bc-1cff-e173" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                                <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -21312,9 +21807,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <entryLink id="029d-1589-165d-d139" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                                <condition field="selections" scope="a423-7dd8-3f1b-3e28" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -21886,7 +22386,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="872a-5a5f-6ca3-1bf6" name="Surgical Augment" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
+                <entryLink id="872a-5a5f-6ca3-1bf6" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
                 <entryLink id="b07c-6b33-294d-55cb" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b99c-b90f-a781-229a" type="max"/>
@@ -22379,9 +22879,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="4c06-b5d0-8a58-b185" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="58e6-f9cc-4c46-e258" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="58e6-f9cc-4c46-e258" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -22642,6 +23147,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="1f6f-b024-2217-825d" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="7dc4-1d18-11fb-72ce" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="58e6-f9cc-4c46-e258" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8988-7c51-7802-2ca5" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="d2e7-625e-f0a4-dc20" name="0) The entire unit may take:" hidden="false" collective="false" import="true">
@@ -23143,7 +23662,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="42e3-5202-6d03-4cf5" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
+                <entryLink id="42e3-5202-6d03-4cf5" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup"/>
                 <entryLink id="c618-b740-4f60-f7c2" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
@@ -23572,6 +24091,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7857-5f9d-6c9e-50c1" type="equalTo"/>
+          </conditions>
         </modifier>
       </modifiers>
       <infoLinks>
@@ -24171,6 +24695,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo">
                           <comment>    node_id_cd74-309d-4d08-825e</comment>
                         </condition>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7329-dadf-2aed-89a6" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -27172,6 +27705,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="16db-a61d-3227-43f6" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="67f9-a7a2-a51c-b185" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="1b17-dcd6-0153-3efe" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fa9-d220-698d-8220" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -27505,9 +28052,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="ef40-0dbe-99c7-c2a2" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -27872,6 +28424,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="3997-c0e0-5bc8-0c6d" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="f013-39b8-0e8e-5cd7" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="bac9-5389-e2e7-0b1f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f20c-0dc7-e4bd-d795" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="1f87-b709-2c56-cefd" name="0) Legionaries" hidden="false" collective="false" import="true" defaultSelectionEntryId="3eac-9c35-8778-a74c">
@@ -32008,6 +32574,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>    node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>    node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <profiles>
         <profile id="2a46-a372-d986-d0eb" name="Land Raider Proteus Carrier" publicationId="a716-c1c4-7b26-8424" page="76" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
@@ -32574,11 +33148,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="5677-19d0-93b0-d374" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
                 <entryLink id="5779-7d71-4be7-af36" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b4a3-4d5c-8ca4-5daf" name="Rapier Battery" hidden="false" collective="false" import="true" type="model">
@@ -32677,11 +33250,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="361e-909b-442d-3903" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
                 <entryLink id="a10f-9d3a-f989-74ef" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -32994,9 +33566,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <entryLink id="0292-d5a2-788b-1f31" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="954d-cf8e-eefd-27a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="954d-cf8e-eefd-27a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -33120,6 +33697,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="c43d-7723-97d7-a443" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="1347-695e-053c-8075" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="954d-cf8e-eefd-27a6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16a0-0aeb-974a-33a9" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -33834,9 +34425,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <entryLink id="df12-30ac-7cc1-39d5" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                                <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -34044,9 +34640,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <entryLink id="46bd-ff87-435f-18d1" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                          <conditions>
-                            <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                                <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                     </entryLink>
@@ -34422,6 +35023,20 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               </costs>
             </entryLink>
             <entryLink id="39ff-d2f6-4532-e586" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="cb99-7dde-3dcf-4304" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="aa7f-bd4c-5231-d459" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5372-67ef-f594-305b" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -40734,9 +41349,14 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 <entryLink id="073c-4f7e-88dd-e9fa" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="d30b-59bb-8ae0-36d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -40865,6 +41485,15 @@ containing the model that failed its Check. If the Psyker survives Perils of the
               </costs>
             </entryLink>
             <entryLink id="1a27-665f-95ad-716c" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="c8e4-4204-9519-e7d7" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="f10d-023a-41b8-1c31" name=" Destroyers" hidden="false" collective="false" import="true" defaultSelectionEntryId="2adb-c2ba-7b2a-54b7">
@@ -42250,9 +42879,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <entryLink id="e15f-2e63-65a3-3570" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="a8e9-70e1-b8bc-8ee2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -42639,6 +43273,15 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </costs>
             </entryLink>
             <entryLink id="3967-baf4-e426-544d" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="8841-44b1-b217-6bc2" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="6650-b0cd-fb32-b405" name="0) Legionaries" hidden="false" collective="false" import="true" defaultSelectionEntryId="d491-d1b6-0c2a-ed9c">
@@ -43311,9 +43954,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <entryLink id="35c1-6c9f-c28c-d5f9" name="Surgical Augment (Unit Character)" hidden="false" collective="false" import="true" targetId="aeb3-6a73-da1d-2b90" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="set" field="fdb8-3892-38d6-d7f8" value="1.0">
-                      <conditions>
-                        <condition field="selections" scope="dbd4-930e-e003-9449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                            <condition field="selections" scope="dbd4-930e-e003-9449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcb4-86cb-166b-f0e1" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -43442,6 +44090,20 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </costs>
             </entryLink>
             <entryLink id="b142-59a0-3de6-89c4" name="Surgical Augment (Unit)" hidden="false" collective="false" import="true" targetId="bcb4-86cb-166b-f0e1" type="selectionEntryGroup"/>
+            <entryLink id="b777-2d78-dbc8-3046" name="Deepstike (Hammerfall Strike Force)" hidden="false" collective="false" import="true" targetId="11a8-be80-4f59-f00e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="dbd4-930e-e003-9449" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3351-b5ea-4b0d-fd29" type="equalTo"/>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="da9f-0f0f-659a-93d0" name=" Destroyers" hidden="false" collective="false" import="true" defaultSelectionEntryId="c384-0076-0e95-c567">
@@ -47756,6 +48418,24 @@ Invulnerable saves granted by a combat shield or boarding shield do not stack wi
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="11a8-be80-4f59-f00e" name="Deepstike (Hammerfall Strike Force)" hidden="true" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ed4-31d8-54f4-a5e3" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="7194-c727-ceee-b342" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (5+) (On the turn you deepstrike until your following turn)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6d9e-c515-7001-d38a" name="Deep Strike:" hidden="false" targetId="0d4f-ff28-d819-a512" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
