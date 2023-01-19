@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="43" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="44" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -321,6 +321,56 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Stubborn (In Your Deployment Zone)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ae7c-956a-f92d-8bfe" name="Heart of the Legion" hidden="false" targetId="c0dd-9002-2ebd-f96d" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Heart of the Legion (if at 50% of less of unit size)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="0aec-717a-af00-d33e" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Fearless (in 6&quot; of Objective if they didn&apos;t already have Stubborn)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4aea-a583-a545-cbc8" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Fearless (in 6&quot; of Objective if they had already had Stubborn)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9afe-5527-9b81-e837" name="Line Sub-type" hidden="false" targetId="bc1e-9c95-f971-cd7b" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Line Sub-type (if reduced to 50% or less of unit size from next turn onwards)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="95dc-9a2c-f19a-1a7b" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Hatred (Everything) (if reduced to 50% or less of unit size from next turn onwards)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -10988,7 +11038,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e5ae-fd1c-729d-d855" name="Hammerfall Strike Force (IF) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e5ae-fd1c-729d-d855" name="Hammerfall Strike Force (IF)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -11042,7 +11092,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2573-bb4c-e468-dd81" name="Templar Assault (IF) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="227" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2573-bb4c-e468-dd81" name="Templar Assault (IF)" publicationId="817a-6288-e016-7469" page="227" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -11071,7 +11121,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7857-5f9d-6c9e-50c1" name="The Day Of Revelation (BA) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="251" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="7857-5f9d-6c9e-50c1" name="The Day Of Revelation (BA)" publicationId="817a-6288-e016-7469" page="251" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -11101,7 +11151,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d8e9-ff9b-f862-b065" name="The Day Of Sorrows (BA) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="252" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d8e9-ff9b-f862-b065" name="The Day Of Sorrows (BA)" publicationId="817a-6288-e016-7469" page="252" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
@@ -11866,7 +11916,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="95a4-07ae-c2e4-fe33" name="The Stone Gauntlet (IF) (INCOMPLETE)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="95a4-07ae-c2e4-fe33" name="The Stone Gauntlet (IF)" publicationId="817a-6288-e016-7469" page="226" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditionGroups>
