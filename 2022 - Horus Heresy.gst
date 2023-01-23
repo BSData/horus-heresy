@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="45" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="46" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1220,11 +1220,11 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           </constraints>
         </categoryLink>
         <categoryLink id="2545-86dd-f928-73f3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink id="dc87-6668-f349-2a8c" name="LoW &amp; Primarchs" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false">
+        <categoryLink id="dc87-6668-f349-2a8c" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false">
           <modifiers>
             <modifier type="increment" field="d9f7-954e-b8d3-7a39" value="1.0">
               <repeats>
-                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2eaf-32d6-9d1d-d906" repeats="1" roundUp="false"/>
+                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
