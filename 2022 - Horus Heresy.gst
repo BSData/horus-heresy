@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="46" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="47" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -11069,34 +11069,6 @@ Limitations
 • All models in a unit composed entirely of models with the Infantry Unit Type and the Legiones Astartes (Imperial Fists) special rule in a Detachment using this
 Rite of War may be given the Deep Strike special rule for +30 points per unit.
 • All models in a unit composed entirely of models with the Infantry Unit Type upgraded to have the Deep Strike rule in a Detachment using this Rite of War gain the Shrouded (5+) special rule when deployed onto the battlefield as part of a Deep Strike Assault. This effect lasts until the beginning of the controlling player’s next player turn.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="5b44-6cf1-6fc3-74b2" name="Strike Force (IF)" publicationId="817a-6288-e016-7469" page="227" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <rules>
-            <rule id="1666-f33b-b74e-9b84" name="Strike Force" publicationId="817a-6288-e016-7469" page="227" hidden="false">
-              <description>Effects
-• Phalanx Warder Squads may be taken as Troops choices in a Detachment using this Rite of War.
-• All models in a unit composed entirely of models with the Infantry Unit Type and the Legiones Astartes (Imperial Fists) special rule in a Detachment using this Rite of War may be given the Deep Strike special rule for +30 points per unit.
-• All models in a unit composed entirely of models with the Infantry Unit Type upgraded to have the Deep Strike rule in a Detachment using this Rite of War gain the Shrouded (5+) special rule when deployed onto the battlefield as part of a Deep Strike Assault. This effect lasts until the beginning of the controlling player’s next player turn.
-Limitations
-• Models with the Vehicle Unit Type taken in a Detachment using this Rite of War must begin the battle in Reserves and may not be assigned to a Deep Strike Assault, Subterranean Assault or Outflanking Assault.
-• A Detachment using this Rite of War may not take Fortification choices.</description>
             </rule>
           </rules>
           <costs>
