@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -6265,6 +6265,16 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
           </constraints>
           <selectionEntries>
             <selectionEntry id="813c-fa93-375d-5f3e" name="Leman Russ Assault Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="26e0-55ec-051b-d209" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3fce-bf1a-6369-a386" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ed-946d-706f-5b65" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="e8b2-5f14-594d-096c" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
                 <categoryLink id="1a71-c891-d71e-b039" name="Reinforced Sub-type:" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
@@ -6409,6 +6419,16 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </costs>
             </selectionEntry>
             <selectionEntry id="3fce-bf1a-6369-a386" name="Leman Russ Strike Squadron" hidden="false" collective="false" import="true" type="unit">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="26e0-55ec-051b-d209" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="813c-fa93-375d-5f3e" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1b8-ccee-b21e-e808" type="max"/>
+              </constraints>
               <categoryLinks>
                 <categoryLink id="8df2-2d20-995d-8c20" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
               </categoryLinks>
@@ -6420,6 +6440,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="0d31-f29b-5726-bd5f" name="Turret Mounted Vanquisher Battle Cannon and Co-axial Mounted Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5.0">
+                          <repeats>
+                            <repeat field="selections" scope="3fce-bf1a-6369-a386" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0022-9051-9728-06ca" repeats="1" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
                       <entryLinks>
                         <entryLink id="1054-437e-3b8b-389f" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry">
                           <modifiers>
@@ -6437,9 +6464,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                           </constraints>
                         </entryLink>
                       </entryLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                      </costs>
                     </selectionEntry>
                     <selectionEntry id="fb93-5d17-0d26-e0a4" name="Two Turret Mounted Gravis Autocannons" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
