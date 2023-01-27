@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="20" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="44" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="21" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="70a7-c1ee-bf88-94ab" name="  XVII: Word Bearers" hidden="false" collective="false" import="false" targetId="9dbf-0760-d7ae-f125" type="selectionEntry">
       <constraints>
@@ -2840,13 +2840,13 @@
         <categoryLink id="9aa2-b288-d4e8-0a62" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e719-099c-9a1e-8841" name="Gal Vorbak Squad" hidden="false" collective="false" import="false" targetId="be3a-5acc-b4bd-8621" type="selectionEntry">
+    <entryLink id="e719-099c-9a1e-8841" name="Gal Vorbak Squad" hidden="true" collective="false" import="false" targetId="be3a-5acc-b4bd-8621" type="selectionEntry">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
+        <modifier type="set" field="hidden" value="false">
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
               </conditions>
             </conditionGroup>
@@ -2893,12 +2893,17 @@
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1461-12b8-2aa9-5125" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="3803-37b5-eff2-96ec" name="Dark Brethren w/ Options" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="3803-37b5-eff2-96ec" name="Dark Brethren w/ Melee Options" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="increment" field="c3b5-4ba0-afc4-a6c5" value="1.0">
                   <conditions>
-                    <condition field="selections" scope="be3a-5acc-b4bd-8621" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
+                    <condition field="selections" scope="be3a-5acc-b4bd-8621" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
                   </conditions>
+                </modifier>
+                <modifier type="decrement" field="c3b5-4ba0-afc4-a6c5" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-3f56-aa11-73fb" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
               <constraints>
@@ -2925,48 +2930,6 @@
                 <categoryLink id="c88d-b283-6386-016b" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
               </categoryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup id="a3b8-f5c5-33ad-8cd1" name="Boltspitter:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0369-e1dd-31d1-c1e4">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="391a-4f93-2e8b-7be7" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="502b-232b-8e62-d92e" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="938c-6f1f-0d2d-c53b" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cecb-5eed-9c3f-5cf4" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="f4cd-a4ba-5e1b-17ce" name="Meltagun" hidden="false" collective="false" import="true" targetId="4ebd-57e0-3560-e568" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d89-ec60-01f6-3506" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="6b76-244c-8615-f365" name="Tainted Talons" hidden="false" collective="false" import="true" targetId="5986-86cf-f767-7f7b" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4078-7332-33d1-708d" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="8d48-13d1-1e7e-8686" name="Warpfire Blaster" hidden="false" collective="false" import="true" targetId="76c7-1d7c-206a-32a5" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afee-e7ed-117f-9f45" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="0369-e1dd-31d1-c1e4" name="Boltspitter" hidden="false" collective="false" import="true" targetId="9221-5c79-0c8f-f3f3" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5766-be33-70e5-8ae1" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
                 <selectionEntryGroup id="47f2-5642-9947-fbc6" name="Tainted Talons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="adbd-f29d-b757-04ce">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="45c6-d5cf-4e61-361c" type="max"/>
@@ -3004,6 +2967,13 @@
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="a23a-7d3f-db50-d13e" name="Boltspitter" hidden="false" collective="false" import="true" targetId="8bd9-2a5f-22bc-735b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b295-bb71-1664-c51f" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
               </costs>
@@ -3032,61 +3002,224 @@
               <categoryLinks>
                 <categoryLink id="6301-3df0-f6f7-94de" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
               </categoryLinks>
-              <selectionEntries>
-                <selectionEntry id="113b-d3a5-9e2d-b4ba" name="Boltspitter" hidden="false" collective="true" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="c41c-ad16-7dae-5cf0" name="Boltspitter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid fire</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="9bc1-5ff1-de61-edf0" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="8f76-1e94-9e48-31b2" name="Tainted Talons" hidden="false" collective="true" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <profiles>
-                    <profile id="03f1-ed87-c4c9-3fff" name="Tainted Talons " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Murderous Strike (6+)
-</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="7fa3-8ced-959f-fe16" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Rending (6+)"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="a019-1453-ba8d-b740" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Murderous Strike (6+)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <entryLinks>
+                <entryLink id="3ddc-e26e-9a11-849f" name="Boltspitter" hidden="false" collective="false" import="true" targetId="8bd9-2a5f-22bc-735b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b05e-1192-c693-2894" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="25e5-50e4-73c0-ae61" name="Tainted Talons" hidden="false" collective="false" import="true" targetId="7c54-6942-ead0-e8a2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d9c-db85-b09b-37b4" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5ece-0c81-8b8d-fe7b" name="Dark Brethren w/ Ranged Options" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="increment" field="6d16-a540-deb6-3415" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="be3a-5acc-b4bd-8621" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="6d16-a540-deb6-3415" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c43-3f56-aa11-73fb" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d16-a540-deb6-3415" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="36fd-ab88-ae11-7fc9" name="Dark Brethren" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Corrupted)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="0e5d-ec08-8f11-ae1e" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="7899-13c5-6501-32ec" name="Boltspitter:" hidden="false" collective="false" import="true" defaultSelectionEntryId="0c17-733c-f154-1b4d">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d879-cb46-6401-73e0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd7e-38c1-344c-2c56" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="e924-70e1-b6fa-7ff5" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd38-8a9d-019c-0fa6" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="cd03-3dbb-ff1d-9d6c" name="Meltagun" hidden="false" collective="false" import="true" targetId="4ebd-57e0-3560-e568" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a1-82ee-8eb5-f634" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3412-0090-4591-a0f3" name="Tainted Talons" hidden="false" collective="false" import="true" targetId="5986-86cf-f767-7f7b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d2e-e5a3-398e-568c" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="5a61-7ece-8ae8-5a6d" name="Warpfire Blaster" hidden="false" collective="false" import="true" targetId="76c7-1d7c-206a-32a5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ab9-7420-1cd4-3694" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="0c17-733c-f154-1b4d" name="Boltspitter" hidden="false" collective="false" import="true" targetId="9221-5c79-0c8f-f3f3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0f4-9e21-8fbf-a16a" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="14fb-906a-ad4b-6faa" name="Tainted Talons" hidden="false" collective="false" import="true" targetId="7c54-6942-ead0-e8a2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="728a-7a76-040b-14b3" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1c43-3f56-aa11-73fb" name="Dark Brethren w/ Both Options" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="increment" field="69fc-c9bd-3575-3cbd" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="be3a-5acc-b4bd-8621" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69fc-c9bd-3575-3cbd" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6b53-6400-ce24-6e07" name="Dark Brethren" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Corrupted)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="2922-5ff8-d70b-c7da" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="253c-61a1-03b8-e9e3" name="Boltspitter:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ea17-2c81-7fc5-15eb">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d35-0cda-c217-038a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66a4-7479-1b2e-4606" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="06f3-c514-2758-d46e" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2177-e381-1da4-9ec5" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="739d-f544-f1ee-1629" name="Meltagun" hidden="false" collective="false" import="true" targetId="4ebd-57e0-3560-e568" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f195-7412-65ca-48e6" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="4d77-8797-6dfd-b884" name="Tainted Talons" hidden="false" collective="false" import="true" targetId="5986-86cf-f767-7f7b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a89e-be3d-250f-1933" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="d9e9-c869-03ec-4c6b" name="Warpfire Blaster" hidden="false" collective="false" import="true" targetId="76c7-1d7c-206a-32a5" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d80-cebd-57ad-ef8d" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="ea17-2c81-7fc5-15eb" name="Boltspitter" hidden="false" collective="false" import="true" targetId="9221-5c79-0c8f-f3f3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feb2-68d3-463a-834b" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="58dd-f4c4-fc91-739c" name="Tainted Talons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="d480-62d0-c025-a5f5">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a02c-876e-17af-9dfe" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f87-8c6a-f3c1-4f20" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="0090-7270-a326-c8c9" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0af-4829-20ef-55a7" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="8b1d-d9fb-a4aa-efed" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="371b-ddd4-e295-ea94" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="6e4d-ef01-b4db-a752" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc89-855f-8079-21be" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="b948-5d9a-e75b-8a00" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aba-3551-4900-91e8" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="d480-62d0-c025-a5f5" name="Tainted Talons" hidden="false" collective="false" import="true" targetId="5986-86cf-f767-7f7b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f34-d60c-c68d-7b67" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55.0"/>
               </costs>
@@ -4908,6 +5041,65 @@ as the Aetheric Lightning Psychic Weapon</description>
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8bd9-2a5f-22bc-735b" name="Boltspitter" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="485d-b71b-a3bb-43be" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="f5dc-234e-5457-109e" name="Boltspitter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ccbb-3d0c-f08c-9a45" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7c54-6942-ead0-e8a2" name="Tainted Talons" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0c9c-29e5-a22e-5657" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3d5e-1342-f4b9-5ac8" name="Tainted Talons " hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Murderous Strike (6+)
+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5c6f-7549-e5af-b0f9" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6fa5-cddd-ce6c-c96a" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
