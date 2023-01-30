@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <constraints>
@@ -2095,9 +2095,14 @@
                 <entryLink id="63f4-9d0e-30c1-fc96" name="Conversion Beamer" hidden="false" collective="false" import="true" targetId="2397-a3fd-81e6-4ced" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                            <condition field="selections" scope="d015-cea7-196a-9f4c" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="78ee-741f-83eb-e2ca" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
@@ -2107,9 +2112,14 @@
                 <entryLink id="6489-2dd9-918b-be99" name="Graviton Imploder" hidden="false" collective="false" import="true" targetId="c651-d95e-6aa9-c3de" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
-                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="0eae-0c52-1087-a3b0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eb4f-558c-b2a5-f60a" type="equalTo"/>
+                            <condition field="selections" scope="d015-cea7-196a-9f4c" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="78ee-741f-83eb-e2ca" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                   <costs>
