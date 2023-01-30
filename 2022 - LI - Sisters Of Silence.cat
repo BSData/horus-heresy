@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="585a-5ac2-a233-a6a6" name="2022 - LI - Sisters of Silence" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="585a-5ac2-a233-a6a6" name="2022 - LI - Sisters of Silence" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b760-8313-847f-1afa" name="Obivion HQ" hidden="false"/>
     <categoryEntry id="a9b6-f66f-e8ee-553e" name="Judgement HQ" hidden="false"/>
@@ -2248,6 +2248,12 @@
             </entryLink>
             <entryLink id="d38e-5c4f-3839-3dac" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
             <entryLink id="d717-1576-76d1-a001" name="Warlord Traits (Sisters of Silience)" hidden="false" collective="false" import="true" targetId="bd47-69ec-0c32-abc2" type="selectionEntryGroup"/>
+            <entryLink id="d569-caf8-ec67-19a5" name="Erinyes Jetbike" hidden="false" collective="false" import="true" targetId="e451-54b9-73ad-c5a6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af84-feec-c66f-fe01" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6af-de51-dada-f128" type="max"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
@@ -2692,12 +2698,18 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3529-32d9-e0e2-1893" type="max"/>
                         <constraint field="selections" scope="693f-759a-8637-d6ea" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bb91-043f-56e5-26d6" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
                     </entryLink>
                     <entryLink id="2293-2524-c4d5-a24d" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ac-2714-372c-f5db" type="max"/>
                         <constraint field="selections" scope="693f-759a-8637-d6ea" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="633a-568d-d8b1-8fd1" type="max"/>
                       </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
