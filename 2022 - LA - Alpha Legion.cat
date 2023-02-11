@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="37" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="37" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -4435,7 +4435,7 @@
         <categoryLink id="8e1d-d418-f25e-1d1e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="0f55-6d5d-cb4e-410c" name="Adherents Squad" hidden="false" collective="false" import="false" targetId="b110-ce62-3e2f-79f8" type="selectionEntry">
+    <entryLink id="0f55-6d5d-cb4e-410c" name="Adherents Squad" hidden="true" collective="false" import="false" targetId="b110-ce62-3e2f-79f8" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4510,7 +4510,7 @@
         <categoryLink id="1b95-6302-333e-c29e" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f99e-4939-0d4c-3ae0" name="Procurators" hidden="false" collective="false" import="false" targetId="9cca-47d5-0779-79a2" type="selectionEntry">
+    <entryLink id="f99e-4939-0d4c-3ae0" name="Procurators" hidden="true" collective="false" import="false" targetId="9cca-47d5-0779-79a2" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditionGroups>
@@ -4550,6 +4550,26 @@
         <categoryLink id="3b02-b28d-694d-929e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="70e3-112a-d554-d29f" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
         <categoryLink id="a8bb-f884-2117-0766" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b4bc-ef74-bd2c-2c73" name="Headhunter Kill Team" hidden="true" collective="false" import="false" targetId="70e6-ace3-8feb-1ddc" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4342-923b-e0dd-9e87" type="equalTo">
+                  <comment>    node_id_a02c-8632-499f-827c</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4775-bc95-b737-f396" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7dbc-7305-d2e8-e6a8" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+        <categoryLink id="81e6-ef94-ef5f-864d" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -6946,7 +6966,7 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
         </selectionEntry>
         <selectionEntry id="8ba5-6770-6289-c1c6" name="Contemptor-Incaendius Dreadnought" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" field="hidden" value="true">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f699-9c97-5fe3-20ba" type="equalTo"/>
               </conditions>
