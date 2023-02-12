@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="21" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="24" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -52,11 +52,11 @@
         <categoryLink id="eaeb-08e5-5cda-7c6a" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="2d0a-125c-d539-b7cc" name="Red Hand Destroyer Assault Squad" hidden="false" collective="false" import="false" targetId="7a04-bc44-70bb-cb98" type="selectionEntry">
+    <entryLink id="2d0a-125c-d539-b7cc" name="Red Hand Destroyer Assault Squad" hidden="true" collective="false" import="false" targetId="7a04-bc44-70bb-cb98" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="greaterThan"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2851,7 +2851,16 @@
         <categoryLink id="fe51-d88d-c607-9870" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="46db-1103-afec-c13d" name="Rampager Squad" hidden="false" collective="false" import="false" targetId="2fb9-74a8-43b0-dd00" type="selectionEntry">
+    <entryLink id="46db-1103-afec-c13d" name="Rampager Squad" hidden="true" collective="false" import="false" targetId="2fb9-74a8-43b0-dd00" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50cf-edf5-d39a-8943" type="equalTo">
+              <comment>    node_id_a02c-8632-499f-827c</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c293-1a6e-3287-c8bd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="7d74-ff42-876f-f0d0" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -2988,7 +2997,11 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="95c1-7144-167b-55e4" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry"/>
+                <entryLink id="95c1-7144-167b-55e4" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2825-0e9c-7c35-7514" name="Wargear:" hidden="false" collective="false" import="true">
@@ -3183,6 +3196,9 @@
                       </constraints>
                     </entryLink>
                     <entryLink id="8745-6bc7-db08-cf76" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false"/>
+                      </modifiers>
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="12fa-3ff6-a795-c114" type="max"/>
                       </constraints>
@@ -3387,6 +3403,9 @@
                   </constraints>
                 </entryLink>
                 <entryLink id="28a9-d30e-aed8-35c6" name="Chainaxe" hidden="false" collective="false" import="true" targetId="3a0d-c3bb-dc59-a4c3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="4730-d004-7468-4131" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f813-f895-aa77-a5ad" type="min"/>
@@ -4029,9 +4048,17 @@
                 </entryLink>
                 <entryLink id="409e-5b77-9bdb-09ec" name="Barb-Hook Lash" hidden="false" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry"/>
                 <entryLink id="21ce-f81b-b636-b034" name="Excoriator Chainaxe" hidden="false" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry"/>
-                <entryLink id="a0f2-04fd-2f51-49ce" name="Falax Blade" hidden="false" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry"/>
+                <entryLink id="a0f2-04fd-2f51-49ce" name="Falax Blade" hidden="false" collective="false" import="true" targetId="d5f4-6a95-b941-17e4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
+                </entryLink>
                 <entryLink id="5e39-b97c-dfe0-69db" name="Meteor Hammer" hidden="false" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry"/>
-                <entryLink id="40be-76c5-f7cd-772d" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="97ad-7991-5b27-c031" type="selectionEntry"/>
+                <entryLink id="40be-76c5-f7cd-772d" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="97ad-7991-5b27-c031" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="5f98-40f7-e719-95ef" name="2) Pistol Choice:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2f66-52f0-45d7-d74b">
@@ -4168,6 +4195,9 @@
               </profiles>
               <entryLinks>
                 <entryLink id="110a-8bb8-6266-199d" name="Falax Blade" hidden="false" collective="false" import="true" targetId="be1b-90ff-17f3-654e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3807-0d03-7ccf-ff18" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cca-6466-4926-c690" type="max"/>
@@ -4276,6 +4306,9 @@
               </profiles>
               <entryLinks>
                 <entryLink id="b03d-8f46-ab41-b356" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="6a9f-b0aa-e137-9d18" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f6-b150-2667-4e5b" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e00-ef14-1ad2-2550" type="max"/>

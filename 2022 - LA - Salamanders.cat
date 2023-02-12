@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="  XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <constraints>
@@ -3148,7 +3148,7 @@
         <categoryLink id="1868-b53d-e734-cefb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5823-3810-ddf2-0875" name="Pyroclast Squad" hidden="true" collective="false" import="true" targetId="71fe-d3bc-b7f9-75ca" type="selectionEntry">
+    <entryLink id="5823-3810-ddf2-0875" name="Pyroclast Squad" hidden="true" collective="false" import="false" targetId="71fe-d3bc-b7f9-75ca" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <comment>    node_id_7f87-6d3e-4738-b3ee</comment>
@@ -3166,7 +3166,7 @@
         <categoryLink id="4a91-da38-d2c0-f52b" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ae59-a350-0593-0d1e" name="Predator Squadron (Dragonbreath Cannon - Covenant of Fire)" hidden="false" collective="false" import="false" targetId="f18f-80cf-12bc-a069" type="selectionEntry">
+    <entryLink id="ae59-a350-0593-0d1e" name="Predator Squadron (Dragonbreath Cannon - Covenant of Fire)" hidden="true" collective="false" import="false" targetId="f18f-80cf-12bc-a069" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <comment>    node_id_7f87-6d3e-4738-b3ee</comment>
@@ -3182,7 +3182,18 @@
         <categoryLink id="ca02-a2fc-a804-f0c2" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="adab-7916-4cb1-5d32" name="Adherents Squad" hidden="false" collective="false" import="false" targetId="b110-ce62-3e2f-79f8" type="selectionEntry">
+    <entryLink id="adab-7916-4cb1-5d32" name="Adherents Squad" hidden="true" collective="false" import="false" targetId="b110-ce62-3e2f-79f8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d56-d960-0687-7fee" type="greaterThan"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="709f-111e-17a2-a0ed" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="55f5-d260-064c-aa32" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -3748,6 +3759,9 @@
               </constraints>
               <entryLinks>
                 <entryLink id="b1bb-6ec3-4402-f9d9" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a9e5-436d-136b-6ec4" type="max"/>
                   </constraints>
@@ -3821,6 +3835,9 @@
               </constraints>
               <entryLinks>
                 <entryLink id="4c7d-c23c-41ce-0b12" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="6775-8379-8d6b-9614" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4826-a730-1b04-74dd" type="max"/>
                   </constraints>
@@ -3957,6 +3974,7 @@
                     <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
+                <modifier type="set" field="hidden" value="false"/>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b1-9a31-ce7d-22a6" type="max"/>
@@ -3966,7 +3984,12 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="0202-ea46-e65e-99e9" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
+        <entryLink id="0202-ea46-e65e-99e9" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b26-ee2c-049c-607b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b02-7183-324f-1c96" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -4361,13 +4384,13 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f18f-80cf-12bc-a069" name="Predator Squadron (Dragonbreath Cannon - Covenant of Fire)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f18f-80cf-12bc-a069" name="Predator Squadron (Dragonbreath Cannon - Covenant of Fire)" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="e264-39fe-a0fb-5ce0" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
         <categoryLink id="f176-d335-c819-d507" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="2fd4-ed06-b6dc-5c92" name="Predator" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2fd4-ed06-b6dc-5c92" name="Predator" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ff-112d-4610-974c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ec0-d8d7-5c25-70d0" type="min"/>
@@ -4424,12 +4447,12 @@
             </entryLink>
           </entryLinks>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b110-ce62-3e2f-79f8" name="Adherents Squad" publicationId="d13e-e1ff-5dc7-b84b" hidden="false" collective="false" import="true" type="unit">
@@ -4492,6 +4515,9 @@
               </constraints>
               <entryLinks>
                 <entryLink id="6532-6c17-862f-1e0f" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
@@ -4592,6 +4618,9 @@
               </profiles>
               <entryLinks>
                 <entryLink id="f2c8-45ff-c93e-287e" name="Dragon&apos;s Breath Combi-Flamer" hidden="false" collective="false" import="true" targetId="d76a-6b2b-8e3e-ed7a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aa1-dc37-33eb-2696" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c02-30c3-8b66-e839" type="max"/>
@@ -4637,6 +4666,9 @@
               </profiles>
               <entryLinks>
                 <entryLink id="c9ed-b58c-1808-311c" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="411d-073e-2698-24f6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false"/>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1902-2a97-5846-2976" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2141-1d71-6d5a-db3a" type="max"/>

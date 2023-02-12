@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="47" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -6464,6 +6464,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                           </constraints>
                         </entryLink>
                       </entryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="fb93-5d17-0d26-e0a4" name="Two Turret Mounted Gravis Autocannons" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
@@ -8476,16 +8479,25 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
           </constraints>
           <entryLinks>
             <entryLink id="2ad0-9ef5-9747-320f" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Pintle Mounted Heavy Stubber"/>
+              </modifiers>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
             <entryLink id="d0e2-8321-14b6-8d73" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Pintle Mounted Multi-Laser"/>
+              </modifiers>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
             <entryLink id="ed1b-93b8-69b6-170e" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="Pintle Mounted Heavy Flamer"/>
+              </modifiers>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
@@ -9943,6 +9955,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="f2b4-f768-0fcf-8408" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -10060,6 +10077,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <entryLink id="352f-fdbf-828f-9e57" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="00cc-a52d-0e24-5aac" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -10186,9 +10208,6 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               </costs>
             </entryLink>
             <entryLink id="9237-15cd-6196-aac2" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f6ad-7c91-ec35-0470" type="max"/>
-              </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
@@ -10231,6 +10250,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <entryLink id="ca34-d15f-cfd2-bebc" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7156-4e71-b60c-e574" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -10378,6 +10402,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <entryLink id="1221-4580-2229-c322" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8cc3-11c7-c81c-6b94" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -10534,6 +10563,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
               </costs>
             </entryLink>
+            <entryLink id="a707-f23c-715e-67c9" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="763a-a06c-2bdb-3f94" name="May take:" hidden="false" collective="false" import="true">
@@ -10676,6 +10710,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <entryLink id="f399-edbf-4765-84f2" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="e547-a7aa-ce83-3de1" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -10828,6 +10867,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <entryLink id="56a6-0c43-cb35-e24d" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8930-5512-6281-52fd" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
           </entryLinks>
