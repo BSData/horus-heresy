@@ -3,18 +3,40 @@
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
+        <modifier type="set" field="2807-51e3-d25f-a9ec" value="2.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9142-d994-e260-9310" type="equalTo">
+                  <comment>    node_id_9a69-0fdc-4957-8982</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+                  <comment>    node_id_9a69-0fdc-4957-8982</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
         <modifier type="set" field="2807-51e3-d25f-a9ec" value="3.0">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
-              <comment>    node_id_9a69-0fdc-4957-8982</comment>
-            </condition>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9142-d994-e260-9310" type="greaterThan">
+                  <comment>    node_id_9a69-0fdc-4957-8982</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+                  <comment>    node_id_9a69-0fdc-4957-8982</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2807-51e3-d25f-a9ec" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2807-51e3-d25f-a9ec" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="9142-d994-e260-9310" name="AL unit" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="e317-e9d1-4af8-8de5" name=" XX: Alpha Legion" hidden="false" collective="false" import="true" targetId="c0df-c1fa-5ddc-9ee5" type="selectionEntry">
@@ -55,6 +77,15 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="8bd1-2ebe-9806-2c7a" name="Alpharius" hidden="false" collective="false" import="false" targetId="e56e-40d5-e362-0e1c" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="3a48-ebd5-979a-ab0e" name="New CategoryLink" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="true"/>
         <categoryLink id="b56c-b87b-07a2-6437" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -66,6 +97,15 @@
       </entryLinks>
     </entryLink>
     <entryLink id="d7e9-6d99-675b-0a20" name="Armillus Dynat" hidden="false" collective="false" import="false" targetId="42af-ab98-e733-dc01" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="dd12-09e4-7e98-1293" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="3732-e871-9e0b-7235" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -73,12 +113,30 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="9515-498a-82b3-893b" name="Exodus" hidden="false" collective="false" import="false" targetId="f912-9416-39ea-b3fc" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2c9a-c549-943f-5cd4" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="9b6f-0ee4-663a-93da" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="886e-415e-5ab8-3190" name="Headhunter Kill Team" hidden="false" collective="false" import="false" targetId="70e6-ace3-8feb-1ddc" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="8616-35c3-c887-a64c" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
         <categoryLink id="c995-fa87-2f17-b073" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -89,6 +147,13 @@
         <modifier type="append" field="name" value="(Reserve Only)">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
           </conditions>
         </modifier>
       </modifiers>
@@ -1202,7 +1267,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5c7b-2db6-7b5c-845d" type="greaterThan"/>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1220,7 +1285,7 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="048d-57db-23c3-8891" type="greaterThan"/>
               </conditions>
             </conditionGroup>
@@ -1333,6 +1398,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="39d8-6f42-493f-9da2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -1361,6 +1433,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1402,6 +1481,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="ff4b-8e71-4a9e-97f1" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -1417,6 +1503,15 @@
     </entryLink>
     <entryLink id="fb8d-6314-050f-ca29" name="Centurion" hidden="false" collective="false" import="false" targetId="25a2-7a52-632a-6b2c" type="selectionEntry">
       <comment>    template_id_d712-0fd7-43d1-b880</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7c04-1450-4e22-a122" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
           <comment>    template_id_2599-24e3-44e5-9568</comment>
@@ -1458,6 +1553,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="8caa-ec08-4828-aa35" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -1491,6 +1593,15 @@
     </entryLink>
     <entryLink id="2656-d573-fed9-0490" name="Centurion, Tartaros " hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
       <comment>    template_id_6e9c-0842-4514-8ea6</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7a67-133d-4d9e-94c5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_fc9d-03d1-4bbd-a1c4</comment>
@@ -1543,6 +1654,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="7004-0a0e-41de-8931" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -1568,6 +1686,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1597,6 +1722,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1632,6 +1764,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="41b2-fac6-4f73-a263" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -1661,6 +1800,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="30b0-c2c3-4700-9569" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -1676,6 +1822,15 @@
     </entryLink>
     <entryLink id="25b3-fc01-564d-396b" name="Destroyer Assault Squad" hidden="false" collective="false" import="false" targetId="d30b-59bb-8ae0-36d1" type="selectionEntry">
       <comment>    template_id_7a36-d995-434a-a787</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7955-d9c4-46ac-a748" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_473b-e812-4158-9416</comment>
@@ -1700,6 +1855,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1733,6 +1895,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="cfbb-8b59-4e55-9d8e" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -1765,6 +1934,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6a95-de6b-4210-8792" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -1790,6 +1966,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1823,6 +2006,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6cc6-e627-4a99-a3b0" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -1844,6 +2034,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e410-1ff4-4aac-aa9d" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
@@ -1862,6 +2059,13 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
               <comment>    node_id_8f4e-e8cb-4ac9-a415</comment>
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
             </condition>
           </conditions>
         </modifier>
@@ -1890,6 +2094,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1920,6 +2131,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="aef1-7c82-4b16-884e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -1948,6 +2166,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1978,6 +2203,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e814-7ce4-4679-86e9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2006,6 +2238,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2040,6 +2279,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2085,6 +2331,15 @@
     </entryLink>
     <entryLink id="cbe2-ac9a-15e5-3fbc" name="Mortalis Destroyer Squad" hidden="false" collective="false" import="false" targetId="dbd4-930e-e003-9449" type="selectionEntry">
       <comment>    template_id_1e13-9ff6-4335-8fbd</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="6cf8-ab23-4976-91e6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_6140-2404-46f9-bd42</comment>
@@ -2130,6 +2385,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e6fc-6a0f-4825-9f9f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2142,6 +2404,15 @@
     </entryLink>
     <entryLink id="19d9-6b41-7e99-c834" name="Outrider Squadron" hidden="false" collective="false" import="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
       <comment>    template_id_4654-227a-4d95-8773</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0991-5236-4969-99ae" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_ff9f-01cb-41b9-800e</comment>
@@ -2153,6 +2424,15 @@
     </entryLink>
     <entryLink id="1024-5940-3bbc-2737" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>    template_id_5798-3fc7-4d4c-ad41</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7b2f-09ab-4029-b9d7" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
           <comment>    template_id_b084-df23-4f99-812f</comment>
@@ -2184,6 +2464,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="9f5b-552a-4dd8-892f" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
@@ -2207,6 +2494,15 @@
     </entryLink>
     <entryLink id="2124-5d7a-a791-dfc7" name="Praetor, Tartaros" hidden="false" collective="false" import="false" targetId="3760-204e-444c-1044" type="selectionEntry">
       <comment>    template_id_e95d-4a2f-45c3-b44e</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="47a3-bca8-47a6-83b9" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
           <comment>    template_id_4c8d-96f6-48f9-9590</comment>
@@ -2246,6 +2542,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="3159-b9ee-4300-8dfd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2258,6 +2561,15 @@
     </entryLink>
     <entryLink id="ed73-562e-50f0-0b3f" name="Proteus Land Speeder Squadron" hidden="false" collective="false" import="false" targetId="a736-43ca-ed95-a08f" type="selectionEntry">
       <comment>    template_id_7425-bfc5-42eb-8dc4</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7e49-1f15-47ec-bb24" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_75a7-dc06-445b-b2dc</comment>
@@ -2275,6 +2587,13 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
               <comment>    node_id_72cf-cfce-4e02-b379</comment>
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
             </condition>
           </conditions>
         </modifier>
@@ -2299,6 +2618,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="4dc5-b1be-4e81-a759" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -2317,6 +2643,13 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
               <comment>    node_id_5988-c012-4dad-9a66</comment>
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
             </condition>
           </conditions>
         </modifier>
@@ -2349,6 +2682,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1489-21a2-4d07-bd0e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2370,6 +2710,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="a71a-bed7-4494-844c" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -2382,6 +2729,15 @@
     </entryLink>
     <entryLink id="bea4-21f1-cac1-c329" name="Seeker Squad" hidden="false" collective="false" import="false" targetId="58e6-f9cc-4c46-e258" type="selectionEntry">
       <comment>    template_id_58fe-ef91-4e28-9109</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="f191-6c74-4606-bee9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_9a36-f261-43cc-9bd1</comment>
@@ -2409,6 +2765,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2439,6 +2802,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="c6c3-7560-453e-8f6f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2467,6 +2837,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2497,6 +2874,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="aa4c-e3b2-4c67-83a7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2526,6 +2910,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="cf6c-e7ea-414f-a98e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2538,6 +2929,15 @@
     </entryLink>
     <entryLink id="460d-e79c-d3a8-c8b0" name="Sky-Hunter Squadron" hidden="false" collective="false" import="false" targetId="6263-c696-2f2e-c105" type="selectionEntry">
       <comment>    template_id_e940-cd57-49e9-a428</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="d029-44b7-45af-99df" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_0dfa-4004-4751-8022</comment>
@@ -2566,6 +2966,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5d9a-0b03-4847-a322" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -2591,6 +2998,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2621,6 +3035,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="bd87-7eb9-44cb-bbfd" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2636,6 +3057,15 @@
     </entryLink>
     <entryLink id="8e6c-c80b-e372-ab3c" name="Tactical Support Squad" hidden="false" collective="false" import="false" targetId="50ed-5869-643d-1ac5" type="selectionEntry">
       <comment>    template_id_7333-e181-4a55-8831</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7fce-6dc4-44f8-a830" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_b1d5-fd75-4f17-bbf4</comment>
@@ -2667,6 +3097,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="1934-b921-4584-9156" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
@@ -2679,6 +3116,15 @@
     </entryLink>
     <entryLink id="3e12-cfe5-d35d-2867" name="Terminator Tartaros Squad" hidden="false" collective="false" import="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">
       <comment>    template_id_0848-4e03-417a-b224</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7ffb-aa68-4a39-9e23" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
           <comment>    template_id_ac1c-b3bf-4011-918a</comment>
@@ -2706,6 +3152,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2739,6 +3192,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="869f-d28c-4320-b5ac" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -2751,6 +3211,15 @@
     </entryLink>
     <entryLink id="87a8-6884-e508-2395" name="Veteran Squad" hidden="false" collective="false" import="false" targetId="a423-7dd8-3f1b-3e28" type="selectionEntry">
       <comment>    template_id_9d03-74fb-4e04-91f4</comment>
+      <modifiers>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7692-594b-4e14-b1fb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_0aff-4f6e-4b03-a23c</comment>
@@ -2782,6 +3251,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="2b78-a63c-4ce1-99b4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
@@ -2807,6 +3283,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2836,6 +3319,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2869,6 +3359,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="674e-e8a9-4f35-8fca" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
@@ -2897,6 +3394,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2935,6 +3439,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="e835-9b85-4453-b0f4" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
@@ -2967,6 +3478,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="c255-88c9-4314-9911" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
@@ -2998,6 +3516,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3034,6 +3559,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="bbf9-de75-4e7c-8a7b" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -3068,6 +3600,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3104,6 +3643,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="cd8e-d681-413e-8d04" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -3136,6 +3682,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="ab1e-5821-460f-87b1" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
@@ -3167,6 +3720,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3203,6 +3763,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5ea9-1909-4746-b2ea" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -3237,6 +3804,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3273,6 +3847,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="6e6b-e874-4f68-9e92" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -3308,6 +3889,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="31fa-c2be-4b3a-8d1b" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
@@ -3339,6 +3927,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3398,6 +3993,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="5089-2257-4ee6-8f60" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
@@ -3416,6 +4018,13 @@
           <conditions>
             <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
               <comment>    node_id_d73d-d52e-4c75-8ac0</comment>
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
             </condition>
           </conditions>
         </modifier>
@@ -3447,6 +4056,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3482,6 +4098,13 @@
             </condition>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="777c-a916-40a0-8ca7" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true">
@@ -3510,6 +4133,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3571,6 +4201,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -3634,6 +4271,13 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="9100-0528-4fb3-498f" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
@@ -3681,6 +4325,13 @@
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
               <comment>    node_id_db4d-af6c-4204-8e6e</comment>
+            </condition>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
             </condition>
           </conditions>
         </modifier>
@@ -3962,6 +4613,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -4426,6 +5084,13 @@
             <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="62c8-8f27-9673-8450" type="greaterThan"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4318-84ce-47b1-996c" type="max"/>
@@ -4503,6 +5168,13 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              <comment>    node_id_9a69-0fdc-4957-8982</comment>
+            </condition>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
