@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <rules>
@@ -607,25 +607,8 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
         <selectionEntryGroup id="7bb0-bf69-b20c-f0c6" name="Hetaeron Guard" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cabc-1bf3-e312-3565" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6652-3fa5-eedc-f5b4" type="max"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6652-3fa5-eedc-f5b4" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="d344-1ffb-27a8-dc6f" name="Hetaeron Guard" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="f587-b58f-b27a-66c2" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
               <modifiers>
@@ -645,6 +628,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e74d-0e41-735d-6576" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="c7a7-e9aa-2672-70ca" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="e459-ec49-5676-d601" name="Guardian Axe" hidden="false" collective="false" import="true" targetId="3780-57f7-1eb8-0851" type="selectionEntry">
                       <constraints>
@@ -661,6 +647,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efaa-788a-c282-1764" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="a3c1-40bf-a296-f881" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="0d21-1cc7-84f8-d389" name="Guardian Spear" hidden="false" collective="false" import="true" targetId="9e55-ae31-3ba6-d720" type="selectionEntry">
                       <constraints>
@@ -676,8 +665,10 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                 <selectionEntry id="0961-bccd-b2ac-bde7" name="Hetaeron w/ Meridian Swords" hidden="false" collective="false" import="true" type="model">
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="025b-3736-0796-647c" type="max"/>
-                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b8-bf78-221a-db80" type="min"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="2a66-eef2-76f5-39f8" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="5b5f-2d5a-8d39-9970" name="Meridian Swords" hidden="false" collective="false" import="true" targetId="695d-f7d5-6f32-1d3a" type="selectionEntry">
                       <constraints>
@@ -694,6 +685,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c82-f80d-a05f-98d0" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="b1e5-42cb-50a5-f712" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="e853-567c-9726-b1c1" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="f99c-9468-c0c6-a865" type="selectionEntry">
                       <constraints>
@@ -713,6 +707,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3bd-2163-f837-ea10" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="4962-1dca-32df-5740" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="4359-1a2e-e697-a66a" name="Pyrithire Spear" hidden="false" collective="false" import="true" targetId="4c16-32b1-1a7a-928b" type="selectionEntry">
                       <constraints>
@@ -732,6 +729,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0aa8-7eb8-44af-cdfc" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="49e4-b175-9e31-acaf" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="a815-9296-d9be-3021" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="0c34-7afc-bced-140f" type="selectionEntry">
                       <constraints>
@@ -748,6 +748,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f28a-a69e-f156-843a" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="85be-1c20-e560-c1d9" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="d7c8-5236-4a67-1674" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="85f2-5b5a-1526-a121" type="selectionEntry">
                       <constraints>
@@ -767,6 +770,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8700-b11c-5cc5-b056" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="97d7-f0af-5493-a554" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="3e62-42d2-61aa-f82b" name="Solarite Power Talon" hidden="false" collective="false" import="true" targetId="d9bd-74cb-097b-14de" type="selectionEntry">
                       <constraints>
@@ -786,6 +792,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c966-3212-3e65-6245" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="fa17-022c-a1ff-df90" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="cb12-929e-c554-9011" name="Two Solarite Power Talons" hidden="false" collective="false" import="true" targetId="da0b-91f0-8baa-d330" type="selectionEntry">
                       <constraints>
@@ -805,6 +814,23 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a93c-1bbc-04fe-fd6b" type="max"/>
                   </constraints>
+                  <profiles>
+                    <profile id="f244-9f47-fe1d-661a" name="Hetaeron Guard" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                      <characteristics>
+                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
+                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                        <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                        <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                        <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                        <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
                   <entryLinks>
                     <entryLink id="ead3-fc3e-8468-b067" name="Adrasite Spear" hidden="false" collective="false" import="true" targetId="101f-346d-b8fa-a5c3" type="selectionEntry">
                       <constraints>
@@ -828,6 +854,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca7-13aa-fd52-67ac" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="5229-1d68-5724-99c2" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="f51d-7c5e-81fa-4ff6" name="Guardian Axe" hidden="false" collective="false" import="true" targetId="3780-57f7-1eb8-0851" type="selectionEntry">
                       <constraints>
@@ -853,6 +882,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d845-1715-47f2-27e1" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="e5c3-ec16-f4be-3e9b" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="66f1-bf59-3a77-d6b6" name="Guardian Spear" hidden="false" collective="false" import="true" targetId="9e55-ae31-3ba6-d720" type="selectionEntry">
                       <constraints>
@@ -878,6 +910,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7baf-f0bf-294b-624e" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="961a-99bd-33ee-2eeb" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="02a3-a307-a9f4-a085" name="Meridian Swords" hidden="false" collective="false" import="true" targetId="695d-f7d5-6f32-1d3a" type="selectionEntry">
                       <constraints>
@@ -903,6 +938,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e02e-d284-1162-0575" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="1546-af50-eaff-d69c" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="2dc4-cee3-e38b-a548" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="f99c-9468-c0c6-a865" type="selectionEntry">
                       <constraints>
@@ -931,6 +969,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7680-1e30-8036-819f" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="7c5d-c109-53b7-a4ee" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="0a1c-9385-fd5b-f5fb" name="Pyrithire Spear" hidden="false" collective="false" import="true" targetId="4c16-32b1-1a7a-928b" type="selectionEntry">
                       <constraints>
@@ -959,6 +1000,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="284c-0271-44c4-9c26" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="5854-74bd-8a71-016b" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="b4ca-24b6-f62e-4210" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="0c34-7afc-bced-140f" type="selectionEntry">
                       <constraints>
@@ -984,6 +1028,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ea1-78c7-0919-0bb0" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="c359-1399-a227-b139" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="1a5e-4486-b826-b5d1" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="85f2-5b5a-1526-a121" type="selectionEntry">
                       <constraints>
@@ -1012,6 +1059,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d6d-2478-ab54-5d74" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="811a-e5dc-c3b5-9a18" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="dfed-df58-b867-b1c5" name="Solarite Power Talon" hidden="false" collective="false" import="true" targetId="d9bd-74cb-097b-14de" type="selectionEntry">
                       <constraints>
@@ -1040,6 +1090,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f6-9281-e3b8-a37e" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="dd22-4b29-ac0e-a6fb" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="e133-18f5-b3be-db10" name="Two Solarite Power Talons" hidden="false" collective="false" import="true" targetId="da0b-91f0-8baa-d330" type="selectionEntry">
                       <constraints>
@@ -1068,6 +1121,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c259-5a88-b7af-6bed" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="8e9d-0250-dc0f-e3d1" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="c3a6-4aa2-0850-04d3" name="Adrasite Spear" hidden="false" collective="false" import="true" targetId="101f-346d-b8fa-a5c3" type="selectionEntry">
                       <constraints>
@@ -1103,6 +1159,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d988-221f-4129-79ac" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="0462-1271-03a7-afa8" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="2d76-81b6-ad72-4b5b" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
                       <constraints>
@@ -1125,6 +1184,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f785-9482-6dba-4870" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="c6cb-71d0-c3bc-3354" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="755c-76d3-5471-5bee" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
                       <constraints>
@@ -1147,6 +1209,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="984d-3c11-e481-e401" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="24c2-aee1-be68-a0f4" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="d700-a065-eb91-30eb" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
                       <constraints>
@@ -1169,6 +1234,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3e-7a7b-1ed9-742d" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="1f77-fd50-8ce1-d26f" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="c3db-9779-82e5-185b" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="df30-d357-3ee0-a102" type="selectionEntry">
                       <constraints>
@@ -1191,6 +1259,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e054-5777-f183-079a" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="19d7-057b-07d8-e97d" name="Hetaeron Guard" hidden="false" targetId="f244-9f47-fe1d-661a" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="aaf7-8d60-315c-d2b1" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="0c34-7afc-bced-140f" type="selectionEntry">
                       <constraints>
@@ -1214,33 +1285,35 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="bbd4-ae84-ee9c-36e9" name="Dedicated Transport (Custodes)" hidden="false" collective="false" import="true" targetId="fe3c-f221-2044-bc2b" type="selectionEntryGroup"/>
-            <entryLink id="5709-f09e-5071-9444" name="Auric Warplate" hidden="false" collective="false" import="true" targetId="aa93-02da-edd6-fd77" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b939-495b-2872-f91a" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14ba-119f-56c8-c449" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="99ca-7ea8-021c-9b53" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6a7-5afd-6518-7148" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43f2-df78-a53a-7c81" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="17d3-bcc2-2312-4a92" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2f0-50c0-d317-a3dd" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d42-3e57-fa8f-d312" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="6af3-bf10-8027-30bf" name="Misericord" hidden="false" collective="false" import="true" targetId="73cb-1501-d39e-4f24" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea9f-4671-7473-2d4b" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94f2-7dba-57dc-030c" type="max"/>
-              </constraints>
-            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e8fe-0f47-8064-ac81" name="Auric Warplate" hidden="false" collective="false" import="true" targetId="aa93-02da-edd6-fd77" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7971-8c0b-ee1d-f3bd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b578-1b64-b122-ff0e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="667f-5d4a-bff3-2409" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4468-cbf4-2887-accb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="138d-faba-0997-eb06" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8736-dbeb-d74e-99e6" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5faf-68c4-7f94-df8c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d666-26f1-4286-081b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="06ef-2f9b-279b-1dd1" name="Misericord" hidden="false" collective="false" import="true" targetId="73cb-1501-d39e-4f24" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2d6-d61a-2275-ede9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7521-634a-72fe-df00" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
       </costs>
@@ -1491,23 +1564,6 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </costs>
     </selectionEntry>
     <selectionEntry id="7cec-fe1b-5748-7af3" name="Custodian Guard Squad" publicationId="15a4-fc68-502d-48a9" page="25" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="acbf-d449-04fa-6fad" name="Custodian" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish, Line)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="354a-2ea5-33cf-e75b" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
@@ -1535,6 +1591,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a081-d724-d013-de0a" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="0746-d8f7-c064-d531" name="Custodian" hidden="false" targetId="cf1b-e0d6-ddd9-24e6" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="dc4f-398d-7081-9987" name="Guardian Spear" hidden="false" collective="false" import="true" targetId="9e55-ae31-3ba6-d720" type="selectionEntry">
                   <constraints>
@@ -1551,6 +1610,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bca-cefe-704c-191f" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="c661-13bf-9983-2e68" name="Custodian" hidden="false" targetId="cf1b-e0d6-ddd9-24e6" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="1006-05c3-bf5e-6750" name="Pyrithire Spear" hidden="false" collective="false" import="true" targetId="4c16-32b1-1a7a-928b" type="selectionEntry">
                   <constraints>
@@ -1567,6 +1629,23 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="651d-e622-cb68-89f7" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="cf1b-e0d6-ddd9-24e6" name="Custodian" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish, Line)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <entryLinks>
                 <entryLink id="f436-d8d3-811d-19d0" name="Adrasite Spear" hidden="false" collective="false" import="true" targetId="101f-346d-b8fa-a5c3" type="selectionEntry">
                   <constraints>
@@ -1583,6 +1662,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fce7-ebfc-7298-fb6a" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="0775-56e8-4b3f-183c" name="Custodian" hidden="false" targetId="cf1b-e0d6-ddd9-24e6" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="55c4-5034-eaa8-5f9c" name="Guardian Axe" hidden="false" collective="false" import="true" targetId="3780-57f7-1eb8-0851" type="selectionEntry">
                   <constraints>
@@ -1606,6 +1688,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b87-5c47-314c-4d11" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="993d-0d8d-1d70-35b9" name="Custodian" hidden="false" targetId="cf1b-e0d6-ddd9-24e6" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
                   </costs>
@@ -1614,6 +1699,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03b0-22a5-e285-1ad4" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="277b-70c7-6f57-94dd" name="Custodian" hidden="false" targetId="cf1b-e0d6-ddd9-24e6" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
                   </costs>
@@ -1622,6 +1710,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0be-98a1-3648-d311" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="468d-e265-ed09-f672" name="Custodian" hidden="false" targetId="cf1b-e0d6-ddd9-24e6" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
                   </costs>
@@ -1630,6 +1721,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff1d-5a5e-cfea-42af" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="31bc-5803-c5f9-5ca9" name="Custodian" hidden="false" targetId="cf1b-e0d6-ddd9-24e6" type="profile"/>
+                  </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
                   </costs>
@@ -1679,23 +1773,6 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </costs>
     </selectionEntry>
     <selectionEntry id="206f-680f-4be9-6307" name="Sentinel Guard Squad" publicationId="15a4-fc68-502d-48a9" page="26" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="ed00-60b8-c66e-3c98" name="Sentinel" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish, Line)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="a79c-10e6-1d3e-ec7f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="b5d9-aa4b-5ea4-ebcb" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
@@ -1720,6 +1797,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </constraints>
           <selectionEntries>
             <selectionEntry id="3df2-dffe-be7f-cf85" name="Sentinel Guard w/ Solarite Power Talon &amp;  Shield" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="b8d1-61b3-e79f-55b6" name="Sentinel" hidden="false" targetId="8b83-92d4-ceab-1ec1" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="5a32-0414-d944-4387" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
                   <constraints>
@@ -1739,6 +1819,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               </costs>
             </selectionEntry>
             <selectionEntry id="fb12-f008-703b-3f30" name="Sentinel Guard w/ Solarite Power Gauntlet &amp; Shield" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="2f6f-3ed7-8aac-1571" name="Sentinel" hidden="false" targetId="8b83-92d4-ceab-1ec1" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="4a05-e54e-52a3-3e4b" name="Praesidium Shield" hidden="false" collective="false" import="true" targetId="4e51-f06c-0dff-e3e8" type="selectionEntry">
                   <constraints>
@@ -1758,6 +1841,23 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               </costs>
             </selectionEntry>
             <selectionEntry id="2906-1c80-a8ed-6672" name="Sentinel Guard w/ Sentinel Warblade &amp; Shield" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="8b83-92d4-ceab-1ec1" name="Sentinel" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish, Line)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <entryLinks>
                 <entryLink id="32ce-775f-871b-10cb" name="Sentinel Warblade" hidden="false" collective="false" import="true" targetId="0c34-7afc-bced-140f" type="selectionEntry">
                   <constraints>
@@ -1787,6 +1887,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0541-0773-7cc1-f1ba" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="0e5f-2ba5-76b5-8462" name="Sentinel" hidden="false" targetId="8b83-92d4-ceab-1ec1" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="c950-4cf2-ebf0-21e4" name="Solarite Power Talon" hidden="false" collective="false" import="true" targetId="208d-ad3b-4008-334e" type="selectionEntry">
                       <constraints>
@@ -1809,6 +1912,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e651-d2c6-a054-e432" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="67fc-2ed9-4e80-1e60" name="Sentinel" hidden="false" targetId="8b83-92d4-ceab-1ec1" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="83bb-0ec2-09f9-066e" name="Solarite Power Gauntlet" hidden="false" collective="false" import="true" targetId="9786-98f2-bdab-5103" type="selectionEntry">
                       <constraints>
@@ -1831,6 +1937,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2fa-48c7-b65b-962b" type="max"/>
                   </constraints>
+                  <infoLinks>
+                    <infoLink id="0aad-b84d-4529-0158" name="Sentinel" hidden="false" targetId="8b83-92d4-ceab-1ec1" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="5708-e255-93d0-023a" name="Magisterium Vexilla" hidden="false" collective="false" import="true" targetId="3ac5-b28c-104a-9de5" type="selectionEntry">
                       <constraints>
@@ -2070,21 +2179,6 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </costs>
     </selectionEntry>
     <selectionEntry id="2ce3-4ce5-d86f-543f" name="Pallas Attack Speeder Squadron" publicationId="15a4-fc68-502d-48a9" page="29" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="6b84-406d-737f-2262" name="Pallas Attack Speeder Squadron" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Skimmer, Fast)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">16</characteristic>
-            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">5</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
-            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
-            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547"/>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e"/>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="0392-7b04-7950-2ce6" name="Legio Custodes" hidden="false" targetId="6998-b328-c080-5341" type="rule"/>
         <infoLink id="e860-4609-b8ba-104c" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
@@ -2103,6 +2197,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </constraints>
           <selectionEntries>
             <selectionEntry id="e663-dd2e-7812-e408" name="Pallas with Twin-Linked Arachnus Blaze Cannon" publicationId="15a4-fc68-502d-48a9" page="29" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="7fc9-de6e-b0f6-13a5" name="Pallas Attack Speeder Squadron" hidden="false" targetId="1b42-9499-b559-5db1" type="profile"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="01f1-f064-5384-5dfb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
                 <categoryLink id="cb6c-c2b2-8add-13da" name="Legio Custodes" hidden="false" targetId="ccca-a9de-0cd9-f8be" primary="false"/>
@@ -2120,6 +2217,21 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               </costs>
             </selectionEntry>
             <selectionEntry id="3394-a13d-f029-e555" name="Pallas with Twin-Linked Adrathic Devastator" publicationId="15a4-fc68-502d-48a9" page="29" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="1b42-9499-b559-5db1" name="Pallas Attack Speeder Squadron" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Skimmer, Fast)</characteristic>
+                    <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">16</characteristic>
+                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">5</characteristic>
+                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                    <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547"/>
+                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e"/>
+                  </characteristics>
+                </profile>
+              </profiles>
               <categoryLinks>
                 <categoryLink id="77f0-b604-ed69-9dec" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
                 <categoryLink id="8f99-1140-18b2-45d4" name="Legio Custodes" hidden="false" targetId="ccca-a9de-0cd9-f8be" primary="false"/>
@@ -2147,23 +2259,6 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </costs>
     </selectionEntry>
     <selectionEntry id="4c7e-42e0-1c1e-5ba9" name="Custodian Venatari Squad" publicationId="15a4-fc68-502d-48a9" page="30" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="73bd-729d-b4f2-541d" name="Venatari" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="16c7-c9d9-a85c-1a75" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="dc6c-9d19-fcfa-d4df" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -2189,6 +2284,23 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
           </constraints>
           <selectionEntries>
             <selectionEntry id="a10f-c01d-df2a-9b2f" name="Venatari w/ Kinetic Destoyer and Tarsus Buckler" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="dcd6-2a3c-b76c-d351" name="Venatari" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <selectionEntries>
                 <selectionEntry id="d0d7-a54c-fe1b-40b6" name="Kinetic Destoyer" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -2238,6 +2350,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               </costs>
             </selectionEntry>
             <selectionEntry id="2b53-452a-435d-f29d" name="Venatari w/ Venatari Lance" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="0a3c-245f-12b2-4151" name="Venatari" hidden="false" targetId="dcd6-2a3c-b76c-d351" type="profile"/>
+              </infoLinks>
               <selectionEntries>
                 <selectionEntry id="d3cf-dfab-f0d7-3997" name="Venatari Lance" hidden="false" collective="true" import="true" type="upgrade">
                   <constraints>
@@ -2319,23 +2434,6 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </costs>
     </selectionEntry>
     <selectionEntry id="8a39-6452-e075-c8d6" name="Sagittarum Guard Squad" publicationId="15a4-fc68-502d-48a9" page="31" hidden="false" collective="false" import="true" type="unit">
-      <profiles>
-        <profile id="1c05-ca55-bb0f-348c" name="Sagittari" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="6557-9fa8-7790-d9d3" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="1ff6-d875-4d05-59d9" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
@@ -2363,6 +2461,23 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cc5-a33c-d2a4-c71a" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="762b-faf3-18bb-70c7" name="Sagittari" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Skirmish)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <entryLinks>
                 <entryLink id="ef37-ba48-9bbb-7603" name="Adrastus Bolt Caliver" hidden="false" collective="false" import="true" targetId="2357-23af-0317-1a79" type="selectionEntry">
                   <constraints>
@@ -2379,6 +2494,9 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c262-0f6f-280c-06ed" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="bfb2-96df-8d6a-f711" name="Sagittari" hidden="false" targetId="762b-faf3-18bb-70c7" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="6df2-0495-ca83-c33e" name="Adrathic Destructor" hidden="false" collective="false" import="true" targetId="8339-4003-fe88-b536" type="selectionEntry">
                   <constraints>
