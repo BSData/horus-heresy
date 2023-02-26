@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="16" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="17" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
+    <categoryEntry id="4c2b-03e9-abb7-7209" name="Feudal Hierarchy (On Abeyant)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="0607-82af-28db-6830" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ff97-e64e-506b-0587" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0607-82af-28db-6830" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="29e1-8b61-d34d-38a9" name="Feudal Hierarchy" hidden="false" targetId="7d4f-c9a9-f9c0-b49a" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="ff97-e64e-506b-0587" name="Feudal Hierarchy (On Foot)" hidden="false">
+      <modifiers>
+        <modifier type="set" field="4179-5998-cf1c-6557" value="0.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c2b-03e9-abb7-7209" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4179-5998-cf1c-6557" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="cf80-17cc-356f-59f1" name="Feudal Hierarchy" hidden="false" targetId="7d4f-c9a9-f9c0-b49a" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e825-c60e-e6c3-60f0" name="Photon Gauntlet" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
@@ -511,6 +541,22 @@
         </modifier>
         <modifier type="add" field="category" value="7d95-f9d1-440a-67bd"/>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="add" field="category" value="4c2b-03e9-abb7-7209">
+              <conditions>
+                <condition field="selections" scope="8b4c-01f4-f39f-7c55" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dd5-bfd0-50c9-25c2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" field="category" value="ff97-e64e-506b-0587">
+              <conditions>
+                <condition field="selections" scope="8b4c-01f4-f39f-7c55" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9dd5-bfd0-50c9-25c2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9ef-5940-dfd1-cb76" type="max"/>
       </constraints>
@@ -647,7 +693,7 @@ Cruel Taskmaster – If any friendly unit with at least one model within 12&quot
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="6055-57e9-8d45-c7dd" name=" Abeyant" hidden="false" collective="false" import="true" targetId="9dd5-bfd0-50c9-25c2" type="selectionEntry">
+        <entryLink id="6055-57e9-8d45-c7dd" name="Abeyant" hidden="false" collective="false" import="true" targetId="9dd5-bfd0-50c9-25c2" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
           </costs>
@@ -4915,29 +4961,6 @@ Invulnerable Saves granted by a Mechanicum Protectiva do not stack with other In
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="27ff-3ae1-5cb6-774b" name="Feudal Hierarchy" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="3bfe-5668-c301-81f0" value="2.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba13-315d-0773-9e1f" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6f75-29a0-d321-91d3" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3bfe-5668-c301-81f0" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26cd-3bd0-9e15-48db" type="min"/>
-      </constraints>
-      <rules>
-        <rule id="23bf-6360-311d-fcee" name="Feudal Hierarchy" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
-          <description>A single Detachment may not include both an Archmagos Prime and an Archmagos Prime on Abeyant</description>
-        </rule>
-      </rules>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="d342-dbdb-33ec-5191" name="Artificia Cybernetica" publicationId="bde1-6db1-163b-3b76" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2ef-891c-51e8-5728" type="max"/>
@@ -6448,6 +6471,15 @@ When deployed onto the battlefield (either at the start of the battle or when ar
 No line of sight may be drawn through, into, or out of the area covered by the Vortex marker (as such, models within such an area of terrain cannot draw line of sight to any other model, nor can other models draw a line of sight to them).
 Any models that enter the boundary of this area of terrain, or begin the Movement phase of the model’s Controlling player within its boundaries, immediately suffer one Str 10, AP 1 Hit and the Instant Death and Armourbane (Melee) special rules. If the model has the Vehicle Unit Type and suffers a Penetrating Hit due to this effect then it adds a modifier of +3 to that roll on the Vehicle Damage table instead of the +2 modifier it would normally add due to being AP1.
 This area of terrain does not confer a Cover Save and no model within its boundary may use a Cover Save granted by any other rule or effect.</description>
+    </rule>
+    <rule id="7d4f-c9a9-f9c0-b49a" name="Feudal Hierarchy" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
+      <description>A single Detachment may not include both an Archmagos Prime and an Archmagos Prime on Abeyant.
+
+Designers note from FAQ: For the purposes of the Feudal Hierachy special rule:
+Treat Callab Decima Invictus as an Archmagos Prime.
+Treat Achmagos Draykavac as an Archmagos Prime.
+Treat Archmagos Draykavax on Abeyant as an Archmagos Prime on Abeyant.
+Treat Archmagos Anarcharis Scoria as an Archmagos Prime.on Abeyant.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
