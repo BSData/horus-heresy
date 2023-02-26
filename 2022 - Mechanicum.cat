@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="48" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="dadb-f5a9-20c8-f415" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c3e3-faec-34a7-3b4c" type="min"/>
       </constraints>
@@ -535,6 +542,7 @@
         <categoryLink id="fc8b-7c82-9965-120f" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="699b-4a76-ee6f-f722" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="2eab-eaf4-105a-f2a0" name="Cybertheurgist" hidden="false" targetId="57a1-ae47-ff1b-36e4" primary="false"/>
+        <categoryLink id="9c62-aa7d-142d-51f5" name="Feudal Hierarchy (On Foot)" hidden="false" targetId="ff97-e64e-506b-0587" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="f96e-eae0-68fa-be28" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
@@ -861,7 +869,6 @@
           </constraints>
         </entryLink>
         <entryLink id="4417-2a5d-c0ec-dd84" name="Orders of High Techno-arcana" hidden="false" collective="false" import="true" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
-        <entryLink id="3ed3-cc97-d116-35df" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
         <entryLink id="7fa1-908e-c53e-8fcb" name="Mechanicum Protectiva" hidden="false" collective="false" import="true" targetId="7908-9b34-c5bb-21c2" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1b6-784c-0df6-f37a" type="max"/>
@@ -914,6 +921,7 @@
         <categoryLink id="8bf8-9627-3e73-b8bc" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="6a96-9d2f-a329-7562" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
         <categoryLink id="ff95-2620-6ec4-9e60" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="4699-a334-97a9-2479" name="Feudal Hierarchy (On Abeyant)" hidden="false" targetId="4c2b-03e9-abb7-7209" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="1906-287d-d848-d9b6" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
@@ -1186,7 +1194,6 @@
           </constraints>
         </entryLink>
         <entryLink id="51ec-4169-13a5-abe4" name="Orders of High Techno-arcana" hidden="false" collective="false" import="true" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
-        <entryLink id="a990-eb17-4c30-6fbb" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
         <entryLink id="811b-c29f-e0c8-6a52" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cee-cd20-154d-f271" type="min"/>
@@ -1736,6 +1743,7 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4870-4291-805f-07db" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink id="897e-1840-237b-6c35" name="Feudal Hierarchy (On Foot)" hidden="false" targetId="ff97-e64e-506b-0587" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f20a-630b-4b7d-6fe9" name="Master-crafted Power Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1797,14 +1805,12 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="bc40-d9d2-9a73-a9e6" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-        <entryLink id="d123-3dad-767a-3dab" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
         <entryLink id="a765-9860-600e-d0bb" name="Artificia Reductor" hidden="false" collective="false" import="true" targetId="b627-88f0-ee8c-c43c" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a56-d0d5-5eb8-f068" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a10c-c18c-bfe2-03fe" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="ead9-ac24-4613-ed94" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
         <entryLink id="e3cc-237d-79ba-ae91" name="Mechanicum Protectiva" hidden="false" collective="false" import="true" targetId="7908-9b34-c5bb-21c2" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67ab-7ebc-91a3-81e7" type="max"/>
@@ -4211,6 +4217,7 @@ At the beginning of each of the controlling player’s Shooting phases for the r
         <categoryLink id="b65c-4e4f-9056-3390" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
         <categoryLink id="1048-d3fc-35af-c693" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="75ce-3f3b-dc4a-ecad" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="d4ac-5be1-aa59-90ad" name="Feudal Hierarchy (On Abeyant)" hidden="false" targetId="4c2b-03e9-abb7-7209" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="493a-5efa-8772-b9c9" name="The Vodian Sceptre" publicationId="bde1-6db1-163b-3b76" page="63" hidden="false" collective="false" import="true" type="upgrade">
@@ -4298,7 +4305,6 @@ removed as a casualty.�</characteristic>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b6d-6b67-f0eb-d494" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="d607-72a9-d945-8779" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
         <entryLink id="151d-1345-5eb1-41d6" name="Machinator Array" hidden="false" collective="false" import="true" targetId="66f5-697c-605c-f1bb" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee0d-a165-a8e4-d6fc" type="min"/>
@@ -5233,6 +5239,7 @@ removed as a casualty.�</characteristic>
           </modifiers>
         </infoLink>
         <infoLink id="c868-b7ac-ecef-44f3" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink id="4bae-d7d8-90fb-f037" name="Feudal Hierarchy" hidden="false" targetId="7d4f-c9a9-f9c0-b49a" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="12a1-ade9-ce31-301a" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
@@ -5324,7 +5331,6 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8bd2-a226-053f-df47" name="Feudal Hierarchy" hidden="false" collective="false" import="true" targetId="27ff-3ae1-5cb6-774b" type="selectionEntry"/>
         <entryLink id="b3ba-c046-8fb7-948d" name="Archimandrite" hidden="false" collective="false" import="true" targetId="2cd1-fe10-db22-54bd" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e040-a1ed-1b1b-a939" type="min"/>
