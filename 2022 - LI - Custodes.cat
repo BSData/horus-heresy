@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <rules>
@@ -83,12 +83,26 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="71ba-936f-5f8d-228b" name="Agamatus Jetbike Squadron" hidden="false" collective="false" import="false" targetId="f6b3-1e25-1353-0a50" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e519-9c3c-2ae3-2c19" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="8a99-7c4b-782a-8d54" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="65bb-7a39-4350-741e" name="Pallas Attack Speeder Squadron (Placeholder)" hidden="false" collective="false" import="false" targetId="2ce3-4ce5-d86f-543f" type="selectionEntry">
+    <entryLink id="65bb-7a39-4350-741e" name="Pallas Attack Speeder Squadron" hidden="false" collective="false" import="false" targetId="2ce3-4ce5-d86f-543f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="c710-2671-3cfb-8db7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="9415-2e52-7a11-d13b" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
@@ -107,6 +121,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="689b-1084-e8c8-6e9b" name="Caladius Grav-Tank" hidden="false" collective="false" import="false" targetId="ff3b-e8ec-8623-322d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="ad5a-737c-b0ab-c723" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="42d6-e888-330f-39b2" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
@@ -119,24 +140,52 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="12bb-7e2b-f4ac-9b94" name="Telemon Heavy Dreadnought" hidden="false" collective="false" import="false" targetId="4be9-470a-201e-c72a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="4689-f35f-ec9d-bb67" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="a43b-4f90-b009-182a" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="36ee-7fd7-accc-604e" name="Orion Assault Dropship" hidden="false" collective="false" import="false" targetId="6526-bdfb-4ebe-6e0a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7fe7-71bf-70cc-f8e9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="e2f9-76b9-eb66-903d" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="6b3f-84ff-d24d-7c4d" name="Ares Gunship" hidden="false" collective="false" import="false" targetId="aa0c-15a3-9d4b-ac47" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2545-36db-5e09-10ce" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="ab0b-897d-307f-e973" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="2c82-18aa-6438-5b55" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="false" targetId="8cb2-7235-fc34-9983" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="177a-2178-fbc5-5e7a" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="1908-8353-a742-a305" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -145,6 +194,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="66f2-559e-5d03-f1dc" name="Knight Acheron" hidden="false" collective="false" import="false" targetId="f971-ef52-5344-0b26" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="df5d-1d89-0f5d-043a" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="070d-8796-5859-bf8a" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -153,6 +209,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="2d3b-e347-e9c0-b318" name="Knight Castigator" hidden="false" collective="false" import="false" targetId="0a65-543c-19b2-fd34" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="aa6a-c631-a945-1dc6" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="a12a-e57c-bb93-96d0" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -161,6 +224,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="d30d-f48e-c154-eb4d" name="Knight Lancer" hidden="false" collective="false" import="false" targetId="8312-7457-e7b6-fd9f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7392-519a-2bdd-182b" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="b7bc-cfb6-774d-14fc" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -177,6 +247,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="8d2f-d3c7-d533-220a" name="Questoris Acastus Knight Asterius" hidden="false" collective="false" import="false" targetId="7b6b-49ab-d71d-e359" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="030a-7a8b-e4e0-30de" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="1fdd-c8b2-1ec0-5887" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -185,6 +262,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="0e67-1603-5047-ff60" name="Questoris Knight Atrapos" hidden="false" collective="false" import="false" targetId="012b-109f-74d2-2c82" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="9258-869d-beef-5bca" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="44e8-2381-6586-f89d" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -193,6 +277,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="9d8c-cf78-12fb-e8e1" name="Questoris Knight Magaera" hidden="false" collective="false" import="false" targetId="6d0e-0d72-d9e2-01d1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="f6fc-91ec-a1e7-a895" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="e3ea-baaa-8f32-fe1d" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -201,6 +292,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="3b92-049f-1cd2-69d8" name="Questoris Knight Styrix" hidden="false" collective="false" import="false" targetId="1944-033c-5b7e-a378" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="58c1-5517-f3da-c026" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="2d9c-d14f-0753-24e4" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -209,6 +307,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="9038-4f71-656f-ba8e" name="Reaver Battle Titan" hidden="false" collective="false" import="false" targetId="2dbc-7655-bb05-ab89" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="73b6-a942-df62-c5bc" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="129b-dcec-7dae-c996" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -216,6 +321,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="f4ed-f6b1-9ed5-f14a" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="3dd1-77d8-4289-b745" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="76c3-552a-1a9c-a18b" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="0ea7-1dee-7ed7-0921" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -223,6 +335,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="69e0-8b51-758f-e356" name="Warhound Scout Titan" hidden="false" collective="false" import="false" targetId="841c-c2f5-9817-3061" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="96f2-f301-ea09-cfb7" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="7b76-70ab-a016-540a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -230,6 +349,13 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       </categoryLinks>
     </entryLink>
     <entryLink id="3985-e9aa-92a9-e85b" name="Warlord Battle Titan" hidden="false" collective="false" import="false" targetId="d737-baca-32e7-8da6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="ea6f-6db3-7d60-2146" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="5ac2-b654-addc-bee3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -240,11 +366,6 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       <categoryLinks>
         <categoryLink id="760a-7c0a-30f2-f8b5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="373e-6f59-8b4a-7c16" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="cbed-7ec9-61de-199f" name="Coronus Grav-carrier" hidden="false" collective="false" import="true" targetId="bf7c-a1e1-f983-987e" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="1ab2-804b-2334-8829" name="New CategoryLink" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1581,6 +1702,7 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
         <categoryLink id="09ec-fc5e-3f34-aeb8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="b673-5b47-1b69-42ed" name="Legio Custodes" hidden="false" targetId="ccca-a9de-0cd9-f8be" primary="false"/>
         <categoryLink id="4776-46fc-0598-b8ab" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="96fe-fdac-52e7-ff96" name="Transport Sub-type:" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5827-b8f8-6167-7700" name="Twin Lastrum Bolt Cannon" hidden="false" collective="false" import="true" targetId="5eb8-dd6c-05ee-17d5" type="selectionEntry">
@@ -4021,11 +4143,18 @@ During a Reaction made in any Phase, a player may not choose to activate a model
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="fe3c-f221-2044-bc2b" name="Dedicated Transport (Custodes)" hidden="false" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed66-56f9-b60a-151b" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8084-b6ae-172e-e92b" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="025c-7938-6588-b014" name="Coronus Grav-carrier (Placeholder)" hidden="false" collective="false" import="true" targetId="bf7c-a1e1-f983-987e" type="selectionEntry">
+        <entryLink id="025c-7938-6588-b014" name="Coronus Grav-carrier" hidden="false" collective="false" import="true" targetId="bf7c-a1e1-f983-987e" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b147-8841-e0f2-07cb" type="max"/>
           </constraints>
