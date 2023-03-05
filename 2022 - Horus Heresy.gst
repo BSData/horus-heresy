@@ -988,7 +988,55 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     </categoryEntry>
     <categoryEntry id="1bb5-d88b-e1fe-2984" name="Ironfire Restriction (Arquitors, Basilisks, Medusa)" hidden="false"/>
     <categoryEntry id="2eaf-32d6-9d1d-d906" name="LoW &amp; Primarchs (25% Limit)" hidden="false"/>
-    <categoryEntry id="7b69-bf2f-4547-e83b" name="Mortalis Assault FoC" hidden="false"/>
+    <categoryEntry id="7b69-bf2f-4547-e83b" name="Mortalis Assault FoC" hidden="false">
+      <modifiers>
+        <modifier type="set" field="bb72-ea24-84ef-0781" value="1.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8984-d299-6bc6-f62c" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bb72-ea24-84ef-0781" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04b1-94df-3adf-f29a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bbd6-2bc7-864d-067d" name="1) Reactions in Zone Mortalis" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions 
+Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
+
+Base Raction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
+In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one(1) Reaction in any single Phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="356c-76e3-ec76-65df" name="2) ZM Movement Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE MOVEMENT PHASE
+During the Movement phase, the Reactive player may declare a Reaction if an enemy unit ends a move within 12&quot; and in line of sight of a friendly unit. Once the Active player has completely resolved the movement of their unit, the Reactive player may choose to expend their Reaction in that Phase in order to have the unit they control that is within 12&quot; and line of sight perform a Suppress Reaction.
+
+Suppress - The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Suppress Reaction may not make any attacks indirectly (without line of sight). All Shooting Attacks made as part of a Suppress Reaction are Snap Shots, with the exception of Template Weapons. Note that this prevents models from making attacks with weapons that have the Blast (X) special rule as part of this Reaction. Template Weapons may only be used as part of a Suppress Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally. Models in the Reacting unit count as Stationary during this Shooting Attack, even if they moved in the previous Movement phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="47f5-85fb-1b8b-a13e" name="3) ZM Shooting Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE SHOOTING PHASE
+During the Shooting phase, the Reactive player may react when any enemy unit declares a Shooting Attack targeting a unit they control. Before the Active player resolves the Shooting Attack, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Shooting Attack perform a Displace Reaction.
+
+Displace - Each model in the Reacting unit may move a number of inches up to its unmodified Initiative Characteristic. When resolving the Shooting Attack that triggered this Reaction, all range and line of sight is measured to the Reacting unit’s new position. If, as a result of this movement, no models in the reacting unit are within range or line of sight of any models in the triggering unit, the Active player cannot choose a new target for their Shooting Attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c7a-4ba0-361e-f626" name="4) ZM Assualt Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE ASSAULT PHASE
+During the Assault phase, the Reactive player may react when any enemy unit declares a Charge targeting a unit they control. Before the Active player has resolved any Charge Rolls, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Charge perform a Brace Reaction.
+
+Brace - The Reacting unit must make a Morale check. If the Check is failed, the Reacting unit immediately Fall Backs 1D6&quot; and automatically regroups when this Fall Back Move is completed. If the Check is successful, the Reacting unit automatically passes any Morale checks they are required to make as a result of losing an assault during the following Fight sub-phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1538,12 +1586,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           </constraints>
         </categoryLink>
         <categoryLink id="3dbc-6e8f-de3e-52ae" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink id="c5b2-e371-c1c8-b21e" name="Mortalis Assault FoC" hidden="false" targetId="7b69-bf2f-4547-e83b" primary="false">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="361e-dfce-e90e-c065" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c8-dcf7-976c-629f" type="max"/>
-          </constraints>
-        </categoryLink>
+        <categoryLink id="c5b2-e371-c1c8-b21e" name="Mortalis Assault FoC" hidden="false" targetId="7b69-bf2f-4547-e83b" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1928,11 +1971,6 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       </modifiers>
       <categoryLinks>
         <categoryLink id="eec3-bfaa-9984-36f1" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="eedc-1fc6-2a6d-854a" name="Mortalis Assault FoC" hidden="false" collective="false" import="true" targetId="ed66-56f9-b60a-151b" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="7837-497b-a6f9-1798" name="Mortalis Assault FoC" hidden="false" targetId="7b69-bf2f-4547-e83b" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9002,59 +9040,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <infoLinks>
         <infoLink id="71c1-a736-64d4-6b49" name="Close Combat Weapon" hidden="false" targetId="e28e-91f4-86a4-15a6" type="profile"/>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ed66-56f9-b60a-151b" name="Mortalis Assault FoC" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="0deb-8db4-fbbc-65f5" value="1.0">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a40-2d23-7d94-9e7b" type="max"/>
-        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d66f-4d98-8f7b-fdce" type="max"/>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0deb-8db4-fbbc-65f5" type="min"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0caf-af24-024d-a085" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="286a-f4eb-9840-da36" name="1) Reactions in Zone Mortalis" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-          <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions 
-Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
-
-Base Raction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
-In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one(1) Reaction in any single Phase.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="581d-00cb-3732-e370" name="2) ZM Movement Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-          <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE MOVEMENT PHASE
-During the Movement phase, the Reactive player may declare a Reaction if an enemy unit ends a move within 12&quot; and in line of sight of a friendly unit. Once the Active player has completely resolved the movement of their unit, the Reactive player may choose to expend their Reaction in that Phase in order to have the unit they control that is within 12&quot; and line of sight perform a Suppress Reaction.
-
-Suppress - The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Suppress Reaction may not make any attacks indirectly (without line of sight). All Shooting Attacks made as part of a Suppress Reaction are Snap Shots, with the exception of Template Weapons. Note that this prevents models from making attacks with weapons that have the Blast (X) special rule as part of this Reaction. Template Weapons may only be used as part of a Suppress Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally. Models in the Reacting unit count as Stationary during this Shooting Attack, even if they moved in the previous Movement phase.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2519-cae4-7058-e985" name="3) ZM Shooting Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-          <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE SHOOTING PHASE
-During the Shooting phase, the Reactive player may react when any enemy unit declares a Shooting Attack targeting a unit they control. Before the Active player resolves the Shooting Attack, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Shooting Attack perform a Displace Reaction.
-
-Displace - Each model in the Reacting unit may move a number of inches up to its unmodified Initiative Characteristic. When resolving the Shooting Attack that triggered this Reaction, all range and line of sight is measured to the Reacting unit’s new position. If, as a result of this movement, no models in the reacting unit are within range or line of sight of any models in the triggering unit, the Active player cannot choose a new target for their Shooting Attack.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="2ca4-71bc-4af5-9970" name="4) ZM Assualt Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-          <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE ASSAULT PHASE
-During the Assault phase, the Reactive player may react when any enemy unit declares a Charge targeting a unit they control. Before the Active player has resolved any Charge Rolls, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Charge perform a Brace Reaction.
-
-Brace - The Reacting unit must make a Morale check. If the Check is failed, the Reacting unit immediately Fall Backs 1D6&quot; and automatically regroups when this Fall Back Move is completed. If the Check is successful, the Reacting unit automatically passes any Morale checks they are required to make as a result of losing an assault during the following Fight sub-phase.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>

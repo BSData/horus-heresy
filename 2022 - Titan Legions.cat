@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c01b-0224-f806-0d23" name="2022 - Titan Legions" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c01b-0224-f806-0d23" name="2022 - Titan Legions" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="aebe-bed9-b32f-a8ea" name="Titan Maniple" hidden="false">
       <categoryLinks>
@@ -37,6 +37,13 @@
   </forceEntries>
   <entryLinks>
     <entryLink id="6b36-d1b3-cba5-f217" name="Divisio Tactica: The Titan Legions" hidden="false" collective="false" import="false" targetId="47f0-bba9-6d89-9baa" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b71-5246-c019-3c96" type="min"/>
       </constraints>
