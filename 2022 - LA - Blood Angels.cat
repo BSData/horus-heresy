@@ -3108,10 +3108,18 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Armorbane (melta), One Shot</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Armourbane (Melta), One Shot</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="da1c-25a9-8b6d-8c57" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Armourbane (Melta)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="b0f1-8598-268e-a151" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+          </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
@@ -3138,6 +3146,25 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="d3b3-01ed-5686-0d7a" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rage (2)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="4201-bd12-3d47-888e" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rampage (2)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="167f-88e5-de7a-8efc" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Murderous Strike (5+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="e37e-6661-8ab4-dd25" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+                <infoLink id="4af7-1152-4adc-a542" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
@@ -3146,42 +3173,78 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b7-877d-e7d0-74f9" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="17ef-57f9-09be-af76" name="Spear of Telesto" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Master-Crafted, Lance, Exoshock (4+)</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="b70a-d860-eefd-5381" name="Moonsliver Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-Crafted, Blind, Duellist&apos;s Edge (1), Moonsilver</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="6d7f-15d3-ec08-4dcd" name="Spear of Telesto (Shooting)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Exoshock (4+), Instant Death, Lance</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="8779-8f95-2b12-38c9" name="Spear of Telesto" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0982-427b-1d4a-d07c">Once per battle, in the Shooting phase, in lieu of making any other Shooting Attacks, Sanguinius may make a Shooting Attack using the Spear of Telesto, using the profile below. Should he choose to do this, he may not make either Shooting Attacks or Melee Attacks with the Spear of Telesto for the remainder of the battle:</characteristic>
-                  </characteristics>
-                </profile>
-                <profile id="29c4-3e8d-3f66-26a7" name="Moonsilver" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
-                  <characteristics>
-                    <characteristic name="Description" typeId="0982-427b-1d4a-d07c">Any unsaved Wound caused against a model with the Daemon Unit Type or Psyker Sub-type is instead counted as two Wounds. Wounds caused in excess of the model&apos;s remaining Wounds do not spill over to other models.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <selectionEntries>
+                <selectionEntry id="15a7-df73-0d90-a45c" name="Moonsliver Blade" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1df-d891-a004-b8d0" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2043-1279-a303-f88d" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="a350-d25c-69c0-20a9" name="Moonsliver Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-Crafted, Blind, Duellist&apos;s Edge (1), Moonsilver</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="4b20-b0ac-50cd-f9f1" name="Moonsliver" hidden="false">
+                      <description>Any unsaved Wound caused against a model with the Daemon Unit Type or Psyker Sub-type is instead counted as two Wounds. Wounds caused in excess of the model&apos;s remaining Wounds do not spill over to other models.</description>
+                    </rule>
+                  </rules>
+                  <infoLinks>
+                    <infoLink id="02a4-bb67-30b7-65bf" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
+                    <infoLink id="c76b-2d61-a3b6-bafc" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="f7b8-eff6-e3b1-72b8" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry id="315b-cd9e-6cc7-5934" name="Spear of Telesto" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44c2-9d1c-bfea-6d2a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="420b-b99d-4724-fc7b" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="3b2a-ff2c-1007-fe6d" name="Spear of Telesto" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
+                      <characteristics>
+                        <characteristic name="Description" typeId="0982-427b-1d4a-d07c">Once per battle, in the Shooting phase, in lieu of making any other Shooting Attacks, Sanguinius may make a Shooting Attack using the Spear of Telesto, using the profile below. Should he choose to do this, he may not make either Shooting Attacks or Melee Attacks with the Spear of Telesto for the remainder of the battle:</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="f497-4764-c578-83f2" name="Spear of Telesto" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Master-Crafted, Lance, Exoshock (4+)</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile id="75ad-217a-bdf4-134f" name="Spear of Telesto (Shooting)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Exoshock (4+), Instant Death, Lance</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="c758-f0dd-b2c8-12bb" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                    <infoLink id="1e48-e234-1fb6-5bda" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
+                    <infoLink id="3dcd-4a1d-68ab-4108" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+                    <infoLink id="0abf-8f36-b77e-eda5" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Exoshock (4+)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="a8fb-e688-0b43-ec27" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
