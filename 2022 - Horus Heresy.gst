@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="49" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="51" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -616,7 +616,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Preferred Enemy (Independant Characters)"/>
@@ -1253,6 +1253,27 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           </constraints>
         </categoryLink>
         <categoryLink id="0b76-5263-40ac-0721" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <modifiers>
+            <modifier type="increment" field="a59f-bf8a-6c0a-c006" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="e335-2401-dec4-2d28" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e335-2401-dec4-2d28" type="max"/>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a59f-bf8a-6c0a-c006" type="min"/>
@@ -1270,8 +1291,34 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           </constraints>
         </categoryLink>
         <categoryLink id="52d9-e513-b7c1-59d3" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="false">
+          <modifiers>
+            <modifier type="increment" field="88d4-d4ce-998d-8024" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7031-469a-1aeb-eab0" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ec-f3e6-760c-f9bb" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4342-923b-e0dd-9e87" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="88d4-d4ce-998d-8024" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ec-f3e6-760c-f9bb" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4342-923b-e0dd-9e87" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ede-2dee-1530-5c26" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d4-d4ce-998d-8024" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="3dd4-cf96-9425-f583" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false">
@@ -1280,11 +1327,25 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           </constraints>
         </categoryLink>
         <categoryLink id="4df4-9c0d-3f28-4dd3" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <modifiers>
+            <modifier type="increment" field="efa5-391f-c0d5-86f2" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="efa5-391f-c0d5-86f2" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="bec3-b01f-58f1-ef8a" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false">
+          <modifiers>
+            <modifier type="increment" field="3965-7b5b-1e0b-d284" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3965-7b5b-1e0b-d284" type="min"/>
           </constraints>
@@ -11863,7 +11924,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1af3-e23e-8831-e011" name="The Coils Of The Hydra (AL) (INCOMPLETE)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1af3-e23e-8831-e011" name="The Coils Of The Hydra (AL)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -11886,7 +11947,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4342-923b-e0dd-9e87" name="Headhunter Leviathal (AL) (INCOMPLETE)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4342-923b-e0dd-9e87" name="Headhunter Leviathal (AL)" publicationId="09c5-eeae-f398-b653" page="333" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
