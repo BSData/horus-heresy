@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -8767,6 +8767,29 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         <categoryLink id="4e8f-271c-2fd5-7f27" name="Super-heavy Sub-type:" hidden="false" targetId="7381-1130-ca6e-1806" primary="false"/>
         <categoryLink id="151f-d2f4-bd4f-ee41" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8dd7-6e1d-6254-ac1c" name="One Hull (Front) Mounted Twin-linked Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fda8-cb86-25e4-fb54" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21cb-7b46-78d0-7de6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c9d4-8ba7-9187-2338" name="Twin-linked Battlecannon" publicationId="d0df-7166-5cd3-89fd" page="29" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning, Twin-linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="412f-530c-71a9-2f1c" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+            <infoLink id="b725-4e24-6cdd-0b7c" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+            <infoLink id="46d4-5824-dbfb-070a" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="66d9-d28d-067b-177e" name="May exchange all of its Hull (Right) Mounted and Hull (Left)Mounted multi-lasers for the following:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2aeb-24b1-5925-0d54">
           <constraints>

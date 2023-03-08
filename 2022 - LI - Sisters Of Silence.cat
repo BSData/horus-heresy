@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="585a-5ac2-a233-a6a6" name="2022 - LI - Sisters of Silence" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="585a-5ac2-a233-a6a6" name="2022 - LI - Sisters of Silence" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="b760-8313-847f-1afa" name="Obivion HQ" hidden="false"/>
     <categoryEntry id="a9b6-f66f-e8ee-553e" name="Judgement HQ" hidden="false"/>
@@ -569,8 +569,20 @@
               </constraints>
             </entryLink>
             <entryLink id="bb96-550a-779f-f348" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="edcb-f41a-801c-46cb" value="1.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d926-652f-8436-30ce" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edcb-f41a-801c-46cb" type="min"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edcb-f41a-801c-46cb" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5767,8 +5779,8 @@
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infanty (Light, Anathema)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
@@ -6110,7 +6122,7 @@
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infanty (Light, Anathema)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
                     <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
                     <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                     <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
                     <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
