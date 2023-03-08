@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="51" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="52" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -988,6 +988,55 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     </categoryEntry>
     <categoryEntry id="1bb5-d88b-e1fe-2984" name="Ironfire Restriction (Arquitors, Basilisks, Medusa)" hidden="false"/>
     <categoryEntry id="2eaf-32d6-9d1d-d906" name="LoW &amp; Primarchs (25% Limit)" hidden="false"/>
+    <categoryEntry id="7b69-bf2f-4547-e83b" name="Mortalis Assault FoC" hidden="false">
+      <modifiers>
+        <modifier type="set" field="bb72-ea24-84ef-0781" value="1.0">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8984-d299-6bc6-f62c" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bb72-ea24-84ef-0781" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="04b1-94df-3adf-f29a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bbd6-2bc7-864d-067d" name="1) Reactions in Zone Mortalis" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions 
+Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
+
+Base Raction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
+In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one(1) Reaction in any single Phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="356c-76e3-ec76-65df" name="2) ZM Movement Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE MOVEMENT PHASE
+During the Movement phase, the Reactive player may declare a Reaction if an enemy unit ends a move within 12&quot; and in line of sight of a friendly unit. Once the Active player has completely resolved the movement of their unit, the Reactive player may choose to expend their Reaction in that Phase in order to have the unit they control that is within 12&quot; and line of sight perform a Suppress Reaction.
+
+Suppress - The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Suppress Reaction may not make any attacks indirectly (without line of sight). All Shooting Attacks made as part of a Suppress Reaction are Snap Shots, with the exception of Template Weapons. Note that this prevents models from making attacks with weapons that have the Blast (X) special rule as part of this Reaction. Template Weapons may only be used as part of a Suppress Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally. Models in the Reacting unit count as Stationary during this Shooting Attack, even if they moved in the previous Movement phase.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="47f5-85fb-1b8b-a13e" name="3) ZM Shooting Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE SHOOTING PHASE
+During the Shooting phase, the Reactive player may react when any enemy unit declares a Shooting Attack targeting a unit they control. Before the Active player resolves the Shooting Attack, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Shooting Attack perform a Displace Reaction.
+
+Displace - Each model in the Reacting unit may move a number of inches up to its unmodified Initiative Characteristic. When resolving the Shooting Attack that triggered this Reaction, all range and line of sight is measured to the Reacting unit’s new position. If, as a result of this movement, no models in the reacting unit are within range or line of sight of any models in the triggering unit, the Active player cannot choose a new target for their Shooting Attack.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="6c7a-4ba0-361e-f626" name="4) ZM Assualt Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+          <characteristics>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE ASSAULT PHASE
+During the Assault phase, the Reactive player may react when any enemy unit declares a Charge targeting a unit they control. Before the Active player has resolved any Charge Rolls, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Charge perform a Brace Reaction.
+
+Brace - The Reacting unit must make a Morale check. If the Check is failed, the Reacting unit immediately Fall Backs 1D6&quot; and automatically regroups when this Fall Back Move is completed. If the Check is successful, the Reacting unit automatically passes any Morale checks they are required to make as a result of losing an assault during the following Fight sub-phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1358,6 +1407,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1369,6 +1419,174 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b4c-542e-a6b9-fa0a" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="13d3-d01e-f52f-e687" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="5430-5be1-1613-be44" name="Mortalis Assault Force Organisation Chart" hidden="false">
+      <categoryLinks>
+        <categoryLink id="e7a4-a234-6cc7-f1b7" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
+        <categoryLink id="3ce7-6f89-a347-b6ad" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d41-7035-5fbb-3803" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f40-46ae-efcb-c9f3" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e983-382e-a5c8-f531" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="a33f-77fb-a40c-03ff" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
+          <modifiers>
+            <modifier type="increment" field="30cb-380a-40b8-b874" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="b42f-91d7-ae43-4915" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b42f-91d7-ae43-4915" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="30cb-380a-40b8-b874" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3c2e-affa-35d2-bd12" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ced2-b32d-8ebf-c863" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5993-fb7c-61e3-5ebe" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59b1-dec2-1330-6a5a" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9ceb-1a5e-5458-098b" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="false">
+          <modifiers>
+            <modifier type="increment" field="e7c1-fd6d-b994-d48f" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7031-469a-1aeb-eab0" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ec-f3e6-760c-f9bb" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4342-923b-e0dd-9e87" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="e7c1-fd6d-b994-d48f" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e6ec-f3e6-760c-f9bb" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4342-923b-e0dd-9e87" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="cb3f-e02c-4b94-4ee1" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cb3f-e02c-4b94-4ee1" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7c1-fd6d-b994-d48f" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a755-e9cf-0e04-5ef4" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false">
+          <modifiers>
+            <modifier type="set" field="e0f5-6aa4-8e07-5b51" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4ca1-b02c-e2c7-5f09" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f55-5d02-ba77-243d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c030-15b8-323b-f17b" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c83-69fb-8066-a773" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0f5-6aa4-8e07-5b51" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false">
+          <modifiers>
+            <modifier type="set" field="300d-0f17-be7c-1e2b" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a71-011d-fcdb-82dd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="300d-0f17-be7c-1e2b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9bbe-d889-072c-1258" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false">
+          <modifiers>
+            <modifier type="increment" field="11cb-d547-c07c-da25" value="1.0">
+              <repeats>
+                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="11cb-d547-c07c-da25" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e3ca-bd2d-8d52-0b04" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+          <modifiers>
+            <modifier type="increment" field="a560-6c72-0db2-2800" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a560-6c72-0db2-2800" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6e78-4c77-48b2-4cad" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false">
+          <modifiers>
+            <modifier type="increment" field="f56f-a2c5-0423-bca7" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f56f-a2c5-0423-bca7" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3dbc-6e8f-de3e-52ae" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="c5b2-e371-c1c8-b21e" name="Mortalis Assault FoC" hidden="false" targetId="7b69-bf2f-4547-e83b" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -6147,6 +6365,11 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5617-ada9-bf10-f9b0" type="max"/>
@@ -6185,9 +6408,15 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
     <selectionEntry id="47f0-bba9-6d89-9baa" name="Divisio Tactica: The Titan Legions" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="a449-10c9-89c7-eba7" value="0.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -6202,9 +6431,15 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
     <selectionEntry id="807e-0cf8-7f28-7b6d" name="Divisio Tactica: Questoris Household" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="eef9-6c69-a8e6-4a53" value="0.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -7195,6 +7430,7 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50cf-edf5-d39a-8943" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5430-5be1-1613-be44" type="atLeast"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
               </conditions>
             </conditionGroup>
