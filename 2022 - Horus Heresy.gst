@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="52" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="53" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -6846,9 +6846,9 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
       <profiles>
         <profile id="2ec5-4528-0a7c-0780" name="Siege Wrecker" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Sunder, Wrecker, Specialist Weapon</characteristic>
           </characteristics>
         </profile>
@@ -10822,6 +10822,17 @@ Limitations
           </costs>
         </selectionEntry>
         <selectionEntry id="2c36-fde3-14ed-4db4" name="Sky-Hunter Phalanx" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <rules>
             <rule id="fdb3-bbe5-3824-1d64" name="Sky-Hunter Phalanx" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false">
               <description>Effects
@@ -10840,6 +10851,17 @@ Limitations
           </costs>
         </selectionEntry>
         <selectionEntry id="1977-49f2-7910-f177" name="Drop Pod Assault^" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
           <rules>
             <rule id="384d-9b91-037d-0890" name="Drop Pod Assault^" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false">
               <description>Effects
@@ -10917,6 +10939,15 @@ Limitations
               <conditions>
                 <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
               </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -11061,6 +11092,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -11667,6 +11699,7 @@ Limitations
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d82b-1980-74f8-5dac" type="equalTo"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf7-d353-bf83-2ae6" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
