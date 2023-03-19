@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="112" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="114" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="54" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -4717,7 +4717,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
                         <condition field="selections" scope="aa72-63e4-bc60-4611" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f115-cfc4-4199-f8be" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -6206,7 +6206,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                             <condition field="selections" scope="50ed-5869-643d-1ac5" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="097a-5712-c173-0477" type="lessThan"/>
                           </conditions>
                         </conditionGroup>
@@ -10110,62 +10110,28 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="8*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="d862-5767-da41-cff0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                            <condition field="selections" scope="d862-5767-da41-cff0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                            <condition field="selections" scope="d862-5767-da41-cff0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="567d-4386-3196-ca89" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="append" field="893e-2d76-8f04-44e5" value="*">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="14">
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="9">
+                      <conditions>
+                        <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="7">
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
                             <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                            <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="567d-4386-3196-ca89" type="equalTo"/>
                           </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="17*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="16">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="15*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="and">
-                              <conditions>
-                                <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                                <condition field="selections" scope="d862-5767-da41-cff0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="567d-4386-3196-ca89" type="equalTo"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
@@ -12561,81 +12527,27 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="8*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="c681-938e-6d11-cd43" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                            <condition field="selections" scope="c681-938e-6d11-cd43" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                            <condition field="selections" scope="c681-938e-6d11-cd43" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="567d-4386-3196-ca89" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="append" field="893e-2d76-8f04-44e5" value="*">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="14">
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="9">
+                      <conditions>
+                        <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="7">
                       <conditionGroups>
-                        <conditionGroup type="and">
+                        <conditionGroup type="or">
                           <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                            <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="567d-4386-3196-ca89" type="equalTo"/>
                             <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="17*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="16">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="15*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                          </conditions>
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                                <condition field="selections" scope="c681-938e-6d11-cd43" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="567d-4386-3196-ca89" type="equalTo"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="8">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a28d-408e-c833-9055" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="9*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="25a2-7a52-632a-6b2c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a28d-408e-c833-9055" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -15909,7 +15821,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                             <condition field="selections" scope="4357-930e-165a-a6e3" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="lessThan"/>
                           </conditions>
                         </conditionGroup>
@@ -15933,7 +15845,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
                         <condition field="selections" scope="4357-930e-165a-a6e3" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd53-72cd-7c20-3bc8" type="atLeast"/>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -16900,7 +16812,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
                         <condition field="selections" scope="ad97-c090-fa67-696f" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7baf-18d9-aa70-9ba8" type="atLeast"/>
                       </conditions>
@@ -18027,7 +17939,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                           </conditions>
                         </conditionGroup>
                         <conditionGroup type="and">
@@ -18902,12 +18814,33 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="893e-2d76-8f04-44e5" value="8*">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                  </conditions>
-                </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="append" field="893e-2d76-8f04-44e5" value="*">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="9">
+                      <conditions>
+                        <condition field="selections" scope="0aca-632d-1642-8af9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="7">
+                      <conditions>
+                        <condition field="selections" scope="0aca-632d-1642-8af9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -19293,12 +19226,33 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c0f-f751-cc4e-4951" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="893e-2d76-8f04-44e5" value="8*">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                  </conditions>
-                </modifier>
               </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="append" field="893e-2d76-8f04-44e5" value="*">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="9">
+                      <conditions>
+                        <condition field="selections" scope="0aca-632d-1642-8af9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="7">
+                      <conditions>
+                        <condition field="selections" scope="0aca-632d-1642-8af9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -20218,6 +20172,36 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="cdc2-021b-f643-d23e" name="Toxiferran Flamer" hidden="true" collective="false" import="true" targetId="732a-29f9-edb7-5bc3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="35fe-2127-6a3b-15f8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1ccb-767e-aa69-ff42" name="Disintegrator" hidden="true" collective="false" import="true" targetId="a567-9434-36f3-5fd4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5031-c045-641d-dfc6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ebdd-46f1-6836-8322" name="2) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd4b-5b1d-92ef-7a0f">
@@ -20299,6 +20283,18 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="90f0-a411-570c-4af4" name="Aether-shock Maul" hidden="true" collective="false" import="true" targetId="a696-4b44-8abe-771a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="3766-ea98-0aa7-62d0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d71e-10a6-216f-d796" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4149-e1a7-9e26-374d" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -21125,7 +21121,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                           </conditions>
                         </conditionGroup>
                         <conditionGroup type="and">
@@ -22503,7 +22499,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifiers>
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
-                    <condition field="selections" scope="415c-6834-f4d2-d967" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="583e-62cb-53f1-f952" type="equalTo"/>
+                    <condition field="selections" scope="415c-6834-f4d2-d967" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="583e-62cb-53f1-f952" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
@@ -22539,63 +22535,32 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="8*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="415c-6834-f4d2-d967" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                            <condition field="selections" scope="415c-6834-f4d2-d967" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="14">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="415c-6834-f4d2-d967" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="7">
+                      <conditions>
+                        <condition field="selections" scope="415c-6834-f4d2-d967" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="17*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="415c-6834-f4d2-d967" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="9">
+                      <conditions>
+                        <condition field="selections" scope="415c-6834-f4d2-d967" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="16">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="415c-6834-f4d2-d967" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="15*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="415c-6834-f4d2-d967" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="append" field="893e-2d76-8f04-44e5" value="*">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
@@ -23908,56 +23873,25 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="8*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="fc32-089e-1c59-70bd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                            <condition field="selections" scope="fc32-089e-1c59-70bd" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="append" field="893e-2d76-8f04-44e5" value="*">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="14">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="17*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="9">
+                      <conditions>
+                        <condition field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="16">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6fb4-adf6-dbe8-86af" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="set" field="893e-2d76-8f04-44e5" value="15*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="7">
+                      <conditions>
+                        <condition field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8a8-b526-beab-bb82" type="equalTo"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
@@ -29044,7 +28978,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                         <conditionGroup type="and">
                           <conditions>
                             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="907e-21b4-1aef-10be" type="equalTo"/>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5317-80ce-cdb6-6e5a" type="atLeast"/>
                           </conditions>
                         </conditionGroup>
                         <conditionGroup type="and">
@@ -42617,7 +42551,7 @@ containing the model that failed its Check. If the Psyker survives Perils of the
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="19.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="93fb-3ca7-9d3a-afe2" name=" Destroyer w/2x Volkite Serpenta, Chainsword" hidden="false" collective="false" import="true" type="model">
@@ -44521,7 +44455,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </profiles>
       <infoLinks>
         <infoLink id="957f-6eba-b3b7-2eb9" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="e16c-45dc-02ff-1735" name="Shrapnel Weapons Reroll 1s (Hammer of Olympia)" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
+        <infoLink id="e16c-45dc-02ff-1735" name="Shrapnel Weapons Reroll 1s to Hit (Hammer of Olympia)" hidden="false" targetId="7ca5-9127-867f-0a57" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -45237,7 +45171,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="16.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c541-82f0-ee3f-41bd" name=" Destroyer w/2x Volkite Serpenta, Chainsword" hidden="false" collective="false" import="true" type="model">
@@ -49835,7 +49769,7 @@ Legion Only: Paladin of Hekatonystika (Dark Angels), Phoenix Warden (Emperor&apo
           </constraints>
           <rules>
             <rule id="5fb1-c000-121c-b16e" name="Strategic Comms" publicationId="a716-c1c4-7b26-8424" page="105" hidden="false">
-              <description>At the start of each Game Turn you can declare whether each vox disruptor array in your army is turned on or turned off. While there is at least one model on the battlefield with a vox disruptor array turned on, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault during that turn is Disordered on the roll of a &apos;1&apos;, &apos;2&apos; or &apos;3&apos; instead of iust on a 1&apos;</description>
+              <description>Once per turn, when any friendly unit is called upon to take a Morale check or Pinning test, that Check may be made using the Leadership Characteristic of the model with this special rule or any other model in the same unit as the model with this special rule. In addition, as long as a model with this special rule is on the battlefield (but not in Reserves) then all Reserves rolls made by the controlling player may be re-rolled.</description>
             </rule>
           </rules>
           <entryLinks>
