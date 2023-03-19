@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="53" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="54" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -13,7 +13,7 @@
     <publication id="4489-2b8c-7790-8b5b" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0" shortName="Main Rules Errata and FAQ V1.0" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/7AX0peoK6m7C7uzw.pdf"/>
     <publication id="63fa-add3-0752-5ffc" name="Liber Astartes Errata and FAQ V1.0" shortName="LA - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf"/>
     <publication id="8200-f05a-6e7d-9326" name="Liber Mechanicum Errata and FAQ V1.0" shortName="LM - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf"/>
-    <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus Astartes Errata and FAQ V1.0" shortName="LH - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf"/>
+    <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf"/>
     <publication id="15a4-fc68-502d-48a9" name="Libre Imperium"/>
   </publications>
   <costTypes>
@@ -4822,9 +4822,9 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
     </selectionEntry>
     <selectionEntry id="f091-857e-21b8-d49a" name="Vox Disruptor Array" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="03f2-41e6-4e4b-ec9f" name="Vox Disruptor Array" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="03f2-41e6-4e4b-ec9f" name="Vox Disruptor Array" publicationId="d640-8853-3dd7-26a6" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While there is at least one model on the battlefield with a vox disruptor array, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault is Disordered on the roll of a ‘1’, ‘2’ or ‘3’ instead of just on a ‘1’.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of each Game Turn you can declare whether each vox disruptor array in your army is turned on or turned off. While there is at least one model on the battlefield with a vox disruptor array turned on, regardless of whether that model is enemy or friendly, any attempt to perform a Deep Strike Assault, Drop Pod Assault, Area Denial Drop or Subterranean Assault during that turn is Disordered on the roll of a ‘1’, ‘2’ or ‘3’ instead of just on a ‘1’.</characteristic>
           </characteristics>
         </profile>
       </profiles>

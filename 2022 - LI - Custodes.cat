@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="54" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <rules>
@@ -1932,7 +1932,7 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
                 <categoryLink id="8f99-1140-18b2-45d4" name="Legio Custodes" hidden="false" targetId="ccca-a9de-0cd9-f8be" primary="false"/>
               </categoryLinks>
               <entryLinks>
-                <entryLink id="8a74-5ed5-7929-40a8" name="Twin-Linked Adrathic Destructor" hidden="false" collective="false" import="true" targetId="1887-051d-c262-513b" type="selectionEntry">
+                <entryLink id="8a74-5ed5-7929-40a8" name="Twin-linked Adrathic Devastator" hidden="false" collective="false" import="true" targetId="4e5a-43f5-605d-0f4f" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0946-5269-4b23-f223" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de3-d161-dc3e-387a" type="max"/>
@@ -4148,6 +4148,31 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           </modifiers>
         </infoLink>
         <infoLink id="5ca8-431e-79b2-2d93" name="Solarite Power Lance" hidden="false" targetId="a054-3f56-0058-9b35" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4e5a-43f5-605d-0f4f" name="Twin-linked Adrathic Devastator" hidden="false" collective="true" import="true" type="upgrade">
+      <profiles>
+        <profile id="2589-f9af-0659-15ea" name="Twin-linked Adrathic Devastator" publicationId="15a4-fc68-502d-48a9" page="145" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Instant Death, Armourbane (Ranged), Gets Hot</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="cedc-4b87-e716-47e6" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Ranged)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e25d-41a3-441d-b3e3" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="ef9e-7b9a-f808-9cf2" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink id="22ba-5bb6-673f-dc73" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
