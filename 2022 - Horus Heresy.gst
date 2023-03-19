@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="54" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="56" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -10,11 +10,11 @@
     <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles downloads" shortName="" publicationDate="" publisherUrl="https://www.warhammer-community.com/downloads/#the-horus-heresy"/>
     <publication id="bde1-6db1-163b-3b76" name="Liber Mechanicum - Forces of the Omnissiah Army Book" shortName="Mech" publicationDate="August 2022"/>
     <publication id="3886-76e5-438f-159f" name="Legacies of The Age of Darkness: Mechanicum v1.0" shortName="LotAoD -Mech" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/WJKYil2FehoZxrD9.pdf"/>
-    <publication id="4489-2b8c-7790-8b5b" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0" shortName="Main Rules Errata and FAQ V1.0" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/7AX0peoK6m7C7uzw.pdf"/>
-    <publication id="63fa-add3-0752-5ffc" name="Liber Astartes Errata and FAQ V1.0" shortName="LA - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf"/>
+    <publication id="4489-2b8c-7790-8b5b" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0" shortName="Main Rules Errata and FAQ V1.0" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/OP2GmimgEkrpS9xK.pdf"/>
     <publication id="8200-f05a-6e7d-9326" name="Liber Mechanicum Errata and FAQ V1.0" shortName="LM - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf"/>
-    <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf"/>
+    <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Dec 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yPxvcNBwok6C9Wb0.pdf"/>
     <publication id="15a4-fc68-502d-48a9" name="Libre Imperium"/>
+    <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="March 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/JXRAKYvl3BrGbGjD.pdf"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -1037,6 +1037,37 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
         </profile>
       </profiles>
     </categoryEntry>
+    <categoryEntry id="40f3-05e8-5ddc-636a" name="Bound Sub-type" publicationId="cb13-da24-e6da-75b3" page="11" hidden="false">
+      <rules>
+        <rule id="7c3e-e5ca-7af9-e051" name="Bound Sub-type" publicationId="cb13-da24-e6da-75b3" page="11" hidden="false">
+          <description>The following rules apply to all models with the Bound Sub-type:
+• Models with the Bound Sub-type do not modify their Strength and Toughness values according to the current Game Turn as detailed in the Daemon Unit Type.
+• While there are no models from the same army with both the Psyker Unit Sub-type and the Independent Character special rule on the battlefield or Embarked upon a unit with the Transport Sub-type that is on the battlefield, models with the Bound Sub-type suffer a penalty of -1 to their Strength and Toughness characteristics to a minimum value of 1.
+• During deployment, in order for units entirely composed of models with the Bound Sub-type to be deployed on the battlefield, a model from the same army with the Psyker Unit Sub-type and the Independent Character special rule which is already deployed (or Embarked upon a unit with the Transport Sub-type which is already deployed) must make a Psychic check for each such unit, one at a time. For each successful Check a single unit containing models with the Bound Sub-type may be deployed as normal, but once a Psychic check is failed, that and all further units containing models with the Bound Sub-type must be placed in Reserves. The controlling player may choose not to make a Psychic check for any unit containing models with the Bound Sub-type, instead placing it directly into reserves and allowing Psychic checks to be made to deploy any further units containing models with the Bound Sub-type. Note that failing a Psychic check in this manner does not inflict Perils of the Warp.
+• Units placed in Reserves which are entirely composed of models with the Bound Sub-type do not have Reserve rolls made for them, instead the controlling player may have a model with the Psyker Sub-type and the Independent Character special rule make a Psychic check when Reserves rolls would be made in order for them to enter play from reserves as normal. Note that this only applies when deploying units containing models with the Bound Sub-type from Reserves, and does not affect special deployment types such as Deep Strike Assaults and the Breach the Veil Psychic Power.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="f479-3c81-1e42-1b3a" name="Gargantuan Unit Sub-type" publicationId="cb13-da24-e6da-75b3" page="21" hidden="false">
+      <rules>
+        <rule id="a19b-971c-e2d9-7a4a" name="Gargantuan Unit Sub-type" publicationId="cb13-da24-e6da-75b3" page="21" hidden="false">
+          <description>• Models with the Gargantuan Unit Sub-type have the Eternal Warrior and Fearless special rules.
+• Models with the Gargantuan Unit Sub-type are not affected by special rules that negatively modify their Characteristics (other than Wounds).
+• Models with the Gargantuan Unit Sub-type are not slowed by Difficult Terrain and automatically pass Dangerous Terrain tests – but may not pass through or end their move in Impassable Terrain.
+• Models with the Gargantuan Unit Sub-type count as ten models for the purposes of determining if the model is outnumbered by another unit.
+• Models with the Gargantuan Unit Sub-type may only make Reactions triggered by models with the Armiger, Dreadnought, Primarch or Vehicle Unit Type, or any model with a Wounds Characteristic of 8 or more.
+• Successful Wounds scored by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models with the Gargantuan Unit Sub-type.
+• A model with the Gargantuan Unit Sub-type may attack with all weapons they have in each Shooting Attack they make, including as part of a Reaction.
+• A model with the Gargantuan Unit Sub-type may make Shooting Attacks with Heavy and Ordnance weapons, counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
+• No model that does not have the Gargantuan Unit Sub-type may join a unit that includes a model with the Gargantuan Unit Sub-type.
+• A model with the Gargantuan Unit Sub-type ignores all effects (both detrimental and beneficial) of all Psychic Powers and cannot be Wounded or affected by any Attack with the Psychic Focus special rule. Weapons with the Force special rule that are used to make Attacks against a model with the Gargantuan Unit Sub-type are not affected and are resolved normally.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="6e52-4177-0da5-7f28" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
+        <infoLink id="d3e7-1f9a-0743-e094" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -2005,11 +2036,12 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8813-9063-c930-0a4b" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8813-9063-c930-0a4b" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6345,9 +6377,14 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
     <selectionEntry id="0176-56a3-d590-b103" name="Warlord" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="5617-ada9-bf10-f9b0" value="0.0">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="092d-3716-36f8-8988" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" field="0dff-37d2-448b-45a6" value="0.0">
           <conditionGroups>
@@ -6366,9 +6403,14 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="092d-3716-36f8-8988" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -7399,9 +7441,14 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
     <selectionEntry id="0fc8-91be-dcf4-1513" name="Allied Detachment" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="1191-ed3c-422f-51b0" value="1.0">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" field="7ae6-be12-f22c-f977" value="1.0">
           <conditionGroups>
@@ -9049,6 +9096,47 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d601-e213-fa45-8ee8" name="Bound Daemons" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="ab61-0639-33c7-42e3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6b99-fab1-dd53-4738" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="a85e-229d-6421-a01f" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a85e-229d-6421-a01f" type="max"/>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab61-0639-33c7-42e3" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b99-fab1-dd53-4738" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="092d-3716-36f8-8988" name="Samus or Ka’bandha Warlord stuff" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf75-4e9e-9b42-3de6" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39f4-9c0e-e5c6-e97d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d57d-7147-0305-97b3" name="Samus or Ka’bandha Warlord stuff" publicationId="cb13-da24-e6da-75b3" page="15 &amp; 19" hidden="false">
+          <description>Samus and Ka’bandha may always be selected as an Army’s Warlord even if it is not part of the Primary Detachment</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -9377,6 +9465,35 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
                 <profile id="f05c-2db3-6a88-bd4b" name="Bloody-handed" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any combat with at least one friendly model within 12&quot; of this Warlord, or a combat which includes this Warlord, gains a bonus of +1 to the number of Wounds caused for the purposes of combat resolution. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f4e0-19d9-89b5-c939" name="Malefic Supplicant" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="atLeast"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2e16-c278-640e-b91a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ddc-494b-4969-ad63" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d5f5-fe98-790c-4040" name="Malefic Supplicant" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Psyker unit Sub-type, but does not gain any Psychic Disciplines, Psychic Weapons or Psychic Powers. However, they may make Psychic checks in order to deploy Bound Daemon units at the start of the mission or to bring Bound Daemon units into play from Reserves (see the Bound Unit Sub-type). In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
