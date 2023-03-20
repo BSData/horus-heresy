@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e545-295b-4cd9-f235" name="2022 - Daemons - Bound Daemons" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="e545-295b-4cd9-f235" name="2022 - Daemons - Bound Daemons" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="250f-d164-bb7e-7025" name="Bound Daemon Brutes" hidden="false" collective="false" import="false" targetId="519f-866e-e6fe-20e0" type="selectionEntry">
       <modifiers>
@@ -21,7 +21,7 @@
         <categoryLink id="f4ac-a026-144c-e6ca" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="320b-ef67-a664-88ee" name="Bound Daemon Regent" hidden="false" collective="false" import="false" targetId="89f7-b7a1-aab2-e47a" type="selectionEntry">
+    <entryLink id="320b-ef67-a664-88ee" name="Bound Daemon Regent" hidden="false" collective="false" import="true" targetId="89f7-b7a1-aab2-e47a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -61,7 +61,7 @@
         <categoryLink id="80fe-5484-f245-0f53" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c3ed-182e-d418-8826" name="Bound Samus" hidden="false" collective="false" import="false" targetId="e6cf-4fa9-df0d-64c7" type="selectionEntry">
+    <entryLink id="c3ed-182e-d418-8826" name="Bound Samus" hidden="false" collective="false" import="true" targetId="e6cf-4fa9-df0d-64c7" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -81,7 +81,7 @@
         <categoryLink id="a28d-da6c-bb4b-f24d" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="1270-38f4-e2b9-fef7" name="Bound Daemon Brutes" hidden="false" collective="false" import="true" targetId="519f-866e-e6fe-20e0" type="selectionEntry">
+    <entryLink id="1270-38f4-e2b9-fef7" name="Bound Daemon Brutes" hidden="false" collective="false" import="false" targetId="519f-866e-e6fe-20e0" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -264,7 +264,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -283,7 +283,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="89f7-b7a1-aab2-e47a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9231-183c-b97b-63f9" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -318,22 +318,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
             <infoLink id="9c3d-13ec-4b8a-6a23" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
             <infoLink id="c1ff-7f6a-4dda-a429" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (2) (Infernal Tempest)"/>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="89f7-b7a1-aab2-e47a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink id="0b05-37d2-7930-e7b3" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="89f7-b7a1-aab2-e47a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
-                  </conditions>
-                </modifier>
+                <modifier type="set" field="name" value="Hammer of Wrath (1) [(2) if Infernal Tempest Dominion]"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -390,7 +375,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="89f7-b7a1-aab2-e47a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9231-183c-b97b-63f9" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -424,22 +409,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
             <infoLink id="bfa4-05a9-a6cd-02a4" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
             <infoLink id="653b-ac44-d5ab-ee1c" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (2) (Infernal Tempest)"/>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="89f7-b7a1-aab2-e47a" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink id="39b5-05f9-3f7f-1e8a" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="89f7-b7a1-aab2-e47a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
-                  </conditions>
-                </modifier>
+                <modifier type="set" field="name" value="Hammer of Wrath (1) [(2) if Infernal Tempest Dominion]"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -678,7 +648,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="519f-866e-e6fe-20e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+                    <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9231-183c-b97b-63f9" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -704,10 +674,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </modifiers>
             </infoLink>
             <infoLink id="ef52-6e55-e793-7004" name="Bound Malefica" hidden="false" targetId="e2de-47bf-2a1c-45e5" type="rule"/>
-            <infoLink id="87a0-5ed8-ba36-22a8" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule"/>
+            <infoLink id="87a0-5ed8-ba36-22a8" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Bulky (3)"/>
+              </modifiers>
+            </infoLink>
             <infoLink id="2b07-17d2-c7c7-997e" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (2) (Infernal Tempest)"/>
+                <modifier type="set" field="name" value="Hammer of Wrath (1) [(2) if Infernal Tempest Dominion]"/>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="519f-866e-e6fe-20e0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
@@ -716,16 +690,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </modifiers>
             </infoLink>
             <infoLink id="9806-b0f1-d650-c1d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink id="0f98-0528-de4c-1b3c" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="519f-866e-e6fe-20e0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
