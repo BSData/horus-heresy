@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="30" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="31" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="  X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <modifiers>
@@ -4031,20 +4031,64 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="2318-ef55-a30e-9a25" name="Graviton Shredder" hidden="false" collective="false" import="true" targetId="0849-b63b-0b1b-fd4f" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Master-crafted gravitron shredder"/>
-              </modifiers>
+            <selectionEntry id="ee23-700b-a686-3259" name="Master-crafted Plasma Blaster" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2fc7-0b16-d667-f4a0" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21c1-0aef-72a0-8437" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9043-cc2b-4aae-b419" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9067-c18b-f60a-4df3" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="2c5f-3e0e-c1de-3696" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                <infoLink id="548c-2e22-9a87-7d34" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Breaching (4+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="256b-a159-635c-927f" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+                <infoLink id="549c-23bb-dbbe-8311" name="Plasma Blaster" hidden="false" targetId="4c24-5ca5-ac76-b630" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Master-crafted Plasma Blaster"/>
+                    <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value=", Master-crafted"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="ae46-baf8-0a50-1f2e" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
               </infoLinks>
-            </entryLink>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2318-ef55-a30e-9a25" name="Master-crafted Graviton Shredder" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd38-967b-ff49-3df6" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd40-c216-41a0-de5f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a05a-65f7-9bcd-7951" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Concussive (1)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="e1c0-f090-5d50-40e1" name="Graviton Pulse" hidden="false" targetId="5b9c-2738-616c-abdf" type="rule"/>
+                <infoLink id="5505-5868-cb46-8fd4" name="Haywire" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule"/>
+                <infoLink id="63dd-9eb3-a24f-3416" name="Graviton Shredder" hidden="false" targetId="ec3e-e239-3570-6505" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Master-crafted Graviton Shredder"/>
+                    <modifier type="append" field="2f86-c8b4-b3b4-3ff9" value=", Master-crafted"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="388f-5f33-d230-51b8" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
             <entryLink id="d559-4570-b59a-7122" name="Grenade Harness" hidden="false" collective="false" import="true" targetId="251a-860d-2c4d-62cc" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3c3-3760-d3e6-444f" type="max"/>
@@ -4056,14 +4100,6 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="06a8-6294-bfaf-896e" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a01f-9f8b-7f24-4edc" type="max"/>
               </constraints>
-            </entryLink>
-            <entryLink id="ee23-700b-a686-3259" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="name" value="Master-crafted plasma blaster"/>
-              </modifiers>
-              <infoLinks>
-                <infoLink id="4020-4046-51a9-10c5" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-              </infoLinks>
             </entryLink>
             <entryLink id="9f9e-2a43-4724-15a2" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
               <constraints>
