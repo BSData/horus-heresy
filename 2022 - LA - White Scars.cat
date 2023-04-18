@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="27" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="53" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="28" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="57" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="   V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <modifiers>
@@ -111,9 +111,16 @@
     <entryLink id="2159-2614-e411-5aa2" name="Jaghatai Khan" hidden="false" collective="false" import="false" targetId="910b-0c15-068a-e4fc" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -170,6 +177,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -232,6 +242,9 @@
                   <comment>    node_id_8868-5bcb-4604-ba8e</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -268,6 +281,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -338,6 +354,9 @@
                   <comment>    node_id_1859-5641-4674-9097</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -605,6 +624,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -637,6 +659,9 @@
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
                   <comment>    node_id_b932-667a-4b43-8331</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
                 </condition>
               </conditions>
             </conditionGroup>
@@ -708,6 +733,9 @@
                   <comment>    node_id_01bb-8abd-4253-9a4d</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -801,6 +829,9 @@
                   <comment>    node_id_6bce-ec44-48cb-873a</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -892,7 +923,6 @@
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -920,6 +950,9 @@
                   <comment>    node_id_71a4-31e7-4927-a0ab</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -953,6 +986,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -989,6 +1025,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1025,6 +1064,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1058,6 +1100,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1091,6 +1136,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1124,6 +1172,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1268,6 +1319,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1304,6 +1358,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1486,6 +1543,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1555,6 +1615,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1761,6 +1824,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1791,6 +1857,9 @@
                   <comment>    node_id_7775-78e1-44cc-87c8</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1911,6 +1980,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1976,6 +2048,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2009,6 +2084,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2042,6 +2120,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2075,6 +2156,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2108,6 +2192,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2162,6 +2249,9 @@
                   <comment>    node_id_dfef-0ec2-49fb-a534</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2210,6 +2300,9 @@
                   <comment>    node_id_e10f-1390-4b33-8fcc</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2389,6 +2482,9 @@
                   <comment>    node_id_0796-e467-4438-89b3</comment>
                 </condition>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2419,6 +2515,9 @@
                   <comment>    node_id_daf3-31ed-42c0-85dc</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2528,6 +2627,9 @@
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2563,7 +2665,9 @@
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce40-b353-8eb4-ab42" type="equalTo">
                   <comment>    node_id_b932-667a-4b43-8331</comment>
                 </condition>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2591,6 +2695,9 @@
                   <comment>    node_id_4fbd-633b-4dd6-9fdd</comment>
                 </condition>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo">
+                  <comment>    node_id_71a4-31e7-4927-a0ab</comment>
+                </condition>
               </conditions>
             </conditionGroup>
           </conditionGroups>
