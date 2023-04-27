@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -1484,6 +1484,12 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </selectionEntry>
+                    <selectionEntry id="43d1-47d0-5f85-ae48" name="Laspistol and Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
+                      <entryLinks>
+                        <entryLink id="cf02-b870-39d0-aa7e" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry"/>
+                        <entryLink id="023f-2fd8-3cb9-87f0" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
+                      </entryLinks>
+                    </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
                     <entryLink id="a0e2-cf54-398f-00b1" name="Lasrifle" hidden="false" collective="false" import="true" targetId="15f9-817e-275b-c13d" type="selectionEntry"/>
@@ -2192,6 +2198,13 @@
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="4395-16ba-48e4-1011" name="Pistol and Combat weapon (Sub-menu)" hidden="true" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="57c7-6ab1-dbc5-6565" name="Close Combat" hidden="false" collective="false" import="true">
                           <constraints>
@@ -2280,6 +2293,19 @@
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
                       </costs>
+                    </selectionEntry>
+                    <selectionEntry id="2b39-77d6-cc4d-04cf" name="Laspistol and Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <entryLinks>
+                        <entryLink id="0d96-6c52-4897-fa69" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry"/>
+                        <entryLink id="ba3b-4b42-beac-c413" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
+                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -8788,6 +8814,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <infoLink id="b725-4e24-6cdd-0b7c" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
             <infoLink id="46d4-5824-dbfb-070a" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
