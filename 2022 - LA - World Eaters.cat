@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="26" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="27" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -4305,6 +4305,15 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9368-fed5-44c6-4ae1" type="max"/>
               </constraints>
+            </entryLink>
+            <entryLink id="6d81-59c1-52be-248a" name="Drop Pod" hidden="true" collective="false" import="true" targetId="83ac-f9cf-cc29-00a3" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
