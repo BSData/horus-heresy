@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="58" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="59" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1027,7 +1027,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     </categoryEntry>
     <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
     <categoryEntry id="e333-681c-ddca-24f6" name="Crusade " hidden="false"/>
-    <categoryEntry id="4aca-2849-7f41-0200" name="Solar Auxilla" hidden="false">
+    <categoryEntry id="4aca-2849-7f41-0200" name="Solar Auxilla or Imperialis Militia" hidden="false">
       <modifiers>
         <modifier type="set" field="0c57-9f90-e576-5e7d" value="1.0">
           <conditions>
@@ -1150,6 +1150,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry id="346a-fb59-a199-25c4" name="Provenances of War" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1162,6 +1163,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="set" field="1db1-1803-cee1-86cb" value="5.0">
@@ -1414,6 +1416,8 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df84-98ed-3840-b451" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="b5a1-9980-4945-e1aa" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="dd4c-2612-511f-98f7" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="0b76-5263-40ac-0721" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="increment" field="a59f-bf8a-6c0a-c006" value="1.0">
@@ -1512,7 +1516,6 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3965-7b5b-1e0b-d284" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b5a1-9980-4945-e1aa" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="a276-296f-d1ff-e8b8" name="Allied Detachment" hidden="false" targetId="d82b-1980-74f8-5dac" primary="false">
           <modifiers>
             <modifier type="set" field="6b4c-542e-a6b9-fa0a" value="0.0">
@@ -1545,6 +1548,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="e983-382e-a5c8-f531" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="a23c-357c-3c10-db1f" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="a33f-77fb-a40c-03ff" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="increment" field="30cb-380a-40b8-b874" value="1.0">
@@ -8762,15 +8766,17 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="4aca-2849-7f41-0200">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e2-2823-321a-2ab1" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f837-7b9c-1cbd-43f5" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f550-6cfb-984e-bea0" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="e10e-3234-271f-8c37" name="Solar Auxilla" hidden="false" targetId="4aca-2849-7f41-0200" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -9248,6 +9254,28 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <description>Samus and Ka’bandha may always be selected as an Army’s Warlord even if it is not part of the Primary Detachment</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5522-4fd9-12d5-460afds" name="Imperialis Militia" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="f6ff-b985-d7ad-a06c" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="4aca-2849-7f41-0200">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac96-6363-738c-94a2" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7577-a59f-adae-a6ed" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6ff-b985-d7ad-a06c" type="max"/>
+      </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -12504,36 +12532,51 @@ Limitations
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="7e02-b66b-55aa-1102" name="Provenances of War" publicationId="48c2-d023-0069-001a" page="9-12" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd5c-2d39-07b9-6dad" type="max"/>
+      </constraints>
       <selectionEntries>
         <selectionEntry id="b192-2b6f-ad8c-959f" name="01 Warrior Elite (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="154b-d405-276d-4412" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dce1-eea6-7ee9-3e3c" type="max"/>
           </constraints>
           <rules>
             <rule id="09a3-925f-64fd-332b" name="Warrior Elite" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
               <description>All eligible units and models receive +1 to their Leadership Characteristic (to a maximum of 9). Imperialis Militia Levy Squads in a Detachment with this Provenance gain the Support Squad special rule and all Imperialis Militia Grenadier Squads in a Detachment with this Provenance lose the Support Squad special rule.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b669-a356-d5d1-53b8" name="02 Legacy of the Great Crusade (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0794-a1d3-7699-e7c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e24f-3621-d68e-3cb1" type="max"/>
           </constraints>
           <rules>
             <rule id="e36c-1974-5c74-ccc6" name="Legacy of the Great Crusade" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
               <description>All Imperialis Militia Grenadier Squad, Imperialis Militia Command Cadres, and Discipline Masters in a Detachment with this Provenance increase their Ballistic Skill by +1 (to a maximum of 4). A Force Commander in a Detachment with this Provenance increases its Initiative to 5.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d609-59fa-8844-3547" name="03 Clanfolk Levy (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2b7-1639-e0b9-efe3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbed-3131-a2c8-ab64" type="max"/>
           </constraints>
           <rules>
             <rule id="8d20-f35d-f6d9-1186" name="Clanfolk Levy" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
               <description>A Detachment with this Provenance may choose to fill Compulsory Troops choices only with Imperialis Militia Cavalry Squads, with all models in Imperialis Militia Cavalry Squads selected as Compulsory Troops choices gaining a bonus of +1 to their Leadership Characteristic (this does not allow Imperialis Militia Cavalry Squads to be selected as non-Compulsory Troops choices). In addition, a Detachment with this Provenance may include four additional Fast Attack choices – but these additional choices may only be used to select Imperialis Militia Cavalry Squads.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="3f21-2a0a-c00d-60ae" name="04 Gene-crafted (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12550,6 +12593,7 @@ Limitations
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f724-7ec5-79a5-759f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4451-f39e-4c63-e2fa" type="max"/>
           </constraints>
           <rules>
             <rule id="3a72-d318-7224-27c6" name="Gene-crafted" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
@@ -12595,6 +12639,9 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
               </modifiers>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="ec5e-00ea-dd9c-3313" name="05 Cyber-augmetics (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12610,6 +12657,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="786e-5b18-f96d-4a58" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34cf-0bac-d780-299a" type="max"/>
           </constraints>
           <rules>
             <rule id="2b3e-1985-202a-b31f" name="Cyber-augmetics" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
@@ -12624,6 +12672,9 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
             </infoLink>
             <infoLink id="591c-5bf3-6bbb-2cd1" name="Slow and Purposeful" hidden="false" targetId="d69a-cfb3-db43-32c5" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1deb-5f40-169d-fc5a" name="06 Alchem-jackers (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12639,6 +12690,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ec4-7331-357e-191d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d817-934b-4885-2f52" type="max"/>
           </constraints>
           <rules>
             <rule id="a941-befe-b74a-5251" name="Alchem-jackers" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
@@ -12649,6 +12701,9 @@ Option – Frenzon: All models in any unit with this Provenance can be upgraded 
 BS NOTE (This Provenance cannot be taken in conjunction with the Tainted Flesh Provenance. See relevant Provenance.)</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="08f1-5fe7-1d3a-7b35" name="07 Survivors of the Dark Age (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12665,6 +12720,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Tainted Flesh P
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="acfb-e72f-9888-3002" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0765-1815-d4d9-7c95" type="max"/>
           </constraints>
           <rules>
             <rule id="99c0-0263-9acc-a659" name="Survivors of the Dark Age" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
@@ -12675,10 +12731,14 @@ Option – Voidjumpers: All models in an Imperialis Militia Reconnaissance Squad
 BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble or Tainted Flesh Provenance. See relevant Provenance.)</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="4bcd-7022-cefc-04da" name="08 Armoury of Old Night (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b791-ce5b-c551-d496" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="433f-6c05-353a-9509" type="max"/>
           </constraints>
           <rules>
             <rule id="bc4e-9ab5-e370-cd7f" name="Armoury of Old Night" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
@@ -12689,10 +12749,14 @@ Option – Relic Arms: Eligible models in Imperialis Militia Grenadier Squads an
 Option – Heirlooms of Past Glory: A Force Commander in a Detachment with this Provenance may exchange a power weapon for a paragon blade for +10 points and/or a laspistol for an archaeotech pistol for a further +10 points.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5825-e777-2615-3d4d" name="09 Feral Warriors (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be58-6d1e-9ec6-6b58" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66da-db18-ce4e-eead" type="max"/>
           </constraints>
           <rules>
             <rule id="f6a8-9b16-3947-57ef" name="Feral Warriors" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
@@ -12701,6 +12765,9 @@ Option – Heirlooms of Past Glory: A Force Commander in a Detachment with this 
 Option – Chainaxes: Any model eligible to benefit from this Provenance may upgrade a basic close combat weapon to a chainaxe for +2 points per model or upgrade a chainsword to a chainaxe for +1 point per model.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="2bd7-54d3-b0a9-1e44" name="10 Kinfolk Helots (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12712,12 +12779,16 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eeb4-e0b3-35e7-9063" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d59-f3d7-3290-1e26" type="max"/>
           </constraints>
           <rules>
             <rule id="ddaa-0389-1b2e-89ae" name="Kinfolk Helots" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
               <description>All eligible units and models receive an increase of +1 to their Toughness Characteristic but also lower their Initiative and Movement Characteristics by -1 (to a minimum of 1, models with a Movement of 0 or - are not affected and remain Movement 0 or -). All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Battlesmith (6+) special rule, or if they also have the Independent Character special rule gain the Battlesmith (5+) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d15d-c66d-d47f-8aee" name="11 Abhuman Muster (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12729,12 +12800,16 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bac1-a170-98c4-6e93" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb11-ba20-4ab6-86c6" type="max"/>
           </constraints>
           <rules>
             <rule id="b726-7fd3-991b-4752" name="Abhuman Muster" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
               <description>All eligible units and models receive an increase of +1 to their Strength Characteristic but also lower their Ballistic Skill by -1 (to a minimum of 1) and, if they do not already possess any variant of the Bulky (X) special rule, gain the Bulky (2) special rule. All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Hammer of Wrath (1) special rule, or if they also have the Independent Character special rule or the Monstrous Unit Sub-type gain the Hammer of Wrath (2) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8d80-c401-0303-d0f9" name="12 Debased Rabble (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12756,6 +12831,7 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af84-c2c4-acbe-4612" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b899-3051-35eb-a631" type="max"/>
           </constraints>
           <rules>
             <rule id="0e1c-9355-ee59-8a1a" name="Debased Rabble" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
@@ -12773,6 +12849,9 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
               </modifiers>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="d5e5-b44b-5db6-ab16" name="13 Tainted Flesh (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12797,6 +12876,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e492-0f79-662a-b9ca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a41-1c45-653f-8a5a" type="max"/>
           </constraints>
           <rules>
             <rule id="5c84-3132-b333-5d54" name="Tainted Flesh" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
@@ -12821,6 +12901,9 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
               </modifiers>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="07d0-18a3-ce4d-c1b4" name="14 Ogryn Conscripts (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12839,6 +12922,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e021-4acd-1832-691f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d27a-86a0-3caf-db61" type="max"/>
           </constraints>
           <rules>
             <rule id="621a-e558-72e8-9482" name="Ogryn Conscripts" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
@@ -12847,6 +12931,9 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
 BS NOTE (This Provenance cannot be taken in conjunction with the Kinfolk Helots, Abhuman Muster, Tainted Flesh &amp; Industrial Stronghold Provenance. See relevant Provenance.)</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="db1f-6157-2c58-5ae5" name="15 Industrial Stronghold (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12865,6 +12952,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Kinfolk Helots,
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d9d-10f1-ce0a-c699" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1a2-ece9-7b36-fbbc" type="max"/>
           </constraints>
           <rules>
             <rule id="406d-7202-7fb9-f75c" name="Industrial Stronghold" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
@@ -12876,6 +12964,9 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Kinfolk Helots,
 This Provenance cannot be taken in conjunction with the Unending Horde, Debased Rabble, Tainted Flesh or Ogryn Conscripts Provenances.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="20e1-2446-2438-3638" name="16 Unending Horde (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12891,6 +12982,7 @@ This Provenance cannot be taken in conjunction with the Unending Horde, Debased 
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b109-3471-b20c-710d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d3-7d5d-2228-5671" type="max"/>
           </constraints>
           <rules>
             <rule id="081e-6762-92ea-19bd" name="Unending Horde" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
@@ -12907,6 +12999,9 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
 A unit with this special rule that has been joined by a model after or during deployment (such as via the Among the Ranks, Militia Medicae Support or the Independent Character special rules) and is subsequently entirely removed as casualties and then returned to Reserves instead of being removed, does not retain any models that had joined it when it returns to Reserves – such models are casualties and do not return to play.</description>
             </rule>
           </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
