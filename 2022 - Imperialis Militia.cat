@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
-  <categoryEntries>
-    <categoryEntry id="9770-341f-a339-5af0" name="Provenance" hidden="false"/>
-  </categoryEntries>
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="37de-ba3c-f798-5bcb" name="Provenances of War" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -53,6 +50,17 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="e34a-7eb9-2025-b2c5" name="02) IM - Discipline Master Cadre" hidden="false" collective="false" import="false" targetId="9ead-c344-29c6-43aa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="b6c4-fb0a-73cf-a7d1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="6731-195b-b6ef-3b16" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
@@ -65,12 +73,34 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="ec7c-fc7c-6fc7-5547" name="04) IM - Command Cadre" hidden="false" collective="false" import="false" targetId="b179-24bb-a4b0-3eb4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="8484-a434-488c-af80" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="7aa8-f1a5-1797-fa25" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="8e6c-5309-5d14-3883" name="05) IM - Infantry Squad" hidden="false" collective="false" import="false" targetId="b4a8-0824-b604-3277" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="58c7-eb2f-2323-59fb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="ac90-48b6-4c32-1a98" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -78,6 +108,17 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="fc24-a2e8-66c8-ccf2" name="06) IM - Levy Squad" hidden="false" collective="false" import="false" targetId="1ff9-d83a-2a15-8815" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="7d72-9867-6cae-52e3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="a38f-24e2-d77e-f758" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -85,6 +126,26 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="c96b-175c-3119-025f" name="07) IM - Grenadier Squad" hidden="false" collective="false" import="false" targetId="c201-6fbc-a792-0509" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20e1-2446-2438-3638" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="e5bf-6973-dec6-b96f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="21e3-0a32-7c80-32f3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
@@ -133,6 +194,13 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="e911-ccb2-4ce3-01d6" name="15) IM - Cavalry Squad" hidden="false" collective="false" import="false" targetId="ffb1-4b4b-b88c-832c" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="d3bb-bdf9-4478-9553">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-59fa-8844-3547" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="eabe-9585-3937-b220" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="ebb2-5ae2-5949-8018" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
@@ -192,6 +260,59 @@
         <categoryLink id="b435-056f-aa48-f3a1" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="eb78-29b8-e7bb-7295" name="15) IM - Cavalry Squad" hidden="true" collective="false" import="false" targetId="ffb1-4b4b-b88c-832c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-59fa-8844-3547" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b6a2-8834-f2e1-2fa7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6cf2-e356-d8c8-6bb2" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="530b-993b-87bf-956d" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e2dc-87fa-2c76-eb60" name="11) IM - Ogryn Brute Squad" hidden="true" collective="false" import="false" targetId="e6d5-9f6a-b62b-c477" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c1c5-2d1b-7e6e-51ac" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="16ea-3da4-2540-9d42" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4017-636f-0edf-fc1f" name="07) IM - Grenadier Squad" hidden="true" collective="false" import="false" targetId="c201-6fbc-a792-0509" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20e1-2446-2438-3638" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="971f-46bb-d237-781d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="b222-9213-415f-a15b" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="93b2-d957-e325-39e2" name="Frenzon" hidden="false" collective="false" import="true" type="upgrade">
@@ -223,7 +344,6 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
     <selectionEntry id="aa19-eda7-e81e-9868" name="01) IM - Force Commander" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="7889-635d-836c-f82f" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
-        <categoryLink id="4518-dda8-9e2f-697f" name="Provenance" hidden="false" targetId="9770-341f-a339-5af0" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9ec2-9d61-4f5a-a8eb" name="Force Commander" hidden="false" collective="false" import="true" type="model">
@@ -246,7 +366,6 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
           <categoryLinks>
             <categoryLink id="0903-def7-68fa-c3a9" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
             <categoryLink id="4bcb-9cd8-fa57-5a32" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-            <categoryLink id="6c40-efe2-2641-473e" name="Provenance" hidden="false" targetId="9770-341f-a339-5af0" primary="false"/>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="8bdb-4c50-eaca-5811" name="Mounted Force Commander*" hidden="false" collective="false" import="true" type="upgrade">
@@ -257,6 +376,7 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
           </selectionEntries>
           <entryLinks>
             <entryLink id="5e82-0f7d-0d32-482b" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="45b6-ec50-fbd0-d314" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -333,6 +453,7 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
           </selectionEntries>
           <entryLinks>
             <entryLink id="7cc0-c8c6-e181-27bd" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="c213-3e98-e60e-3ca3" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
@@ -363,6 +484,7 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
           </categoryLinks>
           <entryLinks>
             <entryLink id="67e2-f67e-2c33-2770" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="2a21-9b69-f3e8-80fc" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -423,6 +545,9 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
                     <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="986f-6068-1e66-e78b" type="min"/>
                     <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fb6-ea2d-dbc3-9b1a" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -835,12 +960,18 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a39-fc5a-b410-ca1a" type="max"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69be-1597-d4a9-481d" type="min"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d00b-36ce-4a76-5f96" name="Rapier" hidden="false" collective="true" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33f3-f596-df84-5300" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8618-49ab-85b5-2046" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -877,12 +1008,30 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
         <categoryLink id="d73e-8596-c4cf-961e" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
         <categoryLink id="9fa5-ab87-4c73-acb7" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6656-4291-679d-2193" name="Leman Russ" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="e558-3325-57f2-5ad3" value="6.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db1f-6157-2c58-5ae5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5d0-c698-a35a-14da" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e558-3325-57f2-5ad3" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <entryLinks>
         <entryLink id="b163-022f-2c14-836e" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
         <entryLink id="442a-6eb3-cc57-ef4b" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="413b-1304-f079-9875" name="22) IM - Heavy Ordnance Battery" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
@@ -978,6 +1127,13 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
       </costs>
     </selectionEntry>
     <selectionEntry id="e6d5-9f6a-b62b-c477" name="11) IM - Ogryn Brute Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d7be-47b8-3add-1d38" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="6d7a-960f-c4f1-b63c" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
         <categoryLink id="3c09-768c-40e7-c705" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -1019,6 +1175,26 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="d7be-47b8-3add-1d38" name="Ogryn Conscripts (Compulsory)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink id="bc06-372a-57bd-afe1" name="Ogryn Conscripts (Compulsory)" hidden="false" targetId="d813-b3e9-24f0-78bd" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="12e9-5cb6-4343-650f" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
@@ -1045,6 +1221,7 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
           </categoryLinks>
           <entryLinks>
             <entryLink id="9bc0-0db5-c447-11a8" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="3c81-634e-560c-890d" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
@@ -1074,6 +1251,200 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="088d-527f-114b-afd4" name="Warlord Traits" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="4cb4-e225-1ff0-a5b0" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb4-e225-1ff0-a5b0" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="659d-a6e3-93a9-b129" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3f67-255e-b41a-933c" name="Imperialis Militia Warlord Traits" publicationId="48c2-d023-0069-001a" page="6" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4119-edcc-cecc-08f9" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7571-58b7-b055-7d2f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0b50-6fad-fc9f-de84" name="Ruthless Tyrant" publicationId="48c2-d023-0069-001a" page="6" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="505e-0ffe-a531-a65a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="903f-0280-eb29-2525" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="988d-cd9a-be41-c051" name="Ruthless Tyrant" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Warlord Trait gains the Fear (1) special rule, which affects all friendly models as well as enemy models (this does not include the Warlord with this Trait, which is not affected). However, should any friendly unit that is under the effect of this model’s Fear (1) special rule and under the control of the player whose Warlord has this Trait, be forced to Fall Back during the Movement phase or Shooting phase, then the controlling player may instead remove D6 models, or a single model with the Monstrous Unit Sub-type, from that unit as casualties. These casualties are chosen by the unit’s controlling player and no Saving Throws or Damage Mitigation rolls of any kind may be taken for them. If this option is used then the unit does not Fall Back, but instead remains in place without further effect. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8bdf-7946-c1c0-9b82" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Fear (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="442f-6f93-eac9-f857" name="Merchant Princeling" publicationId="48c2-d023-0069-001a" page="6" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4186-cbed-b23f-c1ba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cc4-501a-edcc-254b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bccd-681c-4acc-d9dd" name="Merchant Princeling" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All of the weapons possessed by a Warlord with this Trait gain the Master-crafted special rule. Before any models are placed onto the battlefield as part of deployment, the controlling player of this Warlord may select a single unit under their control – designated as the ‘Lifeguard’ unit. The Lifeguard unit must be composed entirely of models with the Militia Unit Sub-type, and all models in the Lifeguard unit gain the Heavy Unit Sub-type, if they did not already have it, and may re-roll all failed To Hit rolls of ‘1’ made in any phase or as part of a Reaction. The Warlord with this Trait must be deployed as part of the Lifeguard unit and may not voluntarily leave that unit during play. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="fc7f-b0b4-727d-e89f" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1333-9b17-28e3-ef4b" name="Beloved of the People" publicationId="48c2-d023-0069-001a" page="6" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3221-386e-fa76-f74a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ab-1878-2452-d73c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2e3e-25cc-5bfd-868d" name="Beloved of the People" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If, during any player’s turn, a model with this Warlord Trait is removed as a casualty, then all other friendly models in the same Detachment gain a bonus of +1 to their WS and S Characteristics and the Feel No Pain (4+) special rule until the end of the Warlord’s controlling player’s next player turn. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty. If a Warlord with this Trait has been removed as a casualty, then the army may make an additional Reaction during their opponent’s Assault phase instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="7e88-32ea-bc3b-cc66" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Feel No Pain (4+) (Belowed of the People)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b42c-ce81-95f4-1200" name="Marcher Lord" publicationId="48c2-d023-0069-001a" page="6" hidden="true" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b88-9510-21fd-e550" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f52-47dd-8c4d-6493" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="95d3-41f3-6b58-5011" name="Marcher Lord" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Battle-hardened (1) special rule, and if the army they are part of includes only Detachments with the Imperialis Militia Faction then all friendly units are immune to the effects of the Fear special rule. Furthermore, as long as the Warlord with this trait has not been removed as a casualty, the first Pinning test made by the controlling player in any Game Turn is automatically successful without any dice being rolled. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="980d-02ed-ee05-9e41" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Battle-Hardened (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2266-94a7-36e3-dbe4" name="Connoisseur of Alien Curios" publicationId="48c2-d023-0069-001a" page="7" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c044-fa29-7d08-290f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb34-8021-c817-af53" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fcf3-5a26-c478-7351" name="Connoisseur of Alien Curios" publicationId="48c2-d023-0069-001a" page="7" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per Game Turn, at the start of any Game Turn, the controlling player of a Warlord with this Trait may choose to activate an artefact. If this option is chosen, then roll once on the table below:
+
+D6 Artefact Effect
+
+1 The Warlord suffers one automatic Wound with the Instant Death special rule, with no Armour Saves, cover saves or Damage Mitigation rolls allowed, though Invulnerable Saves may be taken as normal. All other units with at least one model within 12&quot; of the Warlord, including the unit the Warlord was part of, suffer D6+1 Hits at Strength 8, AP of 4. These Hits are allocated by the unit’s controlling player, may be allocated to the Warlord, and can cause Morale checks where appropriate.
+
+2-3 The Warlord’s controlling player must nominate one unit, friendly or enemy, within 12&quot; and line of sight of the Warlord. That unit suffers D6+1 Hits at Strength 8, AP4 which are counted as having the Deflagrate special rule. If no other unit can be nominated then the unit the Warlord is part of must suffer the Hits.
+
+4-5 The Warlord and all models in the same unit gain the Rage (2) and Furious Charge (2) special rules for the remainder of that Game Turn.
+
+6 The Warlord gains the Eternal Warrior and Feel No Pain (4+) special rules for the remainder of the battle. If this result is rolled again, then the Warlord also gains a bonus of +1 to their Strength and Toughness Characteristics for the remainder of the battle (this bonus is cumulative if this result is rolled a third or more times, up to a maximum of 6 for either Characteristic).
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="faeb-8df7-fb91-4a80" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Eternal Warrior (Connoisseur of Alien Curios 6)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="322f-bcf3-4575-4801" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Feel No Pain (4+) (Connoisseur of Alien Curios 6)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="fb5d-5784-3d77-5c85" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rage (2) (Connoisseur of Alien Curios 4-5)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="ab2c-481b-ecb0-9f62" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Furious Charge (X) (Connoisseur of Alien Curios 4-5)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7fa0-20ee-dc2f-023b" name="Robber Baron" publicationId="48c2-d023-0069-001a" page="7" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d69-a2b2-10f0-1da1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b062-4551-cd98-5bd0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2425-c1e6-c712-4cc7" name="Robber Baron" publicationId="48c2-d023-0069-001a" page="7" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models in a unit that includes a Warlord with this Trait gain a bonus of +1 to their Strength for the duration of any player turn in which they make a successful Charge, but that unit may not make Sweeping Advances in any turn. However, whenever such a unit would otherwise be eligible to make a Sweeping Advance, the controlling player must instead roll a D6. On the result of a ‘4’, ‘5’ or ‘6’, the controlling player gains D3 Victory points. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="1e5a-fbb7-2a60-a6d0" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Fear (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6044-3400-e5f0-e274" name="    Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="5f24-4626-71c3-0511" name="2022 - Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="e048-9e5e-507c-5b11" name="2022 - LI - Assassins" targetId="4c88-1a81-7e53-0a67" type="catalogue" importRootEntries="true"/>

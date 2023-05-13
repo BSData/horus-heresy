@@ -1151,6 +1151,10 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
       </rules>
     </categoryEntry>
     <categoryEntry id="346a-fb59-a199-25c4" name="Provenances of War" hidden="false"/>
+    <categoryEntry id="d3bb-bdf9-4478-9553" name="Clanfolk Cavalry (Fast)" hidden="false"/>
+    <categoryEntry id="76cd-5c38-ceac-a2b4" name="Industrial Stronghold - Leman Russ Squadron" hidden="false"/>
+    <categoryEntry id="d029-ac65-0ade-0c32" name="Clanfolk Cavalry (Troops)" hidden="false"/>
+    <categoryEntry id="d813-b3e9-24f0-78bd" name="Ogryn Conscripts (Compulsory)" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1242,6 +1246,26 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="4.0">
+              <conditions>
+                <condition field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5474-d2f8-4d1d-66be" type="max"/>
@@ -1263,6 +1287,16 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -1406,6 +1440,16 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
             <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d9f7-954e-b8d3-7a39" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="1ef7-5f17-ade4-e6c1" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="369a-4e2e-f7c8-5941" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a360-c557-9119-a286" name="Ogryn Conscripts (Compulsory)" hidden="false" targetId="d813-b3e9-24f0-78bd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9d7-eb22-6674-6508" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
@@ -1481,6 +1525,26 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="2ede-2dee-1530-5c26" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="2ede-2dee-1530-5c26" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="2ede-2dee-1530-5c26" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="2ede-2dee-1530-5c26" value="4.0">
+              <conditions>
+                <condition field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ede-2dee-1530-5c26" type="max"/>
@@ -1488,6 +1552,18 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="3dd4-cf96-9425-f583" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false">
+          <modifiers>
+            <modifier type="increment" field="0bc1-40ca-638b-3578" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="0bc1-40ca-638b-3578" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0bc1-40ca-638b-3578" type="max"/>
           </constraints>
@@ -1536,6 +1612,16 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="13d3-d01e-f52f-e687" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="c1eb-5ad0-5c14-b414" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b40d-bc3b-2e1b-1243" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e7a0-a7e0-e7b8-8578" name="Ogryn Conscripts (Compulsory)" hidden="false" targetId="d813-b3e9-24f0-78bd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2433-a1e3-9cc3-c1cb" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="Mortalis Assault Force Organisation Chart" hidden="false">
@@ -1622,6 +1708,26 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="cb3f-e02c-4b94-4ee1" value="4.0">
+              <conditions>
+                <condition field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="cb3f-e02c-4b94-4ee1" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="cb3f-e02c-4b94-4ee1" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="cb3f-e02c-4b94-4ee1" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cb3f-e02c-4b94-4ee1" type="max"/>
@@ -1704,6 +1810,16 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
         </categoryLink>
         <categoryLink id="3dbc-6e8f-de3e-52ae" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="c5b2-e371-c1c8-b21e" name="Mortalis Assault FoC" hidden="false" targetId="7b69-bf2f-4547-e83b" primary="false"/>
+        <categoryLink id="2b19-38ad-1275-ddd4" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b039-28cb-fcb1-592b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7d46-361b-5baf-f109" name="Ogryn Conscripts (Compulsory)" hidden="false" targetId="d813-b3e9-24f0-78bd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a833-7db9-402c-e12f" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
