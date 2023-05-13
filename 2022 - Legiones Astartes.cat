@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="124" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="58" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="126" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <publications>
+    <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron Updade" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
+    <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon Updade" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
+  </publications>
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
       <characteristicTypes>
@@ -25178,10 +25182,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
-                            <condition field="selections" scope="69fc-a6ab-d7a8-0e83" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d332-0e64-7ecf-6c35" type="equalTo"/>
                             <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b625-1cef-3057-156c" type="equalTo"/>
                             <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b6c-5897-3790-2940" type="equalTo"/>
-                            <condition field="selections" scope="69fc-a6ab-d7a8-0e83" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
+                            <condition field="selections" scope="f806-8a4e-d0d6-beaa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8846-2f93-a2be-18dc" type="equalTo"/>
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
@@ -30971,7 +30975,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0a2-b00f-5b22-ee90" type="min"/>
           </constraints>
           <profiles>
-            <profile id="1584-57b9-12a5-aade" name="Javelin" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+            <profile id="1584-57b9-12a5-aade" name="Javelin" publicationId="0594-a9b0-6f10-090e" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <modifiers>
                 <modifier type="set" field="ddd7-6f5c-a939-b69e" value="Cavalry (Antigrav, Heavy, Psyker)">
                   <conditions>
@@ -31011,9 +31015,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <modifiers>
                     <modifier type="set" field="name" value="2x Volkite Culverins"/>
                   </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
                 </entryLink>
                 <entryLink id="124d-ad72-9297-5d9b" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
                   <modifiers>
@@ -31022,6 +31023,11 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="aee2-6429-efd8-9ab6" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="2x Heavy Bolters"/>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -32648,7 +32654,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7f24-2b72-9128-5330" name="Mastodon" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7f24-2b72-9128-5330" name="Mastodon" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
@@ -32667,7 +32673,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="b7fb-1e71-e236-0be2" name="Mastodon" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
+        <profile id="b7fb-1e71-e236-0be2" name="Mastodon" publicationId="acdb-27b7-6b7e-932f" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName=" Vehicle">
           <modifiers>
             <modifier type="set" field="3614-4a2d-bffb-90e4" value="11*">
               <conditions>
@@ -32712,7 +32718,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95ac-0d35-d8d6-6047" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="17eb-0577-023d-3735" name=" Skyreaper Battery" hidden="false" collective="false" import="true" targetId="b871-3399-9d59-838f" type="selectionEntry"/>
+            <entryLink id="17eb-0577-023d-3735" name="Skyreaper Battery" hidden="false" collective="false" import="true" targetId="b871-3399-9d59-838f" type="selectionEntry"/>
             <entryLink id="aca6-508a-a5c6-9454" name="Command Vox Relay" hidden="false" collective="false" import="true" targetId="ec12-df00-ad8a-1f59" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
@@ -32720,7 +32726,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="6391-e14b-283f-9d42" name="3) May take:" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="6391-e14b-283f-9d42" name="4) May take:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="66cb-6d8e-b03d-dd7f" name="Hull (Front) Mounted Hunter Killer Missiles" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -32787,7 +32793,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="3c14-5898-5028-018a" name="2) Sponson Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d4d-2df5-17ab-c84a">
+        <selectionEntryGroup id="3c14-5898-5028-018a" name="3) Sponson Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d4d-2df5-17ab-c84a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c881-af5b-6a9d-5907" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa41-3de5-ce99-1508" type="min"/>
@@ -32816,6 +32822,79 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
               </costs>
             </entryLink>
+            <entryLink id="2c45-19d2-f04b-dbdb" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Heavy Bolters"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="ba50-a1b6-f2d0-3c4e" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Sponson Mounted Lascannons"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="7ba7-cff6-e5ea-332d" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="170d-44e0-455c-8207" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Sponson Mounted Volkite Culverins"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a325-db65-8bf4-1c33" name="2) Sponson Mounted Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="b48f-f138-7023-031d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7423-c50f-6d86-837f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb3-bbeb-77c3-b2ec" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="09f4-4f8e-be59-15a4" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Heavy Flamers"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e49c-0a06-0f2a-646b" name="Heavy Alchem Flamer" hidden="false" collective="false" import="true" targetId="2a3d-a4bb-5326-a16a" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Heavy Alchem Flamers"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="52ce-ac73-0b21-fa99" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Dragon&apos;s Breath Heavy Flamers"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="1de5-f328-da2a-057f" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Iliastus Assault Cannons"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="b48f-f138-7023-031d" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Heavy Bolters"/>
+              </modifiers>
+            </entryLink>
+            <entryLink id="e1fe-921f-36e0-052a" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Sponson Mounted Lascannons"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="8837-203f-fe0d-0c0f" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="170d-44e0-455c-8207" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="name" value="2x Sponson Mounted Volkite Culverins"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -32833,19 +32912,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </constraints>
         </entryLink>
         <entryLink id="55b1-a88d-22e5-06d7" name="Hexagrammaton Choice:" hidden="false" collective="false" import="true" targetId="61a2-7005-1e6c-c08e" type="selectionEntryGroup"/>
-        <entryLink id="bbd7-1766-704d-757d" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="2x Sponson Mounted Lascannons"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc88-cc93-5edb-5701" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="629c-cee0-290b-61f6" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="9930-324f-c2c6-5e0b" name="Legiones Astartes (X)" hidden="false" collective="false" import="true" targetId="a59f-8dcc-a407-f7c6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="700.0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="690.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1fe8-7386-9509-d2d8" name="Falchion" hidden="false" collective="false" import="true" type="unit">
@@ -37646,7 +37716,7 @@ Additionally, at the end of any Phase in which a model with Gorgon Terminator ar
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0583-258d-f0a0-2170" name="Nathaniel Garro" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0583-258d-f0a0-2170" name="Nathaniel Garro" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="db6f-0311-834c-e6ff">
           <conditions>
