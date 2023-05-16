@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="57" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="61" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -15,6 +15,7 @@
     <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Dec 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yPxvcNBwok6C9Wb0.pdf"/>
     <publication id="15a4-fc68-502d-48a9" name="Libre Imperium"/>
     <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="March 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/JXRAKYvl3BrGbGjD.pdf"/>
+    <publication id="48c2-d023-0069-001a" name="Imperialis Militia (Download)" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="April 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/04/j2TwD3c2AB8oLsVW.pdf"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1.0" hidden="false"/>
@@ -638,6 +639,18 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
 • No model that is not also Monstrous may join a unit that includes a Monstrous model.</description>
         </rule>
       </rules>
+      <infoLinks>
+        <infoLink id="c402-8c57-5ea4-88b9" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Hammer of Wrath (2) (Abhuman Muster)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </categoryEntry>
     <categoryEntry id="e699-d9cd-e68e-46d9" name="Daemon Unit-type:" hidden="false">
       <rules>
@@ -769,6 +782,26 @@ Conversely, if an Independent Character joins a unit after that unit has been th
             <modifier type="set" field="name" value="Preferred Enemy (Independant Characters)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="f14f-1aab-c4f4-a364" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Battlesmith (5+) (Kinfolk Helots)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9828-c0b2-8e18-fce1" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Hammer of Wrath (2) (Abhuman Muster)"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="bbe5-14a5-68a1-544f" name="Primarch&apos;s Retinue:" hidden="false"/>
@@ -803,6 +836,26 @@ Conversely, if an Independent Character joins a unit after that unit has been th
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Fear (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ee68-cf15-b606-3c18" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Battlesmith (6+) (Kinfolk Helots)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="276d-5115-5df5-6243" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Hammer of Wrath (1) (Abhuman Muster)"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -974,7 +1027,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     </categoryEntry>
     <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
     <categoryEntry id="e333-681c-ddca-24f6" name="Crusade " hidden="false"/>
-    <categoryEntry id="4aca-2849-7f41-0200" name="Solar Auxilla" hidden="false">
+    <categoryEntry id="4aca-2849-7f41-0200" name="Solar Auxilla or Imperialis Militia" hidden="false">
       <modifiers>
         <modifier type="set" field="0c57-9f90-e576-5e7d" value="1.0">
           <conditions>
@@ -1068,6 +1121,40 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
         <infoLink id="d3e7-1f9a-0743-e094" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry id="66b2-c457-4d5e-8041" name="Militia Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
+      <rules>
+        <rule id="15a7-765b-c181-4bb3" name="Militia Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
+          <description>• A unit that includes any models with the Militia sub-type may only attempt to Regroup (see page 193 of The Horus Heresy: Age of Darkness rulebook) if that unit includes at least half of the models that it included at the beginning of the battle (not including any models that have joined the unit during play). If more than half of its models have been removed as casualties then it may not Regroup and must continue to Fall Back until it leaves play.
+• A unit that includes any models with the Militia sub-type that is Falling Back and is successfully Charged by an enemy unit is automatically removed from play as a casualty, with no Leadership test being made or dice rolled.
+• A unit that includes any models that have the Militia sub‑type, but not the Monstrous or Mechanised Unit Sub-types, that is locked in combat and is then successfully charged by an additional enemy unit must make an immediate Morale check once the Charge has been resolved and as part of the Charge sub-phase. If this Check is failed then the Militia unit must Fall Back as if it had lost combat – with any enemy units able to declare Sweeping Advances only if they are not locked in combat with any other units. Once this Fall Back and any Sweeping Advances are resolved, the Fight sub-phase continues as normal.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="cdaa-645b-fda7-8556" name="Third-line Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
+      <rules>
+        <rule id="7754-b90f-cde4-f3e3" name="Third-line Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
+          <description>• When an Armour Penetration roll would inflict a Glancing Hit on a model with this Unit Sub-type, it instead inflicts a Penetrating Hit.
+• An enemy player may never score Victory points for the destruction of a model with this Unit Sub-type, this includes models with this Unit Sub-type that are selected as Lords of War.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="e929-a5c3-451c-6f19" name="Mechanised Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
+      <rules>
+        <rule id="5e61-e299-05c8-e0c8" name="Mechanised Unit Sub-type" publicationId="48c2-d023-0069-001a" page="5" hidden="false">
+          <description>• Successful Wounds caused by attacks with the Poisoned (X) or Fleshbane special rules must be re-rolled against models with the Mechanised Unit Sub-type.
+• Failed To Wound rolls, made for weapons with the Armourbane (X) special rule, and against a unit that includes any models with this Unit Sub-type must be re-rolled.
+• A model with the Mechanised Unit Sub-type may attack with all weapons it has when making a Shooting Attack, including as part of a Reaction.
+• A model with the Mechanised Unit Sub-type may attack with Heavy and Ordnance weapons while counting as stationary even if it has moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
+• A model with the Mechanised Unit Sub-type is affected by the Haywire, Detonation and Battlesmith (X) special rules as if it had the Dreadnought Unit Type.
+• No model that does not also have the Mechanised Unit Sub‑type may join a unit that includes one or more models with the Mechanised Unit Sub-type.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="346a-fb59-a199-25c4" name="Provenances of War" hidden="false"/>
+    <categoryEntry id="d3bb-bdf9-4478-9553" name="Clanfolk Cavalry (Fast)" hidden="false"/>
+    <categoryEntry id="76cd-5c38-ceac-a2b4" name="Industrial Stronghold - Leman Russ Squadron" hidden="false"/>
+    <categoryEntry id="d029-ac65-0ade-0c32" name="Clanfolk Cavalry (Troops)" hidden="false"/>
+    <categoryEntry id="d813-b3e9-24f0-78bd" name="Ogryn Conscripts (Compulsory)" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1080,6 +1167,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="set" field="1db1-1803-cee1-86cb" value="5.0">
@@ -1158,6 +1246,26 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5474-d2f8-4d1d-66be" value="4.0">
+              <conditions>
+                <condition field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5474-d2f8-4d1d-66be" type="max"/>
@@ -1179,6 +1287,16 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -1322,6 +1440,16 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
             <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d9f7-954e-b8d3-7a39" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="1ef7-5f17-ade4-e6c1" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="369a-4e2e-f7c8-5941" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a360-c557-9119-a286" name="Ogryn Conscripts (Compulsory)" hidden="false" targetId="d813-b3e9-24f0-78bd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9d7-eb22-6674-6508" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
@@ -1332,6 +1460,8 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df84-98ed-3840-b451" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="b5a1-9980-4945-e1aa" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="dd4c-2612-511f-98f7" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="0b76-5263-40ac-0721" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="increment" field="a59f-bf8a-6c0a-c006" value="1.0">
@@ -1395,6 +1525,26 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="2ede-2dee-1530-5c26" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="2ede-2dee-1530-5c26" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="2ede-2dee-1530-5c26" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="2ede-2dee-1530-5c26" value="4.0">
+              <conditions>
+                <condition field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ede-2dee-1530-5c26" type="max"/>
@@ -1402,6 +1552,18 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="3dd4-cf96-9425-f583" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="false">
+          <modifiers>
+            <modifier type="increment" field="0bc1-40ca-638b-3578" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="0bc1-40ca-638b-3578" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0bc1-40ca-638b-3578" type="max"/>
           </constraints>
@@ -1430,7 +1592,6 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3965-7b5b-1e0b-d284" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b5a1-9980-4945-e1aa" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="a276-296f-d1ff-e8b8" name="Allied Detachment" hidden="false" targetId="d82b-1980-74f8-5dac" primary="false">
           <modifiers>
             <modifier type="set" field="6b4c-542e-a6b9-fa0a" value="0.0">
@@ -1451,6 +1612,16 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="13d3-d01e-f52f-e687" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="c1eb-5ad0-5c14-b414" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b40d-bc3b-2e1b-1243" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e7a0-a7e0-e7b8-8578" name="Ogryn Conscripts (Compulsory)" hidden="false" targetId="d813-b3e9-24f0-78bd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2433-a1e3-9cc3-c1cb" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="Mortalis Assault Force Organisation Chart" hidden="false">
@@ -1463,6 +1634,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="e983-382e-a5c8-f531" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="a23c-357c-3c10-db1f" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="a33f-77fb-a40c-03ff" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="increment" field="30cb-380a-40b8-b874" value="1.0">
@@ -1535,6 +1707,26 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="cb3f-e02c-4b94-4ee1" value="4.0">
+              <conditions>
+                <condition field="selections" scope="force" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="cb3f-e02c-4b94-4ee1" value="3.0">
+              <conditions>
+                <condition field="selections" scope="force" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="cb3f-e02c-4b94-4ee1" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="cb3f-e02c-4b94-4ee1" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-bdf9-4478-9553" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -1618,6 +1810,16 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
         </categoryLink>
         <categoryLink id="3dbc-6e8f-de3e-52ae" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="c5b2-e371-c1c8-b21e" name="Mortalis Assault FoC" hidden="false" targetId="7b69-bf2f-4547-e83b" primary="false"/>
+        <categoryLink id="2b19-38ad-1275-ddd4" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b039-28cb-fcb1-592b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7d46-361b-5baf-f109" name="Ogryn Conscripts (Compulsory)" hidden="false" targetId="d813-b3e9-24f0-78bd" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a833-7db9-402c-e12f" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -8680,15 +8882,17 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" field="category" value="4aca-2849-7f41-0200">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e2-2823-321a-2ab1" type="max"/>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f837-7b9c-1cbd-43f5" type="max"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f550-6cfb-984e-bea0" type="max"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="e10e-3234-271f-8c37" name="Solar Auxilla" hidden="false" targetId="4aca-2849-7f41-0200" primary="false"/>
-      </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -9166,6 +9370,132 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <description>Samus and Ka’bandha may always be selected as an Army’s Warlord even if it is not part of the Primary Detachment</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5522-4fd9-12d5-460afds" name="Imperialis Militia" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="f6ff-b985-d7ad-a06c" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="4aca-2849-7f41-0200">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac96-6363-738c-94a2" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7577-a59f-adae-a6ed" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6ff-b985-d7ad-a06c" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d2db-7598-f55f-86fe" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdd9-c0b0-fde1-c145" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="cf56-2470-b3af-54ab" name="Power Weapon" hidden="false" collective="false" import="true" targetId="5ff5-48c0-b9f1-5a05" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="37ec-a4b4-de7a-acf3" name="Rotor Cannon" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2a23-3690-b10a-5ab4" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="023b-fb8e-d925-0f4c" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="610d-65de-9ab7-bd2a" name="Rotor Cannon" hidden="false" targetId="911e-cd25-992e-7a74" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="53c0-b5d7-f001-b816" name="Minor Combi-weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e05f-a0be-3ed3-7d75" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="4aec-d447-93d6-f947" name="Minor Combi-weapon" hidden="false" collective="false" import="true" targetId="9b4b-07a4-31bc-fc16" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d02-259d-fa50-ef3a" name="Magna Combi-weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9855-fd69-eb95-2c52" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="d0d4-8e98-6022-b5bb" name="Magna Combi-weapon" hidden="false" collective="false" import="true" targetId="2286-9fb3-e845-f24a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e749-ba9b-bb76-a7d9" name="Charnabal Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="775c-071a-1024-8be0" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="2876-3425-8164-1fd4" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="f7d1-ad0f-b4cb-dfc1" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3cf9-eb36-3bfe-4970" name="Laspistol" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bc45-5a5b-872d-f96a" name="Laspistol" hidden="false" targetId="a0ca-3d2e-5151-b9c7" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2867-ab52-1247-2532" name="Lasrifle with Bayonet" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="7216-d901-4f8b-9c7d" name="Lasrifle" hidden="false" collective="false" import="true" targetId="15f9-817e-275b-c13d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f0-3864-c6f5-729d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57af-48b8-44d7-3802" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6710-f925-d009-a7cc" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fbb-d9e4-15c5-0c1f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b25-cf0f-8f86-f022" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df43-1c27-ceea-6d3a" name="Lasrifle with Bayonet" hidden="false" collective="true" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="d22b-09fc-d194-9b73" name="Lasrifle" hidden="false" collective="false" import="true" targetId="2449-dc45-3441-b471" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80b6-1be9-018f-b446" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e299-76b1-29b6-837e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="46a3-45ca-c24e-6b6a" name="Bayonet" hidden="false" collective="false" import="true" targetId="8413-55c8-60ce-e9bf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a1-1f4e-5176-e1b3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0526-af4b-4d41-da62" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
@@ -12420,6 +12750,523 @@ Limitations
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7e02-b66b-55aa-1102" name="Provenances of War" publicationId="48c2-d023-0069-001a" page="9-12" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd5c-2d39-07b9-6dad" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="b192-2b6f-ad8c-959f" name="01 Warrior Elite (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="154b-d405-276d-4412" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dce1-eea6-7ee9-3e3c" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="09a3-925f-64fd-332b" name="Warrior Elite" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
+              <description>All eligible units and models receive +1 to their Leadership Characteristic (to a maximum of 9). Imperialis Militia Levy Squads in a Detachment with this Provenance gain the Support Squad special rule and all Imperialis Militia Grenadier Squads in a Detachment with this Provenance lose the Support Squad special rule.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b669-a356-d5d1-53b8" name="02 Legacy of the Great Crusade (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0794-a1d3-7699-e7c5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e24f-3621-d68e-3cb1" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="e36c-1974-5c74-ccc6" name="Legacy of the Great Crusade" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
+              <description>All Imperialis Militia Grenadier Squad, Imperialis Militia Command Cadres, and Discipline Masters in a Detachment with this Provenance increase their Ballistic Skill by +1 (to a maximum of 4). A Force Commander in a Detachment with this Provenance increases its Initiative to 5.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d609-59fa-8844-3547" name="03 Clanfolk Levy (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2b7-1639-e0b9-efe3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbed-3131-a2c8-ab64" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="8d20-f35d-f6d9-1186" name="Clanfolk Levy" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
+              <description>A Detachment with this Provenance may choose to fill Compulsory Troops choices only with Imperialis Militia Cavalry Squads, with all models in Imperialis Militia Cavalry Squads selected as Compulsory Troops choices gaining a bonus of +1 to their Leadership Characteristic (this does not allow Imperialis Militia Cavalry Squads to be selected as non-Compulsory Troops choices). In addition, a Detachment with this Provenance may include four additional Fast Attack choices – but these additional choices may only be used to select Imperialis Militia Cavalry Squads.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3f21-2a0a-c00d-60ae" name="04 Gene-crafted (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="f724-7ec5-79a5-759f" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec5e-00ea-dd9c-3313" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f724-7ec5-79a5-759f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4451-f39e-4c63-e2fa" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="3a72-d318-7224-27c6" name="Gene-crafted" publicationId="48c2-d023-0069-001a" page="9" hidden="false">
+              <description>Once all models have been deployed, but before the beginning of either player’s first turn, the controlling player must roll once for each unit that contains any eligible models on the table below:
+
+D6 Effect
+1 The unit begins the battle Pinned – this overrides any rule which would normally allow a unit to ignore being Pinned (such as the Cavalry Unit Type or the Marcher Lord Warlord Trait). If the unit is Embarked on a model with the Transport Unit Sub-type then it must make an immediate Emergency Disembarkation and is then Pinned. Units that are in Reserve ignore this effect and suffer no penalty or benefit when they enter play.
+2-5 All eligible models in the unit with the Infantry or Cavalry Unit Types gain one of the following special rules, selected by the controlling player, for the duration of the battle: Fleet (2), Move Through Cover or Night Vision.
+6 All eligible models in the unit with the Infantry or Cavalry Unit Types gain one of the following special rules, selected by the controlling player, for the duration of the battle: Relentless, Stubborn, Adamantium Will (6+) or all of the special rules presented for result 2-5 (i.e., Fleet (2), Move Through Cover and Night Vision).
+
+BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment or Tainted Flesh Provenance. See relevant Provenance.)</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="d427-5d92-96b2-78c2" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fleet (2) (Gene-crafted)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="0c28-4ceb-5c1c-7769" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Move Through Cover (Gene-crafted)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="c0b8-0bb3-b31c-1b0b" name="Night Fighting" hidden="false" targetId="5305-9807-b158-3c1c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Night Fighting (Gene-crafted)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="0262-5301-9fef-ce15" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Relentless (Gene-crafted)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="6ffb-44f0-4281-4519" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Stubborn (Gene-crafted)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="412e-4510-7b0d-eaa8" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Adamantium Will (6+) (Gene-crafted)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ec5e-00ea-dd9c-3313" name="05 Cyber-augmetics (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="786e-5b18-f96d-4a58" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f21-2a0a-c00d-60ae" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="786e-5b18-f96d-4a58" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34cf-0bac-d780-299a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="2b3e-1985-202a-b31f" name="Cyber-augmetics" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
+              <description>All eligible units and models gain the Feel No Pain (6+) and Slow and Purposeful special rules. This Provenance may not be chosen in conjunction with the Gene-crafted Provenance and any Detachment with this Provenance is treated as Sworn Brothers by any Detachment with the Mechanicum Faction in the same army.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="a927-dea5-b72a-e893" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Feel No Pain (6+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="591c-5bf3-6bbb-2cd1" name="Slow and Purposeful" hidden="false" targetId="d69a-cfb3-db43-32c5" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1deb-5f40-169d-fc5a" name="06 Alchem-jackers (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="3ec4-7331-357e-191d" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ec4-7331-357e-191d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d817-934b-4885-2f52" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="a941-befe-b74a-5251" name="Alchem-jackers" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
+              <description>All units with this Provenance do not suffer negative modifiers to their Leadership Characteristic in the Assault phase and, in addition, if less than half the models in the unit have been removed as casualties and a Morale check made for it due to casualties in the Shooting phase is failed, they become Pinned instead of Falling Back (if more than half of the models in the unit have been removed as casualties then it must Fall Back as normal).
+
+Option – Frenzon: All models in any unit with this Provenance can be upgraded to have the Furious Charge (1) special rule for +25 points per unit.
+
+BS NOTE (This Provenance cannot be taken in conjunction with the Tainted Flesh Provenance. See relevant Provenance.)</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="08f1-5fe7-1d3a-7b35" name="07 Survivors of the Dark Age (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="acfb-e72f-9888-3002" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d80-c401-0303-d0f9" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="acfb-e72f-9888-3002" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0765-1815-d4d9-7c95" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="99c0-0263-9acc-a659" name="Survivors of the Dark Age" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
+              <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take either a Legion Rhino Transport, Legion Termite Assault Drill or Legion Land Raider Proteus Carrier as a Dedicated Transport so long as they number 10 models or less. See the Legiones Astartes Crusade Army List for details and points costs, however all such vehicles lose the Legiones Astartes (X) special rule, gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
+
+Option – Voidjumpers: All models in an Imperialis Militia Reconnaissance Squad may be upgraded to have Militia jet packs and to replace all weapons with two laspistols or autopistols at a cost of +20 points per unit. Any Discipline Masters, Militia Medicae and any other models assigned to the squad before deployment (but not models that join the unit by means of the Independent Character special rule) may be given Militia jet packs for no additional cost. A model with a Militia jet pack may not be given any weapon with the Heavy type.
+
+BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble or Tainted Flesh Provenance. See relevant Provenance.)</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4bcd-7022-cefc-04da" name="08 Armoury of Old Night (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b791-ce5b-c551-d496" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="433f-6c05-353a-9509" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="bc4e-9ab5-e370-cd7f" name="Armoury of Old Night" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
+              <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
+
+Option – Relic Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade lasguns to either volkite chargers or assault needlers; may upgrade laspistols to either volkite serpenta or needle pistols; may upgrade sniper rifles to needle vulnus; and heavy stubbers to volkite culverin or needle cannon at a cost of +30 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
+
+Option – Heirlooms of Past Glory: A Force Commander in a Detachment with this Provenance may exchange a power weapon for a paragon blade for +10 points and/or a laspistol for an archaeotech pistol for a further +10 points.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5825-e777-2615-3d4d" name="09 Feral Warriors (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be58-6d1e-9ec6-6b58" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66da-db18-ce4e-eead" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="f6a8-9b16-3947-57ef" name="Feral Warriors" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
+              <description>All eligible units and models gain a bonus of +1 to their Weapon Skill Characteristic for the duration of any player turn in which they make a successful Charge. However, an eligible unit that begins the controlling player’s Assault phase within 12&quot; of one or more enemy units must have a Charge declared for it, though the controlling player may choose the target of this charge.
+
+Option – Chainaxes: Any model eligible to benefit from this Provenance may upgrade a basic close combat weapon to a chainaxe for +2 points per model or upgrade a chainsword to a chainaxe for +1 point per model.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2bd7-54d3-b0a9-1e44" name="10 Kinfolk Helots (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="eeb4-e0b3-35e7-9063" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eeb4-e0b3-35e7-9063" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d59-f3d7-3290-1e26" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="ddaa-0389-1b2e-89ae" name="Kinfolk Helots" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
+              <description>All eligible units and models receive an increase of +1 to their Toughness Characteristic but also lower their Initiative and Movement Characteristics by -1 (to a minimum of 1, models with a Movement of 0 or - are not affected and remain Movement 0 or -). All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Battlesmith (6+) special rule, or if they also have the Independent Character special rule gain the Battlesmith (5+) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d15d-c66d-d47f-8aee" name="11 Abhuman Muster (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="bac1-a170-98c4-6e93" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bac1-a170-98c4-6e93" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb11-ba20-4ab6-86c6" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="b726-7fd3-991b-4752" name="Abhuman Muster" publicationId="48c2-d023-0069-001a" page="11" hidden="false">
+              <description>All eligible units and models receive an increase of +1 to their Strength Characteristic but also lower their Ballistic Skill by -1 (to a minimum of 1) and, if they do not already possess any variant of the Bulky (X) special rule, gain the Bulky (2) special rule. All eligible models in a Detachment with this Provenance and the Character Unit Sub-type gain the Hammer of Wrath (1) special rule, or if they also have the Independent Character special rule or the Monstrous Unit Sub-type gain the Hammer of Wrath (2) special rule instead. This Provenance may not be chosen in conjunction with the Ogryn Conscripts Provenance.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8d80-c401-0303-d0f9" name="12 Debased Rabble (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="af84-c2c4-acbe-4612" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db1f-6157-2c58-5ae5" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af84-c2c4-acbe-4612" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b899-3051-35eb-a631" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="0e1c-9355-ee59-8a1a" name="Debased Rabble" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
+              <description>This Provenance may only be selected by an army with the Traitor Allegiance.
+All eligible units and models with this Provenance gain the Crusader and Hatred (Everything) special rules. However, they must always declare a Charge targeting an enemy if they are able. Imperialis Militia Grenadier Squads may not be taken in a Detachment which uses this Provenance and this Provenance may not be used in conjunction with the Survivors of the Dark Age Provenance.
+
+BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stronghold Provenance. See relevant Provenance.)</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="f814-c2a2-cd25-9cbd" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
+            <infoLink id="3312-948f-4cca-2788" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Everything)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d5e5-b44b-5db6-ab16" name="13 Tainted Flesh (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="e492-0f79-662a-b9ca" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f21-2a0a-c00d-60ae" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1deb-5f40-169d-fc5a" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db1f-6157-2c58-5ae5" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e492-0f79-662a-b9ca" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a41-1c45-653f-8a5a" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="5c84-3132-b333-5d54" name="Tainted Flesh" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
+              <description>This Provenance may only be selected by an army with the Traitor Allegiance.
+
+All eligible units and models receive the Fear (1) and Furious Charge (1) special rules. However, the Detachment’s Compulsory Troops choices must be filled by Imperialis Militia Levy Squads, and it may not have more Infantry units, excepting HQ choices, of other types, than it has Imperialis Militia Levy Squads in total. For example, if it has three Imperialis Militia Levy Squads, it can have a maximum of three additional Infantry squads of other kinds. The only HQ choices the Detachment can take are the Imperialis Militia Force Commander and Imperialis Militia Rogue Psyker entries.
+
+This Provenance cannot be taken in conjunction with the Survivors of the Dark Age, Gene-crafted, Ogryn Conscripts or Alchem-jackers Provenances.
+
+BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stronghold Provenance. See relevant Provenance.)</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="4f11-10b1-7363-a89d" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Fear (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="f2ab-436e-1181-7961" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Furious Charge (1)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="07d0-18a3-ce4d-c1b4" name="14 Ogryn Conscripts (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="e021-4acd-1832-691f" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db1f-6157-2c58-5ae5" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e021-4acd-1832-691f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d27a-86a0-3caf-db61" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="621a-e558-72e8-9482" name="Ogryn Conscripts" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
+              <description>A Detachment with this Provenance may select Imperialis Militia Ogryn Brute Squads as Troops choices, with those selected as Compulsory Troops choices gaining the Line Unit Sub-type. All Discipline Masters, Militia Medicae and Force Commanders selected as part of a Detachment with this Provenance may join Imperialis Militia Ogryn Brute Squads, ignoring the usual restrictions for joining a unit with the Monstrous Unit Sub-type.
+
+BS NOTE (This Provenance cannot be taken in conjunction with the Kinfolk Helots, Abhuman Muster, Tainted Flesh &amp; Industrial Stronghold Provenance. See relevant Provenance.)</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="db1f-6157-2c58-5ae5" name="15 Industrial Stronghold (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="3d9d-10f1-ce0a-c699" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d80-c401-0303-d0f9" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20e1-2446-2438-3638" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d9d-10f1-ce0a-c699" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1a2-ece9-7b36-fbbc" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="406d-7202-7fb9-f75c" name="Industrial Stronghold" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
+              <description>A Detachment with this Provenance may include up to two additional Heavy Support choices, but these must be filled with Imperialis Militia Leman Russ units. In addition, all Imperialis Militia Leman Russ units selected for a Detachment with this Provenance gain the following option:
+
+• An Imperialis Militia Leman Russ unit may include:
+- Up to five additional Militia Leman Russ.....+120 points each
+
+This Provenance cannot be taken in conjunction with the Unending Horde, Debased Rabble, Tainted Flesh or Ogryn Conscripts Provenances.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="20e1-2446-2438-3638" name="16 Unending Horde (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="b109-3471-b20c-710d" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db1f-6157-2c58-5ae5" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b109-3471-b20c-710d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d3-7d5d-2228-5671" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="081e-6762-92ea-19bd" name="Unending Horde" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
+              <description>A Detachment with this Provenance grants the Endless Horde (4+) special rule to all models in all Imperialis Militia Infantry Squads and Imperialis Militia Levy Squads, but all Imperialis Militia Grenadier Squads can only be selected as Elites choices.
+
+BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stronghold Provenance. See relevant Provenance.)</description>
+            </rule>
+            <rule id="d8d9-0804-3adb-e939" name="Endless Horde (X)" publicationId="48c2-d023-0069-001a" page="12" hidden="false">
+              <modifiers>
+                <modifier type="set" field="name" value="Endless Horde (4+)"/>
+              </modifiers>
+              <description>When a unit composed entirely of models with this special rule has its last model removed as a casualty, the controlling player may choose to roll a D6. On a result equal to or greater than the value in brackets, a unit identical to the one that was removed as casualties (with all models and Wargear listed on the controlling player’s army roster) is placed in Reserves – and treated as a new unit. On any other result, the unit is removed as casualties with no further effect. Any Victory points that would be scored for the unit removed as casualties are unaffected and scored as normal, and any new unit that enters Reserves may be used to score Victory points if also removed as casualties. Furthermore, if a new unit placed in Reserves due to this special rule is later removed from play as casualties – it too can be returned to Reserves instead of being removed from play using this special rule.
+
+A unit with this special rule that has been joined by a model after or during deployment (such as via the Among the Ranks, Militia Medicae Support or the Independent Character special rules) and is subsequently entirely removed as casualties and then returned to Reserves instead of being removed, does not retain any models that had joined it when it returns to Reserves – such models are casualties and do not return to play.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5ff5-48c0-b9f1-5a05" name="Power Weapon" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc0c-07c4-7d99-1587" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="281f-a523-c50b-b912" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="a54d-8d95-708d-c771" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+        <entryLink id="68ab-655a-32a7-8420" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+        <entryLink id="f81f-0e32-9b97-7c8d" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+        <entryLink id="f6b0-c45f-0288-63f8" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9b4b-07a4-31bc-fc16" name="Minor Combi-weapon" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f18-181a-f977-0b45" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d95a-69c4-0773-4c5c" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="0639-e1f6-6e0d-7650" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry"/>
+        <entryLink id="7c27-be0d-c946-4c4e" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="dd06-55b3-1c77-1e1d" type="selectionEntry"/>
+        <entryLink id="1515-78e0-10fa-5223" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2286-9fb3-e845-f24a" name="Magna Combi-weapon" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d608-f8c9-ee66-e9f9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4213-e86b-fed7-9619" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="9bc5-919f-7d3a-703e" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry"/>
+        <entryLink id="0ff2-dd35-7e6a-f83a" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="5ed9-1bc3-4d8f-0826" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f7d1-ad0f-b4cb-dfc1" name="Charnabal Weapon" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcdd-bdfd-49ec-30b4" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="a311-a007-7439-9227" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry"/>
+        <entryLink id="5246-a8e2-96a4-eae4" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry"/>
+        <entryLink id="5fcf-bd2e-46e7-0b09" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

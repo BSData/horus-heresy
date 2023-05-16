@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -1484,12 +1484,6 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="43d1-47d0-5f85-ae48" name="Laspistol and Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
-                      <entryLinks>
-                        <entryLink id="cf02-b870-39d0-aa7e" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry"/>
-                        <entryLink id="023f-2fd8-3cb9-87f0" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
-                      </entryLinks>
-                    </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
                     <entryLink id="a0e2-cf54-398f-00b1" name="Lasrifle" hidden="false" collective="false" import="true" targetId="15f9-817e-275b-c13d" type="selectionEntry"/>
@@ -2198,13 +2192,6 @@
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="4395-16ba-48e4-1011" name="Pistol and Combat weapon (Sub-menu)" hidden="true" collective="false" import="true" type="upgrade">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="57c7-6ab1-dbc5-6565" name="Close Combat" hidden="false" collective="false" import="true">
                           <constraints>
@@ -2293,19 +2280,6 @@
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
                       </costs>
-                    </selectionEntry>
-                    <selectionEntry id="2b39-77d6-cc4d-04cf" name="Laspistol and Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="true">
-                          <conditions>
-                            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <entryLinks>
-                        <entryLink id="0d96-6c52-4897-fa69" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry"/>
-                        <entryLink id="ba3b-4b42-beac-c413" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
-                      </entryLinks>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -4025,7 +3999,7 @@
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f56c-38c0-9008-c9db" type="max"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="2e19-2169-3914-ade2" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="f1d6-ebe1-d236-3f11" type="selectionEntry">
+                    <entryLink id="2e19-2169-3914-ade2" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="aab4-9e33-94f0-5815" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be6-b728-a83f-eeb3" type="min"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6123-c08d-7ebf-da59" type="max"/>
@@ -6043,50 +6017,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4d02-259d-fa50-ef3a" name="Magna Combi-weapon" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53c6-c052-4e08-4d2d" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="d0d4-8e98-6022-b5bb" name="Manga Combi-weapon" hidden="false" collective="false" import="true" targetId="2286-9fb3-e845-f24a" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="53c0-b5d7-f001-b816" name="Minor Combi-weapon" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14bd-d324-bfc9-b8a0" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="4aec-d447-93d6-f947" name="Minor Combi-weapon" hidden="false" collective="false" import="true" targetId="9b4b-07a4-31bc-fc16" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d2db-7598-f55f-86fe" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9ef-d959-f4a3-d4c2" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="cf56-2470-b3af-54ab" name="Power Weapon" hidden="false" collective="false" import="true" targetId="5ff5-48c0-b9f1-5a05" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="e749-ba9b-bb76-a7d9" name="Charnabal Weapon" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94f-e15b-bd54-db57" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="2876-3425-8164-1fd4" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="f7d1-ad0f-b4cb-dfc1" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="2867-ab52-1247-2532" name="Lasrifle with Bayonet" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
         <entryLink id="7216-d901-4f8b-9c7d" name="Lasrifle" hidden="false" collective="false" import="true" targetId="15f9-817e-275b-c13d" type="selectionEntry">
@@ -6207,29 +6137,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
           </modifiers>
         </infoLink>
         <infoLink id="759a-9bff-4841-e716" name="Storm Axe" hidden="false" targetId="593a-b90a-74d1-4159" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="37ec-a4b4-de7a-acf3" name="Rotor Cannon" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="2a23-3690-b10a-5ab4" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="023b-fb8e-d925-0f4c" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Shell Shock (1)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="610d-65de-9ab7-bd2a" name="Rotor Cannon" hidden="false" targetId="911e-cd25-992e-7a74" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f1d6-ebe1-d236-3f11" name="Heavy Flamer" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="cd13-1c99-060a-a97c" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
-        <infoLink id="55af-d04b-dd9f-9456" name="Heavy Flamer" hidden="false" targetId="a6e9-e2e1-150f-b023" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -11929,49 +11836,6 @@ Limitations
           </costs>
         </selectionEntry>
       </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="f7d1-ad0f-b4cb-dfc1" name="Charnabal Weapon" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3813-a033-141b-d875" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="a311-a007-7439-9227" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry"/>
-        <entryLink id="5246-a8e2-96a4-eae4" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry"/>
-        <entryLink id="5fcf-bd2e-46e7-0b09" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="5ff5-48c0-b9f1-5a05" name="Power Weapon" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ed-fe14-e801-d9ce" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9339-8931-c34c-cecd" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="a54d-8d95-708d-c771" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
-        <entryLink id="68ab-655a-32a7-8420" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
-        <entryLink id="f81f-0e32-9b97-7c8d" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
-        <entryLink id="f6b0-c45f-0288-63f8" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="2286-9fb3-e845-f24a" name="Magna Combi-weapon" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ec-1829-0c26-e2f2" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5829-8710-c6d1-774d" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="9bc5-919f-7d3a-703e" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry"/>
-        <entryLink id="0ff2-dd35-7e6a-f83a" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="5ed9-1bc3-4d8f-0826" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="9b4b-07a4-31bc-fc16" name="Minor Combi-weapon" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64a4-8057-3485-a05e" type="min"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b944-00be-d9f1-7025" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="0639-e1f6-6e0d-7650" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry"/>
-        <entryLink id="7c27-be0d-c946-4c4e" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="dd06-55b3-1c77-1e1d" type="selectionEntry"/>
-        <entryLink id="1515-78e0-10fa-5223" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry"/>
-      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

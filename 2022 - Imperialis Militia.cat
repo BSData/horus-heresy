@@ -1,0 +1,1453 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="37de-ba3c-f798-5bcb" name="Provenances of War" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3326-a93a-5074-3eba" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a85-cf9b-02ec-ab26" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1603-2d05-0b77-78eb" name="New CategoryLink" hidden="false" targetId="346a-fb59-a199-25c4" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7789-b58c-91a7-68c9" name="Provenances of War" hidden="false" collective="false" import="true" targetId="7e02-b66b-55aa-1102" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="dd5c-2d39-07b9-6dad" value="0.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa19-eda7-e81e-9868" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="4f2e-c08a-8adb-0ae9" name="Imperialis Militia" hidden="false" collective="false" import="true" targetId="5522-4fd9-12d5-460afds" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="917f-ff85-142a-d5f5" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab03-da8b-e39c-b99c" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9a96-bf4b-af79-395a" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="83e5-d5f8-7d98-4c9d" name="01) IM - Force Commander" hidden="false" collective="false" import="false" targetId="aa19-eda7-e81e-9868" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="edca-4045-c7b8-8722" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2781-27ba-9156-0753" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="3557-09ac-2957-8b34" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e34a-7eb9-2025-b2c5" name="02) IM - Discipline Master Cadre" hidden="false" collective="false" import="false" targetId="9ead-c344-29c6-43aa" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b6c4-fb0a-73cf-a7d1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6731-195b-b6ef-3b16" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f98c-1bc5-80c1-1630" name="03) IM - Rogue Psyker" hidden="false" collective="false" import="false" targetId="5fd6-8371-e5e5-7f0f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e3cf-0e84-1b24-97ac" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4371-0ca0-6365-bb11" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ec7c-fc7c-6fc7-5547" name="04) IM - Command Cadre" hidden="false" collective="false" import="false" targetId="b179-24bb-a4b0-3eb4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8484-a434-488c-af80" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7aa8-f1a5-1797-fa25" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8e6c-5309-5d14-3883" name="05) IM - Infantry Squad" hidden="false" collective="false" import="false" targetId="b4a8-0824-b604-3277" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="58c7-eb2f-2323-59fb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ac90-48b6-4c32-1a98" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="32d7-380a-3ef4-f929" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fc24-a2e8-66c8-ccf2" name="06) IM - Levy Squad" hidden="false" collective="false" import="false" targetId="1ff9-d83a-2a15-8815" type="selectionEntry">
+      <modifiers>
+        <modifier type="remove" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7d72-9867-6cae-52e3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a38f-24e2-d77e-f758" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="30cb-17ba-6fad-04bc" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c96b-175c-3119-025f" name="07) IM - Grenadier Squad" hidden="false" collective="false" import="false" targetId="c201-6fbc-a792-0509" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20e1-2446-2438-3638" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e5bf-6973-dec6-b96f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="21e3-0a32-7c80-32f3" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c6ce-6efe-316d-8a99" name="08) IM - Fire Support Squad" hidden="false" collective="false" import="false" targetId="3f92-41db-02f5-d0cd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="5dcb-b81f-abb1-094c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="82f2-f006-84cb-bd20" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="489d-ddd5-565d-659e" name="09) IM - Reconnaissance Squad" hidden="false" collective="false" import="false" targetId="6a90-6dc5-1e0b-9eaf" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="43c4-e562-db15-2051" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="0915-da10-e519-d165" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1c69-43b8-dd54-7cb0" name="10) IM - Medicae Detachment" hidden="false" collective="false" import="false" targetId="64e6-42ff-959d-02a1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7eaa-e280-55f0-90e3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9b60-9e5c-040b-76cd" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0769-58d8-b5e6-2c8d" name="11) IM - Ogryn Brute Squad" hidden="false" collective="false" import="false" targetId="e6d5-9f6a-b62b-c477" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7ab3-6772-b87b-a387" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="125f-a3a7-f2c3-1e96" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bd91-feb9-0a20-a55c" name="12) IM - Field Gun Battery" hidden="false" collective="false" import="false" targetId="69d4-e221-a0cb-e428" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1ca9-75de-6be8-942e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="87c6-b510-1983-334f" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="be47-b7f2-625b-94f8" name="13) IM - Arvus Transport" hidden="false" collective="false" import="false" targetId="6b4b-8295-b434-a7d4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="aeea-a03d-1d1f-ca2f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="06d5-8cc9-cc1f-d4d3" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="68fb-6589-6260-a6b6" name="14) IM - Cargo-8 Hauler Squadron" hidden="false" collective="false" import="false" targetId="866a-ed8e-0c2c-c030" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c3d3-2cf6-60eb-0400" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f110-465e-3402-d431" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e911-ccb2-4ce3-01d6" name="15) IM - Cavalry Squad" hidden="false" collective="false" import="false" targetId="ffb1-4b4b-b88c-832c" type="selectionEntry">
+      <modifiers>
+        <modifier type="add" field="category" value="d3bb-bdf9-4478-9553">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-59fa-8844-3547" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="eabe-9585-3937-b220" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ebb2-5ae2-5949-8018" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4de9-1451-51a2-1627" name="16) IM - Beastmasters" hidden="false" collective="false" import="false" targetId="173c-2148-c3ce-9c5c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="dde7-11fc-3a51-06c8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6df1-a768-a117-6010" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="40e4-5d89-29b2-b49f" name="17) IM - Sentinel Squadron" hidden="false" collective="false" import="false" targetId="987d-3f99-2c52-3da4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="80cf-d97b-424f-924b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e79a-48cd-7065-3448" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="50bd-d720-acbd-a7ee" name="18) IM - Thunderbolt Fighter" hidden="false" collective="false" import="false" targetId="d7d4-da56-01e2-7b38" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9ffb-8060-1013-9e47" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="20cb-9306-d6aa-6ff2" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b698-2fac-d94d-bf40" name="19) IM - Rapier Battery" hidden="false" collective="false" import="false" targetId="fbb6-c597-3edb-1506" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e42c-6550-8a80-dc03" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a6f3-de9f-f708-8eb8" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ce95-16aa-4152-83c5" name="20) IM - Malcador Heavy Tank" hidden="false" collective="false" import="false" targetId="37f6-34e9-4938-0ff6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d462-6e61-33e2-64a8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6eb0-60b6-0f8d-a18b" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3acf-9101-eb88-9fb1" name="21) IM - Leman Russ" hidden="false" collective="false" import="false" targetId="4f35-c44e-4456-31f4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="134b-7000-189e-7c27" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="eeb4-50b0-6864-e5ad" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cd09-4199-817a-53b3" name="22) IM - Heavy Ordnance Battery" hidden="false" collective="false" import="false" targetId="413b-1304-f079-9875" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3df5-775b-83aa-01ff" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="da7c-9810-7f78-390c" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e090-6b04-112a-363a" name="23) IM - Gorgon Heavy Transporter" hidden="false" collective="false" import="false" targetId="0651-5f5f-43cc-9ca1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="f2da-da6b-e65a-fd34" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="de34-8380-836e-7aac" name="New CategoryLink" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c2ed-5b56-c0b1-ddf5" name="24) IM - Baneblade Super-heavy Battle Tank" hidden="false" collective="false" import="false" targetId="ecd4-2b5f-a98a-5093" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="91a7-5fe4-ac91-3b29" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="b435-056f-aa48-f3a1" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eb78-29b8-e7bb-7295" name="15) IM - Cavalry Squad" hidden="true" collective="false" import="false" targetId="ffb1-4b4b-b88c-832c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-59fa-8844-3547" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b6a2-8834-f2e1-2fa7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="6cf2-e356-d8c8-6bb2" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+        <categoryLink id="530b-993b-87bf-956d" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e2dc-87fa-2c76-eb60" name="11) IM - Ogryn Brute Squad" hidden="true" collective="false" import="false" targetId="e6d5-9f6a-b62b-c477" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c1c5-2d1b-7e6e-51ac" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="16ea-3da4-2540-9d42" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4017-636f-0edf-fc1f" name="07) IM - Grenadier Squad" hidden="true" collective="false" import="false" targetId="c201-6fbc-a792-0509" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20e1-2446-2438-3638" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="971f-46bb-d237-781d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="b222-9213-415f-a15b" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="93b2-d957-e325-39e2" name="Frenzon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bcfd-f0ce-5613-1ea2" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Furious Charge (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e230-cdd4-113a-006f" name="Militia Jet Pack" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="751c-266d-93d4-dbc7" name="Militia Jet Pack" publicationId="48c2-d023-0069-001a" page="10" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">At the start of the controlling player’s Movement phase, a model with a Militia jet pack may set its Move Characteristic to a value of 12 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ the jet pack). This allows a model with a Militia jet pack to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge distance). In addition, all models with a Militia jet pack that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their Movement in Dangerous Terrain. A model with an activated Militia jet pack treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its Movement at least 1&quot; away from any model from another unit.
+
+A model with a Militia jet pack may still Run, if it would normally be able to Run (this does not allow units that include any models with the Heavy Unit Sub-type to Run). When making a Run move for a model with an activated Militia jet pack, add the Initiative Characteristic of that model to 12 to determine how far it may move – the model ignores terrain and models from other units while making a Run move with a Militia jet pack as noted above, but may not make Shooting Attacks or Declare a Charge in the same turn in which it has Run as per the normal rules for Running. During a Reaction made in any Phase, a player may not choose to activate a model’s Militia jet pack to gain any bonus to their Movement Characteristic.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aa19-eda7-e81e-9868" name="01) IM - Force Commander" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="7889-635d-836c-f82f" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9ec2-9d61-4f5a-a8eb" name="Force Commander" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
+              <conditions>
+                <condition field="selections" scope="9ec2-9d61-4f5a-a8eb" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bdb-4c50-eaca-5811" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
+              <conditions>
+                <condition field="selections" scope="9ec2-9d61-4f5a-a8eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bdb-4c50-eaca-5811" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0517-41d3-892a-359c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d0b7-74b3-b9a0-1d2f" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="0903-def7-68fa-c3a9" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+            <categoryLink id="4bcb-9cd8-fa57-5a32" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="8bdb-4c50-eaca-5811" name="Mounted Force Commander*" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="5e82-0f7d-0d32-482b" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="45b6-ec50-fbd0-d314" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="d516-8e38-dfe0-1fa8" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="d95b-b629-0a55-e530" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="64e6-42ff-959d-02a1" name="10) IM - Medicae Detachment" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="b866-a812-0e38-4e5c" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6d15-cbec-f63c-8ce2" name="Militia Medicae" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="209e-bb2b-ebd3-8ac3" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="83f7-9ade-a8a8-9a2d" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="52dd-e93c-2bbe-e93f" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="a214-a558-869b-f8b7" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="fd1e-4a98-7c32-8b46" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ead-c344-29c6-43aa" name="02) IM - Discipline Master Cadre" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="ba2e-8166-a724-49db" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d621-f543-cdc5-cdc3" name="Discipline Master" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="add" field="category" value="8b4f-bfe2-ce7b-f1b1">
+              <conditions>
+                <condition field="selections" scope="d621-f543-cdc5-cdc3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd78-b281-1129-dd74" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" field="category" value="6d79-a3e4-381f-7b0f">
+              <conditions>
+                <condition field="selections" scope="d621-f543-cdc5-cdc3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd78-b281-1129-dd74" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="664c-5e76-1d3d-8263" type="min"/>
+            <constraint field="selections" scope="parent" value="12.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="22d5-f4ff-1e1d-2228" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="af33-2130-a0d9-77c4" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry id="fd78-b281-1129-dd74" name="Mounted Discipline Master*" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="7cc0-c8c6-e181-27bd" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="c213-3e98-e60e-3ca3" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="8020-8769-29e2-17a1" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="6987-8d70-4bb5-a650" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b179-24bb-a4b0-3eb4" name="04) IM - Command Cadre" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8fac-77b4-81d8-0791" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="09dc-31fa-f001-168b" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="375d-cfae-bfa2-b9db" name="Militia Lieutenant" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c3e3-e3e3-c561-b3ef" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c9d-cf03-fb6a-9076" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="e545-8eba-ce63-490f" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="67e2-f67e-2c33-2770" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="2a21-9b69-f3e8-80fc" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4da1-5b58-71dc-7430" name="Militia Bodyguards" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b6b-b664-8034-deb4" type="min"/>
+            <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb9f-66cc-b006-4f9a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="8.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="5f9c-d751-3608-cb64" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="58bb-bef9-e140-4413" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="13.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b4a8-0824-b604-3277" name="05) IM - Infantry Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="2035-e100-fb21-d53a" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b413-7250-5c28-9526" name="Infantry Squads" hidden="false" collective="false" import="true" defaultSelectionEntryId="171b-812a-6ef7-7a71">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1207-be23-4ed9-8cbd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="171b-812a-6ef7-7a71" name="Infantry Squad" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44a7-df54-409b-8912" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0ccc-74a7-3593-c355" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="d4b9-04fc-2a82-3985" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+                <categoryLink id="e4d4-1648-6a6d-b470" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="685e-7aa6-d038-e20f" name="Sergeant" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66ca-f6ef-43d5-d48b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a35-cb82-481e-f855" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="16d5-56a2-4e6a-6abb" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7e88-5fc7-191e-5cb8" name="Militia" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="986f-6068-1e66-e78b" type="min"/>
+                    <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fb6-ea2d-dbc3-9b1a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="0315-3145-b5f1-9cc3" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+                <entryLink id="8f58-679a-d1f1-0dab" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1ff9-d83a-2a15-8815" name="06) IM - Levy Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="3c9f-1c42-611f-999c" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bd99-d3b8-dd58-d384" name="Levy Squads" hidden="false" collective="false" import="true" defaultSelectionEntryId="40bf-b6fa-7c1e-b14a">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04f5-5aed-21e4-3e28" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="40bf-b6fa-7c1e-b14a" name="Levy Squad" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7734-dc53-f78f-5405" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f49c-d7bb-ad58-611e" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7623-1857-a4d2-3139" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry id="07e6-4b23-d81b-77d0" name="Sergeant" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d02-4e44-b96d-4c15" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1525-c077-9577-6adc" type="max"/>
+                  </constraints>
+                  <categoryLinks>
+                    <categoryLink id="ee2d-b515-e075-bb85" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1a31-839a-81ce-bbf6" name="Levy" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9942-413a-a626-715f" type="min"/>
+                    <constraint field="selections" scope="parent" value="49.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71f1-8245-757b-6a26" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="ce63-7254-4aae-2bae" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+                <entryLink id="6546-5baa-1aa1-5b34" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c201-6fbc-a792-0509" name="07) IM - Grenadier Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="1fbc-3ade-2ce2-689f" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink id="aff5-69b6-f98b-f576" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="4164-318f-e397-bd37" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6dbf-09bf-2bbc-278d" name="Grenadier" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a318-2216-ac23-dabc" type="min"/>
+            <constraint field="selections" scope="parent" value="19.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ebec-2296-d6e8-651f" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="6.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5d42-ca93-dc35-8745" name="Grenadier Sergeant" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0039-2b45-062a-4b87" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7c94-c81e-edae-1f4f" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="a707-2515-52c5-cf6c" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="ddca-3767-0d79-a4bb" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+        <entryLink id="cbb0-60f7-e685-839e" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="21.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f92-41db-02f5-d0cd" name="08) IM - Fire Support Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="544a-d5de-ad24-ccf1" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="ff5e-7826-a07c-580b" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="757a-017f-0c23-8007" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="c8a5-792a-516a-8f74" name="Militia Fire Team" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8d5f-6d68-0815-371d" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="434d-21f3-dba2-c693" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="d659-774b-be4b-131a" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="dd19-25a2-356d-e59e" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a90-6dc5-1e0b-9eaf" name="09) IM - Reconnaissance Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="f8bf-e373-7088-1dca" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="2dff-278b-2bbe-fe45" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink id="36e0-ac5f-3884-fb95" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9915-15d5-5790-f904" name="Scout" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4dfb-d40d-6366-0cfb" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="096c-632a-e70a-bb81" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="73bd-73fb-8c08-283b" name="Scout Sergeant" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b5df-9700-9b4d-1a1f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2467-f787-d0ae-21da" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="ae89-1a96-9894-da38" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="06e3-927e-7af1-cef9" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="ba89-2455-6959-b470" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="69d4-e221-a0cb-e428" name="12) IM - Field Gun Battery" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="c0a5-6e17-90e1-9b34" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="c254-7761-dbf3-9329" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+        <categoryLink id="6748-d0c8-4f36-f942" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1664-7f7f-9d00-07e0" name="Militia Field Gun" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7fe8-54d2-6160-b181" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="af84-255d-2439-00db" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c79f-6c78-b47a-a777" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="621d-695f-a297-bdae" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6b4b-8295-b434-a7d4" name="13) IM - Arvus Transport" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="0ace-71e9-c37d-d555" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="9603-bd5c-cf78-30ed" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="33fe-f72a-041d-ddd2" name="Flyer Sub-type:" hidden="false" targetId="4e84-2d57-4986-2b23" primary="false"/>
+        <categoryLink id="e852-57ce-e2db-911c" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
+        <categoryLink id="4bb3-644e-118d-c736" name="Hover Sub-type" hidden="false" targetId="3a7a-8bb7-b0d3-e2e7" primary="false"/>
+        <categoryLink id="acc1-0031-76ac-84ab" name="Transport Sub-type:" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f0eb-d160-ed30-8b54" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="6bd7-33aa-cd44-96e1" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="866a-ed8e-0c2c-c030" name="14) IM - Cargo-8 Hauler Squadron" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="54c5-857f-e188-35c3" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="a1bc-76d4-5059-c0db" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="49e5-4cf4-a446-8180" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
+        <categoryLink id="eab8-e7a4-908b-ef18" name="Transport Sub-type:" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="9275-5522-8504-af57" name="Cargo-8 Hauler" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ea12-84bc-2890-6d9c" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01f4-63ef-0c70-1257" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c338-83c3-d969-765d" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="9e9f-ec0b-68ba-50b7" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ffb1-4b4b-b88c-832c" name="15) IM - Cavalry Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="6a6e-34c6-73fb-264d" name="Cavalry Unit-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
+        <categoryLink id="7893-6300-4c6a-c56d" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
+        <categoryLink id="82a5-2fe3-a1b8-fda6" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1875-324b-aa2c-9367" name="Outrider" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6234-23a4-80de-2608" type="min"/>
+            <constraint field="selections" scope="parent" value="14.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="63a6-d1a8-804e-d6a9" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="8.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="95e0-6a85-8f47-912e" name="Outrider Sergeant" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3fcb-e19f-4247-3712" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d5fe-d644-1f50-2660" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="1f88-1a48-9e6f-578e" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="29f4-d188-0021-98c4" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="09d7-0821-ca5e-3601" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="18.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="173c-2148-c3ce-9c5c" name="16) IM - Beastmasters" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="d38c-0153-926b-0500" name="Handlers" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="810f-f61d-f1e6-36ef" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a741-27e8-2c24-1e1d" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="4a4b-0672-0d20-af72" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+            <categoryLink id="dbd1-e589-fcae-7157" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+            <categoryLink id="17c5-e990-c5c8-3377" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="8.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1eb6-0fe2-4267-fc44" name="War Beasts" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="increment" field="a207-bd9c-90c0-99dc" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="173c-2148-c3ce-9c5c" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" childId="d38c-0153-926b-0500" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a207-bd9c-90c0-99dc" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f51e-b107-29b3-61e8" name="Mastiff" hidden="false" collective="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink id="49a9-24ca-6d76-7801" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
+                <categoryLink id="b201-ead2-8c02-b316" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+                <categoryLink id="f1ad-465b-ed83-3753" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b36b-fb1a-bd37-9da6" name="Raptor" hidden="false" collective="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink id="3797-cae0-0edd-2724" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
+                <categoryLink id="4e1a-5530-014c-fd13" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+                <categoryLink id="f66a-c70c-c16d-ada5" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5485-a71b-fb58-3ed5" name="Caiman" hidden="false" collective="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink id="b143-1422-ff17-bce2" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+                <categoryLink id="acbb-db13-fe8f-d117" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c25b-6afe-d3c8-46d0" name="Felidae" hidden="false" collective="false" import="true" type="model">
+              <categoryLinks>
+                <categoryLink id="b284-4a07-110e-b9e3" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
+                <categoryLink id="574d-d684-e5c3-597e" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+                <categoryLink id="c28c-b42e-48e6-40ba" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="959c-f65f-9e00-afce" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="1d70-c024-3830-76f5" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="26.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="987d-3f99-2c52-3da4" name="17) IM - Sentinel Squadron" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8ddc-34ec-2e49-d605" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="3fe5-3a52-1b7a-a0fe" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink id="e3af-708b-9fd8-2a73" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+        <categoryLink id="5ff9-4b72-6315-ff20" name="Mechanised Unit Sub-type" hidden="false" targetId="e929-a5c3-451c-6f19" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="dfb0-5862-b705-d8aa" name="Sentinel Squadron" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8623-66bd-0f37-8b7f" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="21c3-858a-bfb5-8960" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="ad3d-1d55-0cef-a70b" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="34a7-94ea-34f4-f6eb" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7d4-da56-01e2-7b38" name="18) IM - Thunderbolt Fighter" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="ac47-05ee-1ca8-0518" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="4420-1f38-8c6d-f131" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="6c04-9c6e-15b6-c272" name="Flyer Sub-type:" hidden="false" targetId="4e84-2d57-4986-2b23" primary="false"/>
+        <categoryLink id="a6fc-88e9-1faa-9bac" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
+        <categoryLink id="f9b7-8399-25f9-360a" name="Deep Strike:" hidden="false" targetId="0d4f-ff28-d819-a512" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e973-9f43-0b95-89e3" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="5132-3bc9-fa58-bd44" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbb6-c597-3edb-1506" name="19) IM - Rapier Battery" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="0f40-258b-c404-87ab" name="Rapier Battery" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c35-962c-f5e0-91ec" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="45ee-5905-bd4d-7a09" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dbd5-ef08-7054-962b" name="Gunners" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5a39-fc5a-b410-ca1a" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="69be-1597-d4a9-481d" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="d00b-36ce-4a76-5f96" name="Rapier" hidden="false" collective="true" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="33f3-f596-df84-5300" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8618-49ab-85b5-2046" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="174a-3d72-6033-88ef" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="fb7e-ee3e-19fb-8c5e" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="37f6-34e9-4938-0ff6" name="20) IM - Malcador Heavy Tank" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="c8e8-f90f-b0b0-d692" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="43fa-85ec-2bdb-1889" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="c98c-1e49-f597-b96b" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
+        <categoryLink id="1dd4-afa1-484c-6dc2" name="Reinforced Sub-type:" hidden="false" targetId="9b0d-738c-10e4-4ec1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3e00-08f9-5d5f-a5d5" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="71c8-ffab-5b78-35f5" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f35-c44e-4456-31f4" name="21) IM - Leman Russ" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="d047-9a4b-f545-f443" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="d73e-8596-c4cf-961e" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="9fa5-ab87-4c73-acb7" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6656-4291-679d-2193" name="Leman Russ" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="e558-3325-57f2-5ad3" value="6.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db1f-6157-2c58-5ae5" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5d0-c698-a35a-14da" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e558-3325-57f2-5ad3" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="b163-022f-2c14-836e" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="442a-6eb3-cc57-ef4b" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="413b-1304-f079-9875" name="22) IM - Heavy Ordnance Battery" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <selectionEntries>
+        <selectionEntry id="3232-8a35-fdcd-35bd" name="Gunners" hidden="false" collective="true" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cf3d-0a81-045d-43d3" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8bd4-5f68-97d5-fbce" type="min"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="2d52-5875-1370-1af0" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+            <categoryLink id="dce1-0af0-018f-a807" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+            <categoryLink id="0ab1-4dba-9e48-1c40" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6d6c-1876-d699-e60b" name="Gun Carrages" hidden="false" collective="false" import="true" defaultSelectionEntryId="5c2f-c8b4-babf-3290">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="f286-a32a-231c-3caf" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="28e6-0cce-f21c-5312" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="5c2f-c8b4-babf-3290" name="Earthshaker Gun Carriage" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="0901-113d-8d30-b46b" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="7acb-b23b-1861-ef4d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+                <categoryLink id="b1dd-86aa-1c7a-ec38" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
+                <categoryLink id="144f-3d8d-5a77-0ef0" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0b06-8fcf-968f-9ca3" name="Medusa Gun Carriage" hidden="false" collective="true" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="1a8b-2557-5742-533f" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="fc24-4a7a-d3d4-d5ee" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+                <categoryLink id="b8f5-f67b-e34f-462b" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
+                <categoryLink id="9f1a-e20c-48d7-550b" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="90.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3488-dfb1-283c-196a" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="50aa-91f3-ba4e-ab0d" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0651-5f5f-43cc-9ca1" name="23) IM - Gorgon Heavy Transporter" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e408-1baf-a063-61e8" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="17fc-4904-ff79-3782" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="158d-a30c-05cd-368e" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
+        <categoryLink id="737a-12d4-20d5-1af0" name="Super-heavy Sub-type:" hidden="false" targetId="7381-1130-ca6e-1806" primary="false"/>
+        <categoryLink id="84a5-947e-9aed-8888" name="Transport Sub-type:" hidden="false" targetId="7b0a-a743-a8da-3a39" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dab6-f72a-9b3c-b826" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="bd1d-ed5d-0f7b-c13d" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecd4-2b5f-a98a-5093" name="24) IM - Baneblade Super-heavy Battle Tank" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8b3a-e67c-3c16-ad31" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink id="2803-8cb8-f7ab-2a8d" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="c175-e0ae-2646-b5cb" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
+        <categoryLink id="0585-8e7f-9c94-b9c1" name="Super-heavy Sub-type:" hidden="false" targetId="7381-1130-ca6e-1806" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e077-ca66-45ab-15a6" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="1689-1e61-8f07-7933" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e6d5-9f6a-b62b-c477" name="11) IM - Ogryn Brute Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="8f42-a824-fb5f-8fea">
+          <conditions>
+            <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d7be-47b8-3add-1d38" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6d7a-960f-c4f1-b63c" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink id="3c09-768c-40e7-c705" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="5794-7adf-a300-a5af" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="de21-368a-567e-3280" name="Ogryn Boss" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="0e01-d58d-96b0-61c7" value="1.0">
+              <conditions>
+                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="219a-3d4a-b059-3b35" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b025-4184-e457-70a0" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0e01-d58d-96b0-61c7" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="a0a9-c12b-1625-4ec7" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="219a-3d4a-b059-3b35" name="Ogryn Brute" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="decrement" field="2a9b-06da-a942-9ad9" value="1.0">
+              <conditions>
+                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de21-368a-567e-3280" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59ec-5175-645e-cc36" type="min"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a9b-06da-a942-9ad9" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d7be-47b8-3add-1d38" name="Ogryn Conscripts (Compulsory)" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink id="bc06-372a-57bd-afe1" name="Ogryn Conscripts (Compulsory)" hidden="false" targetId="d813-b3e9-24f0-78bd" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="12e9-5cb6-4343-650f" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="8671-560d-3801-0ea3" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5fd6-8371-e5e5-7f0f" name="03) IM - Rogue Psyker" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="0ef8-f125-9af9-0dc9" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="10ff-f629-cfc2-fbf6" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8071-8345-bda2-fc78" name="Rogue Psyker" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3a8d-4d0e-7158-0aff" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ca77-35b4-fcad-8179" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="4e78-0ff4-26e7-83e9" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
+            <categoryLink id="5f46-7822-9f6f-a14e" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+          </categoryLinks>
+          <entryLinks>
+            <entryLink id="9bc0-0db5-c447-11a8" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+            <entryLink id="3c81-634e-560c-890d" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="088d-527f-114b-afd4" type="selectionEntryGroup"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c449-8722-a7ab-4f45" name="Militia Wardens" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5247-e380-e37b-ef60" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="133a-8c2d-5959-43aa" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="dae2-ada1-887f-41d1" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
+        <entryLink id="ec62-fb4a-6202-21e1" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f82d-e121-05a8-7a37" name="Placeholder Pts" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="088d-527f-114b-afd4" name="Warlord Traits" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="4cb4-e225-1ff0-a5b0" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cb4-e225-1ff0-a5b0" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="659d-a6e3-93a9-b129" type="max"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3f67-255e-b41a-933c" name="Imperialis Militia Warlord Traits" publicationId="48c2-d023-0069-001a" page="6" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4119-edcc-cecc-08f9" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7571-58b7-b055-7d2f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0b50-6fad-fc9f-de84" name="Ruthless Tyrant" publicationId="48c2-d023-0069-001a" page="6" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="505e-0ffe-a531-a65a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="903f-0280-eb29-2525" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="988d-cd9a-be41-c051" name="Ruthless Tyrant" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Warlord Trait gains the Fear (1) special rule, which affects all friendly models as well as enemy models (this does not include the Warlord with this Trait, which is not affected). However, should any friendly unit that is under the effect of this model’s Fear (1) special rule and under the control of the player whose Warlord has this Trait, be forced to Fall Back during the Movement phase or Shooting phase, then the controlling player may instead remove D6 models, or a single model with the Monstrous Unit Sub-type, from that unit as casualties. These casualties are chosen by the unit’s controlling player and no Saving Throws or Damage Mitigation rolls of any kind may be taken for them. If this option is used then the unit does not Fall Back, but instead remains in place without further effect. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8bdf-7946-c1c0-9b82" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Fear (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="442f-6f93-eac9-f857" name="Merchant Princeling" publicationId="48c2-d023-0069-001a" page="6" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4186-cbed-b23f-c1ba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cc4-501a-edcc-254b" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="bccd-681c-4acc-d9dd" name="Merchant Princeling" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All of the weapons possessed by a Warlord with this Trait gain the Master-crafted special rule. Before any models are placed onto the battlefield as part of deployment, the controlling player of this Warlord may select a single unit under their control – designated as the ‘Lifeguard’ unit. The Lifeguard unit must be composed entirely of models with the Militia Unit Sub-type, and all models in the Lifeguard unit gain the Heavy Unit Sub-type, if they did not already have it, and may re-roll all failed To Hit rolls of ‘1’ made in any phase or as part of a Reaction. The Warlord with this Trait must be deployed as part of the Lifeguard unit and may not voluntarily leave that unit during play. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="fc7f-b0b4-727d-e89f" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1333-9b17-28e3-ef4b" name="Beloved of the People" publicationId="48c2-d023-0069-001a" page="6" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3221-386e-fa76-f74a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42ab-1878-2452-d73c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2e3e-25cc-5bfd-868d" name="Beloved of the People" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If, during any player’s turn, a model with this Warlord Trait is removed as a casualty, then all other friendly models in the same Detachment gain a bonus of +1 to their WS and S Characteristics and the Feel No Pain (4+) special rule until the end of the Warlord’s controlling player’s next player turn. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty. If a Warlord with this Trait has been removed as a casualty, then the army may make an additional Reaction during their opponent’s Assault phase instead.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="7e88-32ea-bc3b-cc66" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Feel No Pain (4+) (Belowed of the People)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b42c-ce81-95f4-1200" name="Marcher Lord" publicationId="48c2-d023-0069-001a" page="6" hidden="true" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b88-9510-21fd-e550" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f52-47dd-8c4d-6493" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="95d3-41f3-6b58-5011" name="Marcher Lord" publicationId="48c2-d023-0069-001a" page="6" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Battle-hardened (1) special rule, and if the army they are part of includes only Detachments with the Imperialis Militia Faction then all friendly units are immune to the effects of the Fear special rule. Furthermore, as long as the Warlord with this trait has not been removed as a casualty, the first Pinning test made by the controlling player in any Game Turn is automatically successful without any dice being rolled. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="980d-02ed-ee05-9e41" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Battle-Hardened (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2266-94a7-36e3-dbe4" name="Connoisseur of Alien Curios" publicationId="48c2-d023-0069-001a" page="7" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c044-fa29-7d08-290f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb34-8021-c817-af53" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fcf3-5a26-c478-7351" name="Connoisseur of Alien Curios" publicationId="48c2-d023-0069-001a" page="7" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per Game Turn, at the start of any Game Turn, the controlling player of a Warlord with this Trait may choose to activate an artefact. If this option is chosen, then roll once on the table below:
+
+D6 Artefact Effect
+
+1 The Warlord suffers one automatic Wound with the Instant Death special rule, with no Armour Saves, cover saves or Damage Mitigation rolls allowed, though Invulnerable Saves may be taken as normal. All other units with at least one model within 12&quot; of the Warlord, including the unit the Warlord was part of, suffer D6+1 Hits at Strength 8, AP of 4. These Hits are allocated by the unit’s controlling player, may be allocated to the Warlord, and can cause Morale checks where appropriate.
+
+2-3 The Warlord’s controlling player must nominate one unit, friendly or enemy, within 12&quot; and line of sight of the Warlord. That unit suffers D6+1 Hits at Strength 8, AP4 which are counted as having the Deflagrate special rule. If no other unit can be nominated then the unit the Warlord is part of must suffer the Hits.
+
+4-5 The Warlord and all models in the same unit gain the Rage (2) and Furious Charge (2) special rules for the remainder of that Game Turn.
+
+6 The Warlord gains the Eternal Warrior and Feel No Pain (4+) special rules for the remainder of the battle. If this result is rolled again, then the Warlord also gains a bonus of +1 to their Strength and Toughness Characteristics for the remainder of the battle (this bonus is cumulative if this result is rolled a third or more times, up to a maximum of 6 for either Characteristic).
+
+In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="faeb-8df7-fb91-4a80" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Eternal Warrior (Connoisseur of Alien Curios 6)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="322f-bcf3-4575-4801" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Feel No Pain (4+) (Connoisseur of Alien Curios 6)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="fb5d-5784-3d77-5c85" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Rage (2) (Connoisseur of Alien Curios 4-5)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="ab2c-481b-ecb0-9f62" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Furious Charge (X) (Connoisseur of Alien Curios 4-5)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7fa0-20ee-dc2f-023b" name="Robber Baron" publicationId="48c2-d023-0069-001a" page="7" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d69-a2b2-10f0-1da1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b062-4551-cd98-5bd0" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2425-c1e6-c712-4cc7" name="Robber Baron" publicationId="48c2-d023-0069-001a" page="7" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models in a unit that includes a Warlord with this Trait gain a bonus of +1 to their Strength for the duration of any player turn in which they make a successful Charge, but that unit may not make Sweeping Advances in any turn. However, whenever such a unit would otherwise be eligible to make a Sweeping Advance, the controlling player must instead roll a D6. On the result of a ‘4’, ‘5’ or ‘6’, the controlling player gains D3 Victory points. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="1e5a-fbb7-2a60-a6d0" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Fear (1)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6044-3400-e5f0-e274" name="    Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink id="5f24-4626-71c3-0511" name="2022 - Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="e048-9e5e-507c-5b11" name="2022 - LI - Assassins" targetId="4c88-1a81-7e53-0a67" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="e123-456e-507c-5t11" name="2022 - Daemons - Bound Daemons" targetId="e545-295b-4cd9-f235" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
+</catalogue>
