@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="59" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="61" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -9396,6 +9396,110 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d2db-7598-f55f-86fe" name="Power Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdd9-c0b0-fde1-c145" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="cf56-2470-b3af-54ab" name="Power Weapon" hidden="false" collective="false" import="true" targetId="5ff5-48c0-b9f1-5a05" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="37ec-a4b4-de7a-acf3" name="Rotor Cannon" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2a23-3690-b10a-5ab4" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="023b-fb8e-d925-0f4c" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="610d-65de-9ab7-bd2a" name="Rotor Cannon" hidden="false" targetId="911e-cd25-992e-7a74" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="53c0-b5d7-f001-b816" name="Minor Combi-weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e05f-a0be-3ed3-7d75" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="4aec-d447-93d6-f947" name="Minor Combi-weapon" hidden="false" collective="false" import="true" targetId="9b4b-07a4-31bc-fc16" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d02-259d-fa50-ef3a" name="Magna Combi-weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9855-fd69-eb95-2c52" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="d0d4-8e98-6022-b5bb" name="Magna Combi-weapon" hidden="false" collective="false" import="true" targetId="2286-9fb3-e845-f24a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e749-ba9b-bb76-a7d9" name="Charnabal Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="775c-071a-1024-8be0" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="2876-3425-8164-1fd4" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="f7d1-ad0f-b4cb-dfc1" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3cf9-eb36-3bfe-4970" name="Laspistol" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bc45-5a5b-872d-f96a" name="Laspistol" hidden="false" targetId="a0ca-3d2e-5151-b9c7" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2867-ab52-1247-2532" name="Lasrifle with Bayonet" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="7216-d901-4f8b-9c7d" name="Lasrifle" hidden="false" collective="false" import="true" targetId="15f9-817e-275b-c13d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87f0-3864-c6f5-729d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57af-48b8-44d7-3802" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6710-f925-d009-a7cc" name="Bayonet" hidden="false" collective="false" import="true" targetId="6904-6936-d6ca-a0eb" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fbb-d9e4-15c5-0c1f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b25-cf0f-8f86-f022" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df43-1c27-ceea-6d3a" name="Lasrifle with Bayonet" hidden="false" collective="true" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="d22b-09fc-d194-9b73" name="Lasrifle" hidden="false" collective="false" import="true" targetId="2449-dc45-3441-b471" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80b6-1be9-018f-b446" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e299-76b1-29b6-837e" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="46a3-45ca-c24e-6b6a" name="Bayonet" hidden="false" collective="false" import="true" targetId="8413-55c8-60ce-e9bf" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a1-1f4e-5176-e1b3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0526-af4b-4d41-da62" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -13120,6 +13224,49 @@ A unit with this special rule that has been joined by a model after or during de
           </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5ff5-48c0-b9f1-5a05" name="Power Weapon" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc0c-07c4-7d99-1587" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="281f-a523-c50b-b912" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="a54d-8d95-708d-c771" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
+        <entryLink id="68ab-655a-32a7-8420" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+        <entryLink id="f81f-0e32-9b97-7c8d" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
+        <entryLink id="f6b0-c45f-0288-63f8" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="9b4b-07a4-31bc-fc16" name="Minor Combi-weapon" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f18-181a-f977-0b45" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d95a-69c4-0773-4c5c" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="0639-e1f6-6e0d-7650" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" targetId="8dee-b436-0afd-c70a" type="selectionEntry"/>
+        <entryLink id="7c27-be0d-c946-4c4e" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" targetId="dd06-55b3-1c77-1e1d" type="selectionEntry"/>
+        <entryLink id="1515-78e0-10fa-5223" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2286-9fb3-e845-f24a" name="Magna Combi-weapon" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d608-f8c9-ee66-e9f9" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4213-e86b-fed7-9619" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="9bc5-919f-7d3a-703e" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry"/>
+        <entryLink id="0ff2-dd35-7e6a-f83a" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="5ed9-1bc3-4d8f-0826" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f7d1-ad0f-b4cb-dfc1" name="Charnabal Weapon" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcdd-bdfd-49ec-30b4" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="a311-a007-7439-9227" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry"/>
+        <entryLink id="5246-a8e2-96a4-eae4" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry"/>
+        <entryLink id="5fcf-bd2e-46e7-0b09" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
