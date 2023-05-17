@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="59" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="37de-ba3c-f798-5bcb" name="Provenances of War" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1250,6 +1250,54 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9ba1-7b0c-23d0-2e6b" name="Carapace Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cabe-6ad2-bcbd-3041" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="20ac-9d27-96c0-4d93" name="Carapace Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Carapace armour confers a 4+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="f02b-00e7-b68c-3be0" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d54e-ede7-beff-9dbc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b498-93a6-b43b-49db" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Flak armour confers a 5+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="202b-d674-de59-7d85" name="Militia Standard" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c968-7a28-02aa-5ade" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="bf68-2f8c-e803-967b" name="Militia Standard" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Militia standard adds +1 to the Wounds score used to decide if they win a Combat in the Assault phase and gains the Stubborn special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="dd91-0c2e-0890-1673" name="Militia Vexilla" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fabb-a9da-b8b1-c374" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="80c6-1db7-6bc2-507f" name="Militia Vexilla" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with an Militia vexilla adds +1 to the Wounds score used to decide if they win a Combat in the Assault phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="088d-527f-114b-afd4" name="Warlord Traits" hidden="true" collective="false" import="true">
@@ -1445,6 +1493,9 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="ac7b-72f5-82f9-23d6" name="Militia Cavalry Mount" publicationId="48c2-d023-0069-001a" page="37" hidden="false"/>
+  </sharedRules>
   <catalogueLinks>
     <catalogueLink id="5f24-4626-71c3-0511" name="2022 - Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="e048-9e5e-507c-5b11" name="2022 - LI - Assassins" targetId="4c88-1a81-7e53-0a67" type="catalogue" importRootEntries="true"/>

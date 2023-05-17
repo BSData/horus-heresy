@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="54" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <rules>
@@ -1001,6 +1001,15 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e71b-3364-de76-6d08" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="7c0c-1dfe-0e7e-a84c" name="Dedicated Transport (Custodes)" hidden="false" collective="false" import="true" targetId="fe3c-f221-2044-bc2b" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="76da-acc0-3ffb-6161" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9027-39bb-c765-4e57" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -1245,7 +1254,15 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="34f9-fd7b-750c-12ff" name="Dedicated Transport (Custodes)" hidden="false" collective="false" import="true" targetId="fe3c-f221-2044-bc2b" type="selectionEntryGroup"/>
+        <entryLink id="34f9-fd7b-750c-12ff" name="Dedicated Transport (Custodes)" hidden="false" collective="false" import="true" targetId="fe3c-f221-2044-bc2b" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="258c-214d-bc9d-35e1" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e35e-3b4a-634c-27c7" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>

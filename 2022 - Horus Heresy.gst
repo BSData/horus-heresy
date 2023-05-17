@@ -9448,7 +9448,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="775c-071a-1024-8be0" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="2876-3425-8164-1fd4" name="Charnabal Weapon" hidden="false" collective="false" import="true" targetId="f7d1-ad0f-b4cb-dfc1" type="selectionEntryGroup"/>
+        <entryLink id="a311-a007-7439-9227" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry"/>
+        <entryLink id="5246-a8e2-96a4-eae4" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry"/>
+        <entryLink id="5fcf-bd2e-46e7-0b09" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -9499,6 +9501,390 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="376b-e109-36a3-d4f2" name="Needle Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d917-d2c3-c3db-74a7" name="Needle Cannon" publicationId="15a4-fc68-502d-48a9" page="142" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Poisoned (3+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="06dd-2a86-d913-8a65" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2b1c-615c-16cb-5443" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e67-ac58-c362-d110" name="Needle Cannon" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="beed-69da-d3c1-f2cf" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="95b0-8008-8cbc-4e9e" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="ae40-5b98-0755-6c3f" name="Needle Cannon" hidden="false" targetId="d917-d2c3-c3db-74a7" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="45c9-9a1d-f466-3750" name="Ripper Gun" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d96e-4b18-3f2e-e6ae" name="Ripper Gun" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 5</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="bbc4-b218-ade0-80a1" name="Thunderstub" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="fa5c-e8a0-6481-1461" name="Thunderstub" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Brutal (2), Concussive (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="76c9-d9bb-59ef-3094" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="715b-97ea-eb2b-0fe5" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4365-b36f-e7b0-bc03" name="Kalliope Mortar" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9b5b-0a4d-9551-9741" name="Kalliope Mortar" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large (5&quot;) Blast, Pinning, Barrage, Shell Shock (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="39a0-70cb-9564-1abd" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="6c0d-eaac-3796-b3c5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="e88e-cea1-90ba-fb30" name="Shell Shock (X)" hidden="false" targetId="46b7-63a1-941c-96a5" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shell Shock (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="cf72-666e-7dbf-be3c" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9996-64c2-0aae-0ef5" name="Heavy Lascannon" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a911-f050-1265-8967" name="Heavy Lascannon" publicationId="48c2-d023-0069-001a" page="39" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5602-7302-e3fd-cc06" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="32ac-0224-c4e6-eed4" name="Thunderblast Cannon" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f07f-46e5-bb68-ff74" name="Thunderblast Cannon" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Barrage, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="31b2-27ab-63b5-48b7" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="f8d5-d63e-7260-958b" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="58b7-2695-ba0d-8156" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4156-c24f-5d03-3656" name="Gorgon Mortar Battery" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="16c8-ff6d-0bb0-cf7c" name="Gorgon Mortar Battery" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large (5&quot;) Blast, Barrage, Pinning, One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e0eb-55d1-c238-8018" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+        <infoLink id="f21d-96af-305f-055b" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="c097-9532-2bc1-ddb3" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="69f4-f9b4-6802-d577" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="4f84-24fa-70bb-0788" name="Longlas" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ce19-11fc-34d7-335b" name="Longlas" publicationId="48c2-d023-0069-001a" page="39" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder, Pinning, Sniper</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="9a40-e15f-41e9-bdd5" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="b6cb-f568-00a6-d41c" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="4b66-8fb5-dc41-e508" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="bb3d-b162-c773-70a2" name="Assault Needler" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="cb91-454b-be35-81d3" name="Assault Needler" publicationId="48c2-d023-0069-001a" page="39" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Poisoned (3+), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="ec70-4320-9dd8-4dbd" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c720-3bef-fbd7-0ac1" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="69b0-3b27-e0fc-c87c" name="Needle Vulnus" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4535-0e97-78f9-c0a6" name="Needle Vulnus" publicationId="48c2-d023-0069-001a" page="39" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Poisoned (2+), Breaching (6+), Pinning, Sniper</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7545-861b-6a67-7555" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (2+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="4f46-2733-4175-d583" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="e112-531b-ae9b-6b1f" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="9888-e43e-9728-3d7e" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3d2c-d6ee-616c-359a" name="Heavy Frag Rocket" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="06e1-e0e9-5540-c4c1" name="Heavy Frag Rocket" publicationId="48c2-d023-0069-001a" page="39" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large (5&quot;) Blast, Pinning, One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b3bc-2175-453c-da0b" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="bda6-3f1e-8011-4b85" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="f56f-be69-3eb9-67e5" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0d8b-03c1-9350-22ac" name="Heavy Krak Rocket" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="33bd-2717-a5e0-9260" name="Heavy Krak Rocket" publicationId="48c2-d023-0069-001a" page="39" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066"/>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458"/>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d"/>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="772a-c269-0f0c-3e1a" name="Skyfire" hidden="false" targetId="f2bf-5daa-9f93-0b01" type="rule"/>
+        <infoLink id="0acf-09c9-9c42-cbc8" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="80d2-89b3-65ad-a766" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="a192-a33f-17eb-21b0" name="Executioner Plasma Cannon" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e552-2636-42aa-d2c5" name="Executioner Plasma Cannon" publicationId="48c2-d023-0069-001a" page="40" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Rending (4+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3b67-7993-abc2-b60b" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="0b1a-e989-b65a-50a1" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (4+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2304-c98f-01a8-f0c1" name="Militia Lance" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1603-cd19-9448-f11e" name="Militia Lance" publicationId="48c2-d023-0069-001a" page="41" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Ungainly, Brutal (2), Sudden Strike (2), Two-handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="5456-9e88-cad0-ac32" name="Ungainly" hidden="false" targetId="1cb6-d7f2-0c79-d208" type="rule"/>
+        <infoLink id="4152-02dd-dc8c-f46e" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Sudden Strike (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="dcc1-155e-1434-c45f" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="9726-6705-5fe0-32a9" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="3926-1557-4647-d4a6" name="Melta Lance" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="46cf-0663-3bf0-f33f" name="Melta Lance" publicationId="48c2-d023-0069-001a" page="41" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Ungainly, Lance, Sudden Strike (2), Two-handed, One Use</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="1359-55ed-ea2a-e88e" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule"/>
+        <infoLink id="91e8-63ec-4c4e-2eb3" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Sudden Strike (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c9cf-7eba-8ede-c670" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="594a-fa7a-76f5-e6d8" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="1c36-1aa6-4706-c7ae" name="Ungainly" hidden="false" targetId="1cb6-d7f2-0c79-d208" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2be3-0a08-2333-10a8" name="Militia Lance" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6e38-b8bb-8655-5c32" name="Ungainly" hidden="false" targetId="1cb6-d7f2-0c79-d208" type="rule"/>
+        <infoLink id="46c4-3939-41aa-5e1c" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Sudden Strike (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="df04-f34b-b1b0-e8e6" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="8872-c6f2-dcaa-a98a" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="7d9a-7917-4e21-ff06" name="Militia Lance" hidden="false" targetId="1603-cd19-9448-f11e" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="5185-113c-d0b5-8f4d" name="Longlas" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="abec-f664-f2e0-ad1f" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="fda9-e88f-1ece-0828" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="9a66-ce34-ff8c-17c9" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="09dd-4243-7baf-2130" name="Longlas" hidden="false" targetId="ce19-11fc-34d7-335b" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="87b8-04a1-466a-dee1" name="Assault Needler" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b25d-02cc-e639-da87" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2b5f-3622-3729-9127" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="b3eb-219e-d78b-5386" name="Assault Needler" hidden="false" targetId="cb91-454b-be35-81d3" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="ec60-9b46-4c5a-1d57" name="Needle Vulnus" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="847f-5c9d-6af8-377d" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Poisoned (2+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c25c-b79c-d302-fddd" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="d6a8-c0f8-ab62-c429" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="e65a-7420-6378-2e1b" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="533a-5d78-cae1-c178" name="Needle Vulnus" hidden="false" targetId="4535-0e97-78f9-c0a6" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7862-1fb7-b3ac-a22e" name="Ripper Gun" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0633-c3e7-20ca-9c9f" name="Ripper Gun" hidden="false" targetId="d96e-4b18-3f2e-e6ae" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0f9d-ae43-7d8d-1987" name="Thunderstub" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0234-eb99-c99e-2ff8" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b79c-f87d-7507-d386" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Concussive (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="c3a5-6779-16a4-8e6e" name="Thunderstub" hidden="false" targetId="fa5c-e8a0-6481-1461" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -13258,16 +13644,6 @@ A unit with this special rule that has been joined by a model after or during de
         <entryLink id="0ff2-dd35-7e6a-f83a" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="5ed9-1bc3-4d8f-0826" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="f7d1-ad0f-b4cb-dfc1" name="Charnabal Weapon" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcdd-bdfd-49ec-30b4" type="max"/>
-      </constraints>
-      <entryLinks>
-        <entryLink id="a311-a007-7439-9227" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry"/>
-        <entryLink id="5246-a8e2-96a4-eae4" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry"/>
-        <entryLink id="5fcf-bd2e-46e7-0b09" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry"/>
-      </entryLinks>
-    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="0ac9-fab7-aef3-de1d" name="Rending (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
@@ -14061,6 +14437,9 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
 • No unit may draw line of sight to any unit that is more than 24&quot; away. Barrage weapons targeting units more than 24&quot; away must re-roll all results of ‘Hit’ on the
 Scatter dice.
 The penalty to Leadership is ignored by any unit with the Fearless or Stubborn special rules. A Primarch unit, or any unit with the Night Vision special rule ignores both the penalties to Leadership and Ballistic Skill and the restrictions on drawing line of sight to other units.</description>
+    </rule>
+    <rule id="1cb6-d7f2-0c79-d208" name="Ungainly" publicationId="48c2-d023-0069-001a" page="41" hidden="false">
+      <description>A model may only attack with this weapon on a turn in which it makes a successful Charge, but does not gain a bonus attack for Charging or from any special rules that would normally grant additional Attacks.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
