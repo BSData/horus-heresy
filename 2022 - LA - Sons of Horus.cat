@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="60" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="  XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <modifiers>
@@ -3080,6 +3080,13 @@
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0c73-9141-d1b4-6a40" name="Chieftain Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9055-7410-8ffd-b8e7">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="805b-0e2e-edfb-fcac" name="Kingslayers" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
           <characteristics>
@@ -3114,6 +3121,11 @@
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
                     <condition field="selections" scope="0c73-9141-d1b4-6a40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="583e-62cb-53f1-f952" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
+                  <conditions>
+                    <condition field="selections" scope="0c73-9141-d1b4-6a40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3201,6 +3213,11 @@
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
                     <condition field="selections" scope="0c73-9141-d1b4-6a40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="583e-62cb-53f1-f952" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
+                  <conditions>
+                    <condition field="selections" scope="0c73-9141-d1b4-6a40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3326,6 +3343,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a53d-ec69-da6d-44a6" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink id="b4af-64f6-b01c-885b" name="The Spreading Corruption" hidden="false" collective="false" import="true" targetId="f783-f0ea-fe35-cdeb" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
@@ -3459,64 +3477,10 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4a11-c7c1-e1a1-d067" name="Horus Ascended" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b5-10bc-7885-c908" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="7152-ae03-3008-4647" name="Horus Ascended" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique, Corrupted)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">8</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="dd1b-0330-aab1-7188" name="A Dark Fate" hidden="false">
-                  <description>The first time in any battle that Horus Ascended loses his last Wound, or is otherwise removed from play as a casualty, the model is instead placed into Reserves with a single Wound remaining – any unit Horus Ascended was part of remains in play, even a Retinue or other unit that would normally not allow the removal of a model from the unit. After having been placed in Reserves due to this special rule, Horus Ascended may choose to re-enter play, with the controlling player making Reserves rolls for the model as per the normal rules. If the Slay the Warlord objective, or any other objective that requires the enemy Warlord be removed as a casualty to score Victory points, is in effect then it is still triggered when Horus Ascended is moved into Reserves due to this special rule – and may be triggered a second time if Horus Ascended returns to play and is removed as a casualty again</description>
-                </rule>
-                <rule id="3f6d-8e47-55b5-3f8b" name="The Power of Chaos Eternal" hidden="false">
-                  <description>Once per battle, at the start of any Assault phase (whether Horus Ascended’s controlling player is the Active or Reactive player), Horus Ascended’s controlling player
-may choose to activate the Power of Chaos Eternal. Onc eactivated, Horus Ascended increases his Strength and Toughness Characteristics to 10 for the duration of the Assault phase and ignores all the effects of the Unwieldy special rule on attacks made with Worldbreaker. Once the Assault phase is ended, all combats being fought have been resolved and the effects of the Power of Chaos Eternal have ended, Horus Ascended automatically suffers Perils of the Warp – but any Wounds caused must be allocated to friendly models in the same unit as Horus Ascended, if any such models exist, before they are allocated to Horus Ascended</description>
-                </rule>
-                <rule id="d859-aa19-1907-0790" name="The Spreading Corruption" hidden="false">
-                  <description>All models in a unit made up entirely of models withthe Infantry, Cavalry or Dreadnought Unit Types inthesame Detachment as Horus Ascended may be giiven the Corrupted Unit Sub-type at a cost of +25 points per unit . If this upgrade is selected for a unit then all models in the unit must gain the Corrupted Sub-type – models that are attached to units, such as Apothecaries or Techmarines, must be upgraded separately. For Apothecary Detachments, Techmarine Covenants and other units which are bought as a single Force Organisation slot and then separated, divided or attached to other units (including units bought using the Retinue special rule or any variant of that rule which allows a unit to be counted as part of the same Force Organisation slot as a Leader model), the upgrade is bought once for
-the entire set of models before they are separated and must be applied to all models chosen as part of that Force Organisation slot.</description>
-                </rule>
-                <rule id="9445-c0b8-f082-54cb" name="Master of War" hidden="false">
-                  <description>Once per battle, at the start of any turn where Horus Lupercal’s controlling player is the Reactive player, this special rule may be activated. For the duration of the turn on which this special rule is activated, the Reaction Allotment of the army that includes Horus is increased by +1 in every Phase.</description>
-                </rule>
-                <rule id="ade0-2be2-4fad-a2b9" name="Master of Weapons" hidden="false">
-                  <description>During the Assault phase Horus Lupercal can never be hit by a Melee Attack on a score of better than 4+, regardless of the Weapon Skill of his opponent. In addition, during the Assault phase Horus Lupercal may choose to split his Attacks between any of the weapons he is equipped with, declaring which attacks will be used with which weaponprofiles before any of his attacks are rolled.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="6ecc-afc9-a699-ce44" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Feel No Pain (4+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="6bfb-c229-3493-acb0" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Rage (3)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="63c5-a1e6-28a4-8fab" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="2dbc-d1f7-16b6-436d" name="Horus Ascended" hidden="false" collective="false" import="true" targetId="4a11-c7c1-e1a1-d067" type="selectionEntry"/>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -3557,6 +3521,13 @@ the entire set of models before they are separated and must be applied to all mo
       </costs>
     </selectionEntry>
     <selectionEntry id="8b29-bf2a-a814-5642" name="Reaver Attack Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9055-7410-8ffd-b8e7">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="75f8-aafa-4322-7748" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="2e29-50f0-b4bc-8fbe" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
@@ -3592,6 +3563,11 @@ the entire set of models before they are separated and must be applied to all mo
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
                     <condition field="selections" scope="8b29-bf2a-a814-5642" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9d64-3950-9bfb-e312" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
+                  <conditions>
+                    <condition field="selections" scope="8b29-bf2a-a814-5642" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3912,23 +3888,9 @@ the entire set of models before they are separated and must be applied to all mo
           </constraints>
           <selectionEntries>
             <selectionEntry id="9a78-22bd-c5e6-f60b" name="Reavers (Collective)" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="1592-ade6-005a-add2" name="Reaver" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="e8b0-1f94-823d-ad4b" name="Reaver" hidden="false" targetId="c465-d069-d874-1381" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="3d99-aca1-0911-248d" name="Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="ffb6-d9af-ced1-89bf">
                   <modifiers>
@@ -4074,6 +4036,13 @@ the entire set of models before they are separated and must be applied to all mo
             <selectionEntry id="2fc2-12f4-a68f-111d" name="Reaver w/ Options" hidden="false" collective="false" import="true" type="model">
               <profiles>
                 <profile id="c465-d069-d874-1381" name="Reaver" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
+                      <conditions>
+                        <condition field="selections" scope="8b29-bf2a-a814-5642" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -4322,6 +4291,7 @@ the entire set of models before they are separated and must be applied to all mo
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="499d-cd39-402f-a07a" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="0d89-6a33-b80c-0ec3" name="The Spreading Corruption" hidden="false" collective="false" import="true" targetId="f783-f0ea-fe35-cdeb" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="47.0"/>
@@ -4686,6 +4656,13 @@ remains in play and regains 1D3 Wounds.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="c45d-ade3-6b28-68a2" name="Justaerin Terminator Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9055-7410-8ffd-b8e7">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="7c0d-6e3e-9350-dc1c" name="Justaerin Retinue" hidden="true">
           <description>A Justaerin Terminator Squad may be selected as a Retinue Squad in a Detachment that includes one model with both the Master of the Legion and the Legiones Astartes (Sons of Horus) special rules, instead of as an Elites choice, A unit selected a a Retinue Squad must have one model with both the Master of the Legion and Legiones Astartes (Sons of Horus) special rules from the same Detachment selected by the controlling player as the Justaerin Terminator Squad&apos;s Leader for the purposes of this special rule. A Justaerin Terminator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Justearin Terminator Squad selected as a Retinue Squad must be deployed with the model selected as its Leader as part of the unit and the Leader may not voluntarly leave the Retinue Squad during play. If that Leader has the Deep Strike special rule then all models in the Justaerin Terminator Squad selected as a Retinue Squad gain the Deep Strike special rule as well. One Justaerin in a Justaerin Terminator Squad selected as a Retinue may exchange a Banestrike combi-weapon for a Legion standard for +15 points.</description>
@@ -4746,6 +4723,13 @@ remains in play and regains 1D3 Wounds.</description>
             <selectionEntry id="d9c2-8eaa-a071-6524" name="Justaerin" hidden="false" collective="false" import="true" type="model">
               <profiles>
                 <profile id="46b2-7f6f-7859-c042" name="Justaerin" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
+                      <conditions>
+                        <condition field="selections" scope="c45d-ade3-6b28-68a2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
@@ -5063,7 +5047,13 @@ remains in play and regains 1D3 Wounds.</description>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="b445-5f56-6379-d473" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry"/>
+        <entryLink id="b445-5f56-6379-d473" name="Cataphractii Terminator Armour" hidden="false" collective="false" import="true" targetId="7c9b-b9ab-9a40-8eb5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cba-0221-4614-3373" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4367-770f-d8e4-a22f" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="59b8-d485-b6f3-c6dd" name="The Spreading Corruption" hidden="false" collective="false" import="true" targetId="f783-f0ea-fe35-cdeb" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
@@ -5195,6 +5185,13 @@ remains in play and regains 1D3 Wounds.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="af3a-334f-152f-d55f" name="Reaver Aggressor Squad" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9055-7410-8ffd-b8e7">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="30fa-9b63-8ecb-6a86" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="164a-6447-95d6-7e7c" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
@@ -5230,6 +5227,11 @@ remains in play and regains 1D3 Wounds.</description>
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
                     <condition field="selections" scope="ce86-cb58-16b1-219d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7651-9307-69ad-00ae" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
+                  <conditions>
+                    <condition field="selections" scope="af3a-334f-152f-d55f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5448,6 +5450,13 @@ remains in play and regains 1D3 Wounds.</description>
             <selectionEntry id="e0c0-8529-c8e5-310e" name="Reavers (Collective)" hidden="false" collective="false" import="true" type="model">
               <profiles>
                 <profile id="5ba1-244a-e6f0-9727" name="Reaver" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Corrupted)">
+                      <conditions>
+                        <condition field="selections" scope="af3a-334f-152f-d55f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f783-f0ea-fe35-cdeb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -5606,23 +5615,9 @@ remains in play and regains 1D3 Wounds.</description>
               </costs>
             </selectionEntry>
             <selectionEntry id="8149-8fa6-c6b9-c3db" name="Reaver w/ Options" hidden="false" collective="false" import="true" type="model">
-              <profiles>
-                <profile id="31e2-14f5-6668-8811" name="Reaver" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
+              <infoLinks>
+                <infoLink id="4b49-eb8d-2c47-212e" name="Reaver" hidden="false" targetId="5ba1-244a-e6f0-9727" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="c5de-a48b-e97b-180f" name="Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="2feb-5e81-0480-0450">
                   <modifiers>
@@ -5862,6 +5857,7 @@ remains in play and regains 1D3 Wounds.</description>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9993-f103-e8b1-6a6d" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink id="1dde-b6e2-299e-629c" name="The Spreading Corruption" hidden="false" collective="false" import="true" targetId="f783-f0ea-fe35-cdeb" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
