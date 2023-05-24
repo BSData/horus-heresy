@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="f491-c7fa-f6d3-917d" name="Contekar Terminator Squad" hidden="false" collective="false" import="false" targetId="837e-c3ca-437e-dfbf" type="selectionEntry">
       <modifiers>
@@ -5536,6 +5536,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             </rule>
           </rules>
         </entryLink>
+        <entryLink id="ff99-ca5f-f3da-bbc1" name="Retinue" hidden="false" collective="false" import="true" targetId="f728-26bf-3c99-1529" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150.0"/>
@@ -5667,6 +5668,17 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d09d-9dfd-1e49-2bb8" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac99-34bf-c51e-5c25" type="min"/>
           </constraints>
+        </entryLink>
+        <entryLink id="2cb6-c9db-4872-a366" name="Retinue" hidden="false" collective="false" import="true" targetId="f728-26bf-3c99-1529" type="selectionEntryGroup"/>
+        <entryLink id="ed82-ec2f-6dd7-fc4e" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8841-aceb-e149-57c0" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="86fe-763b-eb18-b8dd" name="Warlord: Aberrant Bravery" hidden="false">
+              <description>If chosen as the army&apos;s Warlord, Kheron Ophion automatically has Aberrant Bravery as his Warlord Trait and may not select any other.</description>
+            </rule>
+          </rules>
         </entryLink>
       </entryLinks>
       <costs>
