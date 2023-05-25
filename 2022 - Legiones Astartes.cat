@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="131" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="132" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="63" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron Updade" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon Updade" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -3777,56 +3777,6 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
             <modifier type="set" field="name" value="Rending (6+)"/>
           </modifiers>
         </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c6ec-edc0-034e-ed45" name="Psychic Discipline: Anathemata" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="8d74-fa05-de93-4f22" name="Breach the Veil" publicationId="a716-c1c4-7b26-8424" page="107" hidden="true" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a point within 12&quot; and at least 3&quot; away from any enemy model or Impassable Terrain – place a 3&quot; Blast marker to represent the Warp Rift until this power is resolved.
-
-The controlling player may then choose to make a Psychic check for the Esoterist. If the Check is failed or not taken then the chosen point is scattered as per the normal rules for Scatter. If it scatters onto Impassable Terrain, within 3&quot; of an enemy model, or off of the edge of the battlefield then the Esoterist suffers Perils of the Warp, and the chosen point is moved the minimum distance required in a direction of the controlling player’s choice to place it clear of all Impassable Terrain, on the battlefield, and at least 3&quot; away from any enemy model. If the Check is passed then the Warp Rift does not scatter.
-
-Once the final location of the chosen point is determined, the Esoterist’s controlling player may choose to deploy up to one of the Ruinstorm Daemon units in Reserves onto the battlefield (that player may choose to place no units if they wish). That unit moves onto the battlefield from any point along the edge of the blast marker placed to represent the Warp Rift as if it was entering play from Reserves, treating the Warp Rift marker as though it was the controlling player’s battlefield edge.
-
-Once all models in the unit have moved onto the battlefield, the Warp Rift marker is removed from play. The Daemon unit brought into play by use of this power may be targeted by the Interceptor Reaction and may act as normal in the Shooting phase in which it arrives and may declare a Charge in the Assault phase of the turn in which it enters play.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="a84d-ecca-26d1-4d10" name="Void Darts" publicationId="a716-c1c4-7b26-8424" page="107" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
-            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
-            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
-            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 12, Snctic, Deflagrate, Psychic Focus</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="76b2-37e1-c228-cdd5" name="Seal the Veil" publicationId="a716-c1c4-7b26-8424" page="106" hidden="true" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single anemy unit composed entirely of models with the Daemon Unit Type or Corrupted Unit Sub-type that is within line of sight and has at least one model within 18&quot; of the Psyker. All models in the target unit must reduce their Strength and Toughness by 1 (to a minimum of Toughtness and Strength 1) until the end of the target unit&apos;s controlling player&apos;s next turn - the controlling player of the Psyker using this Power may then choose to make a Psychic check from the Psyker If the Check is passed the target unit also suffers Perils of the Warp, and if the Check is failed then both the target unit and the Psyker using this Psychic Power suffer Perils of the Warp.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <infoLinks>
-        <infoLink id="e1e1-0263-fc4c-ba8b" name="Sanctic (P3P ZW) (Move to GST)" hidden="false" targetId="d1c9-ee74-4e4f-8830" type="rule"/>
-        <infoLink id="55d8-4fc4-ea7e-518b" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-        <infoLink id="8772-d314-c86f-5ab3" name="Psychic Focus (?? Where is this?)" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="61" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="64" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -9550,6 +9550,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bbc4-b218-ade0-80a1" name="Thunderstub" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9574,6 +9577,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4365-b36f-e7b0-bc03" name="Kalliope Mortar" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9596,6 +9602,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="cf72-666e-7dbf-be3c" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9996-64c2-0aae-0ef5" name="Heavy Lascannon" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9611,6 +9620,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <infoLinks>
         <infoLink id="5602-7302-e3fd-cc06" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="32ac-0224-c4e6-eed4" name="Thunderblast Cannon" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9628,6 +9640,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="f8d5-d63e-7260-958b" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
         <infoLink id="58b7-2695-ba0d-8156" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4156-c24f-5d03-3656" name="Gorgon Mortar Battery" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9646,6 +9661,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="c097-9532-2bc1-ddb3" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="69f4-f9b4-6802-d577" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4f84-24fa-70bb-0788" name="Longlas" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9663,6 +9681,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="b6cb-f568-00a6-d41c" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
         <infoLink id="4b66-8fb5-dc41-e508" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bb3d-b162-c773-70a2" name="Assault Needler" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9683,6 +9704,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="c720-3bef-fbd7-0ac1" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="69b0-3b27-e0fc-c87c" name="Needle Vulnus" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9709,6 +9733,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3d2c-d6ee-616c-359a" name="Heavy Frag Rocket" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9726,6 +9753,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="bda6-3f1e-8011-4b85" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
         <infoLink id="f56f-be69-3eb9-67e5" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0d8b-03c1-9350-22ac" name="Heavy Krak Rocket" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9743,6 +9773,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="0acf-09c9-9c42-cbc8" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
         <infoLink id="80d2-89b3-65ad-a766" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a192-a33f-17eb-21b0" name="Executioner Plasma Cannon" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9763,6 +9796,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2304-c98f-01a8-f0c1" name="Militia Lance" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9789,6 +9825,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </modifiers>
         </infoLink>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3926-1557-4647-d4a6" name="Melta Lance" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -9812,6 +9851,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="594a-fa7a-76f5-e6d8" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
         <infoLink id="1c36-1aa6-4706-c7ae" name="Ungainly" hidden="false" targetId="1cb6-d7f2-0c79-d208" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2be3-0a08-2333-10a8" name="Militia Lance" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -9829,6 +9871,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="7d9a-7917-4e21-ff06" name="Militia Lance" hidden="false" targetId="1603-cd19-9448-f11e" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5185-113c-d0b5-8f4d" name="Longlas" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -9837,6 +9882,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="9a66-ce34-ff8c-17c9" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
         <infoLink id="09dd-4243-7baf-2130" name="Longlas" hidden="false" targetId="ce19-11fc-34d7-335b" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="87b8-04a1-466a-dee1" name="Assault Needler" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -9848,6 +9896,9 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <infoLink id="2b5f-3622-3729-9127" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="b3eb-219e-d78b-5386" name="Assault Needler" hidden="false" targetId="cb91-454b-be35-81d3" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ec60-9b46-4c5a-1d57" name="Needle Vulnus" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -9865,11 +9916,17 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="533a-5d78-cae1-c178" name="Needle Vulnus" hidden="false" targetId="4535-0e97-78f9-c0a6" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7862-1fb7-b3ac-a22e" name="Ripper Gun" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0633-c3e7-20ca-9c9f" name="Ripper Gun" hidden="false" targetId="d96e-4b18-3f2e-e6ae" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0f9d-ae43-7d8d-1987" name="Thunderstub" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -9885,6 +9942,121 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="c3a5-6779-16a4-8e6e" name="Thunderstub" hidden="false" targetId="fa5c-e8a0-6481-1461" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6ae1-a373-ee8e-79e5" name="Autopistol" publicationId="48c2-d023-0069-001a" page="38" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="eafc-3c5a-071b-50ca" name="Autopistol" publicationId="48c2-d023-0069-001a" page="38" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">9&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="344f-4836-c70d-29a4" name="Autopistol" publicationId="48c2-d023-0069-001a" page="38" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="41a5-ec32-b743-44d6" name="Autopistol" hidden="false" targetId="eafc-3c5a-071b-50ca" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c6ec-edc0-034e-ed45" name="Psychic Discipline: Anathemata" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8d74-fa05-de93-4f22" name="Breach the Veil" publicationId="a716-c1c4-7b26-8424" page="107" hidden="true" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a point within 12&quot; and at least 3&quot; away from any enemy model or Impassable Terrain – place a 3&quot; Blast marker to represent the Warp Rift until this power is resolved.
+
+The controlling player may then choose to make a Psychic check for the Esoterist. If the Check is failed or not taken then the chosen point is scattered as per the normal rules for Scatter. If it scatters onto Impassable Terrain, within 3&quot; of an enemy model, or off of the edge of the battlefield then the Esoterist suffers Perils of the Warp, and the chosen point is moved the minimum distance required in a direction of the controlling player’s choice to place it clear of all Impassable Terrain, on the battlefield, and at least 3&quot; away from any enemy model. If the Check is passed then the Warp Rift does not scatter.
+
+Once the final location of the chosen point is determined, the Esoterist’s controlling player may choose to deploy up to one of the Ruinstorm Daemon units in Reserves onto the battlefield (that player may choose to place no units if they wish). That unit moves onto the battlefield from any point along the edge of the blast marker placed to represent the Warp Rift as if it was entering play from Reserves, treating the Warp Rift marker as though it was the controlling player’s battlefield edge.
+
+Once all models in the unit have moved onto the battlefield, the Warp Rift marker is removed from play. The Daemon unit brought into play by use of this power may be targeted by the Interceptor Reaction and may act as normal in the Shooting phase in which it arrives and may declare a Charge in the Assault phase of the turn in which it enters play.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a84d-ecca-26d1-4d10" name="Void Darts" publicationId="a716-c1c4-7b26-8424" page="107" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 12, Snctic, Deflagrate, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="76b2-37e1-c228-cdd5" name="Seal the Veil" publicationId="a716-c1c4-7b26-8424" page="106" hidden="true" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, a Psyker with this Psychic Power may select a single anemy unit composed entirely of models with the Daemon Unit Type or Corrupted Unit Sub-type that is within line of sight and has at least one model within 18&quot; of the Psyker. All models in the target unit must reduce their Strength and Toughness by 1 (to a minimum of Toughtness and Strength 1) until the end of the target unit&apos;s controlling player&apos;s next turn - the controlling player of the Psyker using this Power may then choose to make a Psychic check from the Psyker If the Check is passed the target unit also suffers Perils of the Warp, and if the Check is failed then both the target unit and the Psyker using this Psychic Power suffer Perils of the Warp.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e1e1-0263-fc4c-ba8b" name="Sanctic" hidden="false" targetId="d1c9-ee74-4e4f-8830" type="rule"/>
+        <infoLink id="55d8-4fc4-ea7e-518b" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink id="8772-d314-c86f-5ab3" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7193-de25-bbd5-7b9b" name="Sniper Rifle" publicationId="48c2-d023-0069-001a" page="38" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1829-76a8-c4ff-f47a" name="Sniper Rifle" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Rending (5+), Sniper, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a115-41c2-6283-57f7" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5511-9220-3393-b1c1" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="4880-1959-d5e5-534e" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="442f-7268-6ddd-c602" name="Sniper Rifle" publicationId="48c2-d023-0069-001a" page="38" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0f41-c377-fb2d-e900" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Rending (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d0b8-df68-f6bd-0e1a" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
+        <infoLink id="56f4-3761-4eb9-4417" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="62be-9e58-ceff-a8d7" name="Sniper Rifle" hidden="false" targetId="1829-76a8-c4ff-f47a" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
