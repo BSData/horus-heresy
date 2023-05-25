@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="64" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -9607,18 +9607,23 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f7b1-d225-9dc1-dd42" name="2) Tank Type" hidden="false" collective="false" import="true" defaultSelectionEntryId="f932-a648-f657-bfb9">
+        <selectionEntryGroup id="f7b1-d225-9dc1-dd42" name="2) Tank Type" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4965-e756-5023-e781" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb4f-3832-eec2-00af" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb4f-3832-eec2-00af" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="69a3-61ca-fd94-a189" name="Trojan Support Vehicle" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
-                <modifier type="set" field="58b8-eb6c-b607-936a" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="5ac5-b201-717f-0650" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d5f-ec6b-d0d9-5538" type="atLeast"/>
+                        <condition field="selections" scope="5ac5-b201-717f-0650" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f932-a648-f657-bfb9" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -9724,10 +9729,15 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             </selectionEntry>
             <selectionEntry id="1d5f-ec6b-d0d9-5538" name="Thunderer Siege Tank Squadron" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="6934-3380-6bdf-68a3" value="4.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="5ac5-b201-717f-0650" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69a3-61ca-fd94-a189" type="atLeast"/>
+                        <condition field="selections" scope="5ac5-b201-717f-0650" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f932-a648-f657-bfb9" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -9848,10 +9858,15 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             </selectionEntry>
             <selectionEntry id="f932-a648-f657-bfb9" name="Destroyer Tank Hunter Squadron" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="80c4-093a-18e2-d271" value="4.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="5ac5-b201-717f-0650" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d5f-ec6b-d0d9-5538" type="atLeast"/>
+                        <condition field="selections" scope="5ac5-b201-717f-0650" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="69a3-61ca-fd94-a189" type="atLeast"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
