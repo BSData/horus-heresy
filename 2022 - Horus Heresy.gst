@@ -7794,7 +7794,7 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
     </selectionEntry>
     <selectionEntry id="536a-06f1-e49b-8c6b" name="Missile Launcher w/Frag &amp; Krak Missiles" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
-        <selectionEntry id="9672-5a76-2b33-b481" name="Missile Launcher - Krak" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9672-5a76-2b33-b481" name="Missile Launcher - Krak" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5ed-23ba-93d5-169b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf78-996d-828c-d2ae" type="min"/>
@@ -7813,7 +7813,7 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="44d5-b79c-b828-a8b1" name="Missile Launcher - Frag" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="44d5-b79c-b828-a8b1" name="Missile Launcher - Frag" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45e1-dc9b-0a20-f70f" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="863f-93b7-524a-6ebe" type="min"/>
