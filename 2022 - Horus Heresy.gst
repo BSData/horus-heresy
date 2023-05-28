@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="64" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="65" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -6732,10 +6732,10 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       <profiles>
         <profile id="179e-ff9e-8fd6-8ba5" name="Needle Pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Poisoned (3+), Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Poisoned (3+), Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9689,10 +9689,10 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="cb91-454b-be35-81d3" name="Assault Needler" publicationId="48c2-d023-0069-001a" page="39" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Poisoned (3+), Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Poisoned (3+), Pinning</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10053,6 +10053,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <infoLink id="d0b8-df68-f6bd-0e1a" name="Sniper" hidden="false" targetId="9cd8-e726-5dbe-b106" type="rule"/>
         <infoLink id="56f4-3761-4eb9-4417" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="62be-9e58-ceff-a8d7" name="Sniper Rifle" hidden="false" targetId="1829-76a8-c4ff-f47a" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e644-9e34-f513-5995" name="Chainaxe" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="72e9-1d4a-1790-b101" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="0054-d84f-2f17-5afd" name="Chainaxe" hidden="false" targetId="2e6d-e75e-6309-aea6" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
@@ -13314,7 +13323,7 @@ Limitations
         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd5c-2d39-07b9-6dad" type="max"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="b192-2b6f-ad8c-959f" name="01 Warrior Elite (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b192-2b6f-ad8c-959f" name="01 Warrior Elite" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="154b-d405-276d-4412" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dce1-eea6-7ee9-3e3c" type="max"/>
@@ -13328,7 +13337,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b669-a356-d5d1-53b8" name="02 Legacy of the Great Crusade (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b669-a356-d5d1-53b8" name="02 Legacy of the Great Crusade" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0794-a1d3-7699-e7c5" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e24f-3621-d68e-3cb1" type="max"/>
@@ -13342,7 +13351,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d609-59fa-8844-3547" name="03 Clanfolk Levy (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d609-59fa-8844-3547" name="03 Clanfolk Levy" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2b7-1639-e0b9-efe3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbed-3131-a2c8-ab64" type="max"/>
@@ -13356,7 +13365,7 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3f21-2a0a-c00d-60ae" name="04 Gene-crafted (TBC)" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3f21-2a0a-c00d-60ae" name="04 Gene-crafted" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="f724-7ec5-79a5-759f" value="0.0">
               <conditionGroups>
@@ -13421,7 +13430,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="ec5e-00ea-dd9c-3313" name="05 Cyber-augmetics (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="ec5e-00ea-dd9c-3313" name="05 Cyber-augmetics" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="786e-5b18-f96d-4a58" value="0.0">
               <conditionGroups>
@@ -13454,7 +13463,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Cyber-augment o
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1deb-5f40-169d-fc5a" name="06 Alchem-jackers (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="1deb-5f40-169d-fc5a" name="06 Alchem-jackers" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="3ec4-7331-357e-191d" value="0.0">
               <conditionGroups>
@@ -13483,7 +13492,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Tainted Flesh P
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="08f1-5fe7-1d3a-7b35" name="07 Survivors of the Dark Age (TBC)" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="08f1-5fe7-1d3a-7b35" name="07 Survivors of the Dark Age" publicationId="48c2-d023-0069-001a" page="10" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="acfb-e72f-9888-3002" value="0.0">
               <conditionGroups>
@@ -13513,7 +13522,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="4bcd-7022-cefc-04da" name="08 Armoury of Old Night (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4bcd-7022-cefc-04da" name="08 Armoury of Old Night" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b791-ce5b-c551-d496" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="433f-6c05-353a-9509" type="max"/>
@@ -13531,7 +13540,7 @@ Option – Heirlooms of Past Glory: A Force Commander in a Detachment with this 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5825-e777-2615-3d4d" name="09 Feral Warriors (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5825-e777-2615-3d4d" name="09 Feral Warriors" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be58-6d1e-9ec6-6b58" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66da-db18-ce4e-eead" type="max"/>
@@ -13547,7 +13556,7 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2bd7-54d3-b0a9-1e44" name="10 Kinfolk Helots (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="2bd7-54d3-b0a9-1e44" name="10 Kinfolk Helots" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="eeb4-e0b3-35e7-9063" value="0.0">
               <conditions>
@@ -13568,7 +13577,7 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d15d-c66d-d47f-8aee" name="11 Abhuman Muster (TBC)" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d15d-c66d-d47f-8aee" name="11 Abhuman Muster" publicationId="48c2-d023-0069-001a" page="11" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="bac1-a170-98c4-6e93" value="0.0">
               <conditions>
@@ -13589,7 +13598,7 @@ Option – Chainaxes: Any model eligible to benefit from this Provenance may upg
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8d80-c401-0303-d0f9" name="12 Debased Rabble (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8d80-c401-0303-d0f9" name="12 Debased Rabble" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="af84-c2c4-acbe-4612" value="0.0">
               <conditionGroups>
@@ -13631,7 +13640,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="d5e5-b44b-5db6-ab16" name="13 Tainted Flesh (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="d5e5-b44b-5db6-ab16" name="13 Tainted Flesh" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
               <conditions>
@@ -13683,7 +13692,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Industrial Stro
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="07d0-18a3-ce4d-c1b4" name="14 Ogryn Conscripts (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="07d0-18a3-ce4d-c1b4" name="14 Ogryn Conscripts" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="e021-4acd-1832-691f" value="0.0">
               <conditionGroups>
@@ -13713,7 +13722,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Kinfolk Helots,
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="db1f-6157-2c58-5ae5" name="15 Industrial Stronghold (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="db1f-6157-2c58-5ae5" name="15 Industrial Stronghold" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="3d9d-10f1-ce0a-c699" value="0.0">
               <conditionGroups>
@@ -13746,7 +13755,7 @@ This Provenance cannot be taken in conjunction with the Unending Horde, Debased 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="20e1-2446-2438-3638" name="16 Unending Horde (TBC)" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="20e1-2446-2438-3638" name="16 Unending Horde" publicationId="48c2-d023-0069-001a" page="12" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="b109-3471-b20c-710d" value="0.0">
               <conditionGroups>
