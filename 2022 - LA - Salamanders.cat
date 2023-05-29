@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="  XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -4568,8 +4568,16 @@
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="07d1-4689-ece4-9ded" name="3) Pintle-weaponry" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="2313-1bef-998f-cd31" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="2fd4-ed06-b6dc-5c92" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c61-44fd-0c60-e4b1" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2313-1bef-998f-cd31" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="0cf9-3fc2-290c-44b2" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
@@ -4588,6 +4596,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3ca-00b1-8a33-1542" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="8d5e-1679-4853-52b6" name="Legion Decurions" hidden="false" collective="false" import="true" targetId="8763-74b0-d57f-ebab" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105.0"/>

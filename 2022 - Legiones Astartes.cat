@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="133" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6393-649c-7213-a327" name="(HH V2) Legions Astartes" revision="135" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron Updade" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon Updade" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -2219,6 +2219,13 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </costs>
     </selectionEntry>
     <selectionEntry id="fa70-f0d0-b06d-5413" name="Carsoran Power Axe" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <profiles>
         <profile id="1c35-c598-4792-7629" name="Carsoran Power Axe " publicationId="09c5-eeae-f398-b653" page="284" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
@@ -6851,6 +6858,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                   </costs>
                 </entryLink>
                 <entryLink id="b941-6657-41bb-3626" name="Astartes Shotgun" hidden="false" collective="false" import="true" targetId="6f79-5cf4-a689-7269" type="selectionEntry"/>
+                <entryLink id="cdb1-1aae-24df-e766" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="8aad-5835-63f1-c890" name="2) Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="5443-e877-980d-3a1e">
@@ -7038,6 +7046,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="1524-8a0e-38b5-d12b" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="d0ea-b56f-9148-d55b" name="2) Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d65-0357-08ae-64c7">
@@ -7707,8 +7716,26 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="5eae-e444-f5c2-ff16" name="3) Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="cdc8-5cd5-1622-5b19" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="e229-745c-0b62-4472" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3748-2206-bef0-9b1d" type="equalTo"/>
+                        <condition field="selections" scope="e229-745c-0b62-4472" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94dd-c8ba-d174-5c53" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="d5cb-28cc-9321-30cf" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e229-745c-0b62-4472" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc8-5cd5-1622-5b19" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5cb-28cc-9321-30cf" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="4091-05b8-89c5-b124" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
@@ -7754,6 +7781,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 <entryLink id="8953-337a-b05c-540f" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Pintle Mounted Havoc Launcher"/>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -7949,6 +7981,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="886f-47b0-7e52-1c87" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink id="9488-be0a-84b0-3ea1" name="Legion Decurions" hidden="false" collective="false" import="true" targetId="8763-74b0-d57f-ebab" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175.0"/>
@@ -10860,6 +10893,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="7774-40e9-768e-2ce3" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="f662-22a4-b0b4-3f15" name="0) Legion-specific upgrades" hidden="false" collective="false" import="true">
@@ -13635,6 +13673,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                   </costs>
                 </entryLink>
                 <entryLink id="385a-7cbc-d560-1e20" name="Shrapnel Bolter" hidden="false" collective="false" import="true" targetId="1941-21b5-932c-74d6" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="d001-9a7b-eaa1-e345" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
@@ -18307,6 +18350,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="08e1-bb97-740d-6840" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="394c-b103-af29-c856" name="1.5) Bayonet:" hidden="false" collective="false" import="true">
@@ -18421,6 +18465,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="c3bd-aa76-a36a-6643" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="a772-4fa4-ae4c-7a7d" name="Bayonet:" hidden="false" collective="false" import="true">
@@ -18855,6 +18900,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="fdb8-77b6-2da6-56bc" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="c199-8156-1f92-f2b9" name="Bolt Pistol:" hidden="false" collective="false" import="true" defaultSelectionEntryId="b556-5507-57a5-1882">
@@ -19147,6 +19193,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="d91b-5f40-3d13-10d8" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ba9d-bf7b-fff5-8065" name="Wargear:" hidden="false" collective="false" import="true">
@@ -22205,6 +22252,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="43e1-7292-3311-d26a" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="b1ba-889c-19a0-0d6c" name="1.5) Bayonets" hidden="false" collective="false" import="true">
@@ -23295,6 +23347,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                           </conditionGroups>
                         </modifier>
                       </modifiers>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="aad3-fe04-f42b-3b1a" name="Ferromag Shotgun" hidden="false" collective="false" import="true" targetId="d238-7510-1280-6d01" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                       </costs>
@@ -25368,199 +25425,6 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 <entryLink id="eaaf-d127-06f9-086f" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="02c0-ab73-d8e9-88b3" name="2) Melee Options if we can confirm they can take them -Ursii" hidden="true" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="ca13-7032-5069-8bab" name="Graviton Crusher" hidden="true" collective="false" import="true" targetId="cc01-7fb0-8c1e-f968" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="ec79-cb5e-2581-df6e" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
-                <entryLink id="b453-0c93-b11b-0d5d" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="d079-4bd9-8378-c93a" name="Boarding Shield" hidden="false" collective="false" import="true" targetId="0c0f-f751-cc4e-4951" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="true">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="fc32-089e-1c59-70bd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="116d-9f27-aa12-bc25" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="34f1-359f-f6c3-5b65" name="Achea Force Axe" hidden="true" collective="false" import="true" targetId="d27f-9247-2c27-4450" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="7779-023f-fab3-3d8c" name="Achea Force Maul" hidden="true" collective="false" import="true" targetId="126d-534d-dcb0-e931" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="f367-ebb1-28fb-6ea7" name="Achea Force Sword" hidden="true" collective="false" import="true" targetId="3cf4-3b3b-2188-6bd4" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="2843-342e-6328-023e" name="Calibanite Warblade" hidden="true" collective="false" import="true" targetId="88ee-fc77-42ea-872d" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="0a04-c75c-fdaa-36bc" name="Chainblade" hidden="true" collective="false" import="true" targetId="8391-79c8-31ff-3705" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="6ec6-fc1a-ca0b-02ab" name="Chainglaive" hidden="true" collective="false" import="true" targetId="2f96-d817-5180-9453" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="d83e-f845-c2a8-4694" name="Graviton Mace" hidden="true" collective="false" import="true" targetId="74db-af77-bc35-b62a" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="71a4-943d-cdf7-1f03" name="Carsoran Power Axe" hidden="true" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="b386-5e18-9861-c6dd" name="Headsman&apos;s Axe" hidden="true" collective="false" import="true" targetId="4178-09b6-7569-5ca3" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="c0c2-28e8-8183-0bfb" name="Perdition Weapon" hidden="true" collective="false" import="true" targetId="d93a-033b-233b-453a" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="0b47-95d3-f69c-c3fc" name="Phoenix Power Spear" hidden="true" collective="false" import="true" targetId="356b-300e-d83d-72b8" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="b86f-dabc-9e6c-c6e4" name="Phoenix Rapier" hidden="true" collective="false" import="true" targetId="868d-b957-c9ae-d3f2" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="2bcf-07d3-64a1-5da0" name="Power Glaive" hidden="true" collective="false" import="true" targetId="d917-8a5f-8459-8b0f" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="f0e5-7a06-92ed-84f8" name="Power Scythe" hidden="true" collective="false" import="true" targetId="2166-369e-0757-6f98" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="4ff2-7f0e-b5f3-ef70" name="Tainted Weapon" hidden="true" collective="false" import="true" targetId="e01b-5f42-a67b-c97f" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="93f6-8763-6d7e-5168" name="5) Legion Specific Options" hidden="false" collective="false" import="true">
               <entryLinks>
                 <entryLink id="5c2f-3c40-542c-b49c" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
@@ -27325,8 +27189,26 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="eede-d691-d242-40c4" name="3) Pintle-weaponry" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="b6c8-2a03-5d1a-9662" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="df85-10a0-5927-544d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e94f-9419-cef1-25a4" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="df85-10a0-5927-544d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3748-2206-bef0-9b1d" type="equalTo"/>
+                        <condition field="selections" scope="df85-10a0-5927-544d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94dd-c8ba-d174-5c53" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e94f-9419-cef1-25a4" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6c8-2a03-5d1a-9662" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="bfc9-d659-d2fd-12f8" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry">
@@ -27355,6 +27237,13 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                   </costs>
                 </entryLink>
                 <entryLink id="8122-439d-441c-6f89" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
                   </costs>
@@ -27421,6 +27310,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7848-3ed6-8cd5-008b" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="569a-1320-c610-6cd6" name="5) Legion Decurions" hidden="false" collective="false" import="true" targetId="8763-74b0-d57f-ebab" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105.0"/>
@@ -27907,8 +27797,26 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9089-320f-1575-a217" name="3) Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="612d-f0f8-8435-e0af" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e7ca-0822-d629-6733" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3ea9-6968-54d8-fa87" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="e7ca-0822-d629-6733" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3748-2206-bef0-9b1d" type="equalTo"/>
+                        <condition field="selections" scope="e7ca-0822-d629-6733" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94dd-c8ba-d174-5c53" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea9-6968-54d8-fa87" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="612d-f0f8-8435-e0af" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="d684-aa6a-b307-50d7" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
@@ -27954,6 +27862,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 <entryLink id="4485-21a4-1598-361d" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Pintle Mounted Havoc Launcher"/>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -28084,6 +27997,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1604-8373-7431-643f" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink id="2726-060e-bd9c-7cb8" name="5) Legion Decurions" hidden="false" collective="false" import="true" targetId="8763-74b0-d57f-ebab" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175.0"/>
@@ -37926,8 +37840,26 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="17de-6d44-16b5-74c1" name="4) Pintle Mounted Weapon:" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="0c6f-8846-ecd6-a12a" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="1afb-fa2b-366d-4cbe" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="9194-dfad-b0fd-66b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3748-2206-bef0-9b1d" type="equalTo"/>
+                        <condition field="selections" scope="9194-dfad-b0fd-66b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94dd-c8ba-d174-5c53" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1afb-fa2b-366d-4cbe" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c6f-8846-ecd6-a12a" type="min"/>
               </constraints>
               <entryLinks>
                 <entryLink id="0188-8971-301a-ae0c" name="Twin-linked Bolter" hidden="false" collective="false" import="true" targetId="e31a-fd70-35c7-8bed" type="selectionEntry">
@@ -37965,6 +37897,11 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 <entryLink id="d6e8-6895-ed65-60c9" name="Havoc Launcher" hidden="false" collective="false" import="true" targetId="bde9-5abf-ec3d-2273" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="name" value="Pintle Mounted Havoc Launcher"/>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb8b-a154-ae5b-7884" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
@@ -38124,6 +38061,7 @@ When a model has two Raven’s Talons, that model gains +2 Attacks instead of th
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c2b3-3b32-2987-5444" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink id="f8ec-6097-895c-4599" name="Legion Decurions" hidden="false" collective="false" import="true" targetId="8763-74b0-d57f-ebab" type="selectionEntryGroup"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="285.0"/>
@@ -51394,6 +51332,13 @@ Models with the Shackled Artificia Unit Type can never count as scoring units, n
       </costs>
     </selectionEntry>
     <selectionEntry id="d596-faa8-a6c2-5d81" name="Carsoran Power Axe" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="585a-db89-1985-249c" name="Carsoran Power Axe " hidden="false" targetId="1c35-c598-4792-7629" type="profile"/>
         <infoLink id="8bda-f227-7fdf-f622" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
@@ -51476,6 +51421,106 @@ may choose to activate the Power of Chaos Eternal. Onc eactivated, Horus Ascende
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d238-7510-1280-6d01" name="Ferromag Shotgun" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="fb60-9d19-b718-ba94" name="Ferromag Shotgun" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Breaching (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="558a-aee9-f27f-d24e" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d65b-f633-e0af-4b44" name="Ferromag Shotgun" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="67ea-9d3a-883d-06b4" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="13b9-d006-0963-2bd1" name="Ferromag Shotgun" hidden="false" targetId="fb60-9d19-b718-ba94" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef4f-80d4-1bba-77fb" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile id="c71c-a144-6a8c-56dc" name="Carsoran Power Tabar" publicationId="53a4-0d21-2f8a-2c45" page="211" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (4+), Two-Handed</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="07c0-f8f7-605d-7c3a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9cff-d004-6797-cea8" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="af23-eeaa-ffc8-7de7" name="Carsoran Power Tabar" hidden="false" collective="true" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoLinks>
+        <infoLink id="087d-cd5a-6e7d-497e" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9463-75df-c502-9403" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="1f1c-d296-298f-8eb4" name="Carsoran Power Tabar" hidden="false" targetId="c71c-a144-6a8c-56dc" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -51781,6 +51826,7 @@ may choose to activate the Power of Chaos Eternal. Onc eactivated, Horus Ascende
         <entryLink id="527f-2606-414e-3881" name="Tainted Axe" hidden="false" collective="false" import="true" targetId="293c-a173-d70c-65f6" type="selectionEntry"/>
         <entryLink id="e8a5-970c-8c1a-9fd2" name="Tainted Blade" hidden="false" collective="false" import="true" targetId="e4fb-34d5-6565-b8c6" type="selectionEntry"/>
         <entryLink id="df55-a841-73fa-b829" name="Tainted Maul" hidden="false" collective="false" import="true" targetId="5b6e-b0b2-35ca-5e67" type="selectionEntry"/>
+        <entryLink id="3f58-b772-0abe-fa9b" name="Carsoran Power Tabar" hidden="true" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="3cbf-9466-2558-2c22" name=" Legiones Consularis" hidden="false" collective="false" import="true" defaultSelectionEntryId="d3d6-dfc2-4da2-54cc">
@@ -53110,15 +53156,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="e428-d04e-b7f6-09db" name="Carsoran Power Axe" hidden="true" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </entryLink>
+        <entryLink id="e428-d04e-b7f6-09db" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry"/>
         <entryLink id="3839-0650-a625-d42e" name="Power Scythe" hidden="true" collective="false" import="true" targetId="2166-369e-0757-6f98" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -53378,6 +53416,7 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
           </costs>
         </entryLink>
+        <entryLink id="acb1-ada7-de16-1299" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8b46-faad-df3a-6929" name="Terminator Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="4123-9851-52ba-4f34">
@@ -54504,6 +54543,192 @@ Hit rolls for each attack, for a total of 24 To Hit rolls over the full 6 attack
           </costs>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8763-74b0-d57f-ebab" name="Legion Decurions" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8e5d-6d81-1b6d-9fdb" type="max"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="bb8b-a154-ae5b-7884" name="Decurion Defensor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7bd-7620-869f-579d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="90df-0ebf-c4ea-8d1f" name="Advanced Reaction: Point Defence" publicationId="53a4-0d21-2f8a-2c45" page="216" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Point Defence – This Advanced Reaction may be made whenever an enemy unit declares a Charge or Shooting Attack targeting a unit that includes a model that is eligible to make the Point Defence Advanced Reaction. The Reacting unit may make a Shooting Attack with any Defensive weapons that are not Turret Mounted and any Pintle Mounted weapons, targeting the enemy unit that triggered this Reaction and following all the usual rules for Shooting Attacks, except that all Pintle Mounted weapons may make twice the normal number of attacks. A unit that makes a Shooting Attack as part of a Point Defence Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight. Template weapons used as part of a Point Defence Reaction must use the Wall of Death rule instead of attacking normally, but are assumed to inflict the maximum possible number of Hits instead of rolling to determine the number of Hits inflicted.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="942c-5e02-c9ce-1d80" name="Decurion Defensor" publicationId="53a4-0d21-2f8a-2c45" page="216" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This upgrade may be purchased for any or all models from any of the following units in an army – a model for which this upgrade is selected must have a Pintle Mounted weapon (excluding a Pintle Mounted havoc launcher):
+• Legion Predator Squadron
+• Legion Sicaran Squadron
+• Legion Sicaran Punisher Squadron
+• Legion Kratos Squadron
+
+Special Rules
+A model with this upgrade may make the Point Defence Advanced Reaction</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4898-6ce6-9ab2-241f" name="Decurion Locus" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6545-0324-baec-bcca" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="bd3f-2ccc-e771-cc28" name="Decurion Locus" publicationId="53a4-0d21-2f8a-2c45" page="217" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This upgrade can be purchased for any or all models from any of the following units in an army:
+• Legion Predator Squadron
+• Legion Sicaran Squadron
+• Legion Sicaran Punisher Squadron
+• Legion Kratos Squadron
+
+Special Rules
+A model with this upgrade may make the Locus Strike Advanced Reaction.
+
+Wargear
+A model with this upgrade gains a nuncio-vox.</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2922-0df9-92b6-aef9" name="Advanced Reaction: Locus Strike" publicationId="53a4-0d21-2f8a-2c45" page="217" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">Locus Strike – This Advanced Reaction may be made whenever any enemy unit makes a Shooting Attack targeting a unit eligible to make this reaction. Once the Active player has resolved all To Hit rolls, Armour Penetration rolls, Invulnerable Saves and any Damage Mitigation rolls are made, but before effects of any lost Hull Points or Vehicle Damage Chart rolls as a result of the Shooting Attacks made by all weapons in the Active player’s unit that made the Shooting Attack are applied, the Reactive player may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A model with the Vehicle Unit Type attacking as part of this Reaction may attack with all of its Defensive weapons and up to one Battle weapon. However, if the controlling player chooses to attack with only a single Battle weapon and no Defensive weapons, then all of that model’s attacks as part of this Reaction gain a bonus of +1 to all To Hit rolls. Template weapons may only be used as part of a Locus Strike Advanced Reaction if the target unit is within 8” and must use the Wall of Death rule instead of firing normally.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink id="e3d0-e2e4-d5be-53ba" name="Nuncio-Vox" hidden="false" collective="false" import="true" targetId="005e-aae6-ddac-bb45" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e1d9-9fd9-04bd-4f45" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0817-5e4a-17d6-1217" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3748-2206-bef0-9b1d" name="IF Decurion Sagittar" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="e647-6b50-f2ea-7336" name="Decurion Sagittar" publicationId="53a4-0d21-2f8a-2c45" page="219" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This upgrade can be purchased for any one model with the Legiones Astartes (Imperial Fists) special rule, that has not been upgraded with a Pintle Mounted weapon of any kind and is part of any of the following units:
+• Legion Predator Squadron
+• Legion Sicaran Squadron
+• Legion Sicaran Punisher Squadron
+• Legion Kratos Squadron
+
+Special Rules
+A model with this upgrade gains the Decurion Sagittar special rule.
+
+Wargear
+A model with this upgrade gains a Pintle Mounted Illiastus assault cannon and an augury scanner.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ffea-b28b-86ea-e206" name="Decurion Sagittar" publicationId="53a4-0d21-2f8a-2c45" page="219" hidden="false">
+              <description>When a model with this special rule makes a Shooting Attack, one Defensive weapon or Pintle Mounted weapon may make attacks targeting a different target to any other weapon the model attacks with. This should be resolved as a separate Shooting Attack, either before or after the attacks of all other weapons from that model are resolved, and cannot be used to target a unit forced to Disembark due to attacks made by the model’s other weapons. Attacks made by the single weapon chosen to attack a different target may be given the Skyfire or Precision Shots (5+) special rule at the controlling player’s choice.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="52d7-817c-f9d7-24fa" name="Precision Shots (X)" hidden="false" targetId="4b71-81ee-31f4-fa09" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Precision Shots (5+) (Decurion Sagittar - Advanced Reaction)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="2b78-06af-81cb-b0f5" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f858-8d5a-eee9-c064" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="be46-20b6-48d3-4603" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4d8b-3ed1-c00b-0b47" name="Iliastus Assault Cannon" hidden="false" collective="false" import="true" targetId="10aa-3c70-2bbe-9509" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cb9e-6dcb-d092-a720" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b532-c259-ec86-47cd" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="94dd-c8ba-d174-5c53" name="SoH Decurion Lanius" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile id="a12a-cd0b-c070-d447" name="SoH Decurion Lanius" publicationId="53a4-0d21-2f8a-2c45" page="218" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This upgrade can be purchased for any one model with the Legiones Astartes (Sons of Horus) special rule that has not been upgraded with a Pintle Mounted weapon of any kind and is part of any of the following units:
+• Legion Predator Squadron
+• Legion Sicaran Squadron
+• Legion Sicaran Punisher Squadron
+• Legion Kratos Squadron
+
+Special Rules
+A model with this upgrade gains the Decurion Lanius special rule.
+
+Wargear
+A model with this upgrade gains a Pintle Mounted banestrike bolt cannon.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="42fe-420f-a144-b7e9" name="Decurion Lanius" publicationId="53a4-0d21-2f8a-2c45" page="218" hidden="false">
+              <description>All friendly models with the Legiones Astartes (Sons of Horus) special rule that are within 12&quot; of any models with this special rule are considered to have a Leadership Characteristic of 9 (unless it would normally be higher) when resolving Morale checks or Pinning tests made during the Shooting phase only. If a friendly unit with the Legiones Astartes (Sons of Horus) special rule that is within 12&quot; of and within line of sight of any models with this special rule fails a Morale check or Pinning test during the Shooting phase, that unit suffers D3 Wounds against which no Saves of any kind may be taken, but Damage Mitigation rolls may be made as normal and that Morale check or Pinning test is considered to have been passed.</description>
+            </rule>
+          </rules>
+          <selectionEntries>
+            <selectionEntry id="3bfb-69ae-691e-645c" name="Banestrike Bolt Cannon" publicationId="53a4-0d21-2f8a-2c45" page="218" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8bc4-ecbb-0108-e05c" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4022-dbb4-b0f0-43a1" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="0464-72d3-bd99-0ed0" name="Banestrike Bolt Cannon" publicationId="53a4-0d21-2f8a-2c45" page="218" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Breaching (6+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="7695-43c4-e503-83fd" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Breaching (6+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>

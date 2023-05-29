@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="  XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <modifiers>
@@ -3091,6 +3091,24 @@
         <categoryLink id="60c2-e5ac-eb71-70ff" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b4bb-4e3c-f0f8-659e" name="Vheren Ashurhaddon" hidden="false" collective="false" import="false" targetId="8fd9-e76b-4ecf-cc97" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="67de-38df-5b5f-b515" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink id="8c81-05cb-339b-112e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="dd19-c149-942f-a5b3" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0c73-9141-d1b4-6a40" name="Chieftain Squad" hidden="false" collective="false" import="true" type="unit">
@@ -3201,6 +3219,11 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="9df5-d6e7-a3a0-f05e" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3289,6 +3312,11 @@
                   </costs>
                 </entryLink>
                 <entryLink id="a5a0-0f64-8ed7-ec05" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="ea9f-a070-028d-795d" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
@@ -3735,6 +3763,14 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="5cbf-7775-da59-6cdd" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b6d9-9bad-c230-ff71" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="2cbd-2132-5a0d-1c83" name="Power Armor:" hidden="false" collective="false" import="true" defaultSelectionEntryId="6146-cf27-9715-3181">
@@ -4016,6 +4052,14 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="c2fe-9054-f07d-0f3d" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="af23-eeaa-ffc8-7de7" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="47c6-4d18-4300-eecf" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="6240-ce0c-aeb7-77f5" name="Chainaxe:" hidden="false" collective="false" import="true" defaultSelectionEntryId="4fe8-921e-3e0a-e142">
@@ -4276,6 +4320,14 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="bb8e-6be8-9ef0-37c9" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c742-13f0-4e9d-4c21" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4314,6 +4366,7 @@
     <selectionEntry id="0b37-0420-b06a-fcc5" name="Maloghurst the Twisted" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e111-8b2f-68b0-e75d" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a2fb-65c3-01b9-1e64" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="1f57-7f73-c9f6-c78c" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -4330,7 +4383,7 @@
           <profiles>
             <profile id="0621-2f2e-e1bc-3455" name="Maloghurst the Twisted" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">(Character, Line, Unique)
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Line, Unique)
 </characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
@@ -4447,6 +4500,7 @@
     <selectionEntry id="09df-6357-0a00-80a6" name="Ezekyle Abaddon" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e3ed-3bd7-17d5-5c60" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d02e-d494-d00e-37d1" type="max"/>
       </constraints>
       <profiles>
         <profile id="9b3e-2eed-06a2-050b" name="Ezekyle Abaddon" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
@@ -4786,6 +4840,7 @@ remains in play and regains 1D3 Wounds.</description>
                     <entryLink id="dbbd-7478-e600-97b8" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                     <entryLink id="e911-e67b-a091-b914" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                     <entryLink id="5287-b139-05ee-fefb" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                    <entryLink id="9f36-9095-452a-d82a" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="3e88-c2b2-4533-6814" name="2) Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ceda-447f-57bf-0406">
@@ -4869,6 +4924,7 @@ remains in play and regains 1D3 Wounds.</description>
                     <entryLink id="433b-a67a-ebd5-5075" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                     <entryLink id="17bc-dcc1-947b-d14f" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                     <entryLink id="b1c8-544c-60b2-1667" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                    <entryLink id="5b24-e13d-bcee-abb3" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="e7d0-e2b2-0cc5-43d7" name="2) Heavy Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f401-1e90-af5b-e2d7">
@@ -4993,6 +5049,7 @@ remains in play and regains 1D3 Wounds.</description>
                     <entryLink id="52af-ec0c-d7c4-57e2" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                     <entryLink id="658c-6646-ad88-5620" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                     <entryLink id="1bfb-39b3-6006-8fb6" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                    <entryLink id="5f2a-bc4e-776f-707a" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="807c-f222-3aac-75e0" name="2) Wargear" hidden="false" collective="false" import="true">
@@ -5399,6 +5456,14 @@ remains in play and regains 1D3 Wounds.</description>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="e378-f9bf-12ff-3430" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2dba-7f1f-65d0-58e8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="7db8-ffff-9048-c1cc" name="Power Armor:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f5f-20f9-64b5-a6fd">
@@ -5592,6 +5657,14 @@ remains in play and regains 1D3 Wounds.</description>
                     <entryLink id="a972-4640-9199-d3e8" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="d596-faa8-a6c2-5d81" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc6b-18f6-f4cc-bf33" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="681e-96e4-16d7-8501" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="af23-eeaa-ffc8-7de7" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ab8-660f-2f3d-eebf" type="max"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
@@ -5836,6 +5909,14 @@ remains in play and regains 1D3 Wounds.</description>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="bfbb-8501-db74-dfa0" name="Carsoran Power Tabar" hidden="false" collective="false" import="true" targetId="ef4f-80d4-1bba-77fb" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6589-321f-2b95-8c07" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5877,6 +5958,189 @@ remains in play and regains 1D3 Wounds.</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8fd9-e76b-4ecf-cc97" name="Vheren Ashurhaddon" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5073-f2b2-096c-df1c" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="15b4-185b-c186-7a3c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="eb4e-8d46-312b-eaf5" name="Vheren Ashurhaddon" publicationId="53a4-0d21-2f8a-2c45" page="212" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)
+</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="a3ca-1402-2721-8e22" name="The First Reaver" publicationId="53a4-0d21-2f8a-2c45" page="213" hidden="false">
+          <description>A single Reaver Attack Squad may be selected as part of the same choice as Vheren Ashurhaddon. A unit selected in this manner is considered a ‘Retinue Squad’ and Vherren Ashurhaddon is referred to as the Retinue Squad’s Leader for the purposes of this special rule. The Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as Vheren Ashurhaddon. The Retinue Squad must be deployed with Vheren Ashurhaddon deployed as part of the unit and Vheren Ashurhaddon may not voluntarily leave the Retinue Squad during play. A Reaver Attack Squad selected in this manner gains the Line Unit Sub-type. Note that no model may select more than one Retinue Squad as part of the same choice, even if more than one option for such a unit is available.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3203-69d7-f782-2636" name="Battle-Hardened (X)" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Battle-Hardened (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e878-8f54-4e22-467f" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink id="4e00-0e69-88b5-06ca" name="Precision Shots (X)" hidden="false" targetId="4b71-81ee-31f4-fa09" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Precision Shots (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="90c1-ff81-b56d-a488" name="Precision Strikes (X)" hidden="false" targetId="2206-8497-8fe1-e973" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Precision Strikes (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ac59-3e82-0df2-4def" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Counter-Attack (1)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="38e8-188d-6089-fde3" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="507f-c9cb-6d01-afea" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="6416-7913-cca6-25fc" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink id="95d5-fccc-8ec1-6743" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="376a-d978-d449-aebf" name="The Axe Serpentis" publicationId="53a4-0d21-2f8a-2c45" page="213" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0486-64da-9fe1-14c2" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd0a-5e77-91b6-4f40" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="758c-e892-d3b4-1e7d" name="The Axe Serpentis" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Sudden Strike (1), Murderous Strike (6+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c4d2-e688-4b57-5656" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Sudden Strike (1)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="147c-1dbe-6f91-a584" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9843-9393-0b26-b5ce" name="Panoply of the Void" publicationId="53a4-0d21-2f8a-2c45" page="213" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb82-b229-f3c8-4933" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57f3-1718-6425-f7ea" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cf69-69c7-a21f-b34c" name="Panoply of the Void" publicationId="53a4-0d21-2f8a-2c45" page="213" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Panoply of the Void grants Vheren Ashurhaddon a 2+ Armour Save and 4+ Invulnerable Save. In addition, any attacks made by enemy models as part of a Shooting Attack that target Vheren Ashurhaddon or the unit he has joined (as long as that unit is composed of no more than 6 models after Vheren Ashurhaddon has joined it), count the range to Vheren Ashurhaddon or his unit as 3&quot; further than the actual range between the two units. This special rule does not affect determining whether Vherren Ashurhaddon or models in the same unit are Hit by Blast markers or weapons with the Template special rule.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b73a-c734-b24d-c79d" name="Banestrike Fusilade" publicationId="53a4-0d21-2f8a-2c45" page="213" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f0c-7aff-c323-6403" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9730-9e44-0bc6-b927" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="455e-1464-5038-5eca" name="Banestrike Fusilade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">10&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 4, Breaching (6+)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="560c-490f-f459-cfb3" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Breaching (6+)"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="9f30-16cc-1742-de48" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60d6-3b7a-bc1c-2636" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6efb-18cf-ae69-f44a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f6cf-fe39-471c-cb53" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c9-e82f-ce37-5128" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="41ab-b484-1438-bbd2" name="Warlord: Blood and Honour" publicationId="53a4-0d21-2f8a-2c45" page="212" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Vheren Ashurhaddon automatically has Blood and Honour as his Warlord Trait and may not select any other.
+
+Blood and Honour – When a Wound is allocated to Vheren Ashurhaddon by his controlling player (but not if the Wound is allocated to him by the attacking player due to the Precision Shots (X) or Precision Strikes (X) or Sniper special rules), while there are still other models in the same unit that the Wound could be allocated to, then all failed Invulnerable Saves made for Vheren Ashurhaddon may be re-rolled. Furthermore, while Vheren Ashurhaddon is part of a unit that includes a majority of models without the Character Sub-type, then all models in the unit gain the Stubborn special rule as long as Vheren Ashurhaddon is part of the unit. In addition, an army with Vheren Ashurhaddon as its Warlord may make an additional Reaction during the opponent’s Movement phase as long as Vheren Ashurhaddon has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+        <entryLink id="7698-160c-ce2c-7431" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
+        <entryLink id="23c5-008e-0c00-671e" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3632-8879-33c4-7972" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86f5-98b8-9cb2-4dde" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="970f-d324-5e49-4dc4" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1045-88a9-58fe-3ff4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0996-ae37-6735-4a89" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b281-a5bb-f986-ec56" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2387-129f-6cc0-7a70" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c97-6f0a-e1db-82c6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="98ec-acc2-fba4-1158" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="698d-b891-3864-d884" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a31a-7549-3e1f-2aad" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="b574-7838-ac21-b8f6" name="Retinue" hidden="false" collective="false" import="true">
@@ -5910,6 +6174,15 @@ remains in play and regains 1D3 Wounds.</description>
             <modifier type="append" field="name" value="(Reserve Only)">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="722e-5a72-4368-6c2a" name="Reaver Attack Squad" hidden="true" collective="false" import="true" targetId="8b29-bf2a-a814-5642" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8fd9-e76b-4ecf-cc97" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -6005,6 +6278,39 @@ A Warlord with this Trait may only join a unit composed entirely of models with 
                 <profile id="8d15-a646-f085-96aa" name="The Armour of Pride" publicationId="09c5-eeae-f398-b653" page="282" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
                     <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The first time in any battle when a Warlord with this Trait is reduced to 0 Wounds for any reason, the controlling player must immediately make a Leadership test for that model. If the Test is failed then the Warlord is removed as a casualty as normal, but if the Test is passed then the Warlord is not removed as a casualty, remains in play and regains D3 Wounds. This has no effect against attacks or rules which remove the model as a casualty without inflicting Wounds or against attacks with the Instant Death special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty. </characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8bc9-515b-2c65-bbe4" name="True Son (Traitor Only)" publicationId="53a4-0d21-2f8a-2c45" page="211" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile id="148d-cbb6-b91b-f0b5" name="True Son" publicationId="53a4-0d21-2f8a-2c45" page="211" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Traitor Allegiance and may not be selected if the Primary Detachment of the army whose Warlord it is selected for includes any models with the Corrupted Unit Sub-type or Daemon Unit Type.
+
+A Warlord with this Trait gains a bonus of +1 to its Leadership Characteristic when taking Morale checks and Pinning tests, and all models from the same Detachment that can draw line of sight to the Warlord also gain this bonus to their own Leadership Characteristic when making Morale checks or Pinning tests (note that models in units locked in combat cannot draw line of sight to units or models not locked in the same combat). Furthermore, a Warlord with this Trait may re-roll any failed Armour Saves or Invulnerable Saves made against Wounds inflicted by Psychic Weapons or Psychic Powers. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="10f5-0cbc-d0a6-bfd4" name="Cast in Gold" publicationId="53a4-0d21-2f8a-2c45" page="211" hidden="false" collective="false" import="true" type="upgrade">
+              <profiles>
+                <profile id="e5a5-fd33-12ba-1647" name="Cast in Gold" publicationId="53a4-0d21-2f8a-2c45" page="211" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When a Warlord with this Trait is engaged in a Challenge with an enemy model that has a Weapon Skill that is equal to or greater than that of the Warlord with this Trait’s own Weapon Skill, then the controlling player of the Warlord with this Trait gains +1 Strength and +1 Attacks for the duration of that Challenge. Furthermore, if the Warlord with this Trait causes an enemy model with a Weapon Skill equal to or greater than the Weapon Skill of the Warlord with this Trait to be removed as a casualty during a Challenge, the controlling player gains 1 Victory point in addition to any gained from any other rule or mission objective. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
