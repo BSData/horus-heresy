@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="15" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="66" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -6156,10 +6156,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         </selectionEntryGroup>
         <selectionEntryGroup id="9440-dfc7-b422-5b4f" name="1) Missile Options:" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2f3-3c9e-c340-0be1" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2f3-3c9e-c340-0be1" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="75ae-e1fc-17a5-4a17" name="2x Kraken Penetrator Missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0657-f2ed-7284-3903" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="7e26-902e-9eb5-17bc" name="Kraken Penetrator Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                   <characteristics>
@@ -6183,6 +6186,9 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </costs>
             </selectionEntry>
             <selectionEntry id="594e-b67e-ab21-6d5e" name="2x Sunfury Missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="720b-5558-2e50-d143" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="8c28-27cd-4e4f-84d5" name="Sunfury Missile" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                   <characteristics>
