@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="8" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="66" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="37de-ba3c-f798-5bcb" name="Provenances of War" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
@@ -217,6 +217,15 @@
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-59fa-8844-3547" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <categoryLinks>
         <categoryLink id="eabe-9585-3937-b220" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
@@ -293,6 +302,7 @@
               <conditions>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-59fa-8844-3547" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -952,7 +962,7 @@ Unless noted, the effects of any rules featured in the Provenance’s descriptio
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="b476-c8dd-2f8f-9635" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry">
@@ -1420,7 +1430,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54e5-4a04-5af7-5a0b" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="8f7a-8fc8-1d94-2c98" name="Autopistol" hidden="false" collective="false" import="true" targetId="344f-4836-c70d-29a4" type="selectionEntry">
@@ -1497,7 +1507,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f411-27c2-44a5-1e11" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="2cbd-1617-2ca8-bf40" name="Laspistol" hidden="false" collective="false" import="true" targetId="3cf9-eb36-3bfe-4970" type="selectionEntry">
@@ -1842,7 +1852,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -2201,7 +2211,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -2570,7 +2580,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3146,7 +3156,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="038e-dc9d-c7e1-5c5a" type="max"/>
                           </constraints>
                           <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -3178,7 +3188,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8dd7-58ac-ef2f-c5f9" type="max"/>
                           </constraints>
                           <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -3659,7 +3669,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d93-1a52-22b1-2f1d" type="max"/>
                           </constraints>
                           <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -3691,7 +3701,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e8b-e655-9894-53a9" type="max"/>
                           </constraints>
                           <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                           </costs>
                         </entryLink>
                       </entryLinks>
@@ -4035,6 +4045,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="9535-6df0-392e-bf0a" name="Shotgun" hidden="false" collective="false" import="true" targetId="f0aa-947f-f493-f566" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="47ba-97f4-b896-8c21" name="2) May Take" hidden="false" collective="false" import="true">
@@ -4048,7 +4059,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="5043-0dad-a873-2b23" name="Militia Standard" hidden="false" collective="false" import="true" targetId="202b-d674-de59-7d85" type="selectionEntry">
+                <entryLink id="5043-0dad-a873-2b23" name="Militia Vexilla" hidden="false" collective="false" import="true" targetId="dd91-0c2e-0890-1673" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d6b-6bbc-d25e-26c5" type="max"/>
                     <constraint field="selections" scope="c201-6fbc-a792-0509" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="3216-31bf-eb3a-dd82" type="max"/>
@@ -4161,7 +4172,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4405,7 +4416,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -5938,7 +5949,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -6201,7 +6212,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7882-8c8a-2ce7-5eaa" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -6237,11 +6248,14 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="500c-5def-5aee-dee8" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="d730-1039-3a20-7474" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="19ab-4d64-f6a7-9f81" type="selectionEntry">
+                <entryLink id="d730-1039-3a20-7474" name="Chainaxe" hidden="false" collective="false" import="true" targetId="e644-9e34-f513-5995" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="037c-6e44-8ec2-0b15" type="min"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d299-ce91-db25-6f58" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
               <costs>
@@ -6687,7 +6701,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0fa1-7ca5-81eb-ac68" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -6728,7 +6742,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9583-6ca8-86de-1103" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -8447,7 +8461,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7e48-1974-4546-ac81" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="6.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -8517,7 +8531,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="867e-5977-8b04-efcc" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="e275-14fe-2fc9-b755" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry">
@@ -8732,7 +8746,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b16f-328e-feda-08e2" type="max"/>
               </constraints>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="6.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -8984,7 +8998,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -9121,7 +9135,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                     </modifier>
                   </modifiers>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="1.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -9703,6 +9717,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </constraints>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ca15-13de-89cb-bbb2" name="LA -   VI: Space Wolves" revision="27" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="52" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ca15-13de-89cb-bbb2" name="LA -   VI: Space Wolves" revision="28" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="ff53-69d9-ec0b-9caa" name="   VI: Space Wolves" hidden="false" collective="false" import="false" targetId="4916-965e-8339-44f6" type="selectionEntry">
       <modifiers>
@@ -1457,7 +1457,6 @@
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
                   <comment>    node_id_b4c6-d4ba-4b2e-9b99</comment>
                 </condition>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1626,6 +1625,17 @@
     </entryLink>
     <entryLink id="f8f1-c14a-7b0a-3590" name="Outrider Squadron" hidden="false" collective="false" import="false" targetId="70eb-e4da-8b3f-f065" type="selectionEntry">
       <comment>    template_id_4654-227a-4d95-8773</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="0060-e508-4793-a9c5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>    template_id_ff9f-01cb-41b9-800e</comment>
@@ -2134,11 +2144,16 @@
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <comment>    node_id_936f-1ef7-472e-840e</comment>
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
-              <comment>    node_id_d73d-d52e-4c75-8ac0</comment>
-            </condition>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_d73d-d52e-4c75-8ac0</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -2893,7 +2908,6 @@
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
               </conditions>
             </conditionGroup>
