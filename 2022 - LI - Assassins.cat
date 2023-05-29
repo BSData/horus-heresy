@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4c88-1a81-7e53-0a67" name="2022 - LI - Assassins" revision="2" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4c88-1a81-7e53-0a67" name="2022 - LI - Assassins" revision="3" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="66" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry id="c1fd-3919-f4bf-a990" name="Clade Adamus Assassin" publicationId="15a4-fc68-502d-48a9" page="120" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -921,6 +921,176 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="4a00-03d4-a850-884b" name="Cults Abominatio" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="90ca-7c43-61f4-4e5e" name="Cults Abominatio" hidden="false" collective="false" import="true" targetId="79ec-ea14-0c62-9dd0" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="b8de-b7ae-55b8-9e17" name="Wraithskin" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b02-b164-db69-08b7" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6daf-c747-c179-3b12" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3403-31b6-c97f-3edf" name="Wraithskin" publicationId="53a4-0d21-2f8a-2c45" page="223" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Models with Wraithskin have a 4+ Armour Save and a 4+ Invulnerable Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3928-63ee-20a9-f84b" name="Infernus Abomination" publicationId="53a4-0d21-2f8a-2c45" page="222" hidden="false" collective="false" import="true" type="unit">
+      <profiles>
+        <profile id="e96f-4614-45e1-e655" name="Infernus Abomination" publicationId="53a4-0d21-2f8a-2c45" page="222" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Abomination, Light)</characteristic>
+            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="d861-12d0-78ac-0105" name="Osmeotic Regeneration" publicationId="53a4-0d21-2f8a-2c45" page="223" hidden="false">
+          <description>At the end of the controlling player’s turn, if the Infernus Abomination has not been removed as a casualty, the controlling player rolls a D6 for every unsaved Wound inflicted on an enemy model during that turn. For each result of a 5+, the Infernus Abomination regains a lost Wound. Note that Wounds regained in this way may not increase the amount of Wounds to more than the starting amount shown on the Infernus Abomination unit profile.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="d9ae-fa42-4d40-227b" name="Advanced Reaction: Empyreal Shift" hidden="false" targetId="64cb-e28c-17f3-3d09" type="profile"/>
+        <infoLink id="99bb-57dd-34af-a40f" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
+        <infoLink id="fbb5-336c-553c-31f0" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink id="0d2a-1977-a4ac-0424" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Adamantium Will (3+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="84d3-0e66-c5fa-9c27" name="Abomination" hidden="false" targetId="c7be-3d3b-6b5d-7e85" type="rule"/>
+        <infoLink id="d988-5bcb-91c6-9dc3" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5047-6726-4c6c-707b" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8829-ecd8-cdc1-f140" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+        <categoryLink id="33f2-aa45-7deb-abf8" name="Assassin Sub-Type" hidden="false" targetId="d615-c0e4-6d17-107e" primary="false"/>
+        <categoryLink id="09f7-774f-a43e-1915" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="94c3-d0e6-238f-efe2" name="Transmutative armaments" publicationId="53a4-0d21-2f8a-2c45" page="222" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6128-f6a8-5ec0-4e3f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0014-efd7-91d3-6dc6" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dd09-a5b0-fb1b-4d62" name="Transmutative armaments (Hammerblade)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike (6+), Brutal (2), Two-handed</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="94b3-3d0a-9471-2a50" name="Transmutative armaments (Spinelash)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (2), Breaching (6+), Two-handed</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="88be-322c-d4ee-2dda" name="Transmutative armaments (Talon-rakes)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Rending (6+), Rampage (2), Specialist Weapon</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="32f8-4aec-8cd0-fdef" name="Transmutative armaments" publicationId="53a4-0d21-2f8a-2c45" page="223" hidden="false">
+              <description>Before any To Hit rolls are made during the Assault phase, the controlling player must select which weapon profile to use.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="19a2-cf8d-f454-6b5a" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Murderous Strike (6+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="11dd-9a15-0755-6834" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Breaching (6+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="e289-6740-9656-1823" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Brutal (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="efcb-5bfc-2373-2bc1" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Reach (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="4087-b2bc-aa32-8e09" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rending (6+)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="ea4b-8c3e-02fb-ef60" name="Rampage (X)" hidden="false" targetId="3efb-2a2c-2d0b-92fc" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Rampage (2)"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="b16e-8c90-9339-354b" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="82d0-c033-0092-bb71" name="Boneshard spitter" publicationId="53a4-0d21-2f8a-2c45" page="222" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b86-9a04-b5ca-1bbb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c45-cb5e-fa86-a27d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="cd9a-45da-28bf-c8e4" name="Boneshard spitter" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">6&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2D6, Fleshbane</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5487-0512-387e-f731" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="940f-93ff-56bd-91d7" name="Wraithskin" hidden="false" collective="false" import="true" targetId="b8de-b7ae-55b8-9e17" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="02f1-0af0-1c27-05b2" name="Clade Assassins (Loyalist)" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d62-3e3d-99b0-ac0a">
@@ -938,11 +1108,36 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
         <entryLink id="0878-1f42-1838-c1de" name="Clade Vindicare Assassin" hidden="false" collective="false" import="true" targetId="0b9a-903b-c3de-5075" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="79ec-ea14-0c62-9dd0" name="Cults Abominatio" hidden="false" collective="false" import="true" defaultSelectionEntryId="6cd4-c808-492d-f917">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7696-c9c8-8e67-f433" type="min"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dde1-69b1-f961-1432" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="6cd4-c808-492d-f917" name="Infernus Abomination" hidden="false" collective="false" import="true" targetId="3928-63ee-20a9-f84b" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="c7be-3d3b-6b5d-7e85" name="Abomination" publicationId="53a4-0d21-2f8a-2c45" page="221" hidden="false">
+      <description>Models with the Abomination Sub-type ignore all movement penalties when moving or Charging through terrain of any kind and automatically pass all Dangerous Terrain tests they are called upon to make.
+Models with the Abomination Sub-type may never join or be joined by a unit made up of models with any type.
+Models with the Abomination Sub-type may not Embark on any model with the Transport Sub-type.
+Models with the Abomination Sub-type may never be selected as an army’s Warlord.</description>
+    </rule>
+  </sharedRules>
   <sharedProfiles>
     <profile id="71d4-b924-c931-1b45" name="Advanced Reaction: Tactical Displacement" publicationId="15a4-fc68-502d-48a9" page="113" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
       <characteristics>
         <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction may be made during the Shooting phase, whenever an enemy unit targets a unit that is composed entriely of models with the Assassin Unit Sub-type with a Shooting Attack. The Reaction unit may immediately move a distance in inches up to twice the majority Initiative Characteristic of the Reactive unit. This move may be made in any direction and ignores all Terrain or other effects that would limit or modify the distance moved (includeding allowing models in the Reacting unit to move across Impassable Terrain), as lon gas the final position of all models in the Reacting unit are at least 1&quot; away from any enemy model and not within an area of Impassable Terrain. If, after moving, any models in the Reacting unit are positioned out of range or line of sight of the unit that caused the Reacting, that unit may not select another target for the Shooting Attack that triggered the Reacting and no dice are rolled (weapons with the Gets Hot special rule do not need to roll to see if the weapon Gets Hot and weapons with the One Use special rule are not considered to have been expended).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="64cb-e28c-17f3-3d09" name="Advanced Reaction: Empyreal Shift" publicationId="53a4-0d21-2f8a-2c45" page="221" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+      <characteristics>
+        <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction may be made either in the Movement phase whenever an enemy unit ends its move within 12&quot; of a unit that is composed entirely of models with the Abomination Unit Sub-type, in the Shooting phase whenever an enemy unit targets a unit that is composed entirely of models with the Abomination Unit Sub-type with a Shooting Attack, or in the Assault phase whenever an enemy unit declares a Charge against a unit that is composed entirely of models with the Abomination Unit Sub-type. 
+The controlling player of the Reacting unit must make a Leadership test using the Leadership Characteristic of the Reacting model. If the Leadership test is passed, the Reacting unit may immediately move up to 12&quot;. This move may be made in any direction and ignores all terrain or other effects that would limit or modify the distance moved (including allowing models in the Reacting unit to move across Impassable Terrain), as long as the final position of all models in the Reacting unit are at least 1&quot; away from any enemy model and not within an area of Impassable Terrain. 
+If, after moving, any models in the Reacting unit are positioned out of range or line of sight of the unit that caused the Reaction, that unit may not select another target for the Shooting Attack or Charge that triggered the Reaction and no dice are rolled and no Surge moves are made (weapons with the Gets Hot special rule do not need to roll to see if the weapon Gets Hot and weapons with the One Use special rule are not considered to have been expended). 
+If the Leadership test is failed, both the unit making the Reaction and the unit that triggered the Reaction suffer D6 Wounds with no Armour Saves, Invulnerable Saves or Damage Mitigation rolls allowed.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
