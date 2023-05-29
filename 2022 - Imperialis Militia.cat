@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <categoryEntries>
+    <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
+      <modifiers>
+        <modifier type="set" field="20f0-fb34-27b7-a811" value="3.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd6-8371-e5e5-7f0f" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="20f0-fb34-27b7-a811" type="max"/>
+      </constraints>
+    </categoryEntry>
+  </categoryEntries>
   <selectionEntries>
     <selectionEntry id="37de-ba3c-f798-5bcb" name="Provenances of War" hidden="false" collective="false" import="false" type="upgrade">
       <constraints>
@@ -577,6 +591,46 @@
       <categoryLinks>
         <categoryLink id="2797-26f4-2020-34c4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="e681-a2a4-d453-61a2" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f955-dc3e-b9c5-2c25" name="Bound Daemon Brutes (Rogue Psyker)" hidden="false" collective="false" import="false" targetId="16b6-9e0f-d935-0f20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd6-8371-e5e5-7f0f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8633-356d-5e28-fd23" name="New CategoryLink" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="db71-42c4-112c-df07" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="899d-2ceb-1f87-97c8" name="Rogue Psyker Daemons Restriction" hidden="false" targetId="58b3-196a-9732-2165" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="daeb-671b-f915-ecf4" name="Bound Daemon Brutes (Rogue Psyker)" hidden="false" collective="false" import="false" targetId="16b6-9e0f-d935-0f20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd6-8371-e5e5-7f0f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="daf1-201a-c6ab-c717" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="8c34-6c89-7a1b-c23a" name="Rogue Psyker Daemons Restriction" hidden="false" targetId="58b3-196a-9732-2165" primary="false"/>
+        <categoryLink id="942a-8275-8e14-f2d1" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -4150,7 +4204,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 </entryLink>
                 <entryLink id="a11f-c758-e8e2-94e7" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="f0d1-332b-c719-ede7" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="12.0"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="ae42-7e20-59d9-3d62" name="Needle Vulnus" hidden="true" collective="false" import="true" targetId="69b0-3b27-e0fc-c87c" type="selectionEntry">
@@ -4452,6 +4506,51 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   </modifiers>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="948f-56ea-1a22-ad42" name="Blast Pistol" hidden="false" collective="false" import="true" targetId="2460-375d-31f4-4bdf" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2143-a3f8-d8a2-0e98" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3a17-fa51-19e1-7cba" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="8c79-6c5d-3675-8756" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c2e2-b3c2-f377-d151" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="f633-578f-28ea-1391" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1551-c049-b143-9f46" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="877b-f2e7-1246-d220" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0524-4ef4-fef5-96c9" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -9734,11 +9833,6 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7ce1-8eba-315e-b113" name="NOTE TO SELF, FINISH ARMOURY OF OLD NIGHT LASGUN TO LASRIFLES" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="a04d-8354-e71b-02f3" name="IM - Leman Russ Squadron (Industrial Stronghold)" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="9097-2976-aacc-bb05" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -9754,6 +9848,26 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="16b6-9e0f-d935-0f20" name="Bound Daemon Brutes (Rogue Psyker)" publicationId="cb13-da24-e6da-75b3" page="18" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b4c2-b70f-6697-8a3e" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+        <categoryLink id="7a15-dc82-ffcd-db05" name="Bound Sub-type" hidden="false" targetId="40f3-05e8-5ddc-636a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c53d-e01a-7483-aa48" name="The Ætheric Dominion (X)" hidden="false" collective="false" import="true" targetId="002f-0e40-9d49-2a22" type="selectionEntryGroup"/>
+        <entryLink id="3d84-14ff-b8ef-51b1" name="Bound Daemon Brute" hidden="false" collective="false" import="true" targetId="12a1-9b89-fe2e-29dd" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
