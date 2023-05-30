@@ -8486,16 +8486,16 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         <categoryLink id="5794-7adf-a300-a5af" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="de21-368a-567e-3280" name="2) Ogryn Boss" hidden="true" collective="false" import="true" type="model">
+        <selectionEntry id="de21-368a-567e-3280" name="Ogryn Boss" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="0e01-d58d-96b0-61c7" value="1.0">
               <conditions>
-                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="219a-3d4a-b059-3b35" type="atLeast"/>
+                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2130-1a97-ee67-879d" type="atLeast"/>
               </conditions>
             </modifier>
             <modifier type="set" field="hidden" value="false">
               <conditions>
-                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="219a-3d4a-b059-3b35" type="atLeast"/>
+                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2130-1a97-ee67-879d" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8717,90 +8717,6 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="219a-3d4a-b059-3b35" name="1) Ogryn Brute" hidden="false" collective="false" import="true" type="model">
-          <modifiers>
-            <modifier type="decrement" field="2a9b-06da-a942-9ad9" value="1.0">
-              <conditions>
-                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de21-368a-567e-3280" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="59ec-5175-645e-cc36" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a9b-06da-a942-9ad9" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2510-6356-194a-05e9" name="Ogryn Brute" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-              <modifiers>
-                <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
-                  <conditions>
-                    <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ba1-7b0c-23d0-2e6b" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="increment" field="e8a6-1da9-d384-8727" value="1">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <modifierGroups>
-                <modifierGroup>
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="equalTo"/>
-                  </conditions>
-                  <modifiers>
-                    <modifier type="increment" field="c32b-5fdd-3fbe-9b1f" value="1"/>
-                    <modifier type="decrement" field="62d3-22d7-2d49-52dc" value="1"/>
-                    <modifier type="decrement" field="893e-2d76-8f04-44e5" value="1"/>
-                  </modifiers>
-                </modifierGroup>
-                <modifierGroup>
-                  <modifiers>
-                    <modifier type="increment" field="e478-41d4-a092-48a8" value="1">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="74ae-c840-0036-d244" value="1">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Militia, Monstrous)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">2</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="a77e-9e84-db0d-de86" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Bulky (4)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="d375-a27c-1f88-a8a1" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="a540-cdd6-993d-6ff8" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="d7be-47b8-3add-1d38" name="Ogryn Conscripts (Compulsory)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
@@ -8823,7 +8739,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="173e-26aa-855e-475d" name="4) Unit Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="052b-2311-0da2-0b3f">
+        <selectionEntryGroup id="173e-26aa-855e-475d" name="3) Unit Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="052b-2311-0da2-0b3f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e64-11b5-2971-1b22" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b487-a568-c598-551f" type="max"/>
@@ -8837,54 +8753,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="d757-de1b-9a33-0c85" name="3.2) Repace CCW for Chainaxe (Feral Warriors) (Not Boss)" hidden="false" collective="false" import="true" defaultSelectionEntryId="3da0-9d92-caa5-a2e6">
-          <modifiers>
-            <modifier type="decrement" field="d9bb-3f1d-778a-a8a2" value="1.0">
-              <conditions>
-                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de21-368a-567e-3280" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="increment" field="2dde-105f-8b19-0eed" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="219a-3d4a-b059-3b35" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="decrement" field="6239-bba0-d6ab-975d" value="3.0"/>
-            <modifier type="increment" field="6239-bba0-d6ab-975d" value="1.0">
-              <repeats>
-                <repeat field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="219a-3d4a-b059-3b35" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dde-105f-8b19-0eed" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9bb-3f1d-778a-a8a2" type="max"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6239-bba0-d6ab-975d" type="min"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="f6f3-658e-cf30-5ce5" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b16f-328e-feda-08e2" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
-              </costs>
-            </entryLink>
-            <entryLink id="3da0-9d92-caa5-a2e6" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="034e-4886-1a2b-75ac" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="cfcd-a160-0a37-b0b3" name="3.1) Additional Brute Weapons (Not Boss)" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="cfcd-a160-0a37-b0b3" name="2) Additional Brute Weapons (Not Boss)" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="decrement" field="6c77-4b56-036e-0878" value="1.0">
               <conditions>
@@ -8893,7 +8762,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
             </modifier>
             <modifier type="increment" field="d56c-b572-5928-6d1b" value="1.0">
               <repeats>
-                <repeat field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="219a-3d4a-b059-3b35" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2130-1a97-ee67-879d" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -8917,6 +8786,29 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="3c34-cf84-984c-8a7e" name="Additional Chainaxe (Feral Warriors)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d031-260c-9995-bb6d" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="baac-0f79-2112-edcf" name="Chainaxe" hidden="false" collective="false" import="true" targetId="e644-9e34-f513-5995" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dbe7-5d3f-93e0-d5bb" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d8f7-4249-8c18-3927" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -8944,8 +8836,119 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="fb6e-ac54-b218-8dc9" name="Chainaxe" hidden="false" collective="false" import="true" targetId="85b9-4e50-af11-c295" type="selectionEntry">
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2130-1a97-ee67-879d" name="1) Ogryn Brutes" hidden="false" collective="false" import="true" defaultSelectionEntryId="28ff-6c27-f4aa-c26c">
+          <modifiers>
+            <modifier type="decrement" field="ff50-18ea-fa33-8fcf" value="1.0">
+              <conditions>
+                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de21-368a-567e-3280" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff50-18ea-fa33-8fcf" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7cb-d14b-e065-3897" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="28ff-6c27-f4aa-c26c" name="Ogryn Brute w/ Close Combat Weapon" hidden="false" collective="false" import="true" type="model">
               <modifiers>
+                <modifier type="decrement" field="f0f6-0690-6c58-d4fd" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de21-368a-567e-3280" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f0f6-0690-6c58-d4fd" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="a795-254f-fd93-f9bb" name="Ogryn Brute" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
+                  <modifiers>
+                    <modifier type="set" field="e593-6b3c-f169-04f0" value="4+">
+                      <conditions>
+                        <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ba1-7b0c-23d0-2e6b" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="e8a6-1da9-d384-8727" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <modifierGroups>
+                    <modifierGroup>
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd7-54d3-b0a9-1e44" type="equalTo"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="increment" field="c32b-5fdd-3fbe-9b1f" value="1"/>
+                        <modifier type="decrement" field="62d3-22d7-2d49-52dc" value="1"/>
+                        <modifier type="decrement" field="893e-2d76-8f04-44e5" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup>
+                      <modifiers>
+                        <modifier type="increment" field="e478-41d4-a092-48a8" value="1">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="decrement" field="74ae-c840-0036-d244" value="1">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Militia, Monstrous)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">2</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="a78a-0b7e-f828-8c10" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Bulky (4)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="bc0c-3225-15d6-5c1c" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hammer of Wrath (2)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="c22b-9ab8-bdf1-e03f" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="ea77-bf8c-f3d0-8e97" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="19ab-4d64-f6a7-9f81" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f92d-f5a2-6d51-d0cd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="09c5-94c0-68b1-4feb" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4a39-aeb5-4a66-98bb" name="Ogryn Brute w/ Chainaxe (Feral Warriors)" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="e294-7438-2d2c-2253" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de21-368a-567e-3280" type="equalTo"/>
+                  </conditions>
+                </modifier>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
@@ -8953,13 +8956,38 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aaf1-f25a-103d-2ed0" type="max"/>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e294-7438-2d2c-2253" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="094f-78e0-e522-22f9" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Bulky (4)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="b033-7c22-90f8-dd79" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hammer of Wrath (2)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="ee1d-2ba9-1563-4ba1" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+                <infoLink id="629f-f61a-72ec-5889" name="Ogryn Brute" hidden="false" targetId="a795-254f-fd93-f9bb" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="b957-fb0c-1152-79b7" name="Chainaxe" hidden="false" collective="false" import="true" targetId="e644-9e34-f513-5995" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f63e-5995-eb30-a271" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0306-89bd-544e-50bf" type="min"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="7.0"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30.0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
