@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="65" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -578,19 +578,6 @@
         <categoryLink id="b5bc-5981-4cb9-d47f" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="cfd5-a6bc-b663-259c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="94ab-c0c4-cc5d-d307" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="9b49-1f56-e225-6954" name="Cults Abominatio" hidden="false" collective="false" import="true" targetId="4a00-03d4-a850-884b" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="2797-26f4-2020-34c4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="e681-a2a4-d453-61a2" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f955-dc3e-b9c5-2c25" name="Bound Daemon Brutes (Rogue Psyker)" hidden="false" collective="false" import="false" targetId="16b6-9e0f-d935-0f20" type="selectionEntry">
@@ -8889,7 +8876,41 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
       <entryLinks>
         <entryLink id="12e9-5cb6-4343-650f" name="Placeholder Pts" hidden="false" collective="false" import="true" targetId="f82d-e121-05a8-7a37" type="selectionEntry"/>
         <entryLink id="8671-560d-3801-0ea3" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
-        <entryLink id="cd42-4b11-4466-aa46" name="Provenance Options" hidden="false" collective="false" import="true" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup"/>
+        <entryLink id="cd42-4b11-4466-aa46" name="Provenance Options" hidden="false" collective="false" import="true" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="decrement" field="4c1f-560c-7579-2ca0" value="1.0">
+              <conditions>
+                <condition field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de21-368a-567e-3280" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="cb33-313d-d145-a290" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="e6d5-9f6a-b62b-c477" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="219a-3d4a-b059-3b35" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c1f-560c-7579-2ca0" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb33-313d-d145-a290" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bf47-37c9-8897-2103" name="Replace Close Combat Weapon with Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8dd-7cc9-218e-d447" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
