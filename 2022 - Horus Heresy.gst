@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="68" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="69" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -6761,7 +6761,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       <profiles>
         <profile id="179e-ff9e-8fd6-8ba5" name="Needle Pistol" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 2, Poisoned (3+), Pinning</characteristic>
