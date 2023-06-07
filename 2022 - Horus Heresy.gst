@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="69" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="70" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1184,6 +1184,30 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
     <categoryEntry id="76cd-5c38-ceac-a2b4" name="Industrial Stronghold - Leman Russ Squadron" hidden="false"/>
     <categoryEntry id="d029-ac65-0ade-0c32" name="Clanfolk Cavalry (Troops)" hidden="false"/>
     <categoryEntry id="d813-b3e9-24f0-78bd" name="Ogryn Conscripts (Compulsory)" hidden="false"/>
+    <categoryEntry id="c5d2-69ee-8787-55d9" name="The Rewards Of Treachery" hidden="false">
+      <modifiers>
+        <modifier type="set" field="5321-6dc9-c93c-028b" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="6434-491b-8d9a-4495" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="bfc4-cfa4-2991-dc17" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfc4-cfa4-2991-dc17" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6434-491b-8d9a-4495" type="min"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5321-6dc9-c93c-028b" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1196,6 +1220,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="fd89-b215-5545-17c6" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
@@ -1490,6 +1515,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="b5a1-9980-4945-e1aa" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="b120-b516-728b-11f1" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="dd4c-2612-511f-98f7" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="0b76-5263-40ac-0721" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
@@ -1663,6 +1689,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           </constraints>
         </categoryLink>
         <categoryLink id="e983-382e-a5c8-f531" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink id="5f35-9da8-f131-1f90" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="a23c-357c-3c10-db1f" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink id="a33f-77fb-a40c-03ff" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
@@ -6644,8 +6671,8 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="092d-3716-36f8-8988" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6655,8 +6682,8 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
             <conditionGroup type="or">
               <conditions>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="equalTo"/>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6670,8 +6697,8 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
           <conditionGroups>
             <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
                 <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="092d-3716-36f8-8988" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
