@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="68" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -5510,6 +5510,10 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="6472-4131-dbfe-14a2" name="Heavy Lascannon" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8049-43b0-dbef-eaba" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd75-b5d1-e78c-bfb3" type="max"/>
+                  </constraints>
                   <infoLinks>
                     <infoLink id="7035-b25b-f0ba-8bf3" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
                     <infoLink id="8d26-81bb-57f6-9b0b" name="Heavy Lascannon" hidden="false" targetId="a911-f050-1265-8967" type="profile"/>
@@ -5538,6 +5542,10 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="146b-2f63-829c-162a" name="Kalliope Mortar" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4501-77a0-8aa0-2087" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02c4-756b-65ee-a445" type="min"/>
+                  </constraints>
                   <infoLinks>
                     <infoLink id="88e1-e212-ae7b-c86e" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
                     <infoLink id="9951-9176-f738-36de" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
@@ -5573,6 +5581,10 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="858d-3fa8-7013-0044" name="Thunderblast Cannon" publicationId="48c2-d023-0069-001a" hidden="false" collective="true" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="652d-bdaa-836b-c01f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d34-aac4-ee94-1f06" type="min"/>
+                  </constraints>
                   <infoLinks>
                     <infoLink id="2260-5a25-1a11-bbcb" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
                     <infoLink id="625b-f65d-b2f0-94a5" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
@@ -8809,6 +8821,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                   </costs>
                 </entryLink>
               </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
