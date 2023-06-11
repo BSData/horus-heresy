@@ -68,7 +68,7 @@
         <categoryLink id="3557-09ac-2957-8b34" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="e34a-7eb9-2025-b2c5" name="02) IM - Discipline Master Cadre (JNP)" hidden="false" collective="false" import="false" targetId="9ead-c344-29c6-43aa" type="selectionEntry">
+    <entryLink id="e34a-7eb9-2025-b2c5" name="IM - Discipline Master Cadre" hidden="false" collective="false" import="false" targetId="9ead-c344-29c6-43aa" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -580,7 +580,7 @@
         <categoryLink id="94ab-c0c4-cc5d-d307" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9b49-1f56-e225-6954" name="Cults Abominatio" hidden="false" collective="false" import="true" targetId="4a00-03d4-a850-884b" type="selectionEntry">
+    <entryLink id="9b49-1f56-e225-6954" name="Cults Abominatio" hidden="false" collective="false" import="false" targetId="4a00-03d4-a850-884b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -631,6 +631,47 @@
         <categoryLink id="daf1-201a-c6ab-c717" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="8c34-6c89-7a1b-c23a" name="Rogue Psyker Daemons Restriction" hidden="false" targetId="58b3-196a-9732-2165" primary="false"/>
         <categoryLink id="942a-8275-8e14-f2d1" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3379-a60b-be1f-b920" name="Davinite Lodge Priest" hidden="true" collective="false" import="false" targetId="fe13-4a8f-b2af-1e40" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ad87-8131-9743-cc25" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3a95-5d78-5c94-5f10" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b91f-3e55-7081-b5bf" name="Expeditionary Navigator" hidden="true" collective="false" import="false" targetId="ce53-e40c-65b6-4d3a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>    node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3bd8-5f18-0e78-159c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f283-dff6-f484-a31e" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>

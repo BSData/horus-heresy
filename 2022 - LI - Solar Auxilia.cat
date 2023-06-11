@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="18" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -910,7 +910,7 @@
         <categoryLink id="0aa1-a534-4cf1-f711" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="b4a3-983c-1a89-e10f" name="Cults Abominatio" hidden="false" collective="false" import="true" targetId="4a00-03d4-a850-884b" type="selectionEntry">
+    <entryLink id="b4a3-983c-1a89-e10f" name="Cults Abominatio" hidden="false" collective="false" import="false" targetId="4a00-03d4-a850-884b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -8837,224 +8837,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe13-4a8f-b2af-1e40" name="Davinite Lodge Priest" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="a375-9370-6ac9-8ca4" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
-        <categoryLink id="b0cf-2d6b-034d-2e69" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-        <categoryLink id="d4a3-d812-a3b4-c5b9" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
-        <categoryLink id="580c-2b00-7f46-924a" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="d40a-a7ca-dfcc-589c" name="Davinite Lodge Priest" publicationId="15a4-fc68-502d-48a9" page="Legecies Doc" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3104-933f-4007-e0fc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e3-9cc3-1ada-b915" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6001-eebd-607d-b619" name="Davinite Lodge Priest" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Psyker, Character)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="1706-50fb-5a34-e6e6" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
-            <infoLink id="d97a-5c6e-dc9a-cc35" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink id="bb27-8c6a-9cf3-a5b8" name="Militaris Attaché" hidden="false" targetId="76ad-4b41-a719-ad82" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="e1cb-a5dd-1286-665d" name="Excoricare" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5467-57bc-7f78-a3e1" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1291-b204-586e-b8b3" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="c762-8d74-1b3c-2679" name="Excoricare" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol, Deflagrate</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="d34c-b118-748c-0a7a" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="9d43-b50c-0329-864c" name="Davinite blade" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="954e-923e-8e83-9ccf" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7ff-8a19-47f6-d3f5" type="min"/>
-              </constraints>
-              <profiles>
-                <profile id="5fdd-bbcd-b73b-7980" name="Davinite blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Poisoned (5+)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="f951-e67d-a3d8-b5a2" name="Poisoned (X)" hidden="false" targetId="e70e-23ea-3251-0edb" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Poisoned (5+)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="615e-81b3-1ca7-0e63" name="Psychic Discipline: Delphos Serpentis" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af7f-6644-34ed-9230" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3201-c425-091e-4340" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="79d7-82fb-8db2-48ba" name="Psychic Discipline: Delphos Serpentis" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
-                  <characteristics>
-                    <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Instead of making a Shooting Attack, the controlling player of a Psyker with this Psychic Power may take a Psychic check. If the Check is passed, the controlling player may select a single friendly model with the Infantry Unit Type within 6&quot; of the Psyker that has suffered at least one Wound but has not been removed as a casualty. The selected model regains one Wound, up to a maximum of its starting Wounds characteristic. If the Check is failed, the Psyker suffers Perils of the Warp.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="6a19-7e77-d580-da1a" name="Refractor Field" hidden="false" collective="false" import="true" targetId="a06a-55a5-070b-1d0e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f9d-4a7c-3c4b-4d6c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8983-684a-e28f-6dae" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="ce53-e40c-65b6-4d3a" name="Expeditionary Navigator" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="be98-ade6-178d-26fd" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
-        <categoryLink id="026e-12ef-f914-8853" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-        <categoryLink id="fe9d-2773-f904-d4c2" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink id="e925-509e-127a-648a" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="daba-3575-8291-ea4c" name="Expeditionary Navigator" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c671-55aa-1c1e-c342" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdc7-eb05-0789-1ef2" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c5da-4ea1-d632-c203" name="Expeditionary Navigator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName=" Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Expeditionary Navigator: Infantry (Psyker, Character)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">2</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">2</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">6+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="dcff-48a1-5453-8be8" name="Militaris Attaché" hidden="false" targetId="76ad-4b41-a719-ad82" type="rule"/>
-            <infoLink id="c669-cc8c-623d-ba6d" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="2448-c569-3ce1-50fc" name="Ætherlabe Staff" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60e1-c5e1-d645-7c82" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d84a-93ce-8099-749d" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="d905-b5e1-cee5-ba99" name="Ætherlabe Staff" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-                  <characteristics>
-                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player of an enemy unit that arrives via Deep Strike Assault within 12&quot; of a model with this special rule must roll an additional D6 when rolling to Scatter that unit.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7e5a-3b11-49dc-b0ff" name="Psychic Discipline: Navis Astrologis" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="580d-3010-4799-f760" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fbd2-d079-8995-0d41" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="5476-f035-bffd-0917" name="Lidless Stare (Psychic Weapon)" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">Template</characteristic>
-                    <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">2</characteristic>
-                    <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">-</characteristic>
-                    <characteristic name="Type" typeId="2159-62b6-4337-d516">Pinning, Force</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="4fdf-64b9-78d8-1471" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                <infoLink id="bb66-6671-11a4-e688" name="Force" hidden="false" targetId="f39e-4c3b-38e0-0050" type="rule"/>
-                <infoLink id="6f2c-346d-1604-43bf" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="c8f4-b576-33c9-ae19" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa00-ceec-02f4-bbfe" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="13ce-a2c9-ce13-5cd4" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="6b00-3e91-b96e-ef47" name="Refractor Field" hidden="false" collective="false" import="true" targetId="a06a-55a5-070b-1d0e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75b5-c3f2-62be-4972" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2252-8ab3-b2e1-234b" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0b15-0d7a-ee14-3559" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="2918-e98d-0ab1-811b" name="Carnodon Strike Squadron" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="684c-8ae7-c5cb-3acc" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
@@ -11838,9 +11620,6 @@ Demo charge		- 	10	1	Melee, Armourbane (Melee), Instant Death, Brutal (2)</descr
     </rule>
     <rule id="2d37-470b-462f-9c99" name="Independent Operators" publicationId="15a4-fc68-502d-48a9" page="133" hidden="false">
       <description>When deployed onto the battlefield (either at the start of the battle, when arriving from Reserves or Disembarking from a model with the Transport Sub-type), all models with this special rule in the same unit must be placed within unit coherency following the normal rules for deploying/Disembarking units, but after deployment or Disembarkation all models in the unit with this special rule are considered to have left the unit, and now form separate units of a single model each. For the remainder of the battle, a model with this special rule is considered a separate unit for all purposes and may not join other units or reform into their original unit. However, the whole unit must be removed as casualties before the opposing player scores any Victory points for the destruction of any model that was part of the unit.</description>
-    </rule>
-    <rule id="76ad-4b41-a719-ad82" name="Militaris Attaché" hidden="false">
-      <description>A model with this special rule may be included in an army with any faction as a non-Compulsory HQ choice and may never be selected as the Warlord.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>

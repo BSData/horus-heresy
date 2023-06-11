@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="13" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2f2b-1f31-c455-1701" name="2022 - LI - Custodes" revision="14" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <rules>
@@ -115,7 +115,7 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
         <categoryLink id="9415-2e52-7a11-d13b" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9fdd-741c-affb-289a" name="Custodian Venatari Squad (Placeholder)" hidden="false" collective="false" import="false" targetId="4c7e-42e0-1c1e-5ba9" type="selectionEntry">
+    <entryLink id="9fdd-741c-affb-289a" name="Custodian Venatari Squad" hidden="false" collective="false" import="false" targetId="4c7e-42e0-1c1e-5ba9" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8d2b-5293-abf8-2065" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="4520-024b-fc8e-05ce" name="New CategoryLink" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
@@ -373,6 +373,21 @@ A &quot;Nemesis&apos; unit is defined as any enemy unit that fulfils at least on
       <categoryLinks>
         <categoryLink id="760a-7c0a-30f2-f8b5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="373e-6f59-8b4a-7c16" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6944-1546-9067-7226" name="Expeditionary Navigator" hidden="true" collective="false" import="false" targetId="ce53-e40c-65b6-4d3a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+              <comment>    node_id_ba25-a4b2-4ba9-b023</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7263-0192-71cc-fbd5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="0303-1608-485a-1102" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
