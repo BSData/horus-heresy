@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="70" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="71" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1486,12 +1486,12 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           <modifiers>
             <modifier type="increment" field="d9f7-954e-b8d3-7a39" value="1.0">
               <repeats>
-                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d9f7-954e-b8d3-7a39" type="max"/>
+            <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9f7-954e-b8d3-7a39" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="1ef7-5f17-ade4-e6c1" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false">
@@ -1832,12 +1832,12 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
           <modifiers>
             <modifier type="increment" field="11cb-d547-c07c-da25" value="1.0">
               <repeats>
-                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="11cb-d547-c07c-da25" type="max"/>
+            <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11cb-d547-c07c-da25" type="max"/>
           </constraints>
         </categoryLink>
         <categoryLink id="e3ca-bd2d-8d52-0b04" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
