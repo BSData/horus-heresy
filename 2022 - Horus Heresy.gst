@@ -13,7 +13,7 @@
     <publication id="4489-2b8c-7790-8b5b" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0" shortName="Main Rules Errata and FAQ V1.0" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/OP2GmimgEkrpS9xK.pdf"/>
     <publication id="8200-f05a-6e7d-9326" name="Liber Mechanicum Errata and FAQ V1.0" shortName="LM - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf"/>
     <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Dec 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yPxvcNBwok6C9Wb0.pdf"/>
-    <publication id="15a4-fc68-502d-48a9" name="Libre Imperium"/>
+    <publication id="15a4-fc68-502d-48a9" name="Liber Imperium"/>
     <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="March 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/JXRAKYvl3BrGbGjD.pdf"/>
     <publication id="48c2-d023-0069-001a" name="Imperialis Militia (Download)" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="April 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/04/j2TwD3c2AB8oLsVW.pdf"/>
     <publication id="53a4-0d21-2f8a-2c45" name="Campaigns of the Age of Darkness - The Siege of Cthonia" shortName="CotAoD - SoC" publicationDate="May 2023"/>
