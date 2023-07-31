@@ -36,6 +36,9 @@ __I found a bug!__ / *I have another request*
 
 Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
 
+### Where did Horus Heresy 1.0 go?
+We moved it to [its own repo][https://github.com/BSData/horus-heresy-1e]. It is no longer maintained.
+
 ## Standards
 
 ### .cattemplate? and what are all the template_id_ comments?
@@ -48,9 +51,9 @@ please delete the comment.
 If you want to add something generic to all 18 legions, rename the .cattemplate to .cat, edit it to add the new unit, 
 rename the file back to .cat, and then run BSCopy's copy_changes_from_template or ask @NStephenH#0001 in discord.
 
-### For 2.0
+### Creating units
 
-In general, we remove the "Legion" prefix from units.
+In general, we remove the "Legion" prefix from units, unless that unit has a non-legion equivalent such as Legion Baneblade
 
 We create a unit entry for each unit, and a model entry within that unit (even if it's a single model unit).
 This allows us to get an accurate model count and keeps everything consistent.
@@ -60,8 +63,6 @@ On UNITS we default them to hidden hidden and add a modifier with constraint to 
 On UPGRADES, we default the option to not hidden, and set "Hidden to True" if the "off" condition is selected.
 
 ## References
-
-### For 2.0
 
 * Horus Heresy: Age of Darkness Rulebook
 * Liber Astartes
@@ -80,17 +81,6 @@ On UPGRADES, we default the option to not hidden, and set "Hidden to True" if th
 * Liber Astartes Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf)
 * Liber Hereticus Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf)
 * Liber Mechanicum Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf)
-
-### For 1.0
-
-* Base Rulebook (7th Edition) = BRB 7th (I'm using the digital in order to copy/paste so no pages)
-* Legiones Astartes: Age of Darkness Army List = LA:AODAL
-* Legiones Astartes: Age of Darkness Legions = LA:ADL
-* Mechanicum: Taghmata Army List = M:TAL
-* Crusade Imperialis: Army List = CI:AL
-* Horus Heresy 1: Betrayal = HH1: Betrayal (and so on)
-* Horus Heresy: General Errata and FAQ v1.0 = HH:GEAFAQV1.0
-* Fan supplements
 
 ## Links ##
 
