@@ -5798,15 +5798,15 @@ remains in play and regains 1D3 Wounds.</description>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="e4a7-cb9d-8d08-32bc" name="Special Weapons:" hidden="false" collective="false" import="true">
                   <modifiers>
-                    <modifier type="increment" field="1f69-bada-e5bb-252e" value="1">
+                    <modifier type="set" field="eb21-e253-cfc7-f8b4" value="1">
                       <repeats>
                         <repeat field="selections" scope="af3a-334f-152f-d55f" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="af3a-334f-152f-d55f" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f69-bada-e5bb-252e" type="max"/>
-                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb21-e253-cfc7-f8b4" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f69-bada-e5bb-252e" type="max"/>
+                    <constraint field="selections" scope="af3a-334f-152f-d55f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eb21-e253-cfc7-f8b4" type="max"/>
                   </constraints>
                   <entryLinks>
                     <entryLink id="b264-03d6-e515-44fc" name="Flamer" hidden="false" collective="false" import="true" targetId="9f41-82e2-90f6-973a" type="selectionEntry">
