@@ -3617,7 +3617,6 @@ In addition, once per battle, one friendly unit composed entirely of models with
       <categoryLinks>
         <categoryLink id="26e2-2438-3fe6-0af3" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="69cd-1ac9-f49d-16e1" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
-        <categoryLink id="5a9e-fc41-ec12-1b8f" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="898e-20ef-648b-3ffc" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
@@ -3717,6 +3716,9 @@ In addition, once per battle, one friendly unit composed entirely of models with
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6bb3-8da4-9b06-76e6" primary="false" name="Independent Character"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="86f6-6646-2bef-31ee" name="Lorgar Transfigured" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -3766,6 +3768,9 @@ In addition, once per battle, one friendly unit composed entirely of models with
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <categoryLinks>
+                <categoryLink targetId="4f07-3d45-4f28-a0c6" id="46df-2466-9c89-c516" primary="false" name="Independent Character"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4269,27 +4274,10 @@ In addition, once per battle, one friendly unit composed entirely of models with
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6be5-394d-9d79-344b" name="Argel Tal" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="6be5-394d-9d79-344b" name="Argel Tal" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8333-54c1-daf4-046d" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="da51-6ca2-c7d5-451e" name="Argel Tal" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique, Corrupted)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="ffa0-9f4e-7e5d-6619" name="Legiones Astartes (Word Bearers)" hidden="false" targetId="21ba-24fc-3fad-00fe" type="rule"/>
         <infoLink id="ffdd-6053-13a6-d7b9" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -4310,9 +4298,9 @@ In addition, once per battle, one friendly unit composed entirely of models with
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="cba8-9fd4-5e85-e6ed" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="a847-6e8a-66a4-fa17" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="c096-bb42-1c27-67a6" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
+        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="6cc0-6682-2cc0-cd4c" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="14c5-57da-1235-56d4" name="Two Daemonic Talons" hidden="false" collective="false" import="true" type="upgrade">
@@ -4351,6 +4339,32 @@ Argel Tal may still Run while using this special rule, if he would normally be a
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Argel Tal" hidden="false" id="3407-6707-e02-bedf">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="fa1b-510e-429e-c6b0" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab-773e-53e4-ed58"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-5649-d96d-ff65"/>
+          </constraints>
+          <profiles>
+            <profile id="b008-38ee-f8c1-4e90" name="Argel Tal" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique, Corrupted)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4396,27 +4410,10 @@ Argel Tal may still Run while using this special rule, if he would normally be a
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="240"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="18c4-d715-caba-b450" name="High Chaplain Erebus" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="18c4-d715-caba-b450" name="High Chaplain Erebus" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9578-e447-6e7c-4ba2" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="af3e-ad7a-2a90-23a2" name="High Chaplain Erebus" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Psyker, Corrupted, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="b238-4ddc-4de6-d69b" name="Psychic Discipline: Harbinger of Chaos" hidden="true">
           <description>A Psyker with this Discipline gains the Breach the Veil Psychic Power and Aetheric Lightning
@@ -4435,9 +4432,9 @@ Psychic Weapon</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d3d0-99c4-cb4c-969c" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink id="35e4-8e2b-e655-7bba" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="9acc-39e7-b768-439f" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
         <categoryLink id="c6bf-c6ef-ae4a-4995" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
+        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="8cd9-d390-1cf-5dad" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="20eb-1d18-ef3b-6a39" name="Crux Malifica" hidden="false" collective="false" import="true" type="upgrade">
@@ -4490,6 +4487,32 @@ Psychic Weapon</description>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="High Chaplain Erebus" hidden="false" id="c5f8-1709-fb44-a64d">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="12d1-da56-374b-314b" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab-773e-53e4-ed58"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-5649-d96d-ff65"/>
+          </constraints>
+          <profiles>
+            <profile id="87a-4f60-82b9-114f" name="High Chaplain Erebus" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Psyker, Corrupted, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4547,39 +4570,10 @@ Psychic Weapon</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e61d-db78-6f56-3c05" name="Kor Phaeron" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="e61d-db78-6f56-3c05" name="Kor Phaeron" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="196c-7b3c-c0f9-8008" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="55c8-44f1-be1e-ef48" name="Kor Phaeron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <modifiers>
-            <modifier type="set" field="e8a6-1da9-d384-8727" value="9">
-              <conditions>
-                <condition field="selections" scope="e61d-db78-6f56-3c05" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="cc42-7ed5-7092-5c84" value="6">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-65f7-e452-51a5" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character, Corrupted, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="94ed-f7c4-3c14-dacd" name="Jealous Command" hidden="false">
           <description>If Kor Phaeron or Lorgar is not chosen as the Warlord of an army that Kor Phaeron is part of, then his Leadership is reduced by -1 and he gains the Hatred (Everything) special rule. When Kor Phaeron is included as the same army as Lorgar, both models gain +1 WS and the Hatred (Everything) special rules while part of the same unit.</description>
@@ -4685,6 +4679,44 @@ Psychic Weapon</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Kor Phaeron" hidden="false" id="935d-7774-dfc9-7e13">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="693d-3d37-afc4-1696" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab-773e-53e4-ed58"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-5649-d96d-ff65"/>
+          </constraints>
+          <profiles>
+            <profile id="c48e-2bc3-e5fb-353f" name="Kor Phaeron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <modifiers>
+                <modifier type="set" field="e8a6-1da9-d384-8727" value="9">
+                  <conditions>
+                    <condition field="selections" scope="e61d-db78-6f56-3c05" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="cc42-7ed5-7092-5c84" value="6">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-65f7-e452-51a5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character, Corrupted, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="304d-d174-0763-4504" name="Retinue" hidden="false" collective="false" import="true" targetId="bda8-b52d-c914-4ac2" type="selectionEntryGroup"/>
@@ -4714,28 +4746,16 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b4ae-65a-479b-cdc1" primary="false" name="Infantry:"/>
+        <categoryLink targetId="9055-7410-8ffd-b8e7" id="1c2-3805-b6f8-8b1b" primary="false" name="Corrupted Sub-type:"/>
+        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="cbe2-a552-1e8b-9dc7" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="f511-e558-6bff-6543" name="Zardu Layak" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="574e-7e54-7db7-60a3" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="e53d-63ae-2ac4-427a" name="Zardu Layak" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Corrupted, Psyker, Character, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="243e-126c-9412-267b" name="Binder of Souls" hidden="false">
           <description>Zardu Layak gains the Psychic Discipline Soul Binding and may not select any other Psychic Discpline.</description>
@@ -4757,7 +4777,6 @@ as the Aetheric Lightning Psychic Weapon</description>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cd36-7aef-4bad-b59e" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-        <categoryLink id="49db-339f-dd98-686b" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="9ace-0389-f30c-2062" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="d74c-384e-1128-4d7a" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
       </categoryLinks>
@@ -4815,6 +4834,32 @@ as the Aetheric Lightning Psychic Weapon</description>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Zardu Layak" hidden="false" id="1233-5b3f-d481-f723">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="48b1-6791-8fa5-66f4" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab-773e-53e4-ed58"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-5649-d96d-ff65"/>
+          </constraints>
+          <profiles>
+            <profile id="6059-99d2-d22c-8daa" name="Zardu Layak" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Corrupted, Psyker, Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

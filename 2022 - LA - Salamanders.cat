@@ -3330,26 +3330,11 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="8c74-40b1-5019-f4d4" name="Vulkan" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8c74-40b1-5019-f4d4" name="Vulkan" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65d8-0392-0de1-6820" type="max"/>
       </constraints>
       <profiles>
-        <profile id="e9c4-70b0-428e-2d3e" name="Vulkan" publicationId="817a-6288-e016-7469" page="314" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="c48f-331d-be45-89e3" name="The Draken Scale" publicationId="817a-6288-e016-7469" page="315" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Draken Scale grants a 2+ Armour Save and a 3+ Invulnerable Save. In addition, Vulkan may re-roll any failed Armour saves for Wounds inflicted by Flame or Volkite weapons.</characteristic>
@@ -3365,7 +3350,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="97f1-63ad-b403-6ae7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="ff2f-d33d-2e7c-9895" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="ac1c-f729-b363-44d6" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -3425,6 +3409,32 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Vulkan" hidden="false" id="e40a-1808-536d-f353">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="41c9-c87d-bea9-73f3" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1934-e704-ce56-d7c8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="905-1e0f-13e6-2252"/>
+          </constraints>
+          <profiles>
+            <profile id="551f-2ec7-9223-bb41" name="Vulkan" publicationId="817a-6288-e016-7469" page="314" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4250,7 +4260,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="310"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74f6-96f4-ee55-9c78" name="Lord Chaplain Nomus Rhy&apos;Tan" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="74f6-96f4-ee55-9c78" name="Lord Chaplain Nomus Rhy&apos;Tan" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="3f99-ad1b-740b-862e">
           <conditions>
@@ -4261,23 +4271,6 @@
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="918e-d896-4cbf-4b53" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="4307-c42a-fc2f-5651" name="Lord Chaplain Nomus Rhy&apos;Tan" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="61ab-fc87-edda-aab7" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="4c76-c529-12b4-d083" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
@@ -4290,7 +4283,6 @@
       <categoryLinks>
         <categoryLink id="f22c-47a5-ca44-ccdc" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="b624-3e54-171d-2b09" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="a0e0-976d-1292-1fc3" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ad7a-6a4c-6cc0-a007" name="Darkstar Falling" hidden="false" collective="false" import="true" type="upgrade">
@@ -4315,6 +4307,32 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Lord Chaplain Nomus Rhy&apos;Tan" hidden="false" id="69a7-8617-7dea-7762">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="9f3a-4213-ba25-fb5e" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1934-e704-ce56-d7c8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="905-1e0f-13e6-2252"/>
+          </constraints>
+          <profiles>
+            <profile id="e900-5ae8-f6e5-198d" name="Lord Chaplain Nomus Rhy&apos;Tan" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4383,26 +4401,11 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="30b8-05a5-fef7-fe66" name="Xiaphas Jurr" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="30b8-05a5-fef7-fe66" name="Xiaphas Jurr" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad8d-9fdb-7550-1d9d" type="max"/>
       </constraints>
       <profiles>
-        <profile id="cb39-0702-a198-6f3a" name="Xiaphas Jurr" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="c78b-a45b-7ff4-f6f4" name="Prophet of the Flame" hidden="false" typeId="b46c-270c-d29e-f0ff" typeName="Ability">
           <characteristics>
             <characteristic name="Description" typeId="0982-427b-1d4a-d07c">Xiaphas Jurr has the Pyromancy discipline but counts as having Leadership 7 for the purposes of making Psychic checks.</characteristic>
@@ -4421,7 +4424,6 @@
       <categoryLinks>
         <categoryLink id="8e0a-7307-985f-50a6" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="4585-3e1e-8e4c-4a36" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="0aae-444b-0567-6f6a" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9c05-d6b4-ed8b-c06a" name="Ignatus" hidden="false" collective="false" import="true" type="upgrade">
@@ -4462,6 +4464,32 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Xiaphas Jurr" hidden="false" id="a4a6-3c44-93e0-6b8e">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="3cc4-d304-4e2b-e0a9" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1934-e704-ce56-d7c8"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="905-1e0f-13e6-2252"/>
+          </constraints>
+          <profiles>
+            <profile id="d747-9e17-71b9-6d9b" name="Xiaphas Jurr" publicationId="d0df-7166-5cd3-89fd" page="71" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

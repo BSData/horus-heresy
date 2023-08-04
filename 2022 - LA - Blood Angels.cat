@@ -3051,25 +3051,8 @@
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="unit">
       <comment>(WEAPONS NEED PROFILES)</comment>
-      <profiles>
-        <profile id="3679-27a6-38ce-1715" name="Sanguinius" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="384a-287a-50ae-ba39" name="Angelic Presence" hidden="false">
           <description>Any friendly units that are locked in combat and have at least one model within 6&quot; of Sanguinius, as well as Sanguinius and any unit he has joined, may add +1 to the total number of successful Wounds caused for the purposes of resolving which side has won a combat (this does not stack with any other rules that increase the
@@ -3092,7 +3075,6 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
       <categoryLinks>
         <categoryLink id="38e2-0f6e-7779-5ec3" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
         <categoryLink id="4705-df50-16b6-2e57" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="3aee-2b27-81b1-a1e1" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="eb7d-aff3-ce83-30e5" name="The Regalia Resplendant" hidden="false" collective="false" import="true" type="upgrade">
@@ -3137,6 +3119,32 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Sanguinius" hidden="false" id="c604-746e-d68b-3541">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2bb1-2477-683f-3f11" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a-7632-dc99-3a6c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
+          </constraints>
+          <profiles>
+            <profile id="3d53-5ed6-c96e-5786" name="Sanguinius" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch (Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3303,7 +3311,7 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="485"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
           <conditions>
@@ -3311,23 +3319,6 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="3016-8dba-083b-e98b" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="808d-da54-f3db-be02" name="Ghost of Saiph" hidden="false">
           <description>The first time Judiciar Aster Crohne loses his last wound, or otherwise removed as a casualty, roll a D6. On a 4+, he is placed in Reserves with a single Wound remaining instead of being removed or destroyed. If he enters Reserves on or after turn 4, then he may enter play automatically at the start of the controlling player’s following turn.</description>
@@ -3350,7 +3341,6 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
       <categoryLinks>
         <categoryLink id="9443-2cc4-be17-c3d0" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="e910-b4f4-561a-a680" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="8d3c-13bd-b351-0939" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6d52-9172-1a5d-5406" name="Saiphan shard-axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -3383,6 +3373,32 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Judicar Aster Crohne" hidden="false" id="d82c-e354-14fd-a65b">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="628b-d37d-d649-36b9" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a-7632-dc99-3a6c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
+          </constraints>
+          <profiles>
+            <profile id="bb3d-a8c6-61c8-66b0" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4098,7 +4114,7 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="59f7-9abf-c171-e9e4" name="Chapter Master Raldoron" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="59f7-9abf-c171-e9e4" name="Chapter Master Raldoron" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
           <conditions>
@@ -4106,23 +4122,6 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="848e-4fab-588a-b8f0" name="Chapter Master Raldoron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Unique, Character)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="287e-842f-fa00-9c37" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="9d73-b5f5-7d29-eba0" name="Legiones Astartes (Blood Angels)" hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
@@ -4133,7 +4132,6 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
         </infoLink>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="64a7-e7b9-b689-b20c" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="9b24-0f3e-79a4-f40d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="774a-cc6b-d207-692e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
@@ -4165,6 +4163,32 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Chapter Master Raldoron" hidden="false" id="b0e6-842b-c38e-7605">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2bc6-6378-27a2-c9b4" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a-7632-dc99-3a6c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
+          </constraints>
+          <profiles>
+            <profile id="9622-6d99-4923-3523" name="Chapter Master Raldoron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Unique, Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4591,24 +4615,7 @@ Those models also gain the Feel No Pain (5+) special rule when locked in combat 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="180"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="98d4-555a-6911-7c1a" name="Dominion Zephon" hidden="false" collective="false" import="true" type="model">
-      <profiles>
-        <profile id="5956-601d-0c41-91a3" name="Dominion Zephon" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Unique, Character)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+    <selectionEntry id="98d4-555a-6911-7c1a" name="Dominion Zephon" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="308f-78bb-90b4-76f9" name="Paragon of Restoration" hidden="false">
           <description>Installed in Zephon&apos;s body by the apocryphal techo-ministrations of Arkhan Land, these intricate bionic enhancements can heal even the most grievous wounds over time and prevent their host-body from slipping into death&apos;s embrace.
@@ -4627,7 +4634,6 @@ The Paragon of Restoration gives Dominion Zephon the Feel No Pain (5+) special r
         <infoLink id="6544-cea9-9c06-ba7c" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="31ae-7034-a2db-dc40" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="feba-d345-0dbc-faa9" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="8059-18d2-a192-f6bd" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="9f7b-e6db-ff1f-ad62" name="Jump Infantry:" hidden="false" targetId="eee8-3c7c-2762-e33e" primary="false"/>
@@ -4683,6 +4689,32 @@ The Paragon of Restoration gives Dominion Zephon the Feel No Pain (5+) special r
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Dominion Zephon" hidden="false" id="85cd-89c1-5853-ee5a">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="fe39-c065-88c4-288c" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a-7632-dc99-3a6c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
+          </constraints>
+          <profiles>
+            <profile id="3e3b-1668-cce8-89ac" name="Dominion Zephon" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Unique, Character)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
