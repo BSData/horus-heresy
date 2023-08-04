@@ -3687,7 +3687,6 @@
       <categoryLinks>
         <categoryLink id="68e3-d5fc-41b5-8cf7" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="83a3-0ef9-edb4-003d" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="de93-44e6-fcd3-f27a" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="7214-1716-4e2a-3b57" name="Magistus Amon" hidden="false" collective="false" import="true" type="model">
@@ -3879,6 +3878,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6ca9-7834-d332-aa0c" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3920,7 +3922,6 @@
       <categoryLinks>
         <categoryLink id="d7b8-d408-02a0-260a" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="6fb7-0274-47e5-c469" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="f713-16d5-2a05-9a2b" name="Independant Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="653f-9f43-92d9-3176" name="Ahzek Ahriman" hidden="false" collective="false" import="true" type="model">
@@ -4738,7 +4739,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="07f4-98a2-a371-5191" name="Magnus the Red" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="07f4-98a2-a371-5191" name="Magnus the Red" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="5472-b476-dcbd-c215">
           <conditions>
@@ -4749,23 +4750,6 @@
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6898-f9fe-d35a-e601" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="dc50-95ed-64cd-f3f7" name="Magnus the Red" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch ( Unique, Psyker)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="15df-164f-dd58-b29e" name="The Eye of the Crimson King" publicationId="09c5-eeae-f398-b653" page="261" hidden="false">
           <description>When selecting targets for his psychic powers, all models within range are assumed to be in line of sight (except those Embarked upon models with the Transport Sub-type or Buildings).</description>
@@ -4787,7 +4771,6 @@
       </infoLinks>
       <categoryLinks>
         <categoryLink id="45af-d7ac-39f4-2234" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false"/>
-        <categoryLink id="2f4f-2382-f656-0475" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="9f33-3de6-2245-536e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="930a-fad8-ff6f-4b38" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
@@ -4970,6 +4953,32 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Magnus the Red" hidden="false" id="203f-95e9-cfde-83">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="52c9-da65-e6a8-1946" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3cb-cd23-12a6-4a12"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc11-eef-919-37b4"/>
+          </constraints>
+          <profiles>
+            <profile id="47a-6e2f-9cab-a264" name="Magnus the Red" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Primarch ( Unique, Psyker)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">6</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">6</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

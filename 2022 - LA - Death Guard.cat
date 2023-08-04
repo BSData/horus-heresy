@@ -3027,7 +3027,6 @@
         <categoryLink id="def1-b261-8261-02fc" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="33f7-f2cd-2c9b-34cb" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="8177-1aab-8a85-3acc" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
-        <categoryLink id="e01c-ad05-c3de-4026" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="2f7a-f3e1-0ebe-7f53" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink id="043c-bb03-e878-0086" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
         <categoryLink id="8ef4-70d2-ba35-70b9" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
@@ -3200,6 +3199,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="66b2-e426-da6c-7019" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3233,7 +3235,6 @@
       </constraints>
       <categoryLinks>
         <categoryLink id="b149-05d4-2f7b-a3bd" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="4055-f3db-da41-c441" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="713f-55c6-1fc9-4fca" name="LoW &amp; Primarchs" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
       </categoryLinks>
       <selectionEntries>
@@ -3375,6 +3376,9 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b434-eb1-c277-b762" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4180,21 +4184,6 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f47c-aed4-2beb-6417" type="max"/>
       </constraints>
       <profiles>
-        <profile id="dd5e-f503-609a-2353" name="Crysos Morturg" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique, Psyker, Heavy)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
         <profile id="4720-225c-1e6f-934b" name="Shielded by Hate" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
           <characteristics>
             <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">Once per battle, when Crysos Morturg is reduced to 0 Wounds or otherwise removed from play as a casualty the controlling player may immediately make a Psychic check for Crysos Morturg. If the Psychic check is passed then Crysos Morturg is not removed as a casualty, but is instead placed in Reserves with 1 Wound remaining, and may re-enter play as normal. If the Psychic check is failed then Crysos Morturg is removed as a casualty as normal and if Crysos Morturg was part of a unit when the Psychic check is failed, then the unit suffers Perils of the Warp.</characteristic>
@@ -4213,7 +4202,6 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
         <infoLink id="355a-310f-4c86-d4dd" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="d376-a6bd-3afa-18db" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="09dd-97f2-3578-0b77" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="c14e-e1ca-7d1e-8ba9" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
         <categoryLink id="3ab9-09ca-d35c-7778" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
@@ -4283,6 +4271,32 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Crysos Morturg" hidden="false" id="2324-6316-6d68-170b">
+          <profiles>
+            <profile id="8723-dc20-bd94-1575" name="Crysos Morturg" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique, Psyker, Heavy)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="9ad7-d31f-2c4f-6ec3" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a12-42f3-21af-1290"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b5b-eaa0-eac-fff9"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
       <entryLinks>
         <entryLink id="57b3-7198-991b-138f" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
@@ -4343,23 +4357,6 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ecc-5681-8f65-1628" type="max"/>
       </constraints>
-      <profiles>
-        <profile id="460f-7d2b-eaef-5abf" name="Marshal Durak Rask" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique, Heavy)</characteristic>
-            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-            <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-            <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <rules>
         <rule id="cf9d-b20b-3d98-8aaf" name="Protocols of Destruction" hidden="false">
           <description>The controlling player of a model with Protocols of Destruction may activate them at the start of any of their own turns, or, if the controlling player is not taking the first turn of the battle, at the start of the battle, before the beginning of the opposing player’s first turn. Once Protocols of Destruction are activated, any Penetrating Hits caused by a model with Protocols of Destruction and any unit that they have joined, gain +1 to any rolls on the Vehicle Damage chart until the beginning of the controlling player’s next turn. In addition, any Legion Rapier Carriers with quad launchers in the same Detachment as Marshal Durak Rask may be upgraded to have phosphex canister shot for +20 points per model, and any Legion Arquitor Squadrons with Morbus bombards in the same Detachment may be upgraded with phosphex shells for +20 points per model.</description>
@@ -4370,7 +4367,6 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
       </infoLinks>
       <categoryLinks>
         <categoryLink id="58d0-40f3-bf65-136f" name="Siege Breaker:" hidden="false" targetId="8247-54dc-9194-948f" primary="false"/>
-        <categoryLink id="0a04-abf8-2e59-99ae" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="076e-8fde-df99-a46e" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink id="9919-bd28-8a44-115d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
@@ -4403,6 +4399,32 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Marshal Durak Rask" hidden="false" id="e391-3611-d62c-52ce">
+          <profiles>
+            <profile id="4d6-4f0-b65-238e" name="Marshal Durak Rask" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique, Heavy)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2908-e4f5-e973-4d30" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a12-42f3-21af-1290"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b5b-eaa0-eac-fff9"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
