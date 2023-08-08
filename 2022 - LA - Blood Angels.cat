@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="39" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="40" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -4295,6 +4295,47 @@ Characteristic when locked in combat with one or more enemy units that have the 
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
+                </selectionEntry>
+                <selectionEntry id="c9bd-4aa2-3814-6183" name="Bound by Glory" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" collective="false" import="true" type="upgrade">
+                  <profiles>
+                    <profile id="6250-7eb8-95df-b93b" name="Bound by Glory" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">The controlling player of a Warlord with this Trait may select a single variant of the Legiones Astartes (X) special rule, other than Legiones Astartes (Imperial Fists) at the start of the battle, before any models are deployed onto the battlefield, but after all players have selected their armies. The Warlord with this Trait and all models in a unit it has joined gain the Fearless special rule when locked in combat with an enemy unit that includes one or more models with that variant of the Legiones Astartes (X) special rule – but may not choose to make a Sweeping Advance against an enemy unit that includes one or more models with that variant of the Legiones Astartes (X) special rule. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="d7c7-3915-f273-bede" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule">
+                      <modifiers>
+                        <modifier type="set" field="name" value="Fearless (In Combat - Bound by Glory)"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b58a-8ea6-de69-6beb" type="max"/>
+                    <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aea5-902e-1daa-3042" type="max"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry id="2d17-21a-1941-f930" name="Unforgiven (Loyalist Only)" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <profiles>
+                    <profile id="df0d-351e-cc7d-a64b" name="Unforgiven" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+                      <characteristics>
+                        <characteristic name="Text" typeId="c68e-2cda-b67b-baca">This Warlord Trait may only be selected by a model with the Loyalist Allegiance.
+While locked in combat with an enemy unit that includes the enemy Warlord, or any enemy unit that includes one or more models with the Primarch or Dreadnought Unit Types, or the Super-heavy, Knights and Titans Unit Sub-types, a Warlord that has this Trait that suffers Instant Death for any reason is not immediately removed as a casualty, but instead loses D3 Wounds. Furthermore, while locked in combat with any enemy unit a Warlord with this Warlord Trait gains the Fearless special rule, but must always declare a Charge if any enemy unit is within 12&quot; at the beginning of the Charge Sub-phase, if more than one enemy unit is within 12&quot; then a Charge for the Warlord and his unit must be declared targeting the closest enemy unit (if two or more enemy units are equally close, then the Warlord’s controlling player chooses one of those units to be the target of the Charge). An army whose Warlord has this Warlord Trait does not gain any bonus Reactions from this Warlord Trait.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3bc5-2707-5214-3156" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab59-e36b-ee5c-a02a" type="max"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
