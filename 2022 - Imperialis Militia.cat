@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="16" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="17" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -3804,6 +3804,70 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                           </costs>
                         </selectionEntry>
+                        <selectionEntry id="fcbf-6948-f46f-ff17" name="Autopistol &amp; Chainaxe" hidden="false" collective="false" import="true" type="model">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="true">
+                              <conditions>
+                                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ae9-fa09-b6e7-01b6" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="60a0-8af-54b0-241f" name="Autopistol" hidden="false" collective="false" import="true" targetId="344f-4836-c70d-29a4" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e07-2dd9-e6fe-66c8" type="min"/>
+                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7578-4b1c-6295-6f7d" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="47c2-8f87-8b69-d274" name="Chainaxe" hidden="false" collective="false" import="true" targetId="e644-9e34-f513-5995" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c6d-9e80-9036-74d6" type="min"/>
+                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e8b-e655-9894-53a9" type="max"/>
+                              </constraints>
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                              </costs>
+                            </entryLink>
+                          </entryLinks>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="ac52-8303-784f-b81e" name="Laspistol &amp; Chainaxe" hidden="false" collective="false" import="true" type="model">
+                          <modifiers>
+                            <modifier type="set" field="hidden" value="true">
+                              <conditions>
+                                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
+                              </conditions>
+                            </modifier>
+                          </modifiers>
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d369-b23b-8740-1c68" type="max"/>
+                          </constraints>
+                          <entryLinks>
+                            <entryLink id="fbcf-f177-2eb2-38c9" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a34f-7f41-dd62-a0df" type="min"/>
+                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a02b-3e38-b828-f848" type="max"/>
+                              </constraints>
+                            </entryLink>
+                            <entryLink id="1fa5-d007-4630-b532" name="Chainaxe" hidden="false" collective="false" import="true" targetId="e644-9e34-f513-5995" type="selectionEntry">
+                              <constraints>
+                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c64b-7d77-4e62-b1f9" type="min"/>
+                                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d93-1a52-22b1-2f1d" type="max"/>
+                              </constraints>
+                              <costs>
+                                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                              </costs>
+                            </entryLink>
+                          </entryLinks>
+                          <costs>
+                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                          </costs>
+                        </selectionEntry>
                       </selectionEntries>
                       <entryLinks>
                         <entryLink id="44d7-696a-955a-6c07" name="Autorifle" hidden="false" collective="false" import="true" targetId="57dd-dff6-d173-3bf1" type="selectionEntry"/>
@@ -3913,13 +3977,13 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
-                <selectionEntryGroup id="fdbc-18cc-bab2-ca44" name="1) The entire squad may replace its Lasgun or Autorifle with one of the following options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a649-7630-ad3b-6c73">
+                <selectionEntryGroup id="fdbc-18cc-bab2-ca44" name="1.1) The entire squad may replace its Lasgun or Autorifle with one of the following options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a649-7630-ad3b-6c73">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4c5e-c797-65e5-40cc" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb0b-8463-5e62-e957" type="max"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="18f6-fbe0-f43e-6a41" name="Laspistol &amp; Close Combat Weapons" hidden="false" collective="false" import="true" type="model">
+                    <selectionEntry id="18f6-fbe0-f43e-6a41" name="Laspistol &amp; Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="aa67-9a5e-4206-bc04" type="max"/>
                       </constraints>
@@ -3930,18 +3994,12 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7b00-9581-6d15-d558" type="max"/>
                           </constraints>
                         </entryLink>
-                        <entryLink id="873c-22e3-7c1f-898b" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="19ab-4d64-f6a7-9f81" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bcf4-d3fc-fe37-6cbb" type="min"/>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5938-5030-a259-73c4" type="max"/>
-                          </constraints>
-                        </entryLink>
                       </entryLinks>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="5f47-1e1c-3e73-221d" name="Autopistol &amp; Close Combat Weapons" hidden="false" collective="false" import="true" type="model">
+                    <selectionEntry id="5f47-1e1c-3e73-221d" name="Autopistol &amp; Melee Weapon" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="132d-4bf6-4222-a48f" type="max"/>
                       </constraints>
@@ -3951,76 +4009,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="daa7-4cb1-c839-f7b4" type="min"/>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e011-9a89-5340-f407" type="max"/>
                           </constraints>
-                        </entryLink>
-                        <entryLink id="bc0a-d7ee-91fd-ea5b" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="19ab-4d64-f6a7-9f81" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="661b-e8c7-d8a4-aef1" type="min"/>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5817-2296-decd-782f" type="max"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="e41a-e32a-71a8-6ed9" name="Laspistol &amp; Chainaxe" hidden="false" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="true">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d369-b23b-8740-1c68" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="177b-c0e8-01a5-2316" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a34f-7f41-dd62-a0df" type="min"/>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a02b-3e38-b828-f848" type="max"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="4cc4-7971-418a-5837" name="Chainaxe" hidden="false" collective="false" import="true" targetId="e644-9e34-f513-5995" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c64b-7d77-4e62-b1f9" type="min"/>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2d93-1a52-22b1-2f1d" type="max"/>
-                          </constraints>
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                          </costs>
-                        </entryLink>
-                      </entryLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="b77e-bf46-334a-049c" name="Autopistol &amp; Chainaxe" hidden="false" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="true">
-                          <conditions>
-                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4ae9-fa09-b6e7-01b6" type="max"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink id="428d-8c70-db42-c3ff" name="Autopistol" hidden="false" collective="false" import="true" targetId="344f-4836-c70d-29a4" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e07-2dd9-e6fe-66c8" type="min"/>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7578-4b1c-6295-6f7d" type="max"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink id="66b8-47b9-0993-c207" name="Chainaxe" hidden="false" collective="false" import="true" targetId="e644-9e34-f513-5995" type="selectionEntry">
-                          <constraints>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2c6d-9e80-9036-74d6" type="min"/>
-                            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e8b-e655-9894-53a9" type="max"/>
-                          </constraints>
-                          <costs>
-                            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
-                          </costs>
                         </entryLink>
                       </entryLinks>
                       <costs>
@@ -4098,6 +4086,64 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                       </costs>
                     </entryLink>
                   </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="1.2) Melee Weapon" hidden="false" id="9bd3-ca5e-e3fe-b996">
+                  <entryLinks>
+                    <entryLink id="7cb6-3ba0-5592-8d2" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="19ab-4d64-f6a7-9f81" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="50" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f824-e118-631a-3132" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="c900-6912-4c1d-a424" name="Chainaxe" hidden="false" collective="false" import="true" targetId="e644-9e34-f513-5995" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="50" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1f66-9804-ac2c-84c7" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditions>
+                            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="5f47-1e1c-3e73-221d" shared="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="18f6-fbe0-f43e-6a41" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="increment" value="1" field="c059-dd60-aec9-7da3">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="40bf-b6fa-7c1e-b14a" childId="model" shared="true" roundUp="false" id="35f8-b101-2cce-5b4a" includeChildSelections="true"/>
+                      </repeats>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="40bf-b6fa-7c1e-b14a" childId="5f47-1e1c-3e73-221d" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="40bf-b6fa-7c1e-b14a" childId="18f6-fbe0-f43e-6a41" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="increment" value="1" field="a9af-f1c2-bf2-5347">
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="40bf-b6fa-7c1e-b14a" childId="model" shared="true" roundUp="false" id="8892-b26a-9bd9-c51b" includeChildSelections="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c059-dd60-aec9-7da3" includeChildSelections="true"/>
+                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="a9af-f1c2-bf2-5347" includeChildSelections="true"/>
+                  </constraints>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
