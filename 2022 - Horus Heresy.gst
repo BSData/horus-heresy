@@ -1271,6 +1271,7 @@ Reactions:
         <infoLink name="Knights and Titans" hidden="false" type="rule" id="400b-3ae9-44d5-6df1" targetId="d0e-e683-6ab9-4f0"/>
       </infoLinks>
     </categoryEntry>
+    <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">

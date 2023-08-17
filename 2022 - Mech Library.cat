@@ -5031,7 +5031,7 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
     </selectionEntry>
     <selectionEntry id="51ed-f978-9a5e-1e04" name="Artificia Machina" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="191e-da91-3bc0-6ceb" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e022-4319-4ae5-adf1" type="max"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="5e23-856f-186d-618c" name="Animatus Integro (Cybertheurgic Rite)" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="true" import="true" type="upgrade">
@@ -6451,7 +6451,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
                 </infoLink>
                 <infoLink name="Breaching (X)" hidden="false" type="rule" id="9470-a24b-1937-5e16" targetId="a760-f736-1bf3-fa3c">
                   <modifiers>
-                    <modifier type="set" value=" Breaching (5+)" field="name"/>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
                   </modifiers>
                 </infoLink>
                 <infoLink name="Fleshbane" hidden="false" type="rule" id="1b58-a478-e629-aa84" targetId="40cd-9505-253c-e76f"/>
@@ -6483,6 +6483,49 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </infoLink>
         <infoLink name="Move Through Cover" hidden="false" type="rule" id="4e63-7ddf-f56e-89db" targetId="2b6f-bfec-759e-1746"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Anima Malefica" hidden="false" id="7fec-d772-f51-95b3">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Animatus Malevolence (Cybertheurgic Rite)" hidden="false" id="9109-d0c-a1e8-d8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="236-5f2e-a383-4f53"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ec-f501-4322-3006"/>
+          </constraints>
+          <rules>
+            <rule name="Animatus Malevolence (Cybertheurgic Rite)" hidden="false" id="f787-1170-60a1-31b9">
+              <description>Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit within 12&quot; that is entirely composed of models with the Corrupted Engine Unit Sub-type and then apply one of the following effects:
+• The chosen unit may immediately move a number of inches up to its unmodified Initiative Characteristic directly towards the nearest enemy unit. If the chosen unit has mixed Initiative Characteristics, use the highest unmodified Characteristic.
+• All models in the chosen unit improve their Invulnerable Save by 1, to a maximum of 3+, until the beginning of the controlling player’s next turn, (e.g., a model with an Invulnerable Save of 5+ improves their save to 4+).
+• All models in the unit add 1 to their WS and I characteristics until the end of the subsequent Assault phase.
+The Cybertheurgist’s controlling player may choose to make a Cybertheurgy check before using this power. If the Check is successful then two different options chosen from the above list may be applied to the target unit instead of one. If the Check is failed then no options may be chosen – the Cybertheurgist suffers Cybertheurgic Feedback and the Cybertheurgist may not use another Cybertheurgic Rite during this Shooting phase.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Amthea Excrusis (Cybertheurgic Weapon)" hidden="false" id="f9e7-c851-e14b-c5df">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dec4-b144-c8d9-bf16"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb02-b5f4-bcda-fe8c"/>
+          </constraints>
+          <profiles>
+            <profile name="Amthea Excrusis (Cybertheurgic Weapon)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="44e4-cb60-3b6d-893e">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Blind, Deflagrate, Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheurgic Focus" hidden="false" type="rule" id="8fdf-1d34-7d35-6ee0" targetId="f420-6cdb-5d9b-ef30"/>
+            <infoLink name="Blind" hidden="false" type="rule" id="c3a6-79a9-48ea-5577" targetId="d836-747d-07d6-2b63"/>
+            <infoLink name="Deflagrate" hidden="false" type="rule" id="8f48-a7f3-7cf0-f2f5" targetId="60bc-f79a-67ae-be4f"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33d1-c04f-38d-519c" type="max"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -6793,12 +6836,100 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
     </selectionEntryGroup>
     <selectionEntryGroup id="bd27-d2a1-da2b-f649" name="Cybertheurgic Arcana" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="a86a-b799-0077-c457" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry"/>
-        <entryLink id="adc1-f74a-b8f5-c935" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry"/>
-        <entryLink id="0098-1b87-a87d-08fb" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry"/>
-        <entryLink id="6018-be9c-b4f9-76d0" name="Ephemera Lacyraemarta" hidden="false" collective="false" import="true" targetId="25df-a541-0d05-6f61" type="selectionEntry"/>
-        <entryLink id="0c98-b1ae-1e0c-218d" name="Artificia Reductor" hidden="false" collective="false" import="true" targetId="b627-88f0-ee8c-c43c" type="selectionEntry"/>
+        <entryLink id="a86a-b799-0077-c457" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="adc1-f74a-b8f5-c935" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="0098-1b87-a87d-08fb" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="d015-cea7-196a-9f4c" shared="true" id="a23c-eeea-a673-e25f"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="6018-be9c-b4f9-76d0" name="Ephemera Lacyraemarta" hidden="true" collective="false" import="true" targetId="25df-a541-0d05-6f61" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="bd4b-63fa-928c-887d" shared="true" id="7c6a-f6df-70b9-d12e" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="0c98-b1ae-1e0c-218d" name="Artificia Reductor" hidden="true" collective="false" import="true" targetId="b627-88f0-ee8c-c43c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="73dc-f5bb-be45-2547" shared="true" id="163c-7979-f63b-f417" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Anima Malefica" hidden="false" type="selectionEntry" id="3e3d-d4d5-a52-17ce" targetId="7fec-d772-f51-95b3">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" id="222f-fe2b-ca3a-e84f" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aa94-5c65-d1f1-46a4" shared="false" id="1335-a31a-6adc-cbd5"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
+                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f7e-30b3-6c75-3fd5" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b224-eb41-50bd-2a35" type="min"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" field="2f7e-30b3-6c75-3fd5" value="2">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="b224-eb41-50bd-2a35" value="2">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="1ebb-8e01-7d58-9d99" name="Warlord Traits" hidden="true" collective="false" import="true">
       <modifiers>

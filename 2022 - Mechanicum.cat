@@ -763,86 +763,6 @@
         <categoryLink id="9c62-aa7d-142d-51f5" name="Feudal Hierarchy (On Foot)" hidden="false" targetId="ff97-e64e-506b-0587" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f96e-eae0-68fa-be28" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="3701-d454-88b0-a947" value="2">
-              <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="b3d1-0513-1249-ae81" value="2">
-              <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3701-d454-88b0-a947" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3d1-0513-1249-ae81" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b805-864e-e177-a3e8" name="Ephemera Lacyraemarta" hidden="true" collective="false" import="true" targetId="25df-a541-0d05-6f61" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="0ff0-07e8-a1b1-9fbd" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="7ded-27cc-e57e-bf87" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="8aba-8369-430a-d197" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="756e-9e13-103f-1228" name="Artificia Reductor" hidden="true" collective="false" import="true" targetId="b627-88f0-ee8c-c43c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="2ab1-bffc-d310-dee2" name="May take any of the following options:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="100c-29a9-e126-e082" name="Master-craft one weapon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1100,6 +1020,7 @@
           </constraints>
         </entryLink>
         <entryLink id="fe02-792f-e9bf-683c" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="f537-9851-55f3-83dd" targetId="bd27-d2a1-da2b-f649"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155"/>
@@ -1142,86 +1063,6 @@
         <categoryLink id="4699-a334-97a9-2479" name="Feudal Hierarchy (On Abeyant)" hidden="false" targetId="4c2b-03e9-abb7-7209" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1906-287d-d848-d9b6" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
-          <modifiers>
-            <modifier type="set" field="e268-664b-629f-444b" value="2">
-              <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="737d-08c3-9945-3527" value="2">
-              <conditions>
-                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cd1-fe10-db22-54bd" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e268-664b-629f-444b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="737d-08c3-9945-3527" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c9c8-73e7-da3a-94b6" name="Ephemera Lacyraemarta" hidden="true" collective="false" import="true" targetId="25df-a541-0d05-6f61" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="6aef-752f-c493-d67a" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="9a09-1b52-c2a1-8a67" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="5eed-b694-9170-88dc" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                        <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="221a-4910-3210-71d0" name="Artificia Reductor" hidden="true" collective="false" import="true" targetId="b627-88f0-ee8c-c43c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="b1be-d5bb-2751-7b63" name="May exchange either their Volkite Serpenta and/or Power Weapon each for one of the following options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="7676-9e72-ebf6-5df9">
           <constraints>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdf9-bd60-0935-0abe" type="min"/>
@@ -1425,6 +1266,7 @@
           </constraints>
         </entryLink>
         <entryLink id="95e3-999b-9694-12ed" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="b211-4ffa-7f2d-834e" targetId="bd27-d2a1-da2b-f649"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
@@ -1632,17 +1474,6 @@
             <entryLink id="981c-c968-b91e-0a9e" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="9ac7-6b44-4ac9-6d3d" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74ec-d2b0-fc99-36e1" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86ee-8c42-c7c0-4e3f" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="767b-91c0-8f1c-e9c5" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry"/>
-            <entryLink id="050c-b30a-233d-e4cb" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry"/>
-            <entryLink id="7041-0cdf-8fea-965d" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="db0a-e175-81d1-4910" name="Power Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d346-3f15-034c-2f55">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab9b-e81f-f7b8-58db" type="min"/>
@@ -1671,6 +1502,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70f2-5744-fc4a-f069" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="496b-9ae1-8e95-2280" targetId="bd27-d2a1-da2b-f649"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
@@ -1760,17 +1592,6 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
             </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="a234-2d6b-393d-c045" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0592-ad40-c996-6594" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fe1-72a5-d584-a0fe" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="0892-e3e3-7a9a-309f" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry"/>
-            <entryLink id="64d4-bc50-895e-7d89" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry"/>
-            <entryLink id="4d56-318b-d15f-132c" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="324e-9521-e7be-98ea" name="May exchange their Laspistol for one of the following options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="42e1-da12-b81b-62b6">
@@ -1905,6 +1726,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e2c-8dea-d381-c46b" type="min"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="a04c-1c74-1fbf-eddf" targetId="bd27-d2a1-da2b-f649"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105"/>
@@ -2238,28 +2060,6 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="5e74-2f72-d7ab-653b" name="Cybertheurgic Arcana" hidden="true" collective="false" import="true">
-              <modifiers>
-                <modifier type="set" field="3802-56a6-c690-6dbb" value="1">
-                  <conditions>
-                    <condition field="selections" scope="d015-cea7-196a-9f4c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="78ee-741f-83eb-e2ca" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="d015-cea7-196a-9f4c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="78ee-741f-83eb-e2ca" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3802-56a6-c690-6dbb" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df39-d29a-30eb-2dd8" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="9a8a-bcda-9600-142d" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry"/>
-                <entryLink id="659a-8ca9-a97f-4500" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry"/>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="f961-063c-f8a2-6f2d" name="Servo Arms and other options" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="8fe0-02cf-f34d-c225" value="1">
@@ -2395,6 +2195,7 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8003-704b-9ba6-5aa0" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="a260-ae95-5b91-6696" targetId="bd27-d2a1-da2b-f649"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -4550,7 +4351,7 @@ removed as a casualty.�</characteristic>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ba3d-94b3-3823-4d39" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ba3d-94b3-3823-4d39" name="Rites of the Beast Cybertheurgic Arcana" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="363b-da90-3afa-4e61" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
               <constraints>
@@ -5542,6 +5343,7 @@ removed as a casualty.�</characteristic>
         <categoryLink id="27c1-95be-258a-994e" name="Cybertheurgist" hidden="false" targetId="57a1-ae47-ff1b-36e4" primary="false"/>
         <categoryLink id="c9b9-7842-05fe-d0d6" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
         <categoryLink id="ab6b-df7c-a7a9-0ddf" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+        <categoryLink targetId="aa94-5c65-d1f1-46a4" id="462a-65f6-3063-3c37" primary="false" name="Unique Sub-type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="babb-1445-586b-acdb" name="Repulsion Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -5601,31 +5403,6 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="bb4a-371c-4b4b-23ec" name="Cybertheurgic Arcana" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="428b-bbfb-e082-86f3" type="min"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8daf-8392-0afa-034c" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="28d4-0933-0697-f21d" name="Artificia Machina" hidden="false" collective="false" import="true" targetId="51ed-f978-9a5e-1e04" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b44c-53df-f40c-1c26" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="9ebd-193a-852c-85a4" name="Ephemera Incursus" hidden="false" collective="false" import="true" targetId="12fc-d4d8-d36c-6f14" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a64a-b425-e5f7-d8e9" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="17da-9bc7-5133-8b12" name="Artificia Cybernetica" hidden="false" collective="false" import="true" targetId="d342-dbdb-33ec-5191" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aaa-ea3a-8390-3bc9" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
         <entryLink id="b3ba-c046-8fb7-948d" name="Archimandrite" hidden="false" collective="false" import="true" targetId="2cd1-fe10-db22-54bd" type="selectionEntry">
           <constraints>
@@ -5662,6 +5439,7 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3d8-384f-560b-f46a" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="e8ba-ed66-7bb1-fb29" targetId="bd27-d2a1-da2b-f649"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
