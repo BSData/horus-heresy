@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="73" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="73" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem" page="">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -17,6 +17,7 @@
     <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="March 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/JXRAKYvl3BrGbGjD.pdf"/>
     <publication id="48c2-d023-0069-001a" name="Imperialis Militia (Download)" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="April 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/04/j2TwD3c2AB8oLsVW.pdf"/>
     <publication id="53a4-0d21-2f8a-2c45" name="Campaigns of the Age of Darkness - The Siege of Cthonia" shortName="CotAoD - SoC" publicationDate="May 2023"/>
+    <publication name="Exemplary Battles of the Age of Darkness - The Depths of Tredecimmia" hidden="false" id="6bcf-2297-2bcd-51be" shortName="CORRUPTED ENGINES SUPPLEMENTARY LIST" publisher="Warhammer Community" publicationDate="2023-08-15" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/08/O799EvRRn3FSDT6m.pdf"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -597,8 +598,8 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" publicationId="e77a-823a-da94-16b9" page="307" hidden="false">
           <description>• Models with the Corrupted Unit Sub-type gain the Fear (1) special rule.
 • Any Hits inflicted on a model with the Corrupted Unit sub-type by a weapon with the Force or Psychic Focus special rules gain the Instant Death special rule.
-• Any unit composed entirely of models with the Corrupted Unit Sub-type is immunte to the effects of the Fear (X) special rule. When a unit composed entirely of models with the Corrupted Unit Sub-type fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic wounds with no saves or Damage Mitigation rolls of any kind allowed.
-• No model that does not also have the Corrupted Unit Sub-type or the Daemon Unit Type maj join a unit that includes one or more models with the Corrupted Unit Sub-type</description>
+• Any unit composed entirely of models with the Corrupted Unit Sub-type is immune to the effects of the Fear (X) special rule. When a unit composed entirely of models with the Corrupted Unit Sub-type fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic wounds with no saves or Damage Mitigation rolls of any kind allowed.
+• No model that does not also have the Corrupted Unit Sub-type or the Daemon Unit Type may join a unit that includes one or more models with the Corrupted Unit Sub-type</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1208,6 +1209,69 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5321-6dc9-c93c-028b" type="max"/>
       </constraints>
     </categoryEntry>
+    <categoryEntry id="a443-dbf4-cb6c-4da1" name="Corrupted Engine Sub-type" hidden="false">
+      <rules>
+        <rule id="6aed-6080-ba72-6007" name="Corrupted Engine Sub-type" publicationId="6bcf-2297-2bcd-51be" page="8" hidden="false">
+          <description>• All models with the Corrupted Engine Sub-type gain the Fear (1) special rule, or if it already has the Fear (X) special rule, it increases the value of X by 1 instead. 
+• Any rule, effect or modifier that would affect a model with the Corrupted Unit Sub-type also affects a model with the Corrupted Engine Unit Sub-type (e.g., the Anathema Sub-type special rules or the Inexorable special rule).
+• Any unit composed entirely of models with the Corrupted Engine Unit Sub-type is immune to the effects of the Fear (X) special rule, automatically passes Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit composed entirely of models with the Corrupted Engine Unit Sub-type fails a Morale check, it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no saves or Damage Mitigation rolls of any kind allowed.
+• Any Hits inflicted on a model with the Corrupted Engine Unit Sub-type by a weapon with the Force or Psychic Focus special rules gain the Instant Death special rule.
+• If a model with the Corrupted Engine Sub-type has a Wound characteristic and suffers an unsaved Wound with the Instant Death special rule it is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it.
+• No model that does not also have the Corrupted Engine Sub-type may join a unit that includes one or more models with the Corrupted Engine Unit Sub-type.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="78cd-2664-d4a9-c587" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Fear (1)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry id="437f-7773-a0d0-6061" name="Knight Sub-type" hidden="false">
+      <rules>
+        <rule id="d0e-e683-6ab9-4f0" name="Knights and Titans" publicationId="e77a-823a-da94-16b9" page="216" hidden="false">
+          <description>Very long. See 216. Summary from the Omega Coded:
+Measuring:
+- If model has a base, measure to base. If model does not, measure to the hull, except for when firing its weapons.
+Movement:
+- Ignore Difficult and Dangerous Terrain but may not end its move in Impassable Terrain.
+- May move over enemy Infantry and Cavalry types but may not finish their movement within 1” of a model.
+- May not Run.
+- May not make Ram Attacks.
+- If rammed, enemy vehicle always takes hits at Str10 and inflicts D3 HP of damage. If Knight or Titan survives the Ram, may attack the vehicle in the Assault phase.
+Shooting:
+- Always count as stationary, may fire Ordnance weapons with no effect on firing other weapons.
+- May fire all weapons at different targets (must declare all targets before firing).
+- Arm Mounted Weapon Arc: May fire in any Firing Arc, except the Hull (Rear). Count as Defensive weapons.
+- Carapace Mounted Weapon Arc: May fire in any arc but may not target models within 12” of firing model.
+Assault:
+- May declare Charges.
+- Cannot be locked in combat.
+- Any hits are resolved against its Front AV.
+- Gains +1 attack for each Melee weapon after the first
+- In addition to normal attacks may make;
+Stomp Attacks:
+- Makes D3+unmodified Attack characteristic attacks, Resolved at initiative 1, AP2 with the model’s unmodified WS and STR.
+- May not make Stomp Attacks against Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
+- May not Sweeping Advances, Pile-in Moves or Consolidations.
+Damage:
+- Any effects from Shaken, Stunned, Immobilised or Weapon Destroyed have no effect but lose HP as normal.
+- If suffer an explodes result, lose D3 HP instead.
+- Effects which permanently lower AV have no effect.
+- Catastrophic Damage: When loses final HP, it explodes. Every model within 6+D6 measured from the hull takes a str7+d3 AP4 hit. Any units hit must immediately take a Pinning test.
+Reactions:
+- May only make Reactions in response to – Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
+- May not perform Death or Glory Reactions</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry id="4280-2d8-16c6-d60b" name="Titan Sub-type" hidden="false">
+      <infoLinks>
+        <infoLink name="Knights and Titans" hidden="false" type="rule" id="400b-3ae9-44d5-6df1" targetId="d0e-e683-6ab9-4f0"/>
+      </infoLinks>
+    </categoryEntry>
+    <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -14685,6 +14749,13 @@ The penalty to Leadership is ignored by any unit with the Fearless or Stubborn s
     </rule>
     <rule id="1cb6-d7f2-0c79-d208" name="Ungainly" publicationId="48c2-d023-0069-001a" page="41" hidden="false">
       <description>A model may only attack with this weapon on a turn in which it makes a successful Charge, but does not gain a bonus attack for Charging or from any special rules that would normally grant additional Attacks.</description>
+    </rule>
+    <rule name="Impale" hidden="false" id="2dfc-b3cc-7ede-2827" publicationId="6bcf-2297-2bcd-51be" page="15">
+      <description>A unit may re-roll Charge Rolls when attempting to Charge an enemy unit that has suffered one or more Hits from a weapon with the Impale special rule caused by one or more models in the unit for which the Charge was declared in the same player turn. This takes effect even if no Wounds are caused by the Hits.
+If one or more Wounds are caused by a weapon with this rule, the affected unit decreases its Initiative characteristic by 1 until the end of the subsequent Assault phase.</description>
+    </rule>
+    <rule name="Malefic Aegis (X)" hidden="false" id="686c-178b-6e07-2ba3" publicationId="6bcf-2297-2bcd-51be" page="15">
+      <description>Malefic Aegis confers an Invulnerable Save equal to the value of X. Invulnerable saves granted by Malefic Aegis do not stack with other Invulnerable Saves but can benefit from rules (such as cyber-familiar) that specifically increase existing saves.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
