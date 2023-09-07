@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -923,6 +923,64 @@
         <categoryLink id="e00a-ad68-bbfb-7fb9" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b5f6-b129-fa40-ec95" name="Nathaniel Garro" hidden="true" collective="false" import="false" targetId="0583-258d-f0a0-2170" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>node_id_4729-bc86-456b-b73d</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>node_id_cf0f-e3f4-4fb4-989d</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>node_id_1cc8-5611-4d9a-9218</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan">
+                  <comment>node_id_2e32-ca02-48f0-a8dd</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d4ca-fcf2-ea64-881b" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          <comment>template_id_0af1-d052-4bd7-aab6</comment>
+        </categoryLink>
+        <categoryLink id="7ccd-b711-124b-f09f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_45ce-e338-43c9-b63e</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="21a9-63cc-743d-b606" name="Tylos Rubio" hidden="true" collective="false" import="false" targetId="56bf-2c6d-a0fa-a145" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>node_id_dfdc-f6f6-49d2-a7b3</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>node_id_354c-c71f-472f-b268</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>node_id_1127-c974-4663-874d</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan">
+                  <comment>node_id_0843-bef2-4767-8307</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="857f-6317-74f4-6c1a" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          <comment>template_id_28e0-91e7-4ada-9fac</comment>
+        </categoryLink>
+        <categoryLink id="4dd3-ea95-7264-346e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_4448-a712-4dd7-bf6d</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Greater Brass Scorpion" hidden="false" type="selectionEntry" id="7f2b-cb4a-f1c2-4f2d" targetId="3c5c-5bbf-cfc-e84e"/>
+    <entryLink import="true" name="Kytan Daemon Engine" hidden="false" type="selectionEntry" id="836f-6d51-1451-157e" targetId="b7cd-670-7027-fee8"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9dd4-325a-c1cb-fac2" name="Legate Marshal" hidden="false" collective="false" import="true" type="unit">
@@ -8930,19 +8988,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77bb-6e19-10be-f9b6" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="97c0-3d89-d9bf-bf2c" name="Turret Mounted Twin-linked Volkite Culverin" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="97c0-3d89-d9bf-bf2c" name="Turret Mounted Volkite Culverin" hidden="false" collective="false" import="true" type="upgrade">
               <entryLinks>
                 <entryLink id="5ce4-03e4-8bb5-9b08" name="Volkite Culverin" hidden="false" collective="false" import="true" targetId="170d-44e0-455c-8207" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Turret Mounted Twin-linked Volkite Culverin"/>
-                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7da4-5e9b-ba18-c423" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a40b-777d-667c-84ed" type="max"/>
                   </constraints>
-                  <infoLinks>
-                    <infoLink id="8f31-b518-9399-447f" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-                  </infoLinks>
                 </entryLink>
               </entryLinks>
               <costs>

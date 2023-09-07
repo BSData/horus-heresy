@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c247-da79-1654-d39e" name="2022 - Mechanicum" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -702,6 +702,62 @@
     <entryLink import="true" name="Greater Brass Scorpion" hidden="false" type="selectionEntry" id="cf26-6eab-4a3e-b082" targetId="3c5c-5bbf-cfc-e84e"/>
     <entryLink import="true" name="Blood Slaughterer" hidden="false" type="selectionEntry" id="f14b-bcb2-b7e7-7e50" targetId="2d70-676d-68aa-1973"/>
     <entryLink import="true" name="Decimator" hidden="false" type="selectionEntry" id="4699-ff33-7334-6b2d" targetId="b1a5-42a-a6ee-2223"/>
+    <entryLink id="7736-5242-6cb5-a742" name="Nathaniel Garro" hidden="true" collective="false" import="false" targetId="0583-258d-f0a0-2170" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>node_id_4729-bc86-456b-b73d</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>node_id_cf0f-e3f4-4fb4-989d</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>node_id_1cc8-5611-4d9a-9218</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan">
+                  <comment>node_id_2e32-ca02-48f0-a8dd</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="655a-6d13-81f5-9625" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          <comment>template_id_0af1-d052-4bd7-aab6</comment>
+        </categoryLink>
+        <categoryLink id="468a-6bce-e601-d96e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_45ce-e338-43c9-b63e</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8bf3-482f-d13d-7fa9" name="Tylos Rubio" hidden="true" collective="false" import="false" targetId="56bf-2c6d-a0fa-a145" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>node_id_dfdc-f6f6-49d2-a7b3</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>node_id_354c-c71f-472f-b268</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>node_id_1127-c974-4663-874d</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan">
+                  <comment>node_id_0843-bef2-4767-8307</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="888e-5134-3f39-af46" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          <comment>template_id_28e0-91e7-4ada-9fac</comment>
+        </categoryLink>
+        <categoryLink id="88a9-9ec3-6926-cda0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_4448-a712-4dd7-bf6d</comment>
+        </categoryLink>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d0f2-ee39-450c-39db" name="Archmagos Prime" publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" collective="false" import="true" type="unit">
@@ -2195,7 +2251,15 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8003-704b-9ba6-5aa0" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="a260-ae95-5b91-6696" targetId="bd27-d2a1-da2b-f649"/>
+            <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="a260-ae95-5b91-6696" targetId="bd27-d2a1-da2b-f649">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="78ee-741f-83eb-e2ca" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -4742,9 +4806,6 @@ removed as a casualty.�</characteristic>
       </costs>
     </selectionEntry>
     <selectionEntry id="c21c-3c14-2d2e-4bc0" name="Knight Moirax Talon" publicationId="bde1-6db1-163b-3b76" page="50" hidden="false" collective="false" import="true" type="unit">
-      <categoryLinks>
-        <categoryLink id="5c31-2a0a-2abf-0d40" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
-      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="b399-3555-ba3b-f5e5" name="Knight Moirax" publicationId="bde1-6db1-163b-3b76" page="50" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
