@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="28" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="30" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -1521,6 +1521,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1682-2560-347c-e798" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1533,6 +1538,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
+          <conditions>
+            <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1561,24 +1571,40 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <conditions>
                     <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="4227-8eed-0c5c-a2d9" value="1">
               <conditionGroups>
@@ -1586,6 +1612,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <conditions>
                     <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1593,6 +1621,29 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="2490-aa2f-f5db-6070" value="1">
               <conditions>
                 <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1682-2560-347c-e798" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Character">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1682-2560-347c-e798" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="8cb2-7235-fc34-9983" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1722,6 +1773,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </modifiers>
         </entryLink>
         <entryLink id="e5d6-2881-7062-6589" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="36c2-d7e5-6c2-aa57" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="625"/>
@@ -1765,6 +1817,16 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </infoLink>
             <infoLink id="ff17-c53c-d528-4544" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
             <infoLink id="c7f9-ee82-8b62-f8eb" name="Armiger and Moirax Talons" hidden="false" targetId="d840-fbd0-352e-b33e" type="rule"/>
+            <infoLink name="Rage (X)" hidden="false" type="rule" id="f383-2af6-82df-3b07" targetId="564d-3550-ae44-2f99">
+              <modifiers>
+                <modifier type="set" value="Rage (2)" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="bd5d-61fa-d2f6-45a2" childId="7282-cf21-e30d-73fe" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="b6ee-a502-fb9c-3c13" name="Phaeton Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
@@ -1836,6 +1898,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Heedless Slaughter (Unit)" hidden="false" type="selectionEntry" id="6f45-1f64-3b35-2abe" targetId="7282-cf21-e30d-73fe"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="df92-71d6-bf1a-d62e" name="Armiger Warglaive Talon" publicationId="bde1-6db1-163b-3b76" page="76" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -1875,6 +1940,16 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </infoLink>
             <infoLink id="7015-99cd-b720-e14e" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
             <infoLink id="0681-e970-4aab-25b9" name="Armiger and Moirax Talons" hidden="false" targetId="d840-fbd0-352e-b33e" type="rule"/>
+            <infoLink name="Rage (X)" hidden="false" type="rule" id="e2a9-8a2c-f531-fda5" targetId="564d-3550-ae44-2f99">
+              <modifiers>
+                <modifier type="set" value="Rage (2)" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="df92-71d6-bf1a-d62e" childId="7282-cf21-e30d-73fe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="9bc0-713a-2b98-9b6c" name="Reaper Chainblade" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" collective="false" import="true" type="upgrade">
@@ -1959,6 +2034,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Heedless Slaughter (Unit)" hidden="false" type="selectionEntry" id="530e-7511-951c-ef26" targetId="7282-cf21-e30d-73fe"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="f971-ef52-5344-0b26" name="Knight Acheron" publicationId="bde1-6db1-163b-3b76" page="82" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -1973,6 +2051,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -1985,6 +2069,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2002,14 +2091,25 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="6c5a-df71-fefa-2ee3" value="1">
               <conditionGroups>
@@ -2018,6 +2118,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2029,19 +2131,32 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="2490-aa2f-f5db-6070" value="1">
               <conditions>
@@ -2051,6 +2166,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="7f12-0cc3-9dcd-25bc" value="4">
               <conditions>
                 <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f03-d8c0-0e83-1f6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="f971-ef52-5344-0b26" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2091,25 +2211,6 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <infoLink id="a2ef-97d0-6458-d138" name="Flank Speed" hidden="false" targetId="41ab-227d-9d91-8001" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="9c07-87a8-f61e-6908" name="Arm Mounted Reaper Chainfist with In-Built Twin-Linked Heavy Bolter" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ff4-311e-8c3d-49d1" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbea-86df-945d-f106" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="cf70-2bdd-006c-05f8" name="Twin-linked Heavy Bolter" hidden="false" targetId="9268-9301-e5ff-4c49" type="profile"/>
-            <infoLink id="6de2-3e45-0759-d3c2" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-            <infoLink id="9625-00a5-ba15-4f2c" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Armourbane (Melee)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="5d23-1113-aab0-cdb4" name="Reaper Chainfist" hidden="false" targetId="fe4c-3b4d-5b20-0357" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="0f88-3932-8f8f-6ff3" name="Arm Mounted Acheron Flamestorm Cannon" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d49c-d8af-aece-b61e" type="min"/>
@@ -2151,9 +2252,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </modifier>
             <modifier type="set" field="5792-c33d-8850-edf4" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -2161,10 +2267,41 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink id="8e76-d599-de78-70d0" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="f6bc-a385-732-dedb" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="415"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" hidden="false" id="1f41-b153-648b-384f" defaultSelectionEntryId="7ff0-e791-11fd-4c75">
+          <selectionEntries>
+            <selectionEntry id="7ff0-e791-11fd-4c75" name="Arm Mounted Reaper Chainfist with In-Built Twin-Linked Heavy Bolter" publicationId="bde1-6db1-163b-3b76" page="120" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbea-86df-945d-f106" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7d88-f494-b167-8df6" name="Twin-linked Heavy Bolter" hidden="false" targetId="9268-9301-e5ff-4c49" type="profile"/>
+                <infoLink id="fe0c-8d82-a5e6-d26d" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+                <infoLink id="cbb1-6eba-dbc6-a3ec" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Armourbane (Melee)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="985-79e4-50bb-64a6" name="Reaper Chainfist" hidden="false" targetId="fe4c-3b4d-5b20-0357" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d54-fbc8-2c5f-e301" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="8681-fb80-79a9-9905" targetId="23cf-fac2-4878-aeff"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="0a65-543c-19b2-fd34" name="Knight Castigator" publicationId="bde1-6db1-163b-3b76" page="81" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2179,6 +2316,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2191,6 +2334,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2208,24 +2356,45 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="4227-8eed-0c5c-a2d9" value="1">
               <conditionGroups>
@@ -2234,6 +2403,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2250,6 +2422,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
                     <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2257,6 +2431,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="7f12-0cc3-9dcd-25bc" value="4">
               <conditions>
                 <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f03-d8c0-0e83-1f6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="0a65-543c-19b2-fd34" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2297,33 +2476,6 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <infoLink id="857f-ece8-7e9f-1a3d" name="Flank Speed" hidden="false" targetId="41ab-227d-9d91-8001" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="e024-606e-215c-1c77" name="Arm Mounted Tempest Warblade" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="274d-4831-4485-1b58" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f319-bb99-2167-f454" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4631-e659-37a2-8c5e" name="Tempest Warblade" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Deflagrate, Tempest</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="f50c-88e7-1b1f-fe80" name="Tempest" publicationId="bde1-6db1-163b-3b76" page="110" hidden="false">
-              <description>Instead of making a Melee Attack, a model with a weapon with this special rule may make a special attack at Initiative step 2. This automatically inflicts a single Hit against each model (friendly or enemy) in contact with the attacking model’s base, using the profile of the weapon with this special rule.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="15fc-0183-5d6d-0671" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="5cf7-c7e3-8bbd-1622" name="Arm Mounted Twin-Linked Castigator Bolt Cannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d6c-bf49-5957-8cf0" type="min"/>
@@ -2369,9 +2521,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </modifier>
             <modifier type="set" field="2a3b-8b04-1f30-5550" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -2379,10 +2536,49 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink id="01b1-b8f0-02f1-6fd9" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="9730-ff90-9993-ae41" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="380"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" hidden="false" id="2a46-cf40-d13a-142d" defaultSelectionEntryId="377c-a5d4-3d9d-1403">
+          <selectionEntries>
+            <selectionEntry id="377c-a5d4-3d9d-1403" name="Arm Mounted Tempest Warblade" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f319-bb99-2167-f454" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="d50f-dc20-ef6-c5b0" name="Tempest Warblade" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Deflagrate, Tempest</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="a37f-9f4-f33-1672" name="Tempest" publicationId="bde1-6db1-163b-3b76" page="110" hidden="false">
+                  <description>Instead of making a Melee Attack, a model with a weapon with this special rule may make a special attack at Initiative step 2. This automatically inflicts a single Hit against each model (friendly or enemy) in contact with the attacking model’s base, using the profile of the weapon with this special rule.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="bc29-1a4a-35da-ea1b" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2da-867b-27db-94e9" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="3ec7-6093-8bb2-a08c" targetId="23cf-fac2-4878-aeff"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="8312-7457-e7b6-fd9f" name="Knight Lancer" publicationId="bde1-6db1-163b-3b76" page="80" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2397,6 +2593,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2409,6 +2611,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2426,24 +2633,45 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="4227-8eed-0c5c-a2d9" value="1">
               <conditionGroups>
@@ -2452,6 +2680,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2468,6 +2699,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
                     <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2475,6 +2708,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="7f12-0cc3-9dcd-25bc" value="4">
               <conditions>
                 <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f03-d8c0-0e83-1f6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="8312-7457-e7b6-fd9f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2514,52 +2752,6 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         </infoLink>
         <infoLink id="0363-8604-960c-ca8b" name="Flank Speed" hidden="false" targetId="41ab-227d-9d91-8001" type="rule"/>
       </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="6d18-1164-7bcd-908a" name="Arm Mounted Shock Lance" publicationId="bde1-6db1-163b-3b76" page="119 &amp; 123" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="670b-d5ac-cb25-c8ae" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ca-7def-76d4-24d2" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e0a8-b5d1-d174-5090" name="Shock Lance (Melee)" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Exoshock (5+)</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="f430-bf47-d8a8-02ad" name="Shock Lance (Ranged)" publicationId="bde1-6db1-163b-3b76" page="119" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Concussive (2)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="1f09-e63a-e4c7-773a" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Reach (1)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="0c4e-d81a-bbbf-8da4" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Exoshock (5+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="404d-13a0-1cfe-3d59" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Concussive (2)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="a713-78d8-8d4a-d9f8" name="Household Ranks" hidden="false" collective="false" import="true" targetId="1b29-a58e-296c-3946" type="selectionEntryGroup"/>
         <entryLink id="c4b7-2840-5c90-2878" name="Ion Gauntlet Shield" hidden="false" collective="false" import="true" targetId="9ccc-276b-eb67-9a0f" type="selectionEntry">
@@ -2576,9 +2768,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </modifier>
             <modifier type="set" field="8d32-669b-0658-1819" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -2586,10 +2783,66 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink id="4d59-61a6-968c-c664" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="7ced-d8d3-cf1a-47ba" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" hidden="false" id="ed83-898b-a7e0-8ff4" defaultSelectionEntryId="974d-cd78-f1e3-9920">
+          <selectionEntries>
+            <selectionEntry id="974d-cd78-f1e3-9920" name="Arm Mounted Shock Lance" publicationId="bde1-6db1-163b-3b76" page="119 &amp; 123" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ca-7def-76d4-24d2" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3a19-23cb-df6c-b5b2" name="Shock Lance (Melee)" publicationId="bde1-6db1-163b-3b76" page="123" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Exoshock (5+)</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="7a2f-9429-f59e-431a" name="Shock Lance (Ranged)" publicationId="bde1-6db1-163b-3b76" page="119" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 6, Concussive (2)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="884c-1872-d703-c3af" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Reach (1)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="64c9-c488-5b48-f141" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Exoshock (5+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="ff03-1a1e-3055-cad4" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Concussive (2)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2da-867b-27db-94e9" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="2f87-51c-8b52-2129" targetId="23cf-fac2-4878-aeff"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="3706-a84c-678d-b1c6" name="Knight Questoris" publicationId="bde1-6db1-163b-3b76" page="78" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2604,6 +2857,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2616,6 +2875,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2633,24 +2897,45 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="4227-8eed-0c5c-a2d9" value="1">
               <conditionGroups>
@@ -2659,6 +2944,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2675,6 +2963,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
                     <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2682,6 +2972,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="7f12-0cc3-9dcd-25bc" value="4">
               <conditions>
                 <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f03-d8c0-0e83-1f6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="3706-a84c-678d-b1c6" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -2738,6 +3033,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="1982-7d02-1b0b-2d5a" targetId="23cf-fac2-4878-aeff"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="4a49-023e-5ab7-7085" name="May exchange its Arm Mounted Rapid-Fire Battle Cannon with In-Built Heavy Stubber for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="d937-e0ce-7e8a-1d6e">
@@ -2759,6 +3055,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </entryLink>
             <entryLink id="d937-e0ce-7e8a-1d6e" name="Rapid-Fire Battle Cannon with In-Built Heavy Stubber" hidden="false" collective="false" import="true" targetId="a0e4-12d7-ff85-51c4" type="selectionEntry"/>
             <entryLink id="9d5b-eda4-cdee-0062" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="0aee-ef5a-9636-1740" type="selectionEntry"/>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="93a7-f889-563a-2872" targetId="23cf-fac2-4878-aeff"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="cbde-85d9-9a78-1e8f" name="May exchange its Hull (Front) Mounted Heavy Stubber with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="aaaf-0640-640a-b248">
@@ -2807,9 +3104,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </modifier>
             <modifier type="set" field="0e81-0584-4e86-64e1" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -2817,6 +3119,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink id="9c30-e139-af24-b258" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="d6b5-ba0b-60fb-a4e9" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="380"/>
@@ -2834,6 +3137,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1682-2560-347c-e798" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2846,6 +3154,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2865,24 +3178,44 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1682-2560-347c-e798" type="greaterThan"/>
                     <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="4227-8eed-0c5c-a2d9" value="1">
               <conditionGroups>
@@ -2890,6 +3223,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <conditions>
                     <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2900,6 +3235,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   <conditions>
                     <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
+                    <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -2912,6 +3248,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="7f12-0cc3-9dcd-25bc" value="4">
               <conditions>
                 <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f03-d8c0-0e83-1f6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="7b6b-49ab-d71d-e359" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3026,6 +3367,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </modifiers>
         </entryLink>
         <entryLink id="8582-40af-3314-6d1e" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="7b31-c479-4f1d-5982" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="625"/>
@@ -3044,6 +3386,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3056,6 +3404,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3076,24 +3429,45 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="4227-8eed-0c5c-a2d9" value="1">
               <conditionGroups>
@@ -3102,6 +3476,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3118,6 +3495,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
                     <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3125,6 +3504,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="7f12-0cc3-9dcd-25bc" value="4">
               <conditions>
                 <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f03-d8c0-0e83-1f6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="012b-109f-74d2-2c82" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3172,43 +3556,6 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <infoLink id="d09b-3f48-8ccc-7bfe" name="Catastrophic Destruction" hidden="false" targetId="c41f-6ac9-6909-44c4" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="f471-0a37-316d-23aa" name="Arm Mounted Atrapos Phasecutter" publicationId="bde1-6db1-163b-3b76" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="01c2-3f18-c372-00c8" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3814-189a-2b0c-bf5a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="ba87-6ceb-1c1c-6bf1" name="Atrapos Phasecutter (Ranged)" publicationId="bde1-6db1-163b-3b76" page="115" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="93f8-ea60-d968-53e1" name="Atrapos Phasecutter (Melee)" publicationId="bde1-6db1-163b-3b76" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Cumbersome, Armourbane, Instant Death</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="7e80-bb26-89b8-9529" name="Ordnance" hidden="false" targetId="6c55-22c8-1b01-2105" type="rule"/>
-            <infoLink id="71b9-5419-baca-f076" name="Cumbersome" hidden="false" targetId="d89a-c10e-8a7a-92c3" type="rule"/>
-            <infoLink id="b38f-6fc8-672b-17b7" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Armourbane (Melee)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="e9ec-25d5-5fa3-9fa2" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="7a42-0c59-01c5-8c5d" name="Arm Mounted Singularity Cannon" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f02a-0ac1-2750-c794" type="min"/>
@@ -3282,9 +3629,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditionGroups>
             </modifier>
             <modifier type="set" field="b687-56a7-01ff-4f4b" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -3292,10 +3644,59 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink id="5536-d060-252b-fe86" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="3149-5fc-4cdf-3e8a" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="500"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" hidden="false" id="e678-8ade-1305-bca5" defaultSelectionEntryId="1ba6-43e-cacc-eb6">
+          <selectionEntries>
+            <selectionEntry id="1ba6-43e-cacc-eb6" name="Arm Mounted Atrapos Phasecutter" publicationId="bde1-6db1-163b-3b76" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3814-189a-2b0c-bf5a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5b17-4de7-5332-ec3e" name="Atrapos Phasecutter (Ranged)" publicationId="bde1-6db1-163b-3b76" page="115" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Ordnance 1</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="9a01-7f85-2590-34c6" name="Atrapos Phasecutter (Melee)" publicationId="bde1-6db1-163b-3b76" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Cumbersome, Armourbane, Instant Death</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="be86-fd26-3254-1887" name="Ordnance" hidden="false" targetId="6c55-22c8-1b01-2105" type="rule"/>
+                <infoLink id="26c8-1614-dcaf-9639" name="Cumbersome" hidden="false" targetId="d89a-c10e-8a7a-92c3" type="rule"/>
+                <infoLink id="76a4-7407-1f3e-c2c8" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Armourbane (Melee)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="9aec-5651-b61b-f6b7" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2da-867b-27db-94e9" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="ad6b-4b2e-3e64-e1d6" targetId="23cf-fac2-4878-aeff"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry id="6d0e-0d72-d9e2-01d1" name="Questoris Knight Magaera" publicationId="bde1-6db1-163b-3b76" page="85" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -3310,6 +3711,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3322,6 +3729,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
+          <conditions>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3339,24 +3751,45 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="4227-8eed-0c5c-a2d9" value="1">
               <conditionGroups>
@@ -3365,6 +3798,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3381,6 +3817,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
                     <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3388,6 +3826,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="7f12-0cc3-9dcd-25bc" value="4">
               <conditions>
                 <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f03-d8c0-0e83-1f6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="6d0e-0d72-d9e2-01d1" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3457,8 +3900,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <selectionEntryGroups>
         <selectionEntryGroup id="36dc-7ab3-6da1-e782" name="May exchange its Arm Mounted Reaper Chainsword for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9a0c-42b5-1454-bfd6">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e359-6e6e-aceb-71e4" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98e1-353c-3e8b-e7aa" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="628e-4ba0-2a3c-944e"/>
           </constraints>
           <entryLinks>
             <entryLink id="9a0c-42b5-1454-bfd6" name="Reaper Chainsword" hidden="false" collective="false" import="true" targetId="2164-1725-d032-ed49" type="selectionEntry"/>
@@ -3467,6 +3910,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="6ddf-3c91-f6f3-6b8c" targetId="23cf-fac2-4878-aeff"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="a009-f54b-f17a-e86e" name="Hull (Front) Mounted Phased Plasma-Fusil" hidden="false" collective="false" import="true" defaultSelectionEntryId="bce2-b7ba-7c5e-af6a">
@@ -3489,9 +3933,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </modifier>
             <modifier type="set" field="3a69-8c16-b2d0-1121" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -3499,6 +3948,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink id="f279-74fb-5c30-6e2e" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="7d53-18e4-255-1dd6" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="385"/>
@@ -3517,6 +3967,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                 <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -3526,9 +3982,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="add" field="category" value="6d0b-fe0e-911e-486f">
+        <modifier type="add" field="category" value="6e0c-29ba-a445-8321">
           <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo"/>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="a335-d5b0-79b6-8117">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3546,24 +4007,45 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="decrement" field="7f12-0cc3-9dcd-25bc" value="2">
-              <conditions>
-                <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6a9-eb18-8dc5-ef1c" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="6c5a-df71-fefa-2ee3" value="1">
-              <conditions>
-                <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="decrement" field="4227-8eed-0c5c-a2d9" value="1">
-              <conditions>
-                <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7496-3ece-e6d8-6d40" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d39-37c3-366-9cbd" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="4227-8eed-0c5c-a2d9" value="1">
               <conditionGroups>
@@ -3572,6 +4054,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3dc3-9018-b7a3-8cf9" type="greaterThan"/>
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a8-b2a3-1c3c-9761" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6463-f70a-45df-f1f4" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4c8-641b-5139-1acd" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3588,6 +4073,8 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="greaterThan"/>
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78c-787d-54ca-82c2" type="greaterThan"/>
                     <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b90-1389-3b29-3fca" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="greaterThan"/>
+                    <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e208-5a47-5937-4f5c" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3595,6 +4082,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <modifier type="increment" field="7f12-0cc3-9dcd-25bc" value="4">
               <conditions>
                 <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f03-d8c0-0e83-1f6e" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" field="3c44-1e2a-23fe-c9e0" value="Psyker">
+              <conditions>
+                <condition field="selections" scope="1944-033c-5b7e-a378" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ad-bd12-1203-4018" type="greaterThan"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3672,6 +4164,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="3d06-3d92-d8ac-6741" targetId="23cf-fac2-4878-aeff"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="32a0-55a7-387a-5960" name="Hull (Front) Mounted Graviton Gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="8121-31d5-379b-3419">
@@ -3716,9 +4209,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditionGroups>
             </modifier>
             <modifier type="set" field="e3c3-9dc1-68b6-c9b2" value="1">
-              <conditions>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="63ce-0429-b209-c3e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8bc8-6c30-409f-8f27" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -3726,6 +4224,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink id="5010-4647-a123-b68c" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="1ebb-8e01-7d58-9d99" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="f195-fbaa-ebb9-8c71" targetId="3995-31e8-e6a2-562a"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="380"/>
@@ -6555,14 +7054,78 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy che
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ionic lash" hidden="true" id="23cf-fac2-4878-aeff" publicationId="44e-19f2-a369-b04e" page="9">
+      <profiles>
+        <profile name="Ionic lash" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="539b-9552-7c-76af">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (2), Exoshock (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Exoshock (X)" hidden="false" type="rule" id="d69c-9c38-21b-bb3f" targetId="69ca-318a-b47a-7a3c">
+          <modifiers>
+            <modifier type="set" value="Exoshock (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Reach (X)" hidden="false" type="rule" id="1a00-ff11-b6aa-7d97" targetId="19bf-62a2-5737-890b">
+          <modifiers>
+            <modifier type="set" value="Reach (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3504-b22c-8a16-60e0"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="b4c8-641b-5139-1acd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Heedless Slaughter (Unit)" hidden="true" id="7282-cf21-e30d-73fe">
+      <infoLinks>
+        <infoLink name="Rage (X)" hidden="false" type="rule" id="b1ed-a1f3-f063-a428" targetId="564d-3550-ae44-2f99">
+          <modifiers>
+            <modifier type="set" value="Rage (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b42-4e64-87e7-485d"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="feaf-f91d-3063-d980" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="feaf-f91d-3063-d980">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="4d39-37c3-366-9cbd" shared="true" roundUp="false" id="9065-7f51-fb89-9c10" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="4d39-37c3-366-9cbd" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="greaterThan"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="greaterThan"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="3995-31e8-e6a2-562a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -6576,9 +7139,6 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy che
 Dolorous: A model with this special rule may attempt to make Sweeping Advances (as an exception to the normal rules for models with the Knight Unit Sub-type).</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink id="7a9e-21b2-74eb-01e8" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
@@ -6589,9 +7149,6 @@ Dolorous: A model with this special rule may attempt to make Sweeping Advances (
               <description>A model with this upgrade must reduce its Weapon Skill and Ballistic Skill Characteristics by -1 and its Movement Characteristics by -2.</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink id="61b8-9573-37f8-bc16" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="-30"/>
           </costs>
@@ -6603,9 +7160,6 @@ Dolorous: A model with this special rule may attempt to make Sweeping Advances (
 Arbalester: When a model with this special rule is required to make a Scatter roll, roll an additional Scatter dice and the model’s controlling player chooses which is used to determine the results of the Scatter roll.</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink id="1e2f-a89a-18ae-1ccd" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
@@ -6643,9 +7197,6 @@ A model with this upgrade gains the Character Unit Sub-type and increases its We
 Aucteller: When engaged in a Challenge against an enemy model with the Knight, Titan or Monstrous Unit Sub-type, the Primarch Unit Type or a model with a Wounds Characteristic of 8 or higher, a model with this special rule gains +1 Weapon Skill and +1 Attack. This bonus to Weapon Skill is in addition to the +1 Weapon Skill increase from the Aucteller upgrade detailed above.</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink id="2d77-3b74-0789-f893" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
@@ -6657,9 +7208,6 @@ Aucteller: When engaged in a Challenge against an enemy model with the Knight, T
 Implacable: No attack targeting a model with this special rule may inflict more than a single Hull Point of damage, including those attacks with the Exoshock (X) special rule</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink id="e207-a3d7-d29b-591b" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
           </costs>
@@ -6671,9 +7219,6 @@ Implacable: No attack targeting a model with this special rule may inflict more 
 Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at least one model within 6&quot; of a friendly model with this special rule increase the Leadership of all models in the unit to 9.</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink id="1bbb-e258-1a5d-4f9f" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
@@ -6692,9 +7237,6 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
               <description>A model with this upgrade increases its Movement Characteristic by +4 and gains the Character Unit Sub-type and the Scout and Outflank special rules. An Acastus Knight Porphyrion may not be given this upgrade.</description>
             </rule>
           </rules>
-          <entryLinks>
-            <entryLink id="77c9-4855-9fbe-02a3" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
           </costs>
@@ -6962,7 +7504,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
-            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
+            <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
           </conditions>
         </modifier>
         <modifier type="set" field="5b44-a7e3-a0de-7a31" value="1">
@@ -7107,6 +7649,135 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
           </modifiers>
         </entryLink>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Dark Blessings" hidden="true" id="3995-31e8-e6a2-562a" import="true">
+      <selectionEntries>
+        <selectionEntry id="8bc8-6c30-409f-8f27" name="Conqueror of Worlds (0-1)" publicationId="44e-19f2-a369-b04e" page="7" hidden="false" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cb2-7235-fc34-9983" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7b6b-49ab-d71d-e359" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d855-dfe1-4f37-d3c0" type="max"/>
+          </constraints>
+          <rules>
+            <rule id="7b98-d37b-e98b-1d60" name="Conqueror of Worlds (0-1)" publicationId="44e-19f2-a369-b04e" page="7" hidden="false">
+              <description>A model with this upgrade gains the Character Unit Sub-type and increases its Weapon Skill and Ballistic Skill Characteristics by +1. In  addition, if the Questoris Household Detachment is the Primary Detachment of the army, then a model with this upgrade must be chosen is the army’s Warlord. If selected as the army’s Warlord, a model with this upgrade automatically gains the following Warlord Trait:</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="80"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Heedless Slaughter" hidden="false" id="4d39-37c3-366-9cbd" publicationId="44e-19f2-a369-b04e" page="7">
+          <rules>
+            <rule name="Heedless Slaughter" hidden="false" id="a04f-92eb-66e1-dc45" publicationId="44e-19f2-a369-b04e" page="7">
+              <description>A model with this Dark Blessing gains the Character Unit Sub-type and must reduce its Weapon Skill and Ballistic Skill Characteristics by -1. In addition, for each model with this Dark Blessing, all models in a single unit made up entirely of models with the Armiger Unit Type, selected as part of the same Detachment, gain the Rage (2) special rule for no additional points cost.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Malevolent Artifice" hidden="false" id="d6ff-d1db-10d2-9280" publicationId="44e-19f2-a369-b04e" page="8" defaultAmount="50">
+          <rules>
+            <rule name="Malevolent Artifice" hidden="false" id="de1e-6bee-f53f-de9c" publicationId="44e-19f2-a369-b04e" page="8">
+              <description>At the end of each of the controlling player’s turns in which a model with this upgrade inflicts at least one unsaved Wound or Hull Point with a weapon with the Melee type, it gains the It Will Not Die (6+) special rule until the end of the battle. If the model already has the It Will Not Die (X) special rule, it increases the value of X by 1, up to a maximum of 4+.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="It Will Not Die (X)" hidden="false" type="rule" id="7335-9c66-777a-d5cc" targetId="2784-d0be-a4e2-890f"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Encroaching Ruin" hidden="false" id="e208-5a47-5937-4f5c" publicationId="44e-19f2-a369-b04e" page="8" defaultAmount="40">
+          <rules>
+            <rule name="Encroaching Ruin" hidden="false" id="3543-23e4-4cbe-a169" publicationId="44e-19f2-a369-b04e" page="8">
+              <description>A model with this upgrade increases its Ballistic Skill Characteristic by +1 and gains the Character Unit Sub-type and Commanding Presence special rule.
+Commanding Presence: Armiger Warglaives or Armiger Helverins units that have at least one model within 6&quot; of one or more friendly models with this special rule at the start of a turn increase their Movement Characteristic by +2 until the end of that player turn.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Putrid Corruption" hidden="false" id="6a9-eb18-8dc5-ef1c" publicationId="44e-19f2-a369-b04e" page="8" defaultAmount="45">
+          <rules>
+            <rule name="Putrid Corruption" hidden="false" id="ba33-7b89-512c-7bbf" publicationId="44e-19f2-a369-b04e" page="8">
+              <description>A model with this upgrade must reduce its Movement Characteristic by -2 and gains the Unrelenting special rule.
+An Acastus Knight Porphyrion or Acastus Knight Asterius may not be given this Dark Blessing.
+Unrelenting: Each time a model with this special rule suffers an Explodes result on the Vehicle Damage chart, it loses 1 extra Hull Point instead of D3, in addition to the Hull Point it loses for the Penetrating Hit</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Infernal Tempest" hidden="false" id="7ad-bd12-1203-4018" publicationId="44e-19f2-a369-b04e" page="8" defaultAmount="25">
+          <rules>
+            <rule name="Infernal Tempest" hidden="false" id="2b0e-5f20-f672-ea98" publicationId="44e-19f2-a369-b04e" page="8">
+              <description>A model with this upgrade gains the Character and Psyker Unit Sub-types, and Infernal Rites Psychic Discipline. When making a Psychic check, a model with this upgrade always counts as having a Leadership Characteristic of 7 regardless of any modifiers or effects.
+Psychic Discipline: Infernal Rites
+A Psyker with this Discipline gains the listed Power, weapon and special rules but does not gain the Aetheric Lightning Psychic Weapon.</description>
+            </rule>
+          </rules>
+          <profiles>
+            <profile name="Empyreal Tempest (Psychic Weapon)" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="d825-9702-7cd0-1fe" publicationId="44e-19f2-a369-b04e" page="8">
+              <characteristics>
+                <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">12&quot;</characteristic>
+                <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
+                <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">2</characteristic>
+                <characteristic name="Type" typeId="2159-62b6-4337-d516">Heavy 1, Blast (3&quot;), Guided Fire, Psychic Focus</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Infernal Warding (Psychic Power)" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="29c3-99da-b4d8-2404" publicationId="44e-19f2-a369-b04e" page="8">
+              <characteristics>
+                <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">At the start of any of the controlling player’s turns, a model with this power may choose to make a Psychic check. If the Check is passed, the model with this power gains +1 to their Invulnerable Save, to a maximum of 3+, until the start of the controlling player’s next player turn. If the Check is failed, the model suffers Perils of the Warp and gains no benefit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Psychic Focus" hidden="false" type="rule" id="acc2-537b-ff29-991e" targetId="bff3-3548-b2b8-72f1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ravenous Dissolution" hidden="false" id="6463-f70a-45df-f1f4" publicationId="44e-19f2-a369-b04e" page="9" defaultAmount="50">
+          <rules>
+            <rule name="Ravenous Dissolution" hidden="false" id="51e9-cbc3-6e3-e1ed" publicationId="44e-19f2-a369-b04e" page="9">
+              <description>A model with this upgrade increases its Weapon Skill Characteristic by +1, and gains the Character Unit Sub-type and the Marked for Death special rule.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Marked For Death" hidden="false" type="rule" id="5650-a7f5-930b-465" targetId="4f41-4c04-9cd8-c5a1"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rapturous Sensation" hidden="false" id="68f-18b3-d00b-5caf" publicationId="44e-19f2-a369-b04e" defaultAmount="65" page="9">
+          <rules>
+            <rule name="Rapturous Sensation" hidden="false" id="3afb-89b0-1dae-96fa" publicationId="44e-19f2-a369-b04e" page="9">
+              <description>No enemy unit that has one or more models within 8&quot; of a model with this Dark Blessing may have a Reaction declared for it in any Phase unless that unit’s controlling player first passes a Leadership test for the unit that they wish to declare a Reaction for. If the Test is passed then a Reaction may be declared and resolved as normal. If the Test is failed then that unit may not have any Reactions declared for it in the current player turn, but the controlling player does not lose a point of their Reaction Allotment.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Formless Distortion" hidden="false" id="b4c8-641b-5139-1acd" publicationId="44e-19f2-a369-b04e" page="9">
+          <rules>
+            <rule name="Formless Distortion" hidden="false" id="7e74-972a-b0f5-2c58" publicationId="44e-19f2-a369-b04e" page="9">
+              <description>A model with this upgrade increases its Weapon Skill Characteristic by +1 and gains the Character Unit Sub-type. In addition, it may exchange a single weapon with the Melee type to an Ionic Lash.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="greaterThan"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="1b29-a58e-296c-3946" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="351a-892c-3483-6ceb" type="max"/>
+      </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
