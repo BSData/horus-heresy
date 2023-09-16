@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="32" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3129-da35-55e0-642d" name="2022 - Mech Library" revision="33" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -3058,7 +3058,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             </entryLink>
             <entryLink id="d937-e0ce-7e8a-1d6e" name="Rapid-Fire Battle Cannon with In-Built Heavy Stubber" hidden="false" collective="false" import="true" targetId="a0e4-12d7-ff85-51c4" type="selectionEntry"/>
             <entryLink id="9d5b-eda4-cdee-0062" name="Thermal Cannon" hidden="false" collective="false" import="true" targetId="0aee-ef5a-9636-1740" type="selectionEntry"/>
-            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="93a7-f889-563a-2872" targetId="23cf-fac2-4878-aeff"/>
+            <entryLink import="true" name="Ionic lash" hidden="false" type="selectionEntry" id="93a7-f889-563a-2872" targetId="23cf-fac2-4878-aeff" defaultAmount="0">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="cbde-85d9-9a78-1e8f" name="May exchange its Hull (Front) Mounted Heavy Stubber with:" hidden="false" collective="false" import="true" defaultSelectionEntryId="aaaf-0640-640a-b248">
@@ -7718,7 +7722,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
             </rule>
           </rules>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Malevolent Artifice" hidden="false" id="d6ff-d1db-10d2-9280" publicationId="44e-19f2-a369-b04e" page="8" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Malevolent Artifice" hidden="false" id="d6ff-d1db-10d2-9280" publicationId="44e-19f2-a369-b04e" page="8">
           <rules>
             <rule name="Malevolent Artifice" hidden="false" id="de1e-6bee-f53f-de9c" publicationId="44e-19f2-a369-b04e" page="8">
               <description>At the end of each of the controlling player’s turns in which a model with this upgrade inflicts at least one unsaved Wound or Hull Point with a weapon with the Melee type, it gains the It Will Not Die (6+) special rule until the end of the battle. If the model already has the It Will Not Die (X) special rule, it increases the value of X by 1, up to a maximum of 4+.</description>
@@ -7731,7 +7735,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Encroaching Ruin" hidden="false" id="e208-5a47-5937-4f5c" publicationId="44e-19f2-a369-b04e" page="8" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Encroaching Ruin" hidden="false" id="e208-5a47-5937-4f5c" publicationId="44e-19f2-a369-b04e" page="8">
           <rules>
             <rule name="Encroaching Ruin" hidden="false" id="3543-23e4-4cbe-a169" publicationId="44e-19f2-a369-b04e" page="8">
               <description>A model with this upgrade increases its Ballistic Skill Characteristic by +1 and gains the Character Unit Sub-type and Commanding Presence special rule.
@@ -7742,7 +7746,7 @@ Commanding Presence: Armiger Warglaives or Armiger Helverins units that have at 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Putrid Corruption" hidden="false" id="6a9-eb18-8dc5-ef1c" publicationId="44e-19f2-a369-b04e" page="8" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Putrid Corruption" hidden="false" id="6a9-eb18-8dc5-ef1c" publicationId="44e-19f2-a369-b04e" page="8">
           <rules>
             <rule name="Putrid Corruption" hidden="false" id="ba33-7b89-512c-7bbf" publicationId="44e-19f2-a369-b04e" page="8">
               <description>A model with this upgrade must reduce its Movement Characteristic by -2 and gains the Unrelenting special rule.
@@ -7754,7 +7758,7 @@ Unrelenting: Each time a model with this special rule suffers an Explodes result
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Infernal Tempest" hidden="false" id="7ad-bd12-1203-4018" publicationId="44e-19f2-a369-b04e" page="8" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Infernal Tempest" hidden="false" id="7ad-bd12-1203-4018" publicationId="44e-19f2-a369-b04e" page="8">
           <rules>
             <rule name="Infernal Tempest" hidden="false" id="2b0e-5f20-f672-ea98" publicationId="44e-19f2-a369-b04e" page="8">
               <description>A model with this upgrade gains the Character and Psyker Unit Sub-types, and Infernal Rites Psychic Discipline. When making a Psychic check, a model with this upgrade always counts as having a Leadership Characteristic of 7 regardless of any modifiers or effects.
@@ -7784,7 +7788,7 @@ A Psyker with this Discipline gains the listed Power, weapon and special rules b
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Ravenous Dissolution" hidden="false" id="6463-f70a-45df-f1f4" publicationId="44e-19f2-a369-b04e" page="9" defaultAmount="">
+        <selectionEntry type="upgrade" import="true" name="Ravenous Dissolution" hidden="false" id="6463-f70a-45df-f1f4" publicationId="44e-19f2-a369-b04e" page="9">
           <rules>
             <rule name="Ravenous Dissolution" hidden="false" id="51e9-cbc3-6e3-e1ed" publicationId="44e-19f2-a369-b04e" page="9">
               <description>A model with this upgrade increases its Weapon Skill Characteristic by +1, and gains the Character Unit Sub-type and the Marked for Death special rule.</description>
@@ -7797,7 +7801,7 @@ A Psyker with this Discipline gains the listed Power, weapon and special rules b
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Rapturous Sensation" hidden="false" id="68f-18b3-d00b-5caf" publicationId="44e-19f2-a369-b04e" defaultAmount="" page="9">
+        <selectionEntry type="upgrade" import="true" name="Rapturous Sensation" hidden="false" id="68f-18b3-d00b-5caf" publicationId="44e-19f2-a369-b04e" page="9">
           <rules>
             <rule name="Rapturous Sensation" hidden="false" id="3afb-89b0-1dae-96fa" publicationId="44e-19f2-a369-b04e" page="9">
               <description>No enemy unit that has one or more models within 8&quot; of a model with this Dark Blessing may have a Reaction declared for it in any Phase unless that unit’s controlling player first passes a Leadership test for the unit that they wish to declare a Reaction for. If the Test is passed then a Reaction may be declared and resolved as normal. If the Test is failed then that unit may not have any Reactions declared for it in the current player turn, but the controlling player does not lose a point of their Reaction Allotment.</description>
