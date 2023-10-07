@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="4910-5223-7f11-ac7" name="Lords of War" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="75" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry id="8397-1f9b-2d0a-3440" name="Lord of War Detachment" hidden="false">
+      <categoryLinks>
+        <categoryLink id="ebb7-45b3-669d-2a30" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a1d1-faa1-bdd6-bd94" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aa7f-eb0e-5802-d885" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6398-76f3-b0c2-e994" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
+        <categoryLink id="fe85-bb5e-ddb4-58a0" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
+          <constraints>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="243a-10ca-756d-303b" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fc89-736a-7f53-6bb1" type="min"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" field="243a-10ca-756d-303b" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink id="eb13-c4f3-e87c-53fc" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false">
+          <modifiers>
+            <modifier type="increment" field="b1d6-fb09-9dbd-c44f" value="1">
+              <repeats>
+                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1d6-fb09-9dbd-c44f" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="2022 - Daemons - Bound Daemons" id="e430-4198-4318-1718" targetId="e545-295b-4cd9-f235"/>
+    <catalogueLink type="catalogue" name="2022 - Imperialis Militia" id="3297-b8ee-c01b-e286" targetId="f84d-94cf-5ce6-b393"/>
+    <catalogueLink type="catalogue" name="(HH V2) Legions Astartes" id="91c3-bbd3-702e-7bcd" targetId="6393-649c-7213-a327"/>
+    <catalogueLink type="catalogue" name="2022 - LI - Custodes" id="c181-4bbb-931b-1f49" targetId="2f2b-1f31-c455-1701"/>
+    <catalogueLink type="catalogue" name="2022 - LI - Solar Auxilia" id="f003-c6c9-2a3e-cd25" targetId="6af7-3fee-5bc1-7533"/>
+    <catalogueLink type="catalogue" name="2022 - Mech Library" id="eba4-6625-b95e-fc51" targetId="3129-da35-55e0-642d"/>
+    <catalogueLink type="catalogue" name="2022 - Mechanicum" id="d9b2-a935-ded0-ca77" targetId="c247-da79-1654-d39e"/>
+    <catalogueLink type="catalogue" name="LA -   VII: Imperial Fists" id="42d6-120b-a306-f3d2" targetId="8866-00ec-715f-f21a"/>
+    <catalogueLink type="catalogue" name="LA -   IV: Iron Warriors" id="6a51-694b-bd8b-9398" targetId="2ee4-57ed-db44-8a63"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink id="5415-e0c1-c301-e4dc" name="Acastus Knight Porphyrion" hidden="false" collective="false" import="false" targetId="8cb2-7235-fc34-9983" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5ff1-78c4-172e-69f" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="e068-1b2-10fd-5533" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="f746-a6c9-fcc5-d4d5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="bde4-e4d1-457c-5137" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Greater Brass Scorpion" hidden="false" type="selectionEntry" id="dbb6-de8f-b227-82a3" targetId="3c5c-5bbf-cfc-e84e">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="2539-8bb2-4f42-6ffa" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="71b-1fe1-b01b-3d88" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+        <categoryLink targetId="c658-dc6b-727b-c488" id="95eb-a35f-bbaa-a3e1" primary="true" name="Lords of War:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="3393-1c13-1af3-d08f" primary="false" name="Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="db2a-34b1-8510-71cd" name="Knight Acheron" hidden="false" collective="false" import="false" targetId="f971-ef52-5344-0b26" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4a0f-bd19-539e-7d67" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="3518-3e98-c432-e508" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="fad7-56dd-127e-5569" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9f66-82c1-673c-efe4" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7642-3324-d6ab-9444" name="Knight Castigator" hidden="false" collective="false" import="false" targetId="0a65-543c-19b2-fd34" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7910-422-1589-4bfd" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="c824-1ac5-5ced-cfb5" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="e5d-3cf3-a505-258e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="fa25-2d06-7467-4b80" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f02a-d6e9-423d-434d" name="Knight Lancer" hidden="false" collective="false" import="false" targetId="8312-7457-e7b6-fd9f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="8aee-caaf-fdff-3d44" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="35a0-a8b0-f071-d485" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="aec2-2737-1f3d-d169" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7480-9d03-a7c2-44a3" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="74a-892f-898f-3304" name="Knight Questoris" hidden="false" collective="false" import="false" targetId="3706-a84c-678d-b1c6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4ab6-bc26-b6cc-3379" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="fef4-abfc-135e-8b06" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="e8ea-b5fb-687b-25bf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3e9e-15d2-2a5e-f3c9" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a083-f755-e99d-88f9" name="Legion Crassus Armoured Assault Transport" hidden="false" collective="false" import="false" targetId="5b2b-3e3f-3b2c-0a8b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="246a-fd14-b6c3-8b34" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="3cd3-6d09-c94b-bd37" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="9495-27a-efca-aa81" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="8b03-44cf-161f-6a57" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="92cd-dd4c-fb9a-ba0f" name="Legion Macharius Omega Heavy Tank" hidden="false" collective="false" import="false" targetId="6865-9d88-95dc-2d3f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5940-4d14-a2b7-b80d" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="9707-6720-56b7-93e9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="af16-64ee-14e2-4934" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="ba15-4ee8-3f8a-886c" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dd17-af48-75c-be9a" name="Legion Marauder Bomber" hidden="false" collective="false" import="false" targetId="6879-98bf-7e9c-7093" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="363b-a140-4743-a2b1" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="6459-6ac3-ca4-d515" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="b5d6-151-e206-fc50" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="494f-bb53-41e6-83e5" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b374-4a5a-fc90-cbcb" name="Legion Marauder Destroyer" hidden="false" collective="false" import="false" targetId="cf51-6d23-8764-af94" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1794-e6bb-feeb-c7f3" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="67c6-a36b-fac5-58c4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="4c67-b99f-26e-1af9" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="6b0-800f-eeb3-d050" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6373-8c02-c17b-e70f" name="Legion Praetor Armoured Assault Launcher" hidden="false" collective="false" import="false" targetId="4a3e-181e-993d-948f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <comment>node_id_ad5d-3c79-4239-9116</comment>
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5ae-fd1c-729d-d855" type="equalTo">
+              <comment>node_id_60b1-049b-4a5f-85c2</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b2d3-9c98-be46-25a9" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="8c4f-248-72df-1aef" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="8638-cfa3-d80b-279e" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="d53b-7231-c20e-ba20" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b7a9-cc16-7350-34e4" name="Questoris Acastus Knight Asterius" hidden="false" collective="false" import="false" targetId="7b6b-49ab-d71d-e359" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a364-96d7-5ef4-2ab" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="2300-a287-6b5a-e196" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="f183-c53e-ba2e-c8ef" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ea5c-3bb0-e336-ac99" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eb65-a546-11b5-9abd" name="Questoris Knight Atrapos" hidden="false" collective="false" import="false" targetId="012b-109f-74d2-2c82" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fb02-283f-123e-df9a" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="cd09-30b4-f7f6-e97f" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="f089-2a83-7fb8-8dac" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4b5c-8e05-c5a1-4faa" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="228e-4c14-6667-f7a0" name="Questoris Knight Magaera" hidden="false" collective="false" import="false" targetId="6d0e-0d72-d9e2-01d1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cbf3-2122-5628-89e8" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="a94a-7573-2bed-a69" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="96e9-f7db-1574-bc09" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1446-8ece-a70f-e056" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="19b7-ba55-b6ce-3a91" name="Questoris Knight Styrix" hidden="false" collective="false" import="false" targetId="1944-033c-5b7e-a378" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d7fd-1dbd-d33a-ad3a" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="d43c-b25e-5f40-7d94" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
+        <categoryLink id="ffa8-d86b-5ff4-f30d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="99d4-4729-b2e5-4063" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c5c5-fe40-8486-fc13" name="Reaver Battle Titan" hidden="false" collective="false" import="false" targetId="2dbc-7655-bb05-ab89" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="61f8-a7b4-a180-396b" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="2cac-873a-ffc7-7e62" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1cf1-e99b-1516-3f7e" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="be98-f73c-8ace-fda3" primary="false" name="Vehicle Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="42f3-61ce-5461-8cae" name="Thunderhawk Transporter" hidden="false" collective="false" import="false" targetId="5b94-a916-9864-8d15" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ed19-4516-6fa6-dcb" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="dad-6d9a-ebc7-2a0e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="8ea8-9378-6f2d-cbd5" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="86fe-62c5-ccc9-1e4a" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f0fc-2e02-61da-75b7" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="false" targetId="3dd1-77d8-4289-b745" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="50ac-ea44-843a-bf14" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="5cb9-b22b-7bbb-d096" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2873-1cd4-15dd-6684" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="2ac0-4f4f-66e8-d1dc" primary="false" name="Vehicle Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="20e-8ccc-51fe-36f8" name="Warhound Scout Titan" hidden="false" collective="false" import="false" targetId="841c-c2f5-9817-3061" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9bd9-847f-1ade-3fe3" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="31de-c17d-388a-bf12" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1272-c676-35b-16e2" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="9e4d-ea94-b2ec-1db4" primary="false" name="Vehicle Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9c74-7585-4d8f-8366" name="Warlord Battle Titan" hidden="false" collective="false" import="false" targetId="d737-baca-32e7-8da6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cbeb-c0b2-9511-4ba1" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="f857-46df-7325-e793" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="8173-b203-fdb8-fb8b" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="5da7-c9a8-fd71-a38f" primary="false" name="Vehicle Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="12a5-84d2-7146-ee77" name="Bound Ka’bandha" hidden="false" collective="false" import="false" targetId="aa91-7f0d-cade-cbc5" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6221-fb42-10a5-5d2d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e75f-a5d7-ee7c-af14" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="d42b-bd98-a6c1-5547" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4115-d073-f189-9762" name="24) IM - Baneblade Super-heavy Battle Tank (JNP)" hidden="false" collective="false" import="false" targetId="ecd4-2b5f-a98a-5093" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="87a0-e5fd-5f37-df27" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="dfa6-64-72be-f583" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="b40d-b33c-39a5-2d9" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="a0fc-3782-9eca-e1c" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="4106-7178-7ba0-be10" name="Ares Gunship" hidden="false" collective="false" import="false" targetId="aa0c-15a3-9d4b-ac47" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fff-9bae-173a-810e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e4d8-388-12b6-cf15" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="246-1d60-62a9-50bc" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="6592-4b1a-f5f1-78d9" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6a1b-ef80-a09b-5c86" name="Orion Assault Dropship" hidden="false" collective="false" import="false" targetId="6526-bdfb-4ebe-6e0a" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="85c6-e7d8-767c-1d19" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7fd3-cef9-bb06-87d2" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="c3d9-64c4-f9d0-6722" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="4153-52df-e7b4-6f0" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="492f-934a-8b30-5823" name="Baneblade" hidden="false" collective="false" import="false" targetId="1c10-5772-2e27-1e51" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5984-63af-8cbb-b9d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="1b72-3916-8d8d-28bd" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="e7f1-4344-204b-629e" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="cea4-4bd-e4-2a79" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="141e-9f2f-dfe0-48fd" name="Banehammer" hidden="false" collective="false" import="false" targetId="7bb3-2416-aaca-8e40" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5a2c-4709-2eaf-56db" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9d7c-e194-4392-1579" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="1d69-c69b-38a9-cd3a" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="3caa-5fe3-e2fd-2309" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5904-fe3e-d8c2-9821" name="Crassus Armoured Assault Transport" hidden="false" collective="false" import="false" targetId="8cec-2913-77a0-c4e4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1734-4bcf-9a11-6318" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ab83-54e0-fcf5-5f7e" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="5640-fa41-3334-ddf7" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="130e-7020-7d12-e104" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6dfa-3866-5184-7899" name="Macharius Heavy Tank Squadron" hidden="false" collective="false" import="false" targetId="e59c-1b65-8de1-4490" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5a58-b980-8f10-d8bf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a6d9-2598-887c-b1a3" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="7370-3163-f979-8fd2" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="7bb8-e0bc-a290-349e" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1b3d-1b94-e884-2b5d" name="Malcador Infernus Squadron" hidden="false" collective="false" import="false" targetId="b0a8-0f45-9999-b893" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fdfc-fe38-ae77-ac6a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3046-2f80-de2d-a632" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="1f23-1d5d-fbfd-49b2" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="1b5a-8cbc-38c4-44d6" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="876d-9b1f-5f03-5e22" name="Shadowsword" hidden="false" collective="false" import="false" targetId="4713-c9ee-2c57-9457" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d2c2-3d9a-51a9-de09" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a8e-c42e-9d35-f7d5" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="defa-b987-cc57-8a1b" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="93ac-c7a9-ab06-7c3a" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e52a-b852-691f-9b32" name="Stormblade" hidden="false" collective="false" import="false" targetId="7331-a4a7-8e69-c55e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e3f4-91ba-6e86-89d1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a7c-ad1f-f98a-9bd6" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="de-2db3-1554-9f6d" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="398-e567-2e0f-65f8" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2214-d21e-96-cee2" name="Stormhammer" hidden="false" collective="false" import="false" targetId="19c9-f8e8-edff-fa8e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="962e-3f67-271d-e050" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="fe08-69-9ccc-f537" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="e6dd-e682-3aa5-c560" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="a64c-cbdc-4e47-5f05" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="25da-4304-fef7-f97d" name="Stormlord" hidden="false" collective="false" import="false" targetId="2bae-aaa9-9840-e2eb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="73db-aa24-ef3e-a083" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f76d-46bc-e3a7-4b2f" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="7c12-aa9d-752b-1e48" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="37bd-1f79-3598-1f94" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4374-53f0-593f-4b16" name="Stormsword" hidden="false" collective="false" import="false" targetId="3d0b-9f37-cd30-0db7" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d926-dcca-e0fb-4246" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="f642-cd44-2b18-88c9" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="7dc9-ddee-89d2-5b45" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="8ba9-9c29-fd00-48b2" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cd72-cca3-4a64-81aa" name="Praetor Armoured Assault Launcher" hidden="false" collective="false" import="false" targetId="2d13-ea6e-e48d-f352" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b092-cea2-d087-de83" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="eab5-dab3-6f65-44" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="275d-60a0-1b4c-674f" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="cf10-4f48-59fd-63de" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Kytan Daemon Engine" hidden="false" type="selectionEntry" id="704b-292f-d442-5c4e" targetId="b7cd-670-7027-fee8">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="6779-c79f-7a76-8312" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="4a3-b6a1-2859-433a" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+        <categoryLink targetId="c658-dc6b-727b-c488" id="c91c-fd93-ba62-993c" primary="true" name="Lords of War:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="4eaa-be32-5a7-effd" primary="false" name="Unit:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="478b-b95b-3159-8c53" name="Mechanicum Acastus Knight Asterius" hidden="false" collective="false" import="false" targetId="ccc2-5689-4796-61b4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6902-c161-68e1-8c0e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a6b2-65a3-c5cf-dadc" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="10ef-67fc-a7bf-18f1" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="8198-25ca-d2e8-adda" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d20a-99a3-3e8d-564e" name="Mechanicum Knight Atrapos" hidden="false" collective="false" import="false" targetId="6405-d682-11c9-35b6" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b327-59c1-95ce-9c1e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="e842-ad4e-7b44-1db8" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="c06d-6060-19e7-fae7" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="da50-65d3-6f7b-e0c9" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eb8a-df4d-edbb-b5b3" name="Mechanicum Knight Magaera" hidden="false" collective="false" import="false" targetId="b582-e53e-5e13-286c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a3c1-129d-65c1-6cc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="dd59-fd5b-341d-6922" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="6bd8-83f2-d90b-2888" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="30c6-e6b5-32ba-96c3" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="35bc-568b-6388-76fc" name="Mechanicum Knight Styrix" hidden="false" collective="false" import="false" targetId="aae3-4a95-fbce-6d01" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d680-783a-b404-f381" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ccad-9408-92cf-7698" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="ad8c-8548-1088-f2a2" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="6d8b-899c-a60-69db" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e173-fe8b-4aa3-6f24" name="Ordinatus Aktaeus" hidden="false" collective="false" import="false" targetId="89a5-fa4d-0e01-3a55" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="49af-c838-e7e5-5325" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4af8-a87d-4ca3-7041" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="4013-9839-e3d9-cb34" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="b1e6-2ea7-2b13-429c" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6a56-42b7-7612-910d" name="Ordinatus Ulator" hidden="false" collective="false" import="false" targetId="1277-aefb-66c5-bd35" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e37e-727a-e681-bf0" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="ad1e-bca-b6d2-34e9" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="c4de-ec36-81b1-1eab" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="72b2-3c18-f11b-faef" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dfc9-65d5-7c25-6320" name="Cerberus Squadron" hidden="false" collective="false" import="false" targetId="137a-e079-34cd-8161" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_b43b-547f-472e-9076</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6f0-8003-74c2-3882" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="517-96c3-ddd8-e509" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="67c4-acf5-d3bf-f48d" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="57c5-f1b5-d706-dba8" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c061-1165-8ebd-b2a9" name="Falchion" hidden="false" collective="false" import="false" targetId="1fe8-7386-9509-d2d8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_1af8-4459-4717-8e3b</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1484-578f-4d4-63ea" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="d0a0-ef4b-e115-481f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="8e82-419f-f11e-534a" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="495d-bafa-df40-3d52" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c2bc-4c64-3d1c-7192" name="Fellblade" hidden="false" collective="false" import="false" targetId="9c3c-f15a-9a1f-c0d0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_d0c9-9a26-4324-b030</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="172f-2c4-70e0-14ce" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="1218-ffb4-7af9-851d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="b7b2-731c-7845-8343" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="238-d901-d90d-fd11" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6a25-39b1-7177-fad2" name="Glaive" hidden="false" collective="false" import="false" targetId="04e0-f69f-f759-b0b3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_ada1-1e18-4cbc-9598</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a1c1-443d-7082-a823" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="f0f8-b3fa-b959-42a4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="716d-1bf0-166a-7033" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="48ce-4e8-bbf-3c3e" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e0c9-6f93-499e-4b9b" name="Legion Baneblade" hidden="false" collective="false" import="false" targetId="ee5c-0952-bf95-6333" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_ae19-30c0-43c5-920e</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="58b-e8af-ebf0-4d67" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="4dc6-7e14-1148-bf04" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="f77a-f7e2-fdb-c223" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="31ee-cb68-9183-44e" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="bcba-36eb-18fc-e21b" name="Legion Banehammer" hidden="false" collective="false" import="false" targetId="1240-c71c-3a60-cf20" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_ae19-30c0-43c5-920e</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="435c-56c6-def8-91ea" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="6d31-69b7-7eda-fa49" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="66f0-9948-ef3f-6430" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="c96c-a926-f784-8749" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b491-8678-841f-4f6d" name="Legion Macharius Heavy Tank Squadron" hidden="false" collective="false" import="false" targetId="36ed-ca59-0d95-d85c" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_005e-6607-4e2c-8dd2</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e84a-7e70-65af-1d40" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="5033-75b9-8905-4c28" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="4da0-b486-c93e-34ce" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="5103-7793-adbd-18fe" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="da2e-3a30-1afa-a934" name="Legion Shadowsword" hidden="false" collective="false" import="false" targetId="8a75-acc6-6fd6-90b8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_3c84-6d74-4c42-b38d</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="2427-26de-c892-6ea8" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="15dc-688d-5c81-85be" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="8967-c71a-dc3a-cb0e" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="a7a5-ab8c-9eac-4a37" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2f93-b411-82e0-fbe8" name="Legion Stormblade" hidden="false" collective="false" import="false" targetId="4ac0-4b85-58da-0907" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_3c84-6d74-4c42-b38d</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="17f3-4a6a-1326-520c" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="d0a2-5c16-1a9-bcc1" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="38bf-e1b0-85b8-8374" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="ffde-180b-7281-20fa" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6a5f-a56c-96ea-573d" name="Legion Stormlord" hidden="false" collective="false" import="false" targetId="0887-0f66-2c7e-a5ba" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_3c84-6d74-4c42-b38d</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f63-b809-e21b-3cd1" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="15aa-5667-6413-b4ab" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="1c7d-6f81-f906-ebab" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="aa72-7122-3cfb-fd83" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="53bc-9615-c42-4507" name="Legion Stormsword" hidden="false" collective="false" import="false" targetId="8e67-8f84-730c-2778" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_3c84-6d74-4c42-b38d</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="equalTo">
+                  <comment>node_id_1887-152d-48b7-b13f</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3b92-3e9d-5472-c2f9" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="c3cc-2d16-a61e-b105" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="ca49-4555-9496-1995" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="f202-8cf2-8a62-da03" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d2da-1ac4-35-a90e" name="Mastodon" hidden="false" collective="false" import="false" targetId="7f24-2b72-9128-5330" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_1e60-42ba-4c8b-9077</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="cf9a-9309-78b4-d86e" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="ee11-d9f7-ff2b-abf3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="b5ec-8875-bc40-cb1f" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="d2e0-d98f-13a0-1c0" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ead1-da32-576-fdf4" name="Sokar Stormbird" hidden="false" collective="false" import="false" targetId="f403-630f-71ae-5a7d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_09b5-4e3b-4c84-a574</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d8e-7f6d-9982-2bd5" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="bf76-7b9-4145-15c5" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="aa6b-691b-3cd9-f3c6" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="b6fd-9aff-65f9-8f21" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="eb97-322d-afcb-19a0" name="Thunderhawk Gunship" hidden="false" collective="false" import="false" targetId="8754-3a4f-213b-bdc0" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_6087-a5e5-4d3c-9ebd</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5bd2-1201-538a-a7cd" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="90ad-3f4a-4247-b465" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="ffa0-3f65-fdec-3e93" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="5c5-299e-c385-1e2c" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a26f-41f6-b7a5-7265" name="Typhon Squadron" hidden="false" collective="false" import="false" targetId="d06a-3087-af13-ca95" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <comment>node_id_d512-fd07-4a29-863a</comment>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <comment>node_id_55c6-a35f-485a-9f0d</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="530e-c5e6-adf2-afa0" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="4faf-2b86-f47f-3bd7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="58be-94a7-9d9-6819" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="49c0-afe3-1ebf-a3b0" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ca72-2fd1-661-c654" name="Ætos Dios" hidden="true" collective="false" import="false" targetId="fcc2-2335-aedc-b49e" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3795-16f-490a-96eb" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast">
+                  <comment>node_id_a7b8-c835-4cb2-b3d5</comment>
+                </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="43a6-74b5-e0fb-b73c" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
+        <categoryLink id="43b9-3b64-8dcf-6525" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="23eb-0b9e-0857-e965" id="bcf5-a723-356f-520e" primary="false" name="Vehicle Unit:"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="931e-c5d5-a16a-94b0" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="LoW Detachment" hidden="false" type="selectionEntry" id="7eda-2ac3-9df2-2c27" targetId="43da-fd97-bdeb-17dc">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3889-ebca-8634-a085"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="e90d-e5a8-f42d-da84" id="9d03-3c46-af55-fb1c" primary="true" name="Allegiance:"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
