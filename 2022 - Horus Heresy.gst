@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="77" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="78" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1275,6 +1275,13 @@ Reactions:
     </categoryEntry>
     <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
     <categoryEntry name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="ed41-7006-3494-4c24"/>
+    <categoryEntry name="Ruinstorm Ætheric Dominion (Whole Army)" hidden="false" id="5d31-e5d-67bd-1083">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="57f4-b9c1-497d-4869"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c5c1-bcaa-426e-d04d"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4699-fbfb-1670-9143"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1289,6 +1296,25 @@ Reactions:
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="fd89-b215-5545-17c6" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
+        <categoryLink name="Ruinstorm Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083" type="category">
+          <modifiers>
+            <modifier type="set" value="1" field="57f4-b9c1-497d-4869">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="c5c1-bcaa-426e-d04d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="4699-fbfb-1670-9143">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="set" field="1db1-1803-cee1-86cb" value="5">
@@ -9587,14 +9613,14 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="092d-3716-36f8-8988" name="Samus or Ka’bandha Warlord stuff" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="092d-3716-36f8-8988" name="Samus, Ka’bandha &amp; Cor&apos;bax Warlord stuff" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf75-4e9e-9b42-3de6" type="min"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39f4-9c0e-e5c6-e97d" type="max"/>
       </constraints>
       <rules>
-        <rule id="d57d-7147-0305-97b3" name="Samus or Ka’bandha Warlord stuff" publicationId="cb13-da24-e6da-75b3" page="15 &amp; 19" hidden="false">
-          <description>Samus and Ka’bandha may always be selected as an Army’s Warlord even if it is not part of the Primary Detachment</description>
+        <rule id="d57d-7147-0305-97b3" name="Samus, Ka’bandha, Cor&apos;bax Warlord stuff" publicationId="cb13-da24-e6da-75b3" page="15 &amp; 19" hidden="false">
+          <description>Samus, Ka’bandha &amp; Cor&apos;bax may always be selected as an Army’s Warlord even if it is not part of the Primary Detachment</description>
         </rule>
       </rules>
       <costs>
