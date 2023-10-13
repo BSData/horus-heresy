@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e545-295b-4cd9-f235" name="2022 - Daemons - Bound Daemons" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e545-295b-4cd9-f235" name="2022 - Daemons - Bound Daemons" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="250f-d164-bb7e-7025" name="Bound Daemon Brutes" hidden="false" collective="false" import="false" targetId="519f-866e-e6fe-20e0" type="selectionEntry">
       <modifiers>
@@ -41,7 +41,7 @@
         <categoryLink id="dae6-e88c-cb03-2af1" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="14d8-3e68-bdc8-0759" name="Bound Ka’bandha" hidden="false" collective="false" import="true" targetId="aa91-7f0d-cade-cbc5" type="selectionEntry">
+    <entryLink id="14d8-3e68-bdc8-0759" name="Bound Ka’bandha" hidden="false" collective="false" import="false" targetId="aa91-7f0d-cade-cbc5" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -49,8 +49,7 @@
               <conditions>
                 <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="equalTo"/>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58a7-8821-3cd9-c73" type="notInstanceOf"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -155,9 +154,6 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="c726-90b0-4e54-5699" name="Empyrean Avatar" publicationId="cb13-da24-e6da-75b3" page="16" hidden="false">
-          <description>When a model with this special rule suffers an unsaved Wound with the Instant Death special rule, it is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it.</description>
-        </rule>
         <rule id="081c-3c1b-c85a-17b1" name="Whispers of Madness" publicationId="cb13-da24-e6da-75b3" page="16" hidden="false">
           <description>• If Bound Samus has been placed in Reserves and has not yet arrived on the battlefield, Reserves rolls made by an opposing player to bring units into play from Reserve are modified by -1. This modifier does not stack with any other negative modifiers to Reserves rolls – use the highest single modifier instead.
 • Any model within 18&quot; of Bound Samus must reduce its Leadership by -2 when making Psychic checks. This modifier is cumulative with other effects that reduce Leadership for the purposes of making Psychic checks.
@@ -166,15 +162,49 @@
       </rules>
       <infoLinks>
         <infoLink id="1f45-c91c-3464-4f02" name="Bound Malefica" hidden="false" targetId="e2de-47bf-2a1c-45e5" type="rule"/>
-        <infoLink id="fe66-5530-9287-ea65" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule"/>
-        <infoLink id="8d8a-7257-9ecf-2426" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
-        <infoLink id="7631-3201-1782-c364" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule"/>
-        <infoLink id="7c81-f3a8-b097-4ad1" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule"/>
         <infoLink id="97ca-4029-9eb0-f8d4" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
         <infoLink id="0619-9447-422f-0664" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="780c-1974-dd49-f4f4" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Æthereal Invulnerability (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="d927-6c3f-408e-718b" targetId="c694-20c8-455-baca">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="e6cf-4fa9-df0d-64c7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior" hidden="false" type="rule" id="9a59-d398-2871-bf6" targetId="000b-fe96-31f8-c0ad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="e6cf-4fa9-df0d-64c7" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a85-7793-3dcd-77a5" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" value="Bulky (7)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="797a-4e3b-637b-4df6" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+          <modifiers>
+            <modifier type="set" value="Fleet (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e606-8880-b71e-e6e5" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5dff-9da4-6de0-66e9" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" value="Rage (3)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -183,6 +213,7 @@
         <categoryLink id="1ae3-f371-c157-ce13" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
         <categoryLink id="2708-3188-198a-16d4" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
         <categoryLink id="70ea-80de-49b7-e853" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+        <categoryLink targetId="c42-1919-c37e-51f0" id="fb9b-20c9-2af-7ec2" primary="false" name="Encroaching Ruin"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5561-d99c-89c7-2eec" name="Blades of Samus" hidden="false" collective="false" import="true" type="upgrade">
@@ -248,13 +279,13 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="93e0-e2dc-96b5-d433" name="Encroaching Ruin" hidden="false" collective="false" import="true" targetId="ca6c-e8cf-7bc1-eaa0" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6110-4a09-1002-fc4a" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="2047-6fc0-18b5-228d" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
         <entryLink id="b1a8-8a96-fd63-e0b6" name="Samus or Ka’bandha Warlord stuff" hidden="false" collective="false" import="true" targetId="092d-3716-36f8-8988" type="selectionEntry"/>
+        <entryLink import="true" name="Encroaching Ruin" hidden="false" type="selectionEntry" id="93e0-e2dc-96b5-d433" targetId="ca6c-e8cf-7bc1-eaa0">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a0b4-3aa-ba0d-9ca3"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="380"/>
@@ -523,12 +554,14 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
           </modifiers>
         </infoLink>
         <infoLink id="413f-d012-8088-96b8" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink id="cbad-329f-aa51-b700" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4a52-aa7c-e37c-8188" name="Bound Sub-type" hidden="false" targetId="40f3-05e8-5ddc-636a" primary="false"/>
         <categoryLink id="eec0-d409-3404-e87f" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
         <categoryLink id="115c-e4d6-487b-8949" name="Gargantuan Unit Sub-type" hidden="false" targetId="f479-3c81-1e42-1b3a" primary="false"/>
         <categoryLink id="2f54-04ee-8fd1-bd98" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+        <categoryLink targetId="f074-f60a-9aa6-c52a" id="f24d-a7b1-3895-ef11" primary="false" name="Heedless Slaughter"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f7f7-9947-281e-95d9" name="Warlord Trait: Skull Keeper" publicationId="cb13-da24-e6da-75b3" page="19" hidden="false" collective="false" import="true" type="upgrade">
@@ -615,9 +648,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </selectionEntries>
       <entryLinks>
         <entryLink id="f83d-5827-6ef8-66a3" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-        <entryLink id="fe84-9a32-be81-62b8" name="Heedless Slaughter" hidden="false" collective="false" import="true" targetId="3d70-1d54-a791-ac60" type="selectionEntry">
+        <entryLink import="true" name="Heedless Slaughter" hidden="false" type="selectionEntry" id="fe84-9a32-be81-62b8" targetId="3d70-1d54-a791-ac60">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="859e-5f4b-83d9-d7d6" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc6-f5be-8bbc-2afd"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -705,194 +738,6 @@ During a Reaction made in any Phase, a player may not choose to activate a model
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
-    <selectionEntryGroup id="002f-0e40-9d49-2a22" name="The Ætheric Dominion (X)" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c286-bd8c-a707-8e5f" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a3-1bac-9535-63ac" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="bbb3-5b4d-79fb-d4f5" name="The Ætheric Dominion (X)" publicationId="cb13-da24-e6da-75b3" page="12" hidden="false">
-          <description>Each Ætheric Dominion represents one of the innumerable hosts of daemonkind, and any unit with the Ætheric Dominion (X) special rule will have a number of additional special rules and abilities specific to their Ætheric Dominion. A unit which includes models with this special rule may only have one variation of the Ætheric Dominion special rule, e.g., Ætheric Dominion (Encroaching Ruin), and no model with this special rule may join a unit which includes any models with a different variation of the Ætheric Dominion (X) special rule. A unit which includes models with this special rule without a specific Ætheric Dominion listed in brackets must select one Ætheric Dominion from the list below during the army selection process (before the start of a battle) for no additional cost and is thereafter treated as having that variation of this special rule – unless specified otherwise, a Detachment may contain units with different variations of the Ætheric Dominion (X) special rule.</description>
-        </rule>
-      </rules>
-      <selectionEntries>
-        <selectionEntry id="ca6c-e8cf-7bc1-eaa0" name="Encroaching Ruin" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bef-e3a7-65cd-fb22" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="e183-3fc3-dbd1-3145" name="Encroaching Ruin" publicationId="cb13-da24-e6da-75b3" page="13" hidden="false">
-              <description>When a unit entirely composed of models with this special rule and the Daemon Unit Type fails a Morale check, it only suffers a single automatic Wound with no Saves of any kind allowed instead of D3 Wounds as specified in the Daemon Unit Type. In addition, models with this special rule gain the Move Through Cover special rule.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="b86a-1226-c269-3afa" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="3d70-1d54-a791-ac60" name="Heedless Slaughter" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61b9-735d-55e3-f492" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="e11c-2660-2679-434c" name="Heedless Slaughter" publicationId="cb13-da24-e6da-75b3" page="13" hidden="false">
-              <description>A unit entirely composed of models with this special rule must declare a Charge if able when they begin the Assault phase within 8&quot; of an enemy unit. If there is more than one eligible target, the controlling player chooses the target of any Charges made so long as that target is within 8&quot;. Note that this does not allow models with this special rule to Charge a different unit to one that they made a Shooting Attack against in the previous Shooting phase, even if they have made Shooting Attacks against a unit which is further than 8&quot; away and there are eligible targets for a Charge within 8&quot;.
-Additionally, a unit entirely composed of models with this special rule adds +1 to the score used to determine if they win a Combat in the Assault phase (this modifier is cumulative with other modifiers to Combat Resolution) and adds +1 to the value of any rolls made to determine the result of a Sweeping Advance.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8ed0-3582-f536-c48e" name="Formless Distortion" publicationId="cb13-da24-e6da-75b3" page="13" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6862-1c25-ba1f-0eac" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="e40a-341f-f7dd-1a47" name="Formless Distortion" publicationId="cb13-da24-e6da-75b3" page="13" hidden="false">
-              <description>When selecting a combat at the beginning of the Fight sub-phase, roll a D3 for each unit entirely composed of models with this special rule that is locked in combat. All close combat attacks made by models in the combat with this special rule gain additional special rules corresponding to the D3 roll until the end of that combat phase:
-D3 - Result
-1 - Coruscating Ectoplasma: Concussive (1), Lance
-2 - Lashing Pseudopods: Reach (1)
-3 - Vorpal Talons: Shred, Sunder</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="f3a2-abbc-f81c-025f" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Concussive (1) (Formless Distortion)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="0bb7-0308-6592-8cd2" name="Lance" hidden="false" targetId="3d6b-9e0b-56f0-8a1e" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Lance (Formless Distortion)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="225e-6a1a-846e-37bc" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Reach (1) (Formless Distortion)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="67b5-c9e7-f661-1bf3" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Shred (Formless Distortion)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="6d09-67ab-a974-3840" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Sunder (Formless Distortion)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="b7db-bf16-47c5-dc05" name="Putrid Corruption" publicationId="cb13-da24-e6da-75b3" page="13" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da60-d073-41dc-9d83" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="9a04-17bb-cb7f-f0c1" name="Putrid Corruption" publicationId="cb13-da24-e6da-75b3" page="13" hidden="false">
-              <description>Models with this special rule gain the Heavy Unit Sub-type and may make a special Corrupted Resilience roll to avoid being Wounded (this is a Damage Mitigation roll which is made after unsaved Wounds are suffered). Corrupted Resilience rolls may not be taken against unsaved Wounds that have at least one of the following special rules: Instant Death, Psychic Focus or Force. To make a Corrupted Resilience roll, roll a D6 each time an unsaved Wound is suffered. On a result of 6+, the unsaved Wound is discounted – treat it as having been saved. On any other result the Wound is taken as normal.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="945c-b969-75eb-19d9" name="Ravenous Dissolution" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a9e-9417-9d18-0a03" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="f548-71e6-f10f-d5d7" name="Ravenous Dissolution" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false">
-              <description>Any model with this special rule adds +1 to all To Hit rolls during the first round of any close combat where they are locked in combat with a unit containing at least one model with either the Daemon Unit Type, Corrupted or Psyker Unit Sub-type, or the Independent Character special rule.
-The effects of this special rule only apply when a unit which has it begins an Assault phase not locked in combat and then either Charges or is Charged by an enemy unit. If an enemy unit Charges this unit when it is already locked in combat then that does count as a new ‘first’ turn of combat for the effects of this special rule.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="1214-3abe-c6d1-2038" name="Rapturous Sensation" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d12-3459-bb1d-e722" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="8914-8a2b-51f2-1fe8" name="Rapturous Sensation" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false">
-              <description>On a turn in which they make a successful Charge, unless that Charge is Disordered, models with this special rule make their attacks in an assault at one Initiative step higher than normal – after any Initiative modifiers from other special rules have been taken into account. Units entirely composed of models with this special rule also gain a bonus of +1&quot; to the distance they can move as part of all Run moves, Charge moves and any move they make as part of a Reaction.
-Additionally, units entirely composed of models with this special rule must re-roll all failed Initiative tests to determine if they suffer the effects of the Blind special rule as well as all failed Leadership tests to determine if they suffer the effects of the Concussive (X) special rule.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="9508-8124-d34a-500a" name="Malevolent Artifice" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3dd-4cb9-9d6e-88d9" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="ec11-0831-0c61-f06a" name="Malevolent Artifice" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false">
-              <description>Models with this special rule may re-roll all failed Armour Saves taken against any Wounds resolved at a Strength value lower than their Toughness Characteristic. This special rule has no effect on Cover Saves or Invulnerable Saves.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e4fb-66cd-e07d-609b" name="Infernal Tempest" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0933-950d-8749-54ba" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="5285-8c97-db62-6459" name="Infernal Tempest" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false">
-              <description>Models with this special rule gain the Hammer of Wrath (1) special rule or, if they already have a version of the Hammer of Wrath (X) special rule, they increase the value in brackets by +1. All wounds inflicted by any variant of the Hammer of Wrath (X) special rule possessed by a unit with this special rule also gain the Deflagrate special rule.
-Additionally, models with this special rule gain a Shooting Attack with the following profile: (Elemental Eruption)</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="5f2c-2ea0-c4d8-5c70" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Deflagrate (Hammer of Wrath)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="d3d8-1d3d-bb96-d02a" name="Elemental Eruption" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69cb-1866-246a-2356" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="703c-d0b5-ef37-3bd0" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="254d-caaa-dcfe-c3d3" name="Elemental Eruption" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate, Retaliation</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="c212-8c4d-73f7-092c" name="Retaliation" publicationId="cb13-da24-e6da-75b3" page="14" hidden="false">
-                  <description>Attacks may only be made using weapons with this special rule as part of a Reaction and automatically hit the target unit without needing to roll To Hit.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
     <selectionEntryGroup id="6049-8bc9-7871-ce26" name="Warlord Traits" hidden="false" collective="false" import="true">
       <comment>template_id_7dee-602c-4b47-be09</comment>
       <modifiers>
@@ -920,8 +765,8 @@ Additionally, models with this special rule gain a Shooting Attack with the foll
     <rule id="e2de-47bf-2a1c-45e5" name="Bound Malefica" publicationId="cb13-da24-e6da-75b3" page="11" hidden="false">
       <description>Units entirely composed of models with the Bound Malefica special rule are considered to be part of the Ruinstorm Daemon Army List for the purposes of any special rule which allows Ruinstorm Daemon units to be included in a Detachment drawn from a different Army List, or which grants Ruinstorm Daemon units an alternative method of deploying from Reserves, such as the Legion Esoterist’s Breach the Veil Psychic Power or High Chaplain Erebus’ Harbinger of Chaos special rule (see page 321 of the Liber Hereticus: Traitor Legiones Astartes Army Book). Units selected in this manner retain the Agents of the Warmaster Faction and Bound Daemons Sub-faction.</description>
     </rule>
-    <rule id="e05e-ed23-64fb-a535" name="Æthereal Invulnerability (X)" publicationId="cb13-da24-e6da-75b3" page="Various" hidden="false">
-      <description>A model with this special rule gains an Invulnerable Save equal to the value listed in brackets. This Invulnerable Save cannot be taken against attacks made with weapons with the Force special rule.</description>
-    </rule>
   </sharedRules>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="2022 - Daemon Library" id="ed00-776d-da88-fede" targetId="31bf-eb23-33a-3d65"/>
+  </catalogueLinks>
 </catalogue>

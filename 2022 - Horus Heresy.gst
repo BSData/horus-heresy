@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="75" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="78" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -14,11 +14,12 @@
     <publication id="8200-f05a-6e7d-9326" name="Liber Mechanicum Errata and FAQ V1.0" shortName="LM - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf"/>
     <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Dec 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yPxvcNBwok6C9Wb0.pdf"/>
     <publication id="15a4-fc68-502d-48a9" name="Liber Imperium"/>
-    <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="March 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/JXRAKYvl3BrGbGjD.pdf"/>
+    <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/DLUIKkCO4FXVnt5L.pdf" publisher="Warhammer Community"/>
     <publication id="48c2-d023-0069-001a" name="Imperialis Militia (Download)" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="April 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/04/j2TwD3c2AB8oLsVW.pdf"/>
     <publication id="53a4-0d21-2f8a-2c45" name="Campaigns of the Age of Darkness - The Siege of Cthonia" shortName="CotAoD - SoC" publicationDate="May 2023"/>
-    <publication name="Exemplary Battles of the Age of Darkness - The Depths of Tredecimmia" hidden="false" id="6bcf-2297-2bcd-51be" shortName="CORRUPTED ENGINES SUPPLEMENTARY LIST" publisher="Warhammer Community" publicationDate="2023-08-15" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/08/O799EvRRn3FSDT6m.pdf"/>
-    <publication name="Exemplary Battles of The Age of Darkness - The Battle for Felweather Keep" hidden="false" id="44e-19f2-a369-b04e" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/09/ErwDltU5NorvlrhH.pdf" publicationDate="12 Sept 2023"/>
+    <publication name="Exemplary Battles of the Age of Darkness - The Depths of Tredecimmia" hidden="false" id="6bcf-2297-2bcd-51be" shortName="EBoAoD - TDoT" publisher="Warhammer Community" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/08/jWzm77om6hHC5cfH.pdf"/>
+    <publication name="Exemplary Battles of The Age of Darkness - The Battle for Felweather Keep" hidden="false" id="44e-19f2-a369-b04e" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/09/ErwDltU5NorvlrhH.pdf" publicationDate="12 Sept 2023" shortName="EBoAoD - TBoFK"/>
+    <publication name="Legacies of The Age of Darkness - Daemons of the Ruinstorm" hidden="false" id="8775-88f5-cfdd-24f6" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/10/ylWxyIzI3lS6fEE9.pdf" shortName="Daemons of the Ruinstorm" publicationDate="Oct 2023"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -1273,6 +1274,14 @@ Reactions:
       </infoLinks>
     </categoryEntry>
     <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
+    <categoryEntry name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="ed41-7006-3494-4c24"/>
+    <categoryEntry name="Ruinstorm Ætheric Dominion (Whole Army)" hidden="false" id="5d31-e5d-67bd-1083">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="57f4-b9c1-497d-4869"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c5c1-bcaa-426e-d04d"/>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4699-fbfb-1670-9143"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1287,6 +1296,25 @@ Reactions:
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="fd89-b215-5545-17c6" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
+        <categoryLink name="Ruinstorm Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083" type="category">
+          <modifiers>
+            <modifier type="set" value="1" field="57f4-b9c1-497d-4869">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="c5c1-bcaa-426e-d04d">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="4699-fbfb-1670-9143">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </categoryLink>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="set" field="1db1-1803-cee1-86cb" value="5">
@@ -1510,23 +1538,6 @@ Reactions:
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c49-82d1-d750-1b0c" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="db9f-30b3-e5db-3e0f" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
-          <modifiers>
-            <modifier type="set" field="1c0d-0ff5-e468-703c" value="0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1c0d-0ff5-e468-703c" type="max"/>
-          </constraints>
-        </categoryLink>
         <categoryLink id="b095-12d9-ff21-c90b" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
           <modifiers>
             <modifier type="increment" field="9073-7fc5-88a9-209e" value="1">
@@ -1574,7 +1585,11 @@ Reactions:
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9d7-eb22-6674-6508" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="1c43-e3d1-a119-885c" targetId="ed41-7006-3494-4c24" type="category"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f3d1-165c-4e16-e5fc"/>
+      </constraints>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
       <categoryLinks>
@@ -1753,6 +1768,9 @@ Reactions:
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
+      </constraints>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -1957,6 +1975,53 @@ Reactions:
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ce4d-7e2a-4698-b234"/>
+      </constraints>
+    </forceEntry>
+    <forceEntry name="Lord of War Detachment" hidden="false" id="58a7-8821-3cd9-c73">
+      <categoryLinks>
+        <categoryLink id="e24b-bfb4-de7b-706c" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
+        <categoryLink id="e3e4-a857-9bd2-3a33" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f86e-a4a6-d19a-be5f" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5d7-4106-7aff-c4c7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink name="Lords of War:" hidden="false" id="b22b-446e-4bbd-267b" targetId="c658-dc6b-727b-c488" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ed14-42fc-d5e5-4942" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ff8-b5b1-7226-6a49" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="ff8-b5b1-7226-6a49">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b5b7-3410-a8e5-95a6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e20d-6f02-d7d5-395f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </categoryLink>
+        <categoryLink id="7830-1ff6-6c95-2493" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false">
+          <modifiers>
+            <modifier type="increment" field="eb86-57c5-c2cc-6606" value="1">
+              <repeats>
+                <repeat field="d2ee-04cb-5f8a-2642" scope="roster" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="any" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb86-57c5-c2cc-6606" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c2e7-a23b-9550-671a"/>
+      </constraints>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
@@ -2007,6 +2072,27 @@ Reactions:
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="7d8-ddbf-ce7b-78f9">
+      <categoryLinks>
+        <categoryLink targetId="ed41-7006-3494-4c24" id="8e06-717c-a608-c888" primary="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edec-c227-3cb6-85ff"/>
+      </constraints>
+      <rules>
+        <rule name="LoW (where are they?) THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
+          <description>To add Lords of War you now need to add the additional detachment to your list. To do this:
+
+A - On Mobile, after adding your initial detachment, press the + sign at the bottom left
+B - On Desktop after adding your first force then just press add force again
+Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).
+THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEFULLY EVERYONE WILL BE USED TO WHERE THE NEW LOCATION IS, AND I DON’T GET 100S OF BUG REPORTS FROM PEOPLE NOT BEING ABLE TO FIND THEIR LOW</description>
+        </rule>
+      </rules>
+      <modifiers>
+        <modifier type="set" value="0" field="edec-c227-3cb6-85ff"/>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2413,6 +2499,22 @@ Reactions:
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8813-9063-c930-0a4b" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="b648-5786-d5f0-2bb1" value="1">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe5-123b-cb17-6049" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e221-0a54-9f94-988f" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e864-ddc1-da3a-138e" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8813-9063-c930-0a4b" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2421,6 +2523,7 @@ Reactions:
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3e8-0a70-c24d-e6f0" type="max"/>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9077-55c5-1076-ae5b" type="min"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b648-5786-d5f0-2bb1"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -6762,6 +6865,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="58a7-8821-3cd9-c73" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -6802,7 +6906,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dadb-f5a9-20c8-f415" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dadb-f5a9-20c8-f415" type="max"/>
       </constraints>
       <profiles>
         <profile id="9e5f-b65f-2f13-f24e" name="Advanced Reaction: Scornful Fire" publicationId="bde1-6db1-163b-3b76" page="17" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
@@ -6833,7 +6937,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31c7-df83-f074-96c2" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a4d5-236b-696a-421c" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a449-10c9-89c7-eba7" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a449-10c9-89c7-eba7" type="max"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -6856,7 +6960,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2e8-407b-52b4-b4a8" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a560-b7f2-a69b-5143" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eef9-6c69-a8e6-4a53" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eef9-6c69-a8e6-4a53" type="max"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8986,7 +9090,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a09d-8300-eb1c-c2c7" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8df0-2736-90e5-6a5b" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cc9-253e-9008-7adf" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cc9-253e-9008-7adf" type="max"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9025,7 +9129,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e2-2823-321a-2ab1" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f837-7b9c-1cbd-43f5" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f550-6cfb-984e-bea0" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f550-6cfb-984e-bea0" type="max"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9469,20 +9573,35 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
     </selectionEntry>
     <selectionEntry id="d601-e213-fa45-8ee8" name="Bound Daemons" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="ab61-0639-33c7-42e3" value="1">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
-          </conditions>
+        <modifier type="increment" field="ab61-0639-33c7-42e3" value="1">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58a7-8821-3cd9-c73" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
-        <modifier type="set" field="6b99-fab1-dd53-4738" value="1">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
-          </conditions>
+        <modifier type="increment" field="6b99-fab1-dd53-4738" value="1">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58a7-8821-3cd9-c73" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="set" field="a85e-229d-6421-a01f" value="1">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="atLeast"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58a7-8821-3cd9-c73" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -9494,14 +9613,14 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="092d-3716-36f8-8988" name="Samus or Ka’bandha Warlord stuff" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="092d-3716-36f8-8988" name="Samus, Ka’bandha &amp; Cor&apos;bax Warlord stuff" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf75-4e9e-9b42-3de6" type="min"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39f4-9c0e-e5c6-e97d" type="max"/>
       </constraints>
       <rules>
-        <rule id="d57d-7147-0305-97b3" name="Samus or Ka’bandha Warlord stuff" publicationId="cb13-da24-e6da-75b3" page="15 &amp; 19" hidden="false">
-          <description>Samus and Ka’bandha may always be selected as an Army’s Warlord even if it is not part of the Primary Detachment</description>
+        <rule id="d57d-7147-0305-97b3" name="Samus, Ka’bandha, Cor&apos;bax Warlord stuff" publicationId="cb13-da24-e6da-75b3" page="15 &amp; 19" hidden="false">
+          <description>Samus, Ka’bandha &amp; Cor&apos;bax may always be selected as an Army’s Warlord even if it is not part of the Primary Detachment</description>
         </rule>
       </rules>
       <costs>
@@ -9524,7 +9643,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac96-6363-738c-94a2" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7577-a59f-adae-a6ed" type="max"/>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6ff-b985-d7ad-a06c" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6ff-b985-d7ad-a06c" type="max"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10202,6 +10321,52 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ally of the Silent Order" hidden="false" id="bf10-c83b-b8ed-aaf1"/>
+    <selectionEntry id="afca-3047-fb26-d097" name="Daemons of the Ruinstorm" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" value="0" field="a533-2076-2a0e-ea48">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0fc8-91be-dcf4-1513" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="47f0-bba9-6d89-9baa" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5522-4fd9-12d5-460afds" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d0b6-712f-0b12-a308" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ddf5-d792-3146-6e9a" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f689-fd0d-ffb0-c255" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b2b4-2198-0b90-dd9f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3edc-a1b9-6dc6-b1ea" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5f54-457a-fbb9-6730" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="296e-301e-3ce1-1c15" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e01e-5cdd-e512-8353" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4916-965e-8339-44f6" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="a0e1-f2c4-8bcd-0723" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b28b-71f7-e4f4-8f9c" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="bfc9-c99c-bf8a-3917" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="90ee-77dd-1b7f-ddfe" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8e0f-3552-8842-f281" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd1f-1c51-706c-e5f7" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="dc34-fe08-dd44-fb99" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="21c3-2f28-7820-e51a" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="01b4-57c7-bf61-2abf" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9dbf-0760-d7ae-f125" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c805-ca3a-ff93-5e2f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c0df-c1fa-5ddc-9ee5" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b77-2753-f141-88" type="max"/>
+        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a533-2076-2a0e-ea48" type="max"/>
+        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be67-de81-294a-7554" type="max"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
