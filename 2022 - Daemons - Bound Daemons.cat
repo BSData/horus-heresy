@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e545-295b-4cd9-f235" name="2022 - Daemons - Bound Daemons" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e545-295b-4cd9-f235" name="2022 - Daemons - Bound Daemons" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="250f-d164-bb7e-7025" name="Bound Daemon Brutes" hidden="false" collective="false" import="false" targetId="519f-866e-e6fe-20e0" type="selectionEntry">
       <modifiers>
@@ -154,9 +154,6 @@
         </profile>
       </profiles>
       <rules>
-        <rule id="c726-90b0-4e54-5699" name="Empyrean Avatar" publicationId="cb13-da24-e6da-75b3" page="16" hidden="false">
-          <description>When a model with this special rule suffers an unsaved Wound with the Instant Death special rule, it is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it.</description>
-        </rule>
         <rule id="081c-3c1b-c85a-17b1" name="Whispers of Madness" publicationId="cb13-da24-e6da-75b3" page="16" hidden="false">
           <description>• If Bound Samus has been placed in Reserves and has not yet arrived on the battlefield, Reserves rolls made by an opposing player to bring units into play from Reserve are modified by -1. This modifier does not stack with any other negative modifiers to Reserves rolls – use the highest single modifier instead.
 • Any model within 18&quot; of Bound Samus must reduce its Leadership by -2 when making Psychic checks. This modifier is cumulative with other effects that reduce Leadership for the purposes of making Psychic checks.
@@ -165,15 +162,49 @@
       </rules>
       <infoLinks>
         <infoLink id="1f45-c91c-3464-4f02" name="Bound Malefica" hidden="false" targetId="e2de-47bf-2a1c-45e5" type="rule"/>
-        <infoLink id="fe66-5530-9287-ea65" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule"/>
-        <infoLink id="8d8a-7257-9ecf-2426" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
-        <infoLink id="7631-3201-1782-c364" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule"/>
-        <infoLink id="7c81-f3a8-b097-4ad1" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule"/>
         <infoLink id="97ca-4029-9eb0-f8d4" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
         <infoLink id="0619-9447-422f-0664" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="780c-1974-dd49-f4f4" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Æthereal Invulnerability (4+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="d927-6c3f-408e-718b" targetId="c694-20c8-455-baca">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="e6cf-4fa9-df0d-64c7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Eternal Warrior" hidden="false" type="rule" id="9a59-d398-2871-bf6" targetId="000b-fe96-31f8-c0ad">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="e6cf-4fa9-df0d-64c7" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a85-7793-3dcd-77a5" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" value="Bulky (7)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="797a-4e3b-637b-4df6" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+          <modifiers>
+            <modifier type="set" value="Fleet (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="e606-8880-b71e-e6e5" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5dff-9da4-6de0-66e9" name="Rage (X)" hidden="false" targetId="564d-3550-ae44-2f99" type="rule">
+          <modifiers>
+            <modifier type="set" value="Rage (3)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
