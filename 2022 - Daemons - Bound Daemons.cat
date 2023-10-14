@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="e545-295b-4cd9-f235" name="2022 - Daemons - Bound Daemons" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="e545-295b-4cd9-f235" name="2022 - Daemons - Bound Daemons" revision="7" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="250f-d164-bb7e-7025" name="Bound Daemon Brutes" hidden="false" collective="false" import="false" targetId="519f-866e-e6fe-20e0" type="selectionEntry">
       <modifiers>
@@ -21,7 +21,7 @@
         <categoryLink id="f4ac-a026-144c-e6ca" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="320b-ef67-a664-88ee" name="Bound Daemon Regent" hidden="false" collective="false" import="true" targetId="89f7-b7a1-aab2-e47a" type="selectionEntry">
+    <entryLink id="320b-ef67-a664-88ee" name="Bound Daemon Regent" hidden="false" collective="false" import="false" targetId="89f7-b7a1-aab2-e47a" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -60,7 +60,7 @@
         <categoryLink id="80fe-5484-f245-0f53" name="New CategoryLink" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="c3ed-182e-d418-8826" name="Bound Samus" hidden="false" collective="false" import="true" targetId="e6cf-4fa9-df0d-64c7" type="selectionEntry">
+    <entryLink id="c3ed-182e-d418-8826" name="Bound Samus" hidden="false" collective="false" import="false" targetId="e6cf-4fa9-df0d-64c7" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -485,7 +485,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="a412-00f9-330a-a548" name="The Ætheric Dominion (X)" hidden="false" collective="false" import="true" targetId="002f-0e40-9d49-2a22" type="selectionEntryGroup"/>
+        <entryLink id="a412-00f9-330a-a548" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130"/>
@@ -730,7 +730,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="7ee4-d117-f5ee-fec6" name="The Ætheric Dominion (X)" hidden="false" collective="false" import="true" targetId="002f-0e40-9d49-2a22" type="selectionEntryGroup"/>
+        <entryLink id="7ee4-d117-f5ee-fec6" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
@@ -769,4 +769,19 @@ During a Reaction made in any Phase, a player may not choose to activate a model
   <catalogueLinks>
     <catalogueLink type="catalogue" name="2022 - Daemon Library" id="ed00-776d-da88-fede" targetId="31bf-eb23-33a-3d65"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Ætheric Dominion (Whole Army)" hidden="false" id="93cd-66c2-89ba-8b2f">
+      <categoryLinks>
+        <categoryLink targetId="5d31-e5d-67bd-1083" id="f4f0-d91d-946c-3ace" primary="true" name="Ruinstorm Ætheric Dominion (Whole Army)"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="The Ætheric Dominion (X)" hidden="false" type="selectionEntryGroup" id="1064-6518-7200-e98b" targetId="002f-0e40-9d49-2a22"/>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19e4-e8bc-6102-44ab"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b603-da13-a71c-3209"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9be7-1a0d-7738-4111"/>
+      </constraints>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
