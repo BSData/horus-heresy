@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="78" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="80" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1274,13 +1274,7 @@ Reactions:
     </categoryEntry>
     <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
     <categoryEntry name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="ed41-7006-3494-4c24"/>
-    <categoryEntry name="Ætheric Dominion (Whole Army)" hidden="false" id="5d31-e5d-67bd-1083">
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="57f4-b9c1-497d-4869"/>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c5c1-bcaa-426e-d04d"/>
-        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4699-fbfb-1670-9143"/>
-      </constraints>
-    </categoryEntry>
+    <categoryEntry name="Ætheric Dominion (Whole Army)" hidden="false" id="5d31-e5d-67bd-1083"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1297,7 +1291,7 @@ Reactions:
         <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink name="Ruinstorm Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083" type="category">
           <modifiers>
-            <modifier type="set" value="1" field="57f4-b9c1-497d-4869">
+            <modifier type="set" value="1" field="5cdb-d88d-5c88-7ff1">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1307,7 +1301,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="c5c1-bcaa-426e-d04d">
+            <modifier type="set" value="1" field="b58e-f1a1-e46a-bf94">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1317,7 +1311,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="4699-fbfb-1670-9143">
+            <modifier type="set" value="1" field="7bd-8af-adff-1daa">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1328,6 +1322,11 @@ Reactions:
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5cdb-d88d-5c88-7ff1"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b58e-f1a1-e46a-bf94"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="7bd-8af-adff-1daa"/>
+          </constraints>
         </categoryLink>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
@@ -1601,7 +1600,7 @@ Reactions:
         <categoryLink id="dd4c-2612-511f-98f7" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="723-4837-8ae9-8d63" targetId="5d31-e5d-67bd-1083">
           <modifiers>
-            <modifier type="set" value="1" field="57f4-b9c1-497d-4869">
+            <modifier type="set" value="1" field="fb0c-f76f-e358-d1ab">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1611,7 +1610,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="c5c1-bcaa-426e-d04d">
+            <modifier type="set" value="1" field="dab4-35a2-80ba-cce6">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1621,7 +1620,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="4699-fbfb-1670-9143">
+            <modifier type="set" value="1" field="5cc4-fa10-a543-a17f">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1632,6 +1631,11 @@ Reactions:
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fb0c-f76f-e358-d1ab"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dab4-35a2-80ba-cce6"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="5cc4-fa10-a543-a17f"/>
+          </constraints>
         </categoryLink>
         <categoryLink id="0b76-5263-40ac-0721" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
@@ -1817,7 +1821,7 @@ Reactions:
         <categoryLink id="a23c-357c-3c10-db1f" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="8ed0-dc42-a148-4a7c" targetId="5d31-e5d-67bd-1083">
           <modifiers>
-            <modifier type="set" value="1" field="57f4-b9c1-497d-4869">
+            <modifier type="set" value="1" field="14df-1299-987e-6288">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1827,7 +1831,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="c5c1-bcaa-426e-d04d">
+            <modifier type="set" value="1" field="3f9f-98f3-92ec-dd51">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1837,7 +1841,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" value="1" field="4699-fbfb-1670-9143">
+            <modifier type="set" value="1" field="6deb-ff9f-5d07-dab5">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -1848,6 +1852,11 @@ Reactions:
               </conditionGroups>
             </modifier>
           </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="14df-1299-987e-6288"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3f9f-98f3-92ec-dd51"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="6deb-ff9f-5d07-dab5"/>
+          </constraints>
         </categoryLink>
         <categoryLink id="a33f-77fb-a40c-03ff" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
@@ -8761,7 +8770,7 @@ Two Turret Mounted Lascannons</characteristic>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a7e-bde5-2196-c338" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="c8e7-8282-36c0-8532" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry"/>
+            <entryLink id="c8e7-8282-36c0-8532" name="Icarus Lascannon" hidden="false" collective="false" import="true" targetId="585d-a229-e4ef-81c3" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>

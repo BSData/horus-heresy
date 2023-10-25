@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="b36e-8c73-fe83-f087" name="III: Emperor&apos;s Children" hidden="false" collective="false" import="false" targetId="3edc-a1b9-6dc6-b1ea" type="selectionEntry">
       <modifiers>
@@ -3229,6 +3229,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
         <infoLink id="1fb3-1321-c2fe-a956" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="d5df-4b28-0436-b394" name="Skill Unmatched" hidden="false" targetId="752f-1b0d-5888-22b5" type="rule"/>
         <infoLink id="218d-6bee-c553-0006" name="Living Icons" hidden="false" targetId="5615-04df-fb39-aa5d" type="rule"/>
+        <infoLink name="Stubborn" hidden="false" type="rule" id="cff0-6431-d93a-dc2d" targetId="7989-1f2c-a43d-82ae"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="99d4-024f-39b9-f2dd" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3972,11 +3973,13 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b21b-9199-75b5-b87c" type="max"/>
           </constraints>
-          <rules>
-            <rule id="e43c-c0cb-01a4-8ead" name="Warlord: Prideful Onslaught" hidden="false">
-              <description>If Lord Commander Eidolon is the Army&apos;s Warlord, then at the beginning of the battle, once all of the opposing player&apos;s models have been deployed, but before the first turn has begun, Lord Commander Eidolon&apos;s controlling player must select one enemy HQ or Primarch choice as Lord Commander Eidolon&apos;s &quot;Rival&quot;. Lord Commander Eidolon and any unit he has joined gain a bonus of +1 to all To Hit rolls made against the &quot;Rival&quot; unit - and if the &quot;Rival&quot; unit is part of any enemy Shooting Attack or Combat that results in a friendly unit being removed entirely as casualties or Falling Back, then Lord Commander Eidolon and any unit he has joined also gains a bonus of +1 to all To Wound rolls made against the &quot;Rival&quot; unit for the remainder of the battle after that Shooting Attack or Combat has been fully resolved. In addition Lord Commander Eidolon and any unit he has joined may only declare Reactions against the Rival unit, but the first such Reaction each turn is free and does not reduce the Player&apos;s Reaction Allotment for that Phase.</description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile name="Warlord: Prideful Onslaught" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="3983-38df-a124-8bb3">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If Lord Commander Eidolon is the Army&apos;s Warlord, then at the beginning of the battle, once all of the opposing player&apos;s models have been deployed, but before the first turn has begun, Lord Commander Eidolon&apos;s controlling player must select one enemy HQ or Primarch choice as Lord Commander Eidolon&apos;s &quot;Rival&quot;. Lord Commander Eidolon and any unit he has joined gain a bonus of +1 to all To Hit rolls made against the &quot;Rival&quot; unit - and if the &quot;Rival&quot; unit is part of any enemy Shooting Attack or Combat that results in a friendly unit being removed entirely as casualties or Falling Back, then Lord Commander Eidolon and any unit he has joined also gains a bonus of +1 to all To Wound rolls made against the &quot;Rival&quot; unit for the remainder of the battle after that Shooting Attack or Combat has been fully resolved. In addition Lord Commander Eidolon and any unit he has joined may only declare Reactions against the Rival unit, but the first such Reaction each turn is free and does not reduce the Player&apos;s Reaction Allotment for that Phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4131,17 +4134,18 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ef-d36a-4edc-d709" type="max"/>
           </constraints>
-          <rules>
-            <rule id="ccd0-7e04-9222-26a6" name="Warlord: Defiant unto Death" hidden="false">
-              <description>If an army’s Warlord has this trait, then check at the start of each of the controlling player’s turns to see if any of the following is true:
+          <profiles>
+            <profile name="Warlord: Defiant unto Death" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="43a5-fa93-6dc4-55c3">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If an army’s Warlord has this trait, then check at the start of each of the controlling player’s turns to see if any of the following is true:
 ● The army that includes Captain Saul Tarvitz has accrued fewer Victory points than any enemy army.
 ● The army including Captain Saul Tarvitz has less units on the battlefield than all enemy armies combined.
 ● Captain Saul Tarvitz is within 6” of an objective
 ● Captain Saul Tarvitz and any unit he has joined is locked in combat with more than one enemy unit, or a single enemy unit that outnumbers Captain Saul Tarvitz’s unit
-
-If any of these are true then Captain Saul Tarvitz and any friendly units with at least one model within 12” of Captain Saul Tarvitz gain the Fearless special rule. In addition, as long as Saul Tarvitz has not been removed as a casualty the army gains an additional Reaction in the Shooting Phase.</description>
-            </rule>
-          </rules>
+If any of these are true then Captain Saul Tarvitz and any friendly units with at least one model within 12” of Captain Saul Tarvitz gain the Fearless special rule. In addition, as long as Saul Tarvitz has not been removed as a casualty the army gains an additional Reaction in the Shooting Phase.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4346,12 +4350,14 @@ then he gains +1 to his Attacks Characteristic.</description>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be40-2194-8a16-1b35" type="max"/>
           </constraints>
-          <rules>
-            <rule id="3dbb-7853-49f6-1f0a" name="Warlord: The Blade Alone" hidden="false">
-              <description>If an army’s Warlord has this Trait, then no other models or units may use its Leadership regardless of any other rules or Wargear that a unit may have, however, whenever
-Captain Lucius is engaged in a Challenge all friendly models in the same combat gain the Fearless special rule. In addition, an army with Captain Lucius as its Warlord may make one additional Reaction each turn in any one Phase without using up a point of the army’s Reaction Allotment – but this additional Reaction must be made by Lucius and any unit he has joined.</description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile name="Warlord: The Blade Alone" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="66cb-ab48-51b9-3617">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If an army’s Warlord has this Trait, then no other models or units may use its Leadership regardless of any other rules or Wargear that a unit may have, however, whenever
+Captain Lucius is engaged in a Challenge all friendly models in the same combat gain the Fearless special rule. In addition, an army with Captain Lucius as its Warlord may make one additional Reaction each turn in any one Phase without using up a point of the army’s Reaction Allotment – but this additional Reaction must be made by Lucius and any unit he has joined.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
       </entryLinks>
       <costs>

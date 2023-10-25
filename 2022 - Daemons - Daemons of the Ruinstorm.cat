@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ac63-5340-2e9e-1eb6" name="2022 - Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ac63-5340-2e9e-1eb6" name="2022 - Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -8,6 +8,13 @@
       <categoryLinks>
         <categoryLink targetId="e90d-e5a8-f42d-da84" id="27c7-e48-9b25-b38f" primary="true" name="Allegiance:"/>
       </categoryLinks>
+      <modifiers>
+        <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
+          <conditions>
+            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink import="false" name="01) Ruinstorm Daemon Sovereign" hidden="false" type="selectionEntry" id="61db-a83f-c0b6-90fd" targetId="2f3f-adc4-b19f-a5c7">
       <categoryLinks>
@@ -1706,9 +1713,10 @@ If Sanguinius is removed as a casualty while fighting in a Challenge against Ka&
           <profiles>
             <profile id="1345-159b-b7b9-2e32" name="Warlord Trait: Lord of Decay" publicationId="8775-88f5-cfdd-24f6" page="20" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Samus Unbound may always be selected as an army’s Warlord even if it is not part of the Primary Detachment or a HQ choice. If chosen as the army’s  Warlord, Samus Unbound replaces the Empyrean Avatar special rule with the Eternal Warrior  special rule and automatically has The End and the Death as its Warlord Trait and may not select any other.
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Cor’bax Utterblight Unbound may always be selected as an army’s Warlord even if it is not part of the Primary Detachment or an HQ choice. If chosen as the army’s Warlord, Cor’bax Utterblight Unbound automatically has Lord of Decay as its Warlord Trait and may not select any other.
 
-The End and the Death – When fighting in a Challenge, successful Invulnerable Saves taken against Samus Unbound’s attacks must be re-rolled. In addition, an army with Samus Unbound as its Warlord may make an additional Reaction during the opposing player&apos;s Movement phase as long as Samus Unbound has not been removed as a casualty.</characteristic>
+
+Lord of Decay – All units with the Daemon Unit Type and the Ætheric Dominion (Putrid Corruption) special rule within 3&quot; of Cor’bax Utterblight Unbound can re-roll failed Damage Mitigation rolls provided to them by the Ætheric Dominion (Putrid Corruption) and Feel No Pain (X) special rules. In addition, an army whose Warlord has this Trait may make an additional Reaction in the Movement phase as long as Cor’bax Utterblight Unbound has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
