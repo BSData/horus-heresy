@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
-    <entryLink id="b36e-8c73-fe83-f087" name="III: Emperor&apos;s Children" hidden="false" collective="false" import="false" targetId="3edc-a1b9-6dc6-b1ea" type="selectionEntry">
-      <modifiers>
-        <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb97-3eea-07d6-0aed" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2fd-9199-56bc-916b" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="81e6-96ee-9e60-32fa" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="a119-3943-4b8b-b651" name="Captain Lucius" hidden="true" collective="false" import="false" targetId="0707-1e4b-27da-9cd4" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -48,9 +32,14 @@
     <entryLink id="d159-e0c0-f0a4-c8c9" name="Fulgrim" hidden="true" collective="false" import="false" targetId="0de5-8b3c-74a0-858e" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -1621,6 +1610,13 @@
           <comment>template_id_741d-8c09-4211-ada6    template_targetId_7dee-602c-4b47-be09</comment>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a27-97d3-a06-ef35" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink id="2ced-abe5-9c73-213b" name="Praetor, Cataphractii" hidden="false" collective="false" import="false" targetId="1b79-1951-5a63-4b9e" type="selectionEntry">
       <comment>template_id_ca44-db38-4377-b4ef</comment>
@@ -1631,6 +1627,11 @@
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
               <comment>node_id_f7fd-2d16-4603-a065</comment>
             </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a27-97d3-a06-ef35" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1675,6 +1676,13 @@
           <comment>template_id_fe8f-c701-4ebd-ae76    template_targetId_be38-a066-4f8e-ae54</comment>
         </entryLink>
       </entryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a27-97d3-a06-ef35" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
     <entryLink id="d03c-82e0-25a4-b0b0" name="Predator Squadron" hidden="false" collective="false" import="false" targetId="45fd-df3e-9bc4-60b6" type="selectionEntry">
       <comment>template_id_abdb-0d0b-4557-996a</comment>
@@ -3023,6 +3031,42 @@
         <categoryLink id="8c33-74be-1555-de49" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="b02a-103b-67d8-212b" name="Fulgrim Transfigured" hidden="true" collective="false" import="false" targetId="142f-51c9-5c82-fc2f" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="1d94-cef1-ee56-8a19">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="9a27-97d3-a06-ef35" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6760-f643-3a7f-970d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5c74-92e9-4f38-43a3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="ad5f-31db-8bc7-5c46" id="a1a0-3e30-fae2-1899" primary="true" name="Primarch:"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="733e-3646-4ae2-b070" name="Retinue" hidden="false" collective="false" import="true" targetId="30af-29e4-7637-73ea" type="selectionEntryGroup">
+          <comment>template_id_831f-3373-456a-8fbc    template_targetId_be38-a066-4f8e-ae54</comment>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1d94-cef1-ee56-8a19"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0de5-8b3c-74a0-858e" name="Fulgrim" hidden="false" collective="false" import="true" type="unit">
@@ -3222,14 +3266,41 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
       <rules>
         <rule id="c8a9-354d-f168-5a37" name="Phoenix Retinue" hidden="true">
           <description>A Phoenix Terminator Squad may be selected as a Retinue Squad in a Detachment that includes at least one model  with both the Master of the Legion and the Legiones Astartes (Emperor&apos;s Children) special rules, instead of as an Elites choice. A unit selected as a &apos;Retinue Squad&apos; must have one model with both the Master of the Legion and Legiones Astartes (Emperor&apos;s Children) special rules from the same Detachment selected by the controlling player as the Phoenix Terminator Squad&apos;s Leader for the purposes of this special rule. A Phoenix Terminator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as the model selected as its Leader. A Phoenix Terminator Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. One Phoenix Terminator in a Phoenix Terminator Squad selected as a Retinue may exchange their Phoenix power spear for a Legion standard and a Phoenix rapier for +15 points.</description>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </rule>
+        <rule name="Fallen From Grace" hidden="true" id="d639-5c9f-aa5-9942" publicationId="7f9d-5e88-241d-e861" page="107">
+          <description>With Fulgrim assuming his immortal form, many of his personal retinue found their role redundant. Many relinquished some or all of their ceremonial wargear, instead taking up other roles within the Legion, while the remainder instead sought to prove their worth anew in the eyes of their brethren and their beloved Primarch.
+A unit with this special rule gains +1 to the score used to calculate the winner of a combat during the Assault phase if it is within 6&quot; of another friendly unit with the Legiones Hereticus (Emperor’s Children) special rule. If it is within 6&quot; of Fulgrim Transfigured, it instead gains +2 to this score.</description>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="8285-7b06-ed1f-8b59" name="Legiones Astartes (Emperor&apos;s Children)" hidden="false" targetId="4a36-8b9d-6b6c-51e1" type="rule"/>
         <infoLink id="1fb3-1321-c2fe-a956" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="d5df-4b28-0436-b394" name="Skill Unmatched" hidden="false" targetId="752f-1b0d-5888-22b5" type="rule"/>
-        <infoLink id="218d-6bee-c553-0006" name="Living Icons" hidden="false" targetId="5615-04df-fb39-aa5d" type="rule"/>
+        <infoLink id="218d-6bee-c553-0006" name="Living Icons" hidden="false" targetId="5615-04df-fb39-aa5d" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Stubborn" hidden="false" type="rule" id="cff0-6431-d93a-dc2d" targetId="7989-1f2c-a43d-82ae"/>
+        <infoLink id="dff4-89f0-a334-fbb9" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="99d4-024f-39b9-f2dd" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3308,6 +3379,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Debased Augments (Unit Character)" hidden="false" type="selectionEntryGroup" id="7ae5-94cf-98bf-4438" targetId="c560-379a-5b80-8d6d"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3411,16 +3483,73 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="021f-53b1-a520-5194" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="ba42-5114-9a11-0653" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Abhorrent Sensoria" hidden="false" type="selectionEntry" id="11c3-4fbf-493e-585e" targetId="fd60-b3e7-979e-87b6">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Warp Scream" hidden="false" type="selectionEntry" id="66b0-5983-4f46-a15" targetId="c03-837a-edbe-cb99">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Sublingual Glands" hidden="false" type="selectionEntry" id="a9ef-e36d-6c13-ab5f" targetId="95cf-2089-8146-7853">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3505,6 +3634,13 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="8359-c463-9cde-4f21" name="Kakophoni Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -3513,9 +3649,21 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="remove" value="11f2-472f-c1d1-9ae9" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <infoLinks>
         <infoLink id="0435-1879-2846-3361" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+        <infoLink id="bbd-fca0-5081-d93c" name="Legiones Astartes (Emperor&apos;s Children)" hidden="false" targetId="4a36-8b9d-6b6c-51e1" type="rule"/>
+        <infoLink id="fef3-5508-cd08-3c42" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4ad3-2a6e-3de4-93f5" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
@@ -3628,6 +3776,13 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink id="9cff-84a6-0e9d-71f9" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
                   <constraints>
@@ -3636,6 +3791,49 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Abhorrent Sensoria" hidden="false" type="selectionEntry" id="779f-a738-8b9b-1d40" targetId="fd60-b3e7-979e-87b6">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Warp Scream" hidden="false" type="selectionEntry" id="61db-2f4e-68b5-173a" targetId="c03-837a-edbe-cb99">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Sublingual Glands" hidden="false" type="selectionEntry" id="48e3-a3a9-1574-5fd6" targetId="95cf-2089-8146-7853">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -3856,6 +4054,7 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
             <infoLink id="9284-bc0d-3879-1be1" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
             <infoLink id="fa02-232f-6959-e4c3" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
             <infoLink id="2113-2c11-4ad1-b903" name="Legiones Astartes (Emperor&apos;s Children)" hidden="false" targetId="4a36-8b9d-6b6c-51e1" type="rule"/>
+            <infoLink id="a843-974d-a73e-bcba" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
           </infoLinks>
           <entryLinks>
             <entryLink id="fb2e-6455-0b6b-c8f4" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
@@ -3985,6 +4184,18 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="11f2-472f-c1d1-9ae9" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a91c-719f-4abf-1598" name="Captain Saul Tarvitz" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -4151,6 +4362,18 @@ If any of these are true then Captain Saul Tarvitz and any friendly units with a
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="11f2-472f-c1d1-9ae9" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0707-1e4b-27da-9cd4" name="Captain Lucius" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -4207,6 +4430,7 @@ then he gains +1 to his Attacks Characteristic.</description>
               </modifiers>
             </infoLink>
             <infoLink id="75bd-6faf-4d2e-12dc" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+            <infoLink id="4bc3-8725-2e59-50a9" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
           </infoLinks>
           <entryLinks>
             <entryLink id="2d24-f072-423f-f16b" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
@@ -4363,6 +4587,18 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="11f2-472f-c1d1-9ae9" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="281b-1950-5c15-de68" name="Rylanor the Unyielding" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -4440,6 +4676,11 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef7e-6bfd-8a32-f184" type="max"/>
@@ -4457,6 +4698,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
       </rules>
       <infoLinks>
         <infoLink id="006a-76d7-f6d2-f760" name="Legiones Astartes (Emperor&apos;s Children)" hidden="false" targetId="4a36-8b9d-6b6c-51e1" type="rule"/>
+        <infoLink id="67f2-7c26-f16e-8c6" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9ffc-7328-547c-da5c" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
@@ -4667,6 +4909,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ce-8d57-1fb3-c8b8" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Debased Augments (Unit Character)" hidden="false" type="selectionEntryGroup" id="6b4-fd11-33f8-f1f0" targetId="c560-379a-5b80-8d6d"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4847,6 +5090,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
           </modifiers>
         </infoLink>
         <infoLink id="4c86-4e07-a1bc-fd7f" name="Skill Unmatched" hidden="false" targetId="752f-1b0d-5888-22b5" type="rule"/>
+        <infoLink id="158-c63d-3ae-6f93" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="782e-da64-b0e9-5ed2" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -4999,6 +5243,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4499-5a1a-64a1-545d" type="max"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Debased Augments (Unit Character)" hidden="false" type="selectionEntryGroup" id="461a-8c68-d4ac-d209" targetId="c560-379a-5b80-8d6d"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5101,16 +5346,73 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="f011-c1f1-632f-17e4" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="7b54-22dd-9855-4259" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Abhorrent Sensoria" hidden="false" type="selectionEntry" id="bfc9-1d38-79d3-6295" targetId="fd60-b3e7-979e-87b6">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Warp Scream" hidden="false" type="selectionEntry" id="3ee1-1dcf-1e03-8f78" targetId="c03-837a-edbe-cb99">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Sublingual Glands" hidden="false" type="selectionEntry" id="5b5c-f976-9347-1453" targetId="95cf-2089-8146-7853">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5151,6 +5453,18 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="11f2-472f-c1d1-9ae9" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="71ab-ba48-0083-8e4c" name="Palatine Blade Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -5163,6 +5477,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
           </modifiers>
         </infoLink>
         <infoLink id="d974-5a7b-f7d3-0f5b" name="Skill Unmatched" hidden="false" targetId="752f-1b0d-5888-22b5" type="rule"/>
+        <infoLink id="67a8-ce36-6e3f-eba8" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c0d4-de90-6b38-68d5" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -5322,6 +5637,7 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Debased Augments (Unit Character)" hidden="false" type="selectionEntryGroup" id="9196-9813-e415-aaa0" targetId="c560-379a-5b80-8d6d"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5424,16 +5740,73 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="c743-8b21-5cf9-4f50" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="e7af-39d1-287a-7589" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Warp Scream" hidden="false" type="selectionEntry" id="b41f-f5a3-8100-e5da" targetId="c03-837a-edbe-cb99">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Abhorrent Sensoria" hidden="false" type="selectionEntry" id="8a08-e237-fc69-f5f5" targetId="fd60-b3e7-979e-87b6">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Sublingual Glands" hidden="false" type="selectionEntry" id="4c95-4b43-ee6f-11ea" targetId="95cf-2089-8146-7853">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5557,6 +5930,172 @@ Captain Lucius is engaged in a Challenge all friendly models in the same combat 
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="53"/>
+      </costs>
+      <modifiers>
+        <modifier type="remove" value="11f2-472f-c1d1-9ae9" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="d684-5b63-caa7-adc4" field="category">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Fulgrim Transfigured" hidden="false" id="142f-51c9-5c82-fc2f">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fde1-4e9d-9429-610d" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="1bab-74bb-1d70-beab" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b7b-de9d-ec8c-df14" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b9a-2191-8a5b-5436" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="a6ce-2b7d-1a81-e2c9" name="Warlord: Avatar of Perfection" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">During the controlling player’s Charge sub-phase, Fulgrim Transfigured, and any unit he is part of, must attempt a Charge if there are any enemy units that contain any models with an unmodified Weapon Skill characteristic of 6 or more within 12&quot;, and at least one of these enemy units must be declared as a target of that Charge. Note that this does allow a unit that contains a model with this Warlord Trait to Charge a different unit to one that they made a Shooting Attack against in the previous Shooting phase. In the subsequent Fight sub-phase, the controlling player must issue a Challenge, and must nominate Fulgrim to be the Challenger. If the Challenge is accepted by an enemy model with a Weapon Skill characteristic of 6 or more that does not have the Primarch or Daemon Primarch Unit Type, while that Challenge is ongoing, Attacks made for Fulgrim Transfigured hit on a result of 2+, regardless of the Weapon Skill characteristic of the target.
+In addition, the first Reaction made in each Game Turn by Fulgrim Transfigured and any unit he has joined does not use up a point of the controlling player’s Reaction Allotment.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+        <entryLink id="a381-15d-4340-54d4" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e5-a01f-8848-14d7" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba7a-1f08-447c-e3c5" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry id="86e7-e8aa-af9-6157" name="Blades of the Phoenician" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b6f-2034-486f-f7d8" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d157-53a3-eb1b-47f6" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f72c-b11b-3bdf-e458" name="Decapitating Slashes" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="7f9d-5e88-241d-e861" page="105">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Murderous Strike 4+</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="2a44-9e6b-13ba-b5de" name="Sundering Blows" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="7f9d-5e88-241d-e861" page="105">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+3</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Wrathful Blows (3), Unwieldy</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="fff2-6f43-9833-78cc" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
+              <modifiers>
+                <modifier type="set" value="Murderous Strike (4+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Brutal (X)" hidden="false" type="rule" id="433d-a69d-fb23-4103" targetId="5079-1fec-d32b-8b84"/>
+            <infoLink name="Unwieldy" hidden="false" type="rule" id="5785-b2d3-5ea8-a0f" targetId="1570-c21a-881f-8b8a"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <rules>
+            <rule name="Wrathful Blows" hidden="false" id="c72-f7ba-c901-5229" publicationId="7f9d-5e88-241d-e861" page="105">
+              <modifiers>
+                <modifier type="set" value="Wrathful Blows (3)" field="name"/>
+              </modifiers>
+              <description>Wrathful Blows (X): A model making Attacks with a weapon with this special rule makes an amount of Attacks equal to the number shown in brackets, regardless of their Attacks Characteristic and any bonuses gained for Charging.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry id="b2a0-9aab-df04-70fe" name="Fulgrim Transfigured" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="521-1db-f68d-33a0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4dd-f65-9887-4b5a" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="3157-5a63-36f1-fe3d" name="Fulgrim" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Daemon Primarch (Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">9&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">8</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">7</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Serpentine Daemonform" hidden="false" id="e3b2-8fb5-bcc7-5a7">
+              <description>In the wake of his physical being becoming a vessel for the powers of the Warp, Fulgrim’s form became nigh indestructible. Despite his virtual immortality, Fulgrim’s monstrous pride often ensured that should a foe threaten to best him, he would dramatically leave the battlefield, denying them the satisfaction of besting him in combat. 
+    Fulgrim Transfigured’s Serpentine Daemonform provides a 2+ Armour Save and a 4+ Invulnerable Save. Additionally, while Fulgrim Transfigured has four or fewer wounds, add +1 to dice rolls made for his It Will Not Die (X) Special Rule.
+    If, at the start of any of their player turns, Fulgrim Transfigured has two or fewer Wounds and is not locked in combat, his controlling player may choose to remove Fulgrim Transfigured from play as a casualty. If Fulgrim Transfigured is removed from play in this manner, the opposing player achieves no Objectives or Secondary Objectives that would otherwise be scored by removing Fulgrim Transfigured as a casualty</description>
+            </rule>
+            <rule name="Scion of Corruption" hidden="false" id="3f52-b4da-3c51-21f7" publicationId="7f9d-5e88-241d-e861" page="105">
+              <description>All units with the Legiones Astartes (Emperor’s Children) special rule in an army that includes Fulgrim Transfigured must replace it with the Legiones Hereticus (Emperor’s Children) special rule. In addition you cannot include Fulgrim Transfigured in the same army as Fulgrim.</description>
+            </rule>
+            <rule name="Resplendent Wings" hidden="false" id="c3ef-7907-9642-bdcd" publicationId="7f9d-5e88-241d-e861" page="105">
+              <description>Fulgrim’s altered form descended from tortured skies on delicate wings. Though fragile in appearance, when punctured by bullet or blade, they rapidly reknit, remaining perfect and unblemished.
+
+
+At the start of the controlling player’s Movement phase a model with Resplendent Wings may set its Movement Characteristic to a value of 14 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ this special rule). This allows a model with Resplendent Wings to move up to 14”, regardless of the Movement Characteristic shown on their profile and gain any other benefits of a Movement Characteristic of 14 (including the bonus to Charge distance). In addition, models with Resplendent Wings that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their movement in Dangerous Terrain. A model with Resplendent Wings that have been activated treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its movement at least 1” away from any model from another unit.
+
+
+A model with Resplendent Wings may still Run if it would normally be able to Run (this does not allow units that include any models with the Heavy Unit Sub-type to Run). When making a Run move for a model with activated Resplendent Wings, add the Initiative Characteristic of the model to 14 to determine how far it may move – the model ignores terrain and models from other units while making a Run move with Resplendent Wings as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for Running.
+
+
+During a Reaction made in any Phase, a player may not choose to activate a model’s Resplendent Wings to gain any bonus to its Movement Characteristic.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="680-ca2e-43d6-a08c" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
+            <infoLink id="c8fd-d644-5f4a-d97c" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
+            <infoLink id="9dab-57b7-e275-dbbb" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+            <infoLink name="The Stage is Set" hidden="false" type="rule" id="3070-1171-102d-8664" targetId="cafc-473b-bf32-fae1">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="6760-f643-3a7f-970d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <entryLinks>
+            <entryLink id="3f85-7925-cd54-7fe8" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba7b-dd0d-13c1-2211" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d4a-bc04-3d56-495e" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="7ffb-9bda-dc71-222e" primary="false" name="Independent Character"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="1292-421a-85aa-c1bc" id="6742-42ac-5e21-be15" primary="false" name="Daemon Primarch Unit Type"/>
+        <categoryLink targetId="2eaf-32d6-9d1d-d906" id="69e1-27cf-bdbe-614f" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
+        <categoryLink targetId="d684-5b63-caa7-adc4" id="6db6-d9c7-6d40-21d1" primary="false" name="Legiones Hereticus"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="600"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -5684,8 +6223,48 @@ A Warlord with this Trait and all models in a unit the Warlord has joined that h
         <entryLink id="3171-5c8a-52a0-550e" name="Generic Warlord Traits" hidden="false" collective="false" import="true" targetId="c064-819f-d9ef-1775" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Legions Astartes or Hereticus" hidden="false" id="77c1-3398-fe69-6f4b">
+      <entryLinks>
+        <entryLink id="b36e-8c73-fe83-f087" name="III: Emperor&apos;s Children" hidden="false" collective="false" import="false" targetId="3edc-a1b9-6dc6-b1ea" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c363-7cfc-4194-d849" name="III: Emperor&apos;s Children (Legion Hereticus)" hidden="false" collective="false" import="false" targetId="268b-74a8-395f-6f27" type="selectionEntry">
+          <modifiers>
+            <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83d0-c3b-f7d-7c0" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fde-71bb-4b1b-73a1" type="max"/>
+      </constraints>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="(HH V2) Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Legions Astartes or Hereticus" hidden="false" id="d744-9ab9-93ab-ce79">
+      <entryLinks>
+        <entryLink import="true" name="Legions Astartes or Hereticus" hidden="false" type="selectionEntryGroup" id="d5aa-5acf-c3e5-c44c" targetId="77c1-3398-fe69-6f4b"/>
+      </entryLinks>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5f4-b984-1496-e337" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ca4-b4e5-c694-ff9e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="e90d-e5a8-f42d-da84" id="bd74-3b2a-a8ca-8ade" primary="true" name="Allegiance:"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

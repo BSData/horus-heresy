@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="81" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="83" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1062,9 +1062,14 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     <categoryEntry id="4aca-2849-7f41-0200" name="Solar Auxilla or Imperialis Militia" hidden="false">
       <modifiers>
         <modifier type="set" field="0c57-9f90-e576-5e7d" value="1">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6760-f643-3a7f-970d" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -1276,6 +1281,29 @@ Reactions:
     <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
     <categoryEntry name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="ed41-7006-3494-4c24"/>
     <categoryEntry name="Ætheric Dominion (Whole Army)" hidden="false" id="5d31-e5d-67bd-1083"/>
+    <categoryEntry name="Daemon Primarch Unit Type" hidden="false" id="1292-421a-85aa-c1bc" publicationId="7f9d-5e88-241d-e861" page="102">
+      <infoLinks>
+        <infoLink name="Eternal Warrior" hidden="false" type="rule" id="4e99-a42b-4767-8967" targetId="000b-fe96-31f8-c0ad"/>
+        <infoLink name="Fear (X)" hidden="false" type="rule" id="4196-cff0-2092-9208" targetId="21f6-7842-df5c-d2e7"/>
+        <infoLink name="It Will Not Die (X)" hidden="false" type="rule" id="3aa-3754-1cba-790b" targetId="2784-d0be-a4e2-890f"/>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" id="792d-98ee-38cb-138c" targetId="676c-7b75-4b6f-9405"/>
+        <infoLink name="Relentless" hidden="false" type="rule" id="c8c0-460c-f0cc-a59" targetId="7adf-ac9a-5035-522d"/>
+      </infoLinks>
+      <rules>
+        <rule name="Daemon Primarch Unit Type" hidden="false" id="9045-8f1d-e415-744e" publicationId="7f9d-5e88-241d-e861" page="102">
+          <description>• All models with the Daemon Primarch Unit Type have the following special rules: Independent Character, Eternal Warrior, Fear (2), It Will Not Die (5+), Bulky (6), and Relentless. In addition, all models with the Daemon Primarch Unit Type always count as Character models.
+• Models with the Daemon Primarch Unit Type are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, models with the Daemon Primarch Unit Type always resolve Snap Shots at their normal BS.
+• All models with the Daemon Primarch Unit Type are immune to the effects of the Fear (X) special rule, cannot be Pinned, and a unit that includes one or more models with the Daemon Primarch Unit Type automatically passes Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit that includes one or more models with the Daemon Primarch Unit Type fails a Morale check, the unit does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed which must be allocated to a model with the Daemon Primarch or Daemon Unit Type or the Corrupted Unit Sub-type.
+• Any Hits inflicted by a model with the Daemon Primarch Unit Type, as part of either Shooting Attacks or in close combat, are allocated by that model’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
+• If an army includes any models with the Daemon Primarch Unit Type, then one of those models must be chosen as the army’s Warlord.
+• For the purposes of any special rule that affects or has additional effects that target models with the Daemon or Primarch Unit Type, a model with the Daemon Primarch Unit Type is considered to have the Daemon and Primarch Unit Types</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bcc1-9fbf-4c78-275" type="max"/>
+      </constraints>
+    </categoryEntry>
+    <categoryEntry id="d684-5b63-caa7-adc4" name="Legiones Hereticus" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1332,9 +1360,14 @@ Reactions:
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
           <modifiers>
             <modifier type="set" field="1db1-1803-cee1-86cb" value="5">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a27-97d3-a06-ef35" type="equalTo"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="increment" field="1db1-1803-cee1-86cb" value="1">
               <conditionGroups>
@@ -10442,6 +10475,33 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d41e-879-c995-b5a3" name="Children of the Maraviglia Allies Restriction" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="d8b3-b50c-24b2-b352" value="4">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6760-f643-3a7f-970d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="9c7d-ad5d-f0c7-8853" value="1">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6760-f643-3a7f-970d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6760-f643-3a7f-970d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c7d-ad5d-f0c7-8853" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98d5-2132-75e-8aa9" type="max"/>
+        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d8b3-b50c-24b2-b352" type="min"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -10472,6 +10532,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="c74-4e5d-ce4b-1484" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Dark Angels)" hidden="false" type="rule" id="470d-555a-4e1a-740f" targetId="513e-0647-996a-6229"/>
+          </infoLinks>
+          <profiles>
+            <profile name="I: Dark Angels Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="dcfc-5650-81cf-8c12" publicationId="817a-6288-e016-7469" page="152">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (Dark Angels) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game-changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+The Angels of Death – This Advanced Reaction may be made once per battle, when a Charge is declared for an enemy unit targeting one of the Reactive player’s units. Before the Charge is resolved, the Reactive player must make a Leadership test using the lowest Leadership Characteristic in the unit making this Reaction. If the Leadership test is passed then all models in the Reacting unit gain the Fearless and Fear (2) special rules until the end of the controlling player’s next turn. If the Leadership test is failed then all models in the unit making this Reaction instead gain the Stubborn and Fear (1) special rules until the end of the controlling player’s next turn.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="3edc-a1b9-6dc6-b1ea" name="III: Emperor&apos;s Children" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -10496,6 +10571,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="3556-a510-32b5-b98b" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Emperor&apos;s Children)" hidden="false" type="rule" id="a005-e93d-14c6-9a8" targetId="4a36-8b9d-6b6c-51e1"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Emperor’s Children Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="deb1-cf58-608-8886" publicationId="09c5-eeae-f398-b653" page="151">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+The Perfect Counter – This Advanced Reaction may be made once per battle during the opposing player’s Assault phase when any enemy unit declares a Charge targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. When a Charge Distance roll is made for the enemy unit making the Charge, the Reactive player must also make a Charge Distance roll for the Reacting unit. If the result of the Reacting unit’s Charge Distance roll is equal to or greater than that of the enemy unit then the Reactive player may choose to make a Charge with the Reacting unit immediately (cancelling the enemy unit’s Charge if it is successful and gaining all the usual benefits of a successful Charge) or if the Reacting player’s Charge Distance roll is lower than that of the enemy unit, the Reactive player may choose to have the unit make a Shooting Attack targeting the enemy unit and which must be fully resolved before the enemy unit resolves its own Charge. A unit that makes a Shooting Attack as part of a The Perfect Counter Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and models with the Vehicle Unit Type may only fire Defensive weapons. Template weapons may only be used as part of a The Perfect Counter Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally.
+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="5f54-457a-fbb9-6730" name="IV: Iron Warriors" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -10506,6 +10597,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="15c8-8058-b466-bd96" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Iron Warriors)" hidden="false" type="rule" id="164d-6abb-50cd-5009" targetId="c77b-f3fc-5dc8-1330"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Iron Warriors Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="d661-604e-da2a-e7f9" publicationId="09c5-eeae-f398-b653" page="175">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Iron Warriors) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Bitter Fury – Bitter Fury – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Iron Warriors) special rule. Once the Active player has resolved all To Hit and To Wound rolls, and Armour Saves are made, but before any Damage Mitigation rolls are made or casualties removed, the Reactive player may make a Shooting Attack, targeting the unit that triggered this Reaction, with all weapons making twice their normal number of attacks but gaining the Gets Hot special rule. To Hit rolls for weapons that already possess the Gets Hot special rule trigger that special rule on a roll of 1 or 2 during this Shooting Attack, instead of only on a 1. A unit that makes a Shooting Attack as part of a Bitter Fury Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapon or special rule that otherwise ignore line of sight, and Vehicles may only fire Defensive weapons. Template weapons used as part of a Bitter Fury Reaction use the Wall of Death rule instead of firing normally.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="e01e-5cdd-e512-8353" name="V: White Scars" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -10530,6 +10636,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="7605-8be-5a51-7fbc" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (White Scars)" hidden="false" type="rule" id="cc50-dfaf-f8a8-58e2" targetId="4b54-8bd0-9fdd-cbc4"/>
+          </infoLinks>
+          <profiles>
+            <profile name="White Scars Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="a1d6-726c-512b-d23a" publicationId="817a-6288-e016-7469" page="177">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (White Scars) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Chasing the Wind – This Advanced Reaction may be made once per battle during the opposing player’s Movement phase when any enemy unit ends a Move with any of its models within 12&quot; of any model in a friendly unit under the Reactive player’s control with the Legiones Astartes (White Scars) special rule. Once the enemy Move that triggers this Reaction is completely resolved, all friendly units composed entirely of models with the Legiones Astartes (White Scars) special rule within 12&quot; of that enemy unit’s final position may immediately make a normal Move – such units may choose to activate Jump Packs to increase their Movement, but may not choose to Run. This move is subject to all the normal penalties for Difficult Terrain, Dangerous Terrain and units that are Pinned, locked in combat or otherwise unable to move may not move due to this Reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="4916-965e-8339-44f6" name="VI: Space Wolves" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -10562,66 +10683,263 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="1f45-c52a-8356-5d40" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Space Wolves)" hidden="false" type="rule" id="86d6-164a-e57a-af9b" targetId="f806-8d12-07ab-fdaf"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Space Wolves Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="5f84-251e-fad7-93d8" publicationId="817a-6288-e016-7469" page="197">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (Space Wolves) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+No Prey Escapes the Wolf – This Advanced Reaction may be made once per battle in the opposing player’s turn, when any enemy unit with one or more models within 12&quot; of a friendly unit made up entirely of models with the Legiones Astartes (Space Wolves) special rule is moved during the Movement phase. Once the enemy unit that triggered this Reaction has been moved, but before any other units are moved, a single friendly unit made up entirely of models with the Legiones Astartes (Space Wolves) special rule that can draw a line of sight to the enemy unit that moved may immediately move up to a number of inches equal to the highest Initiative Characteristic in the unit and then declare a Charge targeting the enemy unit that moved if it is within 12&quot;. A Charge declared as part of this Reaction is resolved immediately (the enemy unit may not declare any Reaction against this Charge), and if successful the combat will be fought as normal in the following Assault phase, with a Charging unit with the Legiones Astartes (Space Wolves) special rule gaining all the normal benefits of Charging.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="a0e1-f2c4-8bcd-0723" name="VII: Imperial Fists" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="d8d0-b8a9-4295-bdef" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Imperial Fists)" hidden="false" type="rule" id="7ec5-fdde-291e-a2cf" targetId="e876-4f8f-a30f-8b22"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Imperial Fists Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="7e21-8d2d-46d2-f897" publicationId="817a-6288-e016-7469" page="225">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Imperial Fists) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+The Best Defence – This Advanced Reaction may be made once per battle, during the opposing player’s Movement phase when any enemy unit ends a Move within 10&quot; and within line of sight of any model with the Legiones Astartes (Imperial Fists) special rule in a unit under the Reactive player’s control, with that unit making the Reaction. The Reactive player may declare a Charge for the Reacting unit against the enemy unit which triggered this Reaction once that enemy unit has completed its move, and as if it were the controlling player’s Assault phase, with a Charge Distance in inches equal to D6 plus the lowest unmodified Initiative Characteristic of any model in the Reacting Unit and any Charge modifiers the unit has. If the Charge is successful, the units are locked in combat and fight in the Assault phase as normal, with the Charging unit benefiting from any Charge bonuses, Hammer of Wrath (X), etc. If the Charge fails, no Surge move is made.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="b28b-71f7-e4f4-8f9c" name="VIII: Night Lords" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="1806-e3fd-a52e-fcd2" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Night Lords)" hidden="false" type="rule" id="8af8-ea14-c6a5-22dd" targetId="8280-d4ea-b131-4970"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Night Lords Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="7766-7ce7-deb5-6f3b" publicationId="09c5-eeae-f398-b653" page="195">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Night Lords) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+ 
+The Better Part of Valour – This Advanced Reaction may be made once per battle during the Assault phase when any enemy unit declares a Charge targeting a friendly unit under the Reactive player’s control with the Legiones Astartes (Night Lords) special rule. Before the Charge is resolved the target unit Falls Back, as if it had failed a Morale check, but immediately Regroups once that move is completed and suffers none of the usual restrictions for a unit that has Regrouped and may Move, Run, Charge and make Shooting Attacks as normal. If this movement causes the target unit to Move more than 12&quot; from, or out of sight of, the Charging unit then the Active player may re-direct the Charge to target another enemy unit within range, but if the target unit remains within 12&quot; and within line of sight of the Charging unit, the target unit must attempt the original Charge. If the Fall Back caused by this Reaction forces the Reacting unit to reach the edge of the battlefield, it immediately stops moving and Regroups, but suffers none of the usual restrictions for a unit that has Regrouped and may Move, Run, Charge and make Shooting Attacks as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="296e-301e-3ce1-1c15" name="IX: Blood Angels" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="4d65-7961-2ea-c2e2" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Blood Angels)" hidden="false" type="rule" id="b552-b0da-2484-50b1" targetId="b0d1-ccab-8708-500f"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Blood Angels Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="eb3a-c9ff-3139-b2f6" publicationId="817a-6288-e016-7469" page="249">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Blood Angels) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+
+The Wrath of Angels – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy player declares a Shooting Attack targeting a unit composed entirely of models with the Infantry Unit Type and the Legiones Astartes (Blood Angels) special rule under the Reactive player’s control. All models in the unit targeted by the Shooting Attack that triggers this Reaction gain the Shrouded (5+) special rule against all Wounds inflicted as part of the Shooting Attack that triggered this Reaction – if the Reacting unit already has a version of the Shrouded (X) special rule then this does not stack or increase that rule, and the Reacting player may choose to use any one of the Shrouded rules available to them. Once the Shooting Attack has been completely resolved, the Reacting unit may have a Charge declared for it, following all the normal rules for Charging and targeting the enemy unit that made the Shooting Attack. The enemy unit may not make a Reaction to this Charge, and it is fully resolved immediately after it is declared. If the Charge is successful, the units are locked in combat and fight in the Assault phase as normal, with the Charging unit benefiting from any Charge bonuses, Hammer of Wrath (X), etc. If the Charge fails, no Surge Move is made.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="bfc9-c99c-bf8a-3917" name="X: Iron Hands" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="e0b4-5ad6-6595-bc13" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Iron Hands)" hidden="false" type="rule" id="1c85-d348-f538-3788" targetId="2e45-4b61-44fb-260b"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Iron Hands Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="7108-b9ba-6982-ee98" publicationId="817a-6288-e016-7469" page="275">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Iron Hands) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+The Gorgon’s Spite – This Advanced Reaction may be made once per battle during the opposing player’s Assault phase when any enemy player declares a Charge targeting a friendly unit under the Reactive player’s control that is composed entirely of models with the Legiones Astartes (Iron Hands) special rule. Once the Active player has resolved all Charge rolls for the Charge that triggers this Reaction, whether successful or not, but before any models are moved as part of either a Charge Move or Surge Move, the Reactive player may make a Shooting Attack with the unit that has had a Charge declared against it, targeting the unit that triggered this Reaction, with all weapons making twice their normal number of attacks* but gaining the Gets Hot special rule. A unit that makes a Shooting Attack as part of a Gorgon’s Spite Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapon or special rule that otherwise ignores line of sight, and models with the Vehicle Unit Type may only fire Defensive weapons. Template weapons used as part of a Gorgon’s Spite Reaction use the Wall of Death rule instead of firing normally. The unit targeted by the Gorgon’s Spite attack may not take Cover Saves against Wounds inflicted as part of a Gorgon’s Spite Reaction.
+*This does not stack with any other rules that increase the number of attacks a model may make, such as Fury of the Legion. Where models making this Reaction have such special rules, they have no effect and are replaced by the effects of the Gorgon’s Spite Reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="90ee-77dd-1b7f-ddfe" name="XII: World Eaters" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="aac1-67ea-2ad6-7631" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (World Eaters)" hidden="false" type="rule" id="c4d4-fefb-3e9-6b51" targetId="405d-019f-9ef6-423c"/>
+          </infoLinks>
+          <profiles>
+            <profile name="World Eaters Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="5fbc-9c03-178f-6a02" publicationId="09c5-eeae-f398-b653" page="215">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (World Eaters) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+The Savage Tide – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a friendly unit with the Infantry Unit Type under the Reactive player’s control with the Legiones Astartes (World Eaters) special rule. All models in the Reacting unit gain the Feel No Pain (5+) special rule against all Wounds inflicted as part of the Shooting Attack that triggered this Reaction. If the Reacting unit already has a version of the Feel No Pain (X) special rule, then this does not stack or increase that rule, and the Reacting player may choose to use any one of the Feel No Pain (X) special rules available to them. Once the Shooting Attack has been completely resolved, the Reacting unit may make a Charge, following all the normal rules for Charging, targeting the enemy unit that made the Shooting Attack. The enemy unit may not make a Reaction to this Charge.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="8e0f-3552-8842-f281" name="XIII: Ultramarines" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="6505-824e-a193-b3d5" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Ultramarines)" hidden="false" type="rule" id="cb4e-8dd0-722c-c813" targetId="519d-a6ed-f57f-3642"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Ultramarines Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="8507-e633-9c7-5478" publicationId="817a-6288-e016-7469" page="291">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Ultramarines) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Unity of Purpose – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy player declares a Shooting Attack targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Ultramarines) special rule. Once the Active player has resolved all To Hit rolls, To Wound rolls, and Armour Saves are made, but before any Damage Mitigation rolls are made or casualties removed, the Reactive player may choose to expend one of their Reactions for that Phase to have both the unit targeted by the Shooting Attack and one other unit composed entirely of models with the Legiones Astartes (Ultramarines) special rule make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. Any unit that makes a Shooting Attack as part of a Unity of Purpose Reaction may not make any attacks indirectly (without line of sight) including Barrage weapons or other weapons or special rules that otherwise ignore line of sight, and models with the Vehicle Unit Type may only fire Defensive weapons. Template weapons may only be used as part of a Unity of Purpose Reaction if the target unit is within 8&quot; and must use the Wall of Death special rule instead of firing normally. Both units that make Shooting Attacks as part of this Reaction are considered to have made a Reaction this Phase and as such may not make any further Reactions.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="dd1f-1c51-706c-e5f7" name="XIV: Death Guard" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="331b-7e40-d68d-3957" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Death Guard)" hidden="false" type="rule" id="9ae1-7f80-a751-284e" targetId="48a9-493f-e255-5070"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Death Guard Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="8bd4-3596-7ead-d2d2" publicationId="09c5-eeae-f398-b653" page="233">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Death Guard) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Remorseless Advance – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a friendly unit under the Reactive player’s control with the Legiones Astartes (Death Guard) special rule. All models in the unit targeted by the Shooting Attack that triggered this Reaction gain the Feel No Pain (4+) special rule against Hits inflicted by the Shooting Attack and automatically pass any Morale checks or Pinning tests they are called upon to take as a result of the Shooting Attack. Once the Shooting Attack has been entirely resolved, the unit may make a Move in any direction up to 7&quot; and obeying all the normal rules for making a Move.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="21c3-2f28-7820-e51a" name="XV: Thousand Sons" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="9b1d-1719-d9da-172c" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Thousand Sons)" hidden="false" type="rule" id="c75b-5c78-6e28-5dca" targetId="2377-1d73-44bc-fee2"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Thousand Sons Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="cf3e-f5dc-292c-a3db" publicationId="09c5-eeae-f398-b653" page="253">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with both the Legiones Astartes (Thousand Sons) special rule and the Psyker Sub-type. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Fortress of the Mind – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a unit under the Reactive player’s control, made up entirely of models with the Legiones Astartes (Thousand Sons) special rule and the Psyker Sub-type. Once the Active player has resolved all To Hit and To Wound rolls, but before any Armour Saves are made, the Reactive player must make a Psychic check. If the Check is passed, the Reacting unit gains a 3+ Invulnerable Save against all Wounds inflicted as part of the Shooting Attack that triggered the Reaction. If the Check is failed then the Reacting unit gains only a 5+ Invulnerable Save and both the attacking unit and the reacting unit suffer Perils of the Warp, removing any casualties immediately before resolving any unsaved Wounds inflicted by the Shooting Attack that triggered this Reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="01b4-57c7-bf61-2abf" name="XVI: Sons of Horus" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="860d-c26c-4365-ded5" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Sons of Horus)" hidden="false" type="rule" id="697e-dc26-6b3f-ae06" targetId="f4a2-e4ca-b8b2-35a1"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Sons of Horus Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="ebaa-3e13-9fc2-9c1b" publicationId="09c5-eeae-f398-b653" page="281">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Sons of Horus) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Death Dealers – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Sons of Horus) special rule that is within 12&quot; of the attacking unit. Before the enemy unit resolves any To Hit rolls, the Reacting unit may make a Shooting Attack targeting the unit that triggered this Reaction, increasing its BS by +1 for the duration of the Reaction. A unit that makes a Shooting Attack as part of a Death Dealers Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and Vehicles may only fire Defensive weapons. Template weapons may only be used as part of a Death Dealers Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally. Once this Shooting Attack is fully resolved, and all casualties caused by it removed from play, the enemy unit may resolve its own Shooting Attack – though models removed as casualties due to this Reaction may still attack.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="9dbf-0760-d7ae-f125" name="XVII: Word Bearers" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="4737-cf23-ac4a-c1b3" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Word Bearers)" hidden="false" type="rule" id="1c32-9872-e353-97ff" targetId="21ba-24fc-3fad-00fe"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Word Bearers Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="3bc9-c7bb-9f95-fa09" publicationId="09c5-eeae-f398-b653" page="303">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Word Bearers) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Glorious Martyrdom – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a friendly unit under the Reactive player’s control with the Legiones Astartes (Word Bearers) special rule. Once this Reaction has been declared, a single model in the Reacting unit with the Legiones Astartes (Word Bearers) special rule is selected by the Reacting unit’s controlling player – that model is removed as a casualty immediately without any To Hit or To Wound rolls being made by the attacking unit and with no Armour Saves or Damage Mitigation rolls made by the Reactive player. This ends the Shooting Attack, with no further rolls or Tests being made – if any of the weapons in the attacking unit would normally inflict further Hits after causing an unsaved Wound (such as weapons with the Deflagrate special rule) or other effects due to inflicting Hits or Unsaved Wounds (such as weapons with the Blind or Concussive (X) special rules) then these additional Hits or effects are ignored and have no effect. Any attacks made with weapons with the Ordnance or Destroyer types or the Blast or Template special rules ignore the effect of this Reaction and are resolved as normal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="c805-ca3a-ff93-5e2f" name="XVIII: Salamanders" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="4997-4ea3-f6b8-421c" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Salamanders)" hidden="false" type="rule" id="452d-fdf6-3758-e2a" targetId="5b72-d9a6-92c3-4a1c"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Salamanders Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="55a6-14e6-4a59-8971" publicationId="817a-6288-e016-7469" page="308">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Salamanders) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Duty is Sacrifice – This Advanced Reaction may be made once per battle during the opposing player’s Assault phase when any enemy player declares a Charge targeting a friendly unit under the Reactive player’s control and composed entirely of models with the Legiones Astartes (Salamanders) special rule. If the enemy unit’s Charge is successful, all models with the Infantry Unit Type in the target unit gain a bonus of +1 to their Weapon Skill, Strength and Attacks Characteristics for the duration of that Assault phase. However, once the combat that includes the unit that made this Reaction has been selected, all models involved have made their attacks and any Morale checks required as part of that combat are fully resolved, roll a D6 for each model remaining in the unit that made this Reaction. For each dice that scores a ‘6’ or more, the unit suffers one automatic Wound against which no saves or Damage Mitigation rolls of any kind may be made (as noted, these Wounds are inflicted after the combat has been resolved and as such do not count for determining which side has inflicted more Wounds). If the Charge that triggers Duty is Sacrifice is unsuccessful, all models in the unit for which the Reaction was declared instead gain the Fearless special rule until the end of the controlling player’s next player turn and do not roll to see if any models suffer automatic Wounds.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="dc34-fe08-dd44-fb99" name="XIX: Raven Guard" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="66dc-f080-4c-5a22" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Raven Guard)" hidden="false" type="rule" id="4539-b069-dfe2-6e1c" targetId="9924-9434-baa1-0894"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Raven Guard Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="c5b-ac4d-fa3f-e5f9" publicationId="817a-6288-e016-7469" page="326">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Raven Guard) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Fade to Black – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy player declares a Shooting Attack targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Raven Guard) special rule. Before resolving the Shooting Attack, the unit targeted by the Shooting Attack may make an immediate Move of a number of inches equal to the highest unmodified Initiative Characteristic of any model in the unit, in any direction and gains the Shrouded (4+) special rule for the remainder of the turn. If the Shooting Attack is no longer valid (due to the enemy unit no longer having line of sight to the target unit, for example) then the Active player may not select a different target and no attacks are made or dice rolled for that unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="c0df-c1fa-5ddc-9ee5" name="XX: Alpha Legion" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -10643,6 +10961,70 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="77d9-7be-7f74-3853" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Alpha Legion)" hidden="false" type="rule" id="f87e-e819-a322-84bf" targetId="2a9e-be1f-d6c1-0ec4"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Alpha Legion Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="449f-e427-1bcb-885e" publicationId="817a-6288-e016-7469" page="331">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Alpha Legion) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+Smoke and Mirrors – This Advanced Reaction may be made once per battle during the Shooting phase when any enemy player declares a Shooting Attack targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Alpha Legion) special rule. Before resolving the Shooting Attack, the unit targeted by the Shooting Attack may be redeployed. To redeploy the unit, the controlling player selects one model from the unit making this Reaction and places it anywhere within 12&quot; of its original position and then scatters the model D6&quot; (if the Scatter roll would place the model within Impassable Terrain, a building or fortification, within 1&quot; of any enemy model, or off the edge of the battlefield then the model is moved the shortest distance possible to place it free of all obstacles and within the bounds of the battlefield). Once this model is placed, all other models from the Reacting unit may be placed anywhere within 6&quot; of that model, at least 1&quot; from any enemy model, and in Unit Coherency. Any models that cannot be placed must be removed as casualties. Once the redeployment is complete, the Active player may resolve their Shooting Attack as normal – if the Shooting Attack is no longer valid once this redeployment is complete (due to the enemy unit no longer having line of sight to the target unit, for example) then the Active player may not select a different target and no attacks are made or dice rolled for that unit.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry id="268b-74a8-395f-6f27" name="III: Emperor&apos;s Children (Legion Hereticus)" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="a6b9-20bf-c73f-a5fa" name="The Divine Instruments" hidden="false">
+              <description>Models with this special rule gain access to unique Wargear options (see The Armoury of Indulgence on page 111).
+
+
+• Any model with the Traitor Alliegance and both the Legiones Astartes (Emperor&apos;s Children) and Character Unit Sub-type but not the Unique Sub-type may select a single Surgical Augment from the list below for a cost of +20 Points
+- Sonic Shriekers
+- Sub-sonic Pulser
+- Sonic Lance
+
+• Any model with the Legiones Astartes (Emperor&apos;s Children) special rule and the Character Unit Sub-type may at no additional cost exchange a power weapon for a Pheonix Rapier or Pheonix Power Spear.Both weapons are counted as a &quot;Power&quot; Weapons for those rules that affect such weapon
+
+• The Emperor&apos;s Children gain access to a Legion-Specific Legion Consularis Upgrade in the &quot;Phoenix Warden&quot;</description>
+            </rule>
+            <rule id="b253-df3b-18c7-bdff" name="The Phoenician’s Hubris" hidden="false">
+              <description>Models with this special rule may not select the Phoenix Warden Consul upgrade (see page 155 of Warhammer: The Horus Heresy – Liber Hereticus). In addition, Phoenix Terminator Squad units with this special rule replace the Living Icons and Phoenix Retinue special rules with the Fallen From Grace special rule</description>
+            </rule>
+            <rule name="Exemplars of War" hidden="false" id="11b8-b820-8559-9b2a">
+              <description>A Warlord with this special rule may select either The Broken Mirror or Paragon of Excellence Warlord Traits from the Emperor’s Children Warlord Trait list (see page 152 of Warhammer: The Horus Heresy – Liber Hereticus). If one of these Warlord Traits is selected, replace each instance of ‘Legiones Astartes (Emperor’s Children)’ within that Warlord Trait with ‘Legiones Hereticus (Emperor’s Children)</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink targetId="d684-5b63-caa7-adc4" id="2c5e-23e-7851-c963" primary="false" name="Legiones Hereticus"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Hereticus (Emperor’s Children)" hidden="false" type="rule" id="b17a-a114-2bf8-a09b" targetId="b9e-b2ef-86e-e52d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Emperor’s Children Advanced Reaction (Legions Hereticus)" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="bcb3-5c34-4aca-cbb8" publicationId="7f9d-5e88-241d-e861" page="106">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Hereticus (Emperor’s Children) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+
+Twisted Desire – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a friendly unit under the Reactive player’s control that is composed entirely of models with the Legiones Hereticus (Emperor’s Children) special rule that is not Falling Back. The Reacting unit immediately becomes Stupefied (see page 107) and adds 2 to Stupefied rolls made against wounds inflicted as part of the Shooting Attack that triggered this Reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -12218,6 +12600,13 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="ed1f-9473-df70-4544" name="Angel&apos;s Wrath^" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
@@ -12237,6 +12626,13 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="2c36-fde3-14ed-4db4" name="Sky-Hunter Phalanx" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12245,6 +12641,7 @@ Limitations
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12274,6 +12671,7 @@ Limitations
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12304,6 +12702,11 @@ Limitations
             <modifier type="set" field="4a27-2341-3537-9937" value="0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -12349,6 +12752,13 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="ccb7-6c5c-76ce-5b77" name="Armoured Spearhead^" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12362,6 +12772,7 @@ Limitations
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12408,12 +12819,24 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="b5b7-3410-a8e5-95a6" name="Fury Of The Ancients" publicationId="a716-c1c4-7b26-8424" page="103" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="ef62-47b5-4c55-7c8b" value="0">
               <conditions>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -13147,6 +13570,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -13176,6 +13600,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -13685,6 +14110,94 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Brotherhood of the Phoenix (Corrupted RoW)" hidden="true" id="9a27-97d3-a06-ef35" publicationId="7f9d-5e88-241d-e861" page="108">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="b362-d3d4-b314-54ce" value="0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <rules>
+            <rule name="Brotherhood of the Phoenix (Corrupted RoW)" hidden="false" id="ac32-f560-3f4f-f94c" publicationId="7f9d-5e88-241d-e861" page="108">
+              <description>A Detachment using this Corrupted Rite of War may take up to five HQ choices, regardless of the Force Organisation chart in use. Each of these HQ choices must be from the following list:
+Lord Commander Eidolon.
+Captain Lucius.
+A Legion Centurion with the Legion Champion Consul upgrade.
+A Legion Cataphractii Centurion with the Legion Champion Consul upgrade.
+A Legion Tartaros Centurion with the Legion Champion Consul upgrade.
+A Legion Champion in a Detachment using this Corrupted Rite of War gains the Sycophantic Retinue special rule.
+   
+Sycophantic Retinue
+While Fulgrim Transfigured is on the battlefield, models with this special rule gain the Preferred Enemy (Everything) special rule.
+   
+Limitations
+Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite of War.</description>
+            </rule>
+            <rule name="Sycophantic Retinue" hidden="true" id="3a7-63b4-4f0e-930c" publicationId="7f9d-5e88-241d-e861" page="108">
+              <description>While Fulgrim Transfigured is on the battlefield, models with this special rule gain the Preferred Enemy (Everything) special rule.</description>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a27-97d3-a06-ef35" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b362-d3d4-b314-54ce"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Children of the Maraviglia (Corrupted RoW)" hidden="true" id="6760-f643-3a7f-970d" publicationId="7f9d-5e88-241d-e861" page="109">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="5f26-2a80-ade9-82b0" value="0">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f26-2a80-ade9-82b0"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Stubborn" hidden="false" type="rule" id="635e-525-ab6d-d5fa" targetId="7989-1f2c-a43d-82ae">
+              <modifiers>
+                <modifier type="set" value="Stubborn (Children of the Maraviglia)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="The Stage is Set" hidden="false" id="cafc-473b-bf32-fae1" publicationId="7f9d-5e88-241d-e861" page="019">
+              <description>Before the start of the first turn, when placing units into Reserves, if Fulgrim Transfigured has not joined a unit and does not have a Retinue Squad, the controlling player may place Fulgrim Transfigured into Reserves and must declare to their opponent a Turn number from Turn 2 - 4, indicating on which of their own turns they will bring Fulgrim Transfigured into play from Reserves. At the start of the declared turn, the controlling player must place Fulgrim Transfigured wholly within 6&quot; of a unit with the Legiones Hereticus (Emperor’s Children) special rule, and not within 1&quot; of any enemy models. If this is not possible, Fulgrim Transfigured cannot be set up this turn, and the controlling player must attempt to deploy Fulgrim Transfigured again at the start of their following turn.
+
+
+Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule. </description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -14997,6 +15510,92 @@ If one or more Wounds are caused by a weapon with this rule, the affected unit d
     </rule>
     <rule name="Malefic Aegis (X)" hidden="false" id="686c-178b-6e07-2ba3" publicationId="6bcf-2297-2bcd-51be" page="15">
       <description>Malefic Aegis confers an Invulnerable Save equal to the value of X. Invulnerable saves granted by Malefic Aegis do not stack with other Invulnerable Saves but can benefit from rules (such as cyber-familiar) that specifically increase existing saves.</description>
+    </rule>
+    <rule id="2a9e-be1f-d6c1-0ec4" name="Legiones Astartes (Alpha Legion)" publicationId="09c5-eeae-f398-b653" page="330" hidden="false">
+      <description>Lies and Obfuscation: A model with this special rule is always considered to be 2&quot; further away than it actually is when measuring range to it from any enemy model for the purpose of resolving a Shooting Attack, Charge or any Reation declared by an enemy model or unit (this is cumulative with any other modifiers to range imposed by special rules, such as Night Fighting or Wargear).</description>
+    </rule>
+    <rule id="b0d1-ccab-8708-500f" name="Legiones Astartes (Blood Angels)" publicationId="817a-6288-e016-7469" page="248" hidden="false">
+      <description>Encarmine Fury: All models with the Legiones Astartes (Blood Angels) special rule require one lower result To Wound than they would normally, to a minimum of 2+, on any turn in which they are part of a successful Charge against an enemy unit even if that Charge is counted as Disordered. This effect applies regardless of the weapon they are using (for example, if using a Str 4 Melee weapon and attacking a target with a Toughness of 4, the Blood Angel will require a 3+ To Wound, rather than the usual 4+). In addition, any Vehicle with the Legiones Astartes (Blood Angels) special rule that makes a Ram Attack increases the Strength of any Hits inflicted by +1, to a maximum of Strength 10.</description>
+    </rule>
+    <rule id="513e-0647-996a-6229" name="Legiones Astartes (Dark Angels)" publicationId="817a-6288-e016-7469" page="151" hidden="false">
+      <description>The Hexagrmmaton: All units composed entirely of models with the Legiones Astartes (Dark Angels) special rule must select one of the following Hexagrammaton Unit Sub-types* when chosen during the army selction process: Stormwing, Dreadwing, Deathwing, Ironwing, Firewing or Ravenwing. See the Hexagrmmaton rules that follow for details.
+*Some models or units may be required to have a specific Unit Sub-type from this list, if so it will be listed on their profile and cannot be changed.
+
+All units compopsed entirely of models iwith the Legiones Astartes (Dark Angels) special rules must select a Hexagrammaton Unit Sub-type (some modesl may be required to select a specific Unit Sub-type - this will be noted on their Army List Profile). All models in a unit must select the same Hexagrammaton Unit Sub-type (a model selected as a Dedicated Transport must select the same Unit Sub-type as the unit it is selected for). However a Legion Techmarine Covenant or Legion Apothecarion Detachment may be selected a different Haxagrammaton Unit Sub-type for each model in the unit - but when these models are assigned to other units, they must be assigned to a unit that includes at least one model with the same Hexagrammaton Unit Sub-type. Additionally, a unit selected as a Retinue may have a different Hexagrammaton Unit Sub-type than the model selected as its leader.
+
+Models with the Independent Character special rules and a Hexagrammaton Unit Sub-type may join units that include models with a different Unit Sub-type.
+
+Models in a unit only gain the benefits of a Hexagrammaton Unit Sub-type if that unit is made up entirely of models with the Legiones Astartes (Dark Angels) special rules, and at least one model with a Hexagrammaton Unit Sub-type. However, the models in a unit may only benefit from the rules of a single Hexagrammaton Unit Sub-type in any Game Turn, If, at the start of a player&apos;s turn, any unit under that player&apos;s control includes models with different Hexagrammaton Unit Sub-type then the controlling player must select one of those Hexagrammaton UInit Sub-types, whose benefits will be applied to the models in that unit until the start of the controlling player&apos;s next turn - any other Hexagrammaton Unit Sub-types will grant no benefit to that unit for the duration of the Game Turn.
+
+While Embarked on any model, a unit gains no benefit from any Hexagrammaton Unit Sub-types that any model it includes may possess, but the model they are Embarked on may benefit from any Hexagrammaton Unit Sub-type that it itself Possesses.</description>
+    </rule>
+    <rule id="48a9-493f-e255-5070" name="Legiones Astartes (Death Guard)" publicationId="09c5-eeae-f398-b653" page="232" hidden="false">
+      <description>Remorseless:  A model with this special rule that does not have the Cavalry Unit Type or Artillery Unit Sub-type ignores any modifiers or restrictions on moving during the movement phase (Including modifiers imposed by Terrain or Restrictions from rules such Pinning which would normally stop them from moving) as long as the model does not Run or make use of another alternative form of Movement such as &apos;Activating a jump pack, Disembarking, or deploying via Deep Strike. Furthermore, as long as the model has not Run or used another alternative form of Movement in the controlling player&apos;s Movement phase, it is counted as Stationary when making shooting attacks until the start of the Controlling Player&apos;s next turn. This special rules does not affect whether or not a model may make a Charge, and does not allow models with the Vehicle Unit Type to ignore the effect of an Immobilised result on the Vehicle Damage table (But does allow a model with the Vehicle Unit Type to move even when under the effect of the Crew Stunned result on the Vehicle Damage table)</description>
+    </rule>
+    <rule id="4a36-8b9d-6b6c-51e1" name="Legiones Astartes (Emperor&apos;s Children)" publicationId="09c5-eeae-f398-b653" page="150" hidden="false">
+      <description>Flawless Execution: On a Turn in which they make a successful Charge, even if that Charge is considered a Disordered Charge, models with the Legiones astartes (Emperor&apos;s children) special rule make their attacks in an assult at on initiative step higher than normal - after any initiative modifiers from other special rules have been taken into account. Models with the Legiones Astartes (Emperor&apos;s Children) special rule and Vehicle unit type gain a bonus of +1 to all To Hit rolls made for Defensive Weapons when making a Shooting Attack as part of a reaction.</description>
+    </rule>
+    <rule id="405d-019f-9ef6-423c" name="Legiones Astartes (World Eaters)" publicationId="09c5-eeae-f398-b653" page="214" hidden="false">
+      <description>Violence Incarnate: On any turn in which a unit with this special rule makes a successful Charge it gains +1 Attack for the remainder of that turn in addition to any other bonuses, even if that Charge is considered a Disordered Charge.</description>
+    </rule>
+    <rule id="e876-4f8f-a30f-8b22" name="Legiones Astartes (Imperial Fists)" publicationId="817a-6288-e016-7469" page="224" hidden="false">
+      <description>Discipline and Resolve: Models with this special rule gain a bonus of +1 to all To Hit rolls with any Auto weapon or Bolt weapon as part ofany Shooting Attack (including as part of any Reaction).</description>
+    </rule>
+    <rule id="2e45-4b61-44fb-260b" name="Legiones Astartes (Iron Hands)" publicationId="817a-6288-e016-7469" page="274" hidden="false">
+      <description>The Medusa’s Scales: All Shooting Attacks made against a model with this special rule that does not have the Vehicle Unit Type, suffer a modifier of -1 to the Strength of the attack. Models with this special rule and the Vehicle Unit Type instead gain the It Will Not Die (6+) special rule, or if such a model already has a variant of the It Will Not Die special rule then the value of that special rule is increased by +1 (for example, a model with the Vehicle Unit Type that already had the It Will Not Die (6+) and the Legiones Astartes (Iron Hands) special rule would instead gain the It Will Not Die (5+) special rule).</description>
+    </rule>
+    <rule id="c77b-f3fc-5dc8-1330" name="Legiones Astartes (Iron Warriors)" publicationId="09c5-eeae-f398-b653" page="174" hidden="false">
+      <description>Wrack &amp; Ruin: When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
+    </rule>
+    <rule id="8280-d4ea-b131-4970" name="Legiones Astartes (Night Lords)" publicationId="09c5-eeae-f398-b653" page="194" hidden="false">
+      <description>A Talent for Murder: When a unit made up entirely of models with this special rule attacks during the Fight sub-phase or makes a Shooting Attack against an enemy unit that is Pinned, Falling back or outnumbered by the attacking unit it gets a bonus of +1 to all To Wound or Armour Penetration rolls made during the Shooting Attack or Assult. 
+
+When determining if a unit is outnumbered, models with the Bulky (X) special rules count as a number of models equal to the value included as part of that special rule. Models with the Vehicle Unit Type count as ten models for the purposes of determining if the model is outnumbered by another unit.</description>
+    </rule>
+    <rule id="9924-9434-baa1-0894" name="Legiones Astartes (Raven Guard)" publicationId="817a-6288-e016-7469" page="326" hidden="false">
+      <description>Shadow and Fury: Models with the Legiones Astartes (Raven Guard) special rule gain one of the following special rules based on the Unit Type and Wargear. either Talons, Falcons or HAwks (See the Shadow and Fury Rules).
+
+Modelswith the Legiones Astartes (Raven Guard) special rule gain one of the following special rules based on the Unit Type and Wargear of the model. Models that do not fulfil one of the listed criteria gain no additional benefits:
+• Models with the Legiones Astartes (Raven Guard) special rule that have the Infantry Unit Type, but do not also have the Heavy Unit Sub-type or a Legion Warhawk jump pack, Corvid pattern jump pack or Legion Tartaros Terminator armour, gain the Talons special rule.
+• Models with the Legiones Astartes (Raven Guard) special rule that have the Dreadnought Unit Type; any models with the Legiones Astartes (Raven Guard) special rule and both the Infantry Unit Type and the Heavy Unit Subtype; or any models with the Legiones Astartes (Raven Guard) special rule that have a Legion Warhawk jump pack, Corvid pattern jump pack or Legion Tartaros Terminator armour gain the Falcons special rule.
+• Models with the Legiones Astartes (Raven Guard) special rule and the Cavalry Unit Type or both the Vehicle Unit Type and Flyer or Fast Unit Sub-types, gain the Hawks special rule.
+
+Talons – If a unit composed entirely of models with the Talons special rule is targeted by a Shooting Attack, all models in the unit gain the Shrouded (6+) special rule if the attacking unit is more than 8&quot; from any model in the target unit. In addition, all models with this special rule also gain the Infiltrate special rule.
+
+Falcons – Any models with this special rule may re-roll all failed To Wound rolls of ‘1’ in any Assault phase in which they make a successful Charge – even if that Charge is considered Disordered.
+
+Hawks – Any models with this special rule gain the Shrouded (6+) special rule on any turn in which they Run, Move Flat Out or move as a Zooming Flyer, with this benefit lasting until the start of the controlling player’s next turn – or if that model would already gain the Shrouded (6+) special rule, it instead gains the Shrouded (5+) special rule (if the unit already has the Shrouded (5+) or better then it gains no additional benefit).</description>
+    </rule>
+    <rule id="5b72-d9a6-92c3-4a1c" name="Legiones Astartes (Salamanders)" publicationId="817a-6288-e016-7469" page="308" hidden="false">
+      <description>Blood of Fire: When rolling To Wound against a model with this special rule for any attack inflicted by a Flame, Melta, Plasma, or Volkite weapon or effect, reduce the result of that roll To Wound by -1 (this does not affect the Strength of the attack, only the result of the roll To Wound). In addition, all models with this special rule that have more than one Wound or Hull point gain the It Will Not Die (6+) special rule.</description>
+    </rule>
+    <rule id="f4a2-e4ca-b8b2-35a1" name="Legiones Astartes (Sons of Horus)" publicationId="09c5-eeae-f398-b653" page="280" hidden="false">
+      <description>Merciless Fighters: During a turn in which a unit made up entirely of models with the Legiones Astartes (Sons of Horus) special rule successfully charges, or are successfully Charged, the Strength of all Melee attacks made against any model in that unit that does not have the Vehicle unit type suffer a modifier of -1. Models with the Vehicle Unit type and this special rule instead inflict an additional 3 Hits (for a total of 1D6+3 Hits, or 2D6+3 if the Vehicle has the Super-heavy Sub-type) on unitscomposed of models that do not have the vehicle Unit Type when conducting a Ramming Attack.</description>
+    </rule>
+    <rule id="f806-8d12-07ab-fdaf" name="Legiones Astartes (Space Wolves)" publicationId="817a-6288-e016-7469" page="196" hidden="false">
+      <description>Bestial Savagery: A unit made up entirely of models with the Infantry Unit Type and the Legiones Astartes (Space Wolves) special rule that chooses to Run in the Movement phase may still make a Shooting Attack in the Shooting phase, and declare a Charge in the Assault phase of the same turn – but any Shooting Attacks made in the same turn as that in which a unit with this special rule has Run are made as Snap Shots. Units that cannot Run (such as Legion Cataphractii Terminators) or models that do not have the Vehicle or Infantry Unit Type instead gain +1 WS on any turn in which they successfully Charge, even if that Charge is considered Disordered. Models with the Vehicle Unit Type and this special rule that make Ram Attacks increase the Strength of any Hits inflicted as part of that attack by +1, to a maximum of 10.
+
+Any Legion Centrurions, Legion Cataphractii Centurions and Legion Tartaros Centurions with this special rule may not select the Chaplain, Librarian or Primus Medicae Consul Upgrades. Instead these models gain access to the Pack Thegn, Speaker of the Dead and Caster of Runes Upgrades.</description>
+    </rule>
+    <rule id="2377-1d73-44bc-fee2" name="Legiones Astartes (Thousand Sons)" publicationId="09c5-eeae-f398-b653" page="252" hidden="false">
+      <description>Cult Arcana: All models with the Infantry or Cavalry Unit Type (but not those with the Artillery or Automated Artillery Sub-type) with this special rule gain the Psyker Sub-type (this does not grant any Disciplines, but does not otherwise remove any Discipline a model already has access to). In addition, all models with the Infantry or Cavalry Unit Type and and the Character Unit Sub-type that have this special rule must select one Minor Arcana option ( See the Prosperine Arcana special rule). Any model with the Infantry or or Cavalry Unit Types and both the independent Character and Legiones astartes (Thousand Sons) special rule that does not already have one or more Psychic Disciplines may be upgraded for +15 additional points to gain a single Psychic Discipline from the Core Psychic Discipline list (see the Horus Heresy Age of Darkness rulebook, page 322).</description>
+    </rule>
+    <rule id="519d-a6ed-f57f-3642" name="Legiones Astartes (Ultramarines)" publicationId="817a-6288-e016-7469" page="290" hidden="false">
+      <description>The Strength of Wisdom: When rolling To Hit for a model with this special rule as part of a Shooting Attack, add +1 to the result of the roll if the enemy unit targeted by the attack has already been the target of another friendly unit composed entirely of models with this special rule in the same Shooting phase, and if the attacking model is within 6&quot; of a model from that friendly unit. This does not affect attacks made with the Blast or Barrage special rules.</description>
+    </rule>
+    <rule id="4b54-8bd0-9fdd-cbc4" name="Legiones Astartes (White Scars)" publicationId="817a-6288-e016-7469" page="176" hidden="false">
+      <description>Swift of Action: All models with this special rule add +1 to their Movement Characteristic and whenever called upon to make a roll to determine which player will take the First Turn or to Seize the Initiative, the controlling player of an army whose Primary Detachment has this special rule may roll an additional dice and discard the lowest rolled dice before determining the result.</description>
+    </rule>
+    <rule id="21ba-24fc-3fad-00fe" name="Legiones Astartes (Word Bearers)" publicationId="09c5-eeae-f398-b653" page="302" hidden="false">
+      <description>True Believers:A model with this special rule may never have a Leadership Characteristic modified below a value of 6. Futhermore if one or more models with this special rule are part of a combat that results in a draw, then the side that includes one or more models at the end of the fight sub-phase with this special rule is counted as having won the combat by 1 point. If both sides include models with this special rule then the combat remains a draw.</description>
+    </rule>
+    <rule name="Legiones Hereticus (Emperor’s Children)" hidden="true" id="b9e-b2ef-86e-e52d" publicationId="7f9d-5e88-241d-e861" page="107">
+      <description>Lords of Profligacy 
+After a Shooting Attack has been resolved against a unit composed entirely of models with this special rule, if that unit is not Falling Back, its controlling player can choose for it to become Stupefied. If a unit becomes Stupefied while Pinned or affected by the Blind or Concussive (X) special rules, it ignores the effects of these while Stupefied.
+
+Stupefied
+A unit that is Stupefied can only fire Snap Shots and cannot make Reactions in any Phase. If a unit that is Stupefied has a Charge declared for it, then that Charge is always considered to be Disordered. Furthermore, whilst Stupefied, all models in that unit increase their Strength Characteristic by +1 and when a model in a Stupefied unit suffers an unsaved Wound, it can make a special Stupefied roll to ignore it. Stupefied rolls may not be taken against attacks that have the Instant Death special rule. Roll a D6 each time an unsaved Wound is suffered. On a 6+, the unsaved Wound is ignored. On any other result the Wound is applied as normal. Add 1 to Stupefied rolls made for units which have the Fearless special rule. A Stupefied roll is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound.
+At the end of its controlling player’s following turn, the unit is no longer Stupefied. Whilst it is Stupefied, a unit does not take further Morale checks in the Movement phase or Shooting phase and cannot be Pinned. If the unit is forced to move, for example, if it has to Fall Back, it is no longer Stupefied. If assaulted, the unit will fight as usual, but enemy units do not receive the Initiative penalty for having Charged a unit through Difficult Terrain, even if the Stupefied unit is in Difficult Terrain. If a unit becomes Stupefied while making a Charge, then that Charge continues as normal, but is automatically counted as Disordered. Units that are locked in combat can be Stupefied, but take Morale checks in the Assault phase as normal and if forced to Fall Back are no longer Stupefied.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
