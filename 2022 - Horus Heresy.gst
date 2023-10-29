@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="83" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="84" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1917,6 +1917,15 @@ Reactions:
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf10-c83b-b8ed-aaf1" type="atLeast"/>
               </conditions>
+            </modifier>
+            <modifier type="set" field="b42f-91d7-ae43-4915" value="5">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a27-97d3-a06-ef35" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -10582,8 +10591,7 @@ The Angels of Death – This Advanced Reaction may be made once per battle, when
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
-The Perfect Counter – This Advanced Reaction may be made once per battle during the opposing player’s Assault phase when any enemy unit declares a Charge targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. When a Charge Distance roll is made for the enemy unit making the Charge, the Reactive player must also make a Charge Distance roll for the Reacting unit. If the result of the Reacting unit’s Charge Distance roll is equal to or greater than that of the enemy unit then the Reactive player may choose to make a Charge with the Reacting unit immediately (cancelling the enemy unit’s Charge if it is successful and gaining all the usual benefits of a successful Charge) or if the Reacting player’s Charge Distance roll is lower than that of the enemy unit, the Reactive player may choose to have the unit make a Shooting Attack targeting the enemy unit and which must be fully resolved before the enemy unit resolves its own Charge. A unit that makes a Shooting Attack as part of a The Perfect Counter Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and models with the Vehicle Unit Type may only fire Defensive weapons. Template weapons may only be used as part of a The Perfect Counter Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally.
-</characteristic>
+The Perfect Counter – This Advanced Reaction may be made once per battle during the opposing player’s Assault phase when any enemy unit declares a Charge targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. When a Charge Distance roll is made for the enemy unit making the Charge, the Reactive player must also make a Charge Distance roll for the Reacting unit. If the result of the Reacting unit’s Charge Distance roll is equal to or greater than that of the enemy unit then the Reactive player may choose to make a Charge with the Reacting unit immediately (cancelling the enemy unit’s Charge if it is successful and gaining all the usual benefits of a successful Charge) or if the Reacting player’s Charge Distance roll is lower than that of the enemy unit, the Reactive player may choose to have the unit make a Shooting Attack targeting the enemy unit and which must be fully resolved before the enemy unit resolves its own Charge. A unit that makes a Shooting Attack as part of a The Perfect Counter Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and models with the Vehicle Unit Type may only fire Defensive weapons. Template weapons may only be used as part of a The Perfect Counter Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14191,11 +14199,11 @@ Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite 
             </infoLink>
           </infoLinks>
           <rules>
-            <rule name="The Stage is Set" hidden="false" id="cafc-473b-bf32-fae1" publicationId="7f9d-5e88-241d-e861" page="019">
+            <rule name="The Stage is Set" hidden="false" id="cafc-473b-bf32-fae1" publicationId="7f9d-5e88-241d-e861" page="19">
               <description>Before the start of the first turn, when placing units into Reserves, if Fulgrim Transfigured has not joined a unit and does not have a Retinue Squad, the controlling player may place Fulgrim Transfigured into Reserves and must declare to their opponent a Turn number from Turn 2 - 4, indicating on which of their own turns they will bring Fulgrim Transfigured into play from Reserves. At the start of the declared turn, the controlling player must place Fulgrim Transfigured wholly within 6&quot; of a unit with the Legiones Hereticus (Emperor’s Children) special rule, and not within 1&quot; of any enemy models. If this is not possible, Fulgrim Transfigured cannot be set up this turn, and the controlling player must attempt to deploy Fulgrim Transfigured again at the start of their following turn.
 
 
-Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule. </description>
+Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.</description>
             </rule>
           </rules>
         </selectionEntry>
