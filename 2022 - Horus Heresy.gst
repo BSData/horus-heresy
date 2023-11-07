@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="85" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="86" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -15599,6 +15599,13 @@ After a Shooting Attack has been resolved against a unit composed entirely of mo
 Stupefied
 A unit that is Stupefied can only fire Snap Shots and cannot make Reactions in any Phase. If a unit that is Stupefied has a Charge declared for it, then that Charge is always considered to be Disordered. Furthermore, whilst Stupefied, all models in that unit increase their Strength Characteristic by +1 and when a model in a Stupefied unit suffers an unsaved Wound, it can make a special Stupefied roll to ignore it. Stupefied rolls may not be taken against attacks that have the Instant Death special rule. Roll a D6 each time an unsaved Wound is suffered. On a 6+, the unsaved Wound is ignored. On any other result the Wound is applied as normal. Add 1 to Stupefied rolls made for units which have the Fearless special rule. A Stupefied roll is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound.
 At the end of its controlling player’s following turn, the unit is no longer Stupefied. Whilst it is Stupefied, a unit does not take further Morale checks in the Movement phase or Shooting phase and cannot be Pinned. If the unit is forced to move, for example, if it has to Fall Back, it is no longer Stupefied. If assaulted, the unit will fight as usual, but enemy units do not receive the Initiative penalty for having Charged a unit through Difficult Terrain, even if the Stupefied unit is in Difficult Terrain. If a unit becomes Stupefied while making a Charge, then that Charge continues as normal, but is automatically counted as Disordered. Units that are locked in combat can be Stupefied, but take Morale checks in the Assault phase as normal and if forced to Fall Back are no longer Stupefied.</description>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
   </sharedRules>
   <sharedProfiles>
