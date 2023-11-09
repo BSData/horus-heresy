@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -10291,7 +10291,6 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
       <entryLinks>
         <entryLink import="true" name="Daemon Brute" hidden="false" type="selectionEntry" id="8838-1f4d-99ad-c5a6" targetId="e3e-4f46-2300-a35"/>
         <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="c199-83a6-b057-7da4" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="c0e0-b555-d1dc-d25e" targetId="9abc-11e8-9031-d104"/>
       </entryLinks>
       <infoLinks>
         <infoLink id="ce10-5041-d503-82f7" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -10327,6 +10326,22 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" hidden="false" id="e674-e281-d84d-e736">
+          <entryLinks>
+            <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="f5a2-bcd2-185e-496c" targetId="9abc-11e8-9031-d104">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d35-bc8b-6bd1-4fa3"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb25-d7e4-66aa-e8b9"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3fc4-cecb-2f96-5f6c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="614d-8756-bb8f-e6c"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Swarms (Rogue Psyker)" hidden="false" id="35ce-dce-186d-4000">
       <costs>
