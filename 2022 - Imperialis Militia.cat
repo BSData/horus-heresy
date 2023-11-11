@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -5988,20 +5988,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   <infoLinks>
                     <infoLink id="dbc6-b655-39ee-d9fa" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
                   </infoLinks>
-                  <entryLinks>
-                    <entryLink id="8f22-cfce-88a0-ab05" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Pintle-mounted Heavy Stubber"/>
-                      </modifiers>
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d28-b338-c19a-a25b" type="min"/>
-                        <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42b5-0e8e-e2a0-caa7" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -6036,6 +6022,36 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   </costs>
                 </entryLink>
               </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="3) Additional Pintle-mounted Heavy Stubber(s)" hidden="false" id="4e2f-805c-4917-5310">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Additional Pintle-mounted Heavy Stubber" hidden="false" id="64f1-91c1-a87a-39f6">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Heavy Stubber" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2711-e057-d0a-7c91">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d5f4-6d43-d2f1-944f"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3a48-fa0c-8ccb-9db5"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="parent" childId="4ebb-e505-d38f-637b" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
