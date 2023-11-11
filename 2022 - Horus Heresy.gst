@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="86" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="87" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication name="GitHub" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -348,16 +348,6 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Fearless (in 6&quot; of Objective if they didn&apos;t already have Stubborn)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4aea-a583-a545-cbc8" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Fearless (in 6&quot; of Objective if they had already had Stubborn)"/>
           </modifiers>
         </infoLink>
         <infoLink id="9afe-5527-9b81-e837" name="Line Sub-type" hidden="false" targetId="bc1e-9c95-f971-cd7b" type="rule">
