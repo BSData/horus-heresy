@@ -7210,16 +7210,6 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       </costs>
     </selectionEntry>
     <selectionEntry id="f227-a61a-3215-932b" name="Heavy Stubber" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="129d-1b6c-7ba2-29ec" name="Heavy Stubber" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
