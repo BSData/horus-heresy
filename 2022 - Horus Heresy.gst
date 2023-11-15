@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="86" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="87" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication name="GitHub" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -338,26 +338,6 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Heart of the Legion (if at 50% of less of unit size)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="0aec-717a-af00-d33e" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Fearless (in 6&quot; of Objective if they didn&apos;t already have Stubborn)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="4aea-a583-a545-cbc8" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Fearless (in 6&quot; of Objective if they had already had Stubborn)"/>
           </modifiers>
         </infoLink>
         <infoLink id="9afe-5527-9b81-e837" name="Line Sub-type" hidden="false" targetId="bc1e-9c95-f971-cd7b" type="rule">
@@ -1593,7 +1573,20 @@ Reactions:
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8810-8109-85db-93e4" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="2545-86dd-f928-73f3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="2545-86dd-f928-73f3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false">
+          <infoLinks>
+            <infoLink name="Stubborn" hidden="false" type="rule" id="986d-7ecf-f212-2602" targetId="7989-1f2c-a43d-82ae">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Stubborn (if one model is within 6&quot; of an objective)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </categoryLink>
         <categoryLink id="dc87-6668-f349-2a8c" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false">
           <modifiers>
             <modifier type="increment" field="d9f7-954e-b8d3-7a39" value="1">
@@ -7217,16 +7210,6 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       </costs>
     </selectionEntry>
     <selectionEntry id="f227-a61a-3215-932b" name="Heavy Stubber" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="129d-1b6c-7ba2-29ec" name="Heavy Stubber" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 3</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -10510,6 +10493,31 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98d5-2132-75e-8aa9" type="max"/>
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d8b3-b50c-24b2-b352" type="min"/>
       </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7517-a238-aecb-60e9" name="Psychic Discipline: Diabolism" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c739-c662-d9f1-c146" name="A Dark and Terrible Power" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">When a Charge is declared for a model with this power, or for a unit that includes a model with this power, the Controlling player may choose to make a Psychic check for the model before any dice are rolled to determine the Charge Distance of that Charge. If the Psychic check is successful then the model with this power gains the Hammer of Wrath (3) special rule and increases both their Strength and Toughness characteristics by +1 for the duration of that Assult Phase. If the Check is failed then the model suffers Perils of the Warp, and once that has been resolved gains +1 to both its Strength and Toughness Characteristics until the start of the controlling players next turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c31-2f32-2d30-fc5e" name="Hellfire" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">Template</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">7</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Rending (6+), Deflagrate, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3380-3ab-8c69-61d8" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule"/>
+        <infoLink id="72e1-d6ce-337d-fbee" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
+        <infoLink id="1804-acb9-a81b-1cd1" name="Psychic Focus (?? Where is this?)" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>

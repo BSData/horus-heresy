@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ac63-5340-2e9e-1eb6" name="2022 - Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="6" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ac63-5340-2e9e-1eb6" name="2022 - Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -599,12 +599,6 @@
       </costs>
       <entryLinks>
         <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="b5cc-4b7f-66f9-183f" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="c041-717-ac3f-5f0b" targetId="9abc-11e8-9031-d104">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273c-8b52-76b5-3306"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6458-ec95-34c5-701d"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="eddf-34f6-417f-401a" primary="false" name="Daemon Unit-type:"/>
@@ -643,6 +637,22 @@
           </conditions>
         </modifier>
       </modifiers>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapons" hidden="false" id="5b87-924a-4731-f695">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b430-a8c3-3cb1-a0ad"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f63-b8a8-f4d7-459e"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="88c4-a75e-482b-877e" targetId="9abc-11e8-9031-d104">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="999c-2a3d-e550-3439"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="18bf-736-c35b-c2cc"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Beasts" hidden="false" id="69ad-927-c71b-6b24" publicationId="8775-88f5-cfdd-24f6" page="10">
       <costs>
@@ -2001,6 +2011,20 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee05-19f1-809e-d0a0"/>
       </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Psychic Discipline" hidden="false" id="1e24-9782-7fd9-9fe2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a6e-f5da-92d7-93c0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b70-6b79-ac99-1650"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Biomancy" hidden="false" type="selectionEntry" id="5b55-33a3-ebc1-906d" targetId="861c-3744-c4ff-ef6c"/>
+            <entryLink import="true" name="Psychic Discipline: Pyromancy" hidden="false" type="selectionEntry" id="ed57-38da-c088-8da5" targetId="c73a-8c52-4780-71e1"/>
+            <entryLink import="true" name="Psychic Discipline: Telepathy" hidden="false" type="selectionEntry" id="3eb1-c56b-1469-1ff6" targetId="b751-a605-75e8-dd6f"/>
+            <entryLink import="true" name="Psychic Discipline: Diabolism" hidden="false" type="selectionEntry" id="8be8-8673-ba2d-29a5" targetId="7517-a238-aecb-60e9"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ætheric Flight" hidden="false" id="7647-8112-eaf7-fbea">
       <profiles>
