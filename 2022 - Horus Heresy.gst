@@ -10497,6 +10497,31 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7517-a238-aecb-60e9" name="Psychic Discipline: Diabolism" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c739-c662-d9f1-c146" name="A Dark and Terrible Power" hidden="false" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
+          <characteristics>
+            <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">When a Charge is declared for a model with this power, or for a unit that includes a model with this power, the Controlling player may choose to make a Psychic check for the model before any dice are rolled to determine the Charge Distance of that Charge. If the Psychic check is successful then the model with this power gains the Hammer of Wrath (3) special rule and increases both their Strength and Toughness characteristics by +1 for the duration of that Assult Phase. If the Check is failed then the model suffers Perils of the Warp, and once that has been resolved gains +1 to both its Strength and Toughness Characteristics until the start of the controlling players next turn</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c31-2f32-2d30-fc5e" name="Hellfire" hidden="false" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">Template</characteristic>
+            <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">7</characteristic>
+            <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 1, Rending (6+), Deflagrate, Psychic Focus</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3380-3ab-8c69-61d8" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule"/>
+        <infoLink id="72e1-d6ce-337d-fbee" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
+        <infoLink id="1804-acb9-a81b-1cd1" name="Psychic Focus (?? Where is this?)" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
