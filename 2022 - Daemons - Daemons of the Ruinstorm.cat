@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ac63-5340-2e9e-1eb6" name="2022 - Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ac63-5340-2e9e-1eb6" name="2022 - Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -445,7 +445,12 @@
               <modifiers>
                 <modifier type="set" field="name" value="Hammer of Wrath (1)">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="5a2e-abe2-3044-3c1c" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="5a2e-abe2-3044-3c1c" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="lessThan" value="1" field="selections" scope="5a2e-abe2-3044-3c1c" childId="e4fb-66cd-e07d-609b" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -473,6 +478,15 @@
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f45c-bfb7-f86c-bc65"/>
               </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Weapons" hidden="false" id="2b71-5e04-4b77-c072" defaultSelectionEntryId="ba69-b72-c0fc-1b18">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b67-b6ce-5d47-5f0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="48ea-5e54-a731-953b"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Harbinger Blade" hidden="false" type="selectionEntry" id="ba69-b72-c0fc-1b18" targetId="7192-6fa1-c141-41fd"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -524,21 +538,37 @@
               </modifiers>
             </infoLink>
             <infoLink id="9e4d-875f-444c-e9ce" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink id="7326-8d18-d081-abb8" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink id="4072-d9b0-b173-6c99" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Hammer of Wrath (1)">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="5a2e-abe2-3044-3c1c" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="name" value="Hammer of Wrath (2)">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="5a2e-abe2-3044-3c1c" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapons" hidden="false" id="d8e2-4c00-fe25-76b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd0a-53-fbae-6a25"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3500-d65d-bf4f-e174"/>
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="9a0e-a41d-3e37-555" targetId="9abc-11e8-9031-d104">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f7a9-fe36-4f38-ac48"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df9e-f7f6-68cb-2b55"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <costs>
