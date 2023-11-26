@@ -1816,6 +1816,28 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="May exchange a close comabt weapon for a Power Fist" hidden="false" id="500f-86d4-c27b-2864">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Power Fist" hidden="false" type="selectionEntry" id="b652-4f50-cc6b-de86" targetId="768d-b89b-7328-d749"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="1faf-f4c3-5139-b81a" shared="true"/>
+                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="aa6b-be55-dcf1-ac51" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -1988,8 +2010,8 @@
               <selectionEntries>
                 <selectionEntry id="077d-9853-c2ea-02bf" name="One Companion may upgrade to Adjutant" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3e9-d51d-25e5-683e" type="max"/>
-                    <constraint field="selections" scope="637d-9295-181e-9546" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4453-2d3e-6109-8fcc" type="max"/>
+                    <constraint field="selections" scope="637d-9295-181e-9546" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="314f-c5c7-fc80-73b3" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2575-cc27-f0c9-ced3" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="ea5a-efab-7414-884a" name="Auxilia Adjutant" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -2018,6 +2040,28 @@
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="May exchange a close comabt weapon for a Power Fist" hidden="false" id="633a-cfb3-e2c7-e3a2">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Power Fist" hidden="false" type="selectionEntry" id="b1ef-bd8c-39bb-440c" targetId="768d-b89b-7328-d749"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="1faf-f4c3-5139-b81a" shared="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="aa6b-be55-dcf1-ac51" shared="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
               <selectionEntryGroups>
