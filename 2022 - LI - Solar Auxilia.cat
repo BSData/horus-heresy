@@ -1816,28 +1816,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="May exchange a close comabt weapon for a Power Fist" hidden="false" id="500f-86d4-c27b-2864">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Power Fist" hidden="false" type="selectionEntry" id="b652-4f50-cc6b-de86" targetId="768d-b89b-7328-d749"/>
-                  </infoLinks>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditionGroups>
-                        <conditionGroup type="or">
-                          <conditions>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="1faf-f4c3-5139-b81a" shared="true"/>
-                            <condition type="equalTo" value="0" field="selections" scope="parent" childId="aa6b-be55-dcf1-ac51" shared="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                  </modifiers>
-                </selectionEntry>
-              </selectionEntries>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -2053,8 +2031,8 @@
                           <conditionGroups>
                             <conditionGroup type="or">
                               <conditions>
-                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="1faf-f4c3-5139-b81a" shared="true"/>
-                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="aa6b-be55-dcf1-ac51" shared="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="1faf-f4c3-5139-b81a" shared="true" includeChildSelections="true"/>
+                                <condition type="equalTo" value="0" field="selections" scope="parent" childId="aa6b-be55-dcf1-ac51" shared="true" includeChildSelections="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -2107,7 +2085,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="4395-16ba-48e4-1011" name="Pistol and Combat weapon (Sub-menu)" hidden="true" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="4395-16ba-48e4-1011" name="Pistol and Combat weapon (Sub-menu)" hidden="false" collective="false" import="true" type="upgrade">
                       <selectionEntryGroups>
                         <selectionEntryGroup id="57c7-6ab1-dbc5-6565" name="Close Combat" hidden="false" collective="false" import="true">
                           <constraints>
@@ -2116,9 +2094,9 @@
                           </constraints>
                           <entryLinks>
                             <entryLink id="cf41-dc0e-7e13-ba0e" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
-                            <entryLink id="29a2-2d33-0cab-01ca" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                            <entryLink id="29a2-2d33-0cab-01ca" name="Power Fist" hidden="true" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
@@ -2142,9 +2120,9 @@
                           </constraints>
                           <entryLinks>
                             <entryLink id="c561-006e-afc2-bed2" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry"/>
-                            <entryLink id="4c0f-8b1a-470d-fc02" name="Blast Pistol" hidden="false" collective="false" import="true" targetId="2460-375d-31f4-4bdf" type="selectionEntry">
+                            <entryLink id="4c0f-8b1a-470d-fc02" name="Blast Pistol" hidden="true" collective="false" import="true" targetId="2460-375d-31f4-4bdf" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
@@ -2154,9 +2132,9 @@
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                               </costs>
                             </entryLink>
-                            <entryLink id="d970-68ca-eb12-24e0" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
+                            <entryLink id="d970-68ca-eb12-24e0" name="Plasma Pistol" hidden="true" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
@@ -2166,9 +2144,9 @@
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                               </costs>
                             </entryLink>
-                            <entryLink id="caf1-3b26-dd28-f88b" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
+                            <entryLink id="caf1-3b26-dd28-f88b" name="Hand Flamer" hidden="true" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
@@ -2178,9 +2156,9 @@
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                               </costs>
                             </entryLink>
-                            <entryLink id="3d18-ea1c-0020-b161" name="Needle Pistol" hidden="false" collective="false" import="true" targetId="fdd4-06c7-4608-b07f" type="selectionEntry">
+                            <entryLink id="3d18-ea1c-0020-b161" name="Needle Pistol" hidden="true" collective="false" import="true" targetId="fdd4-06c7-4608-b07f" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
