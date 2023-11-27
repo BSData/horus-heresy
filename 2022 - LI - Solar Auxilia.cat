@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="23" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="6af7-3fee-5bc1-7533" name="2022 - LI - Solar Auxilia" revision="24" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -1988,8 +1988,8 @@
               <selectionEntries>
                 <selectionEntry id="077d-9853-c2ea-02bf" name="One Companion may upgrade to Adjutant" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3e9-d51d-25e5-683e" type="max"/>
-                    <constraint field="selections" scope="637d-9295-181e-9546" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4453-2d3e-6109-8fcc" type="max"/>
+                    <constraint field="selections" scope="637d-9295-181e-9546" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="314f-c5c7-fc80-73b3" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2575-cc27-f0c9-ced3" type="max"/>
                   </constraints>
                   <profiles>
                     <profile id="ea5a-efab-7414-884a" name="Auxilia Adjutant" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -2027,7 +2027,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68ac-5dad-10fa-5492" type="max"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry id="aa6b-be55-dcf1-ac51" name="Blast Pistols &amp; Power Weapon (Sub-menu)" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="aa6b-be55-dcf1-ac51" name="Blast Pistol &amp; Power Weapon (Sub-menu)" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
                         <entryLink id="224d-0edf-148c-e9be" name="Blast Pistol" hidden="false" collective="false" import="true" targetId="2460-375d-31f4-4bdf" type="selectionEntry">
                           <constraints>
@@ -2045,7 +2045,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="1faf-f4c3-5139-b81a" name="Blast Pilstol and Charnabal Weapon (Sub-menu)" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="1faf-f4c3-5139-b81a" name="Blast Pistol &amp; Charnabal Weapon (Sub-menu)" hidden="false" collective="false" import="true" type="upgrade">
                       <entryLinks>
                         <entryLink id="4965-a8fb-41b0-d4ed" name="Blast Pistol" hidden="false" collective="false" import="true" targetId="2460-375d-31f4-4bdf" type="selectionEntry">
                           <constraints>
@@ -2063,7 +2063,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="4395-16ba-48e4-1011" name="Pistol and Combat weapon (Sub-menu)" hidden="true" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="4395-16ba-48e4-1011" name="Pistol and Combat weapon (Sub-menu)" hidden="false" collective="false" import="true" type="upgrade">
                       <selectionEntryGroups>
                         <selectionEntryGroup id="57c7-6ab1-dbc5-6565" name="Close Combat" hidden="false" collective="false" import="true">
                           <constraints>
@@ -2072,9 +2072,9 @@
                           </constraints>
                           <entryLinks>
                             <entryLink id="cf41-dc0e-7e13-ba0e" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="3d50-2f85-06ff-6aee" type="selectionEntry"/>
-                            <entryLink id="29a2-2d33-0cab-01ca" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                            <entryLink id="29a2-2d33-0cab-01ca" name="Power Fist" hidden="true" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
@@ -2098,9 +2098,9 @@
                           </constraints>
                           <entryLinks>
                             <entryLink id="c561-006e-afc2-bed2" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry"/>
-                            <entryLink id="4c0f-8b1a-470d-fc02" name="Blast Pistol" hidden="false" collective="false" import="true" targetId="2460-375d-31f4-4bdf" type="selectionEntry">
+                            <entryLink id="4c0f-8b1a-470d-fc02" name="Blast Pistol" hidden="true" collective="false" import="true" targetId="2460-375d-31f4-4bdf" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
@@ -2110,9 +2110,9 @@
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                               </costs>
                             </entryLink>
-                            <entryLink id="d970-68ca-eb12-24e0" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
+                            <entryLink id="d970-68ca-eb12-24e0" name="Plasma Pistol" hidden="true" collective="false" import="true" targetId="717f-cf0a-1593-4bd8" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
@@ -2122,9 +2122,9 @@
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                               </costs>
                             </entryLink>
-                            <entryLink id="caf1-3b26-dd28-f88b" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
+                            <entryLink id="caf1-3b26-dd28-f88b" name="Hand Flamer" hidden="true" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
@@ -2134,9 +2134,9 @@
                                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
                               </costs>
                             </entryLink>
-                            <entryLink id="3d18-ea1c-0020-b161" name="Needle Pistol" hidden="false" collective="false" import="true" targetId="fdd4-06c7-4608-b07f" type="selectionEntry">
+                            <entryLink id="3d18-ea1c-0020-b161" name="Needle Pistol" hidden="true" collective="false" import="true" targetId="fdd4-06c7-4608-b07f" type="selectionEntry">
                               <modifiers>
-                                <modifier type="set" field="hidden" value="true">
+                                <modifier type="set" field="hidden" value="false">
                                   <conditions>
                                     <condition field="selections" scope="dfa9-eca3-1edb-7732" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="077d-9853-c2ea-02bf" type="equalTo"/>
                                   </conditions>
