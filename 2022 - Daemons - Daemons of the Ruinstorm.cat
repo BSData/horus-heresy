@@ -882,11 +882,12 @@
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="36b8-f75b-bf6c-1c05" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="2e40-9836-1db8-4c1" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -976,11 +977,12 @@
         </infoLink>
         <infoLink name="Swarm" hidden="false" type="rule" id="eea2-a8c-2c72-49ba" targetId="0bc2-fcb2-dd25-c10a"/>
         <infoLink name="Support Squad" hidden="false" type="rule" id="8282-b9ea-e72a-3905" targetId="768e-56d6-ca52-24ae"/>
-        <infoLink id="3b33-b4b-6bb0-8cce" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="62be-99e4-c9c6-1c81" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
