@@ -6515,6 +6515,10 @@ Four single Blast Shields</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
           </costs>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="622a-acf7-e274-3035"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1db7-f480-a0cf-ca8f"/>
+          </constraints>
         </entryLink>
       </entryLinks>
       <costs>
