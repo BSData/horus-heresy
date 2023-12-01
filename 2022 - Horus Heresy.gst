@@ -10663,7 +10663,7 @@ Bitter Fury – Bitter Fury – This Advanced Reaction may be made once per batt
 
 • A Stormseer gains the Psyker Sub-type and must select one of the following Psychic Disciplines: The Storm’s Fury , Divination, Telepathy or Thaumaturgy. A Stormseer may not select any other Discipline. In addition, a Stormseer gains the Adamantium Will (4+) special rule.
 
-• A Stormseer may replace a power weapon, bolt pistol or combi-bolter with a force weapon at no additional points cost. In additon a  Stormseer may take a psychic hood for +15 points.</description>
+• A Stormseer may replace a power weapon, bolt pistol or combi-bolter with a force weapon at no additional points cost. In addition, a Stormseer may take a psychic hood for +15 points.</description>
             </rule>
           </rules>
           <costs>
