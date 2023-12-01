@@ -13094,7 +13094,7 @@ Limitations
 • Any unit made up entirely of models with the Infantry Unit Type in a Detachment using this Rite of War that does not begin play Embarked on a model with the Transport Sub-type, or any model with the Vehicle Unit Type without either the Transport or Fast Sub-types, must begin play in Reserve if the mission allows it. If the mission does not allow any units to be placed into Reserves then the unit is instead deployed as normal.
 • A Detachment using this Rite of War may not include any Heavy Support or Fortification choices, unless those choices are entirely composed of models with the Flyer Sub-type.
 
-^Manually check limitations on Deployement</description>
+^Manually check limitations on Deployment</description>
             </rule>
           </rules>
           <costs>
