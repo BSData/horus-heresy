@@ -4471,6 +4471,15 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   </modifiers>
                 </entryLink>
                 <entryLink id="9535-6df0-392e-bf0a" name="Shotgun" hidden="false" collective="false" import="true" targetId="f0aa-947f-f493-f566" type="selectionEntry"/>
+                <entryLink id="916f-148f-6379-93b9" name="Las-lock" hidden="true" collective="false" import="true" targetId="6491-5e10-ba7e-e0d3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c201-6fbc-a792-0509" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c607-4d27-5698-4a45" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="47ba-97f4-b896-8c21" name="2) May Take" hidden="false" collective="false" import="true">
@@ -4578,6 +4587,18 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
+                </entryLink>
+                <entryLink import="true" name="Arc Rifle" hidden="false" type="selectionEntry" id="8387-32f-9abd-ee9a" targetId="1800-e29f-86a3-6abb">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c201-6fbc-a792-0509" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c607-4d27-5698-4a45" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -10817,6 +10838,33 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
           </constraints>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c607-4d27-5698-4a45" name="Blessed Arms (AotO)" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1f0-4e0a-929e-946d" type="equalTo"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c201-6fbc-a792-0509" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b179-24bb-a4b0-3eb4" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1540-d7eb-83b4-3a90" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
