@@ -1199,7 +1199,7 @@ Unless noted, the effects of any rules featured in the Provenance’s descriptio
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bcd-7022-cefc-04da" type="equalTo"/>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1f0-4e0a-929e-946d" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -3773,6 +3773,15 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <modifier type="set" field="name" value="Furious Charge (1)"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Stubborn" hidden="false" type="rule" id="7d90-b75f-33fb-769f" targetId="7989-1f2c-a43d-82ae">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c1f0-4e0a-929e-946d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="7623-1857-a4d2-3139" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3787,9 +3796,14 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <profile id="50b9-1d35-3383-81cd" name="Levy Sergeant" publicationId="48c2-d023-0069-001a" page="18" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
                       <modifiers>
                         <modifier type="increment" field="e8a6-1da9-d384-8727" value="1">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
+                                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2808-2b49-dcef-7a91" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <modifierGroups>
@@ -4027,9 +4041,14 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <profile id="1a84-74bf-f8a4-c4a8" name="Levy" publicationId="48c2-d023-0069-001a" page="18" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
                       <modifiers>
                         <modifier type="increment" field="e8a6-1da9-d384-8727" value="1">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
-                          </conditions>
+                          <conditionGroups>
+                            <conditionGroup type="or">
+                              <conditions>
+                                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
+                                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2808-2b49-dcef-7a91" type="equalTo"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
                         </modifier>
                       </modifiers>
                       <modifierGroups>
