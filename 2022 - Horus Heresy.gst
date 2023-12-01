@@ -22,6 +22,7 @@
     <publication name="Exemplary Battles of The Age of Darkness - The Battle for Felweather Keep" hidden="false" id="44e-19f2-a369-b04e" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/09/ErwDltU5NorvlrhH.pdf" publicationDate="12 Sept 2023" shortName="EBoAoD - TBoFK"/>
     <publication name="Legacies of The Age of Darkness - Daemons of the Ruinstorm" hidden="false" id="8775-88f5-cfdd-24f6" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/10/ylWxyIzI3lS6fEE9.pdf" shortName="Daemons of the Ruinstorm" publicationDate="Oct 2023"/>
     <publication name="Exemplary Battles of Age of Darkness Volume 1" hidden="false" id="7f9d-5e88-241d-e861" shortName="EBoAoD V1" publicationDate="Oct 2023"/>
+    <publication name="Exemplary Battles of The Age of Darkness - Liberation of Constanix II" hidden="false" id="bc5c-e6fb-985f-81be"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
