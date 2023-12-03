@@ -229,7 +229,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry (Unit type)" hidden="false">
+    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false">
       <modifiers>
         <modifier type="increment" field="9658-3768-cea2-6062" value="1">
           <repeats>
@@ -1287,12 +1287,6 @@ Reactions:
     </categoryEntry>
     <categoryEntry id="d684-5b63-caa7-adc4" name="Legiones Hereticus" hidden="false"/>
     <categoryEntry name="Forge Remnants - Militia Krios Squadron" hidden="false" id="dfbc-8edd-e14f-fd80"/>
-    <categoryEntry name="Infantry" hidden="false" id="3196-a4d0-35cf-b6ab">
-      <comment>Augmented Levy Infantry Counter</comment>
-      <modifiers>
-        <modifier type="set" value="true" field="hidden"/>
-      </modifiers>
-    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
