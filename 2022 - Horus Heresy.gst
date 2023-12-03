@@ -14713,7 +14713,7 @@ A unit with this special rule that has been joined by a model after or during de
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d570-c5fa-ed42-1147" type="max"/>
           </constraints>
           <rules>
-            <rule name="Arms of the Omnissiah" hidden="false" id="a47b-f75c-1376-ad85">
+            <rule name="Arms of the Omnissiah" hidden="false" id="a47b-f75c-1376-ad85" publicationId="bc5c-e6fb-985f-81be" page="6">
               <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
 
 
@@ -14749,7 +14749,7 @@ This Provenance cannot be taken in conjunction with the Armoury of Old Night Pr
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ec5-f8fe-868-3c4a" type="max"/>
           </constraints>
           <rules>
-            <rule name="Augmented Levy" hidden="false" id="b147-7837-b14b-8006">
+            <rule name="Augmented Levy" hidden="false" id="b147-7837-b14b-8006" publicationId="bc5c-e6fb-985f-81be" page="6">
               <description>All Imperialis Militia Levy Squads in a Detachment with this Provenance receive +1 to their Leadership Characteristic and gain the Stubborn and The Rite of Pure Thought special rules (see page 108 of Liber Mechanicum). However, the Detachment’s Compulsory Troops choices must be filled by Imperialis Militia Levy Squads, and it may not have more Infantry units, excepting HQ choices, of other types than it has Imperialis Militia Levy Squads in total. For example, if it has three Imperialis Militia Levy Squads, it can have a maximum of three additional Infantry squads of other kinds. Imperialis Militia Levy Squads in an army with this Provenance may  not be joined by a Discipline Master.
 
 
@@ -14763,7 +14763,8 @@ This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bcd-7022-cefc-04da" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-59fa-8844-3547" type="greaterThan"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -14774,17 +14775,12 @@ This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c7be-7482-ca87-31c7" type="max"/>
           </constraints>
           <rules>
-            <rule name="Arms of the Omnissiah" hidden="false" id="eecb-18b4-38dd-dff0">
-              <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
+            <rule name="Forge Remnants" hidden="false" id="eecb-18b4-38dd-dff0" publicationId="bc5c-e6fb-985f-81be" page="6">
+              <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take a Triaros Armoured Conveyor as a Dedicated Transport so long as they number 20 models or less. In addition, a Detachment with this Provenance may include three additional Heavy Support choices – but these additional choices may only be used to select Krios Squadrons (see
+Liber Mechanicum for details and points costs). All Triaros Armoured Conveyors and Krios Squadrons selected in this fashion gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
 
 
-• Option – Blessed Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade lasguns to laslocks and may upgrade sniper rifles to arc rifles at a cost of +45 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
-
-
-• Option – Sanctified Weapons: A Force Commander in a Detachment with this Provenance may exchange a close combat weapon for a corposant stave for +5 points and/or a laspistol for a radium pistol for +5 points. A Force Commander may take a servo-arm for +10 points.
-
-
-This Provenance cannot be taken in conjunction with the Armoury of Old Night Provenance.</description>
+This Provenance cannot be taken in conjunction with the Survivors of the Dark Age or Clanfolk Levy Provenances.</description>
             </rule>
           </rules>
         </selectionEntry>
