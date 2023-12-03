@@ -14696,6 +14696,37 @@ A unit with this special rule that has been joined by a model after or during de
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="17 Arms of the Omnissiah" hidden="false" id="b4f0-1668-4106-7bd1" publicationId="bc5c-e6fb-985f-81be" page="6">
+          <modifiers>
+            <modifier type="set" field="d570-c5fa-ed42-1147" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bcd-7022-cefc-04da" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53a4-853a-26b2-aac7" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d570-c5fa-ed42-1147" type="max"/>
+          </constraints>
+          <rules>
+            <rule name="Arms of the Omnissiah" hidden="false" id="a47b-f75c-1376-ad85">
+              <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
+
+
+• Option – Blessed Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade lasguns to laslocks and may upgrade sniper rifles to arc rifles at a cost of +45 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
+
+
+• Option – Sanctified Weapons: A Force Commander in a Detachment with this Provenance may exchange a close combat weapon for a corposant stave for +5 points and/or a laspistol for a radium pistol for +5 points. A Force Commander may take a servo-arm for +10 points.
+
+
+This Provenance cannot be taken in conjunction with the Armoury of Old Night Provenance.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="5ff5-48c0-b9f1-5a05" name="Power Weapon" hidden="false" collective="false" import="true">
