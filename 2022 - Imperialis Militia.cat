@@ -10748,6 +10748,97 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Militia Krios Tank Squadron" hidden="false" id="299e-7ad4-c391-87ac">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Militia Krios" hidden="false" id="7ca9-9eae-7f93-79fa" defaultAmount="1">
+          <infoLinks>
+            <infoLink name="It Will Not Die (X)" hidden="false" type="rule" id="7718-9088-e92c-c071" targetId="2784-d0be-a4e2-890f">
+              <modifiers>
+                <modifier type="set" value="It Will Not Die (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Galvanic Traction Drive" hidden="false" type="rule" id="ca9e-6957-cb91-fbf8" targetId="e51e-cae1-d9e7-d317"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Militia Krios" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="f019-58-f729-3682">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Fast, Third-line)</characteristic>
+                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">16</characteristic>
+                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
+                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
+                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547"/>
+                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="b02d-4863-e6f-994" targetId="4ae3-79b4-6051-505e"/>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5088-8a84-9714-79d"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f70f-de93-5ad1-f682"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ecfe-9959-6d21-b980" name="Hull (Front) Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0540-4761-0685-b2f2">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc65-8dbd-e2f3-9bb4" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2c4-599-6a3a-9cd" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="61d5-e46f-377a-ddab" name="Lightning Cannon" hidden="false" collective="false" import="true" targetId="31eb-9c83-cc5e-ef2d" type="selectionEntry"/>
+                <entryLink id="1df4-a8d2-7cdd-d10d" name="Pulsar-Fusil" hidden="false" collective="false" import="true" targetId="566b-4fc6-9d5c-10cd" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="162e-af67-dd63-51d6" name="Any Krios in the squadron may take any of the following options:" hidden="false" collective="false" import="true">
+              <selectionEntries>
+                <selectionEntry id="91b6-6d7f-86b6-4285" name="Two Centreline Mounted Volkite Calivers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a76a-662f-5305-9197" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="a5ce-6ce5-127e-469b" name="Volkite Caliver" hidden="false" targetId="00a0-68df-defd-2a3a" type="profile"/>
+                    <infoLink id="c127-9977-5f10-8e81" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="90dd-28d-d761-cf5b" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hull (Front) Mounted Hunter-Killer Missiles"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="116b-486-236d-a2c2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="3aa-2f9d-cb0-e177" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="088d-527f-114b-afd4" name="Warlord Traits" hidden="true" collective="false" import="true">
