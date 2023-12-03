@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ac63-5340-2e9e-1eb6" name="2022 - Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="8" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="ac63-5340-2e9e-1eb6" name="2022 - Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="9" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -186,11 +186,12 @@
             <modifier type="set" field="name" value="Æthereal Invulnerability (4+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="1a63-f1ca-5092-cc65" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="41e0-d71f-ba88-64a6" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="2f3f-adc4-b19f-a5c7" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -338,11 +339,12 @@
             <modifier type="set" field="name" value="Æthereal Invulnerability (4+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d8d2-966d-833e-2fb6" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="9b4c-d419-6ff1-68b1" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="ae8b-ee65-95b6-a8f9" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -441,16 +443,12 @@
               </modifiers>
             </infoLink>
             <infoLink id="ae51-3edb-f81-998e" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink id="8a71-8a7d-f129-7436" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="663e-f215-a5a3-5da9" targetId="aec0-c3aa-1e4e-1779">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1)">
-                  <conditions>
-                    <condition type="greaterThan" value="0" field="selections" scope="5a2e-abe2-3044-3c1c" childId="e4fb-66cd-e07d-609b" shared="true"/>
-                  </conditions>
-                </modifier>
+                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="lessThan" value="1" field="selections" scope="5a2e-abe2-3044-3c1c" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -538,16 +536,16 @@
               </modifiers>
             </infoLink>
             <infoLink id="9e4d-875f-444c-e9ce" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink id="4072-d9b0-b173-6c99" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink id="44f3-3000-56bb-5d25" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Hammer of Wrath (1)">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="name" value="Hammer of Wrath (2)">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -649,12 +647,12 @@
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Hammer of Wrath (2)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -715,11 +713,12 @@
           </modifiers>
         </infoLink>
         <infoLink id="62c4-c339-363b-79a8" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink id="97e4-eeb3-72d7-1ff0" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="71ec-9e8f-4c64-8e9d" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -883,11 +882,12 @@
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="36b8-f75b-bf6c-1c05" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="2e40-9836-1db8-4c1" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -977,11 +977,12 @@
         </infoLink>
         <infoLink name="Swarm" hidden="false" type="rule" id="eea2-a8c-2c72-49ba" targetId="0bc2-fcb2-dd25-c10a"/>
         <infoLink name="Support Squad" hidden="false" type="rule" id="8282-b9ea-e72a-3905" targetId="768e-56d6-ca52-24ae"/>
-        <infoLink id="3b33-b4b-6bb0-8cce" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="62be-99e4-c9c6-1c81" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1067,11 +1068,12 @@
           </modifiers>
         </infoLink>
         <infoLink id="1105-9717-b770-9f35" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink id="2889-c9dc-9314-3f7f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="f808-d189-7f7d-f216" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1139,11 +1141,12 @@
           </modifiers>
         </infoLink>
         <infoLink id="c02d-11c2-315c-259f" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink id="a716-580d-16f5-42e3" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="25cc-41da-4e8-d8b8" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1359,14 +1362,10 @@
         <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="c1d7-f721-2ad5-2e98" targetId="c694-20c8-455-baca"/>
         <infoLink id="9937-1e8e-33f9-57f5" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (3)">
+            <modifier type="set" field="name" value="Hammer of Wrath (3)"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (3+1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1380,6 +1379,16 @@
         <infoLink id="8308-d21c-fdb-c7d7" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
             <modifier type="set" value="Bulky (7)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="6724-11c8-843c-fc0b" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (4)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1434,20 +1443,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="69a4-63bf-fa7b-9db4" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
-        <infoLink id="1f97-86e8-6bf8-a02" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (D3)">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (D3+1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="d225-70c3-83cc-b59f" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="It Will Not Die (5+)"/>
@@ -1459,6 +1454,20 @@
           </modifiers>
         </infoLink>
         <infoLink id="20df-2bd-59c2-ae77" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink id="97ec-1603-fd56-24b1" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (D3)">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="name" value="Hammer of Wrath (D3+1)">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Behemoth Blade" hidden="false" type="selectionEntry" id="f0a5-4b23-96aa-9de8" targetId="6ede-e07c-24cd-1813">
