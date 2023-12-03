@@ -1286,6 +1286,7 @@ Reactions:
       </constraints>
     </categoryEntry>
     <categoryEntry id="d684-5b63-caa7-adc4" name="Legiones Hereticus" hidden="false"/>
+    <categoryEntry name="Forge Remnants - Militia Krios Squadron" hidden="false" id="dfbc-8edd-e14f-fd80"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1477,6 +1478,21 @@ Reactions:
             <modifier type="increment" field="5c70-e3f3-a942-3e71" value="2">
               <conditions>
                 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="2">
+              <conditions>
+                <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="3">
+              <conditions>
+                <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
