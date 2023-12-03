@@ -1217,6 +1217,7 @@ Unless noted, the effects of any rules featured in the Provenance’s descriptio
     <selectionEntry id="64e6-42ff-959d-02a1" name="IM - Medicae Detachment" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="b866-a812-0e38-4e5c" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="3772-dac9-582d-6c75" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="7944-9e64-32f9-3da6" name="Militia Medicae" hidden="false" collective="false" import="true" defaultSelectionEntryId="282e-7cc4-e6a3-c56d">
@@ -2851,6 +2852,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
     <selectionEntry id="b4a8-0824-b604-3277" name="IM - Infantry Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="2035-e100-fb21-d53a" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="1408-f524-bb63-f29f" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="b413-7250-5c28-9526" name="Infantry Squads" hidden="false" collective="false" import="true" defaultSelectionEntryId="171b-812a-6ef7-7a71">
@@ -4261,24 +4263,8 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
                   </conditions>
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="8b4f-bfe2-ce7b-f1b1" shared="true" roundUp="false" id="c644-39f2-6080-f6fb" includeChildSelections="true"/>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="3196-a4d0-35cf-b6ab" shared="true" roundUp="false" id="c644-39f2-6080-f6fb" includeChildSelections="true"/>
                   </repeats>
-                </modifier>
-                <modifier type="decrement" value="1" field="8e1b-abfb-e65-45d3">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="4f85-eb33-30c9-8f51" shared="true" roundUp="false" id="c725-cc87-6d85-2dec" includeChildSelections="true"/>
-                  </repeats>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" value="1" field="8e1b-abfb-e65-45d3">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="force" childId="1ff9-d83a-2a15-8815" shared="true" roundUp="false" id="274b-4d76-b64f-e3c5" includeChildSelections="true"/>
-                  </repeats>
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
-                  </conditions>
                 </modifier>
               </modifiers>
             </selectionEntry>
@@ -4390,6 +4376,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink id="1fbc-3ade-2ce2-689f" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
         <categoryLink id="aff5-69b6-f98b-f576" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="4164-318f-e397-bd37" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="ef62-cc9f-54c2-b66c" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="6dbf-09bf-2bbc-278d" name="2) Grenadier" hidden="false" collective="false" import="true" type="model">
@@ -5173,6 +5160,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink id="544a-d5de-ad24-ccf1" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="ff5e-7826-a07c-580b" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink id="757a-017f-0c23-8007" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="392f-2756-6a75-374b" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="adbf-df44-516d-b49d" name="1) Militia Fire Teams" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ff1-5b17-ca8b-0676">
@@ -5552,6 +5540,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink id="f8bf-e373-7088-1dca" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="2dff-278b-2bbe-fe45" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
         <categoryLink id="36e0-ac5f-3884-fb95" name="Light Sub-type:" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="fed6-b49c-7449-9fd3" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9915-15d5-5790-f904" name="Scout" hidden="false" collective="false" import="true" type="model">
@@ -5909,6 +5898,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink id="c0a5-6e17-90e1-9b34" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="c254-7761-dbf3-9329" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
         <categoryLink id="6748-d0c8-4f36-f942" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="7afd-2693-a6bb-23de" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2240-7d3b-fa8c-63b8" name="2) Armour" hidden="false" collective="false" import="true" defaultSelectionEntryId="1147-882e-bd83-ed0a">
@@ -7411,6 +7401,9 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="26"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="2338-58-ac89-4c30" primary="false" name="Augmented Levy Infantry Counter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="987d-3f99-2c52-3da4" name="IM - Sentinel Squadron" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -7418,6 +7411,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink id="3fe5-3a52-1b7a-a0fe" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
         <categoryLink id="e3af-708b-9fd8-2a73" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
         <categoryLink id="5ff9-4b72-6315-ff20" name="Mechanised Unit Sub-type" hidden="false" targetId="e929-a5c3-451c-6f19" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="72f-49c8-c8de-b29f" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="153a-959d-1e6d-e612" name="Sentinel" hidden="false" collective="false" import="true" type="model">
@@ -7869,6 +7863,9 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="d05d-fc20-1386-64a8" primary="false" name="Augmented Levy Infantry Counter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="37f6-34e9-4938-0ff6" name="IM - Malcador Heavy Tank" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -8262,9 +8259,9 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 </profile>
               </profiles>
               <categoryLinks>
-                <categoryLink id="7acb-b23b-1861-ef4d" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
                 <categoryLink id="b1dd-86aa-1c7a-ec38" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
                 <categoryLink id="144f-3d8d-5a77-0ef0" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="8d85-3a58-4ba7-66fa" primary="false" name="Infantry:"/>
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="d168-dd0e-70a6-9d34" name="Earthshaker cannon" publicationId="d0df-7166-5cd3-89fd" page="25" hidden="false" collective="true" import="true" type="upgrade">
@@ -8321,7 +8318,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               <categoryLinks>
                 <categoryLink id="fc24-4a7a-d3d4-d5ee" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
                 <categoryLink id="b8f5-f67b-e34f-462b" name="Artillery Sub-type:" hidden="false" targetId="6f99-c178-6f9d-fb63" primary="false"/>
-                <categoryLink id="9f1a-e20c-48d7-550b" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="56c3-c63f-7684-21ef" primary="false" name="Infantry:"/>
               </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="cd2d-75a6-629e-8433" name="Medusa Mortar" publicationId="d0df-7166-5cd3-89fd" page="26" hidden="false" collective="true" import="true" type="upgrade">
@@ -8422,9 +8419,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                 </rule>
               </rules>
               <categoryLinks>
-                <categoryLink id="4e0f-52fc-b9b8-855a" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
                 <categoryLink id="205d-689e-ae32-670d" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
                 <categoryLink id="b11f-461d-e0e7-15c1" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b171-2484-94bd-12b9" primary="false" name="Infantry:"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="3147-3e49-5b5d-16b8" name="Flak Armour" hidden="false" collective="false" import="true" targetId="0251-8365-9efb-61a7" type="selectionEntry">
@@ -8458,9 +8455,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
                 <infoLink id="576c-4898-12c5-ef43" name="Gunners" hidden="false" targetId="e8bd-ea2f-066c-a59f" type="profile"/>
               </infoLinks>
               <categoryLinks>
-                <categoryLink id="8289-b9c2-264f-ac1c" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
                 <categoryLink id="1ece-126f-876a-b249" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
                 <categoryLink id="14a3-f6e4-e6b7-ea9d" name="Heavy Sub-type:" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+                <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="48ec-fd1d-f4f2-1fcb" primary="false" name="Infantry:"/>
               </categoryLinks>
               <entryLinks>
                 <entryLink id="eb82-a07d-6e79-4c22" name="Flak Armour" hidden="false" collective="false" import="true" targetId="0251-8365-9efb-61a7" type="selectionEntry">
@@ -8491,6 +8488,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
       </costs>
+      <categoryLinks>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="dbf5-7b0f-2e09-c462" primary="false" name="Augmented Levy Infantry Counter"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="0651-5f5f-43cc-9ca1" name="IM - Gorgon Heavy Transporter" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -9006,6 +9006,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         <categoryLink id="6d7a-960f-c4f1-b63c" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
         <categoryLink id="3c09-768c-40e7-c705" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="5794-7adf-a300-a5af" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="6abb-a68-4b7e-b98a" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="de21-368a-567e-3280" name="Ogryn Boss" hidden="true" collective="false" import="true" type="model">
@@ -9598,6 +9599,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
       <categoryLinks>
         <categoryLink id="0ef8-f125-9af9-0dc9" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="10ff-f629-cfc2-fbf6" name="Militia Unit Sub-type" hidden="false" targetId="66b2-c457-4d5e-8041" primary="false"/>
+        <categoryLink targetId="3196-a4d0-35cf-b6ab" id="a74b-8c00-1556-46d3" primary="false" name="Augmented Levy Infantry Counter"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="8071-8345-bda2-fc78" name="Rogue Psyker" hidden="false" collective="false" import="true" type="model">
