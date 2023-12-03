@@ -650,7 +650,7 @@
           <profiles>
             <profile id="174e-2999-6d47-b5e6" name="Force Commander" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <modifiers>
-                <modifier type="set" field="62d3-22d7-2d49-52dc" value="5">
+                <modifier type="increment" field="62d3-22d7-2d49-52dc" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b669-a356-d5d1-53b8" type="equalTo"/>
                   </conditions>
@@ -2128,6 +2128,11 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <modifier type="increment" field="e8a6-1da9-d384-8727" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="74ae-c840-0036-d244" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b669-a356-d5d1-53b8" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -10743,7 +10748,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Militia Krios Tank Squadron" hidden="false" id="299e-7ad4-c391-87ac">
+    <selectionEntry type="upgrade" import="true" name="IM - Krios Tank Squadron" hidden="false" id="299e-7ad4-c391-87ac">
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Militia Krios" hidden="false" id="7ca9-9eae-7f93-79fa" defaultAmount="1">
           <infoLinks>
@@ -10833,6 +10838,9 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="a16c-3625-3815-eb6d" primary="true" name="Heavy Support:"/>
+      </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
