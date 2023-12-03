@@ -3635,6 +3635,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7734-dc53-f78f-5405" type="min"/>
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f49c-d7bb-ad58-611e" type="max"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8e1b-abfb-e65-45d3" includeChildSelections="true"/>
               </constraints>
               <rules>
                 <rule id="e5da-18a3-fb79-318f" name="Expendable" publicationId="48c2-d023-0069-001a" page="18" hidden="false">
@@ -4254,6 +4255,45 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="2"/>
               </costs>
+              <modifiers>
+                <modifier type="increment" value="1" field="8e1b-abfb-e65-45d3">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="8b4f-bfe2-ce7b-f1b1" shared="true" roundUp="false" id="c644-39f2-6080-f6fb" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="1" field="8e1b-abfb-e65-45d3">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="4f85-eb33-30c9-8f51" shared="true" roundUp="false" id="c725-cc87-6d85-2dec" includeChildSelections="true"/>
+                  </repeats>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="8e1b-abfb-e65-45d3">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="force" childId="1ff9-d83a-2a15-8815" shared="true" roundUp="false" id="274b-4d76-b64f-e3c5" includeChildSelections="true"/>
+                  </repeats>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Augmented Levy Compulsory Troops" hidden="false" id="da0b-2286-29a3-ac6">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a87e-1220-5ea7-9cb7"/>
+                <constraint type="min" value="2" field="selections" scope="force" shared="true" id="323c-8d42-b822-297d" includeChildSelections="true"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4261,35 +4301,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-      <constraints>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="afe8-2f62-6dc-d80c"/>
-      </constraints>
-      <modifiers>
-        <modifier type="increment" value="1" field="afe8-2f62-6dc-d80c">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
-          </conditions>
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="8b4f-bfe2-ce7b-f1b1" shared="true" roundUp="false" id="4489-8aa4-b427-2034" includeChildSelections="true"/>
-          </repeats>
-        </modifier>
-        <modifier type="decrement" value="1" field="afe8-2f62-6dc-d80c">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="4f85-eb33-30c9-8f51" shared="true" roundUp="false" id="ec43-3629-b06e-4aaf" includeChildSelections="true"/>
-          </repeats>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-        <modifier type="decrement" value="1" field="afe8-2f62-6dc-d80c">
-          <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="force" childId="1ff9-d83a-2a15-8815" shared="true" roundUp="false" id="a8d1-6ba2-63ea-b9cd" includeChildSelections="true"/>
-          </repeats>
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
     <selectionEntry id="c201-6fbc-a792-0509" name="IM - Grenadier Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
