@@ -229,7 +229,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false">
+    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry (Unit type)" hidden="false">
       <modifiers>
         <modifier type="increment" field="9658-3768-cea2-6062" value="1">
           <repeats>
