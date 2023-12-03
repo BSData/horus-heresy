@@ -4210,6 +4210,35 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="afe8-2f62-6dc-d80c"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="afe8-2f62-6dc-d80c">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
+          </conditions>
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="8b4f-bfe2-ce7b-f1b1" shared="true" roundUp="false" id="4489-8aa4-b427-2034" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" value="1" field="afe8-2f62-6dc-d80c">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="4f85-eb33-30c9-8f51" shared="true" roundUp="false" id="ec43-3629-b06e-4aaf" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" value="1" field="afe8-2f62-6dc-d80c">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="1ff9-d83a-2a15-8815" shared="true" roundUp="false" id="a8d1-6ba2-63ea-b9cd" includeChildSelections="true"/>
+          </repeats>
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="331b-43fb-e64-9364" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="c201-6fbc-a792-0509" name="IM - Grenadier Squad" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
