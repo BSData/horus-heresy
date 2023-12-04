@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="87" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="90" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication name="GitHub" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -22,6 +22,7 @@
     <publication name="Exemplary Battles of The Age of Darkness - The Battle for Felweather Keep" hidden="false" id="44e-19f2-a369-b04e" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/09/ErwDltU5NorvlrhH.pdf" publicationDate="12 Sept 2023" shortName="EBoAoD - TBoFK"/>
     <publication name="Legacies of The Age of Darkness - Daemons of the Ruinstorm" hidden="false" id="8775-88f5-cfdd-24f6" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/10/ylWxyIzI3lS6fEE9.pdf" shortName="Daemons of the Ruinstorm" publicationDate="Oct 2023"/>
     <publication name="Exemplary Battles of Age of Darkness Volume 1" hidden="false" id="7f9d-5e88-241d-e861" shortName="EBoAoD V1" publicationDate="Oct 2023"/>
+    <publication name="Exemplary Battles of The Age of Darkness - Liberation of Constanix II" hidden="false" id="bc5c-e6fb-985f-81be"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -1285,6 +1286,7 @@ Reactions:
       </constraints>
     </categoryEntry>
     <categoryEntry id="d684-5b63-caa7-adc4" name="Legiones Hereticus" hidden="false"/>
+    <categoryEntry name="Forge Remnants - Militia Krios Squadron" hidden="false" id="dfbc-8edd-e14f-fd80"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -1476,6 +1478,21 @@ Reactions:
             <modifier type="increment" field="5c70-e3f3-a942-3e71" value="2">
               <conditions>
                 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="1">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="2">
+              <conditions>
+                <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="5c70-e3f3-a942-3e71" value="3">
+              <conditions>
+                <condition field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfbc-8edd-e14f-fd80" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -14241,6 +14258,17 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" field="154b-d405-276d-4412" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="331b-43fb-e64-9364" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="b669-a356-d5d1-53b8" name="02 Legacy of the Great Crusade" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -14694,6 +14722,95 @@ A unit with this special rule that has been joined by a model after or during de
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="17 Arms of the Omnissiah" hidden="false" id="b4f0-1668-4106-7bd1" publicationId="bc5c-e6fb-985f-81be" page="6">
+          <modifiers>
+            <modifier type="set" field="d570-c5fa-ed42-1147" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4bcd-7022-cefc-04da" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53a4-853a-26b2-aac7" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d570-c5fa-ed42-1147" type="max"/>
+          </constraints>
+          <rules>
+            <rule name="Arms of the Omnissiah" hidden="false" id="a47b-f75c-1376-ad85" publicationId="bc5c-e6fb-985f-81be" page="6">
+              <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
+
+
+• Option – Blessed Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade lasguns to laslocks and may upgrade sniper rifles to arc rifles at a cost of +45 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
+
+
+• Option – Sanctified Weapons: A Force Commander in a Detachment with this Provenance may exchange a close combat weapon for a corposant stave for +5 points and/or a laspistol for a radium pistol for +5 points. A Force Commander may take a servo-arm for +10 points.
+
+
+This Provenance cannot be taken in conjunction with the Armoury of Old Night Provenance.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="18 Augmented Levy" hidden="false" id="331b-43fb-e64-9364" publicationId="bc5c-e6fb-985f-81be" page="6">
+          <modifiers>
+            <modifier type="set" field="3ec5-f8fe-868-3c4a" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d15d-c66d-d47f-8aee" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d5e5-b44b-5db6-ab16" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f21-2a0a-c00d-60ae" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20e1-2446-2438-3638" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="greaterThan"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b192-2b6f-ad8c-959f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24a9-5c79-21ac-402f" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ec5-f8fe-868-3c4a" type="max"/>
+          </constraints>
+          <rules>
+            <rule name="Augmented Levy" hidden="false" id="b147-7837-b14b-8006" publicationId="bc5c-e6fb-985f-81be" page="6">
+              <description>All Imperialis Militia Levy Squads in a Detachment with this Provenance receive +1 to their Leadership Characteristic and gain the Stubborn and The Rite of Pure Thought special rules (see page 108 of Liber Mechanicum). However, the Detachment’s Compulsory Troops choices must be filled by Imperialis Militia Levy Squads, and it may not have more Infantry units, excepting HQ choices, of other types than it has Imperialis Militia Levy Squads in total. For example, if it has three Imperialis Militia Levy Squads, it can have a maximum of three additional Infantry squads of other kinds. Imperialis Militia Levy Squads in an army with this Provenance may  not be joined by a Discipline Master.
+
+
+This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted Flesh, Gene-crafted, Unending Hordes, Feral Warriors or Ogryn Conscripts Provenances.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="19 Forge Remnants" hidden="false" id="3aa-2f9d-cb0-e177" publicationId="bc5c-e6fb-985f-81be" page="6">
+          <modifiers>
+            <modifier type="set" field="c7be-7482-ca87-31c7" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="08f1-5fe7-1d3a-7b35" type="greaterThan"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d609-59fa-8844-3547" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b887-2790-84b4-5fb7" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c7be-7482-ca87-31c7" type="max"/>
+          </constraints>
+          <rules>
+            <rule name="Forge Remnants" hidden="false" id="eecb-18b4-38dd-dff0" publicationId="bc5c-e6fb-985f-81be" page="6">
+              <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take a Triaros Armoured Conveyor as a Dedicated Transport so long as they number 20 models or less. In addition, a Detachment with this Provenance may include three additional Heavy Support choices – but these additional choices may only be used to select Krios Squadrons (see
+Liber Mechanicum for details and points costs). All Triaros Armoured Conveyors and Krios Squadrons selected in this fashion gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
+
+
+This Provenance cannot be taken in conjunction with the Survivors of the Dark Age or Clanfolk Levy Provenances.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
