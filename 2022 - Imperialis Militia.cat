@@ -5749,16 +5749,38 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="56fb-b3cd-51ac-8862" name="Shotgun" hidden="false" collective="false" import="true" targetId="f0aa-947f-f493-f566" type="selectionEntry"/>
+            <entryLink id="56fb-b3cd-51ac-8862" name="Shotgun" hidden="false" collective="false" import="true" targetId="f0aa-947f-f493-f566" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="6a90-6dc5-1e0b-9eaf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b98-8cc0-a5b2-e894" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
             <entryLink id="2ae7-4adf-0eb8-eda3" name="Lascarbine" hidden="false" collective="false" import="true" targetId="d68e-ce5a-000c-c322" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="6a90-6dc5-1e0b-9eaf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b98-8cc0-a5b2-e894" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="0096-b981-5eaa-2395" name="Stubcarbine" hidden="false" collective="false" import="true" targetId="a7cc-88cb-c6e8-6d4c" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition field="selections" scope="6a90-6dc5-1e0b-9eaf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b98-8cc0-a5b2-e894" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5798,6 +5820,13 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </costs>
             </entryLink>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition field="selections" scope="6a90-6dc5-1e0b-9eaf" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b98-8cc0-a5b2-e894" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="e76b-18bb-d168-2ca6" name="5) The Scout Sergeant may be given:" hidden="false" collective="false" import="true">
           <constraints>
@@ -11088,7 +11117,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8b98-8cc0-a5b2-e894" name="Militia Jet Pack (SotDA)" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8b98-8cc0-a5b2-e894" name="Voidjumpers (SotDA)" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditionGroups>
