@@ -22,8 +22,8 @@
     <publication name="Legacies of The Age of Darkness - Daemons of the Ruinstorm" hidden="false" id="8775-88f5-cfdd-24f6" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/10/ylWxyIzI3lS6fEE9.pdf" shortName="Daemons of the Ruinstorm" publicationDate="Oct 2023"/>
     <publication name="Exemplary Battles of Age of Darkness Volume 1" hidden="false" id="7f9d-5e88-241d-e861" shortName="EBoAoD V1" publicationDate="Oct 2023"/>
     <publication name="Exemplary Battles of The Age of Darkness - Liberation of Constanix II" hidden="false" id="bc5c-e6fb-985f-81be"/>
-    <publication name="New Publication" hidden="false" id="e6b0-5ad5-6ebb-9cc2"/>
     <publication id="91df-ed64-4216-5bab" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2" shortName="Main Rules Errata and FAQ V1.2" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/w5Pm3yiEFnjISb6h.pdf"/>
+    <publication id="2660-aa44-b169-2b1f" name="Liber Astartes Errata and FAQ V1.2" shortName="LA - Errata and FAQ V1.2" publicationDate="Dec 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/O0XmE9KIYFCQHlsf.pdf"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
