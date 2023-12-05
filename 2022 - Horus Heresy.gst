@@ -7391,7 +7391,15 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
 • Models with the Paragon Unit Sub-type are not affected by special rules that negatively modify their Characteristics (other than Wounds or Hull Points).
 • A model with the Paragon Unit Sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
 • Models with the Paragon Unit Sub-type may fire Heavy and Ordnance weapons and count as Stationary even if they moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
-• A unit that contains a model with the Paragon Unit Sub-type may never be joined by any other models, regardless of any other special rule.</description>
+• A unit that contains a model with the Paragon Unit Sub-type may never be joined by any other models, regardless of any other special rule.
+
+
+From December 2023 Liber Mechanicum FAQ, page 2:
+
+
+Q. Can a unit with the Paragon Unit Sub-type
+make Reactions?
+A. No.</description>
         </rule>
       </rules>
       <infoLinks>
