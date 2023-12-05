@@ -15610,8 +15610,8 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
     <rule id="c036-66e2-4e07-c2b8" name="Automated Artillery Sub-type" publicationId="e77a-823a-da94-16b9" page="16" hidden="false">
       <description>The following rules apply to all models with the Automated Artillery Sub-type:
 
-• A unit that includes one or more models with the Automated Artillery Sub-type may not Run,  declare or otherwise make Charge moves, or make Reactions.
-• A unit that includes one or more models with the Automated Artillery Sub-type may not make  Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
+• A unit that includes one or more models with the Automated Artillery Sub-type may not Run, declare or otherwise make Charge moves, and may only make the Interceptor Advanced Reaction.
+• A unit that includes one or more models with the Automated Artillery Sub-type may not make Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
 • A unit that includes one or more models with this Unit Sub-type may never hold or deny an Objective.</description>
     </rule>
     <rule id="1bdb-7155-7c6e-61e8" name="Orbital Defences" publicationId="d0df-7166-5cd3-89fd" page="101" hidden="false">
