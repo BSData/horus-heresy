@@ -9457,7 +9457,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
     </selectionEntry>
     <selectionEntry id="15f9-817e-275b-c13d" name="Lasrifle" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="f755-3fa4-db2a-9540" name="Lasrifle (Velley)" publicationId="15a4-fc68-502d-48a9" page="143" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="f755-3fa4-db2a-9540" name="Lasrifle (Volley)" publicationId="15a4-fc68-502d-48a9" page="143" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
