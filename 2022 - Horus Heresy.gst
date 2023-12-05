@@ -2,7 +2,6 @@
 <gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="91" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication name="GitHub" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy"/>
-    <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
     <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" shortName="LA - Traitor" publicationDate="June 2022"/>
     <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books" publicationDate="June 2022"/>
@@ -23,6 +22,8 @@
     <publication name="Legacies of The Age of Darkness - Daemons of the Ruinstorm" hidden="false" id="8775-88f5-cfdd-24f6" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/10/ylWxyIzI3lS6fEE9.pdf" shortName="Daemons of the Ruinstorm" publicationDate="Oct 2023"/>
     <publication name="Exemplary Battles of Age of Darkness Volume 1" hidden="false" id="7f9d-5e88-241d-e861" shortName="EBoAoD V1" publicationDate="Oct 2023"/>
     <publication name="Exemplary Battles of The Age of Darkness - Liberation of Constanix II" hidden="false" id="bc5c-e6fb-985f-81be"/>
+    <publication name="New Publication" hidden="false" id="e6b0-5ad5-6ebb-9cc2"/>
+    <publication id="91df-ed64-4216-5bab" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2" shortName="Main Rules Errata and FAQ V1.2" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/w5Pm3yiEFnjISb6h.pdf"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -14950,7 +14951,7 @@ Weapons that do not roll To Hit (such as Blast weapons) must roll a D6 for each 
 Gets Hot and Re-rolls
 If a model has the ability to re-roll its rolls To Hit (including because of BS 6+ or the Twin-linked special rule), a Wound is only suffered if the To Hit re-roll is a 1; it may also re-roll Gets Hot results of 1 for weapons that do not roll To Hit.</description>
     </rule>
-    <rule id="5b9c-2738-616c-abdf" name="Graviton Pulse" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
+    <rule id="5b9c-2738-616c-abdf" name="Graviton Pulse" publicationId="91df-ed64-4216-5bab" page="2" hidden="false">
       <description>Instead of rolling To Wound normally with this weapon, any model without the Vehicle, Dreadnought or Automata Unit Type that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
     </rule>
     <rule id="fa1e-0112-943e-b1f6" name="Guided Fire" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
@@ -15157,7 +15158,7 @@ If, for any reason, a given instance of this rule does not have a value in brack
 
 The effects of this special rule only apply when a unit that has it begins an Assault phase not locked in combat and then either Charges or is Charged by an enemy unit. If an enemy unit Charges this unit when it is already locked in combat then that does count as a new ‘first’ turn of combat for the effects of Hatred.</description>
     </rule>
-    <rule id="1dd4-7a75-5c59-8425" name="Haywire" publicationId="e77a-823a-da94-16b9" page="240" hidden="false">
+    <rule id="1dd4-7a75-5c59-8425" name="Haywire" publicationId="91df-ed64-4216-5bab" page="3" hidden="false">
       <description>‘For each Hit inflicted on a unit that contains at least one model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:
 D6 Result
 1: No Effect.
@@ -15274,8 +15275,8 @@ If a unit has both the Infiltrate and Scout special rules, that unit can deploy 
 
 Similarly, if a model makes a Shooting Attack with a weapon that has the Shred rule, it re-rolls its failed To Wound rolls.</description>
     </rule>
-    <rule id="9222-f6c5-dc19-905a" name="Shock Pulse" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
-      <description>Any Vehicle (including Super-heavy Vehicles), Dreadnought or Automata model that suffers a Penetrating Hit or unsaved Wound from a weapon with this special rule may only fire Snap Shots on the following Game Turn.</description>
+    <rule id="9222-f6c5-dc19-905a" name="Shock Pulse" publicationId="91df-ed64-4216-5bab" page="3" hidden="false">
+      <description>Any model with the Vehicle, Dreadnought or Automata Unit Type that suffers a Penetrating Hit or unsaved Wound from an attack with this special rule may only make Snap Shots when it next makes a Shooting Attack either as part of a Reaction or during its controlling player’s Shooting phase.</description>
     </rule>
     <rule id="46b7-63a1-941c-96a5" name="Shell Shock (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
       <description>Pinning tests taken due to an attack or weapon with this special rule are made with a penalty to Leadership Characteristic equal to the value listed as part of the special rule.
