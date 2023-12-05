@@ -15,7 +15,7 @@
     <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Dec 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yPxvcNBwok6C9Wb0.pdf"/>
     <publication id="15a4-fc68-502d-48a9" name="Liber Imperium"/>
     <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/DLUIKkCO4FXVnt5L.pdf" publisher="Warhammer Community"/>
-    <publication id="48c2-d023-0069-001a" name="Imperialis Militia (Download)" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="April 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/04/j2TwD3c2AB8oLsVW.pdf"/>
+    <publication id="48c2-d023-0069-001a" name="Legacies of The Age of Darkness - The Imperialis Militia v1.1" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="December 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/lTr1xea8kB5tsF5P.pdf"/>
     <publication id="53a4-0d21-2f8a-2c45" name="Campaigns of the Age of Darkness - The Siege of Cthonia" shortName="CotAoD - SoC" publicationDate="May 2023"/>
     <publication name="Exemplary Battles of the Age of Darkness - The Depths of Tredecimmia" hidden="false" id="6bcf-2297-2bcd-51be" shortName="EBoAoD - TDoT" publisher="Warhammer Community" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/08/jWzm77om6hHC5cfH.pdf"/>
     <publication name="Exemplary Battles of The Age of Darkness - The Battle for Felweather Keep" hidden="false" id="44e-19f2-a369-b04e" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/09/ErwDltU5NorvlrhH.pdf" publicationDate="12 Sept 2023" shortName="EBoAoD - TBoFK"/>
@@ -14447,9 +14447,10 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Tainted Flesh P
             <rule id="99c0-0263-9acc-a659" name="Survivors of the Dark Age" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
               <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take either a Legion Rhino Transport, Legion Termite Assault Drill or Legion Land Raider Proteus Carrier as a Dedicated Transport so long as they number 10 models or less. See the Legiones Astartes Crusade Army List for details and points costs, however all such vehicles lose the Legiones Astartes (X) special rule, gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
 
-Option – Voidjumpers: All models in an Imperialis Militia Reconnaissance Squad may be upgraded to be Voidjumpers for +20 points per unit. Models upgraded to Voidjumpers have Militia jet packs and must replace their Shotgun with two laspistols or two autopistols. Any Discipline Masters, Militia Medicae and any other models assigned to the squad before deployment (but not models that join the unit by means of the Independent Character special rule) may be given Militia jet packs for no additional cost. A model with a Militia jet pack may not be given any weapon with the Heavy type.
-
 BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble or Tainted Flesh Provenance. See relevant Provenance.)</description>
+            </rule>
+            <rule name="Voidjumpers" hidden="false" id="2d04-8f0b-cfb7-cac1" page="" publicationId="91df-ed64-4216-5bab">
+              <description>Option – Voidjumpers: All models in an Imperialis Militia Reconnaissance Squad may be upgraded to be Voidjumpers for +20 points per unit. Models upgraded to Voidjumpers have Militia jet packs and must replace their Shotgun with two laspistols or two autopistols. Any Discipline Masters, Militia Medicae and any other models assigned to the squad before deployment (but not models that join the unit by means of the Independent Character special rule) may be given Militia jet packs for no additional cost. A model with a Militia jet pack may not be given any weapon with the Heavy type.</description>
             </rule>
           </rules>
           <costs>
