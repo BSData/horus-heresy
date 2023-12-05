@@ -3852,7 +3852,7 @@
             <categoryLink id="cea8-d359-a93d-931f" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="7df2-f403-dfa4-a651" name="Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="435c-ba08-f299-6063">
+            <selectionEntryGroup id="7df2-f403-dfa4-a651" name="May Exchange Peritarch Targeter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a41b-40b9-9a26-aa8d">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ad2-13b6-b3df-bda9" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a566-c8f7-9462-b74a" type="min"/>
@@ -3877,6 +3877,7 @@
                 <entryLink id="2518-c1a9-b56c-af23" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
                 <entryLink id="3e83-f294-47aa-485a" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                 <entryLink id="435c-ba08-f299-6063" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                <entryLink import="true" name="Peritarch Targeter" hidden="false" type="selectionEntry" id="a41b-40b9-9a26-aa8d" targetId="35c3-a948-99df-5477"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3982,7 +3983,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="40a2-52bc-f6c5-e0cf" name="1) Fulmentarii" hidden="false" collective="false" import="true" defaultSelectionEntryId="af54-e19a-6e39-3308">
+        <selectionEntryGroup id="40a2-52bc-f6c5-e0cf" name="1) Fulmentarii" hidden="false" collective="false" import="true" defaultSelectionEntryId="a1f1-302f-9f92-6f0b">
           <constraints>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b84f-3c73-5e6f-a0ff" type="max"/>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="706d-59c0-aa46-d897" type="min"/>
@@ -4134,6 +4135,34 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="a1f1-302f-9f92-6f0b" name="Fulmentarus Terminator w/Peritarch Targeter" hidden="false" collective="false" import="true" type="model" defaultAmount="4">
+              <infoLinks>
+                <infoLink id="39ac-f7da-c64a-ab41" name="Fulmentarus Terminator" hidden="false" targetId="c001-db89-433b-a98a" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="7997-da6a-6b4f-3e6e" name="Power Sword" hidden="false" collective="false" import="true" targetId="fa06-cac0-3d98-125e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="551f-2a24-8280-eca2" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8502-6429-9cd7-6839" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="1d5e-8944-bfc5-105" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="0f3d-c07c-7a7e-d534" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ae-ca37-2f65-fa35" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67fe-b30e-427e-c68a" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="5807-30ee-6a96-ff20" name="Peritarch targeter" hidden="false" collective="false" import="true" targetId="35c3-a948-99df-5477" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5487-6d14-9e3c-4a27" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667f-3a78-f42f-4380" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4142,12 +4171,6 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9ea-9e83-af17-9c89" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ea-2285-a1d6-1c11" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5cb0-88eb-5376-c2d3" name="Peritarch targeter" hidden="false" collective="false" import="true" targetId="35c3-a948-99df-5477" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="399d-5db2-d248-14a5" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d6f-ec6a-2326-45a7" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="1a85-19bd-f92d-29a0" name="Fulmentarus missile array (with Splinter and Hellfire plasma missiles)" hidden="false" collective="false" import="true" targetId="5441-6fff-b5ac-615f" type="selectionEntry">
