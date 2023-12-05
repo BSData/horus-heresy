@@ -13176,10 +13176,10 @@ Limitations
             <rule id="08e4-ab73-68fc-366e" name="The Sagyar Mazan" publicationId="817a-6288-e016-7469" page="179" hidden="false">
               <description>Effects
 • Ebon Keshig Cohorts may be taken as Troops choices in a Detachment using this Rite of War.
-• All units composed entirely of models with the Infantry Unit Type in a Detachment using this Rite of War must be given both the Kharash (see page 185) and the Feel No Pain (5+) special rules.
+• All units composed entirely of models with the Infantry Unit Type (excluding units with the Unique Unit Subtype) in a Detachment using this Rite of War must be given both the Kharash (see page 185) and the Feel No Pain (5+) special rules.
 • All models with both the Legiones Astartes (White Scars) and Kharash special rules in a Detachment using this Rite of War gain the Fearless special rule for the duration of any Assault phase in which they make a successful Charge.
 Limitations
-• An army in which any Detachments are using this Rite of War may not choose to place any units into Reserve and as such is unable to perform a Deep Strike Assault, Subterranean Assault or a Flanking Assault. 
+• An army in which any Detachments are using this Rite of War may not choose to place any units into Reserve and as such is unable to perform a Deep Strike Assault, Subterranean Assault or a Flanking Assault.
 • A Detachment using this Rite of War may not include any Heavy Support that are not composed entirely of models with the Infantry Unit Type, or any Fortification or Primarch choices regardless of Unit Type.</description>
             </rule>
           </rules>
