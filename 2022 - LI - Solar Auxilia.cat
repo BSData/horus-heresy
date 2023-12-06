@@ -9770,76 +9770,15 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9134-b9c9-0e73-b6d6" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8ee-9cd6-40ed-7035" type="max"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="4530-f4f8-699a-99d9" name="Macharius Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="0f0b-c445-f29e-1d45" name="Macharius Battlecannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Twin-linked, Pinning</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="9751-f4b7-bfec-2cb5" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-                    <infoLink id="9ea7-a1d9-2596-30b2" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-                    <infoLink id="96df-7bbf-7e55-382c" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7277-ff82-92f7-554c" name="Macharius Vanquisher Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="f237-ad51-385a-675b" name="Macharius Vanquisher Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2), Twin-linked</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="60e6-83d9-2e59-98f8" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-                    <infoLink id="6d0b-b6db-cc82-5571" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Brutal (2)"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink id="a097-10ef-6a06-b09e" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d858-9975-8327-7e87" name="Macharius Rotary Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <profiles>
-                    <profile id="09a3-b58f-5000-736d" name="Macharius Rotary Bolt Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Breaching (6+), Pinning, Twin-linked</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="c5ee-f7ed-0cab-2e0e" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
-                    <infoLink id="e218-7da3-6a54-9cff" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-                    <infoLink id="c4bf-002e-294c-a188" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-                      <modifiers>
-                        <modifier type="set" field="name" value="Breaching (6+)"/>
-                      </modifiers>
-                    </infoLink>
-                  </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Macharius Battlecannon" hidden="false" type="selectionEntry" id="ebee-7977-565a-7934" targetId="88d5-d893-4635-8331"/>
+                <entryLink import="true" name="Macharius Vanquisher Cannon" hidden="false" type="selectionEntry" id="9756-cb7d-6f36-2a9b" targetId="8cd-670f-9284-a723"/>
+                <entryLink import="true" name="Macharius Rotary Bolt Cannon" hidden="false" type="selectionEntry" id="8752-ea7-cd09-22cc" targetId="7d8e-670f-dcd8-2e86">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
-                </selectionEntry>
-              </selectionEntries>
+                </entryLink>
+              </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="1293-cf52-b3db-1611" name="2) Pintle mounted Weapon:" hidden="false" collective="false" import="true">
               <constraints>
