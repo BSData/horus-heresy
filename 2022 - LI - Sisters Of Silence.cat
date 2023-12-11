@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="585a-5ac2-a233-a6a6" name="2022 - LI - Sisters of Silence" revision="19" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="585a-5ac2-a233-a6a6" name="2022 - LI - Sisters of Silence" revision="20" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="b760-8313-847f-1afa" name="Obivion HQ" hidden="false"/>
     <categoryEntry id="a9b6-f66f-e8ee-553e" name="Judgement HQ" hidden="false"/>
@@ -50,7 +50,12 @@
           <description>• A unit that includes at least one model with the Anathema Sub-type may not be directly targeted by any Psychic Power or use any Psychic power or make attacks with a Psychic Weapon, Psychic Powers whose effects would otherwise be applied to a unit that includes at least one model with the Anathema Sub-type (due to area of effect, scattering or other rules) have no effect, but are not cancelled and may continue to affect other units.
 • A model with the Anathema Sub-type that is allocated Wounds caused by a Psychic Weapon (which is any weapon granted to a unit or model by a Psychic Discipline) will always fail to Wound without any dice being rolled and any special rules attached to that Psychic Weapon will not trigger. Any Wounds allocated to a model with the Anathema Unit Sub-type caused by a Force Weapon gain no benefit from the Force special rules, but are otherwise resolved as normal. These effects do not apply to a model with the Transport Sub-type that has models with the Anathema Sub-type Embarked within, unless the model with the Transport Sub-type also has the Anathema Sub-type.
 • All models that no not have the Anathema Sub-type but are part of a unit that includes one of more models with the Anathema Sub-type, suffer a penalty of -2 to their Leadership Characteristic. Any unit with at least one model within 6&quot; of a model with th eAnathema Sub-type suffers a penalty of -1 to the Leadership of all models in the unit that do not also have the Anathema Sub-type, or -2 if that unit includes one of more models with the Corrupted Unit Sub-type. Note that these two penalties are not cumulative; they apply only the more severe penalty. However, they do stack with other special that modify Leadership (such as Fear (X)).
-• A unit that is Embarked on a Vehicle, Fortification or Building suffers no penalties to its Leadership Characteristic due to the Anathema Sub-type, However, units with the Stubborn special rule do suffer penalties to their Leadership from the effects of this Sub-type (note that this only applies to the Stubborn special rule, and other special rules that ignore panalties to Leadership ignore the effects of the Anathema Sub-type).</description>
+• A unit that is Embarked on a Vehicle, Fortification or Building suffers no penalties to its Leadership Characteristic due to the Anathema Sub-type, However, units with the Stubborn special rule do suffer penalties to their Leadership from the effects of this Sub-type (note that this only applies to the Stubborn special rule, and other special rules that ignore panalties to Leadership ignore the effects of the Anathema Sub-type).
+
+
+From December 2023 Liber Imperium FAQ V1.1, page 2:
+
+In addition, the Leadership Characteristic of a model with the Anathema Unit Sub-type can only be used for a Leadership test or Morale check if all models in that unit have the Anathema Unit Sub-type</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -1071,7 +1076,7 @@
                 <modifier type="set" field="name" value="Fleet (1)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="af84-c7e2-45a0-8d57" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
+            <infoLink id="af84-c7e2-45a0-8d57" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
             <infoLink id="3a9c-f7f4-9ffd-7e35" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
               <modifiers>
                 <modifier type="set" field="name" value="Hatred (Psyker, Daemon, Corrupted)"/>
@@ -1087,7 +1092,6 @@
                 <modifier type="set" field="name" value="Precision Strikes (6+)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="e0aa-8bc2-1040-0a61" name="Ex-Oblivio" hidden="false" targetId="7982-9292-ef54-8e84" type="rule"/>
             <infoLink id="19e2-4098-8c0a-15d7" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
@@ -2909,13 +2913,13 @@
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
             <rule id="e181-6e76-57bc-4118" name="Vigilant Covenant" publicationId="15a4-fc68-502d-48a9" page="51" hidden="false">
-              <description>When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves), all models with this special rule in a unit must be placed within unit coherency, but afterwards operate independently and are not treated as a unit.</description>
+              <description>A Knight Vestal Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, each model in the Knight Vestal Covenant may leave this unit and join another unit from the same Detachment they were selected as part of.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -5464,6 +5468,7 @@
         <categoryLink id="d29d-2c7e-9074-1379" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
         <categoryLink id="b917-710e-795f-1ea1" name="Silent Sisterhood (Chamber of Judgement)" hidden="false" targetId="b71a-371d-4401-9dc0" primary="false"/>
         <categoryLink id="87bb-2a59-f19c-aac1" name="Antigrav Sub-type" hidden="false" targetId="4303-1348-cce4-9501" primary="false"/>
+        <categoryLink targetId="7e5d-d73e-8ff4-7345" id="d3f8-7758-da7d-b4ce" primary="false" name="Anathema Sub-type"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="5f97-9be0-0dd3-7ee5" name="Subjugator" hidden="false" collective="false" import="true" type="model">
@@ -5474,7 +5479,7 @@
           <profiles>
             <profile id="768e-169e-2bd0-86ad" name="Subjugator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Skirmish)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Skirmish, Light, Anathema)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">18</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -5545,7 +5550,7 @@
           <profiles>
             <profile id="5120-f99b-a488-1fbc" name="Subjugator Mistress" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Skirmish, Character)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Skirmish, Light, Anathema, Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">18</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -5708,6 +5713,8 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b362-49b7-489d-5469" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" type="selectionEntry" id="412a-4542-de02-a007" targetId="cf9c-327b-3449-00d7"/>
+        <entryLink import="true" name="Krak Grenades" hidden="false" type="selectionEntry" id="ae41-cbca-7ae9-70d" targetId="99df-2421-acf7-a5ad"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
@@ -6821,10 +6828,14 @@
           <entryLinks>
             <entryLink id="4249-7465-c325-e974" name="Multi-Melta" hidden="false" collective="false" import="true" targetId="9332-3834-cf3a-56b4" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="name" value="Twin-linked Multi-Melta"/>
+                <modifier type="set" value="Hull (Front) Mounted multi-melta" field="name"/>
               </modifiers>
             </entryLink>
-            <entryLink id="1962-701d-5052-32ab" name="Hellion Heavy Cannon Array" hidden="false" collective="false" import="true" targetId="a17e-c567-c602-892e" type="selectionEntry"/>
+            <entryLink id="1962-701d-5052-32ab" name="Hellion Heavy Cannon Array" hidden="false" collective="false" import="true" targetId="a17e-c567-c602-892e" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="Hull (Front) Mounted hellion heavy cannon array" field="name"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="f4d1-16d4-2bcc-8967" name="2) Two Hull (Front) Mounted Vratine Missile Launchers" hidden="false" collective="false" import="true">

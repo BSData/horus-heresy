@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="35" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="36" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <modifiers>
@@ -3852,7 +3852,7 @@
             <categoryLink id="cea8-d359-a93d-931f" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
           </categoryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="7df2-f403-dfa4-a651" name="Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="435c-ba08-f299-6063">
+            <selectionEntryGroup id="7df2-f403-dfa4-a651" name="May Exchange Peritarch Targeter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="a41b-40b9-9a26-aa8d">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ad2-13b6-b3df-bda9" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a566-c8f7-9462-b74a" type="min"/>
@@ -3877,6 +3877,7 @@
                 <entryLink id="2518-c1a9-b56c-af23" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
                 <entryLink id="3e83-f294-47aa-485a" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                 <entryLink id="435c-ba08-f299-6063" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
+                <entryLink import="true" name="Peritarch Targeter" hidden="false" type="selectionEntry" id="a41b-40b9-9a26-aa8d" targetId="35c3-a948-99df-5477"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3982,7 +3983,7 @@
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="40a2-52bc-f6c5-e0cf" name="1) Fulmentarii" hidden="false" collective="false" import="true" defaultSelectionEntryId="af54-e19a-6e39-3308">
+        <selectionEntryGroup id="40a2-52bc-f6c5-e0cf" name="1) Fulmentarii" hidden="false" collective="false" import="true" defaultSelectionEntryId="a1f1-302f-9f92-6f0b">
           <constraints>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b84f-3c73-5e6f-a0ff" type="max"/>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="706d-59c0-aa46-d897" type="min"/>
@@ -4134,6 +4135,28 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="a1f1-302f-9f92-6f0b" name="Fulmentarus Terminator w/Peritarch Targeter" hidden="false" collective="false" import="true" type="model" defaultAmount="4">
+              <infoLinks>
+                <infoLink id="39ac-f7da-c64a-ab41" name="Fulmentarus Terminator" hidden="false" targetId="c001-db89-433b-a98a" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="1d5e-8944-bfc5-105" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="0f3d-c07c-7a7e-d534" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ae-ca37-2f65-fa35" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67fe-b30e-427e-c68a" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="5807-30ee-6a96-ff20" name="Peritarch targeter" hidden="false" collective="false" import="true" targetId="35c3-a948-99df-5477" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5487-6d14-9e3c-4a27" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667f-3a78-f42f-4380" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -4142,12 +4165,6 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9ea-9e83-af17-9c89" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ea-2285-a1d6-1c11" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="5cb0-88eb-5376-c2d3" name="Peritarch targeter" hidden="false" collective="false" import="true" targetId="35c3-a948-99df-5477" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="399d-5db2-d248-14a5" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d6f-ec6a-2326-45a7" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="1a85-19bd-f92d-29a0" name="Fulmentarus missile array (with Splinter and Hellfire plasma missiles)" hidden="false" collective="false" import="true" targetId="5441-6fff-b5ac-615f" type="selectionEntry">
@@ -4336,7 +4353,7 @@
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
@@ -4414,7 +4431,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="240"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="314d-f363-fb52-743a" name="Locutarus Storm Squad" hidden="false" collective="false" import="true" type="unit">
@@ -4560,7 +4577,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4705,7 +4722,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="32d1-29a6-9023-142c" name="Nemesis Destroyer Squad" hidden="false" collective="false" import="true" type="unit">
@@ -5213,13 +5230,13 @@
       <profiles>
         <profile id="c367-46db-77ea-de07" name="Peritarch Targeter" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Peritarch Targeter may activate it at the start of any of their own turns before any models are moved. Once the Peritarch Targeter is activated, the unit affected may not move but gains the Guided Fire and Night Vision special rules until the start of the controlling player’s next turn. A unit that has activated a Peritarch Targeter may not make any Reactions other than the Interceptor or Overwatch Reaction, unless it can draw a line of sight to any models in the unit that triggered the Reaction. In addition, all models in a unit that has activated a Peritarch Targeter must use the same missile type for any attacks made for the duration of that player turn.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Peritarch Targeter may activate it at the start of any of their own turns before any models are moved. Once the Peritarch Targeter is activated, the unit affected may not move but gains the Night Vision special rule and their Shooting Attacks gain the Twin-linked special rule (if the weapon they are making attacks with did not already have them) until the start of the controlling player’s next turn.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="fa13-e2d8-6a34-415a" name="Guided Fire" hidden="false" targetId="fa1e-0112-943e-b1f6" type="rule"/>
         <infoLink id="e489-92bc-dd76-d969" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
+        <infoLink name="Twin-linked" hidden="false" type="rule" id="b289-3fe0-5d1-e986" targetId="8542-ee9d-e2fa-52fe"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5230,29 +5247,24 @@
         <profile id="b99a-e882-f98f-b227" name="Fulmentarus missile array (Splinter missiles)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Breaching (6+), Pinning</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4, Pinning</characteristic>
           </characteristics>
         </profile>
         <profile id="efb1-06c5-2100-7e1b" name="Fulmentarus missile array (Hellfire plasma missiles)" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Brutal (2)</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Breaching (4+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="33cd-9791-9f8d-53fa" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Breaching (6+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="9e76-879f-e560-948c" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Brutal (2)"/>
+            <modifier type="set" field="name" value="Breaching (4+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="048e-a2ee-5e99-9f74" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>

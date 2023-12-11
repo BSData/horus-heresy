@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="90" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="92" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication name="GitHub" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy"/>
-    <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
     <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" shortName="LA - Traitor" publicationDate="June 2022"/>
     <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books" publicationDate="June 2022"/>
-    <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions  Astartes v1.1" shortName="LotAoD -LA" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RZRGS5ADYjwUb7Ry.pdf"/>
     <publication id="09b3-d525-cdea-260c" name="Exemplary Battles of Age of Darkness v1.1" shortName="EBoAoD" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/n10JM7pGRr4EyfIh.pdf"/>
     <publication id="d13e-e1ff-5dc7-b84b" name="Exemplary Battles downloads" publisherUrl="https://www.warhammer-community.com/downloads/#the-horus-heresy"/>
     <publication id="bde1-6db1-163b-3b76" name="Liber Mechanicum - Forces of the Omnissiah Army Book" shortName="Mech" publicationDate="August 2022"/>
@@ -16,13 +14,16 @@
     <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Dec 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yPxvcNBwok6C9Wb0.pdf"/>
     <publication id="15a4-fc68-502d-48a9" name="Liber Imperium"/>
     <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/DLUIKkCO4FXVnt5L.pdf" publisher="Warhammer Community"/>
-    <publication id="48c2-d023-0069-001a" name="Imperialis Militia (Download)" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="April 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/04/j2TwD3c2AB8oLsVW.pdf"/>
+    <publication id="48c2-d023-0069-001a" name="Legacies of The Age of Darkness - The Imperialis Militia v1.1" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="December 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/lTr1xea8kB5tsF5P.pdf"/>
     <publication id="53a4-0d21-2f8a-2c45" name="Campaigns of the Age of Darkness - The Siege of Cthonia" shortName="CotAoD - SoC" publicationDate="May 2023"/>
     <publication name="Exemplary Battles of the Age of Darkness - The Depths of Tredecimmia" hidden="false" id="6bcf-2297-2bcd-51be" shortName="EBoAoD - TDoT" publisher="Warhammer Community" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/08/jWzm77om6hHC5cfH.pdf"/>
     <publication name="Exemplary Battles of The Age of Darkness - The Battle for Felweather Keep" hidden="false" id="44e-19f2-a369-b04e" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/09/ErwDltU5NorvlrhH.pdf" publicationDate="12 Sept 2023" shortName="EBoAoD - TBoFK"/>
     <publication name="Legacies of The Age of Darkness - Daemons of the Ruinstorm" hidden="false" id="8775-88f5-cfdd-24f6" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/10/ylWxyIzI3lS6fEE9.pdf" shortName="Daemons of the Ruinstorm" publicationDate="Oct 2023"/>
     <publication name="Exemplary Battles of Age of Darkness Volume 1" hidden="false" id="7f9d-5e88-241d-e861" shortName="EBoAoD V1" publicationDate="Oct 2023"/>
     <publication name="Exemplary Battles of The Age of Darkness - Liberation of Constanix II" hidden="false" id="bc5c-e6fb-985f-81be"/>
+    <publication id="91df-ed64-4216-5bab" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2" shortName="Main Rules Errata and FAQ V1.2" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/w5Pm3yiEFnjISb6h.pdf"/>
+    <publication id="2660-aa44-b169-2b1f" name="Liber Astartes Errata and FAQ V1.2" shortName="LA - Errata and FAQ V1.2" publicationDate="Dec 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/O0XmE9KIYFCQHlsf.pdf"/>
+    <publication id="5063-981b-4ddd-e8f7" name="Legacies of The Age of Darkness - Legions  Astartes v1.2" shortName="LotAoD -LA" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/MMB9m4lXuQoZHb9r.pdf"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -881,7 +882,23 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="8247-54dc-9194-948f" name="Siege Breaker:" hidden="false"/>
+    <categoryEntry id="8247-54dc-9194-948f" name="Siege Breaker:" hidden="false">
+      <modifiers>
+        <modifier type="set" value="1" field="d132-946e-6aac-db7" id="b327-cb5d-136f-57ce">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5d75-f1c7-d6a7-a055" shared="true" id="2952-9f50-c25e-8ca9" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6e1e-8616-6e4a-173d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="d132-946e-6aac-db7" includeChildSelections="true"/>
+      </constraints>
+    </categoryEntry>
     <categoryEntry id="2440-b64e-cb24-87f0" name="Cybernetica Sub-type:" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
       <rules>
         <rule id="ad70-0b7c-539c-3e16" name="Cybernetica Sub-type:" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
@@ -1287,6 +1304,7 @@ Reactions:
     </categoryEntry>
     <categoryEntry id="d684-5b63-caa7-adc4" name="Legiones Hereticus" hidden="false"/>
     <categoryEntry name="Forge Remnants - Militia Krios Squadron" hidden="false" id="dfbc-8edd-e14f-fd80"/>
+    <categoryEntry name="Primus Medicae" hidden="false" id="b81a-8f4a-ff50-ef99"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
@@ -5497,10 +5515,31 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
     </selectionEntry>
     <selectionEntry id="ec12-df00-ad8a-1f59" name="Command Vox Relay" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="988d-6f67-d24b-0bc7" name="Command Vox Relay" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="988d-6f67-d24b-0bc7" name="Command Vox Relay (LA)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Astartes special rule that are within 18&quot; or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Command Vox Relay" field="name"/>
+          </modifiers>
+        </profile>
+        <profile id="2fa8-4ba-4b40-f6fb" name="Command Vox Relay (LH)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Hereticus special rule that are within 18&quot; or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Command Vox Relay" field="name"/>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -7373,7 +7412,15 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
 • Models with the Paragon Unit Sub-type are not affected by special rules that negatively modify their Characteristics (other than Wounds or Hull Points).
 • A model with the Paragon Unit Sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
 • Models with the Paragon Unit Sub-type may fire Heavy and Ordnance weapons and count as Stationary even if they moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
-• A unit that contains a model with the Paragon Unit Sub-type may never be joined by any other models, regardless of any other special rule.</description>
+• A unit that contains a model with the Paragon Unit Sub-type may never be joined by any other models, regardless of any other special rule.
+
+
+From December 2023 Liber Mechanicum FAQ, page 2:
+
+
+Q. Can a unit with the Paragon Unit Sub-type
+make Reactions?
+A. No.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -9457,7 +9504,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
     </selectionEntry>
     <selectionEntry id="15f9-817e-275b-c13d" name="Lasrifle" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="f755-3fa4-db2a-9540" name="Lasrifle (Velley)" publicationId="15a4-fc68-502d-48a9" page="143" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile id="f755-3fa4-db2a-9540" name="Lasrifle (Volley)" publicationId="15a4-fc68-502d-48a9" page="143" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
@@ -10548,6 +10595,71 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="88d5-d893-4635-8331" name="Macharius Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7056-8c38-d328-db0b" name="Macharius Battlecannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Twin-linked, Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="dba4-3c89-1d3c-611e" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+        <infoLink id="39be-2e93-8bc1-68e6" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="8a6b-a6f2-9a43-b785" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cd-670f-9284-a723" name="Macharius Vanquisher Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f9d2-536a-bffa-513e" name="Macharius Vanquisher Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Sunder, Brutal (2), Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="e87d-40a-7116-142d" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="83ef-a6da-980b-f801" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Brutal (2)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="33f7-504d-efe2-5e55" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d8e-670f-dcd8-2e86" name="Macharius Rotary Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f431-9fbb-df6b-b8cc" name="Macharius Rotary Bolt Cannon" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 10, Breaching (6+), Pinning, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="18b3-e92f-ee03-2f72" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="fa80-5b06-ce2a-bca3" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="96e1-ad1a-b636-69a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Breaching (6+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -13175,10 +13287,10 @@ Limitations
             <rule id="08e4-ab73-68fc-366e" name="The Sagyar Mazan" publicationId="817a-6288-e016-7469" page="179" hidden="false">
               <description>Effects
 • Ebon Keshig Cohorts may be taken as Troops choices in a Detachment using this Rite of War.
-• All units composed entirely of models with the Infantry Unit Type in a Detachment using this Rite of War must be given both the Kharash (see page 185) and the Feel No Pain (5+) special rules.
+• All units composed entirely of models with the Infantry Unit Type (excluding units with the Unique Unit Subtype) in a Detachment using this Rite of War must be given both the Kharash (see page 185) and the Feel No Pain (5+) special rules.
 • All models with both the Legiones Astartes (White Scars) and Kharash special rules in a Detachment using this Rite of War gain the Fearless special rule for the duration of any Assault phase in which they make a successful Charge.
 Limitations
-• An army in which any Detachments are using this Rite of War may not choose to place any units into Reserve and as such is unable to perform a Deep Strike Assault, Subterranean Assault or a Flanking Assault. 
+• An army in which any Detachments are using this Rite of War may not choose to place any units into Reserve and as such is unable to perform a Deep Strike Assault, Subterranean Assault or a Flanking Assault.
 • A Detachment using this Rite of War may not include any Heavy Support that are not composed entirely of models with the Infantry Unit Type, or any Fortification or Primarch choices regardless of Unit Type.</description>
             </rule>
           </rules>
@@ -14446,9 +14558,10 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Tainted Flesh P
             <rule id="99c0-0263-9acc-a659" name="Survivors of the Dark Age" publicationId="48c2-d023-0069-001a" page="10" hidden="false">
               <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take either a Legion Rhino Transport, Legion Termite Assault Drill or Legion Land Raider Proteus Carrier as a Dedicated Transport so long as they number 10 models or less. See the Legiones Astartes Crusade Army List for details and points costs, however all such vehicles lose the Legiones Astartes (X) special rule, gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
 
-Option – Voidjumpers: All models in an Imperialis Militia Reconnaissance Squad may be upgraded to have Militia jet packs and to replace all weapons with two laspistols or autopistols at a cost of +20 points per unit. Any Discipline Masters, Militia Medicae and any other models assigned to the squad before deployment (but not models that join the unit by means of the Independent Character special rule) may be given Militia jet packs for no additional cost. A model with a Militia jet pack may not be given any weapon with the Heavy type.
-
 BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble or Tainted Flesh Provenance. See relevant Provenance.)</description>
+            </rule>
+            <rule name="Voidjumpers" hidden="false" id="2d04-8f0b-cfb7-cac1" page="" publicationId="91df-ed64-4216-5bab">
+              <description>Option – Voidjumpers: All models in an Imperialis Militia Reconnaissance Squad may be upgraded to be Voidjumpers for +20 points per unit. Models upgraded to Voidjumpers have Militia jet packs and must replace their Shotgun with two laspistols or two autopistols. Any Discipline Masters, Militia Medicae and any other models assigned to the squad before deployment (but not models that join the unit by means of the Independent Character special rule) may be given Militia jet packs for no additional cost. A model with a Militia jet pack may not be given any weapon with the Heavy type.</description>
             </rule>
           </rules>
           <costs>
@@ -14950,8 +15063,8 @@ Weapons that do not roll To Hit (such as Blast weapons) must roll a D6 for each 
 Gets Hot and Re-rolls
 If a model has the ability to re-roll its rolls To Hit (including because of BS 6+ or the Twin-linked special rule), a Wound is only suffered if the To Hit re-roll is a 1; it may also re-roll Gets Hot results of 1 for weapons that do not roll To Hit.</description>
     </rule>
-    <rule id="5b9c-2738-616c-abdf" name="Graviton Pulse" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
-      <description>Instead of rolling To Wound normally with this weapon, any non-Vehicle model that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
+    <rule id="5b9c-2738-616c-abdf" name="Graviton Pulse" publicationId="91df-ed64-4216-5bab" page="2" hidden="false">
+      <description>Instead of rolling To Wound normally with this weapon, any model without the Vehicle, Dreadnought or Automata Unit Type that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
     </rule>
     <rule id="fa1e-0112-943e-b1f6" name="Guided Fire" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
       <description>Any attacks made using a weapon with this special rule do not require line of sight, but must still be within range.</description>
@@ -15157,12 +15270,12 @@ If, for any reason, a given instance of this rule does not have a value in brack
 
 The effects of this special rule only apply when a unit that has it begins an Assault phase not locked in combat and then either Charges or is Charged by an enemy unit. If an enemy unit Charges this unit when it is already locked in combat then that does count as a new ‘first’ turn of combat for the effects of Hatred.</description>
     </rule>
-    <rule id="1dd4-7a75-5c59-8425" name="Haywire" publicationId="e77a-823a-da94-16b9" page="240" hidden="false">
-      <description>When a weapon with this special rule Hits a model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:
+    <rule id="1dd4-7a75-5c59-8425" name="Haywire" publicationId="91df-ed64-4216-5bab" page="3" hidden="false">
+      <description>‘For each Hit inflicted on a unit that contains at least one model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:
 D6 Result
-1 No Effect.
-2-5 Vehicles suffer a Glancing Hit, other models suffer 1 Wound. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.
-6 Vehicles suffer a Penetrating Hit, Dreadnoughts and Automata suffer 1 Wound. No Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.</description>
+1: No Effect.
+2-5: Vehicles suffer a Glancing Hit, other models suffer 1 Wound. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.
+6: Vehicles suffer a Penetrating Hit, Dreadnoughts and Automata suffer 1 Wound. No Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.</description>
     </rule>
     <rule id="5986-e960-d432-affd" name="Hit &amp; Run" publicationId="e77a-823a-da94-16b9" page="240" hidden="false">
       <description>A unit that contains at least one model with this special rule that is locked in combat can choose to leave close combat at the end of any Assault phase. If the unit wishes to do so, it must take an Initiative test.
@@ -15274,8 +15387,8 @@ If a unit has both the Infiltrate and Scout special rules, that unit can deploy 
 
 Similarly, if a model makes a Shooting Attack with a weapon that has the Shred rule, it re-rolls its failed To Wound rolls.</description>
     </rule>
-    <rule id="9222-f6c5-dc19-905a" name="Shock Pulse" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
-      <description>Any Vehicle (including Super-heavy Vehicles), Dreadnought or Automata model that suffers a Penetrating Hit or unsaved Wound from a weapon with this special rule may only fire Snap Shots on the following Game Turn.</description>
+    <rule id="9222-f6c5-dc19-905a" name="Shock Pulse" publicationId="91df-ed64-4216-5bab" page="3" hidden="false">
+      <description>Any model with the Vehicle, Dreadnought or Automata Unit Type that suffers a Penetrating Hit or unsaved Wound from an attack with this special rule may only make Snap Shots when it next makes a Shooting Attack either as part of a Reaction or during its controlling player’s Shooting phase.</description>
     </rule>
     <rule id="46b7-63a1-941c-96a5" name="Shell Shock (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
       <description>Pinning tests taken due to an attack or weapon with this special rule are made with a penalty to Leadership Characteristic equal to the value listed as part of the special rule.
@@ -15414,7 +15527,7 @@ In addition, when moving in Hover mode, the controlling player may choose to inf
     <rule id="c6e2-3d5a-b8f9-005c" name="Neutron-flux" publicationId="a716-c1c4-7b26-8424" page="123" hidden="false">
       <description>A weapon with this special rule gains the Instant Death special rule when targeting models with the Automata Unit Type.</description>
     </rule>
-    <rule id="93e9-2806-e822-bfaf" name="Techmarine Covenant" publicationId="a716-c1c4-7b26-8424" page="125" hidden="false">
+    <rule id="93e9-2806-e822-bfaf" name="Techmarine Covenant (LA)" publicationId="a716-c1c4-7b26-8424" page="125" hidden="false">
       <description>A Techmarine Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Techmarine Covenant must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Techmarines that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Astartes (X) special rule as the Legion Techmarine, and may not join units with Terminator armour of any kind. Legion Techmarines that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Astartes (X) special rule as the Legion Techmarine, and any Legion Techmarines that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Astartes (X) special rule as the Legion Techmarine. No Legion Techmarine may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Legion Techmarine as normal during either deployment or any following turn). No more than one Legion Techmarine may be assigned to any given unit.
 Once assigned to a unit, the Legion Techmarine is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Legion Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Legion Techmarine as a casualty. When assigned to a unit, a Legion Techmarine gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
     </rule>
@@ -15608,8 +15721,8 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
     <rule id="c036-66e2-4e07-c2b8" name="Automated Artillery Sub-type" publicationId="e77a-823a-da94-16b9" page="16" hidden="false">
       <description>The following rules apply to all models with the Automated Artillery Sub-type:
 
-• A unit that includes one or more models with the Automated Artillery Sub-type may not Run,  declare or otherwise make Charge moves, or make Reactions.
-• A unit that includes one or more models with the Automated Artillery Sub-type may not make  Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
+• A unit that includes one or more models with the Automated Artillery Sub-type may not Run, declare or otherwise make Charge moves, and may only make the Interceptor Advanced Reaction.
+• A unit that includes one or more models with the Automated Artillery Sub-type may not make Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
 • A unit that includes one or more models with this Unit Sub-type may never hold or deny an Objective.</description>
     </rule>
     <rule id="1bdb-7155-7c6e-61e8" name="Orbital Defences" publicationId="d0df-7166-5cd3-89fd" page="101" hidden="false">
@@ -15742,6 +15855,10 @@ At the end of its controlling player’s following turn, the unit is no longer S
           </conditions>
         </modifier>
       </modifiers>
+    </rule>
+    <rule id="1f8d-3016-a561-c849" name="Techmarine Covenant (LH)" publicationId="a716-c1c4-7b26-8424" page="125" hidden="false">
+      <description>A Techmarine Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Techmarine Covenant must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Techmarines that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Hereticus (X) special rule as the Legion Techmarine, and may not join units with Terminator armour of any kind. Legion Techmarines that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Hereticus (X) special rule as the Legion Techmarine, and any Legion Techmarines that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Hereticus (X) special rule as the Legion Techmarine. No Legion Techmarine may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Legion Techmarine as normal during either deployment or any following turn). No more than one Legion Techmarine may be assigned to any given unit.
+Once assigned to a unit, the Legion Techmarine is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Legion Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Legion Techmarine as a casualty. When assigned to a unit, a Legion Techmarine gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

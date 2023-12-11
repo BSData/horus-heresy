@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3547-84d8-d789-bab7" name="LA -  XVIII: Salamanders" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="93d2-b1cb-b684-a9b3" name="XVIII: Salamanders" hidden="false" collective="false" import="false" targetId="c805-ca3a-ff93-5e2f" type="selectionEntry">
       <modifiers>
@@ -3615,41 +3615,6 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="7411-dded-ec1f-bb6d" name="Pyroclast Flame Projector" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65e7-d03c-1583-3aa6" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d90a-8acc-2324-9dd8" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="79df-2877-93f2-bad3" name="Pyroclast Flame Projector - Dispersed" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Dragon&apos;s Breath</characteristic>
-              </characteristics>
-            </profile>
-            <profile id="5734-2977-9bae-0276" name="Pyroclast Flame Projector - Focused" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="0ce0-4bed-203c-292c" name="Dragon&apos;s Breath" hidden="false" targetId="655c-988f-74b5-7e17" type="rule"/>
-            <infoLink id="fd22-8d76-6794-92cf" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Armourbane (Melta)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="e42d-59a0-15a8-4958" name="Dedicated Transport" hidden="false" collective="false" import="true">
@@ -3787,6 +3752,12 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a2b8-8c53-ad03-2d72" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2048-702a-e772-53d7" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Pyroclast Flame Projector" hidden="false" type="selectionEntry" id="6780-866e-d5-28c2" targetId="6251-5935-6cc1-da2f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a4a1-2e79-bc23-75fd"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75c5-16bf-3023-27f5"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -4180,7 +4151,7 @@
             <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="0f09-cbd9-a8be-5706" name="Two Gravis power fists with in-built Dragon’s breath heavy flamers.*" publicationId="d0df-7166-5cd3-89fd" page="69" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="0f09-cbd9-a8be-5706" name="Two Gravis power fists with in-built Pyroclast Flame Projectors.*" publicationId="d0df-7166-5cd3-89fd" page="69" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">*The additional close combat attacks are already included in profile.</characteristic>
           </characteristics>
@@ -4196,6 +4167,11 @@
       </rules>
       <infoLinks>
         <infoLink id="61e5-b6c9-2ba2-c317" name="Ferromantic Deflector" hidden="false" targetId="7884-e18a-16ee-068c" type="profile"/>
+        <infoLink name="It Will Not Die (X)" hidden="false" type="rule" id="16d8-138a-9a0b-7f0e" targetId="2784-d0be-a4e2-890f">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="3af7-46b2-2419-4a55" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
@@ -4228,15 +4204,6 @@
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73ca-d233-ba23-6352" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="edb7-11c3-d4c5-6818" name="Dragon&apos;s Breath Heavy Flamer" hidden="false" collective="false" import="true" targetId="1a5c-0c5f-d798-a067" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="In-built Dragon&apos;s Breath Heavy Flamer"/>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb96-3d6b-1505-61c9" type="max"/>
-            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6784-262f-b315-51f5" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="5e10-2ac4-044b-8d62" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -4267,9 +4234,15 @@
             </entryLink>
           </entryLinks>
         </entryLink>
+        <entryLink import="true" name="Pyroclast Flame Projector" hidden="false" type="selectionEntry" id="f0bd-ef09-3481-56fe" targetId="6251-5935-6cc1-da2f">
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ec6f-1f20-de56-8705"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="291-ad74-b11-7666"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="310"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74f6-96f4-ee55-9c78" name="Lord Chaplain Nomus Rhy&apos;Tan" hidden="false" collective="false" import="true" type="unit">
@@ -4295,6 +4268,7 @@
       <categoryLinks>
         <categoryLink id="f22c-47a5-ca44-ccdc" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="b624-3e54-171d-2b09" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink targetId="3f99-ad1b-740b-862e" id="86b9-e65d-f24a-e97e" primary="false" name="The Awakening Fire (Chaplain)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ad7a-6a4c-6cc0-a007" name="Darkstar Falling" hidden="false" collective="false" import="true" type="upgrade">
@@ -4436,6 +4410,7 @@
       <categoryLinks>
         <categoryLink id="8e0a-7307-985f-50a6" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="4585-3e1e-8e4c-4a36" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+        <categoryLink targetId="3f99-ad1b-740b-862e" id="6c70-e974-dcd8-7193" primary="false" name="The Awakening Fire (Chaplain)"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="9c05-d6b4-ed8b-c06a" name="Ignatus" hidden="false" collective="false" import="true" type="upgrade">
@@ -5624,6 +5599,37 @@
         <infoLink name="Pinning" hidden="false" type="rule" id="55cc-d932-c0c9-1bdf" targetId="1c96-205c-59a0-3cf2"/>
         <infoLink name="Obsidite Rotor Cannon" hidden="false" type="profile" id="e085-ba23-5793-1bee" targetId="4d5a-8c58-eb3d-797f"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="6251-5935-6cc1-da2f" name="Pyroclast Flame Projector" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="748-61bc-1cf5-a9d4" name="Pyroclast Flame Projector - Dispersed" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Dragon&apos;s Breath</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="150a-b280-5854-6a26" name="Pyroclast Flame Projector - Focused" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="dc29-aa03-236e-29f4" name="Dragon&apos;s Breath" hidden="false" targetId="655c-988f-74b5-7e17" type="rule"/>
+        <infoLink id="f249-d4d4-1d89-e0d2" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Armourbane (Melta)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

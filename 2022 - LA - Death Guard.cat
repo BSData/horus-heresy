@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -4200,6 +4200,11 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           </modifiers>
         </infoLink>
         <infoLink id="355a-310f-4c86-d4dd" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
+        <infoLink name="Shrouded (X)" hidden="false" type="rule" id="aa76-d7d0-4803-de11" targetId="10c3-fdb0-089f-ca65">
+          <modifiers>
+            <modifier type="set" value="Shrouded (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="09dd-97f2-3578-0b77" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -4486,6 +4491,12 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46fd-fe67-5427-3aa5" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38e4-4d93-6eff-0ca8" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Master of the Legion" hidden="false" type="selectionEntry" id="d79f-1e64-6976-8583" targetId="0068-6b0a-0086-3d6b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ceb-8b6a-ec1f-7161"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17ec-2488-4c04-a107"/>
           </constraints>
         </entryLink>
       </entryLinks>
