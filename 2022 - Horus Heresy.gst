@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="93" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
-    <publication id="e2a4-ac85-1bef-22f5" name="GitHub" publisherUrl="https://github.com/BSData/horus-heresy"/>
+    <publication name="GitHub" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
     <publication id="09c5-eeae-f398-b653" name="Liber Hereticus – Traitor Legiones Astartes Army Book" shortName="LA - Traitor" publicationDate="June 2022"/>
     <publication id="a716-c1c4-7b26-8424" name="Both Astartes Army Books" publicationDate="June 2022"/>
@@ -13,19 +13,18 @@
     <publication id="8200-f05a-6e7d-9326" name="Liber Mechanicum Errata and FAQ V1.0" shortName="LM - Errata and FAQ" publicationDate="Sept 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf"/>
     <publication id="d640-8853-3dd7-26a6" name="Liber Hereticus and Astartes Errata and FAQ V1.1" shortName="LH - Errata and FAQ" publicationDate="Dec 2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/yPxvcNBwok6C9Wb0.pdf"/>
     <publication id="15a4-fc68-502d-48a9" name="Liber Imperium"/>
-    <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publisher="Warhammer Community" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/DLUIKkCO4FXVnt5L.pdf"/>
+    <publication id="cb13-da24-e6da-75b3" name="Exemplary Battles of The Age of Darkness - The Burning of Ohmn-Mat" shortName="EBoAoD - TBoO-M" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/03/DLUIKkCO4FXVnt5L.pdf" publisher="Warhammer Community"/>
     <publication id="48c2-d023-0069-001a" name="Legacies of The Age of Darkness - The Imperialis Militia v1.1" shortName="Imperialis Militia" publisher="The Imperialis Militia" publicationDate="December 23" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/lTr1xea8kB5tsF5P.pdf"/>
     <publication id="53a4-0d21-2f8a-2c45" name="Campaigns of the Age of Darkness - The Siege of Cthonia" shortName="CotAoD - SoC" publicationDate="May 2023"/>
-    <publication id="6bcf-2297-2bcd-51be" name="Exemplary Battles of the Age of Darkness - The Depths of Tredecimmia" shortName="EBoAoD - TDoT" publisher="Warhammer Community" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/08/jWzm77om6hHC5cfH.pdf"/>
-    <publication id="44e-19f2-a369-b04e" name="Exemplary Battles of The Age of Darkness - The Battle for Felweather Keep" shortName="EBoAoD - TBoFK" publicationDate="12 Sept 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/09/ErwDltU5NorvlrhH.pdf"/>
-    <publication id="8775-88f5-cfdd-24f6" name="Legacies of The Age of Darkness - Daemons of the Ruinstorm" shortName="Daemons of the Ruinstorm" publicationDate="Oct 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/10/ylWxyIzI3lS6fEE9.pdf"/>
-    <publication id="7f9d-5e88-241d-e861" name="Exemplary Battles of Age of Darkness Volume 1" shortName="EBoAoD V1" publicationDate="Oct 2023"/>
-    <publication id="bc5c-e6fb-985f-81be" name="Exemplary Battles of The Age of Darkness - Liberation of Constanix II"/>
+    <publication name="Exemplary Battles of the Age of Darkness - The Depths of Tredecimmia" hidden="false" id="6bcf-2297-2bcd-51be" shortName="EBoAoD - TDoT" publisher="Warhammer Community" publicationDate="Oct 2023 (V2)" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/08/jWzm77om6hHC5cfH.pdf"/>
+    <publication name="Exemplary Battles of The Age of Darkness - The Battle for Felweather Keep" hidden="false" id="44e-19f2-a369-b04e" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/09/ErwDltU5NorvlrhH.pdf" publicationDate="12 Sept 2023" shortName="EBoAoD - TBoFK"/>
+    <publication name="Legacies of The Age of Darkness - Daemons of the Ruinstorm" hidden="false" id="8775-88f5-cfdd-24f6" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/10/ylWxyIzI3lS6fEE9.pdf" shortName="Daemons of the Ruinstorm" publicationDate="Oct 2023"/>
+    <publication name="Exemplary Battles of Age of Darkness Volume 1" hidden="false" id="7f9d-5e88-241d-e861" shortName="EBoAoD V1" publicationDate="Oct 2023"/>
+    <publication name="Exemplary Battles of The Age of Darkness - Liberation of Constanix II" hidden="false" id="bc5c-e6fb-985f-81be"/>
     <publication id="91df-ed64-4216-5bab" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2" shortName="Main Rules Errata and FAQ V1.2" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/w5Pm3yiEFnjISb6h.pdf"/>
     <publication id="2660-aa44-b169-2b1f" name="Liber Astartes Errata and FAQ V1.2" shortName="LA - Errata and FAQ V1.2" publicationDate="Dec 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/O0XmE9KIYFCQHlsf.pdf"/>
     <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions Astartes v1.2" shortName="LotAoD -LA" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/MMB9m4lXuQoZHb9r.pdf"/>
-    <publication id="8a01-dba6-9a18-e85e" name="New Publication"/>
-    <publication id="e77a-823a-da94-16b9" name="HH2 - Age of Darkness Rulebook"/>
+    <publication name="HH2 - Age of Darkness Rulebook" hidden="false" id="e77a-823a-da94-16b9"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -886,19 +885,19 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </categoryEntry>
     <categoryEntry id="8247-54dc-9194-948f" name="Siege Breaker:" hidden="false">
       <modifiers>
-        <modifier type="set" field="d132-946e-6aac-db7" value="1">
+        <modifier type="set" value="1" field="d132-946e-6aac-db7" id="b327-cb5d-136f-57ce">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d75-f1c7-d6a7-a055" type="atLeast"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="5d75-f1c7-d6a7-a055" shared="true" id="2952-9f50-c25e-8ca9" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="6e1e-8616-6e4a-173d" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d132-946e-6aac-db7" type="min"/>
+        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="d132-946e-6aac-db7" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
     <categoryEntry id="2440-b64e-cb24-87f0" name="Cybernetica Sub-type:" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
@@ -1276,18 +1275,22 @@ Reactions:
     </categoryEntry>
     <categoryEntry id="4280-2d8-16c6-d60b" name="Titan Sub-type" hidden="false">
       <infoLinks>
-        <infoLink id="400b-3ae9-44d5-6df1" name="Knights and Titans" hidden="false" targetId="d0e-e683-6ab9-4f0" type="rule"/>
+        <infoLink name="Knights and Titans" hidden="false" type="rule" id="400b-3ae9-44d5-6df1" targetId="d0e-e683-6ab9-4f0"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="aa94-5c65-d1f1-46a4" name="Unique Sub-type" hidden="false"/>
-    <categoryEntry id="ed41-7006-3494-4c24" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false"/>
-    <categoryEntry id="5d31-e5d-67bd-1083" name="Ætheric Dominion (Whole Army)" hidden="false"/>
-    <categoryEntry id="1292-421a-85aa-c1bc" name="Daemon Primarch Unit Type" publicationId="7f9d-5e88-241d-e861" page="102" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bcc1-9fbf-4c78-275" type="max"/>
-      </constraints>
+    <categoryEntry name="Unique Sub-type" hidden="false" id="aa94-5c65-d1f1-46a4"/>
+    <categoryEntry name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="ed41-7006-3494-4c24"/>
+    <categoryEntry name="Ætheric Dominion (Whole Army)" hidden="false" id="5d31-e5d-67bd-1083"/>
+    <categoryEntry name="Daemon Primarch Unit Type" hidden="false" id="1292-421a-85aa-c1bc" publicationId="7f9d-5e88-241d-e861" page="102">
+      <infoLinks>
+        <infoLink name="Eternal Warrior" hidden="false" type="rule" id="4e99-a42b-4767-8967" targetId="000b-fe96-31f8-c0ad"/>
+        <infoLink name="Fear (X)" hidden="false" type="rule" id="4196-cff0-2092-9208" targetId="21f6-7842-df5c-d2e7"/>
+        <infoLink name="It Will Not Die (X)" hidden="false" type="rule" id="3aa-3754-1cba-790b" targetId="2784-d0be-a4e2-890f"/>
+        <infoLink name="Bulky (X)" hidden="false" type="rule" id="792d-98ee-38cb-138c" targetId="676c-7b75-4b6f-9405"/>
+        <infoLink name="Relentless" hidden="false" type="rule" id="c8c0-460c-f0cc-a59" targetId="7adf-ac9a-5035-522d"/>
+      </infoLinks>
       <rules>
-        <rule id="9045-8f1d-e415-744e" name="Daemon Primarch Unit Type" publicationId="7f9d-5e88-241d-e861" page="102" hidden="false">
+        <rule name="Daemon Primarch Unit Type" hidden="false" id="9045-8f1d-e415-744e" publicationId="7f9d-5e88-241d-e861" page="102">
           <description>• All models with the Daemon Primarch Unit Type have the following special rules: Independent Character, Eternal Warrior, Fear (2), It Will Not Die (5+), Bulky (6), and Relentless. In addition, all models with the Daemon Primarch Unit Type always count as Character models.
 • Models with the Daemon Primarch Unit Type are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, models with the Daemon Primarch Unit Type always resolve Snap Shots at their normal BS.
 • All models with the Daemon Primarch Unit Type are immune to the effects of the Fear (X) special rule, cannot be Pinned, and a unit that includes one or more models with the Daemon Primarch Unit Type automatically passes Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit that includes one or more models with the Daemon Primarch Unit Type fails a Morale check, the unit does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed which must be allocated to a model with the Daemon Primarch or Daemon Unit Type or the Corrupted Unit Sub-type.
@@ -1296,23 +1299,16 @@ Reactions:
 • For the purposes of any special rule that affects or has additional effects that target models with the Daemon or Primarch Unit Type, a model with the Daemon Primarch Unit Type is considered to have the Daemon and Primarch Unit Types</description>
         </rule>
       </rules>
-      <infoLinks>
-        <infoLink id="4e99-a42b-4767-8967" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
-        <infoLink id="4196-cff0-2092-9208" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule"/>
-        <infoLink id="3aa-3754-1cba-790b" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
-        <infoLink id="792d-98ee-38cb-138c" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule"/>
-        <infoLink id="c8c0-460c-f0cc-a59" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-      </infoLinks>
+      <constraints>
+        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bcc1-9fbf-4c78-275" type="max"/>
+      </constraints>
     </categoryEntry>
     <categoryEntry id="d684-5b63-caa7-adc4" name="Legiones Hereticus" hidden="false"/>
-    <categoryEntry id="dfbc-8edd-e14f-fd80" name="Forge Remnants - Militia Krios Squadron" hidden="false"/>
-    <categoryEntry id="b81a-8f4a-ff50-ef99" name="Primus Medicae" hidden="false"/>
+    <categoryEntry name="Forge Remnants - Militia Krios Squadron" hidden="false" id="dfbc-8edd-e14f-fd80"/>
+    <categoryEntry name="Primus Medicae" hidden="false" id="b81a-8f4a-ff50-ef99"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
-      <constraints>
-        <constraint field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3d1-165c-4e16-e5fc" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="d65e-4a0a-fa1a-7ec6" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="17a5-4c80-0c5d-df4d" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
@@ -1324,43 +1320,43 @@ Reactions:
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="fd89-b215-5545-17c6" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
-        <categoryLink id="7ca6-11db-c5c6-4858" name="Ruinstorm Ætheric Dominion (Whole Army)" hidden="false" targetId="5d31-e5d-67bd-1083" primary="false">
+        <categoryLink name="Ruinstorm Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083" type="category">
           <modifiers>
-            <modifier type="set" field="5cdb-d88d-5c88-7ff1" value="1">
+            <modifier type="set" value="1" field="5cdb-d88d-5c88-7ff1">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="b58e-f1a1-e46a-bf94" value="1">
+            <modifier type="set" value="1" field="b58e-f1a1-e46a-bf94">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="7bd-8af-adff-1daa" value="1">
+            <modifier type="set" value="1" field="7bd-8af-adff-1daa">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cdb-d88d-5c88-7ff1" type="min"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b58e-f1a1-e46a-bf94" type="max"/>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bd-8af-adff-1daa" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5cdb-d88d-5c88-7ff1"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b58e-f1a1-e46a-bf94"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="7bd-8af-adff-1daa"/>
           </constraints>
         </categoryLink>
         <categoryLink id="cb59-2a42-9e16-fbe7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
@@ -1394,7 +1390,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="1db1-1803-cee1-86cb" value="1">
+            <modifier type="increment" value="1" field="1db1-1803-cee1-86cb">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf10-c83b-b8ed-aaf1" type="atLeast"/>
               </conditions>
@@ -1615,14 +1611,14 @@ Reactions:
         </categoryLink>
         <categoryLink id="2545-86dd-f928-73f3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false">
           <infoLinks>
-            <infoLink id="986d-7ecf-f212-2602" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
+            <infoLink name="Stubborn" hidden="false" type="rule" id="986d-7ecf-f212-2602" targetId="7989-1f2c-a43d-82ae">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8e9-ff9b-f862-b065" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="name" value="Stubborn (if one model is within 6&quot; of an objective)"/>
+                <modifier type="set" value="Stubborn (if one model is within 6&quot; of an objective)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -1649,13 +1645,13 @@ Reactions:
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9d7-eb22-6674-6508" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="1c43-e3d1-a119-885c" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" targetId="ed41-7006-3494-4c24" primary="false"/>
+        <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="1c43-e3d1-a119-885c" targetId="ed41-7006-3494-4c24" type="category"/>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f3d1-165c-4e16-e5fc"/>
+      </constraints>
     </forceEntry>
     <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
-      <constraints>
-        <constraint field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a036-22f7-6cbf-6ebd" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="45cc-4d1d-6d5e-cdc9" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
@@ -1666,43 +1662,43 @@ Reactions:
         <categoryLink id="b5a1-9980-4945-e1aa" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="b120-b516-728b-11f1" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="dd4c-2612-511f-98f7" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
-        <categoryLink id="723-4837-8ae9-8d63" name="Ætheric Dominion (Whole Army)" hidden="false" targetId="5d31-e5d-67bd-1083" primary="false">
+        <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="723-4837-8ae9-8d63" targetId="5d31-e5d-67bd-1083">
           <modifiers>
-            <modifier type="set" field="fb0c-f76f-e358-d1ab" value="1">
+            <modifier type="set" value="1" field="fb0c-f76f-e358-d1ab">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="dab4-35a2-80ba-cce6" value="1">
+            <modifier type="set" value="1" field="dab4-35a2-80ba-cce6">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="5cc4-fa10-a543-a17f" value="1">
+            <modifier type="set" value="1" field="5cc4-fa10-a543-a17f">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb0c-f76f-e358-d1ab" type="min"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab4-35a2-80ba-cce6" type="max"/>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cc4-fa10-a543-a17f" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="fb0c-f76f-e358-d1ab"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="dab4-35a2-80ba-cce6"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="5cc4-fa10-a543-a17f"/>
           </constraints>
         </categoryLink>
         <categoryLink id="0b76-5263-40ac-0721" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
@@ -1726,7 +1722,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="e335-2401-dec4-2d28" value="1">
+            <modifier type="increment" value="1" field="e335-2401-dec4-2d28">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf10-c83b-b8ed-aaf1" type="atLeast"/>
               </conditions>
@@ -1871,11 +1867,11 @@ Reactions:
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
+      </constraints>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="Mortalis Assault Force Organisation Chart" hidden="false">
-      <constraints>
-        <constraint field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce4d-7e2a-4698-b234" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="e7a4-a234-6cc7-f1b7" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="3ce7-6f89-a347-b6ad" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
@@ -1887,43 +1883,43 @@ Reactions:
         <categoryLink id="e983-382e-a5c8-f531" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="5f35-9da8-f131-1f90" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="a23c-357c-3c10-db1f" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
-        <categoryLink id="8ed0-dc42-a148-4a7c" name="Ætheric Dominion (Whole Army)" hidden="false" targetId="5d31-e5d-67bd-1083" primary="false">
+        <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="8ed0-dc42-a148-4a7c" targetId="5d31-e5d-67bd-1083">
           <modifiers>
-            <modifier type="set" field="14df-1299-987e-6288" value="1">
+            <modifier type="set" value="1" field="14df-1299-987e-6288">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="3f9f-98f3-92ec-dd51" value="1">
+            <modifier type="set" value="1" field="3f9f-98f3-92ec-dd51">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="6deb-ff9f-5d07-dab5" value="1">
+            <modifier type="set" value="1" field="6deb-ff9f-5d07-dab5">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14df-1299-987e-6288" type="min"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f9f-98f3-92ec-dd51" type="max"/>
-            <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6deb-ff9f-5d07-dab5" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="14df-1299-987e-6288"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3f9f-98f3-92ec-dd51"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="6deb-ff9f-5d07-dab5"/>
           </constraints>
         </categoryLink>
         <categoryLink id="a33f-77fb-a40c-03ff" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="false">
@@ -1947,7 +1943,7 @@ Reactions:
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="increment" field="b42f-91d7-ae43-4915" value="1">
+            <modifier type="increment" value="1" field="b42f-91d7-ae43-4915">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf10-c83b-b8ed-aaf1" type="atLeast"/>
               </conditions>
@@ -2126,11 +2122,11 @@ Reactions:
           </constraints>
         </categoryLink>
       </categoryLinks>
-    </forceEntry>
-    <forceEntry id="58a7-8821-3cd9-c73" name="Lord of War Detachment" hidden="false">
       <constraints>
-        <constraint field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2e7-a23b-9550-671a" type="max"/>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ce4d-7e2a-4698-b234"/>
       </constraints>
+    </forceEntry>
+    <forceEntry name="Lord of War Detachment" hidden="false" id="58a7-8821-3cd9-c73">
       <categoryLinks>
         <categoryLink id="e24b-bfb4-de7b-706c" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="e3e4-a857-9bd2-3a33" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
@@ -2139,23 +2135,23 @@ Reactions:
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5d7-4106-7aff-c4c7" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="b22b-446e-4bbd-267b" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="false">
+        <categoryLink name="Lords of War:" hidden="false" id="b22b-446e-4bbd-267b" targetId="c658-dc6b-727b-c488" type="category">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ed14-42fc-d5e5-4942" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ff8-b5b1-7226-6a49" includeChildSelections="true"/>
+          </constraints>
           <modifiers>
-            <modifier type="set" field="ff8-b5b1-7226-6a49" value="0">
+            <modifier type="set" value="0" field="ff8-b5b1-7226-6a49">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="b5b7-3410-a8e5-95a6" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="e20d-6f02-d7d5-395f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ed14-42fc-d5e5-4942" type="min"/>
-            <constraint field="forces" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ff8-b5b1-7226-6a49" type="max"/>
-          </constraints>
         </categoryLink>
         <categoryLink id="7830-1ff6-6c95-2493" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false">
           <modifiers>
@@ -2170,6 +2166,9 @@ Reactions:
           </constraints>
         </categoryLink>
       </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c2e7-a23b-9550-671a"/>
+      </constraints>
     </forceEntry>
   </forceEntries>
   <selectionEntries>
@@ -2221,15 +2220,15 @@ Reactions:
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d8-ddbf-ce7b-78f9" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="edec-c227-3cb6-85ff" value="0"/>
-      </modifiers>
+    <selectionEntry type="upgrade" import="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="7d8-ddbf-ce7b-78f9">
+      <categoryLinks>
+        <categoryLink targetId="ed41-7006-3494-4c24" id="8e06-717c-a608-c888" primary="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;"/>
+      </categoryLinks>
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edec-c227-3cb6-85ff" type="min"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edec-c227-3cb6-85ff"/>
       </constraints>
       <rules>
-        <rule id="b1e1-9f1d-7934-c233" name="LoW (where are they?) THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false">
+        <rule name="LoW (where are they?) THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
           <description>To add Lords of War you now need to add the additional detachment to your list. To do this:
 
 A - On Mobile, after adding your initial detachment, press the + sign at the bottom left
@@ -2238,12 +2237,9 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
 THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEFULLY EVERYONE WILL BE USED TO WHERE THE NEW LOCATION IS, AND I DON’T GET 100S OF BUG REPORTS FROM PEOPLE NOT BEING ABLE TO FIND THEIR LOW</description>
         </rule>
       </rules>
-      <categoryLinks>
-        <categoryLink id="8e06-717c-a608-c888" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" targetId="ed41-7006-3494-4c24" primary="true"/>
-      </categoryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="edec-c227-3cb6-85ff"/>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2651,7 +2647,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8813-9063-c930-0a4b" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="268b-74a8-395f-6f27" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2667,7 +2663,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e1e-8616-6e4a-173d" type="equalTo"/>
                 <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8813-9063-c930-0a4b" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-3047-fb26-d097" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="268b-74a8-395f-6f27" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -2676,7 +2672,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3e8-0a70-c24d-e6f0" type="max"/>
         <constraint field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9077-55c5-1076-ae5b" type="min"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b648-5786-d5f0-2bb1" type="min"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b648-5786-d5f0-2bb1"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5521,30 +5517,30 @@ Example: A heavy bolter with a suspensor web, which is usually a Range 36&quot; 
     <selectionEntry id="ec12-df00-ad8a-1f59" name="Command Vox Relay" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
         <profile id="988d-6f67-d24b-0bc7" name="Command Vox Relay (LA)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Command Vox Relay"/>
-          </modifiers>
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Astartes special rule that are within 18&quot; or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used.</characteristic>
           </characteristics>
-        </profile>
-        <profile id="2fa8-4ba-4b40-f6fb" name="Command Vox Relay (LH)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="equalTo"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="name" value="Command Vox Relay"/>
+            <modifier type="set" value="Command Vox Relay" field="name"/>
           </modifiers>
+        </profile>
+        <profile id="2fa8-4ba-4b40-f6fb" name="Command Vox Relay (LH)" publicationId="a716-c1c4-7b26-8424" page="141" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">While any model with the Character Sub-type is Embarked upon a model with this special rule, friendly units with the same version of the Legiones Hereticus special rule that are within 18&quot; or that include a model with a nuncio-vox may use the Embarked model’s Leadership Characteristic for Morale checks and Pinning tests. If more than one model with the Character Sub-type is Embarked upon a model with this special rule then the controlling player chooses which model’s Leadership Characteristic is used.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Command Vox Relay" field="name"/>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -7039,7 +7035,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
-                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="58a7-8821-3cd9-c73" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="58a7-8821-3cd9-c73" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7271,8 +7267,11 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
       </costs>
     </selectionEntry>
     <selectionEntry id="f227-a61a-3215-932b" name="Heavy Stubber" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
       <profiles>
-        <profile id="129d-1b6c-7ba2-29ec" name="Heavy Stubber" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+        <profile name="Heavy Stubber" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="129d-1b6c-7ba2-29ec">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -7281,9 +7280,6 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
           </characteristics>
         </profile>
       </profiles>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
     </selectionEntry>
     <selectionEntry id="aa57-fc73-86fe-217c" name="Inferno Gun" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -10502,43 +10498,39 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bf10-c83b-b8ed-aaf1" name="Ally of the Silent Order" hidden="false" collective="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ally of the Silent Order" hidden="false" id="bf10-c83b-b8ed-aaf1"/>
     <selectionEntry id="afca-3047-fb26-d097" name="Daemons of the Ruinstorm" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="a533-2076-2a0e-ea48" value="0">
+        <modifier type="set" value="0" field="a533-2076-2a0e-ea48">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0fc8-91be-dcf4-1513" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d601-e213-fa45-8ee8" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="807e-0cf8-7f28-7b6d" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5522-4fd9-12d5-460afds" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddf5-d792-3146-6e9a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f689-fd0d-ffb0-c255" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2b4-2198-0b90-dd9f" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5f54-457a-fbb9-6730" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296e-301e-3ce1-1c15" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4916-965e-8339-44f6" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0e1-f2c4-8bcd-0723" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b28b-71f7-e4f4-8f9c" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfc9-c99c-bf8a-3917" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e0f-3552-8842-f281" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd1f-1c51-706c-e5f7" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dc34-fe08-dd44-fb99" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="21c3-2f28-7820-e51a" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="01b4-57c7-bf61-2abf" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c805-ca3a-ff93-5e2f" type="atLeast"/>
-                <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0fc8-91be-dcf4-1513" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="47f0-bba9-6d89-9baa" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5522-4fd9-12d5-460afds" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d0b6-712f-0b12-a308" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ddf5-d792-3146-6e9a" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="f689-fd0d-ffb0-c255" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b2b4-2198-0b90-dd9f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3edc-a1b9-6dc6-b1ea" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5f54-457a-fbb9-6730" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="296e-301e-3ce1-1c15" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="e01e-5cdd-e512-8353" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="4916-965e-8339-44f6" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="a0e1-f2c4-8bcd-0723" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="b28b-71f7-e4f4-8f9c" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="bfc9-c99c-bf8a-3917" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="90ee-77dd-1b7f-ddfe" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8e0f-3552-8842-f281" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="dd1f-1c51-706c-e5f7" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="dc34-fe08-dd44-fb99" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="21c3-2f28-7820-e51a" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="01b4-57c7-bf61-2abf" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="9dbf-0760-d7ae-f125" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c805-ca3a-ff93-5e2f" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="c0df-c1fa-5ddc-9ee5" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -10669,9 +10661,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           </modifiers>
         </infoLink>
       </infoLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -10682,15 +10671,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </constraints>
       <selectionEntries>
         <selectionEntry id="b2b4-2198-0b90-dd9f" name="I: Dark Angels" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="dcfc-5650-81cf-8c12" name="I: Dark Angels Advanced Reaction" publicationId="817a-6288-e016-7469" page="152" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-              <characteristics>
-                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (Dark Angels) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game-changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
-
-The Angels of Death – This Advanced Reaction may be made once per battle, when a Charge is declared for an enemy unit targeting one of the Reactive player’s units. Before the Charge is resolved, the Reactive player must make a Leadership test using the lowest Leadership Characteristic in the unit making this Reaction. If the Leadership test is passed then all models in the Reacting unit gain the Fearless and Fear (2) special rules until the end of the controlling player’s next turn. If the Leadership test is failed then all models in the unit making this Reaction instead gain the Stubborn and Fear (1) special rules until the end of the controlling player’s next turn.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <rules>
             <rule id="0d8d-2e8f-a616-d339" name="The Armoury of the Dark Angels" hidden="false">
               <description>• Any model with the Character Unit Sub-type and the Legiones Astartes (Dark Angels) special rule may exchange a power sword for a Calibanite warblade for +5 Points, The weapon is counted as a &quot;Power&quot; Weapon for those rules that affect such weapons.
@@ -10709,26 +10689,26 @@ The Angels of Death – This Advanced Reaction may be made once per battle, when
 • A Paladin of the Hekatonystika must take a Terranic greatsword for no additional points cost.</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="470d-555a-4e1a-740f" name="Legiones Astartes (Dark Angels)" hidden="false" targetId="513e-0647-996a-6229" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="c74-4e5d-ce4b-1484" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="3edc-a1b9-6dc6-b1ea" name="III: Emperor&apos;s Children" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="c74-4e5d-ce4b-1484" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Dark Angels)" hidden="false" type="rule" id="470d-555a-4e1a-740f" targetId="513e-0647-996a-6229"/>
+          </infoLinks>
           <profiles>
-            <profile id="deb1-cf58-608-8886" name="Emperor’s Children Advanced Reaction" publicationId="09c5-eeae-f398-b653" page="151" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="I: Dark Angels Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="dcfc-5650-81cf-8c12" publicationId="817a-6288-e016-7469" page="152">
               <characteristics>
-                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (Dark Angels) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game-changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
-The Perfect Counter – This Advanced Reaction may be made once per battle during the opposing player’s Assault phase when any enemy unit declares a Charge targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. When a Charge Distance roll is made for the enemy unit making the Charge, the Reactive player must also make a Charge Distance roll for the Reacting unit. If the result of the Reacting unit’s Charge Distance roll is equal to or greater than that of the enemy unit then the Reactive player may choose to make a Charge with the Reacting unit immediately (cancelling the enemy unit’s Charge if it is successful and gaining all the usual benefits of a successful Charge) or if the Reacting player’s Charge Distance roll is lower than that of the enemy unit, the Reactive player may choose to have the unit make a Shooting Attack targeting the enemy unit and which must be fully resolved before the enemy unit resolves its own Charge. A unit that makes a Shooting Attack as part of a The Perfect Counter Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and models with the Vehicle Unit Type may only fire Defensive weapons. Template weapons may only be used as part of a The Perfect Counter Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally.</characteristic>
+The Angels of Death – This Advanced Reaction may be made once per battle, when a Charge is declared for an enemy unit targeting one of the Reactive player’s units. Before the Charge is resolved, the Reactive player must make a Leadership test using the lowest Leadership Characteristic in the unit making this Reaction. If the Leadership test is passed then all models in the Reacting unit gain the Fearless and Fear (2) special rules until the end of the controlling player’s next turn. If the Leadership test is failed then all models in the unit making this Reaction instead gain the Stubborn and Fear (1) special rules until the end of the controlling player’s next turn.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry id="3edc-a1b9-6dc6-b1ea" name="III: Emperor&apos;s Children" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="b35c-3f2d-e16a-54fb" name="The Armoury of the Emperor&apos;s Children" hidden="false">
               <description>• Any model with the Traitor Alliegance and both the Legiones Astartes (Emperor&apos;s Children) and Character Unit Sub-type but not the Unique Sub-type may select a single Surgical Augment from the list below for a cost of +20 Points
@@ -10748,19 +10728,42 @@ The Perfect Counter – This Advanced Reaction may be made once per battle durin
 • The Phoenix Warden gains a Phoenix Pattern Power Weapon of any kind and a Iron Halo at no additional points cost.</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="a005-e93d-14c6-9a8" name="Legiones Astartes (Emperor&apos;s Children)" hidden="false" targetId="4a36-8b9d-6b6c-51e1" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="3556-a510-32b5-b98b" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="3556-a510-32b5-b98b" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Emperor&apos;s Children)" hidden="false" type="rule" id="a005-e93d-14c6-9a8" targetId="4a36-8b9d-6b6c-51e1"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Emperor’s Children Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="deb1-cf58-608-8886" publicationId="09c5-eeae-f398-b653" page="151">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+The Perfect Counter – This Advanced Reaction may be made once per battle during the opposing player’s Assault phase when any enemy unit declares a Charge targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Emperor’s Children) special rule. When a Charge Distance roll is made for the enemy unit making the Charge, the Reactive player must also make a Charge Distance roll for the Reacting unit. If the result of the Reacting unit’s Charge Distance roll is equal to or greater than that of the enemy unit then the Reactive player may choose to make a Charge with the Reacting unit immediately (cancelling the enemy unit’s Charge if it is successful and gaining all the usual benefits of a successful Charge) or if the Reacting player’s Charge Distance roll is lower than that of the enemy unit, the Reactive player may choose to have the unit make a Shooting Attack targeting the enemy unit and which must be fully resolved before the enemy unit resolves its own Charge. A unit that makes a Shooting Attack as part of a The Perfect Counter Reaction may not make any attacks indirectly (without line of sight) including weapons with the Barrage special rule or other weapons or special rules that otherwise ignore line of sight, and models with the Vehicle Unit Type may only fire Defensive weapons. Template weapons may only be used as part of a The Perfect Counter Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="5f54-457a-fbb9-6730" name="IV: Iron Warriors" hidden="false" collective="false" import="true" type="upgrade">
+          <rules>
+            <rule id="fc44-1c30-d724-14cf" name="Wrack &amp; Ruin" hidden="false">
+              <description>When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="15c8-8058-b466-bd96" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Iron Warriors)" hidden="false" type="rule" id="164d-6abb-50cd-5009" targetId="c77b-f3fc-5dc8-1330"/>
+          </infoLinks>
           <profiles>
-            <profile id="d661-604e-da2a-e7f9" name="Iron Warriors Advanced Reaction" publicationId="09c5-eeae-f398-b653" page="175" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Iron Warriors Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="d661-604e-da2a-e7f9" publicationId="09c5-eeae-f398-b653" page="175">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Iron Warriors) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -10768,31 +10771,8 @@ Bitter Fury – Bitter Fury – This Advanced Reaction may be made once per batt
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="fc44-1c30-d724-14cf" name="Wrack &amp; Ruin" hidden="false">
-              <description>When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="164d-6abb-50cd-5009" name="Legiones Astartes (Iron Warriors)" hidden="false" targetId="c77b-f3fc-5dc8-1330" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="15c8-8058-b466-bd96" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry id="e01e-5cdd-e512-8353" name="V: White Scars" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="a1d6-726c-512b-d23a" name="White Scars Advanced Reaction" publicationId="817a-6288-e016-7469" page="177" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-              <characteristics>
-                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (White Scars) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
-
-Chasing the Wind – This Advanced Reaction may be made once per battle during the opposing player’s Movement phase when any enemy unit ends a Move with any of its models within 12&quot; of any model in a friendly unit under the Reactive player’s control with the Legiones Astartes (White Scars) special rule. Once the enemy Move that triggers this Reaction is completely resolved, all friendly units composed entirely of models with the Legiones Astartes (White Scars) special rule within 12&quot; of that enemy unit’s final position may immediately make a normal Move – such units may choose to activate Jump Packs to increase their Movement, but may not choose to Run. This move is subject to all the normal penalties for Difficult Terrain, Dangerous Terrain and units that are Pinned, locked in combat or otherwise unable to move may not move due to this Reaction.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <rules>
             <rule id="ad49-4098-2037-6dda" name="The Armoury of the White Scars" hidden="false">
               <description>• Any model with both the Legiones Astartes (White Scars) and Independent Character sepcial rules, but not the Unique Sub-type, may exchange a Legion Scimitar jetbike for a Legion Shamshir jetbike for no additional points cost. A Legion Shamshir jetbike has one Scatterbolt Launcher, in addition, a model with a Legion Shamshir Jetbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player&apos;s next turn. A model with the Infantry Unit Type that selects a Legion Shamshir Jetbike as an upgrade must change its unit type to Cavalry (Antigrav), keeping any other Unit Sub-types it previously had, Changes it&apos;s movement characteristic to 15&quot;, gains the Firing Protocls (2) and Hammer of Wrath (1) special rules and improved its Armour Save to 2+ if it was worse.
@@ -10812,26 +10792,26 @@ Chasing the Wind – This Advanced Reaction may be made once per battle during t
 • A Stormseer may replace a power weapon, bolt pistol or combi-bolter with a force weapon at no additional points cost. In additon a  Stormseer may take a psychic hood for +15 points.</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="cc50-dfaf-f8a8-58e2" name="Legiones Astartes (White Scars)" hidden="false" targetId="4b54-8bd0-9fdd-cbc4" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="7605-8be-5a51-7fbc" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="4916-965e-8339-44f6" name="VI: Space Wolves" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="7605-8be-5a51-7fbc" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (White Scars)" hidden="false" type="rule" id="cc50-dfaf-f8a8-58e2" targetId="4b54-8bd0-9fdd-cbc4"/>
+          </infoLinks>
           <profiles>
-            <profile id="5f84-251e-fad7-93d8" name="Space Wolves Advanced Reaction" publicationId="817a-6288-e016-7469" page="197" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="White Scars Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="a1d6-726c-512b-d23a" publicationId="817a-6288-e016-7469" page="177">
               <characteristics>
-                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (Space Wolves) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (White Scars) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
-No Prey Escapes the Wolf – This Advanced Reaction may be made once per battle in the opposing player’s turn, when any enemy unit with one or more models within 12&quot; of a friendly unit made up entirely of models with the Legiones Astartes (Space Wolves) special rule is moved during the Movement phase. Once the enemy unit that triggered this Reaction has been moved, but before any other units are moved, a single friendly unit made up entirely of models with the Legiones Astartes (Space Wolves) special rule that can draw a line of sight to the enemy unit that moved may immediately move up to a number of inches equal to the highest Initiative Characteristic in the unit and then declare a Charge targeting the enemy unit that moved if it is within 12&quot;. A Charge declared as part of this Reaction is resolved immediately (the enemy unit may not declare any Reaction against this Charge), and if successful the combat will be fought as normal in the following Assault phase, with a Charging unit with the Legiones Astartes (Space Wolves) special rule gaining all the normal benefits of Charging.</characteristic>
+Chasing the Wind – This Advanced Reaction may be made once per battle during the opposing player’s Movement phase when any enemy unit ends a Move with any of its models within 12&quot; of any model in a friendly unit under the Reactive player’s control with the Legiones Astartes (White Scars) special rule. Once the enemy Move that triggers this Reaction is completely resolved, all friendly units composed entirely of models with the Legiones Astartes (White Scars) special rule within 12&quot; of that enemy unit’s final position may immediately make a normal Move – such units may choose to activate Jump Packs to increase their Movement, but may not choose to Run. This move is subject to all the normal penalties for Difficult Terrain, Dangerous Terrain and units that are Pinned, locked in combat or otherwise unable to move may not move due to this Reaction.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry id="4916-965e-8339-44f6" name="VI: Space Wolves" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="11d9-9375-cd1f-e22f" name="The Armoury of the Space Wolves" hidden="false">
               <description>• Any model with the Legiones Astartes (Space Wolves) special rule may exchange a Chainsword for a Fenrisian Axe for +2 points each.
@@ -10859,19 +10839,37 @@ No Prey Escapes the Wolf – This Advanced Reaction may be made once per battle 
 • A Caster of Runes may replace a power weapon, bolt pistol or combi-bolter with a Force Weapon at no additional points cost. In addition, a Caster of Runes may select a Psychic Hood for +15 points.</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="86d6-164a-e57a-af9b" name="Legiones Astartes (Space Wolves)" hidden="false" targetId="f806-8d12-07ab-fdaf" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="1f45-c52a-8356-5d40" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="1f45-c52a-8356-5d40" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Space Wolves)" hidden="false" type="rule" id="86d6-164a-e57a-af9b" targetId="f806-8d12-07ab-fdaf"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Space Wolves Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="5f84-251e-fad7-93d8" publicationId="817a-6288-e016-7469" page="197">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units made up entirely of models with the Legiones Astartes (Space Wolves) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+No Prey Escapes the Wolf – This Advanced Reaction may be made once per battle in the opposing player’s turn, when any enemy unit with one or more models within 12&quot; of a friendly unit made up entirely of models with the Legiones Astartes (Space Wolves) special rule is moved during the Movement phase. Once the enemy unit that triggered this Reaction has been moved, but before any other units are moved, a single friendly unit made up entirely of models with the Legiones Astartes (Space Wolves) special rule that can draw a line of sight to the enemy unit that moved may immediately move up to a number of inches equal to the highest Initiative Characteristic in the unit and then declare a Charge targeting the enemy unit that moved if it is within 12&quot;. A Charge declared as part of this Reaction is resolved immediately (the enemy unit may not declare any Reaction against this Charge), and if successful the combat will be fought as normal in the following Assault phase, with a Charging unit with the Legiones Astartes (Space Wolves) special rule gaining all the normal benefits of Charging.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
         <selectionEntry id="a0e1-f2c4-8bcd-0723" name="VII: Imperial Fists" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="d8d0-b8a9-4295-bdef" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Imperial Fists)" hidden="false" type="rule" id="7ec5-fdde-291e-a2cf" targetId="e876-4f8f-a30f-8b22"/>
+          </infoLinks>
           <profiles>
-            <profile id="7e21-8d2d-46d2-f897" name="Imperial Fists Advanced Reaction" publicationId="817a-6288-e016-7469" page="225" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Imperial Fists Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="7e21-8d2d-46d2-f897" publicationId="817a-6288-e016-7469" page="225">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Imperial Fists) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -10879,19 +10877,19 @@ The Best Defence – This Advanced Reaction may be made once per battle, during 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="7ec5-fdde-291e-a2cf" name="Legiones Astartes (Imperial Fists)" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="d8d0-b8a9-4295-bdef" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="b28b-71f7-e4f4-8f9c" name="VIII: Night Lords" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="b28b-71f7-e4f4-8f9c" name="VIII: Night Lords" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="1806-e3fd-a52e-fcd2" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Night Lords)" hidden="false" type="rule" id="8af8-ea14-c6a5-22dd" targetId="8280-d4ea-b131-4970"/>
+          </infoLinks>
           <profiles>
-            <profile id="7766-7ce7-deb5-6f3b" name="Night Lords Advanced Reaction" publicationId="09c5-eeae-f398-b653" page="195" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Night Lords Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="7766-7ce7-deb5-6f3b" publicationId="09c5-eeae-f398-b653" page="195">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Night Lords) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
  
@@ -10899,19 +10897,19 @@ The Better Part of Valour – This Advanced Reaction may be made once per battle
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="8af8-ea14-c6a5-22dd" name="Legiones Astartes (Night Lords)" hidden="false" targetId="8280-d4ea-b131-4970" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="1806-e3fd-a52e-fcd2" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="296e-301e-3ce1-1c15" name="IX: Blood Angels" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="296e-301e-3ce1-1c15" name="IX: Blood Angels" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="4d65-7961-2ea-c2e2" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Blood Angels)" hidden="false" type="rule" id="b552-b0da-2484-50b1" targetId="b0d1-ccab-8708-500f"/>
+          </infoLinks>
           <profiles>
-            <profile id="eb3a-c9ff-3139-b2f6" name="Blood Angels Advanced Reaction" publicationId="817a-6288-e016-7469" page="249" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Blood Angels Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="eb3a-c9ff-3139-b2f6" publicationId="817a-6288-e016-7469" page="249">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Blood Angels) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -10920,19 +10918,19 @@ The Wrath of Angels – This Advanced Reaction may be made once per battle durin
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="b552-b0da-2484-50b1" name="Legiones Astartes (Blood Angels)" hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="4d65-7961-2ea-c2e2" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="bfc9-c99c-bf8a-3917" name="X: Iron Hands" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="bfc9-c99c-bf8a-3917" name="X: Iron Hands" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="e0b4-5ad6-6595-bc13" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Iron Hands)" hidden="false" type="rule" id="1c85-d348-f538-3788" targetId="2e45-4b61-44fb-260b"/>
+          </infoLinks>
           <profiles>
-            <profile id="7108-b9ba-6982-ee98" name="Iron Hands Advanced Reaction" publicationId="817a-6288-e016-7469" page="275" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Iron Hands Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="7108-b9ba-6982-ee98" publicationId="817a-6288-e016-7469" page="275">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Iron Hands) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -10941,19 +10939,19 @@ The Gorgon’s Spite – This Advanced Reaction may be made once per battle duri
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="1c85-d348-f538-3788" name="Legiones Astartes (Iron Hands)" hidden="false" targetId="2e45-4b61-44fb-260b" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="e0b4-5ad6-6595-bc13" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="90ee-77dd-1b7f-ddfe" name="XII: World Eaters" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="90ee-77dd-1b7f-ddfe" name="XII: World Eaters" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="aac1-67ea-2ad6-7631" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (World Eaters)" hidden="false" type="rule" id="c4d4-fefb-3e9-6b51" targetId="405d-019f-9ef6-423c"/>
+          </infoLinks>
           <profiles>
-            <profile id="5fbc-9c03-178f-6a02" name="World Eaters Advanced Reaction" publicationId="09c5-eeae-f398-b653" page="215" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="World Eaters Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="5fbc-9c03-178f-6a02" publicationId="09c5-eeae-f398-b653" page="215">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (World Eaters) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -10961,19 +10959,19 @@ The Savage Tide – This Advanced Reaction may be made once per battle during th
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="c4d4-fefb-3e9-6b51" name="Legiones Astartes (World Eaters)" hidden="false" targetId="405d-019f-9ef6-423c" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="aac1-67ea-2ad6-7631" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="8e0f-3552-8842-f281" name="XIII: Ultramarines" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="8e0f-3552-8842-f281" name="XIII: Ultramarines" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="6505-824e-a193-b3d5" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Ultramarines)" hidden="false" type="rule" id="cb4e-8dd0-722c-c813" targetId="519d-a6ed-f57f-3642"/>
+          </infoLinks>
           <profiles>
-            <profile id="8507-e633-9c7-5478" name="Ultramarines Advanced Reaction" publicationId="817a-6288-e016-7469" page="291" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Ultramarines Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="8507-e633-9c7-5478" publicationId="817a-6288-e016-7469" page="291">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Ultramarines) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -10981,19 +10979,19 @@ Unity of Purpose – This Advanced Reaction may be made once per battle during t
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="cb4e-8dd0-722c-c813" name="Legiones Astartes (Ultramarines)" hidden="false" targetId="519d-a6ed-f57f-3642" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="6505-824e-a193-b3d5" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="dd1f-1c51-706c-e5f7" name="XIV: Death Guard" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="dd1f-1c51-706c-e5f7" name="XIV: Death Guard" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="331b-7e40-d68d-3957" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Death Guard)" hidden="false" type="rule" id="9ae1-7f80-a751-284e" targetId="48a9-493f-e255-5070"/>
+          </infoLinks>
           <profiles>
-            <profile id="8bd4-3596-7ead-d2d2" name="Death Guard Advanced Reaction" publicationId="09c5-eeae-f398-b653" page="233" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Death Guard Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="8bd4-3596-7ead-d2d2" publicationId="09c5-eeae-f398-b653" page="233">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Death Guard) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -11001,19 +10999,19 @@ Remorseless Advance – This Advanced Reaction may be made once per battle durin
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="9ae1-7f80-a751-284e" name="Legiones Astartes (Death Guard)" hidden="false" targetId="48a9-493f-e255-5070" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="331b-7e40-d68d-3957" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="21c3-2f28-7820-e51a" name="XV: Thousand Sons" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="21c3-2f28-7820-e51a" name="XV: Thousand Sons" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="9b1d-1719-d9da-172c" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Thousand Sons)" hidden="false" type="rule" id="c75b-5c78-6e28-5dca" targetId="2377-1d73-44bc-fee2"/>
+          </infoLinks>
           <profiles>
-            <profile id="cf3e-f5dc-292c-a3db" name="Thousand Sons Advanced Reaction" publicationId="09c5-eeae-f398-b653" page="253" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Thousand Sons Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="cf3e-f5dc-292c-a3db" publicationId="09c5-eeae-f398-b653" page="253">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with both the Legiones Astartes (Thousand Sons) special rule and the Psyker Sub-type. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -11021,19 +11019,19 @@ Fortress of the Mind – This Advanced Reaction may be made once per battle duri
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="c75b-5c78-6e28-5dca" name="Legiones Astartes (Thousand Sons)" hidden="false" targetId="2377-1d73-44bc-fee2" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="9b1d-1719-d9da-172c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="01b4-57c7-bf61-2abf" name="XVI: Sons of Horus" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="01b4-57c7-bf61-2abf" name="XVI: Sons of Horus" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="860d-c26c-4365-ded5" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Sons of Horus)" hidden="false" type="rule" id="697e-dc26-6b3f-ae06" targetId="f4a2-e4ca-b8b2-35a1"/>
+          </infoLinks>
           <profiles>
-            <profile id="ebaa-3e13-9fc2-9c1b" name="Sons of Horus Advanced Reaction" publicationId="09c5-eeae-f398-b653" page="281" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Sons of Horus Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="ebaa-3e13-9fc2-9c1b" publicationId="09c5-eeae-f398-b653" page="281">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Sons of Horus) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -11041,19 +11039,19 @@ Death Dealers – This Advanced Reaction may be made once per battle during the 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="697e-dc26-6b3f-ae06" name="Legiones Astartes (Sons of Horus)" hidden="false" targetId="f4a2-e4ca-b8b2-35a1" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="860d-c26c-4365-ded5" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="9dbf-0760-d7ae-f125" name="XVII: Word Bearers" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="9dbf-0760-d7ae-f125" name="XVII: Word Bearers" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="4737-cf23-ac4a-c1b3" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Word Bearers)" hidden="false" type="rule" id="1c32-9872-e353-97ff" targetId="21ba-24fc-3fad-00fe"/>
+          </infoLinks>
           <profiles>
-            <profile id="3bc9-c7bb-9f95-fa09" name="Word Bearers Advanced Reaction" publicationId="09c5-eeae-f398-b653" page="303" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Word Bearers Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="3bc9-c7bb-9f95-fa09" publicationId="09c5-eeae-f398-b653" page="303">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Word Bearers) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -11061,19 +11059,19 @@ Glorious Martyrdom – This Advanced Reaction may be made once per battle during
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="1c32-9872-e353-97ff" name="Legiones Astartes (Word Bearers)" hidden="false" targetId="21ba-24fc-3fad-00fe" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="4737-cf23-ac4a-c1b3" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="c805-ca3a-ff93-5e2f" name="XVIII: Salamanders" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="c805-ca3a-ff93-5e2f" name="XVIII: Salamanders" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="4997-4ea3-f6b8-421c" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Salamanders)" hidden="false" type="rule" id="452d-fdf6-3758-e2a" targetId="5b72-d9a6-92c3-4a1c"/>
+          </infoLinks>
           <profiles>
-            <profile id="55a6-14e6-4a59-8971" name="Salamanders Advanced Reaction" publicationId="817a-6288-e016-7469" page="308" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Salamanders Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="55a6-14e6-4a59-8971" publicationId="817a-6288-e016-7469" page="308">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Salamanders) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -11081,19 +11079,19 @@ Duty is Sacrifice – This Advanced Reaction may be made once per battle during 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="452d-fdf6-3758-e2a" name="Legiones Astartes (Salamanders)" hidden="false" targetId="5b72-d9a6-92c3-4a1c" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="4997-4ea3-f6b8-421c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="dc34-fe08-dd44-fb99" name="XIX: Raven Guard" hidden="false" collective="false" import="true" type="upgrade">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="dc34-fe08-dd44-fb99" name="XIX: Raven Guard" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="66dc-f080-4c-5a22" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Raven Guard)" hidden="false" type="rule" id="4539-b069-dfe2-6e1c" targetId="9924-9434-baa1-0894"/>
+          </infoLinks>
           <profiles>
-            <profile id="c5b-ac4d-fa3f-e5f9" name="Raven Guard Advanced Reaction" publicationId="817a-6288-e016-7469" page="326" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Raven Guard Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="c5b-ac4d-fa3f-e5f9" publicationId="817a-6288-e016-7469" page="326">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Raven Guard) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
@@ -11101,26 +11099,8 @@ Fade to Black – This Advanced Reaction may be made once per battle during the 
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="4539-b069-dfe2-6e1c" name="Legiones Astartes (Raven Guard)" hidden="false" targetId="9924-9434-baa1-0894" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="66dc-f080-4c-5a22" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry id="c0df-c1fa-5ddc-9ee5" name="XX: Alpha Legion" hidden="false" collective="false" import="true" type="upgrade">
-          <profiles>
-            <profile id="449f-e427-1bcb-885e" name="Alpha Legion Advanced Reaction" publicationId="817a-6288-e016-7469" page="331" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
-              <characteristics>
-                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Alpha Legion) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
-
-Smoke and Mirrors – This Advanced Reaction may be made once per battle during the Shooting phase when any enemy player declares a Shooting Attack targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Alpha Legion) special rule. Before resolving the Shooting Attack, the unit targeted by the Shooting Attack may be redeployed. To redeploy the unit, the controlling player selects one model from the unit making this Reaction and places it anywhere within 12&quot; of its original position and then scatters the model D6&quot; (if the Scatter roll would place the model within Impassable Terrain, a building or fortification, within 1&quot; of any enemy model, or off the edge of the battlefield then the model is moved the shortest distance possible to place it free of all obstacles and within the bounds of the battlefield). Once this model is placed, all other models from the Reacting unit may be placed anywhere within 6&quot; of that model, at least 1&quot; from any enemy model, and in Unit Coherency. Any models that cannot be placed must be removed as casualties. Once the redeployment is complete, the Active player may resolve their Shooting Attack as normal – if the Shooting Attack is no longer valid once this redeployment is complete (due to the enemy unit no longer having line of sight to the target unit, for example) then the Active player may not select a different target and no attacks are made or dice rolled for that unit.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <rules>
             <rule id="06c1-6ce0-6fc2-f106" name="Legion Consularis: Saboteur" publicationId="09c5-eeae-f398-b653" page="335" hidden="false">
               <description>A Legion Centurion with the Legiones Astartes (Alpha Legion) special rule may be upgraded to a Saboteur.
@@ -11137,27 +11117,26 @@ Smoke and Mirrors – This Advanced Reaction may be made once per battle during 
 • The Alpha Legion gains access to a Legion-Specific Legion Consularis Upgrade in the &quot;Saboteur&quot;.</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="f87e-e819-a322-84bf" name="Legiones Astartes (Alpha Legion)" hidden="false" targetId="2a9e-be1f-d6c1-0ec4" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="77d9-7be-7f74-3853" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="268b-74a8-395f-6f27" name="III: Emperor&apos;s Children (Legion Hereticus)" hidden="false" collective="false" import="true" type="upgrade">
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="77d9-7be-7f74-3853" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Astartes (Alpha Legion)" hidden="false" type="rule" id="f87e-e819-a322-84bf" targetId="2a9e-be1f-d6c1-0ec4"/>
+          </infoLinks>
           <profiles>
-            <profile id="bcb3-5c34-4aca-cbb8" name="Emperor’s Children Advanced Reaction (Legions Hereticus)" publicationId="7f9d-5e88-241d-e861" page="106" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Alpha Legion Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="449f-e427-1bcb-885e" publicationId="817a-6288-e016-7469" page="331">
               <characteristics>
-                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Hereticus (Emperor’s Children) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Alpha Legion) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
 
-
-Twisted Desire – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a friendly unit under the Reactive player’s control that is composed entirely of models with the Legiones Hereticus (Emperor’s Children) special rule that is not Falling Back. The Reacting unit immediately becomes Stupefied (see page 107) and adds 2 to Stupefied rolls made against wounds inflicted as part of the Shooting Attack that triggered this Reaction.</characteristic>
+Smoke and Mirrors – This Advanced Reaction may be made once per battle during the Shooting phase when any enemy player declares a Shooting Attack targeting a friendly unit under the Reactive player’s control composed entirely of models with the Legiones Astartes (Alpha Legion) special rule. Before resolving the Shooting Attack, the unit targeted by the Shooting Attack may be redeployed. To redeploy the unit, the controlling player selects one model from the unit making this Reaction and places it anywhere within 12&quot; of its original position and then scatters the model D6&quot; (if the Scatter roll would place the model within Impassable Terrain, a building or fortification, within 1&quot; of any enemy model, or off the edge of the battlefield then the model is moved the shortest distance possible to place it free of all obstacles and within the bounds of the battlefield). Once this model is placed, all other models from the Reacting unit may be placed anywhere within 6&quot; of that model, at least 1&quot; from any enemy model, and in Unit Coherency. Any models that cannot be placed must be removed as casualties. Once the redeployment is complete, the Active player may resolve their Shooting Attack as normal – if the Shooting Attack is no longer valid once this redeployment is complete (due to the enemy unit no longer having line of sight to the target unit, for example) then the Active player may not select a different target and no attacks are made or dice rolled for that unit.</characteristic>
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry id="268b-74a8-395f-6f27" name="III: Emperor&apos;s Children (Legion Hereticus)" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="a6b9-20bf-c73f-a5fa" name="The Divine Instruments" hidden="false">
               <description>Models with this special rule gain access to unique Wargear options (see The Armoury of Indulgence on page 111).
@@ -11175,19 +11154,29 @@ Twisted Desire – This Advanced Reaction may be made once per battle during the
             <rule id="b253-df3b-18c7-bdff" name="The Phoenician’s Hubris" hidden="false">
               <description>Models with this special rule may not select the Phoenix Warden Consul upgrade (see page 155 of Warhammer: The Horus Heresy – Liber Hereticus). In addition, Phoenix Terminator Squad units with this special rule replace the Living Icons and Phoenix Retinue special rules with the Fallen From Grace special rule</description>
             </rule>
-            <rule id="11b8-b820-8559-9b2a" name="Exemplars of War" hidden="false">
+            <rule name="Exemplars of War" hidden="false" id="11b8-b820-8559-9b2a">
               <description>A Warlord with this special rule may select either The Broken Mirror or Paragon of Excellence Warlord Traits from the Emperor’s Children Warlord Trait list (see page 152 of Warhammer: The Horus Heresy – Liber Hereticus). If one of these Warlord Traits is selected, replace each instance of ‘Legiones Astartes (Emperor’s Children)’ within that Warlord Trait with ‘Legiones Hereticus (Emperor’s Children)</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="b17a-a114-2bf8-a09b" name="Legiones Hereticus (Emperor’s Children)" hidden="false" targetId="b9e-b2ef-86e-e52d" type="rule"/>
-          </infoLinks>
-          <categoryLinks>
-            <categoryLink id="2c5e-23e-7851-c963" name="Legiones Hereticus" hidden="false" targetId="d684-5b63-caa7-adc4" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="d684-5b63-caa7-adc4" id="2c5e-23e-7851-c963" primary="false" name="Legiones Hereticus"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Legiones Hereticus (Emperor’s Children)" hidden="false" type="rule" id="b17a-a114-2bf8-a09b" targetId="b9e-b2ef-86e-e52d"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Emperor’s Children Advanced Reaction (Legions Hereticus)" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="bcb3-5c34-4aca-cbb8" publicationId="7f9d-5e88-241d-e861" page="106">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Hereticus (Emperor’s Children) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
+
+
+Twisted Desire – This Advanced Reaction may be made once per battle during the opposing player’s Shooting phase when any enemy unit declares a Shooting Attack targeting a friendly unit under the Reactive player’s control that is composed entirely of models with the Legiones Hereticus (Emperor’s Children) special rule that is not Falling Back. The Reacting unit immediately becomes Stupefied (see page 107) and adds 2 to Stupefied rolls made against wounds inflicted as part of the Shooting Attack that triggered this Reaction.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -12748,13 +12737,6 @@ An army whose Warlord has this Trait counts any Allied Detachment that has any v
       </constraints>
       <selectionEntries>
         <selectionEntry id="dbde-0e4f-0b5a-43d2" name="Recon Company" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <rules>
             <rule id="fa96-5f74-c1e8-e38d" name="Recon Company" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false">
               <description>Effects
@@ -12770,15 +12752,15 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-        </selectionEntry>
-        <selectionEntry id="ed1f-9473-df70-4544" name="Angel&apos;s Wrath^" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
+        </selectionEntry>
+        <selectionEntry id="ed1f-9473-df70-4544" name="Angel&apos;s Wrath^" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false" collective="false" import="true" type="upgrade">
           <rules>
             <rule id="b1c3-5494-add9-d9bf" name="Angel&apos;s Wrath^" publicationId="a716-c1c4-7b26-8424" page="97" hidden="false">
               <description>Effects
@@ -12796,6 +12778,13 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="2c36-fde3-14ed-4db4" name="Sky-Hunter Phalanx" publicationId="a716-c1c4-7b26-8424" page="98" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12804,7 +12793,7 @@ Limitations
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12834,7 +12823,7 @@ Limitations
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12867,9 +12856,9 @@ Limitations
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -12895,13 +12884,6 @@ Limitations
           </costs>
         </selectionEntry>
         <selectionEntry id="a621-2c8c-3df0-89d3" name="Underworld Assault^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <rules>
             <rule id="bc0e-857d-6ab6-7aa8" name="Underworld Assault^" publicationId="a716-c1c4-7b26-8424" page="100" hidden="false">
               <description>Effects
@@ -12922,6 +12904,13 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="ccb7-6c5c-76ce-5b77" name="Armoured Spearhead^" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12935,7 +12924,7 @@ Limitations
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -12966,13 +12955,6 @@ Limitations
           </costs>
         </selectionEntry>
         <selectionEntry id="da46-48b5-6cc5-9d8b" name="Brethren Of Iron" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
-              </conditions>
-            </modifier>
-          </modifiers>
           <rules>
             <rule id="bd2d-507a-719a-820f" name="Brethren Of Iron" publicationId="a716-c1c4-7b26-8424" page="102" hidden="false">
               <description>Effects
@@ -12989,6 +12971,13 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="b5b7-3410-a8e5-95a6" name="Fury Of The Ancients" publicationId="a716-c1c4-7b26-8424" page="103" hidden="false" collective="false" import="true" type="upgrade">
           <modifiers>
@@ -12997,9 +12986,9 @@ Limitations
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -13733,7 +13722,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -13763,7 +13752,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -14274,13 +14263,13 @@ Limitations
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="9a27-97d3-a06-ef35" name="Brotherhood of the Phoenix (Corrupted RoW)" publicationId="7f9d-5e88-241d-e861" page="108" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Brotherhood of the Phoenix (Corrupted RoW)" hidden="true" id="9a27-97d3-a06-ef35" publicationId="7f9d-5e88-241d-e861" page="108">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="atLeast"/>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
                   </conditions>
@@ -14293,11 +14282,8 @@ Limitations
               </conditions>
             </modifier>
           </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b362-d3d4-b314-54ce" type="max"/>
-          </constraints>
           <rules>
-            <rule id="ac32-f560-3f4f-f94c" name="Brotherhood of the Phoenix (Corrupted RoW)" publicationId="7f9d-5e88-241d-e861" page="108" hidden="false">
+            <rule name="Brotherhood of the Phoenix (Corrupted RoW)" hidden="false" id="ac32-f560-3f4f-f94c" publicationId="7f9d-5e88-241d-e861" page="108">
               <description>A Detachment using this Corrupted Rite of War may take up to five HQ choices, regardless of the Force Organisation chart in use. Each of these HQ choices must be from the following list:
 Lord Commander Eidolon.
 Captain Lucius.
@@ -14312,28 +14298,28 @@ While Fulgrim Transfigured is on the battlefield, models with this special rule 
 Limitations
 Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite of War.</description>
             </rule>
-            <rule id="3a7-63b4-4f0e-930c" name="Sycophantic Retinue" publicationId="7f9d-5e88-241d-e861" page="108" hidden="true">
+            <rule name="Sycophantic Retinue" hidden="true" id="3a7-63b4-4f0e-930c" publicationId="7f9d-5e88-241d-e861" page="108">
+              <description>While Fulgrim Transfigured is on the battlefield, models with this special rule gain the Preferred Enemy (Everything) special rule.</description>
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
+                <modifier type="set" value="false" field="hidden">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a27-97d3-a06-ef35" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
-              <description>While Fulgrim Transfigured is on the battlefield, models with this special rule gain the Preferred Enemy (Everything) special rule.</description>
             </rule>
           </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b362-d3d4-b314-54ce"/>
+          </constraints>
         </selectionEntry>
-        <selectionEntry id="6760-f643-3a7f-970d" name="Children of the Maraviglia (Corrupted RoW)" publicationId="7f9d-5e88-241d-e861" page="109" hidden="true" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="Children of the Maraviglia (Corrupted RoW)" hidden="true" id="6760-f643-3a7f-970d" publicationId="7f9d-5e88-241d-e861" page="109">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" value="false" field="hidden">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d684-5b63-caa7-adc4" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="d684-5b63-caa7-adc4" shared="true" includeChildSelections="true"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="atLeast"/>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
                   </conditions>
@@ -14347,26 +14333,23 @@ Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite 
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f26-2a80-ade9-82b0" type="max"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f26-2a80-ade9-82b0"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="Stubborn" hidden="false" type="rule" id="635e-525-ab6d-d5fa" targetId="7989-1f2c-a43d-82ae">
+              <modifiers>
+                <modifier type="set" value="Stubborn (Children of the Maraviglia)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
           <rules>
-            <rule id="cafc-473b-bf32-fae1" name="The Stage is Set" publicationId="7f9d-5e88-241d-e861" page="19" hidden="false">
+            <rule name="The Stage is Set" hidden="false" id="cafc-473b-bf32-fae1" publicationId="7f9d-5e88-241d-e861" page="19">
               <description>Before the start of the first turn, when placing units into Reserves, if Fulgrim Transfigured has not joined a unit and does not have a Retinue Squad, the controlling player may place Fulgrim Transfigured into Reserves and must declare to their opponent a Turn number from Turn 2 - 4, indicating on which of their own turns they will bring Fulgrim Transfigured into play from Reserves. At the start of the declared turn, the controlling player must place Fulgrim Transfigured wholly within 6&quot; of a unit with the Legiones Hereticus (Emperor’s Children) special rule, and not within 1&quot; of any enemy models. If this is not possible, Fulgrim Transfigured cannot be set up this turn, and the controlling player must attempt to deploy Fulgrim Transfigured again at the start of their following turn.
 
 
 Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.</description>
             </rule>
           </rules>
-          <infoLinks>
-            <infoLink id="635e-525-ab6d-d5fa" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Stubborn (Children of the Maraviglia)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -14376,17 +14359,6 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
       </constraints>
       <selectionEntries>
         <selectionEntry id="b192-2b6f-ad8c-959f" name="01 Warrior Elite" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
-          <modifiers>
-            <modifier type="set" field="154b-d405-276d-4412" value="0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="331b-43fb-e64-9364" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="154b-d405-276d-4412" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dce1-eea6-7ee9-3e3c" type="max"/>
@@ -14399,6 +14371,17 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <modifiers>
+            <modifier type="set" field="154b-d405-276d-4412" value="0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="331b-43fb-e64-9364" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry id="b669-a356-d5d1-53b8" name="02 Legacy of the Great Crusade" publicationId="48c2-d023-0069-001a" page="9" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -14578,7 +14561,7 @@ BS NOTE (This Provenance cannot be taken in conjunction with the Tainted Flesh P
 
 BS NOTE (This Provenance cannot be taken in conjunction with the Debased Rabble or Tainted Flesh Provenance. See relevant Provenance.)</description>
             </rule>
-            <rule id="2d04-8f0b-cfb7-cac1" name="Voidjumpers" publicationId="91df-ed64-4216-5bab" hidden="false">
+            <rule name="Voidjumpers" hidden="false" id="2d04-8f0b-cfb7-cac1" publicationId="91df-ed64-4216-5bab">
               <description>Option – Voidjumpers: All models in an Imperialis Militia Reconnaissance Squad may be upgraded to be Voidjumpers for +20 points per unit. Models upgraded to Voidjumpers have Militia jet packs and must replace their Shotgun with two laspistols or two autopistols. Any Discipline Masters, Militia Medicae and any other models assigned to the squad before deployment (but not models that join the unit by means of the Independent Character special rule) may be given Militia jet packs for no additional cost. A model with a Militia jet pack may not be given any weapon with the Heavy type.</description>
             </rule>
           </rules>
@@ -14854,7 +14837,7 @@ A unit with this special rule that has been joined by a model after or during de
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b4f0-1668-4106-7bd1" name="17 Arms of the Omnissiah" publicationId="bc5c-e6fb-985f-81be" page="6" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="17 Arms of the Omnissiah" hidden="false" id="b4f0-1668-4106-7bd1" publicationId="bc5c-e6fb-985f-81be" page="6">
           <modifiers>
             <modifier type="set" field="d570-c5fa-ed42-1147" value="0">
               <conditionGroups>
@@ -14871,7 +14854,7 @@ A unit with this special rule that has been joined by a model after or during de
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d570-c5fa-ed42-1147" type="max"/>
           </constraints>
           <rules>
-            <rule id="a47b-f75c-1376-ad85" name="Arms of the Omnissiah" publicationId="bc5c-e6fb-985f-81be" page="6" hidden="false">
+            <rule name="Arms of the Omnissiah" hidden="false" id="a47b-f75c-1376-ad85" publicationId="bc5c-e6fb-985f-81be" page="6">
               <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
 
 
@@ -14884,11 +14867,8 @@ A unit with this special rule that has been joined by a model after or during de
 This Provenance cannot be taken in conjunction with the Armoury of Old Night Provenance.</description>
             </rule>
           </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
-        <selectionEntry id="331b-43fb-e64-9364" name="18 Augmented Levy" publicationId="bc5c-e6fb-985f-81be" page="6" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="18 Augmented Levy" hidden="false" id="331b-43fb-e64-9364" publicationId="bc5c-e6fb-985f-81be" page="6">
           <modifiers>
             <modifier type="set" field="3ec5-f8fe-868-3c4a" value="0">
               <conditionGroups>
@@ -14900,7 +14880,7 @@ This Provenance cannot be taken in conjunction with the Armoury of Old Night Pr
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20e1-2446-2438-3638" type="greaterThan"/>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5825-e777-2615-3d4d" type="greaterThan"/>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07d0-18a3-ce4d-c1b4" type="greaterThan"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b192-2b6f-ad8c-959f" type="atLeast"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="b192-2b6f-ad8c-959f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -14911,18 +14891,15 @@ This Provenance cannot be taken in conjunction with the Armoury of Old Night Pr
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ec5-f8fe-868-3c4a" type="max"/>
           </constraints>
           <rules>
-            <rule id="b147-7837-b14b-8006" name="Augmented Levy" publicationId="bc5c-e6fb-985f-81be" page="6" hidden="false">
+            <rule name="Augmented Levy" hidden="false" id="b147-7837-b14b-8006" publicationId="bc5c-e6fb-985f-81be" page="6">
               <description>All Imperialis Militia Levy Squads in a Detachment with this Provenance receive +1 to their Leadership Characteristic and gain the Stubborn and The Rite of Pure Thought special rules (see page 108 of Liber Mechanicum). However, the Detachment’s Compulsory Troops choices must be filled by Imperialis Militia Levy Squads, and it may not have more Infantry units, excepting HQ choices, of other types than it has Imperialis Militia Levy Squads in total. For example, if it has three Imperialis Militia Levy Squads, it can have a maximum of three additional Infantry squads of other kinds. Imperialis Militia Levy Squads in an army with this Provenance may  not be joined by a Discipline Master.
 
 
 This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted Flesh, Gene-crafted, Unending Hordes, Feral Warriors or Ogryn Conscripts Provenances.</description>
             </rule>
           </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
-        <selectionEntry id="3aa-2f9d-cb0-e177" name="19 Forge Remnants" publicationId="bc5c-e6fb-985f-81be" page="6" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry type="upgrade" import="true" name="19 Forge Remnants" hidden="false" id="3aa-2f9d-cb0-e177" publicationId="bc5c-e6fb-985f-81be" page="6">
           <modifiers>
             <modifier type="set" field="c7be-7482-ca87-31c7" value="0">
               <conditionGroups>
@@ -14940,7 +14917,7 @@ This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c7be-7482-ca87-31c7" type="max"/>
           </constraints>
           <rules>
-            <rule id="eecb-18b4-38dd-dff0" name="Forge Remnants" publicationId="bc5c-e6fb-985f-81be" page="6" hidden="false">
+            <rule name="Forge Remnants" hidden="false" id="eecb-18b4-38dd-dff0" publicationId="bc5c-e6fb-985f-81be" page="6">
               <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take a Triaros Armoured Conveyor as a Dedicated Transport so long as they number 20 models or less. In addition, a Detachment with this Provenance may include three additional Heavy Support choices – but these additional choices may only be used to select Krios Squadrons (see
 Liber Mechanicum for details and points costs). All Triaros Armoured Conveyors and Krios Squadrons selected in this fashion gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
 
@@ -14948,9 +14925,6 @@ Liber Mechanicum for details and points costs). All Triaros Armoured Conveyors 
 This Provenance cannot be taken in conjunction with the Survivors of the Dark Age or Clanfolk Levy Provenances.</description>
             </rule>
           </rules>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -15783,11 +15757,11 @@ The penalty to Leadership is ignored by any unit with the Fearless or Stubborn s
     <rule id="1cb6-d7f2-0c79-d208" name="Ungainly" publicationId="48c2-d023-0069-001a" page="41" hidden="false">
       <description>A model may only attack with this weapon on a turn in which it makes a successful Charge, but does not gain a bonus attack for Charging or from any special rules that would normally grant additional Attacks.</description>
     </rule>
-    <rule id="2dfc-b3cc-7ede-2827" name="Impale" publicationId="6bcf-2297-2bcd-51be" page="15" hidden="false">
+    <rule name="Impale" hidden="false" id="2dfc-b3cc-7ede-2827" publicationId="6bcf-2297-2bcd-51be" page="15">
       <description>A unit may re-roll Charge Rolls when attempting to Charge an enemy unit that has suffered one or more Hits from a weapon with the Impale special rule caused by one or more models in the unit for which the Charge was declared in the same player turn. This takes effect even if no Wounds are caused by the Hits.
 If one or more Wounds are caused by a weapon with this rule, the affected unit decreases its Initiative characteristic by 1 until the end of the subsequent Assault phase.</description>
     </rule>
-    <rule id="686c-178b-6e07-2ba3" name="Malefic Aegis (X)" publicationId="6bcf-2297-2bcd-51be" page="15" hidden="false">
+    <rule name="Malefic Aegis (X)" hidden="false" id="686c-178b-6e07-2ba3" publicationId="6bcf-2297-2bcd-51be" page="15">
       <description>Malefic Aegis confers an Invulnerable Save equal to the value of X. Invulnerable saves granted by Malefic Aegis do not stack with other Invulnerable Saves but can benefit from rules (such as cyber-familiar) that specifically increase existing saves.</description>
     </rule>
     <rule id="2a9e-be1f-d6c1-0ec4" name="Legiones Astartes (Alpha Legion)" publicationId="09c5-eeae-f398-b653" page="330" hidden="false">
@@ -15868,20 +15842,20 @@ Any Legion Centrurions, Legion Cataphractii Centurions and Legion Tartaros Centu
     <rule id="21ba-24fc-3fad-00fe" name="Legiones Astartes (Word Bearers)" publicationId="09c5-eeae-f398-b653" page="302" hidden="false">
       <description>True Believers:A model with this special rule may never have a Leadership Characteristic modified below a value of 6. Futhermore if one or more models with this special rule are part of a combat that results in a draw, then the side that includes one or more models at the end of the fight sub-phase with this special rule is counted as having won the combat by 1 point. If both sides include models with this special rule then the combat remains a draw.</description>
     </rule>
-    <rule id="b9e-b2ef-86e-e52d" name="Legiones Hereticus (Emperor’s Children)" publicationId="7f9d-5e88-241d-e861" page="107" hidden="true">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+    <rule name="Legiones Hereticus (Emperor’s Children)" hidden="true" id="b9e-b2ef-86e-e52d" publicationId="7f9d-5e88-241d-e861" page="107">
       <description>Lords of Profligacy 
 After a Shooting Attack has been resolved against a unit composed entirely of models with this special rule, if that unit is not Falling Back, its controlling player can choose for it to become Stupefied. If a unit becomes Stupefied while Pinned or affected by the Blind or Concussive (X) special rules, it ignores the effects of these while Stupefied.
 
 Stupefied
 A unit that is Stupefied can only fire Snap Shots and cannot make Reactions in any Phase. If a unit that is Stupefied has a Charge declared for it, then that Charge is always considered to be Disordered. Furthermore, whilst Stupefied, all models in that unit increase their Strength Characteristic by +1 and when a model in a Stupefied unit suffers an unsaved Wound, it can make a special Stupefied roll to ignore it. Stupefied rolls may not be taken against attacks that have the Instant Death special rule. Roll a D6 each time an unsaved Wound is suffered. On a 6+, the unsaved Wound is ignored. On any other result the Wound is applied as normal. Add 1 to Stupefied rolls made for units which have the Fearless special rule. A Stupefied roll is a Damage Mitigation roll – any model may make only a single Damage Mitigation roll of any type for any given Wound.
 At the end of its controlling player’s following turn, the unit is no longer Stupefied. Whilst it is Stupefied, a unit does not take further Morale checks in the Movement phase or Shooting phase and cannot be Pinned. If the unit is forced to move, for example, if it has to Fall Back, it is no longer Stupefied. If assaulted, the unit will fight as usual, but enemy units do not receive the Initiative penalty for having Charged a unit through Difficult Terrain, even if the Stupefied unit is in Difficult Terrain. If a unit becomes Stupefied while making a Charge, then that Charge continues as normal, but is automatically counted as Disordered. Units that are locked in combat can be Stupefied, but take Morale checks in the Assault phase as normal and if forced to Fall Back are no longer Stupefied.</description>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </rule>
     <rule id="1f8d-3016-a561-c849" name="Techmarine Covenant (LH)" publicationId="a716-c1c4-7b26-8424" page="125" hidden="false">
       <description>A Techmarine Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Techmarine Covenant must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Techmarines that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Hereticus (X) special rule as the Legion Techmarine, and may not join units with Terminator armour of any kind. Legion Techmarines that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Hereticus (X) special rule as the Legion Techmarine, and any Legion Techmarines that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Hereticus (X) special rule as the Legion Techmarine. No Legion Techmarine may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Legion Techmarine as normal during either deployment or any following turn). No more than one Legion Techmarine may be assigned to any given unit.
