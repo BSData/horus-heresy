@@ -6423,6 +6423,13 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             <modifier type="set" field="name" value="Furious Charge (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="63aa-99e8-c572-8b05" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Relentless" hidden="false" type="rule" id="9e4f-1cdf-8a1b-7817" targetId="7adf-ac9a-5035-522d"/>
+        <infoLink name="Scout" hidden="false" type="rule" id="6170-5e26-1ebf-ec4" targetId="aacf-9a7e-982d-b793"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6a6e-34c6-73fb-264d" name="Cavalry Unit-type:" hidden="false" targetId="6d79-a3e4-381f-7b0f" primary="false"/>
@@ -6823,7 +6830,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                   </modifierGroups>
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Light, Militia)</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">13</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">14</characteristic>
                     <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
                     <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
                     <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
@@ -11204,7 +11211,12 @@ A model with a Militia jet pack may still Run, if it would normally be able to R
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="ac7b-72f5-82f9-23d6" name="Militia Cavalry Mount" publicationId="48c2-d023-0069-001a" page="37" hidden="false"/>
+    <rule id="ac7b-72f5-82f9-23d6" name="Militia Cavalry Mount" publicationId="48c2-d023-0069-001a" page="37" hidden="false">
+      <description>A model with a Militia cavalry mount that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player’s next turn.
+
+
+A model with the Infantry Unit Type that selects a Militia cavalry mount as an upgrade must change its Unit Type to Cavalry, keeping any Unit Sub-types it previously had.</description>
+    </rule>
     <rule id="e626-c3b1-e724-c6fc" name="Provenance" hidden="false">
       <description>Provenance</description>
     </rule>
