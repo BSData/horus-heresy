@@ -10112,24 +10112,15 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="9ea2-bc98-a0d8-3091" name="Legion Rhino Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Third-line)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14</characteristic>
-            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
-            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
-            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Legion Rhino Transport has one Access Point on each side of the hull and one at the rear.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="777f-8485-eb99-e6c9" name="Repair" hidden="false" targetId="857b-1adc-8233-6c55" type="rule"/>
         <infoLink id="a0c0-0efd-c9ed-9ef0" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+        <infoLink name="Legion Rhino Transport" hidden="false" type="profile" id="4e77-bcd5-5900-8eea" targetId="ab48-605d-a6cc-7ad6">
+          <modifiers>
+            <modifier type="set" value="3" field="51fb-b7d9-aa59-863d"/>
+            <modifier type="set" value="Vehicle (Transport, Third-line)" field="e555-4aed-dfcc-c0b4"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4918-c7ed-dc9c-9b19" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
