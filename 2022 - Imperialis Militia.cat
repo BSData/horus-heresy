@@ -10798,22 +10798,21 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
               </modifiers>
             </infoLink>
             <infoLink name="Galvanic Traction Drive" hidden="false" type="rule" id="ca9e-6957-cb91-fbf8" targetId="e51e-cae1-d9e7-d317"/>
+            <infoLink name="Krios Battle Tank" hidden="false" type="profile" id="9414-f04e-affd-3bf4" targetId="0d8f-f51e-e76b-e6aa">
+              <modifiers>
+                <modifier type="set" value="Militia Krios Battle Tank" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="7ca9-9eae-7f93-79fa" childId="61d5-e46f-377a-ddab" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Militia Krios Venator Tank Destroyer" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="7ca9-9eae-7f93-79fa" childId="1df4-a8d2-7cdd-d10d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
-          <profiles>
-            <profile name="Militia Krios" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="f019-58-f729-3682">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Fast, Third-line)</characteristic>
-                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">16</characteristic>
-                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
-                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
-                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547"/>
-                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e"/>
-              </characteristics>
-            </profile>
-          </profiles>
           <entryLinks>
             <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="b02d-4863-e6f-994" targetId="4ae3-79b4-6051-505e"/>
           </entryLinks>
