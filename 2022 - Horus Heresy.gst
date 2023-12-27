@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="94" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="95" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication name="GitHub" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -2850,7 +2850,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       <infoLinks>
         <infoLink id="f308-b538-0acd-b821" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rending (5+)"/>
+            <modifier type="set" field="name" value="Rending (6+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="347a-6673-dfda-cfc9" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
