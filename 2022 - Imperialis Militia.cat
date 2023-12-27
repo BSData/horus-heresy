@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -10352,24 +10352,15 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="60d2-8915-fa6d-b478" name="Militia Land Raider Proteus Carrier" publicationId="a716-c1c4-7b26-8424" page="76" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Reinforced, Third-line)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
-            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on each side of the hull and one at the front.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="7469-12ea-cba1-0625" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
         <infoLink id="4125-edd1-8483-d061" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
+        <infoLink name="Unknown" hidden="false" type="profile" id="e6ef-ab28-c5aa-319e" targetId="2a46-a372-d986-d0eb">
+          <modifiers>
+            <modifier type="set" value="3" field="51fb-b7d9-aa59-863d"/>
+            <modifier type="set" value="Vehicle (Transport, Reinforced, Third-line)" field="e555-4aed-dfcc-c0b4"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8ee0-acf9-570d-0500" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
@@ -11239,5 +11230,6 @@ When assigning additional models to units using the Among the Ranks and Militia 
     <catalogueLink id="e123-456e-507c-5t11" name="2022 - Daemons - Bound Daemons" targetId="e545-295b-4cd9-f235" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="2022 - Daemons - Daemons of the Ruinstorm" id="36bf-86e2-87b4-9336" targetId="ac63-5340-2e9e-1eb6"/>
     <catalogueLink type="catalogue" name="2022 - Mechanicum" id="a933-4626-1551-c187" targetId="c247-da79-1654-d39e"/>
+    <catalogueLink type="catalogue" name="(HH V2) Legions Astartes" id="32c0-d8f9-6503-b7be" targetId="6393-649c-7213-a327"/>
   </catalogueLinks>
 </catalogue>
