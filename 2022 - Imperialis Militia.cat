@@ -10723,9 +10723,24 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Shock Ram" hidden="false" type="selectionEntry" id="4355-3a1e-3c19-1b95" targetId="e22e-df78-c49b-7b98"/>
-        <entryLink import="true" name="Flare Shield" hidden="false" type="selectionEntry" id="464a-4f39-f985-4a38" targetId="0e77-6285-22bb-1534"/>
-        <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="a7fe-6b0d-e35e-27f7" targetId="4ae3-79b4-6051-505e"/>
+        <entryLink import="true" name="Shock Ram" hidden="false" type="selectionEntry" id="4355-3a1e-3c19-1b95" targetId="e22e-df78-c49b-7b98">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c51c-d75-7e3a-e4c0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e90-6380-4486-9428"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Flare Shield" hidden="false" type="selectionEntry" id="464a-4f39-f985-4a38" targetId="0e77-6285-22bb-1534">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf75-510e-3060-e5fc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="167a-7614-162-d4dd"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="a7fe-6b0d-e35e-27f7" targetId="4ae3-79b4-6051-505e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f9-ad35-2852-b410"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ae9-ff78-7df4-1ec5"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Mauler Bolt Cannon" hidden="false" type="selectionEntry" id="ad6d-f7e0-11d-abe6" targetId="7478-2c29-dfc4-f4cf">
           <modifiers>
             <modifier type="set" value="Pintle-mounted Mauler Bolt Cannon" field="name"/>
