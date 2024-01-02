@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="96" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="97" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -25,7 +25,6 @@
     <publication id="91df-ed64-4216-5bab" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2" shortName="Main Rules Errata and FAQ V1.2" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/w5Pm3yiEFnjISb6h.pdf"/>
     <publication id="2660-aa44-b169-2b1f" name="Liber Astartes Errata and FAQ V1.2" shortName="LA - Errata and FAQ V1.2" publicationDate="Dec 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/O0XmE9KIYFCQHlsf.pdf"/>
     <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions Astartes v1.2" shortName="LotAoD -LA" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/MMB9m4lXuQoZHb9r.pdf"/>
-    <publication name="HH2 - Age of Darkness Rulebook" hidden="false" id="e77a-823a-da94-16b9"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
