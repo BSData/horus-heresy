@@ -1308,7 +1308,7 @@ Reactions:
     <categoryEntry name="Primus Medicae" hidden="false" id="b81a-8f4a-ff50-ef99"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
+    <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
       <categoryLinks>
         <categoryLink id="d65e-4a0a-fa1a-7ec6" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="17a5-4c80-0c5d-df4d" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
@@ -1651,7 +1651,7 @@ Reactions:
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f3d1-165c-4e16-e5fc"/>
       </constraints>
     </forceEntry>
-    <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
+    <forceEntry id="d4f2-6da5-b6de-06ec" name="3. Allied Detachment" hidden="false">
       <categoryLinks>
         <categoryLink id="45cc-4d1d-6d5e-cdc9" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
@@ -1871,7 +1871,7 @@ Reactions:
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
       </constraints>
     </forceEntry>
-    <forceEntry id="5430-5be1-1613-be44" name="Mortalis Assault Force Organisation Chart" hidden="false">
+    <forceEntry id="5430-5be1-1613-be44" name="ZM 1. Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
         <categoryLink id="e7a4-a234-6cc7-f1b7" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="3ce7-6f89-a347-b6ad" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
@@ -2126,7 +2126,7 @@ Reactions:
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ce4d-7e2a-4698-b234"/>
       </constraints>
     </forceEntry>
-    <forceEntry name="Lord of War Detachment" hidden="false" id="58a7-8821-3cd9-c73">
+    <forceEntry name="2. Lord of War Detachment" hidden="false" id="58a7-8821-3cd9-c73">
       <categoryLinks>
         <categoryLink id="e24b-bfb4-de7b-706c" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="e3e4-a857-9bd2-3a33" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
