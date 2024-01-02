@@ -9,28 +9,20 @@ Horus Heresy
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
 
-## Important
 
-__BattleScribe v1.15 users Notice__: _However we don't support BattleScribe v1.15 any longer, all the files in their
-last revisions for that BattleScribe are available [here](https://github.com/BSData/horus-heresy/releases/tag/6.9.3).
-Downloading `.bsr` file(one of the Downloads) and importing it in BattleScribe v1.15 will allow you to use these
-no-longer-maintained datafiles._
 
 ## Overview ##
 
 __What's this?__
 
-This is the data repo for the Horus Heresy. Both the v1 and v2 versions of the game rules are here.
-The 2022 Version of the Horus Heresy is not complete at this time. Please refer to 
-[this Github issue][https://github.com/BSData/horus-heresy/issues/2070] to track the status of data entry or to volunteer.
+This is the data repo for the Horus Heresy.
 
 BSData organisation created this project. It's a GitHub repository of datafiles.
 Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
 to develop - cool! We need you! Take a look at [our homepage][BSData.net]
 
-__Okay, nice project. Is it actually working?__ _I just want those files..._
+We strongly recommend you use NewRecruit over Battlescribe, as battlescribe is abandonware
 
-Yeah! We have it hosted on AppSpot. Take a look: [BattleScribe Data on Appspot][]
 
 __I found a bug!__ / *I have another request*
 
@@ -77,16 +69,14 @@ On UPGRADES, we default the option to not hidden, and set "Hidden to True" if th
 * [Exemplary Battles in the Age of Darkness: The Axandrai IV Incident](https://www.warhammer-community.com/wp-content/uploads/2022/09/3mVvZrTG9XOWeVxv.pdf) 
 * [Ka'bandha Rules](https://www.warhammer-community.com/wp-content/uploads/2022/07/4uwEurgnIRQCzWHE.pdf)
 * Zone Mortalis (White Dwarf 477)
-* Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/7AX0peoK6m7C7uzw.pdf)
-* Liber Astartes Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf)
-* Liber Hereticus Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf)
-* Liber Mechanicum Errata and FAQ V1.0 (https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf)
+* [Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/7AX0peoK6m7C7uzw.pdf)
+* [Liber Astartes Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf)
+* [Liber Hereticus Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf)
+* [Liber Mechanicum Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf)
 
 ## Links ##
 
 * [BSData organization homepage][BSData.net]
-* [BattleScribe app homepage](https://www.battlescribe.net/)
 
 [BSData.net]: https://www.bsdata.net/
-
 [bug report]: https://github.com/BSData/horus-heresy/issues/new/choose
