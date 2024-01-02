@@ -21,7 +21,7 @@ BSData organisation created this project. It's a GitHub repository of datafiles.
 Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want
 to develop - cool! We need you! Take a look at [our homepage][BSData.net]
 
-We strongly recommend you use NewRecruit over Battlescribe, as battlescribe is abandonware
+We strongly recommend you use NewRecruit over Battlescribe, as battlescribe is abandonware.
 
 
 __I found a bug!__ / *I have another request*
@@ -29,19 +29,19 @@ __I found a bug!__ / *I have another request*
 Great, thank you! Please [Report a bug][bug report] - you can also suggest enhancements and raise other issues there.
 
 ### Where did Horus Heresy 1.0 go?
-We moved it to [its own repo][https://github.com/BSData/horus-heresy-1e]. It is no longer maintained.
+We moved it to [its own repo](https://github.com/BSData/horus-heresy-1e). It is no longer maintained.
 
 ## Standards
 
 ### .cattemplate? and what are all the template_id_ comments?
-A .cattemplate file is a .cat file, renamed to .cattemplate, used by [BSCOPY][https://github.com/nstephenh/BSCopy]
+A .cattemplate file is a .cat file, renamed to .cattemplate, used by [BSCOPY](https://github.com/nstephenh/BSCopy)
 
 We can use bscopy to keep all 18 legions up to date with generic units and rites of war.
 It builds a "map" of source to target ids in comments. If you copy a node with a comment that has an ID in it,
 please delete the comment. 
 
 If you want to add something generic to all 18 legions, rename the .cattemplate to .cat, edit it to add the new unit, 
-rename the file back to .cat, and then run BSCopy's copy_changes_from_template or ask @NStephenH#0001 in discord.
+rename the file back to .cat, and then run BSCopy's copy_changes_from_template or ask @NStephenH in discord.
 
 ### Creating units
 
