@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="f84d-94cf-5ce6-b393" name="2022 - Imperialis Militia" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -10112,24 +10112,15 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="9ea2-bc98-a0d8-3091" name="Legion Rhino Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Third-line)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14</characteristic>
-            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
-            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
-            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Legion Rhino Transport has one Access Point on each side of the hull and one at the rear.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="777f-8485-eb99-e6c9" name="Repair" hidden="false" targetId="857b-1adc-8233-6c55" type="rule"/>
         <infoLink id="a0c0-0efd-c9ed-9ef0" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+        <infoLink name="Legion Rhino Transport" hidden="false" type="profile" id="4e77-bcd5-5900-8eea" targetId="ab48-605d-a6cc-7ad6">
+          <modifiers>
+            <modifier type="set" value="3" field="51fb-b7d9-aa59-863d"/>
+            <modifier type="set" value="Vehicle (Transport, Third-line)" field="e555-4aed-dfcc-c0b4"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4918-c7ed-dc9c-9b19" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
@@ -10252,23 +10243,14 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="835e-c9b3-4f95-ae8e" name="Militia Termite Assault Drill" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Third-line)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">8</characteristic>
-            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
-            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
-            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Legion Termite Assault Drill has two Access Points, one on each side of the hull.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="b807-308d-b96c-bba6" name="Infantry Transport" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+        <infoLink name="Termite Assault Drill" hidden="false" type="profile" id="fbc0-f404-e52e-86c0" targetId="502f-3ae3-b1ce-455a">
+          <modifiers>
+            <modifier type="set" value="3" field="51fb-b7d9-aa59-863d"/>
+            <modifier type="set" value="Vehicle (Transport, Third-line)" field="e555-4aed-dfcc-c0b4"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1ecd-2a6c-27b9-810f" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
@@ -10302,7 +10284,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="71ec-212b-7e89-38a6" name="1) Pintle-mounted Weaponry" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="71ec-212b-7e89-38a6" name="1) Pintle-mounted Weaponry" hidden="false" collective="false" import="true" defaultSelectionEntryId="0d98-e8a6-156a-9843">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d3d-730c-7f22-da33" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6efb-1884-88da-b125" type="max"/>
@@ -10352,24 +10334,15 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile id="60d2-8915-fa6d-b478" name="Militia Land Raider Proteus Carrier" publicationId="a716-c1c4-7b26-8424" page="76" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Reinforced, Third-line)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
-            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
-            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on each side of the hull and one at the front.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="7469-12ea-cba1-0625" name="Assault Vehicle" hidden="false" targetId="aa61-11f6-2bb5-7c0e" type="rule"/>
         <infoLink id="4125-edd1-8483-d061" name="Power of the Machine Spirit" hidden="false" targetId="5a93-13e0-809d-782a" type="rule"/>
+        <infoLink name="Unknown" hidden="false" type="profile" id="e6ef-ab28-c5aa-319e" targetId="2a46-a372-d986-d0eb">
+          <modifiers>
+            <modifier type="set" value="3" field="51fb-b7d9-aa59-863d"/>
+            <modifier type="set" value="Vehicle (Transport, Reinforced, Third-line)" field="e555-4aed-dfcc-c0b4"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8ee0-acf9-570d-0500" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
@@ -10378,7 +10351,7 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         <categoryLink id="f647-1a00-45dc-f45a" name="Third-line Unit Sub-type" hidden="false" targetId="cdaa-645b-fda7-8556" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c094-8780-1203-64cf" name="1) Hull Weapon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c094-8780-1203-64cf" name="1) Hull Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="62d4-09ac-4ab3-876b">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0399-a473-976d-4ef9" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78c9-ab8c-ce06-286b" type="min"/>
@@ -10742,11 +10715,32 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
       </costs>
       <infoLinks>
         <infoLink name="Galvanic Traction Drive" hidden="false" type="rule" id="113a-a061-f5cd-86cd" targetId="e51e-cae1-d9e7-d317"/>
+        <infoLink name="Triaros Armoured Conveyor" hidden="false" type="profile" id="9583-7b9b-d054-82ad" targetId="9c35-7828-ae5a-edd1">
+          <modifiers>
+            <modifier type="set" value="3" field="51fb-b7d9-aa59-863d"/>
+            <modifier type="set" value="Vehicle (Transport, Third-line)" field="e555-4aed-dfcc-c0b4"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Shock Ram" hidden="false" type="selectionEntry" id="4355-3a1e-3c19-1b95" targetId="e22e-df78-c49b-7b98"/>
-        <entryLink import="true" name="Flare Shield" hidden="false" type="selectionEntry" id="464a-4f39-f985-4a38" targetId="0e77-6285-22bb-1534"/>
-        <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="a7fe-6b0d-e35e-27f7" targetId="4ae3-79b4-6051-505e"/>
+        <entryLink import="true" name="Shock Ram" hidden="false" type="selectionEntry" id="4355-3a1e-3c19-1b95" targetId="e22e-df78-c49b-7b98">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c51c-d75-7e3a-e4c0"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e90-6380-4486-9428"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Flare Shield" hidden="false" type="selectionEntry" id="464a-4f39-f985-4a38" targetId="0e77-6285-22bb-1534">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bf75-510e-3060-e5fc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="167a-7614-162-d4dd"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="a7fe-6b0d-e35e-27f7" targetId="4ae3-79b4-6051-505e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f9-ad35-2852-b410"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ae9-ff78-7df4-1ec5"/>
+          </constraints>
+        </entryLink>
         <entryLink import="true" name="Mauler Bolt Cannon" hidden="false" type="selectionEntry" id="ad6d-f7e0-11d-abe6" targetId="7478-2c29-dfc4-f4cf">
           <modifiers>
             <modifier type="set" value="Pintle-mounted Mauler Bolt Cannon" field="name"/>
@@ -10790,21 +10784,6 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </conditions>
         </modifier>
       </modifiers>
-      <profiles>
-        <profile name="Militia Triaros Conveyor" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="844b-4f84-f80a-c3c3">
-          <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Third-line)</characteristic>
-            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
-            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
-            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">12</characteristic>
-            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
-            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">22</characteristic>
-            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on either side of the hull.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <categoryLinks>
         <categoryLink targetId="cdaa-645b-fda7-8556" id="c450-86c5-9e4c-f82d" primary="false" name="Third-line Unit Sub-type"/>
       </categoryLinks>
@@ -10819,22 +10798,21 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
               </modifiers>
             </infoLink>
             <infoLink name="Galvanic Traction Drive" hidden="false" type="rule" id="ca9e-6957-cb91-fbf8" targetId="e51e-cae1-d9e7-d317"/>
+            <infoLink name="Krios Battle Tank" hidden="false" type="profile" id="9414-f04e-affd-3bf4" targetId="0d8f-f51e-e76b-e6aa">
+              <modifiers>
+                <modifier type="set" value="Militia Krios Battle Tank" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="7ca9-9eae-7f93-79fa" childId="31eb-9c83-cc5e-ef2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Militia Krios Venator Tank Destroyer" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="7ca9-9eae-7f93-79fa" childId="566b-4fc6-9d5c-10cd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
-          <profiles>
-            <profile name="Militia Krios" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="f019-58-f729-3682">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Fast, Third-line)</characteristic>
-                <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">16</characteristic>
-                <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-                <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">13</characteristic>
-                <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
-                <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-                <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-                <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547"/>
-                <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e"/>
-              </characteristics>
-            </profile>
-          </profiles>
           <entryLinks>
             <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="b02d-4863-e6f-994" targetId="4ae3-79b4-6051-505e"/>
           </entryLinks>
@@ -11239,5 +11217,6 @@ When assigning additional models to units using the Among the Ranks and Militia 
     <catalogueLink id="e123-456e-507c-5t11" name="2022 - Daemons - Bound Daemons" targetId="e545-295b-4cd9-f235" type="catalogue" importRootEntries="true"/>
     <catalogueLink type="catalogue" name="2022 - Daemons - Daemons of the Ruinstorm" id="36bf-86e2-87b4-9336" targetId="ac63-5340-2e9e-1eb6"/>
     <catalogueLink type="catalogue" name="2022 - Mechanicum" id="a933-4626-1551-c187" targetId="c247-da79-1654-d39e"/>
+    <catalogueLink type="catalogue" name="(HH V2) Legions Astartes" id="32c0-d8f9-6503-b7be" targetId="6393-649c-7213-a327"/>
   </catalogueLinks>
 </catalogue>

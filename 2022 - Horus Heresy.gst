@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="93" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="96" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication name="GitHub" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy"/>
     <publication id="817a-6288-e016-7469" name="Liber Astartes – Loyalist Legiones Astartes Army Book" shortName="LA - Loyalist" publicationDate="June 2022"/>
@@ -1308,7 +1308,7 @@ Reactions:
     <categoryEntry name="Primus Medicae" hidden="false" id="b81a-8f4a-ff50-ef99"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="d926-652f-8436-30ce" name="Crusade Force Organisation Chart" hidden="false">
+    <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
       <categoryLinks>
         <categoryLink id="d65e-4a0a-fa1a-7ec6" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="17a5-4c80-0c5d-df4d" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
@@ -1651,7 +1651,7 @@ Reactions:
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f3d1-165c-4e16-e5fc"/>
       </constraints>
     </forceEntry>
-    <forceEntry id="d4f2-6da5-b6de-06ec" name="Allied Detachment" hidden="false">
+    <forceEntry id="d4f2-6da5-b6de-06ec" name="3. Allied Detachment" hidden="false">
       <categoryLinks>
         <categoryLink id="45cc-4d1d-6d5e-cdc9" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
           <constraints>
@@ -1871,7 +1871,7 @@ Reactions:
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
       </constraints>
     </forceEntry>
-    <forceEntry id="5430-5be1-1613-be44" name="Mortalis Assault Force Organisation Chart" hidden="false">
+    <forceEntry id="5430-5be1-1613-be44" name="ZM 1. Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
         <categoryLink id="e7a4-a234-6cc7-f1b7" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="3ce7-6f89-a347-b6ad" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
@@ -2126,7 +2126,7 @@ Reactions:
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ce4d-7e2a-4698-b234"/>
       </constraints>
     </forceEntry>
-    <forceEntry name="Lord of War Detachment" hidden="false" id="58a7-8821-3cd9-c73">
+    <forceEntry name="2. Lord of War Detachment" hidden="false" id="58a7-8821-3cd9-c73">
       <categoryLinks>
         <categoryLink id="e24b-bfb4-de7b-706c" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="false"/>
         <categoryLink id="e3e4-a857-9bd2-3a33" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="false">
@@ -2850,7 +2850,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       <infoLinks>
         <infoLink id="f308-b538-0acd-b821" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Rending (5+)"/>
+            <modifier type="set" field="name" value="Rending (6+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="347a-6673-dfda-cfc9" name="Exoshock (X)" hidden="false" targetId="69ca-318a-b47a-7a3c" type="rule">
@@ -12942,7 +12942,7 @@ Limitations
 • In a Detachment using this Rite of War, a single Legion Sicaran Squadron or Legion Predator Squadron, composed of only a single model, must be selected as a HQ choice. This model gains the Master of the Legion special rule and must be selected as the army’s Warlord and must use the Master of Armour Warlord Trait (as follows). In this case, the model must be selected as the Warlord despite having the Vehicle Unit Type, and regardless of any other rules that would require another model to be selected as the Warlord (note this means that some units and Characters cannot be selected as part of this army, such as Primarchs).
 
 Limitations
-• All units in a Detachment using this Rite of War with the Infantry Type must begin the battle Embarked upon a model with the Transport Sub-type; any Infantry models in a Detachment using this Rite of War, both those deployed on the battlefield and in Reserves, that are not Embarked upon a model with the Transport Subtype at the beginning of the controlling player’s first turn must be removed as casualties.
+• All units in a Detachment using this Rite of War with the Infantry Type must begin the battle Embarked upon a model with the Transport Sub-type; any Infantry models in a Detachment using this Rite of War, both those deployed on the battlefield and in Reserves, that are not Embarked upon a model with the Transport Subtype at the beginning of the battle must be removed as casualties.
 • A Detachment using this Rite of War may not select any Fortification choices.
 • A Detachment using this Rite of War may not include any models with a Movement Characteristic of 0 or ‘-’.
 • This Rite of War may only be selected for an army’s Primary Detachment.
@@ -15223,7 +15223,7 @@ Hits from Apocalyptic Mega-blast weapons made against Vehicles are always resolv
     <rule id="676c-7b75-4b6f-9405" name="Bulky (X)" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
       <description>Bulky models count as a number of models equal to the value X in brackets after the rule’s name for the purposes of Transport Capacity and whether a given unit outnumbers another in combat.
 
-For example, a unit comprised of five  odels all of which have the Bulky (3) special rule, would count as 15 models when attempting to Embark on a Transport Vehicle or when deciding if they outnumber an enemy unit.</description>
+For example, a unit comprised of five models all of which have the Bulky (3) special rule, would count as 15 models when attempting to Embark on a Transport Vehicle or when deciding if they outnumber an enemy unit.</description>
     </rule>
     <rule id="13d1-9270-6539-08ed" name="Chosen Warriors" publicationId="e77a-823a-da94-16b9" page="236" hidden="false">
       <description>A model with this special rule may issue and accept Challenges as if it had the Character type. Note that this does not allow a model with this special rule to use any other special rules associated with the Character type.</description>
