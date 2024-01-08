@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="36" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="37" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -3255,19 +3255,24 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="34ff-115f-b2ad-9c40" name="Ravager w/ Heavy Weapon (1 in every 5)" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="34ff-115f-b2ad-9c40" name="Ravager w/ Rad Missile Launcher (1 in every 5)" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="increment" field="44f2-da51-8db2-74e9" value="1">
                   <repeats>
                     <repeat field="selections" scope="7a04-bc44-70bb-cb98" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
+                <modifier type="decrement" value="1" field="44f2-da51-8db2-74e9">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="c9e6-1d71-51e3-991" shared="true" roundUp="false" id="3bc-bae8-d09a-c78a"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="44f2-da51-8db2-74e9" type="max"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="44f2-da51-8db2-74e9" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="4a44-8215-af96-28b5" name="Weapon Choice:" hidden="false" collective="false" import="true" defaultSelectionEntryId="95f3-0d0d-365d-0e22">
+                <selectionEntryGroup id="4a44-8215-af96-28b5" name="Weapon Choice:" hidden="false" collective="true" import="true" defaultSelectionEntryId="95f3-0d0d-365d-0e22">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03aa-a933-2967-e94c" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8b1-90b1-6ff8-856c" type="min"/>
@@ -3276,14 +3281,6 @@
                     <entryLink id="95f3-0d0d-365d-0e22" name="Missile Launcher (With suspensor web and rad missiles only)" hidden="false" collective="false" import="true" targetId="1e98-2cbd-1ddd-8111" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="7a04-bc44-70bb-cb98" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9be-8c60-dd2a-66e4" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="d3d0-886e-f46b-962f" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="b6ac-3ba5-90ae-67f7" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="7a04-bc44-70bb-cb98" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bfaf-7eba-529a-0a15" type="max"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
@@ -3354,7 +3351,7 @@
                 </entryLink>
               </entryLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
               <infoLinks>
                 <infoLink name="Ravager" hidden="false" type="profile" id="b4dd-5bcc-668f-365a" targetId="2b72-66e9-2e1c-797c"/>
@@ -3486,6 +3483,108 @@
               </costs>
               <infoLinks>
                 <infoLink name="Ravager" hidden="false" type="profile" id="5c7f-1c16-2339-a1b3" targetId="2b72-66e9-2e1c-797c"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="c9e6-1d71-51e3-991" name="Ravager w/ Thunder Hammer (1 in every 5)" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="increment" field="a6e8-9e68-115e-879f" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="7a04-bc44-70bb-cb98" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" value="1" field="a6e8-9e68-115e-879f">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="34ff-115f-b2ad-9c40" shared="true" roundUp="false" id="820e-2169-5603-c05c"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6e8-9e68-115e-879f" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e0da-d95a-e7cb-f39" name="Weapon Choice:" hidden="false" collective="true" import="true" defaultSelectionEntryId="dc2f-8d7b-540e-8580">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3b7-1637-e117-45eb" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="653-a57e-9720-bb6" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="dc2f-8d7b-540e-8580" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="b6ac-3ba5-90ae-67f7" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="7a04-bc44-70bb-cb98" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4494-e1d6-1bab-f9aa" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="28a9-b073-e4d1-b4cc" name="Chainsword:" hidden="false" collective="false" import="true" defaultSelectionEntryId="c3b5-3165-5626-e608">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="6121-f6b1-a409-5ba3" type="min"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e80d-a207-3ca2-d3c5" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c3b5-3165-5626-e608" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="8843-4693-bb15-b1c0" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="93d3-e2cb-f501-ff42" name="Meteor Hammer" hidden="false" collective="false" import="true" targetId="314b-febc-93e8-a2e9" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="af5c-40ab-6fe5-8456" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="7864-bd4b-cc2a-f75" name="Barb-Hook Lash" hidden="false" collective="false" import="true" targetId="e711-ab63-4899-8b00" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="c64f-f74b-b37-5df2" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="5c1c-4e3a-50d0-d890" name="Excoriator Chainaxe" hidden="false" collective="false" import="true" targetId="269e-ff0b-faec-d067" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b15d-b13c-2577-1dcc" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="c8fe-4247-6758-2d94" name="Chainaxe" hidden="false" collective="false" import="true" targetId="ed76-dace-31e4-b174" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="b2c2-c183-1015-ea1e" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="298-27de-5a2b-e3c9" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="6a9f-b0aa-e137-9d18" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="fb28-5fa-9065-705d" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="bfbe-48ba-503f-1135" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="79c8-bfe9-784a-3472" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="5d38-c515-3351-b3f5" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Ravager" hidden="false" type="profile" id="e6ef-9144-64c6-7370" targetId="2b72-66e9-2e1c-797c"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
