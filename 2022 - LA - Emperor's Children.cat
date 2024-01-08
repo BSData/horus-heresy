@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="72ba-61c2-37ad-c785" name="LA -   III: Emperor&apos;s Children" revision="35" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="a119-3943-4b8b-b651" name="Captain Lucius" hidden="true" collective="false" import="false" targetId="0707-1e4b-27da-9cd4" type="selectionEntry">
       <modifiers>
@@ -3741,6 +3741,150 @@ A unit with this special rule gains +1 to the score used to calculate the winner
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="760a-f69-9b05-a972" primary="false" name="Character"/>
+          </categoryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ad3-6894-f7cc-77b7" name="May take any of the following:" hidden="false" collective="false" import="true">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="4127-a201-fba1-9d79" name="Surgical Augment (Unit Character)" hidden="true" collective="false" import="true">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab58-c1b9-207e-6b1d" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="f4a4-3b97-9585-f712" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90e0-3e1d-454f-eca8" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink id="ba8f-837b-8002-db3e" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52-a41d-222b-1c16" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Abhorrent Sensoria" hidden="false" type="selectionEntry" id="aeb1-3644-9509-81ea" targetId="fd60-b3e7-979e-87b6">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Warp Scream" hidden="false" type="selectionEntry" id="6a0b-34d9-b43c-2c22" targetId="c03-837a-edbe-cb99">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Sublingual Glands" hidden="false" type="selectionEntry" id="df0f-5191-e7e8-d66a" targetId="95cf-2089-8146-7853">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="cca0-934f-f995-e0d1" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d87-96f6-9d3e-8b1b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b2c6-e3e2-5f3b-3080" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb21-2a6b-c73c-671a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="bcc2-e14a-cae2-99f6" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96c0-2780-6413-98bc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1646-14c0-655a-4aeb" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1258-9ecd-c0c0-3021" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="df1-c300-365d-7681" name="Power Dagger" hidden="false" collective="false" import="true" targetId="8157-b77c-0dd3-85b2" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c010-5ea5-7420-a1fc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="831a-d3d0-e7b-27d9" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86e2-6aae-4ef6-7a5f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry id="4e8a-c69f-4d65-8947" name="The Cacophony" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3769,145 +3913,6 @@ A unit with this special rule gains +1 to the score used to calculate the winner
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ac80-3c81-43ce-7f1c" name="The Orchestrator may take any of the following:" hidden="false" collective="false" import="true">
-          <selectionEntryGroups>
-            <selectionEntryGroup id="a62d-ffcb-5860-cd65" name="Surgical Augment (Unit Character)" hidden="true" collective="false" import="true">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c36-7a84-9604-7ca8" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="1b38-cdd6-2646-bf97" name="Sonic Lance" hidden="false" collective="false" import="true" targetId="5007-1732-6ad5-ce36" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0207-9413-83f8-d3bc" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink id="9cff-84a6-0e9d-71f9" name="Sub-sonic Pulser" hidden="false" collective="false" import="true" targetId="ddd0-22b3-ea96-680d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d45-a39d-aad0-19b8" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Abhorrent Sensoria" hidden="false" type="selectionEntry" id="779f-a738-8b9b-1d40" targetId="fd60-b3e7-979e-87b6">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Warp Scream" hidden="false" type="selectionEntry" id="61db-2f4e-68b5-173a" targetId="c03-837a-edbe-cb99">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-                <entryLink import="true" name="Sublingual Glands" hidden="false" type="selectionEntry" id="48e3-a3a9-1574-5fd6" targetId="95cf-2089-8146-7853">
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                  </costs>
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3edc-a1b9-6dc6-b1ea" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="7a6b-7bfd-32cf-024d" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9977-686e-c4b3-6d0e" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink id="47b6-098b-acef-0f1e" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea4-6470-61a7-fb6a" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink id="4e2d-fb98-67b6-427b" name="Power Weapon" hidden="false" collective="false" import="true" targetId="8d9c-9f80-c0fd-adcf" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99a6-f815-5ade-26b9" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-            <entryLink id="6a59-860a-5a5c-7fae" name="Power Fist" hidden="false" collective="false" import="true" targetId="768d-b89b-7328-d749" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d19-1453-1da9-3d78" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-              </costs>
-            </entryLink>
-            <entryLink id="e4ef-791a-935f-105c" name="Power Dagger" hidden="false" collective="false" import="true" targetId="8157-b77c-0dd3-85b2" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4564-3442-58dc-773c" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink id="26f0-f675-862f-5cf9" name="Venom Spheres" hidden="false" collective="false" import="true" targetId="82f5-cca1-51a0-31dd" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eb2-aecf-5b7c-0ad1" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup id="4376-2b20-79e4-bce5" name="Dedicated Transport" hidden="false" collective="false" import="true">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
