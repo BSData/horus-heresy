@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="36" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="37" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -3264,7 +3264,7 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="44f2-da51-8db2-74e9" type="max"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="44f2-da51-8db2-74e9" type="max"/>
               </constraints>
               <selectionEntryGroups>
                 <selectionEntryGroup id="4a44-8215-af96-28b5" name="Weapon Choice:" hidden="false" collective="false" import="true" defaultSelectionEntryId="95f3-0d0d-365d-0e22">
@@ -3274,17 +3274,11 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="95f3-0d0d-365d-0e22" name="Missile Launcher (With suspensor web and rad missiles only)" hidden="false" collective="false" import="true" targetId="1e98-2cbd-1ddd-8111" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="7a04-bc44-70bb-cb98" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d9be-8c60-dd2a-66e4" type="max"/>
-                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="d3d0-886e-f46b-962f" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="b6ac-3ba5-90ae-67f7" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="7a04-bc44-70bb-cb98" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bfaf-7eba-529a-0a15" type="max"/>
-                      </constraints>
+                    <entryLink id="d3d0-886e-f46b-962f" name="Thunder Hammer" hidden="false" collective="false" import="true" targetId="838c-4002-713d-d7c6" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                       </costs>
@@ -3334,7 +3328,7 @@
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="12fa-3ff6-a795-c114" type="max"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="9b01-1766-f073-bc4a" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="6a9f-b0aa-e137-9d18" type="selectionEntry">
+                    <entryLink id="9b01-1766-f073-bc4a" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="97ad-7991-5b27-c031" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="ddc1-2231-ad64-e2a7" type="max"/>
                       </constraints>
@@ -4502,7 +4496,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="47"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1e98-2cbd-1ddd-8111" name="Missile Launcher (With suspensor web and rad missiles only)" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="1e98-2cbd-1ddd-8111" name="Missile Launcher (With suspensor web and rad missiles only)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9a37-a49c-1e9e-cf92" name="Rad Missile (Missile Launcher)" hidden="false" targetId="ec3c-78ff-bbfa-66d7" type="profile"/>
         <infoLink id="4b3e-d2e9-736b-bab3" name="Suspensor Web" hidden="false" targetId="457c-1f2c-ca90-1bf3" type="profile"/>
@@ -5103,16 +5097,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6a9f-b0aa-e137-9d18" name="Two Falax Blades" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="37d4-c7de-2dd3-31f4" name="Two Falax Blades" publicationId="09c5-eeae-f398-b653" page="219" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Rending (4+), Duellist’s Edge (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="2424-a2b2-2ba1-724e" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
           <modifiers>
@@ -5125,6 +5109,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="83a1-32ee-6973-0390" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink name="Two Falax Blades" hidden="false" type="profile" id="7079-2e57-3ad-6a17" targetId="a438-da9a-42cd-1d2d"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
