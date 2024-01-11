@@ -1219,12 +1219,12 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
     <categoryEntry id="a443-dbf4-cb6c-4da1" name="Corrupted Engine Sub-type" hidden="false">
       <rules>
         <rule id="6aed-6080-ba72-6007" name="Corrupted Engine Sub-type" publicationId="6bcf-2297-2bcd-51be" page="8" hidden="false">
-          <description>• All models with the Corrupted Engine Sub-type gain the Fear (1) special rule, or if it already has the Fear (X) special rule, it increases the value of X by 1 instead. 
-• Any rule, effect or modifier that would affect a model with the Corrupted Unit Sub-type also affects a model with the Corrupted Engine Unit Sub-type (e.g., the Anathema Sub-type special rules or the Inexorable special rule).
-• Any unit composed entirely of models with the Corrupted Engine Unit Sub-type is immune to the effects of the Fear (X) special rule, automatically passes Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit composed entirely of models with the Corrupted Engine Unit Sub-type fails a Morale check, it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no saves or Damage Mitigation rolls of any kind allowed.
-• Any Hits inflicted on a model with the Corrupted Engine Unit Sub-type by a weapon with the Force or Psychic Focus special rules gain the Instant Death special rule.
-• If a model with the Corrupted Engine Sub-type has a Wound characteristic and suffers an unsaved Wound with the Instant Death special rule it is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it.
-• No model that does not also have the Corrupted Engine Sub-type may join a unit that includes one or more models with the Corrupted Engine Unit Sub-type.</description>
+          <description>• All models with the Corrupted Engine Sub-type gain the Fear (1) special rule, or if it already has the Fear (X) special rule, it increases the value of X by 1 instead.
+• Any rule, effect or modifier that would affect a model with the Corrupted Unit Sub-type also affects a model with the Corrupted Engine Unit Sub-type (e.g., the Anathema Sub-type special rules or the Inexorable special rule).
+• Any unit composed entirely of models with the Corrupted Engine Unit Sub-type is immune to the effects of the Fear (X) special rule, automatically passes Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit composed entirely of models with the Corrupted Engine Unit Sub-type fails a Morale check, it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no saves or Damage Mitigation rolls of any kind allowed.
+• Any Hits inflicted on a model with the Corrupted Engine Unit Sub-type by a weapon with the Force or Psychic Focus special rules gain the Instant Death special rule.
+• If a model with the Corrupted Engine Sub-type has a Wound characteristic and suffers an unsaved Wound with the Instant Death special rule it is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it.
+• No model that does not also have the Corrupted Engine Sub-type may join a unit that includes one or more models with the Corrupted Engine Unit Sub-type.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1240,18 +1240,18 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
         <rule id="d0e-e683-6ab9-4f0" name="Knights and Titans" publicationId="e77a-823a-da94-16b9" page="216" hidden="false">
           <description>Very long. See 216. Summary from the Omega Coded:
 Measuring:
-- If model has a base, measure to base. If model does not, measure to the hull, except for when firing its weapons.
+- If model has a base, measure to base. If model does not, measure to the hull, except for when firing its weapons.
 Movement:
-- Ignore Difficult and Dangerous Terrain but may not end its move in Impassable Terrain.
-- May move over enemy Infantry and Cavalry types but may not finish their movement within 1” of a model.
+- Ignore Difficult and Dangerous Terrain but may not end its move in Impassable Terrain.
+- May move over enemy Infantry and Cavalry types but may not finish their movement within 1” of a model.
 - May not Run.
 - May not make Ram Attacks.
-- If rammed, enemy vehicle always takes hits at Str10 and inflicts D3 HP of damage. If Knight or Titan survives the Ram, may attack the vehicle in the Assault phase.
+- If rammed, enemy vehicle always takes hits at Str10 and inflicts D3 HP of damage. If Knight or Titan survives the Ram, may attack the vehicle in the Assault phase.
 Shooting:
-- Always count as stationary, may fire Ordnance weapons with no effect on firing other weapons.
-- May fire all weapons at different targets (must declare all targets before firing).
-- Arm Mounted Weapon Arc: May fire in any Firing Arc, except the Hull (Rear). Count as Defensive weapons.
-- Carapace Mounted Weapon Arc: May fire in any arc but may not target models within 12” of firing model.
+- Always count as stationary, may fire Ordnance weapons with no effect on firing other weapons.
+- May fire all weapons at different targets (must declare all targets before firing).
+- Arm Mounted Weapon Arc: May fire in any Firing Arc, except the Hull (Rear). Count as Defensive weapons.
+- Carapace Mounted Weapon Arc: May fire in any arc but may not target models within 12” of firing model.
 Assault:
 - May declare Charges.
 - Cannot be locked in combat.
@@ -1259,16 +1259,16 @@ Assault:
 - Gains +1 attack for each Melee weapon after the first
 - In addition to normal attacks may make;
 Stomp Attacks:
-- Makes D3+unmodified Attack characteristic attacks, Resolved at initiative 1, AP2 with the model’s unmodified WS and STR.
-- May not make Stomp Attacks against Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
+- Makes D3+unmodified Attack characteristic attacks, Resolved at initiative 1, AP2 with the model’s unmodified WS and STR.
+- May not make Stomp Attacks against Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
 - May not Sweeping Advances, Pile-in Moves or Consolidations.
 Damage:
-- Any effects from Shaken, Stunned, Immobilised or Weapon Destroyed have no effect but lose HP as normal.
+- Any effects from Shaken, Stunned, Immobilised or Weapon Destroyed have no effect but lose HP as normal.
 - If suffer an explodes result, lose D3 HP instead.
 - Effects which permanently lower AV have no effect.
-- Catastrophic Damage: When loses final HP, it explodes. Every model within 6+D6 measured from the hull takes a str7+d3 AP4 hit. Any units hit must immediately take a Pinning test.
+- Catastrophic Damage: When loses final HP, it explodes. Every model within 6+D6 measured from the hull takes a str7+d3 AP4 hit. Any units hit must immediately take a Pinning test.
 Reactions:
-- May only make Reactions in response to – Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
+- May only make Reactions in response to – Super Heavy Vehicles, Lumbering Flyers, Knights and Titans or any model with 8+ wounds.
 - May not perform Death or Glory Reactions</description>
         </rule>
       </rules>
@@ -10892,7 +10892,7 @@ The Best Defence – This Advanced Reaction may be made once per battle, during 
             <profile name="Night Lords Advanced Reaction" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="7766-7ce7-deb5-6f3b" publicationId="09c5-eeae-f398-b653" page="195">
               <characteristics>
                 <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction is available only to units composed entirely of models with the Legiones Astartes (Night Lords) special rule. Unlike Core Reactions, Advanced Reactions are activated in unique and specific circumstances, as noted in their descriptions, and can often have game changing effects. Advanced Reactions use up points of a Reactive player’s Reaction Allotment as normal and obey all other restrictions placed upon Reactions, unless it is specifically noted otherwise in their description.
- 
+
 The Better Part of Valour – This Advanced Reaction may be made once per battle during the Assault phase when any enemy unit declares a Charge targeting a friendly unit under the Reactive player’s control with the Legiones Astartes (Night Lords) special rule. Before the Charge is resolved the target unit Falls Back, as if it had failed a Morale check, but immediately Regroups once that move is completed and suffers none of the usual restrictions for a unit that has Regrouped and may Move, Run, Charge and make Shooting Attacks as normal. If this movement causes the target unit to Move more than 12&quot; from, or out of sight of, the Charging unit then the Active player may re-direct the Charge to target another enemy unit within range, but if the target unit remains within 12&quot; and within line of sight of the Charging unit, the target unit must attempt the original Charge. If the Fall Back caused by this Reaction forces the Reacting unit to reach the edge of the battlefield, it immediately stops moving and Regroups, but suffers none of the usual restrictions for a unit that has Regrouped and may Move, Run, Charge and make Shooting Attacks as normal.</characteristic>
               </characteristics>
             </profile>
@@ -14291,10 +14291,10 @@ A Legion Centurion with the Legion Champion Consul upgrade.
 A Legion Cataphractii Centurion with the Legion Champion Consul upgrade.
 A Legion Tartaros Centurion with the Legion Champion Consul upgrade.
 A Legion Champion in a Detachment using this Corrupted Rite of War gains the Sycophantic Retinue special rule.
-   
+
 Sycophantic Retinue
 While Fulgrim Transfigured is on the battlefield, models with this special rule gain the Preferred Enemy (Everything) special rule.
-   
+
 Limitations
 Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite of War.</description>
             </rule>
@@ -14855,16 +14855,16 @@ A unit with this special rule that has been joined by a model after or during de
           </constraints>
           <rules>
             <rule name="Arms of the Omnissiah" hidden="false" id="a47b-f75c-1376-ad85" publicationId="bc5c-e6fb-985f-81be" page="6">
-              <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
+              <description>All eligible models in a Detachment with this Provenance may upgrade lasguns to lasrifles for no additional cost.
 
 
-• Option – Blessed Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade lasguns to laslocks and may upgrade sniper rifles to arc rifles at a cost of +45 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
+• Option – Blessed Arms: Eligible models in Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres may upgrade lasguns to laslocks and may upgrade sniper rifles to arc rifles at a cost of +45 points per unit, regardless of the number of models or types of weapons upgraded in a given unit.
 
 
-• Option – Sanctified Weapons: A Force Commander in a Detachment with this Provenance may exchange a close combat weapon for a corposant stave for +5 points and/or a laspistol for a radium pistol for +5 points. A Force Commander may take a servo-arm for +10 points.
+• Option – Sanctified Weapons: A Force Commander in a Detachment with this Provenance may exchange a close combat weapon for a corposant stave for +5 points and/or a laspistol for a radium pistol for +5 points. A Force Commander may take a servo-arm for +10 points.
 
 
-This Provenance cannot be taken in conjunction with the Armoury of Old Night Provenance.</description>
+This Provenance cannot be taken in conjunction with the Armoury of Old Night Provenance.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -14892,10 +14892,10 @@ This Provenance cannot be taken in conjunction with the Armoury of Old Night Pr
           </constraints>
           <rules>
             <rule name="Augmented Levy" hidden="false" id="b147-7837-b14b-8006" publicationId="bc5c-e6fb-985f-81be" page="6">
-              <description>All Imperialis Militia Levy Squads in a Detachment with this Provenance receive +1 to their Leadership Characteristic and gain the Stubborn and The Rite of Pure Thought special rules (see page 108 of Liber Mechanicum). However, the Detachment’s Compulsory Troops choices must be filled by Imperialis Militia Levy Squads, and it may not have more Infantry units, excepting HQ choices, of other types than it has Imperialis Militia Levy Squads in total. For example, if it has three Imperialis Militia Levy Squads, it can have a maximum of three additional Infantry squads of other kinds. Imperialis Militia Levy Squads in an army with this Provenance may  not be joined by a Discipline Master.
+              <description>All Imperialis Militia Levy Squads in a Detachment with this Provenance receive +1 to their Leadership Characteristic and gain the Stubborn and The Rite of Pure Thought special rules (see page 108 of Liber Mechanicum). However, the Detachment’s Compulsory Troops choices must be filled by Imperialis Militia Levy Squads, and it may not have more Infantry units, excepting HQ choices, of other types than it has Imperialis Militia Levy Squads in total. For example, if it has three Imperialis Militia Levy Squads, it can have a maximum of three additional Infantry squads of other kinds. Imperialis Militia Levy Squads in an army with this Provenance may  not be joined by a Discipline Master.
 
 
-This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted Flesh, Gene-crafted, Unending Hordes, Feral Warriors or Ogryn Conscripts Provenances.</description>
+This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted Flesh, Gene-crafted, Unending Hordes, Feral Warriors or Ogryn Conscripts Provenances.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -14918,11 +14918,11 @@ This Provenance cannot be taken in conjunction with the Abhuman Muster, Tainted
           </constraints>
           <rules>
             <rule name="Forge Remnants" hidden="false" id="eecb-18b4-38dd-dff0" publicationId="bc5c-e6fb-985f-81be" page="6">
-              <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take a Triaros Armoured Conveyor as a Dedicated Transport so long as they number 20 models or less. In addition, a Detachment with this Provenance may include three additional Heavy Support choices – but these additional choices may only be used to select Krios Squadrons (see
-Liber Mechanicum for details and points costs). All Triaros Armoured Conveyors and Krios Squadrons selected in this fashion gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
+              <description>Imperialis Militia Grenadier Squads and Imperialis Militia Command Cadres with this Provenance may take a Triaros Armoured Conveyor as a Dedicated Transport so long as they number 20 models or less. In addition, a Detachment with this Provenance may include three additional Heavy Support choices – but these additional choices may only be used to select Krios Squadrons (see
+Liber Mechanicum for details and points costs). All Triaros Armoured Conveyors and Krios Squadrons selected in this fashion gain the Third-line Unit Sub-type and reduce their Ballistic Skill to 3.
 
 
-This Provenance cannot be taken in conjunction with the Survivors of the Dark Age or Clanfolk Levy Provenances.</description>
+This Provenance cannot be taken in conjunction with the Survivors of the Dark Age or Clanfolk Levy Provenances.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -15065,7 +15065,7 @@ Gets Hot and Re-rolls
 If a model has the ability to re-roll its rolls To Hit (including because of BS 6+ or the Twin-linked special rule), a Wound is only suffered if the To Hit re-roll is a 1; it may also re-roll Gets Hot results of 1 for weapons that do not roll To Hit.</description>
     </rule>
     <rule id="5b9c-2738-616c-abdf" name="Graviton Pulse" publicationId="91df-ed64-4216-5bab" page="2" hidden="false">
-      <description>Instead of rolling To Wound normally with this weapon, any model without the Vehicle, Dreadnought or Automata Unit Type that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
+      <description>Instead of rolling To Wound normally with this weapon, any model without the Vehicle, Dreadnought or Automata Unit Type that suffers a Hit from a weapon with this special rule must instead roll under their Strength on a D6 or suffer a Wound (a roll of a ‘6’ always counts as a failure). If a Graviton Pulse weapon also has the Blast type, then leave the Blast marker in place after resolving all Wounds, or otherwise mark the area. This area now counts as both Difficult Terrain and Dangerous Terrain until the end of the next Game Turn.</description>
     </rule>
     <rule id="fa1e-0112-943e-b1f6" name="Guided Fire" publicationId="e77a-823a-da94-16b9" page="239" hidden="false">
       <description>Any attacks made using a weapon with this special rule do not require line of sight, but must still be within range.</description>
@@ -15272,7 +15272,7 @@ If, for any reason, a given instance of this rule does not have a value in brack
 The effects of this special rule only apply when a unit that has it begins an Assault phase not locked in combat and then either Charges or is Charged by an enemy unit. If an enemy unit Charges this unit when it is already locked in combat then that does count as a new ‘first’ turn of combat for the effects of Hatred.</description>
     </rule>
     <rule id="1dd4-7a75-5c59-8425" name="Haywire" publicationId="91df-ed64-4216-5bab" page="3" hidden="false">
-      <description>‘For each Hit inflicted on a unit that contains at least one model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:
+      <description>‘For each Hit inflicted on a unit that contains at least one model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:
 D6 Result
 1: No Effect.
 2-5: Vehicles suffer a Glancing Hit, other models suffer 1 Wound. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.
@@ -15389,7 +15389,7 @@ If a unit has both the Infiltrate and Scout special rules, that unit can deploy 
 Similarly, if a model makes a Shooting Attack with a weapon that has the Shred rule, it re-rolls its failed To Wound rolls.</description>
     </rule>
     <rule id="9222-f6c5-dc19-905a" name="Shock Pulse" publicationId="91df-ed64-4216-5bab" page="3" hidden="false">
-      <description>Any model with the Vehicle, Dreadnought or Automata Unit Type that suffers a Penetrating Hit or unsaved Wound from an attack with this special rule may only make Snap Shots when it next makes a Shooting Attack either as part of a Reaction or during its controlling player’s Shooting phase.</description>
+      <description>Any model with the Vehicle, Dreadnought or Automata Unit Type that suffers a Penetrating Hit or unsaved Wound from an attack with this special rule may only make Snap Shots when it next makes a Shooting Attack either as part of a Reaction or during its controlling player’s Shooting phase.</description>
     </rule>
     <rule id="46b7-63a1-941c-96a5" name="Shell Shock (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
       <description>Pinning tests taken due to an attack or weapon with this special rule are made with a penalty to Leadership Characteristic equal to the value listed as part of the special rule.
@@ -15722,7 +15722,7 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
     <rule id="c036-66e2-4e07-c2b8" name="Automated Artillery Sub-type" publicationId="e77a-823a-da94-16b9" page="16" hidden="false">
       <description>The following rules apply to all models with the Automated Artillery Sub-type:
 
-• A unit that includes one or more models with the Automated Artillery Sub-type may not Run, declare or otherwise make Charge moves, and may only make the Interceptor Advanced Reaction.
+• A unit that includes one or more models with the Automated Artillery Sub-type may not Run, declare or otherwise make Charge moves, and may only make the Interceptor Advanced Reaction.
 • A unit that includes one or more models with the Automated Artillery Sub-type may not make Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
 • A unit that includes one or more models with this Unit Sub-type may never hold or deny an Objective.</description>
     </rule>
@@ -15758,11 +15758,11 @@ The penalty to Leadership is ignored by any unit with the Fearless or Stubborn s
       <description>A model may only attack with this weapon on a turn in which it makes a successful Charge, but does not gain a bonus attack for Charging or from any special rules that would normally grant additional Attacks.</description>
     </rule>
     <rule name="Impale" hidden="false" id="2dfc-b3cc-7ede-2827" publicationId="6bcf-2297-2bcd-51be" page="15">
-      <description>A unit may re-roll Charge Rolls when attempting to Charge an enemy unit that has suffered one or more Hits from a weapon with the Impale special rule caused by one or more models in the unit for which the Charge was declared in the same player turn. This takes effect even if no Wounds are caused by the Hits.
-If one or more Wounds are caused by a weapon with this rule, the affected unit decreases its Initiative characteristic by 1 until the end of the subsequent Assault phase.</description>
+      <description>A unit may re-roll Charge Rolls when attempting to Charge an enemy unit that has suffered one or more Hits from a weapon with the Impale special rule caused by one or more models in the unit for which the Charge was declared in the same player turn. This takes effect even if no Wounds are caused by the Hits.
+If one or more Wounds are caused by a weapon with this rule, the affected unit decreases its Initiative characteristic by 1 until the end of the subsequent Assault phase.</description>
     </rule>
     <rule name="Malefic Aegis (X)" hidden="false" id="686c-178b-6e07-2ba3" publicationId="6bcf-2297-2bcd-51be" page="15">
-      <description>Malefic Aegis confers an Invulnerable Save equal to the value of X. Invulnerable saves granted by Malefic Aegis do not stack with other Invulnerable Saves but can benefit from rules (such as cyber-familiar) that specifically increase existing saves.</description>
+      <description>Malefic Aegis confers an Invulnerable Save equal to the value of X. Invulnerable saves granted by Malefic Aegis do not stack with other Invulnerable Saves but can benefit from rules (such as cyber-familiar) that specifically increase existing saves.</description>
     </rule>
     <rule id="2a9e-be1f-d6c1-0ec4" name="Legiones Astartes (Alpha Legion)" publicationId="09c5-eeae-f398-b653" page="330" hidden="false">
       <description>Lies and Obfuscation: A model with this special rule is always considered to be 2&quot; further away than it actually is when measuring range to it from any enemy model for the purpose of resolving a Shooting Attack, Charge or any Reation declared by an enemy model or unit (this is cumulative with any other modifiers to range imposed by special rules, such as Night Fighting or Wargear).</description>
@@ -15843,7 +15843,7 @@ Any Legion Centrurions, Legion Cataphractii Centurions and Legion Tartaros Centu
       <description>True Believers:A model with this special rule may never have a Leadership Characteristic modified below a value of 6. Futhermore if one or more models with this special rule are part of a combat that results in a draw, then the side that includes one or more models at the end of the fight sub-phase with this special rule is counted as having won the combat by 1 point. If both sides include models with this special rule then the combat remains a draw.</description>
     </rule>
     <rule name="Legiones Hereticus (Emperor’s Children)" hidden="true" id="b9e-b2ef-86e-e52d" publicationId="7f9d-5e88-241d-e861" page="107">
-      <description>Lords of Profligacy 
+      <description>Lords of Profligacy
 After a Shooting Attack has been resolved against a unit composed entirely of models with this special rule, if that unit is not Falling Back, its controlling player can choose for it to become Stupefied. If a unit becomes Stupefied while Pinned or affected by the Blind or Concussive (X) special rules, it ignores the effects of these while Stupefied.
 
 Stupefied
