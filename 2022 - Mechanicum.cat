@@ -1856,7 +1856,20 @@
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="a05f-2480-a5ad-7241" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule"/>
+            <infoLink id="a05f-2480-a5ad-7241" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+              <modifiers>
+                <modifier type="set" value="Battlesmith (6+)" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="78ee-741f-83eb-e2ca" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Battlesmith (5+)" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="78ee-741f-83eb-e2ca" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="6fee-56ad-7222-f038" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
             <infoLink id="6799-4f62-1dab-6bcc" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule">
               <modifiers>
