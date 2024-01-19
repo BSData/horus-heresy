@@ -4665,23 +4665,6 @@ special rule.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2255-91b6-372e-b06e" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c445-2e42-d54f-32c6" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="e9fb-1377-7028-d701" name="Order Preceptor" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup id="5941-6904-f888-6db7" name="Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="720f-e9d8-32f0-8582">
               <constraints>
@@ -4739,29 +4722,15 @@ special rule.</description>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink id="e9fb-1377-7028-d701" name="Order Preceptor" targetId="d61b-78bc-b74f-a04a" type="profile"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="a2ae-5fac-436a-c4f6" name="Order Cenobites" publicationId="09b3-d525-cdea-260c" page="7" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcd0-9b16-6960-0886" type="min"/>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="672b-9b5b-8630-b086" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="3ce9-98fd-460c-6f88" name="Order Cenobites" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <selectionEntryGroups>
             <selectionEntryGroup id="60d0-d739-ac76-6097" name="Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="9bbd-aafd-68b4-2b06">
               <constraints>
@@ -4796,6 +4765,9 @@ special rule.</description>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
           </costs>
+          <infoLinks>
+            <infoLink id="3ce9-98fd-460c-6f88" name="Order Cenobites" targetId="dc37-aac1-0329-d898" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5075,9 +5047,6 @@ special rule.</description>
                 <rule id="1d7b-d4fd-ae65-eca7" name="Fearsome Ruin" hidden="false">
                   <description>The controlling player of any unit which suffers one or more casualties from this weapon and makes a Morale check during the Assault phase must roll an additional D6 for that Check and keep the two highest dice to determine the result of that Morale check.</description>
                 </rule>
-                <rule id="72db-fc64-1632-ee1c" name="Melee Weapon*" hidden="false">
-                  <description>Both the Lion Sword and the Wolf Blade benefit from the +1 To Hit from the Deathwing Unit Sub-type during any turn where Lion El’Jonson is using that Unit Sub-type.</description>
-                </rule>
               </rules>
               <infoLinks>
                 <infoLink id="a2f6-87aa-56cf-d439" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
@@ -5093,6 +5062,7 @@ special rule.</description>
                   </modifiers>
                 </infoLink>
                 <infoLink id="2f47-d434-0772-7f33" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
+                <infoLink id="72db-fc64-1632-ee1c" name="Melee Weapon*" targetId="d23c-3e2e-102c-0808" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="97" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="98" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -7884,82 +7884,38 @@ A. No.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="8dee-b436-0afd-c70a" name="Minor Combi-Weapon - Flamer" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="ed2f-ac27-024c-b2c9" name="Flamer (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="e1dd-87d7-f5c5-0edc" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="02d8-bf5c-4ee6-9df5" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+        <infoLink id="ed2f-ac27-024c-b2c9" name="Flamer (Secondary)" targetId="ebe4-5e5f-0c3d-08ea" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dd06-55b3-1c77-1e1d" name="Minor Combi-Weapon - Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="4dc3-e17b-d90a-f373" name="Grenade launcher - Krak (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="beb1-60fd-93a6-0eda" name="Grenade launcher - Frag (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Pinning</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="8e9f-be33-224b-961b" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="7761-21ff-412e-6181" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="5a4d-9a53-9faf-fbda" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="4dc3-e17b-d90a-f373" name="Grenade launcher - Krak (Secondary)" targetId="71e6-ddb0-279a-7101" type="profile"/>
+        <infoLink id="beb1-60fd-93a6-0eda" name="Grenade launcher - Frag (Secondary)" targetId="5bff-6214-348d-0536" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8720-32c4-0099-63f4" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="a97a-13af-e70e-fda9" name="Volkite Charger (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="122f-fe1e-386f-8378" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="f1ae-1424-b612-2bb9" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink id="a97a-13af-e70e-fda9" name="Volkite Charger (Secondary)" targetId="ef29-8682-0c6f-43ea" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="59c3-2af5-ebe5-d512" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="ed90-575a-e35f-e015" name="Meltagun (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta), One Shot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="18ac-4319-909f-471f" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="705c-7c2e-0ac9-a50d" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
@@ -7968,22 +7924,13 @@ A. No.</description>
           </modifiers>
         </infoLink>
         <infoLink id="9e11-021d-746c-be23" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="ed90-575a-e35f-e015" name="Meltagun (Secondary)" targetId="b1d7-11cb-4c84-e5fd" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ed9-1bc3-4d8f-0826" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="e29e-0de2-4b41-d62e" name="Plasma Gun (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Breaching (4+), Gets Hot, One Shot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="2e43-c9ac-d001-9d6c" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="3eba-97dc-91d0-214f" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
@@ -7993,27 +7940,19 @@ A. No.</description>
         </infoLink>
         <infoLink id="17f7-31bb-b621-ca5e" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="dac7-8b47-cd80-82e8" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="e29e-0de2-4b41-d62e" name="Plasma Gun (Secondary)" targetId="7c1f-9fd7-99c5-b3ac" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9417-90a9-e0f0-d395" name="Magna Combi-Weapon - Disintegrator" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="db8e-3554-c97b-5fc2" name="Disintegrator (Secondary)" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Instant Death, Gets Hot, One Shot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="f949-e5f5-c106-0780" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="dac4-dbc7-1cf5-66b7" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="de1d-379e-6fa7-af8e" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
         <infoLink id="97d6-6068-a318-716b" name="One Use/One Shot" hidden="false" targetId="df0c-5423-b892-491e" type="rule"/>
+        <infoLink id="db8e-3554-c97b-5fc2" name="Disintegrator (Secondary)" targetId="ebb6-18b7-561a-a720" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8050,40 +7989,22 @@ A. No.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="7447-495d-4b86-c92c" name="Meltagun" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="0a61-50d7-1874-ea17" name="Meltagun" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Melta)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="ef66-d4bf-e850-74de" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Melta)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="0a61-50d7-1874-ea17" name="Meltagun" targetId="6bb0-fb87-a839-fa31" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fb37-a292-46bf-0b70" name="Flamer" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="c060-1fea-0006-5328" name="Flamer" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="1219-e8f2-946c-0503" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+        <infoLink id="c060-1fea-0006-5328" name="Flamer" targetId="949d-fd6d-23e3-8c6d" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8215,38 +8136,22 @@ A. No.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5ed-23ba-93d5-169b" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf78-996d-828c-d2ae" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="3009-74a0-ff0d-2940" name="Missile Launcher - Krak" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink id="3009-74a0-ff0d-2940" name="Missile Launcher - Krak" targetId="355a-6849-f24b-3246" type="profile"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry id="44d5-b79c-b828-a8b1" name="Missile Launcher - Frag" hidden="false" collective="true" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45e1-dc9b-0a20-f70f" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="863f-93b7-524a-6ebe" type="min"/>
           </constraints>
-          <profiles>
-            <profile id="de10-d17e-7f5b-8e30" name="Missile Launcher - Frag" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Pinning</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="5245-e460-8412-b117" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
             <infoLink id="876f-a989-85e3-c312" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+            <infoLink id="de10-d17e-7f5b-8e30" name="Missile Launcher - Frag" targetId="5f55-a754-ba8a-c323" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8301,16 +8206,6 @@ A. No.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="2603-c45c-25ee-2a86" name="Lightning Claw" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="2da4-c3fc-3a54-0d65" name="Lightning Claw" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Rending (6+), Specialist Weapon</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="d661-ad1d-f154-b040" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
         <infoLink id="cf05-4a2c-578f-996a" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
@@ -8319,22 +8214,13 @@ A. No.</description>
           </modifiers>
         </infoLink>
         <infoLink id="6764-6b26-830d-dc77" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="2da4-c3fc-3a54-0d65" name="Lightning Claw" targetId="00a9-04d4-17d3-3442" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1b03-1224-cd1a-6d3e" name="Chainfist" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="e69f-b6aa-14a1-b597" name="Chainfist" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2x</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Armourbane (Melee), Unwieldy</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="a3f6-f164-9ca6-8644" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
         <infoLink id="71b3-882a-79dd-0a8c" name="Armourbane (X)" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
@@ -8342,64 +8228,38 @@ A. No.</description>
             <modifier type="set" field="name" value="Armourbane (Melee)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="e69f-b6aa-14a1-b597" name="Chainfist" targetId="e147-61b4-fee1-d9c2" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="486f-a33c-7da5-c580" name="Power Armour" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="5a39-8a20-75dd-d72b" name="Power Armour" publicationId="a716-c1c4-7b26-8424" page="146" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Power armour provides a 3+ Armour Save.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="5a39-8a20-75dd-d72b" name="Power Armour" targetId="6c84-1420-7bb8-1026" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="9196-3af7-9545-e62b" name="Artificer Armour" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="ec93-0a9f-d6f9-3167" name="Artificer Armour" publicationId="a716-c1c4-7b26-8424" page="140" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Artificer armour confers a 2+ Armour Save.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="ec93-0a9f-d6f9-3167" name="Artificer Armour" targetId="4223-a2ef-16c3-bbb9" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="0f3d-c07c-7a7e-d534" name="Combi-Bolter" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="e23a-adb7-0c9e-239b" name="Combi-bolter" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Twin-linked</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="d9f2-8c1d-f2dc-f30e" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink id="e23a-adb7-0c9e-239b" name="Combi-bolter" targetId="23bd-0d0d-61a8-52ff" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="11c8-0876-80b1-cecd" name="Charnabal Glaive" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="bb0f-a082-591e-43d4" name="Charnabal Glaive" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Duellist&apos;s Edge (2), Two-handed</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="df7d-cea4-aa93-8e1a" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
@@ -8412,22 +8272,13 @@ A. No.</description>
           </modifiers>
         </infoLink>
         <infoLink id="3879-b650-700e-0083" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="bb0f-a082-591e-43d4" name="Charnabal Glaive" targetId="1c53-f4f0-6637-df31" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="20d9-83b9-c533-7048" name="Charnabal Sabre" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="0fdf-b331-ae34-44f9" name="Charnabal Sabre" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+), Duellist&apos;s Edge (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="cf99-c08d-8560-96bf" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
@@ -8439,22 +8290,13 @@ A. No.</description>
             <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="0fdf-b331-ae34-44f9" name="Charnabal Sabre" targetId="475e-7426-55d1-ecc9" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f53-4c43-ba83-4b2f" name="Charnabal Tabar" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="1bb7-289c-ffe4-f38b" name="Charnabal Tabar" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (6+), Duellist&apos;s Edge (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="b16a-65fd-1f59-fd40" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
@@ -8466,41 +8308,23 @@ A. No.</description>
             <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="1bb7-289c-ffe4-f38b" name="Charnabal Tabar" targetId="2974-5223-0e78-e6e6" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a472-3ded-51a3-44a0" name="Power Fist" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="c0af-65bb-de8d-9074" name="Power Fist" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Specialist Weapon</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="ed6a-569a-e556-1ce7" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
         <infoLink id="9125-7da6-1794-545c" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+        <infoLink id="c0af-65bb-de8d-9074" name="Power Fist" targetId="5103-7522-7419-fdc4" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a7b-4418-8346-66a7" name="Plasma Pistol" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="96e5-9b5f-40a5-995b" name="Plasma Pistol" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1, Breaching (4+), Gets Hot</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="a026-8dbe-fe28-483b" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
           <modifiers>
@@ -8508,22 +8332,13 @@ A. No.</description>
           </modifiers>
         </infoLink>
         <infoLink id="acea-00bf-a957-aeda" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink id="96e5-9b5f-40a5-995b" name="Plasma Pistol" targetId="473d-9f4e-4d07-6cda" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b6ac-3ba5-90ae-67f7" name="Thunder Hammer" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="ad6b-ab84-ceb0-dcff" name="Thunder Hammer" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Brutal (2), Specialist Weapon</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="b400-0a8a-3798-bed6" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
         <infoLink id="c71c-c953-1d3d-be01" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
@@ -8532,191 +8347,105 @@ A. No.</description>
             <modifier type="set" field="name" value="Brutal (2)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="ad6b-ab84-ceb0-dcff" name="Thunder Hammer" targetId="e373-c0c7-27d7-8794" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8413-55c8-60ce-e9bf" name="Bayonet" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="cb2b-b691-c525-9217" name="Bayonet" publicationId="a716-c1c4-7b26-8424" page="138" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="e091-bb5e-0425-ce24" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="cb2b-b691-c525-9217" name="Bayonet" targetId="326b-a403-fc39-a57a" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="52fe-46cd-520d-9df3" name="Bolt Pistol" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="8ace-30ed-d0c7-3b5b" name="Bolt Pistol" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="8ace-30ed-d0c7-3b5b" name="Bolt Pistol" targetId="c0d3-c136-ef6e-3ff7" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="a080-c391-6083-5e5d" name="Bolter" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="f9cb-c66f-838f-0802" name="Bolter" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="f9cb-c66f-838f-0802" name="Bolter" targetId="1a2f-c0e3-d736-b91e" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="45bb-31b1-8ed3-7c95" name="Chain Bayonet" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="8328-e5e9-9ee2-e648" name="Chain Bayonet" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Shred</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="eaf9-8bc6-1d07-1cd4" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
         <infoLink id="b573-16c8-fea2-1965" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="8328-e5e9-9ee2-e648" name="Chain Bayonet" targetId="a940-e31d-1dce-50a1" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b5b7-b50a-ac86-9173" name="Chainsword" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="02da-5261-5e91-c18e" name="Chainsword" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="48d0-1f6f-d95e-b8e0" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink id="02da-5261-5e91-c18e" name="Chainsword" targetId="538b-68a7-6f62-5710" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4fd8-9e1f-ae28-3004" name="Frag Grenades" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="c3d1-dc02-772b-c0e4" name="Frag Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with frag grenades makes attacks at its normal Initiative Step during an Assault after it has successfully Charged through Difficult Terrain or Dangerous Terrain, but still suffers any penalties to Charge rolls imposed by Difficult Terrain or Dangerous Terrain when resolving a Charge through Difficult Terrain or Dangerous Terrain.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="d340-25a1-93b6-b0bd" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+        <infoLink id="c3d1-dc02-772b-c0e4" name="Frag Grenades" targetId="ccc0-4896-212b-4d53" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6b5f-d62d-7568-38b6" name="Hand Flamer" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="6c51-f508-fab4-249c" name="Hand Flamer" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="c38c-f948-529a-1088" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+        <infoLink id="6c51-f508-fab4-249c" name="Hand Flamer" targetId="eb62-ccfd-b605-ab5e" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6024-6953-b8f4-ce63" name="Heavy Bolter" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="ac43-e1ed-5a3d-8820" name="Heavy Bolter" publicationId="a716-c1c4-7b26-8424" page="130" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 4</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="ac43-e1ed-5a3d-8820" name="Heavy Bolter" targetId="d96e-a893-dc91-7f8b" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="a997-efd7-a0a9-759d" name="Heavy Chainsword" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="986b-495f-439b-3769" name="Heavy Chainsword" publicationId="a716-c1c4-7b26-8424" page="136" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Two-handed</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="ed07-ed20-2ceb-eb42" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
         <infoLink id="2f52-5e86-e23b-b794" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+        <infoLink id="986b-495f-439b-3769" name="Heavy Chainsword" targetId="362e-4589-11b9-6517" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3739-1019-344e-761d" name="Krak Grenades" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="ab24-0b04-ff25-50ad" name="Krak Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The controlling player may choose to have a model with krak grenades that is Engaged or otherwise in base contact during the Assault phase with a Building or Fortification, or a model with the Vehicle, Dreadnought or Automata Unit Type, inflict one automatic Str 6, AP 3 Hit on the target in Initiative Step 1 instead of attacking normally. Any model in a unit that is chosen to inflict Hits using krak grenades may not otherwise attack or make use of any other special rule or item of Wargear that inflicts Hits or Wounds on a model in the same Assault phase (but may participate in Sweeping Advances as normal).</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="bbdc-2884-e0d2-7ba0" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+        <infoLink id="ab24-0b04-ff25-50ad" name="Krak Grenades" targetId="102e-3487-6e68-51e2" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8621-4e12-b3d2-116f" name="Lascannon" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="e45c-f759-06e6-df93" name="Lascannon" publicationId="a716-c1c4-7b26-8424" page="132" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Sunder</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="f75c-d0cc-c00c-0564" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="e45c-f759-06e6-df93" name="Lascannon" targetId="603c-2961-bc8c-ed2d" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8738,110 +8467,61 @@ A. No.</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="ef98-66ac-fcaf-c15d" name="Power Axe" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="0e49-d8de-bc33-1b9e" name="Power Axe" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="e1d4-66f6-d169-d131" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+        <infoLink id="0e49-d8de-bc33-1b9e" name="Power Axe" targetId="aa9e-9dd0-03d6-0acc" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fca3-4ec1-c581-1ba3" name="Power Lance" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="7ba2-5a66-fe06-30ce" name="Power Lance" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="3b88-9468-8a79-cfc9" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Reach (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="7ba2-5a66-fe06-30ce" name="Power Lance" targetId="b450-f60a-c85e-c9cc" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="98e8-f217-dea9-0493" name="Power Maul" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="9e85-cfe7-9221-64e8" name="Power Maul" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="9e85-cfe7-9221-64e8" name="Power Maul" targetId="dd83-74ff-9703-aceb" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="fa06-cac0-3d98-125e" name="Power Sword" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="2857-8f78-6776-3805" name="Power Sword" publicationId="a716-c1c4-7b26-8424" page="137" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="e9ba-c412-6118-371b" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Rending (6+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="2857-8f78-6776-3805" name="Power Sword" targetId="e783-1cdd-c9db-5cdf" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c387-cb80-acab-41dc" name="Rad Grenades" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="3e00-d4e1-e1b9-19f4" name="Rad Grenades" publicationId="a716-c1c4-7b26-8424" page="143" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">During a turn in which a unit with at least one model with rad grenades successfully Charges, or is themselves successfully Charged, all models in the enemy unit(s) suffer a -1 penalty to their Toughness Characteristic (to a minimum of toughness 1) until the end of the Fight Sub-phase that follows the successful Charge. Note: This does affect Instant Death thresholds.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="b71f-356b-a06f-bbb8" name="Grenades" hidden="false" targetId="6f5f-8f7c-d18b-cd42" type="rule"/>
+        <infoLink id="3e00-d4e1-e1b9-19f4" name="Rad Grenades" targetId="5ecf-40ba-be56-0d11" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5c82-c306-9c5c-5908" name="Volkite Charger" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="9128-8f77-e059-8605" name="Volkite Charger" publicationId="a716-c1c4-7b26-8424" page="134" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">15&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Deflagrate</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="0622-4c40-5c53-58c0" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink id="9128-8f77-e059-8605" name="Volkite Charger" targetId="04db-f611-e09b-aec6" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -15439,11 +15119,6 @@ Hellstorm weapons have the word ‘Hellstorm’ instead of a range on their weap
       <description>• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
 • Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
     </rule>
-    <rule id="cf3c-4951-8835-0aeb" name="Fast Vehicles" publicationId="e77a-823a-da94-16b9" page="214" hidden="false">
-      <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
-In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:
-Flat-out: A Vehicle choosing to move Flat-out may move up to twice its Movement Characteristic, but at the end of its move must roll a single D6. If the result of this roll is a ‘1’ then the Vehicle suffers a Glancing Hit and all the effects of the Crew Stunned result on the Vehicle Damage table. Vehicles moving at Flat-out speed may only fire Snap Shots.</description>
-    </rule>
     <rule id="63d3-5fef-7c8e-e881" name="Skimmers" publicationId="e77a-823a-da94-16b9" page="214" hidden="false">
       <description>Unlike most other Vehicles, Skimmers have flying bases under their hull. However, distances are still measured to and from the Skimmer’s hull, with the exception of the Vehicle’s weapons, which all work as normal. The base of a Skimmer is effectively ignored, except for when the Skimmer is being Charged or Rammed, in which case, models may move into contact with the Vehicle’s hull, its base or both.
 
@@ -15861,6 +15536,9 @@ At the end of its controlling player’s following turn, the unit is no longer S
       <description>A Techmarine Covenant is selected as any other unit, using up a single Force Organisation slot and bought in the same manner. However, before the first turn begins and any models are deployed to the battlefield, all models in a Techmarine Covenant must be assigned to another unit from the same Detachment of the army they were selected as part of. Legion Techmarines that have not selected a Legion Spatha combat bike or Legion Scimitar jetbike may only be assigned to units composed entirely of models with the Infantry Unit Type and the same Legiones Hereticus (X) special rule as the Legion Techmarine, and may not join units with Terminator armour of any kind. Legion Techmarines that have selected a Legion Spatha combat bike may only be assigned to units composed entirely of models with Legion Spatha combat bikes and the same Legiones Hereticus (X) special rule as the Legion Techmarine, and any Legion Techmarines that have selected a Legion Scimitar jetbike may only be assigned to units composed entirely of models with Legion Scimitar jetbikes and the same Legiones Hereticus (X) special rule as the Legion Techmarine. No Legion Techmarine may be assigned to any unit that includes one or more models with the Independent Character special rule or Unique Sub-type (but such models may join a unit that includes a Legion Techmarine as normal during either deployment or any following turn). No more than one Legion Techmarine may be assigned to any given unit.
 Once assigned to a unit, the Legion Techmarine is considered part of that unit and may not leave it under any circumstances – if that unit is removed as a casualty then the Legion Techmarine is removed as well. In battles using Victory points, no Victory points are ever scored for removing a Legion Techmarine as a casualty. When assigned to a unit, a Legion Techmarine gains all of the special rules (with the exception of those that specifically forbid it, such as the Bitter Duty special rule) and Unit Sub-types listed for the unit to which it is attached, but does not gain access to any additional Wargear options available to the unit to which it is assigned.</description>
     </rule>
+    <rule id="4d16-c28e-a8a6-39f4" name="Open Crew Compartment" hidden="false">
+      <description>Any Hits scored against a Vehicle with this special rule in close combat (including as part of a Death or Glory Advanced Reaction) are resolved against the Vehicle’s Armour Facing with the lowest value.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="f52c-1f37-acd2-703c" name="Tartaros Terminator Armour" publicationId="a716-c1c4-7b26-8424" page="147" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
@@ -15896,4 +15574,7 @@ Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Ai
       </characteristics>
     </profile>
   </sharedProfiles>
+  <infoLinks>
+    <infoLink id="cf3c-4951-8835-0aeb" name="Fast Vehicles" targetId="2cbf-c1a1-844a-6456" type="rule"/>
+  </infoLinks>
 </gameSystem>
