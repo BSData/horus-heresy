@@ -1306,7 +1306,7 @@ Reactions:
     <categoryEntry id="d684-5b63-caa7-adc4" name="Legiones Hereticus" hidden="false"/>
     <categoryEntry name="Forge Remnants - Militia Krios Squadron" hidden="false" id="dfbc-8edd-e14f-fd80"/>
     <categoryEntry name="Primus Medicae" hidden="false" id="b81a-8f4a-ff50-ef99"/>
-    <categoryEntry name="Tech-Priest Auxilia" hidden="false" id="86dd-51d8-3669-68ca"/>
+    <categoryEntry name="Tech-Priest Auxilia" hidden="true" id="86dd-51d8-3669-68ca"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
