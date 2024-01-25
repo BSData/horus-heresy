@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="35" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="36" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -1830,6 +1830,7 @@
     <selectionEntry id="0eae-0c52-1087-a3b0" name="Tech-Priest Auxilia" publicationId="bde1-6db1-163b-3b76" page="28" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0f49-7308-c6f1-e967" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink targetId="86dd-51d8-3669-68ca" id="2b8b-9a5c-efda-9e8b" primary="false" name="Tech-Priest Auxilia"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d015-cea7-196a-9f4c" name="Tech-Priest" publicationId="bde1-6db1-163b-3b76" page="28" hidden="false" collective="false" import="true" type="model">
@@ -1855,7 +1856,20 @@
             </rule>
           </rules>
           <infoLinks>
-            <infoLink id="a05f-2480-a5ad-7241" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule"/>
+            <infoLink id="a05f-2480-a5ad-7241" name="Battlesmith (X)" hidden="false" targetId="5d57-4d02-1e36-4a82" type="rule">
+              <modifiers>
+                <modifier type="set" value="Battlesmith (6+)" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="78ee-741f-83eb-e2ca" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Battlesmith (5+)" field="name">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="78ee-741f-83eb-e2ca" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="6fee-56ad-7222-f038" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
             <infoLink id="6799-4f62-1dab-6bcc" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule">
               <modifiers>
@@ -2030,7 +2044,7 @@
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fe0-02cf-f34d-c225" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="6940-130e-f973-8451" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry">
+                <entryLink id="6940-130e-f973-8451" name="Servo-Arm" hidden="false" collective="false" import="true" targetId="4168-fc85-8912-7188" type="selectionEntry" defaultAmount="1">
                   <modifiers>
                     <modifier type="set" field="hidden" value="true">
                       <conditionGroups>
