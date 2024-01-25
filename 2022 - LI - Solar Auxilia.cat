@@ -6622,24 +6622,10 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                   </constraints>
                   <selectionEntries>
                     <selectionEntry id="38c2-e9d2-c88b-b280" name="Leman Russ Battle Tank" hidden="false" collective="false" import="true" type="model">
-                      <profiles>
-                        <profile id="219c-f358-08cb-f591" name="Leman Russ Battle Tank" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-                          <characteristics>
-                            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
-                            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
-                            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
-                            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-                            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
-                            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-                            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-                            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
-                            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <infoLinks>
                         <infoLink id="0652-1ff4-b759-e0fb" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
                         <infoLink id="eeca-c8d2-a969-c1ab" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
+                        <infoLink id="219c-f358-08cb-f591" name="Leman Russ Battle Tank" targetId="4ccd-b32d-caca-2016" type="profile"/>
                       </infoLinks>
                       <selectionEntryGroups>
                         <selectionEntryGroup id="4607-60dd-c274-762a" name="3) May take any of the following:" hidden="false" collective="false" import="true">
@@ -9153,25 +9139,11 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d0-ae3e-025e-cc08" type="min"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bf5-d938-3327-1416" type="max"/>
               </constraints>
-              <profiles>
-                <profile id="a1f1-ce84-be5d-b0c7" name="Leman Russ Command Tank" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle</characteristic>
-                    <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
-                    <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
-                    <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
-                    <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">13</characteristic>
-                    <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
-                    <characteristic name="HP" typeId="a76c-83b1-602f-9e62">4</characteristic>
-                    <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">-</characteristic>
-                    <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">-</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <infoLinks>
                 <infoLink id="7e9a-5d16-2867-30dc" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
                 <infoLink id="8580-e4f7-a1ec-e061" name="Solar Auxilia Command Tank" hidden="false" targetId="bf74-20ed-ddc9-8ea1" type="rule"/>
                 <infoLink id="e34f-1951-7f2e-f502" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
+                <infoLink id="a1f1-ce84-be5d-b0c7" name="Leman Russ Command Tank" targetId="f07b-4a23-f9cb-28a8" type="profile"/>
               </infoLinks>
               <categoryLinks>
                 <categoryLink id="a5b7-9140-a87f-318b" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
@@ -9671,11 +9643,6 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="4341-97be-775c-8e85" name="Open Crew Compartment" hidden="false">
-              <description>Any Hits scored against a Vehicle with this special rule in close combat (including as part of a Death or Glory Advanced Reaction) are resolved against the Vehicle’s Armour Facing with the lowest value.</description>
-            </rule>
-          </rules>
           <categoryLinks>
             <categoryLink id="ef6b-5a75-45f9-9bf3" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
           </categoryLinks>
@@ -9724,6 +9691,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="265"/>
           </costs>
+          <infoLinks>
+            <infoLink id="4341-97be-775c-8e85" name="Open Crew Compartment" targetId="4d16-c28e-a8a6-39f4" type="rule"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -10932,30 +10902,10 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e3d-fcec-1017-5eab" type="min"/>
                     <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99e2-8534-d4d6-90af" type="max"/>
                   </constraints>
-                  <profiles>
-                    <profile id="9a1a-2dda-d32f-597c" name="Artillery Platform" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                      <characteristics>
-                        <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Static Artillery, Heavy)</characteristic>
-                        <characteristic name="Move" typeId="893e-2d76-8f04-44e5">-</characteristic>
-                        <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">1</characteristic>
-                        <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                        <characteristic name="S" typeId="e478-41d4-a092-48a8">1</characteristic>
-                        <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                        <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                        <characteristic name="I" typeId="62d3-22d7-2d49-52dc">1</characteristic>
-                        <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                        <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">-</characteristic>
-                        <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <rules>
-                    <rule id="e773-78ae-d47c-56e7" name="Auxilia Static Artillerists" hidden="false">
-                      <description>A Solar Auxilia Artillery Battery must have at least one Auxilia Gunner per Artillery Platform in order for all Artillery Platforms to make Shooting Attacks in the Shooting phase. If, at the start of any of the controlling player’s Shooting phases, the Solar Auxilia Artillery Battery contains fewer Auxilia Gunners than Artillery Platforms, then only a number of Artillery Platforms equal to the number of Auxilia Gunners may make Shooting Attacks in that Shooting phase. In addition, as long as there are at least as many Auxilia Gunners in the unit as there are Artillery Platforms, then the unit cannot be Pinned, automatically passing any Pinning tests it is called upon to take without any dice being rolled (this benefit is lost immediately once the number of Auxilia Gunners is reduced to less than the number of Artillery Platforms in the unit).</description>
-                    </rule>
-                  </rules>
                   <infoLinks>
                     <infoLink id="61d2-82ad-1e8c-60aa" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+                    <infoLink id="9a1a-2dda-d32f-597c" name="Artillery Platform" targetId="d976-3125-68a5-8ac2" type="profile"/>
+                    <infoLink id="e773-78ae-d47c-56e7" name="Auxilia Static Artillerists" targetId="6056-96bf-7e43-8734" type="rule"/>
                   </infoLinks>
                   <selectionEntries>
                     <selectionEntry id="1efe-49b2-407f-0977" name="Auxilia Gunners" hidden="false" collective="true" import="true" type="model">
@@ -10963,23 +10913,6 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                         <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbd4-d26b-c710-2ded" type="min"/>
                         <constraint field="selections" scope="parent" value="5" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22a5-c684-fef2-241d" type="max"/>
                       </constraints>
-                      <profiles>
-                        <profile id="666b-98d4-aeab-f6d5" name="Auxilia Gunners" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                          <characteristics>
-                            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
-                            <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">3</characteristic>
-                            <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                            <characteristic name="S" typeId="e478-41d4-a092-48a8">3</characteristic>
-                            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
-                            <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                            <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                            <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                            <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
-                            <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
                       <entryLinks>
                         <entryLink id="0908-c5c5-f05d-f1bd" name="Laspistol" hidden="false" collective="false" import="true" targetId="3cf9-eb36-3bfe-4970" type="selectionEntry">
                           <constraints>
@@ -10997,6 +10930,9 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                       </costs>
+                      <infoLinks>
+                        <infoLink id="666b-98d4-aeab-f6d5" name="Auxilia Gunners" targetId="cdec-8d38-f1bd-12df" type="profile"/>
+                      </infoLinks>
                     </selectionEntry>
                     <selectionEntry id="5608-a41b-086f-59d6" name="Medusa" hidden="false" collective="true" import="true" type="upgrade">
                       <constraints>

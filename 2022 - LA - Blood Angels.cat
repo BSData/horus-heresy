@@ -5562,23 +5562,6 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
               </costs>
             </selectionEntry>
             <selectionEntry id="c1fb-61b4-5212-ecfb" name="Dawnbreaker w/ Falling-Star Power Spear" hidden="false" collective="false" import="true" type="upgrade">
-              <profiles>
-                <profile id="e7de-3ade-8f9a-9c0c" name="Dawnbreaker" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-                  <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
-                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                    <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                    <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
-                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
-                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <entryLinks>
                 <entryLink id="524d-3acc-b602-1126" name="Falling-Star Power Spear" hidden="false" collective="false" import="true" targetId="ffe1-7b85-01c8-b0c7" type="selectionEntry">
                   <constraints>
@@ -5620,6 +5603,9 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <infoLinks>
+                <infoLink id="e7de-3ade-8f9a-9c0c" name="Dawnbreaker" targetId="13ce-3207-bb2e-eaf0" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5629,29 +5615,6 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
       </costs>
     </selectionEntry>
     <selectionEntry id="c117-96cb-919f-f806" name="Equinox Power Blade Case" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="56a5-daed-5996-4af2" name="Equinox Power Blades - Sunrise Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred,, Sudden Strike (1)</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4fed-4f1c-34aa-e707" name="Equinox Power Blades - Sunset Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Sunder</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="aa04-1cbb-5752-aafd" name="Paired Weapons" hidden="false">
-          <description>As Equinox power blade case is a pair of Melee weapons, each with different profiles, in any given Assault phase, the wielder must choose on of the following two profiles before making any attacks, and all their attacks in that Phase will use the chosen profil and gain the additional attack for using two combat weapons.</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="8c20-dfd5-08e5-afa0" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
         <infoLink id="d8e6-cef5-69b3-aca4" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
@@ -5665,22 +5628,15 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
           </modifiers>
         </infoLink>
         <infoLink id="6c31-cff8-a750-a197" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+        <infoLink id="56a5-daed-5996-4af2" name="Equinox Power Blades - Sunrise Blade" targetId="b7fd-3e9b-6b09-2caa" type="profile"/>
+        <infoLink id="4fed-4f1c-34aa-e707" name="Equinox Power Blades - Sunset Blade" targetId="8d77-0236-af31-55c4" type="profile"/>
+        <infoLink id="aa04-1cbb-5752-aafd" name="Paired Weapons" targetId="d123-4437-4646-81d8" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ffe1-7b85-01c8-b0c7" name="Falling-Star Power Spear" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="c9c3-2241-888b-a288" name="Falling-Star Power Spear" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Reach (1), Rending (5+)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="62e2-440f-7c1d-c67b" name="Reach (X)" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
           <modifiers>
@@ -5692,34 +5648,21 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="c9c3-2241-888b-a288" name="Falling-Star Power Spear" targetId="434a-3a1a-393e-7f20" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="298b-c5d8-2fb0-9dd4" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="d202-9b09-d8ec-152f" name="Coriolis Pattern Power Shield" publicationId="817a-6288-e016-7469" page="259" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Reduce the result of all To Wound rolls made that target a model with a Coriolis pattern power shield by a weapon with the Melee type by -1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="d202-9b09-d8ec-152f" name="Coriolis Pattern Power Shield" targetId="d3cf-f143-b4e4-e567" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="2fd3-e09f-173f-6b0a" name="Sunset blade" hidden="false" collective="false" import="true" type="upgrade">
-      <profiles>
-        <profile id="9b8c-d491-f97e-b038" name="Sunset Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Sunder</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="4509-45e0-1ae2-667e" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
         <infoLink id="ef4b-8771-0271-c21a" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
@@ -5727,48 +5670,23 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="9b8c-d491-f97e-b038" name="Sunset Blade" targetId="44b8-6835-19ae-1181" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0eba-48ae-95a0-81e5" name="Grenade Discharger" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="a273-206f-0e23-5745" name="Grenade discharger - Frag bombs" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">6</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Pinning</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4e6c-aff2-c03f-ff46" name="Grenade discharger - Krak bombs" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="445f-37fe-5208-2146" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink id="a273-206f-0e23-5745" name="Grenade discharger - Frag bombs" targetId="624b-be83-c8b7-fbed" type="profile"/>
+        <infoLink id="4e6c-aff2-c03f-ff46" name="Grenade discharger - Krak bombs" targetId="ced5-9f54-3081-23df" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6610-61aa-211a-8bc3" name="Sunset blade" hidden="false" collective="true" import="true" type="upgrade">
-      <profiles>
-        <profile id="f337-1e46-57f8-58a0" name="Sunset Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Sunder</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <infoLinks>
         <infoLink id="68fa-f20a-d482-a033" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
         <infoLink id="6e0b-bf70-b075-b2f5" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
@@ -5776,6 +5694,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink id="f337-1e46-57f8-58a0" name="Sunset Blade" targetId="44b8-6835-19ae-1181" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5783,7 +5702,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
     </selectionEntry>
     <selectionEntry id="ab60-6c57-8191-dbdb" name="Coriolis Pattern Power Shield" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="c7b0-9979-03d9-5006" name="Coriolis Pattern Power Shield" hidden="false" targetId="d202-9b09-d8ec-152f" type="profile"/>
+        <infoLink id="c7b0-9979-03d9-5006" name="Coriolis Pattern Power Shield" hidden="false" targetId="d3cf-f143-b4e4-e567" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
