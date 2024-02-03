@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="38" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <selectionEntries>
-    <selectionEntry id="dc9f-18e0-ec72-52ea" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf99-660f-39e8-b156" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4625-2d45-9e5c-f45a" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="a168-516c-3404-5c64" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="7cbd-5e01-f11f-0238" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="37" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <modifiers>
@@ -68,7 +38,7 @@
       <categoryLinks>
         <categoryLink id="0ea8-3c19-bd9e-00d7" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="1b49-70c4-2fde-68f7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="727d-92f-2a5-9ae2" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="727d-92f-2a5-9ae2" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="adaf-b561-c972-57ac" name="Shadrak Meduson" hidden="true" collective="false" import="false" targetId="44c8-4cd9-3121-5a52" type="selectionEntry">
@@ -87,7 +57,7 @@
       <categoryLinks>
         <categoryLink id="4352-3cd4-e3da-54fa" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="5628-344a-7f03-95bf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
-        <categoryLink id="e8c0-d953-4c54-def4" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="e8c0-d953-4c54-def4" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="e1ce-d9b7-2ea1-760b" name="Medusan Immortal Squad" hidden="false" collective="false" import="false" targetId="f9e4-0da2-5049-df81" type="selectionEntry">
@@ -3335,9 +3305,6 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="093c-1c9b-abc4-fd1d" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="8aa5-59cd-1ca2-3b03" name="Gorgon Terminator" hidden="false" targetId="58e9-f8f4-e13f-1586" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="229a-009c-aa7b-dba1" name="1) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="c9b0-c9da-c945-c1e0">
                   <constraints>
@@ -3400,6 +3367,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
+              <infoLinks>
+                <infoLink id="8aa5-59cd-1ca2-3b03" name="Gorgon Terminator" targetId="58e9-f8f4-e13f-1586" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3869,9 +3839,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="e55b-24af-5f9c-7361" name="Immortal w/Volkite Charger" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="6fa8-1f26-ebc5-6645" name="Immortal" hidden="false" targetId="732a-01c0-7487-7dcd" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="fe62-12f7-e3bb-708a" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="5c82-c306-9c5c-5908" type="selectionEntry">
                   <constraints>
@@ -3883,11 +3850,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
+              <infoLinks>
+                <infoLink id="6fa8-1f26-ebc5-6645" name="Immortal" targetId="732a-01c0-7487-7dcd" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="f562-5d9a-3e00-a74d" name="Immortal w/Chainsword" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="957c-9555-da93-5733" name="Immortal" hidden="false" targetId="732a-01c0-7487-7dcd" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="ae9b-61bc-f717-dd25" name="Chainsword" hidden="false" collective="false" import="true" targetId="b5b7-b50a-ac86-9173" type="selectionEntry">
                   <constraints>
@@ -3899,6 +3866,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="18"/>
               </costs>
+              <infoLinks>
+                <infoLink id="957c-9555-da93-5733" name="Immortal" targetId="732a-01c0-7487-7dcd" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3985,9 +3955,6 @@
             </infoLink>
             <infoLink id="5395-1a9f-10c7-a5dd" name="Legiones Astartes (Iron Hands)" hidden="false" targetId="2e45-4b61-44fb-260b" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="8d7f-5602-649d-caf9" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="d8b9-24a9-2ad2-72d4" name="Forgebreaker" publicationId="817a-6288-e016-7469" page="281" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4117,6 +4084,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="8d7f-5602-649d-caf9" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4200,9 +4170,6 @@
             <infoLink id="f93a-c80e-3b93-e746" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule"/>
             <infoLink id="eb66-9d2b-3d3f-6871" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="10a3-af9e-3a71-3e5f" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="ef4b-7287-2ab3-5886" name="Argonikos" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4282,6 +4249,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="10a3-af9e-3a71-3e5f" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4344,9 +4314,6 @@
           <infoLinks>
             <infoLink id="03df-cf4e-8145-84cf" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="d21b-f1ff-43a-257" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="09cb-065d-9ee0-ac34" name="Albian power gladius" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4417,6 +4384,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="d21b-f1ff-43a-257" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4432,9 +4402,9 @@
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="fa67-24f8-5013-1cf0" name="Furious Charge (X)" hidden="false" targetId="2821-9269-862f-0554" type="rule">
+            <infoLink name="Furious Charge (X)" hidden="false" type="rule" id="fa67-24f8-5013-1cf0" targetId="2821-9269-862f-0554">
               <modifiers>
-                <modifier type="set" field="name" value="Furious Charge (1)"/>
+                <modifier type="set" value="Furious Charge (1)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -4832,16 +4802,16 @@ A Warlord with this Trait, and all models in any friendly unit that Warlord join
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="3bf3-37e8-fe94-e112" name="Preferred Enemy (X)" hidden="false" targetId="37ab-d4db-891a-de8c" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Preferred Enemy (Loyalist)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Preferred Enemy (X)" hidden="false" type="rule" id="3bf3-37e8-fe94-e112" targetId="37ab-d4db-891a-de8c">
+                  <modifiers>
+                    <modifier type="set" value="Preferred Enemy (Loyalist)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="faa2-7825-f4a9-f003" name="Silver-iron Will" publicationId="817a-6288-e016-7469" page="276" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4879,16 +4849,16 @@ A Warlord with this Trait, and all models in any unit he joins, gain the Fear (1
                   </characteristics>
                 </profile>
               </profiles>
-              <infoLinks>
-                <infoLink id="1bbb-321a-4c4a-7479" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Fear (1)"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Fear (X)" hidden="false" type="rule" id="1bbb-321a-4c4a-7479" targetId="21f6-7842-df5c-d2e7">
+                  <modifiers>
+                    <modifier type="set" value="Fear (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

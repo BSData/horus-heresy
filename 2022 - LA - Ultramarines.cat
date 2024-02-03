@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="39" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <selectionEntries>
-    <selectionEntry id="bd1a-1645-bc72-14e8" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa55-9576-9472-5038" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe17-4783-b3ef-4b69" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="4992-df3c-e96a-1ec3" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="9b3f-aca7-83d3-e5a5" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="38" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <modifiers>
@@ -3056,12 +3026,12 @@
           <infoLinks>
             <infoLink id="88cb-7aab-4d24-18a2" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="48ba-ba6b-4998-4650" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="48ba-ba6b-4998-4650" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="ee3b-2513-7839-c14b" name="The Armour of Reason" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3307,9 +3277,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="5790-aef9-aa7d-9ec4" name="Suzerain w/Bolt Pistol &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="82e5-c9d6-b73e-be28" name="Suzerain" hidden="false" targetId="3514-22be-3c77-f1d7" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="97d7-cde5-5853-e038" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -3327,11 +3294,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Suzerain" hidden="false" type="profile" id="82e5-c9d6-b73e-be28" targetId="3514-22be-3c77-f1d7"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="2859-846d-8545-752c" name="Suzerain w/Plasma Pistol &amp; Legatine Axe" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="371a-fa0-a81-f6fc" name="Suzerain" hidden="false" targetId="3514-22be-3c77-f1d7" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="1214-518c-493a-fbdf" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="1a7b-4418-8346-66a7" type="selectionEntry">
                   <constraints>
@@ -3352,11 +3319,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Suzerain" hidden="false" type="profile" id="371a-fa0-a81-f6fc" targetId="3514-22be-3c77-f1d7"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="276d-8bc1-5949-baa7" name="Suzerain w/Plasma Pistol &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="5510-b560-7d5f-dfb9" name="Suzerain" hidden="false" targetId="3514-22be-3c77-f1d7" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="8f28-0e2b-3cb9-f47c" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="1a7b-4418-8346-66a7" type="selectionEntry">
                   <constraints>
@@ -3374,6 +3341,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Suzerain" hidden="false" type="profile" id="5510-b560-7d5f-dfb9" targetId="3514-22be-3c77-f1d7"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -3390,9 +3360,6 @@
               </constraints>
               <selectionEntries>
                 <selectionEntry id="9d68-7a33-6a0f-6eca" name="Suzerain w/Legion Standard &amp; Legatine Axe" hidden="false" collective="false" import="true" type="model">
-                  <infoLinks>
-                    <infoLink id="99f6-2332-dc2f-e054" name="Suzerain" hidden="false" targetId="3514-22be-3c77-f1d7" type="profile"/>
-                  </infoLinks>
                   <entryLinks>
                     <entryLink id="77ab-a60e-48a1-72ab" name="Legion Standard" hidden="false" collective="false" import="true" targetId="7e13-cc1f-6bd7-7ac6" type="selectionEntry">
                       <constraints>
@@ -3413,11 +3380,11 @@
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Suzerain" hidden="false" type="profile" id="99f6-2332-dc2f-e054" targetId="3514-22be-3c77-f1d7"/>
+                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="1b60-c439-0b96-10cf" name="Suzerain w/Legion Standard &amp; Thunder Hammer" hidden="false" collective="false" import="true" type="model">
-                  <infoLinks>
-                    <infoLink id="a79b-e7a9-4c6-d2f3" name="Suzerain" hidden="false" targetId="3514-22be-3c77-f1d7" type="profile"/>
-                  </infoLinks>
                   <entryLinks>
                     <entryLink id="e3ce-0e2d-f688-473f" name="Legion Standard" hidden="false" collective="false" import="true" targetId="7e13-cc1f-6bd7-7ac6" type="selectionEntry">
                       <constraints>
@@ -3435,6 +3402,9 @@
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
                   </costs>
+                  <infoLinks>
+                    <infoLink name="Suzerain" hidden="false" type="profile" id="a79b-e7a9-4c6-d2f3" targetId="3514-22be-3c77-f1d7"/>
+                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3714,9 +3684,6 @@
           </constraints>
           <selectionEntries>
             <selectionEntry id="c2b6-7c8c-66e0-2ee0" name="Praetorian w/Power Sword" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="c790-504d-cdfc-860c" name="Praetorian" hidden="false" targetId="8b1d-ca41-c9a6-32bc" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="baa8-515c-e028-3d5c" name="Power Sword" hidden="false" collective="false" import="true" targetId="fa06-cac0-3d98-125e" type="selectionEntry">
                   <constraints>
@@ -3734,6 +3701,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Praetorian" hidden="false" type="profile" id="c790-504d-cdfc-860c" targetId="8b1d-ca41-c9a6-32bc"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="6a92-6844-79a1-6513" name="Praetorian w/Legatine Axe (1 in 5)" hidden="false" collective="false" import="true" type="model">
               <modifiers>
@@ -3746,9 +3716,6 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8236-76ce-9122-9d33" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="17b3-d41e-29b-3eb5" name="Praetorian" hidden="false" targetId="8b1d-ca41-c9a6-32bc" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="0631-2b58-1716-93f3" name="Legatine Axe" hidden="false" collective="false" import="true" targetId="4f12-8517-f1a2-f111" type="selectionEntry">
                   <constraints>
@@ -3766,6 +3733,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="32"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Praetorian" hidden="false" type="profile" id="17b3-d41e-29b-3eb5" targetId="8b1d-ca41-c9a6-32bc"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3873,7 +3843,7 @@
                 <entryLink id="2518-c1a9-b56c-af23" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
                 <entryLink id="3e83-f294-47aa-485a" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                 <entryLink id="435c-ba08-f299-6063" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
-                <entryLink id="a41b-40b9-9a26-aa8d" name="Peritarch Targeter" hidden="false" collective="false" import="true" targetId="35c3-a948-99df-5477" type="selectionEntry"/>
+                <entryLink import="true" name="Peritarch Targeter" hidden="false" type="selectionEntry" id="a41b-40b9-9a26-aa8d" targetId="35c3-a948-99df-5477"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -4131,7 +4101,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="a1f1-302f-9f92-6f0b" name="Fulmentarus Terminator w/Peritarch Targeter" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="a1f1-302f-9f92-6f0b" name="Fulmentarus Terminator w/Peritarch Targeter" hidden="false" collective="false" import="true" type="model" defaultAmount="4">
               <infoLinks>
                 <infoLink id="39ac-f7da-c64a-ab41" name="Fulmentarus Terminator" hidden="false" targetId="c001-db89-433b-a98a" type="profile"/>
               </infoLinks>
@@ -4213,9 +4183,6 @@
               </modifiers>
             </infoLink>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="c037-24cc-5c73-a60" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <entryLinks>
             <entryLink id="2c90-1380-2ca9-4c8a" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
               <constraints>
@@ -4227,6 +4194,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="c037-24cc-5c73-a60" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="24b6-8803-d0a2-10ff" name="Phaethon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4634,9 +4604,6 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf39-8076-6a75-fab1" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="5a10-84e2-6ebf-db4f" name="Locutarus" hidden="false" targetId="a006-002c-28d1-bc61" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="f581-5733-7ba5-2bc7" name="Pistol Option" hidden="false" collective="false" import="true" defaultSelectionEntryId="98ef-5359-72d1-52d6">
                   <constraints>
@@ -4673,6 +4640,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <infoLinks>
+                <infoLink id="5a10-84e2-6ebf-db4f" name="Locutarus" targetId="a006-002c-28d1-bc61" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4728,7 +4698,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58f4-918b-e694-c03c" type="min"/>
           </constraints>
           <profiles>
-            <profile id="5fbc-3ad8-71d3-e29f" name="Nemesis Destroyer Sergeant" publicationId="7f9d-5e88-241d-e861" page="66" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="5fbc-3ad8-71d3-e29f" name="Nemesis Destroyer Sergeant" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="7f9d-5e88-241d-e861" page="66">
               <modifiers>
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
@@ -5011,7 +4981,7 @@
                 <constraint field="selections" scope="parent" value="19" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="825f-c084-ff52-39f6" type="max"/>
               </constraints>
               <profiles>
-                <profile id="1a33-dcc3-f511-6a0d" name="Nemesis Destroyer" publicationId="7f9d-5e88-241d-e861" page="66" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                <profile id="1a33-dcc3-f511-6a0d" name="Nemesis Destroyer" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="7f9d-5e88-241d-e861" page="66">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -5062,9 +5032,6 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="458a-cf5e-68a6-da65" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="843d-b83f-3df4-cbc1" name="Nemesis Destroyer" hidden="false" targetId="1a33-dcc3-f511-6a0d" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="a97b-75d3-ca9f-db5a" name="1) Heavy Weapon Choice" hidden="false" collective="false" import="true" defaultSelectionEntryId="73df-eee7-68e3-ccdd">
                   <constraints>
@@ -5135,6 +5102,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Nemesis Destroyer" hidden="false" type="profile" id="843d-b83f-3df4-cbc1" targetId="1a33-dcc3-f511-6a0d"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5170,12 +5140,12 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="bd9c-928f-16d6-6ecd" name="Argyrum-pattern Boarding Shield" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="268e-fea5-731b-ee97" name="Argyrum pattern boarding shield" hidden="false" targetId="de24-f317-3b22-4a32" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="268e-fea5-731b-ee97" name="Argyrum pattern boarding shield" targetId="de24-f317-3b22-4a32" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="013e-d478-87eb-badc" name="Argean Power Sword" hidden="false" collective="true" import="true" type="upgrade">
       <profiles>
@@ -5214,7 +5184,7 @@
       </profiles>
       <infoLinks>
         <infoLink id="e489-92bc-dd76-d969" name="Night Vision" hidden="false" targetId="683e-b4f2-f032-d31b" type="rule"/>
-        <infoLink id="b289-3fe0-5d1-e986" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+        <infoLink name="Twin-linked" hidden="false" type="rule" id="b289-3fe0-5d1-e986" targetId="8542-ee9d-e2fa-52fe"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5252,12 +5222,12 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4f12-8517-f1a2-f111" name="Legatine Axe" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="ad6f-60fe-ee48-a9c7" name="Legatine Axe" hidden="false" targetId="a184-cb95-e073-30f1" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink id="ad6f-60fe-ee48-a9c7" name="Legatine Axe" targetId="a184-cb95-e073-30f1" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="c74f-08c0-79c1-50e3" name="Mortifier Bolter" hidden="false" collective="true" import="true" type="upgrade">
       <constraints>
@@ -5417,6 +5387,9 @@ Once per battle, a Warlord with this Warlord Trait may, at the start of any one 
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
+  <catalogueLinks>
+    <catalogueLink id="2f60-18fb-e6ed-8574" name="(HH V2) Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
+  </catalogueLinks>
   <sharedProfiles>
     <profile id="8b1d-ca41-c9a6-32bc" name="Praetorian" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
       <characteristics>
@@ -5434,7 +5407,4 @@ Once per battle, a Warlord with this Warlord Trait may, at the start of any one 
       </characteristics>
     </profile>
   </sharedProfiles>
-  <catalogueLinks>
-    <catalogueLink id="2f60-18fb-e6ed-8574" name="(HH V2) Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
-  </catalogueLinks>
 </catalogue>

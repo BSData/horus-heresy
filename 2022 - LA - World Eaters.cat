@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="38" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <selectionEntries>
-    <selectionEntry id="88c2-d2f5-889e-391d" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe25-39f1-5f35-657b" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7644-edcd-0a65-efe8" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="b1ff-b4ea-bf3d-2ed8" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="87bb-01a8-e5ca-ef54" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d901-0eca-48b5-304a" name="LA -  XII: World Eaters" revision="37" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="d647-fd99-73e0-bd57" name="Angron" hidden="false" collective="false" import="false" targetId="6352-8efa-0cc4-cfa7" type="selectionEntry">
       <modifiers>
@@ -3092,7 +3062,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="620c-bf02-acaa-a8bb" type="min"/>
           </constraints>
           <profiles>
-            <profile id="5a90-b91d-0082-022d" name="Blood Bonded" publicationId="7f9d-5e88-241d-e861" page="44" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="5a90-b91d-0082-022d" name="Blood Bonded" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="7f9d-5e88-241d-e861" page="44">
               <modifiers>
                 <modifier type="set" field="e593-6b3c-f169-04f0" value="2+">
                   <conditions>
@@ -3251,7 +3221,7 @@
                 <constraint field="selections" scope="parent" value="14" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="131d-51a5-0eca-3f86" type="max"/>
               </constraints>
               <profiles>
-                <profile id="2b72-66e9-2e1c-797c" name="Ravager" publicationId="7f9d-5e88-241d-e861" page="44" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+                <profile id="2b72-66e9-2e1c-797c" name="Ravager" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="7f9d-5e88-241d-e861" page="44">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
@@ -3296,9 +3266,6 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="44f2-da51-8db2-74e9" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="b4dd-5bcc-668f-365a" name="Ravager" hidden="false" targetId="2b72-66e9-2e1c-797c" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="4a44-8215-af96-28b5" name="Weapon Choice:" hidden="false" collective="false" import="true" defaultSelectionEntryId="95f3-0d0d-365d-0e22">
                   <constraints>
@@ -3383,14 +3350,14 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Ravager" hidden="false" type="profile" id="b4dd-5bcc-668f-365a" targetId="2b72-66e9-2e1c-797c"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="b2c4-34be-a4a0-03ee" name="Ravager w/Excoriator Chainaxe" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="14" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="566a-18c0-44ac-e368" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="cb8e-660-d8de-5fd5" name="Ravager" hidden="false" targetId="2b72-66e9-2e1c-797c" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="606f-1319-a5be-834f" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -3408,14 +3375,14 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Ravager" hidden="false" type="profile" id="cb8e-660-d8de-5fd5" targetId="2b72-66e9-2e1c-797c"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="5eb0-975c-8626-1f99" name="Ravager w/Meteor Hammer" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="14" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="279d-8349-c84b-37b5" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="5a5c-8cf1-3ada-b0da" name="Ravager" hidden="false" targetId="2b72-66e9-2e1c-797c" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="9ac7-5ca6-68c3-fe97" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -3433,14 +3400,14 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Ravager" hidden="false" type="profile" id="5a5c-8cf1-3ada-b0da" targetId="2b72-66e9-2e1c-797c"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="c247-33d8-5da1-c5fd" name="Ravager w/Two Falax Blades" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="14" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18db-b5fd-d29d-bd9e" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="781a-1127-db6d-73cc" name="Ravager" hidden="false" targetId="2b72-66e9-2e1c-797c" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="a256-5ac0-26f0-5d52" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -3458,14 +3425,14 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Ravager" hidden="false" type="profile" id="781a-1127-db6d-73cc" targetId="2b72-66e9-2e1c-797c"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="51a0-5dd3-f296-2d25" name="Ravager w/Barb-Hook Lash" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="14" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afb5-0706-68da-fea0" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="6f8b-d67e-29e4-6996" name="Ravager" hidden="false" targetId="2b72-66e9-2e1c-797c" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="5736-59c3-d82a-5ccc" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -3483,14 +3450,14 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Ravager" hidden="false" type="profile" id="6f8b-d67e-29e4-6996" targetId="2b72-66e9-2e1c-797c"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="b0a9-c7ec-cf42-ee1a" name="Ravager w/Chainaxe" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="14" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e562-3b6d-acd1-f76b" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="5c7f-1c16-2339-a1b3" name="Ravager" hidden="false" targetId="2b72-66e9-2e1c-797c" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="4156-d5d2-579d-8876" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -3511,6 +3478,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
+              <infoLinks>
+                <infoLink name="Ravager" hidden="false" type="profile" id="5c7f-1c16-2339-a1b3" targetId="2b72-66e9-2e1c-797c"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3616,10 +3586,13 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="8b51-4189-994a-459c" name="Shabran Darr" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry type="model" import="true" name="Shabran Darr" hidden="false" id="8b51-4189-994a-459c">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6642-9b2c-cc5a-4f62" primary="false" name="Independent Character"/>
+          </categoryLinks>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867-990a-65b-ab7d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fd-bce1-ca58-a2cf" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="867-990a-65b-ab7d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62fd-bce1-ca58-a2cf"/>
           </constraints>
           <profiles>
             <profile id="5d79-e0f4-af0-b8e2" name="Shabran Darr" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -3638,12 +3611,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="6642-9b2c-cc5a-4f62" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3967,9 +3934,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7916-ca80-5a20-cfbb" name="Red Butcher (Pair of Power Axes)" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="9b79-c1e6-6215-4f8e" name="Red Butcher" hidden="false" targetId="1066-ba44-5364-e924" type="profile"/>
-              </infoLinks>
               <categoryLinks>
                 <categoryLink id="1a75-21e4-e926-1808" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
               </categoryLinks>
@@ -3987,11 +3951,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
+              <infoLinks>
+                <infoLink id="9b79-c1e6-6215-4f8e" name="Red Butcher" targetId="1066-ba44-5364-e924" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="f307-35b7-3b94-91a6" name="Red Butcher (Power Axe &amp; Combi-Bolter)" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="1d6a-79f0-23c6-9eb1" name="Red Butcher" hidden="false" targetId="1066-ba44-5364-e924" type="profile"/>
-              </infoLinks>
               <categoryLinks>
                 <categoryLink id="bdb6-5467-8aaf-75a8" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
               </categoryLinks>
@@ -4012,6 +3976,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
+              <infoLinks>
+                <infoLink id="1d6a-79f0-23c6-9eb1" name="Red Butcher" targetId="1066-ba44-5364-e924" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4328,9 +4295,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="0b24-339a-5ddf-2a79" name="Rampager w/Barb-Hook Lash" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="8956-2749-056d-0471" name="Rampager" hidden="false" targetId="ee6c-d04f-7553-d244" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="2204-bd46-f0f6-be88" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -4348,11 +4312,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
               </costs>
+              <infoLinks>
+                <infoLink id="8956-2749-056d-0471" name="Rampager" targetId="ee6c-d04f-7553-d244" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="3899-2854-4fd9-0cb2" name="Rampager w/Excoriator Chainaxe" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="b7b4-1906-7c02-957c" name="Rampager" hidden="false" targetId="ee6c-d04f-7553-d244" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="71ee-2853-293a-10bc" name="Excoriator Chainaxe" hidden="false" collective="false" import="true" targetId="bcb2-fdee-b235-da0e" type="selectionEntry">
                   <constraints>
@@ -4370,11 +4334,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
               </costs>
+              <infoLinks>
+                <infoLink id="b7b4-1906-7c02-957c" name="Rampager" targetId="ee6c-d04f-7553-d244" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="95de-f8f7-2d72-a4cd" name="Rampager w/Two Falax Blade" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="6d34-d492-9160-1a86" name="Rampager" hidden="false" targetId="ee6c-d04f-7553-d244" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="b03d-8f46-ab41-b356" name="Two Falax Blades" hidden="false" collective="false" import="true" targetId="6a9f-b0aa-e137-9d18" type="selectionEntry">
                   <modifiers>
@@ -4395,11 +4359,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
               </costs>
+              <infoLinks>
+                <infoLink id="6d34-d492-9160-1a86" name="Rampager" targetId="ee6c-d04f-7553-d244" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="0a53-f8b4-252e-5c23" name="Rampager w/Meteor Hammer" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="94f8-1ea3-03ed-90e7" name="Rampager" hidden="false" targetId="ee6c-d04f-7553-d244" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="8964-162d-f51e-8d62" name="Meteor Hammer" hidden="false" collective="false" import="true" targetId="1994-6eda-5e87-3038" type="selectionEntry">
                   <constraints>
@@ -4417,6 +4381,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="22"/>
               </costs>
+              <infoLinks>
+                <infoLink id="94f8-1ea3-03ed-90e7" name="Rampager" targetId="ee6c-d04f-7553-d244" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4595,10 +4562,13 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="609e-d127-8155-f471" name="Angron" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry type="model" import="true" name="Angron" hidden="false" id="609e-d127-8155-f471">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6641-24c8-ae1f-4633" primary="false" name="Independent Character"/>
+          </categoryLinks>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867-990a-65b-ab7d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fd-bce1-ca58-a2cf" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="867-990a-65b-ab7d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62fd-bce1-ca58-a2cf"/>
           </constraints>
           <profiles>
             <profile id="4551-14a9-1d09-ffdb" name="Angron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4617,12 +4587,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="6641-24c8-ae1f-4633" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4675,7 +4639,7 @@
       <categoryLinks>
         <categoryLink id="9218-c0cc-8dc7-a683" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="58d8-8eda-8902-2a74" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="6990-d385-815e-4427" name="Primus Medicae" hidden="false" targetId="b81a-8f4a-ff50-ef99" primary="false"/>
+        <categoryLink targetId="b81a-8f4a-ff50-ef99" id="6990-d385-815e-4427" primary="false" name="Primus Medicae"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="01fb-10e7-0c43-2b0d" name="Fleshripper" hidden="false" collective="false" import="true" type="upgrade">
@@ -4701,10 +4665,13 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="5685-4f6b-eb83-ba22" name="Gahlan Surlak" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry type="model" import="true" name="Gahlan Surlak" hidden="false" id="5685-4f6b-eb83-ba22">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="f768-c27b-57ba-b2a6" primary="false" name="Independent Character"/>
+          </categoryLinks>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867-990a-65b-ab7d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fd-bce1-ca58-a2cf" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="867-990a-65b-ab7d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62fd-bce1-ca58-a2cf"/>
           </constraints>
           <profiles>
             <profile id="b009-ef95-6902-821d" name="Gahlan Surlak" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4723,12 +4690,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="f768-c27b-57ba-b2a6" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4815,37 +4776,6 @@
         <categoryLink id="6d76-7591-3f6a-4f2c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="2e2e-a670-504f-7861" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="6dd3-d166-c125-c354" name="Khârn the Bloody" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="867-990a-65b-ab7d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fd-bce1-ca58-a2cf" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="f34a-2d98-5e3c-4294" name="Khârn the Bloody" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="1152-3d1-9b16-dc4b" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="3017-90ed-f8d5-20fb" name="Melee Weapon" hidden="false" collective="false" import="true">
           <constraints>
@@ -4964,6 +4894,34 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Khârn the Bloody" hidden="false" id="6dd3-d166-c125-c354">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="1152-3d1-9b16-dc4b" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="867-990a-65b-ab7d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62fd-bce1-ca58-a2cf"/>
+          </constraints>
+          <profiles>
+            <profile id="f34a-2d98-5e3c-4294" name="Khârn the Bloody" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">7</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="2403-fc44-ffd2-8fa6" name="Barb-Hook Lash" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
@@ -4979,7 +4937,7 @@
             <modifier type="set" field="name" value="Reach (1)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="4be5-fa52-8ac8-938c" name="Barb-Hook Lash" hidden="false" targetId="6326-8212-abe1-94db" type="profile"/>
+        <infoLink id="4be5-fa52-8ac8-938c" name="Barb-Hook Lash" targetId="6326-8212-abe1-94db" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -4995,7 +4953,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="ab30-d5f6-691b-69b1" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
-        <infoLink id="ac91-51bf-7be1-cf73" name="Excoriator Chainaxe" hidden="false" targetId="fe3d-5624-1c0d-1908" type="profile"/>
+        <infoLink id="ac91-51bf-7be1-cf73" name="Excoriator Chainaxe" targetId="fe3d-5624-1c0d-1908" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5021,7 +4979,7 @@
             <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="e4c2-45e5-e415-f97f" name="Falax Blade" hidden="false" targetId="5726-e8ae-9b6b-bd6d" type="profile"/>
+        <infoLink id="e4c2-45e5-e415-f97f" name="Falax Blade" targetId="5726-e8ae-9b6b-bd6d" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5040,7 +4998,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="83a1-32ee-6973-0390" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
-        <infoLink id="7079-2e57-3ad-6a17" name="Two Falax Blades" hidden="false" targetId="a438-da9a-42cd-1d2d" type="profile"/>
+        <infoLink name="Two Falax Blades" hidden="false" type="profile" id="7079-2e57-3ad-6a17" targetId="a438-da9a-42cd-1d2d"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5059,7 +5017,7 @@
             <modifier type="set" field="name" value="Breaching (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="bb77-454d-55fa-ea4f" name="Meteor Hammer" hidden="false" targetId="9454-4e0e-5983-e6ec" type="profile"/>
+        <infoLink id="bb77-454d-55fa-ea4f" name="Meteor Hammer" targetId="9454-4e0e-5983-e6ec" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

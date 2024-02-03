@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <selectionEntries>
-    <selectionEntry id="11f9-7a2c-88ae-4c95" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2ba-1cf2-0059-88e4" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="174c-3dde-4a14-7e14" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="7ec2-6f44-25dc-fcf9" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="28c5-7b86-6dfc-2901" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="32" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="b3e4-1487-4ab7-7515" name="Alexis Polux" hidden="false" collective="false" import="false" targetId="9229-b4f9-2213-9672" type="selectionEntry">
       <modifiers>
@@ -4368,10 +4338,13 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="176e-535a-10ed-ee07" name="Sigismund" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry type="model" import="true" name="Sigismund" hidden="false" id="176e-535a-10ed-ee07">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="d79e-835-28c1-4540" primary="false" name="Independent Character"/>
+          </categoryLinks>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c4a-7b87-f844-27b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ab-39a7-6473-2369" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c4a-7b87-f844-27b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ab-39a7-6473-2369"/>
           </constraints>
           <profiles>
             <profile id="15e1-8614-75dd-a946" name="Sigismund" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4390,12 +4363,6 @@
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="d79e-835-28c1-4540" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4469,37 +4436,6 @@
         <categoryLink id="e823-f428-97c9-b5d7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="7668-e167-087e-ec1a" name="Heavy" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="b9c8-3956-2efc-6011" name="Alexis Polux" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c4a-7b87-f844-27b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ab-39a7-6473-2369" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="7807-2cb5-8c8f-dc2c" name="Alexis Polux" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy, Unique)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink id="5249-aa6b-28d-81d7" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink id="02b9-034a-2569-5151" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
@@ -4565,6 +4501,34 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Alexis Polux" hidden="false" id="b9c8-3956-2efc-6011">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="5249-aa6b-28d-81d7" primary="false" name="Independent Character"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c4a-7b87-f844-27b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ab-39a7-6473-2369"/>
+          </constraints>
+          <profiles>
+            <profile id="7807-2cb5-8c8f-dc2c" name="Alexis Polux" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="d483-8c34-3bcb-f1d5" name="Fafnir Rann" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -4636,10 +4600,13 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="68ad-f39b-ff1-3129" name="Fafnir Rann" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry type="model" import="true" name="Fafnir Rann" hidden="false" id="68ad-f39b-ff1-3129">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="5056-89c0-c8c1-fda4" primary="false" name="Independent Character"/>
+          </categoryLinks>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c4a-7b87-f844-27b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ab-39a7-6473-2369" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c4a-7b87-f844-27b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ab-39a7-6473-2369"/>
           </constraints>
           <profiles>
             <profile id="30f8-b6ba-ffaf-4d95" name="Fafnir Rann" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4658,12 +4625,6 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="5056-89c0-c8c1-fda4" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5213,10 +5174,13 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="3ae1-8a20-2105-6412" name="Rogal Dorn" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry type="model" import="true" name="Rogal Dorn" hidden="false" id="3ae1-8a20-2105-6412">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="1f17-6de2-5b9b-7ac3" primary="false" name="Independent Character"/>
+          </categoryLinks>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c4a-7b87-f844-27b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ab-39a7-6473-2369" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c4a-7b87-f844-27b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ab-39a7-6473-2369"/>
           </constraints>
           <profiles>
             <profile id="6707-4cb3-e1d9-8574" name="Rogal Dorn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -5235,12 +5199,6 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="1f17-6de2-5b9b-7ac3" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5439,9 +5397,6 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
               </costs>
             </selectionEntry>
             <selectionEntry id="9f54-f812-8da1-06f8" name="Huscarl w/Solarite Power Gauntlet" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="3938-5546-4320-655d" name="Huscarl" hidden="false" targetId="490c-e5a9-2298-9772" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="8d0c-0b43-9d47-3d3a" name="Vigil Storm Shield" hidden="false" collective="false" import="true" targetId="9036-de5a-581a-718b" type="selectionEntry">
                   <modifiers>
@@ -5465,11 +5420,11 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
               </costs>
+              <infoLinks>
+                <infoLink id="3938-5546-4320-655d" name="Huscarl" targetId="490c-e5a9-2298-9772" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="79c5-4c2d-9c5a-1264" name="Huscarl w/Power Maul" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="3f69-775b-8c17-1dd5" name="Huscarl" hidden="false" targetId="490c-e5a9-2298-9772" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="e76a-2f98-0f53-1684" name="Vigil Storm Shield" hidden="false" collective="false" import="true" targetId="9036-de5a-581a-718b" type="selectionEntry">
                   <modifiers>
@@ -5490,11 +5445,11 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
               </costs>
+              <infoLinks>
+                <infoLink id="3f69-775b-8c17-1dd5" name="Huscarl" targetId="490c-e5a9-2298-9772" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="f4df-5a23-421b-f605" name="Huscarl w/Power Lance" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="3a86-76df-edbf-a484" name="Huscarl" hidden="false" targetId="490c-e5a9-2298-9772" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="ce8b-4aff-7f21-c29b" name="Vigil Storm Shield" hidden="false" collective="false" import="true" targetId="9036-de5a-581a-718b" type="selectionEntry">
                   <modifiers>
@@ -5515,11 +5470,11 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
               </costs>
+              <infoLinks>
+                <infoLink id="3a86-76df-edbf-a484" name="Huscarl" targetId="490c-e5a9-2298-9772" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="9320-8138-b8d2-9717" name="Huscarl w/Power Axe" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="9c57-bfd1-0da3-03a3" name="Huscarl" hidden="false" targetId="490c-e5a9-2298-9772" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="0ece-0b2a-fc42-dd5a" name="Vigil Storm Shield" hidden="false" collective="false" import="true" targetId="9036-de5a-581a-718b" type="selectionEntry">
                   <modifiers>
@@ -5540,6 +5495,9 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
               </costs>
+              <infoLinks>
+                <infoLink id="9c57-bfd1-0da3-03a3" name="Huscarl" targetId="490c-e5a9-2298-9772" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5631,15 +5589,15 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
           </constraints>
         </entryLink>
         <entryLink id="374a-fc14-bad6-2cd6" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="name" value="Four Turret Mounted twin-linked Heavy Bolters"/>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16d0-47b8-4b70-95d5" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b0d-8415-432d-d5a0" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="Four Turret Mounted twin-linked Heavy Bolters" field="name"/>
+          </modifiers>
           <infoLinks>
-            <infoLink id="e83-fc30-5899-2d20" name="Twin-linked" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
+            <infoLink name="Twin-linked" hidden="false" type="rule" id="e83-fc30-5899-2d20" targetId="8542-ee9d-e2fa-52fe"/>
           </infoLinks>
         </entryLink>
         <entryLink id="2fd1-07df-af6f-edba" name="Ramjet Diffraction Grid" hidden="false" collective="false" import="true" targetId="a884-7de7-32c4-3ef6" type="selectionEntry">
@@ -5669,7 +5627,7 @@ Both weapons are counted as ‘Power’ weapons for those rules that affect such
       </modifiers>
       <infoLinks>
         <infoLink id="7541-9b86-c106-2163" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
-        <infoLink id="38cc-3d9b-cee2-c7b0" name="Solarite Power Gauntlet" hidden="false" targetId="ef01-708e-6a00-9f57" type="profile"/>
+        <infoLink id="38cc-3d9b-cee2-c7b0" name="Solarite Power Gauntlet" targetId="ef01-708e-6a00-9f57" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5762,9 +5720,6 @@ A model with a Vigil storm shield gains a 3+ Invulnerable Save – Invulnerable 
               </modifiers>
             </infoLink>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry id="b8f1-7ad8-91af-77af" name="The Tyrant’s Regalia" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5785,9 +5740,6 @@ A model with a Vigil storm shield gains a 3+ Invulnerable Save – Invulnerable 
               </modifiers>
             </infoLink>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
         <selectionEntry id="5521-e365-8314-9949" name="Incineratus" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5808,14 +5760,14 @@ A model with a Vigil storm shield gains a 3+ Invulnerable Save – Invulnerable 
             <infoLink id="5387-931f-8517-e907" name="Deflagrate" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
             <infoLink id="4a74-951a-3bd4-9751" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
           </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
-        <selectionEntry id="3b93-5d39-1c1c-e45b" name="Lord-Castellan Evander Garrius" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry type="model" import="true" name="Lord-Castellan Evander Garrius" hidden="false" id="3b93-5d39-1c1c-e45b">
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="35dd-9027-18a4-b333" primary="false" name="Independent Character"/>
+          </categoryLinks>
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c4a-7b87-f844-27b" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ab-39a7-6473-2369" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c4a-7b87-f844-27b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c9ab-39a7-6473-2369"/>
           </constraints>
           <profiles>
             <profile id="776-452e-38ec-ed7a" name="Lord-Castellan Evander Garrius" publicationId="53a4-0d21-2f8a-2c45" page="208" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -5834,12 +5786,6 @@ A model with a Vigil storm shield gains a 3+ Invulnerable Save – Invulnerable 
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="35dd-9027-18a4-b333" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5863,7 +5809,7 @@ Butcher of Larissan – If, at the start of any player turn, the opposing player
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="4a10-238a-660a-b604" name="Master Tactician" hidden="false" targetId="e9eb-a5a2-1f4a-d591" type="profile"/>
+            <infoLink id="4a10-238a-660a-b604" name="Master Tactician" targetId="e9eb-a5a2-1f4a-d591" type="profile"/>
           </infoLinks>
         </entryLink>
       </entryLinks>
@@ -6013,9 +5959,6 @@ A Warlord with this Trait and all models in any friendly unit that Warlord joins
                   </modifiers>
                 </infoLink>
               </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
             </selectionEntry>
             <selectionEntry id="6c39-b3f3-dfca-6400" name="Unforgiven (Loyalist Only)" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -6033,9 +5976,6 @@ While locked in combat with an enemy unit that includes the enemy Warlord, or an
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

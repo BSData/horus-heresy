@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <selectionEntries>
-    <selectionEntry id="a845-6bf7-6f70-49fd" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="161d-3865-aa23-ec6f" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="813e-5f22-9e4a-966f" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="ef44-b917-8df0-b918" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="cf1d-eba8-24ce-21c0" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -3111,9 +3081,6 @@
             </infoLink>
             <infoLink id="279c-dac2-f898-a2ea" name="Shrouded in Death" hidden="false" targetId="2a8e-65b7-11c5-f84a" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="66b2-e426-da6c-7019" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="7bc7-2992-c9b2-4ffd" name="Lakrimae" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3232,6 +3199,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="66b2-e426-da6c-7019" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3320,9 +3290,6 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
               </modifiers>
             </infoLink>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="b434-eb1-c277-b762" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="42ad-a253-7a63-f86f" name="Silence" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3409,6 +3376,9 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b434-eb1-c277-b762" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4230,9 +4200,9 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           </modifiers>
         </infoLink>
         <infoLink id="355a-310f-4c86-d4dd" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
-        <infoLink id="aa76-d7d0-4803-de11" name="Shrouded (X)" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+        <infoLink name="Shrouded (X)" hidden="false" type="rule" id="aa76-d7d0-4803-de11" targetId="10c3-fdb0-089f-ca65">
           <modifiers>
-            <modifier type="set" field="name" value="Shrouded (6+)"/>
+            <modifier type="set" value="Shrouded (6+)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -4306,11 +4276,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="2324-6316-6d68-170b" name="Crysos Morturg" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12-42f3-21af-1290" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b5b-eaa0-eac-fff9" type="max"/>
-          </constraints>
+        <selectionEntry type="model" import="true" name="Crysos Morturg" hidden="false" id="2324-6316-6d68-170b">
           <profiles>
             <profile id="8723-dc20-bd94-1575" name="Crysos Morturg" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
@@ -4329,11 +4295,12 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="9ad7-d31f-2c4f-6ec3" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="9ad7-d31f-2c4f-6ec3" primary="false" name="Independent Character"/>
           </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a12-42f3-21af-1290"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b5b-eaa0-eac-fff9"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4438,11 +4405,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="e391-3611-d62c-52ce" name="Marshal Durak Rask" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12-42f3-21af-1290" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b5b-eaa0-eac-fff9" type="max"/>
-          </constraints>
+        <selectionEntry type="model" import="true" name="Marshal Durak Rask" hidden="false" id="e391-3611-d62c-52ce">
           <profiles>
             <profile id="4d6-4f0-b65-238e" name="Marshal Durak Rask" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
@@ -4461,11 +4424,12 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             </profile>
           </profiles>
           <categoryLinks>
-            <categoryLink id="2908-e4f5-e973-4d30" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2908-e4f5-e973-4d30" primary="false" name="Independent Character"/>
           </categoryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a12-42f3-21af-1290"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b5b-eaa0-eac-fff9"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4529,10 +4493,10 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38e4-4d93-6eff-0ca8" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="d79f-1e64-6976-8583" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+        <entryLink import="true" name="Master of the Legion" hidden="false" type="selectionEntry" id="d79f-1e64-6976-8583" targetId="0068-6b0a-0086-3d6b">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ceb-8b6a-ec1f-7161" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17ec-2488-4c04-a107" type="max"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ceb-8b6a-ec1f-7161"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17ec-2488-4c04-a107"/>
           </constraints>
         </entryLink>
       </entryLinks>

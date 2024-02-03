@@ -1,35 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <selectionEntries>
-    <selectionEntry id="d712-446d-098d-13dc" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c10f-0f1a-a084-e063" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ccb-f712-c00a-fc47" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="7c9e-1219-99fe-9d00" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="ed68-6f47-b618-cb0a" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-        </entryLink>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-  </selectionEntries>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <entryLinks>
     <entryLink id="f491-c7fa-f6d3-917d" name="Contekar Terminator Squad" hidden="false" collective="false" import="false" targetId="837e-c3ca-437e-dfbf" type="selectionEntry">
       <modifiers>
@@ -3269,11 +3239,8 @@
               </modifiers>
             </infoLink>
             <infoLink id="d12d-0cc4-72a9-58dd" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink id="0fd8-414a-710e-39c0" name="Bloody Murder" hidden="false" targetId="5072-2b33-d062-210f" type="rule"/>
+            <infoLink id="0fd8-414a-710e-39c0" name="Bloody Murder" targetId="5072-2b33-d062-210f" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="ae3e-5cb1-896d-85af" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <entryLinks>
             <entryLink id="02f8-bf2a-4a11-770e" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
               <constraints>
@@ -3285,6 +3252,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ae3e-5cb1-896d-85af" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="c6cd-fc91-802f-af6e" name="Psychic Powers" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3771,9 +3741,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="35b7-94ae-96ad-3bac" name="Executioner w/Chainglaive" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="a308-732a-7b5f-ccac" name="Executioner" hidden="false" targetId="804a-5bae-3402-af07" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="909f-4e9e-9db3-76b2" name="Chainglaive" hidden="false" collective="false" import="true" targetId="f4b1-a1d5-4c65-12d3" type="selectionEntry">
                   <modifiers>
@@ -3794,11 +3761,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="28"/>
               </costs>
+              <infoLinks>
+                <infoLink id="a308-732a-7b5f-ccac" name="Executioner" targetId="804a-5bae-3402-af07" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="2d06-4475-9e77-456d" name="Executioner w/Chainblade" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="1339-f9ea-c360-3f6b" name="Executioner" hidden="false" targetId="804a-5bae-3402-af07" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="4e6b-987e-cb7c-2d39" name="Chainblade" hidden="false" collective="false" import="true" targetId="a528-cdc6-2004-cced" type="selectionEntry">
                   <modifiers>
@@ -3819,11 +3786,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="28"/>
               </costs>
+              <infoLinks>
+                <infoLink id="1339-f9ea-c360-3f6b" name="Executioner" targetId="804a-5bae-3402-af07" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="617e-40d5-35b3-3f7c" name="Executioner w/Chainaxe" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="7a97-adb0-55d6-426a" name="Executioner" hidden="false" targetId="804a-5bae-3402-af07" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="7d2c-223f-f714-103a" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -3844,6 +3811,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="23"/>
               </costs>
+              <infoLinks>
+                <infoLink id="7a97-adb0-55d6-426a" name="Executioner" targetId="804a-5bae-3402-af07" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4080,9 +4050,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="bc9e-194c-d712-2dd0" name="Night Raptor w/Power Weapon" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="5655-838d-1de0-cc1b" name="Night Raptor" hidden="false" targetId="9652-52cc-4914-ad13" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="e6f1-f958-80b3-91fd" name="Power Weapons:" hidden="false" collective="false" import="true" defaultSelectionEntryId="aa78-0cae-cdfb-31be">
                   <constraints>
@@ -4124,11 +4091,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <infoLinks>
+                <infoLink id="5655-838d-1de0-cc1b" name="Night Raptor" targetId="9652-52cc-4914-ad13" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="bc1a-52f8-a729-938c" name="Night Raptor w/Lightning Claw" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="c111-c4d0-7d8f-45d2" name="Night Raptor" hidden="false" targetId="9652-52cc-4914-ad13" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="2eb1-2350-1a39-090d" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="52fe-46cd-520d-9df3" type="selectionEntry">
                   <constraints>
@@ -4146,11 +4113,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
               </costs>
+              <infoLinks>
+                <infoLink id="c111-c4d0-7d8f-45d2" name="Night Raptor" targetId="9652-52cc-4914-ad13" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="821f-583b-f322-71c0" name="Night Raptor w/Chainblade" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="ff19-c55e-12b5-6937" name="Night Raptor" hidden="false" targetId="9652-52cc-4914-ad13" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="2e45-1614-a149-43a2" name="Chainblade" hidden="false" collective="false" import="true" targetId="a528-cdc6-2004-cced" type="selectionEntry">
                   <modifiers>
@@ -4171,11 +4138,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
+              <infoLinks>
+                <infoLink id="ff19-c55e-12b5-6937" name="Night Raptor" targetId="9652-52cc-4914-ad13" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="14cb-d481-3fb3-37cc" name="Night Raptor w/Chainglaive" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="10ce-ab11-abbb-5ff5" name="Night Raptor" hidden="false" targetId="9652-52cc-4914-ad13" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="6176-2615-5141-8f65" name="Chainglaive" hidden="false" collective="false" import="true" targetId="f4b1-a1d5-4c65-12d3" type="selectionEntry">
                   <constraints>
@@ -4193,11 +4160,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
+              <infoLinks>
+                <infoLink id="10ce-ab11-abbb-5ff5" name="Night Raptor" targetId="9652-52cc-4914-ad13" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="b7d5-489d-e8dc-70cc" name="Night Raptor w/Chainsword" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="adf2-b4cc-7feb-837f" name="Night Raptor" hidden="false" targetId="9652-52cc-4914-ad13" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="160e-fb6f-7831-ad0a" name="Chainsword" hidden="false" collective="false" import="true" targetId="b5b7-b50a-ac86-9173" type="selectionEntry">
                   <constraints>
@@ -4215,6 +4182,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <infoLinks>
+                <infoLink id="adf2-b4cc-7feb-837f" name="Night Raptor" targetId="9652-52cc-4914-ad13" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="435c-7ace-9ec2-c863" name="Night Raptor w/Options (1 in 5)" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="model">
               <modifiers>
@@ -4227,9 +4197,6 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9bb-a979-e548-349c" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="ff0d-68a1-5fe9-9cfd" name="Night Raptor" hidden="false" targetId="9652-52cc-4914-ad13" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="d29a-5035-67f6-6673" name="Pistol Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="b295-8f9e-c7eb-4b2c">
                   <constraints>
@@ -4320,6 +4287,9 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
+              <infoLinks>
+                <infoLink id="ff0d-68a1-5fe9-9cfd" name="Night Raptor" targetId="9652-52cc-4914-ad13" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4392,12 +4362,12 @@
               </characteristics>
             </profile>
           </profiles>
-          <categoryLinks>
-            <categoryLink id="3cb6-e6e6-4462-efb6" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="3cb6-e6e6-4462-efb6" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="c12d-0270-ecfe-f3e2" name="Mercy &amp; Forgiveness" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5090,9 +5060,6 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               <constraints>
                 <constraint field="selections" scope="12d3-9df0-4118-997f" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="34e6-06a6-69cf-7e2d" type="max"/>
               </constraints>
-              <infoLinks>
-                <infoLink id="1643-ece6-5dd7-df4c" name="Atramentar" hidden="false" targetId="ebf7-e2f8-38f1-8789" type="profile"/>
-              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="039f-dc7b-8b30-052a" name="2) Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="1b34-645d-d217-1577">
                   <constraints>
@@ -5154,11 +5121,11 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
+              <infoLinks>
+                <infoLink id="1643-ece6-5dd7-df4c" name="Atramentar" targetId="ebf7-e2f8-38f1-8789" type="profile"/>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry id="ae9d-1789-6d81-08bc" name="Atramentar w/Pair of Lightning Claws" hidden="false" collective="false" import="true" type="model">
-              <infoLinks>
-                <infoLink id="9956-d72c-5fc0-7dc5" name="Atramentar" hidden="false" targetId="ebf7-e2f8-38f1-8789" type="profile"/>
-              </infoLinks>
               <entryLinks>
                 <entryLink id="b268-8483-c724-3c5c" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="405f-030d-0343-ade8" type="selectionEntry">
                   <constraints>
@@ -5173,6 +5140,9 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
               </costs>
+              <infoLinks>
+                <infoLink id="9956-d72c-5fc0-7dc5" name="Atramentar" targetId="ebf7-e2f8-38f1-8789" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5208,7 +5178,7 @@ In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a 
       <categoryLinks>
         <categoryLink id="529d-c6da-a22c-ddf2" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="6af9-fdc8-c956-125c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="d89a-d03-4ac2-9df8" name="Primus Medicae" hidden="false" targetId="b81a-8f4a-ff50-ef99" primary="false"/>
+        <categoryLink targetId="b81a-8f4a-ff50-ef99" id="d89a-d03-4ac2-9df8" primary="false" name="Primus Medicae"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="1225-6430-b0ca-bf2a" name="Flaymaster Mawdrym Llansahai" hidden="false" collective="false" import="true" type="model">
@@ -5246,12 +5216,12 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
           <infoLinks>
             <infoLink id="7fc8-738d-d495-14ed" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="ce0e-59e2-170e-9a73" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ce0e-59e2-170e-9a73" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="8207-ff39-342f-7905" name="Red Jaqa" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5351,9 +5321,6 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             <infoLink id="051f-1753-cbd5-845c" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
             <infoLink id="ab4a-2c77-8c3a-8ea9" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="1524-fb63-e22b-b658" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <entryLinks>
             <entryLink id="ff7a-cdef-1667-1a82" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
               <constraints>
@@ -5365,6 +5332,9 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="1524-fb63-e22b-b658" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="ab56-ada5-5957-f889" name="Revenant" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5497,9 +5467,6 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             <infoLink id="99a7-5702-9b63-3716" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
             <infoLink id="d67e-ebb6-ef10-bcbf" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
           </infoLinks>
-          <categoryLinks>
-            <categoryLink id="7228-cb00-e7e0-aa45" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
-          </categoryLinks>
           <entryLinks>
             <entryLink id="8966-47d2-4374-fc94" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
               <constraints>
@@ -5511,6 +5478,9 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="7228-cb00-e7e0-aa45" primary="false" name="Independent Character"/>
+          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="1e83-8aa1-7329-2846" name="Nostraman Flay-whip" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -5592,8 +5562,8 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
         <entryLink id="2d87-691d-be45-9909" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="7923-f342-c07f-4967" type="selectionEntryGroup">
           <comment>template_id_741d-8c09-4211-ada6    template_targetId_7dee-602c-4b47-be09</comment>
         </entryLink>
-        <entryLink id="26f6-a621-3581-5779" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry"/>
-        <entryLink id="4e9f-b023-fc05-81d2" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry"/>
+        <entryLink import="true" name="Frag Grenades" hidden="false" type="selectionEntry" id="26f6-a621-3581-5779" targetId="cf9c-327b-3449-00d7"/>
+        <entryLink import="true" name="Krak Grenades" hidden="false" type="selectionEntry" id="4e9f-b023-fc05-81d2" targetId="99df-2421-acf7-a5ad"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
@@ -5614,7 +5584,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
             <modifier type="set" field="name" value="Breaching (6+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="d6bc-ab8b-7d67-d618" name="Chainblade" hidden="false" targetId="ea87-ba5d-4fba-6906" type="profile"/>
+        <infoLink id="d6bc-ab8b-7d67-d618" name="Chainblade" targetId="ea87-ba5d-4fba-6906" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5629,7 +5599,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
         </infoLink>
         <infoLink id="8180-ba3e-ac80-bbb0" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
         <infoLink id="eb02-ec6c-4eb2-028f" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-        <infoLink id="fb36-db47-7034-0d1b" name="Chainglaive" hidden="false" targetId="75df-3045-75ec-b516" type="profile"/>
+        <infoLink id="fb36-db47-7034-0d1b" name="Chainglaive" targetId="75df-3045-75ec-b516" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
