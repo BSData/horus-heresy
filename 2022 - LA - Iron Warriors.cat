@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="37" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue id="2ee4-57ed-db44-8a63" name="LA -   IV: Iron Warriors" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <selectionEntries>
+    <selectionEntry id="298e-e162-5bd9-c9dd" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="585a-bf60-3635-68a8" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2646-a162-4cdd-bb6f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7117-41c4-1b02-869c" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3ed2-8cd4-bf40-de57" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="fe10-3104-0252-96de" name="Nârik Dreygur" hidden="true" collective="false" import="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
       <modifiers>
@@ -3089,13 +3119,10 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Nârik Dreygur" hidden="false" id="4b26-3ded-bdf5-21d5">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="8734-fac3-1b5-2288" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="4b26-3ded-bdf5-21d5" name="Nârik Dreygur" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="761c-5592-d350-292c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31df-353d-b022-791b"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="761c-5592-d350-292c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31df-353d-b022-791b" type="max"/>
           </constraints>
           <profiles>
             <profile id="54c3-b2d9-fa07-ed8e" name="Nârik Dreygur" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -3114,6 +3141,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="8734-fac3-1b5-2288" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3172,7 +3205,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a27-c4dc-9aac-4ff4" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Legiones Cybernetica (Praevian)" hidden="false" type="selectionEntryGroup" id="1259-b223-b863-5988" targetId="5951-8d5c-dde7-b704">
+        <entryLink id="1259-b223-b863-5988" name="Legiones Cybernetica (Praevian)" hidden="false" collective="false" import="true" targetId="5951-8d5c-dde7-b704" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="false"/>
           </modifiers>
@@ -3271,6 +3304,9 @@
             <infoLink id="abe7-e8a3-554b-475b" name="Legiones Astartes (Iron Warriors)" hidden="false" targetId="c77b-f3fc-5dc8-1330" type="rule"/>
             <infoLink id="6faf-27cb-0543-72fe" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="45ea-1241-dc10-6fce" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="dac8-72d0-65ea-cc13" name="The Logos Array" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3328,9 +3364,6 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="45ea-1241-dc10-6fce" primary="false" name="Independent Character"/>
-          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3729,7 +3762,7 @@
           <modifiers>
             <modifier type="set" field="9a5e-8830-1463-1060" value="3">
               <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f944-6641-a714-2fe8" shared="true"/>
+                <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f944-6641-a714-2fe8" type="instanceOf"/>
               </conditions>
             </modifier>
             <modifier type="add" field="category" value="56e1-5570-47b0-d824">
@@ -3933,6 +3966,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ce8-22d6-d945-cc7b" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="cd1f-f069-1204-9011" name="Tyrant" hidden="false" targetId="a7d7-45bf-be8d-e27c" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="5f12-0901-dc6e-42f5" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="0f3d-c07c-7a7e-d534" type="selectionEntry">
                   <constraints>
@@ -3950,14 +3986,14 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
               </costs>
-              <infoLinks>
-                <infoLink id="cd1f-f069-1204-9011" name="Tyrant" targetId="a7d7-45bf-be8d-e27c" type="profile"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry id="0e0b-e394-c43e-6704" name="Tyrant w/Pair of Lightning Claws" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28a4-f1a1-6e1b-f53e" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="283d-6722-2f46-e92d" name="Tyrant" hidden="false" targetId="a7d7-45bf-be8d-e27c" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="35de-bcaa-0529-f610" name="Pair of Lightning Claws" hidden="false" collective="false" import="true" targetId="405f-030d-0343-ade8" type="selectionEntry">
                   <constraints>
@@ -3969,9 +4005,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
               </costs>
-              <infoLinks>
-                <infoLink id="283d-6722-2f46-e92d" name="Tyrant" targetId="a7d7-45bf-be8d-e27c" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4063,6 +4096,10 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="7b8b-6634-c202-fb31" name="Siege Master w/Pair of Lightning Claws" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="2f6c-d12b-6af7-0604" name="Siege Master" hidden="false" targetId="ad40-f3a3-dfb2-f9c1" type="profile"/>
+                <infoLink id="ef8d-aa44-80da-bf5f" name="Omni-scope" hidden="false" targetId="bc85-da3e-2182-44e6" type="profile"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="e244-e220-41e3-2b9b" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
               </categoryLinks>
@@ -4101,10 +4138,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
-              <infoLinks>
-                <infoLink id="2f6c-d12b-6af7-0604" name="Siege Master" targetId="ad40-f3a3-dfb2-f9c1" type="profile"/>
-                <infoLink id="ef8d-aa44-80da-bf5f" name="Omni-scope" targetId="bc85-da3e-2182-44e6" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4309,7 +4342,7 @@
       <categoryLinks>
         <categoryLink id="5215-204f-c641-45e8" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="aadf-fc65-d13f-de42" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink targetId="7a92-1a29-c087-51c6" id="8952-587-dd6e-b1f5" primary="false" name="Hammer of Olympia (Warsmith or Perturabo)"/>
+        <categoryLink id="8952-587-dd6e-b1f5" name="Hammer of Olympia (Warsmith or Perturabo)" hidden="false" targetId="7a92-1a29-c087-51c6" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="046a-5e7e-7b20-3043" name="Kyr Vhalen" hidden="false" collective="false" import="true" type="model">
@@ -4352,6 +4385,9 @@
             </infoLink>
             <infoLink id="4537-50b8-11c3-8b5a" name="Master of Automata" hidden="false" targetId="8eef-f84b-37cb-554b" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="b000-ea79-f7d4-6bb2" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="11a8-c231-b509-1e3f" name="Aegeas" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4435,9 +4471,6 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b000-ea79-f7d4-6bb2" primary="false" name="Independent Character"/>
-          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4518,13 +4551,10 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Erasmus Golg" hidden="false" id="484f-4f2d-23fa-ea85">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="d42e-963b-6794-ce6a" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="484f-4f2d-23fa-ea85" name="Erasmus Golg" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="761c-5592-d350-292c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31df-353d-b022-791b"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="761c-5592-d350-292c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31df-353d-b022-791b" type="max"/>
           </constraints>
           <profiles>
             <profile id="79c-42c7-35bd-74a7" name="Erasmus Golg" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4543,6 +4573,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="d42e-963b-6794-ce6a" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4595,7 +4631,7 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1bfa-2413-beb9-5f32" name="Dominator Cohort" hidden="false" collective="false" import="true" type="unit" publicationId="7f9d-5e88-241d-e861" page="26">
+    <selectionEntry id="1bfa-2413-beb9-5f32" name="Dominator Cohort" publicationId="7f9d-5e88-241d-e861" page="26" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="afcd-6812-de56-183a" name="Those Once Honoured" hidden="false">
           <modifiers>
@@ -4657,7 +4693,7 @@
                 <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98ac-9d9f-5755-be90" type="max"/>
               </constraints>
               <profiles>
-                <profile id="7afc-5b54-81b0-d809" name="Dominator" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="7f9d-5e88-241d-e861" page="26">
+                <profile id="7afc-5b54-81b0-d809" name="Dominator" publicationId="7f9d-5e88-241d-e861" page="26" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
                   <characteristics>
                     <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
@@ -4734,6 +4770,9 @@
               <constraints>
                 <constraint field="selections" scope="1bfa-2413-beb9-5f32" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0a43-11d3-397c-b15a" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="b214-28df-db9d-a78c" name="Dominator" hidden="false" targetId="7afc-5b54-81b0-d809" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="52d2-98f8-7db8-4441" name="Melee Weapon Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="e70c-45dd-f9cf-b122">
                   <constraints>
@@ -4772,9 +4811,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Dominator" hidden="false" type="profile" id="b214-28df-db9d-a78c" targetId="7afc-5b54-81b0-d809"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

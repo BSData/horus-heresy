@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="33" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="34" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="821c-0c83-5ed0-ff6b" name="Harbinger of Chaos Restriction" hidden="false">
       <modifiers>
@@ -19,6 +19,36 @@
       </constraints>
     </categoryEntry>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="dddc-8ce0-7e98-5d7e" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c0f-633d-587d-2f37" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a7-43d1-8ae7-0cef" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="105d-d394-b132-0106" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="58df-a663-1bb6-7907" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="70a7-c1ee-bf88-94ab" name="XVII: Word Bearers" hidden="false" collective="false" import="false" targetId="9dbf-0760-d7ae-f125" type="selectionEntry">
       <modifiers>
@@ -3014,7 +3044,7 @@
       <categoryLinks>
         <categoryLink id="e3fb-21fc-f5a6-7574" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="c7c3-f51d-8b88-3b2e" name="New CategoryLink" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
-        <categoryLink targetId="8f42-a824-fb5f-8fea" id="3493-2023-1319-1c99" primary="false" name="Compulsory Troops:"/>
+        <categoryLink id="3493-2023-1319-1c99" name="Compulsory Troops:" hidden="false" targetId="8f42-a824-fb5f-8fea" primary="false"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7961-99ef-4265-6769" name="Bound Daemon Brutes (Lorgar/Erebus)" hidden="false" collective="false" import="false" targetId="fd8b-8d8d-901a-6ee3" type="selectionEntry">
@@ -3144,7 +3174,7 @@
         <categoryLink id="da85-2463-bcba-6aaf" name="New CategoryLink" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Beasts (Lorgar/Erebus)" hidden="false" type="selectionEntry" id="f752-d0e3-3a2b-fb8f" targetId="cca0-3900-65ca-bd5d">
+    <entryLink id="f752-d0e3-3a2b-fb8f" name="Ruinstorm Daemon Beasts (Lorgar/Erebus)" hidden="false" collective="false" import="false" targetId="cca0-3900-65ca-bd5d" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -3168,11 +3198,11 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="e42f-d121-4ca3-e1d2" primary="true" name="Elites:"/>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="830a-104-af2e-259" primary="false" name="Unit:"/>
+        <categoryLink id="e42f-d121-4ca3-e1d2" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink id="830a-104-af2e-259" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Brutes (Lorgar/Erebus)" hidden="false" type="selectionEntry" id="aab5-63ab-65-14fc" targetId="c640-5d22-9d97-4959">
+    <entryLink id="aab5-63ab-65-14fc" name="Ruinstorm Daemon Brutes (Lorgar/Erebus)" hidden="false" collective="false" import="false" targetId="c640-5d22-9d97-4959" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -3196,24 +3226,11 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="115d-8984-7f6f-9da6" primary="false" name="Unit:"/>
-        <categoryLink targetId="7aee-565f-b0ae-294e" id="9ef4-9978-ea0-4c48" primary="true" name="Elites:"/>
+        <categoryLink id="115d-8984-7f6f-9da6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9ef4-9978-ea0-4c48" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="false" name="Greater Ruinstorm Daemon Beast (Lorgar)" hidden="false" type="selectionEntry" id="4074-717-6ff7-dc14" targetId="59d-9e40-117a-7a34">
-      <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="b0b3-fd5a-1c0-233f" primary="false" name="Unit:"/>
-        <categoryLink targetId="7031-469a-1aeb-eab0" id="7d44-d0e5-660b-439b" primary="true" name="Heavy Support:"/>
-      </categoryLinks>
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86f6-6646-2bef-31ee" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Behemoth (Lorgar)" hidden="false" type="selectionEntry" id="23a2-2e0a-4328-61" targetId="6344-7863-4f0b-deaa">
+    <entryLink id="4074-717-6ff7-dc14" name="Greater Ruinstorm Daemon Beast (Lorgar)" hidden="false" collective="false" import="false" targetId="59d-9e40-117a-7a34" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -3222,15 +3239,11 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink targetId="7031-469a-1aeb-eab0" id="b8e6-d125-dcb7-2612" primary="true" name="Heavy Support:"/>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="49ec-7a42-afa6-d090" primary="false" name="Unit:"/>
+        <categoryLink id="b0b3-fd5a-1c0-233f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="7d44-d0e5-660b-439b" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Cavalry (Lorgar)" hidden="false" type="selectionEntry" id="6fa-6794-1b22-3bc2" targetId="f2d-471c-3b99-1752">
-      <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="24f0-898-4936-65c2" primary="false" name="Unit:"/>
-        <categoryLink targetId="20ef-cd01-a8da-376e" id="4d24-8805-38ce-c294" primary="true" name="Fast Attack:"/>
-      </categoryLinks>
+    <entryLink id="23a2-2e0a-4328-61" name="Ruinstorm Daemon Behemoth (Lorgar)" hidden="false" collective="false" import="false" targetId="6344-7863-4f0b-deaa" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -3238,12 +3251,25 @@
           </conditions>
         </modifier>
       </modifiers>
-    </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Harbinger (Lorgar/Erebus)" hidden="false" type="selectionEntry" id="dfe6-8e43-672-64d2" targetId="8599-a03d-8af7-4ba1">
       <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="9d36-3ec-111b-daf7" primary="false" name="Unit:"/>
-        <categoryLink targetId="4f85-eb33-30c9-8f51" id="3273-c258-275f-d900" primary="true" name="HQ:"/>
+        <categoryLink id="b8e6-d125-dcb7-2612" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink id="49ec-7a42-afa6-d090" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="6fa-6794-1b22-3bc2" name="Ruinstorm Daemon Cavalry (Lorgar)" hidden="false" collective="false" import="false" targetId="f2d-471c-3b99-1752" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="86f6-6646-2bef-31ee" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="24f0-898-4936-65c2" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="4d24-8805-38ce-c294" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dfe6-8e43-672-64d2" name="Ruinstorm Daemon Harbinger (Lorgar/Erebus)" hidden="false" collective="false" import="false" targetId="8599-a03d-8af7-4ba1" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -3266,12 +3292,12 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-    </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Harriers (Lorgar)" hidden="false" type="selectionEntry" id="327d-d196-fb93-f96a" targetId="8c8f-683c-4690-4c3c">
       <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="d188-8d73-b28d-6c02" primary="false" name="Unit:"/>
-        <categoryLink targetId="20ef-cd01-a8da-376e" id="a5cf-9a9e-4ea8-653e" primary="true" name="Fast Attack:"/>
+        <categoryLink id="9d36-3ec-111b-daf7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3273-c258-275f-d900" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="327d-d196-fb93-f96a" name="Ruinstorm Daemon Harriers (Lorgar)" hidden="false" collective="false" import="false" targetId="8c8f-683c-4690-4c3c" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -3279,12 +3305,12 @@
           </conditions>
         </modifier>
       </modifiers>
-    </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Hierarch (Lorgar/Erebus)" hidden="false" type="selectionEntry" id="dc8d-9c6b-afd8-8cc0" targetId="e9d5-f180-aedf-521b">
       <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="7392-e9c6-2433-a94e" primary="false" name="Unit:"/>
-        <categoryLink targetId="4f85-eb33-30c9-8f51" id="3575-886b-e356-d763" primary="true" name="HQ:"/>
+        <categoryLink id="d188-8d73-b28d-6c02" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="a5cf-9a9e-4ea8-653e" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="dc8d-9c6b-afd8-8cc0" name="Ruinstorm Daemon Hierarch (Lorgar/Erebus)" hidden="false" collective="false" import="false" targetId="e9d5-f180-aedf-521b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -3307,12 +3333,12 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-    </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Sovereign (Lorgar/Erebus)" hidden="false" type="selectionEntry" id="6ce-3288-9acf-8ad7" targetId="e0f2-1da3-accb-7ac2">
       <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="31c-e692-57e7-550b" primary="false" name="Unit:"/>
-        <categoryLink targetId="4f85-eb33-30c9-8f51" id="2b32-ef9a-6392-cef1" primary="true" name="HQ:"/>
+        <categoryLink id="7392-e9c6-2433-a94e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="3575-886b-e356-d763" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="6ce-3288-9acf-8ad7" name="Ruinstorm Daemon Sovereign (Lorgar/Erebus)" hidden="false" collective="false" import="false" targetId="e0f2-1da3-accb-7ac2" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditionGroups>
@@ -3335,12 +3361,12 @@
           </conditionGroups>
         </modifier>
       </modifiers>
-    </entryLink>
-    <entryLink import="false" name="Ruinstorm Daemon Swarms (Lorgar)" hidden="false" type="selectionEntry" id="94d2-5bd-1044-8faa" targetId="646-b4d8-aea6-60a0">
       <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="8460-4fb5-b8d0-1f0d" primary="false" name="Unit:"/>
-        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="2b9b-87b2-80ab-cb99" primary="true" name="Troops:"/>
+        <categoryLink id="31c-e692-57e7-550b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2b32-ef9a-6392-cef1" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="94d2-5bd-1044-8faa" name="Ruinstorm Daemon Swarms (Lorgar)" hidden="false" collective="false" import="false" targetId="646-b4d8-aea6-60a0" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -3348,12 +3374,12 @@
           </conditions>
         </modifier>
       </modifiers>
-    </entryLink>
-    <entryLink import="false" name="Ruinstorm Lesser Daemons (Lorgar)" hidden="false" type="selectionEntry" id="7e1d-80ca-c5c9-a4ff" targetId="1aef-763e-42a7-b78f">
       <categoryLinks>
-        <categoryLink targetId="36c3-e85e-97cc-c503" id="3009-58d8-8200-7d84" primary="false" name="Unit:"/>
-        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="9685-9e5d-d082-1546" primary="true" name="Troops:"/>
+        <categoryLink id="8460-4fb5-b8d0-1f0d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="2b9b-87b2-80ab-cb99" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="7e1d-80ca-c5c9-a4ff" name="Ruinstorm Lesser Daemons (Lorgar)" hidden="false" collective="false" import="false" targetId="1aef-763e-42a7-b78f" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -3361,6 +3387,10 @@
           </conditions>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink id="3009-58d8-8200-7d84" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink id="9685-9e5d-d082-1546" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -3489,6 +3519,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="10" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ead-43c2-d3d5-b42c" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="3b06-45f7-7bc4-c401" name="Dark Brethren" hidden="false" targetId="7de5-e55d-a80c-2ebf" type="profile"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="6301-3df0-f6f7-94de" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
               </categoryLinks>
@@ -3510,9 +3543,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
               </costs>
-              <infoLinks>
-                <infoLink id="3b06-45f7-7bc4-c401" name="Dark Brethren" targetId="7de5-e55d-a80c-2ebf" type="profile"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry id="5ece-0c81-8b8d-fe7b" name="Dark Brethren w/ Ranged Options" hidden="false" collective="false" import="true" type="model">
               <modifiers>
@@ -3530,6 +3560,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d16-a540-deb6-3415" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="36fd-ab88-ae11-7fc9" name="Dark Brethren" hidden="false" targetId="7de5-e55d-a80c-2ebf" type="profile"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="0e5d-ec08-8f11-ae1e" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
               </categoryLinks>
@@ -3593,9 +3626,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
               </costs>
-              <infoLinks>
-                <infoLink id="36fd-ab88-ae11-7fc9" name="Dark Brethren" targetId="7de5-e55d-a80c-2ebf" type="profile"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry id="1c43-3f56-aa11-73fb" name="Dark Brethren w/ Both Options" hidden="false" collective="false" import="true" type="model">
               <modifiers>
@@ -3608,6 +3638,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69fc-c9bd-3575-3cbd" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="6b53-6400-ce24-6e07" name="Dark Brethren" hidden="false" targetId="7de5-e55d-a80c-2ebf" type="profile"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="2922-5ff8-d70b-c7da" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
               </categoryLinks>
@@ -3700,9 +3733,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
               </costs>
-              <infoLinks>
-                <infoLink id="6b53-6400-ce24-6e07" name="Dark Brethren" targetId="7de5-e55d-a80c-2ebf" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3820,6 +3850,9 @@ In addition, once per battle, one friendly unit composed entirely of models with
                   </characteristics>
                 </profile>
               </profiles>
+              <categoryLinks>
+                <categoryLink id="6bb3-8da4-9b06-76e6" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+              </categoryLinks>
               <selectionEntries>
                 <selectionEntry id="580d-f719-30eb-d878" name="Devotion" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -3893,9 +3926,6 @@ In addition, once per battle, one friendly unit composed entirely of models with
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
-              <categoryLinks>
-                <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6bb3-8da4-9b06-76e6" primary="false" name="Independent Character"/>
-              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="86f6-6646-2bef-31ee" name="Lorgar Transfigured" hidden="false" collective="false" import="true" type="upgrade">
               <profiles>
@@ -3920,6 +3950,9 @@ In addition, once per battle, one friendly unit composed entirely of models with
                   <description>An army that includes Lorgar Transfigured may fill any non-compulsory slots in it Force Organization chart with units from the Ruinstorm Daemon army list - These choices are paid for in points and occupy slots on the Force Organisation chart as normal, but must begin the battle in reserve and may only enter play by means of the Breach the Veil Psychic Power.</description>
                 </rule>
               </rules>
+              <categoryLinks>
+                <categoryLink id="46df-2466-9c89-c516" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+              </categoryLinks>
               <entryLinks>
                 <entryLink id="8521-c59d-0844-ea91" name="Psychic Discipline: Anathemata" hidden="false" collective="false" import="true" targetId="c6ec-edc0-034e-ed45" type="selectionEntry">
                   <constraints>
@@ -3945,9 +3978,6 @@ In addition, once per battle, one friendly unit composed entirely of models with
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
-              <categoryLinks>
-                <categoryLink targetId="4f07-3d45-4f28-a0c6" id="46df-2466-9c89-c516" primary="false" name="Independent Character"/>
-              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4477,7 +4507,7 @@ In addition, once per battle, one friendly unit composed entirely of models with
       <categoryLinks>
         <categoryLink id="a847-6e8a-66a4-fa17" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="c096-bb42-1c27-67a6" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
-        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="6cc0-6682-2cc0-cd4c" primary="false" name="Legiones Astartes"/>
+        <categoryLink id="6cc0-6682-2cc0-cd4c" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="14c5-57da-1235-56d4" name="Two Daemonic Talons" hidden="false" collective="false" import="true" type="upgrade">
@@ -4517,13 +4547,10 @@ Argel Tal may still Run while using this special rule, if he would normally be a
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Argel Tal" hidden="false" id="3407-6707-e02-bedf">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="fa1b-510e-429e-c6b0" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="3407-6707-e02-bedf" name="Argel Tal" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab-773e-53e4-ed58"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-5649-d96d-ff65"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab-773e-53e4-ed58" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="773a-5649-d96d-ff65" type="max"/>
           </constraints>
           <profiles>
             <profile id="b008-38ee-f8c1-4e90" name="Argel Tal" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4542,6 +4569,12 @@ Argel Tal may still Run while using this special rule, if he would normally be a
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="fa1b-510e-429e-c6b0" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4611,7 +4644,7 @@ Psychic Weapon</description>
         <categoryLink id="d3d0-99c4-cb4c-969c" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="9acc-39e7-b768-439f" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
         <categoryLink id="c6bf-c6ef-ae4a-4995" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
-        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="8cd9-d390-1cf-5dad" primary="false" name="Legiones Astartes"/>
+        <categoryLink id="8cd9-d390-1cf-5dad" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="20eb-1d18-ef3b-6a39" name="Crux Malifica" hidden="false" collective="false" import="true" type="upgrade">
@@ -4665,13 +4698,10 @@ Psychic Weapon</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="High Chaplain Erebus" hidden="false" id="c5f8-1709-fb44-a64d">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="12d1-da56-374b-314b" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="c5f8-1709-fb44-a64d" name="High Chaplain Erebus" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab-773e-53e4-ed58"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-5649-d96d-ff65"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab-773e-53e4-ed58" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="773a-5649-d96d-ff65" type="max"/>
           </constraints>
           <profiles>
             <profile id="87a-4f60-82b9-114f" name="High Chaplain Erebus" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4690,6 +4720,12 @@ Psychic Weapon</description>
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="12d1-da56-374b-314b" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4790,6 +4826,11 @@ Psychic Weapon</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b4ae-65a-479b-cdc1" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="1c2-3805-b6f8-8b1b" name="Corrupted Sub-type:" hidden="false" targetId="9055-7410-8ffd-b8e7" primary="false"/>
+        <categoryLink id="cbe2-a552-1e8b-9dc7" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
       <selectionEntries>
         <selectionEntry id="ad6c-f113-0852-4c72" name="Patriarch&apos;s Claws" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -4856,13 +4897,10 @@ Psychic Weapon</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Kor Phaeron" hidden="false" id="935d-7774-dfc9-7e13">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="693d-3d37-afc4-1696" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="935d-7774-dfc9-7e13" name="Kor Phaeron" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab-773e-53e4-ed58"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-5649-d96d-ff65"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab-773e-53e4-ed58" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="773a-5649-d96d-ff65" type="max"/>
           </constraints>
           <profiles>
             <profile id="c48e-2bc3-e5fb-353f" name="Kor Phaeron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4893,6 +4931,12 @@ Psychic Weapon</description>
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="693d-3d37-afc4-1696" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4923,11 +4967,6 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
       </costs>
-      <categoryLinks>
-        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="b4ae-65a-479b-cdc1" primary="false" name="Infantry:"/>
-        <categoryLink targetId="9055-7410-8ffd-b8e7" id="1c2-3805-b6f8-8b1b" primary="false" name="Corrupted Sub-type:"/>
-        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="cbe2-a552-1e8b-9dc7" primary="false" name="Legiones Astartes"/>
-      </categoryLinks>
     </selectionEntry>
     <selectionEntry id="f511-e558-6bff-6543" name="Zardu Layak" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -5012,13 +5051,10 @@ as the Aetheric Lightning Psychic Weapon</description>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Zardu Layak" hidden="false" id="1233-5b3f-d481-f723">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="48b1-6791-8fa5-66f4" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="1233-5b3f-d481-f723" name="Zardu Layak" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dab-773e-53e4-ed58"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="773a-5649-d96d-ff65"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dab-773e-53e4-ed58" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="773a-5649-d96d-ff65" type="max"/>
           </constraints>
           <profiles>
             <profile id="6059-99d2-d22c-8daa" name="Zardu Layak" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -5037,6 +5073,12 @@ as the Aetheric Lightning Psychic Weapon</description>
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="48b1-6791-8fa5-66f4" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5238,6 +5280,9 @@ as the Aetheric Lightning Psychic Weapon</description>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7aa9-1e13-3b38-84f5" name="Procurant w/Chainsword &amp; Hand Flamer" hidden="false" collective="false" import="true" type="model">
+                  <infoLinks>
+                    <infoLink id="141c-23a2-e6ac-4eb8" name="Procurant" hidden="false" targetId="a7bb-abb3-af34-587d" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="e9be-0362-0e49-3449" name="Chainsword" hidden="false" collective="false" import="true" targetId="b5b7-b50a-ac86-9173" type="selectionEntry">
                       <constraints>
@@ -5255,11 +5300,11 @@ as the Aetheric Lightning Psychic Weapon</description>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
-                  <infoLinks>
-                    <infoLink id="141c-23a2-e6ac-4eb8" name="Procurant" targetId="a7bb-abb3-af34-587d" type="profile"/>
-                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="4c19-9c4c-1370-f9f2" name="Procurant w/Chainsword &amp; Plasma Pistol" hidden="false" collective="false" import="true" type="model">
+                  <infoLinks>
+                    <infoLink id="46b8-23ae-ab0c-c735" name="Procurant" hidden="false" targetId="a7bb-abb3-af34-587d" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="df0c-168e-1837-31f0" name="Chainsword" hidden="false" collective="false" import="true" targetId="b5b7-b50a-ac86-9173" type="selectionEntry">
                       <constraints>
@@ -5277,11 +5322,11 @@ as the Aetheric Lightning Psychic Weapon</description>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
                   </costs>
-                  <infoLinks>
-                    <infoLink id="46b8-23ae-ab0c-c735" name="Procurant" targetId="a7bb-abb3-af34-587d" type="profile"/>
-                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="23cb-25e0-acbf-1185" name="Procurant w/Power Fist &amp; Hand Flamer" hidden="false" collective="false" import="true" type="model">
+                  <infoLinks>
+                    <infoLink id="28f6-ce6d-08ea-191d" name="Procurant" hidden="false" targetId="a7bb-abb3-af34-587d" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="6f26-f36a-11c0-4f0d" name="Power Fist" hidden="false" collective="false" import="true" targetId="a472-3ded-51a3-44a0" type="selectionEntry">
                       <constraints>
@@ -5299,11 +5344,11 @@ as the Aetheric Lightning Psychic Weapon</description>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
-                  <infoLinks>
-                    <infoLink id="28f6-ce6d-08ea-191d" name="Procurant" targetId="a7bb-abb3-af34-587d" type="profile"/>
-                  </infoLinks>
                 </selectionEntry>
                 <selectionEntry id="b608-957e-2fdb-6765" name="Procurant w/Power Fist &amp; Plasma Pistol" hidden="false" collective="false" import="true" type="model">
+                  <infoLinks>
+                    <infoLink id="3b42-aa7d-a68d-55e4" name="Procurant" hidden="false" targetId="a7bb-abb3-af34-587d" type="profile"/>
+                  </infoLinks>
                   <entryLinks>
                     <entryLink id="b99a-56f1-8870-2e6d" name="Power Fist" hidden="false" collective="false" import="true" targetId="a472-3ded-51a3-44a0" type="selectionEntry">
                       <constraints>
@@ -5321,9 +5366,6 @@ as the Aetheric Lightning Psychic Weapon</description>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
                   </costs>
-                  <infoLinks>
-                    <infoLink id="3b42-aa7d-a68d-55e4" name="Procurant" targetId="a7bb-abb3-af34-587d" type="profile"/>
-                  </infoLinks>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -5517,7 +5559,7 @@ as the Aetheric Lightning Psychic Weapon</description>
       </constraints>
       <infoLinks>
         <infoLink id="ccbb-3d0c-f08c-9a45" name="Blind" hidden="false" targetId="d836-747d-07d6-2b63" type="rule"/>
-        <infoLink id="f5dc-234e-5457-109e" name="Boltspitter" targetId="f5db-b3b0-4d9b-11b5" type="profile"/>
+        <infoLink id="f5dc-234e-5457-109e" name="Boltspitter" hidden="false" targetId="f5db-b3b0-4d9b-11b5" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5545,7 +5587,7 @@ as the Aetheric Lightning Psychic Weapon</description>
             <modifier type="set" field="name" value="Murderous Strike (6+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="3d5e-1342-f4b9-5ac8" name="Tainted Talons" targetId="1f45-43db-c2ae-5fe2" type="profile"/>
+        <infoLink id="3d5e-1342-f4b9-5ac8" name="Tainted Talons" hidden="false" targetId="1f45-43db-c2ae-5fe2" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5592,48 +5634,7 @@ as the Aetheric Lightning Psychic Weapon</description>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Beasts (Lorgar/Erebus)" hidden="false" id="cca0-3900-65ca-bd5d">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="48cc-b473-1a79-be8c" primary="false" name="Daemon Unit-type:"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink import="true" name="Daemon Beasts" hidden="false" type="selectionEntryGroup" id="b39c-e914-bea9-2003" targetId="8d09-1913-b79f-5c35"/>
-        <entryLink import="true" name="Ætheric Flight" hidden="false" type="selectionEntry" id="8156-8f7e-8c53-b2b3" targetId="7647-8112-eaf7-fbea">
-          <modifiers>
-            <modifier type="increment" value="5" field="d2ee-04cb-5f8a-2642">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="cca0-3900-65ca-bd5d" childId="8d09-1913-b79f-5c35" shared="true" roundUp="false" id="212e-9cb1-55fa-34b6"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </entryLink>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="6d0c-433c-9ccc-2922" targetId="caad-e621-38e5-cb5f"/>
-      </entryLinks>
-      <infoLinks>
-        <infoLink name="Traitor" hidden="false" type="rule" id="99b-377b-84f1-96c8" targetId="eff2-8b0e-21da-2f0d"/>
-        <infoLink id="af55-c8b0-192b-cbc9" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="3754-ea60-2e68-4cc1" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
-          <modifiers>
-            <modifier type="set" value="Bulky (3)" field="name"/>
-          </modifiers>
-        </infoLink>
-        <infoLink id="62dc-152c-b4f-6f9f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
+    <selectionEntry id="cca0-3900-65ca-bd5d" name="Ruinstorm Daemon Beasts (Lorgar/Erebus)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
@@ -5641,19 +5642,56 @@ as the Aetheric Lightning Psychic Weapon</description>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Brutes (Lorgar/Erebus)" hidden="false" id="c640-5d22-9d97-4959">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
-      </costs>
+      <infoLinks>
+        <infoLink id="99b-377b-84f1-96c8" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink id="af55-c8b0-192b-cbc9" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3754-ea60-2e68-4cc1" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (3)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="62dc-152c-b4f-6f9f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+              <conditions>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="bc68-8fc2-6f1a-9183" primary="false" name="Daemon Unit-type:"/>
+        <categoryLink id="48cc-b473-1a79-be8c" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Daemon Brute" hidden="false" type="selectionEntry" id="f0e3-7d1f-1f4d-ed7b" targetId="e3e-4f46-2300-a35"/>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="b6d8-cbc2-5c46-610e" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="9071-3e03-be60-47f1" targetId="9abc-11e8-9031-d104"/>
+        <entryLink id="b39c-e914-bea9-2003" name="Daemon Beasts" hidden="false" collective="false" import="true" targetId="8d09-1913-b79f-5c35" type="selectionEntryGroup"/>
+        <entryLink id="8156-8f7e-8c53-b2b3" name="Ætheric Flight" hidden="false" collective="false" import="true" targetId="7647-8112-eaf7-fbea" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="5">
+              <repeats>
+                <repeat field="selections" scope="cca0-3900-65ca-bd5d" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d09-1913-b79f-5c35" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="6d0c-433c-9ccc-2922" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c640-5d22-9d97-4959" name="Ruinstorm Daemon Brutes (Lorgar/Erebus)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+          <conditions>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="99d9-64d3-87a3-df20" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
           <modifiers>
@@ -5662,25 +5700,38 @@ as the Aetheric Lightning Psychic Weapon</description>
         </infoLink>
         <infoLink id="dd6d-3a76-447b-4d2" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
-            <modifier type="set" value="Bulky (3)" field="name"/>
+            <modifier type="set" field="name" value="Bulky (3)"/>
           </modifiers>
         </infoLink>
         <infoLink id="b344-3aa5-a992-625c" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Hammer of Wrath (2)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="4c67-dfc4-85f1-c053" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="bc68-8fc2-6f1a-9183" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f0e3-7d1f-1f4d-ed7b" name="Daemon Brute" hidden="false" collective="false" import="true" targetId="e3e-4f46-2300-a35" type="selectionEntry"/>
+        <entryLink id="b6d8-cbc2-5c46-610e" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="9071-3e03-be60-47f1" name="Infernal Armaments" hidden="false" collective="false" import="true" targetId="9abc-11e8-9031-d104" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59d-9e40-117a-7a34" name="Greater Ruinstorm Daemon Beast (Lorgar)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
@@ -5688,23 +5739,18 @@ as the Aetheric Lightning Psychic Weapon</description>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Greater Ruinstorm Daemon Beast (Lorgar)" hidden="false" id="59d-9e40-117a-7a34">
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="f5ce-e236-b5a1-66b4" primary="false" name="Daemon Unit-type:"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink id="2b72-655d-a776-8d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="abfe-21b8-5125-8e33" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (3)">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Hammer of Wrath (3+1)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5715,19 +5761,24 @@ as the Aetheric Lightning Psychic Weapon</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f5ce-e236-b5a1-66b4" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="9f12-2cdf-442-88cb" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="cc31-85a3-787b-16ff" targetId="9abc-11e8-9031-d104">
+        <entryLink id="9f12-2cdf-442-88cb" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="cc31-85a3-787b-16ff" name="Infernal Armaments" hidden="false" collective="false" import="true" targetId="9abc-11e8-9031-d104" type="selectionEntry">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71a4-ae7b-216d-b832"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="885d-a439-b8a7-201"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71a4-ae7b-216d-b832" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="885d-a439-b8a7-201" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Greater Beast" hidden="false" type="selectionEntry" id="7b99-2120-2193-ed6c" targetId="4f8b-41ab-2b96-abdd"/>
+        <entryLink id="7b99-2120-2193-ed6c" name="Greater Beast" hidden="false" collective="false" import="true" targetId="4f8b-41ab-2b96-abdd" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="6344-7863-4f0b-deaa" name="Ruinstorm Daemon Behemoth (Lorgar)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
@@ -5735,36 +5786,31 @@ as the Aetheric Lightning Psychic Weapon</description>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Behemoth (Lorgar)" hidden="false" id="6344-7863-4f0b-deaa">
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="6e1b-ee35-4c8a-fd38" primary="false" name="Daemon Unit-type:"/>
-      </categoryLinks>
       <infoLinks>
         <infoLink id="b17d-c4a8-8ce4-4b5f" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="4ba2-f40-6d0e-9be2" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
-            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="4ded-82cc-a717-8fd0" targetId="c694-20c8-455-baca"/>
+        <infoLink id="4ded-82cc-a717-8fd0" name="Empyrean Avatar" hidden="false" targetId="c694-20c8-455-baca" type="rule"/>
         <infoLink id="da81-e148-36a0-be2d" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (3)">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Hammer of Wrath (3+1)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="2cb8-9990-51b9-15c0" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
-            <modifier type="set" value="Bulky (7)" field="name"/>
+            <modifier type="set" field="name" value="Bulky (7)"/>
           </modifiers>
         </infoLink>
         <infoLink id="1a74-eb0f-313f-3c91" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -5773,34 +5819,27 @@ as the Aetheric Lightning Psychic Weapon</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6e1b-ee35-4c8a-fd38" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="6121-d959-c07-24b9" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Ruinstorm Behemoth" hidden="false" type="selectionEntry" id="b160-c287-b0fa-a119" targetId="b128-73e-2b19-55c8"/>
-        <entryLink import="true" name="May take up to two of the following options:" hidden="false" type="selectionEntryGroup" id="a6b0-48ff-1d92-7ee2" targetId="98ce-5174-21c-546a"/>
-        <entryLink import="true" name="Weapon" hidden="false" type="selectionEntryGroup" id="e164-532-b8e-4a1c" targetId="d09c-34b9-8314-e1f8"/>
+        <entryLink id="6121-d959-c07-24b9" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="b160-c287-b0fa-a119" name="Ruinstorm Behemoth" hidden="false" collective="false" import="true" targetId="b128-73e-2b19-55c8" type="selectionEntry"/>
+        <entryLink id="a6b0-48ff-1d92-7ee2" name="May take up to two of the following options:" hidden="false" collective="false" import="true" targetId="98ce-5174-21c-546a" type="selectionEntryGroup"/>
+        <entryLink id="e164-532-b8e-4a1c" name="Weapon" hidden="false" collective="false" import="true" targetId="d09c-34b9-8314-e1f8" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>
       </costs>
-      <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
-          <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Cavalry (Lorgar)" hidden="false" id="f2d-471c-3b99-1752">
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="c8c4-6415-5261-6ead" primary="false" name="Daemon Unit-type:"/>
-      </categoryLinks>
+    <selectionEntry id="f2d-471c-3b99-1752" name="Ruinstorm Daemon Cavalry (Lorgar)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="ebc7-6015-e730-7897" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="4353-5a1f-63ab-ac62" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5811,30 +5850,19 @@ as the Aetheric Lightning Psychic Weapon</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c8c4-6415-5261-6ead" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="7e7c-82db-b036-41bc" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Daemon Cavalry" hidden="false" type="selectionEntry" id="9c36-6a0b-a630-3abb" targetId="635d-bc63-b7de-84e3"/>
-        <entryLink import="true" name="Weapons" hidden="false" type="selectionEntryGroup" id="add9-4e64-ccb6-e72f" targetId="a8a4-643c-91b2-9d35"/>
+        <entryLink id="7e7c-82db-b036-41bc" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="9c36-6a0b-a630-3abb" name="Daemon Cavalry" hidden="false" collective="false" import="true" targetId="635d-bc63-b7de-84e3" type="selectionEntry"/>
+        <entryLink id="add9-4e64-ccb6-e72f" name="Weapons" hidden="false" collective="false" import="true" targetId="a8a4-643c-91b2-9d35" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harbinger (Lorgar/Erebus)" hidden="false" id="8599-a03d-8af7-4ba1">
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="53d3-afc9-2661-13ec" primary="false" name="Daemon Unit-type:"/>
-      </categoryLinks>
-      <infoLinks>
-        <infoLink id="bbf7-b35d-7a50-b5d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-      </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="ad72-3e47-ac6b-3054" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Harbinger" hidden="false" type="selectionEntry" id="b6c6-7d89-5cc4-e39a" targetId="45fa-e6f-ff0-9c02"/>
-        <entryLink import="true" name="Daemon Attendant" hidden="false" type="selectionEntry" id="8d4e-e524-757f-7965" targetId="ddd6-2d23-531f-12b7"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135"/>
-      </costs>
+    <selectionEntry id="8599-a03d-8af7-4ba1" name="Ruinstorm Daemon Harbinger (Lorgar/Erebus)" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
@@ -5842,32 +5870,49 @@ as the Aetheric Lightning Psychic Weapon</description>
           </conditions>
         </modifier>
       </modifiers>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Hierarch (Lorgar/Erebus)" hidden="false" id="e9d5-f180-aedf-521b">
+      <infoLinks>
+        <infoLink id="bbf7-b35d-7a50-b5d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+      </infoLinks>
       <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="2a0a-a768-c8f2-3324" primary="false" name="Daemon Unit-type:"/>
-        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="2f84-e203-3535-72b5" primary="false" name="Character"/>
+        <categoryLink id="53d3-afc9-2661-13ec" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="ad72-3e47-ac6b-3054" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="b6c6-7d89-5cc4-e39a" name="Harbinger" hidden="false" collective="false" import="true" targetId="45fa-e6f-ff0-9c02" type="selectionEntry"/>
+        <entryLink id="8d4e-e524-757f-7965" name="Daemon Attendant" hidden="false" collective="false" import="true" targetId="ddd6-2d23-531f-12b7" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e9d5-f180-aedf-521b" name="Ruinstorm Daemon Hierarch (Lorgar/Erebus)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+          <conditions>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="62d4-f2e-e426-3de8" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="586a-8649-5059-6369" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
-            <modifier type="set" value="It Will Not Die (6+)" field="name"/>
+            <modifier type="set" field="name" value="It Will Not Die (6+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="3380-e19b-6292-405f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="e9d5-f180-aedf-521b" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="e9d5-f180-aedf-521b" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="afb0-e428-5906-3599" targetId="c694-20c8-455-baca"/>
+        <infoLink id="afb0-e428-5906-3599" name="Empyrean Avatar" hidden="false" targetId="c694-20c8-455-baca" type="rule"/>
         <infoLink id="6184-1b08-73ad-d737" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
-            <modifier type="set" value="Bulky (5)" field="name"/>
+            <modifier type="set" field="name" value="Bulky (5)"/>
           </modifiers>
         </infoLink>
         <infoLink id="1df8-b42f-967c-7b70" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -5876,41 +5921,35 @@ as the Aetheric Lightning Psychic Weapon</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2a0a-a768-c8f2-3324" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+        <categoryLink id="2f84-e203-3535-72b5" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="3408-c5d2-efc9-37d7" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Warlord Traits (Ruinstorm Daemons)" hidden="false" type="selectionEntryGroup" id="52d1-64db-ca90-8225" targetId="2f76-74c1-d329-d3ab"/>
-        <entryLink import="true" name="May take up to two of the following options:" hidden="false" type="selectionEntryGroup" id="499c-b32b-f7ee-c369" targetId="ea1-884d-4e8a-4a66"/>
-        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="e075-f1fa-d916-b2d8" targetId="0176-56a3-d590-b103"/>
-        <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="5fba-2b-6569-72ec" targetId="9abc-11e8-9031-d104">
+        <entryLink id="3408-c5d2-efc9-37d7" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="52d1-64db-ca90-8225" name="Warlord Traits (Ruinstorm Daemons)" hidden="false" collective="false" import="true" targetId="2f76-74c1-d329-d3ab" type="selectionEntryGroup"/>
+        <entryLink id="499c-b32b-f7ee-c369" name="May take up to two of the following options:" hidden="false" collective="false" import="true" targetId="ea1-884d-4e8a-4a66" type="selectionEntryGroup"/>
+        <entryLink id="e075-f1fa-d916-b2d8" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+        <entryLink id="5fba-2b-6569-72ec" name="Infernal Armaments" hidden="false" collective="false" import="true" targetId="9abc-11e8-9031-d104" type="selectionEntry">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5a37-be4e-a62e-7575"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1aa8-84b8-c658-e5c"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a37-be4e-a62e-7575" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aa8-84b8-c658-e5c" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Hierarch" hidden="false" type="selectionEntry" id="2e71-3697-c5bd-80d8" targetId="bba5-7153-f7d2-facf"/>
+        <entryLink id="2e71-3697-c5bd-80d8" name="Hierarch" hidden="false" collective="false" import="true" targetId="bba5-7153-f7d2-facf" type="selectionEntry"/>
       </entryLinks>
-      <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
-          <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harriers (Lorgar)" hidden="false" id="8c8f-683c-4690-4c3c">
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="7fd5-6b88-af84-bef0" primary="false" name="Daemon Unit-type:"/>
-      </categoryLinks>
+    <selectionEntry id="8c8f-683c-4690-4c3c" name="Ruinstorm Daemon Harriers (Lorgar)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="a5e9-89f4-2704-53fe" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="efbc-29d2-c618-5612" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5921,25 +5960,31 @@ as the Aetheric Lightning Psychic Weapon</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7fd5-6b88-af84-bef0" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="adca-a6ea-b57b-2c90" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Weapons" hidden="false" type="selectionEntryGroup" id="5392-962a-ac73-e569" targetId="38df-f8ac-dd92-a3e5"/>
-        <entryLink import="true" name="Immaterial Wings" hidden="false" type="selectionEntry" id="64bc-2cf6-17a7-d75d" targetId="fd64-626a-d3d4-9b8e">
+        <entryLink id="adca-a6ea-b57b-2c90" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="5392-962a-ac73-e569" name="Weapons" hidden="false" collective="false" import="true" targetId="38df-f8ac-dd92-a3e5" type="selectionEntryGroup"/>
+        <entryLink id="64bc-2cf6-17a7-d75d" name="Immaterial Wings" hidden="false" collective="false" import="true" targetId="fd64-626a-d3d4-9b8e" type="selectionEntry">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b8e-7a53-295f-a872"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b8e-7a53-295f-a872" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Daemon Harriers" hidden="false" type="selectionEntry" id="f735-f90f-c944-63fb" targetId="273c-d18c-4113-9be3"/>
+        <entryLink id="f735-f90f-c944-63fb" name="Daemon Harriers" hidden="false" collective="false" import="true" targetId="273c-d18c-4113-9be3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="false" name="Ruinstorm Lesser Daemons (Lorgar)" hidden="false" id="1aef-763e-42a7-b78f">
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="23a3-c4d7-8831-3eb2" primary="false" name="Daemon Unit-type:"/>
-        <categoryLink targetId="6399-5c65-7833-1025" id="ae29-4f5d-f3dd-402e" primary="false" name="Line Sub-type:"/>
-      </categoryLinks>
+    <selectionEntry id="1aef-763e-42a7-b78f" name="Ruinstorm Lesser Daemons (Lorgar)" hidden="false" collective="false" import="false" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+          <conditions>
+            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="f636-8cf-71e0-b493" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="eff6-bdb9-31a7-234d" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -5948,95 +5993,87 @@ as the Aetheric Lightning Psychic Weapon</description>
           </modifiers>
         </infoLink>
       </infoLinks>
-      <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="65c2-a37f-615d-612f" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Lesser Daemon" hidden="false" type="selectionEntry" id="17ca-c2a2-11f3-c889" targetId="5da5-c15b-dfe5-d1b5"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-      </costs>
+      <categoryLinks>
+        <categoryLink id="23a3-c4d7-8831-3eb2" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+        <categoryLink id="ae29-4f5d-f3dd-402e" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Weapons" hidden="false" id="8609-7806-28df-784e" defaultSelectionEntryId="8796-fca2-c0b6-b64f">
+        <selectionEntryGroup id="8609-7806-28df-784e" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="8796-fca2-c0b6-b64f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61aa-b8fa-2e41-87e0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e09-6482-8ae8-8991" type="min"/>
+          </constraints>
           <entryLinks>
-            <entryLink import="true" name="Daemon Armaments" hidden="false" type="selectionEntry" id="8796-fca2-c0b6-b64f" targetId="28c4-89cc-5ed1-7e18"/>
-            <entryLink import="true" name="Immaterial Projectiles" hidden="false" type="selectionEntry" id="7607-8f52-270a-ecb8" targetId="b485-4c34-151f-e7f3">
+            <entryLink id="8796-fca2-c0b6-b64f" name="Daemon Armaments" hidden="false" collective="false" import="true" targetId="28c4-89cc-5ed1-7e18" type="selectionEntry"/>
+            <entryLink id="7607-8f52-270a-ecb8" name="Immaterial Projectiles" hidden="false" collective="false" import="true" targetId="b485-4c34-151f-e7f3" type="selectionEntry">
               <modifiers>
-                <modifier type="increment" value="1" field="d2ee-04cb-5f8a-2642">
+                <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="1">
                   <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="1aef-763e-42a7-b78f" childId="5da5-c15b-dfe5-d1b5" shared="true" roundUp="false" id="9a0b-b797-d460-2020"/>
+                    <repeat field="selections" scope="1aef-763e-42a7-b78f" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5da5-c15b-dfe5-d1b5" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
             </entryLink>
           </entryLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61aa-b8fa-2e41-87e0"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9e09-6482-8ae8-8991"/>
-          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
-          <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
+      <entryLinks>
+        <entryLink id="65c2-a37f-615d-612f" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="17ca-c2a2-11f3-c889" name="Lesser Daemon" hidden="false" collective="false" import="true" targetId="5da5-c15b-dfe5-d1b5" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Swarms (Lorgar)" hidden="false" id="646-b4d8-aea6-60a0">
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="b7e9-9709-82e1-ffd4" primary="false" name="Daemon Unit-type:"/>
-        <categoryLink targetId="6399-5c65-7833-1025" id="39ee-bc17-dcb4-d386" primary="false" name="Line Sub-type:"/>
-        <categoryLink targetId="59a4-7b61-600a-c457" id="a692-da86-b596-2a3b" primary="false" name="Skirmish Sub-type:"/>
-      </categoryLinks>
+    <selectionEntry id="646-b4d8-aea6-60a0" name="Ruinstorm Daemon Swarms (Lorgar)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="8f7c-636-d15e-b4ef" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="66cd-6f27-7166-639f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink name="Support Squad" hidden="false" type="rule" id="3717-b4c2-903d-7c9c" targetId="768e-56d6-ca52-24ae"/>
-        <infoLink name="Swarm" hidden="false" type="rule" id="4c68-1d80-a45c-537" targetId="0bc2-fcb2-dd25-c10a"/>
+        <infoLink id="3717-b4c2-903d-7c9c" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
+        <infoLink id="4c68-1d80-a45c-537" name="Swarm" hidden="false" targetId="0bc2-fcb2-dd25-c10a" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b7e9-9709-82e1-ffd4" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+        <categoryLink id="39ee-bc17-dcb4-d386" name="Line Sub-type:" hidden="false" targetId="6399-5c65-7833-1025" primary="false"/>
+        <categoryLink id="a692-da86-b596-2a3b" name="Skirmish Sub-type:" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="d0f5-88f9-92cf-c1f9" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Daemon Swarm" hidden="false" type="selectionEntry" id="c1ea-e0f0-b5aa-d8bf" targetId="cb8c-b27a-ea4e-1c91"/>
+        <entryLink id="d0f5-88f9-92cf-c1f9" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="c1ea-e0f0-b5aa-d8bf" name="Daemon Swarm" hidden="false" collective="false" import="true" targetId="cb8c-b27a-ea4e-1c91" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Sovereign (Lorgar/Erebus)" hidden="false" id="e0f2-1da3-accb-7ac2">
-      <categoryLinks>
-        <categoryLink targetId="e699-d9cd-e68e-46d9" id="f2b9-2820-94e3-a6b9" primary="false" name="Daemon Unit-type:"/>
-        <categoryLink targetId="7d95-f9d1-440a-67bd" id="e4b-18cd-9de8-5814" primary="false" name="Monstrous Sub-type:"/>
-        <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="a5e1-3abd-adf9-6e46" primary="false" name="Character"/>
-      </categoryLinks>
+    <selectionEntry id="e0f2-1da3-accb-7ac2" name="Ruinstorm Daemon Sovereign (Lorgar/Erebus)" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="9460-1dff-3d8c-ac7a" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink id="d816-8323-b35e-61df" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
-            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+            <modifier type="set" field="name" value="It Will Not Die (5+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="da14-3e86-ff62-45d2" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="e0f2-1da3-accb-7ac2" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition field="selections" scope="e0f2-1da3-accb-7ac2" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="atLeast"/>
               </conditions>
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="5b88-7169-d4a5-1152" targetId="c694-20c8-455-baca"/>
+        <infoLink id="5b88-7169-d4a5-1152" name="Empyrean Avatar" hidden="false" targetId="c694-20c8-455-baca" type="rule"/>
         <infoLink id="bc82-8ba6-e7df-849f" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
-            <modifier type="set" value="Bulky (7)" field="name"/>
+            <modifier type="set" field="name" value="Bulky (7)"/>
           </modifiers>
         </infoLink>
         <infoLink id="eee0-71f0-bf95-d90" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -6045,13 +6082,18 @@ as the Aetheric Lightning Psychic Weapon</description>
           </modifiers>
         </infoLink>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f2b9-2820-94e3-a6b9" name="Daemon Unit-type:" hidden="false" targetId="e699-d9cd-e68e-46d9" primary="false"/>
+        <categoryLink id="e4b-18cd-9de8-5814" name="Monstrous Sub-type:" hidden="false" targetId="7d95-f9d1-440a-67bd" primary="false"/>
+        <categoryLink id="a5e1-3abd-adf9-6e46" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="c6b5-1772-2956-768b" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="bf12-48da-af80-6ddf" targetId="0176-56a3-d590-b103"/>
-        <entryLink import="true" name="Warlord Traits (Ruinstorm Daemons)" hidden="false" type="selectionEntryGroup" id="ee18-fe50-7b84-2f5d" targetId="2f76-74c1-d329-d3ab"/>
-        <entryLink import="true" name="May take up to three of the following options:" hidden="false" type="selectionEntryGroup" id="1a32-1a58-e759-497" targetId="e1f6-c1d2-62c2-381b"/>
-        <entryLink import="true" name="Weapon" hidden="false" type="selectionEntryGroup" id="5c-b5c1-d512-e96c" targetId="72b7-d57a-653d-81f4"/>
-        <entryLink import="true" name="Sovereign" hidden="false" type="selectionEntry" id="1c95-3ead-9dc6-774f" targetId="3964-e438-272c-42cc"/>
+        <entryLink id="c6b5-1772-2956-768b" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink id="bf12-48da-af80-6ddf" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
+        <entryLink id="ee18-fe50-7b84-2f5d" name="Warlord Traits (Ruinstorm Daemons)" hidden="false" collective="false" import="true" targetId="2f76-74c1-d329-d3ab" type="selectionEntryGroup"/>
+        <entryLink id="1a32-1a58-e759-497" name="May take up to three of the following options:" hidden="false" collective="false" import="true" targetId="e1f6-c1d2-62c2-381b" type="selectionEntryGroup"/>
+        <entryLink id="5c-b5c1-d512-e96c" name="Weapon" hidden="false" collective="false" import="true" targetId="72b7-d57a-653d-81f4" type="selectionEntryGroup"/>
+        <entryLink id="1c95-3ead-9dc6-774f" name="Sovereign" hidden="false" collective="false" import="true" targetId="3964-e438-272c-42cc" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>

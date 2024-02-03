@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d21e-9c80-a7f8-728c" name="LA - XIX: Raven Guard" revision="28" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue id="d21e-9c80-a7f8-728c" name="LA - XIX: Raven Guard" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <selectionEntries>
+    <selectionEntry id="fe51-09b1-4392-96ce" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef90-117a-7f8e-819b" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e1-8ae8-f43d-ba74" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="72a7-e697-ddd9-8418" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fa4f-9133-b0aa-ac59" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="84cc-e59c-174e-fb25" name="Mor Deythan Squad" hidden="false" collective="false" import="false" targetId="c268-08ac-5b90-d034" type="selectionEntry">
       <categoryLinks>
@@ -3025,12 +3055,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="bb81-a4e6-a503-56ae" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="bb81-a4e6-a503-56ae" primary="false" name="Independent Character"/>
-          </categoryLinks>
         </selectionEntry>
         <selectionEntry id="9054-a4c3-8387-4c76" name="Fulcrim Hand Cannon" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -3163,6 +3193,9 @@
             <infoLink id="da1b-f556-115f-cf7f" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
             <infoLink id="b059-c4fd-b551-974c" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="3ed2-7b0f-c4c0-1f6a" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="649c-ef41-8515-b223" name="Wrath &amp; Justice" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3261,9 +3294,6 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="3ed2-7b0f-c4c0-1f6a" primary="false" name="Independent Character"/>
-          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -3566,6 +3596,9 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8147-b0c0-e12f-3153" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="0dde-2e01-49d4-75c8" name="Mor Deythan Shade" hidden="false" targetId="f720-cd2b-5c7f-2ad4" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="34f0-3785-0c3c-8b72" name="May take:" hidden="false" collective="false" import="true">
                   <entryLinks>
@@ -3692,9 +3725,6 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
-              <infoLinks>
-                <infoLink id="0dde-2e01-49d4-75c8" name="Mor Deythan Shade" targetId="f720-cd2b-5c7f-2ad4" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3825,6 +3855,9 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddc9-1a20-756e-8230" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="573e-66b0-7d0a-970a" name="Mor Deythan" hidden="false" targetId="9e9b-1562-811d-d0bf" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="7f6e-1e2c-8020-8ca8" name="1) Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2f4b-076d-a4a2-cac3">
                   <constraints>
@@ -3907,9 +3940,6 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
-              <infoLinks>
-                <infoLink id="573e-66b0-7d0a-970a" name="Mor Deythan" targetId="9e9b-1562-811d-d0bf" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4060,7 +4090,7 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cee7-9962-1094-cf73" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Meltabombs" hidden="false" type="selectionEntry" id="d3f9-d834-5dc9-4e8e" targetId="b9dd-3b21-f3f8-78e3">
+            <entryLink id="d3f9-d834-5dc9-4e8e" name="Meltabombs" hidden="false" collective="false" import="true" targetId="b9dd-3b21-f3f8-78e3" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
                   <repeats>
@@ -4191,6 +4221,9 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="b468-6e45-b156-899b" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="6f3b-9903-b54b-cb04" name="Nightfall pattern strato-vox" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4258,9 +4291,6 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="b468-6e45-b156-899b" primary="false" name="Independent Character"/>
-          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4417,6 +4447,9 @@ Additionally, if selected as part of an army that includes Corvus Corax, no mode
               </costs>
             </selectionEntry>
             <selectionEntry id="2fd7-841f-206a-9f2b" name="Deliverer Chieftain" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="bbd6-a9ce-c222-fff6" name="Deliverer Chieftan" hidden="false" targetId="c430-f24b-2a79-c1b7" type="profile"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="0e24-4422-ed3e-dec5" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
               </categoryLinks>
@@ -4451,11 +4484,11 @@ Additionally, if selected as part of an army that includes Corvus Corax, no mode
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
-              <infoLinks>
-                <infoLink id="bbd6-a9ce-c222-fff6" name="Deliverer Chieftan" targetId="c430-f24b-2a79-c1b7" type="profile"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry id="1ca5-717a-5346-81c1" name="Deliverer Chieftain w/Heavy Weapon" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="adc5-c5df-054c-a174" name="Deliverer Chieftan" hidden="false" targetId="c430-f24b-2a79-c1b7" type="profile"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="58e3-212f-ea8d-ec37" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
               </categoryLinks>
@@ -4490,9 +4523,6 @@ Additionally, if selected as part of an army that includes Corvus Corax, no mode
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
               </costs>
-              <infoLinks>
-                <infoLink id="adc5-c5df-054c-a174" name="Deliverer Chieftan" targetId="c430-f24b-2a79-c1b7" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4529,6 +4559,9 @@ Additionally, if selected as part of an army that includes Corvus Corax, no mode
               </costs>
             </selectionEntry>
             <selectionEntry id="acb7-6b25-f268-1e56" name="Deliverer w/Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="3677-f1a2-ccdf-4e11" name="Deliverer" hidden="false" targetId="a312-9684-80bb-c22f" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="73d6-ac8f-84e2-8fd8" name="Pair of Raven&apos;s Talons" hidden="false" collective="false" import="true" targetId="08e4-5e02-da82-f296" type="selectionEntry">
                   <modifiers>
@@ -4543,9 +4576,6 @@ Additionally, if selected as part of an army that includes Corvus Corax, no mode
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
               </costs>
-              <infoLinks>
-                <infoLink id="3677-f1a2-ccdf-4e11" name="Deliverer" targetId="a312-9684-80bb-c22f" type="profile"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry id="a74c-a81e-519d-6339" name="Deliverer w/Heavy Weapon" hidden="false" collective="false" import="true" type="model">
               <modifiers>
@@ -4563,6 +4593,9 @@ Additionally, if selected as part of an army that includes Corvus Corax, no mode
               <constraints>
                 <constraint field="selections" scope="5d1d-8348-ed95-d366" value="0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="false" id="79eb-8173-4e4e-7bf0" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="b553-b1cf-be43-12c1" name="Deliverer" hidden="false" targetId="a312-9684-80bb-c22f" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="ce9c-c4f2-11a8-5ed6" name="Deliverer Heavy Weapons" hidden="false" collective="false" import="true" targetId="2c85-3ae3-fbdf-2e60" type="selectionEntryGroup"/>
                 <entryLink id="9054-f336-11e3-4a50" name="Deliverer Melee Weapon" hidden="false" collective="false" import="true" targetId="d48a-b33b-002e-fc23" type="selectionEntryGroup"/>
@@ -4570,9 +4603,6 @@ Additionally, if selected as part of an army that includes Corvus Corax, no mode
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
               </costs>
-              <infoLinks>
-                <infoLink id="b553-b1cf-be43-12c1" name="Deliverer" targetId="a312-9684-80bb-c22f" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4768,16 +4798,16 @@ When in base to base contact with an enemy Infantry or Cavalry model whose Weapo
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
               <infoLinks>
-                <infoLink name="Fleet (X)" hidden="false" type="rule" id="1699-e813-c8c4-7b80" targetId="ddc9-0b4b-78da-bbd2">
+                <infoLink id="1699-e813-c8c4-7b80" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
                   <modifiers>
-                    <modifier type="set" value="Fleet (2)" field="name"/>
+                    <modifier type="set" field="name" value="Fleet (2)"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>

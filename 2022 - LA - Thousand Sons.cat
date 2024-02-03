@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="abac-8dd1-df65-e253" name="LA -  XV: Thousand Sons" revision="31" battleScribeVersion="2.03" authorName="Arkangelmark5" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue id="abac-8dd1-df65-e253" name="LA -  XV: Thousand Sons" revision="32" battleScribeVersion="2.03" authorName="Arkangelmark5" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="f743-7ff9-a2f3-01c7" name="Exemplary Battles of the Age of Darkness: The Axandria IV Incident" shortName="Axandria IV" publisher="Exemplary Battles of the Age of Darkness: The Axandria IV Incident" publicationDate="9/16/2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/3mVvZrTG9XOWeVxv.pdf"/>
   </publications>
+  <selectionEntries>
+    <selectionEntry id="6d74-ed88-04c1-6817" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9acb-4544-4baa-0a36" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c44f-7b89-d997-6433" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ce72-a16d-826b-3778" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3ac2-0bf3-2485-ac7b" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="5900-484e-9f23-c753" name="XV: Thousand Sons" hidden="false" collective="false" import="false" targetId="21c3-2f28-7820-e51a" type="selectionEntry">
       <modifiers>
@@ -3720,6 +3750,9 @@
             <infoLink id="77e5-69bc-2466-f310" name="Infiltrate" hidden="false" targetId="0e32-5b92-a95a-8464" type="rule"/>
             <infoLink id="df88-a557-b6da-db45" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="6ca9-7834-d332-aa0c" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c609-1504-8ba4-2a09" name="Psychic powers" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -3878,9 +3911,6 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6ca9-7834-d332-aa0c" primary="false" name="Independent Character"/>
-          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4954,13 +4984,10 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Magnus the Red" hidden="false" id="203f-95e9-cfde-83">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="52c9-da65-e6a8-1946" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="203f-95e9-cfde-83" name="Magnus the Red" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e3cb-cd23-12a6-4a12"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fc11-eef-919-37b4"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3cb-cd23-12a6-4a12" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc11-eef-919-37b4" type="max"/>
           </constraints>
           <profiles>
             <profile id="47a-6e2f-9cab-a264" name="Magnus the Red" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4979,6 +5006,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="52c9-da65-e6a8-1946" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>

@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="41" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="42" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <selectionEntries>
+    <selectionEntry id="9ae0-9b38-0d4e-a155" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e88d-c12e-3701-964e" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40c4-36c1-110a-5228" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0fa3-35d7-45c8-d73a" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="644e-77e2-e357-195a" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -3120,13 +3150,10 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Sanguinius" hidden="false" id="c604-746e-d68b-3541">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2bb1-2477-683f-3f11" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="c604-746e-d68b-3541" name="Sanguinius" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a-7632-dc99-3a6c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a-7632-dc99-3a6c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6530-823d-3029-45be" type="max"/>
           </constraints>
           <profiles>
             <profile id="3d53-5ed6-c96e-5786" name="Sanguinius" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -3145,6 +3172,12 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="2bb1-2477-683f-3f11" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -3374,13 +3407,10 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Judicar Aster Crohne" hidden="false" id="d82c-e354-14fd-a65b">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="628b-d37d-d649-36b9" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="d82c-e354-14fd-a65b" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a-7632-dc99-3a6c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a-7632-dc99-3a6c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6530-823d-3029-45be" type="max"/>
           </constraints>
           <profiles>
             <profile id="bb3d-a8c6-61c8-66b0" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -3399,6 +3429,12 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="628b-d37d-d649-36b9" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4164,13 +4200,10 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Chapter Master Raldoron" hidden="false" id="b0e6-842b-c38e-7605">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2bc6-6378-27a2-c9b4" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="b0e6-842b-c38e-7605" name="Chapter Master Raldoron" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a-7632-dc99-3a6c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a-7632-dc99-3a6c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6530-823d-3029-45be" type="max"/>
           </constraints>
           <profiles>
             <profile id="9622-6d99-4923-3523" name="Chapter Master Raldoron" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4189,6 +4222,12 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="2bc6-6378-27a2-c9b4" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4297,6 +4336,10 @@ Characteristic when locked in combat with one or more enemy units that have the 
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c9bd-4aa2-3814-6183" name="Bound by Glory" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b58a-8ea6-de69-6beb" type="max"/>
+                    <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aea5-902e-1daa-3042" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="6250-7eb8-95df-b93b" name="Bound by Glory" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                       <characteristics>
@@ -4311,10 +4354,9 @@ Characteristic when locked in combat with one or more enemy units that have the 
                       </modifiers>
                     </infoLink>
                   </infoLinks>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b58a-8ea6-de69-6beb" type="max"/>
-                    <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aea5-902e-1daa-3042" type="max"/>
-                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="2d17-21a-1941-f930" name="Unforgiven (Loyalist Only)" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
@@ -4324,6 +4366,10 @@ Characteristic when locked in combat with one or more enemy units that have the 
                       </conditions>
                     </modifier>
                   </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3bc5-2707-5214-3156" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab59-e36b-ee5c-a02a" type="max"/>
+                  </constraints>
                   <profiles>
                     <profile id="df0d-351e-cc7d-a64b" name="Unforgiven" publicationId="53a4-0d21-2f8a-2c45" page="207" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                       <characteristics>
@@ -4332,10 +4378,9 @@ While locked in combat with an enemy unit that includes the enemy Warlord, or an
                       </characteristics>
                     </profile>
                   </profiles>
-                  <constraints>
-                    <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3bc5-2707-5214-3156" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab59-e36b-ee5c-a02a" type="max"/>
-                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -4731,13 +4776,10 @@ The Paragon of Restoration gives Dominion Zephon the Feel No Pain (5+) special r
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Dominion Zephon" hidden="false" id="85cd-89c1-5853-ee5a">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="fe39-c065-88c4-288c" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="85cd-89c1-5853-ee5a" name="Dominion Zephon" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="72a-7632-dc99-3a6c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a-7632-dc99-3a6c" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6530-823d-3029-45be" type="max"/>
           </constraints>
           <profiles>
             <profile id="3e3b-1668-cce8-89ac" name="Dominion Zephon" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4756,6 +4798,12 @@ The Paragon of Restoration gives Dominion Zephon the Feel No Pain (5+) special r
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="fe39-c065-88c4-288c" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5562,6 +5610,9 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
               </costs>
             </selectionEntry>
             <selectionEntry id="c1fb-61b4-5212-ecfb" name="Dawnbreaker w/ Falling-Star Power Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="e7de-3ade-8f9a-9c0c" name="Dawnbreaker" hidden="false" targetId="13ce-3207-bb2e-eaf0" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="524d-3acc-b602-1126" name="Falling-Star Power Spear" hidden="false" collective="false" import="true" targetId="ffe1-7b85-01c8-b0c7" type="selectionEntry">
                   <constraints>
@@ -5603,9 +5654,6 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
               </costs>
-              <infoLinks>
-                <infoLink id="e7de-3ade-8f9a-9c0c" name="Dawnbreaker" targetId="13ce-3207-bb2e-eaf0" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5628,9 +5676,9 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
           </modifiers>
         </infoLink>
         <infoLink id="6c31-cff8-a750-a197" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
-        <infoLink id="56a5-daed-5996-4af2" name="Equinox Power Blades - Sunrise Blade" targetId="b7fd-3e9b-6b09-2caa" type="profile"/>
-        <infoLink id="4fed-4f1c-34aa-e707" name="Equinox Power Blades - Sunset Blade" targetId="8d77-0236-af31-55c4" type="profile"/>
-        <infoLink id="aa04-1cbb-5752-aafd" name="Paired Weapons" targetId="d123-4437-4646-81d8" type="rule"/>
+        <infoLink id="56a5-daed-5996-4af2" name="Equinox Power Blades - Sunrise Blade" hidden="false" targetId="b7fd-3e9b-6b09-2caa" type="profile"/>
+        <infoLink id="4fed-4f1c-34aa-e707" name="Equinox Power Blades - Sunset Blade" hidden="false" targetId="8d77-0236-af31-55c4" type="profile"/>
+        <infoLink id="aa04-1cbb-5752-aafd" name="Paired Weapons" hidden="false" targetId="d123-4437-4646-81d8" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5648,19 +5696,19 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="c9c3-2241-888b-a288" name="Falling-Star Power Spear" targetId="434a-3a1a-393e-7f20" type="profile"/>
+        <infoLink id="c9c3-2241-888b-a288" name="Falling-Star Power Spear" hidden="false" targetId="434a-3a1a-393e-7f20" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="298b-c5d8-2fb0-9dd4" name="Coriolis Pattern Power Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d202-9b09-d8ec-152f" name="Coriolis Pattern Power Shield" hidden="false" targetId="d3cf-f143-b4e4-e567" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-      <infoLinks>
-        <infoLink id="d202-9b09-d8ec-152f" name="Coriolis Pattern Power Shield" targetId="d3cf-f143-b4e4-e567" type="profile"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry id="2fd3-e09f-173f-6b0a" name="Sunset blade" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -5670,7 +5718,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="9b8c-d491-f97e-b038" name="Sunset Blade" targetId="44b8-6835-19ae-1181" type="profile"/>
+        <infoLink id="9b8c-d491-f97e-b038" name="Sunset Blade" hidden="false" targetId="44b8-6835-19ae-1181" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5679,8 +5727,8 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
     <selectionEntry id="0eba-48ae-95a0-81e5" name="Grenade Discharger" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="445f-37fe-5208-2146" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
-        <infoLink id="a273-206f-0e23-5745" name="Grenade discharger - Frag bombs" targetId="624b-be83-c8b7-fbed" type="profile"/>
-        <infoLink id="4e6c-aff2-c03f-ff46" name="Grenade discharger - Krak bombs" targetId="ced5-9f54-3081-23df" type="profile"/>
+        <infoLink id="a273-206f-0e23-5745" name="Grenade discharger - Frag bombs" hidden="false" targetId="624b-be83-c8b7-fbed" type="profile"/>
+        <infoLink id="4e6c-aff2-c03f-ff46" name="Grenade discharger - Krak bombs" hidden="false" targetId="ced5-9f54-3081-23df" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5694,7 +5742,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             <modifier type="set" field="name" value="Rending (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="f337-1e46-57f8-58a0" name="Sunset Blade" targetId="44b8-6835-19ae-1181" type="profile"/>
+        <infoLink id="f337-1e46-57f8-58a0" name="Sunset Blade" hidden="false" targetId="44b8-6835-19ae-1181" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>

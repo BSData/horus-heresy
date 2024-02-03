@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="36" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="37" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+  <selectionEntries>
+    <selectionEntry id="55bb-130b-0ee1-5c25" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a4-6e35-716d-a82d" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3854-cd95-b314-b46b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c554-5fa5-2660-c787" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4a3f-63a0-d678-7bdb" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <modifiers>
@@ -3265,11 +3295,11 @@
         <categoryLink id="6d1d-d078-d026-d60f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="Ally of the Silent Order" hidden="false" type="selectionEntry" id="a6c8-a420-b14d-7544" targetId="bf10-c83b-b8ed-aaf1">
+        <entryLink id="a6c8-a420-b14d-7544" name="Ally of the Silent Order" hidden="false" collective="false" import="true" targetId="bf10-c83b-b8ed-aaf1" type="selectionEntry">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="377e-2a26-ce39-92f4"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a600-8bec-ed85-8a18"/>
-            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fa25-c423-da3-504c"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="377e-2a26-ce39-92f4" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a600-8bec-ed85-8a18" type="max"/>
+            <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa25-c423-da3-504c" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
@@ -4547,13 +4577,10 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Qin Xa" hidden="false" id="bdec-21c5-bf4a-3a95">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="5a83-c56c-2fb-706c" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="bdec-21c5-bf4a-3a95" name="Qin Xa" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cf2-a0c1-6adf-958b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e82-d1f8-f706-2bf6"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cf2-a0c1-6adf-958b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e82-d1f8-f706-2bf6" type="max"/>
           </constraints>
           <profiles>
             <profile id="ff28-fb4c-1368-7936" name="Qin Xa" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4572,6 +4599,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="5a83-c56c-2fb-706c" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -4693,13 +4726,10 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Tsolmon Khan" hidden="false" id="7dd4-df27-9afb-f0af">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="6721-afa5-62e2-e507" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="7dd4-df27-9afb-f0af" name="Tsolmon Khan" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cf2-a0c1-6adf-958b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e82-d1f8-f706-2bf6"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cf2-a0c1-6adf-958b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e82-d1f8-f706-2bf6" type="max"/>
           </constraints>
           <profiles>
             <profile id="9cf5-6ef3-d31f-c20d" name="Tsolmon Khan" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -4730,6 +4760,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="6721-afa5-62e2-e507" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5220,13 +5256,10 @@ May join units that include models with the Cavalry Unit Type despite the usual 
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Jaghatai Khan" hidden="false" id="657b-383e-85ed-781b">
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="69ca-446a-2911-eb68" primary="false" name="Independent Character"/>
-          </categoryLinks>
+        <selectionEntry id="657b-383e-85ed-781b" name="Jaghatai Khan" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cf2-a0c1-6adf-958b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e82-d1f8-f706-2bf6"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cf2-a0c1-6adf-958b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e82-d1f8-f706-2bf6" type="max"/>
           </constraints>
           <profiles>
             <profile id="15ef-c0f-31cb-4ede" name="Jaghatai Khan" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
@@ -5262,6 +5295,12 @@ May join units that include models with the Cavalry Unit Type despite the usual 
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="69ca-446a-2911-eb68" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -5349,21 +5388,21 @@ May join units that include models with the Cavalry Unit Type despite the usual 
                   </characteristics>
                 </profile>
               </profiles>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
               <infoLinks>
-                <infoLink name="Stubborn" hidden="false" type="rule" id="c56f-8ed3-d620-e61e" targetId="7989-1f2c-a43d-82ae">
+                <infoLink id="c56f-8ed3-d620-e61e" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule">
                   <modifiers>
-                    <modifier type="set" value="Stubborn (Heroes Never Die)" field="name"/>
+                    <modifier type="set" field="name" value="Stubborn (Heroes Never Die)"/>
                   </modifiers>
                 </infoLink>
-                <infoLink name="Fearless" hidden="false" type="rule" id="7627-4402-c2ac-19d" targetId="b48c-d7e1-2a83-2f5b">
+                <infoLink id="7627-4402-c2ac-19d" name="Fearless" hidden="false" targetId="b48c-d7e1-2a83-2f5b" type="rule">
                   <modifiers>
-                    <modifier type="set" value="Fearless (Heroes Never Die)" field="name"/>
+                    <modifier type="set" field="name" value="Fearless (Heroes Never Die)"/>
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="1b30-724a-2474-391b" name="Born to the Saddle" publicationId="817a-6288-e016-7469" page="178" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>

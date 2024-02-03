@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="48" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="49" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="98" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -50,6 +50,34 @@
       <entryLinks>
         <entryLink id="757d-56f6-93d3-9d1b" name="Rewards of Trechery Legion" hidden="false" collective="false" import="true" targetId="f8bc-5856-11c2-898f" type="selectionEntryGroup"/>
         <entryLink id="8fc2-e051-033e-52a3" name="Rewards of Trechery Unit" hidden="false" collective="false" import="true" targetId="0004-ce27-39ed-b6a6" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="acc7-ed3e-1d02-93f4" name="Rite of War" hidden="false" collective="false" import="false" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f02d-24f0-e06a-fff7" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa36-9e5a-068d-372c" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1efa-e967-6f85-6f01" name="New CategoryLink" hidden="false" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a4e3-1759-9bbf-6c0f" name="Rites of War (Text Only / Work in Progress)" hidden="false" collective="false" import="true" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="797b-0bd6-8cbf-f25a" value="0">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad5f-31db-8bc7-5c46" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0068-6b0a-0086-3d6b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -5517,6 +5545,9 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de19-32c5-68a6-318f" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="7128-a135-2eaa-1ccd" name="Lernaean" hidden="false" targetId="53a7-baaf-f2b1-790b" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="1500-076d-83b9-4faf" name="CCW" hidden="false" collective="false" import="true" defaultSelectionEntryId="8677-a1f9-3337-77d8">
                   <constraints>
@@ -5569,11 +5600,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
-              <infoLinks>
-                <infoLink id="7128-a135-2eaa-1ccd" name="Lernaean" targetId="53a7-baaf-f2b1-790b" type="profile"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry id="65fe-767b-3b47-ef53" name="Lernaean w/Power Fist" publicationId="09c5-eeae-f398-b653" page="338" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="ab07-b8bc-0975-cd97" name="Lernaean" hidden="false" targetId="53a7-baaf-f2b1-790b" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="c633-5dd3-1e97-7be9" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="5c82-c306-9c5c-5908" type="selectionEntry">
                   <constraints>
@@ -5591,11 +5622,11 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
               </costs>
-              <infoLinks>
-                <infoLink id="ab07-b8bc-0975-cd97" name="Lernaean" targetId="53a7-baaf-f2b1-790b" type="profile"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry id="ee69-d749-7ec4-a20e" name="Lernaean w/Power Axe" publicationId="09c5-eeae-f398-b653" page="338" hidden="false" collective="false" import="true" type="model">
+              <infoLinks>
+                <infoLink id="81a9-964d-7e99-feeb" name="Lernaean" hidden="false" targetId="53a7-baaf-f2b1-790b" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="fe9c-5f30-bf8c-8c33" name="Volkite Charger" hidden="false" collective="false" import="true" targetId="5c82-c306-9c5c-5908" type="selectionEntry">
                   <constraints>
@@ -5613,9 +5644,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
               </costs>
-              <infoLinks>
-                <infoLink id="81a9-964d-7e99-feeb" name="Lernaean" targetId="53a7-baaf-f2b1-790b" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -5768,14 +5796,11 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Exodus" hidden="false" id="5e48-a4b6-2472-16f3">
+        <selectionEntry id="5e48-a4b6-2472-16f3" name="Exodus" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25f1-5a89-238f-ef4b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c945-b12e-b69-ab69"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f1-5a89-238f-ef4b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c945-b12e-b69-ab69" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="8c2a-c938-6f22-9dfd" primary="false" name="Independent Character"/>
-          </categoryLinks>
           <profiles>
             <profile id="793c-d4f-2bbc-92fb" name="Exodus" publicationId="09c5-eeae-f398-b653" page="340" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
@@ -5793,6 +5818,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="8c2a-c938-6f22-9dfd" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6151,6 +6182,9 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="c051-b8a4-fb93-8ef1" name="Headhunter" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="8062-c442-cf6f-ac40" name="Headhunter" hidden="false" targetId="318f-1bb4-8999-10db" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="a002-d627-6b9a-af75" name="Power Dagger" hidden="false" collective="false" import="true" targetId="47b3-acd0-e43e-cd63" type="selectionEntry">
                   <constraints>
@@ -6192,14 +6226,14 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
-              <infoLinks>
-                <infoLink id="8062-c442-cf6f-ac40" name="Headhunter" targetId="318f-1bb4-8999-10db" type="profile"/>
-              </infoLinks>
             </selectionEntry>
             <selectionEntry id="a7b4-1de7-bc6f-4120" name="Headhunter w/Heavy Weapon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbf6-90fa-b2cd-3a10" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="e572-5cd5-aeae-1b80" name="Headhunter" hidden="false" targetId="318f-1bb4-8999-10db" type="profile"/>
+              </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="75b3-5de3-bb15-a4c9" name="Ranged:" hidden="false" collective="false" import="true" defaultSelectionEntryId="bba9-0fce-58d2-a748">
                   <constraints>
@@ -6261,9 +6295,6 @@
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
               </costs>
-              <infoLinks>
-                <infoLink id="e572-5cd5-aeae-1b80" name="Headhunter" targetId="318f-1bb4-8999-10db" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -6457,14 +6488,11 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Armillus Dynat" hidden="false" id="28c9-5e27-fa5c-8f93">
+        <selectionEntry id="28c9-5e27-fa5c-8f93" name="Armillus Dynat" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25f1-5a89-238f-ef4b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c945-b12e-b69-ab69"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f1-5a89-238f-ef4b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c945-b12e-b69-ab69" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ec3c-8298-3752-eda8" primary="false" name="Independent Character"/>
-          </categoryLinks>
           <profiles>
             <profile id="6cf5-8af4-87b2-cb82" name="Armillus Dynat" publicationId="09c5-eeae-f398-b653" page="342" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
@@ -6482,6 +6510,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="ec3c-8298-3752-eda8" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6647,14 +6681,11 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Alpharius" hidden="false" id="7a45-c31c-db06-f802">
+        <selectionEntry id="7a45-c31c-db06-f802" name="Alpharius" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25f1-5a89-238f-ef4b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c945-b12e-b69-ab69"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f1-5a89-238f-ef4b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c945-b12e-b69-ab69" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2259-38ca-b345-49fd" primary="false" name="Independent Character"/>
-          </categoryLinks>
           <profiles>
             <profile id="e93f-b0d8-6af1-f4e3" name="Alpharius" publicationId="09c5-eeae-f398-b653" page="336" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
@@ -6672,6 +6703,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="2259-38ca-b345-49fd" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6747,14 +6784,11 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Autilon Skorr" hidden="false" id="ad99-483d-d021-f3d5">
+        <selectionEntry id="ad99-483d-d021-f3d5" name="Autilon Skorr" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="25f1-5a89-238f-ef4b"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c945-b12e-b69-ab69"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f1-5a89-238f-ef4b" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c945-b12e-b69-ab69" type="max"/>
           </constraints>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ffaf-9870-881d-1c72" primary="false" name="Independent Character"/>
-          </categoryLinks>
           <profiles>
             <profile id="5ded-9dea-c7f3-8922" name="Autilon Skorr" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
@@ -6772,6 +6806,12 @@
               </characteristics>
             </profile>
           </profiles>
+          <categoryLinks>
+            <categoryLink id="ffaf-9870-881d-1c72" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6999,6 +7039,9 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
               <constraints>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d927-0c27-8eb8-8c9a" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="32d3-da3e-1e40-533c" name="Effrit Disruptors" hidden="false" targetId="4836-eb33-24cc-bbe4" type="profile"/>
+              </infoLinks>
               <entryLinks>
                 <entryLink id="54cc-b796-8940-752a" name="Nemesis Bolter" hidden="false" collective="false" import="true" targetId="9021-d66d-2e3d-8ab6" type="selectionEntry">
                   <constraints>
@@ -7010,9 +7053,6 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="31"/>
               </costs>
-              <infoLinks>
-                <infoLink id="32d3-da3e-1e40-533c" name="Effrit Disruptors" targetId="4836-eb33-24cc-bbe4" type="profile"/>
-              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -7112,7 +7152,7 @@ A weapon with this special rule may not be used to make Shooting Attacks as part
             <modifier type="set" field="name" value="Concussive (1)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="adf8-3304-14c8-1808" name="Banestrike Shotgun" targetId="18ca-5c09-5fe5-a246" type="profile"/>
+        <infoLink id="adf8-3304-14c8-1808" name="Banestrike Shotgun" hidden="false" targetId="18ca-5c09-5fe5-a246" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
