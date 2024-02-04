@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="98" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="(HH V2) Horus Heresy (2022)" revision="99" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -15572,6 +15572,66 @@ Once assigned to a unit, the Legion Techmarine is considered part of that unit a
       <characteristics>
         <characteristic name="Description" typeId="c627-4637-8de5-65fb">Combat Air Patrol – This Advanced Reaction may be made whenever any enemy model that has the Vehicle Unit Type and the Flyer Sub-type enters the battlefield from Reserves. The Reactive player may nominate any one model that has been assigned to Combat Air Patrol. Once the enemy model with the Vehicle Unit Type and Flyer Sub-type that triggered this Reaction has finished any and all Movement as it is brought into play, the chosen model assigned to Combat Air Patrol is brought into play from any point on the edge of the battlefield, moving into play as if it had entered play from Reserves. Once the Combat Air Patrol model has finished its Movement it may immediately make a Shooting Attack targeting the enemy model that triggered this Reaction – as long as it has finished its Movement with line of sight to that model.
 Only models with the Vehicle Unit Type and Flyer Sub-type may make the Combat Air Patrol Reaction.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ab48-605d-a6cc-7ad6" name="Legion Rhino Transport" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+      <modifiers>
+        <modifier type="set" field="3614-4a2d-bffb-90e4" value="15*">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
+        <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">14</characteristic>
+        <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+        <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+        <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+        <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+        <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+        <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+        <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Legion Rhino Transport has one Access Point on each side of the hull and one at the rear.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="502f-3ae3-b1ce-455a" name="Termite Assault Drill" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+      <modifiers>
+        <modifier type="set" field="3614-4a2d-bffb-90e4" value="9*">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport)</characteristic>
+        <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">8</characteristic>
+        <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+        <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">12</characteristic>
+        <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">12</characteristic>
+        <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+        <characteristic name="HP" typeId="a76c-83b1-602f-9e62">3</characteristic>
+        <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+        <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Legion Termite Assault Drill has two Access Points, one on each side of the hull.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2a46-a372-d986-d0eb" name="Land Raider Proteus Carrier" publicationId="a716-c1c4-7b26-8424" page="76" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
+      <modifiers>
+        <modifier type="set" field="3614-4a2d-bffb-90e4" value="13*">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <characteristics>
+        <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Transport, Reinforced)</characteristic>
+        <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">12</characteristic>
+        <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">4</characteristic>
+        <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">14</characteristic>
+        <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">14</characteristic>
+        <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">14</characteristic>
+        <characteristic name="HP" typeId="a76c-83b1-602f-9e62">5</characteristic>
+        <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+        <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One on each side of the hull and one at the front.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
