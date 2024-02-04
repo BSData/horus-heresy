@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="33" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="34" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -7875,13 +7875,27 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
           <entryLinks>
             <entryLink id="8632-d096-4606-03d6" name="Autopistol" hidden="false" collective="false" import="true" targetId="6ae1-a373-ee8e-79e5" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79fa-8241-8070-0fa0" type="max"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79fa-8241-8070-0fa0" type="max"/>
               </constraints>
+              <modifiers>
+                <modifier type="increment" field="79fa-8241-8070-0fa0" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="fbb6-c597-3edb-1506" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f40-258b-c404-87ab" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </entryLink>
             <entryLink id="93dd-5986-407f-7fde" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry">
               <constraints>
-                <constraint field="selections" scope="parent" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7e1-2454-57bd-6775" type="max"/>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="725e-7672-9633-835e" type="max"/>
               </constraints>
+              <modifiers>
+                <modifier type="set" field="725e-7672-9633-835e" value="3">
+                  <repeats>
+                    <repeat field="selections" scope="fbb6-c597-3edb-1506" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f40-258b-c404-87ab" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
