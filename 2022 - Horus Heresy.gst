@@ -1321,7 +1321,7 @@ Reactions:
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="fd89-b215-5545-17c6" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
-        <categoryLink name="Ruinstorm Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083" type="category">
+        <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083" type="category">
           <modifiers>
             <modifier type="set" value="1" field="5cdb-d88d-5c88-7ff1">
               <conditionGroups>
@@ -2179,7 +2179,7 @@ Reactions:
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="756d-3f35-0c5a-7b48" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="da5a-91f1-3185-59ed" name="New CategoryLink" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
+        <categoryLink id="da5a-91f1-3185-59ed" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2999-90f6-880e-d20f" name="Allegiance" hidden="false" collective="false" import="true">
@@ -2211,7 +2211,7 @@ Reactions:
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e555-35cf-f840-e444" type="max"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="ec0a-62f9-971f-1f1e" name="New CategoryLink" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="true"/>
+        <categoryLink id="ec0a-62f9-971f-1f1e" name="Expanded Army Lists" hidden="false" targetId="e8ed-ca49-ad6d-5688" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="3790-e8af-d3e2-0dec" name="Exemplary Option" hidden="false" collective="false" import="true" targetId="a149-55c5-23a1-9236" type="selectionEntryGroup"/>
@@ -2273,7 +2273,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="d7ec-95a3-173d-ca65" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="d7ec-95a3-173d-ca65" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7488-dcd5-3230-57d7" name="Imperial Bunker" hidden="false" collective="false" import="true" targetId="5157-f309-77f9-1256" type="selectionEntry">
@@ -2305,7 +2305,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="38c2-9688-ede4-f626" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="38c2-9688-ede4-f626" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="427d-eb8e-dbbd-87a2" name="Defence Line" hidden="false" collective="false" import="true" targetId="ea91-0572-393c-e925" type="selectionEntry">
@@ -2337,12 +2337,12 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="86ff-083e-ce6d-8284" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="86ff-083e-ce6d-8284" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ad63-7783-8500-e19f" name="Allied Detachment" hidden="false" collective="false" import="true" targetId="0fc8-91be-dcf4-1513" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="9fb6-1837-1414-95a7" name="New CategoryLink" hidden="false" targetId="d82b-1980-74f8-5dac" primary="true"/>
+        <categoryLink id="9fb6-1837-1414-95a7" name="Allied Detachment" hidden="false" targetId="d82b-1980-74f8-5dac" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ffeb-34e6-ea59-170c" name="Firestorm Redoubt" hidden="false" collective="false" import="true" targetId="ad29-7efd-9c94-ac08" type="selectionEntry">
@@ -2375,7 +2375,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="247f-4a75-ac5d-c4f7" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="247f-4a75-ac5d-c4f7" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c3fd-09fe-2ac7-2183" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" targetId="8e99-19e1-b84a-db0b" type="selectionEntry">
@@ -2408,7 +2408,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="7836-9c5f-7d2f-9e26" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="7836-9c5f-7d2f-9e26" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f1d1-ca61-ae6b-4d33" name="Void Shield Generator" hidden="false" collective="false" import="true" targetId="fa45-1d74-9584-5bd5" type="selectionEntry">
@@ -2441,7 +2441,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b9bf-59ce-321a-3bea" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="b9bf-59ce-321a-3bea" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="026e-1405-50cc-e19b" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" targetId="a7fa-db40-52ee-b359" type="selectionEntry">
@@ -2474,7 +2474,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="5967-6a4c-46fd-c33e" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="5967-6a4c-46fd-c33e" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dd67-c6ce-04e4-8dc2" name="Fortress Of Redemption" hidden="false" collective="false" import="true" targetId="6392-ce9d-29a7-1851" type="selectionEntry">
@@ -2507,7 +2507,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b9eb-0b8e-0c45-463c" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="b9eb-0b8e-0c45-463c" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d8a1-2527-d538-bdfb" name="Aquila Strongpoint" hidden="false" collective="false" import="true" targetId="e13d-9ef8-9b0d-bc22" type="selectionEntry">
@@ -2540,7 +2540,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="152d-1e4a-20aa-b580" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="152d-1e4a-20aa-b580" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="01dc-d34a-1988-3919" name="Primus Redoubt" hidden="false" collective="false" import="true" targetId="2d87-bde8-08d5-ae82" type="selectionEntry">
@@ -2573,7 +2573,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="d079-b62e-6190-edac" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="d079-b62e-6190-edac" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="91a3-bce0-aa49-e830" name="Hammerfall Bunker" hidden="false" collective="false" import="true" targetId="d5f5-a83b-ed8e-61c0" type="selectionEntry">
@@ -2606,7 +2606,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="eec3-bfaa-9984-36f1" name="New CategoryLink" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="eec3-bfaa-9984-36f1" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9210,7 +9210,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
     <selectionEntry id="2449-dc45-3441-b471" name="Lasrifle" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="84c5-6839-17db-f251" name="Lasrifle (Blast Charger)" hidden="false" targetId="3eeb-f71b-46e1-f7d4" type="profile"/>
-        <infoLink id="f024-01ba-e7d4-c537" name="Lasrifle (Velley)" hidden="false" targetId="f755-3fa4-db2a-9540" type="profile"/>
+        <infoLink id="f024-01ba-e7d4-c537" name="Lasrifle (Volley)" hidden="false" targetId="f755-3fa4-db2a-9540" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10272,7 +10272,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <infoLinks>
         <infoLink id="3380-3ab-8c69-61d8" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule"/>
         <infoLink id="72e1-d6ce-337d-fbee" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule"/>
-        <infoLink id="1804-acb9-a81b-1cd1" name="Psychic Focus (?? Where is this?)" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
+        <infoLink id="1804-acb9-a81b-1cd1" name="Psychic Focus" hidden="false" targetId="bff3-3548-b2b8-72f1" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
