@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="100" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="101" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -25,6 +25,7 @@
     <publication id="91df-ed64-4216-5bab" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2" shortName="Main Rules Errata and FAQ V1.2" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/w5Pm3yiEFnjISb6h.pdf"/>
     <publication id="2660-aa44-b169-2b1f" name="Liber Astartes Errata and FAQ V1.2" shortName="LA - Errata and FAQ V1.2" publicationDate="Dec 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/O0XmE9KIYFCQHlsf.pdf"/>
     <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions Astartes v1.2" shortName="LotAoD -LA" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/MMB9m4lXuQoZHb9r.pdf"/>
+    <publication name="Legacies of The Age of Darkness Solar Auxilia 1.1" hidden="false" id="3fc0-bf46-1f1-eff9" shortName="Legacies Solar Aux"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -1059,9 +1060,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
     </categoryEntry>
     <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
     <categoryEntry id="e333-681c-ddca-24f6" name="Crusade" hidden="false"/>
-    <categoryEntry id="4aca-2849-7f41-0200" name="Solar Auxilla or Imperialis Militia" hidden="false">
+    <categoryEntry id="4aca-2849-7f41-0200" name="SA or IM Unit" hidden="false">
       <modifiers>
-        <modifier type="set" field="0c57-9f90-e576-5e7d" value="1">
+        <modifier type="set" field="0c57-9f90-e576-5e7d" value="4">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1075,6 +1076,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       <constraints>
         <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0c57-9f90-e576-5e7d" type="min"/>
       </constraints>
+      <comment>Used for Rites of War that care about 4 of these</comment>
     </categoryEntry>
     <categoryEntry id="1bb5-d88b-e1fe-2984" name="Ironfire Restriction (Arquitors, Basilisks, Medusa)" hidden="false"/>
     <categoryEntry id="2eaf-32d6-9d1d-d906" name="LoW &amp; Primarchs (25% Limit)" hidden="false"/>
@@ -1871,6 +1873,13 @@ Reactions:
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
       </constraints>
+      <modifiers>
+        <modifier type="set" field="a036-22f7-6cbf-6ebd" value="0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="ZM 1. Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -7067,13 +7076,6 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
       </costs>
     </selectionEntry>
     <selectionEntry id="ddf5-d792-3146-6e9a" name="Mechanicum" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="dadb-f5a9-20c8-f415" value="0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
@@ -8979,11 +8981,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
           </conditions>
         </modifier>
-        <modifier type="add" field="category" value="4aca-2849-7f41-0200">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
-          </conditions>
-        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96e2-2823-321a-2ab1" type="max"/>
@@ -9386,33 +9383,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e75d-6a73-3087-6846" name="Liberation Force Allies Restriction" hidden="true" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="1ea9-70c2-3277-32cc" value="4">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="e5dd-e961-af2a-56cc" value="1">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12f2-df1a-525f-7957" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e5dd-e961-af2a-56cc" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4165-53b4-08f6-ba44" type="max"/>
-        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1ea9-70c2-3277-32cc" type="min"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="aab4-9e33-94f0-5815" name="Heavy Flamer" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0817-5658-cfab-d2f8" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
@@ -9489,11 +9459,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
     <selectionEntry id="5522-4fd9-12d5-460afds" name="Imperialis Militia" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="f6ff-b985-d7ad-a06c" value="0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="4aca-2849-7f41-0200">
           <conditions>
             <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2573-bb4c-e468-dd81" type="equalTo"/>
           </conditions>
@@ -10221,33 +10186,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b77-2753-f141-88" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a533-2076-2a0e-ea48" type="max"/>
         <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be67-de81-294a-7554" type="max"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="d41e-879-c995-b5a3" name="Children of the Maraviglia Allies Restriction" hidden="true" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="d8b3-b50c-24b2-b352" value="4">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6760-f643-3a7f-970d" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="9c7d-ad5d-f0c7-8853" value="1">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6760-f643-3a7f-970d" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6760-f643-3a7f-970d" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c7d-ad5d-f0c7-8853" type="min"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="98d5-2132-75e-8aa9" type="max"/>
-        <constraint field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d8b3-b50c-24b2-b352" type="min"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
