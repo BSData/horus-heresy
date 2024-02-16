@@ -10071,7 +10071,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <characteristic name="Range" typeId="62ec-fbf5-5252-0d17">18&quot;</characteristic>
             <characteristic name="Strength" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
             <characteristic name="AP" typeId="f431-a7b9-d9d0-36c9">4</characteristic>
-            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 12, Snctic, Deflagrate, Psychic Focus</characteristic>
+            <characteristic name="Type" typeId="2159-62b6-4337-d516">Assault 12, Sanctic, Deflagrate, Psychic Focus</characteristic>
           </characteristics>
         </profile>
         <profile id="76b2-37e1-c228-cdd5" name="Seal the Veil" publicationId="a716-c1c4-7b26-8424" page="106" hidden="true" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power">
