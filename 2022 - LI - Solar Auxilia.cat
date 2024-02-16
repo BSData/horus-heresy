@@ -9454,6 +9454,15 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d8-6ded-28a3-0c86" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink import="true" name="Demolisher Cannon" hidden="false" id="91c6-af0e-50e8-937e" type="selectionEntry" targetId="1d4a-05a3-1589-915d">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5981-4c3e-21c-294a-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5981-4c3e-21c-294a-max" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="Centreline (Front) Mounted Demolisher Cannon" field="name"/>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
@@ -9556,6 +9565,34 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
                   </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Proteus Laser Destroyer" hidden="false" id="6b62-613b-1dd7-2d50">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3037-2971-417b-29d5-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3037-2971-417b-29d5-max" includeChildSelections="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Proteus Laser Destroyer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="be6b-c2ce-7ff4-af70">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-linked, Exoshock (6+), Gets Hot</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Twin-linked" hidden="false" id="3e8d-571d-9615-97e0" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+                    <infoLink name="Exoshock (X)" hidden="false" id="ba09-3c43-6460-2b5b" type="rule" targetId="69ca-318a-b47a-7a3c">
+                      <modifiers>
+                        <modifier type="set" value="Exoshock (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Gets Hot" hidden="false" id="d96b-f5f2-2a89-af93" type="rule" targetId="679f-9d97-5ace-a652"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier type="set" value="Centreline (Front) Mounted Proteus Laser Destroyer" field="name"/>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
               <costs>
