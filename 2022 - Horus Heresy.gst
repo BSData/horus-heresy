@@ -5132,7 +5132,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
     </selectionEntry>
     <selectionEntry id="f461-3121-ac26-f073" name="Cyclone Missile Launcher -  Flak" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2587-a185-0a95-d58a" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3808-cdc-acf3-7737-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3808-cdc-acf3-7737-max" includeChildSelections="false"/>
       </constraints>
       <profiles>
         <profile id="3691-efa5-98a4-1e9f" name="Cyclone Missile Launcher -  Flak" publicationId="a716-c1c4-7b26-8424" page="133" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
@@ -8651,9 +8652,9 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d5f5-a83b-ed8e-61c0" name="Hammerfall Bunker" publicationId="d0df-7166-5cd3-89fd" page="96" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d5f5-a83b-ed8e-61c0" name="Hammerfall Bunker" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false" collective="false" import="true" type="unit">
       <profiles>
-        <profile id="915d-5819-74d9-cd85" name="Hammerfall Bunker" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
+        <profile id="915d-5819-74d9-cd85" name="Hammerfall Bunker" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification" publicationId="d0df-7166-5cd3-89fd" page="103">
           <characteristics>
             <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
             <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
@@ -8717,6 +8718,20 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Cyclone Missile Launcher" hidden="false" id="838c-5146-efd1-e377" type="selectionEntry" targetId="3e5a-ad5d-4607-7489">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3e65-92cf-d41e-64e1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3e65-92cf-d41e-64e1-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Cyclone Missile Launcher -  Flak" hidden="false" id="69a7-c559-ed5d-7142" type="selectionEntry" targetId="f461-3121-ac26-f073"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="Turret Mounted Cyclone Missile Launcher (with Frag, Krak and Flak missiles)" field="name"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="2d87-bde8-08d5-ae82" name="Primus Redoubt" publicationId="d0df-7166-5cd3-89fd" page="102" hidden="false" collective="false" import="true" type="unit">
       <profiles>
