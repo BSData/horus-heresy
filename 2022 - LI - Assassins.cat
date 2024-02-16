@@ -1473,11 +1473,6 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="f753-d811-2a57-1426" name="Echos of Fate" publicationId="d0df-7166-5cd3-89fd" page="7" hidden="false">
-          <description>Tylos Rubio may use Psychic Powers and Psychic Weapons from either the Divination Discipline or the Telepathy Discipline</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="ea9c-10bd-f952-5ef1" name="The Emperor Protects" hidden="false" targetId="3379-5303-2e43-2925" type="rule"/>
       </infoLinks>
@@ -1514,7 +1509,7 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Master-crafted, Divine Guidance</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1534,6 +1529,31 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Echoes of Fate" hidden="false" id="824-da54-a016-2abe">
+          <rules>
+            <rule id="f753-d811-2a57-1426" name="Echos of Fate" publicationId="d0df-7166-5cd3-89fd" page="7" hidden="false">
+              <description>Tylos Rubio may use Psychic Powers and Psychic Weapons from either the Divination Discipline or the Telepathy Discipline</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df95-6d9f-1a33-efcc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df95-6d9f-1a33-efcc-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Divination" hidden="false" id="30c2-e9c3-d4ee-e033" type="selectionEntry" targetId="0c22-a776-e7e3-2981">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e91-94-26f5-f3bb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e91-94-26f5-f3bb-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Telepathy" hidden="false" id="730f-8ded-1515-9e8" type="selectionEntry" targetId="b751-a605-75e8-dd6f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e72-a601-6df1-4521-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e72-a601-6df1-4521-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
