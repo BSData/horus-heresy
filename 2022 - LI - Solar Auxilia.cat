@@ -9238,12 +9238,12 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b8-eb6c-b607-936a" type="max"/>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58b8-eb6c-b607-936a" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="75b4-1985-afd6-4046" name="Trojan Support Vehicle" hidden="false" collective="false" import="true" type="unit">
+                <selectionEntry id="75b4-1985-afd6-4046" name="Trojan Support Vehicle" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f483-154d-eaf1-2e89" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f483-154d-eaf1-2e89" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2129-25ce-fa9e-a92c" type="min"/>
                   </constraints>
                   <profiles>
@@ -9338,7 +9338,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <categoryLink primary="false" targetId="4aca-2849-7f41-0200" name="SA or IM Unit"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry id="1d5f-ec6b-d0d9-5538" name="Thunderer Siege Tank Squadron" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="1d5f-ec6b-d0d9-5538" name="Thunderer Siege Tank Squadron" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -9355,7 +9355,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6934-3380-6bdf-68a3" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="12a6-af4b-e892-590c" name="Thunderer Siege Tank" hidden="false" collective="false" import="true" type="unit">
+                <selectionEntry id="12a6-af4b-e892-590c" name="Thunderer Siege Tank" hidden="false" collective="false" import="true" type="model">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfc1-024b-9260-2f41" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cb9-a6a8-95b6-4df3" type="min"/>
@@ -9476,7 +9476,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <categoryLink primary="false" targetId="4aca-2849-7f41-0200" name="SA or IM Unit"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry id="f932-a648-f657-bfb9" name="Destroyer Tank Hunter Squadron" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="f932-a648-f657-bfb9" name="Destroyer Tank Hunter Squadron" hidden="false" collective="false" import="true" type="unit">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
                   <conditionGroups>
@@ -9493,7 +9493,7 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80c4-093a-18e2-d271" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="9856-9df7-4a17-12d1" name="Destroyer Tank Hunter" hidden="false" collective="false" import="true" type="unit">
+                <selectionEntry id="9856-9df7-4a17-12d1" name="Destroyer Tank Hunter" hidden="false" collective="false" import="true" type="model">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5171-ae93-9692-02ed" type="max"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98a4-2b95-3a77-4047" type="min"/>
@@ -9565,34 +9565,36 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
                   </costs>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Proteus Laser Destroyer" hidden="false" id="6b62-613b-1dd7-2d50">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3037-2971-417b-29d5-min" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3037-2971-417b-29d5-max" includeChildSelections="false"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Proteus Laser Destroyer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="be6b-c2ce-7ff4-af70">
-                      <characteristics>
-                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
-                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-linked, Exoshock (6+), Gets Hot</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink name="Twin-linked" hidden="false" id="3e8d-571d-9615-97e0" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
-                    <infoLink name="Exoshock (X)" hidden="false" id="ba09-3c43-6460-2b5b" type="rule" targetId="69ca-318a-b47a-7a3c">
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Proteus Laser Destroyer" hidden="false" id="6b62-613b-1dd7-2d50">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3037-2971-417b-29d5-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3037-2971-417b-29d5-max" includeChildSelections="false"/>
+                      </constraints>
+                      <profiles>
+                        <profile name="Proteus Laser Destroyer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="be6b-c2ce-7ff4-af70">
+                          <characteristics>
+                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Twin-linked, Exoshock (6+), Gets Hot</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <infoLinks>
+                        <infoLink name="Twin-linked" hidden="false" id="3e8d-571d-9615-97e0" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+                        <infoLink name="Exoshock (X)" hidden="false" id="ba09-3c43-6460-2b5b" type="rule" targetId="69ca-318a-b47a-7a3c">
+                          <modifiers>
+                            <modifier type="set" value="Exoshock (6+)" field="name"/>
+                          </modifiers>
+                        </infoLink>
+                        <infoLink name="Gets Hot" hidden="false" id="d96b-f5f2-2a89-af93" type="rule" targetId="679f-9d97-5ace-a652"/>
+                      </infoLinks>
                       <modifiers>
-                        <modifier type="set" value="Exoshock (6+)" field="name"/>
+                        <modifier type="set" value="Centreline (Front) Mounted Proteus Laser Destroyer" field="name"/>
                       </modifiers>
-                    </infoLink>
-                    <infoLink name="Gets Hot" hidden="false" id="d96b-f5f2-2a89-af93" type="rule" targetId="679f-9d97-5ace-a652"/>
-                  </infoLinks>
-                  <modifiers>
-                    <modifier type="set" value="Centreline (Front) Mounted Proteus Laser Destroyer" field="name"/>
-                  </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntry>
               </selectionEntries>
               <costs>
