@@ -33,26 +33,27 @@ We moved it to [its own repo](https://github.com/BSData/horus-heresy-1e). It is 
 
 ## Standards
 
-### .cattemplate? and what are all the template_id_ comments?
-A .cattemplate file is a .cat file, renamed to .cattemplate, used by [BSCOPY](https://github.com/nstephenh/BSCopy)
-
-We can use bscopy to keep all 18 legions up to date with generic units and rites of war.
-It builds a "map" of source to target ids in comments. If you copy a node with a comment that has an ID in it,
-please delete the comment. 
-
-If you want to add something generic to all 18 legions, rename the .cattemplate to .cat, edit it to add the new unit, 
-rename the file back to .cat, and then run BSCopy's copy_changes_from_template or ask @NStephenH in discord.
 
 ### Creating units
-
+#### Names
 In general, we remove the "Legion" prefix from units, unless that unit has a non-legion equivalent such as Legion Baneblade
 
 We create a unit entry for each unit, and a model entry within that unit (even if it's a single model unit).
 This allows us to get an accurate model count and keeps everything consistent.
 
-We have two filters for expanded units, exemplary and legacy units.
-On UNITS we default them to hidden hidden and add a modifier with constraint to set "Hidden to False" if "Equal to 1 selection in force of <> on". Ensure "And all child selections is checked".
+On UNITS we default them to hidden and add a modifier with constraint to set "Hidden to False" if "Equal to 1 selection in force of <> on". Ensure "And all child selections is checked".
 On UPGRADES, we default the option to not hidden, and set "Hidden to True" if the "off" condition is selected.
+
+#### Important reminders:
+These are requirements on a unit to maintain rites of war:
+- Solar Auxillia and Imperialis Militia units need "SA or IM Unit" for rites of war that count that number of units.
+- - Lords of war should be excluded from this as they won't be in the "allied detachment"
+
+### .cattemplate? and what are all the template_id_ comments?
+A .cattemplate file is a .cat file, renamed to .cattemplate, used by [BSCOPY](https://github.com/nstephenh/BSCopy)
+
+We used bscopy to copy all 18 legions after implementing the first one. 
+We didn't maintain the template so it's not recommended to re-run bscopy
 
 ## References
 

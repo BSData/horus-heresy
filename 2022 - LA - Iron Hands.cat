@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="37" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="38" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <modifiers>
@@ -4098,7 +4098,7 @@
           <profiles>
             <profile id="d201-1df0-bb07-e209" name="Sire of the Iron Hands" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models with the infantry unit type and the Legiones Astartes  (Iron Hands) special rule in the same army as Ferrus Manus gain the Feel No Pain (+6). )This does not stack with other versions of the same special rule and models that already have a better version of the special rule may use either at the choice of the controlling player.) and all models with both the Vehicle unit type and the Legiones Astartes (Iron Hands) special rule gain the It Will Not Die (5+) special rule. In addition, an army with Ferrys Manus gains an additional Reaction in the opposing Player&apos;s Assult phase as long as Ferrus Manus has not been removed as a casualty.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">All models with both the Infantry Unit Type and the Legiones Astartes (Iron Hands) special rule in the same army as Ferrus Manus gain the Feel No Pain (6+) special rule (this does not stack with other versions of the same special rule, and models that already have a better version of the special rule may use either one at the choice of the controlling player) and all models with both the Vehicle Unit Type and the Legiones Astartes (Iron Hands) special rule gain the It Will Not Die (5+) special rule. In addition, an army with Ferrus Manus gains an additional Reaction in the opposing player’s Assault phase as long as Ferrus Manus has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4259,13 +4259,9 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1aa-05bf-dc51-e4ac" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="68b9-f695-8368-7e20" name="Tyrant&apos;s Wrath" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
-              <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any unit made up of models with the Legiones Astartes (Iron Hands) special rule that a Warlord with this Trait has joined, may add +1 to the amount of wounds caused when calculating who has won in close combat. At the end of the combat, after Pile-in or Consolidation moves are made, a unit that has added this bonus suffers a single wound with no Armour Saves or Damage Mitigation rolls allowed. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Bloody-handed" hidden="false" id="5c53-2943-b2a-2cd1" type="selectionEntry" targetId="2b87-826d-22a1-682c" defaultAmount="1"/>
+          </entryLinks>
         </entryLink>
         <entryLink id="bb06-7ce9-19a2-e2cf" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
           <constraints>

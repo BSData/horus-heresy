@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4c88-1a81-7e53-0a67" name="LI - Assassins and Agents" revision="9" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="4c88-1a81-7e53-0a67" name="LI - Assassins and Agents" revision="10" battleScribeVersion="2.03" authorName="Maye Gelt" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <sharedSelectionEntries>
     <selectionEntry id="c1fd-3919-f4bf-a990" name="Clade Adamus Assassin" publicationId="15a4-fc68-502d-48a9" page="120" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1094,15 +1094,16 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe13-4a8f-b2af-1e40" name="Davinite Lodge Priest" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="fe13-4a8f-b2af-1e40" name="Davinite Lodge Priest" hidden="false" collective="false" import="true" type="unit" publicationId="3fc0-bf46-1f1-eff9" page="2">
       <categoryLinks>
         <categoryLink id="d64e-6627-e31b-2078" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
         <categoryLink id="c8f3-eaeb-92cd-5ce7" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="2e0f-9678-8a0e-11a3" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
         <categoryLink id="cdb9-dc11-9ec4-0dc3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="SA or IM Unit" hidden="false" id="7b8c-7663-47e3-9877" targetId="4aca-2849-7f41-0200" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="d40a-a7ca-dfcc-589c" name="Davinite Lodge Priest" publicationId="15a4-fc68-502d-48a9" page="Legecies Doc" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="d40a-a7ca-dfcc-589c" name="Davinite Lodge Priest" publicationId="3fc0-bf46-1f1-eff9" page="2" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fa3-24be-e900-5ff7" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bd3-f40b-82b0-52e3" type="max"/>
@@ -1218,6 +1219,7 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
         <categoryLink id="2719-41d2-0b7e-3d7c" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
         <categoryLink id="b1b0-58ac-7135-1e01" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="63ce-413c-6c5d-d9ce" name="Psyker:" hidden="false" targetId="6e0c-29ba-a445-8321" primary="false"/>
+        <categoryLink name="SA or IM Unit" hidden="false" id="ef08-18fb-c93e-7fb4" targetId="4aca-2849-7f41-0200" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="daba-3575-8291-ea4c" name="Expeditionary Navigator" hidden="false" collective="false" import="true" type="model">
@@ -1301,8 +1303,6 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1fa9-b717-ebc0-4c98" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="0b15-0d7a-ee14-3559" name="Liberation Force Allies Restriction" hidden="false" collective="false" import="true" targetId="e75d-6a73-3087-6846" type="selectionEntry"/>
-            <entryLink id="9001-7490-5ebc-fa33" name="Children of the Maraviglia Allies Restriction" hidden="false" collective="false" import="true" targetId="d41e-879-c995-b5a3" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
@@ -1320,7 +1320,7 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2, Shred</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1473,11 +1473,6 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="f753-d811-2a57-1426" name="Echos of Fate" publicationId="d0df-7166-5cd3-89fd" page="7" hidden="false">
-          <description>Tylos Rubio may use Psychic Powers and Psychic Weapons from either the Divination Discipline or the Telepathy Discipline</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="ea9c-10bd-f952-5ef1" name="The Emperor Protects" hidden="false" targetId="3379-5303-2e43-2925" type="rule"/>
       </infoLinks>
@@ -1514,7 +1509,7 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (6+), Master-crafted, Divine Guidance</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1534,6 +1529,31 @@ during the battle. Once a unit or model with polymorphine has made a Shootin gAt
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Echoes of Fate" hidden="false" id="824-da54-a016-2abe">
+          <rules>
+            <rule id="f753-d811-2a57-1426" name="Echos of Fate" publicationId="d0df-7166-5cd3-89fd" page="7" hidden="false">
+              <description>Tylos Rubio may use Psychic Powers and Psychic Weapons from either the Divination Discipline or the Telepathy Discipline</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df95-6d9f-1a33-efcc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df95-6d9f-1a33-efcc-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Psychic Discipline: Divination" hidden="false" id="30c2-e9c3-d4ee-e033" type="selectionEntry" targetId="0c22-a776-e7e3-2981">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6e91-94-26f5-f3bb-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6e91-94-26f5-f3bb-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Psychic Discipline: Telepathy" hidden="false" id="730f-8ded-1515-9e8" type="selectionEntry" targetId="b751-a605-75e8-dd6f">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e72-a601-6df1-4521-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e72-a601-6df1-4521-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
