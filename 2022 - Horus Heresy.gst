@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="101" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="102" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -26,6 +26,7 @@
     <publication id="2660-aa44-b169-2b1f" name="Liber Astartes Errata and FAQ V1.2" shortName="LA - Errata and FAQ V1.2" publicationDate="Dec 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/O0XmE9KIYFCQHlsf.pdf"/>
     <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions Astartes v1.2" shortName="LotAoD -LA" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/MMB9m4lXuQoZHb9r.pdf"/>
     <publication name="Legacies of The Age of Darkness Solar Auxilia 1.1" hidden="false" id="3fc0-bf46-1f1-eff9" shortName="Legacies Solar Aux"/>
+    <publication name="Free Rules for the Solar Auxilia Aethon Heavy Sentinel" hidden="false" id="2d3f-82d2-9db5-ca6d" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/02/ZwQB9kBXZA3CyHN4.pdf" publicationDate="February 27th 2024" shortName="Aethon Heavy Sentinel Datasheet" publisher="Warhammer Community"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
