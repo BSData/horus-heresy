@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="26" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="27" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -779,6 +779,14 @@
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="3b46-125e-29bd-c619" primary="false" name="Unit:"/>
         <categoryLink targetId="c658-dc6b-727b-c488" id="6740-e0d6-11-8387" primary="true" name="Lords of War:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Solar Auxilia Aethon Heavy Sentinel Squadron" hidden="false" id="b3c2-9766-fbf6-15dc" type="selectionEntry" targetId="a67f-63df-43c3-8e3c">
+      <modifiers>
+        <modifier type="set" value="Aethon Heavy Sentinel Squadron" field="name"/>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="SA or IM Unit" hidden="false" id="4766-fcbf-87b4-1a86" targetId="4aca-2849-7f41-0200" primary="false"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -10960,6 +10968,170 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry name="Solar Auxilia Aethon Heavy Sentinel Squadron" type="unit" id="a67f-63df-43c3-8e3c" page="1" publicationId="2d3f-82d2-9db5-ca6d">
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="7766-8c5f-4470-b3af"/>
+        <categoryLink targetId="7031-469a-1aeb-eab0" primary="true" id="ff6c-9b27-43f5-87c6" name="Heavy Support"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" name="Aethon Heavy Sentinel" id="fc1e-8738-4e75-bf6e" page="1" publicationId="2d3f-82d2-9db5-ca6d">
+          <profiles>
+            <profile id="8021-6918-4ee1-b532" name="Aethon Heavy Sentinel" typeId="4bb2-cb95-e6c8-5a21">
+              <characteristics>
+                <characteristic typeId="893e-2d76-8f04-44e5" name="Move">7</characteristic>
+                <characteristic typeId="cc42-7ed5-7092-5c84" name="WS">3</characteristic>
+                <characteristic typeId="74ae-c840-0036-d244" name="BS">3</characteristic>
+                <characteristic typeId="e478-41d4-a092-48a8" name="S">6</characteristic>
+                <characteristic typeId="c32b-5fdd-3fbe-9b1f" name="T">6</characteristic>
+                <characteristic typeId="57ee-1126-32a9-5672" name="W">5</characteristic>
+                <characteristic typeId="62d3-22d7-2d49-52dc" name="I">3</characteristic>
+                <characteristic typeId="f111-2ce5-dd12-d6b0" name="A">2</characteristic>
+                <characteristic typeId="e8a6-1da9-d384-8727" name="Ld">8</characteristic>
+                <characteristic typeId="e593-6b3c-f169-04f0" name="Save">2+</characteristic>
+                <characteristic typeId="ddd7-6f5c-a939-b69e" name="Unit Type">Cavalry (Heavy, Mechanised)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c6eb-b1e2-45de-b78e"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="afdb-a5d1-437b-9b12"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any model may replace the Aethon Heavy Sentinel’s multi-laser with one of the following:" id="5849-7a09-41a6-b7a6">
+              <entryLinks>
+                <entryLink name="Autocannon" hidden="false" type="selectionEntry" targetId="56b3-de09-9fea-deb6" id="9d8c-2100-4ce3-be82">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e14e-cf71-4616-b0f4"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Volkite culverin" hidden="false" type="selectionEntry" targetId="170d-44e0-455c-8207" id="290b-6678-4687-bf31">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e65c-16ff-4c3f-875e"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Lascannon" hidden="false" type="selectionEntry" targetId="8621-4e12-b3d2-116f" id="5b13-71a3-43a0-b489">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="54b4-58a3-454b-8775"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Multi-Laser" hidden="false" id="ad5e-1497-74a4-bd23" type="selectionEntry" targetId="003b-af4b-0094-f5c3" defaultAmount="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c711-790d-4af6-9b01"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Incinerator" hidden="false" id="3c54-73b6-d719-7a12" publicationId="2d3f-82d2-9db5-ca6d" page="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Heavy Incinerator" hidden="false" id="1bc6-11d3-26ac-4ad3" publicationId="2d3f-82d2-9db5-ca6d" page="2" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Torrent (6&quot;)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Torrent (X)" hidden="false" id="5f97-c390-1db1-ec8b" type="rule" targetId="5cfb-fc94-e6db-43b8">
+                      <modifiers>
+                        <modifier type="set" value="Torrent (6&quot;)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Melta lance" hidden="false" id="333e-3b04-ddb-34eb" publicationId="2d3f-82d2-9db5-ca6d" page="2">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Melta lance" hidden="false" id="5e51-b891-c549-3df6" publicationId="2d3f-82d2-9db5-ca6d" page="2" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">18</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Armourbane (Ranged)</characteristic>
+                      </characteristics>
+                      <comment>Different from the Melta lance that militia can take</comment>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Armourbane (X)" hidden="false" id="810f-6e91-d87d-779d" type="rule" targetId="cb59-f920-f071-7cd4">
+                      <modifiers>
+                        <modifier type="set" value="Armourbane (Ranged)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Any model may replace the Aethon Heavy Sentinel’s Aethon missile battery with:" id="8f76-38d9-4cce-a171">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cda5-d2c6-4763-9014"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Aethon Missile Battery" hidden="false" id="7384-9018-7b6d-431e" publicationId="2d3f-82d2-9db5-ca6d" page="2" defaultAmount="1">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Aethon Missile Battery" hidden="false" id="2071-7f04-54f2-b9fa" publicationId="2d3f-82d2-9db5-ca6d" page="2" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                      <characteristics>
+                        <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
+                        <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+                        <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+                        <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Large Blast (5&quot;), Barrage, Twin-linked</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast" hidden="false" id="b2de-9ba-f965-d87" type="rule" targetId="1d9a-73ef-5f4f-8bd8">
+                      <modifiers>
+                        <modifier type="set" value="Large Blast (5&quot;)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Barrage" hidden="false" id="6c03-3c4e-9a28-794d" type="rule" targetId="7255-b5ee-c3f4-3037"/>
+                    <infoLink name="Twin-linked" hidden="false" id="3ed7-a669-cee8-57ad" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+                  </infoLinks>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Hunter-Killer Missile" hidden="false" id="fc64-443f-4134-ccbb" type="selectionEntry" targetId="1bf8-72f8-c331-6900">
+                  <modifiers>
+                    <modifier type="set" value="4 Hunter-killer missiles" field="name"/>
+                  </modifiers>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" primary="false" id="d127-c87a-4697-be59" name="Cavalry"/>
+            <categoryLink targetId="9231-183c-b97b-63f9" primary="false" id="e5c1-4757-445d-8ee0" name="Heavy"/>
+            <categoryLink targetId="e929-a5c3-451c-6f19" primary="false" id="2e11-596e-43ca-8e5b" name="Mechanised"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
