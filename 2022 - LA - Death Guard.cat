@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="31" battleScribeVersion="2.03" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -3427,6 +3427,11 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
         </infoLink>
         <infoLink id="4f41-d770-ace8-28d9" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
         <infoLink id="4a9d-1f85-27d1-18c0" name="Legiones Astartes (Death Guard)" hidden="false" targetId="48a9-493f-e255-5070" type="rule"/>
+        <infoLink name="Battle-Hardened (X)" hidden="false" id="6466-42f5-e87-2685" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+          <modifiers>
+            <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8781-fa3a-a2f2-bfea" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3442,13 +3447,13 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
           <profiles>
             <profile id="02a9-59ef-1da4-2f90" name="Mortus Poisoner" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
@@ -3479,7 +3484,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy, Line)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -3526,7 +3531,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
                 </entryLink>
                 <entryLink id="74a6-dbb2-4ff9-58c5" name="Power Scythe" hidden="false" collective="false" import="true" targetId="2166-369e-0757-6f98" type="selectionEntry">
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3659,7 +3664,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
                     <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c674-d17c-e67c-ecd8" type="max"/>
                   </constraints>
                   <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -3678,6 +3683,9 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
               <constraints>
                 <constraint field="selections" scope="parent" value="15" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a796-24da-509d-3dda" type="max"/>
               </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -4863,6 +4871,6 @@ Any enemy unit with at least one model within 12&quot; of a Warlord with this Tr
     </rule>
   </sharedRules>
   <catalogueLinks>
-    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a777" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="32" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee5e-198e-1b19-4b32" name="LA -   I: Dark Angels" revision="32" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="1" type="catalogue">
   <entryLinks>
     <entryLink id="7653-8041-8d1c-c872" name="Dreadwing Interemptor Squad" hidden="false" collective="false" import="false" targetId="3008-e8ed-9e97-71c9" type="selectionEntry">
       <categoryLinks>
@@ -3156,7 +3156,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
           </costs>
           <categoryLinks>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="2146-69ab-4ec0-9a00" name="Infantry Unit Type" primary="false"/>
@@ -3427,7 +3427,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf23-fd3a-15a0-7347" name="Excindio Battle-automata" publicationId="d0df-7166-5cd3-89fd" page="54" hidden="false" collective="false" import="true" type="unit">
@@ -4230,7 +4230,7 @@ Selenite Shard-bolt Pistol</description>
               </profiles>
               <rules>
                 <rule id="a00b-e782-8930-729e" name="The Viridian Blade" hidden="false">
-                  <description>*This weapon counts as a sword for the purposes of the Hexagrammaton unit sub-type: Deathwing 
+                  <description>*This weapon counts as a sword for the purposes of the Hexagrammaton unit sub-type: Deathwing
 special rule.</description>
                 </rule>
               </rules>
@@ -4342,6 +4342,7 @@ special rule.</description>
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Chosen Warriors" hidden="false" id="fa02-659a-d567-b09f" type="rule" targetId="13d1-9270-6539-08ed" publicationId="9fab-fea7-a93c-2074" page="124"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="359e-1590-1dcc-33d3" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -4430,9 +4431,9 @@ special rule.</description>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ed-4ba3-aedc-c699" type="max"/>
           </constraints>
           <profiles>
-            <profile id="dc37-aac1-0329-d898" name="Order Cenobites" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="dc37-aac1-0329-d898" name="Order Cenobites" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="9fab-fea7-a93c-2074" page="124">
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -4683,6 +4684,7 @@ special rule.</description>
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Chosen Warriors" hidden="false" id="aa9e-71e5-bc0b-acbd" type="rule" targetId="13d1-9270-6539-08ed"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="5ae3-be22-48b5-7f36" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -5150,6 +5152,11 @@ special rule.</description>
       <infoLinks>
         <infoLink id="a8c4-6038-988b-7ee1" name="Legiones Astartes (Dark Angels)" hidden="false" targetId="513e-0647-996a-6229" type="rule"/>
         <infoLink id="5289-0ca6-d64f-b1b0" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink name="Bulky (X)" hidden="false" id="8a0e-4a22-c1d1-9643" type="rule" targetId="676c-7b75-4b6f-9405" publicationId="9fab-fea7-a93c-2074" page="124">
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="2601-e1ee-e7fc-4791" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -5164,9 +5171,9 @@ special rule.</description>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdf9-6873-98b9-f8a9" type="max"/>
           </constraints>
           <profiles>
-            <profile id="7509-8e0b-38ff-5111" name="Regalia of the Shattered Sceptre" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+            <profile id="7509-8e0b-38ff-5111" name="Regalia of the Shattered Sceptre" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="9fab-fea7-a93c-2074" page="124">
               <characteristics>
-                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Regalia of the Shattered Sceptre confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, the Regalia of the Shattered Sceptre also allows its bearer to automatically pass any Dangerous Terrain tests that model is called upon to take.</characteristic>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Regalia of the Shattered Sceptre confers a 2+ Armour Save and a 4+ Invulnerable Save. In addition, the Regalia of the Shattered Sceptre also allows its bearer to automatically pass any Dangerous Terrain tests that model is called upon to take. In addition, The Regalia of the Shattered Sceptre confers the Bulky (2) Special Rule.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6570,6 +6577,6 @@ This additional Reaction may on be made as long as the Warlord has not been remo
     </profile>
   </sharedProfiles>
   <catalogueLinks>
-    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a777" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

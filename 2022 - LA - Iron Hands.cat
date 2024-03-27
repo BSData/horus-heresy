@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="38" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="38" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <modifiers>
@@ -3000,9 +3000,9 @@
   <sharedSelectionEntries>
     <selectionEntry id="ea50-6315-7a52-f560" name="Gorgon Terminator Squad" publicationId="817a-6288-e016-7469" page="282" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
-        <infoLink id="beee-48f0-ef0e-6867" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
+        <infoLink id="beee-48f0-ef0e-6867" name="Augmetics (X)" hidden="false" targetId="c34b-6064-a6d0-cfd7" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Feel No Pain (5+)"/>
+            <modifier type="set" field="name" value="Augmetics (5+)"/>
           </modifiers>
         </infoLink>
         <infoLink id="2cee-c3e5-a53d-c618" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -3027,11 +3027,11 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c0a-b3d8-2b75-a89c" type="max"/>
           </constraints>
           <profiles>
-            <profile id="4e33-1fdf-a9c0-16e0" name="Gorgon Hammerbearer" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="4e33-1fdf-a9c0-16e0" name="Gorgon Hammerbearer" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="9fab-fea7-a93c-2074" page="126">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Heavy)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
@@ -3434,6 +3434,7 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Relentless" hidden="false" id="9119-74c9-563-f877" type="rule" targetId="7adf-ac9a-5035-522d"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="922a-9c91-509f-36fd" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -3707,34 +3708,8 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="220"/>
               </costs>
             </entryLink>
-            <entryLink id="3d95-95fd-fc39-e972" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
-                        <condition field="selections" scope="f9e4-0da2-5049-df81" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atMost"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="79b2-ba9b-fc61-9ff1" name="Drop Pod" hidden="true" collective="false" import="true" targetId="83ac-f9cf-cc29-00a3" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
-                        <condition field="selections" scope="f9e4-0da2-5049-df81" value="10" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="atMost"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Rhino Transport" hidden="false" id="7bc4-6e99-ef79-d803" type="selectionEntry" targetId="03f1-8ed9-9867-8d18"/>
+            <entryLink import="true" name="Termite Assault Drill" hidden="false" id="aeb0-776b-a425-f38a" type="selectionEntry" targetId="cb30-307a-f0d7-3b13"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="a1a3-3528-69d6-45ed" name="1) Immortals" hidden="false" collective="false" import="true" defaultSelectionEntryId="2329-ea89-f938-82e1">
@@ -3987,12 +3962,12 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3c5-07c8-e92b-3ade" type="min"/>
               </constraints>
               <profiles>
-                <profile id="6444-8212-2829-0f03" name="Forgebreaker" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                <profile id="6444-8212-2829-0f03" name="Forgebreaker" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="9fab-fea7-a93c-2074" page="126">
                   <characteristics>
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                     <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">12</characteristic>
                     <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Exoshock (3+), Brutal (3)</characteristic>
+                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-Crafted, Exoshock (3+), Brutal (3), Two-Handed</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4946,6 +4921,6 @@ A Warlord with this Trait, and all models in any unit he joins, gain the Fear (1
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a777" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="38" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="68ae-9855-b56a-95e6" name="LA -  XIII: Ultramarines" revision="38" battleScribeVersion="2.03" authorName="Mr_Dark, Alphalas, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="76b3-52d9-a195-2b31" name="XIII: Ultramarines" hidden="false" collective="false" import="false" targetId="8e0f-3552-8842-f281" type="selectionEntry">
       <modifiers>
@@ -3012,7 +3012,7 @@
           </profiles>
           <rules>
             <rule id="0054-1928-75a9-36c0" name="Preternatural Strategy" hidden="false">
-              <description>At the start of each of the controlling player’s turns as the Active player in which Roboute Guilliman is on the battlefield (including when Embarked on a model with the Transport Unit Sub-type or Building), the controlling player may select one of the following options, but may not select the same option twice in a row (however, each option may be selected more than once in a single battle as long as it is not in successive turns). The effects of this option are applied to all models in the army with the Legiones Astartes (Ultramarines) special rule (including Roboute Guilliman, but not any models with the Vehicle Unit Type) and last until the start of the controlling player’s next turn as the Active player: 
+              <description>At the start of each of the controlling player’s turns as the Active player in which Roboute Guilliman is on the battlefield (including when Embarked on a model with the Transport Unit Sub-type or Building), the controlling player may select one of the following options, but may not select the same option twice in a row (however, each option may be selected more than once in a single battle as long as it is not in successive turns). The effects of this option are applied to all models in the army with the Legiones Astartes (Ultramarines) special rule (including Roboute Guilliman, but not any models with the Vehicle Unit Type) and last until the start of the controlling player’s next turn as the Active player:
 
 • The Fleet (2) special rule
 • The Counter-attack (1) special rule
@@ -3205,32 +3205,8 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="ed5a-7ed0-1249-4bfe" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="3a76-79eb-3738-4fee" name="Drop Pod" hidden="true" collective="false" import="true" targetId="83ac-f9cf-cc29-00a3" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Rhino Transport" hidden="false" id="ddde-493f-3422-d43a" type="selectionEntry" targetId="03f1-8ed9-9867-8d18"/>
+            <entryLink import="true" name="Termite Assault Drill" hidden="false" id="5470-2f45-4576-1a23" type="selectionEntry" targetId="cb30-307a-f0d7-3b13"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c8ea-e46e-51f2-459e" name="1) Suzerains" hidden="false" collective="false" import="true" defaultSelectionEntryId="1ca9-991d-ff13-4c7d">
@@ -3246,7 +3222,7 @@
               <profiles>
                 <profile id="3514-22be-3c77-f1d7" name="Suzerain" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
                   <characteristics>
-                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Line, Heavy, Character)</characteristic>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
                     <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
                     <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                     <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -3519,6 +3495,9 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Chosen Warriors" hidden="false" id="262c-3745-14a3-d7d7" type="rule" targetId="13d1-9270-6539-08ed"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="7587-35cc-01f6-b5d2" name="Praetorian Breacher Squad" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3673,32 +3652,8 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="fd20-53be-059e-0016" name="Dreadclaw Drop Pod" hidden="true" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink id="8738-ed9e-af85-03ea" name="Drop Pod" hidden="true" collective="false" import="true" targetId="83ac-f9cf-cc29-00a3" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1977-49f2-7910-f177" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
+            <entryLink import="true" name="Rhino Transport" hidden="false" id="7504-ff65-a8a0-84c8" type="selectionEntry" targetId="03f1-8ed9-9867-8d18"/>
+            <entryLink import="true" name="Termite Assault Drill" hidden="false" id="f5f-1766-2ba2-3bfe" type="selectionEntry" targetId="cb30-307a-f0d7-3b13"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="74e5-68c2-768d-a916" name="2) One Praetorian may take:" hidden="false" collective="false" import="true">
@@ -5493,7 +5448,7 @@ Once per battle, a Warlord with this Warlord Trait may, at the start of any one 
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a777" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
   <sharedProfiles>
     <profile id="8b1d-ca41-c9a6-32bc" name="Praetorian" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">

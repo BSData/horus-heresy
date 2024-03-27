@@ -1,11 +1,11 @@
 Horus Heresy
 ============
 
-[![Latest release](https://img.shields.io/github/release/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy/releases/latest)
-[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/horus-heresy/latest.svg?style=flat-square)](https://github.com/BSData/horus-heresy/releases)
-[![Open bugs](https://img.shields.io/github/issues/BSData/horus-heresy/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/horus-heresy/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Contributors](https://img.shields.io/github/contributors/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy/pulse/monthly)
+[![Latest release](https://img.shields.io/github/release/LeonisAstra/horus-heresy-panoptica.svg?style=flat-square)](https://github.com/LeonisAstra/horus-heresy-panoptica/releases/latest)
+[![Commits (since latest release)](https://img.shields.io/github/commits-since/LeonisAstra/horus-heresy-panoptica/latest.svg?style=flat-square)](https://github.com/LeonisAstra/horus-heresy-panoptica/releases)
+[![Open bugs](https://img.shields.io/github/issues/LeonisAstra/horus-heresy-panoptica/bug.svg?style=flat-square&label=bugs)](https://github.com/LeonisAstra/horus-heresy-panoptica/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+[![Contributors](https://img.shields.io/github/contributors/LeonisAstra/horus-heresy-panoptica.svg?style=flat-square)](https://github.com/LeonisAstra/horus-heresy-panoptica/graphs/contributors)
+[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/LeonisAstra/horus-heresy-panoptica.svg?style=flat-square)](https://github.com/LeonisAstra/horus-heresy-panoptica/pulse/monthly)
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
 
@@ -15,7 +15,9 @@ Horus Heresy
 
 __What's this?__
 
-This is the data repo for the Horus Heresy.
+This is the data repo for the Horus Heresy + the [Panoptica Team's Fan-Made Expansion & Errata](https://hh-ageofdarkness.itch.io/). 
+
+**Please note, this is a WIP.**
 
 BSData organisation created this project. It's a GitHub repository of datafiles.
 Maintained by community, in no way endorsed by BattleScribe or any other company/publisher. If you want

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="36" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="36" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="66e4-4610-1d0e-3c25" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <modifiers>
@@ -3308,7 +3308,7 @@
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Heavy)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">15&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -3346,7 +3346,7 @@
                 </modifier>
               </modifiers>
               <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Heavy, Character)</characteristic>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Cavalry (Antigrav, Character)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">15&quot;</characteristic>
                 <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
@@ -3731,6 +3731,35 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Dedicated Transport" hidden="false" id="51a2-7d25-4356-33c4" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c65e-77f2-fd8-a17c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Land Raider Proteus Carrier" hidden="false" id="f919-d335-917b-4188" collective="false" targetId="c123-bdc6-a6ba-79a2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="ed1f-9473-df70-4544" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="2c36-fde3-14ed-4db4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Land Raider Spartan" hidden="false" id="9967-b057-e2b5-885c" type="selectionEntry" targetId="bac1-f30e-2c04-d27d"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5116,6 +5145,7 @@
         <infoLink id="0a34-2f3c-43da-dc08" name="Hit &amp; Run" hidden="false" targetId="5986-e960-d432-affd" type="rule"/>
         <infoLink id="337f-0774-bea7-a762" name="Move Through Cover" hidden="false" targetId="2b6f-bfec-759e-1746" type="rule"/>
         <infoLink id="056d-2b1f-e7f3-4c45" name="Pathfinder" hidden="false" targetId="ec97-7aa8-49f5-b298" type="rule"/>
+        <infoLink name="Outflank" hidden="false" id="5954-219f-5b0c-2645" type="rule" targetId="bfbf-e75c-49a2-0285" publicationId="9fab-fea7-a93c-2074" page="124"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f5c8-2bd1-122d-be0e" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
@@ -5140,7 +5170,8 @@
           <rules>
             <rule id="df8e-76c1-925f-f9d4" name="Sojutsu Pattern Voidbike" hidden="false">
               <description>Falls Back 3D6&quot; instead of 2D6&quot;.
-May join units that include models with the Cavalry Unit Type despite the usual restrictions, and any rules that target the Cavalry Unit Type are considered to affect Jaghatai Khan as if he had that type.</description>
+May join units that include models with the Cavalry Unit Type despite the usual restrictions, and any rules that target the Cavalry Unit Type are considered to affect Jaghatai Khan as if he had that type.
+If Jaghatai Khan selected his Sojutsu Pattern Voidbike, he is counted as having a Legion Scimitar Jetbike for rules and interactions that affect or require that wargear.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -5566,7 +5597,7 @@ May join units that include models with the Cavalry Unit Type despite the usual 
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <catalogueLinks>
-    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
-    <catalogueLink id="b5fe-774b-8da-c21e" name="LI - Sisters of Silence" targetId="585a-5ac2-a233-a6a6" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a777" type="catalogue" importRootEntries="true"/>
+    <catalogueLink id="b5fe-774b-8da-c21e" name="LI - Sisters of Silence" targetId="585a-5ac2-a233-a7a7" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
 </catalogue>
