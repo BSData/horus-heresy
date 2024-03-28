@@ -71,7 +71,6 @@ The terminators and their weapons in the legion astartes files are good examples
 Go to "Root Selection Entries" and create an entry link to the unit.
 
 
-
 ## Committing your changes
 
 On the git command line, use "git commit -a -m 'Description of changes'" to mark save your changes. "git push" will send them to github.
