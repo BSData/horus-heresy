@@ -6455,6 +6455,10 @@ Fire Point (Front 4)</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
+          <categoryLinks/>
+          <comment>!BSC Errors from 20240328-1346
+Could not find type or subtype &apos;Fortificaion&apos;
+Could not find type or subtype &apos;Building)&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6492,6 +6496,10 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
           </costs>
+          <categoryLinks/>
+          <comment>!BSC Errors from 20240328-1346
+Could not find type or subtype &apos;Fortificaion&apos;
+Could not find type or subtype &apos;Building)&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6570,6 +6578,12 @@ Four single Blast Shields</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
+          <categoryLinks/>
+          <comment>!BSC Errors from 20240328-1346
+Could not find type or subtype &apos;Fortication&apos;
+Could not find type or subtype &apos;Barricade)
+Four double Blast Shields
+Four single Blast Shield&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -8610,6 +8624,11 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="43c1-7dc4-4f66-b763" name="Emplacement" primary="false"/>
+          </categoryLinks>
+          <comment>!BSC Errors from 20240328-1346
+Could not find type or subtype &apos;Fortificaion&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8832,6 +8851,11 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="076b-78d8-46ba-a6ed" name="Emplacement" primary="false"/>
+          </categoryLinks>
+          <comment>!BSC Errors from 20240328-1346
+Could not find type or subtype &apos;Fortificaion&apos;</comment>
         </selectionEntry>
         <selectionEntry id="1332-1487-ac2c-3921" name="Bunker Annex" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -8886,6 +8910,11 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="8af4-11d7-46c2-b6c4" name="Building" primary="false"/>
+          </categoryLinks>
+          <comment>!BSC Errors from 20240328-1346
+Could not find type or subtype &apos;Fortificaion&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
