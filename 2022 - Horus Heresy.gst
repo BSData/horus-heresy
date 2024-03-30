@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="102" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="103" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -233,7 +233,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry:" hidden="false">
+    <categoryEntry id="8b4f-bfe2-ce7b-f1b1" name="Infantry Unit Type" hidden="false">
       <modifiers>
         <modifier type="increment" field="9658-3768-cea2-6062" value="1">
           <repeats>
@@ -257,6 +257,10 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
             </modifier>
           </modifiers>
           <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) in a Detachment using this Rite of War ignore all modifiers to their Leadership when making Pinning tests.</description>
+        </rule>
+        <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
+          <alias>Infantry</alias>
+          <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -367,7 +371,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Unit-type:" hidden="false">
+    <categoryEntry id="6d79-a3e4-381f-7b0f" name="Cavalry Unit Type" hidden="false">
       <modifiers>
         <modifier type="increment" field="1b62-2f0a-dffc-cb7b" value="1">
           <conditionGroups>
@@ -495,7 +499,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
     </categoryEntry>
     <categoryEntry id="23eb-0b9e-0857-e965" name="Vehicle Unit:" hidden="false"/>
     <categoryEntry id="bab3-f50d-3e5f-2f78" name="Terminators:" hidden="false"/>
-    <categoryEntry id="d8ab-8e21-e193-63ba" name="Automata Unit-type:" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
+    <categoryEntry id="d8ab-8e21-e193-63ba" name="Automata Unit Type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
       <rules>
         <rule id="d9e0-baf4-66cb-24cc" name="Automata Unit-type" publicationId="e77a-823a-da94-16b9" page="195" hidden="false">
           <description>• All Automata models have the Fearless special rule.
@@ -509,7 +513,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="4171-e276-e90d-b8e5" name="Legion Consularis:" hidden="false"/>
-    <categoryEntry id="59a4-7b61-600a-c457" name="Skirmish Sub-type:" hidden="false">
+    <categoryEntry id="59a4-7b61-600a-c457" name="Skirmish Sub-type" hidden="false">
       <rules>
         <rule id="e02b-5fd3-aa3b-4fc4" name="Skirmish Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
           <description>• A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3&quot; rather than 2&quot;
@@ -517,7 +521,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="d5df-57ac-8f3c-097b" name="Bombard Sub-type:" hidden="false">
+    <categoryEntry id="d5df-57ac-8f3c-097b" name="Bombard Sub-type" hidden="false">
       <modifiers>
         <modifier type="set" field="b5db-1b13-81a9-66fe" value="0">
           <conditionGroups>
@@ -540,7 +544,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="9b0d-738c-10e4-4ec1" name="Reinforced Sub-type:" hidden="false">
+    <categoryEntry id="9b0d-738c-10e4-4ec1" name="Reinforced Sub-type" hidden="false">
       <rules>
         <rule id="dbac-669b-298c-868e" name="Reinforced Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
           <description>• A model with the Reinforced Sub-type ignores the effects of any Crew Shaken result on the Vehicle Damage table
@@ -558,7 +562,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
     <categoryEntry id="030f-3801-4f54-e7f8" name="Compulsory Heavy Support:" hidden="false"/>
     <categoryEntry id="0a04-abac-c606-2d48" name="Compulsory Lord of War:" hidden="false"/>
     <categoryEntry id="1b67-8d3b-283a-1488" name="Compulsory Fortification:" hidden="false"/>
-    <categoryEntry id="9231-183c-b97b-63f9" name="Heavy Sub-type:" hidden="false">
+    <categoryEntry id="9231-183c-b97b-63f9" name="Heavy Sub-type" hidden="false">
       <modifiers>
         <modifier type="set" field="fd31-bf22-2243-ccc7" value="0">
           <conditionGroups>
@@ -582,7 +586,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       </rules>
     </categoryEntry>
     <categoryEntry id="6e0c-29ba-a445-8321" name="Psyker:" hidden="false"/>
-    <categoryEntry id="9055-7410-8ffd-b8e7" name="Corrupted Sub-type:" hidden="false">
+    <categoryEntry id="9055-7410-8ffd-b8e7" name="Corrupted Sub-type" hidden="false">
       <rules>
         <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" publicationId="e77a-823a-da94-16b9" page="307" hidden="false">
           <description>• Models with the Corrupted Unit Sub-type gain the Fear (1) special rule.
@@ -599,7 +603,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="4280-4963-02b5-e31d" name="Dreadnought Unit-type:" hidden="false">
+    <categoryEntry id="4280-4963-02b5-e31d" name="Dreadnought Unit Type" hidden="false">
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a524-3855-be3c-a633" type="max"/>
       </constraints>
@@ -649,7 +653,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         <infoLink id="155a-8fd2-5d2a-2bd3" name="Deep Strike" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="7d95-f9d1-440a-67bd" name="Monstrous Sub-type:" hidden="false">
+    <categoryEntry id="7d95-f9d1-440a-67bd" name="Monstrous Sub-type" hidden="false">
       <rules>
         <rule id="3322-e589-ba33-b1b7" name="Monstrous Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
           <description>• A unit that includes any models with the Monstrous sub-type cannot be Pinned.
@@ -671,7 +675,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="e699-d9cd-e68e-46d9" name="Daemon Unit-type:" hidden="false">
+    <categoryEntry id="e699-d9cd-e68e-46d9" name="Daemon Unit Type" hidden="false">
       <rules>
         <rule id="df15-2b9e-8437-3295" name="Daemon Unit-type" hidden="false">
           <description>• All Daemon models have their Strength and Toughness modified by a value determined by the current Game Turn: +1 on Game Turns 1 &amp; 2, +/-0 on Game Turns 3 &amp; 4, -1 on Game Turns 5 &amp; 6, and -2 on Game Turns 7+.
@@ -706,14 +710,14 @@ During any Reaction that allows a unit equipped entirely with Jet PAcks to move,
         </infoLink>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="6399-5c65-7833-1025" name="Line Sub-type:" hidden="false">
+    <categoryEntry id="6399-5c65-7833-1025" name="Line Sub-type" hidden="false">
       <rules>
         <rule id="bc1e-9c95-f971-cd7b" name="Line Sub-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
           <description>• A unit that includes at least one model with the Line sub-type counts as both a Scoring and Denial unit.</description>
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="6f99-c178-6f9d-fb63" name="Artillery Sub-type:" hidden="false">
+    <categoryEntry id="6f99-c178-6f9d-fb63" name="Artillery Sub-type" hidden="false">
       <modifiers>
         <modifier type="set" field="0ae6-51c0-d028-a03a" value="0">
           <conditionGroups>
@@ -738,7 +742,7 @@ A unit that includes one or more models with the Artillery sub-type may not make
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="bff2-ae16-74a8-8712" name="Light Sub-type:" hidden="false">
+    <categoryEntry id="bff2-ae16-74a8-8712" name="Light Sub-type" hidden="false">
       <rules>
         <rule id="3ec9-276f-e19f-e639" name="Light Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
           <description>• A unit that includes only models with the Light sub-type gains a +1 modifier to its Initiative when determining how far that unit may Run (this bonus stacks with other bonuses to Run distance, such as the Fleet (X) special rule) and when moving as part of a Reaction.
@@ -902,10 +906,10 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         <constraint type="min" value="0" field="selections" scope="force" shared="true" id="d132-946e-6aac-db7" includeChildSelections="true"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="2440-b64e-cb24-87f0" name="Cybernetica Sub-type:" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
+    <categoryEntry id="2440-b64e-cb24-87f0" name="Cybernetica Sub-type" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
       <rules>
-        <rule id="ad70-0b7c-539c-3e16" name="Cybernetica Sub-type:" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
-          <description>The following rules apply to all models with the Cybernetica Unit Sub-type:
+        <rule id="ad70-0b7c-539c-3e16" name="Cybernetica Sub-type" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
+          <description>The following rules apply to all models with the Cybernetica Unit Sub-type
 • Models with the Cybernetica Unit Sub-type are subject to the Programmed Behaviour provision. During both the controlling player’s Shooting phase and the Charge sub-phase, an Automata unit must attempt a Shooting Attack and/or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge.
 • A model with the Cybernetica Unit Sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction where eligible (this rule on its own does not allow units to make Reactions if they would otherwise be prevented from doing so).
 • Models with the Cybernetica Unit Sub-type may fire Heavy and Ordnance weapons and count as Stationary even if they moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
@@ -913,7 +917,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Sub-type:" hidden="false">
+    <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Sub-type" hidden="false">
       <rules>
         <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="false">
           <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
@@ -958,9 +962,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       </constraints>
     </categoryEntry>
     <categoryEntry id="d82b-1980-74f8-5dac" name="Allied Detachment" hidden="false"/>
-    <categoryEntry id="d615-c0e4-6d17-107e" name="Assassin Sub-Type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
+    <categoryEntry id="d615-c0e4-6d17-107e" name="Assassin Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
       <rules>
-        <rule id="9522-1b3d-f849-fd60" name="Assassin Sub-Type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
+        <rule id="9522-1b3d-f849-fd60" name="Assassin Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
           <description>• Models with the Assassin Sub-type ignore all movement penalties when moving or Charging through terrain of any kind and automatically pass all Dangerous Terrain tests they are called upon to make.
 • Models with the Independant Character special rule may not join a unit composed only of models with the Assassin Sub-type.
 • Models with the Assassin Sub-type may not Embark on any model with the Transport Sub-type.
@@ -998,7 +1002,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       </constraints>
     </categoryEntry>
     <categoryEntry id="11f2-472f-c1d1-9ae9" name="Legiones Astartes" hidden="false"/>
-    <categoryEntry id="0faa-1bab-2901-4330" name="Automated Artillery Sub-Type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
+    <categoryEntry id="0faa-1bab-2901-4330" name="Automated Artillery Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
       <modifiers>
         <modifier type="set" field="98cf-aba1-feac-7081" value="0">
           <conditionGroups>
@@ -1014,17 +1018,17 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98cf-aba1-feac-7081" type="max"/>
       </constraints>
       <rules>
-        <rule id="013d-6065-1cfc-77e5" name="Automated Artillery Sub-Type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
+        <rule id="013d-6065-1cfc-77e5" name="Automated Artillery Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
           <description>• A unit that includes one or more models with the Automated Artillery Sub-type may not Run, declare or otherwise make Charge moves, or make Reactions. 
 • A unit that includes one or more models with the Automated Artillery Sub-type may not make Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
 • A unit that includes one or more models with this Unit Sub-type may never hold or deny an Objective.</description>
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering Sub-type:" hidden="false"/>
-    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer Sub-type:" hidden="false"/>
-    <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport Sub-type:" hidden="false"/>
-    <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy Sub-type:" hidden="false">
+    <categoryEntry id="7f9b-c5ed-7edb-02dc" name="Lumbering Sub-type" hidden="false"/>
+    <categoryEntry id="4e84-2d57-4986-2b23" name="Flyer Sub-type" hidden="false"/>
+    <categoryEntry id="7b0a-a743-a8da-3a39" name="Transport Sub-type" hidden="false"/>
+    <categoryEntry id="7381-1130-ca6e-1806" name="Super-heavy Sub-type" hidden="false">
       <modifiers>
         <modifier type="set" field="b17b-8b75-59f6-6442" value="0">
           <conditionGroups>
@@ -1041,7 +1045,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b17b-8b75-59f6-6442" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Sub-type:" hidden="false">
+    <categoryEntry id="c4a5-4def-dc2c-7ce2" name="Slow Sub-type" hidden="false">
       <modifiers>
         <modifier type="set" field="6098-fe90-8855-def8" value="0">
           <conditionGroups>
@@ -1133,7 +1137,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
     <categoryEntry id="40f3-05e8-5ddc-636a" name="Bound Sub-type" publicationId="cb13-da24-e6da-75b3" page="11" hidden="false">
       <rules>
         <rule id="7c3e-e5ca-7af9-e051" name="Bound Sub-type" publicationId="cb13-da24-e6da-75b3" page="11" hidden="false">
-          <description>The following rules apply to all models with the Bound Sub-type:
+          <description>The following rules apply to all models with the Bound Sub-type
 • Models with the Bound Sub-type do not modify their Strength and Toughness values according to the current Game Turn as detailed in the Daemon Unit Type.
 • While there are no models from the same army with both the Psyker Unit Sub-type and the Independent Character special rule on the battlefield or Embarked upon a unit with the Transport Sub-type that is on the battlefield, models with the Bound Sub-type suffer a penalty of -1 to their Strength and Toughness characteristics to a minimum value of 1.
 • During deployment, in order for units entirely composed of models with the Bound Sub-type to be deployed on the battlefield, a model from the same army with the Psyker Unit Sub-type and the Independent Character special rule which is already deployed (or Embarked upon a unit with the Transport Sub-type which is already deployed) must make a Psychic check for each such unit, one at a time. For each successful Check a single unit containing models with the Bound Sub-type may be deployed as normal, but once a Psychic check is failed, that and all further units containing models with the Bound Sub-type must be placed in Reserves. The controlling player may choose not to make a Psychic check for any unit containing models with the Bound Sub-type, instead placing it directly into reserves and allowing Psychic checks to be made to deploy any further units containing models with the Bound Sub-type. Note that failing a Psychic check in this manner does not inflict Perils of the Warp.
@@ -6455,7 +6459,6 @@ Fire Point (Front 4)</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
-          <categoryLinks/>
           <comment>!BSC Errors from 20240328-1346
 Could not find type or subtype &apos;Fortificaion&apos;
 Could not find type or subtype &apos;Building)&apos;</comment>
@@ -6496,7 +6499,6 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
           </costs>
-          <categoryLinks/>
           <comment>!BSC Errors from 20240328-1346
 Could not find type or subtype &apos;Fortificaion&apos;
 Could not find type or subtype &apos;Building)&apos;</comment>
@@ -6578,7 +6580,6 @@ Four single Blast Shields</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
-          <categoryLinks/>
           <comment>!BSC Errors from 20240328-1346
 Could not find type or subtype &apos;Fortication&apos;
 Could not find type or subtype &apos;Barricade)
@@ -7428,7 +7429,7 @@ A unit that makes a Shooting Attack as part of a Scornful Fire Reaction may not 
 In addition, a model with the Paragon of Metal special rule may not be targeted or affected by any Cybertheurgic Power or any Weapon with the Data-djinn special rule, either friendly or enemy.</description>
         </rule>
         <rule id="aa64-ebfc-e457-1e0d" name="Paragon Unit Sub-type" publicationId="bde1-6db1-163b-3b76" page="91" hidden="false">
-          <description>The following rules apply to all models with the Paragon Unit Sub-type:
+          <description>The following rules apply to all models with the Paragon Unit Sub-type
 • Models with the Paragon Unit Sub-type are not affected by special rules that negatively modify their Characteristics (other than Wounds or Hull Points).
 • A model with the Paragon Unit Sub-type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
 • Models with the Paragon Unit Sub-type may fire Heavy and Ordnance weapons and count as Stationary even if they moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
@@ -15379,7 +15380,7 @@ Maxima :When destroyed, a model with this special rule resolves Hits caused by C
       <description>A unit that includes any models with this special rule must make a Shooting Attack targeting the enemy unit which has the closest model in line of sight to any model in the attacking unit in the controlling player’s Shooting phase.</description>
     </rule>
     <rule id="c036-66e2-4e07-c2b8" name="Automated Artillery Sub-type" publicationId="e77a-823a-da94-16b9" page="16" hidden="false">
-      <description>The following rules apply to all models with the Automated Artillery Sub-type:
+      <description>The following rules apply to all models with the Automated Artillery Sub-type
 
 • A unit that includes one or more models with the Automated Artillery Sub-type may not Run, declare or otherwise make Charge moves, and may only make the Interceptor Advanced Reaction.
 • A unit that includes one or more models with the Automated Artillery Sub-type may not make Sweeping Advances and if targeted by a Sweeping Advance automatically fails without rolling any dice and is destroyed.
