@@ -260,7 +260,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
         <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
           <alias>Infantry</alias>
-          <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
+          <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -6459,6 +6459,7 @@ Fire Point (Front 4)</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
+          <categoryLinks/>
           <comment>!BSC Errors from 20240328-1346
 Could not find type or subtype &apos;Fortificaion&apos;
 Could not find type or subtype &apos;Building)&apos;</comment>
@@ -6499,6 +6500,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
           </costs>
+          <categoryLinks/>
           <comment>!BSC Errors from 20240328-1346
 Could not find type or subtype &apos;Fortificaion&apos;
 Could not find type or subtype &apos;Building)&apos;</comment>
@@ -6580,6 +6582,7 @@ Four single Blast Shields</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
+          <categoryLinks/>
           <comment>!BSC Errors from 20240328-1346
 Could not find type or subtype &apos;Fortication&apos;
 Could not find type or subtype &apos;Barricade)
