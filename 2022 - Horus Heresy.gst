@@ -1639,7 +1639,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8810-8109-85db-93e4" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="2545-86dd-f928-73f3" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false">
+        <categoryLink id="2545-86dd-f928-73f3" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false">
           <infoLinks>
             <infoLink name="Stubborn" hidden="false" type="rule" id="986d-7ecf-f212-2602" targetId="7989-1f2c-a43d-82ae">
               <modifiers>
@@ -1885,7 +1885,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3965-7b5b-1e0b-d284" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="13d3-d01e-f52f-e687" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="13d3-d01e-f52f-e687" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="c1eb-5ad0-5c14-b414" name="Clanfolk Cavalry (Troops)" hidden="false" targetId="d029-ac65-0ade-0c32" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b40d-bc3b-2e1b-1243" type="max"/>
@@ -2128,7 +2128,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f56f-a2c5-0423-bca7" type="min"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="3dbc-6e8f-de3e-52ae" name="Infantry:" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink id="3dbc-6e8f-de3e-52ae" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink id="9bbe-d889-072c-1258" name="LoW &amp; Primarchs (25% Limit)" hidden="false" targetId="2eaf-32d6-9d1d-d906" primary="false">
           <modifiers>
             <modifier type="increment" field="11cb-d547-c07c-da25" value="1">
@@ -6482,9 +6482,6 @@ Fire Point (Front 4)</characteristic>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
           <categoryLinks/>
-          <comment>!BSC Errors from 20240328-1346
-Could not find type or subtype &apos;Fortificaion&apos;
-Could not find type or subtype &apos;Building)&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6523,9 +6520,6 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
           </costs>
           <categoryLinks/>
-          <comment>!BSC Errors from 20240328-1346
-Could not find type or subtype &apos;Fortificaion&apos;
-Could not find type or subtype &apos;Building)&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6605,11 +6599,6 @@ Four single Blast Shields</characteristic>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
           <categoryLinks/>
-          <comment>!BSC Errors from 20240328-1346
-Could not find type or subtype &apos;Fortication&apos;
-Could not find type or subtype &apos;Barricade)
-Four double Blast Shields
-Four single Blast Shield&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -8651,10 +8640,8 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
           </costs>
           <categoryLinks>
-            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="43c1-7dc4-4f66-b763" name="Emplacement" primary="false"/>
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="43c1-7dc4-4f66-b763" name="Emplacement Sub-type" primary="false"/>
           </categoryLinks>
-          <comment>!BSC Errors from 20240328-1346
-Could not find type or subtype &apos;Fortificaion&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8878,10 +8865,8 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
           <categoryLinks>
-            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="076b-78d8-46ba-a6ed" name="Emplacement" primary="false"/>
+            <categoryLink targetId="3eeb-b4b8-3d85-245a" id="076b-78d8-46ba-a6ed" name="Emplacement Sub-type" primary="false"/>
           </categoryLinks>
-          <comment>!BSC Errors from 20240328-1346
-Could not find type or subtype &apos;Fortificaion&apos;</comment>
         </selectionEntry>
         <selectionEntry id="1332-1487-ac2c-3921" name="Bunker Annex" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -8937,10 +8922,8 @@ Could not find type or subtype &apos;Fortificaion&apos;</comment>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
           <categoryLinks>
-            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="8af4-11d7-46c2-b6c4" name="Building" primary="false"/>
+            <categoryLink targetId="9f1e-fbf0-3032-32fe" id="8af4-11d7-46c2-b6c4" name="Building Sub-type" primary="false"/>
           </categoryLinks>
-          <comment>!BSC Errors from 20240328-1346
-Could not find type or subtype &apos;Fortificaion&apos;</comment>
         </selectionEntry>
       </selectionEntries>
       <costs>
