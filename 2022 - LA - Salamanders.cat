@@ -4155,15 +4155,15 @@
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="05bb-a7ee-45fa-877a" type="max"/>
       </constraints>
       <profiles>
-        <profile id="03c1-b57e-9f00-23a6" name="Cassian Dracos Reborn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+        <profile id="03c1-b57e-9f00-23a6" name="Cassian Dracos Reborn" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="9fab-fea7-a93c-2074" page="135">
           <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Heavy, Unique)</characteristic>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Heavy, Character, Cybertheurgist, Unique)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6&quot;</characteristic>
-            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+            <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
             <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
             <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
-            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">6</characteristic>
-            <characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+            <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
+            <characteristic name="W" typeId="57ee-1126-32a9-5672">6</characteristic>
             <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
             <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
@@ -4189,6 +4189,11 @@
         <infoLink name="It Will Not Die (X)" hidden="false" type="rule" id="16d8-138a-9a0b-7f0e" targetId="2784-d0be-a4e2-890f">
           <modifiers>
             <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Battlesmith (X)" hidden="false" id="cd14-178f-a363-299c" type="rule" targetId="5d57-4d02-1e36-4a82">
+          <modifiers>
+            <modifier type="set" value="Battlesmith (5+)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -4260,6 +4265,9 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="291-ad74-b11-7666"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="2db6-96d8-ae12-1fe9" type="selectionEntry" targetId="b081-bf3c-f43d-4bd5"/>
+        <entryLink import="true" name="Nuncio-Vox" hidden="false" id="e8d3-1fe-6c38-cc55" type="selectionEntry" targetId="005e-aae6-ddac-bb45"/>
+        <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" id="b8a8-80a5-4e79-fb6b" type="selectionEntryGroup" targetId="bd27-d2a1-da2b-f649"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
@@ -4278,12 +4286,12 @@
       </constraints>
       <infoLinks>
         <infoLink id="61ab-fc87-edda-aab7" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-        <infoLink id="4c76-c529-12b4-d083" name="Stubborn" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
-        <infoLink id="af12-4093-15a8-1270" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+        <infoLink name="It Will Not Die (X)" hidden="false" id="7c5a-38f0-4a70-cf3" type="rule" targetId="2784-d0be-a4e2-890f">
           <modifiers>
-            <modifier type="set" field="name" value="Hatred (Everything)"/>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Guiding Flame" hidden="false" id="c7df-4a42-ab33-d1c9" type="rule" targetId="753e-43cd-f3a0-f58d"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="f22c-47a5-ca44-ccdc" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -4297,12 +4305,12 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="950b-f722-41c3-dd89" type="max"/>
           </constraints>
           <profiles>
-            <profile id="56af-6142-3b02-9ee6" name="Darkstar Falling" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+            <profile id="56af-6142-3b02-9ee6" name="Darkstar Falling" publicationId="9fab-fea7-a93c-2074" page="174" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two handed, Unwieldy</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Master-Crafted</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4326,11 +4334,11 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="905-1e0f-13e6-2252"/>
           </constraints>
           <profiles>
-            <profile id="e900-5ae8-f6e5-198d" name="Lord Chaplain Nomus Rhy&apos;Tan" publicationId="d0df-7166-5cd3-89fd" page="70" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="e900-5ae8-f6e5-198d" name="Lord Chaplain Nomus Rhy&apos;Tan" publicationId="9fab-fea7-a93c-2074" page="135" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
@@ -4352,7 +4360,7 @@
           <profiles>
             <profile id="af9f-4a39-2626-23a4" name="Keeper of the Keys" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any model with the Dreadnought Unit Type and the Legiones Astartes (Salamanders) special rule within 6&quot; of a Warlord with this Trait may add +2&quot; to their Charge Distance. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any model with the Dreadnought Unit Type and the Legiones Astartes (Salamanders) special rule in the same detachment as a Warlord with this Trait may add +2&quot; to their Charge Distance. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4406,6 +4414,11 @@
           </constraints>
         </entryLink>
         <entryLink import="true" name="Retinue" hidden="false" type="selectionEntryGroup" id="4f3a-9f5a-70b5-763a" targetId="ec53-0911-52b7-dafa"/>
+        <entryLink import="true" name="Chaplain" hidden="false" id="bd93-ade3-afc1-e2c1" type="selectionEntry" targetId="4831-6948-851c-3925">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215"/>
@@ -4430,6 +4443,12 @@
             <modifier type="set" field="name" value="Hatred (Everything)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="It Will Not Die (X)" hidden="false" id="5f11-7f1-94c0-afb3" type="rule" targetId="2784-d0be-a4e2-890f">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Guiding Flame" hidden="false" id="2d0-e217-e41c-4ec5" type="rule" targetId="753e-43cd-f3a0-f58d"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8e0a-7307-985f-50a6" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -4548,6 +4567,11 @@
               </characteristics>
             </profile>
           </profiles>
+        </entryLink>
+        <entryLink import="true" name="Chaplain" hidden="false" id="a649-b49f-18b4-4f8" type="selectionEntry" targetId="4831-6948-851c-3925">
+          <costs>
+            <cost name="Pts" hidden="false" id="d3be-4f64-53fb-51a3" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
@@ -5842,5 +5866,11 @@
   </sharedSelectionEntryGroups>
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a777" type="catalogue" importRootEntries="true"/>
+    <catalogueLink type="catalogue" name="Mech Library" id="5e16-9e11-1492-d139" targetId="3129-da35-55e0-642d"/>
   </catalogueLinks>
+  <sharedRules>
+    <rule name="Flame in the Darkness" hidden="false" id="753e-43cd-f3a0-f58d" publicationId="9fab-fea7-a93c-2074" page="135">
+      <description>In addition, all models in a unit joined by Nomus Rhy’tan gain the Stubborn and Hatred (Everything) Special Rules.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

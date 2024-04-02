@@ -1325,23 +1325,69 @@ Reactions:
           <description>• All models with the Daemon Primarch Unit Type have the following special rules: Independent Character, Eternal Warrior, Fear (2), It Will Not Die (5+), Bulky (6), and Relentless. In addition, all models with the Daemon Primarch Unit Type always count as Character models.
 • Models with the Daemon Primarch Unit Type are not affected by special rules that negatively modify their Characteristics (other than Wounds) and, in addition, models with the Daemon Primarch Unit Type always resolve Snap Shots at their normal BS.
 • All models with the Daemon Primarch Unit Type are immune to the effects of the Fear (X) special rule, cannot be Pinned, and a unit that includes one or more models with the Daemon Primarch Unit Type automatically passes Pinning and Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit that includes one or more models with the Daemon Primarch Unit Type fails a Morale check, the unit does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed which must be allocated to a model with the Daemon Primarch or Daemon Unit Type or the Corrupted Unit Sub-type.
-• Any Hits inflicted by a model with the Daemon Primarch Unit Type, as part of either Shooting Attacks or in close combat, are allocated by that model’s controlling player and not the controlling player of the target unit. These Hits should form a separate Wound Pool.
+• Daemon Primarchs have the Precision Strikes (2+) and Precision Shots (2+) Special Rules, and may choose to use these rules when attacking even when ordinarily they would be prevented from doing so, including when making Snap Shots.
 • If an army includes any models with the Daemon Primarch Unit Type, then one of those models must be chosen as the army’s Warlord.
-• For the purposes of any special rule that affects or has additional effects that target models with the Daemon or Primarch Unit Type, a model with the Daemon Primarch Unit Type is considered to have the Daemon and Primarch Unit Types</description>
+• For the purposes of any special rule that affects or has additional effects that target models with the Daemon or Primarch Unit Type, a model with the Daemon Primarch Unit Type is considered to have the Daemon and Primarch Unit Types.
+• A model with this Unit Type may join units with the Infantry Unit Type as if it had the Primarch Unit Type, or units with the Daemon Unit Type as if it had the Daemon Unit Type.
+• Any unit entirely composed of models with the Daemon Primarch Unit Type may choose to ignore the Heroic Stand Special Rule, ignoring any penalties normally applied for declining a Challenge, unless the Challenge was issued by a model with the Knight, Gargantuan, Titan, Primarch, or Daemon Primarch Unit Types.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="4e99-a42b-4767-8967" name="Eternal Warrior" hidden="false" targetId="000b-fe96-31f8-c0ad" type="rule"/>
-        <infoLink id="4196-cff0-2092-9208" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule"/>
-        <infoLink id="3aa-3754-1cba-790b" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule"/>
-        <infoLink id="792d-98ee-38cb-138c" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule"/>
+        <infoLink id="4196-cff0-2092-9208" name="Fear (X)" hidden="false" targetId="21f6-7842-df5c-d2e7" type="rule">
+          <modifiers>
+            <modifier type="set" value="Fear (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3aa-3754-1cba-790b" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="792d-98ee-38cb-138c" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" value="Bulky (6)" field="name"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="c8c0-460c-f0cc-a59" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink name="Precision Shots (X)" hidden="false" id="cd5b-45e-886c-82e6" type="rule" targetId="4b71-81ee-31f4-fa09">
+          <modifiers>
+            <modifier type="set" value="Precision Shots (2+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Precision Strikes (X)" hidden="false" id="4d97-e96-8d17-c53f" type="rule" targetId="2206-8497-8fe1-e973">
+          <modifiers>
+            <modifier type="set" value="Precision Strikes (2+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </categoryEntry>
     <categoryEntry id="d684-5b63-caa7-adc4" name="Legiones Hereticus" hidden="false"/>
     <categoryEntry id="dfbc-8edd-e14f-fd80" name="Forge Remnants - Militia Krios Squadron" hidden="false"/>
     <categoryEntry id="b81a-8f4a-ff50-ef99" name="Primus Medicae" hidden="false"/>
     <categoryEntry id="86dd-51d8-3669-68ca" name="Tech-Priest Auxilia" hidden="true"/>
+    <categoryEntry name="Skimmer" hidden="false" id="6a28-17c5-8117-d99c">
+      <rules>
+        <rule name="Skimmers" hidden="false" id="c874-2cbd-3ad9-4f1f" publicationId="e77a-823a-da94-16b9" page="214">
+          <description>Skimmers have flying bases under their hull. However, distances are still measured to and from the Skimmer’s hull, with the exception of the Vehicle’s weapons, which all work as normal. The base of a Skimmer is effectively ignored, except for when the Skimmer is being Charged or Rammed, in which case, models may move into contact with the Vehicle’s hull, its base or both.
+Skimmers can move over friendly and enemy models, but they cannot end their move on top of either. Skimmers can move over all terrain, ignoring all penalties for Difficult Terrain and Dangerous Terrain tests. However, if a moving Skimmer starts or ends its move in Difficult Terrain or Dangerous Terrain, it must take a Dangerous Terrain test. A Skimmer can even end its move over Impassable Terrain if it is possible to actually place the model on top of it, but if it does so it must take a Dangerous Terrain test. If a Skimmer is forced to end its move over friendly or enemy models, move the Skimmer the minimum distance so that no models are left underneath it.
+If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If this is not possible (the base might have been glued in place, for example), then leave the base in place. Note that it is not otherwise permitted to remove the flying base, as Skimmers cannot land in battle conditions.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Guardian Unit Sub-type" hidden="false" id="8745-b21e-8576-7c30" publicationId="bde1-6db1-163b-3b76" page="91">
+      <rules>
+        <rule name="Guardian Unit Sub-type" hidden="false" id="48af-72a8-159e-9cfe" publicationId="bde1-6db1-163b-3b76" page="91">
+          <description>The following rules apply to all models with the Guardian Unit Sub-type:
+• Units including models with the Guardian Unit Sub-type may Embark freely upon models with the Transport Unit Sub-type and within Buildings and Fortifications as if they had the Infantry Type, even if their Unit Type would normally restrict this.
+• Units including models with the Guardian Unit Sub-type may be joined by friendly models with the Character Unit Sub-type or Independent Character special rule, and when they are joined in this manner may make Reactions, even if their Unit Type would normally restrict this.
+• If a unit contains any models with the Guardian Unit Sub-type as well as one or more models with the Character Unit Sub-type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Guardian Unit Sub-type first.
+• Unless they are joined by a friendly Character, all models with the Guardian Unit Sub-type suffer the following provisions:
+- Reduce their Movement Characteristic by -2 and may not Run.
+- Reduce their Initiative Characteristic to 1.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -8695,6 +8741,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           </profiles>
           <infoLinks>
             <infoLink id="e382-ce92-773a-f9ab" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+            <infoLink name="Hardwired Defences" hidden="false" id="a5c9-aa18-fad1-31bc" type="rule" targetId="6b35-420c-3763-812c"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="c449-ec4e-fdc8-0ff5" name="Turret Mounted Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="546a-bd8a-537c-4883">
@@ -8716,6 +8763,9 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <rules>
+        <rule name="New Rule" hidden="false" id="e6b2-f6ee-8fce-22c"/>
+      </rules>
     </selectionEntry>
     <selectionEntry id="fa45-1d74-9584-5bd5" name="Void Shield Generator" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -8733,7 +8783,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
         </profile>
         <profile id="c850-d8a1-99f1-5c9f" name="Advanced Reaction: Void Shield Envelope" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
           <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Void Shield Envelope: Thie Advanced Reaction may be made during the Shooting phase whenever an enemy unit targets a friendly unit that has at least half of its models within 6&quot; of a friendly Void Shield Generator with a Shooting Attack, excluding friendly units that include any models with the Monstrous, Gargantuan, Knight, Titan, Super-heavy of Flyer Sub-types. Before the Active player has resolved any Hit rolls, the Reactive player mayu choose to expend one of their Reactions for that Phase to have the unit targeted by the Shooting Attack gain the Shrouded (4+) special rule until the end of the Shooting phase. Note that this Advanced Reaction does not improve any existing instances of the Shoudled (X) special rule that a unit may have. The unit that has gained the Shoulded (4+) special rule as a result of this Reaction does not count as having made a Reaction, and mayb itself make a Reaction provided it would otherwise be able to do so, and the Reactive player has sufficient Reaction allotment remaining in that Phase.</characteristic>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Void Shield Envelope: This Advanced Reaction may be made during the Shooting phase whenever an enemy unit targets a friendly unit that has at least half of its models within 6” of a friendly Void Shield Generator with a Shooting Attack, excluding friendly units that include any models with the Monstrous, Gargantuan, Knight, Titan, Super-Heavy or Flyer Sub-Types. Before the Active player has resolved any Hit rolls, the Reactive player may choose to expend one of their Reactions for that Phase to have the unit targeted by the Shooting Attack gain an Invulnerable Save of 4+ until the end of the Shooting phase. Note that this Advanced Reaction does not improve nor replace any existing Invulnerable saves that a unit may have. The unit that has gained an Invulnerable Save as a result of this Reaction does not count as having made a Reaction, and may itself make a Reaction provided it would otherwise be able to do so, and the Reactive player has sufficient Reaction allotment remaining in that Phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8775,11 +8825,19 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       </profiles>
       <rules>
         <rule id="0c41-2dac-1c20-8170" name="Hammerfall Strike" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
-          <description>A model with this special rule is deployed anywhere within the controlling player&apos;s deplyment zone, more than 12&quot; away from any enemy models, after models with the Scout of Infiltrate special rules. If both players have models with this special rule, roll off to see who will deploy them first.</description>
+          <description>Rather than deploying this Fortification as per the usual rules for Fortifications, you may choose instead to assign it to a Drop Pod Assault or Deep Strike Assault as normal. If assigned in this manner to one of the specified deployment methods, the Hammerfall Bunker gains the Orbital Assault Vehicle, Inertial Guidance System, and Deep Strike Special Rules. This does allow you to place the Hammerfall Bunker outside of your Deployment Zone. 
+
+
+Note that this is an exception to the normal rules for Fortifications, and if assigned in this way, you may choose to select a Hammerfall Bunker in a Rite of War: Drop Pod Assault detachment.”</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="af2f-a797-a259-ec68" name="Emplacement Sub-type" hidden="false" targetId="d214-5efb-abbb-649e" type="rule"/>
+        <infoLink name="Hardwired Defences" hidden="false" id="182b-b8bd-c70e-8780" type="rule" targetId="6b35-420c-3763-812c"/>
+        <infoLink name="Power of the Machine Spirit" hidden="false" id="1cc7-76f4-64a3-eb6b" type="rule" targetId="5a93-13e0-809d-782a"/>
+        <infoLink name="Orbital Assault Vehicle" hidden="false" id="d0d6-d5e9-dd3c-25e0" type="rule" targetId="7fc9-7bcd-b44c-6719"/>
+        <infoLink name="Inertial Guidance System" hidden="false" id="67a4-556d-bd53-2aec" type="rule" targetId="d222-fde9-51b8-8739"/>
+        <infoLink name="Deep Strike" hidden="false" id="caa0-9e76-fed2-18a2" type="rule" targetId="f1e1-986f-c783-ca9e"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="a2ac-a5fa-9bd1-d0b9" name="Hull Mounted Weapons (See Fire Points on profile)" hidden="false" collective="false" import="true" defaultSelectionEntryId="c496-e4dc-1ee7-09d9">
@@ -14396,7 +14454,10 @@ Fulgrim Transfigured must be included in a Detachment using this Corrupted Rite 
             <rule id="cafc-473b-bf32-fae1" name="The Stage is Set" publicationId="7f9d-5e88-241d-e861" page="19" hidden="false">
               <description>Before the start of the first turn, when placing units into Reserves, if Fulgrim Transfigured has not joined a unit and does not have a Retinue Squad, the controlling player may place Fulgrim Transfigured into Reserves and must declare to their opponent a Turn number from Turn 2 - 4, indicating on which of their own turns they will bring Fulgrim Transfigured into play from Reserves. At the start of the declared turn, the controlling player must place Fulgrim Transfigured wholly within 6&quot; of a unit with the Legiones Hereticus (Emperor’s Children) special rule, and not within 1&quot; of any enemy models. If this is not possible, Fulgrim Transfigured cannot be set up this turn, and the controlling player must attempt to deploy Fulgrim Transfigured again at the start of their following turn.
 
-Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.</description>
+Until Fulgrim Transfigured is placed on the battlefield in this manner, all models in a Detachment he is part of have the Stubborn special rule.
+
+
+For the purposes of Movement, Shooting Attacks, and Charges, a model deployed via this Special Rule should be treated as though they were deployed via a Deep Strike Assault.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -16060,6 +16121,9 @@ is not embarked in a vehicle. All ranges should be measured from the hull of the
     <rule id="9049-4422-5120-ef52" name="Warp Resplendent" publicationId="9fab-fea7-a93c-2074" page="166" hidden="false">
       <description>A model with this Special Rule treats any weapons it is equipped with with a range of “Template” as having a range of “Hellstorm” instead, and any weapons with the “Blast (3”)” Special Rule as having the “Large Blast (5”)” Special Rule instead.
 In addition, any weapons a model with this Special Rule is equipped with which do not meet either of these conditions instead count their range characteristic as being twice that specified in the weapon’s profile.</description>
+    </rule>
+    <rule name="The Honored One" hidden="false" id="130d-ed6f-db5f-94ef">
+      <description>This Character grants the benefit of a Legion Vexilla to all friendly Legiones Astartes (X) units with the same X as the Character and which have at least one model within 12”.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

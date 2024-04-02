@@ -4646,7 +4646,7 @@ then he gains +1 to his Attacks Characteristic.</description>
       <profiles>
         <profile id="eb12-17e2-1019-a269" name="Rylanor the Unyielding" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
           <characteristics>
-            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Unique)</characteristic>
+            <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Character, Unique)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
             <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
             <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
@@ -4663,6 +4663,17 @@ then he gains +1 to his Attacks Characteristic.</description>
       <infoLinks>
         <infoLink id="d4b7-14c2-70f2-06a4" name="Crusader" hidden="false" targetId="c705-0829-75f6-a785" type="rule"/>
         <infoLink id="8fff-2cd7-b38c-e631" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+        <infoLink name="The Honored One" hidden="false" id="1443-b375-1e03-a465" type="rule" targetId="130d-ed6f-db5f-94ef"/>
+        <infoLink name="Hatred (X)" hidden="false" id="3b1e-c807-c95f-1221" type="rule" targetId="dc0b-fe69-6b71-e0a4">
+          <modifiers>
+            <modifier type="set" value="Hatred (Traitors)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="It Will Not Die (X)" hidden="false" id="ec65-ca71-19c6-4e46" type="rule" targetId="2784-d0be-a4e2-890f">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="7acc-1ab8-5189-f03c" name="Dreadnought Unit Type" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
@@ -6038,7 +6049,7 @@ In addition, the first Reaction made in each Game Turn by Fulgrim Transfigured a
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Daemon Primarch (Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">9&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">8</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">9</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">6</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">7</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">7</characteristic>
@@ -6062,14 +6073,14 @@ In addition, the first Reaction made in each Game Turn by Fulgrim Transfigured a
             <rule name="Resplendent Wings" hidden="false" id="c3ef-7907-9642-bdcd" publicationId="7f9d-5e88-241d-e861" page="105">
               <description>Fulgrim’s altered form descended from tortured skies on delicate wings. Though fragile in appearance, when punctured by bullet or blade, they rapidly reknit, remaining perfect and unblemished.
 
-
 At the start of the controlling player’s Movement phase a model with Resplendent Wings may set its Movement Characteristic to a value of 14 for the duration of the controlling player’s turn (sometimes referred to as ‘activating’ this special rule). This allows a model with Resplendent Wings to move up to 14”, regardless of the Movement Characteristic shown on their profile and gain any other benefits of a Movement Characteristic of 14 (including the bonus to Charge distance). In addition, models with Resplendent Wings that have been activated ignore terrain while Moving and Charging, but must take Dangerous Terrain tests as normal when beginning or ending their movement in Dangerous Terrain. A model with Resplendent Wings that have been activated treats all Difficult Terrain as Dangerous Terrain and may move over both friendly and enemy models or units without penalty – but must end its movement at least 1” away from any model from another unit.
-
 
 A model with Resplendent Wings may still Run if it would normally be able to Run (this does not allow units that include any models with the Heavy Unit Sub-type to Run). When making a Run move for a model with activated Resplendent Wings, add the Initiative Characteristic of the model to 14 to determine how far it may move – the model ignores terrain and models from other units while making a Run move with Resplendent Wings as previously noted, but may not make Shooting Attacks or declare a Charge in the same turn in which it has Run as per the normal rules for Running.
 
+During a Reaction made in any Phase, a player may not choose to activate a model’s Resplendent Wings to gain any bonus to its Movement Characteristic.
 
-During a Reaction made in any Phase, a player may not choose to activate a model’s Resplendent Wings to gain any bonus to its Movement Characteristic.</description>
+
+Fulgrim Transfigured is counted as having a Legion Warhawk Jump Pack for rules and interactions that affect or require that wargear.</description>
             </rule>
           </rules>
           <infoLinks>

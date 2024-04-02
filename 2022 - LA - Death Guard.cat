@@ -4451,7 +4451,7 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
                 <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
@@ -4532,12 +4532,20 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="46fd-fe67-5427-3aa5" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="38e4-4d93-6eff-0ca8" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="3 Phosphex Bombs" field="name"/>
+          </modifiers>
         </entryLink>
         <entryLink import="true" name="Master of the Legion" hidden="false" type="selectionEntry" id="d79f-1e64-6976-8583" targetId="0068-6b0a-0086-3d6b">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ceb-8b6a-ec1f-7161"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17ec-2488-4c04-a107"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Siege Breaker" hidden="false" id="cfec-1025-7bf-a09d" type="selectionEntry" targetId="9335-7da8-087e-30de">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
         </entryLink>
       </entryLinks>
       <costs>
