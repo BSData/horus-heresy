@@ -1054,7 +1054,6 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64a2-0d7a-e716-e67f" type="equalTo"/>
               </conditions>
             </conditionGroup>
@@ -2227,7 +2226,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e20d-6f02-d7d5-395f" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -15214,8 +15212,12 @@ If a model with this special rule Charges a Vehicle of any kind or a Building, t
     <rule id="d1de-a45d-2b9b-c878" name="Loyalist" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
       <description>A model with thisspecial rule may only be included in an army that has the Loyalist Allegiance.</description>
     </rule>
-    <rule id="bfbf-e75c-49a2-0285" name="Outflank" publicationId="e77a-823a-da94-16b9" page="244" hidden="false">
-      <description>A unit made up entirely of models with this special rule may perform a Flanking Assault as described on page 311. Certain Faction or unit special rules may present other options for the deployment of units with the Outflank special unit.</description>
+    <rule id="bfbf-e75c-49a2-0285" name="Outflank" publicationId="9fab-fea7-a93c-2074" page="115" hidden="false">
+      <description>A unit made up entirely of models with this special rule may perform a Flanking Assault as described on page 311. Certain Faction or unit special rules may present other options for the deployment of units with the Outflank special unit.
+
+
+Notice: As per Panoptica v5.2, replace the wording of the 2nd Paragraph to read as follows ...
+Units that were unable to deploy in the initial Flanking deployment and were forced to remain in Reserve do not generate Pinning tests when they move onto the battlefield, but may be targeted by Interceptor Reactions (see page 309) after they arrive on the battlefield. Units that have Disembarked from a model with the Assault Vehicle Special Rule in Step 5 of the Flanking Assault process may Charge in the following Assault phase, as an exception to the Assault Vehicle Special Rule.</description>
     </rule>
     <rule id="1c96-205c-59a0-3cf2" name="Pinning" publicationId="e77a-823a-da94-16b9" page="244" hidden="false">
       <description>If a non-Vehicle unit suffers one or more unsaved Wounds from a weapon with the Pinning special rule, it must take a Leadership test once the firing unit has finished its Shooting Attacks for that Phase. This is called a Pinning test. If the unit fails the Test, it is Pinned. As long as the Test is passed, a unit can be called upon to take multiple Pinning tests in a single turn, but only once for each unit shooting at them.
@@ -15381,8 +15383,12 @@ If, when Charged, the unit was already locked in combat or has made the Hold the
     <rule id="60bc-f79a-67ae-be4f" name="Deflagrate" publicationId="e77a-823a-da94-16b9" page="237" hidden="false">
       <description>After normal attacks by this weapon have been resolved, count the number of unsaved Wounds caused on the target unit. Immediately resolve a number of additional automatic Hits on the same unit using the weapon’s profile equal to the number of unsaved Wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional Hits to take effect. These additional Hits do not themselves inflict more Hits and do not benefit from any other special rules possessed by the attacking model, such as Preferred Enemy (X) or Precision Strikes (X).</description>
     </rule>
-    <rule id="f1e1-986f-c783-ca9e" name="Deep Strike" publicationId="e77a-823a-da94-16b9" page="237" hidden="false">
-      <description>A unit made up entirely of models with this special rule may perform a Deep Strike Assault as described on page 310. Certain Faction or unit special rules may present other options for the deployment of units with the Deep Strike special rule.</description>
+    <rule id="f1e1-986f-c783-ca9e" name="Deep Strike" publicationId="9fab-fea7-a93c-2074" page="116" hidden="false">
+      <description>A unit made up entirely of models with this special rule may perform a Deep Strike Assault as described on page 310. Certain Faction or unit special rules may present other options for the deployment of units with the Deep Strike special rule.
+
+
+Notice: As per Panoptica v5.2 (pg 116), replace the second paragraph of Deep Strike Assault with the following ...
+“Once this first unit has been deployed, roll a D6. On the roll of a ‘1’, the Deep Strike Assault is Disordered, and the opposing player may deploy each other unit in the Deep Strike Assault anywhere wholly within 24&quot; of the first unit without scattering, though no model may be within 1&quot; of an enemy model or within Impassable Terrain. If the roll is a ‘2’ or higher, then the controlling player deploys each other unit anywhere wholly within 12&quot; of the first, though no model may be within 1&quot; of an enemy model or within Impassable Terrain.”</description>
     </rule>
     <rule id="7bf3-86ce-04c2-e6ba" name="Duellist’s Edge (X)" publicationId="e77a-823a-da94-16b9" page="237" hidden="false">
       <description>When fighting in a Challenge, the user of this weapon gains a bonus to their Initiative value equal to the value in brackets after the rule when making attacks with this weapon. If there is no value in brackets after a given instance of this special rule, then assume the value is 1 (thus adding +1 Initiative to that model).</description>
@@ -15886,12 +15892,13 @@ Instead of the above, in a turn in which a model with this Special Rule either 
     <rule id="ac97-b57a-3244-a9fb" name="Immune to Fear (X) (Sire of the Night Lords)" publicationId="d640-8853-3dd7-26a6" page="200" hidden="false">
       <description>Immune to the effects of the Fear (X) special rule.</description>
     </rule>
-    <rule id="5305-9807-b158-3c1c" name="Night Fighting" hidden="false">
+    <rule id="5305-9807-b158-3c1c" name="Night Fighting" hidden="false" publicationId="9fab-fea7-a93c-2074" page="118">
       <description>If a mission has the Night Fighting special rule, either player can declare that they wish to fight the battle at night. If either player does so, roll a D6 before deployment: on a 2+, the Night Fighting special rule is in effect during Game Turn 1. At the beginning of Game Turn 2, roll a D6, on the score of a 4+ the Night Fighting special rule is in effect during Game Turn 2 as well. At the end of Game Turn 2, all effects of the Night Fighting special rule cease, and the special rule no longer has any effect, unless another special rule states otherwise. While the Night Fighting special rule is in effect, all units on the battlefield are affected by the following conditions:
 • All units suffer a -1 penalty to their Leadership and Ballistic Skill.
 • No unit may draw line of sight to any unit that is more than 24&quot; away. Barrage weapons targeting units more than 24&quot; away must re-roll all results of ‘Hit’ on the
 Scatter dice.
-The penalty to Leadership is ignored by any unit with the Fearless or Stubborn special rules. A Primarch unit, or any unit with the Night Vision special rule ignores both the penalties to Leadership and Ballistic Skill and the restrictions on drawing line of sight to other units.</description>
+• The penalty to Leadership is ignored by any unit with the Fearless or Stubborn special rules. A Primarch unit, or any unit with the Night Vision special rule ignores both the penalties to Leadership and Ballistic Skill and the restrictions on drawing line of sight to other units.
+• Note that in some missions, if the Player with Strategic Advantage elects to not activate Night Fighting, the Opposing Player may still have the Night Fighting Rules in effect on a roll of a 4+.</description>
     </rule>
     <rule id="1cb6-d7f2-0c79-d208" name="Ungainly" publicationId="48c2-d023-0069-001a" page="41" hidden="false">
       <description>A model may only attack with this weapon on a turn in which it makes a Charge (even if that Charge is Disordered), but does not gain a bonus attack for Charging or from any Special Rules that would normally grant additional Attacks.</description>
