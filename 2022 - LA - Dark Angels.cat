@@ -1915,8 +1915,8 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="e89b-c855-2e05-8bbf" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true"/>
         <categoryLink id="66e1-e02a-d031-26c3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="2da2-e330-4a25-e4dd" primary="true" name="Heavy Support:"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="a09f-4dba-b6ec-1808" name="Legion Malcador Assault Tank Squadron" hidden="true" collective="false" import="false" targetId="528b-183f-5e27-8b0c" type="selectionEntry">
@@ -2921,6 +2921,38 @@
         <categoryLink id="8411-1862-5232-cf37" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="e47f-89ff-e3ae-82b0" name="Legion Macharius Omega Heavy Tank" hidden="true" collective="false" import="false" targetId="6865-9d88-95dc-2d3f" type="selectionEntry">
+      <comment>template_id_4a67-a1f3-4189-9e6e</comment>
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <comment>node_id_005e-6607-4e2c-8dd2</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>node_id_7745-260c-4c36-b719</comment>
+              <conditions>
+                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
+                  <comment>node_id_ddeb-f4c8-4091-9153</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  <comment>node_id_4904-fd2f-429f-9cf7</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
+                  <comment>node_id_faea-b21b-43c5-b918</comment>
+                </condition>
+                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="df0c-6e8b-89ea-7a9" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="1308-6392-4fba-808c" primary="true" name="Heavy Support:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4097-b2b4-d9da-da99" name="Corswain" hidden="false" collective="false" import="true" type="unit">
@@ -3461,9 +3493,9 @@
             <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
         </profile>
-        <profile id="aef2-c8df-6a1a-fb48" name="Internal Refractor Field" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+        <profile id="aef2-c8df-6a1a-fb48" name="Volatile Shield Reactor" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="9fab-fea7-a93c-2074" page="134">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">This model has a 5+ Invulnerable save. In addition, should the model lose its last wound then all models within D6+4&quot; suffer a Str 8 AP - hit.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">When this model suffers its last wound, increase the explosion range by +4&quot;.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3697,6 +3729,11 @@
         </entryLink>
         <entryLink id="42cc-cf88-b137-d2de" name="Animatus Excindor (Cybertheurgic Weapon)" hidden="false" collective="false" import="true" targetId="caa2-99d2-b7a0-21b7" type="selectionEntry"/>
         <entryLink id="a7b4-ef3e-9d9e-eae0" name="Shackled Artificia - Unit Type" hidden="false" collective="false" import="true" targetId="26ab-ceec-f2da-8bfb" type="selectionEntry"/>
+        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="67ab-713e-33a8-8cb8" type="selectionEntry" targetId="38fb-9a0b-edef-a497">
+          <modifiers>
+            <modifier type="set" value="Internal Atomantic Deflector" field="name"/>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>

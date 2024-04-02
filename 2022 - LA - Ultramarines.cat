@@ -1179,42 +1179,6 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink id="f1f1-cd0c-30d3-3340" name="Legion Macharius Heavy Tank Squadron" hidden="true" collective="false" import="false" targetId="36ed-ca59-0d95-d85c" type="selectionEntry">
-      <comment>template_id_4a67-a1f3-4189-9e6e</comment>
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <comment>node_id_005e-6607-4e2c-8dd2</comment>
-          <conditionGroups>
-            <conditionGroup type="and">
-              <comment>node_id_7745-260c-4c36-b719</comment>
-              <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
-                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
-                </condition>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed1f-9473-df70-4544" type="equalTo">
-                  <comment>node_id_ddeb-f4c8-4091-9153</comment>
-                </condition>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
-                  <comment>node_id_4904-fd2f-429f-9cf7</comment>
-                </condition>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5b7-3410-a8e5-95a6" type="equalTo">
-                  <comment>node_id_faea-b21b-43c5-b918</comment>
-                </condition>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="fe3e-f422-405b-a4ae" name="Lords of War:" hidden="false" targetId="c658-dc6b-727b-c488" primary="true">
-          <comment>template_id_b24f-3ae0-4cbb-b016</comment>
-        </categoryLink>
-        <categoryLink id="c51b-549c-49ba-9fd4" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
-          <comment>template_id_fd26-8e6b-4521-92b9</comment>
-        </categoryLink>
-      </categoryLinks>
-    </entryLink>
     <entryLink id="5b10-7e2a-cdc4-58b4" name="Legion Malcador Assault Tank Squadron" hidden="true" collective="false" import="false" targetId="528b-183f-5e27-8b0c" type="selectionEntry">
       <comment>template_id_fc74-1bab-45a7-a988</comment>
       <modifiers>
@@ -2978,6 +2942,74 @@
       <categoryLinks>
         <categoryLink id="02cc-cc50-d230-facc" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
         <categoryLink id="ebda-4b99-6483-d4f8" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Legion Macharius Heavy Tank Squadron" hidden="true" id="9431-c7f9-2c9-eebc" collective="false" targetId="36ed-ca59-0d95-d85c" type="selectionEntry">
+      <comment>template_id_4a67-a1f3-4189-9e6e</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>node_id_005e-6607-4e2c-8dd2</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>node_id_7745-260c-4c36-b719</comment>
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ed1f-9473-df70-4544" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_ddeb-f4c8-4091-9153</comment>
+                </condition>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2c36-fde3-14ed-4db4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_4904-fd2f-429f-9cf7</comment>
+                </condition>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_faea-b21b-43c5-b918</comment>
+                </condition>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="613e-bb7d-b741-5d34" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_fd26-8e6b-4521-92b9</comment>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="3cc1-3bec-a9df-3148" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Legion Macharius Omega Heavy Tank" hidden="true" id="69ab-c47a-d5b5-b1e7" collective="false" targetId="6865-9d88-95dc-2d3f" type="selectionEntry">
+      <comment>template_id_4a67-a1f3-4189-9e6e</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>node_id_005e-6607-4e2c-8dd2</comment>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <comment>node_id_7745-260c-4c36-b719</comment>
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_ba25-a4b2-4ba9-b023</comment>
+                </condition>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ed1f-9473-df70-4544" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_ddeb-f4c8-4091-9153</comment>
+                </condition>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="2c36-fde3-14ed-4db4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_4904-fd2f-429f-9cf7</comment>
+                </condition>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                  <comment>node_id_faea-b21b-43c5-b918</comment>
+                </condition>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="c3d6-7429-1f02-9a61" targetId="36c3-e85e-97cc-c503" primary="false">
+          <comment>template_id_fd26-8e6b-4521-92b9</comment>
+        </categoryLink>
+        <categoryLink name="Heavy Support:" hidden="false" id="702a-290e-81f-db5e" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
