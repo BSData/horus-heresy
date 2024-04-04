@@ -134,7 +134,7 @@
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e4-e4cd-0438-b836" type="min"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="a24f-12d8-36c1-f477" name="Fortification:" hidden="false">
+    <categoryEntry id="a24f-12d8-36c1-f477" name="Fortification" hidden="false">
       <rules>
         <rule id="e565-4ba5-114c-cf22" name="Building Damage Table" publicationId="e77a-823a-da94-16b9" page="226" hidden="false">
           <description>1-3) Building Shaken: The Building and any Embarked units or units on the Building&apos;s battlemtsn can only fire Snap Shots until the end of the next turn.
@@ -1551,7 +1551,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5c70-e3f3-a942-3e71" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="9271-24df-a8f3-4a99" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="false">
+        <categoryLink id="9271-24df-a8f3-4a99" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="false">
           <modifiers>
             <modifier type="set" field="1a78-0551-84cc-20b0" value="0">
               <conditionGroups>
@@ -2304,7 +2304,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="d7ec-95a3-173d-ca65" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="d7ec-95a3-173d-ca65" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7488-dcd5-3230-57d7" name="Imperial Bunker" hidden="false" collective="false" import="true" targetId="5157-f309-77f9-1256" type="selectionEntry">
@@ -2336,7 +2336,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="38c2-9688-ede4-f626" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="38c2-9688-ede4-f626" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="427d-eb8e-dbbd-87a2" name="Defence Line" hidden="false" collective="false" import="true" targetId="ea91-0572-393c-e925" type="selectionEntry">
@@ -2368,7 +2368,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="86ff-083e-ce6d-8284" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="86ff-083e-ce6d-8284" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ad63-7783-8500-e19f" name="Allied Detachment" hidden="false" collective="false" import="true" targetId="0fc8-91be-dcf4-1513" type="selectionEntry">
@@ -2406,7 +2406,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="247f-4a75-ac5d-c4f7" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="247f-4a75-ac5d-c4f7" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c3fd-09fe-2ac7-2183" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" targetId="8e99-19e1-b84a-db0b" type="selectionEntry">
@@ -2439,7 +2439,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="7836-9c5f-7d2f-9e26" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="7836-9c5f-7d2f-9e26" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f1d1-ca61-ae6b-4d33" name="Void Shield Generator" hidden="false" collective="false" import="true" targetId="fa45-1d74-9584-5bd5" type="selectionEntry">
@@ -2472,7 +2472,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b9bf-59ce-321a-3bea" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="b9bf-59ce-321a-3bea" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="026e-1405-50cc-e19b" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" targetId="a7fa-db40-52ee-b359" type="selectionEntry">
@@ -2505,7 +2505,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="5967-6a4c-46fd-c33e" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="5967-6a4c-46fd-c33e" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dd67-c6ce-04e4-8dc2" name="Fortress Of Redemption" hidden="false" collective="false" import="true" targetId="6392-ce9d-29a7-1851" type="selectionEntry">
@@ -2538,7 +2538,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="b9eb-0b8e-0c45-463c" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="b9eb-0b8e-0c45-463c" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d8a1-2527-d538-bdfb" name="Aquila Strongpoint" hidden="false" collective="false" import="true" targetId="e13d-9ef8-9b0d-bc22" type="selectionEntry">
@@ -2571,7 +2571,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="152d-1e4a-20aa-b580" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="152d-1e4a-20aa-b580" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="01dc-d34a-1988-3919" name="Primus Redoubt" hidden="false" collective="false" import="true" targetId="2d87-bde8-08d5-ae82" type="selectionEntry">
@@ -2604,7 +2604,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="d079-b62e-6190-edac" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="d079-b62e-6190-edac" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="91a3-bce0-aa49-e830" name="Hammerfall Bunker" hidden="false" collective="false" import="true" targetId="d5f5-a83b-ed8e-61c0" type="selectionEntry">
@@ -2637,7 +2637,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="eec3-bfaa-9984-36f1" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink id="eec3-bfaa-9984-36f1" name="Fortification" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
