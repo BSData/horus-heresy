@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="103" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="104" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -148,21 +148,7 @@
         <infoLink id="8449-7ce9-bf21-5851" name="Fortification" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false" targetId="11c9-a7b5-30fb-dc0c" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch:" hidden="false">
-      <modifiers>
-        <modifier type="set" field="5835-8a51-b8c1-17c4" value="0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-ff79-2e32-99b2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5835-8a51-b8c1-17c4" type="max"/>
-      </constraints>
+    <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch Unit Type" hidden="false">
       <rules>
         <rule id="a895-3e13-98e4-b67c" name="Primarch Unit-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
           <description>• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
@@ -259,7 +245,9 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
           <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) in a Detachment using this Rite of War ignore all modifiers to their Leadership when making Pinning tests.</description>
         </rule>
         <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
-          <alias>Infantry</alias>
+          <alias>
+            <undefined>Infantry</undefined>
+          </alias>
           <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
       </rules>
@@ -1336,6 +1324,23 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Primarch:" id="e031-3c2-e3f8-d40a" hidden="false">
+      <comment>Force Org Slot</comment>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5835-8a51-b8c1-17c4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="5835-8a51-b8c1-17c4">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="9289-ff79-2e32-99b2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -1598,7 +1603,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a78-0551-84cc-20b0" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c5e5-cb96-3835-591a" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false">
+        <categoryLink id="c5e5-cb96-3835-591a" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false" type="category">
           <modifiers>
             <modifier type="set" field="3210-baff-f554-8019" value="0">
               <conditionGroups>
@@ -2086,7 +2091,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0f5-6aa4-8e07-5b51" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false">
+        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false" type="category">
           <modifiers>
             <modifier type="set" field="300d-0f17-be7c-1e2b" value="0">
               <conditionGroups>
@@ -6481,7 +6486,6 @@ Fire Point (Front 4)</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
-          <categoryLinks/>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6519,7 +6523,6 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
           </costs>
-          <categoryLinks/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6598,7 +6601,6 @@ Four single Blast Shields</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
-          <categoryLinks/>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
