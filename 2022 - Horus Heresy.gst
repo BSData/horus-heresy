@@ -15673,6 +15673,18 @@ applied to models without the Character Unit sub-type).</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fcf-22ac-21a5-eb9b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7ae-9b4b-1a10-79ef"/>
               </constraints>
+              <modifiers>
+                <modifier type="decrement" value="1" field="1fcf-22ac-21a5-eb9b">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ced-ce18-5d5b-e54" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ced-ce18-5d5b-e54" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
