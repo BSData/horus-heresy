@@ -324,6 +324,13 @@ When deployed onto the battlefield (either at the start of the battle or when ar
             <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">22</characteristic>
             <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">A Triaros Armoured Conveyor has one Access Point on each side of the hull.</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="increment" value="3" field="0c90-79e2-f768-e547">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -6435,7 +6442,19 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be2-2da1-32e7-6c1a" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8b9c-7b44-0aad-a79a" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry"/>
+            <entryLink id="8b9c-7b44-0aad-a79a" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry">
+              <infoLinks>
+                <infoLink name="Augmetic Transport Bay" id="b8e9-c593-6e54-687b" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="91e5-01b6-3dc0-5587" name="1 in 3 models may exchange their lightning gun for one of the following:" hidden="false" collective="false" import="true">
