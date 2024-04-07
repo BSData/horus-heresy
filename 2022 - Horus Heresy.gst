@@ -15614,7 +15614,6 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
             <rule name="Only In Death Does Duty End" hidden="false" id="8b9e-d367-1ca9-6ab4">
               <description>Whenever a unit composed entirely of models with this Oath is called upon to take a Morale check* for any reason and in any Phase, no dice are rolled and the Check is considered to have been automatically passed. However, the unit must instead immediately suffer D3 Wounds against which only Invulnerable Saves may be taken, but no other Saving Throws or Damage Mitigation rolls, these Wounds being allocated by the controlling player. Additionally, when a unit composed of models with this Oath is entirely removed as casualties, no opposing player may score Victory points for its removal (this includes for Secondary Objectives such as Slay the Warlord). 
 
-
 *This affects only Morale checks and not Pinning tests, Psychic checks or any other kind of Leadership test.</description>
             </rule>
           </rules>
@@ -15627,7 +15626,6 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
           <rules>
             <rule name="The Spoils of Victory" hidden="false" id="5525-f7cd-79fe-6f45">
               <description>A unit that includes any models with this Oath may not make Sweeping Advances. However, whenever such a unit would otherwise be eligible to and capable of† making a Sweeping advance, the controlling player must instead roll a D6. On the result of a 4+, the controlling player gains 1 Victory point.
-
 
 Note that units that are not normally allowed to make a Sweeping Advance gain no benefit from this Oath.</description>
             </rule>
@@ -15655,6 +15653,40 @@ applied to models without the Character Unit sub-type).</description>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2c60-e114-1e62-d239" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffe9-7e78-e4cd-7967" includeChildSelections="false"/>
           </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Character Stat Improvement" id="5e99-fcf2-6b64-e88e" hidden="false" flatten="false">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="+1 WS" hidden="false" id="c60d-d862-a0b-9909" sortIndex="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2933-9b24-d348-b823" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8670-43e8-76a8-7403" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="+1 Initiative" hidden="false" id="3911-2f83-ad4c-2dac" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f23-efb8-2425-f43c" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c7e9-ce4-6dc8-a154" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="+1 BS" hidden="false" id="d31f-643d-2343-97b5" sortIndex="2">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2eec-9e99-41f2-552d" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8d6a-6f7e-cfac-a2aa" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="+1 Strength" hidden="false" id="3dc0-7375-25fb-3432" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1190-e5ff-fb7a-6f46" includeChildSelections="false"/>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cec2-a332-ed6d-c0b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fcf-22ac-21a5-eb9b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7ae-9b4b-1a10-79ef"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="An Eternity Of War" hidden="false" id="32f5-a858-9a07-1523">
           <rules>
@@ -15686,7 +15718,6 @@ chart for this Detachment. As such, the Detachment is no longer required to sel
             <rule name="The Taint of the Xenos" hidden="false" id="a885-9a62-4324-a9b">
               <description>Any model in a Detachment with this Oath may exchange a plasma gun or Nemesis bolter* for a Xenos deathlock at no additional cost in points; a combi-bolter for a Xenos deathlock for +5 points per model; a plasma pistol for a Xenos doomlock at no additional cost in points or a power weapon for a Xenos halo blade at no additional cost in points.
 
-
 *A Legion Vigilator may exchange their Master-crafted Nemesis bolter for a Xenos deathlock for no additional cost.</description>
             </rule>
           </rules>
@@ -15699,7 +15730,6 @@ chart for this Detachment. As such, the Detachment is no longer required to sel
           <rules>
             <rule name="The Flesh Is Weak" hidden="false" id="615b-e0f2-23a6-3355">
               <description>All models with the Infantry or Cavalry Unit Type in a Detachment with this Oath are instead counted as having the Automata Unit Type and gain the Feel No Pain (5+) special rule. In addition, during the controlling player’s Shooting phase, a unit that includes any models with this Oath must attempt a Shooting Attack if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack. If no weapon in the attacking unit is capable of Wounding or causing a Glancing Hit or Penetrating Hit to a potential target unit, then that target unit may be ignored if there is another potential target in range and line of sight of the attacking unit. Any model in a Detachment with this Oath that has the Psyker Unit Sub-type loses that Sub-type and may not use Psychic Weapons or Psychic Powers.
-
 
 Any model in a Detachment with this Oath that has the Transport Unit Sub-type gains the Augmetic Transport Bay special rule.</description>
             </rule>
@@ -15721,9 +15751,7 @@ Any model in a Detachment with this Oath that has the Transport Unit Sub-type g
             <rule name="The Weapons of Desperation" id="d210-d898-996f-ff7" hidden="false">
               <description>All models in a Detachment with this Oath and the Infantry Unit Type must exchange* any bolters and bolt pistols they have for one of the following weapons, exchanging weapons on a one-for-one basis (for example, a model with this Oath and a bolter and a bolt pistol must exchange both of those weapons, selecting two weapons from the following list in exchange): autorifle, stubcarbine, shotgun, lasgun, lascarbine, laspistol or autopistol. When exchanging weapons, each exchange may be for a different weapon, and squads and models do not have to receive the same weapon when making multiple exchanges. When exchanging weapons for a unit of more than one model, for each three models in the unit, one model may exchange a bolter for a heavy stubber instead of one of the other options listed above. A model with the Independent Character special rule may always exchange a bolter for a heavy stubber. 
 
-
 All models that exchange one or more weapons due to the strictures of this Oath also gain the Desperate Measures special rule.
-
 
 *Note that this exchange takes place after any options are selected from a unit’s army list profile – for example, allowing models from a Legion Veteran Squad to first upgrade a bolter to a plasma gun before any remaining bolters must be exchanged for other weapons. However, a model with this Oath that has been given a bayonet or chain bayonet may not then exchange their bolter for an autopistol or laspistol.</description>
             </rule>
@@ -15743,7 +15771,6 @@ All models that exchange one or more weapons due to the strictures of this Oath 
 Weapon* and may pay an additional cost of +25 points per model to also select one Psychic Discipline from those presented in the Horus Heresy: Age of Darkness rulebook. If this Oath is selected, then at least one model selected as a HQ choice must be given the Psyker Sub-type and at least two other models with the Character Unit Sub-type must be given the Psyker Sub-type.
 
 Note that models with this Oath do not gain access to the Aetheric Lightning Pyschic Weapon, unless another special rule would grant it to them or if they gain the Psyker Unit Sub-type from another source, such as the Librarian Consul upgrade.
-
 
 *This does not grant the model access to any Psychic Disciplines and they may not select further Psychic Weapons or Powers.</description>
             </rule>
@@ -15784,9 +15811,7 @@ Note that models with this Oath do not gain access to the Aetheric Lightning Pys
             <rule name="The Broken Helix" id="a29f-a5c-a1dc-b122" hidden="false">
               <description>A model with this Oath and any of the special rules noted in the following list, lose all of the noted special rules they possess, but gain either the Clone or Aberrant special rule (all units in a Detachment with this Oath must select the same option).
 
-
 The opposing player may not achieve objectives for removing a unit that includes any models with either the Clone or Aberrant special rules as casualties.
-
 
 Special rules that are removed: 
 • Fury of the Legion
@@ -15827,6 +15852,10 @@ Special rules that are removed: 
               </constraints>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e719-33e5-f286-7118" includeChildSelections="false"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a2a9-ddcf-f9b6-3c33" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
