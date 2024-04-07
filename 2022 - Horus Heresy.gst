@@ -26,7 +26,8 @@
     <publication id="2660-aa44-b169-2b1f" name="Liber Astartes Errata and FAQ V1.2" shortName="LA - Errata and FAQ V1.2" publicationDate="Dec 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/O0XmE9KIYFCQHlsf.pdf"/>
     <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions Astartes v1.2" shortName="LotAoD -LA" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/MMB9m4lXuQoZHb9r.pdf"/>
     <publication name="Legacies of The Age of Darkness Solar Auxilia 1.1" hidden="false" id="3fc0-bf46-1f1-eff9" shortName="Legacies Solar Aux"/>
-    <publication name="Campaigns in the Age of Darkness - The Battle for Beta-Garmon" id="d882-d2a-5da1-92c4" hidden="false" shortName="CotAoD - BBG" publicationDate="April 2024"/>
+    <publication name="Free Rules for the Solar Auxilia Aethon Heavy Sentinel" hidden="false" id="2d3f-82d2-9db5-ca6d" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/02/ZwQB9kBXZA3CyHN4.pdf" publicationDate="February 27th 2024" shortName="Aethon Heavy Sentinel Datasheet" publisher="Warhammer Community"/>
+    <publication name="Campaigns in the Age of Darkness - The Battle for Beta-Garmon" hidden="false" id="d882-d2a-5da1-92c4" shortName="CotAoD - BBG" publicationDate="April 2024"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -1316,6 +1317,7 @@ Reactions:
     <categoryEntry name="Forge Remnants - Militia Krios Squadron" hidden="false" id="dfbc-8edd-e14f-fd80"/>
     <categoryEntry name="Primus Medicae" hidden="false" id="b81a-8f4a-ff50-ef99"/>
     <categoryEntry name="Tech-Priest Auxilia" hidden="true" id="86dd-51d8-3669-68ca"/>
+    <categoryEntry name="Blackshield Oaths" hidden="false" id="cb34-ca48-547a-5d90"/>
     <categoryEntry name="Skimmer" hidden="false" id="6a28-17c5-8117-d99c">
       <rules>
         <rule name="Skimmers" hidden="false" id="c874-2cbd-3ad9-4f1f" publicationId="e77a-823a-da94-16b9" page="214">
@@ -1427,6 +1429,16 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf10-c83b-b8ed-aaf1" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="1db1-1803-cee1-86cb">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="84d6-d8d5-49ec-27fb">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1db1-1803-cee1-86cb" type="max"/>
@@ -1436,13 +1448,38 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         <categoryLink id="1375-8457-86ca-67dd" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4fb9-8be5-6fb5-0869" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3698-db71-d0-4788" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="3698-db71-d0-4788">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="4fb9-8be5-6fb5-0869">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="80e3-2dd4-0a42-972e" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c7b-35f2-8f62-8296" type="min"/>
             <constraint field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d522-6df6-8e77-b28c" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="6c7b-35f2-8f62-8296">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="d522-6df6-8e77-b28c">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="75a1-25b0-df4d-9930" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="false">
           <modifiers>
@@ -1624,6 +1661,11 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="9073-7fc5-88a9-209e">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9073-7fc5-88a9-209e" type="min"/>
@@ -1634,6 +1676,11 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <modifier type="increment" field="8810-8109-85db-93e4" value="1">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="8810-8109-85db-93e4">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1678,6 +1725,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
           </constraints>
         </categoryLink>
         <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="1c43-e3d1-a119-885c" targetId="ed41-7006-3494-4c24" type="category"/>
+        <categoryLink name="Blackshields&apos; Oaths of Wrath and Vengeance" hidden="false" id="5718-2153-5380-81ed" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f3d1-165c-4e16-e5fc"/>
@@ -1759,6 +1807,18 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf10-c83b-b8ed-aaf1" type="atLeast"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="e335-2401-dec4-2d28">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>In Disgrace All Are Equal</comment>
+            </modifier>
+            <modifier type="set" value="0" field="a59f-bf8a-6c0a-c006">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>In Disgrace All Are Equal</comment>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e335-2401-dec4-2d28" type="max"/>
@@ -1768,13 +1828,40 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         <categoryLink id="5dc5-6676-d434-d480" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cc0-0be3-0046-e962" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="force" shared="true" id="1ca3-3f16-ff51-cb20" includeChildSelections="true"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="2" field="7cc0-0be3-0046-e962">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="1ca3-3f16-ff51-cb20">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="7838-d570-4570-89ad" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ced6-f029-0392-ae11" type="max"/>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="53f0-9a02-8039-c7d5" type="min"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="ced6-f029-0392-ae11">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
+            </modifier>
+            <modifier type="set" value="0" field="53f0-9a02-8039-c7d5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="52d9-e513-b7c1-59d3" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="false">
           <modifiers>
@@ -1870,6 +1957,12 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="0" field="efa5-391f-c0d5-86f2">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>In Disgrace All Are Equal</comment>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="efa5-391f-c0d5-86f2" type="min"/>
@@ -1881,6 +1974,12 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
               </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="3965-7b5b-1e0b-d284">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
             </modifier>
           </modifiers>
           <constraints>
@@ -1898,6 +1997,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2433-a1e3-9cc3-c1cb" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Oaths of Wrath and Vengeance" hidden="false" id="af1c-1cd1-435c-f062" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
@@ -2197,6 +2297,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb86-57c5-c2cc-6606" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Oaths of Wrath and Vengeance" hidden="false" id="4ed3-a358-1189-a2d4" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c2e7-a23b-9550-671a"/>
@@ -2222,6 +2323,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
           <entryLinks>
             <entryLink id="8cf7-d353-bf83-2ae6" name="Loyalist" hidden="false" collective="false" import="true" targetId="d0b6-712f-0b12-a308" type="selectionEntry"/>
             <entryLink id="1f79-9f2e-2e6b-074b" name="Traitor" hidden="false" collective="false" import="true" targetId="f9c0-0c5a-3e24-58c7" type="selectionEntry"/>
+            <entryLink import="true" name="Beholden to None" hidden="true" id="ca61-ace9-f76b-16c5" type="selectionEntry" targetId="956a-36dc-217e-63b1"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -7069,6 +7171,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="47f0-bba9-6d89-9baa" type="equalTo"/>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="58a7-8821-3cd9-c73" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7087,6 +7190,11 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="5617-ada9-bf10-f9b0">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -10334,6 +10442,24 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Beholden to None" hidden="false" id="956a-36dc-217e-63b1">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4453-fb97-4d88-89b9" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1816-c5f0-8654-b8b5" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -10849,6 +10975,38 @@ Twisted Desire – This Advanced Reaction may be made once per battle during the
               </characteristics>
             </profile>
           </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Blackshields" hidden="false" id="ae4a-f95c-968e-eb46">
+          <profiles>
+            <profile name="Blackshields Advanced Reaction" hidden="false" id="77b2-efbe-6629-1ae7" publicationId="d882-d2a-5da1-92c4" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+              <characteristics>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">TODO</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Oaths of Wrath and Vengeance" hidden="false" id="9464-a310-2e37-b6db">
+              <description>TODO</description>
+            </rule>
+            <rule name="Blackshields and Allegiance" hidden="false" id="c6b7-9ad0-3be1-2125">
+              <description>TODO</description>
+            </rule>
+          </rules>
+          <categoryLinks>
+            <categoryLink targetId="11f2-472f-c1d1-9ae9" id="84c2-e95e-f95d-c3ac" primary="false" name="Legiones Astartes"/>
+          </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9cd-f32b-da51-5c68" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bf2-740f-f301-a479" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
@@ -14024,6 +14182,13 @@ Until Fulgrim Transfigured is placed on the battlefield in this manner, all mode
           </rules>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntryGroup>
     <selectionEntryGroup id="7e02-b66b-55aa-1102" name="Provenances of War" publicationId="48c2-d023-0069-001a" page="9-12" hidden="false" collective="false" import="true">
       <constraints>
@@ -14632,6 +14797,885 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         <entryLink id="9bc5-919f-7d3a-703e" name="Magna Combi-Weapon - Meltagun" hidden="false" collective="false" import="true" targetId="59c3-2af5-ebe5-d512" type="selectionEntry"/>
         <entryLink id="0ff2-dd35-7e6a-f83a" name="Magna Combi-Weapon - Plasma Gun" hidden="false" collective="false" import="true" targetId="5ed9-1bc3-4d8f-0826" type="selectionEntry"/>
       </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Oaths of Vengeance and Wrath" hidden="false" id="4fb2-9198-2498-adf3" publicationId="d882-d2a-5da1-92c4">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3268-56a1-cb6c-ac8c" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Eternal Vendetta (X)" hidden="false" id="a500-e9bf-be5a-2fdc">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c6db-8d49-3bee-700a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ba-180d-33e-b5d2" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Legion (Check for duplicates with The Eternal Vendetta manually)" hidden="false" id="2a7b-7a76-8df9-d31f">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="XXI: Blackshields" hidden="false" id="3258-3ec4-b57c-b6b1">
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="b062-4bba-5ab-8db5" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9cd-f32b-da51-5c68" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bf2-740f-f301-a479" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="126d-e9a9-ed88-6e50" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="feee-3ef2-fd5-3f72" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="I: Dark Angels" hidden="false" id="1c31-8a6e-a131-f356" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="1eab-11b0-b180-eeb9" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="513-810-baeb-507" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="80ba-99ca-3eba-cc45" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6bd4-61a1-eeff-e065" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="III: Emperor&apos;s Children" hidden="false" id="c6ab-6f3e-816d-edef" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="c373-8bb5-5181-de21" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="ca23-513f-fda8-4ba0" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3bcc-2501-1b8-606b" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8e14-ddfb-a2f4-9170" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="IV: Iron Warriors" hidden="false" id="a124-5321-3a39-405d" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="efa7-62f2-c3d5-8198" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="ae9b-60d6-7e3b-33d7" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="17d7-9442-1fc1-beb4" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df2-f1b9-8a29-737f" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="IX: Blood Angels" hidden="false" id="7eec-765f-9df7-4c4" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="c44-fa61-39a6-b30" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="e1b2-bec9-e3ea-5b76" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6b79-efbf-64be-6cd2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6d7-da7-88e7-860b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="V: White Scars" hidden="false" id="9369-93b1-5e51-115d" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="d8ad-f376-8d10-33f9" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="ee15-51d2-b71a-8624" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="61f6-5d2f-a78d-e470" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c170-259f-3958-130c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VI: Space Wolves" hidden="false" id="4f4-3233-6275-b989" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="ff5e-33cc-5d71-b4a5" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="d48b-5672-6f99-8635" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ae85-2af8-37ac-913b" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5aec-71b8-80aa-f8fb" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VII: Imperial Fists" hidden="false" id="f555-cd6b-c4f4-1a8e" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="bf48-2094-d74b-20a9" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="7486-4e76-1dd5-22b7" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b8ab-b850-d803-a953" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d8c-a154-ce2c-67c0" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VIII: Night Lords" hidden="false" id="615c-9b18-8142-1fb3" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="a570-ba6-f39b-383c" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="708e-ac58-f8ad-cd8" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f3-e380-4624-2e39" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c749-f257-30a8-3c6f" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="X: Iron Hands" hidden="false" id="7025-94e7-b026-a4d2" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="a15c-ffc4-1c4c-d33a" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="9830-9b3-5ed1-3e22" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="938e-7d4a-273e-80bf" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e70-e968-9464-d321" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XII: World Eaters" hidden="false" id="fdc0-92f7-2e44-576f" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="6eff-8cef-4e26-1759" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="d89f-4a12-ffd5-1e12" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="212b-a86f-5e9b-87b5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bb5-b13c-3f5-3e48" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIII: Ultramarines" hidden="false" id="39c0-6d11-c9bb-4b69" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="1436-b20a-e082-c79c" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="5cbd-7d46-7986-6a0a" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="135f-2c97-4c1e-ee3c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bab-ebeb-dc55-bbf9" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIV: Death Guard" hidden="false" id="ab6a-1ca8-e284-e270" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="2bc9-79d7-923e-652a" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="430d-4a92-9805-7ec2" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a271-ba3f-b8f8-1d6" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddca-62ad-e7d1-5c56" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIX: Raven Guard" hidden="false" id="452f-6774-edc7-4a2d" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="a945-c94-c589-3410" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="f40c-d278-daa-9c6e" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="187-ef49-f8d0-38dc" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de48-b534-4f32-e494" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XV: Thousand Sons" hidden="false" id="3d74-f31a-9079-e170" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="7516-513c-369d-bac9" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="11c8-6bbc-3ac2-a62b" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1e05-eab5-9837-fddb" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1da-63fe-be74-4f94" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVI: Sons of Horus" hidden="false" id="de1b-d603-871-8690" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="fffd-3ed7-186f-1a10" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="8e83-12c3-558-376" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3d4e-ff7d-945b-f8c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="859c-98ba-acf8-fa99" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVII: Word Bearers" hidden="false" id="6d37-c61f-e19b-2715" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="7e3c-31ad-cbab-81e2" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="4ac1-fa31-4-3438" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="42d-d77c-ade0-a97" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a26-8f4-2f9d-3cb7" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVIII: Salamanders" hidden="false" id="33d1-a9b3-f8c1-671c" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="dcbb-b3fc-b77a-5909" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="def3-d2d5-4704-808a" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f8f4-2aec-e905-ce37" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b400-d17f-e802-fa9e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XX: Alpha Legion" hidden="false" id="85fe-eb41-e3b1-5b8" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="9798-df0d-9c72-3320" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="1fc-43e7-9bee-d59" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="be2-6b3e-aeb1-330e" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f787-8e8e-a08a-171c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XXII: Shattered Legions" hidden="false" id="cf8e-9a03-4f6d-95cc">
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="63a6-8660-17c1-34a8" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9cd-f32b-da51-5c68" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bf2-740f-f301-a479" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="9ad8-b917-323d-873f" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c4f-ee6-ab1c-f641" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b6cd-f3a-2439-d074" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7233-865c-7e35-ea9e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <modifiers>
+            <modifier type="set" value="The Eternal Vendetta (Blackshields)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="3258-3ec4-b57c-b6b1" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Dark Angels)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="1c31-8a6e-a131-f356" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Emperor&apos;s Children)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="c6ab-6f3e-816d-edef" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Iron Warriors)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="a124-5321-3a39-405d" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (White Scars)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="9369-93b1-5e51-115d" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Space Wolves)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="4f4-3233-6275-b989" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Imperial Fists)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="f555-cd6b-c4f4-1a8e" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Night Lords)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="615c-9b18-8142-1fb3" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Blood Angels)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="7eec-765f-9df7-4c4" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Iron Hands)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="7025-94e7-b026-a4d2" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (World Eaters)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="fdc0-92f7-2e44-576f" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Ultramarines)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="39c0-6d11-c9bb-4b69" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Death Guard)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="ab6a-1ca8-e284-e270" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Thousand Sons)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="3d74-f31a-9079-e170" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Sons of Horus)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="de1b-d603-871-8690" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Word Bearers)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="6d37-c61f-e19b-2715" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Salamanders)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="33d1-a9b3-f8c1-671c" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Raven Guard)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="452f-6774-edc7-4a2d" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Alpha Legion)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="85fe-eb41-e3b1-5b8" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Shattered Legions)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="a500-e9bf-be5a-2fdc" childId="cf8e-9a03-4f6d-95cc" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="TODO The Eternal Vendetta" hidden="false" id="1e8a-1e2d-a636-f546" type="rule" targetId="8939-b1f6-317b-9080"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Eternal Vendetta (Y)" hidden="false" id="afd8-5c2a-3b0e-9b3e">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="a500-e9bf-be5a-2fdc" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Blackshields)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="db56-a904-72b-f523" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Dark Angels)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="1095-4fbb-7b0b-d9bc" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Emperor&apos;s Children)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="24d9-9ef2-2104-23b9" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Iron Warriors)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="59c7-6b1d-8eba-73f3" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (White Scars)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="be18-7ceb-275b-2433" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Space Wolves)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="fbd8-a54-ede6-1b0f" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Imperial Fists)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="cb7e-e3c9-c19b-f49c" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Night Lords)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="c32b-146f-3f42-14f6" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Blood Angels)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="f383-d2a4-d021-d736" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Iron Hands)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="a374-afd1-dc3e-bd76" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (World Eaters)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="342c-821c-6206-ebd9" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Ultramarines)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="5885-95a2-687f-9b5f" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Death Guard)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="bb60-f707-e28e-89c7" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Thousand Sons)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="455f-3b3f-956c-c888" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Sons of Horus)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="72b3-9ebd-87da-718a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Word Bearers)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="7f08-5e42-6aec-9e87" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Salamanders)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="da1b-ae69-11f0-689a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Raven Guard)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="f0f2-c19b-9ef6-9e0a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Alpha Legion)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="429c-f652-ee48-6b32" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="The Eternal Vendetta (Shattered Legions)" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="afd8-5c2a-3b0e-9b3e" childId="8982-3c72-fa77-739a" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="bba5-f4b-6d9f-68fa" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2918-2e9f-22e6-8fd2" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Legion (Check for duplicates with The Eternal Vendetta manually)" hidden="false" id="e758-4dd9-e840-d13e">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="XXI: Blackshields" hidden="false" id="db56-a904-72b-f523">
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="7d99-b5d7-148-1e8f" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9cd-f32b-da51-5c68" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bf2-740f-f301-a479" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ac0e-59ce-e2e2-aa96" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9ce-ad16-f9de-3366" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="I: Dark Angels" hidden="false" id="1095-4fbb-7b0b-d9bc" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="1c1a-21c6-2754-9a5b" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="d95f-99d6-e615-fe29" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d60-80de-50a4-fdc2" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acf9-20fc-887c-6108" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="III: Emperor&apos;s Children" hidden="false" id="24d9-9ef2-2104-23b9" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="46b-41ec-c5ac-599a" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="5e72-2d7c-16fb-3bef" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="47c2-9aca-458d-2d6" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="817e-9f39-ee41-f156" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="IV: Iron Warriors" hidden="false" id="59c7-6b1d-8eba-73f3" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="98f6-dc15-5e09-2e74" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="8ad6-e5ed-740b-67aa" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d508-946a-ad10-fac1" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50af-9f7e-2d2a-8730" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="IX: Blood Angels" hidden="false" id="f383-d2a4-d021-d736" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="4ed8-2d1-8cd8-b10f" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="8ea5-d00-f5d-c1b7" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8a8f-5ea7-994-f32b" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ec9-935d-71e9-ea24" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="V: White Scars" hidden="false" id="be18-7ceb-275b-2433" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="5ea8-41cf-ecb0-7974" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="3a56-1d64-65bd-3010" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ccd2-f756-7421-deb9" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8bb2-3008-b612-1482" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VI: Space Wolves" hidden="false" id="fbd8-a54-ede6-1b0f" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="30ac-b180-6209-1e63" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="ff13-af26-8935-8d21" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="670c-819c-5321-9c65" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27c1-197c-5876-6925" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VII: Imperial Fists" hidden="false" id="cb7e-e3c9-c19b-f49c" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="bcfe-9552-9f17-dfc1" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="976-f9f1-e498-cd4f" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e88-59f7-194-91e0" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b486-b25d-6e22-3b34" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="VIII: Night Lords" hidden="false" id="c32b-146f-3f42-14f6" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="705-7f83-5059-f30a" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="79d-9ef1-9929-4015" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="67bd-af08-2924-b348" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="858f-cbc8-67fa-b8cd" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="X: Iron Hands" hidden="false" id="a374-afd1-dc3e-bd76" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="56ff-85e6-a38b-e9cb" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="74fb-20e6-6b6f-fe2" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2f75-e978-6911-4f9c" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="256-dd58-ed75-162b" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XII: World Eaters" hidden="false" id="342c-821c-6206-ebd9" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="297a-d4db-12c8-bd80" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="a089-cf98-d303-3627" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a5ac-e3ea-235b-a967" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="faa1-bd55-33ab-e2ef" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIII: Ultramarines" hidden="false" id="5885-95a2-687f-9b5f" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="3003-9f21-6a54-e204" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="e80d-952f-770d-29c7" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3fbf-3c00-df4a-a5c9" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7-ee90-9504-83da" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIV: Death Guard" hidden="false" id="bb60-f707-e28e-89c7" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="9fea-d88e-96c-209d" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="4074-4643-69e-7e8f" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e688-d97c-abbb-5a0a" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e70a-b2ef-2ba9-5925" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XIX: Raven Guard" hidden="false" id="f0f2-c19b-9ef6-9e0a" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="36ae-3dd2-56a6-9e80" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="b64c-6dba-d11c-ef11" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c0e6-2421-f70a-f651" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2365-8dda-5fa-63ad" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XV: Thousand Sons" hidden="false" id="455f-3b3f-956c-c888" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="fbb0-d842-c925-c07c" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="f856-4596-c7c2-1366" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="be16-ada0-67fd-b247" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74dc-bd1f-3b70-b6a6" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVI: Sons of Horus" hidden="false" id="72b3-9ebd-87da-718a" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="1ad9-c2d2-6d5f-10b8" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="7e9e-b2d9-fce4-8257" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cf7f-c007-6d2e-9189" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f98-a56f-fc97-7eb" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVII: Word Bearers" hidden="false" id="7f08-5e42-6aec-9e87" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="8ae1-2240-6ec-569" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="d14f-c9aa-b761-4a67" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="132-5751-ddfa-7d4d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea53-ee03-b44d-6a9c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XVIII: Salamanders" hidden="false" id="da1b-ae69-11f0-689a" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="7bda-960a-faf7-2e86" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="20e6-ae38-284-9c21" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5098-42dd-3876-59ed" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec7-f5ad-2fe9-23ef" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XX: Alpha Legion" hidden="false" id="429c-f652-ee48-6b32" collective="false">
+                  <costs>
+                    <cost name="Pts" hidden="false" id="2d85-6b65-277c-da78" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="5933-1287-f5b5-9f20" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="df0f-3918-48fa-6c19" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="700d-b942-3a21-a980" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="XXII: Shattered Legions" hidden="false" id="8982-3c72-fa77-739a">
+                  <categoryLinks>
+                    <categoryLink name="Legiones Astartes" hidden="false" id="7b64-58b-6f7e-765d" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+                  </categoryLinks>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9cd-f32b-da51-5c68" shared="true"/>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bf2-740f-f301-a479" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="418e-e8-4b13-8883" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd3-fb7f-1888-3f16" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd4c-2b66-bb32-3710"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f617-e827-8be4-2f87"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="TODO The Eternal Vendetta" hidden="false" id="8b61-cedc-ed79-c6f3" type="rule" targetId="8939-b1f6-317b-9080"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Panoply of Old (X)" hidden="false" id="f9cd-f32b-da51-5c68">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="e2b9-72b9-2507-4a17" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd2e-2ad5-6b43-ba7d" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Legion" hidden="false" id="e19a-45d3-398b-4fdb" type="selectionEntryGroup" targetId="4a48-4935-246d-0c2e"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Panoply of Old (X)" hidden="false" id="3859-e4e0-921a-edec" type="rule" targetId="b4f-fbc9-98a2-feb8"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Panoply of Old (Y)" hidden="false" id="8bf2-740f-f301-a479">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="parent" childId="f9cd-f32b-da51-5c68" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="26b1-f12c-6562-2530" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b914-2d8-18f1-66d3" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Legion" hidden="false" id="a1f9-c218-80ae-f771" type="selectionEntryGroup" targetId="4a48-4935-246d-0c2e"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Panoply of Old (X)" hidden="false" id="2ca9-6929-1c26-5b94" type="rule" targetId="b4f-fbc9-98a2-feb8"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Only In Death Does Duty End" hidden="false" id="e223-bd6f-6a7c-33c">
+          <rules>
+            <rule name="TODO Only In Death Does Duty End" hidden="false" id="8b9e-d367-1ca9-6ab4">
+              <description/>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="7c97-58c7-6f37-f97a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0ab-edc8-dd1d-d285" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Spoils of Victory" hidden="false" id="e033-c9fe-b3dc-5d38">
+          <rules>
+            <rule name="TODO The Spoils of Victory" hidden="false" id="5525-f7cd-79fe-6f45">
+              <description/>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="5745-e17b-a09d-a2e6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d091-37a2-e293-35b8" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="In Disgrace All Are Equal" hidden="false" id="ced-ce18-5d5b-e54">
+          <rules>
+            <rule name="TODO In Disgrace All Are Equal" hidden="false" id="b346-f2b9-2619-2c0b">
+              <description/>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="2c60-e114-1e62-d239" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffe9-7e78-e4cd-7967" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="An Eternity Of War" hidden="false" id="32f5-a858-9a07-1523">
+          <rules>
+            <rule name="TODO An Eternity Of War" hidden="false" id="1866-5a90-cc3e-9b0c">
+              <description/>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="113f-7253-7bb5-f8c5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7961-a027-9aaa-15a5" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pride Is Our Armour" hidden="false" id="e936-95f1-63a6-a606">
+          <rules>
+            <rule name="TODO Pride Is Our Armour" hidden="false" id="d6fc-b406-b8cf-117f">
+              <description/>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b6e3-dfc0-a201-1456" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60f9-dab0-9fa2-db57" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Taint of the Xenos" hidden="false" id="cb03-25b3-326f-f8bd">
+          <rules>
+            <rule name="TODO The Taint of the Xenos" hidden="false" id="a885-9a62-4324-a9b"/>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ee62-a534-772-6998" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d64-22d-4aa2-8da7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Flesh Is Weak" hidden="false" id="be5b-1edf-8b27-2e1e">
+          <rules>
+            <rule name="TODO The Flesh Is Weak" hidden="false" id="615b-e0f2-23a6-3355">
+              <description/>
+            </rule>
+            <rule name="Augmetic Transport Bay" hidden="false" id="75c-d3e8-2f12-2749">
+              <description>A model with this special rule may only be Embarked upon by models that previously had the Infantry Unit Type, but have had it replaced with the the Automata Unit Type by The Flesh Is Weak (Oath of Vengeance and Wrath). A model with this special rule also increases its Transport Capacity by 3.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b57e-d227-a89e-1748" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63ad-8a28-fea5-b27e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -15530,6 +16574,26 @@ Once assigned to a unit, the Legion Techmarine is considered part of that unit a
     </rule>
     <rule id="4d16-c28e-a8a6-39f4" name="Open Crew Compartment" hidden="false">
       <description>Any Hits scored against a Vehicle with this special rule in close combat (including as part of a Death or Glory Advanced Reaction) are resolved against the Vehicle’s Armour Facing with the lowest value.</description>
+    </rule>
+    <rule name="The Eternal Vendetta (X)" hidden="false" id="8939-b1f6-317b-9080">
+      <description>A unit that is comprised entirely of models with this Oath gains a bonus of +1 on all To Hit rolls made for weapons with the Melee type (To Hit rolls that result in a &apos;1&apos; on the dice rolled still trigger such rules as Gets Hot) targeting a unit that includes any models with the variant of the Legiones Astartes (X) special rule that is the target of this Oath.
+
+
+However, a unit that includes any models with this Oath that begins the controlling player&apos;s Assault phase within 12&quot; of an enemy unit that includes any models with the variant of the Legiones Astartes (X) special rule that is the target of this Oath, then a Charge must be declared for the unit targeting that enemy unit if possible.
+
+
+If there is more than one enemy unit with the variant of the Legiones Astartes (X) special rule that is the target of this Oath within 12&quot;, then the controlling player may choose which is the target of any Charge declared.
+
+
+A Detachment with this Oath may not be selected as part of any army that includes any models with the variant of the Legiones Astartes (X) special rule that is the target of this Oath.
+
+* This Oath may be selected more than once, but a different focus must be selected for each Oath.</description>
+    </rule>
+    <rule name="Panoply of Old (X)" hidden="false" id="b4f-fbc9-98a2-feb8">
+      <description>Models with this Oath gain access to any unique Wargear options available to models with the Legiones Astartes (X) rule variant noted as part of this Oath.
+
+
+This does not allow those models to select Warlord Traits, Rites of War, Consul Types, Praetor upgrades, or other options available to models with that variant of the Legiones Astartes (X) special rule and does not allow the Detachment to include units restricted to Detachments of that Faction.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
