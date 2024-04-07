@@ -10517,9 +10517,14 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     <selectionEntry type="upgrade" import="true" name="Beholden to None" hidden="false" id="956a-36dc-217e-63b1">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
