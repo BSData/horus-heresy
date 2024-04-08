@@ -260,7 +260,9 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
           <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) in a Detachment using this Rite of War ignore all modifiers to their Leadership when making Pinning tests.</description>
         </rule>
         <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
-          <alias>Infantry</alias>
+          <alias>
+            <undefined>Infantry</undefined>
+          </alias>
           <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
       </rules>
@@ -6583,7 +6585,6 @@ Fire Point (Front 4)</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
-          <categoryLinks/>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6621,7 +6622,6 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
           </costs>
-          <categoryLinks/>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6700,7 +6700,6 @@ Four single Blast Shields</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
-          <categoryLinks/>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -15835,13 +15834,13 @@ Special rules that are removed: 
                     </rule>
                   </rules>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Abberant" hidden="false" id="3af5-f165-8009-a1b1">
+                <selectionEntry type="upgrade" import="true" name="Aberant" hidden="false" id="3af5-f165-8009-a1b1">
                   <constraints>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b91f-2dcf-2e4f-ca0c" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69a6-1ec-3978-cf93" includeChildSelections="false"/>
                   </constraints>
                   <rules>
-                    <rule name="Abberant" id="f03c-898e-1f88-d6e1" hidden="false">
+                    <rule name="Aberant" id="f03c-898e-1f88-d6e1" hidden="false">
                       <description>All models with this special rule that do not also have the Character Unit Sub-type must reduce their Leadership and Ballistic Skill Characteristics by -1 but increase their Strength Characteristic by +1 permanently, and after making a successful Charge gain an additional +1 bonus to Strength until the end of that player turn. A unit that includes any models with this special rule that begins the Assault phase within 12&quot; of one or more enemy units must have a Charge declared for it, though the controlling player may choose the target of this Charge.</description>
                     </rule>
                   </rules>
