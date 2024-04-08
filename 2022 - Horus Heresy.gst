@@ -1340,6 +1340,8 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Blackshields Primary Detachment" id="3410-6cb0-2f2b-a28a" hidden="false"/>
+    <categoryEntry name="Blackshields Optional Detachment" id="e3b2-7cd8-eab7-92eb" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -2327,8 +2329,18 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="e537-c291-62d8-d539">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e3b2-7cd8-eab7-92eb" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="d0b6-712f-0b12-a308" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2341,8 +2353,18 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
                         <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="1" field="b648-5786-d5f0-2bb1">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="e3b2-7cd8-eab7-92eb" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="roster" childId="f9c0-0c5a-3e24-58c7" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10483,14 +10505,9 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
     <selectionEntry type="upgrade" import="true" name="Beholden to None" hidden="false" id="956a-36dc-217e-63b1">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -11040,6 +11057,21 @@ Twisted Desire – This Advanced Reaction may be made once per battle during the
                   <conditions>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9cd-f32b-da51-5c68" shared="true"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bf2-740f-f301-a479" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" value="3410-6cb0-2f2b-a28a" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="e3b2-7cd8-eab7-92eb" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="58a7-8821-3cd9-c73" shared="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
