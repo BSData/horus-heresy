@@ -2314,7 +2314,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         <categoryLink id="da5a-91f1-3185-59ed" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2999-90f6-880e-d20f" name="Allegiance" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2999-90f6-880e-d20f" name="Allegiance" hidden="false" collective="false" import="true" defaultSelectionEntryId="8cf7-d353-bf83-2ae6">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="457e-6569-0aab-0154" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b9e-b0c4-458b-88a4" type="min"/>
