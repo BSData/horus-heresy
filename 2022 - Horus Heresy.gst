@@ -15834,13 +15834,13 @@ Special rules that are removed: 
                     </rule>
                   </rules>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Abberant" hidden="false" id="3af5-f165-8009-a1b1">
+                <selectionEntry type="upgrade" import="true" name="Aberant" hidden="false" id="3af5-f165-8009-a1b1">
                   <constraints>
                     <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b91f-2dcf-2e4f-ca0c" includeChildSelections="false"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="69a6-1ec-3978-cf93" includeChildSelections="false"/>
                   </constraints>
                   <rules>
-                    <rule name="Abberant" id="f03c-898e-1f88-d6e1" hidden="false">
+                    <rule name="Aberant" id="f03c-898e-1f88-d6e1" hidden="false">
                       <description>All models with this special rule that do not also have the Character Unit Sub-type must reduce their Leadership and Ballistic Skill Characteristics by -1 but increase their Strength Characteristic by +1 permanently, and after making a successful Charge gain an additional +1 bonus to Strength until the end of that player turn. A unit that includes any models with this special rule that begins the Assault phase within 12&quot; of one or more enemy units must have a Charge declared for it, though the controlling player may choose the target of this Charge.</description>
                     </rule>
                   </rules>
