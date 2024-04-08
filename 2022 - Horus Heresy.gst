@@ -2328,6 +2328,18 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <entryLink id="1f79-9f2e-2e6b-074b" name="Traitor" hidden="false" collective="false" import="true" targetId="f9c0-0c5a-3e24-58c7" type="selectionEntry"/>
             <entryLink import="true" name="Beholden to None" hidden="true" id="ca61-ace9-f76b-16c5" type="selectionEntry" targetId="956a-36dc-217e-63b1"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="set" value="8cf7-d353-bf83-2ae6" field="defaultSelectionEntryId">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
