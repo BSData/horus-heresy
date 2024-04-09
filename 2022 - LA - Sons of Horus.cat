@@ -3109,6 +3109,7 @@
         <categoryLink id="dd19-c149-942f-a5b3" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
       </categoryLinks>
     </entryLink>
+    <entryLink import="true" name="Horus Aximand" hidden="false" id="cf96-20ed-cd69-347c" targetId="7ed0-7d06-406c-abd9" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="0c73-9141-d1b4-6a40" name="Chieftain Squad" hidden="false" collective="false" import="true" type="unit">
@@ -5192,56 +5193,33 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c3db-b014-dfaa-d189" name="Tybalt Marr" publicationId="d0df-7166-5cd3-89fd" page="92" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c3db-b014-dfaa-d189" name="Tybalt Marr" publicationId="d882-d2a-5da1-92c4" page="192" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ecb0-3e9c-e3b6-fde7" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="8b6d-35f3-191d-2ae6" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink name="Legiones Astartes (X)" hidden="false" type="rule" targetId="ffcb-13b4-9b4c-84da" id="4c6a-c188-4c33-8ddf">
+          <modifiers>
+            <modifier type="set" field="name" value="Legiones Astartes (Sons of Horus)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Master of the Legion" hidden="false" type="rule" targetId="c772-87ea-d49c-c7ba" id="60a1-b316-41b5-b061"/>
+        <infoLink name="Hatred (X)" hidden="false" type="rule" targetId="dc0b-fe69-6b71-e0a4" id="547c-f3e1-4b87-a5bd">
+          <modifiers>
+            <modifier type="set" field="name" value="Hatred (Shattered Legions)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Traitor" hidden="false" type="rule" targetId="eff2-8b0e-21da-2f0d" id="1092-c19e-4b65-9dcb"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="773d-17eb-9834-2e2a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="d4f8-7cfd-49ff-ca02" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="43e1-e69b-439b-ac0f"/>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="2ba0-4682-47b7-a1c2" name="HQ"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="2095-6d87-7bf5-f840" name="The Culling Blade" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b3a-542c-9f64-43fd" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6677-0feb-f086-8037" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="5472-3591-df1c-a996" name="The Culling Blade" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+)., Murderous Strike (5+), Duellist&apos;s Edge (1), Master-crafted</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="70dd-29b5-f2ac-7708" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-            <infoLink id="1a2d-c26e-cea1-2765" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Breaching (5+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="877d-a1ab-2147-6daf" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Murderous Strike (5+)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="2be1-f255-4992-5f54" name="Duellist’s Edge (X)" hidden="false" targetId="7bf3-86ce-04c2-e6ba" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Duellist’s Edge (1)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry type="model" import="true" name="Tybalt Marr" hidden="false" id="da20-54b1-fdb-9659">
+        <selectionEntry type="model" import="true" name="Tybalt Marr" hidden="false" id="da20-54b1-fdb-9659" page="192" publicationId="d882-d2a-5da1-92c4">
           <categoryLinks>
             <categoryLink targetId="4f07-3d45-4f28-a0c6" id="d42-4abd-3e06-f45" primary="false" name="Independent Character"/>
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="6c7d-d51d-432f-a82f" name="Infantry Unit Type" primary="false"/>
@@ -5253,68 +5231,104 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50ac-86a9-d0c3-2314"/>
           </constraints>
           <profiles>
-            <profile id="20e6-7fa0-e03b-84cb" name="Tybalt Marr" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="20e6-7fa0-e03b-84cb" name="Tybalt Marr" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="d882-d2a-5da1-92c4" page="192">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
                 <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
                 <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
               </characteristics>
             </profile>
           </profiles>
+          <entryLinks>
+            <entryLink name="Banestrike bolter" hidden="false" type="selectionEntry" targetId="6865-354c-0880-ee5f" id="f3bc-a747-47d1-b7d0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8729-2039-47e3-a897"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2bce-b5ed-4f39-abe6"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bolt pistol" hidden="false" type="selectionEntry" targetId="e5ae-6872-37aa-8600" id="2188-b6db-4a1f-b757">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2ce-d612-45af-b65f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2984-f7f0-4b78-a427"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Iron halo" hidden="false" type="selectionEntry" targetId="b081-bf3c-f43d-4bd5" id="d3dc-28d6-436d-b873">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2fcf-8ffb-4f9d-b930"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d20b-5b36-4454-9b0c"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Frag grenades" hidden="false" type="selectionEntry" targetId="cf9c-327b-3449-00d7" id="9767-361b-4a97-8a10">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f42-3f88-436d-959d"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4d04-989b-4881-9185"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Krak grenades" hidden="false" type="selectionEntry" targetId="99df-2421-acf7-a5ad" id="514a-c949-4d48-ab10">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82dd-f240-49ba-a885"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b725-8e5d-48e1-b7ea"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Artificer Armour" hidden="false" id="dac0-477b-9e13-a353" collective="false" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a115-8f9f-39a0-30ad" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="897b-6f25-e7f8-e75a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <comment>
+</comment>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Culling Blade" hidden="false" id="f708-8325-4f0e-dbc3">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3484-b242-dce3-665-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3484-b242-dce3-665-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="New Profile" hidden="false" id="f7a3-3bb2-d828-3dce" page="192" publicationId="d882-d2a-5da1-92c4" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                  <characteristics>
+                    <characteristic name="Range" id="7df9-be76-14e8-722d" hidden="false" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" id="1ec4-1062-ec82-c269" hidden="false" typeId="24d9-b8e1-a355-2458">User</characteristic>
+                    <characteristic name="AP" id="908-5de2-15c1-11d2" hidden="false" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" id="70ae-90b6-8b13-4337" hidden="false" typeId="2f86-c8b4-b3b4-3ff9">Melee, Fleshbane, Murderous Strike (6+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fleshbane" id="fef5-ffde-d4e8-d97a" hidden="false" type="rule" targetId="40cd-9505-253c-e76f"/>
+                <infoLink name="Murderous Strike (X)" id="ad8a-4425-ecc6-8f11" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+                  <modifiers>
+                    <modifier type="set" value="Murderous Strike (6+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="3d80-bb4b-a338-1dfd" name="Banestrike Bolter" hidden="false" collective="false" import="true" targetId="6865-354c-0880-ee5f" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a844-395b-2fc8-778a" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d165-ac5d-f854-3f4e" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="4b62-a476-4e9c-aaf4" name="Bolt Pistol" hidden="false" collective="false" import="true" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7af3-a824-7d02-d2f9" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfb4-ca62-5028-c016" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="dac0-477b-9e13-a353" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a115-8f9f-39a0-30ad" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="897b-6f25-e7f8-e75a" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="674e-472c-04d3-bf50" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125d-6670-0228-4400" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c783-5790-0c2b-ccb9" type="min"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="513d-254f-0c57-77ec" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82b4-e53e-8e87-58fa" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6574-afa2-ff46-b34c" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="11d9-cec7-c3b1-7a6e" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f38-ca61-86e7-b1a5" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa27-d393-180e-c5e7" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="3fc5-0ceb-c9f6-ab2b" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c7d-51de-08ef-ce26" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="7a0e-8ef9-0003-ad42" name="The Armour of Pride" hidden="false" collective="false" import="true" targetId="5cda-4256-f20a-9764" type="selectionEntry"/>
-          </entryLinks>
+          <profiles>
+            <profile name="By the Hunter’s Moon" hidden="false" id="8ec6-cbd9-6f39-2f0c" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" publicationId="d882-d2a-5da1-92c4" page="192">
+              <characteristics>
+                <characteristic name="Text" id="ced4-eba-6755-a9ca" hidden="false" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Tybalt Marr automatically has the By the Hunter’s Moon Warlord Trait and may not select any other.
+By the Hunter’s Moon – Once per battle, at the end of his controlling player’s Movement phase, Tybalt Marr can conduct a Shock Assault. When he does so, each enemy unit within 12&quot; of Tybalt Marr must take a Pinning test. 
+In addition, an army whose Warlord has this trait may make an additional Reaction during the Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
         <entryLink id="4383-2955-67f1-bb4c" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
         <entryLink id="c58c-b25c-fefb-9473" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
@@ -5325,7 +5339,7 @@
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="160"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="af3a-334f-152f-d55f" name="Reaver Aggressor Squad" hidden="false" collective="false" import="true" type="unit">
@@ -6230,6 +6244,142 @@ Blood and Honour – When a Wound is allocated to Vheren Ashurhaddon by his cont
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="205"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry name="Horus Aximand" type="unit" id="7ed0-7d06-406c-abd9" page="190" publicationId="d882-d2a-5da1-92c4">
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="59d3-27f7-43fe-9d46"/>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="3e23-d3b6-4c17-8379" name="HQ"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" name="Horus Aximand" id="1351-8bd4-4882-9719" page="190" publicationId="d882-d2a-5da1-92c4">
+          <profiles>
+            <profile id="afb1-b8bf-4b62-92c1" name="Horus Aximand" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="d882-d2a-5da1-92c4" page="190">
+              <characteristics>
+                <characteristic typeId="893e-2d76-8f04-44e5" name="Move">7</characteristic>
+                <characteristic typeId="cc42-7ed5-7092-5c84" name="WS">6</characteristic>
+                <characteristic typeId="74ae-c840-0036-d244" name="BS">5</characteristic>
+                <characteristic typeId="e478-41d4-a092-48a8" name="S">4</characteristic>
+                <characteristic typeId="c32b-5fdd-3fbe-9b1f" name="T">4</characteristic>
+                <characteristic typeId="57ee-1126-32a9-5672" name="W">3</characteristic>
+                <characteristic typeId="62d3-22d7-2d49-52dc" name="I">5</characteristic>
+                <characteristic typeId="f111-2ce5-dd12-d6b0" name="A">4</characteristic>
+                <characteristic typeId="e8a6-1da9-d384-8727" name="Ld">9</characteristic>
+                <characteristic typeId="e593-6b3c-f169-04f0" name="Save">2+</characteristic>
+                <characteristic typeId="ddd7-6f5c-a939-b69e" name="Unit Type">Infantry (Character, Unique)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe10-fd65-4da2-9242"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f095-1a5f-44c5-b624"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Banestrike bolter" hidden="false" type="selectionEntry" targetId="6865-354c-0880-ee5f" id="661b-0109-4343-861e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="127f-aa77-4824-92af"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fcd-c83b-4e49-ac81"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Iron halo" hidden="false" type="selectionEntry" targetId="b081-bf3c-f43d-4bd5" id="a12e-fe1f-4a09-874c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0693-fa82-4f5b-ab40"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2502-e704-4875-85fc"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Frag grenades" hidden="false" type="selectionEntry" targetId="cf9c-327b-3449-00d7" id="5c40-0aaa-4c4d-9f2b">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8eaf-4060-4942-a5d0"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9f15-d6ff-4363-987a"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Krak grenades" hidden="false" type="selectionEntry" targetId="99df-2421-acf7-a5ad" id="43ef-d0bb-4fe9-bf22">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2b0b-75ca-4663-aa9f"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2dda-d5b4-49ba-a2b1"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <comment>
+</comment>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="3a68-c48b-4613-bab4" name="Infantry" primary="false"/>
+            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="3a39-5179-4b56-85e4" name="Character" primary="false"/>
+            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="76a6-8678-4247-a7cd" name="Unique" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Mourn-it-all" hidden="false" id="108c-7be9-b1a0-8837">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8cda-7785-2367-9604-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8cda-7785-2367-9604-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Mourn-it-all" hidden="false" id="8cc3-89d6-4d75-1685" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="d882-d2a-5da1-92c4" page="191">
+                  <characteristics>
+                    <characteristic name="Range" id="bfe1-aaac-a281-f8b6" hidden="false" typeId="95ba-cda7-b831-6066">-</characteristic>
+                    <characteristic name="Strength" id="f4ac-eed9-a615-423" hidden="false" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                    <characteristic name="AP" id="5d6c-9ffc-80c5-4501" hidden="false" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                    <characteristic name="Type" id="f750-ff58-928-5644" hidden="false" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Murderous Strike (5+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Master-crafted" id="11fa-6fd8-a6c0-723f" hidden="false" type="rule" targetId="6de0-55b0-bf21-48b9"/>
+                <infoLink name="Murderous Strike (X)" id="6e8a-d43a-f619-2e53" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+                  <modifiers>
+                    <modifier type="set" value="Murderous Strike (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Castigatus Combat Shield" hidden="false" id="f026-9776-7836-9c95">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f8a-e651-260b-9d91-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f8a-e651-260b-9d91-max" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Castigatus Combat Shield" hidden="false" id="975d-6283-59c2-8b5e" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" page="191" publicationId="d882-d2a-5da1-92c4">
+                  <characteristics>
+                    <characteristic name="Description" id="fb73-ce9e-a865-2c2d" hidden="false" typeId="347e-ee4a-764f-6be3">A Castigatus combat shield provides a 5+ Invulnerable Save and each time a successful Invulnerable Saving Throw is made for a model with a Castigatus combat shield against a melee attack, the unit that made that attack suffers asingle Str 4 AP - hit. A model with a Castigatus combat shield cannot claim bonus attacks for having more than one melee weapon, or make attacks during the Assault phase using a weapon with the Two-handed special rule.
+Invulnerable Saves granted by a Castigatus combat shield do not stack with other Invulnerable Saves, but can benefit from rules (such as cyber-familiar) that specifically increase existing saves. If a model has another Invulnerable Save then the controlling player must choose which one to use.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Legiones Astartes (X)" hidden="false" type="rule" targetId="ffcb-13b4-9b4c-84da" id="0361-d368-4a46-9632">
+          <modifiers>
+            <modifier type="set" field="name" value="Legiones Astartes (Sons of Horus)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Master of the Legion" hidden="false" type="rule" targetId="c772-87ea-d49c-c7ba" id="46e1-a18c-4134-a046"/>
+        <infoLink name="Relentless" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d" id="c6d9-902f-4e8b-8d69"/>
+        <infoLink name="Traitor" hidden="false" type="rule" targetId="eff2-8b0e-21da-2f0d" id="81da-5594-47c3-b093"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="381f-2bc8-8a74-2cad" type="selectionEntry" targetId="0176-56a3-d590-b103">
+          <profiles>
+            <profile name="Little Horus" hidden="false" id="9c0a-3c18-7db3-1f59" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" publicationId="d882-d2a-5da1-92c4" page="190">
+              <characteristics>
+                <characteristic name="Text" id="cefd-af49-ec65-af16" hidden="false" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Horus Aximand automatically has the Little Horus Warlord Trait and may not select any other.
+Little Horus – The first time in any battle when Horus Aximand is reduced to 0 Wounds for any reason, he is not removed as a casualty, but instead remains inplay and regains D3 Wounds. This has no effect against attacks or rules which remove the model as a casualty without inflicting Wounds or against attacks with the Instant Death special rule.
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+        <entryLink import="true" name="Retinue" hidden="false" id="1a57-3c15-2c9a-48cb" collective="false" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
+      </entryLinks>
+      <rules>
+        <rule name="Haunted" id="eb36-7380-6bad-1660" hidden="false" publicationId="d882-d2a-5da1-92c4" page="191">
+          <description>If Garviel Loken is removed as a casualty whilst locked in combat with Horus Aximand or any unit he has joined then Horus Aximand’s controlling player gains +1 bonus Victory point in addition to any others that might be gained from this; this bonus is increased to +2 bonus Victory points if Garviel Loken is removed as a casualty while Engaged in a Challenge with Horus Aximand.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
