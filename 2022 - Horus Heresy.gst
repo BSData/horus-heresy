@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="104" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="105" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -261,7 +261,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
         <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
           <alias>
-            <undefined>Infantry</undefined>
+            <undefined/>
           </alias>
           <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
@@ -10506,7 +10506,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditions>
-            <condition type="instanceOf" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -15743,18 +15743,6 @@ applied to models without the Character Unit sub-type).</description>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fcf-22ac-21a5-eb9b"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a7ae-9b4b-1a10-79ef"/>
               </constraints>
-              <modifiers>
-                <modifier type="decrement" value="1" field="1fcf-22ac-21a5-eb9b">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ced-ce18-5d5b-e54" shared="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="ced-ce18-5d5b-e54" shared="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
