@@ -148,21 +148,7 @@
         <infoLink id="8449-7ce9-bf21-5851" name="Fortification" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false" targetId="11c9-a7b5-30fb-dc0c" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch:" hidden="false">
-      <modifiers>
-        <modifier type="set" field="5835-8a51-b8c1-17c4" value="0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-ff79-2e32-99b2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5835-8a51-b8c1-17c4" type="max"/>
-      </constraints>
+    <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch Unit Type" hidden="false">
       <rules>
         <rule id="a895-3e13-98e4-b67c" name="Primarch Unit-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
           <description>• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
@@ -1338,6 +1324,23 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Primarch:" id="e031-3c2-e3f8-d40a" hidden="false">
+      <comment>Force Org Slot</comment>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5835-8a51-b8c1-17c4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="5835-8a51-b8c1-17c4">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="9289-ff79-2e32-99b2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -1600,7 +1603,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a78-0551-84cc-20b0" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c5e5-cb96-3835-591a" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false">
+        <categoryLink id="c5e5-cb96-3835-591a" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false" type="category">
           <modifiers>
             <modifier type="set" field="3210-baff-f554-8019" value="0">
               <conditionGroups>
@@ -2088,7 +2091,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0f5-6aa4-8e07-5b51" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false">
+        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false" type="category">
           <modifiers>
             <modifier type="set" field="300d-0f17-be7c-1e2b" value="0">
               <conditionGroups>
