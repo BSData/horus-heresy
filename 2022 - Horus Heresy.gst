@@ -149,21 +149,7 @@
         <infoLink id="8449-7ce9-bf21-5851" name="Fortification" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false" targetId="11c9-a7b5-30fb-dc0c" type="rule"/>
       </infoLinks>
     </categoryEntry>
-    <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch:" hidden="false">
-      <modifiers>
-        <modifier type="set" field="5835-8a51-b8c1-17c4" value="0">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-ff79-2e32-99b2" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5835-8a51-b8c1-17c4" type="max"/>
-      </constraints>
+    <categoryEntry id="ad5f-31db-8bc7-5c46" name="Primarch Unit Type" hidden="false">
       <rules>
         <rule id="a895-3e13-98e4-b67c" name="Primarch Unit-type" publicationId="e77a-823a-da94-16b9" page="196" hidden="false">
           <description>• All Primarchs have the following special rules: Independent Character, Eternal Warrior, Fearless, It Will Not Die (5+), Bulky (4), and Relentless. In addition, all models with the Primarch unit type always count as Character models.
@@ -1342,6 +1328,23 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
     </categoryEntry>
     <categoryEntry name="Blackshields Primary Detachment" id="3410-6cb0-2f2b-a28a" hidden="false"/>
     <categoryEntry name="Blackshields Optional Detachment" id="e3b2-7cd8-eab7-92eb" hidden="false"/>
+    <categoryEntry name="Primarch:" id="e031-3c2-e3f8-d40a" hidden="false">
+      <comment>Force Org Slot</comment>
+      <constraints>
+        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="5835-8a51-b8c1-17c4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="0" field="5835-8a51-b8c1-17c4">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="9289-ff79-2e32-99b2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -1639,7 +1642,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a78-0551-84cc-20b0" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c5e5-cb96-3835-591a" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false">
+        <categoryLink id="c5e5-cb96-3835-591a" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false" type="category">
           <modifiers>
             <modifier type="set" field="3210-baff-f554-8019" value="0">
               <conditionGroups>
@@ -2190,7 +2193,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0f5-6aa4-8e07-5b51" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="ad5f-31db-8bc7-5c46" primary="false">
+        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false" type="category">
           <modifiers>
             <modifier type="set" field="300d-0f17-be7c-1e2b" value="0">
               <conditionGroups>
@@ -6618,7 +6621,7 @@ Additionally, a machinator array incorporates a flamer and a meltagun. A model w
           <profiles>
             <profile id="cacb-5e1d-6945-8b31" name="Fortified Wall (Strongpoint)" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Building) (Small)</characteristic>
                 <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
                 <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
                 <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
@@ -6645,6 +6648,9 @@ Fire Point (Front 4)</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="a24f-12d8-36c1-f477" id="2341-d478-43ea-8a68" name="Fortification:" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -6661,7 +6667,7 @@ Fire Point (Front 4)</characteristic>
           <profiles>
             <profile id="a90d-c9aa-b959-fb0f" name="Imperial Bunker" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building) (Small)</characteristic>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Building) (Small)</characteristic>
                 <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
                 <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
                 <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
@@ -6682,6 +6688,9 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="a24f-12d8-36c1-f477" id="0229-61ff-4de5-aff5" name="Fortification:" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -8732,7 +8741,7 @@ A. No.</description>
       <profiles>
         <profile id="2795-a146-5fb9-2870" name="Firestorm Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
           <characteristics>
-            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building)</characteristic>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Building)</characteristic>
             <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
             <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
@@ -8773,7 +8782,7 @@ Two Turret Mounted Lascannons</characteristic>
           <profiles>
             <profile id="281f-35c7-478d-0036" name="Vengeance Weapon Battery" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Emplacement)</characteristic>
                 <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
                 <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
                 <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
@@ -8808,6 +8817,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           </costs>
           <categoryLinks>
             <categoryLink targetId="3eeb-b4b8-3d85-245a" id="43c1-7dc4-4f66-b763" name="Emplacement Sub-type" primary="false"/>
+            <categoryLink targetId="a24f-12d8-36c1-f477" id="9d80-388a-4821-a812" name="Fortification:" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -8819,7 +8829,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
       <profiles>
         <profile id="cb9f-fdc9-32a6-0771" name="Void Shield Generator" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
           <characteristics>
-            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Emplacement)</characteristic>
             <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
             <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
@@ -8856,7 +8866,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
       <profiles>
         <profile id="915d-5819-74d9-cd85" name="Hammerfall Bunker" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification" publicationId="d0df-7166-5cd3-89fd" page="103">
           <characteristics>
-            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Emplacement)</characteristic>
             <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
             <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>
@@ -8937,7 +8947,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="f8ca-5e97-f247-e19c" name="Primus Redoubt" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
           <characteristics>
-            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Massive, Building)</characteristic>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Massive, Building)</characteristic>
             <characteristic name="BS" typeId="728e-b496-e2b2-ca81">3</characteristic>
             <characteristic name="Front" typeId="d8de-057f-70b2-4a08">14</characteristic>
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">14</characteristic>
@@ -8978,7 +8988,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="d362-f086-1dea-b586" name="Aquila Strongpoint" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
           <characteristics>
-            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Massive, Building)</characteristic>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Massive, Building)</characteristic>
             <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
             <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
@@ -9013,7 +9023,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <profiles>
             <profile id="3ada-879c-de30-daba" name="Tower" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Emplacement)</characteristic>
                 <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
                 <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
                 <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
@@ -9033,6 +9043,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </costs>
           <categoryLinks>
             <categoryLink targetId="3eeb-b4b8-3d85-245a" id="076b-78d8-46ba-a6ed" name="Emplacement Sub-type" primary="false"/>
+            <categoryLink targetId="a24f-12d8-36c1-f477" id="6f4f-e264-4412-af4d" name="Fortification:" primary="false"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry id="1332-1487-ac2c-3921" name="Bunker Annex" hidden="false" collective="false" import="true" type="model">
@@ -9043,7 +9054,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <profiles>
             <profile id="2e57-ef1d-d4dd-027c" name="Bunker Annex" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
               <characteristics>
-                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Building)</characteristic>
+                <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Building)</characteristic>
                 <characteristic name="BS" typeId="728e-b496-e2b2-ca81">2</characteristic>
                 <characteristic name="Front" typeId="d8de-057f-70b2-4a08">13</characteristic>
                 <characteristic name="Side" typeId="bf04-0a1d-3347-3320">13</characteristic>
@@ -9090,6 +9101,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </costs>
           <categoryLinks>
             <categoryLink targetId="9f1e-fbf0-3032-32fe" id="8af4-11d7-46c2-b6c4" name="Building Sub-type" primary="false"/>
+            <categoryLink targetId="a24f-12d8-36c1-f477" id="d87b-579e-4808-a9de" name="Fortification:" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -9101,7 +9113,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       <profiles>
         <profile id="27f6-eb07-0b35-d3ba" name="Skyshield Landing Pad" hidden="false" typeId="eeec-bde3-8ee4-35b0" typeName="Fortification">
           <characteristics>
-            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortificaion (Emplacement)</characteristic>
+            <characteristic name="Unit Type" typeId="61e0-0fff-1638-759c">Fortification (Emplacement)</characteristic>
             <characteristic name="BS" typeId="728e-b496-e2b2-ca81">-</characteristic>
             <characteristic name="Front" typeId="d8de-057f-70b2-4a08">12</characteristic>
             <characteristic name="Side" typeId="bf04-0a1d-3347-3320">12</characteristic>

@@ -35,6 +35,23 @@
     </categoryEntry>
     <categoryEntry name="Knight Household" hidden="false" id="5f7-c0fa-4d3-180c"/>
     <categoryEntry name="White Scars Legiones Cybernetica" hidden="false" id="bf35-189d-498c-aeb5"/>
+    <categoryEntry name="Armiger Unit Type" hidden="false" id="41ff-7fc9-d4a0-da2" publicationId="bde1-6db1-163b-3b76" page="90">
+      <rules>
+        <rule name="Armiger Unit-Type" hidden="false" id="53f7-6b93-cc7a-b976" publicationId="bde1-6db1-163b-3b76" page="90">
+          <description>As with other Unit Types, the Armiger Type includes a number of Unit Sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Armiger models and any Armiger Unit Sub-types:
+• Successful Wounds scored by attacks with the Poisoned (X) or Fleshbane special rules must be re-rolled against models of the Armiger Unit Type.
+• All Armiger models have the Stubborn special rule.
+• A model with the Armiger Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
+• A model of the Armiger Type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
+• No model that is not also of the Armiger Unit Type may join a unit that includes an Armiger model.
+• A model with the Armiger Unit type is affected by the Haywire, Detonation, Armourbane (X) and Battlesmith (X) special rules as if it had the Dreadnought Unit Type.</description>
+        </rule>
+        <rule name="Armiger and Moirax Talons" hidden="false" id="d840-fbd0-352e-b33e" publicationId="bde1-6db1-163b-3b76" page="102">
+          <description>The Scout Knights of the Taghmata and Questoris Households often roamed the battlefield independently as the vanguard of their orders. While each war machine strode the battlefield distant from their companions, they shared fierce bonds of fealty and brotherhood.
+When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e825-c60e-e6c3-60f0" name="Photon Gauntlet" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
@@ -1794,7 +1811,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <categoryLink id="becc-46dc-f49b-4272" name="Skirmish Sub-type" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="488a-c9e1-0b4f-5349" name="Armiger Helverin" publicationId="bde1-6db1-163b-3b76" page="77" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="488a-c9e1-0b4f-5349" name="Armiger Helverin" publicationId="bde1-6db1-163b-3b76" page="77" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="95b8-4369-aeaf-7a3a" type="min"/>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72d1-6119-3a1b-46ed" type="max"/>
@@ -1902,6 +1919,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="41ff-7fc9-d4a0-da2" id="4c79-8dc9-4579-afbb" name="Armiger Unit Type" primary="false"/>
+            <categoryLink targetId="59a4-7b61-600a-c457" id="6328-d00c-471e-931a" name="Skirmish Sub-type" primary="false"/>
+            <categoryLink targetId="6399-5c65-7833-1025" id="73c1-3577-4721-8c8e" name="Line Sub-type" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1917,7 +1939,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <categoryLink id="d253-48d8-cdf3-0cdb" name="Skirmish Sub-type" hidden="false" targetId="59a4-7b61-600a-c457" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="0670-d7df-534f-4c84" name="Armiger Warglaive" publicationId="bde1-6db1-163b-3b76" page="76" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="0670-d7df-534f-4c84" name="Armiger Warglaive" publicationId="bde1-6db1-163b-3b76" page="76" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2709-f87c-b1ff-baa2" type="min"/>
             <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aedd-d5ac-4980-0eb6" type="max"/>
@@ -2038,6 +2060,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
           </costs>
+          <categoryLinks>
+            <categoryLink targetId="41ff-7fc9-d4a0-da2" id="2951-cb41-4c91-81d4" name="Armiger Unit Type" primary="false"/>
+            <categoryLink targetId="59a4-7b61-600a-c457" id="eb06-2e6d-440b-9e98" name="Skirmish Sub-type" primary="false"/>
+            <categoryLink targetId="6399-5c65-7833-1025" id="130d-3485-4b30-bc70" name="Line Sub-type" primary="false"/>
+          </categoryLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -8068,19 +8095,6 @@ A Psyker with this Discipline gains the listed Power, weapon and special rules b
   <sharedRules>
     <rule id="41ab-227d-9d91-8001" name="Flank Speed" publicationId="bde1-6db1-163b-3b76" page="104" hidden="false">
       <description>A model with this special rule may increase its Movement Distance by 4&quot; in any Movement phase, but if it does so it may not make any Shooting Attacks in the subsequent Shooting phase. Note this model may still Charge in the Assault phase. In addition, when declaring a Charge after making a Shooting Attack, a model with this special rule may Charge a unit that it did not target in that turn’s Shooting phase, provided that the target of the Charge meets all other criteria of a valid Charge target.</description>
-    </rule>
-    <rule id="53f7-6b93-cc7a-b976" name="Armiger Unit-Type" publicationId="bde1-6db1-163b-3b76" page="90" hidden="false">
-      <description>As with other Unit Types, the Armiger Type includes a number of Unit Sub-types which may be referenced in other Age of Darkness books. The following rules apply to all Armiger models and any Armiger Unit Sub-types:
-• Successful Wounds scored by attacks with the Poisoned (X) or Fleshbane special rules must be re-rolled against models of the Armiger Unit Type.
-• All Armiger models have the Stubborn special rule.
-• A model with the Armiger Unit Type may fire all weapons they are equipped with in each Shooting Attack they make, including as part of a Reaction.
-• A model of the Armiger Type may fire Heavy and Ordnance weapons and counts as Stationary even if it moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
-• No model that is not also of the Armiger Unit Type may join a unit that includes an Armiger model.
-• A model with the Armiger Unit type is affected by the Haywire, Detonation, Armourbane (X) and Battlesmith (X) special rules as if it had the Dreadnought Unit Type.</description>
-    </rule>
-    <rule id="d840-fbd0-352e-b33e" name="Armiger and Moirax Talons" publicationId="bde1-6db1-163b-3b76" page="102" hidden="false">
-      <description>The Scout Knights of the Taghmata and Questoris Households often roamed the battlefield independently as the vanguard of their orders. While each war machine strode the battlefield distant from their companions, they shared fierce bonds of fealty and brotherhood.
-When deployed onto the battlefield (either at the start of the battle or when arriving from Reserves) all models in the unit must be placed within unit coherency, but afterwards operate independently and are not treated as a single unit.</description>
     </rule>
     <rule id="e993-bb10-e7fc-c959" name="Ram (X)" publicationId="8200-f05a-6e7d-9326" page="2" hidden="false">
       <description>When a model with a weapon with this special rule performs a Ram Attack, it inflicts a number of additional hits equal to the value of X. These additional hits are resolved using the profile of the weapon with this special rule.</description>
