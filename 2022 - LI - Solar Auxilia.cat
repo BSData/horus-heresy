@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -2371,6 +2371,9 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="2bb2-1e37-d09b-d28b"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="1905-2087-cffc-4839" name="Veletaris Tercio" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2392,6 +2395,8 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca24-f640-593d-b537" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="297b-656f-3c1c-8c5c"/>
+        <constraint type="max" value="3" field="selections" scope="self" shared="true" id="d497-66f1-6c32-3517"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="4ee4-cb02-24f5-137f" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -6090,6 +6095,10 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="self" shared="true" id="b42d-4383-37ef-25a5"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="9e1a-134-a033-97ea"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="7ac4-c39b-5c48-63cb" name="Command Vox" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -6905,6 +6914,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="decrement" value="1" field="bc8c-0dc9-0876-cbae">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d10d-00fa-2cd1-05f0" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -6927,6 +6943,8 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ce1-5f74-d914-f276" type="max"/>
+        <constraint type="max" value="3" field="selections" scope="self" shared="true" id="b70f-32d-b5d8-35c2"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="9242-919-2dc8-6a56"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="d37b-b569-c471-ef76" name="Artillery Command Section" hidden="false" collective="false" import="true" type="unit">
@@ -9879,6 +9897,13 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="decrement" value="1" field="cb4f-3832-eec2-00af">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5a6c-6acd-7682-555b" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
