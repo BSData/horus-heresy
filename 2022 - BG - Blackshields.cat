@@ -1887,6 +1887,11 @@
     <entryLink import="true" name="Character Stat Improvement" hidden="true" id="480-2f9b-1cc-860c" type="selectionEntryGroup" targetId="5e99-fcf2-6b64-e88e"/>
     <entryLink import="true" name="Character Stat Improvement" hidden="true" id="9930-827e-6f5-ca1c" type="selectionEntryGroup" targetId="5e99-fcf2-6b64-e88e"/>
     <entryLink import="true" name="Character Stat Improvement" hidden="true" id="739c-afd9-fad7-67be" type="selectionEntryGroup" targetId="5e99-fcf2-6b64-e88e"/>
+    <entryLink import="true" name="Endryd Haar" hidden="false" id="8d73-8815-7413-aa30" type="selectionEntry" targetId="ca26-70f-7d3c-83b9">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="855e-8e7-b0f4-15fa" primary="true" name="HQ:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legions Astartes" id="efcb-808e-1ce0-2a87" targetId="6393-649c-7213-a327" importRootEntries="true"/>
@@ -1897,7 +1902,7 @@
         <entryLink import="true" name="Oaths of Vengeance and Wrath" hidden="false" id="eb0d-46f4-7765-f77a" collective="false" targetId="4fb2-9198-2498-adf3" type="selectionEntryGroup"/>
       </entryLinks>
       <categoryLinks>
-        <categoryLink targetId="cb34-ca48-547a-5d90" id="27af-7c24-1722-f297" primary="true" name="Oaths of Wrath and Vengeance"/>
+        <categoryLink targetId="cb34-ca48-547a-5d90" id="27af-7c24-1722-f297" primary="true" name="Blackshield Oaths"/>
       </categoryLinks>
       <constraints>
         <constraint type="min" value="1" field="selections" scope="force" shared="true" id="5080-193c-9a62-501a" includeChildSelections="false"/>
@@ -1905,4 +1910,79 @@
       </constraints>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Endryd Haar" hidden="false" id="ca26-70f-7d3c-83b9">
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Archaeotech Pistol" hidden="false" id="c889-43a8-aa4c-32e9" type="selectionEntry" targetId="c22a-ed4d-af68-bf00" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d38-67ce-411a-2c3c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aef6-3bc9-5d9b-9c55" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="9c2b-236c-a85c-f323" type="selectionEntry" targetId="b081-bf3c-f43d-4bd5" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27f9-d200-e4b8-61f6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e624-a2f1-fb0a-3fe2" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="4d14-761d-dbd3-75cb" type="selectionEntry" targetId="4fd8-9e1f-ae28-3004" sortIndex="4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="325b-9bd-ed33-31d6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc18-3d38-bda1-6de1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="8935-b4c6-4c19-7e49" type="selectionEntry" targetId="99df-2421-acf7-a5ad" sortIndex="5">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5499-257a-367d-4be6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e29-fe65-e493-e2fb" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Artificer Armour" hidden="false" id="d0a9-8251-925b-87d1" type="selectionEntry" targetId="583e-62cb-53f1-f952" sortIndex="6">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96aa-37a5-d95d-bd83" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8e5-5005-c91c-657b" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Terrawat-pattern Power Gauntlet" hidden="false" id="f5fb-3eff-fcae-6938" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7419-55f1-76bf-f4c8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ef-78fb-81c4-6132" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Terrawat-pattern Power Gauntlet" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c9c4-1cd1-b02d-9727">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Specialist Weapon, Brutal (2), Charged Attacks</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Unwieldy" id="5918-b3c5-450-7b7c" hidden="false" type="rule" targetId="1570-c21a-881f-8b8a"/>
+            <infoLink name="Specialist Weapon" id="c908-e494-6b4b-61c5" hidden="false" type="rule" targetId="1a1f-3c9b-b097-5886"/>
+            <infoLink name="Brutal (X)" id="eb0d-2b06-717b-ebcd" hidden="false" type="rule" targetId="5079-1fec-d32b-8b84">
+              <modifiers>
+                <modifier type="set" value="Brutal (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <rules>
+            <rule name="Charged Attacks" id="964d-fbb5-e02-54ab" hidden="false">
+              <description>Each time Endryd Haar makes attacks with this weapon, he can make Charged Attacks. If he does so, halve the total number of Attacks Endryd Haar makes (rounding up), but change the Strength characteristic of his Terrawat-pattern Power Gauntlet to &apos;x3&apos;.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="65eb-4e66-4e5d-dc82" primary="false" name="Infantry Unit Type"/>
+        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="c70c-90a9-bd79-6805" primary="false" name="Legiones Astartes"/>
+      </categoryLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </catalogue>
