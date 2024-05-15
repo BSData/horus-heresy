@@ -10557,6 +10557,22 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </rule>
       </rules>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blackshields Oaths Verification Issues (USE NEWRECRUIT FOR NO ISSUES)" hidden="false" id="ab36-c6f8-dec3-137f">
+      <rules>
+        <rule name="Blackshields Oaths Verification Issues (USE NEWRECRUIT FOR NO ISSUES)" id="9039-6339-6c8e-d7a" hidden="false">
+          <description>There are known issues with the verification for weapon selections when using the Weapons of Desperation or the Legacy of Nikaea.
+
+
+This is due to an underlying technical restriction of the application and is not something we can fix easily within the dataset. As BattleScribe has been abandoned by the owner of the project, there was always going to come a point we would struggle to surpass. 
+
+
+Please do not report validation issues as a bug, we are aware of them, and are investigating as to whether or not we can fix them.
+
+
+If you wish to use the list builder that supports the design choices we have made, please head on over to https://www.newrecruit.eu instead</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
