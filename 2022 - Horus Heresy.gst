@@ -2384,7 +2384,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <conditionGroup type="and">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="roster" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="force" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -10516,16 +10516,21 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Beholden to None" hidden="false" id="956a-36dc-217e-63b1">
+    <selectionEntry type="upgrade" import="true" name="Beholden to None" hidden="true" id="956a-36dc-217e-63b1">
       <modifiers>
         <modifier type="set" value="false" field="hidden">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4453-fb97-4d88-89b9" includeChildSelections="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4453-fb97-4d88-89b9" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1816-c5f0-8654-b8b5" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
@@ -11102,7 +11107,10 @@ Twisted Desire – This Advanced Reaction may be made once per battle during the
               <description>TODO</description>
             </rule>
             <rule name="Blackshields and Allegiance" hidden="false" id="c6b7-9ad0-3be1-2125">
-              <description>TODO</description>
+              <description>When included in an army as part of a Primary Detachment, models with this special rule are counted as having both Loyalist and Traitor Allegiances by any special rule that targets Allegiance.
+
+
+However, when included as an Allied Detachment or other non-Primary detachment, models with this special rule are only considered to have the same Allegiance as their primary detachment.</description>
             </rule>
           </rules>
           <categoryLinks>
