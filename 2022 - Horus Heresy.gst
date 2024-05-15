@@ -10584,7 +10584,7 @@ If you wish to use the list builder that supports the design choices we have mad
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1813-87b6-49aa-babb" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="b2b4-2198-0b90-dd9f" name="I: Dark Angels" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b2b4-2198-0b90-dd9f" name="I: Dark Angels" hidden="false" collective="false" import="true" type="upgrade" sortIndex="2">
           <rules>
             <rule id="0d8d-2e8f-a616-d339" name="The Armoury of the Dark Angels" hidden="false">
               <description>• Any model with the Character Unit Sub-type and the Legiones Astartes (Dark Angels) special rule may exchange a power sword for a Calibanite warblade for +5 Points, The weapon is counted as a &quot;Power&quot; Weapon for those rules that affect such weapons.
@@ -10622,7 +10622,7 @@ The Angels of Death – This Advanced Reaction may be made once per battle, when
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="3edc-a1b9-6dc6-b1ea" name="III: Emperor&apos;s Children" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="3edc-a1b9-6dc6-b1ea" name="III: Emperor&apos;s Children" hidden="false" collective="false" import="true" type="upgrade" sortIndex="3">
           <rules>
             <rule id="b35c-3f2d-e16a-54fb" name="The Armoury of the Emperor&apos;s Children" hidden="false">
               <description>• Any model with the Traitor Alliegance and both the Legiones Astartes (Emperor&apos;s Children) and Character Unit Sub-type but not the Unique Sub-type may select a single Surgical Augment from the list below for a cost of +20 Points
@@ -10661,7 +10661,7 @@ The Perfect Counter – This Advanced Reaction may be made once per battle durin
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="5f54-457a-fbb9-6730" name="IV: Iron Warriors" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="5f54-457a-fbb9-6730" name="IV: Iron Warriors" hidden="false" collective="false" import="true" type="upgrade" sortIndex="5">
           <rules>
             <rule id="fc44-1c30-d724-14cf" name="Wrack &amp; Ruin" hidden="false">
               <description>When a model with this special rule makes a Shooting Attack or Melee attack targeting a model with the Dreadnought, Automata, Vehicle or Building Unit Type it gains +1 to the Strength of that attack.</description>
@@ -10686,7 +10686,7 @@ Bitter Fury – Bitter Fury – This Advanced Reaction may be made once per batt
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="e01e-5cdd-e512-8353" name="V: White Scars" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="e01e-5cdd-e512-8353" name="V: White Scars" hidden="false" collective="false" import="true" type="upgrade" sortIndex="6">
           <rules>
             <rule id="ad49-4098-2037-6dda" name="The Armoury of the White Scars" hidden="false">
               <description>• Any model with both the Legiones Astartes (White Scars) and Independent Character sepcial rules, but not the Unique Sub-type, may exchange a Legion Scimitar jetbike for a Legion Shamshir jetbike for no additional points cost. A Legion Shamshir jetbike has one Scatterbolt Launcher, in addition, a model with a Legion Shamshir Jetbike that chooses to Run gains the Shrouded (5+) special rule until the start of the controlling player&apos;s next turn. A model with the Infantry Unit Type that selects a Legion Shamshir Jetbike as an upgrade must change its unit type to Cavalry (Antigrav), keeping any other Unit Sub-types it previously had, Changes it&apos;s movement characteristic to 15&quot;, gains the Firing Protocls (2) and Hammer of Wrath (1) special rules and improved its Armour Save to 2+ if it was worse.
@@ -10725,7 +10725,7 @@ Chasing the Wind – This Advanced Reaction may be made once per battle during t
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="4916-965e-8339-44f6" name="VI: Space Wolves" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="4916-965e-8339-44f6" name="VI: Space Wolves" hidden="false" collective="false" import="true" type="upgrade" sortIndex="7">
           <rules>
             <rule id="11d9-9375-cd1f-e22f" name="The Armoury of the Space Wolves" hidden="false">
               <description>• Any model with the Legiones Astartes (Space Wolves) special rule may exchange a Chainsword for a Fenrisian Axe for +2 points each.
@@ -10772,7 +10772,7 @@ No Prey Escapes the Wolf – This Advanced Reaction may be made once per battle 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="a0e1-f2c4-8bcd-0723" name="VII: Imperial Fists" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a0e1-f2c4-8bcd-0723" name="VII: Imperial Fists" hidden="false" collective="false" import="true" type="upgrade" sortIndex="8">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10792,7 +10792,7 @@ The Best Defence – This Advanced Reaction may be made once per battle, during 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="b28b-71f7-e4f4-8f9c" name="VIII: Night Lords" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="b28b-71f7-e4f4-8f9c" name="VIII: Night Lords" hidden="false" collective="false" import="true" type="upgrade" sortIndex="9">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10812,7 +10812,7 @@ The Better Part of Valour – This Advanced Reaction may be made once per battle
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="296e-301e-3ce1-1c15" name="IX: Blood Angels" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="296e-301e-3ce1-1c15" name="IX: Blood Angels" hidden="false" collective="false" import="true" type="upgrade" sortIndex="10">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10833,7 +10833,7 @@ The Wrath of Angels – This Advanced Reaction may be made once per battle durin
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="bfc9-c99c-bf8a-3917" name="X: Iron Hands" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bfc9-c99c-bf8a-3917" name="X: Iron Hands" hidden="false" collective="false" import="true" type="upgrade" sortIndex="11">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10854,7 +10854,7 @@ The Gorgon’s Spite – This Advanced Reaction may be made once per battle duri
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="90ee-77dd-1b7f-ddfe" name="XII: World Eaters" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="90ee-77dd-1b7f-ddfe" name="XII: World Eaters" hidden="false" collective="false" import="true" type="upgrade" sortIndex="12">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10874,7 +10874,7 @@ The Savage Tide – This Advanced Reaction may be made once per battle during th
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="8e0f-3552-8842-f281" name="XIII: Ultramarines" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="8e0f-3552-8842-f281" name="XIII: Ultramarines" hidden="false" collective="false" import="true" type="upgrade" sortIndex="13">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10894,7 +10894,7 @@ Unity of Purpose – This Advanced Reaction may be made once per battle during t
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="dd1f-1c51-706c-e5f7" name="XIV: Death Guard" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="dd1f-1c51-706c-e5f7" name="XIV: Death Guard" hidden="false" collective="false" import="true" type="upgrade" sortIndex="14">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10914,7 +10914,7 @@ Remorseless Advance – This Advanced Reaction may be made once per battle durin
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="21c3-2f28-7820-e51a" name="XV: Thousand Sons" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="21c3-2f28-7820-e51a" name="XV: Thousand Sons" hidden="false" collective="false" import="true" type="upgrade" sortIndex="15">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10934,7 +10934,7 @@ Fortress of the Mind – This Advanced Reaction may be made once per battle duri
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="01b4-57c7-bf61-2abf" name="XVI: Sons of Horus" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="01b4-57c7-bf61-2abf" name="XVI: Sons of Horus" hidden="false" collective="false" import="true" type="upgrade" sortIndex="16">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10954,7 +10954,7 @@ Death Dealers – This Advanced Reaction may be made once per battle during the 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="9dbf-0760-d7ae-f125" name="XVII: Word Bearers" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="9dbf-0760-d7ae-f125" name="XVII: Word Bearers" hidden="false" collective="false" import="true" type="upgrade" sortIndex="17">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10974,7 +10974,7 @@ Glorious Martyrdom – This Advanced Reaction may be made once per battle during
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="c805-ca3a-ff93-5e2f" name="XVIII: Salamanders" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c805-ca3a-ff93-5e2f" name="XVIII: Salamanders" hidden="false" collective="false" import="true" type="upgrade" sortIndex="18">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -10994,7 +10994,7 @@ Duty is Sacrifice – This Advanced Reaction may be made once per battle during 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="dc34-fe08-dd44-fb99" name="XIX: Raven Guard" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="dc34-fe08-dd44-fb99" name="XIX: Raven Guard" hidden="false" collective="false" import="true" type="upgrade" sortIndex="19">
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
@@ -11014,7 +11014,7 @@ Fade to Black – This Advanced Reaction may be made once per battle during the 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="c0df-c1fa-5ddc-9ee5" name="XX: Alpha Legion" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="c0df-c1fa-5ddc-9ee5" name="XX: Alpha Legion" hidden="false" collective="false" import="true" type="upgrade" sortIndex="20">
           <rules>
             <rule id="06c1-6ce0-6fc2-f106" name="Legion Consularis: Saboteur" publicationId="09c5-eeae-f398-b653" page="335" hidden="false">
               <description>A Legion Centurion with the Legiones Astartes (Alpha Legion) special rule may be upgraded to a Saboteur.
@@ -11050,7 +11050,7 @@ Smoke and Mirrors – This Advanced Reaction may be made once per battle during 
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry id="268b-74a8-395f-6f27" name="III: Emperor&apos;s Children (Legion Hereticus)" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="268b-74a8-395f-6f27" name="III: Emperor&apos;s Children (Legion Hereticus)" hidden="false" collective="false" import="true" type="upgrade" sortIndex="4">
           <rules>
             <rule id="a6b9-20bf-c73f-a5fa" name="The Divine Instruments" hidden="false">
               <description>Models with this special rule gain access to unique Wargear options (see The Armoury of Indulgence on page 111).
@@ -11104,7 +11104,7 @@ Twisted Desire – This Advanced Reaction may be made once per battle during the
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Blackshields" hidden="false" id="ae4a-f95c-968e-eb46">
+        <selectionEntry type="upgrade" import="true" name="Blackshields" hidden="false" id="ae4a-f95c-968e-eb46" sortIndex="1">
           <profiles>
             <profile name="Blackshields Advanced Reaction" hidden="false" id="77b2-efbe-6629-1ae7" publicationId="d882-d2a-5da1-92c4" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
               <characteristics>
