@@ -1361,7 +1361,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
         <categoryLink id="fd89-b215-5545-17c6" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
-        <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083" type="category">
+        <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083">
           <modifiers>
             <modifier type="set" value="1" field="5cdb-d88d-5c88-7ff1">
               <conditionGroups>
@@ -1644,7 +1644,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a78-0551-84cc-20b0" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="c5e5-cb96-3835-591a" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false" type="category">
+        <categoryLink id="c5e5-cb96-3835-591a" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false">
           <modifiers>
             <modifier type="set" field="3210-baff-f554-8019" value="0">
               <conditionGroups>
@@ -1731,8 +1731,8 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c9d7-eb22-6674-6508" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="1c43-e3d1-a119-885c" targetId="ed41-7006-3494-4c24" type="category"/>
-        <categoryLink name="Blackshields&apos; Oaths of Wrath and Vengeance" hidden="false" id="5718-2153-5380-81ed" targetId="cb34-ca48-547a-5d90"/>
+        <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="1c43-e3d1-a119-885c" targetId="ed41-7006-3494-4c24"/>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="5718-2153-5380-81ed" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f3d1-165c-4e16-e5fc"/>
@@ -2004,7 +2004,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2433-a1e3-9cc3-c1cb" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Oaths of Wrath and Vengeance" hidden="false" id="af1c-1cd1-435c-f062" targetId="cb34-ca48-547a-5d90"/>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="af1c-1cd1-435c-f062" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
@@ -2195,7 +2195,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0f5-6aa4-8e07-5b51" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false" type="category">
+        <categoryLink id="7526-8c64-9373-5110" name="Primarch:" hidden="false" targetId="e031-3c2-e3f8-d40a" primary="false">
           <modifiers>
             <modifier type="set" field="300d-0f17-be7c-1e2b" value="0">
               <conditionGroups>
@@ -2274,7 +2274,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5d7-4106-7aff-c4c7" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Lords of War:" hidden="false" id="b22b-446e-4bbd-267b" targetId="c658-dc6b-727b-c488" type="category">
+        <categoryLink name="Lords of War:" hidden="false" id="b22b-446e-4bbd-267b" targetId="c658-dc6b-727b-c488">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ed14-42fc-d5e5-4942" includeChildSelections="true"/>
             <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ff8-b5b1-7226-6a49" includeChildSelections="true"/>
@@ -2304,7 +2304,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb86-57c5-c2cc-6606" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Oaths of Wrath and Vengeance" hidden="false" id="4ed3-a358-1189-a2d4" targetId="cb34-ca48-547a-5d90"/>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="4ed3-a358-1189-a2d4" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c2e7-a23b-9550-671a"/>
@@ -10529,6 +10529,34 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1816-c5f0-8654-b8b5" includeChildSelections="false"/>
       </constraints>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warp Torrent" hidden="false" id="6289-a468-cde5-c26b">
+      <profiles>
+        <profile name="Warp Torrent - Malignant" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="a79c-76af-d22b-4696">
+          <characteristics>
+            <characteristic name="Range" id="ea0c-6424-11e6-a4a3" hidden="false" typeId="62ec-fbf5-5252-0d17">12</characteristic>
+            <characteristic name="Strength" id="eb80-956a-5ef7-9ad0" hidden="false" typeId="17ff-12e7-77d3-2fbe">5*</characteristic>
+            <characteristic name="AP" id="81a7-b453-327f-17c9" hidden="false" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
+            <characteristic name="Type" id="83cb-ca0c-d81-8e35" hidden="false" typeId="2159-62b6-4337-d516">Assault 2*, Deflagrate, Malignant Force</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Warp Torrent - Torrent" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="219a-bdbf-b59b-32e1">
+          <characteristics>
+            <characteristic name="Range" id="fb1a-4f11-cc12-475" hidden="false" typeId="62ec-fbf5-5252-0d17">12</characteristic>
+            <characteristic name="Strength" id="c70b-1c3f-8fe4-e634" hidden="false" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
+            <characteristic name="AP" id="fe7f-909f-2d5c-627f" hidden="false" typeId="f431-a7b9-d9d0-36c9">5</characteristic>
+            <characteristic name="Type" id="e3b4-15c4-8a4e-900e" hidden="false" typeId="2159-62b6-4337-d516">Assault 2, Deflagrate, Malignant Force</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Malignant Force" id="571d-5622-16b9-195c" hidden="false">
+          <description>Any Psyker with the Warp Torrent Psychic Weapon may choose to have the unit they are a part of suffer Perils of the Warp before making any attacks with that weapon. If this option is not chosen, then resolve the attack using the Torrent profile. If this option is chosen, first resolve Perils of the Warp against the unit that the attacking model is part of, if the attacking model survives then resolve the attack using the Malignant profile.</description>
+        </rule>
+        <rule name="* Note" id="4237-d19-d6f8-7b5d" hidden="false">
+          <description>*For each unsaved Wound inflicted on the attacking model’s unit due to the Perils of the Warp attack triggered by the Malignant Force special rule, increase this value by +1.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -15263,7 +15291,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
             </modifier>
           </modifiers>
           <infoLinks>
-            <infoLink name="TODO The Eternal Vendetta" hidden="false" id="1e8a-1e2d-a636-f546" type="rule" targetId="8939-b1f6-317b-9080"/>
+            <infoLink name="The Eternal Vendetta (X)" hidden="false" id="1e8a-1e2d-a636-f546" type="rule" targetId="8939-b1f6-317b-9080"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Eternal Vendetta (Y)" hidden="false" id="afd8-5c2a-3b0e-9b3e">
@@ -15647,7 +15675,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
             </selectionEntryGroup>
           </selectionEntryGroups>
           <infoLinks>
-            <infoLink name="TODO The Eternal Vendetta" hidden="false" id="8b61-cedc-ed79-c6f3" type="rule" targetId="8939-b1f6-317b-9080"/>
+            <infoLink name="The Eternal Vendetta (X)" hidden="false" id="8b61-cedc-ed79-c6f3" type="rule" targetId="8939-b1f6-317b-9080"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old (X)" hidden="false" id="f9cd-f32b-da51-5c68">
@@ -15847,36 +15875,6 @@ Note that models with this Oath do not gain access to the Aetheric Lightning Pys
 *This does not grant the model access to any Psychic Disciplines and they may not select further Psychic Weapons or Powers.</description>
             </rule>
           </rules>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Warp Torrent" hidden="false" id="6289-a468-cde5-c26b">
-              <profiles>
-                <profile name="Warp Torrent - Malignant" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="a79c-76af-d22b-4696">
-                  <characteristics>
-                    <characteristic name="Range" id="ea0c-6424-11e6-a4a3" hidden="false" typeId="62ec-fbf5-5252-0d17">12</characteristic>
-                    <characteristic name="Strength" id="eb80-956a-5ef7-9ad0" hidden="false" typeId="17ff-12e7-77d3-2fbe">5*</characteristic>
-                    <characteristic name="AP" id="81a7-b453-327f-17c9" hidden="false" typeId="f431-a7b9-d9d0-36c9">3</characteristic>
-                    <characteristic name="Type" id="83cb-ca0c-d81-8e35" hidden="false" typeId="2159-62b6-4337-d516">Assault 2*, Deflagrate, Malignant Force</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Warp Torrent - Torrent" typeId="cede-0217-1b10-2a34" typeName="Psychic Weapon" hidden="false" id="219a-bdbf-b59b-32e1">
-                  <characteristics>
-                    <characteristic name="Range" id="fb1a-4f11-cc12-475" hidden="false" typeId="62ec-fbf5-5252-0d17">12</characteristic>
-                    <characteristic name="Strength" id="c70b-1c3f-8fe4-e634" hidden="false" typeId="17ff-12e7-77d3-2fbe">5</characteristic>
-                    <characteristic name="AP" id="fe7f-909f-2d5c-627f" hidden="false" typeId="f431-a7b9-d9d0-36c9">5</characteristic>
-                    <characteristic name="Type" id="e3b4-15c4-8a4e-900e" hidden="false" typeId="2159-62b6-4337-d516">Assault 2, Deflagrate, Malignant Force</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule name="Malignant Force" id="571d-5622-16b9-195c" hidden="false">
-                  <description>Any Psyker with the Warp Torrent Psychic Weapon may choose to have the unit they are a part of suffer Perils of the Warp before making any attacks with that weapon. If this option is not chosen, then resolve the attack using the Torrent profile. If this option is chosen, first resolve Perils of the Warp against the unit that the attacking model is part of, if the attacking model survives then resolve the attack using the Malignant profile.</description>
-                </rule>
-                <rule name="* Note" id="4237-d19-d6f8-7b5d" hidden="false">
-                  <description>*For each unsaved Wound inflicted on the attacking model’s unit due to the Perils of the Warp attack triggered by the Malignant Force special rule, increase this value by +1.</description>
-                </rule>
-              </rules>
-            </selectionEntry>
-          </selectionEntries>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Broken Helix" hidden="false" id="3191-274c-d0df-bb4f">
           <rules>
