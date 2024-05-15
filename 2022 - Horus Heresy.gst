@@ -1326,8 +1326,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Blackshields Primary Detachment" id="3410-6cb0-2f2b-a28a" hidden="false"/>
-    <categoryEntry name="Blackshields Optional Detachment" id="e3b2-7cd8-eab7-92eb" hidden="false"/>
     <categoryEntry name="Primarch:" id="e031-3c2-e3f8-d40a" hidden="false">
       <comment>Force Org Slot</comment>
       <constraints>
