@@ -11091,6 +11091,18 @@ Twisted Desire – This Advanced Reaction may be made once per battle during the
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f9cd-f32b-da51-5c68" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8bf2-740f-f301-a479" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blackshields" hidden="false" id="ae4a-f95c-968e-eb46">
           <profiles>
