@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="50" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="51" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -54,6 +54,13 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="0" field="2db2-3451-c8bb-c000">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -6683,7 +6690,7 @@
           </constraints>
           <categoryLinks>
             <categoryLink targetId="4f07-3d45-4f28-a0c6" id="2259-38ca-b345-49fd" primary="false" name="Independent Character"/>
-            <categoryLink targetId="ad5f-31db-8bc7-5c46" id="7e27-3e84-48f4-b5bb" name="Primarch:" primary="false"/>
+            <categoryLink targetId="ad5f-31db-8bc7-5c46" id="7e27-3e84-48f4-b5bb" name="Primarch Unit Type" primary="false"/>
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="4187-92c2-4921-8959" name="Unique Sub-type" primary="false"/>
           </categoryLinks>
           <profiles>
