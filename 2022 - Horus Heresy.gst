@@ -1326,8 +1326,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
         </rule>
       </rules>
     </categoryEntry>
-    <categoryEntry name="Blackshields Primary Detachment" id="3410-6cb0-2f2b-a28a" hidden="false"/>
-    <categoryEntry name="Blackshields Optional Detachment" id="e3b2-7cd8-eab7-92eb" hidden="false"/>
     <categoryEntry name="Primarch:" id="e031-3c2-e3f8-d40a" hidden="false">
       <comment>Force Org Slot</comment>
       <constraints>
@@ -1359,6 +1357,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
           </constraints>
         </categoryLink>
         <categoryLink id="4240-0870-e7ec-839e" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="5718-2153-5380-81ed" targetId="cb34-ca48-547a-5d90"/>
         <categoryLink id="fd89-b215-5545-17c6" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="86ea-14ab-791a-679c" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="7ca6-11db-c5c6-4858" targetId="5d31-e5d-67bd-1083">
@@ -1732,7 +1731,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
           </constraints>
         </categoryLink>
         <categoryLink name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="1c43-e3d1-a119-885c" targetId="ed41-7006-3494-4c24"/>
-        <categoryLink name="Blackshield Oaths" hidden="false" id="5718-2153-5380-81ed" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="f3d1-165c-4e16-e5fc"/>
@@ -1747,6 +1745,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
           </constraints>
         </categoryLink>
         <categoryLink id="b5a1-9980-4945-e1aa" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="af1c-1cd1-435c-f062" targetId="cb34-ca48-547a-5d90"/>
         <categoryLink id="b120-b516-728b-11f1" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="dd4c-2612-511f-98f7" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="723-4837-8ae9-8d63" targetId="5d31-e5d-67bd-1083">
@@ -2004,7 +2003,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2433-a1e3-9cc3-c1cb" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Blackshield Oaths" hidden="false" id="af1c-1cd1-435c-f062" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
@@ -2274,6 +2272,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5d7-4106-7aff-c4c7" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="4ed3-a358-1189-a2d4" targetId="cb34-ca48-547a-5d90"/>
         <categoryLink name="Lords of War:" hidden="false" id="b22b-446e-4bbd-267b" targetId="c658-dc6b-727b-c488">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="force" shared="true" id="ed14-42fc-d5e5-4942" includeChildSelections="true"/>
@@ -2304,7 +2303,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="d2ee-04cb-5f8a-2642" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb86-57c5-c2cc-6606" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Blackshield Oaths" hidden="false" id="4ed3-a358-1189-a2d4" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="c2e7-a23b-9550-671a"/>
