@@ -789,7 +789,17 @@
         <categoryLink name="SA or IM Unit" hidden="false" id="4766-fcbf-87b4-1a86" targetId="4aca-2849-7f41-0200" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Hermes Light Sentinel Squadron" hidden="false" id="bbfd-1946-109f-2ccb" targetId="5ad9-7ffe-4a41-8f57" type="selectionEntry"/>
+    <entryLink import="true" name="Hermes Light Sentinel Squadron" hidden="false" id="bbfd-1946-109f-2ccb" targetId="5ad9-7ffe-4a41-8f57" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="7f93-869b-7d84-e05a" primary="true" name="Fast Attack:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hermes Light Sentinel Squadron" hidden="false" id="f7df-bb04-23ad-3bd" targetId="5ad9-7ffe-4a41-8f57" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="87c1-ebae-1a5b-3376" primary="true" name="Troops:"/>
+        <categoryLink targetId="8f42-a824-fb5f-8fea" id="8dac-3766-28c1-560f" primary="false" name="Compulsory Troops:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="9dd4-325a-c1cb-fac2" name="Legate Marshal" hidden="false" collective="false" import="true" type="unit">
@@ -2380,7 +2390,7 @@
             <conditionGroup type="and">
               <conditions>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a09b-28bd-8ffc-f4f0" type="equalTo"/>
-                <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b5d-fac7-799b-d7e7" type="instanceOf"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="9b5d-fac7-799b-d7e7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -4124,7 +4134,7 @@
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="ad54-b3d5-1e2f-31d1" includeChildSelections="false"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Hermes Light Sentinel Weapon Option" id="5437-cf9e-80c1-fcc8" hidden="false">
+                <selectionEntryGroup name="Hermes Light Sentinel Weapon Option" id="5437-cf9e-80c1-fcc8" hidden="false" defaultSelectionEntryId="3348-965-dae-36d3">
                   <entryLinks>
                     <entryLink import="true" name="Volkite Caliver" hidden="false" id="3348-965-dae-36d3" type="selectionEntry" targetId="9250-490f-abeb-b901" defaultAmount="1"/>
                     <entryLink import="true" name="Heavy Flamer" hidden="false" id="8308-cf39-a9f3-4c8c" type="selectionEntry" targetId="5507-b432-3b4c-df12"/>
@@ -6476,6 +6486,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe04-c096-f846-a6fd" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a09b-28bd-8ffc-f4f0" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0e8-1223-7794-2e95" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7e09-aae1-d5ff-d43e" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7003,6 +7014,7 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fe04-c096-f846-a6fd" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a09b-28bd-8ffc-f4f0" type="equalTo"/>
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0e8-1223-7794-2e95" type="equalTo"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7e09-aae1-d5ff-d43e" shared="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -11522,7 +11534,6 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
     <selectionEntry name="Hermes Light Sentinel Squadron" type="unit" id="5ad9-7ffe-4a41-8f57" page="180" publicationId="d882-d2a-5da1-92c4">
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="b6e0-0310-41f1-8d43"/>
-        <categoryLink targetId="20ef-cd01-a8da-376e" primary="true" id="de92-02d2-4a19-baf3" name="Fast Attack"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="14"/>
@@ -11544,6 +11555,18 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
                 <characteristic typeId="e593-6b3c-f169-04f0" name="Save">4+</characteristic>
                 <characteristic typeId="ddd7-6f5c-a939-b69e" name="Unit Type">Cavalry (Mechanised, Skirmish)</characteristic>
               </characteristics>
+              <modifiers>
+                <modifier type="set" value="Cavalry (Mechanised, Skirmish Line)" field="ddd7-6f5c-a939-b69e">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="7e09-aae1-d5ff-d43e" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="9b5d-fac7-799b-d7e7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </profile>
             <profile name="Hermes Light Sentinel" hidden="false" id="d0d2-4cda-588-1a1f" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" publicationId="d882-d2a-5da1-92c4" page="180">
               <characteristics>
@@ -11567,7 +11590,7 @@ until the start of the controlling player’s next turn.</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a3ad-f702-4caa-8a2b"/>
               </constraints>
             </entryLink>
-            <entryLink name="Void armour" hidden="false" type="selectionEntry" targetId="6112-2c54-ceb5-a24d" id="b17e-c1c2-41a3-a61f">
+            <entryLink name="Void Armour" hidden="false" type="selectionEntry" targetId="6112-2c54-ceb5-a24d" id="b17e-c1c2-41a3-a61f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b21-5f1a-49d1-b0dd"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a85-bec6-4451-8170"/>
@@ -11575,7 +11598,7 @@ until the start of the controlling player’s next turn.</characteristic>
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Hermes Light Sentinel Weapon Option" id="e4ae-7e1e-7ad1-6b13" hidden="false">
+            <selectionEntryGroup name="Hermes Light Sentinel Weapon Option" id="e4ae-7e1e-7ad1-6b13" hidden="false" defaultSelectionEntryId="3734-ff28-3da3-d89b">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Hermes Grenade Launcher" hidden="false" id="730c-990d-888d-6b7b" publicationId="d882-d2a-5da1-92c4" page="180">
                   <costs>
@@ -11619,17 +11642,29 @@ until the start of the controlling player’s next turn.</characteristic>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="c334-541e-4af1-b917" name="Cavalry" primary="false"/>
-            <categoryLink targetId="e929-a5c3-451c-6f19" id="368f-c96e-415d-9169" name="Mechanised" primary="false"/>
-            <categoryLink targetId="59a4-7b61-600a-c457" id="e0e0-aef0-4000-8758" name="Skirmish" primary="false"/>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="c334-541e-4af1-b917" name="Cavalry Unit Type" primary="false"/>
+            <categoryLink targetId="e929-a5c3-451c-6f19" id="368f-c96e-415d-9169" name="Mechanised Unit Sub-type" primary="false"/>
+            <categoryLink targetId="59a4-7b61-600a-c457" id="e0e0-aef0-4000-8758" name="Skirmish Sub-type" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
+      <modifiers>
+        <modifier type="add" value="6399-5c65-7833-1025" field="category">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7e09-aae1-d5ff-d43e" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="9b5d-fac7-799b-d7e7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Aethon Heavy Sentinel Squadron" type="unit" id="0393-dd19-4e18-a52c" page="182" publicationId="d882-d2a-5da1-92c4">
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="babb-bceb-4152-86bf"/>
-        <categoryLink targetId="7031-469a-1aeb-eab0" primary="true" id="85ad-9c4b-4f0e-9bf9" name="Heavy Support"/>
+        <categoryLink targetId="7031-469a-1aeb-eab0" primary="true" id="85ad-9c4b-4f0e-9bf9" name="Heavy Support:"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
@@ -11637,7 +11672,7 @@ until the start of the controlling player’s next turn.</characteristic>
       <selectionEntries>
         <selectionEntry type="model" name="Aethon Heavy Sentinel" id="a5e1-d207-48f0-b2cb" page="182" publicationId="d882-d2a-5da1-92c4">
           <profiles>
-            <profile id="e78f-28b1-400a-820d" name="Aethon Heavy Sentinel" typeId="4bb2-cb95-e6c8-5a21">
+            <profile id="e78f-28b1-400a-820d" name="Aethon Heavy Sentinel" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <characteristics>
                 <characteristic typeId="893e-2d76-8f04-44e5" name="Move">7</characteristic>
                 <characteristic typeId="cc42-7ed5-7092-5c84" name="WS">3</characteristic>
@@ -11671,7 +11706,7 @@ until the start of the controlling player’s next turn.</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee2d-9d22-41d7-a656"/>
                   </constraints>
                 </entryLink>
-                <entryLink name="Volkite culverin" hidden="false" type="selectionEntry" targetId="170d-44e0-455c-8207" id="0db7-4523-4af5-aeb5">
+                <entryLink name="Volkite Culverin" hidden="false" type="selectionEntry" targetId="170d-44e0-455c-8207" id="0db7-4523-4af5-aeb5">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
@@ -11687,7 +11722,7 @@ until the start of the controlling player’s next turn.</characteristic>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="61b7-ca4f-487e-a185"/>
                   </constraints>
                 </entryLink>
-                <entryLink name="Melta lance" hidden="false" type="selectionEntry" targetId="3926-1557-4647-d4a6" id="65a4-59c8-4f63-a402">
+                <entryLink name="Melta Lance" hidden="false" type="selectionEntry" targetId="3926-1557-4647-d4a6" id="65a4-59c8-4f63-a402">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
                   </costs>
@@ -11707,10 +11742,17 @@ until the start of the controlling player’s next turn.</characteristic>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
-            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="35a1-d3ae-474e-8d0f" name="Cavalry" primary="false"/>
-            <categoryLink targetId="9231-183c-b97b-63f9" id="f617-8068-434f-8050" name="Heavy" primary="false"/>
-            <categoryLink targetId="e929-a5c3-451c-6f19" id="43cf-a111-4171-b6e5" name="Mechanised" primary="false"/>
+            <categoryLink targetId="6d79-a3e4-381f-7b0f" id="35a1-d3ae-474e-8d0f" name="Cavalry Unit Type" primary="false"/>
+            <categoryLink targetId="9231-183c-b97b-63f9" id="f617-8068-434f-8050" name="Heavy Sub-type" primary="false"/>
+            <categoryLink targetId="e929-a5c3-451c-6f19" id="43cf-a111-4171-b6e5" name="Mechanised Unit Sub-type" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="set" value="5" field="a03d-8bb1-496b-893b">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="7e09-aae1-d5ff-d43e" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -11858,6 +11900,21 @@ Limitations
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Reconnaissance Pattern Cohorts" hidden="false" id="7e09-aae1-d5ff-d43e" publicationId="d882-d2a-5da1-92c4" page="179">
+          <rules>
+            <rule name="Reconnaissance Pattern Cohorts" id="7e04-8329-9f52-1bc1" hidden="false" publicationId="d882-d2a-5da1-92c4" page="179">
+              <description>Effects
+• A Detachment using this Cohort Doctrine may select Solar Auxilia Hermes Light Sentinel Squadrons as Troops choices. Solar Auxilia Hermes Light Sentinel Squadrons selected as Compulsory Troops choices gain the Line Unit Sub-type.
+• Solar Auxilia Veletaris Assault Squadrons in this
+Detachment gain the Outflank special rule.
+• Aethon Heavy Sentinel Squadrons may include up to 4 additional Aethon Heavy Sentinels instead of up lo 2 additional Aethon Heavy Sentinels.
+
+Limitations
+• A Detachment using this Cohort Doctrine may not include more than, a single Auxilia Armoured Tercio.
+• A Detachment using this Cohort Doctrine may not Include more than a single Auxilia Artillery Tercio.</description>
+            </rule>
+          </rules>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
