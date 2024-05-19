@@ -1350,6 +1350,24 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
     </categoryEntry>
     <categoryEntry name="Blackshields Primary Detachment" id="3410-6cb0-2f2b-a28a" hidden="false"/>
     <categoryEntry name="Blackshields Optional Detachment" id="e3b2-7cd8-eab7-92eb" hidden="false"/>
+    <categoryEntry name="Dark Angels - Crusade Detachment" id="df67-4304-4f8a-b4ea" hidden="false"/>
+    <categoryEntry name="Emperors Children - Crusade Detachment" id="5e6d-ec0d-3abf-53e3" hidden="false"/>
+    <categoryEntry name="Iron Warriors - Crusade Detachment" id="192e-fc36-cfa9-779a" hidden="false"/>
+    <categoryEntry name="White Scars - Crusade Detachment" id="bdb0-fc9e-ea8c-3f5f" hidden="false"/>
+    <categoryEntry name="Space Wolves - Crusade Detachment" id="918b-bc36-174-ef59" hidden="false"/>
+    <categoryEntry name="Imperial Fists - Crusade Detachment" id="b65-8383-3384-efd2" hidden="false"/>
+    <categoryEntry name="Night Lords - Crusade Detachment" id="2018-eec3-45d7-3ac8" hidden="false"/>
+    <categoryEntry name="Blood Angels - Crusade Detachment" id="f14b-3ce3-cb29-5dc9" hidden="false"/>
+    <categoryEntry name="Iron Hands - Crusade Detachment" id="1734-54da-5084-9f4b" hidden="false"/>
+    <categoryEntry name="World Eaters - Crusade Detachment" id="86eb-2b60-13f2-452e" hidden="false"/>
+    <categoryEntry name="Ultramarines - Crusade Detachment" id="636c-12a8-d65c-7ebe" hidden="false"/>
+    <categoryEntry name="Death Guard - Crusade Detachment" id="7de7-af3b-ba8c-188a" hidden="false"/>
+    <categoryEntry name="Thousand Sons - Crusade Detachment" id="f5e9-67d8-bc70-3862" hidden="false"/>
+    <categoryEntry name="Sons of Horus - Crusade Detachment" id="9cfc-7ec9-83ec-2c4e" hidden="false"/>
+    <categoryEntry name="Word Bearers - Crusade Detachment" id="f76-8a3d-a961-2924" hidden="false"/>
+    <categoryEntry name="Salamanders - Crusade Detachment" id="928c-8689-59e8-c1e1" hidden="false"/>
+    <categoryEntry name="Raven Guard - Crusade Detachment" id="afca-a57f-a32c-59fd" hidden="false"/>
+    <categoryEntry name="Alpha Legion - Crusade Detachment" id="c929-73a2-9fc4-5472" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">

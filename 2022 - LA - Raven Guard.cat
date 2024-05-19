@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d21e-9c80-a7f8-728c" name="LA - XIX: Raven Guard" revision="29" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d21e-9c80-a7f8-728c" name="LA - XIX: Raven Guard" revision="30" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="84cc-e59c-174e-fb25" name="Mor Deythan Squad" hidden="false" collective="false" import="false" targetId="c268-08ac-5b90-d034" type="selectionEntry">
       <categoryLinks>
@@ -63,6 +63,11 @@
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
           <conditions>
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="afca-a57f-a32c-59fd" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3272,7 +3277,7 @@ Corvus Corax may still Run on a turn when the Korvidine Pinions have been activa
           </costs>
           <categoryLinks>
             <categoryLink targetId="4f07-3d45-4f28-a0c6" id="3ed2-7b0f-c4c0-1f6a" primary="false" name="Independent Character"/>
-            <categoryLink targetId="ad5f-31db-8bc7-5c46" id="8b19-dc49-49cb-814d" name="Primarch:" primary="false"/>
+            <categoryLink targetId="ad5f-31db-8bc7-5c46" id="8b19-dc49-49cb-814d" name="Primarch Unit Type" primary="false"/>
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="ba0f-0d41-48bc-bb81" name="Unique Sub-type" primary="false"/>
             <categoryLink targetId="59a4-7b61-600a-c457" id="dfe5-aa83-4256-a0fd" name="Skirmish Sub-type" primary="false"/>
           </categoryLinks>
