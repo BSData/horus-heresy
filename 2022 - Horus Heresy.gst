@@ -10577,7 +10577,9 @@ This is due to an underlying technical restriction of the application and is not
 Please do not report validation issues as a bug, we are aware of them, and are investigating as to whether or not we can fix them.
 
 
-If you wish to use the list builder that supports the design choices we have made, please head on over to https://www.newrecruit.eu instead</description>
+If you wish to use the list builder that supports the design choices we have made, please head on over to https://www.newrecruit.eu instead
+
+Be aware that we are actively trying to find a solution to this, but it is less &quot;when&quot; and more &quot;if&quot; at this point.</description>
         </rule>
       </rules>
     </selectionEntry>
