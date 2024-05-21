@@ -1350,6 +1350,24 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
     </categoryEntry>
     <categoryEntry name="Blackshields Primary Detachment" id="3410-6cb0-2f2b-a28a" hidden="false"/>
     <categoryEntry name="Blackshields Optional Detachment" id="e3b2-7cd8-eab7-92eb" hidden="false"/>
+    <categoryEntry name="Dark Angels - Crusade Detachment" id="df67-4304-4f8a-b4ea" hidden="false"/>
+    <categoryEntry name="Emperors Children - Crusade Detachment" id="5e6d-ec0d-3abf-53e3" hidden="false"/>
+    <categoryEntry name="Iron Warriors - Crusade Detachment" id="192e-fc36-cfa9-779a" hidden="false"/>
+    <categoryEntry name="White Scars - Crusade Detachment" id="bdb0-fc9e-ea8c-3f5f" hidden="false"/>
+    <categoryEntry name="Space Wolves - Crusade Detachment" id="918b-bc36-174-ef59" hidden="false"/>
+    <categoryEntry name="Imperial Fists - Crusade Detachment" id="b65-8383-3384-efd2" hidden="false"/>
+    <categoryEntry name="Night Lords - Crusade Detachment" id="2018-eec3-45d7-3ac8" hidden="false"/>
+    <categoryEntry name="Blood Angels - Crusade Detachment" id="f14b-3ce3-cb29-5dc9" hidden="false"/>
+    <categoryEntry name="Iron Hands - Crusade Detachment" id="1734-54da-5084-9f4b" hidden="false"/>
+    <categoryEntry name="World Eaters - Crusade Detachment" id="86eb-2b60-13f2-452e" hidden="false"/>
+    <categoryEntry name="Ultramarines - Crusade Detachment" id="636c-12a8-d65c-7ebe" hidden="false"/>
+    <categoryEntry name="Death Guard - Crusade Detachment" id="7de7-af3b-ba8c-188a" hidden="false"/>
+    <categoryEntry name="Thousand Sons - Crusade Detachment" id="f5e9-67d8-bc70-3862" hidden="false"/>
+    <categoryEntry name="Sons of Horus - Crusade Detachment" id="9cfc-7ec9-83ec-2c4e" hidden="false"/>
+    <categoryEntry name="Word Bearers - Crusade Detachment" id="f76-8a3d-a961-2924" hidden="false"/>
+    <categoryEntry name="Salamanders - Crusade Detachment" id="928c-8689-59e8-c1e1" hidden="false"/>
+    <categoryEntry name="Raven Guard - Crusade Detachment" id="afca-a57f-a32c-59fd" hidden="false"/>
+    <categoryEntry name="Alpha Legion - Crusade Detachment" id="c929-73a2-9fc4-5472" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -10558,10 +10576,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
       </profiles>
       <rules>
         <rule name="Malignant Force" id="571d-5622-16b9-195c" hidden="false">
-          <description>Any Psyker with the Warp Torrent Psychic Weapon may choose to have the unit they are a part of suffer Perils of the Warp before making any attacks with that weapon. If this option is not chosen, then resolve the attack using the Torrent profile. If this option is chosen, first resolve Perils of the Warp against the unit that the attacking model is part of, if the attacking model survives then resolve the attack using the Malignant profile.</description>
+          <description>Any Psyker with the Warp Torrent Psychic Weapon may choose to have the unit they are a part of suffer Perils of the Warp before making any attacks with that weapon. If this option is not chosen, then resolve the attack using the Torrent profile. If this option is chosen, first resolve Perils of the Warp against the unit that the attacking model is part of, if the attacking model survives then resolve the attack using the Malignant profile.</description>
         </rule>
         <rule name="* Note" id="4237-d19-d6f8-7b5d" hidden="false">
-          <description>*For each unsaved Wound inflicted on the attacking model’s unit due to the Perils of the Warp attack triggered by the Malignant Force special rule, increase this value by +1.</description>
+          <description>*For each unsaved Wound inflicted on the attacking model’s unit due to the Perils of the Warp attack triggered by the Malignant Force special rule, increase this value by +1.</description>
         </rule>
       </rules>
     </selectionEntry>
@@ -10571,7 +10589,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <description>There are known issues with the verification for weapon selections when using the Weapons of Desperation or the Legacy of Nikaea.
 
 
-This is due to an underlying technical restriction of the application and is not something we can fix easily within the dataset. As BattleScribe has been abandoned by the owner of the project, there was always going to come a point we would struggle to surpass. 
+This is due to an underlying technical restriction of the application and is not something we can fix easily within the dataset. As BattleScribe has been abandoned by the owner of the project, there was always going to come a point we would struggle to surpass. 
 
 
 Please do not report validation issues as a bug, we are aware of them, and are investigating as to whether or not we can fix them.
@@ -15753,9 +15771,9 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         <selectionEntry type="upgrade" import="true" name="Only In Death Does Duty End" hidden="false" id="e223-bd6f-6a7c-33c">
           <rules>
             <rule name="Only In Death Does Duty End" hidden="false" id="8b9e-d367-1ca9-6ab4">
-              <description>Whenever a unit composed entirely of models with this Oath is called upon to take a Morale check* for any reason and in any Phase, no dice are rolled and the Check is considered to have been automatically passed. However, the unit must instead immediately suffer D3 Wounds against which only Invulnerable Saves may be taken, but no other Saving Throws or Damage Mitigation rolls, these Wounds being allocated by the controlling player. Additionally, when a unit composed of models with this Oath is entirely removed as casualties, no opposing player may score Victory points for its removal (this includes for Secondary Objectives such as Slay the Warlord). 
+              <description>Whenever a unit composed entirely of models with this Oath is called upon to take a Morale check* for any reason and in any Phase, no dice are rolled and the Check is considered to have been automatically passed. However, the unit must instead immediately suffer D3 Wounds against which only Invulnerable Saves may be taken, but no other Saving Throws or Damage Mitigation rolls, these Wounds being allocated by the controlling player. Additionally, when a unit composed of models with this Oath is entirely removed as casualties, no opposing player may score Victory points for its removal (this includes for Secondary Objectives such as Slay the Warlord). 
 
-*This affects only Morale checks and not Pinning tests, Psychic checks or any other kind of Leadership test.</description>
+*This affects only Morale checks and not Pinning tests, Psychic checks or any other kind of Leadership test.</description>
             </rule>
           </rules>
           <constraints>
@@ -15766,9 +15784,9 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         <selectionEntry type="upgrade" import="true" name="The Spoils of Victory" hidden="false" id="e033-c9fe-b3dc-5d38">
           <rules>
             <rule name="The Spoils of Victory" hidden="false" id="5525-f7cd-79fe-6f45">
-              <description>A unit that includes any models with this Oath may not make Sweeping Advances. However, whenever such a unit would otherwise be eligible to and capable of† making a Sweeping advance, the controlling player must instead roll a D6. On the result of a 4+, the controlling player gains 1 Victory point.
+              <description>A unit that includes any models with this Oath may not make Sweeping Advances. However, whenever such a unit would otherwise be eligible to and capable of† making a Sweeping advance, the controlling player must instead roll a D6. On the result of a 4+, the controlling player gains 1 Victory point.
 
-Note that units that are not normally allowed to make a Sweeping Advance gain no benefit from this Oath.</description>
+Note that units that are not normally allowed to make a Sweeping Advance gain no benefit from this Oath.</description>
             </rule>
           </rules>
           <constraints>
@@ -15832,9 +15850,9 @@ applied to models without the Character Unit sub-type).</description>
         <selectionEntry type="upgrade" import="true" name="An Eternity Of War" hidden="false" id="32f5-a858-9a07-1523">
           <rules>
             <rule name="An Eternity Of War" hidden="false" id="1866-5a90-cc3e-9b0c">
-              <description>A unit that includes any models with this Oath which fails a Morale check caused by casualties inflicted by an enemy Shooting Attack does not Fall Back but instead makes a Consolidate move. Additionally, if such a unit makes a successful Charge after suffering any casualties due to an enemy Reaction triggered by that Charge, then each Wound inflicted by the Reaction is counted towards the controlling player of the Charging unit’s score used to determine which side has won the resulting combat. 
+              <description>A unit that includes any models with this Oath which fails a Morale check caused by casualties inflicted by an enemy Shooting Attack does not Fall Back but instead makes a Consolidate move. Additionally, if such a unit makes a successful Charge after suffering any casualties due to an enemy Reaction triggered by that Charge, then each Wound inflicted by the Reaction is counted towards the controlling player of the Charging unit’s score used to determine which side has won the resulting combat. 
 
-However, at the end of any of the controlling player’s turns after Game Turn 1, any unit that includes one or more models with this Oath that is not locked in combat and was not part of a combat in that same player turn suffers a single Wound against which only Invulnerable Saves may be taken, but no other Saving Throws or Damage Mitigation rolls, these wounds being allocated by the controlling player.</description>
+However, at the end of any of the controlling player’s turns after Game Turn 1, any unit that includes one or more models with this Oath that is not locked in combat and was not part of a combat in that same player turn suffers a single Wound against which only Invulnerable Saves may be taken, but no other Saving Throws or Damage Mitigation rolls, these wounds being allocated by the controlling player.</description>
             </rule>
           </rules>
           <constraints>
@@ -15845,8 +15863,8 @@ However, at the end of any of the controlling player’s turns after Game Turn 
         <selectionEntry type="upgrade" import="true" name="Pride Is Our Armour" hidden="false" id="e936-95f1-63a6-a606">
           <rules>
             <rule name="Pride Is Our Armour" hidden="false" id="d6fc-b406-b8cf-117f">
-              <description>Any Legion Veteran Squads in either a Primary Detachment or an Allied Detachment with this Oath may be upgraded for +50 points per unit, gaining the Line Unit Sub-type and the Heart of the Legion and Fury of the Legion special rules. However, a Detachment with this Oath may not include any Troops choices, and all Troops slots are removed from the Force Organisation
-chart for this Detachment. As such, the Detachment is no longer required to select any Compulsory Troops choices, but one existing Elites slot for that Detachment is now considered to be Compulsory. Additionally, a Detachment with this Oath may include two additional Elites choices – this applies to both detachments selected as a Primary Detachment and those selected as Allied Detachments.</description>
+              <description>Any Legion Veteran Squads in either a Primary Detachment or an Allied Detachment with this Oath may be upgraded for +50 points per unit, gaining the Line Unit Sub-type and the Heart of the Legion and Fury of the Legion special rules. However, a Detachment with this Oath may not include any Troops choices, and all Troops slots are removed from the Force Organisation
+chart for this Detachment. As such, the Detachment is no longer required to select any Compulsory Troops choices, but one existing Elites slot for that Detachment is now considered to be Compulsory. Additionally, a Detachment with this Oath may include two additional Elites choices – this applies to both detachments selected as a Primary Detachment and those selected as Allied Detachments.</description>
             </rule>
           </rules>
           <constraints>
@@ -15857,9 +15875,9 @@ chart for this Detachment. As such, the Detachment is no longer required to sel
         <selectionEntry type="upgrade" import="true" name="The Taint of the Xenos" hidden="false" id="cb03-25b3-326f-f8bd">
           <rules>
             <rule name="The Taint of the Xenos" hidden="false" id="a885-9a62-4324-a9b">
-              <description>Any model in a Detachment with this Oath may exchange a plasma gun or Nemesis bolter* for a Xenos deathlock at no additional cost in points; a combi-bolter for a Xenos deathlock for +5 points per model; a plasma pistol for a Xenos doomlock at no additional cost in points or a power weapon for a Xenos halo blade at no additional cost in points.
+              <description>Any model in a Detachment with this Oath may exchange a plasma gun or Nemesis bolter* for a Xenos deathlock at no additional cost in points; a combi-bolter for a Xenos deathlock for +5 points per model; a plasma pistol for a Xenos doomlock at no additional cost in points or a power weapon for a Xenos halo blade at no additional cost in points.
 
-*A Legion Vigilator may exchange their Master-crafted Nemesis bolter for a Xenos deathlock for no additional cost.</description>
+*A Legion Vigilator may exchange their Master-crafted Nemesis bolter for a Xenos deathlock for no additional cost.</description>
             </rule>
           </rules>
           <constraints>
@@ -15870,9 +15888,9 @@ chart for this Detachment. As such, the Detachment is no longer required to sel
         <selectionEntry type="upgrade" import="true" name="The Flesh Is Weak" hidden="false" id="be5b-1edf-8b27-2e1e">
           <rules>
             <rule name="The Flesh Is Weak" hidden="false" id="615b-e0f2-23a6-3355">
-              <description>All models with the Infantry or Cavalry Unit Type in a Detachment with this Oath are instead counted as having the Automata Unit Type and gain the Feel No Pain (5+) special rule. In addition, during the controlling player’s Shooting phase, a unit that includes any models with this Oath must attempt a Shooting Attack if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack. If no weapon in the attacking unit is capable of Wounding or causing a Glancing Hit or Penetrating Hit to a potential target unit, then that target unit may be ignored if there is another potential target in range and line of sight of the attacking unit. Any model in a Detachment with this Oath that has the Psyker Unit Sub-type loses that Sub-type and may not use Psychic Weapons or Psychic Powers.
+              <description>All models with the Infantry or Cavalry Unit Type in a Detachment with this Oath are instead counted as having the Automata Unit Type and gain the Feel No Pain (5+) special rule. In addition, during the controlling player’s Shooting phase, a unit that includes any models with this Oath must attempt a Shooting Attack if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack. If no weapon in the attacking unit is capable of Wounding or causing a Glancing Hit or Penetrating Hit to a potential target unit, then that target unit may be ignored if there is another potential target in range and line of sight of the attacking unit. Any model in a Detachment with this Oath that has the Psyker Unit Sub-type loses that Sub-type and may not use Psychic Weapons or Psychic Powers.
 
-Any model in a Detachment with this Oath that has the Transport Unit Sub-type gains the Augmetic Transport Bay special rule.</description>
+Any model in a Detachment with this Oath that has the Transport Unit Sub-type gains the Augmetic Transport Bay special rule.</description>
             </rule>
             <rule name="Augmetic Transport Bay" hidden="false" id="75c-d3e8-2f12-2749">
               <description>A model with this special rule may only be Embarked upon by models that previously had the Infantry Unit Type, but have had it replaced with the the Automata Unit Type by The Flesh Is Weak (Oath of Vengeance and Wrath). A model with this special rule also increases its Transport Capacity by 3.</description>
@@ -15890,14 +15908,14 @@ Any model in a Detachment with this Oath that has the Transport Unit Sub-type g
           </constraints>
           <rules>
             <rule name="The Weapons of Desperation" id="d210-d898-996f-ff7" hidden="false">
-              <description>All models in a Detachment with this Oath and the Infantry Unit Type must exchange* any bolters and bolt pistols they have for one of the following weapons, exchanging weapons on a one-for-one basis (for example, a model with this Oath and a bolter and a bolt pistol must exchange both of those weapons, selecting two weapons from the following list in exchange): autorifle, stubcarbine, shotgun, lasgun, lascarbine, laspistol or autopistol. When exchanging weapons, each exchange may be for a different weapon, and squads and models do not have to receive the same weapon when making multiple exchanges. When exchanging weapons for a unit of more than one model, for each three models in the unit, one model may exchange a bolter for a heavy stubber instead of one of the other options listed above. A model with the Independent Character special rule may always exchange a bolter for a heavy stubber. 
+              <description>All models in a Detachment with this Oath and the Infantry Unit Type must exchange* any bolters and bolt pistols they have for one of the following weapons, exchanging weapons on a one-for-one basis (for example, a model with this Oath and a bolter and a bolt pistol must exchange both of those weapons, selecting two weapons from the following list in exchange): autorifle, stubcarbine, shotgun, lasgun, lascarbine, laspistol or autopistol. When exchanging weapons, each exchange may be for a different weapon, and squads and models do not have to receive the same weapon when making multiple exchanges. When exchanging weapons for a unit of more than one model, for each three models in the unit, one model may exchange a bolter for a heavy stubber instead of one of the other options listed above. A model with the Independent Character special rule may always exchange a bolter for a heavy stubber. 
 
 All models that exchange one or more weapons due to the strictures of this Oath also gain the Desperate Measures special rule.
 
 *Note that this exchange takes place after any options are selected from a unit’s army list profile – for example, allowing models from a Legion Veteran Squad to first upgrade a bolter to a plasma gun before any remaining bolters must be exchanged for other weapons. However, a model with this Oath that has been given a bayonet or chain bayonet may not then exchange their bolter for an autopistol or laspistol.</description>
             </rule>
             <rule name="Desperate Measures" id="650c-d08-8e13-4f53" hidden="false">
-              <description>A model with this special rule treats all weapons from the Armoury of Desperation that have the Assault (X) type as if it were the Pistol (X) type, and all weapons from the Armoury of Desperation with the Heavy (X) type as if they had the Assault (X) type (the value of X remains the same in all cases). Models with this special rule count weapons from the Armoury of Desperation with the Rapid Fire type as if they had the Pistol 2 type instead.</description>
+              <description>A model with this special rule treats all weapons from the Armoury of Desperation that have the Assault (X) type as if it were the Pistol (X) type, and all weapons from the Armoury of Desperation with the Heavy (X) type as if they had the Assault (X) type (the value of X remains the same in all cases). Models with this special rule count weapons from the Armoury of Desperation with the Rapid Fire type as if they had the Pistol 2 type instead.</description>
             </rule>
           </rules>
         </selectionEntry>
@@ -15913,18 +15931,18 @@ Weapon* and may pay an additional cost of +25 points per model to also select on
 
 Note that models with this Oath do not gain access to the Aetheric Lightning Pyschic Weapon, unless another special rule would grant it to them or if they gain the Psyker Unit Sub-type from another source, such as the Librarian Consul upgrade.
 
-*This does not grant the model access to any Psychic Disciplines and they may not select further Psychic Weapons or Powers.</description>
+*This does not grant the model access to any Psychic Disciplines and they may not select further Psychic Weapons or Powers.</description>
             </rule>
           </rules>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Broken Helix" hidden="false" id="3191-274c-d0df-bb4f">
           <rules>
             <rule name="The Broken Helix" id="a29f-a5c-a1dc-b122" hidden="false">
-              <description>A model with this Oath and any of the special rules noted in the following list, lose all of the noted special rules they possess, but gain either the Clone or Aberrant special rule (all units in a Detachment with this Oath must select the same option).
+              <description>A model with this Oath and any of the special rules noted in the following list, lose all of the noted special rules they possess, but gain either the Clone or Aberrant special rule (all units in a Detachment with this Oath must select the same option).
 
-The opposing player may not achieve objectives for removing a unit that includes any models with either the Clone or Aberrant special rules as casualties.
+The opposing player may not achieve objectives for removing a unit that includes any models with either the Clone or Aberrant special rules as casualties.
 
-Special rules that are removed: 
+Special rules that are removed: 
 • Fury of the Legion
 • Heart of the Legion
 • Spite of the Legion
