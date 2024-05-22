@@ -10582,6 +10582,10 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <description>*For each unsaved Wound inflicted on the attacking model’s unit due to the Perils of the Warp attack triggered by the Malignant Force special rule, increase this value by +1.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ac4b-1ba7-5546-9607" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c8b-bf77-6bd0-d59e" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blackshields Oaths Verification Issues (USE NEWRECRUIT FOR NO ISSUES)" hidden="false" id="ab36-c6f8-dec3-137f">
       <rules>
