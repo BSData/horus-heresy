@@ -10604,6 +10604,15 @@ If you wish to use the list builder that supports the design choices we have mad
 Be aware that we are actively trying to find a solution to this, but it is less &quot;when&quot; and more &quot;if&quot; at this point.</description>
         </rule>
       </rules>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="-1" field="selections" scope="self" childId="any" shared="true">
+              <comment>app: NewRecruit</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
