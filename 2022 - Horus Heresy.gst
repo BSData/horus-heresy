@@ -247,7 +247,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
         <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
           <alias>
-            <undefined/>
+            <undefined>Infantry</undefined>
           </alias>
           <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
@@ -9781,9 +9781,21 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="775c-071a-1024-8be0" type="max"/>
       </constraints>
       <entryLinks>
-        <entryLink id="a311-a007-7439-9227" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry"/>
-        <entryLink id="5246-a8e2-96a4-eae4" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry"/>
-        <entryLink id="5fcf-bd2e-46e7-0b09" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry"/>
+        <entryLink id="a311-a007-7439-9227" name="Charnabal Glaive" hidden="false" collective="false" import="true" targetId="c07c-35e6-4616-ef25" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3321-f091-e538-27b8" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5246-a8e2-96a4-eae4" name="Charnabal Sabre" hidden="false" collective="false" import="true" targetId="30c2-57eb-5bbe-be0b" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="73bd-70cc-bac5-7cd8" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5fcf-bd2e-46e7-0b09" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e19a-99e8-d0ae-6bb3" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10593,7 +10605,7 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <description>There are known issues with the verification for weapon selections when using the Weapons of Desperation or the Legacy of Nikaea.
 
 
-This is due to an underlying technical restriction of the application and is not something we can fix easily within the dataset. As BattleScribe has been abandoned by the owner of the project, there was always going to come a point we would struggle to surpass. 
+This is due to an underlying technical restriction of the application and is not something we can fix easily within the dataset. As BattleScribe has been abandoned by the owner of the project, there was always going to come a point we would struggle to surpass.
 
 
 Please do not report validation issues as a bug, we are aware of them, and are investigating as to whether or not we can fix them.
@@ -15784,7 +15796,7 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
         <selectionEntry type="upgrade" import="true" name="Only In Death Does Duty End" hidden="false" id="e223-bd6f-6a7c-33c">
           <rules>
             <rule name="Only In Death Does Duty End" hidden="false" id="8b9e-d367-1ca9-6ab4">
-              <description>Whenever a unit composed entirely of models with this Oath is called upon to take a Morale check* for any reason and in any Phase, no dice are rolled and the Check is considered to have been automatically passed. However, the unit must instead immediately suffer D3 Wounds against which only Invulnerable Saves may be taken, but no other Saving Throws or Damage Mitigation rolls, these Wounds being allocated by the controlling player. Additionally, when a unit composed of models with this Oath is entirely removed as casualties, no opposing player may score Victory points for its removal (this includes for Secondary Objectives such as Slay the Warlord). 
+              <description>Whenever a unit composed entirely of models with this Oath is called upon to take a Morale check* for any reason and in any Phase, no dice are rolled and the Check is considered to have been automatically passed. However, the unit must instead immediately suffer D3 Wounds against which only Invulnerable Saves may be taken, but no other Saving Throws or Damage Mitigation rolls, these Wounds being allocated by the controlling player. Additionally, when a unit composed of models with this Oath is entirely removed as casualties, no opposing player may score Victory points for its removal (this includes for Secondary Objectives such as Slay the Warlord).
 
 *This affects only Morale checks and not Pinning tests, Psychic checks or any other kind of Leadership test.</description>
             </rule>
@@ -15863,7 +15875,7 @@ applied to models without the Character Unit sub-type).</description>
         <selectionEntry type="upgrade" import="true" name="An Eternity Of War" hidden="false" id="32f5-a858-9a07-1523">
           <rules>
             <rule name="An Eternity Of War" hidden="false" id="1866-5a90-cc3e-9b0c">
-              <description>A unit that includes any models with this Oath which fails a Morale check caused by casualties inflicted by an enemy Shooting Attack does not Fall Back but instead makes a Consolidate move. Additionally, if such a unit makes a successful Charge after suffering any casualties due to an enemy Reaction triggered by that Charge, then each Wound inflicted by the Reaction is counted towards the controlling player of the Charging unit’s score used to determine which side has won the resulting combat. 
+              <description>A unit that includes any models with this Oath which fails a Morale check caused by casualties inflicted by an enemy Shooting Attack does not Fall Back but instead makes a Consolidate move. Additionally, if such a unit makes a successful Charge after suffering any casualties due to an enemy Reaction triggered by that Charge, then each Wound inflicted by the Reaction is counted towards the controlling player of the Charging unit’s score used to determine which side has won the resulting combat.
 
 However, at the end of any of the controlling player’s turns after Game Turn 1, any unit that includes one or more models with this Oath that is not locked in combat and was not part of a combat in that same player turn suffers a single Wound against which only Invulnerable Saves may be taken, but no other Saving Throws or Damage Mitigation rolls, these wounds being allocated by the controlling player.</description>
             </rule>
@@ -15921,7 +15933,7 @@ Any model in a Detachment with this Oath that has the Transport Unit Sub-type ga
           </constraints>
           <rules>
             <rule name="The Weapons of Desperation" id="d210-d898-996f-ff7" hidden="false">
-              <description>All models in a Detachment with this Oath and the Infantry Unit Type must exchange* any bolters and bolt pistols they have for one of the following weapons, exchanging weapons on a one-for-one basis (for example, a model with this Oath and a bolter and a bolt pistol must exchange both of those weapons, selecting two weapons from the following list in exchange): autorifle, stubcarbine, shotgun, lasgun, lascarbine, laspistol or autopistol. When exchanging weapons, each exchange may be for a different weapon, and squads and models do not have to receive the same weapon when making multiple exchanges. When exchanging weapons for a unit of more than one model, for each three models in the unit, one model may exchange a bolter for a heavy stubber instead of one of the other options listed above. A model with the Independent Character special rule may always exchange a bolter for a heavy stubber. 
+              <description>All models in a Detachment with this Oath and the Infantry Unit Type must exchange* any bolters and bolt pistols they have for one of the following weapons, exchanging weapons on a one-for-one basis (for example, a model with this Oath and a bolter and a bolt pistol must exchange both of those weapons, selecting two weapons from the following list in exchange): autorifle, stubcarbine, shotgun, lasgun, lascarbine, laspistol or autopistol. When exchanging weapons, each exchange may be for a different weapon, and squads and models do not have to receive the same weapon when making multiple exchanges. When exchanging weapons for a unit of more than one model, for each three models in the unit, one model may exchange a bolter for a heavy stubber instead of one of the other options listed above. A model with the Independent Character special rule may always exchange a bolter for a heavy stubber.
 
 All models that exchange one or more weapons due to the strictures of this Oath also gain the Desperate Measures special rule.
 
@@ -15955,7 +15967,7 @@ Note that models with this Oath do not gain access to the Aetheric Lightning Pys
 
 The opposing player may not achieve objectives for removing a unit that includes any models with either the Clone or Aberrant special rules as casualties.
 
-Special rules that are removed: 
+Special rules that are removed:
 • Fury of the Legion
 • Heart of the Legion
 • Spite of the Legion
