@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="105" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="106" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -11156,15 +11156,15 @@ Twisted Desire – This Advanced Reaction may be made once per battle during the
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Blackshields" hidden="false" id="ae4a-f95c-968e-eb46" sortIndex="1">
           <profiles>
-            <profile name="Blackshields Advanced Reaction" hidden="false" id="77b2-efbe-6629-1ae7" publicationId="d882-d2a-5da1-92c4" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
+            <profile name="Blackshields Advanced Reaction: No Lords, No Masters" hidden="false" id="77b2-efbe-6629-1ae7" publicationId="d882-d2a-5da1-92c4" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
               <characteristics>
-                <characteristic name="Description" typeId="c627-4637-8de5-65fb">TODO</characteristic>
+                <characteristic name="Description" typeId="c627-4637-8de5-65fb">This reaction may only be made once per battle during the opposing player&apos;s Assault phase when any enemy unit that includes any model with the Primarch Unit Type, Unique unit Sub-type, the Master of the Legion special rule, or that has been selected as an army&apos;s Warlord, declares a charge targeting a friendly unit under the Reactive player&apos;s control that is composed entirely of models with the Legiones Astartes (Blackshields) special rule. If the Charge is successful, then all models in the unit that was Charge gain the Fearless special rule for the duration of that combat, and any model that was Charged that is in base contact or Engaged in a challenge with an enemy model with the Character Unit Sub-type gains +1 Attack, or if that model also has the Unique Unit Sub-type, gains +2 Attacks for the duration of that combat.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <rules>
-            <rule name="Oaths of Wrath and Vengeance" hidden="false" id="9464-a310-2e37-b6db">
-              <description>TODO</description>
+            <rule name="Oaths of Vengeance and Wrath" hidden="false" id="9464-a310-2e37-b6db">
+              <description>When selecting a Detachment using the Legiones Astartes Army List and the Faction Blackshields, up to two options may be taken from the following list of Oaths - the effects of the chosen Oaths apply to all models selected as part of that Detachment that have the Legiones Astartes (Blackshields) special rule, excluding models with the Unique Unit Sub-type. Unless otherwise noted, no Oath may be selected more than once per Detachment.</description>
             </rule>
             <rule name="Blackshields and Allegiance" hidden="false" id="c6b7-9ad0-3be1-2125">
               <description>When included in an army as part of a Primary Detachment, models with this special rule are counted as having both Loyalist and Traitor Allegiances by any special rule that targets Allegiance.
