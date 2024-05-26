@@ -6380,6 +6380,16 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
                     </modifier>
                   </modifiers>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <comment>In Disgrace All Are Equal</comment>
+                  <modifiers>
+                    <modifier type="decrement" value="1" field="e8a6-1da9-d384-8727">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
               </modifierGroups>
             </profile>
           </profiles>
@@ -6405,6 +6415,28 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="629a-187b-4fc4-9b9e" name="Infantry Unit Type" primary="false"/>
             <categoryLink targetId="6399-5c65-7833-1025" id="96ce-05df-4a30-8730" name="Line Sub-type" primary="false"/>
           </categoryLinks>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="remove" value="8b4f-bfe2-ce7b-f1b1" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" value="6d79-a3e4-381f-7b0f" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="d8ab-8e21-e193-63ba" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <comment>The Flesh Is Weak</comment>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -6425,7 +6457,19 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be2-2da1-32e7-6c1a" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="8b9c-7b44-0aad-a79a" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry"/>
+            <entryLink id="8b9c-7b44-0aad-a79a" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" targetId="2484-a122-76a2-b142" type="selectionEntry">
+              <infoLinks>
+                <infoLink name="Augmetic Transport Bay" id="b8e9-c593-6e54-687b" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="91e5-01b6-3dc0-5587" name="1 in 3 models may exchange their lightning gun for one of the following:" hidden="false" collective="false" import="true">

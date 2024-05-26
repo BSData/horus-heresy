@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="33" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ee5e-198e-1b19-4b9f" name="LA -   I: Dark Angels" revision="34" battleScribeVersion="2.03" authorName="revivedtitan" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="72" type="catalogue">
   <entryLinks>
     <entryLink id="7653-8041-8d1c-c872" name="Dreadwing Interemptor Squad" hidden="false" collective="false" import="false" targetId="3008-e8ed-9e97-71c9" type="selectionEntry">
       <categoryLinks>
@@ -170,6 +170,11 @@
         <modifier type="add" field="category" value="7b69-bf2f-4547-e83b">
           <conditions>
             <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5430-5be1-1613-be44" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="df67-4304-4f8a-b4ea" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -979,20 +984,6 @@
     </entryLink>
     <entryLink id="7de7-fdfa-c41d-45f3" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
-      <infoLinks>
-        <infoLink id="d9f9-2322-1231-67cc" name="Rampage (X)" hidden="true" targetId="3efb-2a2c-2d0b-92fc" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="2"/>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="20d9-ae98-5324-6bb3" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d79-a3e4-381f-7b0f" type="equalTo"/>
-                <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f9fa-5b63-3545-01ba" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
       <categoryLinks>
         <categoryLink id="fb23-8b6b-0611-ed86" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
         <categoryLink id="eb5d-715f-63b5-af5e" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false"/>
@@ -4966,7 +4957,7 @@ special rule.</description>
           </costs>
           <categoryLinks>
             <categoryLink targetId="4f07-3d45-4f28-a0c6" id="9c13-435c-1a1b-a315" primary="false" name="Independent Character"/>
-            <categoryLink targetId="ad5f-31db-8bc7-5c46" id="8b47-4465-4117-bf3a" name="Primarch:" primary="false"/>
+            <categoryLink targetId="ad5f-31db-8bc7-5c46" id="8b47-4465-4117-bf3a" name="Primarch Unit Type" primary="false"/>
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="a565-b5a5-44e1-9de8" name="Unique Sub-type" primary="false"/>
           </categoryLinks>
         </selectionEntry>
