@@ -2392,6 +2392,9 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="2bb2-1e37-d09b-d28b"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="1905-2087-cffc-4839" name="Veletaris Tercio" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2413,6 +2416,8 @@
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca24-f640-593d-b537" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="297b-656f-3c1c-8c5c"/>
+        <constraint type="max" value="3" field="selections" scope="self" shared="true" id="d497-66f1-6c32-3517"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="4ee4-cb02-24f5-137f" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -6193,6 +6198,10 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="self" shared="true" id="b42d-4383-37ef-25a5"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="9e1a-134-a033-97ea"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry id="7ac4-c39b-5c48-63cb" name="Command Vox" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -7009,6 +7018,13 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="decrement" value="1" field="bc8c-0dc9-0876-cbae">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d10d-00fa-2cd1-05f0" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -7032,6 +7048,8 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6ce1-5f74-d914-f276" type="max"/>
+        <constraint type="max" value="3" field="selections" scope="self" shared="true" id="b70f-32d-b5d8-35c2"/>
+        <constraint type="min" value="1" field="selections" scope="self" shared="true" id="9242-919-2dc8-6a56"/>
       </constraints>
       <selectionEntries>
         <selectionEntry id="d37b-b569-c471-ef76" name="Artillery Command Section" hidden="false" collective="false" import="true" type="unit">
@@ -9465,137 +9483,6 @@ Once assigned to a unit, the Auxilia Medicae is considered part of that unit and
       <categoryLinks>
         <categoryLink id="d70d-a5ab-df78-5eba" name="Vehicle Unit:" hidden="false" targetId="23eb-0b9e-0857-e965" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="5a6c-6acd-7682-555b" name="1) Armoured Command Section" hidden="false" collective="false" import="true" type="unit">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eb0-06fd-c109-2922" type="max"/>
-          </constraints>
-          <categoryLinks>
-            <categoryLink id="29b6-eeeb-4c54-f912" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
-            <categoryLink primary="false" targetId="4aca-2849-7f41-0200" name="SA or IM Unit" id="ebe4-99d3-4455-a702"/>
-          </categoryLinks>
-          <selectionEntries>
-            <selectionEntry id="d84d-7615-1bd4-1332" name="Leman Russ Command Tank" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d0-ae3e-025e-cc08" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bf5-d938-3327-1416" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7e9a-5d16-2867-30dc" name="Outflank" hidden="false" targetId="bfbf-e75c-49a2-0285" type="rule"/>
-                <infoLink id="8580-e4f7-a1ec-e061" name="Solar Auxilia Command Tank" hidden="false" targetId="bf74-20ed-ddc9-8ea1" type="rule"/>
-                <infoLink id="e34f-1951-7f2e-f502" name="Tercio" hidden="false" targetId="6516-f81d-457b-a2cc" type="rule"/>
-                <infoLink id="a1f1-ce84-be5d-b0c7" name="Leman Russ Command Tank" targetId="f07b-4a23-f9cb-28a8" type="profile"/>
-              </infoLinks>
-              <categoryLinks>
-                <categoryLink id="a5b7-9140-a87f-318b" name="Vehicle:" hidden="false" targetId="e2b6-b770-784c-9e95" primary="false"/>
-              </categoryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="11a1-a5ce-f056-e25b" name="1) May exchange its Hull (Front) Mounted heavy bolter for one of the following:" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="910b-1ca8-af9a-654c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df91-7353-3af8-41dd" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="c2e9-d441-c603-02f1" name="Autocannon" hidden="false" collective="false" import="true" targetId="56b3-de09-9fea-deb6" type="selectionEntry"/>
-                    <entryLink id="2e69-0861-ff96-a605" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry"/>
-                    <entryLink id="b598-2b10-17a8-2d04" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry"/>
-                    <entryLink id="64c7-bd5d-3ef3-13c9" name="Lascannon" hidden="false" collective="false" import="true" targetId="b252-5a86-6e0f-218b" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="a73b-8f7b-ed72-8160" name="Heavy Bolter" hidden="false" collective="false" import="true" targetId="07fd-c24a-9235-4206" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="b391-1578-0b49-b344" name="2) May take one of the following:" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e04d-456f-413e-86b1" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="4eb6-5bf6-57d9-1d8b" name="Multi-Laser" hidden="false" collective="false" import="true" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="0917-8518-57ba-61f3" name="Heavy Stubber" hidden="false" collective="false" import="true" targetId="f227-a61a-3215-932b" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="35ea-bfad-981c-d96c" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="5507-b432-3b4c-df12" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="82eb-9416-aad9-8ec2" name="3) May take any of the following:" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="c4c7-c0e0-0cf5-5cf7" name="Flare Shield" hidden="false" collective="false" import="true" targetId="0e77-6285-22bb-1534" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c932-8d7d-3121-1d90" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="04fb-67e8-33ba-f60d" name="Cognis-Signum" hidden="false" collective="false" import="true" targetId="93b3-2d66-f7a3-be42" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9597-1323-b706-8b0b" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="a86e-6534-c7fd-506b" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1d1-30f3-910e-9c4e" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="a485-ed98-2e4f-ebcf" name="Dozer Blade" hidden="false" collective="false" import="true" targetId="42e1-f6cf-1f2b-a492" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8e3-515a-6679-cba8" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="a2fd-dffa-eb85-b94b" name="Searchlights" hidden="false" collective="false" import="true" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8cb-3ff7-35a6-ba14" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfee-83d3-0124-42ce" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="3d00-de29-fc71-c9a4" name="Smoke Launchers" hidden="false" collective="false" import="true" targetId="0873-34dd-e52d-d33c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97f6-fa12-a503-347f" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a933-5b2b-a03e-7d85" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="dcab-4c56-cf4d-db7a" name="Battle Cannon" hidden="false" collective="false" import="true" targetId="7638-4f76-51f0-b0fa" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d32a-77c8-ca75-7c60" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80c2-e08e-8764-31f8" type="max"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="f7b1-d225-9dc1-dd42" name="2) Tank Type" hidden="false" collective="false" import="true">
           <constraints>
@@ -9984,11 +9871,21 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
+          <modifiers>
+            <modifier type="decrement" value="1" field="cb4f-3832-eec2-00af">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5a6c-6acd-7682-555b" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Unknown" hidden="false" id="5a6c-6acd-7682-555b" type="selectionEntry" targetId="d10d-00fa-2cd1-05f0"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="838e-101d-5501-3261" name="Minotaur Battery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
