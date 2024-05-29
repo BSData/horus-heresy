@@ -26,9 +26,9 @@ jobs:
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         run: pip install webdriver-manager selenium
-      - name: Enter BS directory
-        run: cd BSCopy
       - name: ls to show present files
         run: ls
+      - name: ls to show present files in BSCopy
+        run: ls BSCopy
       - name: Run tests
-        run: python3 system/tests/test_game.py
+        run: cd BSCopy && python3 system/tests/test_game.py
