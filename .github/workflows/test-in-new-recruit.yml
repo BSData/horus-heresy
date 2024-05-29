@@ -1,15 +1,17 @@
-name: Run Selenium On GitHub Action
+name: Test in New Recruit
 on: [ push, pull_request ]
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
       - name: Checking out game system
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
       - name: Checking out bscopy
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: nstephenh/bscopy
+          path: BSCopy
       - name: Setting up Python
         uses: actions/setup-python@v4
         with:
@@ -22,6 +24,11 @@ jobs:
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         run: pip install webdriver-manager selenium
+
+      - name: ls
+        run: pwd & ls
+      - name: show home directory
+        run: cd ~ && pwd
 
 
       - name: Running the Python script
