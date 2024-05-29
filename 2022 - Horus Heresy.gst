@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="106" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="107" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -247,7 +247,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         </rule>
         <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
           <alias>
-            <undefined>Infantry</undefined>
+            <undefined/>
           </alias>
           <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
@@ -15838,7 +15838,7 @@ applied to models without the Character Unit sub-type).</description>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffe9-7e78-e4cd-7967" includeChildSelections="false"/>
           </constraints>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Character Stat Improvement" id="5e99-fcf2-6b64-e88e" hidden="false" flatten="false">
+            <selectionEntryGroup name="Character Stat Improvement" id="5e99-fcf2-6b64-e88e" hidden="true" flatten="false">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="+1 WS" hidden="false" id="c60d-d862-a0b-9909" sortIndex="1">
                   <constraints>
