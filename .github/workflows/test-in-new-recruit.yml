@@ -31,4 +31,5 @@ jobs:
       - name: ls to show present files in BSCopy
         run: ls BSCopy
       - name: Run tests
-        run: cd BSCopy && python3 system/tests/test_game.py
+        run: python3 system/tests/test_game.py
+        working-directory: ./BSCopy
