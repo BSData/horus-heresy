@@ -1368,6 +1368,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
     <categoryEntry name="Salamanders - Crusade Detachment" id="928c-8689-59e8-c1e1" hidden="false"/>
     <categoryEntry name="Raven Guard - Crusade Detachment" id="afca-a57f-a32c-59fd" hidden="false"/>
     <categoryEntry name="Alpha Legion - Crusade Detachment" id="c929-73a2-9fc4-5472" hidden="false"/>
+    <categoryEntry name="Fortification Unit Type" id="679d-ec21-2940-fb9" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -2493,6 +2494,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="d7ec-95a3-173d-ca65" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="c8d1-6d92-9f5e-ce1d" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="9f1e-fbf0-3032-32fe" id="1626-7198-7dce-6d47" primary="false" name="Building Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7488-dcd5-3230-57d7" name="Imperial Bunker" hidden="false" collective="false" import="true" targetId="5157-f309-77f9-1256" type="selectionEntry">
@@ -2525,6 +2528,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="38c2-9688-ede4-f626" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="416e-c595-4e08-fa20" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="9f1e-fbf0-3032-32fe" id="527-4d85-8d7f-a94e" primary="false" name="Building Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="427d-eb8e-dbbd-87a2" name="Defence Line" hidden="false" collective="false" import="true" targetId="ea91-0572-393c-e925" type="selectionEntry">
@@ -2557,6 +2562,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="86ff-083e-ce6d-8284" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="8480-9a13-2b15-66b2" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="473d-0126-2dab-25ea" id="4b05-a1a3-6aff-d546" primary="false" name="Barricade Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ad63-7783-8500-e19f" name="Allied Detachment" hidden="false" collective="false" import="true" targetId="0fc8-91be-dcf4-1513" type="selectionEntry">
@@ -2595,6 +2602,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="247f-4a75-ac5d-c4f7" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="bc83-7d16-67fd-838b" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="9f1e-fbf0-3032-32fe" id="f881-e1ea-9195-e5d5" primary="false" name="Building Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="c3fd-09fe-2ac7-2183" name="Vengeance Weapon Battery" hidden="false" collective="false" import="true" targetId="8e99-19e1-b84a-db0b" type="selectionEntry">
@@ -2628,6 +2637,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="7836-9c5f-7d2f-9e26" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="1501-d422-9da1-def1" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="3eeb-b4b8-3d85-245a" id="170d-e1aa-9d81-5518" primary="false" name="Emplacement Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="f1d1-ca61-ae6b-4d33" name="Void Shield Generator" hidden="false" collective="false" import="true" targetId="fa45-1d74-9584-5bd5" type="selectionEntry">
@@ -2661,6 +2672,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="b9bf-59ce-321a-3bea" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="f491-63a2-3f9e-6b33" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="3eeb-b4b8-3d85-245a" id="16d0-4da3-d963-f7b0" primary="false" name="Emplacement Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="026e-1405-50cc-e19b" name="Skyshield Landing Pad" hidden="false" collective="false" import="true" targetId="a7fa-db40-52ee-b359" type="selectionEntry">
@@ -2694,6 +2707,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="5967-6a4c-46fd-c33e" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="c58d-ceb5-90f2-f589" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="3eeb-b4b8-3d85-245a" id="b9bb-b30b-7fc7-36ff" primary="false" name="Emplacement Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="dd67-c6ce-04e4-8dc2" name="Fortress Of Redemption" hidden="false" collective="false" import="true" targetId="6392-ce9d-29a7-1851" type="selectionEntry">
@@ -2727,6 +2742,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="b9eb-0b8e-0c45-463c" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="cdbd-1c19-410-7f80" primary="false" name="Fortification Unit Type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="d8a1-2527-d538-bdfb" name="Aquila Strongpoint" hidden="false" collective="false" import="true" targetId="e13d-9ef8-9b0d-bc22" type="selectionEntry">
@@ -2760,6 +2776,9 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="152d-1e4a-20aa-b580" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="6ca2-0ab3-212d-7c76" id="592-f927-d2ae-6e28" primary="false" name="Massive Sub-type"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="83e1-cb08-777e-1d7" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="9f1e-fbf0-3032-32fe" id="348e-b71b-598f-582a" primary="false" name="Building Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="01dc-d34a-1988-3919" name="Primus Redoubt" hidden="false" collective="false" import="true" targetId="2d87-bde8-08d5-ae82" type="selectionEntry">
@@ -2793,6 +2812,9 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="d079-b62e-6190-edac" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="679d-ec21-2940-fb9" id="33c3-6f30-ffe5-86af" primary="false" name="Fortification Unit Type"/>
+        <categoryLink targetId="6ca2-0ab3-212d-7c76" id="a73d-63f5-b00f-918" primary="false" name="Massive Sub-type"/>
+        <categoryLink targetId="9f1e-fbf0-3032-32fe" id="c5eb-9e38-4cfc-1f48" primary="false" name="Building Sub-type"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="91a3-bce0-aa49-e830" name="Hammerfall Bunker" hidden="false" collective="false" import="true" targetId="d5f5-a83b-ed8e-61c0" type="selectionEntry">
@@ -2826,6 +2848,8 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </modifiers>
       <categoryLinks>
         <categoryLink id="eec3-bfaa-9984-36f1" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
+        <categoryLink targetId="9f1e-fbf0-3032-32fe" id="fd14-fe07-a8d1-6de3" primary="false" name="Building Sub-type"/>
+        <categoryLink targetId="3eeb-b4b8-3d85-245a" id="3e79-3259-21e-6162" primary="false" name="Emplacement Sub-type"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9067,6 +9091,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <categoryLinks>
             <categoryLink targetId="3eeb-b4b8-3d85-245a" id="076b-78d8-46ba-a6ed" name="Emplacement Sub-type" primary="false"/>
             <categoryLink targetId="a24f-12d8-36c1-f477" id="6f4f-e264-4412-af4d" name="Fortification:" primary="false"/>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="ff21-8f-9488-c8e4" primary="false" name="Fortification Unit Type"/>
           </categoryLinks>
         </selectionEntry>
         <selectionEntry id="1332-1487-ac2c-3921" name="Bunker Annex" hidden="false" collective="false" import="true" type="model">
@@ -9125,6 +9150,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           <categoryLinks>
             <categoryLink targetId="9f1e-fbf0-3032-32fe" id="8af4-11d7-46c2-b6c4" name="Building Sub-type" primary="false"/>
             <categoryLink targetId="a24f-12d8-36c1-f477" id="d87b-579e-4808-a9de" name="Fortification:" primary="false"/>
+            <categoryLink targetId="679d-ec21-2940-fb9" id="ce85-859-511c-70d4" primary="false" name="Fortification Unit Type"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
