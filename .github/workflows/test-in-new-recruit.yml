@@ -4,15 +4,15 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Checking out game system to home/battlescribe/data/horus-heresy
+      - name: Checking out game system to horus-heresy
         uses: actions/checkout@v4
         with:
-          path: ~/BattleScribe/data/horus-heresy
+          path: horus-heresy
       - name: Checking out bscopy
         uses: actions/checkout@v4
         with:
           repository: nstephenh/bscopy
-          path: ~/BSCopy
+          path: BSCopy
       - name: Setting up Python
         uses: actions/setup-python@v4
         with:
@@ -25,4 +25,4 @@ jobs:
       - name: Installing all necessary packages
         run: pip install webdriver-manager selenium
       - name: Running the Python script
-        run: cd ~/BSCopy/ && python3 system/tests/test_game.py
+        run: cd BSCopy && python3 system/tests/test_game.py
