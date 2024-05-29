@@ -8,8 +8,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: horus-heresy
-      - name: Store CWD in environment variable
-        run: DEFAULT_DATA_DIRECTORY=$(pwd)
       - name: Checking out bscopy
         uses: actions/checkout@v4
         with:
@@ -18,16 +16,19 @@ jobs:
       - name: Setting up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.11'
       - name: Installing package list
         run: apt list --installed
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         run: pip install webdriver-manager selenium
-      - name: ls to show present files
-        run: ls
-      - name: ls to show present files in BSCopy
-        run: ls BSCopy
+      - name: Print workspace directory (as that's where we checked out data)
+        run: echo $DEFAULT_DATA_DIRECTORY
+        env:
+          DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}
+
       - name: Run tests
         run: python3 system/tests/test_game.py
         working-directory: ./BSCopy
+        env:
+          DEFAULT_DATA_DIRECTORY: ${{ github.workspace }}
