@@ -1,7 +1,7 @@
 name: Test in New Recruit
 on: [ push, pull_request ]
 jobs:
-  scrape:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checking out game system to horus-heresy
@@ -26,5 +26,9 @@ jobs:
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         run: pip install webdriver-manager selenium
-      - name: Running the Python script
-        run: cd BSCopy && python3 system/tests/test_game.py
+      - name: Enter BS directory
+        run: cd BSCopy
+      - name: ls to show present files
+        run: ls
+      - name: Run tests
+        run: python3 system/tests/test_game.py
