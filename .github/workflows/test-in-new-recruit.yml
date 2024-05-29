@@ -4,14 +4,15 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Checking out game system
+      - name: Checking out game system to home/battlescribe/data/horus-heresy
         uses: actions/checkout@v4
-
+        with:
+          path: ~/BattleScribe/data/horus-heresy
       - name: Checking out bscopy
         uses: actions/checkout@v4
         with:
           repository: nstephenh/bscopy
-          path: BSCopy
+          path: ~/BSCopy
       - name: Setting up Python
         uses: actions/setup-python@v4
         with:
@@ -20,16 +21,8 @@ jobs:
         run: apt list --installed
       - name: Removing previous chrome instances on runner
         run: sudo apt purge google-chrome-stable
-
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
         run: pip install webdriver-manager selenium
-
-      - name: ls
-        run: pwd & ls
-      - name: show home directory
-        run: cd ~ && pwd
-
-
       - name: Running the Python script
-        run: python3 BSCopy/system/tests/test_game.py
+        run: cd ~/BSCopy/ && python3 system/tests/test_game.py
