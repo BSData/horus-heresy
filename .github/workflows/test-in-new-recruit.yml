@@ -8,6 +8,8 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: horus-heresy
+      - name: Store CWD in environment variable
+        run: DEFAULT_DATA_DIRECTORY=$(pwd)
       - name: Checking out bscopy
         uses: actions/checkout@v4
         with:
