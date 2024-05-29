@@ -265,11 +265,6 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         <infoLink id="9725-2d0a-cb56-757b" name="Kharash" hidden="false" targetId="71fa-da0d-0056-9072" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-<<<<<<< HEAD
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="a2cf-c464-bfdd-4467" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-              </conditions>
-=======
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -279,7 +274,6 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
->>>>>>> 2f410f2 (Rm kharash and fnp5+ from unique ICs)
             </modifier>
           </modifiers>
         </infoLink>
