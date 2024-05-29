@@ -265,18 +265,30 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
         <infoLink id="9725-2d0a-cb56-757b" name="Kharash" hidden="false" targetId="71fa-da0d-0056-9072" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a2cf-c464-bfdd-4467" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="23a4-cb25-4fc5-5c3c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2b7a-a60d-fbc4-7000" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
         <infoLink id="e106-2c9c-ca77-e0da" name="Feel No Pain (X)" hidden="false" targetId="ec46-ff29-32e0-c2aa" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a2cf-c464-bfdd-4467" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="a2cf-c464-bfdd-4467" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="23a4-cb25-4fc5-5c3c" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="2b7a-a60d-fbc4-7000" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
             <modifier type="set" field="name" value="Feel No Pain (5+)"/>
           </modifiers>
