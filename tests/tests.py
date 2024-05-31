@@ -127,13 +127,17 @@ class GameTests(unittest.TestCase):
     def test_LA_5_errors(self):
         self.load_list('Empty Validation Test')
         errors = self.get_error_list()
-        self.assertEqual(5, len(errors), "There are 5 errors in an empty space marine list")
+        self.assertEqual(5, len(errors), "There should be 5 errors in an empty space marine list")
 
     def test_dt_does_not_affect_squad_cost(self):
         self.load_list('Dedicated Transport Squad Costs')
         squad_cost = self.get_squad_cost("Troops:", "Tactical Support Squad")
-        print(squad_cost)
-        self.assertEqual(170, squad_cost, "TSS does not count the rhino as a model")
+        self.assertEqual(170, squad_cost, "TSS should not count the rhino as a model")
+
+    def test_NameOfTest(self):
+        self.load_list('Basic Marines Validate')
+        errors = self.get_error_list()
+        self.assertEqual(0, len(errors), "This list has validation errors")
 
 
 if __name__ == '__main__':

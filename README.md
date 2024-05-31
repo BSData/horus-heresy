@@ -55,6 +55,24 @@ A .cattemplate file is a .cat file, renamed to .cattemplate, used by [BSCOPY](ht
 We used bscopy to copy all 18 legions after implementing the first one. 
 We didn't maintain the template so it's not recommended to re-run bscopy
 
+## Tests
+GitHub actions will load configured lists in [tests](tests) and ensure they produce the expected outcome. 
+To add a new test:
+1. Export a roster from NewRecruit or BattleScribe
+2. Rename that roster from .ros to .test and place it in [tests](tests)
+3. Add a new case to [tests.py](tests/tests.py): 
+    ```python
+    def test_NameOfTest(self):
+        self.load_list('Name of Roster file with no extension')
+        errors = self.get_error_list()
+        self.assertEqual(0, len(errors), "This list has validation errors")
+    ```
+   * There are other tests, such as checking for points on a specific unit. Look through the code for examples.
+4. Run the unit tests with python, or create a pull request to have GitHub run them automatically. 
+   * To run them locally, install python and the packages `selenium` and `webdriver-manager`, and Google Chrome.
+
+
+
 ## References
 
 * Horus Heresy: Age of Darkness Rulebook
