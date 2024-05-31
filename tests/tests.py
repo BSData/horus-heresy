@@ -75,7 +75,7 @@ class GameTests(unittest.TestCase):
 
         if len(import_list_element) > 0:
             print("Uploading list to the import list button")
-            import_list_element[0].send_keys(test_list)
+            import_list_element[0].send_keys(test_list + ".ros")
 
         # Load the first list
         self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, "listName"))).click()
@@ -116,9 +116,13 @@ class GameTests(unittest.TestCase):
     def test_verify_no_ros_files(self):
         tests_dir = os.path.join(self.game_directory, 'tests')
         for filename in os.listdir(tests_dir):
-            if filename.split(".")[-1].lower() in ["ros", "rosz"]:
-                self.fail(
-                    "There is a .ros file in the tests directory, which will break appspot. Rename the file to .test")
+            name, extension = os.path.splitext(filename)
+            if extension in ["ros", "rosz"]:
+                if not os.path.exists(
+                        os.path.join(tests_dir, name, ".test")):  # If this isn't a copy we made of a .test
+                    self.fail(
+                        "There is a .ros file in the tests directory, which will break appspot."
+                        " Rename the file to .test")
 
     def test_LA_5_errors(self):
         self.load_list('Empty Validation Test')
