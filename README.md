@@ -49,6 +49,8 @@ These are requirements on a unit to maintain rites of war:
 - Solar Auxillia and Imperialis Militia units need "SA or IM Unit" for rites of war that count that number of units.
 - - Lords of war should be excluded from this as they won't be in the "allied detachment"
 
+Units in the space marine catalogues should have "import=false" set as otherwise they will import into alpha legion.
+
 ### .cattemplate? and what are all the template_id_ comments?
 A .cattemplate file is a .cat file, renamed to .cattemplate, used by [BSCOPY](https://github.com/nstephenh/BSCopy)
 
