@@ -6706,7 +6706,7 @@ Fire Point (Front 4)</characteristic>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55"/>
           </costs>
           <categoryLinks>
-            <categoryLink targetId="a24f-12d8-36c1-f477" id="2341-d478-43ea-8a68" name="Fortification:" primary="false"/>
+            <categoryLink name="Fortification Unit Type" hidden="false" id="3533-9f5c-bd25-4e47" targetId="679d-ec21-2940-fb9" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -6746,7 +6746,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="85"/>
           </costs>
           <categoryLinks>
-            <categoryLink targetId="a24f-12d8-36c1-f477" id="0229-61ff-4de5-aff5" name="Fortification:" primary="false"/>
+            <categoryLink name="Fortification Unit Type" hidden="false" id="62c1-9a51-5292-25da" targetId="679d-ec21-2940-fb9" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -8874,7 +8874,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
           </costs>
           <categoryLinks>
             <categoryLink targetId="3eeb-b4b8-3d85-245a" id="43c1-7dc4-4f66-b763" name="Emplacement Sub-type" primary="false"/>
-            <categoryLink targetId="a24f-12d8-36c1-f477" id="9d80-388a-4821-a812" name="Fortification:" primary="false"/>
+            <categoryLink name="Fortification Unit Type" hidden="false" id="3899-bbe5-19f1-5cfd" targetId="679d-ec21-2940-fb9" primary="false"/>
           </categoryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -9100,7 +9100,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </costs>
           <categoryLinks>
             <categoryLink targetId="3eeb-b4b8-3d85-245a" id="076b-78d8-46ba-a6ed" name="Emplacement Sub-type" primary="false"/>
-            <categoryLink targetId="a24f-12d8-36c1-f477" id="6f4f-e264-4412-af4d" name="Fortification:" primary="false"/>
             <categoryLink targetId="679d-ec21-2940-fb9" id="ff21-8f-9488-c8e4" primary="false" name="Fortification Unit Type"/>
           </categoryLinks>
         </selectionEntry>
@@ -9159,7 +9158,6 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
           </costs>
           <categoryLinks>
             <categoryLink targetId="9f1e-fbf0-3032-32fe" id="8af4-11d7-46c2-b6c4" name="Building Sub-type" primary="false"/>
-            <categoryLink targetId="a24f-12d8-36c1-f477" id="d87b-579e-4808-a9de" name="Fortification:" primary="false"/>
             <categoryLink targetId="679d-ec21-2940-fb9" id="ce85-859-511c-70d4" primary="false" name="Fortification Unit Type"/>
           </categoryLinks>
         </selectionEntry>
