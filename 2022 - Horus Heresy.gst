@@ -33,7 +33,7 @@
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
   </costTypes>
   <profileTypes>
-    <profileType id="4bb2-cb95-e6c8-5a21" name="Unit">
+    <profileType id="4bb2-cb95-e6c8-5a21" name="Unit" sortIndex="1">
       <characteristicTypes>
         <characteristicType id="ddd7-6f5c-a939-b69e" name="Unit Type"/>
         <characteristicType id="893e-2d76-8f04-44e5" name="Move"/>
@@ -48,7 +48,7 @@
         <characteristicType id="e593-6b3c-f169-04f0" name="Save"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="1a1a-e592-2849-a5c0" name="Weapon">
+    <profileType id="1a1a-e592-2849-a5c0" name="Weapon" sortIndex="5">
       <characteristicTypes>
         <characteristicType id="95ba-cda7-b831-6066" name="Range"/>
         <characteristicType id="24d9-b8e1-a355-2458" name="Strength"/>
@@ -56,12 +56,12 @@
         <characteristicType id="2f86-c8b4-b3b4-3ff9" name="Type"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="2a1f-7837-f0ef-be44" name="Wargear Item">
+    <profileType id="2a1f-7837-f0ef-be44" name="Wargear Item" sortIndex="6">
       <characteristicTypes>
         <characteristicType id="347e-ee4a-764f-6be3" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="2fae-b053-3f78-e7b2" name="Vehicle">
+    <profileType id="2fae-b053-3f78-e7b2" name="Vehicle" sortIndex="2">
       <characteristicTypes>
         <characteristicType id="e555-4aed-dfcc-c0b4" name="Unit Type"/>
         <characteristicType id="3614-4a2d-bffb-90e4" name="Move"/>
@@ -74,7 +74,7 @@
         <characteristicType id="e217-1b1e-9494-3e3e" name="Access Points"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="cede-0217-1b10-2a34" name="Psychic Weapon">
+    <profileType id="cede-0217-1b10-2a34" name="Psychic Weapon" sortIndex="9">
       <characteristicTypes>
         <characteristicType id="62ec-fbf5-5252-0d17" name="Range"/>
         <characteristicType id="17ff-12e7-77d3-2fbe" name="Strength"/>
@@ -82,12 +82,12 @@
         <characteristicType id="2159-62b6-4337-d516" name="Type"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="5405-b3c6-e8d0-4e77" name="Psychic Power">
+    <profileType id="5405-b3c6-e8d0-4e77" name="Psychic Power" sortIndex="8">
       <characteristicTypes>
         <characteristicType id="4c0f-7e2f-586c-9305" name="Description"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="eeec-bde3-8ee4-35b0" name="Fortification">
+    <profileType id="eeec-bde3-8ee4-35b0" name="Fortification" sortIndex="4">
       <characteristicTypes>
         <characteristicType id="61e0-0fff-1638-759c" name="Unit Type"/>
         <characteristicType id="728e-b496-e2b2-ca81" name="BS"/>
@@ -99,12 +99,12 @@
         <characteristicType id="9d06-02d5-cc06-9698" name="Fire Points"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="a0e6-a7b4-d55d-85b8" name="Warlord Trait">
+    <profileType id="a0e6-a7b4-d55d-85b8" name="Warlord Trait" sortIndex="10">
       <characteristicTypes>
         <characteristicType id="c68e-2cda-b67b-baca" name="Text"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="75b5-9f7a-156e-6889" name="Knights and Titans">
+    <profileType id="75b5-9f7a-156e-6889" name="Knights and Titans" sortIndex="3">
       <characteristicTypes>
         <characteristicType id="3c44-1e2a-23fe-c9e0" name="Unit Type"/>
         <characteristicType id="7f12-0cc3-9dcd-25bc" name="Move"/>
@@ -119,7 +119,7 @@
         <characteristicType id="2490-aa2f-f5db-6070" name="HP"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="90b9-7fab-87db-aed3" name="Reactions">
+    <profileType id="90b9-7fab-87db-aed3" name="Reactions" sortIndex="11">
       <characteristicTypes>
         <characteristicType id="c627-4637-8de5-65fb" name="Description"/>
       </characteristicTypes>
