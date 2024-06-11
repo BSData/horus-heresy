@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="108" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="109" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -960,7 +960,62 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0ca-ca8a-f177-7ba1" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="d82b-1980-74f8-5dac" name="Allied Detachment" hidden="false"/>
+    <categoryEntry id="d82b-1980-74f8-5dac" name="Allied Detachment" hidden="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1cc0-a873-67e1-2bd1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fcad-37f0-35dd-ed63" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3e99-2aef-6c8c-6a77" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="b604-5db4-b6f4-10ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0e00-fa19-7666-1582" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="3e99-2aef-6c8c-6a77">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d601-e213-fa45-8ee8" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="b604-5db4-b6f4-10ea">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="12f2-df1a-525f-7957" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="fcad-37f0-35dd-ed63">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="64a2-0d7a-e716-e67f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="0fa2-d71c-9cdb-86cb" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e864-ddc1-da3a-138e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="12f2-df1a-525f-7957" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e20d-6f02-d7d5-395f" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="0" field="0e00-fa19-7666-1582">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="50cf-edf5-d39a-8943" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5430-5be1-1613-be44" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="e864-ddc1-da3a-138e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="afca-3047-fb26-d097" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
     <categoryEntry id="d615-c0e4-6d17-107e" name="Assassin Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
       <rules>
         <rule id="9522-1b3d-f849-fd60" name="Assassin Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
@@ -2427,6 +2482,13 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="d82b-1980-74f8-5dac" field="category">
+          <conditions>
+            <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d4f2-6da5-b6de-06ec" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="15dd-ba85-599e-d215" name="Expanded Army List Profiles:" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -2574,11 +2636,6 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
         <categoryLink id="86ff-083e-ce6d-8284" name="Fortification:" hidden="false" targetId="a24f-12d8-36c1-f477" primary="true"/>
         <categoryLink targetId="679d-ec21-2940-fb9" id="8480-9a13-2b15-66b2" primary="false" name="Fortification Unit Type"/>
         <categoryLink targetId="473d-0126-2dab-25ea" id="4b05-a1a3-6aff-d546" primary="false" name="Barricade Sub-type"/>
-      </categoryLinks>
-    </entryLink>
-    <entryLink id="ad63-7783-8500-e19f" name="Allied Detachment" hidden="false" collective="false" import="true" targetId="0fc8-91be-dcf4-1513" type="selectionEntry">
-      <categoryLinks>
-        <categoryLink id="9fb6-1837-1414-95a7" name="Allied Detachment" hidden="false" targetId="d82b-1980-74f8-5dac" primary="true"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="ffeb-34e6-ea59-170c" name="Firestorm Redoubt" hidden="false" collective="false" import="true" targetId="ad29-7efd-9c94-ac08" type="selectionEntry">
@@ -10453,7 +10510,6 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="roster" childId="0fc8-91be-dcf4-1513" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="d601-e213-fa45-8ee8" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
                 <condition type="atLeast" value="1" field="selections" scope="roster" childId="47f0-bba9-6d89-9baa" shared="true" includeChildSelections="true"/>
@@ -13998,6 +14054,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="90ee-77dd-1b7f-ddfe" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="d82b-1980-74f8-5dac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -14198,6 +14255,7 @@ Limitations
                   <conditions>
                     <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dbf-0760-d7ae-f125" type="equalTo"/>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c0df-c1fa-5ddc-9ee5" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="d82b-1980-74f8-5dac" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
