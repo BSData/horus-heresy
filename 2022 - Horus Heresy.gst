@@ -10716,6 +10716,114 @@ Be aware that we are actively trying to find a solution to this, but it is less 
         </modifier>
       </modifiers>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Lash" hidden="false" id="bf5a-7a60-c735-9d25" collective="false">
+      <profiles>
+        <profile name="Power Lash" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="bf1a-30bb-c5cb-bb5d" publicationId="d882-d2a-5da1-92c4" page="177">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Shred, Reach (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Shred" id="9441-caa7-edea-6eff" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+        <infoLink name="Reach (X)" id="55ca-d6a6-7b96-fb74" hidden="false" targetId="19bf-62a2-5737-890b" type="rule">
+          <modifiers>
+            <modifier type="set" value="Reach (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6112-2c54-ceb5-a24d" name="Void Armour" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1ede-a380-56ce-bd90" name="Void Armour" publicationId="15a4-fc68-502d-48a9" page="159" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Void armour confers a 4+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="499b-b86b-3a44-17c6" name="Void Armour" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b8a2-9d63-269f-70d9" name="Void Armour" hidden="false" targetId="1ede-a380-56ce-bd90" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c04e-5624-3615-0660" name="Vox Interlock" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="008b-9e8f-5410-f58b" name="Vox Interlock" publicationId="15a4-fc68-502d-48a9" page="153" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Any friendly unit that includes at least one model with a vox interlock may choose to use the Leadership value of any model in a friendly unit with a command vox when making Pinning tests or Morale checks – this includes any friendly units with a command vox that are in Reserves or are Embarked on a model with the Vehicle Unit Type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6f5a-bf56-4bee-ce7e" name="Auxilia Vexilla" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ede3-8f88-276b-7368" name="Auxilia Vexilla" publicationId="15a4-fc68-502d-48a9" page="151" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with an Auxilia vexilla adds +1 to the Wounds score used to decide if they win a Combat in the Assault phase. In addition, a unit that includes at least one model with an Auxilia vexilla may choose to Fall Back only a distance equal to the roll of a D6 instead of 2D6 (or 3D6 if a Cavalry unit) and if forced to move off the edge of the battlefield will instead stop with each model 1&quot; away from the edge of the battlefield.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dd91-0c2e-0890-1673" name="Militia Vexilla" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fabb-a9da-b8b1-c374" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="80c6-1db7-6bc2-507f" name="Militia Vexilla" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with an Militia vexilla adds +1 to the Wounds score used to decide if they win a Combat in the Assault phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0251-8365-9efb-61a7" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="true" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b31-6385-93e9-df56" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="7356-a3fb-f8a8-dbea" name="Flak Armour" hidden="false" targetId="b498-93a6-b43b-49db" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f02b-00e7-b68c-3be0" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d54e-ede7-beff-9dbc" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b498-93a6-b43b-49db" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Flak armour confers a 5+ Armour Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -16105,6 +16213,706 @@ Special rules that are removed:
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Legiones Auxilia (X)" id="305a-8c32-e3dd-7615" hidden="true" publicationId="d882-d2a-5da1-92c4">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9fde-326-a69f-2976"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f514-d7bb-1a6a-debb"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Dark Angels)" hidden="false" id="6217-f1c2-8678-a5a" publicationId="d882-d2a-5da1-92c4" page="166" sortIndex="1">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb7d-3cad-2d89-d8c7"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d6fa-4501-5dd3-2fbd"/>
+          </constraints>
+          <rules>
+            <rule name="Unity of Mind" id="f698-b010-7433-8877" hidden="false" publicationId="d882-d2a-5da1-92c4" page="166">
+              <description>Once per Phase, when a Reaction is declared for a unit entirely composed of models with both the Legiones Auxilia (Dark Angels) and Tercio special rules that allow it to make a Shooting Attack or Move, a single friendly unit entirely composed of models with the Legiones Astartes (Dark Angels) special rule which has at least one model within 6&quot; of the Reacting unit may also Move or make a Shooting Attack as described in the Reaction being made as though it was part of the same Tercio as the Reacting unit and was ‘In Formation’ as per the Tercio special rule. This does not cost an additional point of Reaction Allotment but a unit with the Legiones Astartes (Dark Angels) special rule which Moves or Shoots in this way is counted as having made a Reaction, and thus cannot make further Reactions in the same Phase, and must target the same unit with any Shooting Attacks made.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="d6fa-4501-5dd3-2fbd">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="fc04-ef02-2ae8-5cae" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Emperor&apos;s Children)" hidden="false" id="11b9-749-9459-b091" publicationId="d882-d2a-5da1-92c4" page="166" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89e6-54df-e507-8d2d"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="76a5-8691-e3f9-2291"/>
+          </constraints>
+          <rules>
+            <rule name="The Art of Suffering" id="50b3-7b57-5a66-85e8" hidden="false" publicationId="d882-d2a-5da1-92c4" page="166">
+              <description>Whenever a Shooting Attack causes a unit containing one or more models with the Legiones Auxilia (Emperor’s Children) special rule to have one or more models removed as casualties, all models in the unit with the Legiones Auxilia (Emperor’s Children) special rule gain the Hammer of Wrath (1) special rule until the end of their controlling player’s next turn.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="76a5-8691-e3f9-2291">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="39e5-1e75-1000-ded" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Raven Guard)" hidden="false" id="56c-d145-5315-3dff" publicationId="d882-d2a-5da1-92c4" sortIndex="17" page="176">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="857c-224-ff81-9445"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="a227-fe6d-d2a9-e221"/>
+          </constraints>
+          <rules>
+            <rule name="Spearhead of Liberation" id="6a83-1a3d-1f52-8667" hidden="false" publicationId="d882-d2a-5da1-92c4" page="176">
+              <description>When a unit entirely composed of models with the Legiones Auxilia (Raven Guard) special rule contains at least a single model which can draw line of sight to a friendly model within 24&quot; which has the Legiones Astartes (Raven Guard) special rule and is drawn from the same Army’s Primary Detachment, then all models in the unit increase their Leadership Characteristic by +1 to a maximum value of 10.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="a227-fe6d-d2a9-e221">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="4502-1309-5fa1-f465" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Iron Warriors)" hidden="false" id="2c59-775c-89e6-8a5e" publicationId="d882-d2a-5da1-92c4" sortIndex="3" page="167">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab1c-e7d1-52de-3fee"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="f129-7a6a-299b-f28c"/>
+          </constraints>
+          <rules>
+            <rule name="Shot-shrouded" id="f24e-60c8-9dc1-2b47" hidden="false" publicationId="d882-d2a-5da1-92c4" page="167">
+              <description>When a unit entirely composed of models with the Legiones Auxilia (Iron Warriors) special rule takes Leadership tests as part of the Pinning or Concussive special rules, the unit ignores any negative Leadership modifiers.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="f129-7a6a-299b-f28c">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="3ed5-d3fb-24c4-95ee" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (White Scars)" hidden="false" id="ad19-7c9f-fc4f-7a07" publicationId="d882-d2a-5da1-92c4" sortIndex="4" page="167">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d3b-e241-307b-20f0"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1bab-59db-6b87-8215"/>
+          </constraints>
+          <rules>
+            <rule name="Eye of the Storm" id="2c27-a99d-e17f-a52f" hidden="false" publicationId="d882-d2a-5da1-92c4" page="167">
+              <description>When a unit containing one or more models with both the Legiones Auxilia (White Scars) and Tercio special rules, as well as the Line Unit Sub-type, is within the controlling player’s Deployment Zone or has at least half of its models within 6&quot; of an Objective, then all models in the unit gain the Feel No Pain (6+) special rule. If any model in the unit already has a variant of the Feel No Pain special rule then instead increase the value in brackets of one of those rules by +1 while the unit has at least half of its models within 6&quot; of an Objective to a maximum of 5+.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="1bab-59db-6b87-8215">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="86f3-5195-2829-da36" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Space Wolves)" hidden="false" id="9e0e-d572-c120-4778" publicationId="d882-d2a-5da1-92c4" sortIndex="5" page="168">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad02-ea42-74ea-d6ed"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cb27-ac55-d6c6-ba49"/>
+          </constraints>
+          <rules>
+            <rule name="The Ears of Morkai" id="6b0c-9c4a-306e-ee90" hidden="false" publicationId="d882-d2a-5da1-92c4" page="168">
+              <description>No model may make Cover Saves or Shrouded Damage Mitigation rolls against Wounds inflicted by Shooting Attacks which are made by models with the Legiones Auxilia (Space Wolves) special rule as part of a Reaction.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="cb27-ac55-d6c6-ba49">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="3e60-7bd-b3d6-6d7e" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Imperial Fists)" hidden="false" id="3611-eb7e-4f9f-34c" publicationId="d882-d2a-5da1-92c4" sortIndex="6" page="168">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7b0-78fd-79a4-2c4b"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="6b1f-5fea-f51b-97a6"/>
+          </constraints>
+          <rules>
+            <rule name="Steadfast" id="90dc-764f-e00d-16bc" hidden="false" publicationId="d882-d2a-5da1-92c4" page="168">
+              <description>A unit entirely composed of models with both the Legiones Auxilia (Imperial Fists) special rule and the Line Unit Sub-type increases all Cover Saves granted by terrain by one (i.e., from 6+ to 5+). This only increases existing Cover Saves and does not grant one when in terrain that does not normally grant a Cover Save. This rule cannot increase a Cover Save to better than 4+.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="6b1f-5fea-f51b-97a6">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="411b-f17-e28-7cb6" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Night Lords)" hidden="false" id="f339-a35b-50ea-f0c4" publicationId="d882-d2a-5da1-92c4" sortIndex="7" page="170">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a58-d1-3004-bcf9"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c5cf-1e55-aa56-d77e"/>
+          </constraints>
+          <rules>
+            <rule name="Combat Haze" id="5188-5361-817-a0c7" hidden="false" publicationId="d882-d2a-5da1-92c4" page="170">
+              <description>Models with the Legiones Auxilia (Night Lords) special rule are never affected by any instance of the Fear (X) special rule. All models in a unit entirely composed of models with both the Legiones Auxilia (Night Lords) and Tercio special rules gain the Rage (2) special rule for the duration of any Assault phase in which at least a single model from the unit begins that Assault phase within 12&quot; of any friendly model with the Fear (X) special rule that is not part of the same Detachment.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="c5cf-1e55-aa56-d77e">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="39b3-2a02-abb9-eafa" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Blood Angels)" hidden="false" id="b7ed-325d-96f8-e8f3" publicationId="d882-d2a-5da1-92c4" sortIndex="8" page="170">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae85-9f46-39f-d3fc"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="156a-9feb-e07-faf"/>
+          </constraints>
+          <rules>
+            <rule name="Glory of Humanity" id="6c7d-eb34-efb7-2e26" hidden="false" publicationId="d882-d2a-5da1-92c4" page="170">
+              <description>Any model with the Legiones Auxilia (Blood Angels) special rule which is locked in combat increases its Attacks Characteristic by +1 as long as it is within 6&quot; of a friendly model with the Legiones Astartes (Blood Angels) special rule.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="156a-9feb-e07-faf">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="da47-9c6a-dd64-ef9c" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Iron Hands)" hidden="false" id="9334-a117-b5f5-8d34" publicationId="d882-d2a-5da1-92c4" sortIndex="9" page="171">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc2e-197-5e11-12d0"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c410-e140-577e-a7f0"/>
+          </constraints>
+          <rules>
+            <rule name="Cerebral Augments" id="c3bb-d0af-206a-8e87" hidden="false" publicationId="d882-d2a-5da1-92c4" page="171">
+              <description>When a unit entirely composed of models with the Legiones Auxilia (Iron Hands) special rule fails a Morale check owing to casualties in the Shooting phase, it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no Saves of any kind allowed (Damage Mitigation rolls may still be used to negate these Wounds).</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="c410-e140-577e-a7f0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="7d88-1a6-a897-215b" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Alpha Legion)" hidden="false" id="33a3-7b29-660d-d7ad" publicationId="d882-d2a-5da1-92c4" sortIndex="18" page="176">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2660-3967-148e-d10a"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4ab8-af5f-ca4a-fc7f"/>
+          </constraints>
+          <rules>
+            <rule name="Diversionary Host" id="1e44-92a0-cb4f-b571" hidden="false" publicationId="d882-d2a-5da1-92c4" page="176">
+              <description>When a unit entirely composed of models with the Legiones Astartes (Alpha Legion) special rule is selected as the target of a Shooting Attack during the opposing player’s Shooting phase, the attacking unit must first make a Leadership test as long as there is a unit entirely composed of models with the Legiones Auxilia (Alpha Legion) special rule with at least one model within 12&quot; of the targeted unit to which the attacking unit can also draw line of sight. If this Leadership test is failed, all Shooting Attacks made by the attacking unit must instead target the unit entirely composed of models with the Legiones Auxilia (Alpha Legion) special rule – if the Leadership test is passed, they may attack as normal.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="4ab8-af5f-ca4a-fc7f">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="6b44-ba3f-cfa0-f3fc" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (World Eaters)" hidden="false" id="c1b7-94e2-5e75-890a" publicationId="d882-d2a-5da1-92c4" sortIndex="10" page="171">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe5d-8298-a1db-f848"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="d9e4-f249-2300-a69"/>
+          </constraints>
+          <rules>
+            <rule name="Butcher&apos;s Due" id="3801-a5a3-b79a-5c6b" hidden="false" publicationId="d882-d2a-5da1-92c4" page="171">
+              <description>When making Shooting Attacks targeting units which are Falling Back or who have previously had one or more models removed as casualties, models with the Legiones Auxilia (World Eaters) special rule add +1 to rolls To Hit.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="d9e4-f249-2300-a69">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="7286-4c3a-ce84-1afb" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Ultramarines)" hidden="false" id="a90d-7a9-16a1-1161" publicationId="d882-d2a-5da1-92c4" sortIndex="11" page="173">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcc1-3999-bc08-7762"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="73d7-887d-824e-c950"/>
+          </constraints>
+          <rules>
+            <rule name="Combined Arms" id="b6ab-53cb-196f-f6a5" hidden="false" publicationId="d882-d2a-5da1-92c4" page="173">
+              <description>When a unit containing one or more models with the Legiones Astartes (Ultramarines) special rule declares a Charge against an enemy unit which has had one or more models removed as casualties as a result of a Shooting Attack made by a model with the Legiones Auxilia (Ultramarines) special rule in the same Game Turn, any Shooting Attacks made against the Charging unit as part of a Reaction in the same Assault phase are resolved as Snap Shots.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="73d7-887d-824e-c950">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="8661-89f3-a8b9-1424" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Death Guard)" hidden="false" id="3a93-1380-1534-ed70" publicationId="d882-d2a-5da1-92c4" sortIndex="12" page="173">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31c5-2b89-5351-99b1"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="67a9-b6e3-1b16-7412"/>
+          </constraints>
+          <rules>
+            <rule name="Mantle of Death" id="1ef5-e00b-5565-50d7" hidden="false" publicationId="d882-d2a-5da1-92c4" page="173">
+              <description>When rolling To Wound against a model with the Legiones Auxilia (Death Guard) special rule, for any attack inflicted by a weapon with either the Fleshbane or Poisoned (X) special rules, reduce the result of that roll To Wound by -1 (this does not affect the Strength of the attack, only the result of the roll To Wound). Additionally, models with both the Legiones Auxilia (Death Guard) special rule and the Infantry Unit Type may re-roll failed Dangerous Terrain tests.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="67a9-b6e3-1b16-7412">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="2a6a-bde1-8f6b-1629" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Thousand Sons)" hidden="false" id="b114-362-2ea3-4d94" publicationId="d882-d2a-5da1-92c4" sortIndex="13" page="174">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2d1c-2f32-2d35-d9de"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1a86-ff09-7906-8f07"/>
+          </constraints>
+          <rules>
+            <rule name="Psy-shock" id="e237-75ed-b361-62eb" hidden="false" publicationId="d882-d2a-5da1-92c4" page="174">
+              <description>Any friendly model with the Legiones Astartes (Thousand Sons) special rule which suffers Perils of the Warp while within 12&quot; of a unit entirely composed of models with the Legiones Auxilia (Thousand Sons) special rule and the Infantry Unit Type may choose to allocate all of the Wounds inflicted by Perils of the Warp to the unit containing models with the Legiones Auxilia (Thousand Sons) special rule and the Infantry Unit Type. Additionally, all models with the Legiones Auxilia (Thousand Sons) special rule and the Infantry Unit Type gain the Adamantium Will (6+) special rule.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="1a86-ff09-7906-8f07">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="a487-5dd2-81dc-c39" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Sons of Horus)" hidden="false" id="4c27-b3d0-f29-bd08" publicationId="d882-d2a-5da1-92c4" sortIndex="14" page="174">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ef63-16bd-d657-884f"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="c779-72a-dfb6-272b"/>
+          </constraints>
+          <rules>
+            <rule name="Warmaster&apos;s Spite" id="23b5-e5e3-bd12-9341" hidden="false" publicationId="d882-d2a-5da1-92c4" page="174">
+              <description>When a friendly unit containing one or more models with the Legiones Astartes (Sons of Horus) special rule declares a Charge against an enemy unit which has had one or more models removed as casualties as a result of a Shooting Attack made by a model with the Legiones Auxilia (Sons of Horus) special rule in the same Game Turn, the Charging unit adds +2 to the result of the Charge Distance roll.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="c779-72a-dfb6-272b">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="6130-6a24-4728-5303" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Word Bearers)" hidden="false" id="1cd7-e1ee-6bbb-3106" publicationId="d882-d2a-5da1-92c4" sortIndex="15" page="175">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bddd-bcca-3f7e-6d0d"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="1594-c1c6-b82f-3cc9"/>
+          </constraints>
+          <rules>
+            <rule name="Cult Demagogues" id="d3f3-e081-a6ff-4dae" hidden="false" publicationId="d882-d2a-5da1-92c4" page="175">
+              <description>All models in a unit entirely composed of models with both the Legiones Auxilia (Word Bearers) and Tercio special rules gain the Fleet (2) and Crusader special rules for the duration of any of the controlling player’s turns in which at least a single model from the unit begins that turn within 12&quot; of any friendly model with the Legiones Astartes (Word Bearers) special rule.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="1594-c1c6-b82f-3cc9">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="f911-f0c8-6da6-9031" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Legiones Auxilia (Salamanders)" hidden="false" id="962-f58f-331d-cd36" publicationId="d882-d2a-5da1-92c4" sortIndex="16" page="175">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8522-dd0b-16b8-c50b"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="84a4-7622-803e-28f3"/>
+          </constraints>
+          <rules>
+            <rule name="Promethean Wards" id="f2fb-5b77-f6e2-853a" hidden="false" publicationId="d882-d2a-5da1-92c4" page="175">
+              <description>Units containing one or more models with the Legiones Auxilia (Salamanders) special rule increase the Cover Save they receive against Shooting Attacks which draw line of sight through an intervening unit to a roll of 4+ as long as the intervening unit is entirely composed of models with the Legiones Astartes (Salamanders) special rule.</description>
+            </rule>
+          </rules>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="1" field="84a4-7622-803e-28f3">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Legiones Auxilia (X)" id="a0d3-c42c-79e6-7965" hidden="false" type="rule" targetId="2a96-1887-bb34-da14"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="9fde-326-a69f-2976">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" value="1" field="f514-d7bb-1a6a-debb">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="0ac9-fab7-aef3-de1d" name="Rending (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
@@ -17019,6 +17827,31 @@ A Detachment with this Oath may not be selected as part of any army that include
 
 
 This does not allow those models to select Warlord Traits, Rites of War, Consul Types, Praetor upgrades, or other options available to models with that variant of the Legiones Astartes (X) special rule and does not allow the Detachment to include units restricted to Detachments of that Faction.</description>
+    </rule>
+    <rule id="6516-f81d-457b-a2cc" name="Tercio" publicationId="15a4-fc68-502d-48a9" page="138" hidden="false">
+      <description>Models with this special rule may only be selected as part of a Tercio (see the rules for Tercios on page 68). When a Reaction is declared for a unit with this rule that allows it to make a Shooting Attack or Move, then all units from the same Tercio that are ‘In Formation’ with the Reacting unit may also Move or make a Shooting Attack as described in the Reaction being made (all units that Move or Shoot are counted as having made a Reaction, and thus cannot make further Reactions in the same Phase, and must target the same unit with any Shooting Attacks made). A unit is ‘In Formation’ when that unit is in unit coherency and has at least one model within 3&quot; of a model from a different unit in the same Tercio that is also in unit coherency.</description>
+    </rule>
+    <rule name="Legiones Auxilia (X)" id="2a96-1887-bb34-da14" hidden="false" publicationId="d882-d2a-5da1-92c4" page="165">
+      <description>THE LEGIONES AUXILIA (X) SPECIAL RULE
+The Legiones Auxilia (X) special rule is intended to represent Solar Auxilia cohorts that fight alongside the forces of the Legiones Astartes during the Horus Heresy, showcasing the unique specialisations, equipment and tactics they adopted in doing so. The Legiones Auxilia (X) special rule may only be applied to an Allied Detachment selected using the Solar Auxilia Army List and where the Primary Detachment’s Warlord has the Legiones Astartes (X) special rule. The Legiones Auxilia (X) special rule is currently intended to be used alongside a Warlord with a base version of the Legiones Astartes (X) special rule and may not be applied to an Allied Detachment selected from the Solar Auxilia Army List in the same army as a Detachment containing models with the  Legiones Hereticus (X), Legiones Astartes (Shattered Legions) or Legiones Astartes (Blackshields) special rules.
+
+
+Each variant of the Legiones Auxilia (X) special rule is associated with a Legiones Astartes (X) special rule which has the identical value of X and can only be selected alongside a Primary Detachment whose Warlord has this corresponding Legiones Astartes (X) special rule – e.g., Legiones Auxilia (Dark Angels) and Legiones Astartes (Dark Angels). Only one Legiones Auxilia (X) rule can be applied to any one Allied Detachment selected from the Solar Auxilia army list found in Warhammer: The Horus Heresy – Liber Imperium and any subsequent publications that add additional units to this army list. Any version of the Legiones Auxilia (X) special rule being applied to an Allied Detachment drawn from the Solar Auxilia Army List must be selected during army selection and noted on the army roster alongside any Cohort Doctrine selected for the Detachment.
+
+
+An Allied Detachment drawn from the Solar Auxilia Army List which has had a version of the Legiones Auxilia (X) special rule applied to it still belongs to the Imperial Army Faction and the Solar Auxilia Sub-faction. However, it is always considered to have the ‘Fellow Warriors’ level of Alliance with the Space Marine Faction whose Legiones Astartes (X) special rule shares the same value of X as their Legiones Auxilia (X) special rule, unless they would already have the ‘Sworn Brothers’ level of Alliance.
+
+
+When an Allied Detachment drawn from the Solar Auxilia Army List has a version of the Legiones Auxilia (X) special rule applied to it then all models in the Allied Detachment also gain that version of the Legiones Auxilia (X) special rule. Additionally, if a unit which contains one or more models with the Legiones Auxilia (X) special rule has at least one model within 12&quot; of a friendly unit containing one or more models with the corresponding Legiones Astartes (X) special rule when that unit fails a Morale check, the unit containing models with Legiones Auxilia (X) is immediately Pinned.</description>
+    </rule>
+    <rule id="fcf6-c6e0-f85e-90da" name="Strength in Numbers" hidden="false">
+      <description>When a unit that is composed entirely of models with this special rule is selected as a Troops choice, then up to three such units may be selected to fill that Troops choice slot instead of only one.
+
+All units selected in this manner count as part of the same Troops choice for the purposes of Army Selection and Deployment only, when deployed onto the battlefield or into Reserves they are counted as a single unit and all units selected as part of the same Troops choice must be deployed at the same time (but are not required to deploy in proximity with each other) – and if placed into Reserves then all units in that choice must be placed into Reserves. Likewise,  when making Reserves rolls one roll is made for all units selected as part of the same choice. 
+
+Once deployed onto the battlefield, all units selected in this manner are treated as separate and distinct units or choices for any Primary or Secondary Objectives or other special rules and operate as separate units in all ways. Units selected as part of the same Troops choice may have different options selected for them, and are not required to be identical.
+
+When assigning additional models to units using the Among the Ranks and Militia Medicae Support special rules, each unit selected using the Strength in Numbers special rule is considered separate and may have models assigned to it as per the normal rules as the controlling player chooses.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
