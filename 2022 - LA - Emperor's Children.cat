@@ -3291,9 +3291,14 @@ Sire of the Emperor’s Children - All friendly models with the Legiones Astarte
           <description>A Phoenix Terminator Squad may be selected as a Retinue Squad in a Detachment that includes at least one model  with both the Master of the Legion and the Legiones Astartes (Emperor&apos;s Children) special rules, instead of as an Elites choice. A unit selected as a &apos;Retinue Squad&apos; must have one model with both the Master of the Legion and Legiones Astartes (Emperor&apos;s Children) special rules from the same Detachment selected by the controlling player as the Phoenix Terminator Squad&apos;s Leader for the purposes of this special rule. A Phoenix Terminator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as the model selected as its Leader. A Phoenix Terminator Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. One Phoenix Terminator in a Phoenix Terminator Squad selected as a Retinue may exchange their Phoenix power spear for a Legion standard and a Phoenix rapier for +15 points.</description>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </rule>
@@ -3321,9 +3326,14 @@ A unit with this special rule gains +1 to the score used to calculate the winner
         <infoLink id="218d-6bee-c553-0006" name="Living Icons" hidden="false" targetId="5615-04df-fb39-aa5d" type="rule">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </infoLink>
@@ -6164,9 +6174,14 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         <entryLink id="37e9-0d20-1935-e0ec" name="Phoenix Terminator Squad" hidden="false" collective="false" import="true" targetId="5b08-65c1-cc45-1b91" type="selectionEntry">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="268b-74a8-395f-6f27" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
