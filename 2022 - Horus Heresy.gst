@@ -139,11 +139,11 @@
     <categoryEntry id="a24f-12d8-36c1-f477" name="Fortification:" hidden="false">
       <rules>
         <rule id="e565-4ba5-114c-cf22" name="Building Damage Table" publicationId="e77a-823a-da94-16b9" page="226" hidden="false">
-          <description>1-3) Building Shaken: The Building and any Embarked units or units on the Building&apos;s battlemtsn can only fire Snap Shots until the end of the next turn.
-4) Structural Tremor: The Building and any Embarked units or units on the Building&apos;s battlements can only fire Snap Shots unitil the end of its next turn. If the Building is occupied, the occupying unit suffers an additional D6 Strength 6 AP- Hits with the Ignores Cover special rule.
+          <description>1-3) Building Shaken: The Building and any Embarked units or units on the Building&apos;s battlements can only fire Snap Shots until the end of the next turn.
+4) Structural Tremor: The Building and any Embarked units or units on the Building&apos;s battlements can only fire Snap Shots until the end of its next turn. If the Building is occupied, the occupying unit suffers an additional D6 Strength 6 AP- Hits with the Ignores Cover special rule.
 5) Weapon Destroyed: One of the Building&apos;s weapons (chosen by the controlling player) is destroyed - including any combi- or built-in weapons. This can include Building upgrades that are weapons, such as Pintle Mounted weapons and missiles. Do not count single shot weapons that have already been used to attack. If a Building has no weapons left, treat this result as a Catastrophic Breach result instead.
-6) Catastrophic Breach: The Building and any Embarked units or units on the Building&apos;s battlements may not make Shooting Attacks until the end of its next turn. No units may Embark or Disembark from the Building until the end of the controlling player&apos;s next turn. If the Building is occupied, the ocuping unit suffers an additional 2D6 Strength 6 AP- Hits with the Ignores Cover special rule.
-7+) Tatal Collapse: The Building is destroyed. All weapons and upgrades on the Building are destroyed. Each unit on the battlements suffer 2D6 Strength 6 AP- Hits with the Ignores Cover special rule and must then immediately make a 6&quot; move in order to move off the battlements are removed as casualties. If the Building is occupied , the occupying unit suffers 4D6 Strength 6 AP- Hits with the Ignores Cover special rule and must then immediately Disembark from the Building , performing an Emergency Disembarkation if necessary (survivors cannot Disembark to the battlements). Any model that cannot Disembark are removed as casualties. Assuming they were not destroyed, units that were on the battlements and those who have Disembarked must then take a Pinning test. The Building is then removed and replaced with an area of Ruins or a Crater roughly the same size if possible.</description>
+6) Catastrophic Breach: The Building and any Embarked units or units on the Building&apos;s battlements may not make Shooting Attacks until the end of its next turn. No units may Embark or Disembark from the Building until the end of the controlling player&apos;s next turn. If the Building is occupied, the occupying unit suffers an additional 2D6 Strength 6 AP- Hits with the Ignores Cover special rule.
+7+) Total Collapse: The Building is destroyed. All weapons and upgrades on the Building are destroyed. Each unit on the battlements suffer 2D6 Strength 6 AP- Hits with the Ignores Cover special rule and must then immediately make a 6&quot; move in order to move off the battlements are removed as casualties. If the Building is occupied , the occupying unit suffers 4D6 Strength 6 AP- Hits with the Ignores Cover special rule and must then immediately Disembark from the Building , performing an Emergency Disembarkation if necessary (survivors cannot Disembark to the battlements). Any model that cannot Disembark are removed as casualties. Assuming they were not destroyed, units that were on the battlements and those who have Disembarked must then take a Pinning test. The Building is then removed and replaced with an area of Ruins or a Crater roughly the same size if possible.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -207,9 +207,9 @@
       </constraints>
       <rules>
         <rule id="b420-727a-0d13-33bb" name="Jump Pack" publicationId="e77a-823a-da94-16b9" page="163" hidden="false">
-          <description>A unit composed entirely of models with Jump Packs may set its Movement Characteristic to a value of 12 for the duration of the controlling player&apos;s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile, and gain any other benefits of a Movement Characterisic of 12 (including the bonus to Charge Distance, see page 181). In addition, if the controlling player chooses to set the unit&apos;s Movement to 12&quot;, the unit ignores terrain while Moving and Charging, and may move over friendly and enemy models/units. A unit that ends of begins its Movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when emplying Jump Packs, and threats all Difficult Terrain as Dangerous Terrain.
-Any model equipped with a Jump Pack also gainst the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gainst the Bulky (3) special rule instead. A unit equipped with Jump Packs may not Run.
-During Reactions made in any Phase, a unit equipped with Jump PAcks may not activite them to gain any bonuses to their Movement Characteristics.</description>
+          <description>A unit composed entirely of models with Jump Packs may set its Movement Characteristic to a value of 12 for the duration of the controlling player&apos;s turn. This allows the unit to move up to 12&quot;, regardless of the Movement Characteristic shown on its profile, and gain any other benefits of a Movement Characteristic of 12 (including the bonus to Charge Distance, see page 181). In addition, if the controlling player chooses to set the unit&apos;s Movement to 12&quot;, the unit ignores terrain while Moving and Charging, and may move over friendly and enemy models/units. A unit that ends of begins its Movement or a Charge in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jump Packs, and threats all Difficult Terrain as Dangerous Terrain.
+Any model equipped with a Jump Pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead. A unit equipped with Jump Packs may not Run.
+During Reactions made in any Phase, a unit equipped with Jump Packs may not activate them to gain any bonuses to their Movement Characteristics.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -517,7 +517,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       <rules>
         <rule id="e02b-5fd3-aa3b-4fc4" name="Skirmish Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
           <description>• A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3&quot; rather than 2&quot;
-• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by tarrain by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
+• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by tarrian by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -548,7 +548,7 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
       <rules>
         <rule id="dbac-669b-298c-868e" name="Reinforced Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
           <description>• A model with the Reinforced Sub-type ignores the effects of any Crew Shaken result on the Vehicle Damage table
-• A model with the Reinforced Sub=type does not have to make Snap Shots due to the effects of the Crew Stunned result on the Vehicle Damaage table (but still cannot move or pivot until the end of its next turn).</description>
+• A model with the Reinforced Sub=type does not have to make Snap Shots due to the effects of the Crew Stunned result on the Vehicle Damage table (but still cannot move or pivot until the end of its next turn).</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -696,9 +696,9 @@ During Reactions made in any Phase, a unit equipped with Jump PAcks may not acti
     <categoryEntry id="0b85-37e7-40ef-7388" name="Jet Infantry:" hidden="false">
       <rules>
         <rule id="f3d5-a377-1c7e-5e20" name="Jet Pack" publicationId="e77a-823a-da94-16b9" page="163" hidden="false">
-          <description>A unit composed entirely of models with Jet Packs may choose to increase its Movement Characteristic by +6, move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jet Packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to move during the Movement phase, a unit equipped entriely with Jet Packts may make an additional move of 6&quot; during the Shooting phase. This move must be taken after the unit has completed any Shooting, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Jet Pack in the Movmeent phase.
-Any model equipped with a Jet Pack also gainst the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gainst the Bulky (3) special rule instead. A unit equipped with Jump PAcks may not Run.
-During any Reaction that allows a unit equipped entirely with Jet PAcks to move, increase the distance of that move by 6. This allows the unit to Ignore terrain in the same manner as other Jet Pack moves.</description>
+          <description>A unit composed entirely of models with Jet Packs may choose to increase its Movement Characteristic by +6, move over friendly and enemy models/units, and ignore terrain while moving during the Movement phase. A unit that ends or begins its movement in Dangerous Terrain will still need to take Dangerous Terrain tests as normal, even when employing Jet Packs and treats Difficult Terrain as Dangerous Terrain. In addition to the bonus to move during the Movement phase, a unit equipped entirely with Jet Packs may make an additional move of 6&quot; during the Shooting phase. This move must be taken after the unit has completed any Shooting, is not limited by the weapons fired by that unit during the Shooting phase and ignores terrain and may move over friendly and enemy models/units in the same manner as moves made using a Jet Pack in the Movement phase.
+Any model equipped with a Jet Pack also gains the Bulky (2) and Deep Strike special rules, or if it already has the Bulky (2) special rule it gains the Bulky (3) special rule instead. A unit equipped with Jump Packs may not Run.
+During any Reaction that allows a unit equipped entirely with Jet Packs to move, increase the distance of that move by 6. This allows the unit to Ignore terrain in the same manner as other Jet Pack moves.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -737,8 +737,8 @@ During any Reaction that allows a unit equipped entirely with Jet PAcks to move,
         <rule id="a9ea-e2db-2aa3-8a5b" name="Artillery Sub-type" publicationId="e77a-823a-da94-16b9" page="197" hidden="false">
           <description>If a unit that includes any models with the Artillery sub-type has no models without the Artillery sub-type, then all models in the unit are removed from play as casualties immediately.
 A Unit that includes one or more models with the Artillery sub-type may not Run, declare or otherwise make Charge moves, or make Reactions.
-A nuit that includes one or more models with the Artillery sub-type may never hold or deny Objectives.
-A unit that includes one or more models with the Artillery sub-type may not make Sqeeping Advances and, if targeted by a Sweeping Advance, automatically fails any Sweeping Advance rolls made without rolling any dice and is destroyed.</description>
+A unit that includes one or more models with the Artillery sub-type may never hold or deny Objectives.
+A unit that includes one or more models with the Artillery sub-type may not make Sweeping Advances and, if targeted by a Sweeping Advance, automatically fails any Sweeping Advance rolls made without rolling any dice and is destroyed.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -1021,9 +1021,9 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       <rules>
         <rule id="9522-1b3d-f849-fd60" name="Assassin Sub-type" publicationId="15a4-fc68-502d-48a9" page="128" hidden="false">
           <description>• Models with the Assassin Sub-type ignore all movement penalties when moving or Charging through terrain of any kind and automatically pass all Dangerous Terrain tests they are called upon to make.
-• Models with the Independant Character special rule may not join a unit composed only of models with the Assassin Sub-type.
+• Models with the Independent Character special rule may not join a unit composed only of models with the Assassin Sub-type.
 • Models with the Assassin Sub-type may not Embark on any model with the Transport Sub-type.
-• Modesl with the Assassin Sub-type may never be selected as an army&apos;s Warlord</description>
+• Models with the Assassin Sub-type may never be selected as an army&apos;s Warlord</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -1031,8 +1031,8 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       <rules>
         <rule id="4b54-c60c-3ce2-7409" name="Close-order Sub-type" publicationId="15a4-fc68-502d-48a9" page="129" hidden="false">
           <description>• A unit that includes only models with the Close-order Sub-type has a Unit Coherency range of 1&quot; rather than 2&quot;.
-• A unit that includes any models with the Close-order Sub-type may not Ran and when making a Movement during a Reaction based on its Initiative Characteric, reduce the distance moved by -1&quot;.
-• A Unit that includes only modesl with the Close-order Sub-type may move up to half its movement Characteristic and make Shooting Attacks using weapons with the Heavy type as if they had remained stationary. Such a unit may also declare a Charge in the same turn they make Shooting Attacks with Heavy or Rapid Fire weapons.</description>
+• A unit that includes any models with the Close-order Sub-type may not Ran and when making a Movement during a Reaction based on its Initiative Characteristic, reduce the distance moved by -1&quot;.
+• A Unit that includes only models with the Close-order Sub-type may move up to half its movement Characteristic and make Shooting Attacks using weapons with the Heavy type as if they had remained stationary. Such a unit may also declare a Charge in the same turn they make Shooting Attacks with Heavy or Rapid Fire weapons.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -8958,7 +8958,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
       </profiles>
       <rules>
         <rule id="d3f1-89b6-2b8b-fa43" name="Void Shield Projector" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false">
-          <description>The controlling player of a model with a Void Shield Projector may make the Void Shield Evvelope Advanced Reaction.</description>
+          <description>The controlling player of a model with a Void Shield Projector may make the Void Shield Envelope Advanced Reaction.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -8994,7 +8994,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
       </profiles>
       <rules>
         <rule id="0c41-2dac-1c20-8170" name="Hammerfall Strike" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
-          <description>A model with this special rule is deployed anywhere within the controlling player&apos;s deplyment zone, more than 12&quot; away from any enemy models, after models with the Scout of Infiltrate special rules. If both players have models with this special rule, roll off to see who will deploy them first.</description>
+          <description>A model with this special rule is deployed anywhere within the controlling player&apos;s deployment zone, more than 12&quot; away from any enemy models, after models with the Scout of Infiltrate special rules. If both players have models with this special rule, roll off to see who will deploy them first.</description>
         </rule>
       </rules>
       <infoLinks>
