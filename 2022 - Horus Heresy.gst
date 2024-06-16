@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="109" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="110" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -7740,12 +7740,8 @@ In addition, a model with the Paragon of Metal special rule may not be targeted 
 • Models with the Paragon Unit Sub-type may fire Heavy and Ordnance weapons and count as Stationary even if they moved in the preceding Movement phase, and may declare Charges as normal regardless of any Shooting Attacks made in the same turn.
 • A unit that contains a model with the Paragon Unit Sub-type may never be joined by any other models, regardless of any other special rule.
 
-
 From December 2023 Liber Mechanicum FAQ, page 2:
-
-
-Q. Can a unit with the Paragon Unit Sub-type
-make Reactions?
+Q. Can a unit with the Paragon Unit Sub-type make Reactions?
 A. No.</description>
         </rule>
       </rules>
@@ -12338,8 +12334,7 @@ If, at the start of the controlling player’s Charge sub-phase, there are any e
               <profiles>
                 <profile id="24d3-3121-c902-30a7" name="Flaymaster" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fear (1) special rule, and each time that Warlord is part of a combat that results in all enemy units being destroyed,  by having all their models removed as casualties or as part of a Sweeping Advance, or that is part of a Challenge in which the enemy combatant is removed as a casualty, it increases the value of that special rule by +1 (up to a maximum of Fear (3)). In addition, an army whose Warlord has this Trait
-may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fear (1) special rule, and each time that Warlord is part of a combat that results in all enemy units being destroyed, by having all their models removed as casualties or as part of a Sweeping Advance, or that is part of a Challenge in which the enemy combatant is removed as a casualty, it increases the value of that special rule by +1 (up to a maximum of Fear (3)). In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12373,8 +12368,7 @@ may make an additional Reaction during the opposing player’s Assault phase as 
               <profiles>
                 <profile id="374f-b35c-4dde-ffb6" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models that are part of a unit he joins gain the Counter-attack (1) special rule and ignore all penalties to their Movement and Charge rolls due to Terrain and may re-roll all failed Dangerous Terrain tests they are called upon to make. In addition, an army
-whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models that are part of a unit he joins gain the Counter-attack (1) special rule and ignore all penalties to their Movement and Charge rolls due to Terrain and may re-roll all failed Dangerous Terrain tests they are called upon to make. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -16089,8 +16083,7 @@ However, at the end of any of the controlling player’s turns after Game Turn 1
         <selectionEntry type="upgrade" import="true" name="Pride Is Our Armour" hidden="false" id="e936-95f1-63a6-a606">
           <rules>
             <rule name="Pride Is Our Armour" hidden="false" id="d6fc-b406-b8cf-117f">
-              <description>Any Legion Veteran Squads in either a Primary Detachment or an Allied Detachment with this Oath may be upgraded for +50 points per unit, gaining the Line Unit Sub-type and the Heart of the Legion and Fury of the Legion special rules. However, a Detachment with this Oath may not include any Troops choices, and all Troops slots are removed from the Force Organisation
-chart for this Detachment. As such, the Detachment is no longer required to select any Compulsory Troops choices, but one existing Elites slot for that Detachment is now considered to be Compulsory. Additionally, a Detachment with this Oath may include two additional Elites choices – this applies to both detachments selected as a Primary Detachment and those selected as Allied Detachments.</description>
+              <description>Any Legion Veteran Squads in either a Primary Detachment or an Allied Detachment with this Oath may be upgraded for +50 points per unit, gaining the Line Unit Sub-type and the Heart of the Legion and Fury of the Legion special rules. However, a Detachment with this Oath may not include any Troops choices, and all Troops slots are removed from the Force Organisation chart for this Detachment. As such, the Detachment is no longer required to select any Compulsory Troops choices, but one existing Elites slot for that Detachment is now considered to be Compulsory. Additionally, a Detachment with this Oath may include two additional Elites choices – this applies to both detachments selected as a Primary Detachment and those selected as Allied Detachments.</description>
             </rule>
           </rules>
           <constraints>
@@ -17590,16 +17583,8 @@ Ordnance weapons hit with such force that when you roll to penetrate a Vehicle&a
 • A model with this Unit Sub-type may never Move or be Moved by any special rule or effect – if it is forced to Move then it instead suffers the effects of the Total Collapse result on the Building Damage table.</description>
     </rule>
     <rule id="d214-5efb-abbb-649e" name="Emplacement Sub-type" publicationId="d0df-7166-5cd3-89fd" page="103" hidden="false">
-      <description>• A model with the Emplacement Sub-type has an Armour
-Value instead of Toughness Characteristic and a reduced
-profile to reflect its limited capabilities. Page 224 of
-Warhammer: The Horus Heresy – Age of Darkness Rulebook
-presents rules for making attacks against models with this
-Unit Sub-type.
-• A model with this Unit Sub-type may never Move or be
-Moved by any special rule or effect – if it is forced to Move
-then it instead suffers the effects of the Total Collapse result
-on the Building Damage table.</description>
+      <description>• A model with the Emplacement Sub-type has an Armour Value instead of Toughness Characteristic and a reduced profile to reflect its limited capabilities. Page 224 of Warhammer: The Horus Heresy – Age of Darkness Rulebook presents rules for making attacks against models with this Unit Sub-type.
+• A model with this Unit Sub-type may never Move or be Moved by any special rule or effect – if it is forced to Move then it instead suffers the effects of the Total Collapse result on the Building Damage table.</description>
     </rule>
     <rule id="a09b-30c8-c45e-3655" name="Barricade Sub-type" publicationId="d0df-7166-5cd3-89fd" page="104" hidden="false">
       <description>• A model (friendly or enemy) in base contact with a model with the Barricade Unit Sub-type and at least 25% obscured from the attacking unit gains a 5+ Cover Save.
