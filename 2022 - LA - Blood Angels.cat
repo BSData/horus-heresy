@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="46" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="47" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -5938,8 +5938,6 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
               </constraints>
             </entryLink>
           </entryLinks>
-          <comment>
-</comment>
           <selectionEntryGroups>
             <selectionEntryGroup name="Any Sanguinary Guard in the unit may exchange his bolt pistol for one of the following:" id="3220-857b-42b2-a860">
               <entryLinks>
@@ -6015,6 +6013,34 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="268a-0704-a613-0087-min" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="268a-0704-a613-0087-max" includeChildSelections="false"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Power Weapon and Legion Standard" hidden="false" id="ab40-41dd-0f46-e43f">
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="a333-6047-45c7-8556" shared="true" id="8361-28e0-7397-52a2" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="8361-28e0-7397-52a2">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6307-ed53-0ac4-0212" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Standard" hidden="false" id="55d4-e512-8d86-f07f" type="selectionEntry" targetId="7e13-cc1f-6bd7-7ac6">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6265-5bed-f769-cffb-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6265-5bed-f769-cffb-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="3ed4-c4c2-1b49-36df" type="selectionEntry" targetId="8d9c-9f80-c0fd-adcf">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b988-0353-98e6-b625-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b988-0353-98e6-b625-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <categoryLinks>
