@@ -32,9 +32,6 @@
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
-    <costType name="Reaction Allotment 1: Movement" id="9e79-aa44-6973-35bc" defaultCostLimit="-1" hidden="true"/>
-    <costType name="Reaction Allotment 2: Shooting" id="5dba-cdfc-a13e-521c" defaultCostLimit="-1" hidden="true"/>
-    <costType name="Reaction Allotment 3: Assault" id="126e-e8d0-b563-0d48" defaultCostLimit="-1" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="4bb2-cb95-e6c8-5a21" name="Unit">
@@ -1446,6 +1443,9 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
     <categoryEntry name="Raven Guard - Crusade Detachment" id="afca-a57f-a32c-59fd" hidden="false"/>
     <categoryEntry name="Alpha Legion - Crusade Detachment" id="c929-73a2-9fc4-5472" hidden="false"/>
     <categoryEntry name="Fortification Unit Type" id="679d-ec21-2940-fb9" hidden="false"/>
+    <categoryEntry name="Additional Reaction 1: Movement" id="5b18-c03a-85d3-ac3e" hidden="true"/>
+    <categoryEntry name="Additional Reaction 2: Shooting" id="d52c-b3c9-7fa5-f32a" hidden="true"/>
+    <categoryEntry name="Additional Reaction 3: Assault" id="7f61-d50d-cfc0-1216" hidden="true"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -2493,9 +2493,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
       </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-        <cost name="Reaction Allotment 1: Movement" typeId="9e79-aa44-6973-35bc" value="1"/>
-        <cost name="Reaction Allotment 2: Shooting" typeId="5dba-cdfc-a13e-521c" value="1"/>
-        <cost name="Reaction Allotment 3: Assault" typeId="126e-e8d0-b563-0d48" value="1"/>
       </costs>
       <modifiers>
         <modifier type="add" value="d82b-1980-74f8-5dac" field="category">
@@ -2507,24 +2504,24 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
       <profiles>
         <profile name="Army Info" typeId="8856-44f6-34af-f8c3" typeName="Army Info" hidden="false" id="29fa-4e03-9ed7-b33d">
           <characteristics>
-            <characteristic name="Reaction Allotment: Movement" typeId="356d-b508-2787-7190">0</characteristic>
-            <characteristic name="Reaction Allotment: Shooting" typeId="bd42-11c6-8257-63d6">0</characteristic>
-            <characteristic name="Reaction Allotment: Assault" typeId="f2b4-4a9c-8f66-55fe">0</characteristic>
+            <characteristic name="Reaction Allotment: Movement" typeId="356d-b508-2787-7190">1</characteristic>
+            <characteristic name="Reaction Allotment: Shooting" typeId="bd42-11c6-8257-63d6">1</characteristic>
+            <characteristic name="Reaction Allotment: Assault" typeId="f2b4-4a9c-8f66-55fe">1</characteristic>
           </characteristics>
           <modifiers>
             <modifier type="increment" value="1" field="356d-b508-2787-7190">
               <repeats>
-                <repeat value="1" repeats="1" field="9e79-aa44-6973-35bc" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="5b18-c03a-85d3-ac3e" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" value="1" field="bd42-11c6-8257-63d6">
               <repeats>
-                <repeat value="1" repeats="1" field="5dba-cdfc-a13e-521c" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="d52c-b3c9-7fa5-f32a" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
             <modifier type="increment" value="1" field="f2b4-4a9c-8f66-55fe">
               <repeats>
-                <repeat value="1" repeats="1" field="126e-e8d0-b563-0d48" scope="roster" childId="any" shared="true" roundUp="false" includeChildSelections="true"/>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="7f61-d50d-cfc0-1216" shared="true" roundUp="false" includeChildSelections="true"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -11533,10 +11530,10 @@ However, when included as an Allied Detachment or other non-Primary detachment, 
               </profiles>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                <cost name="Reaction Allotment 1: Movement" typeId="9e79-aa44-6973-35bc" value="0"/>
-                <cost name="Reaction Allotment 2: Shooting" typeId="5dba-cdfc-a13e-521c" value="1"/>
-                <cost name="Reaction Allotment 3: Assault" typeId="126e-e8d0-b563-0d48" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Additional Reaction 2: Shooting" hidden="false" id="ce4d-052a-acad-6cea" targetId="d52c-b3c9-7fa5-f32a" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="d636-9d61-631b-1650" name="Ever-vigilant" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -11552,10 +11549,10 @@ However, when included as an Allied Detachment or other non-Primary detachment, 
               </profiles>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                <cost name="Reaction Allotment 1: Movement" typeId="9e79-aa44-6973-35bc" value="1"/>
-                <cost name="Reaction Allotment 2: Shooting" typeId="5dba-cdfc-a13e-521c" value="0"/>
-                <cost name="Reaction Allotment 3: Assault" typeId="126e-e8d0-b563-0d48" value="0"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Additional Reaction 1: Movement" hidden="false" id="4b83-75e6-ce2a-efdc" targetId="5b18-c03a-85d3-ac3e" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="2b87-826d-22a1-682c" name="Bloody-handed" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -11571,10 +11568,10 @@ However, when included as an Allied Detachment or other non-Primary detachment, 
               </profiles>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                <cost name="Reaction Allotment 1: Movement" typeId="9e79-aa44-6973-35bc" value="0"/>
-                <cost name="Reaction Allotment 2: Shooting" typeId="5dba-cdfc-a13e-521c" value="0"/>
-                <cost name="Reaction Allotment 3: Assault" typeId="126e-e8d0-b563-0d48" value="1"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Additional Reaction 3: Assault" hidden="false" id="4b0b-5ffa-b891-ffd4" targetId="7f61-d50d-cfc0-1216" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
             <selectionEntry id="f4e0-19d9-89b5-c939" name="Malefic Supplicant" hidden="true" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -11607,6 +11604,9 @@ However, when included as an Allied Detachment or other non-Primary detachment, 
                 <cost name="Reaction Allotment 2: Shooting" typeId="5dba-cdfc-a13e-521c" value="0"/>
                 <cost name="Reaction Allotment 3: Assault" typeId="126e-e8d0-b563-0d48" value="1"/>
               </costs>
+              <categoryLinks>
+                <categoryLink name="Additional Reaction 3: Assault" hidden="false" id="8d12-56ea-9249-0ffc" targetId="7f61-d50d-cfc0-1216" primary="false"/>
+              </categoryLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
