@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="111" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="112" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -32,6 +32,9 @@
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
+    <costType name="Reaction Allotment 1: Movement" id="9e79-aa44-6973-35bc" defaultCostLimit="1"/>
+    <costType name="Reaction Allotment 2: Shooting" id="5dba-cdfc-a13e-521c" defaultCostLimit="1"/>
+    <costType name="Reaction Allotment 3: Assault" id="126e-e8d0-b563-0d48" defaultCostLimit="1"/>
   </costTypes>
   <profileTypes>
     <profileType id="4bb2-cb95-e6c8-5a21" name="Unit">
