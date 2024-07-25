@@ -2122,6 +2122,108 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="5704-88fe-273c-baac" type="selectionEntryGroup" targetId="7dee-602c-4b47-be09"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="false" name="Deathstorm Drop Pod Squadron" hidden="false" id="e7be-c14e-d608-fea4" collective="false" targetId="af13-fb4e-b792-61a3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="2c36-fde3-14ed-4db4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="a621-2c8c-3df0-89d3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="ccb7-6c5c-76ce-5b77" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="0a8b-9728-440d-6bfa" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="fc9c-5073-e25f-64e8" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Domitar Battle-Automata Maniple" hidden="true" id="4b3e-c151-ac38-77bf" collective="false" targetId="1a1b-fa35-a6a2-ca78" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="da46-48b5-6cc5-9d8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="f611-20d0-1345-0027" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Elites:" hidden="false" id="92b0-ef72-db4f-0cdc" targetId="7aee-565f-b0ae-294e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Vorax Battle-automata Maniple" hidden="true" id="094a-c10b-d01e-e840" collective="false" targetId="f144-1079-11ff-019d" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="da46-48b5-6cc5-9d8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="dcb5-2561-38e7-9a2c" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Fast Attack:" hidden="false" id="bcef-c141-eb76-25e2" targetId="20ef-cd01-a8da-376e" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Thanatar Siege-automata Maniple" hidden="true" id="46db-fdb5-2487-fa0d" collective="false" targetId="2903-fef6-e839-368b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="da46-48b5-6cc5-9d8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="19e4-8921-6e15-1b47" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Heavy Support:" hidden="false" id="6c15-7af1-7f88-fa8a" targetId="7031-469a-1aeb-eab0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Thallax Cohort" hidden="true" id="4886-261b-0f0d-920b" collective="false" targetId="25c8-3e0f-e22d-a7eb" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="force" childId="62c8-8f27-9673-8450" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="11f2-472f-c1d1-9ae9" field="category">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="force" childId="62c8-8f27-9673-8450" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" value="3" field="0c69-26a2-64bb-2dfd">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="force" childId="62c8-8f27-9673-8450" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="true" id="0c69-26a2-64bb-2dfd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Elites:" hidden="false" id="018c-5576-55de-78f7" targetId="7aee-565f-b0ae-294e" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="3258-6524-b4f3-1408" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Castellax Battle-Automata Maniple" hidden="true" id="da10-af64-7323-48e3" collective="false" targetId="537f-846d-90e3-2526" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="da46-48b5-6cc5-9d8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="0727-a8fc-a09f-42db" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="4181-a5e0-a778-3561" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="be38-a066-4f8e-ae54" name="Retinue" hidden="false" collective="false" import="true">
