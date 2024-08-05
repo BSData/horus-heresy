@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="111" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="112" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1156,11 +1156,11 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
       <profiles>
         <profile id="bbd6-2bc7-864d-067d" name="1) Reactions in Zone Mortalis" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
           <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions 
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions
 Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
 
-Base Raction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
-In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one(1) Reaction in any single Phase.</characteristic>
+Base Rection Allotment, Additional Reactions and Reaction Limited in Smaller Games.
+In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one (1) Reaction in any single Phase.</characteristic>
           </characteristics>
         </profile>
         <profile id="356c-76e3-ec76-65df" name="2) ZM Movement Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
@@ -1168,7 +1168,7 @@ In games with a total army size of 1,000 points or fewer per player, any player 
             <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE MOVEMENT PHASE
 During the Movement phase, the Reactive player may declare a Reaction if an enemy unit ends a move within 12&quot; and in line of sight of a friendly unit. Once the Active player has completely resolved the movement of their unit, the Reactive player may choose to expend their Reaction in that Phase in order to have the unit they control that is within 12&quot; and line of sight perform a Suppress Reaction.
 
-Suppress - The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Suppress Reaction may not make any attacks indirectly (without line of sight). All Shooting Attacks made as part of a Suppress Reaction are Snap Shots, with the exception of Template Weapons. Note that this prevents models from making attacks with weapons that have the Blast (X) special rule as part of this Reaction. Template Weapons may only be used as part of a Suppress Reaction if the target unit is within 8&quot; and must use the Wall of Death rule instead of firing normally. Models in the Reacting unit count as Stationary during this Shooting Attack, even if they moved in the previous Movement phase.</characteristic>
+Suppress - The Reacting unit may make a Shooting Attack, targeting the unit that triggered this Reaction and following all the usual rules for Shooting Attacks. A unit that makes a Shooting Attack as part of a Suppress Reaction may not make any attacks indirectly (without line of sight). All Shooting Attacks made as part of a Suppress Reaction are Snap Shots, and gain the pinning special rule if they do not already have it.</characteristic>
           </characteristics>
         </profile>
         <profile id="47f5-85fb-1b8b-a13e" name="3) ZM Shooting Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
@@ -1176,7 +1176,7 @@ Suppress - The Reacting unit may make a Shooting Attack, targeting the unit that
             <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE SHOOTING PHASE
 During the Shooting phase, the Reactive player may react when any enemy unit declares a Shooting Attack targeting a unit they control. Before the Active player resolves the Shooting Attack, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Shooting Attack perform a Displace Reaction.
 
-Displace - Each model in the Reacting unit may move a number of inches up to its unmodified Initiative Characteristic. When resolving the Shooting Attack that triggered this Reaction, all range and line of sight is measured to the Reacting unit’s new position. If, as a result of this movement, no models in the reacting unit are within range or line of sight of any models in the triggering unit, the Active player cannot choose a new target for their Shooting Attack.</characteristic>
+Displace - Each model in the Reacting unit may move a number of inches up to the highest unmodified Initiative Characteristic of any model in the unit. When resolving the Shooting Attack that triggered this Reaction, all range and line of sight is measured to the Reacting unit’s new position. If as a result of this movement, no models in the reacting unit are within line of sight of any models in the triggering unit, the Active player cannot choose a new target for their Shooting Attack.</characteristic>
           </characteristics>
         </profile>
         <profile id="6c7a-4ba0-361e-f626" name="4) ZM Assualt Phase Reactions" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
@@ -1184,7 +1184,7 @@ Displace - Each model in the Reacting unit may move a number of inches up to its
             <characteristic name="Description" typeId="c627-4637-8de5-65fb">REACTIONS IN THE ASSAULT PHASE
 During the Assault phase, the Reactive player may react when any enemy unit declares a Charge targeting a unit they control. Before the Active player has resolved any Charge Rolls, the Reactive player may choose to expend their Reaction in that Phase to have the unit targeted by the Charge perform a Brace Reaction.
 
-Brace - The Reacting unit must make a Morale check. If the Check is failed, the Reacting unit immediately Fall Backs 1D6&quot; and automatically regroups when this Fall Back Move is completed. If the Check is successful, the Reacting unit automatically passes any Morale checks they are required to make as a result of losing an assault during the following Fight sub-phase.</characteristic>
+Brace - The Reacting unit must make a Morale check. If the Check is failed, the Reacting unit immediately Fall Backs D6&quot; and automatically regroups when this Fall Back Move is completed 1&quot; from the battlefield edge, If the Check is successful, the Reacting unit automatically passes any Morale checks they are required to make as a result of losing an assault during the following Fight sub-phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -7356,6 +7356,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
                 <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d4f2-6da5-b6de-06ec" type="instanceOf"/>
                 <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="58a7-8821-3cd9-c73" shared="true"/>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="1" field="selections" scope="roster" childId="092d-3716-36f8-8988" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -7380,11 +7381,17 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
             <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="1028-fef6-d630-344c">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5617-ada9-bf10-f9b0" type="max"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4024-fa03-dada-cc4b" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0dff-37d2-448b-45a6" type="min"/>
+        <constraint type="min" value="1" field="selections" scope="roster" shared="true" id="1028-fef6-d630-344c" includeChildSelections="true"/>
       </constraints>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
