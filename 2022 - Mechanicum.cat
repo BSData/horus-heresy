@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="41" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -3226,6 +3226,11 @@ This unit may be upgraded freely as described in their profile, though they may 
                     <condition field="selections" scope="e713-beb2-95dd-51cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="Automata (Paragon)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica)</characteristic>
@@ -3376,11 +3381,25 @@ This unit may be upgraded freely as described in their profile, though they may 
             <categoryLink targetId="d8ab-8e21-e193-63ba" id="f653-f942-4a3b-9f77" name="Automata Unit Type" primary="false"/>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="6b5a-a7c0-44ce-b384" name="Cybernetica Sub-type" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="0750-2aed-2d36-8a82" name="Ursarax Cohort" publicationId="bde1-6db1-163b-3b76" page="41" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -3544,6 +3563,11 @@ This unit may be upgraded freely as described in their profile, though they may 
                     <condition field="selections" scope="c731-8052-ca8a-0b37" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="Automata (Antigrav, Paragon)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Antigrav, Cybernetica)</characteristic>
@@ -3632,11 +3656,25 @@ This unit may be upgraded freely as described in their profile, though they may 
             <categoryLink targetId="4303-1348-cce4-9501" id="9970-338f-4b04-8d10" name="Antigrav Sub-type" primary="false"/>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="52b3-8b0b-4a04-bb52" name="Cybernetica Sub-type" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="356f-a88b-1d13-3700" name="Myrmidon Destructor Host" publicationId="bde1-6db1-163b-3b76" page="47" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>

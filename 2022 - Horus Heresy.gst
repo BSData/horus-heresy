@@ -2347,6 +2347,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a833-7db9-402c-e12f" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="7c22-5ebb-e4b4-65b2" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ce4d-7e2a-4698-b234"/>
@@ -10649,8 +10650,15 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5430-5be1-1613-be44" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>

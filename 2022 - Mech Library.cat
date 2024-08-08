@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="46" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="47" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -4327,6 +4327,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d43-7c11-b7e5-7ae9" type="min"/>
@@ -4343,6 +4348,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
                   <conditions>
                     <condition field="selections" scope="ab78-91e2-bb5c-9da3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Paragon)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4577,6 +4587,13 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="6f3d-9a42-da1d-2c2e" name="Darkfire Cannon" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4674,6 +4691,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2116-a161-c40f-7ec0" type="min"/>
@@ -4690,6 +4712,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
                   <conditions>
                     <condition field="selections" scope="200f-3379-95a3-c3a4" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Paragon)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4802,6 +4829,13 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="ceaa-178d-3995-c2c8" name="Graviton Hammer" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -4991,6 +5025,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="cfe3-874c-01db-9e29" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ed02-9ebb-5829-d554" type="max"/>
@@ -5057,6 +5096,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                         <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
                           <conditions>
                             <condition field="selections" scope="2903-fef6-e839-368b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Automata (Paragon, Heavy)" field="ddd7-6f5c-a939-b69e">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -5135,6 +5179,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                         <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
                           <conditions>
                             <condition field="selections" scope="2903-fef6-e839-368b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Automata (Paragon, Heavy)" field="ddd7-6f5c-a939-b69e">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -5286,6 +5335,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ade9-d7ad-8024-68dc" type="min"/>
@@ -5302,6 +5356,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
                   <conditions>
                     <condition field="selections" scope="f144-1079-11ff-019d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Paragon, Light)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5462,6 +5521,13 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="1d6f-970d-3b89-7886" name="Avenger Gatling Cannon with In-Built Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
