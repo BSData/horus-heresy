@@ -1506,7 +1506,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41b5-73f0-cdc9-1f83" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b23c-e41d-1ffe-1a38" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
