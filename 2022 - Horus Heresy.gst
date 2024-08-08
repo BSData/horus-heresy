@@ -1159,7 +1159,7 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
             <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions
 Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
 
-Base Rection Allotment, Additional Reactions and Reaction Limited in Smaller Games.
+Base Reaction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
 In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one (1) Reaction in any single Phase.</characteristic>
           </characteristics>
         </profile>
