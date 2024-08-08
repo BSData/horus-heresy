@@ -2107,6 +2107,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
           </constraints>
         </categoryLink>
         <categoryLink id="e983-382e-a5c8-f531" name="Rite of War:" hidden="false" targetId="d494-e450-d4aa-579a" primary="false"/>
+        <categoryLink name="Blackshield Oaths" hidden="false" id="7c22-5ebb-e4b4-65b2" targetId="cb34-ca48-547a-5d90"/>
         <categoryLink id="5f35-9da8-f131-1f90" name="The Rewards Of Treachery" hidden="false" targetId="c5d2-69ee-8787-55d9" primary="false"/>
         <categoryLink id="a23c-357c-3c10-db1f" name="Provenances of War" hidden="false" targetId="346a-fb59-a199-25c4" primary="false"/>
         <categoryLink name="Ætheric Dominion (Whole Army)" hidden="false" id="8ed0-dc42-a148-4a7c" targetId="5d31-e5d-67bd-1083">
@@ -2347,7 +2348,6 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a833-7db9-402c-e12f" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink name="Blackshield Oaths" hidden="false" id="7c22-5ebb-e4b4-65b2" targetId="cb34-ca48-547a-5d90"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="ce4d-7e2a-4698-b234"/>
@@ -2423,7 +2423,7 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                     <conditionGroup type="and">
                       <conditions>
                         <condition type="atLeast" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
-                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -2446,8 +2446,8 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
                   <conditionGroups>
                     <conditionGroup type="and">
                       <conditions>
-                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                         <condition type="atLeast" value="1" field="selections" scope="force" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -10650,15 +10650,8 @@ Once all models in the unit have moved onto the battlefield, the Warp Rift marke
             <conditionGroup type="and">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true"/>
               </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d926-652f-8436-30ce" shared="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="5430-5be1-1613-be44" shared="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
