@@ -78,8 +78,12 @@ To add a new test:
 * Horus Heresy: Age of Darkness Rulebook
 * Liber Astartes
 * Liber Hereticus
-* "Both Astartes Army books" refers to the first section of both of the above books, as they are identical
+  * "Both Astartes Army books" refers to the first section of both of the above books, as they are identical
 * Liber Mechanicum
+* Liber Imperium
+* The Siege of Cthonia
+* Exemplary Battles of the Age of Darkness: Volume One
+* The Battle of Beta-Garmon
 * [Legacies of The Age of Darkness Legions v1.1 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/RZRGS5ADYjwUb7Ry.pdf)
 * [Legacies of The Age of Darkness: Mechanicum v1.0 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/WJKYil2FehoZxrD9.pdf)
 * [Exemplary Battles of Age of Darkness: Unit Update v1.1 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/n10JM7pGRr4EyfIh.pdf)
