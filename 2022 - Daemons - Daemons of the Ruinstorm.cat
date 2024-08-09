@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="12" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="13" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -120,9 +120,21 @@
         <categoryLink targetId="2eaf-32d6-9d1d-d906" id="3bd5-dd10-1738-7cb0" primary="false" name="LoW &amp; Primarchs (25% Limit)"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Expeditionary Navigator" hidden="false" type="selectionEntry" id="9c45-3bab-77a7-1588" targetId="ce53-e40c-65b6-4d3a"/>
-    <entryLink import="true" name="Davinite Lodge Priest" hidden="false" type="selectionEntry" id="430c-1c94-e60f-653" targetId="fe13-4a8f-b2af-1e40"/>
-    <entryLink import="true" name="Cults Abominatio" hidden="false" type="selectionEntry" id="5b8b-6c4f-15ec-ba95" targetId="4a00-03d4-a850-884b"/>
+    <entryLink import="false" name="Expeditionary Navigator" hidden="false" type="selectionEntry" id="9c45-3bab-77a7-1588" targetId="ce53-e40c-65b6-4d3a">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="42f2-a7cc-161c-7108" primary="true" name="HQ:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Davinite Lodge Priest" hidden="false" type="selectionEntry" id="430c-1c94-e60f-653" targetId="fe13-4a8f-b2af-1e40">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="d5e9-9d7e-2a4d-311d" primary="true" name="HQ:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Cults Abominatio" hidden="false" type="selectionEntry" id="5b8b-6c4f-15ec-ba95" targetId="4a00-03d4-a850-884b">
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="5f61-7027-ca66-53d3" primary="true" name="HQ:"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Sovereign" hidden="false" id="2f3f-adc4-b19f-a5c7" publicationId="8775-88f5-cfdd-24f6" page="6">
@@ -1767,6 +1779,7 @@ If Sanguinius is removed as a casualty while fighting in a Challenge against Ka&
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2125-3451-f7bd-736b"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Samus, Ka’bandha &amp; Cor&apos;bax Warlord stuff" hidden="false" id="fd80-0e3b-c4cd-e92c" collective="false" targetId="092d-3716-36f8-8988" type="selectionEntry"/>
       </entryLinks>
       <categoryLinks>
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="2fba-d3f5-73dc-6901" primary="false" name="Daemon Unit Type"/>
