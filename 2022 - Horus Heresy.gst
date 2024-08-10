@@ -1435,6 +1435,21 @@ If a Skimmer is Immobilised or Wrecked, its base is removed, if possible. If thi
     <categoryEntry name="Raven Guard - Crusade Detachment" id="afca-a57f-a32c-59fd" hidden="false"/>
     <categoryEntry name="Alpha Legion - Crusade Detachment" id="c929-73a2-9fc4-5472" hidden="false"/>
     <categoryEntry name="Fortification Unit Type" id="679d-ec21-2940-fb9" hidden="false"/>
+    <categoryEntry id="7e5d-d73e-8ff4-7345" name="Anathema Sub-type" publicationId="15a4-fc68-502d-48a9" page="129" hidden="false">
+      <rules>
+        <rule id="e2d9-fe0d-1717-3a37" name="Anathema Sub-type" publicationId="15a4-fc68-502d-48a9" page="129" hidden="false">
+          <description>• A unit that includes at least one model with the Anathema Sub-type may not be directly targeted by any Psychic Power or use any Psychic power or make attacks with a Psychic Weapon, Psychic Powers whose effects would otherwise be applied to a unit that includes at least one model with the Anathema Sub-type (due to area of effect, scattering or other rules) have no effect, but are not cancelled and may continue to affect other units.
+• A model with the Anathema Sub-type that is allocated Wounds caused by a Psychic Weapon (which is any weapon granted to a unit or model by a Psychic Discipline) will always fail to Wound without any dice being rolled and any special rules attached to that Psychic Weapon will not trigger. Any Wounds allocated to a model with the Anathema Unit Sub-type caused by a Force Weapon gain no benefit from the Force special rules, but are otherwise resolved as normal. These effects do not apply to a model with the Transport Sub-type that has models with the Anathema Sub-type Embarked within, unless the model with the Transport Sub-type also has the Anathema Sub-type.
+• All models that no not have the Anathema Sub-type but are part of a unit that includes one of more models with the Anathema Sub-type, suffer a penalty of -2 to their Leadership Characteristic. Any unit with at least one model within 6&quot; of a model with the Anathema Sub-type suffers a penalty of -1 to the Leadership of all models in the unit that do not also have the Anathema Sub-type, or -2 if that unit includes one of more models with the Corrupted Unit Sub-type. Note that these two penalties are not cumulative; they apply only the more severe penalty. However, they do stack with other special that modify Leadership (such as Fear (X)).
+• A unit that is Embarked on a Vehicle, Fortification or Building suffers no penalties to its Leadership Characteristic due to the Anathema Sub-type, However, units with the Stubborn special rule do suffer penalties to their Leadership from the effects of this Sub-type (note that this only applies to the Stubborn special rule, and other special rules that ignore penalties to Leadership ignore the effects of the Anathema Sub-type).
+
+
+From December 2023 Liber Imperium FAQ V1.1, page 2:
+
+In addition, the Leadership Characteristic of a model with the Anathema Unit Sub-type can only be used for a Leadership test or Morale check if all models in that unit have the Anathema Unit Sub-type</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
