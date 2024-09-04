@@ -20,7 +20,7 @@ jobs:
         run: apt list --installed
        # Need to fetch reqs if needed
       - name: Installing all necessary packages
-        run: pip install webdriver-manager selenium
+        run: pip install selenium
       - name: Run tests
         run: python3 tests.py
         working-directory: horus-heresy/tests/
