@@ -58,8 +58,8 @@ class GameTests(unittest.TestCase):
 
         # Load the 1st system.
         import_buttons = self.wait.until(lambda drv:
-                                         drv.find_elements(By.CSS_SELECTOR,
-                                                           "#mainContent > fieldset > div > div > div:nth-child(1)"))
+                                         drv.find_elements(By.XPATH,
+                                                           "//*[@id='mainContent']/div[1]/div[@class='item']"))
         if len(import_buttons) > 0:
             print("Loading the first game system")
             import_buttons[0].click()
