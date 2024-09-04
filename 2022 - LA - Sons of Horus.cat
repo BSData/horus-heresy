@@ -4443,7 +4443,6 @@
           </profiles>
           <infoLinks>
             <infoLink id="73ca-7b51-5381-6eed" name="Legiones Astartes (Sons of Horus)" hidden="false" targetId="f4a2-e4ca-b8b2-35a1" type="rule"/>
-            <infoLink id="b33d-d628-cdc3-9482" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
             <infoLink id="56f5-f635-8f53-97f9" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
             <infoLink id="16ad-203d-8847-4534" name="Adamantium Will (X+)" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
               <modifiers>
@@ -5218,6 +5217,7 @@
     <selectionEntry id="c3db-b014-dfaa-d189" name="Tybalt Marr" publicationId="d882-d2a-5da1-92c4" page="192" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ecb0-3e9c-e3b6-fde7" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2179-8760-166c-416f" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
         <infoLink id="8b6d-35f3-191d-2ae6" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
@@ -5226,7 +5226,6 @@
             <modifier type="set" field="name" value="Legiones Astartes (Sons of Horus)"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Master of the Legion" hidden="false" type="rule" targetId="c772-87ea-d49c-c7ba" id="60a1-b316-41b5-b061"/>
         <infoLink name="Hatred (X)" hidden="false" type="rule" targetId="dc0b-fe69-6b71-e0a4" id="547c-f3e1-4b87-a5bd">
           <modifiers>
             <modifier type="set" field="name" value="Hatred (Shattered Legions)"/>
@@ -6398,6 +6397,10 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
           <description>If Garviel Loken is removed as a casualty whilst locked in combat with Horus Aximand or any unit he has joined then Horus Aximand’s controlling player gains +1 bonus Victory point in addition to any others that might be gained from this; this bonus is increased to +2 bonus Victory points if Garviel Loken is removed as a casualty while Engaged in a Challenge with Horus Aximand.</description>
         </rule>
       </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="54b0-57c8-8b25-39b0" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e2d1-abc7-20a5-9968" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
