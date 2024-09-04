@@ -10,9 +10,6 @@ from selenium.webdriver.common.by import By
 import selenium.webdriver.support.ui as ui
 import selenium.webdriver.support.expected_conditions as EC
 
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-
 
 class GameTests(unittest.TestCase):
     debug = False
@@ -23,7 +20,6 @@ class GameTests(unittest.TestCase):
             options.add_argument('--headless')
 
         driver = webdriver.Chrome(
-            service=ChromeService(ChromeDriverManager().install()),
             options=options)
         driver.delete_all_cookies()
         self.wait = ui.WebDriverWait(driver, 30)  # timeout after 30 seconds
