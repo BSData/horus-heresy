@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="49" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="50" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -7463,6 +7463,40 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Irradiation Blaster" hidden="false" id="7ad8-fc96-e100-92ef" publicationId="4934-46f7-208b-b4af" page="165">
+      <profiles>
+        <profile name="Irradiation Blaster - Focused" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="1392-d5ae-33c4-bdff" page="165" publicationId="4934-46f7-208b-b4af">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">16&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Fleshbane, Rad-phage, Radiation Beam</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Irradiation Blaster - Dispersed" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3df8-8c1f-d9b8-0084" page="165" publicationId="4934-46f7-208b-b4af">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Hellstorm</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">2</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Fleshbane, Rad-phage</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Radiation Beam" id="25e8-2342-6dc1-8808" hidden="false" publicationId="4934-46f7-208b-b4af" page="165">
+          <alias>165</alias>
+          <description>When the weapon profile with this special rule is used to make a Shooting Attack, draw an imaginary 1mm wide line from the end of the gun barrel up to the listed range of the weapon – this is the beam area. The initial target for the weapon (the model in the beam area closest to the attacking model) must be an enemy model.
+    • All models (friendly and enemy) caught in the beam area (excepting the firing model) suffer a Hit with the listed profile of the weapon, except models with the Flyer Sub-type which cannot be affected or targeted.
+    • Units with any models in the beam area receive a number of Hits equal to the number of their models caught in the path of the beam; casualties are removed from affected units using the normal rules for removing casualties.
+    • If a Terrain piece, Building, model with the Vehicle Unit Type or any model with 6 or more starting Wounds is in the beam area, the attack is blocked and its line of effect will go no further than that model. The blocking model will, however, suffer D3 separate Hits, rather than just 1.
+    • If a model with the Vehicle Unit Type and the Transport Sub-type suffers a Penetrating Hit from a weapon with this special rule, each unit Embarked on it suffers D6 Str 2 AP - Hits with the Fleshbane special rule, in addition to any other effects. Any Wounds caused are allocated by the target unit’s controlling player.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fleshbane" id="8586-3e74-5745-357e" hidden="false" type="rule" targetId="40cd-9505-253c-e76f"/>
+        <infoLink name="Rad-Phage" id="6040-a5aa-0928-92a4" hidden="false" type="rule" targetId="8189-e963-d2e5-5d3d"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

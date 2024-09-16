@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="113" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="114" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -29,6 +29,7 @@
     <publication name="Free Rules for the Solar Auxilia Aethon Heavy Sentinel" hidden="false" id="2d3f-82d2-9db5-ca6d" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/02/ZwQB9kBXZA3CyHN4.pdf" publicationDate="February 27th 2024" shortName="Aethon Heavy Sentinel Datasheet" publisher="Warhammer Community"/>
     <publication name="Campaigns in the Age of Darkness - The Battle for Beta-Garmon" hidden="false" id="d882-d2a-5da1-92c4" shortName="CotAoD - BBG" publicationDate="April 2024"/>
     <publication name="Exemplary Battles of the Age of Darkness - The Assault on Castrum Velx" id="2489-0c1d-8ed5-2515" hidden="false" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/06/zxc5pjdMmgEBrmJT.pdf" publicationDate="2024-06-11" publisher="Warhammer Community"/>
+    <publication name="Campaigns in the Age of Darkness - Martian Civil War" id="4934-46f7-208b-b4af" hidden="false" shortName="CotAoD - MCW" publicationDate="Sept 2024"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
