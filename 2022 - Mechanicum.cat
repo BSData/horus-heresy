@@ -577,7 +577,12 @@
         <categoryLink targetId="36c3-e85e-97cc-c503" id="3d7f-f70d-84f1-1cf6" primary="false" name="Unit:"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Blood Slaughterer" hidden="false" type="selectionEntry" id="f14b-bcb2-b7e7-7e50" targetId="2d70-676d-68aa-1973"/>
+    <entryLink import="true" name="Blood Slaughterer" hidden="false" type="selectionEntry" id="f14b-bcb2-b7e7-7e50" targetId="2d70-676d-68aa-1973">
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="4701-e42d-e866-730f" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="3c75-d5f8-1ad4-24e5" id="5703-5a0f-3a0e-82b5" primary="false" name="Compulsory Fast Attack:"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink import="true" name="Decimator" hidden="false" type="selectionEntry" id="4699-ff33-7334-6b2d" targetId="b1a5-42a-a6ee-2223"/>
     <entryLink id="7736-5242-6cb5-a742" name="Nathaniel Garro" hidden="true" collective="false" import="false" targetId="0583-258d-f0a0-2170" type="selectionEntry">
       <modifiers>
@@ -634,6 +639,19 @@
           <comment>template_id_4448-a712-4dd7-bf6d</comment>
         </categoryLink>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Blood Slaughterer" hidden="false" id="1d25-44aa-e569-0fbd" type="selectionEntry" targetId="2d70-676d-68aa-1973">
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="faa7-5592-b739-360d" primary="true" name="Troops:"/>
+        <categoryLink targetId="6399-5c65-7833-1025" id="1d59-97d6-393b-c5f0" primary="false" name="Line Sub-type"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="b716-0dae-8a41-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>

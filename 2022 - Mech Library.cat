@@ -52,6 +52,18 @@ When deployed onto the battlefield (either at the start of the battle or when ar
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Scion of Sarum Compulsory Troops" id="2623-5f6c-553a-b5c2" hidden="false">
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="2cf1-588c-802a-5d8e" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="1" field="2cf1-588c-802a-5d8e">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </categoryEntry>
   </categoryEntries>
   <sharedSelectionEntries>
     <selectionEntry id="e825-c60e-e6c3-60f0" name="Photon Gauntlet" publicationId="bde1-6db1-163b-3b76" page="117" hidden="false" collective="false" import="true" type="upgrade">
@@ -6744,7 +6756,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Kytan Daemon Engine" hidden="false" id="b7cd-670-7027-fee8" publicationId="6bcf-2297-2bcd-51be" page="11">
+    <selectionEntry type="unit" import="true" name="Kytan Daemon Engine" hidden="false" id="b7cd-670-7027-fee8" publicationId="4934-46f7-208b-b4af" page="128">
       <categoryLinks>
         <categoryLink targetId="437f-7773-a0d0-6061" id="9930-88d0-7282-2fa4" primary="false" name="Knight Sub-type"/>
         <categoryLink targetId="a443-dbf4-cb6c-4da1" id="281c-af2f-8a44-58ba" primary="false" name="Corrupted Engine Sub-type"/>
@@ -6754,7 +6766,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="420"/>
       </costs>
       <profiles>
-        <profile name="Kytan Daemon Engine" typeId="75b5-9f7a-156e-6889" typeName="Knights and Titans" hidden="false" id="be3c-85a9-be2e-73fd" publicationId="6bcf-2297-2bcd-51be" page="11">
+        <profile name="Kytan Daemon Engine" typeId="75b5-9f7a-156e-6889" typeName="Knights and Titans" hidden="false" id="be3c-85a9-be2e-73fd" publicationId="4934-46f7-208b-b4af" page="126">
           <characteristics>
             <characteristic name="Unit Type" typeId="3c44-1e2a-23fe-c9e0">Vehicle (Knight, Corrupted Engine)</characteristic>
             <characteristic name="Move" typeId="7f12-0cc3-9dcd-25bc">14</characteristic>
@@ -6771,9 +6783,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </profile>
       </profiles>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Arm Mounted Kytan gatling cannon" hidden="false" id="9f9c-c2c3-e99a-378d" publicationId="6bcf-2297-2bcd-51be" page="15">
+        <selectionEntry type="upgrade" import="true" name="Arm Mounted Kytan Gatling Cannon" hidden="false" id="9f9c-c2c3-e99a-378d" publicationId="4934-46f7-208b-b4af" page="132">
           <profiles>
-            <profile name="Kytan gatling cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c7b9-acba-de34-e1b1" publicationId="6bcf-2297-2bcd-51be" page="15">
+            <profile name="Kytan Gatling Cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="c7b9-acba-de34-e1b1" publicationId="4934-46f7-208b-b4af" page="132">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -6795,9 +6807,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f507-ba3-8019-e1e0"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Cleaver of slaughter" hidden="false" id="b8c-4ccf-97c7-c35c" publicationId="6bcf-2297-2bcd-51be" page="15">
+        <selectionEntry type="upgrade" import="true" name="Cleaver of Slaughter" hidden="false" id="b8c-4ccf-97c7-c35c" publicationId="4934-46f7-208b-b4af" page="132">
           <profiles>
-            <profile name="Cleaver of slaughter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="35a5-8e01-2924-64fc" publicationId="6bcf-2297-2bcd-51be" page="15">
+            <profile name="Cleaver of Slaughter" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="35a5-8e01-2924-64fc" publicationId="4934-46f7-208b-b4af" page="132">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -6854,7 +6866,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Greater Brass Scorpion" hidden="false" id="3c5c-5bbf-cfc-e84e" publicationId="6bcf-2297-2bcd-51be" page="12">
+    <selectionEntry type="unit" import="true" name="Greater Brass Scorpion" hidden="false" id="3c5c-5bbf-cfc-e84e" publicationId="4934-46f7-208b-b4af" page="129">
       <categoryLinks>
         <categoryLink targetId="437f-7773-a0d0-6061" id="fa26-64a2-93f4-a7f2" primary="false" name="Knight Sub-type"/>
         <categoryLink targetId="a443-dbf4-cb6c-4da1" id="5171-d808-4502-1151" primary="false" name="Corrupted Engine Sub-type"/>
@@ -6871,7 +6883,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Greater Brass Scorpion" typeId="75b5-9f7a-156e-6889" typeName="Knights and Titans" hidden="false" id="fde9-754d-41d1-8c5d" publicationId="6bcf-2297-2bcd-51be" page="12">
+        <profile name="Greater Brass Scorpion" typeId="75b5-9f7a-156e-6889" typeName="Knights and Titans" hidden="false" id="fde9-754d-41d1-8c5d" publicationId="4934-46f7-208b-b4af" page="129">
           <characteristics>
             <characteristic name="Unit Type" typeId="3c44-1e2a-23fe-c9e0">Vehicle (Knight, Corrupted Engine)</characteristic>
             <characteristic name="Move" typeId="7f12-0cc3-9dcd-25bc">10</characteristic>
@@ -6906,9 +6918,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </infoLink>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Turret Mounted Scorpion cannon" hidden="false" id="ad66-95b6-5df8-562f" publicationId="6bcf-2297-2bcd-51be" page="15">
+        <selectionEntry type="upgrade" import="true" name="Turret Mounted Scorpion cannon" hidden="false" id="ad66-95b6-5df8-562f" publicationId="4934-46f7-208b-b4af" page="132">
           <profiles>
-            <profile name="Scorpion cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2d2-177b-ba22-102" publicationId="6bcf-2297-2bcd-51be" page="15">
+            <profile name="Scorpion cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2d2-177b-ba22-102" publicationId="4934-46f7-208b-b4af" page="132">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">30&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -6926,9 +6938,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e008-ced3-b2ac-847"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Centreline Mounted despoiler cannon" hidden="false" id="9dbc-919b-5788-ea7f" publicationId="6bcf-2297-2bcd-51be" page="15">
+        <selectionEntry type="upgrade" import="true" name="Centreline Mounted despoiler cannon" hidden="false" id="9dbc-919b-5788-ea7f" publicationId="4934-46f7-208b-b4af" page="132">
           <profiles>
-            <profile name="Despoiler cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="bb7e-ba2c-cf50-870" publicationId="6bcf-2297-2bcd-51be" page="15">
+            <profile name="Despoiler cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="bb7e-ba2c-cf50-870" publicationId="4934-46f7-208b-b4af" page="132">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
@@ -6960,9 +6972,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b1e4-cf60-50bc-d906"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Hellmaw cannon" hidden="false" id="c069-a7e5-632a-9590" publicationId="6bcf-2297-2bcd-51be" page="15">
+        <selectionEntry type="upgrade" import="true" name="Two Hull (Front) Mounted Hellmaw cannon" hidden="false" id="c069-a7e5-632a-9590" publicationId="4934-46f7-208b-b4af" page="132">
           <profiles>
-            <profile name="Hellmaw cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6062-dc39-556-830b" publicationId="6bcf-2297-2bcd-51be" page="15">
+            <profile name="Hellmaw cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="6062-dc39-556-830b" publicationId="4934-46f7-208b-b4af" page="132">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -6985,12 +6997,17 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Two Hellcrusher claws" hidden="false" id="1e9b-28d9-7925-1311" publicationId="6bcf-2297-2bcd-51be" page="15">
           <profiles>
-            <profile name="Hellcrusher claws" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a329-556d-dfe3-790a" publicationId="6bcf-2297-2bcd-51be" page="15">
+            <profile name="Hellcrusher claws*" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a329-556d-dfe3-790a" publicationId="4934-46f7-208b-b4af" page="132">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
                 <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
                 <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Sunder</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Hellcrusher claws*" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="1bf5-4a62-5256-3274" publicationId="4934-46f7-208b-b4af" page="129">
+              <characteristics>
+                <characteristic name="Description" typeId="347e-ee4a-764f-6be3">&quot;The additional attack for two  Melee weapons is included in the Greater Brass Scorpion&apos;s profile.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7020,8 +7037,6 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
       <categoryLinks>
         <categoryLink targetId="a443-dbf4-cb6c-4da1" id="af0-7a45-f939-713b" primary="false" name="Corrupted Engine Sub-type"/>
         <categoryLink targetId="4280-4963-02b5-e31d" id="7fdd-1633-d072-3977" primary="false" name="Dreadnought Unit Type"/>
-        <categoryLink targetId="20ef-cd01-a8da-376e" id="26a0-1087-70ac-206c" primary="true" name="Fast Attack:"/>
-        <categoryLink targetId="3c75-d5f8-1ad4-24e5" id="16e6-99f9-975e-c247" primary="false" name="Compulsory Fast Attack:"/>
         <categoryLink targetId="f074-f60a-9aa6-c52a" id="1f3b-bc68-b474-2154" primary="false" name="Heedless Slaughter"/>
       </categoryLinks>
       <costs>
@@ -7033,7 +7048,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110"/>
           </costs>
           <profiles>
-            <profile name="Blood Slaughterer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="24f3-cc19-8d4d-91fd">
+            <profile name="Blood Slaughterer" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="24f3-cc19-8d4d-91fd" publicationId="4934-46f7-208b-b4af" page="130">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Corrupted Engine)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">9</characteristic>
@@ -7077,6 +7092,11 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
                         </conditionGroup>
                       </conditionGroups>
                     </modifier>
+                    <modifier type="append" value="Line" field="ddd7-6f5c-a939-b69e">
+                      <conditions>
+                        <condition type="greaterThan" value="0" field="selections" scope="2d70-676d-68aa-1973" childId="0ed4-54a9-c68d-8051" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                 </modifierGroup>
               </modifierGroups>
@@ -7104,9 +7124,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
           <selectionEntryGroups>
             <selectionEntryGroup name="Weapons" hidden="false" id="7806-8eb2-2e8c-715b">
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Slaughterer blades" hidden="false" id="7a74-2e6a-ddc1-4363" defaultAmount="2">
+                <selectionEntry type="upgrade" import="true" name="Slaughterer blades" hidden="false" id="7a74-2e6a-ddc1-4363" defaultAmount="2" publicationId="4934-46f7-208b-b4af" page="132">
                   <profiles>
-                    <profile name="Slaughterer blades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="438-d465-fb56-2729" publicationId="6bcf-2297-2bcd-51be" page="15">
+                    <profile name="Slaughterer blades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="438-d465-fb56-2729" publicationId="4934-46f7-208b-b4af" page="132">
                       <characteristics>
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -7123,9 +7143,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
                     </infoLink>
                   </infoLinks>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Impaler harpoon" hidden="false" id="385b-ddf3-38f8-8405" defaultAmount="0">
+                <selectionEntry type="upgrade" import="true" name="Impaler harpoon" hidden="false" id="385b-ddf3-38f8-8405" defaultAmount="0" publicationId="4934-46f7-208b-b4af" page="132">
                   <profiles>
-                    <profile name="Impaler harpoon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e4be-3fa6-b657-4b1d" publicationId="6bcf-2297-2bcd-51be" page="15">
+                    <profile name="Impaler harpoon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e4be-3fa6-b657-4b1d" publicationId="4934-46f7-208b-b4af" page="132">
                       <characteristics>
                         <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
                         <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -7135,7 +7155,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
                     </profile>
                   </profiles>
                   <infoLinks>
-                    <infoLink name="Impale" hidden="false" type="rule" id="acbf-b670-695e-582" targetId="2dfc-b3cc-7ede-2827"/>
+                    <infoLink name="Impale" hidden="false" type="rule" id="acbf-b670-695e-582" targetId="2dfc-b3cc-7ede-2827" publicationId="4934-46f7-208b-b4af" page="132"/>
                   </infoLinks>
                 </selectionEntry>
               </selectionEntries>
@@ -7157,6 +7177,29 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <categoryLink targetId="a443-dbf4-cb6c-4da1" id="0e34-859c-4416-814b" name="Corrupted Engine Sub-type" primary="false"/>
           </categoryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Scion of Sarum Compulsory Troops" hidden="true" id="0ed4-54a9-c68d-8051" collective="false">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="9b5d-fac7-799b-d7e7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="b716-0dae-8a41-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c63-0c38-4399-0878" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="2623-5f6c-553a-b5c2" id="b810-e6df-faa1-3e83" primary="false" name="Scion of Sarum Compulsory Troops"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <modifiers>
         <modifier type="set" value="true" field="hidden">
@@ -7164,9 +7207,14 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="add" value="8f42-a824-fb5f-8fea" field="category">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="2d70-676d-68aa-1973" childId="0ed4-54a9-c68d-8051" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
       </modifiers>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Decimator" hidden="false" id="b1a5-42a-a6ee-2223" publicationId="6bcf-2297-2bcd-51be" page="14">
+    <selectionEntry type="unit" import="true" name="Decimator" hidden="false" id="b1a5-42a-a6ee-2223" publicationId="4934-46f7-208b-b4af" page="131">
       <categoryLinks>
         <categoryLink targetId="a443-dbf4-cb6c-4da1" id="9ff1-2e56-f502-d653" primary="false" name="Corrupted Engine Sub-type"/>
         <categoryLink targetId="4280-4963-02b5-e31d" id="527f-7bcf-e17a-4a0b" primary="false" name="Dreadnought Unit Type"/>
@@ -7186,7 +7234,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </modifier>
       </modifiers>
       <profiles>
-        <profile name="Decimator" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1cff-4f5a-e8c8-8375" publicationId="6bcf-2297-2bcd-51be" page="14">
+        <profile name="Decimator" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1cff-4f5a-e8c8-8375" publicationId="4934-46f7-208b-b4af" page="131">
           <characteristics>
             <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Heavy, Corrupted Engine)</characteristic>
             <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -7238,9 +7286,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapons" hidden="false" id="74be-d2c0-de3f-ce83">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Decimator siege claws with in-built heavy flamers" hidden="false" id="8cab-f86d-6be9-ed53" defaultAmount="2">
+            <selectionEntry type="upgrade" import="true" name="Decimator siege claws with in-built heavy flamers" hidden="false" id="8cab-f86d-6be9-ed53" defaultAmount="2" publicationId="4934-46f7-208b-b4af" page="132">
               <profiles>
-                <profile name="Decimator siege claws" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="25b2-e412-820d-bd61" publicationId="6bcf-2297-2bcd-51be" page="15">
+                <profile name="Decimator siege claws" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="25b2-e412-820d-bd61" publicationId="4934-46f7-208b-b4af" page="132">
                   <characteristics>
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
                     <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -7265,9 +7313,9 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Butcher cannon" hidden="false" id="7696-53a-93cf-bb82" defaultAmount="0">
+            <selectionEntry type="upgrade" import="true" name="Butcher cannon" hidden="false" id="7696-53a-93cf-bb82" defaultAmount="0" publicationId="4934-46f7-208b-b4af" page="132">
               <profiles>
-                <profile name="Butcher cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="874b-dbfd-fa48-6f7b" publicationId="6bcf-2297-2bcd-51be" page="15">
+                <profile name="Butcher cannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="874b-dbfd-fa48-6f7b" publicationId="4934-46f7-208b-b4af" page="132">
                   <characteristics>
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
                     <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
@@ -7288,12 +7336,12 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Soulburner petard" hidden="false" id="ab58-c56c-aae8-38d8">
+            <selectionEntry type="upgrade" import="true" name="Soulburner petard" hidden="false" id="ab58-c56c-aae8-38d8" publicationId="4934-46f7-208b-b4af" page="132">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
               <profiles>
-                <profile name="Soulburner petard" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2f18-fcfa-6717-cff9" publicationId="6bcf-2297-2bcd-51be" page="15">
+                <profile name="Soulburner petard" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2f18-fcfa-6717-cff9" publicationId="4934-46f7-208b-b4af" page="132">
                   <characteristics>
                     <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
                     <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
@@ -8047,6 +8095,101 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Scions of the Dark Forges" id="3a69-2f3b-62b9-4da0" hidden="true">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="47f0-bba9-6d89-9baa" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="807e-0cf8-7f28-7b6d" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="ddf5-d792-3146-6e9a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                  <conditions>
+                    <condition type="greaterThan" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Scion of Cyclothrathe" hidden="false" id="3e47-ef96-922c-04ef" publicationId="4934-46f7-208b-b4af" page="124">
+              <profiles>
+                <profile name="Scion of Cyclothrathe" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="c5f9-beb2-65f5-6a3e" page="124" publicationId="4934-46f7-208b-b4af">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When rolling to determine the effect of a weapon with the Haywire special rule against a model with the Corrupted Engine Unit Sub-type in an army whose Warlord has this trait, use the following Haywire Dampening table instead of that found on page z40 of the Warhammer Horus Heresy: Age of Darkness rulebook. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Movement phase as long as the Warlord has not been removed as a casualty.
+
+
+Haywire Dampening Table
+When a weapon with this special rule Hits a model with the Vehicle, Dreadnought or Automata Unit Type, roll a D6 to determine the effect rather than rolling To Wound or for armour penetration normally. AP has no effect on this roll:
+D6 | Result
+1-3: No Effect.
+4-5: Vehicles suffer a Glancing Hit, whilst other models suffer 1 Wound. Only Invulnerable Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.
+6: Vehicles suffer a Penetrating Hit, whilst Dreadnoughts and Automata suffer 1 Wound. No Saves or Damage Mitigation rolls may be taken against Wounds inflicted by this result.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9bc5-d61a-41e1-6923" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ed9-57b1-6144-7375" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scion of Xana |I" hidden="false" id="2ef3-c5a5-ac34-c664" publicationId="4934-46f7-208b-b4af" page="124">
+              <profiles>
+                <profile name="Scion of Xana |I" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="4edd-6e83-6a0c-fc2f" publicationId="4934-46f7-208b-b4af" page="124">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">An army that includes a Warlord that has this Trait gains
+the following Advanced Reaction: Xanite Artifice</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Xanite Artifice" typeId="90b9-7fab-87db-aed3" typeName="Reactions" hidden="false" id="bc8e-bf98-e662-63d3" publicationId="4934-46f7-208b-b4af" page="124">
+                  <characteristics>
+                    <characteristic name="Description" typeId="c627-4637-8de5-65fb">This Advanced Reaction may be made once per battle during the opposing player&apos;s Shooting phase, when an enemy unit makes a Shooting Attack targeting a unit that includes any models with the Corrupted Engine Unit Sub-type controlled by the Reactive player. Improve the value in brackets of the Malefic Aegis (X) on all models in the targeted unit that already have a variant of that special rule by 1, to a maximum of 4+, until the end of the Shooting phase. This takes effect before any Armour Saves are rolled for models in the targeted unit (this Reaction does not grant the Malefic Aegis (X) special rule to any models that do not already have that special rule).
+In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Shooting phase as long as the Warlord has s not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d456-fa41-5544-4c8d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b958-2e30-e75d-4e2f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scion of Sarum" hidden="false" id="b716-0dae-8a41-3c81" publicationId="4934-46f7-208b-b4af" page="125">
+              <profiles>
+                <profile name="Scion of Sarum" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="1311-a9cd-3d41-72cc" publicationId="4934-46f7-208b-b4af" page="125">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">An army that includes a Warlord that has this Trait may select Blood Slaughterers as Troops and/or Fast Attack choices in the Detachment which includes the Warlord only. Any Blood Slaughterer units taken as Compulsory Troops choices gain the Line Unit Sub-type. In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9a90-4f95-2af9-eb71" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="df04-7553-4f57-ba87" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Scion of Retlaxi" hidden="false" id="314c-0202-7131-18f1" publicationId="4934-46f7-208b-b4af" page="125">
+              <profiles>
+                <profile name="Scion of Retlaxi" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="4fbc-7aa1-ddb6-963d" publicationId="4934-46f7-208b-b4af" page="125">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">When a model with the Corrupted Engine Unit Sub-type that is part of the same Detachment as a Warlord with this Trait loses its last Wound or Hull Point, it is not immediately removed as a casualty. Instead, resolve a Strength 5+D3, AP 5 Hit against every model, friendly or enemy, within 3+D;&quot; of the model or the Vehicle&apos;s Hull. Any unit that suffers one or more Hits due to this Warlord Trait must also take an immediate Pinning test (no unit may take more than a single Pinning test from the effects of this Warlord Trait). If another rule or effect would cause a similar set of attacks when a model controlled by this Warlord&apos;s controlling player is removed from play, such as taking Catastrophic Damage or rolling on the Vehicle Damage table, the model&apos;s controlling player chooses one of those effects to resolve and may not inflict more than a single set of Hits due to the removal of a single model.
+In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent&apos;s Shooting phase as long as</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="force" shared="true" id="1075-0fc2-5d38-33b2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ee0-9ed6-82ec-d5a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2cc-258d-c8f7-ec4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>

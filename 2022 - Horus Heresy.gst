@@ -589,7 +589,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
     <categoryEntry id="6e0c-29ba-a445-8321" name="Psyker:" hidden="false"/>
     <categoryEntry id="9055-7410-8ffd-b8e7" name="Corrupted Sub-type" hidden="false">
       <rules>
-        <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" publicationId="e77a-823a-da94-16b9" page="307" hidden="false">
+        <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" publicationId="09c5-eeae-f398-b653" page="307" hidden="false">
           <description>• Models with the Corrupted Unit Sub-type gain the Fear (1) special rule.
 • Any Hits inflicted on a model with the Corrupted Unit sub-type by a weapon with the Force or Psychic Focus special rules gain the Instant Death special rule.
 • Any unit composed entirely of models with the Corrupted Unit Sub-type is immune to the effects of the Fear (X) special rule. When a unit composed entirely of models with the Corrupted Unit Sub-type fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic wounds with no saves or Damage Mitigation rolls of any kind allowed.
@@ -1286,7 +1286,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
     </categoryEntry>
     <categoryEntry id="a443-dbf4-cb6c-4da1" name="Corrupted Engine Sub-type" hidden="false">
       <rules>
-        <rule id="6aed-6080-ba72-6007" name="Corrupted Engine Sub-type" publicationId="6bcf-2297-2bcd-51be" page="8" hidden="false">
+        <rule id="6aed-6080-ba72-6007" name="Corrupted Engine Sub-type" publicationId="4934-46f7-208b-b4af" page="126" hidden="false">
           <description>• All models with the Corrupted Engine Sub-type gain the Fear (1) special rule, or if it already has the Fear (X) special rule, it increases the value of X by 1 instead.
 • Any rule, effect or modifier that would affect a model with the Corrupted Unit Sub-type also affects a model with the Corrupted Engine Unit Sub-type (e.g., the Anathema Sub-type special rules or the Inexorable special rule).
 • Any unit composed entirely of models with the Corrupted Engine Unit Sub-type is immune to the effects of the Fear (X) special rule, automatically passes Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit composed entirely of models with the Corrupted Engine Unit Sub-type fails a Morale check, it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no saves or Damage Mitigation rolls of any kind allowed.
@@ -17713,11 +17713,11 @@ The penalty to Leadership is ignored by any unit with the Fearless or Stubborn s
     <rule id="1cb6-d7f2-0c79-d208" name="Ungainly" publicationId="48c2-d023-0069-001a" page="41" hidden="false">
       <description>A model may only attack with this weapon on a turn in which it makes a successful Charge, but does not gain a bonus attack for Charging or from any special rules that would normally grant additional Attacks.</description>
     </rule>
-    <rule name="Impale" hidden="false" id="2dfc-b3cc-7ede-2827" publicationId="6bcf-2297-2bcd-51be" page="15">
+    <rule name="Impale" hidden="false" id="2dfc-b3cc-7ede-2827" publicationId="4934-46f7-208b-b4af" page="132">
       <description>A unit may re-roll Charge Rolls when attempting to Charge an enemy unit that has suffered one or more Hits from a weapon with the Impale special rule caused by one or more models in the unit for which the Charge was declared in the same player turn. This takes effect even if no Wounds are caused by the Hits.
 If one or more Wounds are caused by a weapon with this rule, the affected unit decreases its Initiative characteristic by 1 until the end of the subsequent Assault phase.</description>
     </rule>
-    <rule name="Malefic Aegis (X)" hidden="false" id="686c-178b-6e07-2ba3" publicationId="6bcf-2297-2bcd-51be" page="15">
+    <rule name="Malefic Aegis (X)" hidden="false" id="686c-178b-6e07-2ba3" publicationId="4934-46f7-208b-b4af" page="126">
       <description>Malefic Aegis confers an Invulnerable Save equal to the value of X. Invulnerable saves granted by Malefic Aegis do not stack with other Invulnerable Saves but can benefit from rules (such as cyber-familiar) that specifically increase existing saves.</description>
     </rule>
     <rule id="2a9e-be1f-d6c1-0ec4" name="Legiones Astartes (Alpha Legion)" publicationId="09c5-eeae-f398-b653" page="330" hidden="false">
