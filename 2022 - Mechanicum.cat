@@ -3264,6 +3264,11 @@ This unit may be upgraded freely as described in their profile, though they may 
                     <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="Automata (Ruinous Cybernetica)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica)</characteristic>
@@ -3397,9 +3402,14 @@ This unit may be upgraded freely as described in their profile, though they may 
             <entryLink id="6a82-3c05-8cb9-2fc1" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="b178-7d35-136f-d305" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="b178-7d35-136f-d305" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
@@ -3416,9 +3426,14 @@ This unit may be upgraded freely as described in their profile, though they may 
           </categoryLinks>
           <modifiers>
             <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3428,11 +3443,19 @@ This unit may be upgraded freely as described in their profile, though they may 
       </costs>
       <modifiers>
         <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="a33a-94a7-2a1f-baf0" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="0750-2aed-2d36-8a82" name="Ursarax Cohort" publicationId="bde1-6db1-163b-3b76" page="41" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -3601,6 +3624,11 @@ This unit may be upgraded freely as described in their profile, though they may 
                     <condition type="atLeast" value="1" field="selections" scope="0e08-6b7e-8fff-1f02" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="Automata (Antigrav, Ruinous Cybernetica)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Antigrav, Cybernetica)</characteristic>
@@ -3653,9 +3681,14 @@ This unit may be upgraded freely as described in their profile, though they may 
             <entryLink id="c5f5-0be4-0ee6-7d3e" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="0e08-6b7e-8fff-1f02" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="0e08-6b7e-8fff-1f02" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
@@ -3691,9 +3724,14 @@ This unit may be upgraded freely as described in their profile, though they may 
           </categoryLinks>
           <modifiers>
             <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </selectionEntry>
@@ -3703,11 +3741,19 @@ This unit may be upgraded freely as described in their profile, though they may 
       </costs>
       <modifiers>
         <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="4e9f-3a81-3668-78f5" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="356f-a88b-1d13-3700" name="Myrmidon Destructor Host" publicationId="bde1-6db1-163b-3b76" page="47" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>

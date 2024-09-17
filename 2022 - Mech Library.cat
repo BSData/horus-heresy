@@ -4340,9 +4340,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </modifier>
             <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -4365,6 +4370,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <modifier type="set" value="Automata (Paragon)" field="ddd7-6f5c-a939-b69e">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Ruinous Cybernetica)" field="ddd7-6f5c-a939-b69e" join="">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4557,9 +4567,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <entryLink id="2e0f-2bb6-069f-03d6" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="537f-846d-90e3-2526" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab78-91e2-bb5c-9da3" type="greaterThan"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="537f-846d-90e3-2526" childId="ab78-91e2-bb5c-9da3" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
@@ -4595,15 +4610,21 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b442-486a-dd6e-11f0" type="max"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="a4e7-8540-c3dd-d738" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
       </costs>
       <modifiers>
         <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="537f-846d-90e3-2526" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -4704,9 +4725,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </modifier>
             <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -4729,6 +4755,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <modifier type="set" value="Automata (Paragon)" field="ddd7-6f5c-a939-b69e">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Ruinous Cybernetica)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4819,9 +4850,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <entryLink id="2f3f-a0de-3a2d-c44c" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="1a1b-fa35-a6a2-ca78" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="200f-3379-95a3-c3a4" type="greaterThan"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="200f-3379-95a3-c3a4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
@@ -4843,11 +4879,27 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       </costs>
       <modifiers>
         <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="1a1b-fa35-a6a2-ca78" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="ccb4-92bf-f940-2211" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="ceaa-178d-3995-c2c8" name="Graviton Hammer" publicationId="bde1-6db1-163b-3b76" page="116" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5038,9 +5090,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </conditions>
         </modifier>
         <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="cfe3-874c-01db-9e29" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -5113,6 +5170,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                         <modifier type="set" value="Automata (Paragon, Heavy)" field="ddd7-6f5c-a939-b69e">
                           <conditions>
                             <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" value="Automata (Ruinous Cybernetica, Heavy)" field="ddd7-6f5c-a939-b69e">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
                       </modifiers>
@@ -5198,6 +5260,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                             <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
                           </conditions>
                         </modifier>
+                        <modifier type="set" value="Automata (Ruinous Cybernetica, Heavy)" field="ddd7-6f5c-a939-b69e">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                       <characteristics>
                         <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Heavy)</characteristic>
@@ -5276,6 +5343,7 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                         <condition field="selections" scope="primary-category" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f85-eb33-30c9-8f51" type="instanceOf"/>
                         <condition field="selections" scope="2903-fef6-e839-368b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c48e-f9ea-9d9d-46aa" type="greaterThan"/>
                         <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
+                        <condition type="atLeast" value="1" field="selections" scope="2903-fef6-e839-368b" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -5294,6 +5362,9 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="f169-7a22-0e2b-faa2" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="2952-52d9-49e2-cbfd" name="Titan Power Fist" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -5348,9 +5419,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </conditions>
             </modifier>
             <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -5373,6 +5449,11 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                 <modifier type="set" value="Automata (Paragon, Light)" field="ddd7-6f5c-a939-b69e">
                   <conditions>
                     <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Ruinous Cybernetica, Light)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -5520,24 +5601,35 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <entryLink id="03c7-9ccc-e943-5c5e" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="f144-1079-11ff-019d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="greaterThan" value="1" field="selections" scope="f144-1079-11ff-019d" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="35"/>
           </costs>
         </entryLink>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="2fbd-2dc5-6bb3-d497" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
       <modifiers>
         <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-          <conditions>
-            <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
     </selectionEntry>
@@ -6859,11 +6951,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="Heedless Slaughter" hidden="false" type="selectionEntry" id="6cdc-7d96-dd8d-96d9" targetId="3d70-1d54-a791-ac60">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e71b-df0d-9593-d970"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Heedless Slaughter (Corrupted Engines)" hidden="false" type="selectionEntry" id="6cdc-7d96-dd8d-96d9" targetId="4cd2-3d17-e493-f555"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Greater Brass Scorpion" hidden="false" id="3c5c-5bbf-cfc-e84e" publicationId="4934-46f7-208b-b4af" page="129">
@@ -7026,11 +7114,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Heedless Slaughter" hidden="false" type="selectionEntry" id="22ba-21ca-d7a3-f348" targetId="3d70-1d54-a791-ac60">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c26-c39-6b7-2968"/>
-          </constraints>
-        </entryLink>
+        <entryLink import="true" name="Heedless Slaughter (Corrupted Engines)" hidden="false" type="selectionEntry" id="22ba-21ca-d7a3-f348" targetId="4cd2-3d17-e493-f555"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Blood Slaughterer" hidden="false" id="2d70-676d-68aa-1973" publicationId="6bcf-2297-2bcd-51be" page="13">
@@ -7166,11 +7250,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Heedless Slaughter" hidden="false" type="selectionEntry" id="88f3-d08c-afce-3eb1" targetId="3d70-1d54-a791-ac60">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc6c-e19c-661e-ca22"/>
-              </constraints>
-            </entryLink>
+            <entryLink import="true" name="Heedless Slaughter (Corrupted Engines)" hidden="false" type="selectionEntry" id="88f3-d08c-afce-3eb1" targetId="4cd2-3d17-e493-f555"/>
           </entryLinks>
           <categoryLinks>
             <categoryLink targetId="4280-4963-02b5-e31d" id="5ae3-42e9-4737-8d29" name="Dreadnought Unit Type" primary="false"/>
@@ -7391,11 +7471,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
         <infoLink name="Move Through Cover" hidden="false" type="rule" id="4e63-7ddf-f56e-89db" targetId="2b6f-bfec-759e-1746"/>
       </infoLinks>
       <entryLinks>
-        <entryLink id="3087-4493-7f40-4625" name="Malevolent Artifice" hidden="false" collective="false" import="true" targetId="9508-8124-d34a-500a" type="selectionEntry">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7465-42f2-e9f-1c4f"/>
-          </constraints>
-        </entryLink>
+        <entryLink id="3087-4493-7f40-4625" name="Malevolent Artifice (Corrupted Engines)" hidden="false" collective="false" import="true" targetId="342d-f0f5-4302-69db" type="selectionEntry"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Anima Malefica" hidden="false" id="7fec-d772-f51-95b3">
@@ -7546,6 +7622,80 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
         <infoLink name="Rad-Phage" id="6040-a5aa-0928-92a4" hidden="false" type="rule" targetId="8189-e963-d2e5-5d3d"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Machina Malefica" hidden="true" id="a35e-8e94-3c36-cd48" publicationId="4934-46f7-208b-b4af" page="151">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Diabolis Quiritatus (Cybertheurgic Weapon)" hidden="false" id="6a3c-bd79-b96d-49a5" publicationId="4934-46f7-208b-b4af" page="151" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d911-9f09-4578-cd14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5209-09c6-01c3-1d3a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Diabolis Quiritatus (Cybertheurgic Weapon)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="22ad-7f84-0357-50ac" publicationId="4934-46f7-208b-b4af" page="151">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Data-djinn, Rending (5+), Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Data-djinn" id="80ff-05fc-90a6-8c1b" hidden="false" targetId="3e2e-cdc0-8a31-06f6" type="rule"/>
+            <infoLink name="Rending (X)" id="23b2-31a5-a48d-642a" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" value="Rending (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Cybertheurgic Focus" id="a010-5753-28d3-0c48" hidden="false" targetId="f420-6cdb-5d9b-ef30" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Indicium Malefica (Cybertheurgic Rite)" hidden="false" id="c567-2b23-551e-d6d2" publicationId="4934-46f7-208b-b4af" page="151" collective="true">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3dd-88c1-7d41-fb95" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cea-7b84-61f3-f85c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Indicium Malefica  (Cybertheurgic Rite)" typeId="5405-b3c6-e8d0-4e77" typeName="Psychic Power" hidden="false" id="3f69-fe41-5ee7-0c1a" publicationId="4934-46f7-208b-b4af" page="151">
+              <characteristics>
+                <characteristic name="Description" typeId="4c0f-7e2f-586c-9305">A Cybertheurgist with this Cybertheurgic Rite may use it instead of making a Shooting Attack in the controlling player&apos;s Shooting phase. When they do, the controlling player may select a single enemy unit and roll a D6 for each model (excluding model with the Vehicle Unit Type) in that unit that is within 6&quot; of the Cybertheurgist model. For each result that equals or beats that model&apos;s Save characteristic, that model&apos;s unit suffers one Wound, allocated by the Active player. Saving Throws and Damage Mitigation rolls can be taken against this Wound as normal. The controlling player then rolls a D6 for each affected mnodel with the Vehicle Unit Type. For each result of 6, one affected model with the Vehicle Unit Type suffers a Crew Stunned result from the Vehicle Damage table.
+
+The Cybertheurgist may choose to make a Cybertheurgy check before using this Cybertheurgic Rite. If successful, every enemy model within 6 of the Cybertheurgist model is affected instead.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f147-042e-90bc-5ca3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ruinous Cybernetica" hidden="true" id="c7f4-8f4e-f31d-5323" publicationId="4934-46f7-208b-b4af" page="151">
+      <infoLinks>
+        <infoLink name="Ruinous Cybernetica" id="053c-d317-1a49-56ed" hidden="false" type="rule" targetId="5acc-f755-c152-07f7"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8bb-7279-e7da-7e97"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="e033-44c5-e827-20ff" shared="true" id="dfa4-8d41-0e41-3299" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="7b4a-8a9b-3ef3-01d0" id="711c-43c7-c028-fb7c" primary="false" name="Ruinous Cybernetica"/>
+      </categoryLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="1b29-a58e-296c-3946" name="Household Ranks" hidden="true" collective="false" import="true">
@@ -7676,7 +7826,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="c36b-a6a2-9cb2-b090" name="Orders of High Techno-arcana" publicationId="bde1-6db1-163b-3b76" page="98" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="c36b-a6a2-9cb2-b090" name="Orders of High/Proscribed Techno-arcana" publicationId="bde1-6db1-163b-3b76" page="98" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="982a-7267-a5bb-3229" type="min"/>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9780-13f0-c1ca-107c" type="max"/>
@@ -7835,6 +7985,104 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Malefikite" hidden="true" id="e033-44c5-e827-20ff" publicationId="4934-46f7-208b-b4af" page="150" collective="false">
+          <rules>
+            <rule name="Malefikite" id="0158-ae20-13af-fe70" hidden="false" publicationId="4934-46f7-208b-b4af" page="150">
+              <description>• Bonds of Corruption: Any unit with the Cybernetica Unit Sub-type that is in
+the same Detachment as a model with this Proscribed Techno-arcana may be
+upgraded to have the Ruinous Cybernetica special rule for +10 points.
+•  Magister Malefica: A model with this Proscribed Techno-arcana gains the
+Machina Malefica Cybertheurgic Arcana (see page 151), but the controlling player
+may not select any other Cybertheurgic Arcana from those available for it.
+• Malignant Vector: During any Shooting phase, instead of making a Shooting
+Attack, the controlling player of a model with this Proscribed Techno-arcana may
+select any friendly unit with the Cybernetica Unit Sub-type that has at least one
+model within 2&quot; of model with this Proscribed Techno-arcana and roll a D6 for it
+on the following table:
+
+D6 | Result
+1    : The selected model suffers no further effect.
+2-3 : All models in the selected unit gain the Ruinous Cybernetica special rule
+until the start of the controlling player&apos;s next player turn.
+4+  : All models in the selected unit gain the Ruinous Cybernetica special rule
+until the end of the battle.
+</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="1" hidden="true" id="183d-be3f-82f9-e754" publicationId="bde1-6db1-163b-3b76" page="99" collective="false">
+          <rules>
+            <rule name="Cybernetica" id="4e7e-b68e-3942-fd77" hidden="false" publicationId="bde1-6db1-163b-3b76" page="99">
+              <description>• Cohorts Cybernetica: All Castellax Battle-automata Maniples in a Detachment that includes a model with this special rule gain the Line Unit Sub-type.
+
+• Networked Sensorium Protocols: When making Shooting Attacks, models with the Automata Unit Type in a Detachment that includes a model with this special rule reduce the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on) if the model making the Shooting Attack is within 12&quot; of two or more friendly models with cortex controllers.
+
+• Preservation Protocols: A model with this special rule gains the Patris Cybernetica special rule. In addition, when joined to a unit with the Automata Unit Type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Automata Unit Type first.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="1" hidden="true" id="d929-7702-8f4b-3393" publicationId="bde1-6db1-163b-3b76" page="99" collective="false">
+          <rules>
+            <rule name="Cybernetica" id="5237-afa2-d5cf-0822" hidden="false" publicationId="bde1-6db1-163b-3b76" page="99">
+              <description>• Cohorts Cybernetica: All Castellax Battle-automata Maniples in a Detachment that includes a model with this special rule gain the Line Unit Sub-type.
+
+• Networked Sensorium Protocols: When making Shooting Attacks, models with the Automata Unit Type in a Detachment that includes a model with this special rule reduce the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on) if the model making the Shooting Attack is within 12&quot; of two or more friendly models with cortex controllers.
+
+• Preservation Protocols: A model with this special rule gains the Patris Cybernetica special rule. In addition, when joined to a unit with the Automata Unit Type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Automata Unit Type first.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="1" hidden="true" id="de6f-55bd-6647-586a" publicationId="bde1-6db1-163b-3b76" page="99" collective="false">
+          <rules>
+            <rule name="Cybernetica" id="ffe6-bc9b-e8c9-33df" hidden="false" publicationId="bde1-6db1-163b-3b76" page="99">
+              <description>• Cohorts Cybernetica: All Castellax Battle-automata Maniples in a Detachment that includes a model with this special rule gain the Line Unit Sub-type.
+
+• Networked Sensorium Protocols: When making Shooting Attacks, models with the Automata Unit Type in a Detachment that includes a model with this special rule reduce the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on) if the model making the Shooting Attack is within 12&quot; of two or more friendly models with cortex controllers.
+
+• Preservation Protocols: A model with this special rule gains the Patris Cybernetica special rule. In addition, when joined to a unit with the Automata Unit Type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Automata Unit Type first.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="bd27-d2a1-da2b-f649" name="Cybertheurgic Arcana" publicationId="bde1-6db1-163b-3b76" page="94" hidden="false" collective="false" import="true">
@@ -7847,6 +8095,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
                   <conditions>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="247f-5236-70c9-72cd" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7861,6 +8110,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
                   <conditions>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="adec-3219-96ca-6d27" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7876,6 +8126,7 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="86dd-51d8-3669-68ca" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="a1c9-61ad-03dd-34b1" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -7900,19 +8151,21 @@ Preceptor: Any units of Armiger Warglaives or Armiger Helverins that have at lea
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Anima Malefica" hidden="false" type="selectionEntry" id="3e3d-d4d5-a52-17ce" targetId="7fec-d772-f51-95b3">
+        <entryLink import="true" name="Anima Malefica" hidden="true" type="selectionEntry" id="3e3d-d4d5-a52-17ce" targetId="7fec-d772-f51-95b3">
           <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="f9c0-0c5a-3e24-58c7" shared="true" id="222f-fe2b-ca3a-e84f" includeChildSelections="true"/>
-                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="aa94-5c65-d1f1-46a4" shared="false" id="1335-a31a-6adc-cbd5"/>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
-                    <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="e79c-56f1-f77d-71a3" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Machina Malefica" hidden="false" id="b6ae-86f1-1b5e-54f5" type="selectionEntry" targetId="a35e-8e94-3c36-cd48">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="e6b1-935e-79bc-1f26" includeChildSelections="true"/>
+              </conditions>
             </modifier>
           </modifiers>
         </entryLink>

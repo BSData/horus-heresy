@@ -1451,6 +1451,21 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Ruinous Cybernetica" id="7b4a-8a9b-3ef3-01d0" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
+      <rules>
+        <rule name="Ruinous Cybernetica" id="5acc-f755-c152-07f7" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
+          <description>At the start of the controlling player&apos;s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
+
+If that test is passed, until the end of the turn: 
+
+All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
+
+At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 2&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
+
+If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">

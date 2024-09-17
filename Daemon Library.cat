@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="31bf-eb23-33a-3d65" name="Daemon Library" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="5" battleScribeVersion="2.03" type="catalogue" authorName="a">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="true" id="31bf-eb23-33a-3d65" name="Daemon Library" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="6" battleScribeVersion="2.03" type="catalogue" authorName="a">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="002f-0e40-9d49-2a22" name="The Ætheric Dominion (X)" hidden="false" collective="false" import="true">
       <constraints>
@@ -554,6 +554,51 @@ Additionally, models with this special rule gain a Shooting Attack with the foll
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup name="The Ætheric Dominion (X) Corrupted Engines" id="7e66-75ce-decd-dc8d" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Heedless Slaughter (Corrupted Engines)" hidden="false" id="4cd2-3d17-e493-f555" collective="false" publicationId="4934-46f7-208b-b4af" page="127">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f96-3fef-cab0-4451" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41d5-9a80-573b-4ac5"/>
+          </constraints>
+          <rules>
+            <rule name="Heedless Slaughter" id="e5c0-13d0-8923-dd19" hidden="false" publicationId="4934-46f7-208b-b4af" page="127">
+              <description>A unit entirely composed of models with this special rule must declare a Charge if able when they begin the Assault phase within 8&quot; of an enemy unit. If there is more than one eligible target, the controlling player chooses the target of any Charges made so long as that target is within 8&quot;. Note that this does not allow models with this special rule to Charge a different unit to one that they made a Shooting Attack against in the previous Shooting phase, even if they have made Shooting Attacks against a unit which is further than 8&quot; away and there are eligible targets for a Charge within 8&quot;.
+Additionally, a unit entirely composed of models with this special rule adds +1 to the score used to determine if they win a Combat in the Assault phase (this modifier is cumulative with other modifiers to Combat Resolution) and adds +1 to the value of any rolls made to determine the result of a Sweeping Advance.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Heedless Slaughter" hidden="false" id="21ca-02c5-a88e-dac4" targetId="f074-f60a-9aa6-c52a" primary="false"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="The Ætheric Dominion (X) Corrupted Engines" id="ab0c-5041-ddcd-416d" hidden="false" type="rule" targetId="58e5-d2ef-f25e-496d"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Malevolent Artifice (Corrupted Engines)" hidden="false" id="342d-f0f5-4302-69db" publicationId="4934-46f7-208b-b4af" collective="false" page="127">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fdc9-d7e7-c6e1-9e85" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="15f1-1ab2-c905-b89e"/>
+          </constraints>
+          <rules>
+            <rule name="Malevolent Artifice" id="cd2b-b7fb-4496-7504" hidden="false" publicationId="4934-46f7-208b-b4af" page="127">
+              <description>Models with this special rule may re-roll all failed Armour Saves taken against any Wounds resolved at a Strength value lower than their Toughness Characteristic. This special rule has no effect on Cover Saves or Invulnerable Saves.</description>
+            </rule>
+          </rules>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Malevolent Artifice" hidden="false" id="185b-d332-87a8-4c8f" targetId="bcf6-8350-9099-1e91" primary="false"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="The Ætheric Dominion (X) Corrupted Engines" id="0ee3-37a7-f623-07c7" hidden="false" type="rule" targetId="58e5-d2ef-f25e-496d"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <categoryEntries>
     <categoryEntry name="Encroaching Ruin" hidden="false" id="c42-1919-c37e-51f0"/>
@@ -567,6 +612,12 @@ Additionally, models with this special rule gain a Shooting Attack with the foll
     </rule>
     <rule id="c694-20c8-455-baca" name="Empyrean Avatar" publicationId="cb13-da24-e6da-75b3" page="16" hidden="false">
       <description>When a model with this special rule suffers an unsaved Wound with the Instant Death special rule, it is not immediately removed as a casualty, but instead loses D3 Wounds instead of one for each unsaved Wound with the Instant Death special rule inflicted on it.</description>
+    </rule>
+    <rule name="The Ætheric Dominion (X) Corrupted Engines" id="58e5-d2ef-f25e-496d" hidden="false" publicationId="4934-46f7-208b-b4af" page="127">
+      <description>Each Ætheric Dominion represents one of the innumerable strains of the Warp&apos;s influence, and any model with the Ætheric Dominion (X) special rule will have a number of additional special rules and abilities specific to their Ætheric Dominion. A unit which includes models with this special rule may only include models with one variation of the Ætheric Dominion special rule, e.g., Ætheric Dominion (Heedless Slaughter), and no model with this special rule may join a unit which includes any models with a different variation of the /Etheric Dominion (X) special rule.
+
+
+Other publications have presented numerous different Ætheric Dominions, however only a limited number of those are used by the units presented in this section. For clarity, only the two relevant Ætheric Dominions are included in this section.</description>
     </rule>
   </sharedRules>
 </catalogue>
