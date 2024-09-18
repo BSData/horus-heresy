@@ -4430,9 +4430,14 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
             <infoLink id="d34b-4fc7-12c1-3871" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="296a-89a3-2269-2093" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="d929-7702-8f4b-3393" shared="true" id="a5fe-e531-a1f1-00cc" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="296a-89a3-2269-2093" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" field="name" value="It Will Not Die (5+)"/>
               </modifiers>
@@ -4519,6 +4524,58 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Abomination Blades &amp; Power Blade Array" hidden="false" id="1219-7ad2-0590-2bc5">
+                  <entryLinks>
+                    <entryLink import="true" name="Abomination Blades" hidden="false" id="580b-bd9a-dce7-7983" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="58ae-6ed5-0bdc-7974" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85f8-63a5-0611-8b6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="3b67-6282-c146-b6ab" collective="false" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a10f-c963-0f45-0f1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9d9e-c8d2-2e71-8041" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Abomination Blades" hidden="false" id="272a-8c0d-5ccd-abcb">
+                  <entryLinks>
+                    <entryLink import="true" name="Abomination Blades" hidden="false" id="da0a-52aa-dee2-51a8" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0873-d26b-9e12-5c54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="96b1-26be-14a7-d9ae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="f012-80da-f40b-3cbd" name="C) Shock Charger / Power Blades may Exchange In-Built Bolter for:" hidden="false" collective="false" import="true" defaultSelectionEntryId="8081-f97c-b25c-affd">
@@ -4536,6 +4593,16 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                   </repeats>
                 </modifier>
                 <modifier type="decrement" field="c6d4-44b8-d12d-4ca7" value="1"/>
+                <modifier type="decrement" value="1" field="c6d4-44b8-d12d-4ca7">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="ab78-91e2-bb5c-9da3" childId="272a-8c0d-5ccd-abcb" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" value="1" field="0a49-dc8a-95be-56d5">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="ab78-91e2-bb5c-9da3" childId="272a-8c0d-5ccd-abcb" shared="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6d4-44b8-d12d-4ca7" type="min"/>
@@ -4785,6 +4852,16 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
               </modifiers>
             </infoLink>
             <infoLink id="2d31-8d08-3b95-7e7b" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+            <infoLink name="It Will Not Die (X)" id="e0f9-d100-86dc-5597" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+              <modifiers>
+                <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d929-7702-8f4b-3393" shared="true" id="578e-452f-60b2-f178" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="6c5e-befd-dbd7-7a16" name="Missile Launcher with Frag, Krak and Ignis Missiles" publicationId="bde1-6db1-163b-3b76" hidden="false" collective="false" import="true" type="upgrade">
@@ -5199,6 +5276,16 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                         <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
                       </modifiers>
                     </infoLink>
+                    <infoLink name="It Will Not Die (X)" id="60af-21f5-e83e-5103" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="d929-7702-8f4b-3393" shared="true" id="a3b3-83cc-1695-c475" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                   <entryLinks>
                     <entryLink id="4d60-b322-e415-8fb3" name="Plasma Mortar" hidden="false" collective="false" import="true" targetId="226a-8196-f0af-f8a8" type="selectionEntry">
@@ -5297,6 +5384,16 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
                     <infoLink id="47a6-bf07-a5c0-fa73" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
                       <modifiers>
                         <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="It Will Not Die (X)" id="58b1-c993-2204-1e62" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+                        <modifier type="set" value="true" field="hidden">
+                          <conditions>
+                            <condition type="equalTo" value="0" field="selections" scope="force" childId="d929-7702-8f4b-3393" shared="true" id="d4b4-e550-8768-0f89" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
                       </modifiers>
                     </infoLink>
                   </infoLinks>
@@ -5410,191 +5507,555 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
         <categoryLink id="da80-a4b4-47a6-5c31" name="Cybernetica Sub-type" hidden="false" targetId="2440-b64e-cb24-87f0" primary="false"/>
         <categoryLink id="e468-fb52-fd0d-7af6" name="Light Sub-type" hidden="false" targetId="bff2-ae16-74a8-8712" primary="false"/>
       </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="6711-d580-b463-bc7e" name="Vorax" publicationId="bde1-6db1-163b-3b76" page="42" hidden="false" collective="false" import="true" type="model">
-          <modifiers>
-            <modifier type="add" field="category" value="56e1-5570-47b0-d824">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da46-48b5-6cc5-9d8b" type="equalTo"/>
-              </conditions>
-            </modifier>
-            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ade9-d7ad-8024-68dc" type="min"/>
-            <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5505-f1cf-a3e4-60d6" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c5ce-739c-885a-960b" name="Vorax" publicationId="bde1-6db1-163b-3b76" page="42" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Vorax" id="6689-54ca-0570-668d" hidden="false" defaultSelectionEntryId="6711-d580-b463-bc7e">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Vorax w/2 Power Blade Arrays w/in-Built Rotar Cannons" hidden="false" id="6711-d580-b463-bc7e" publicationId="bde1-6db1-163b-3b76" page="42" collective="false">
               <modifiers>
-                <modifier type="increment" field="cc42-7ed5-7092-5c84" value="1">
+                <modifier type="add" value="56e1-5570-47b0-d824" field="category">
                   <conditions>
-                    <condition field="selections" scope="f144-1079-11ff-019d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="da46-48b5-6cc5-9d8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="57ee-1126-32a9-5672" value="1">
-                  <conditions>
-                    <condition field="selections" scope="f144-1079-11ff-019d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Automata (Paragon, Light)" field="ddd7-6f5c-a939-b69e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" value="Automata (Ruinous Cybernetica, Light)" field="ddd7-6f5c-a939-b69e">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
-                  </conditions>
+                <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Light)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
-              </characteristics>
-              <modifierGroups>
-                <modifierGroup type="and">
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5505-f1cf-a3e4-60d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Vorax" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="c5ce-739c-885a-960b" publicationId="bde1-6db1-163b-3b76" page="42">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Light)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
                   <modifiers>
-                    <modifier type="increment" field="893e-2d76-8f04-44e5" value="1">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf35-189d-498c-aeb5" type="instanceOf"/>
-                            <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
                     </modifier>
-                    <modifier type="append" field="893e-2d76-8f04-44e5" value="*">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01e-5cdd-e512-8353" type="equalTo"/>
-                            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bf35-189d-498c-aeb5" type="instanceOf"/>
-                            <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Automata (Paragon, Light)" field="ddd7-6f5c-a939-b69e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Automata (Ruinous Cybernetica, Light)" field="ddd7-6f5c-a939-b69e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="963f-8d5b-228b-aee8" name="Fleet (X)" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="893e-2d76-8f04-44e5">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="e01e-5cdd-e512-8353" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bf35-189d-498c-aeb5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="append" value="*" field="893e-2d76-8f04-44e5">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="e01e-5cdd-e512-8353" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bf35-189d-498c-aeb5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fleet (X)" id="963f-8d5b-228b-aee8" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Scout" id="05fa-5f99-01fa-8186" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+                <infoLink name="Hammer of Wrath (X)" id="bac5-1453-370b-d20f" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="It Will Not Die (X)" id="fe55-672c-e459-017b" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="d929-7702-8f4b-3393" shared="true" id="848b-4d7a-8bcd-41a0" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Atomantic Deflector" hidden="false" id="6ec3-a358-9bb3-c95" type="selectionEntry" targetId="38fb-9a0b-edef-a497">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b93-2d67-30c5-50cb"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb9-cab7-18d2-427d"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Automata Unit Type" hidden="false" id="8c90-6098-48f0-a483" targetId="d8ab-8e21-e193-63ba" primary="false"/>
+                <categoryLink name="Cybernetica Sub-type" hidden="false" id="3c99-a64c-4798-88d4" targetId="2440-b64e-cb24-87f0" primary="false"/>
+                <categoryLink name="Light Sub-type" hidden="false" id="644d-802c-40b4-b32e" targetId="bff2-ae16-74a8-8712" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Power Blade Arrays with In-Built Rotar Cannons" hidden="false" id="cff3-2ddf-4024-f463" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a440-7ca1-4048-6005" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e98-54a5-27f5-62d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="c311-0ae9-b3d6-2ca4" collective="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a932-5045-69d6-37cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1500-724d-9062-8de1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Rotor Cannon" hidden="false" id="f4fc-e562-6969-7d11" collective="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ed98-65b1-1bee-06b1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="77fb-c42d-ae64-6b18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="1 in 3 may exchange Lightning Gun for Irad Cleanser" id="4f60-1e42-3652-4e9e" hidden="false" collective="false" import="true" defaultSelectionEntryId="4f2a-53f2-7067-b3ce">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eef-9e33-8006-1688" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="559a-d072-252b-cc6a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Lightning Gun" hidden="false" id="4f2a-53f2-7067-b3ce" collective="true" targetId="f65c-633a-5865-7f6b" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="647c-5359-8669-4bdb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Irad-Cleanser (Vorax)" hidden="false" id="7a13-f55f-a128-416b" collective="false" targetId="a347-b76c-c1e5-fa4f" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Vorax w/2 Abomination Blades" hidden="false" id="188a-5b90-3b93-afeb" publicationId="bde1-6db1-163b-3b76" page="42" collective="false">
               <modifiers>
-                <modifier type="set" field="name" value="Fleet (2)"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="05fa-5f99-01fa-8186" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
-            <infoLink id="bac5-1453-370b-d20f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Atomantic Deflector" hidden="false" type="selectionEntry" id="6ec3-a358-9bb3-c95" targetId="38fb-9a0b-edef-a497">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b93-2d67-30c5-50cb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb9-cab7-18d2-427d"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <categoryLinks>
-            <categoryLink targetId="d8ab-8e21-e193-63ba" id="8c90-6098-48f0-a483" name="Automata Unit Type" primary="false"/>
-            <categoryLink targetId="2440-b64e-cb24-87f0" id="3c99-a64c-4798-88d4" name="Cybernetica Sub-type" primary="false"/>
-            <categoryLink targetId="bff2-ae16-74a8-8712" id="644d-802c-40b4-b32e" name="Light Sub-type" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-        <selectionEntry id="cff3-2ddf-4024-f463" name="Two Power Blade Arrays with In-Built Rotar Cannons" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a440-7ca1-4048-6005" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e98-54a5-27f5-62d1" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="c311-0ae9-b3d6-2ca4" name="Power Blade Array" hidden="false" collective="true" import="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a932-5045-69d6-37cb" type="min"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1500-724d-9062-8de1" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="f4fc-e562-6969-7d11" name="Rotor Cannon" hidden="false" collective="true" import="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed98-65b1-1bee-06b1" type="min"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77fb-c42d-ae64-6b18" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="c99b-a219-75af-8360" name="1 in 3 may exchange Lightning Gun for Irad Cleanser" hidden="false" collective="false" import="true" defaultSelectionEntryId="790e-ea6f-ecbc-d374">
-          <modifiers>
-            <modifier type="decrement" field="3429-9e15-406c-1f0b" value="1"/>
-            <modifier type="increment" field="87fd-4c2e-8d99-e5cb" value="1">
-              <repeats>
-                <repeat field="selections" scope="f144-1079-11ff-019d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-            <modifier type="increment" field="3429-9e15-406c-1f0b" value="1">
-              <repeats>
-                <repeat field="selections" scope="f144-1079-11ff-019d" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3429-9e15-406c-1f0b" type="min"/>
-            <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87fd-4c2e-8d99-e5cb" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="790e-ea6f-ecbc-d374" name="Lightning Gun" hidden="false" collective="true" import="true" targetId="f65c-633a-5865-7f6b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="6" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e82f-cbeb-63e9-116a" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="bfea-5a9f-3cc8-147a" name="Irad-Cleanser" hidden="false" collective="false" import="true" targetId="b3c5-237f-e1d2-d9f8" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="80be-28b5-97f0-9437" value="1">
-                  <repeats>
-                    <repeat field="selections" scope="f144-1079-11ff-019d" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
+                <modifier type="add" value="56e1-5570-47b0-d824" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="da46-48b5-6cc5-9d8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80be-28b5-97f0-9437" type="max"/>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1281-4a6d-2820-a000" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
+              <profiles>
+                <profile name="Vorax" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="4f5e-d1e1-a8e3-6c13" publicationId="bde1-6db1-163b-3b76" page="42">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Light)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Automata (Paragon, Light)" field="ddd7-6f5c-a939-b69e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Automata (Ruinous Cybernetica, Light)" field="ddd7-6f5c-a939-b69e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="893e-2d76-8f04-44e5">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="e01e-5cdd-e512-8353" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bf35-189d-498c-aeb5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="append" value="*" field="893e-2d76-8f04-44e5">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="e01e-5cdd-e512-8353" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bf35-189d-498c-aeb5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fleet (X)" id="588b-9a24-d282-2586" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Scout" id="8e61-ae41-3291-522d" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+                <infoLink name="Hammer of Wrath (X)" id="b0f1-5efd-e7bb-e874" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="It Will Not Die (X)" id="6e8e-8dfa-1bd3-5b5d" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="d929-7702-8f4b-3393" shared="true" id="2fc1-eecd-bb5c-88c8" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
               <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+              <entryLinks>
+                <entryLink import="true" name="Atomantic Deflector" hidden="false" id="45e9-89dc-4a34-6e3b" type="selectionEntry" targetId="38fb-9a0b-edef-a497">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e37-2a58-7a8c-fdfd"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="edaa-453b-81e9-9f0a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Abomination Blades" hidden="false" id="4bf4-3467-4354-402e" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="37e5-5e33-014a-2d35" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4e93-7927-e847-4a44" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Automata Unit Type" hidden="false" id="5bd6-c0f0-2343-3bec" targetId="d8ab-8e21-e193-63ba" primary="false"/>
+                <categoryLink name="Cybernetica Sub-type" hidden="false" id="9c7f-b88d-7b7a-1640" targetId="2440-b64e-cb24-87f0" primary="false"/>
+                <categoryLink name="Light Sub-type" hidden="false" id="9294-5208-dbc0-0ac8" targetId="bff2-ae16-74a8-8712" primary="false"/>
+              </categoryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="1 in 3 may exchange Lightning Gun for Irad Cleanser" id="72ce-ed7f-b9d8-b4b1" hidden="false" collective="false" import="true" defaultSelectionEntryId="04a7-a8eb-cef4-b458">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1ace-63e1-8e8b-aee9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b082-1d6f-bd7a-8ed8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Lightning Gun" hidden="false" id="04a7-a8eb-cef4-b458" collective="true" targetId="f65c-633a-5865-7f6b" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0f87-6280-ac24-8861" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Irad-Cleanser (Vorax)" hidden="false" id="f880-2486-648b-728f" collective="false" targetId="a347-b76c-c1e5-fa4f" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry type="model" import="true" name="Vorax w/1 Abomination Blade &amp; 1 Power Blade Arrays w/in-Built Rotar Cannon" hidden="false" id="aee4-f0ba-af71-7031" publicationId="bde1-6db1-163b-3b76" page="42" collective="false">
+              <modifiers>
+                <modifier type="add" value="56e1-5570-47b0-d824" field="category">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="force" childId="da46-48b5-6cc5-9d8b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+                <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e6b4-5f34-4f6b-5f5a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Vorax" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="0768-6c3f-8bc8-d1ee" publicationId="bde1-6db1-163b-3b76" page="42">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica, Light)</characteristic>
+                    <characteristic name="Move" typeId="893e-2d76-8f04-44e5">8</characteristic>
+                    <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+                    <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                    <characteristic name="S" typeId="e478-41d4-a092-48a8">6</characteristic>
+                    <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                    <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                    <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                    <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                    <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">7</characteristic>
+                    <characteristic name="Save" typeId="e593-6b3c-f169-04f0">3+</characteristic>
+                  </characteristics>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="cc42-7ed5-7092-5c84">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" value="1" field="57ee-1126-32a9-5672">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Automata (Paragon, Light)" field="ddd7-6f5c-a939-b69e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Automata (Ruinous Cybernetica, Light)" field="ddd7-6f5c-a939-b69e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="f144-1079-11ff-019d" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="increment" value="1" field="893e-2d76-8f04-44e5">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="e01e-5cdd-e512-8353" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bf35-189d-498c-aeb5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                        <modifier type="append" value="*" field="893e-2d76-8f04-44e5">
+                          <conditionGroups>
+                            <conditionGroup type="and">
+                              <conditions>
+                                <condition type="equalTo" value="1" field="selections" scope="force" childId="e01e-5cdd-e512-8353" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="bf35-189d-498c-aeb5" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
+                              </conditions>
+                            </conditionGroup>
+                          </conditionGroups>
+                        </modifier>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fleet (X)" id="8466-b59d-5504-8809" hidden="false" targetId="ddc9-0b4b-78da-bbd2" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Fleet (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Scout" id="1671-9ac6-442e-f065" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
+                <infoLink name="Hammer of Wrath (X)" id="bfd4-ef17-bf51-0d78" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="It Will Not Die (X)" id="147a-5336-631e-37f2" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+                  <modifiers>
+                    <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="d929-7702-8f4b-3393" shared="true" id="4365-e3e7-a6a9-681e" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="75"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Atomantic Deflector" hidden="false" id="f61e-d999-79ff-e4a8" type="selectionEntry" targetId="38fb-9a0b-edef-a497">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f75c-713e-9232-feb6"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29da-468f-024a-6f5a"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <categoryLinks>
+                <categoryLink name="Automata Unit Type" hidden="false" id="058e-6742-63cc-4537" targetId="d8ab-8e21-e193-63ba" primary="false"/>
+                <categoryLink name="Cybernetica Sub-type" hidden="false" id="27c5-9e33-6ff3-f12f" targetId="2440-b64e-cb24-87f0" primary="false"/>
+                <categoryLink name="Light Sub-type" hidden="false" id="1aa6-a327-29df-ec38" targetId="bff2-ae16-74a8-8712" primary="false"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="1 Abomination Blade &amp; 1 Power Blade Arrays w/in-Built Rotar Cannon" hidden="false" id="2030-7b79-7fd5-d298" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e747-50ad-21bf-d01e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1345-653c-f5bd-4ae0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="b86d-a46b-67c3-4f48" collective="true" targetId="2121-ee7c-8ac9-5133" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bab4-27e2-3714-8e56" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1821-0041-f7ae-ce27" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Rotor Cannon" hidden="false" id="2165-4588-5d22-8afa" collective="true" targetId="5ce3-3aa5-3f5e-9ead" type="selectionEntry">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cb14-0207-bf4f-6275" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d045-9e76-2f3a-f18b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Abomination Blades" hidden="false" id="40ab-8d34-5ee5-84d6" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e4f3-ebec-4ba5-80a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e026-d2ef-f74e-c61d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="1 in 3 may exchange Lightning Gun for Irad Cleanser" id="c99b-a219-75af-8360" hidden="false" collective="false" import="true" defaultSelectionEntryId="790e-ea6f-ecbc-d374">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3429-9e15-406c-1f0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87fd-4c2e-8d99-e5cb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Lightning Gun" hidden="false" id="790e-ea6f-ecbc-d374" collective="true" targetId="f65c-633a-5865-7f6b" type="selectionEntry">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e82f-cbeb-63e9-116a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Irad-Cleanser (Vorax)" hidden="false" id="a347-b76c-c1e5-fa4f" collective="false">
+                      <infoLinks>
+                        <infoLink name="Fleshbane" id="f77e-fa4f-dada-4f58" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
+                        <infoLink name="Rad-Phage" id="9672-4469-a869-e502" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
+                        <infoLink name="Template Weapons" id="a638-cc1b-a653-cb21" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+                        <infoLink name="Irad-Cleanser" id="cc0e-fe86-c6a7-73dd" hidden="false" type="profile" targetId="484b-1446-7bac-46d9"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="f144-1079-11ff-019d" shared="true" id="80be-28b5-97f0-9437" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5254-d359-5415-0add"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="80be-28b5-97f0-9437">
+                          <repeats>
+                            <repeat value="3" repeats="1" field="selections" scope="f144-1079-11ff-019d" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8445-0c30-1015-ee0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="2a52-60b7-72f1-e1e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -7298,9 +7759,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
       <categoryLinks>
         <categoryLink targetId="a443-dbf4-cb6c-4da1" id="9ff1-2e56-f502-d653" primary="false" name="Corrupted Engine Sub-type"/>
         <categoryLink targetId="4280-4963-02b5-e31d" id="527f-7bcf-e17a-4a0b" primary="false" name="Dreadnought Unit Type"/>
-        <categoryLink targetId="7031-469a-1aeb-eab0" id="5e43-52a1-b262-7d22" primary="true" name="Heavy Support:"/>
         <categoryLink targetId="9231-183c-b97b-63f9" id="4b4c-beca-7b8e-2a07" primary="false" name="Heavy Sub-type"/>
-        <categoryLink targetId="030f-3801-4f54-e7f8" id="d660-2b02-63a4-3154" primary="false" name="Compulsory Heavy Support:"/>
         <categoryLink targetId="bcf6-8350-9099-1e91" id="558f-4a2c-c0c3-df0" primary="false" name="Malevolent Artifice"/>
       </categoryLinks>
       <costs>
@@ -7482,7 +7941,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ec-f501-4322-3006"/>
           </constraints>
           <rules>
-            <rule name="Animatus Malevolence (Cybertheurgic Rite)" hidden="false" id="f787-1170-60a1-31b9">
+            <rule name="Animatus Malevolence (Cybertheurgic Rite)" hidden="false" id="f787-1170-60a1-31b9" publicationId="4934-46f7-208b-b4af" page="155">
               <description>Instead of making a Shooting Attack, a Cybertheurgist with this Cybertheurgic Rite may select a single friendly unit within 12&quot; that is entirely composed of models with the Corrupted Engine Unit Sub-type and then apply one of the following effects:
 • The chosen unit may immediately move a number of inches up to its unmodified Initiative Characteristic directly towards the nearest enemy unit. If the chosen unit has mixed Initiative Characteristics, use the highest unmodified Characteristic.
 • All models in the chosen unit improve their Invulnerable Save by 1, to a maximum of 3+, until the beginning of the controlling player’s next turn, (e.g., a model with an Invulnerable Save of 5+ improves their save to 4+).
@@ -7497,7 +7956,7 @@ The Cybertheurgist’s controlling player may choose to make a Cybertheurgy chec
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb02-b5f4-bcda-fe8c"/>
           </constraints>
           <profiles>
-            <profile name="Amthea Excrusis (Cybertheurgic Weapon)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="44e4-cb60-3b6d-893e">
+            <profile name="Amthea Excrusis (Cybertheurgic Weapon)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="44e4-cb60-3b6d-893e" publicationId="4934-46f7-208b-b4af" page="155">
               <characteristics>
                 <characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
                 <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
@@ -7695,6 +8154,95 @@ The Cybertheurgist may choose to make a Cybertheurgy check before using this Cy
       <categoryLinks>
         <categoryLink targetId="7b4a-8a9b-3ef3-01d0" id="711c-43c7-c028-fb7c" primary="false" name="Ruinous Cybernetica"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ephemera Nekrotek" hidden="false" id="a40c-3b15-e4df-93a0" publicationId="4934-46f7-208b-b4af" page="152">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Viteum Adficio (Cybertheurgic Rite)" hidden="false" id="a70f-9c37-4f02-85a6" publicationId="4934-46f7-208b-b4af" page="152">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53cc-5ffb-f831-d4c6"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8ed-a1d5-789a-6a68"/>
+          </constraints>
+          <rules>
+            <rule name="Viteum Adficio (Cybertheurgic Rite)" id="3068-2931-0e2f-19e1" hidden="false" publicationId="4934-46f7-208b-b4af" page="152">
+              <description>A Cybertheurgist with this Cybertheurgic Rite may use it at the end of the controlling player&apos;s Movement phase. When they do, the controlling player may select one friendly unit from the Mechanicum Faction that is within 6&quot; of the Cybertheurgist and roll up to three D6. For each result of 4+, one model in that unit suffers t Wound (or loses i Hull Point if it is a Vehicle unit), and the Cybertheurgist regains r lost Wound. Saving Throws and Damage Mitigation rolls cannot be taken against these Wounds.
+The Cybertheurgist may choose to make a Cybertheurgy check before using this Cybertheurgic Rite. If successful, the controlling player can re-roll any of the three D6 when using this Cybertheurgic Rite.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Tactus Mors (Cybertheurgic Weapon)" hidden="false" id="e1c0-befd-0e23-787c" publicationId="4934-46f7-208b-b4af" page="152">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6839-d3b8-7899-233d"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6134-a5fe-2d7f-e620"/>
+          </constraints>
+          <profiles>
+            <profile name="Tactus Mors (Cybertheurgic Weapon)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a721-9d59-4861-9bc9" publicationId="4934-46f7-208b-b4af" page="152">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Unwieldy, Haywire, Cybertheurgic Focus</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Cybertheurgic Focus" id="0cbd-dde9-42ec-ee5d" hidden="false" type="rule" targetId="f420-6cdb-5d9b-ef30"/>
+            <infoLink name="Unwieldy" id="95a4-2a82-635c-ce42" hidden="false" type="rule" targetId="1570-c21a-881f-8b8a"/>
+            <infoLink name="Haywire" id="c44f-d338-60fd-ec82" hidden="false" type="rule" targetId="1dd4-7a75-5c59-8425"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e998-27e9-3fe2-2940" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Abomination Blades" hidden="false" id="9940-99a1-78ae-1d2a" publicationId="4934-46f7-208b-b4af" page="153">
+      <profiles>
+        <profile name="Abomination Blades" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3cb6-60a7-3d57-9dd9" publicationId="4934-46f7-208b-b4af" page="153">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Specialist Weapon, Rampage (t),Breaching (4+),  Bloodthirsty</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Bloodthirsty" id="d4bd-db60-a688-a126" hidden="false" publicationId="4934-46f7-208b-b4af" page="153">
+          <description>Add +I to To Hit rolls made for this weapon if any models in the target unit that have not been removed as a casualty are below their starting Wounds Characteristic.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="false" name="Abomination Blades" hidden="false" id="1b71-696f-4bda-dd34" publicationId="4934-46f7-208b-b4af" page="153" collective="true">
+      <infoLinks>
+        <infoLink name="Abomination Blades" id="25e4-0f7c-4f8c-7b2a" hidden="false" type="profile" targetId="3cb6-60a7-3d57-9dd9"/>
+        <infoLink name="Bloodthirsty" id="b770-91b7-21bd-69b1" hidden="false" type="rule" targetId="d4bd-db60-a688-a126"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pair of Abomination Blades" hidden="false" id="5caf-acfb-7e27-0a16">
+      <entryLinks>
+        <entryLink import="true" name="Abomination Blades" hidden="false" id="fcf0-e78e-5432-25aa" type="selectionEntry" targetId="1b71-696f-4bda-dd34">
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="95d7-5323-169e-e61f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="25fd-037e-0306-53cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27d6-dd3f-7c8e-3b41"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -8005,8 +8553,7 @@ D6 | Result
 2-3 : All models in the selected unit gain the Ruinous Cybernetica special rule
 until the start of the controlling player&apos;s next player turn.
 4+  : All models in the selected unit gain the Ruinous Cybernetica special rule
-until the end of the battle.
-</description>
+until the end of the battle.</description>
             </rule>
           </rules>
           <costs>
@@ -8020,14 +8567,12 @@ until the end of the battle.
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="1" hidden="true" id="183d-be3f-82f9-e754" publicationId="bde1-6db1-163b-3b76" page="99" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Æthertek" hidden="true" id="183d-be3f-82f9-e754" publicationId="bde1-6db1-163b-3b76" page="99" collective="false">
           <rules>
-            <rule name="Cybernetica" id="4e7e-b68e-3942-fd77" hidden="false" publicationId="bde1-6db1-163b-3b76" page="99">
-              <description>• Cohorts Cybernetica: All Castellax Battle-automata Maniples in a Detachment that includes a model with this special rule gain the Line Unit Sub-type.
-
-• Networked Sensorium Protocols: When making Shooting Attacks, models with the Automata Unit Type in a Detachment that includes a model with this special rule reduce the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on) if the model making the Shooting Attack is within 12&quot; of two or more friendly models with cortex controllers.
-
-• Preservation Protocols: A model with this special rule gains the Patris Cybernetica special rule. In addition, when joined to a unit with the Automata Unit Type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Automata Unit Type first.</description>
+            <rule name="Æthertek" id="4e7e-b68e-3942-fd77" hidden="false" publicationId="4934-46f7-208b-b4af" page="154">
+              <description>• Mechanika Etherika: For each model with this Proscribed Techno-arcana in a Detachment, the controlling player can include one Decimator unit in the same Detachment as a non-compulsory Troops choice.
+ • Opus Malefica: A model with this Proscribed Techno-arcana gains the Anima Malefica Cybertheurgic Arcana (see page 155), but may not select any other Cybertheurgic Arcana from those available to it.
+ • Magos Invocatus: While a unit composed entirely of models with the Corrupted Engine Unit Sub-type is within 6&quot; of a model with this Proscribed Techno-arcana, all models in that unit are not affected by special rules that negatively modify their Characteristics (other than Wounds or Hull Points).</description>
             </rule>
           </rules>
           <costs>
@@ -8041,14 +8586,12 @@ until the end of the battle.
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="1" hidden="true" id="d929-7702-8f4b-3393" publicationId="bde1-6db1-163b-3b76" page="99" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Nekrotek" hidden="true" id="d929-7702-8f4b-3393" publicationId="4934-46f7-208b-b4af" page="152" collective="false">
           <rules>
-            <rule name="Cybernetica" id="5237-afa2-d5cf-0822" hidden="false" publicationId="bde1-6db1-163b-3b76" page="99">
-              <description>• Cohorts Cybernetica: All Castellax Battle-automata Maniples in a Detachment that includes a model with this special rule gain the Line Unit Sub-type.
-
-• Networked Sensorium Protocols: When making Shooting Attacks, models with the Automata Unit Type in a Detachment that includes a model with this special rule reduce the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on) if the model making the Shooting Attack is within 12&quot; of two or more friendly models with cortex controllers.
-
-• Preservation Protocols: A model with this special rule gains the Patris Cybernetica special rule. In addition, when joined to a unit with the Automata Unit Type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Automata Unit Type first.</description>
+            <rule name="Nekrotek" id="5237-afa2-d5cf-0822" hidden="false" publicationId="4934-46f7-208b-b4af" page="152">
+              <description>• Mekanika Exanimate: Any unit composed entirely of models with the Cybernetica Unit Sub-type in the same Detachment as a model with this Proscribed Techno-arcana gains the It Will Not Die (5+) special rule.
+ • Magos Necroteknica: A model with this Proscribed Techno-arcana gains the Ephemera Nekrotek Cybertheurgic Arcana (see below), but may not select any other Cybertheurgic Arcana from those available to it.
+ • Nekromorphic Locus: Increase the Wounds Characteristic of a model with this Proscribed Techno-arcana by .</description>
             </rule>
           </rules>
           <costs>
@@ -8062,14 +8605,16 @@ until the end of the battle.
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="1" hidden="true" id="de6f-55bd-6647-586a" publicationId="bde1-6db1-163b-3b76" page="99" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Malamina" hidden="true" id="de6f-55bd-6647-586a" publicationId="4934-46f7-208b-b4af" page="153" collective="false">
           <rules>
-            <rule name="Cybernetica" id="ffe6-bc9b-e8c9-33df" hidden="false" publicationId="bde1-6db1-163b-3b76" page="99">
-              <description>• Cohorts Cybernetica: All Castellax Battle-automata Maniples in a Detachment that includes a model with this special rule gain the Line Unit Sub-type.
-
-• Networked Sensorium Protocols: When making Shooting Attacks, models with the Automata Unit Type in a Detachment that includes a model with this special rule reduce the benefits of any Cover Save the target unit has by -2 (a 4+ becoming a 6+, a 5+ being ignored entirely, and so on) if the model making the Shooting Attack is within 12&quot; of two or more friendly models with cortex controllers.
-
-• Preservation Protocols: A model with this special rule gains the Patris Cybernetica special rule. In addition, when joined to a unit with the Automata Unit Type, any Wounds which would be allocated to the Character (even those caused by the Precision Strikes (X) or Sniper special rules) may instead be allocated to a model with the Automata Unit Type first.</description>
+            <rule name="Malamina" id="ffe6-bc9b-e8c9-33df" hidden="false" publicationId="4934-46f7-208b-b4af" page="153">
+              <description>• Magos Abominatio: For each model with this Proscribed Techno-arcana in
+a Detachment, the controlling player can include one Infernus Abomination
+unit (see Campaigns of the Age of Darknes: 7The Siege of Cthonia) in the same
+Detachment as an Elites choice.
+ • Armatus Malevolus: Any model in the same Detachment as a model with this
+Proscribed Techno-arcana can replace a power weapon or power blade array with
+abomination blades for +10 points per model.</description>
             </rule>
           </rules>
           <costs>
@@ -8096,6 +8641,8 @@ until the end of the battle.
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="247f-5236-70c9-72cd" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="183d-be3f-82f9-e754" shared="true" id="6d3b-8124-55ca-6a4e" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d929-7702-8f4b-3393" shared="true" id="30f7-06aa-4e56-36c3" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8111,6 +8658,8 @@ until the end of the battle.
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd4b-63fa-928c-887d" type="greaterThan"/>
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="adec-3219-96ca-6d27" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="183d-be3f-82f9-e754" shared="true" id="cefc-f36d-eace-ff68" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d929-7702-8f4b-3393" shared="true" id="e8ca-fb0b-265b-3cbb" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8127,6 +8676,8 @@ until the end of the battle.
                     <condition field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73dc-f5bb-be45-2547" type="greaterThan"/>
                     <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="86dd-51d8-3669-68ca" shared="true"/>
                     <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="a1c9-61ad-03dd-34b1" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="183d-be3f-82f9-e754" shared="true" id="328e-ded9-a7d7-6655" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="d929-7702-8f4b-3393" shared="true" id="dfa7-47fd-52ef-f078" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -8151,11 +8702,11 @@ until the end of the battle.
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Anima Malefica" hidden="true" type="selectionEntry" id="3e3d-d4d5-a52-17ce" targetId="7fec-d772-f51-95b3">
+        <entryLink import="true" name="Anima Malefica" hidden="true" type="selectionEntry" id="3e3d-d4d5-a52-17ce" targetId="7fec-d772-f51-95b3" publicationId="4934-46f7-208b-b4af" page="155">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="e79c-56f1-f77d-71a3" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="183d-be3f-82f9-e754" shared="true" id="e79c-56f1-f77d-71a3" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8165,6 +8716,15 @@ until the end of the battle.
             <modifier type="set" value="false" field="hidden">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="parent" childId="e033-44c5-e827-20ff" shared="true" id="e6b1-935e-79bc-1f26" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Ephemera Nekrotek" hidden="true" id="7a30-d740-8310-79f3" type="selectionEntry" targetId="a40c-3b15-e4df-93a0" publicationId="4934-46f7-208b-b4af" page="155">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="d929-7702-8f4b-3393" shared="true" id="5cf5-9b73-6f51-b9fa" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
