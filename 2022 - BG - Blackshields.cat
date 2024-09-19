@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="4" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="5" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" hidden="false" id="5b3d-ea70-4774-c23d" collective="false" import="true">
       <comment>template_id_be38-a066-4f8e-ae54</comment>
@@ -1913,6 +1913,107 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
       <categoryLinks>
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="2a77-b837-6781-577e" primary="true" name="Troops:"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Cassian Dracos Reborn" hidden="true" id="df70-ba89-d259-20b2" collective="false" targetId="fb8a-ab72-52ce-38f3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(Reserve Only)" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="c287-6db6-7faa-c28e" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="ccfb-acfb-0fac-4f8c" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="384c-2a09-e99b-0cf2" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink name="Unit:" hidden="false" id="04fc-14a6-e618-a689" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Disciple of the Flame" hidden="false" id="81e9-5811-0d1e-71c0" type="selectionEntry" targetId="d554-7321-7d26-feb9">
+          <rules>
+            <rule name="Disciple of the Flame (Cassian)" id="6aec-f119-f453-fa31" hidden="true" publicationId="d0df-7166-5cd3-89fd" page="67" noindex="true">
+              <description>You can include this model in a Blackshields Detachment. If you do so, that Detachment must use the Pride is Our Armour and Panoply of Old (Salamanders) Oaths 
+
+When you do so, replace this model’s Legiones Astartes (Salamanders) special rule with the Legiones Astartes (Blackshields) special rule.</description>
+            </rule>
+          </rules>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="false" name="Xiaphas Jurr" hidden="true" id="605c-ca63-fff2-24d5" collective="false" targetId="30b8-05a5-fef7-fe66" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="c287-6db6-7faa-c28e" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="2cd0-a7b4-5354-0ec5" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="2d46-182d-6dc0-bee3" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Disciple of the Flame" hidden="false" id="021a-ee89-b9f1-53c9" type="selectionEntry" targetId="d554-7321-7d26-feb9">
+          <rules>
+            <rule name="Disciple of the Flame (Xiaphas)" id="c786-4308-9120-8a6e" hidden="true" publicationId="d0df-7166-5cd3-89fd" page="67">
+              <description>You can include this model in a Blackshields Detachment. If you do so, that Detachment must use the Pride is Our Armour and Panoply of Old (Salamanders) Oaths 
+
+When you do so, replace this model’s Legiones Astartes (Salamanders) special rule with the Legiones Astartes (Blackshields) special rule and replace the instance of Legiones Astartes (Salamanders) in this unit’s Beacon of Hope Warlord Trait with Legiones Astartes (Blackshields).</description>
+            </rule>
+          </rules>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="false" name="Adherents Squad" hidden="true" id="7b0d-1092-d7a3-44f7" collective="false" targetId="b110-ce62-3e2f-79f8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="roster" childId="8d56-d960-0687-7fee" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c287-6db6-7faa-c28e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="51b8-e1d7-4746-f6af" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="c455-0905-a2bf-ec88" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Nârik Dreygur" hidden="true" id="8593-5f6a-5ced-8681" collective="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="c24a-688d-591d-10ae" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="1525-5dba-cb26-1557" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="8649-d95a-a239-d15c" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Disciple of the Flame (Nârik)" id="68ac-1c8c-eaed-4c5e" hidden="true" publicationId="d0df-7166-5cd3-89fd" page="77" noindex="true">
+          <description>You can include this model in a Blackshields Detachment. When you do so, replace this model’s Legiones Astartes (Iron Warriors) special rule with the Legiones Astartes (Blackshields) special rule.</description>
+        </rule>
+      </rules>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
