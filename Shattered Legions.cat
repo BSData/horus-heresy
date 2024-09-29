@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="115" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <catalogueLinks>
-    <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="6393-649c-7213-a327"/>
+    <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="6393-649c-7213-a327" importRootEntries="true"/>
   </catalogueLinks>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" id="456b-39f3-0d4f-ba17" hidden="false" collective="false" import="true">
@@ -108,7 +108,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="50b4-b5ef-c95f-ab51" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f42-a824-fb5f-8fea" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -305,7 +305,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="ef54-aab4-53ae-d96c" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f42-a824-fb5f-8fea" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -936,7 +936,6 @@
       <entryLinks>
         <entryLink import="true" name="Mutable Tactics Traits (Hero)" hidden="false" id="370c-228c-d57c-ed25" type="selectionEntryGroup" targetId="c907-fbe0-2643-26aa"/>
         <entryLink import="true" name="Retinue" hidden="false" id="58bb-0329-bdbd-52fb" type="selectionEntryGroup" targetId="456b-39f3-0d4f-ba17"/>
-        <entryLink import="true" name="Warlord Traits" hidden="false" id="dd36-1bdf-1b40-65a4" type="selectionEntryGroup" targetId="769f-d9e4-f7ad-04b4"/>
         <entryLink import="true" name="Warlord Traits" hidden="false" id="8751-e89e-d4a3-02d6" type="selectionEntryGroup" targetId="769f-d9e4-f7ad-04b4"/>
       </entryLinks>
     </entryLink>
@@ -1270,11 +1269,11 @@
         </categoryLink>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Support Squad" id="400b-af50-259f-f1ce" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae">
+        <infoLink name="Support Squad" id="a67c-b146-d805-747c" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae">
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="0531-85dd-feb0-116d" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f42-a824-fb5f-8fea" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1576,7 +1575,7 @@
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="8fbf-dba5-5b44-1875" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8f42-a824-fb5f-8fea" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
