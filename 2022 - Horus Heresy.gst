@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="115" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="116" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -2225,13 +2225,40 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
         <categoryLink id="3c2e-affa-35d2-bd12" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ced2-b32d-8ebf-c863" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b005-74c0-bea4-d9bb"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="ced2-b32d-8ebf-c863">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="b005-74c0-bea4-d9bb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="5993-fb7c-61e3-5ebe" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59b1-dec2-1330-6a5a" type="min"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="1123-aa10-36fb-11cb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
+            </modifier>
+            <modifier type="set" value="0" field="59b1-dec2-1330-6a5a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="9ceb-1a5e-5458-098b" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="false">
           <modifiers>
@@ -3827,11 +3854,35 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Pinning</characteristic>
           </characteristics>
         </profile>
+        <profile name="Grenade launcher - Psyk-out" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a201-1803-2219-5e14">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Psy-shock</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="e6d4-7d81-b610-6358" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="ed62-62b5-171c-155a" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="c8b8-9218-cf90-6751" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Psy-shock" id="8b3c-2dd0-d8e2-d597" hidden="false" type="rule" targetId="f372-a365-a036-cbc4">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8260,10 +8311,36 @@ A. No.</description>
         <infoLink id="5a4d-9a53-9faf-fbda" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="4dc3-e17b-d90a-f373" name="Grenade launcher - Krak (Secondary)" targetId="71e6-ddb0-279a-7101" type="profile"/>
         <infoLink id="beb1-60fd-93a6-0eda" name="Grenade launcher - Frag (Secondary)" targetId="5bff-6214-348d-0536" type="profile"/>
+        <infoLink name="Psy-shock" id="6816-10f0-5b69-1080" hidden="false" type="rule" targetId="f372-a365-a036-cbc4">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <profiles>
+        <profile name="Grenade launcher - Psyk-out" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="acfe-9895-d5fc-d087">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Psy-shock</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
     </selectionEntry>
     <selectionEntry id="8720-32c4-0099-63f4" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -10909,6 +10986,29 @@ Note that as detailed above, the Majority and Minority Legions in a unit are de
 Where the effects of a Mutable Tactics trait contradict another, Flaws take priority over all other traits and Major traits take priority over Minor traits. If a trait requires a Leadership test to be taken for a unit which does not have a Leadership Characteristic, treat that unit’s Leadership Characteristic as ‘10’.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Minor Combi-Weapon - Snare Gun" hidden="false" id="21cb-b8b9-67c6-576a" collective="false">
+      <infoLinks>
+        <infoLink name="Bolter (Primary)" id="09dc-f867-d511-261b" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+        <infoLink name="Entangle (X)" id="3a16-0230-b1da-236d" hidden="false" type="rule" targetId="4a92-bb9b-613a-accb">
+          <modifiers>
+            <modifier type="set" value="Entangle (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Snare gun (Secondary)*" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="729f-d69d-816d-ad61">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Entangle (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -17950,6 +18050,11 @@ All units selected in this manner count as part of the same Troops choice for th
 Once deployed onto the battlefield, all units selected in this manner are treated as separate and distinct units or choices for any Primary or Secondary Objectives or other special rules and operate as separate units in all ways. Units selected as part of the same Troops choice may have different options selected for them, and are not required to be identical.
 
 When assigning additional models to units using the Among the Ranks and Militia Medicae Support special rules, each unit selected using the Strength in Numbers special rule is considered separate and may have models assigned to it as per the normal rules as the controlling player chooses.</description>
+    </rule>
+    <rule id="4a92-bb9b-613a-accb" name="Entangle (X)" publicationId="15a4-fc68-502d-48a9" page="132" hidden="false">
+      <description>An attack that has this special rule does not roll to Wound using the normal rules, instead roll To Wound by comparing the Attack’s Strength to the target’s Strength Characteristic, using the Strength Characteristic in place of Toughness on the To Wound table. If any Attacks with this special rule inflict Wounds, do not make Armour Saves or Damage Mitigation rolls for those Wounds – instead for each Wound inflicted by an Attack with this special rule, reduce the Movement Characteristic of all models in the target unit by the number in brackets that is included as part of this special rule (to a minimum of 1) until the end of the controlling player’s next turn. The Wounds caused by Attacks with this special rule are then discarded and neither reduce the target model’s Wounds Characteristic nor cause any models to be removed as casualties (this does not affect Wounds inflicted by Attacks without this special rule that are part of the same Shooting Attack).
+
+Attacks with this special rule have no effect on models with the Vehicle or Primarch Unit Type, or on any model that starts the battle with 6 or more Wounds. Do not roll To Wound if Hits from an attack with this special rule are allocated to such a model and simply discard those Hits. Similarly, models of these Types are not affected by the modifiers to Movement inflicted by the Entangle special rule, regardless of whether other models in the same unit are affected.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
