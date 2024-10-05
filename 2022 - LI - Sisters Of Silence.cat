@@ -3603,7 +3603,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink import="true" name="Minor Combi-Weapon - Combi Snare" hidden="false" id="54e4-6ca4-16fb-1250" type="selectionEntry" targetId="8233-a9c7-1492-66b1">
+                <entryLink import="true" name="Minor Combi-Weapon - Snare Gun" hidden="false" id="ee21-15f8-c833-d099" type="selectionEntry" targetId="21cb-b8b9-67c6-576a">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                   </costs>
@@ -3759,7 +3759,7 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink import="true" name="Minor Combi-Weapon - Combi Snare" hidden="false" id="fde7-3754-2fd2-0331" type="selectionEntry" targetId="8233-a9c7-1492-66b1">
+                    <entryLink import="true" name="Minor Combi-Weapon - Snare Gun" hidden="false" id="7690-535c-d705-1f99" type="selectionEntry" targetId="21cb-b8b9-67c6-576a">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
                       </costs>
@@ -8123,26 +8123,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Minor Combi-Weapon - Combi Snare" hidden="false" id="8233-a9c7-1492-66b1">
-      <infoLinks>
-        <infoLink name="Bolter (Primary)" id="291c-6c13-b073-f120" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
-        <infoLink name="Entangle (X)" id="3c3a-24d7-ffa8-be6b" hidden="false" targetId="4a92-bb9b-613a-accb" type="rule">
-          <modifiers>
-            <modifier type="set" value="Entangle (1)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <profiles>
-        <profile name="Snare gun (Secondary)*" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d007-6a2a-9ffa-4902" publicationId="15a4-fc68-502d-48a9" page="142">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12*</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Entangle (1)</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="bd47-69ec-0c32-abc2" name="Warlord Traits (Sisters of Silience)" hidden="true" collective="false" import="true">
@@ -8250,11 +8230,6 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="4a92-bb9b-613a-accb" name="Entangle (X)" publicationId="15a4-fc68-502d-48a9" page="132" hidden="false">
-      <description>An attack that has this special rule does not roll to Wound using the normal rules, instead roll To Wound by comparing the Attack’s Strength to the target’s Strength Characteristic, using the Strength Characteristic in place of Toughness on the To Wound table. If any Attacks with this special rule inflict Wounds, do not make Armour Saves or Damage Mitigation rolls for those Wounds – instead for each Wound inflicted by an Attack with this special rule, reduce the Movement Characteristic of all models in the target unit by the number in brackets that is included as part of this special rule (to a minimum of 1) until the end of the controlling player’s next turn. The Wounds caused by Attacks with this special rule are then discarded and neither reduce the target model’s Wounds Characteristic nor cause any models to be removed as casualties (this does not affect Wounds inflicted by Attacks without this special rule that are part of the same Shooting Attack).
-
-Attacks with this special rule have no effect on models with the Vehicle or Primarch Unit Type, or on any model that starts the battle with 6 or more Wounds. Do not roll To Wound if Hits from an attack with this special rule are allocated to such a model and simply discard those Hits. Similarly, models of these Types are not affected by the modifiers to Movement inflicted by the Entangle special rule, regardless of whether other models in the same unit are affected.</description>
-    </rule>
     <rule id="1d8d-3038-9267-6f1b" name="Silent Sisterhood (X)" publicationId="15a4-fc68-502d-48a9" page="39" hidden="false">
       <description>The notation in brackets that is included as part of the Silent Sisterhood (X) special rule defines which Chamber Militant the model belongs to. This Chamber Militant may grant the model some additional rules or effects and influences how it may be selected when building an army that incorporates a Detachment with the Sisters of Silence Faction. 
 When selecting a Detachment using the Sisters of Silence Army List, the number of units of Chambers Militant other than the Chamber of Vigilance is limited. For each HQ choice with a given Chamber Militant, the Detachment may include up to three other choices of the same Chamber Militant (except for units with the Chamber of Vigilance variant of the Silent Sisterhood (X) special rule, of which an army may include any number, limited only by available Force Organisation slots). Note that Dedicated Transports and units selected using the Retinue special rule do not count against these limits regardless of their variant of the Silent Sisterhood (X) special rule.
