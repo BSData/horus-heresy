@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="116" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="117" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -17041,78 +17041,99 @@ Special rules that are removed:
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="9fde-326-a69f-2976">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="f514-d7bb-1a6a-debb">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
