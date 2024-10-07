@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="118" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="119" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -3854,7 +3854,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Pinning</characteristic>
           </characteristics>
         </profile>
-        <profile name="Grenade launcher - Psyk-out" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a201-1803-2219-5e14">
+        <profile name="Grenade launcher - Psyk-out (Secondary)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a201-1803-2219-5e14">
           <characteristics>
             <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
@@ -3864,7 +3864,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3878,7 +3878,7 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -8315,32 +8315,16 @@ A. No.</description>
           <modifiers>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Grenade launcher - Psyk-out" id="956d-1071-3bf1-cfaf" hidden="false" type="profile" targetId="a201-1803-2219-5e14"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-      <profiles>
-        <profile name="Grenade launcher - Psyk-out" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="acfe-9895-d5fc-d087">
-          <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Psy-shock</characteristic>
-          </characteristics>
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry id="8720-32c4-0099-63f4" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
