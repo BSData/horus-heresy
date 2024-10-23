@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="45" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -3471,69 +3471,36 @@ This unit may be upgraded freely as described in their profile, though they may 
           <selectionEntryGroups>
             <selectionEntryGroup id="a32e-b620-ee42-737d" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5a9d-5fa0-5c22-c3a7">
               <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="233a-5f7b-103a-7f22" type="min"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2705-2339-f1ce-d05a" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="233a-5f7b-103a-7f22" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2705-2339-f1ce-d05a" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="5a9d-5fa0-5c22-c3a7" name="Power Blade Arrays With In-Built Light Autocannon*" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5a9d-5fa0-5c22-c3a7" name="Two Power Blade Arrays With In-Built Light Autocannon*" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="642a-18be-c72d-5cf6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="642a-18be-c72d-5cf6" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="eef3-4bdf-4f70-9740" name="Power Blade Arrays With In-Built Light Autocannon*" publicationId="bde1-6db1-163b-3b76" page="40" hidden="false">
                       <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
                     </rule>
                   </rules>
-                  <selectionEntries>
-                    <selectionEntry id="2e78-ef5f-0355-37dc" name="Power Blade Array" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" collective="true" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="909d-e3f3-25be-a060" name="Power Blade Array" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="50f6-4bb0-0816-6d49" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-                          <modifiers>
-                            <modifier type="set" field="name" value="Breaching (5+)"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                      </costs>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="738c-b560-5cc3-57f3-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="738c-b560-5cc3-57f3-max" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry id="8f35-0d01-7cc3-b558" name="Light Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="true" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="e71b-e137-8d96-bc1d" name="Light Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                      </costs>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3b36-9dbd-4a13-5fd9-min" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b36-9dbd-4a13-5fd9-max" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Light Autocannon" hidden="false" id="bd89-d3a3-de09-6412" type="selectionEntry" targetId="8f35-0d01-7cc3-b558">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f3b4-783c-d217-ff4c" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3047-a956-a033-acfb" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="9108-65fb-af79-a739" type="selectionEntry" targetId="2e78-ef5f-0355-37dc">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2725-b1c0-6a4e-06c7" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58a8-9647-2734-15f8" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Two Abomination Blades" hidden="false" id="3785-1a76-6851-cd9c">
                   <entryLinks>
@@ -3568,7 +3535,8 @@ This unit may be upgraded freely as described in their profile, though they may 
                         <modifier type="set" value="Arc Scourge*" field="name"/>
                       </modifiers>
                       <constraints>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="0c0e-3ac3-e64b-f258" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c0e-3ac3-e64b-f258" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2885-71e2-be0e-8c47" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <rules>
                         <rule name="Arc Scourge*" id="3ec2-97cd-9f99-9f93" hidden="false">
@@ -3605,8 +3573,18 @@ This unit may be upgraded freely as described in their profile, though they may 
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="One Abomination Blade &amp; 1 Power Blade Arrays With In-Built Light Autocannon*" hidden="false" id="e967-9be1-4d02-81e8">
                   <entryLinks>
-                    <entryLink import="true" name="Light Autocannon" hidden="false" id="3ae2-62dd-59bd-518f" type="selectionEntry" targetId="8f35-0d01-7cc3-b558"/>
-                    <entryLink import="true" name="Power Blade Array" hidden="false" id="ed2a-a519-43d4-0cd6" type="selectionEntry" targetId="2e78-ef5f-0355-37dc"/>
+                    <entryLink import="true" name="Light Autocannon" hidden="false" id="3ae2-62dd-59bd-518f" type="selectionEntry" targetId="8f35-0d01-7cc3-b558">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ede-cea5-ce57-d875" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a4b-bdd4-e3dc-50b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="ed2a-a519-43d4-0cd6" type="selectionEntry" targetId="2e78-ef5f-0355-37dc">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="059f-e73e-61ec-b9e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a671-14aa-d1b5-f2b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
                     <entryLink import="true" name="Abomination Blades" hidden="false" id="773d-1dbb-5f5c-8841" type="selectionEntry" targetId="1b71-696f-4bda-dd34">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -3631,49 +3609,70 @@ This unit may be upgraded freely as described in their profile, though they may 
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="102b-b333-3585-dd16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                 </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="77e3-a902-4afa-7e7c" name="Arc Scourge" hidden="false" collective="false" import="true" targetId="9033-c395-43b3-5612" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Arc Scourge*"/>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1187-784b-e0d0-a25a" type="max"/>
-                  </constraints>
-                  <rules>
-                    <rule id="accc-4f5d-a4b3-64d0" name="Arc Scourge*" hidden="false">
-                      <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
-                    </rule>
-                  </rules>
+                <selectionEntry type="upgrade" import="true" name="One Arc Scourge &amp; 1 Power Blade Arrays With In-Built Light Autocannon*" hidden="false" id="32cc-afaa-f4e0-04e2">
+                  <entryLinks>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="f37c-5b60-dfaa-d037" type="selectionEntry" targetId="2e78-ef5f-0355-37dc">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cabd-6417-fe89-0344" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba43-bc9f-531e-5f52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Arc Scourge" hidden="false" id="77e3-a902-4afa-7e7c" collective="false" targetId="9033-c395-43b3-5612" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="Arc Scourge*" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1187-784b-e0d0-a25a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df09-818a-8b34-edaa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <rules>
+                        <rule name="Arc Scourge*" id="accc-4f5d-a4b3-64d0" hidden="false">
+                          <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
+                        </rule>
+                      </rules>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Light Autocannon" hidden="false" id="f9a8-c2e5-378b-121f" type="selectionEntry" targetId="8f35-0d01-7cc3-b558">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c59-1eb0-c1fd-7da4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="961e-b90c-44d5-d9be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
-                </entryLink>
-              </entryLinks>
-              <modifiers>
-                <modifier type="decrement" value="1" field="233a-5f7b-103a-7f22">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="3785-1a76-6851-cd9c" shared="true" includeChildSelections="false"/>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="34c8-9235-e6ee-767c" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="e967-9be1-4d02-81e8" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" value="1" field="2705-2339-f1ce-d05a">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="3785-1a76-6851-cd9c" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="e967-9be1-4d02-81e8" shared="true"/>
-                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="34c8-9235-e6ee-767c" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Arc Scourges" hidden="false" id="07fa-4422-ba10-b28f">
+                  <entryLinks>
+                    <entryLink import="true" name="Arc Scourge" hidden="false" id="a6b3-0907-d354-b1c7" collective="false" targetId="9033-c395-43b3-5612" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="Arc Scourge*" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2416-8ffb-7b1a-80ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="68de-8eac-6e57-eb90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <rules>
+                        <rule name="Arc Scourge*" id="4c0b-7d99-78a0-dd24" hidden="false">
+                          <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
+                        </rule>
+                      </rules>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273e-3521-88d1-d5c4"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -7146,6 +7145,43 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Light Autocannon" hidden="false" id="8f35-0d01-7cc3-b558" publicationId="bde1-6db1-163b-3b76" page="114" collective="true">
+      <profiles>
+        <profile name="Light Autocannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2bf8-2a50-8275-7aaf" publicationId="bde1-6db1-163b-3b76" page="114">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="2e78-ef5f-0355-37dc" publicationId="bde1-6db1-163b-3b76" page="122" collective="true">
+      <profiles>
+        <profile name="Power Blade Array" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="909d-e3f3-25be-a060" publicationId="bde1-6db1-163b-3b76" page="122">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="50f6-4bb0-0816-6d49" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
