@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="abac-8dd1-df65-e253" name="LA -  XV: Thousand Sons" revision="37" battleScribeVersion="2.03" authorName="Arkangelmark5" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="abac-8dd1-df65-e253" name="LA -  XV: Thousand Sons" revision="40" battleScribeVersion="2.03" authorName="Arkangelmark5" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <publications>
     <publication id="f743-7ff9-a2f3-01c7" name="Exemplary Battles of the Age of Darkness: The Axandria IV Incident" shortName="Axandria IV" publisher="Exemplary Battles of the Age of Darkness: The Axandria IV Incident" publicationDate="9/16/2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/3mVvZrTG9XOWeVxv.pdf"/>
   </publications>
@@ -3669,12 +3669,12 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="f277-d841-fee1-b3a8" name="Dedicated Transport:" hidden="false" collective="false" import="true">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1626-a09f-d9ed-dca1" type="greaterThan"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="greaterThan" value="1" field="selections" scope="parent" childId="1626-a09f-d9ed-dca1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3685,6 +3685,18 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2425-2752-02bf-f9ea" type="max"/>
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="62e7-ec42-6ac1-7fd8" collective="false" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1383-c97c-9522-c1e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1977-49f2-7910-f177" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -5640,4 +5652,34 @@ Additionally, a unit that includes any models with this special rule may not be 
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Rite of War" hidden="false" id="2494-402e-655d-d47f" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6ab3-19ac-e581-937a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="230d-96dc-85e7-c01b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="dca9-212e-0013-87ed" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rites of War" hidden="false" id="274f-af11-55a3-720e" collective="false" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="0" field="797b-0bd6-8cbf-f25a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

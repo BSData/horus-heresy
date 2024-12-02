@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="38" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -536,7 +536,7 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Greater Brass Scorpion" hidden="false" type="selectionEntry" id="6a12-e51a-2a7c-8eb6" targetId="3c5c-5bbf-cfc-e84e">
+    <entryLink import="false" name="Greater Brass Scorpion" hidden="false" type="selectionEntry" id="6a12-e51a-2a7c-8eb6" targetId="3c5c-5bbf-cfc-e84e">
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="d55e-c533-c114-be8b" primary="false" name="Unit:"/>
         <categoryLink targetId="c658-dc6b-727b-c488" id="1326-fb1f-7558-59b0" primary="true" name="Lords of War:"/>
@@ -3863,7 +3863,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b07d-558e-2e66-915d" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="2366-c3a9-71c5-aba5" name="Autopistol &amp; Close Combat Weapons" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="2366-c3a9-71c5-aba5" name="Autopistol &amp; Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a569-5ca9-2173-db77" type="max"/>
                           </constraints>
@@ -3885,7 +3885,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                           </costs>
                         </selectionEntry>
-                        <selectionEntry id="43d1-2e53-e718-8902" name="Laspistol &amp; Close Combat Weapons" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="43d1-2e53-e718-8902" name="Laspistol &amp; Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
                           <constraints>
                             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="635d-2a42-c8ea-f2cb" type="max"/>
                           </constraints>
@@ -3907,7 +3907,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                           </costs>
                         </selectionEntry>
-                        <selectionEntry id="fcbf-6948-f46f-ff17" name="Autopistol &amp; Chainaxe" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="fcbf-6948-f46f-ff17" name="Autopistol &amp; Chainaxe" hidden="false" collective="false" import="true" type="upgrade">
                           <modifiers>
                             <modifier type="set" field="hidden" value="true">
                               <conditions>
@@ -8612,8 +8612,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </profiles>
               <rules>
                 <rule id="1e01-7a98-dc6f-561f" name="Man the Guns" publicationId="48c2-d023-0069-001a" page="34" hidden="false">
-                  <description>A Militia Heavy Ordnance Battery may only attack with a maximum number of Gun Carriages
-equal to the number of Militia Gunners in the unit when making a Shooting Attack. If the unit includes fewer Militia Gunners than it does Gun Carriages, then only a number of Gun Carriages equal to the number of Militia Gunners may attack as part of a Shooting Attack – the controlling player may select which Gun Carriages may attack. If a Militia Heavy Ordnance Battery includes less than two Militia Gunners for each Gun Carriage then any attacks made by all Gun Carriages in the unit during a Shooting Attack are resolved at a Ballistic Skill of 1 and any result of a ‘Hit’ on the Scatter dice must be re-rolled. If a unit that includes a Gun Carriage is forced to Fall Back then all models in that unit are immediately removed as casualties instead.</description>
+                  <description>A Militia Heavy Ordnance Battery may only attack with a maximum number of Gun Carriages equal to the number of Militia Gunners in the unit when making a Shooting Attack. If the unit includes fewer Militia Gunners than it does Gun Carriages then only a number of Gun Carriages equal to the number of Militia Gunners may attack as part of a Shooting Attack – the controlling player may select which Gun Carriages may attack. If a Militia Heavy Ordnance Battery includes less than two Militia Gunners for each Gun Carriage then any attacks made by all Gun Carriages in the unit during a Shooting Attack are resolved at a Ballistic Skill of 1 and any result of a ‘Hit’ on the Scatter dice must be re-rolled. If a unit that includes a Gun Carriage is forced to Fall Back then all models in that unit are immediately removed as casualties instead.</description>
                 </rule>
               </rules>
               <categoryLinks>
@@ -10137,21 +10136,6 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f02b-00e7-b68c-3be0" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d54e-ede7-beff-9dbc" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="b498-93a6-b43b-49db" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Flak armour confers a 5+ Armour Save.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="202b-d674-de59-7d85" name="Militia Standard" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c968-7a28-02aa-5ade" type="max"/>
@@ -10160,21 +10144,6 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
         <profile id="bf68-2f8c-e803-967b" name="Militia Standard" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with a Militia standard adds +1 to the Wounds score used to decide if they win a Combat in the Assault phase and gains the Stubborn special rule.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="dd91-0c2e-0890-1673" name="Militia Vexilla" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fabb-a9da-b8b1-c374" type="max"/>
-      </constraints>
-      <profiles>
-        <profile id="80c6-1db7-6bc2-507f" name="Militia Vexilla" publicationId="48c2-d023-0069-001a" page="37" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A unit that includes at least one model with an Militia vexilla adds +1 to the Wounds score used to decide if they win a Combat in the Assault phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10235,17 +10204,6 @@ equal to the number of Militia Gunners in the unit when making a Shooting Attack
           </constraints>
         </entryLink>
       </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0251-8365-9efb-61a7" name="Flak Armour" publicationId="48c2-d023-0069-001a" page="37" hidden="false" collective="true" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b31-6385-93e9-df56" type="max"/>
-      </constraints>
-      <infoLinks>
-        <infoLink id="7356-a3fb-f8a8-dbea" name="Flak Armour" hidden="false" targetId="b498-93a6-b43b-49db" type="profile"/>
-      </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
@@ -11364,15 +11322,6 @@ A model with the Infantry Unit Type that selects a Militia cavalry mount as an u
     </rule>
     <rule id="e626-c3b1-e724-c6fc" name="Provenance" hidden="false">
       <description>Provenance</description>
-    </rule>
-    <rule id="fcf6-c6e0-f85e-90da" name="Strength in Numbers" hidden="false">
-      <description>When a unit that is composed entirely of models with this special rule is selected as a Troops choice, then up to three such units may be selected to fill that Troops choice slot instead of only one.
-
-All units selected in this manner count as part of the same Troops choice for the purposes of Army Selection and Deployment only, when deployed onto the battlefield or into Reserves they are counted as a single unit and all units selected as part of the same Troops choice must be deployed at the same time (but are not required to deploy in proximity with each other) – and if placed into Reserves then all units in that choice must be placed into Reserves. Likewise,  when making Reserves rolls one roll is made for all units selected as part of the same choice. 
-
-Once deployed onto the battlefield, all units selected in this manner are treated as separate and distinct units or choices for any Primary or Secondary Objectives or other special rules and operate as separate units in all ways. Units selected as part of the same Troops choice may have different options selected for them, and are not required to be identical.
-
-When assigning additional models to units using the Among the Ranks and Militia Medicae Support special rules, each unit selected using the Strength in Numbers special rule is considered separate and may have models assigned to it as per the normal rules as the controlling player chooses.</description>
     </rule>
     <rule id="976f-9e14-413c-5bea" name="Emplaced" publicationId="48c2-d023-0069-001a" page="24" hidden="false">
       <description>A unit that includes any models with this special rule may only make the Return Fire or Overwatch Core Reactions or the Interceptor Advanced Reaction – no other Reaction of any kind may be made. Additionally, if forced to Fall Back for any reason, all models in the unit are immediately removed as casualties.</description>

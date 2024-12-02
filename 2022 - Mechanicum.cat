@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="c247-da79-1654-d39e" name="Mechanicum" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue" publicationId="3886-76e5-438f-159f">
   <entryLinks>
     <entryLink id="29c6-0ec7-0162-e817" name="Mechanicum" hidden="false" collective="false" import="false" targetId="ddf5-d792-3146-6e9a" type="selectionEntry">
       <modifiers>
@@ -261,13 +261,6 @@
       </categoryLinks>
     </entryLink>
     <entryLink id="60ea-7150-b6b9-7b9b" name="Thanatar Siege-automata Maniple" hidden="false" collective="false" import="false" targetId="2903-fef6-e839-368b" type="selectionEntry">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="9d6b-f8e9-44a9-9974" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="b283-74d2-92e1-5d80" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
@@ -342,14 +335,9 @@
     <entryLink id="d1c5-ff4b-1a9e-2a92" name="Thanatar Siege-automata Maniple" hidden="true" collective="false" import="false" targetId="2903-fef6-e839-368b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="equalTo"/>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8305-5ac6-f395-e570" type="greaterThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="force" childId="8305-5ac6-f395-e570" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -501,9 +489,14 @@
     <entryLink id="75ab-47e9-3e7d-1fcb" name="Macrocarid Explorator" hidden="true" collective="false" import="false" targetId="bd83-b47d-1f37-1159" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditions>
-            <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -524,7 +517,7 @@
         <categoryLink id="c8d6-cac0-a82b-e544" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="bc0c-bd59-130e-5879" name="Cults Abominatio" hidden="false" collective="false" import="true" targetId="4a00-03d4-a850-884b" type="selectionEntry">
+    <entryLink id="bc0c-bd59-130e-5879" name="Cults Abominatio" hidden="false" collective="false" import="false" targetId="4a00-03d4-a850-884b" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -572,20 +565,30 @@
         <categoryLink id="adcb-ff5b-4cd1-1ae5" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Kytan Daemon Engine" hidden="false" type="selectionEntry" id="c814-2c52-5523-5e46" targetId="b7cd-670-7027-fee8">
+    <entryLink import="false" name="Kytan Daemon Engine" hidden="false" type="selectionEntry" id="c814-2c52-5523-5e46" targetId="b7cd-670-7027-fee8">
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="32df-2690-98fe-21cd" primary="false" name="Unit:"/>
         <categoryLink targetId="c658-dc6b-727b-c488" id="432a-5a1-eb9-c2bf" primary="true" name="Lords of War:"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Greater Brass Scorpion" hidden="false" type="selectionEntry" id="cf26-6eab-4a3e-b082" targetId="3c5c-5bbf-cfc-e84e">
+    <entryLink import="false" name="Greater Brass Scorpion" hidden="false" type="selectionEntry" id="cf26-6eab-4a3e-b082" targetId="3c5c-5bbf-cfc-e84e">
       <categoryLinks>
         <categoryLink targetId="c658-dc6b-727b-c488" id="b4c2-2f3-960a-7db6" primary="true" name="Lords of War:"/>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="3d7f-f70d-84f1-1cf6" primary="false" name="Unit:"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Blood Slaughterer" hidden="false" type="selectionEntry" id="f14b-bcb2-b7e7-7e50" targetId="2d70-676d-68aa-1973"/>
-    <entryLink import="true" name="Decimator" hidden="false" type="selectionEntry" id="4699-ff33-7334-6b2d" targetId="b1a5-42a-a6ee-2223"/>
+    <entryLink import="false" name="Blood Slaughterer" hidden="false" type="selectionEntry" id="f14b-bcb2-b7e7-7e50" targetId="2d70-676d-68aa-1973">
+      <categoryLinks>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="4701-e42d-e866-730f" primary="true" name="Fast Attack:"/>
+        <categoryLink targetId="3c75-d5f8-1ad4-24e5" id="5703-5a0f-3a0e-82b5" primary="false" name="Compulsory Fast Attack:"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Decimator" hidden="false" type="selectionEntry" id="4699-ff33-7334-6b2d" targetId="b1a5-42a-a6ee-2223">
+      <categoryLinks>
+        <categoryLink targetId="7031-469a-1aeb-eab0" id="2190-e66a-de28-7774" primary="true" name="Heavy Support:"/>
+        <categoryLink targetId="030f-3801-4f54-e7f8" id="c9e2-0c79-15d5-4cb8" primary="false" name="Compulsory Heavy Support:"/>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="7736-5242-6cb5-a742" name="Nathaniel Garro" hidden="true" collective="false" import="false" targetId="0583-258d-f0a0-2170" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
@@ -642,6 +645,60 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink import="false" name="Blood Slaughterer" hidden="false" id="1d25-44aa-e569-0fbd" type="selectionEntry" targetId="2d70-676d-68aa-1973">
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="faa7-5592-b739-360d" primary="true" name="Troops:"/>
+        <categoryLink targetId="6399-5c65-7833-1025" id="1d59-97d6-393b-c5f0" primary="false" name="Line Sub-type"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="b716-0dae-8a41-3c81" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink import="false" name="Decimator" hidden="false" id="4d1c-a587-f62a-9ab3" type="selectionEntry" targetId="b1a5-42a-a6ee-2223">
+      <categoryLinks>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="efcb-11b8-a3b6-2109" primary="true" name="Troops:"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="183d-be3f-82f9-e754" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="951e-f7f9-8ed7-5a00">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="183d-be3f-82f9-e754" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="951e-f7f9-8ed7-5a00" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
+    <entryLink import="false" name="Infernus Abomination" hidden="false" id="91d2-492e-e6c3-9801" collective="false" targetId="3928-63ee-20a9-f84b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink targetId="7aee-565f-b0ae-294e" id="d875-fced-5305-e8a6" primary="true" name="Elites:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="ab3b-f2b4-9bf6-8993" primary="false" name="Unit:"/>
+      </categoryLinks>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" value="1" field="8e82-1d5b-2445-fa8f">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" roundUp="false" includeChildSelections="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="force" shared="false" id="8e82-1d5b-2445-fa8f" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d0f2-ee39-450c-39db" name="Archmagos Prime" publicationId="bde1-6db1-163b-3b76" page="20" hidden="false" collective="false" import="true" type="unit">
@@ -664,6 +721,11 @@
             <modifier type="set" field="57ee-1126-32a9-5672" value="5">
               <conditions>
                 <condition field="selections" scope="d0f2-ee39-450c-39db" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8305-5ac6-f395-e570" type="greaterThan"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="4" field="57ee-1126-32a9-5672">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="12ef-d6e7-3e43-41f7" childId="d929-7702-8f4b-3393" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -815,7 +877,35 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Abomination Blades" hidden="false" id="6fdf-8aef-53a9-53ea" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="88ac-981a-7b93-7bda" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pair of Abomination Blades" hidden="false" id="2506-87d9-7c14-884b" type="selectionEntry" targetId="5caf-acfb-7e27-0a16"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="52c9-2f1c-800c-a0ab">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5caf-acfb-7e27-0a16" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="78b7-42b5-c8d0-8c79">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5caf-acfb-7e27-0a16" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="de1b-c169-e406-509d" name="May take one of the following options:" hidden="false" collective="false" import="true">
           <constraints>
@@ -946,7 +1036,7 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff1b-f9d7-b417-c057" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="4417-2a5d-c0ec-dd84" name="Orders of High Techno-arcana" hidden="false" collective="false" import="true" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
+        <entryLink id="4417-2a5d-c0ec-dd84" name="Orders of High/Proscribed Techno-arcana" hidden="false" collective="false" import="true" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
         <entryLink id="7fa1-908e-c53e-8fcb" name="Mechanicum Protectiva" hidden="false" collective="false" import="true" targetId="7908-9b34-c5bb-21c2" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1b6-784c-0df6-f37a" type="max"/>
@@ -985,6 +1075,13 @@
             <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
             <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
           </characteristics>
+          <modifiers>
+            <modifier type="set" value="6" field="57ee-1126-32a9-5672">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="c24f-27c9-1759-4427" childId="d929-7702-8f4b-3393" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <infoLinks>
@@ -1066,7 +1163,35 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Abomination Blades" hidden="false" id="5b99-a321-43cf-f7cf" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="43ac-126f-8336-cf13" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Pair of Abomination Blades" hidden="false" id="ec44-756b-1678-84de" type="selectionEntry" targetId="5caf-acfb-7e27-0a16"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="decrement" value="1" field="fdf9-bd60-0935-0abe">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5caf-acfb-7e27-0a16" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" value="1" field="a43b-ea96-afa5-5e94">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="5caf-acfb-7e27-0a16" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
         <selectionEntryGroup id="7a33-fa4c-6c53-b688" name="May take any of the following options:" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -1192,7 +1317,7 @@
             <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a96c-007d-083d-b58c" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="51ec-4169-13a5-abe4" name="Orders of High Techno-arcana" hidden="false" collective="false" import="true" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
+        <entryLink id="51ec-4169-13a5-abe4" name="Orders of High/Proscribed Techno-arcana" hidden="false" collective="false" import="true" targetId="c36b-a6a2-9cb2-b090" type="selectionEntryGroup"/>
         <entryLink id="811b-c29f-e0c8-6a52" name="Cortex Controller" hidden="false" collective="false" import="true" targetId="2fda-455f-d34d-97e0" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cee-cd20-154d-f271" type="min"/>
@@ -1211,6 +1336,17 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="185"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="2dcd-d6c5-9f57-0084" name="Magos Dominus" publicationId="bde1-6db1-163b-3b76" page="24" hidden="false" collective="false" import="true" type="unit">
       <profiles>
@@ -1424,6 +1560,21 @@
             <entryLink id="ee3c-f2ec-2b2f-3a59" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
             <entryLink id="add4-8e01-caf8-ac0e" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
             <entryLink id="d346-3f15-034c-2f55" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+            <entryLink import="true" name="Abomination Blades" hidden="false" id="8bd5-c9a0-0520-f67e" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13dd-f3bc-1c5f-c786" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1648,6 +1799,21 @@
             <entryLink id="9638-717a-ccf5-7361" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
             <entryLink id="f755-06ff-0135-eeac" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
             <entryLink id="f388-cb25-32e1-4576" name="Power Lance" hidden="false" collective="false" import="true" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry"/>
+            <entryLink import="true" name="Abomination Blades" hidden="false" id="5531-c3eb-d7f6-3546" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0580-d97d-2a72-1a3d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1671,6 +1837,17 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="105"/>
       </costs>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
     </selectionEntry>
     <selectionEntry id="a204-6b74-3aeb-0231" name="Calleb Decima Invictus" publicationId="bde1-6db1-163b-3b76" page="26" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -2135,18 +2312,40 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon" id="e97b-8291-081e-2f2a" hidden="false" defaultSelectionEntryId="6e5f-7dde-4dcd-2546">
+              <entryLinks>
+                <entryLink import="true" name="Abomination Blades" hidden="false" id="cd15-af5e-af9e-6e4f" type="selectionEntry" targetId="9940-99a1-78ae-1d2a">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a40a-2b78-b76a-4a14" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Axe" hidden="false" id="6e5f-7dde-4dcd-2546" collective="false" targetId="c066-2ace-f68c-e440" type="selectionEntry">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c76-1331-6466-5f98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="433a-5f4a-6ac7-2567" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a565-2145-0b8e-431e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="9a7c-0f68-a192-a96d" name="Laspistol" hidden="false" collective="false" import="true" targetId="654d-be88-b0a8-7ae5" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="608e-d607-f60f-7128" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03a7-fb23-8a38-3a3e" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="6e5f-7dde-4dcd-2546" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c76-1331-6466-5f98" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8003-704b-9ba6-5aa0" type="min"/>
               </constraints>
             </entryLink>
             <entryLink import="true" name="Cybertheurgic Arcana" hidden="false" type="selectionEntryGroup" id="a260-ae95-5b91-6696" targetId="bd27-d2a1-da2b-f649">
@@ -3226,6 +3425,16 @@ This unit may be upgraded freely as described in their profile, though they may 
                     <condition field="selections" scope="e713-beb2-95dd-51cb" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="Automata (Paragon)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Ruinous Cybernetica)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Cybernetica)</characteristic>
@@ -3248,85 +3457,222 @@ This unit may be upgraded freely as described in their profile, though they may 
                 <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
               </modifiers>
             </infoLink>
+            <infoLink name="It Will Not Die (X)" id="aa3f-4d62-14b6-5ed4" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
+              <modifiers>
+                <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="d929-7702-8f4b-3393" shared="true" id="bde7-af7d-de93-2baf" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="a32e-b620-ee42-737d" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="5a9d-5fa0-5c22-c3a7">
               <constraints>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="233a-5f7b-103a-7f22" type="min"/>
-                <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2705-2339-f1ce-d05a" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="233a-5f7b-103a-7f22" type="min"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2705-2339-f1ce-d05a" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="5a9d-5fa0-5c22-c3a7" name="Power Blade Arrays With In-Built Light Autocannon*" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="5a9d-5fa0-5c22-c3a7" name="Two Power Blade Arrays With In-Built Light Autocannon*" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="642a-18be-c72d-5cf6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="642a-18be-c72d-5cf6" type="max"/>
                   </constraints>
                   <rules>
                     <rule id="eef3-4bdf-4f70-9740" name="Power Blade Arrays With In-Built Light Autocannon*" publicationId="bde1-6db1-163b-3b76" page="40" hidden="false">
                       <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
                     </rule>
                   </rules>
-                  <selectionEntries>
-                    <selectionEntry id="2e78-ef5f-0355-37dc" name="Power Blade Array" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" collective="true" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="909d-e3f3-25be-a060" name="Power Blade Array" publicationId="bde1-6db1-163b-3b76" page="122" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <infoLinks>
-                        <infoLink id="50f6-4bb0-0816-6d49" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-                          <modifiers>
-                            <modifier type="set" field="name" value="Breaching (5+)"/>
-                          </modifiers>
-                        </infoLink>
-                      </infoLinks>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="8f35-0d01-7cc3-b558" name="Light Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" collective="true" import="true" type="upgrade">
-                      <profiles>
-                        <profile id="e71b-e137-8d96-bc1d" name="Light Autocannon" publicationId="bde1-6db1-163b-3b76" page="114" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                          <characteristics>
-                            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
-                            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-                            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-                            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
                   </costs>
+                  <entryLinks>
+                    <entryLink import="true" name="Light Autocannon" hidden="false" id="bd89-d3a3-de09-6412" type="selectionEntry" targetId="8f35-0d01-7cc3-b558">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="f3b4-783c-d217-ff4c" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="3047-a956-a033-acfb" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="9108-65fb-af79-a739" type="selectionEntry" targetId="2e78-ef5f-0355-37dc">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2725-b1c0-6a4e-06c7" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="58a8-9647-2734-15f8" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="77e3-a902-4afa-7e7c" name="Arc Scourge" hidden="false" collective="false" import="true" targetId="9033-c395-43b3-5612" type="selectionEntry">
+                <selectionEntry type="upgrade" import="true" name="Two Abomination Blades" hidden="false" id="3785-1a76-6851-cd9c">
+                  <entryLinks>
+                    <entryLink import="true" name="Abomination Blades" hidden="false" id="52e8-6fee-af2e-0fb6" type="selectionEntry" targetId="1b71-696f-4bda-dd34">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b5a2-6485-3ce0-7404" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b007-0de6-37f5-7f1e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
                   <modifiers>
-                    <modifier type="set" field="name" value="Arc Scourge*"/>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1187-784b-e0d0-a25a" type="max"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07b0-605b-95bd-136d"/>
                   </constraints>
-                  <rules>
-                    <rule id="accc-4f5d-a4b3-64d0" name="Arc Scourge*" hidden="false">
-                      <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
-                    </rule>
-                  </rules>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="One Abomination Blade &amp; 1 Arc Scourge" hidden="false" id="34c8-9235-e6ee-767c">
+                  <entryLinks>
+                    <entryLink import="true" name="Arc Scourge" hidden="false" id="d9e8-76ef-ae43-50ab" collective="false" targetId="9033-c395-43b3-5612" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="Arc Scourge*" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c0e-3ac3-e64b-f258" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2885-71e2-be0e-8c47" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <rules>
+                        <rule name="Arc Scourge*" id="3ec2-97cd-9f99-9f93" hidden="false">
+                          <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
+                        </rule>
+                      </rules>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Abomination Blades" hidden="false" id="5c99-c878-aa3d-cf70" type="selectionEntry" targetId="1b71-696f-4bda-dd34">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7909-cfff-a3e5-ac66" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea96-cd69-cd9d-8756" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="30"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9333-c4e7-743d-7608" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="One Abomination Blade &amp; 1 Power Blade Arrays With In-Built Light Autocannon*" hidden="false" id="e967-9be1-4d02-81e8">
+                  <entryLinks>
+                    <entryLink import="true" name="Light Autocannon" hidden="false" id="3ae2-62dd-59bd-518f" type="selectionEntry" targetId="8f35-0d01-7cc3-b558">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ede-cea5-ce57-d875" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a4b-bdd4-e3dc-50b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="ed2a-a519-43d4-0cd6" type="selectionEntry" targetId="2e78-ef5f-0355-37dc">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="059f-e73e-61ec-b9e1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a671-14aa-d1b5-f2b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Abomination Blades" hidden="false" id="773d-1dbb-5f5c-8841" type="selectionEntry" targetId="1b71-696f-4bda-dd34">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f4e1-2166-6a4f-5ed9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c644-de4e-adde-2b06" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="force" childId="de6f-55bd-6647-586a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="102b-b333-3585-dd16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="One Arc Scourge &amp; 1 Power Blade Arrays With In-Built Light Autocannon*" hidden="false" id="32cc-afaa-f4e0-04e2">
+                  <entryLinks>
+                    <entryLink import="true" name="Power Blade Array" hidden="false" id="f37c-5b60-dfaa-d037" type="selectionEntry" targetId="2e78-ef5f-0355-37dc">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cabd-6417-fe89-0344" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ba43-bc9f-531e-5f52" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Arc Scourge" hidden="false" id="77e3-a902-4afa-7e7c" collective="false" targetId="9033-c395-43b3-5612" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="Arc Scourge*" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1187-784b-e0d0-a25a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df09-818a-8b34-edaa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <rules>
+                        <rule name="Arc Scourge*" id="accc-4f5d-a4b3-64d0" hidden="false">
+                          <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
+                        </rule>
+                      </rules>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Light Autocannon" hidden="false" id="f9a8-c2e5-378b-121f" type="selectionEntry" targetId="8f35-0d01-7cc3-b558">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c59-1eb0-c1fd-7da4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="961e-b90c-44d5-d9be" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
                   </costs>
-                </entryLink>
-              </entryLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Arc Scourges" hidden="false" id="07fa-4422-ba10-b28f">
+                  <entryLinks>
+                    <entryLink import="true" name="Arc Scourge" hidden="false" id="a6b3-0907-d354-b1c7" collective="false" targetId="9033-c395-43b3-5612" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="Arc Scourge*" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2416-8ffb-7b1a-80ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="68de-8eac-6e57-eb90" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <rules>
+                        <rule name="Arc Scourge*" id="4c0b-7d99-78a0-dd24" hidden="false">
+                          <description>* An Arlatax with two power blade arrays gains an additional Attack. This additional Attack is not included in the characteristics profile above.</description>
+                        </rule>
+                      </rules>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="273e-3521-88d1-d5c4"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
@@ -3351,9 +3697,14 @@ This unit may be upgraded freely as described in their profile, though they may 
             <entryLink id="6a82-3c05-8cb9-2fc1" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="b178-7d35-136f-d305" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="b178-7d35-136f-d305" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
@@ -3368,11 +3719,38 @@ This unit may be upgraded freely as described in their profile, though they may 
             <categoryLink targetId="d8ab-8e21-e193-63ba" id="f653-f942-4a3b-9f77" name="Automata Unit Type" primary="false"/>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="6b5a-a7c0-44ce-b384" name="Cybernetica Sub-type" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="b178-7d35-136f-d305" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="a33a-94a7-2a1f-baf0" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="0750-2aed-2d36-8a82" name="Ursarax Cohort" publicationId="bde1-6db1-163b-3b76" page="41" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -3536,6 +3914,16 @@ This unit may be upgraded freely as described in their profile, though they may 
                     <condition field="selections" scope="c731-8052-ca8a-0b37" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cc2a-46fe-bbf3-6ba2" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="Automata (Antigrav, Paragon)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="0e08-6b7e-8fff-1f02" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Automata (Antigrav, Ruinous Cybernetica)" field="ddd7-6f5c-a939-b69e">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Automata (Antigrav, Cybernetica)</characteristic>
@@ -3588,9 +3976,14 @@ This unit may be upgraded freely as described in their profile, though they may 
             <entryLink id="c5f5-0be4-0ee6-7d3e" name="Paragon of Metal" hidden="false" collective="false" import="true" targetId="cc2a-46fe-bbf3-6ba2" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="0e08-6b7e-8fff-1f02" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" type="greaterThan"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="greaterThan" value="1" field="selections" scope="0e08-6b7e-8fff-1f02" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <costs>
@@ -3624,11 +4017,38 @@ This unit may be upgraded freely as described in their profile, though they may 
             <categoryLink targetId="4303-1348-cce4-9501" id="9970-338f-4b04-8d10" name="Antigrav Sub-type" primary="false"/>
             <categoryLink targetId="2440-b64e-cb24-87f0" id="52b3-8b0b-4a04-bb52" name="Cybernetica Sub-type" primary="false"/>
           </categoryLinks>
+          <modifiers>
+            <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+      <modifiers>
+        <modifier type="remove" value="2440-b64e-cb24-87f0" field="category">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="cc2a-46fe-bbf3-6ba2" shared="true" includeChildSelections="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="b790-b6dc-b904-118c" childId="c7f4-8f4e-f31d-5323" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink import="true" name="Ruinous Cybernetica" hidden="false" id="4e9f-3a81-3668-78f5" type="selectionEntry" targetId="c7f4-8f4e-f31d-5323"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="356f-a88b-1d13-3700" name="Myrmidon Destructor Host" publicationId="bde1-6db1-163b-3b76" page="47" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -3923,9 +4343,14 @@ This unit may be upgraded freely as described in their profile, though they may 
           <profiles>
             <profile id="0d8f-f51e-e76b-e6aa" name="Krios Battle Tank" publicationId="bde1-6db1-163b-3b76" page="49" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
               <modifiers>
-                <modifier type="set" field="name" value="Krios Venator Tank Destroyer">
+                <modifier type="set" field="name" value="Krios Venator">
                   <conditions>
                     <condition field="selections" scope="a6c8-1f76-580d-d901" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="566b-4fc6-9d5c-10cd" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Krios Irradiator" field="name">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="a6c8-1f76-580d-d901" childId="7ad8-fc96-e100-92ef" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3965,6 +4390,11 @@ This unit may be upgraded freely as described in their profile, though they may 
                 <entryLink id="38cf-952d-9601-d493" name="Pulsar-Fusil" hidden="false" collective="false" import="true" targetId="566b-4fc6-9d5c-10cd" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Irradiation Blaster" hidden="false" id="0130-a071-5e06-51f8" type="selectionEntry" targetId="7ad8-fc96-e100-92ef">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
                   </costs>
                 </entryLink>
               </entryLinks>
@@ -4340,8 +4770,7 @@ At the beginning of each of the controlling player’s Shooting phases for the r
           <profiles>
             <profile id="a23c-8539-83e1-b021" name="Forbidden Protocols" publicationId="bde1-6db1-163b-3b76" page="62" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
               <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any friendly units made up entirely of models with the Automata Unit Type that have at least one model within 6&quot; of this Warlord may make Reactions, ignoring the usual restriction in the Automata Unit Type. In addition, an army whose Warlord has this Trait may make an additional Reaction in the Movement phase as long as Anacharis Scoria has not been
-removed as a casualty.�</characteristic>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Any friendly units made up entirely of models with the Automata Unit Type that have at least one model within 6&quot; of this Warlord may make Reactions, ignoring the usual restriction in the Automata Unit Type. In addition, an army whose Warlord has this Trait may make an additional Reaction in the Movement phase as long as Anacharis Scoria has not been removed as a casualty.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6716,6 +7145,43 @@ Additionally, each time Inar Satarael makes a successful Invulnable Save on a ro
       </selectionEntries>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Light Autocannon" hidden="false" id="8f35-0d01-7cc3-b558" publicationId="bde1-6db1-163b-3b76" page="114" collective="true">
+      <profiles>
+        <profile name="Light Autocannon" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="2bf8-2a50-8275-7aaf" publicationId="bde1-6db1-163b-3b76" page="114">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="2e78-ef5f-0355-37dc" publicationId="bde1-6db1-163b-3b76" page="122" collective="true">
+      <profiles>
+        <profile name="Power Blade Array" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="909d-e3f3-25be-a060" publicationId="bde1-6db1-163b-3b76" page="122">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Breaching (5+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="50f6-4bb0-0816-6d49" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
+          <modifiers>
+            <modifier type="set" value="Breaching (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

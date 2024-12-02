@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <modifiers>
@@ -3126,6 +3126,11 @@
           </conditionGroups>
         </modifier>
       </modifiers>
+      <categoryLinks>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" id="2483-bb89-a364-45eb" primary="false" name="HQ:"/>
+        <categoryLink targetId="36c3-e85e-97cc-c503" id="2ef7-0592-c90e-6466" primary="false" name="Unit:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="d4da-ec97-70f8-04eb" primary="false" name="Infantry Unit Type"/>
+      </categoryLinks>
     </entryLink>
     <entryLink import="false" name="Optae" hidden="false" id="6a69-8d61-9c0b-5a04" type="selectionEntry" targetId="5585-b5f3-4640-894b">
       <entryLinks>
@@ -4643,7 +4648,7 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e03-550c-4309-1154" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="0c03-36bc-20c4-f546" name="Combi-Bolter" hidden="false" collective="false" import="true" targetId="a498-c66f-9eb7-ca9a" type="selectionEntry">
+        <entryLink id="0c03-36bc-20c4-f546" name="Banestrike Combi-Bolter" hidden="false" collective="false" import="true" targetId="d3eb-73ae-7b59-c348" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d400-ff52-9cf2-3b1c" type="max"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f84f-3d2f-8693-a9bd" type="min"/>
@@ -4798,7 +4803,7 @@
       </modifiers>
       <rules>
         <rule id="7c0d-6e3e-9350-dc1c" name="Justaerin Retinue" hidden="true">
-          <description>A Justaerin Terminator Squad may be selected as a Retinue Squad in a Detachment that includes one model with both the Master of the Legion and the Legiones Astartes (Sons of Horus) special rules, instead of as an Elites choice, A unit selected a a Retinue Squad must have one model with both the Master of the Legion and Legiones Astartes (Sons of Horus) special rules from the same Detachment selected by the controlling player as the Justaerin Terminator Squad&apos;s Leader for the purposes of this special rule. A Justaerin Terminator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Justearin Terminator Squad selected as a Retinue Squad must be deployed with the model selected as its Leader as part of the unit and the Leader may not voluntarly leave the Retinue Squad during play. If that Leader has the Deep Strike special rule then all models in the Justaerin Terminator Squad selected as a Retinue Squad gain the Deep Strike special rule as well. One Justaerin in a Justaerin Terminator Squad selected as a Retinue may exchange a Banestrike combi-weapon for a Legion standard for +15 points.</description>
+          <description>A Justaerin Terminator Squad may be selected as a Retinue Squad in a Detachment that includes one model with both the Master of the Legion and the Legiones Astartes (Sons of Horus) special rules, instead of as an Elites choice, A unit selected a Retinue Squad must have one model with both the Master of the Legion and Legiones Astartes (Sons of Horus) special rules from the same Detachment selected by the controlling player as the Justaerin Terminator Squad&apos;s Leader for the purposes of this special rule. A Justaerin Terminator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Justaerin Terminator Squad selected as a Retinue Squad must be deployed with the model selected as its Leader as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play. If that Leader has the Deep Strike special rule then all models in the Justaerin Terminator Squad selected as a Retinue Squad gain the Deep Strike special rule as well. One Justaerin in a Justaerin Terminator Squad selected as a Retinue may exchange a Banestrike combi-weapon for a Legion standard for +15 points.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4901,7 +4906,11 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="76d1-3491-8cfa-c785" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry"/>
+                    <entryLink id="76d1-3491-8cfa-c785" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                      </modifiers>
+                    </entryLink>
                     <entryLink id="dbbd-7478-e600-97b8" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                     <entryLink id="e911-e67b-a091-b914" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                     <entryLink id="5287-b139-05ee-fefb" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
@@ -4989,7 +4998,11 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="ac79-e75c-c4be-e1b6" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry"/>
+                    <entryLink id="ac79-e75c-c4be-e1b6" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                      </modifiers>
+                    </entryLink>
                     <entryLink id="433b-a67a-ebd5-5075" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                     <entryLink id="17bc-dcc1-947b-d14f" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                     <entryLink id="b1c8-544c-60b2-1667" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
@@ -5126,7 +5139,11 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="b7a6-016d-899f-c0cf" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry"/>
+                    <entryLink id="b7a6-016d-899f-c0cf" name="Carsoran Power Axe" hidden="false" collective="false" import="true" targetId="fa70-f0d0-b06d-5413" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                      </modifiers>
+                    </entryLink>
                     <entryLink id="52af-ec0c-d7c4-57e2" name="Power Axe" hidden="false" collective="false" import="true" targetId="c066-2ace-f68c-e440" type="selectionEntry"/>
                     <entryLink id="658c-6646-ad88-5620" name="Power Maul" hidden="false" collective="false" import="true" targetId="0df4-c67e-cf64-82e0" type="selectionEntry"/>
                     <entryLink id="1bfb-39b3-6006-8fb6" name="Power Sword" hidden="false" collective="false" import="true" targetId="a3cd-aa97-a148-2309" type="selectionEntry"/>
@@ -5238,7 +5255,7 @@
         <categoryLink id="773d-17eb-9834-2e2a" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
         <categoryLink id="d4f8-7cfd-49ff-ca02" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="43e1-e69b-439b-ac0f"/>
-        <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="2ba0-4682-47b7-a1c2" name="HQ:"/>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" primary="false" id="2ba0-4682-47b7-a1c2" name="HQ:"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Tybalt Marr" hidden="false" id="da20-54b1-fdb-9659" page="192" publicationId="d882-d2a-5da1-92c4">
@@ -5314,7 +5331,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3484-b242-dce3-665-max" includeChildSelections="false"/>
               </constraints>
               <profiles>
-                <profile name="New Profile" hidden="false" id="f7a3-3bb2-d828-3dce" page="192" publicationId="d882-d2a-5da1-92c4" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+                <profile name="The Culling Blade" hidden="false" id="f7a3-3bb2-d828-3dce" page="192" publicationId="d882-d2a-5da1-92c4" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
                   <characteristics>
                     <characteristic name="Range" id="7df9-be76-14e8-722d" hidden="false" typeId="95ba-cda7-b831-6066">-</characteristic>
                     <characteristic name="Strength" id="1ec4-1062-ec82-c269" hidden="false" typeId="24d9-b8e1-a355-2458">User</characteristic>
@@ -6268,7 +6285,8 @@ Blood and Honour – When a Wound is allocated to Vheren Ashurhaddon by his cont
     <selectionEntry name="Horus Aximand" type="unit" id="7ed0-7d06-406c-abd9" page="190" publicationId="d882-d2a-5da1-92c4">
       <categoryLinks>
         <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="59d3-27f7-43fe-9d46"/>
-        <categoryLink targetId="4f85-eb33-30c9-8f51" primary="true" id="3e23-d3b6-4c17-8379" name="HQ:"/>
+        <categoryLink targetId="4f85-eb33-30c9-8f51" primary="false" id="3e23-d3b6-4c17-8379" name="HQ:"/>
+        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="63c1-1073-9ad0-d1fd" primary="false" name="Infantry Unit Type"/>
       </categoryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="170"/>
@@ -6276,8 +6294,9 @@ Blood and Honour – When a Wound is allocated to Vheren Ashurhaddon by his cont
       <selectionEntries>
         <selectionEntry type="model" name="Horus Aximand" id="1351-8bd4-4882-9719" page="190" publicationId="d882-d2a-5da1-92c4">
           <profiles>
-            <profile id="afb1-b8bf-4b62-92c1" name="Horus Aximand" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="d882-d2a-5da1-92c4" page="190">
+            <profile id="afb1-b8bf-4b62-92c1" name="Horus Aximand" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="d882-d2a-5da1-92c4" page="190" hidden="false">
               <characteristics>
+                <characteristic typeId="ddd7-6f5c-a939-b69e" name="Unit Type">Infantry (Character, Unique)</characteristic>
                 <characteristic typeId="893e-2d76-8f04-44e5" name="Move">7</characteristic>
                 <characteristic typeId="cc42-7ed5-7092-5c84" name="WS">6</characteristic>
                 <characteristic typeId="74ae-c840-0036-d244" name="BS">5</characteristic>
@@ -6288,7 +6307,6 @@ Blood and Honour – When a Wound is allocated to Vheren Ashurhaddon by his cont
                 <characteristic typeId="f111-2ce5-dd12-d6b0" name="A">4</characteristic>
                 <characteristic typeId="e8a6-1da9-d384-8727" name="Ld">9</characteristic>
                 <characteristic typeId="e593-6b3c-f169-04f0" name="Save">2+</characteristic>
-                <characteristic typeId="ddd7-6f5c-a939-b69e" name="Unit Type">Infantry (Character, Unique)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6375,7 +6393,6 @@ Invulnerable Saves granted by a Castigatus combat shield do not stack with other
             <modifier type="set" field="name" value="Legiones Astartes (Sons of Horus)"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Master of the Legion" hidden="false" type="rule" targetId="c772-87ea-d49c-c7ba" id="46e1-a18c-4134-a046"/>
         <infoLink name="Relentless" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d" id="c6d9-902f-4e8b-8d69"/>
         <infoLink name="Traitor" hidden="false" type="rule" targetId="eff2-8b0e-21da-2f0d" id="81da-5594-47c3-b093"/>
       </infoLinks>
@@ -6392,6 +6409,12 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
           </profiles>
         </entryLink>
         <entryLink import="true" name="Retinue" hidden="false" id="1a57-3c15-2c9a-48cb" collective="false" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Master of the Legion" hidden="false" id="38ef-bc15-9c9b-2ac2" collective="false" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4518-f547-df6a-b50e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d825-f2c2-d7f5-bfdd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <rules>
         <rule name="Haunted" id="eb36-7380-6bad-1660" hidden="false" publicationId="d882-d2a-5da1-92c4" page="191">
@@ -6587,4 +6610,34 @@ A Warlord with this Trait gains a bonus of +1 to its Leadership Characteristic w
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Rite of War" hidden="false" id="2494-402e-655d-d47f" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d26d-8354-69a6-534f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a0e1-3a18-2005-96a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="0dba-e98b-2990-d03a" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rites of War" hidden="false" id="274f-af11-55a3-720e" collective="false" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="0" field="797b-0bd6-8cbf-f25a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
