@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="51" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="52" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -4015,6 +4015,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="7d53-18e4-255-1dd6" targetId="3995-31e8-e6a2-562a"/>
+        <entryLink import="true" name="Ion Shield" hidden="false" id="9b3e-3e4a-33c1-3d1c" collective="false" targetId="dde9-961b-5765-21a2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="308e-4d13-1188-9ec7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7668-2fc8-17b4-0ad1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="385"/>
@@ -4293,6 +4299,12 @@ Invulnerable Saves granted by a mag-inverter shield do not stack with other Invu
           </constraints>
         </entryLink>
         <entryLink import="true" name="Dark Blessings" hidden="false" type="selectionEntryGroup" id="f195-fbaa-ebb9-8c71" targetId="3995-31e8-e6a2-562a"/>
+        <entryLink import="true" name="Ion Shield" hidden="false" id="43c1-d881-578c-4412" collective="false" targetId="dde9-961b-5765-21a2" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="156a-96a8-83ef-1ad9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1b9-ba73-cd33-be9c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="380"/>
