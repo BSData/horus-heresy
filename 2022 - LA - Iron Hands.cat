@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="44" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b73e-125f-db29-17f2" name="LA -  X: Iron Hands" revision="46" battleScribeVersion="2.03" authorName="Figjam Bohica" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="6107-168e-198e-2e94" name="X: Iron Hands" hidden="false" collective="false" import="false" targetId="bfc9-c99c-bf8a-3917" type="selectionEntry">
       <modifiers>
@@ -49,14 +49,9 @@
     <entryLink id="adaf-b561-c972-57ac" name="Shadrak Meduson" hidden="true" collective="false" import="false" targetId="44c8-4cd9-3121-5a52" type="selectionEntry">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0b6-712f-0b12-a308" type="greaterThan"/>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="force" childId="d0b6-712f-0b12-a308" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -64,6 +59,9 @@
         <categoryLink id="5628-344a-7f03-95bf" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="e8c0-d953-4c54-def4" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Retinue" hidden="false" id="c2f7-bcb4-705f-cb0a" collective="false" targetId="8a62-e4e2-d57f-5c33" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
     <entryLink id="e1ce-d9b7-2ea1-760b" name="Medusan Immortal Squad" hidden="false" collective="false" import="false" targetId="f9e4-0da2-5049-df81" type="selectionEntry">
       <modifiers>
@@ -3243,7 +3241,7 @@
               <selectionEntryGroups>
                 <selectionEntryGroup id="34d8-cde2-7007-4029" name="1) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="0dd6-9457-a610-e14f">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="626f-baf5-90bd-f169" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="626f-baf5-90bd-f169" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f336-4767-a9d7-5a2b" type="max"/>
                   </constraints>
                   <entryLinks>
@@ -3313,7 +3311,7 @@
                 <categoryLink targetId="9231-183c-b97b-63f9" id="2855-aa1f-4ba1-8a3e" name="Heavy Sub-type" primary="false"/>
               </categoryLinks>
             </selectionEntry>
-            <selectionEntry id="c51d-6b5f-3efe-8aef" name="Gorgon Terminator w/Heavy Weapon" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="c51d-6b5f-3efe-8aef" name="Gorgon Terminator w/Heavy Weapon (1 in 3)" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="increment" field="093c-1c9b-abc4-fd1d" value="1">
                   <repeats>
@@ -3327,7 +3325,7 @@
               <selectionEntryGroups>
                 <selectionEntryGroup id="229a-009c-aa7b-dba1" name="1) Melee Options" hidden="false" collective="false" import="true" defaultSelectionEntryId="c9b0-c9da-c945-c1e0">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7457-e1d0-fd6c-b0b4" type="max"/>
+                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7457-e1d0-fd6c-b0b4" type="min"/>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fc1-c7cd-572a-9569" type="max"/>
                   </constraints>
                   <entryLinks>
@@ -4315,178 +4313,6 @@
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="225"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="44c8-4cd9-3121-5a52" name="Shadrak Meduson" hidden="false" collective="false" import="true" type="unit">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6bfb-1f1f-67e0-0d4b" type="max"/>
-        <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7b9a-32a2-58e0-b6dc" type="max"/>
-      </constraints>
-      <categoryLinks>
-        <categoryLink id="b22b-21c0-8c4b-d804" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
-        <categoryLink id="87be-a40d-63fe-1eed" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="94ef-185a-f5bc-cc1c" name="Shadrak Meduson" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3187-c2a5-59ab-e77d" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="869b-c5d2-e9ca-fad0" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="aa84-8156-adf8-6d51" name="Shadrak Meduson" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="03df-cf4e-8145-84cf" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-            <infoLink name="Stubborn" id="6bd1-7a0d-d299-bf81" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
-            <infoLink name="Battle-Hardened (X)" id="413c-08f7-30c1-61d5" hidden="false" targetId="5c3b-ed0b-4ad0-d547" type="rule">
-              <modifiers>
-                <modifier type="set" value="Battle-hardened (1)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Loyalist" id="7035-8716-30cd-4059" hidden="false" type="rule" targetId="d1de-a45d-2b9b-c878"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="09cb-065d-9ee0-ac34" name="Albian power gladius" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8323-2174-4b9d-5ab7" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bd0d-8574-2858-535f" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="8396-f6d5-3317-df44" name="Albian power gladius" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" publicationId="d882-d2a-5da1-92c4" page="197">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Master-crafted, Breaching (5+)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="8c57-32cb-7956-b6fb" name="Breaching (X)" hidden="false" targetId="a760-f736-1bf3-fa3c" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Breaching (5+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="a96f-cef1-3a9c-6aa5" name="Master-crafted" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Storm&apos;s Wrath" hidden="false" id="eeaa-a15e-1c29-69f2">
-              <profiles>
-                <profile name="Storm&apos;s Wrath" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="9787-701a-bac5-059b" publicationId="d882-d2a-5da1-92c4" page="197">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;
-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Rapid Fire, Master-crafted, Rending (6+)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Master-crafted" id="2535-2706-c074-dbe4" hidden="false" targetId="6de0-55b0-bf21-48b9" type="rule"/>
-                <infoLink name="Rending (X)" id="bff6-4cf2-0c86-b246" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                  <modifiers>
-                    <modifier type="set" value="Rending (6+)" field="name"/>
-                  </modifiers>
-                </infoLink>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="38fd-4af5-a140-2189-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38fd-4af5-a140-2189-max" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="10db-a1a9-318c-4417" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1266-a91b-53ed-5bcb" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2322-26b3-54d3-fc5f" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="d75b-eb77-7186-6868" name="Frag Grenades" hidden="false" collective="false" import="true" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea6c-d5d7-a228-6e22" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fe1d-a670-0be4-d20b" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="1a34-fb33-5155-2d55" name="Iron Halo" hidden="false" collective="false" import="true" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25fa-02b8-c2ce-aee2" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="781f-f01c-2dc5-7cec" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="40d3-b640-81bf-11f0" name="Krak Grenades" hidden="false" collective="false" import="true" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d583-2a9e-ccaa-e17c" type="max"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aede-cbde-3573-6fac" type="min"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Servo-Arm" hidden="false" id="9f9a-19c1-e4b4-8b3a" type="selectionEntry" targetId="4168-fc85-8912-7188">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2090-6670-70fb-9961-min" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2090-6670-70fb-9961-max" includeChildSelections="false"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="d21b-f1ff-43a-257" primary="false" name="Independent Character"/>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="298f-b27b-491c-b7b6" name="Infantry Unit Type" primary="false"/>
-            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="5136-1641-4f99-ad6b" name="Character" primary="false"/>
-            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="6f88-0cfb-4d34-88c0" name="Unique Sub-type" primary="false"/>
-          </categoryLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink id="061b-8551-7b4b-31d3" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb22-361d-a505-a593" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="1c4a-b0ba-900c-cc16" name="Raise the Storm" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" page="196" publicationId="d882-d2a-5da1-92c4">
-              <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Once per battle, at the start of any turn where Shadrak Meduson’s controlling player is the Active player, this special rule may be activated. For the duration of the turn on which this special rule is activated, all models in the same Detachment as Shadrak Meduson with the Legiones Astartes (Iron Hands) or Legiones Astartes (Shattered Legions) special rule gain Furious Charge (1) and Hatred (Traitors) special rules.
-In addition, an army whose Warlord has this Trait may make an additional Reaction during the Movement phase as long as the Warlord has not beenremoved as a casualty.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Furious Charge (X)" hidden="false" type="rule" id="fa67-24f8-5013-1cf0" targetId="2821-9269-862f-0554">
-              <modifiers>
-                <modifier type="set" value="Furious Charge (1)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </entryLink>
-        <entryLink id="35ad-5d30-9ad4-43d6" name="Master of the Legion" hidden="false" collective="false" import="true" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="047c-939c-4487-2462" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7f30-df9f-ff46-9763" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="c2f7-bcb4-705f-cb0a" name="Retinue" hidden="false" collective="false" import="true" targetId="8a62-e4e2-d57f-5c33" type="selectionEntryGroup"/>
-      </entryLinks>
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="175"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="af91-5d08-88ee-80d1" name="Morlock Terminator Squad" hidden="false" collective="false" import="true" type="unit">

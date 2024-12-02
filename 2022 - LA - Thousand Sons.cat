@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="abac-8dd1-df65-e253" name="LA -  XV: Thousand Sons" revision="39" battleScribeVersion="2.03" authorName="Arkangelmark5" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="abac-8dd1-df65-e253" name="LA -  XV: Thousand Sons" revision="40" battleScribeVersion="2.03" authorName="Arkangelmark5" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <publications>
     <publication id="f743-7ff9-a2f3-01c7" name="Exemplary Battles of the Age of Darkness: The Axandria IV Incident" shortName="Axandria IV" publisher="Exemplary Battles of the Age of Darkness: The Axandria IV Incident" publicationDate="9/16/2022" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/3mVvZrTG9XOWeVxv.pdf"/>
   </publications>
@@ -3669,12 +3669,12 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="f277-d841-fee1-b3a8" name="Dedicated Transport:" hidden="false" collective="false" import="true">
           <modifiers>
-            <modifier type="set" field="hidden" value="true">
+            <modifier type="set" value="true" field="hidden">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
-                    <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1626-a09f-d9ed-dca1" type="greaterThan"/>
+                    <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="greaterThan" value="1" field="selections" scope="parent" childId="1626-a09f-d9ed-dca1" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -3685,6 +3685,18 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2425-2752-02bf-f9ea" type="max"/>
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Dreadclaw Drop Pod" hidden="false" id="62e7-ec42-6ac1-7fd8" collective="false" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1383-c97c-9522-c1e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="1977-49f2-7910-f177" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>

@@ -24,11 +24,12 @@
     <publication name="Exemplary Battles of The Age of Darkness - Liberation of Constanix II" hidden="false" id="bc5c-e6fb-985f-81be"/>
     <publication id="91df-ed64-4216-5bab" name="Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2" shortName="Main Rules Errata and FAQ V1.2" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/w5Pm3yiEFnjISb6h.pdf"/>
     <publication id="2660-aa44-b169-2b1f" name="Liber Astartes Errata and FAQ V1.2" shortName="LA - Errata and FAQ V1.2" publicationDate="Dec 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/O0XmE9KIYFCQHlsf.pdf"/>
-    <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions Astartes v1.2" shortName="LotAoD -LA" publicationDate="December 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/12/MMB9m4lXuQoZHb9r.pdf"/>
+    <publication id="d0df-7166-5cd3-89fd" name="Legacies of The Age of Darkness - Legions Astartes v1.3" shortName="LotAoD -LA" publicationDate="September 2024" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2022/09/BJlGWaAQ1pk4hy0P.pdf"/>
     <publication name="Legacies of The Age of Darkness Solar Auxilia 1.1" hidden="false" id="3fc0-bf46-1f1-eff9" shortName="Legacies Solar Aux"/>
     <publication name="Free Rules for the Solar Auxilia Aethon Heavy Sentinel" hidden="false" id="2d3f-82d2-9db5-ca6d" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/02/ZwQB9kBXZA3CyHN4.pdf" publicationDate="February 27th 2024" shortName="Aethon Heavy Sentinel Datasheet" publisher="Warhammer Community"/>
     <publication name="Campaigns in the Age of Darkness - The Battle for Beta-Garmon" hidden="false" id="d882-d2a-5da1-92c4" shortName="CotAoD - BBG" publicationDate="April 2024"/>
     <publication name="Exemplary Battles of the Age of Darkness - The Assault on Castrum Velx" id="2489-0c1d-8ed5-2515" hidden="false" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/06/zxc5pjdMmgEBrmJT.pdf" publicationDate="2024-06-11" publisher="Warhammer Community"/>
+    <publication name="Campaigns in the Age of Darkness - Martian Civil War" id="4934-46f7-208b-b4af" hidden="false" shortName="CotAoD - MCW" publicationDate="Sept 2024"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -246,7 +247,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
           </modifiers>
           <description>All models with both the Infantry Unit Type and the Legiones Astartes (Salamanders) in a Detachment using this Rite of War ignore all modifiers to their Leadership when making Pinning tests.</description>
         </rule>
-        <rule name="Infantry Unit Type" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
+        <rule name="Infantry" hidden="false" id="ed36-77cb-5da7-3298" publicationId="e77a-823a-da94-16b9" page="195">
           <alias>Infantry</alias>
           <description>An Infantry unit may only include or be joined by models of the Infantry or Primarch Unit Type, unless a special rule states otherwise.</description>
         </rule>
@@ -588,7 +589,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
     <categoryEntry id="6e0c-29ba-a445-8321" name="Psyker:" hidden="false"/>
     <categoryEntry id="9055-7410-8ffd-b8e7" name="Corrupted Sub-type" hidden="false">
       <rules>
-        <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" publicationId="e77a-823a-da94-16b9" page="307" hidden="false">
+        <rule id="e441-d934-fee5-990b" name="Corrupted Sub-type" publicationId="09c5-eeae-f398-b653" page="307" hidden="false">
           <description>• Models with the Corrupted Unit Sub-type gain the Fear (1) special rule.
 • Any Hits inflicted on a model with the Corrupted Unit sub-type by a weapon with the Force or Psychic Focus special rules gain the Instant Death special rule.
 • Any unit composed entirely of models with the Corrupted Unit Sub-type is immune to the effects of the Fear (X) special rule. When a unit composed entirely of models with the Corrupted Unit Sub-type fails a Morale check it does not Fall Back as per the standard rules, but instead suffers D3 automatic wounds with no saves or Damage Mitigation rolls of any kind allowed.
@@ -1285,7 +1286,7 @@ Brace - The Reacting unit must make a Morale check. If the Check is failed, the 
     </categoryEntry>
     <categoryEntry id="a443-dbf4-cb6c-4da1" name="Corrupted Engine Sub-type" hidden="false">
       <rules>
-        <rule id="6aed-6080-ba72-6007" name="Corrupted Engine Sub-type" publicationId="6bcf-2297-2bcd-51be" page="8" hidden="false">
+        <rule id="6aed-6080-ba72-6007" name="Corrupted Engine Sub-type" publicationId="4934-46f7-208b-b4af" page="126" hidden="false">
           <description>• All models with the Corrupted Engine Sub-type gain the Fear (1) special rule, or if it already has the Fear (X) special rule, it increases the value of X by 1 instead.
 • Any rule, effect or modifier that would affect a model with the Corrupted Unit Sub-type also affects a model with the Corrupted Engine Unit Sub-type (e.g., the Anathema Sub-type special rules or the Inexorable special rule).
 • Any unit composed entirely of models with the Corrupted Engine Unit Sub-type is immune to the effects of the Fear (X) special rule, automatically passes Regroup tests and cannot choose to fail a Morale check due to the Our Weapons Are Useless special rule. When a unit composed entirely of models with the Corrupted Engine Unit Sub-type fails a Morale check, it does not Fall Back as per the standard rules, but instead suffers D3 automatic Wounds with no saves or Damage Mitigation rolls of any kind allowed.
@@ -1450,6 +1451,22 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
         </rule>
       </rules>
     </categoryEntry>
+    <categoryEntry name="Ruinous Cybernetica" id="7b4a-8a9b-3ef3-01d0" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
+      <rules>
+        <rule name="Ruinous Cybernetica" id="5acc-f755-c152-07f7" hidden="false" publicationId="4934-46f7-208b-b4af" page="151">
+          <description>At the start of the controlling player&apos;s Shooting phase, that player can make a Leadership test for any units made up entirely of models with this special rule.
+
+If that test is passed, until the end of the turn: 
+
+All models in the unit are not subject to the Programmed Behaviour provision, as detailed in the Cybernetica Unit Sub-type.
+
+At the start of the Charge sub-phase, a Charge must be declared for this unit if there is an enemy unit within 2&quot;, and the closest enemy unit must always be selected as the target of this Charge if possible (if multiple eligible units are equally distant then the controlling player must select one of those eligible units to be the target of the Charge).
+
+If that test is failed, the unit suffers one Wound, allocated by the controlling player. No Saving Throws or Damage Mitigation rolls of any kind may be made against this Wound.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
+    <categoryEntry name="Shattered Legion Primary Detachment" id="c248-15b0-d8ed-8990" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -2218,13 +2235,40 @@ In addition, the Leadership Characteristic of a model with the Anathema Unit Sub
         <categoryLink id="3c2e-affa-35d2-bd12" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="4" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ced2-b32d-8ebf-c863" type="max"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b005-74c0-bea4-d9bb"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="2" field="ced2-b32d-8ebf-c863">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="1" field="b005-74c0-bea4-d9bb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="5993-fb7c-61e3-5ebe" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
           <constraints>
             <constraint field="selections" scope="force" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59b1-dec2-1330-6a5a" type="min"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="1123-aa10-36fb-11cb">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
+            </modifier>
+            <modifier type="set" value="0" field="59b1-dec2-1330-6a5a">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Pride is Our Armour</comment>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="9ceb-1a5e-5458-098b" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="false">
           <modifiers>
@@ -3825,11 +3869,35 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
             <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Pinning</characteristic>
           </characteristics>
         </profile>
+        <profile name="Grenade launcher - Psyk-out (Secondary)" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="a201-1803-2219-5e14">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3&quot;), Psy-shock</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
       </profiles>
       <infoLinks>
         <infoLink id="e6d4-7d81-b610-6358" name="Bolter (Primary)" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
         <infoLink id="ed62-62b5-171c-155a" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
         <infoLink id="c8b8-9218-cf90-6751" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+        <infoLink name="Psy-shock" id="8b3c-2dd0-d8e2-d597" hidden="false" type="rule" targetId="f372-a365-a036-cbc4">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -7438,7 +7506,7 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
-        <constraint field="selections" scope="roster" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dadb-f5a9-20c8-f415" type="max"/>
+        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dadb-f5a9-20c8-f415" type="max"/>
       </constraints>
       <profiles>
         <profile id="9e5f-b65f-2f13-f24e" name="Advanced Reaction: Scornful Fire" publicationId="bde1-6db1-163b-3b76" page="17" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
@@ -8258,6 +8326,16 @@ A. No.</description>
         <infoLink id="5a4d-9a53-9faf-fbda" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="4dc3-e17b-d90a-f373" name="Grenade launcher - Krak (Secondary)" targetId="71e6-ddb0-279a-7101" type="profile"/>
         <infoLink id="beb1-60fd-93a6-0eda" name="Grenade launcher - Frag (Secondary)" targetId="5bff-6214-348d-0536" type="profile"/>
+        <infoLink name="Psy-shock" id="6816-10f0-5b69-1080" hidden="false" type="rule" targetId="f372-a365-a036-cbc4">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="4d60-2ab7-244f-3414" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Grenade launcher - Psyk-out (Secondary)" id="956d-1071-3bf1-cfaf" hidden="false" type="profile" targetId="a201-1803-2219-5e14"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8989,7 +9067,7 @@ Hull Mounted (Rear) Heavy Bolter</characteristic>
         </profile>
         <profile id="c850-d8a1-99f1-5c9f" name="Advanced Reaction: Void Shield Envelope" publicationId="d0df-7166-5cd3-89fd" page="98" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
           <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Void Shield Envelope: Thie Advanced Reaction may be made during the Shooting phase whenever an enemy unit targets a friendly unit that has at least half of its models within 6&quot; of a friendly Void Shield Generator with a Shooting Attack, excluding friendly units that include any models with the Monstrous, Gargantuan, Knight, Titan, Super-heavy of Flyer Sub-types. Before the Active player has resolved any Hit rolls, the Reactive player mayu choose to expend one of their Reactions for that Phase to have the unit targeted by the Shooting Attack gain the Shrouded (4+) special rule until the end of the Shooting phase. Note that this Advanced Reaction does not improve any existing instances of the Shoudled (X) special rule that a unit may have. The unit that has gained the Shoulded (4+) special rule as a result of this Reaction does not count as having made a Reaction, and mayb itself make a Reaction provided it would otherwise be able to do so, and the Reactive player has sufficient Reaction allotment remaining in that Phase.</characteristic>
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">Void Shield Envelope: Thie Advanced Reaction may be made during the Shooting phase whenever an enemy unit targets a friendly unit that has at least half of its models within 6&quot; of a friendly Void Shield Generator with a Shooting Attack, excluding friendly units that include any models with the Monstrous, Gargantuan, Knight, Titan, Super-heavy of Flyer Sub-types. Before the Active player has resolved any Hit rolls, the Reactive player may choose to expend one of their Reactions for that Phase to have the unit targeted by the Shooting Attack gain the Shrouded (4+) special rule until the end of the Shooting phase. Note that this Advanced Reaction does not improve any existing instances of the Shrouded (X) special rule that a unit may have. The unit that has gained the Shrouded (4+) special rule as a result of this Reaction does not count as having made a Reaction, and may itself make a Reaction provided it would otherwise be able to do so, and the Reactive player has sufficient Reaction allotment remaining in that Phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -10858,6 +10936,79 @@ Be aware that we are actively trying to find a solution to this, but it is less 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Disciple of the Flame" hidden="false" id="d554-7321-7d26-feb9">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9fed-f417-4cd7-78b1"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7638-6fe6-8adf-a3e3"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Shattered Legions" hidden="false" id="9950-2cd2-fd88-9bb1">
+      <rules>
+        <rule name="Shattered Legions Detachments" id="79f1-6428-98a0-b454" hidden="false" publicationId="d882-d2a-5da1-92c4" page="134">
+          <description>A Shattered Legions Detachment is a Detachment with the Legiones Astartes Faction, in which every unit has the Legiones Astartes (Shattered Legions) special rule. A Shattered Legions Detachment must be the army’s Primary Detachment, and an army whose Primary Detachment is a Shattered Legions Detachment cannot include any other Detachments. A Shattered Legions Detachment may not include any models with the Primarch or Daemon Primarch Unit Types.
+When you add a Shattered Legions Detachment to your army, you must select either two or three different Legions from the following and note them on your army roster:
+• Dark Angels • Emperor’s Children • Iron Warriors • White Scars • Space Wolves • Imperial Fists • Night Lords • Blood Angels • Iron Hands • World Eaters • Ultramarines • Death Guard • Thousand Sons • Sons of Horus • Word Bearers • Salamanders • Raven Guard • Alpha Legion
+Every model in this Detachment must represent one of your selected Legions. A model ‘represents’ a Legion when it clearly displays the Legion iconography and heraldry of that Legion. If any model does not clearly display iconography or colours that obviously identify it as a member of a single specific Legion, then it represents no Legion and is not counted for determining the Majority or Minority of a unit (see page 135 ). The number of models in a unit that represent each Legion is at your discretion, but each unit on your army roster must contain models representing as many of your selected Legions as possible (e.g., a unit with two models must represent two different Legions and a unit of three or more models must contain at least one model representing each selected Legion).
+Models with the Independent Character special rule can select options (excluding Legiones Consularis upgrades) from the Armoury page of the Legion they are representing as if they had the equivalent version of the Legiones Astartes (X) special rule. For example, a model with the Independent Character special rule that is representing the Imperial Fists Legion could select options from the Armoury of the Imperial Fists pages of Liber Astartes as if they had the Legiones Astartes (Imperial Fists) special rule. Note that restrictions based on Allegiance will still apply.</description>
+        </rule>
+        <rule name="Legiones Astartes (Shattered Legions)" id="c1cf-0560-c663-4994" hidden="false" publicationId="d882-d2a-5da1-92c4" page="135">
+          <description>LEGIONES ASTARTES (SHATTERED LEGIONS)
+All models with this special rule are subject to the following provisions:
+• Legion Veteran Squads with this special rule may be selected as Troops choices and gain the Line Unit Sub-type.
+• Any unit with this special rule that selects a Dedicated Transport gains the Support Squad special rule.
+• No unit or upgrade may be selected that is restricted to a specific variant of the Legiones Astartes (X) special rule,
+excluding Legiones Astartes (Shattered Legions), unless another rule states otherwise.</description>
+        </rule>
+        <rule name="Majority and Minority" id="487a-bdca-ae8c-f9bc" hidden="false" page="135" publicationId="d882-d2a-5da1-92c4">
+          <description>For the purposes of determining which bonuses are available to units that include models with the Legiones Astartes (Shattered Legions) special rule, at the start of each Phase the controlling player will need to determine which of their selected Legions has the greatest number among the models in that unit:
+Majority – The Legion that is represented by the greatest number of models in the unit is said to be in the Majority If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Majority.
+Minority – The Legion that is represented by the fewest models in the unit is said to be in the Minority. If the number is tied between two or more Legions then the controlling player can select one of the tied Legions to be the Minority.
+When counting models in a unit, all models are counted no matter what unit type they have – excepting only Dedicated Transports which are not considered part of the unit. Models that include multiple crew or operators as part of a single model, such as Legion Javelins, are considered to represent the Legion whose icons or colours are displayed on the main component of that model. For example, a Legion Javelin that has two crew models, one in Raven Guard colours and one in Salamanders colours, represents the Legion whose colours are on the Javelin itself, ignoring the crew.
+The calculated Majority and Minority Legions apply until the end of that Phase, and so do not require recalculating during a Phase as units take casualties and models are removed.
+
+
+Designer’s Note:
+Calculating Majority and Minority
+While you should calculate the Majority and Minority Legions in each unit at the start of each Phase, in practicality, you might find it easier to only worry about calculating which traits apply when it becomes relevant in a given Phase, such as the first time you select that unit to make attacks, or the first time that unit is targeted by an enemy unit. You may also find that if, for example, you have not selected any Legions whose traits interact with the Movement phase, then it is not necessary to calculate the Majority and Minority Legions during that Phase. Similarly, in your opponent’s Shooting phase, you may find it easier to calculate the Majority and Minority Legions the first time a unit from your army is selected as the target of a Shooting Attack, or the first time it is eligible to make a Reaction. In your opponent’s Assault phase, you may find many of your units are not Locked in Combat or eligible to be Charged (because there are no enemy units within range) and so it will not be necessary to calculate the Majority and Minority Legions for those units during that Phase. This approach will save some time during the battle, and ensure you do not spend time calculating which rules apply to a unit that will not need to use them during that Phase. This process of judgement will become easier as you fight more battles with your Shattered Legions army and become more familiar with when and how the traits for your selected Legions become active or relevant within the various Phases of a battle.</description>
+        </rule>
+        <rule name="Mutable Tactics" id="0709-363e-95d8-afd6" hidden="false" publicationId="d882-d2a-5da1-92c4" page="137">
+          <description>In the following section you will find Mutable Tactics traits for each Legion that can be represented in your Shattered Legions force. Each set of Mutable Tactics traits has four rules, each of which may apply to a unit that contains models representing that Legion, based on whether that Legion is in the Majority in that unit, in the Minority in that unit, or represented by a model with the Independent Character special rule. Each set of Mutable Tactics traits also details a Flaw which may apply to the unit under certain circumstances.
+Hero Traits
+Models with both the Legiones Astartes (Shattered Legions) and Independent Character special rules gain the &apos;Hero&apos; trait for the Legion they are representing. If such a model joins a unit composed entirely of models with the Legiones Astartes (Shattered Legions) special rule, it is also bound by the ‘Major’ and ‘Minor’ traits that apply to that unit, as well as any ‘Flaw’ traits.
+Models with the Vehicle Unit Type can never benefit from Hero traits.
+Major, Minor and Flaw Traits
+Models with the Legiones Astartes (Shattered Legions) special rule, but not the Independent Character special rule, gain traits depending on both the Legion that they represent and the composition of the unit that they are part of:
+• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed entirely of models representing a single Legion gain the Minor benefits shown under the Mutable Tactics traits for that Legion and suffer from the Flaw listed for that Legion.
+• All models with the Legiones Astartes (Shattered Legions) special rule in a unit composed of models representing two or more different Legions gain the Major benefit from the Mutable Tactics traits for the Legion represented by the majority of models and the Minor benefit from the Mutable Tactics traits for the Legion represented by the minority of models in that unit. In addition, all models with the Legiones Astartes (Shattered Legions) special rule in that unit also suffer the Flaw from the Mutable Tactics traits of the Legion with the minority of models in the unit.
+• Units composed of a single model, or units that are split after deployment (such as a Legion Contemptor Dreadnought Talon) with the Legiones Astartes (Shattered Legions) special rule, gain the Minor Mutable Tactics trait of the Legion they represent and also the Flaw of the Legion they represent.
+Note that as detailed above, the Majority and Minority Legions in a unit are determined at the start of the Phase, and so the benefits gained will not change and Majority and Minority Legions do not need to be recalculated during a Phase as casualties are removed.
+Where the effects of a Mutable Tactics trait contradict another, Flaws take priority over all other traits and Major traits take priority over Minor traits. If a trait requires a Leadership test to be taken for a unit which does not have a Leadership Characteristic, treat that unit’s Leadership Characteristic as ‘10’.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Minor Combi-Weapon - Snare Gun" hidden="false" id="21cb-b8b9-67c6-576a" collective="false">
+      <infoLinks>
+        <infoLink name="Bolter (Primary)" id="09dc-f867-d511-261b" hidden="false" targetId="ace5-c6fe-e205-07d1" type="profile"/>
+        <infoLink name="Entangle (X)" id="3a16-0230-b1da-236d" hidden="false" type="rule" targetId="4a92-bb9b-613a-accb">
+          <modifiers>
+            <modifier type="set" value="Entangle (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <profiles>
+        <profile name="Snare gun (Secondary)*" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="729f-d69d-816d-ad61">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Entangle (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4a48-4935-246d-0c2e" name="Legion" hidden="false" collective="false" import="true">
@@ -11275,6 +11426,16 @@ Duty is Sacrifice – This Advanced Reaction may be made once per battle during 
               </characteristics>
             </profile>
           </profiles>
+          <modifiers>
+            <modifier type="set" value="1" field="25fa-fc1a-4610-7f61">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d554-7321-7d26-feb9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="25fa-fc1a-4610-7f61"/>
+          </constraints>
         </selectionEntry>
         <selectionEntry id="dc34-fe08-dd44-fb99" name="XIX: Raven Guard" hidden="false" collective="false" import="true" type="upgrade" sortIndex="19">
           <costs>
@@ -11400,7 +11561,6 @@ Twisted Desire – This Advanced Reaction may be made once per battle during the
             </rule>
             <rule name="Blackshields and Allegiance" hidden="false" id="c6b7-9ad0-3be1-2125">
               <description>When included in an army as part of a Primary Detachment, models with this special rule are counted as having both Loyalist and Traitor Allegiances by any special rule that targets Allegiance.
-
 
 However, when included as an Allied Detachment or other non-Primary detachment, models with this special rule are only considered to have the same Allegiance as their primary detachment.</description>
             </rule>
@@ -16005,6 +16165,13 @@ This Provenance cannot be taken in conjunction with the Survivors of the Dark Ag
           <infoLinks>
             <infoLink name="Panoply of Old (X)" hidden="false" id="3859-e4e0-921a-edec" type="rule" targetId="b4f-fbc9-98a2-feb8"/>
           </infoLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="e2b9-72b9-2507-4a17">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d554-7321-7d26-feb9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Panoply of Old (Y)" hidden="false" id="8bf2-740f-f301-a479">
           <modifiers>
@@ -16127,6 +16294,13 @@ However, at the end of any of the controlling player’s turns after Game Turn 1
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b6e3-dfc0-a201-1456" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="60f9-dab0-9fa2-db57" includeChildSelections="false"/>
           </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="b6e3-dfc0-a201-1456">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="d554-7321-7d26-feb9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="The Taint of the Xenos" hidden="false" id="cb03-25b3-326f-f8bd">
           <rules>
@@ -16274,7 +16448,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16308,7 +16482,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16342,7 +16516,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16376,7 +16550,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16410,7 +16584,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16444,7 +16618,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16478,7 +16652,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16512,7 +16686,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16546,7 +16720,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16580,7 +16754,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16614,7 +16788,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16648,7 +16822,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16682,7 +16856,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16716,7 +16890,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16750,7 +16924,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16784,7 +16958,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16818,7 +16992,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16852,7 +17026,7 @@ Special rules that are removed:
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -16866,78 +17040,99 @@ Special rules that are removed:
       <modifiers>
         <modifier type="set" value="false" field="hidden">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
               </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="9fde-326-a69f-2976">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
         <modifier type="set" value="1" field="f514-d7bb-1a6a-debb">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
               <conditions>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="df67-4304-4f8a-b4ea" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="5e6d-ec0d-3abf-53e3" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="192e-fc36-cfa9-779a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="bdb0-fc9e-ea8c-3f5f" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="918b-bc36-174-ef59" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="b65-8383-3384-efd2" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="2018-eec3-45d7-3ac8" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f14b-3ce3-cb29-5dc9" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="1734-54da-5084-9f4b" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="86eb-2b60-13f2-452e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="636c-12a8-d65c-7ebe" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="7de7-af3b-ba8c-188a" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f5e9-67d8-bc70-3862" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="9cfc-7ec9-83ec-2c4e" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="f76-8a3d-a961-2924" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="928c-8689-59e8-c1e1" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="afca-a57f-a32c-59fd" shared="true"/>
-                <condition type="equalTo" value="1" field="selections" scope="roster" childId="c929-73a2-9fc4-5472" shared="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="ae4a-f95c-968e-eb46" shared="true" includeChildSelections="true"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -16993,7 +17188,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <description>At the start of the battle, once both armies have set up all their models, including any units with the Infiltrator special rules, a single enemy unit may be chosen by a player that controls any models with this special rule - this unit is considered &apos;marked for death&apos;. When any models with this special rule controlled by that player are used to make an attack of any kind against the enemy unit their controlling player has &apos;marked for death&apos;, all failed To Wound rolls of &apos;1&apos; may be re-rolled.</description>
     </rule>
     <rule id="8eef-f84b-37cb-554b" name="Master of Automata" publicationId="a716-c1c4-7b26-8424" page="122" hidden="false">
-      <description>A model with this special rule may join a unit that includes one of more models with the Automata Unit Type. While part of a unit that includes one of more models with this Automata Unit Type, a model with this special rule may not make Reactions and gains the Fearless special rule. If the Automata models in the unit are subject to the Programmed Behaviours provision then those rules are not used as long as a model with this special rule is part of the unit.</description>
+      <description>A model with this special rule may join a unit that includes one or more models with the Automata Unit Type. While part of a unit that includes one of more models with this Automata Unit Type, a model with this special rule may not make Reactions and gains the Fearless special rule. If the Automata models in the unit are subject to the Programmed Behaviours provision then those rules are not used as long as a model with this special rule is part of the unit.</description>
     </rule>
     <rule id="44d6-09b2-3bd3-b2d6" name="Destroyer" publicationId="e77a-823a-da94-16b9" page="178" hidden="false">
       <description>A model making a Shooting Attack with a Destroyer weapon attacks the number of times indicated on the weapon&apos;s profile whether or not the bearer has moved. A model carrying a Destroyer weapon can attack with it in the Shooting phase and still Charge in the Assault phase. In addition, when you roll for armour penetration with Hits caused by a Destroyer weapon, roll three dice instead of one and discard the single lowest dice rolled, or any one of the lowest dice in the case of tied results. Use total of the remaining dice to determine the result.
@@ -17727,11 +17922,11 @@ The penalty to Leadership is ignored by any unit with the Fearless or Stubborn s
     <rule id="1cb6-d7f2-0c79-d208" name="Ungainly" publicationId="48c2-d023-0069-001a" page="41" hidden="false">
       <description>A model may only attack with this weapon on a turn in which it makes a successful Charge, but does not gain a bonus attack for Charging or from any special rules that would normally grant additional Attacks.</description>
     </rule>
-    <rule name="Impale" hidden="false" id="2dfc-b3cc-7ede-2827" publicationId="6bcf-2297-2bcd-51be" page="15">
+    <rule name="Impale" hidden="false" id="2dfc-b3cc-7ede-2827" publicationId="4934-46f7-208b-b4af" page="132">
       <description>A unit may re-roll Charge Rolls when attempting to Charge an enemy unit that has suffered one or more Hits from a weapon with the Impale special rule caused by one or more models in the unit for which the Charge was declared in the same player turn. This takes effect even if no Wounds are caused by the Hits.
 If one or more Wounds are caused by a weapon with this rule, the affected unit decreases its Initiative characteristic by 1 until the end of the subsequent Assault phase.</description>
     </rule>
-    <rule name="Malefic Aegis (X)" hidden="false" id="686c-178b-6e07-2ba3" publicationId="6bcf-2297-2bcd-51be" page="15">
+    <rule name="Malefic Aegis (X)" hidden="false" id="686c-178b-6e07-2ba3" publicationId="4934-46f7-208b-b4af" page="126">
       <description>Malefic Aegis confers an Invulnerable Save equal to the value of X. Invulnerable saves granted by Malefic Aegis do not stack with other Invulnerable Saves but can benefit from rules (such as cyber-familiar) that specifically increase existing saves.</description>
     </rule>
     <rule id="2a9e-be1f-d6c1-0ec4" name="Legiones Astartes (Alpha Legion)" publicationId="09c5-eeae-f398-b653" page="330" hidden="false">
@@ -17875,6 +18070,11 @@ All units selected in this manner count as part of the same Troops choice for th
 Once deployed onto the battlefield, all units selected in this manner are treated as separate and distinct units or choices for any Primary or Secondary Objectives or other special rules and operate as separate units in all ways. Units selected as part of the same Troops choice may have different options selected for them, and are not required to be identical.
 
 When assigning additional models to units using the Among the Ranks and Militia Medicae Support special rules, each unit selected using the Strength in Numbers special rule is considered separate and may have models assigned to it as per the normal rules as the controlling player chooses.</description>
+    </rule>
+    <rule id="4a92-bb9b-613a-accb" name="Entangle (X)" publicationId="15a4-fc68-502d-48a9" page="132" hidden="false">
+      <description>An attack that has this special rule does not roll to Wound using the normal rules, instead roll To Wound by comparing the Attack’s Strength to the target’s Strength Characteristic, using the Strength Characteristic in place of Toughness on the To Wound table. If any Attacks with this special rule inflict Wounds, do not make Armour Saves or Damage Mitigation rolls for those Wounds – instead for each Wound inflicted by an Attack with this special rule, reduce the Movement Characteristic of all models in the target unit by the number in brackets that is included as part of this special rule (to a minimum of 1) until the end of the controlling player’s next turn. The Wounds caused by Attacks with this special rule are then discarded and neither reduce the target model’s Wounds Characteristic nor cause any models to be removed as casualties (this does not affect Wounds inflicted by Attacks without this special rule that are part of the same Shooting Attack).
+
+Attacks with this special rule have no effect on models with the Vehicle or Primarch Unit Type, or on any model that starts the battle with 6 or more Wounds. Do not roll To Wound if Hits from an attack with this special rule are allocated to such a model and simply discard those Hits. Similarly, models of these Types are not affected by the modifiers to Movement inflicted by the Entangle special rule, regardless of whether other models in the same unit are affected.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

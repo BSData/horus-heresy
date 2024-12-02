@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="48" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="50" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -3327,7 +3327,7 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="485"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="unit" publicationId="4934-46f7-208b-b4af">
       <modifiers>
         <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
           <conditions>
@@ -3336,23 +3336,17 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
         </modifier>
       </modifiers>
       <rules>
-        <rule id="808d-da54-f3db-be02" name="Ghost of Saiph" hidden="false">
-          <description>The first time Judiciar Aster Crohne loses his last wound, or otherwise removed as a casualty, roll a D6. On a 4+, he is placed in Reserves with a single Wound remaining instead of being removed or destroyed. If he enters Reserves on or after turn 4, then he may enter play automatically at the start of the controlling player’s following turn.</description>
+        <rule id="808d-da54-f3db-be02" name="Ghost of Saiph" hidden="false" publicationId="4934-46f7-208b-b4af" page="159">
+          <description>The first time Aster Crohne loses his last wound, or is otherwise removed as a casualty, roll a D6. On a 4+ he is placed in Reserves with a single Wound remaining instead of being removed or destroyed. If he enters Reserves on or after Game Turn 4, then he may enter play automatically at the start of the controlling player&apos;s following turn.</description>
         </rule>
-        <rule id="46e0-ce72-f798-0bb0" name="Virtue of Judgement" hidden="false">
-          <description>At the start of the battle, once both players have deployed their armies, including any units with the Infiltrator special rule, Judiciar Aster Crohne’s controlling player may select D3 enemy units – these units are considered ‘Marked for Judgement’. Judiciar Aster Crohne, Blood Angels Angel’s Tears, Legion Destroyers or Legion Mortalis Destroyers with the Legiones Astartes (Blood Angels) special rule in the Detachment that Judiciar Aster Crohne is part of, gain the Shred special rule when making attacks with a weapon with the Flame type, against units that are Marked for Judgement.</description>
+        <rule name="Captain of the Inductii" id="e01a-f779-01d7-ff56" hidden="false" publicationId="4934-46f7-208b-b4af" page="159">
+          <description>This model can join units with the Inductii Unit Sub-type, as long as that unit has the Legiones Astartes (Blood Angels) special rule. This overrides the normal restrictions on models joining units with the Inductii Unit Sub-type.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="fc76-e97f-b4d4-e19e" name="Legiones Astartes (Blood Angels)" hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
-        <infoLink id="8db9-e266-141f-833a" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
-        <infoLink id="1299-41e2-f4e1-2e10" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
-          <modifiers>
-            <modifier type="append" field="name" value="1"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="b5fb-e24a-7e45-3cb7" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
-        <infoLink id="c3f1-c79c-87d2-f4eb" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
+        <infoLink name="Relentless" id="ee5c-b193-84ec-9bb0" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9443-2cc4-be17-c3d0" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3402,7 +3396,7 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
           </constraints>
           <profiles>
-            <profile id="bb3d-a8c6-61c8-66b0" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="bb3d-a8c6-61c8-66b0" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="4934-46f7-208b-b4af" page="158">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -3423,8 +3417,8 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
       <entryLinks>
         <entryLink id="abc8-20a4-abd4-4057" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc7e-59ff-c89c-fe49" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f794-c955-4097-9b01" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc7e-59ff-c89c-fe49" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f794-c955-4097-9b01" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="c5a6-cb53-1fa9-b05b" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
@@ -3451,21 +3445,26 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94a9-a81f-6a78-b9eb" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="7289-60d8-0546-cfad" name="Rad Grenades" hidden="false" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2472-3864-16ad-28c0" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f66-f159-e371-40c0" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="3e3a-4ef3-210b-f38e" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-        <entryLink id="2bf0-4ea7-a358-b83c" name="Warlord Traits" hidden="true" collective="false" import="true" targetId="4f09-6be3-276d-2756" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="8dba-83cd-4922-bc63" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <entryLink id="3e3a-4ef3-210b-f38e" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Reforged 94th" hidden="false" id="659d-70a4-e78f-4079">
+              <profiles>
+                <profile name="The Reforged 94th" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="0aae-cce1-30eb-7b3c" publicationId="4934-46f7-208b-b4af" page="158">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Aster Crohne automatically has the The Reforged 94th Warlord Trait and may not select any other.
+While a Warlord with this Trait is within 6&quot; of one or more models with both the Inductii Unit Sub-type and the Legiones Astartes (Blood Angels) special rule, all models in the unit those models are part of gain the following additional effects:
+    • All models in an effected unit may make Sweeping Advances. 
+    • When an effected unit makes a successful Charge in the Assault Phase, all models in that unit gain +1 Attack for the remainder of that Assault Phase in addition to any other bonuses, even if that Charge is considered a Disordered Charge. 
+    In addition, an army whose Warlord has this Trait may make an additional Reaction during the Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed67-6608-84af-51c4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b9f-1ebe-4ad5-5a92"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4106,9 +4105,6 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
           </modifiers>
           <entryLinks>
             <entryLink id="fb51-fe64-1586-29b3" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true"/>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d086-b8ed-c43a-54a6" type="max"/>
               </constraints>
