@@ -10,9 +10,6 @@ from selenium.webdriver.common.by import By
 import selenium.webdriver.support.ui as ui
 import selenium.webdriver.support.expected_conditions as EC
 
-from selenium.webdriver.chrome.service import Service as ChromeService
-from webdriver_manager.chrome import ChromeDriverManager
-
 
 class GameTests(unittest.TestCase):
     debug = False
@@ -23,7 +20,6 @@ class GameTests(unittest.TestCase):
             options.add_argument('--headless')
 
         driver = webdriver.Chrome(
-            service=ChromeService(ChromeDriverManager().install()),
             options=options)
         driver.delete_all_cookies()
         self.wait = ui.WebDriverWait(driver, 30)  # timeout after 30 seconds
@@ -58,8 +54,8 @@ class GameTests(unittest.TestCase):
 
         # Load the 1st system.
         import_buttons = self.wait.until(lambda drv:
-                                         drv.find_elements(By.CSS_SELECTOR,
-                                                           "#mainContent > fieldset > div > div > div:nth-child(1)"))
+                                         drv.find_elements(By.XPATH,
+                                                           "//*[@id='mainContent']/div[1]/div[@class='item']"))
         if len(import_buttons) > 0:
             print("Loading the first game system")
             import_buttons[0].click()
@@ -84,7 +80,7 @@ class GameTests(unittest.TestCase):
         # Wait until the list has loaded
         print("Waiting for the list to load...")
         self.wait.until(lambda drv:
-                        drv.find_element(By.CLASS_NAME, 'titreRoster'))
+                        drv.find_element(By.CLASS_NAME, 'rosterSection'))
 
     def tearDown(self):
         if self.debug:
@@ -124,10 +120,10 @@ class GameTests(unittest.TestCase):
                         "There is a .ros file in the tests directory, which will break appspot."
                         " Rename the file to .test")
 
-    def test_LA_5_errors(self):
+    def test_crusade_6_errors(self):
         self.load_list('Empty Validation Test')
         errors = self.get_error_list()
-        self.assertEqual(5, len(errors), "There should be 5 errors in an empty space marine list")
+        self.assertEqual(6, len(errors), "There should be 6 errors in an empty crusade force org marine list")
 
     def test_dt_does_not_affect_squad_cost(self):
         self.load_list('Dedicated Transport Squad Costs')

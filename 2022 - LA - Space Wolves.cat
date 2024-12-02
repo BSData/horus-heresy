@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ca15-13de-89cb-bbb2" name="LA -   VI: Space Wolves" revision="36" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ca15-13de-89cb-bbb2" name="LA -   VI: Space Wolves" revision="42" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="ff53-69d9-ec0b-9caa" name="VI: Space Wolves" hidden="false" collective="false" import="false" targetId="4916-965e-8339-44f6" type="selectionEntry">
       <modifiers>
@@ -479,6 +479,25 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Retinue (Caster/Speaker)" hidden="false" id="0890-7aff-c09e-70c7" collective="false" targetId="e6b4-bd3b-1d71-963c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>node_id_8287-16ff-46ba-9838</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="e9ab-2cc5-4507-eded" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                      <comment>node_id_81c1-fca9-44dc-ba4c</comment>
+                    </condition>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="b625-1cef-3057-156c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                      <comment>node_id_81c1-fca9-44dc-ba4c</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="ec0e-c9eb-67cb-f9d8" name="Centurion, Tartaros" hidden="false" collective="false" import="false" targetId="f806-8a4e-d0d6-beaa" type="selectionEntry">
@@ -508,6 +527,25 @@
                   <comment>node_id_cbdb-2500-4e13-876a</comment>
                 </condition>
               </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Retinue (Caster/Speaker)" hidden="false" id="1ede-0450-03f9-64e2" collective="false" targetId="e6b4-bd3b-1d71-963c" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <comment>node_id_8287-16ff-46ba-9838</comment>
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="e9ab-2cc5-4507-eded" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                      <comment>node_id_81c1-fca9-44dc-ba4c</comment>
+                    </condition>
+                    <condition type="equalTo" value="0" field="selections" scope="parent" childId="b625-1cef-3057-156c" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+                      <comment>node_id_81c1-fca9-44dc-ba4c</comment>
+                    </condition>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -3008,7 +3046,7 @@
     <selectionEntry id="c028-dc90-e4b6-8b43" name="Leman Russ" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="00ed-3f49-ad36-075e" name="Howl of the Death Wolf" hidden="false">
-          <description>Once per battle, Leman Russ&apos; controlling plaer may declare the use of this special rule at the start of their turn. For the duration of that player turn only, all friendly models with the Legiones Astartes (Space Wolves) special rule gain a bonus of +1 to their Movement Characteristic and any enemy units that include one or more models with the Legiones Astartes (Space Wolves) special rule must take an an immediate Pinning test.</description>
+          <description>Once per battle, Leman Russ&apos; controlling player may declare the use of this special rule at the start of their turn. For the duration of that player turn only, all friendly models with the Legiones Astartes (Space Wolves) special rule gain a bonus of +1 to their Movement Characteristic and any enemy units that include one or more models with the Legiones Astartes (Space Wolves) special rule must take an immediate Pinning test.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -3661,7 +3699,7 @@
     <selectionEntry id="9359-61a5-fcdb-c28e" name="Varagyr Wolf Guard Terminator Squad" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="26bf-0536-40d0-ba84" name="Lordsbane" hidden="false">
-          <description>Models with this special rule may issue and accept Challenges as if they had the Character Sub-type in combat, and in addittion, when fighting in a Challenge, if the enemy challenger is removed as a casualty then then they may add an additional +1 to the number of successful Wounds cause for the purposes of resolving which side has won a combat.</description>
+          <description>Models with this special rule may issue and accept Challenges as if they had the Character Sub-type in combat, and in addition, when fighting in a Challenge, if the enemy challenger is removed as a casualty then then they may add an additional +1 to the number of successful Wounds cause for the purposes of resolving which side has won a combat.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -3954,7 +3992,7 @@
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="eab7-ca3e-c00f-3420" name="2nd Melee/Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="96a3-dc2d-a073-c43a">
+            <selectionEntryGroup id="eab7-ca3e-c00f-3420" name="2nd Melee/Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d17-a2c8-996f-703e">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="411f-b5e3-d9f4-8aa0" type="max"/>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e5-3f59-b021-27aa" type="min"/>
@@ -4184,6 +4222,7 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Legiones Astartes (Space Wolves)" id="eb36-1812-7400-a41c" hidden="false" targetId="f806-8d12-07ab-fdaf" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="bbe7-7ff2-451e-b829" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -4409,6 +4448,9 @@
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
           </costs>
+          <entryLinks>
+            <entryLink import="true" name="1) Shield or Bolter" hidden="false" id="ec2e-c846-c6dc-b3e5" type="selectionEntryGroup" targetId="5ae3-f552-811e-6462"/>
+          </entryLinks>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -4832,7 +4874,7 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c1c-dbdd-515c-5474" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="d95d-82be-5371-4f68" name="Combat Shield" hidden="false" collective="false" import="true" targetId="472a-8297-2c71-3a9c" type="selectionEntry"/>
+                    <entryLink id="d95d-82be-5371-4f68" name="Combat Shield" hidden="false" collective="false" import="true" targetId="472a-8297-2c71-3a9c" type="selectionEntry" defaultAmount="1"/>
                     <entryLink id="9e40-5252-e440-ba1f" name="Bolter" hidden="false" collective="false" import="true" targetId="1ade-0c02-5612-252b" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -5233,6 +5275,7 @@
             </modifier>
           </modifiers>
         </infoLink>
+        <infoLink name="Legiones Astartes (Space Wolves)" id="cf12-8eaf-ce58-11c0" hidden="false" targetId="f806-8d12-07ab-fdaf" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b526-a925-98fa-3c1b" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -7077,4 +7120,34 @@
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Rite of War" hidden="false" id="2494-402e-655d-d47f" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4e5e-c9c9-62e1-443f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fff2-8300-e7b9-86db" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="d1cd-ac56-f460-58c4" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rites of War" hidden="false" id="274f-af11-55a3-720e" collective="false" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="0" field="797b-0bd6-8cbf-f25a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="45" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="50" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -3059,10 +3059,14 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="a25-d93d-e663-37bf" type="selectionEntryGroup" targetId="4f09-6be3-276d-2756"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="true" name="Sanguinary Guard Squad" hidden="false" id="f77b-33c7-0dfb-6584" type="selectionEntry" targetId="a333-6047-45c7-8556">
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="62af-0ba7-ecff-c4b6" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2c54-82c1-c1e4-3aee" name="Sanguinius" hidden="false" collective="false" import="true" type="unit">
-      <comment>(WEAPONS NEED PROFILES)</comment>
       <rules>
         <rule id="384a-287a-50ae-ba39" name="Angelic Presence" hidden="false">
           <description>Any friendly units that are locked in combat and have at least one model within 6&quot; of Sanguinius, as well as Sanguinius and any unit he has joined, may add +1 to the total number of successful Wounds caused for the purposes of resolving which side has won a combat (this does not stack with any other rules that increase the
@@ -3323,7 +3327,7 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="485"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8dba-83cd-4922-bc63" name="Judicar Aster Crohne" hidden="false" collective="false" import="true" type="unit" publicationId="4934-46f7-208b-b4af">
       <modifiers>
         <modifier type="remove" field="category" value="f823-8c1d-6a87-26a1">
           <conditions>
@@ -3332,23 +3336,17 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
         </modifier>
       </modifiers>
       <rules>
-        <rule id="808d-da54-f3db-be02" name="Ghost of Saiph" hidden="false">
-          <description>The first time Judiciar Aster Crohne loses his last wound, or otherwise removed as a casualty, roll a D6. On a 4+, he is placed in Reserves with a single Wound remaining instead of being removed or destroyed. If he enters Reserves on or after turn 4, then he may enter play automatically at the start of the controlling player’s following turn.</description>
+        <rule id="808d-da54-f3db-be02" name="Ghost of Saiph" hidden="false" publicationId="4934-46f7-208b-b4af" page="159">
+          <description>The first time Aster Crohne loses his last wound, or is otherwise removed as a casualty, roll a D6. On a 4+ he is placed in Reserves with a single Wound remaining instead of being removed or destroyed. If he enters Reserves on or after Game Turn 4, then he may enter play automatically at the start of the controlling player&apos;s following turn.</description>
         </rule>
-        <rule id="46e0-ce72-f798-0bb0" name="Virtue of Judgement" hidden="false">
-          <description>At the start of the battle, once both players have deployed their armies, including any units with the Infiltrator special rule, Judiciar Aster Crohne’s controlling player may select D3 enemy units – these units are considered ‘Marked for Judgement’. Judiciar Aster Crohne, Blood Angels Angel’s Tears, Legion Destroyers or Legion Mortalis Destroyers with the Legiones Astartes (Blood Angels) special rule in the Detachment that Judiciar Aster Crohne is part of, gain the Shred special rule when making attacks with a weapon with the Flame type, against units that are Marked for Judgement.</description>
+        <rule name="Captain of the Inductii" id="e01a-f779-01d7-ff56" hidden="false" publicationId="4934-46f7-208b-b4af" page="159">
+          <description>This model can join units with the Inductii Unit Sub-type, as long as that unit has the Legiones Astartes (Blood Angels) special rule. This overrides the normal restrictions on models joining units with the Inductii Unit Sub-type.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="fc76-e97f-b4d4-e19e" name="Legiones Astartes (Blood Angels)" hidden="false" targetId="b0d1-ccab-8708-500f" type="rule"/>
-        <infoLink id="8db9-e266-141f-833a" name="Scout" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule"/>
-        <infoLink id="1299-41e2-f4e1-2e10" name="Counter-Attack (X)" hidden="false" targetId="fd6d-2a76-10e0-936a" type="rule">
-          <modifiers>
-            <modifier type="append" field="name" value="1"/>
-          </modifiers>
-        </infoLink>
         <infoLink id="b5fb-e24a-7e45-3cb7" name="Loyalist" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
-        <infoLink id="c3f1-c79c-87d2-f4eb" name="Bitter Duty" hidden="false" targetId="d1b8-31da-c53c-4fe2" type="rule"/>
+        <infoLink name="Relentless" id="ee5c-b193-84ec-9bb0" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9443-2cc4-be17-c3d0" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -3398,7 +3396,7 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6530-823d-3029-45be"/>
           </constraints>
           <profiles>
-            <profile id="bb3d-a8c6-61c8-66b0" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+            <profile id="bb3d-a8c6-61c8-66b0" name="Judicar Aster Crohne" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" publicationId="4934-46f7-208b-b4af" page="158">
               <characteristics>
                 <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
                 <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
@@ -3419,8 +3417,8 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
       <entryLinks>
         <entryLink id="abc8-20a4-abd4-4057" name="Hand Flamer" hidden="false" collective="false" import="true" targetId="e337-adf4-a11f-0280" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc7e-59ff-c89c-fe49" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f794-c955-4097-9b01" type="max"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc7e-59ff-c89c-fe49" type="min"/>
+            <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f794-c955-4097-9b01" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="c5a6-cb53-1fa9-b05b" name="Artificer Armour" hidden="false" collective="false" import="true" targetId="583e-62cb-53f1-f952" type="selectionEntry">
@@ -3447,21 +3445,26 @@ Sanguinius may still Run on a turn when his wings have been activated. When maki
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94a9-a81f-6a78-b9eb" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="7289-60d8-0546-cfad" name="Rad Grenades" hidden="false" collective="false" import="true" targetId="1b0b-3dfc-9521-b27e" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2472-3864-16ad-28c0" type="min"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f66-f159-e371-40c0" type="max"/>
-          </constraints>
-        </entryLink>
-        <entryLink id="3e3a-4ef3-210b-f38e" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry"/>
-        <entryLink id="2bf0-4ea7-a358-b83c" name="Warlord Traits" hidden="true" collective="false" import="true" targetId="4f09-6be3-276d-2756" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="8dba-83cd-4922-bc63" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0176-56a3-d590-b103" type="greaterThan"/>
-              </conditions>
-            </modifier>
-          </modifiers>
+        <entryLink id="3e3a-4ef3-210b-f38e" name="Warlord" hidden="false" collective="false" import="true" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Reforged 94th" hidden="false" id="659d-70a4-e78f-4079">
+              <profiles>
+                <profile name="The Reforged 94th" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="0aae-cce1-30eb-7b3c" publicationId="4934-46f7-208b-b4af" page="158">
+                  <characteristics>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Aster Crohne automatically has the The Reforged 94th Warlord Trait and may not select any other.
+While a Warlord with this Trait is within 6&quot; of one or more models with both the Inductii Unit Sub-type and the Legiones Astartes (Blood Angels) special rule, all models in the unit those models are part of gain the following additional effects:
+    • All models in an effected unit may make Sweeping Advances. 
+    • When an effected unit makes a successful Charge in the Assault Phase, all models in that unit gain +1 Attack for the remainder of that Assault Phase in addition to any other bonuses, even if that Charge is considered a Disordered Charge. 
+    In addition, an army whose Warlord has this Trait may make an additional Reaction during the Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ed67-6608-84af-51c4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b9f-1ebe-4ad5-5a92"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
         </entryLink>
       </entryLinks>
       <costs>
@@ -4102,9 +4105,6 @@ Rite of War must use the Deep Strike option and must be assigned to a Deep Strik
           </modifiers>
           <entryLinks>
             <entryLink id="fb51-fe64-1586-29b3" name="Dreadclaw Drop Pod" hidden="false" collective="false" import="true" targetId="bbe8-818d-3068-d79c" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true"/>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d086-b8ed-c43a-54a6" type="max"/>
               </constraints>
@@ -5875,6 +5875,229 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
       </costs>
     </selectionEntry>
+    <selectionEntry name="Sanguinary Guard Squad" type="unit" id="a333-6047-45c7-8556" page="7" publicationId="2489-0c1d-8ed5-2515">
+      <categoryLinks>
+        <categoryLink targetId="36c3-e85e-97cc-c503" name="Unit:" primary="false" id="4d37-99da-481e-bab8"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" name="Sanguinary Guard" id="ab61-b189-47d7-b669" page="7" publicationId="2489-0c1d-8ed5-2515">
+          <profiles>
+            <profile id="2340-8174-4880-a229" name="Sanguinary Guard" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false">
+              <characteristics>
+                <characteristic typeId="ddd7-6f5c-a939-b69e" name="Unit Type">Infantry</characteristic>
+                <characteristic typeId="893e-2d76-8f04-44e5" name="Move">7</characteristic>
+                <characteristic typeId="cc42-7ed5-7092-5c84" name="WS">5</characteristic>
+                <characteristic typeId="74ae-c840-0036-d244" name="BS">4</characteristic>
+                <characteristic typeId="e478-41d4-a092-48a8" name="S">4</characteristic>
+                <characteristic typeId="c32b-5fdd-3fbe-9b1f" name="T">4</characteristic>
+                <characteristic typeId="57ee-1126-32a9-5672" name="W">2</characteristic>
+                <characteristic typeId="62d3-22d7-2d49-52dc" name="I">4</characteristic>
+                <characteristic typeId="f111-2ce5-dd12-d6b0" name="A">2</characteristic>
+                <characteristic typeId="e8a6-1da9-d384-8727" name="Ld">9</characteristic>
+                <characteristic typeId="e593-6b3c-f169-04f0" name="Save">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="873b-bb21-4af8-9ffb"/>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="fcec-dc60-4cdb-9ac5"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Artificer Armour" hidden="false" type="selectionEntry" targetId="583e-62cb-53f1-f952" id="182a-d69d-49e3-b791">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b13-be29-4a28-ba14"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d6f-2faa-4353-80aa"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Frag Grenades" hidden="false" type="selectionEntry" targetId="cf9c-327b-3449-00d7" id="49dd-e94a-4782-b6b4">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80eb-8ed1-402b-bba6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5712-7076-4ee5-9398"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Krak Grenades" hidden="false" type="selectionEntry" targetId="99df-2421-acf7-a5ad" id="823b-be4c-4815-9574">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c54-6871-44be-a730"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b06a-fde6-4327-9213"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Warhawk Jump Pack" hidden="false" id="7476-1808-7f06-bab7" type="selectionEntry" targetId="a298-8584-70ed-18ce">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07aa-4363-0b04-bfb6-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07aa-4363-0b04-bfb6-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Any Sanguinary Guard in the unit may exchange his bolt pistol for one of the following:" id="3220-857b-42b2-a860">
+              <entryLinks>
+                <entryLink name="Hand Flamer" hidden="false" type="selectionEntry" targetId="e337-adf4-a11f-0280" id="77f1-df01-4a9a-94a9">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a5e-84d2-4285-b650"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Volkite Serpenta" hidden="false" type="selectionEntry" targetId="d535-1da8-290d-69a6" id="41b4-2562-45b1-8f13">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c05-768c-453a-a0e3"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Plasma Pistol" hidden="false" type="selectionEntry" targetId="717f-cf0a-1593-4bd8" id="1054-8c39-4b28-8c05">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7396-8c6f-4615-9221"/>
+                  </constraints>
+                </entryLink>
+                <entryLink name="Inferno Pistol" hidden="false" type="selectionEntry" targetId="dcd1-8b2a-9d97-40ef" id="698e-203d-46a0-8835">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7121-71f4-4bc3-877a"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Bolt Pistol" hidden="false" id="9c1b-5988-48e7-a9f5" type="selectionEntry" targetId="e5ae-6872-37aa-8600"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9390-4418-491d-b8dc"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon" id="70c2-641c-bb92-e1f1" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Perdition Weapon" hidden="false" id="2a9e-09c3-4ab3-a27a" type="selectionEntry" targetId="d93a-033b-233b-453a" defaultAmount="1">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72f2-a6ee-88e1-4a83" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="For every five models in the unit, one model may exchange its Perdition weapon for:" id="81b8-b2b7-47b6-8cf3" hidden="false">
+                  <entryLinks>
+                    <entryLink import="true" name="Paragon Blade" hidden="false" id="92d0-6022-4fee-b89d" type="selectionEntry" targetId="2ab9-0e45-405e-056b">
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                      </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3359-73bb-428a-ba5e"/>
+                        <constraint type="max" value="1" field="selections" scope="a333-6047-45c7-8556" shared="true" id="6626-c836-40b3-b625" includeChildSelections="true"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="set" value="2" field="6626-c836-40b3-b625">
+                          <conditions>
+                            <condition type="equalTo" value="10" field="selections" scope="a333-6047-45c7-8556" childId="ab61-b189-47d7-b669" shared="true" includeChildSelections="false"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="268a-0704-a613-0087-min" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="268a-0704-a613-0087-max" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Power Weapon and Legion Standard" hidden="false" id="ab40-41dd-0f46-e43f">
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="a333-6047-45c7-8556" shared="true" id="8361-28e0-7397-52a2" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="8361-28e0-7397-52a2">
+                      <conditions>
+                        <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="6307-ed53-0ac4-0212" shared="true" includeChildSelections="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Standard" hidden="false" id="55d4-e512-8d86-f07f" type="selectionEntry" targetId="7e13-cc1f-6bd7-7ac6">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6265-5bed-f769-cffb-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6265-5bed-f769-cffb-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Power Weapon" hidden="false" id="3ed4-c4c2-1b49-36df" type="selectionEntry" targetId="8d9c-9f80-c0fd-adcf">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b988-0353-98e6-b625-min" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b988-0353-98e6-b625-max" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="1881-81cb-4069-9dfd" name="Infantry Unit Type" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="All models in the Sanguinary Guard Squad may take:" id="6ebf-669a-4d01-976a" hidden="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62c7-187f-467b-8d6b"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Meltabombs" hidden="false" id="3a18-776b-bb07-eba9" type="selectionEntry" targetId="b9dd-3b21-f3f8-78e3">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Legiones Astartes (X)" hidden="false" type="rule" targetId="ffcb-13b4-9b4c-84da" id="0011-a626-4f31-b3c8">
+          <modifiers>
+            <modifier type="set" field="name" value="Legiones Astartes (Blood Angels)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Chosen Warriors" hidden="false" type="rule" targetId="13d1-9270-6539-08ed" id="c739-cd86-4c00-94ea"/>
+        <infoLink name="Support Squad" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae" id="3ef1-7bfb-4357-81dc"/>
+        <infoLink name="Loyalist" hidden="false" type="rule" targetId="d1de-a45d-2b9b-c878" id="716c-c016-4e71-99d8"/>
+      </infoLinks>
+      <rules>
+        <rule name="Burning Ones" id="ed35-569c-b3cf-7c97" hidden="false" publicationId="2489-0c1d-8ed5-2515" page="9">
+          <description>If selected as part of a Detachment in an army that includes Sanguinius, all Sanguinary Guard gain +1 Attack while Sanguinius has 4 Wounds or less. If Sanguinius is removed as a casualty, all Sanguinary Guard in that Detachment gain an additional +1 Attack.
+
+
+If selected as part of a Detachment in an army that does not include Sanguinius, then all friendly units, including Sanguinary Guard units, that are locked in combat and have at least one model within 6&quot; of two or more Sanguinary Guard models may add +1 to the total number of successful Wounds caused for the purposes of resolving which side has won a combat (this does not stack with any other rules that increase the Assault result).</description>
+          <comment>We could programmatically split this into two rules</comment>
+        </rule>
+        <rule name="Sanguinary Guard Retinue" id="0ee1-bf1e-156e-a659" hidden="false" publicationId="2489-0c1d-8ed5-2515" page="9">
+          <description>A Sanguinary Guard Squad may be selected as a Retinue Squad in a Detachment that includes at least one model with both the Master of the Legion and Legiones Astartes (Blood Angels) special rules, instead of as an HQ choice. A unit selected as a ‘Retinue Squad’ must have one model with both the Master of the Legion and Legiones Astartes (Blood Angels) special rules from the same Detachment selected by the controlling player as the Retinue Squad’s Leader for the purposes of this special rule. A Sanguinary Guard Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as its Leader. A Sanguinary Guard Squad selected as a Retinue Squad must be deployed with the model selected as its Leader deployed as part of the unit and the Leader may not voluntarily leave the Retinue Squad during play.
+
+
+One Sanguinary Guard in a Sanguinary Guard Squad selected as a Retinue Squad may exchange their Perdition weapon for a power weapon and a Legion standard for +15 points.</description>
+        </rule>
+      </rules>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="2af6-ec35-5808-8cda" includeChildSelections="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="roster" childId="f9c0-0c5a-3e24-58c7" shared="true"/>
+          </conditions>
+          <comment>Loyalist Only</comment>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="6307-ed53-0ac4-0212" name="Retinue" hidden="false" collective="false" import="true">
@@ -5912,6 +6135,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Sanguinary Guard Squad" hidden="false" id="b8f0-3401-43ff-bde8" type="selectionEntry" targetId="a333-6047-45c7-8556"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="4f09-6be3-276d-2756" name="Warlord Traits" hidden="false" collective="false" import="true">
@@ -6013,4 +6237,34 @@ Whenever a Warlord with this Trait is on the winning side of a combat in which t
   <catalogueLinks>
     <catalogueLink id="9a4b-b42e-d077-a3c7" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Rite of War" hidden="false" id="2494-402e-655d-d47f" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a8c-9cee-d265-8d12" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9fd-4c8a-6227-3623" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="56f4-62d2-d416-cda6" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rites of War" hidden="false" id="274f-af11-55a3-720e" collective="false" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="0" field="797b-0bd6-8cbf-f25a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

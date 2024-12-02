@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="41" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="caa9-c50e-8eed-2259" name="LA -   V: White Scars" revision="45" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="a738-6a11-dfe7-286c" name="V: White Scars" hidden="false" collective="false" import="false" targetId="e01e-5cdd-e512-8353" type="selectionEntry">
       <modifiers>
@@ -3290,6 +3290,9 @@
         <categoryLink targetId="f823-8c1d-6a87-26a1" id="e0b2-3c5e-ae-f32" primary="false" name="Compulsory HQ:"/>
         <categoryLink targetId="36c3-e85e-97cc-c503" id="5266-d7f4-40c6-d8c0" primary="false" name="Unit:"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Retinue" hidden="false" id="c548-aa47-edc-5328" collective="false" targetId="f874-317d-d582-11d5" type="selectionEntryGroup"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -3426,6 +3429,11 @@
                   </costs>
                 </entryLink>
                 <entryLink id="a0d6-d7e7-83b1-cb65" name="Chainsword" hidden="false" collective="false" import="true" targetId="06e7-a6ae-ed1c-eb03" type="selectionEntry"/>
+                <entryLink import="true" name="Power Lance" hidden="false" id="ac04-64b6-13c2-0424" collective="false" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3512,6 +3520,11 @@
               </costs>
             </entryLink>
             <entryLink id="1d5c-9a80-b18c-d980" name="Charnabal Tabar" hidden="false" collective="false" import="true" targetId="4611-c33e-f360-7246" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Power Lance" hidden="false" id="a371-0de8-16ad-f696" collective="false" targetId="a4c8-c8ff-87f2-1ac9" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
               </costs>
@@ -5355,162 +5368,6 @@ May join units that include models with the Cavalry Unit Type despite the usual 
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="440"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Hibou Khan" hidden="false" id="931-ebf9-b0f2-427" publicationId="d882-d2a-5da1-92c4" page="194">
-      <costs>
-        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
-      </costs>
-      <categoryLinks>
-        <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="f343-4bce-18db-ed5d" primary="false" name="Infantry Unit Type"/>
-        <categoryLink targetId="11f2-472f-c1d1-9ae9" id="7566-50c-6c1-33ba" primary="false" name="Legiones Astartes"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Hibou Khan" hidden="false" id="2cc6-4d2f-decb-9931">
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-          </costs>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="de1f-a53c-4da4-6a86" primary="false" name="Infantry Unit Type"/>
-            <categoryLink targetId="aa94-5c65-d1f1-46a4" id="a86c-d643-b781-266f" primary="false" name="Unique Sub-type"/>
-            <categoryLink targetId="4f07-3d45-4f28-a0c6" id="1a48-2fbf-99b9-5997" primary="false" name="Independent Character"/>
-            <categoryLink targetId="f75a-d5c1-59ba-5c5a" id="54e9-551d-74c5-342a" primary="false" name="Character"/>
-          </categoryLinks>
-          <profiles>
-            <profile name="Hibou Khan" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="cac0-6af6-4f14-6a46" publicationId="d882-d2a-5da1-92c4" page="194">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">2</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="935b-4159-81a2-d30e" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a045-ea2b-b5f4-461b" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Breath of the Storm" hidden="false" id="c946-5def-8525-e8a8">
-          <profiles>
-            <profile name="The Breath of the Storm" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="20cb-60e0-c132-62b3">
-              <characteristics>
-                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+2</characteristic>
-                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Sudden Strike (1), Breaching (4+), Murderous Strike (6+)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Two-handed" id="129e-18f3-72ce-8b39" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
-            <infoLink name="Sudden Strike (X)" id="a816-c448-3d9f-5b2c" hidden="false" type="rule" targetId="58b3-7d84-b92d-1363">
-              <modifiers>
-                <modifier type="set" value="Sudden Strike (1)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Breaching (X)" id="ea9e-a5d5-f73-27a8" hidden="false" type="rule" targetId="a760-f736-1bf3-fa3c">
-              <modifiers>
-                <modifier type="set" value="Breaching (4+)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Murderous Strike (X)" id="e85f-48ee-4262-53ac" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
-              <modifiers>
-                <modifier type="set" value="Murderous Strike (6+)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4a1-e0bb-6a54-c67b" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3c3d-dd2c-31a5-213b" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="724b-35eb-dc91-7a5e" includeChildSelections="true"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Master of the Legion" hidden="false" id="8a7f-f3df-2ceb-248e" collective="false" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b09b-10e2-96ae-c7fd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1599-1740-7304-e420" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Warlord" hidden="false" id="a802-d567-2d2a-5a81" collective="false" targetId="0176-56a3-d590-b103" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49ec-221e-adb0-6b4e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <profiles>
-            <profile name="Seeker of Atonement" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="91c4-d6ae-846d-ddfd">
-              <characteristics>
-                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">Warlord: 
-Hibou Khan has accepted his exile, seeking out Traitor forces at every turn,slaying as many as he can before his life is ended by an enemy&apos;s blade and his honour is restored. If chosen as the army&apos;s Warlord, Hibou Khan automatically has the Seeker of Atonement Warlord Trait and may not select any other. 
-Seeker of Atonement - If Hibou Khan is the army&apos;s Warlord, then both Hibou Khan and any unit he joins gain the Rampage(2) special rule.
-
-
-In addition:
-
-
-•If Hibou Khan has not been removed as a casualty, an army with Hibou Khan as its Warlord may make an additional Reaction during the opposing player&apos;s Movement phase.
-•If Hibou Khan has been removed as a casualty, an army with Hibou Khan as its Warlord may make an additional Reaction during the opposing player&apos;s Assault phase</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-        </entryLink>
-        <entryLink import="true" name="Bolt Pistol" hidden="false" id="1c6e-e5d4-4e2c-9759" collective="false" targetId="e5ae-6872-37aa-8600" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="76e4-9aba-9f08-8133" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a14b-e78-bd6d-fdea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Artificer Armour" hidden="false" id="6ea-2730-3ce2-f36c" collective="false" targetId="583e-62cb-53f1-f952" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d49c-302-3461-8460" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9575-fab2-3f18-b0a8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Frag Grenades" hidden="false" id="a4b2-d96f-57f2-f10b" collective="false" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f4cc-9b96-9ffb-b281" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b7da-f6bb-de4f-afeb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Krak Grenades" hidden="false" id="55da-5f41-a1c1-40dc" collective="false" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5048-bd7a-4632-7ce4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e01b-a766-9a06-ef5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Refractor Field" hidden="false" id="98f6-de1d-2f6d-6cae" type="selectionEntry" targetId="a06a-55a5-070b-1d0e">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="928-4284-399d-9a74" includeChildSelections="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0a0-de7d-9124-88e6" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Retinue" hidden="false" id="c548-aa47-edc-5328" collective="false" targetId="f874-317d-d582-11d5" type="selectionEntryGroup"/>
-      </entryLinks>
-      <infoLinks>
-        <infoLink name="Legiones Astartes (White Scars)" id="e647-50e3-2d54-2ddf" hidden="false" targetId="4b54-8bd0-9fdd-cbc4" type="rule"/>
-        <infoLink name="Stubborn" id="c16a-e6cd-3db-d093" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
-        <infoLink name="Relentless" id="7e09-4ee8-2b78-23c2" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
-        <infoLink name="Kharash" id="89b-93b8-ae90-548e" hidden="false" type="rule" targetId="71fa-da0d-0056-9072"/>
-        <infoLink name="Feel No Pain (X)" id="c56d-3ea6-6c0b-7c72" hidden="false" type="rule" targetId="ec46-ff29-32e0-c2aa">
-          <modifiers>
-            <modifier type="set" value="Feel No Pain (5+)" field="name"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <rules>
-        <rule name="The Shattered Vth" id="619e-585b-d5f3-fdb3" hidden="false" publicationId="d882-d2a-5da1-92c4" page="195">
-          <description>Once part of their wider Legions,the events of the Horus Heresy saw these warriors fighting among adhoc formations brought together by tragedy and fortitude in equal measure. You can include this model in a Shattered Legions Detachment that includes models representing the White Scars Legion. When you do so, replace this model&apos;s Legiones Astartes (White Scars) special rule with the Legiones Astartes (Shattered Legions) special rule. This is an exception to the normal rules for Legiones Astartes (Shattered Legions). When included in a Shattered Legions Detachment, this model must represent the White Scars Legion.</description>
-        </rule>
-      </rules>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="834b-fcb6-78e5-2099" name="Warlord Traits" hidden="false" collective="false" import="true">
@@ -5742,4 +5599,34 @@ In addition:
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
     <catalogueLink id="b5fe-774b-8da-c21e" name="LI - Sisters of Silence" targetId="585a-5ac2-a233-a6a6" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Rite of War" hidden="false" id="2494-402e-655d-d47f" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4f9d-9561-45b9-a209" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5712-4d9f-f3e1-a430" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="0b6f-c3ec-82fa-af29" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rites of War" hidden="false" id="274f-af11-55a3-720e" collective="false" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="0" field="797b-0bd6-8cbf-f25a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

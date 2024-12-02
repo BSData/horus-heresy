@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="42" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="36dc-14fc-8872-476b" name="LA -   VIII: Night Lords" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <entryLinks>
     <entryLink id="f491-c7fa-f6d3-917d" name="Contekar Terminator Squad" hidden="false" collective="false" import="false" targetId="837e-c3ca-437e-dfbf" type="selectionEntry">
       <modifiers>
@@ -3373,7 +3373,7 @@
           </constraints>
           <rules>
             <rule id="b300-fa84-4c3a-5cdf" name="Warlord: Master of the Atramentar" hidden="false">
-              <description>Any units of Legion Cataphractii Terminators and Legion Tartaros Terminators included in the same Detachment as Sevatar gain the Deep Strike special rule (Sevatar himself does not). When any units of Legion Cataphractii Terminators, Legion Tartaros Terminators or Contekar Terminators that are part of the same Detachment as Sevatar are included as part of a Deep Strike Assault that does not include Sevatar they gain the Fearless and Preferred Enemy (Everything) special rules for the duration of the turn in which they are deployed. In addition, an army whose Warlord is Sevatar may make an additional Reaction in the Movement phase, as long as Sevatar has not been removed as a casualty.</description>
+              <description>Any units of Legion Cataphractii Terminators and Legion Tartaros Terminators included in the same Detachment as Sevatar gain the Deep Strike special rule (Sevatar himself does not). When any units of Legion Cataphractii Terminators, Legion Tartaros Terminators or Contekar Terminators that are part of the same Detachment as Sevatar are included as part of a Deep Strike Assault that does not include Sevatar they gain the Preferred Enemy (Everything) special rules for the duration of the turn in which they are deployed. In addition, an army whose Warlord is Sevatar may make an additional Reaction in the Movement phase, as long as Sevatar has not been removed as a casualty.</description>
             </rule>
           </rules>
         </entryLink>
@@ -3875,13 +3875,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="9bb8-8fe4-11c1-9e50" name="Night Raptor Squad" publicationId="09c5-eeae-f398-b653" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="9b5d-fac7-799b-d7e7">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="53ce-6dc9-aa69-fbaa" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="deb7-a315-6298-63ab" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
         <infoLink id="dec4-fd49-9010-e6f3" name="Sudden Strike (X)" hidden="false" targetId="58b3-7d84-b92d-1363" type="rule">
@@ -4381,7 +4374,7 @@
           <description>Konrad Curze gains access to the Glimpse of Death Psychic Power only and gains no other Disciplines.</description>
         </rule>
         <rule id="00a2-396d-6e1c-183a" name="The King of Terrors" hidden="false">
-          <description>When Konrad Curze and any unit he has joined ends a combar by removing all enemy models as casualties or destroying an enemy unit due to a Sweeping Advance, all enemy units that are not locked in combat and can draw a line of sight to Konrad Curze must immedately take a Pinning test.</description>
+          <description>When Konrad Curze and any unit he has joined ends a combat by removing all enemy models as casualties or destroying an enemy unit due to a Sweeping Advance, all enemy units that are not locked in combat and can draw a line of sight to Konrad Curze must immediately take a Pinning test.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4549,7 +4542,7 @@
         <rule id="33de-beff-3d71-ba95" name="Lords of the Night" hidden="false">
           <description>A single Contekar Terminator Squad numbering no more than 10 models may be taken as a Compulsory HQ choice in an army in which neither Sevatar nor Konrad Curze are present
 
-In additon, a Contekar Terminator Squad may be selected as a Retinue Squad in a Detachment that includes Sevatar, instead of as an Elites choice,  A unit selected as a Retinue Squad counts Sevatar as the Contekar Terminator Squad&apos;s Leader for the purposes of this special rule. A Contekar Terminator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as Sevatar. A Contekar Terminator Squad selected as a Retinue Squad must be deployed with Sevatar as part of the unit and Sevatar may not voluntarily leave the Retinue Squad during play.</description>
+In addition, a Contekar Terminator Squad may be selected as a Retinue Squad in a Detachment that includes Sevatar, instead of as an Elites choice, A unit selected as a Retinue Squad counts Sevatar as the Contekar Terminator Squad&apos;s Leader for the purposes of this special rule. A Contekar Terminator Squad selected as a Retinue Squad does not use up a Force Organisation slot and is considered part of the same unit as the model selected as Sevatar. A Contekar Terminator Squad selected as a Retinue Squad must be deployed with Sevatar as part of the unit and Sevatar may not voluntarily leave the Retinue Squad during play.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -5490,11 +5483,13 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c635-a62f-8ea3-de0b" type="max"/>
           </constraints>
-          <rules>
-            <rule id="7fd2-6903-17c3-7040" name="Warlord: Aberrant Bravery" hidden="false">
-              <description>If chosen as the army&apos;s Warlord, Kheron Ophion automatically has Aberrant Bravery as his Warlord Trait and may not select any other.</description>
-            </rule>
-          </rules>
+          <profiles>
+            <profile name="Aberrant Bravery" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="ab6a-bf89-f06f-8fa9">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If Kheron Ophion’s controlling player is controlling fewer Objectives than their opponent, Ophion and any Night Lords units within 12&quot; of him gain the Stubborn special rule. In addition, an army whose Warlord is Kheron Ophion may make an additional Reaction in the opposing player’s Movement phase, as long as Kheron Ophion has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
         </entryLink>
         <entryLink id="ff99-ca5f-f3da-bbc1" name="Retinue" hidden="false" collective="false" import="true" targetId="f728-26bf-3c99-1529" type="selectionEntryGroup"/>
       </entryLinks>
@@ -5813,8 +5808,7 @@ Additionally, all models with the Infantry or Cavalry Unit Types in a unit that 
               <profiles>
                 <profile id="ebe4-5c8d-1fdc-945d" name="Flaymaster" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fear (1) special rule, and each time that Warlord is part of a combat that results in all enemy units being destroyed,  by having all their models removed as casualties or as part of a Sweeping Advance, or that is part of a Challenge in which the enemy combatant is removed as a casualty, it increases the value of that special rule by +1 (up to a maximum of Fear (3)). In addition, an army whose Warlord has this Trait
-may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait gains the Fear (1) special rule, and each time that Warlord is part of a combat that results in all enemy units being destroyed, by having all their models removed as casualties or as part of a Sweeping Advance, or that is part of a Challenge in which the enemy combatant is removed as a casualty, it increases the value of that special rule by +1 (up to a maximum of Fear (3)). In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5848,8 +5842,7 @@ may make an additional Reaction during the opposing player’s Assault phase as 
               <profiles>
                 <profile id="db4c-07da-4fea-64b3" name="Jadhek Clanlord" publicationId="09c5-eeae-f398-b653" page="196" hidden="false" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models that are part of a unit he joins gain the Counter-attack (1) special rule and ignore all penalties to their Movement and Charge rolls due to Terrain and may re-roll all failed Dangerous Terrain tests they are called upon to make. In addition, an army
-whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">A Warlord with this Trait and all models that are part of a unit he joins gain the Counter-attack (1) special rule and ignore all penalties to their Movement and Charge rolls due to Terrain and may re-roll all failed Dangerous Terrain tests they are called upon to make. In addition, an army whose Warlord has this Trait may make an additional Reaction during the opposing player’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5876,4 +5869,34 @@ whose Warlord has this Trait may make an additional Reaction during the opposing
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Rite of War" hidden="false" id="2494-402e-655d-d47f" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c5cc-4b40-9679-bd9c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a275-2bb6-af98-56cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="fa6f-55a7-674f-0378" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rites of War" hidden="false" id="274f-af11-55a3-720e" collective="false" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="0" field="797b-0bd6-8cbf-f25a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

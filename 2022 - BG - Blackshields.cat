@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="1" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="7" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" hidden="false" id="5b3d-ea70-4774-c23d" collective="false" import="true">
       <comment>template_id_be38-a066-4f8e-ae54</comment>
@@ -77,7 +77,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
               <profiles>
                 <profile name="Forgotten Hero" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="a235-9327-8fe5-5ea" publicationId="d882-d2a-5da1-92c4" page="133">
                   <characteristics>
-                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If, during any player&apos;s Shooting phase, a model with this Warlord Trait is allocated at least one Wound (whether it is saved or not, and including if the Wound causes the Warlord to be removed as a Casualty), then all other friendly models in the same unit gain a bonus of +1 to their Weapon Skill and Strength Characteristics until the end of the next player turn in which that unit makes a successful Charge, or is successfully charged by an enemy unit (this bonus is not cumulative, and a unit may only benefit from a maximum bonus of +1 to Weapon Skill and Strength Characteristics from this Warlord Trait). 
+                    <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If, during any player&apos;s Shooting phase, a model with this Warlord Trait is allocated at least one Wound (whether it is saved or not, and including if the Wound causes the Warlord to be removed as a Casualty), then all other friendly models in the same unit gain a bonus of +1 to their Weapon Skill and Strength Characteristics until the end of the next player turn in which that unit makes a successful Charge, or is successfully charged by an enemy unit (this bonus is not cumulative, and a unit may only benefit from a maximum bonus of +1 to Weapon Skill and Strength Characteristics from this Warlord Trait). 
 In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Shooting phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
@@ -99,10 +99,7 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
 - Rampage (1)
 - Counter-attack (1)
 - Precision Shots (6+)
-In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty.
-
-
-</characteristic>
+In addition, an army whose Warlord has this Trait may make an additional Reaction during their opponent’s Movement phase as long as the Warlord has not been removed as a casualty.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -188,11 +185,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="7a2e-7a12-edc0-de60" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="5a50-f80b-a03b-6e88" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="5a50-f80b-a03b-6e88" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -322,11 +319,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="a713-8350-7a25-478f" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="7e78-18cc-79e2-fa4b" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="7e78-18cc-79e2-fa4b" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -448,11 +445,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="fb6c-ea2e-19ed-257f" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="7e2-4e99-dcfe-6f01" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="7e2-4e99-dcfe-6f01" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -618,11 +615,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="e99b-6481-b1a-68cd" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="8d7a-35fb-69c6-4ec8" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="8d7a-35fb-69c6-4ec8" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -672,11 +669,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="9d93-1d4d-453c-ab1c" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="8733-809c-d553-83db" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="8733-809c-d553-83db" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -706,11 +703,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="fbdf-9674-8376-7d79" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="7154-1181-dbd-5cb3" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="7154-1181-dbd-5cb3" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -737,11 +734,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="54a3-21e-2cf3-bd46" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="9da4-c9dd-adff-87e3" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="9da4-c9dd-adff-87e3" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -768,11 +765,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Heavy Support:" hidden="false" id="52ff-d671-a73-510d" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="4145-a939-69bd-119b" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="4145-a939-69bd-119b" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -799,11 +796,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Heavy Support:" hidden="false" id="1ba6-be37-deb8-24d7" targetId="7031-469a-1aeb-eab0" primary="true"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="3e17-a4f-3393-49e8" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="3e17-a4f-3393-49e8" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -876,11 +873,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="6c56-ac49-c22-ca8c" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="df7e-bb79-6d6a-afa1" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="df7e-bb79-6d6a-afa1" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1094,11 +1091,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="c33b-fc99-7a89-ebc6" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="57b2-7650-a3c2-db71" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="57b2-7650-a3c2-db71" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1178,11 +1175,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="9cb8-8d3-7d1a-2d74" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="6fb8-d938-70f4-ceed" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="6fb8-d938-70f4-ceed" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1586,11 +1583,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="ca4b-c30b-2639-bb9b" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="be06-1733-ee8a-b0c3" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="be06-1733-ee8a-b0c3" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1639,11 +1636,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="b0ae-a33d-ad34-1971" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="b96c-5289-1965-565e" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="b96c-5289-1965-565e" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1776,11 +1773,11 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink name="Unit:" hidden="false" id="1aa3-151c-cd56-42c5" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
       <infoLinks>
-        <infoLink name="Augmetic Transport Bay" id="f093-7a51-46b9-4a69" hidden="true" type="rule" targetId="75c-d3e8-2f12-2749">
+        <infoLink name="Augmetic Transport Bay" id="f093-7a51-46b9-4a69" hidden="false" type="rule" targetId="75c-d3e8-2f12-2749">
           <modifiers>
-            <modifier type="set" value="false" field="hidden">
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="be5b-1edf-8b27-2e1e" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1917,7 +1914,115 @@ In addition, an army whose Warlord has this Trait may make an additional Reactio
         <categoryLink targetId="9b5d-fac7-799b-d7e7" id="2a77-b837-6781-577e" primary="true" name="Troops:"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Company Command Squad" hidden="false" id="9be8-91cf-782d-e902" type="selectionEntry" targetId="d42c-e6ff-d976-54bc"/>
+    <entryLink import="false" name="Cassian Dracos Reborn" hidden="true" id="df70-ba89-d259-20b2" collective="false" targetId="fb8a-ab72-52ce-38f3" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="append" value="(Reserve Only)" field="name">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="dbde-0e4f-0b5a-43d2" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="c287-6db6-7faa-c28e" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="ccfb-acfb-0fac-4f8c" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="384c-2a09-e99b-0cf2" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+        <categoryLink name="Unit:" hidden="false" id="04fc-14a6-e618-a689" targetId="36c3-e85e-97cc-c503" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Disciple of the Flame" hidden="false" id="81e9-5811-0d1e-71c0" type="selectionEntry" targetId="d554-7321-7d26-feb9">
+          <rules>
+            <rule name="Disciple of the Flame (Cassian)" id="6aec-f119-f453-fa31" hidden="true" publicationId="d0df-7166-5cd3-89fd" page="67" noindex="true">
+              <description>You can include this model in a Blackshields Detachment. If you do so, that Detachment must use the Pride is Our Armour and Panoply of Old (Salamanders) Oaths 
+
+When you do so, replace this model’s Legiones Astartes (Salamanders) special rule with the Legiones Astartes (Blackshields) special rule.</description>
+            </rule>
+          </rules>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="false" name="Xiaphas Jurr" hidden="true" id="605c-ca63-fff2-24d5" collective="false" targetId="30b8-05a5-fef7-fe66" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" value="c287-6db6-7faa-c28e" field="category">
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="parent" childId="0176-56a3-d590-b103" shared="true" includeChildSelections="true"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="2cd0-a7b4-5354-0ec5" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="2d46-182d-6dc0-bee3" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Disciple of the Flame" hidden="false" id="021a-ee89-b9f1-53c9" type="selectionEntry" targetId="d554-7321-7d26-feb9">
+          <rules>
+            <rule name="Disciple of the Flame (Xiaphas)" id="c786-4308-9120-8a6e" hidden="true" publicationId="d0df-7166-5cd3-89fd" page="67">
+              <description>You can include this model in a Blackshields Detachment. If you do so, that Detachment must use the Pride is Our Armour and Panoply of Old (Salamanders) Oaths 
+
+When you do so, replace this model’s Legiones Astartes (Salamanders) special rule with the Legiones Astartes (Blackshields) special rule and replace the instance of Legiones Astartes (Salamanders) in this unit’s Beacon of Hope Warlord Trait with Legiones Astartes (Blackshields).</description>
+            </rule>
+          </rules>
+        </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink import="false" name="Adherents Squad" hidden="true" id="7b0d-1092-d7a3-44f7" collective="false" targetId="b110-ce62-3e2f-79f8" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="roster" childId="8d56-d960-0687-7fee" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="c287-6db6-7faa-c28e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="51b8-e1d7-4746-f6af" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="c455-0905-a2bf-ec88" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Nârik Dreygur" hidden="true" id="8593-5f6a-5ced-8681" collective="false" targetId="ac97-c8ce-16ba-9c49" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditions>
+            <condition type="greaterThan" value="0" field="selections" scope="roster" childId="d344-d97b-4687-8a62" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="c24a-688d-591d-10ae" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="1525-5dba-cb26-1557" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="8649-d95a-a239-d15c" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <rules>
+        <rule name="Disciple of the Flame (Nârik)" id="68ac-1c8c-eaed-4c5e" hidden="true" publicationId="d0df-7166-5cd3-89fd" page="77" noindex="true">
+          <description>You can include this model in a Blackshields Detachment. When you do so, replace this model’s Legiones Astartes (Iron Warriors) special rule with the Legiones Astartes (Blackshields) special rule.</description>
+        </rule>
+      </rules>
+    </entryLink>
+    <entryLink import="false" name="Kaedes Nex" hidden="false" id="ba97-39d6-5d6b-3c73" type="selectionEntry" targetId="5be0-17a1-bb08-670f">
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="ba45-19d7-1171-e5e6" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7fc3-26cb-8d07-533c" includeChildSelections="true"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legions Astartes" id="efcb-808e-1ce0-2a87" targetId="6393-649c-7213-a327" importRootEntries="true"/>
@@ -1984,6 +2089,7 @@ In addition, an army whose Warlord has this trait may make an additional reactio
             </profile>
           </profiles>
         </entryLink>
+        <entryLink import="true" name="Retinue" hidden="false" id="cb05-74a2-4c2b-c093" collective="false" targetId="5b3d-ea70-4774-c23d" type="selectionEntryGroup"/>
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Terrawat-pattern Power Gauntlet" hidden="false" id="f5fb-3eff-fcae-6938" sortIndex="2">
@@ -2016,10 +2122,48 @@ In addition, an army whose Warlord has this trait may make an additional reactio
             </rule>
           </rules>
         </selectionEntry>
+        <selectionEntry type="model" import="true" name="Endryd Haar" hidden="false" id="85a2-0bfe-5e81-4fde">
+          <profiles>
+            <profile name="Endryd Haar" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="e06d-05da-0061-5ca4" publicationId="d882-d2a-5da1-92c4" page="198">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">4</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fac-c175-acb3-61a4"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea6e-d082-b448-f1c2"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Master of the Legion" id="aef7-fd14-fddb-cf64" hidden="false" type="rule" targetId="c772-87ea-d49c-c7ba"/>
+            <infoLink name="Relentless" id="2891-ea46-28b6-4961" hidden="false" type="rule" targetId="7adf-ac9a-5035-522d"/>
+            <infoLink name="Hatred (X)" id="e52a-dab0-9d73-1232" hidden="false" type="rule" targetId="dc0b-fe69-6b71-e0a4">
+              <modifiers>
+                <modifier type="set" value="Hatred (World Eaters)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Battle-Hardened (X)" id="8245-51c9-2aea-65ba" hidden="false" type="rule" targetId="5c3b-ed0b-4ad0-d547">
+              <modifiers>
+                <modifier type="set" value="Battle-Hardened (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="65eb-4e66-4e5d-dc82" primary="false" name="Infantry Unit Type"/>
         <categoryLink targetId="11f2-472f-c1d1-9ae9" id="c70c-90a9-bd79-6805" primary="false" name="Legiones Astartes"/>
+        <categoryLink targetId="4f07-3d45-4f28-a0c6" id="ce79-2971-9182-056f" primary="false" name="Independent Character"/>
       </categoryLinks>
     </selectionEntry>
   </sharedSelectionEntries>

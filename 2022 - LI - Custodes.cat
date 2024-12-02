@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="22" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2f2b-1f31-c455-1701" name="LI - Custodes" revision="25" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="ccca-a9de-0cd9-f8be" name="Legio Custodes" hidden="false">
       <infoLinks>
@@ -457,7 +457,7 @@
           </profiles>
           <rules>
             <rule id="e88c-465d-fc13-d71d" name="Tribune of the Golden Legion" hidden="false">
-              <description>A model with this specialrule may only be included in the Primary Detachment of an army with a total value of at least 3,000 points. Furthermore, unless Constantin Valdor is also part of the same army, a model with this specialrule must be chosen as the army’s Warlor</description>
+              <description>A model with this special rule may only be included in the Primary Detachment of an army with a total value of at least 3,000 points. Furthermore, unless Constantin Valdor is also part of the same army, a model with this special rule must be chosen as the army’s Warlord.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -644,7 +644,7 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37ca-b33b-d5fc-189e" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="6d4b-aee5-b85f-9f58" name="Master-Crafted Power Axe and Vexilla" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="6d4b-aee5-b85f-9f58" name="Master-Crafted Power Axe and Vexilla" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f5-3865-c009-9f82" type="max"/>
                   </constraints>
@@ -667,7 +667,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="19c8-d685-7196-58bc" name="Master-Crafted Power Lance and Vexilla" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="19c8-d685-7196-58bc" name="Master-Crafted Power Lance and Vexilla" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="615d-11c4-3775-1488" type="max"/>
                   </constraints>
@@ -690,7 +690,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9285-4888-9b57-c21b" name="Master-Crafted Power Maul and Vexilla" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="9285-4888-9b57-c21b" name="Master-Crafted Power Maul and Vexilla" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0283-500a-8257-03a1" type="max"/>
                   </constraints>
@@ -713,7 +713,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d644-d8ba-4516-5ba8" name="Master-Crafted Power Sword and Vexilla" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="d644-d8ba-4516-5ba8" name="Master-Crafted Power Sword and Vexilla" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b129-f43b-47fa-24dc" type="max"/>
                   </constraints>
@@ -736,7 +736,7 @@
                     <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="d3eb-8610-7350-eb32" name="Sentinal Warblade &amp; Vexilla" hidden="false" collective="false" import="true" type="model">
+                <selectionEntry id="d3eb-8610-7350-eb32" name="Sentinal Warblade &amp; Vexilla" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f96-b1fa-9720-8d40" type="max"/>
                   </constraints>
@@ -901,6 +901,18 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="4475-d192-6cad-0835" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" value="Bulky (3)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Chosen Warriors" id="595d-7360-31d2-ffbd" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
+        <infoLink name="Legio Custodes" id="bc8d-d2b9-1ecf-e68a" hidden="false" targetId="6998-b328-c080-5341" type="rule"/>
+        <infoLink name="Loyalist" id="46b1-a727-b43f-a594" hidden="false" targetId="d1de-a45d-2b9b-c878" type="rule"/>
+        <infoLink name="Relentless" id="9a81-b290-f67c-26d3" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink name="Stubborn" id="b442-52d5-08a3-de69" hidden="false" targetId="7989-1f2c-a43d-82ae" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="258c-214d-bc9d-35e1" name="Aquilon Terminator Squad" publicationId="15a4-fc68-502d-48a9" page="23" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -3340,17 +3352,7 @@ A model with the Infantry Unit Type that selects a Custodes Gyrfalcon jetbike as
       <profiles>
         <profile id="b65f-1eb6-ff64-c9df" name="Eclipse Shield" publicationId="15a4-fc68-502d-48a9" page="154" hidden="false" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Vehicle with an eclipse shield reduces the Strength of
-Shooting Attacks made against its Front Armour by -1, or
--2 if that attack has the Blast special rule or uses a template
-to determine its Range. An eclipse shield has no effect on
-attacks inflicted with weapons of the Destroyer type. If a
-Shooting Attack targeting the Front Armour of a model
-with the Vehicle Type with an eclipse shield inflicts a
-Glancing Hit or Penetrating Hit then that model with the
-Vehicle Type immediately gains the Shrouded (5+) special
-rule against all subsequent Shooting Attacks targeting it in
-the Front Armour during the same Phase.�</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A Vehicle with an eclipse shield reduces the Strength of Shooting Attacks made against its Front Armour by -1, or -2 if that attack has the Blast special rule or uses a template to determine its Range. An eclipse shield has no effect on attacks inflicted with weapons of the Destroyer type. If a Shooting Attack targeting the Front Armour of a model with the Vehicle Type with an eclipse shield inflicts a Glancing Hit or Penetrating Hit then that model with the Vehicle Type immediately gains the Shrouded (5+) special rule against all subsequent Shooting Attacks targeting it in the Front Armour during the same Phase.</characteristic>
           </characteristics>
         </profile>
       </profiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="36" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="8866-00ec-715f-f21a" name="LA -   VII: Imperial Fists" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="b3e4-1487-4ab7-7515" name="Alexis Polux" hidden="false" collective="false" import="false" targetId="9229-b4f9-2213-9672" type="selectionEntry">
       <modifiers>
@@ -3783,6 +3783,27 @@
         <entryLink import="true" name="Warlord Traits" hidden="false" id="82b5-9627-9e16-806f" type="selectionEntryGroup" targetId="164e-db98-d506-d2d9"/>
       </entryLinks>
     </entryLink>
+    <entryLink import="false" name="Camba Diaz" hidden="false" id="7253-60d3-e23b-70ae" collective="false" targetId="76d4-31b8-8a44-bce4" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="force" childId="d0b6-712f-0b12-a308" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ:" hidden="false" id="5afa-9da3-e4c1-1d70" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Unit:" hidden="false" id="4af5-f584-e66b-d3dd" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="abc5-cf18-6d10-22eb" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Retinue" hidden="false" id="191b-02ae-28da-fa0a" collective="false" targetId="446f-102e-289b-bdc5" type="selectionEntryGroup"/>
+      </entryLinks>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="19ce-b8dc-dd40-fee9" name="Phalanx Warder Squad" hidden="false" collective="false" import="true" type="unit">
@@ -3795,10 +3816,10 @@
       </modifiers>
       <rules>
         <rule id="7d3f-816a-0e4e-60f8" name="Shield Wall" hidden="false">
-          <description>Models in this unit with boarding shield, which are in base contact with atleast two other models with boarding shield and are neither Falling Back or Pinned, may add +1 to their Inuvulnerable Saves (To a maximum of a 3+). Friendly models with the Independent Character special rule that have joined a unit of Phalanx Warders also benefit from this special rule so long as the unit includes at least three models with the Shield Wall Special rule.</description>
+          <description>Models in this unit with boarding shield, which are in base contact with at least two other models with boarding shield and are neither Falling Back or Pinned, may add +1 to their Invulnerable Saves (To a maximum of a 3+). Friendly models with the Independent Character special rule that have joined a unit of Phalanx Warders also benefit from this special rule so long as the unit includes at least three models with the Shield Wall Special rule.</description>
         </rule>
         <rule id="1337-2916-168f-e27c" name="Lock-step" hidden="false">
-          <description>If a unit includes at least three models with the Lock-step special rule and is not locked in combat, all friendly models in that unit (Including those without the Lock-step special rule) gain a bonus of +1 Weapon Skill for the duration of any Assult Phase in which the unit is successfully Charged by one or more enemy units.</description>
+          <description>If a unit includes at least three models with the Lock-step special rule and is not locked in combat, all friendly models in that unit (Including those without the Lock-step special rule) gain a bonus of +1 Weapon Skill for the duration of any Assault Phase in which the unit is successfully Charged by one or more enemy units.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4199,6 +4220,14 @@
                     <entryLink id="e59b-a520-6122-ea8f" name="Minor Combi-Weapon - Volkite Charger" hidden="false" collective="false" import="true" targetId="8720-32c4-0099-63f4" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="c890-15d2-ccb0-b9ff" collective="false" targetId="b682-2c89-f979-aa74" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden"/>
+                      </modifiers>
+                      <costs>
+                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -5876,6 +5905,140 @@ Butcher of Larissan – If, at the start of any player turn, the opposing player
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="215"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Camba Diaz" hidden="false" id="76d4-31b8-8a44-bce4" collective="false" publicationId="4934-46f7-208b-b4af" page="162">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6042-f0f4-dd87-3e33" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="d395-1118-b22d-7309" percentValue="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <rules>
+        <rule name="Defiant to the End" id="9770-d552-4dc3-dcdf" hidden="false" publicationId="4934-46f7-208b-b4af" page="163">
+          <description>While Camba Diaz only has one Wound remaining, he gains the Feel No Pain (4+) special rule</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Relentless" id="d33a-70c7-b9a6-faea" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+        <infoLink name="Legiones Astartes (Imperial Fists)" id="1258-3152-ad78-96bb" hidden="false" targetId="e876-4f8f-a30f-8b22" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Infantry Unit Type" hidden="false" id="4309-9cd7-91fa-d356" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+        <categoryLink name="Legiones Astartes" hidden="false" id="175c-be31-5fd3-7600" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Durenda" hidden="false" id="629a-f738-1f78-476a" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="739a-d94e-9194-65ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ea9b-61b9-411d-cc16" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Durenda" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="70b5-2c5b-d54f-e545">
+              <characteristics>
+                <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+                <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">+1</characteristic>
+                <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+                <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Rending (5+), Two-handed</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Rending (X)" id="3760-73ee-5371-94f0" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+              <modifiers>
+                <modifier type="set" value="Rending (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Two-handed" id="6698-082a-6bf6-6044" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Camba Diaz" hidden="false" id="3799-347d-6ae5-0ceb">
+          <categoryLinks>
+            <categoryLink name="Independent Character" hidden="false" id="7562-84a2-2565-488d" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+            <categoryLink name="Infantry Unit Type" hidden="false" id="ae11-2ccf-07d8-c03d" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+            <categoryLink name="Character" hidden="false" id="0ba1-838f-d670-c06e" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+            <categoryLink name="Unique Sub-type" hidden="false" id="4a94-5841-a64a-8619" targetId="aa94-5c65-d1f1-46a4" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cc07-e9d4-4e71-2b08"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5cfe-7f02-143c-4c72"/>
+          </constraints>
+          <profiles>
+            <profile name="Camba Diaz" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="1774-a502-8808-cfbc" publicationId="4934-46f7-208b-b4af" page="162">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Character, Unique)</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">7&quot;</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">4</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">4</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="e37f-72cd-c7c9-18db" collective="false" targetId="0176-56a3-d590-b103" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5fd6-e292-215e-e6f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="The Line Unbroken" typeId="a0e6-a7b4-d55d-85b8" typeName="Warlord Trait" hidden="false" id="d86b-b33f-fd54-5460" publicationId="4934-46f7-208b-b4af" page="162">
+              <characteristics>
+                <characteristic name="Text" typeId="c68e-2cda-b67b-baca">If chosen as the army’s Warlord, Camba Diaz automatically has the The Line Unbroken Warlord Trait and may not select any other.
+
+
+The Line Unbroken – At the end of the controlling player’s turn, if a Warlord with this Trait is within 3&quot; of an Objective marker that they control, the controlling player can declare that this Warlord will activate The Line Unbroken. Until the end of the battle, while this Warlord is within 3&quot; of that Objective marker, they have the Fearless and Counter-attack (1) special rules.
+In addition, an army whose Warlord has this Trait may make an additional Reaction during the Assault phase as long as the Warlord has not been removed as a casualty.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </entryLink>
+        <entryLink import="true" name="Master of the Legion" hidden="false" id="48ba-2eee-68cd-220b" collective="false" targetId="0068-6b0a-0086-3d6b" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="591a-7762-c4a9-c2e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e84d-d0d4-d243-edf3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Artificer Armour" hidden="false" id="cc5f-1bdd-ad00-2563" collective="false" targetId="583e-62cb-53f1-f952" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="889a-f253-eafe-31ed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7ae1-e14d-7a0b-b5a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Frag Grenades" hidden="false" id="57ac-1b6a-55e3-a7df" collective="false" targetId="cf9c-327b-3449-00d7" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8fdf-27d4-5800-d643" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3514-87f0-3a52-37ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Iron Halo" hidden="false" id="2f7b-5d5f-1446-e175" collective="false" targetId="b081-bf3c-f43d-4bd5" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3c23-5ea6-51c5-145c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55c1-9624-3f2a-a366" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Krak Grenades" hidden="false" id="ef0a-54f2-72f6-44b6" collective="false" targetId="99df-2421-acf7-a5ad" type="selectionEntry">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="986c-a308-866b-21ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="492a-c7f4-fbd0-1a08" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Bolt Pistol" hidden="false" id="fdde-fb75-64c9-97e0" type="selectionEntry" targetId="e5ae-6872-37aa-8600">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8515-09ef-1080-e717"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46ce-b648-8913-3e19"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="446f-102e-289b-bdc5" name="Retinue" hidden="false" collective="false" import="true">
@@ -6047,4 +6210,34 @@ While locked in combat with an enemy unit that includes the enemy Warlord, or an
   <catalogueLinks>
     <catalogueLink id="2f60-18fb-e6ed-8574" name="Legions Astartes" targetId="6393-649c-7213-a327" type="catalogue" importRootEntries="true"/>
   </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="upgrade" import="false" name="Rite of War" hidden="false" id="2494-402e-655d-d47f" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5aa9-9cdb-902e-0a5b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a7d-4870-d62b-4f9e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Rite of War:" hidden="false" id="2b28-6682-7a53-9480" targetId="d494-e450-d4aa-579a" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Rites of War" hidden="false" id="274f-af11-55a3-720e" collective="false" targetId="cf3e-1d75-6f91-651f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="0" field="797b-0bd6-8cbf-f25a">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e031-3c2-e3f8-d40a" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="equalTo" value="0" field="selections" scope="force" childId="0068-6b0a-0086-3d6b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>
