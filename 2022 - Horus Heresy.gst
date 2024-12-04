@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="121" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="122" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1942,6 +1942,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
             </modifier>
             <modifier type="set" value="0" field="a59f-bf8a-6c0a-c006">
               <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Questoris household has no HQ choices</comment>
+            </modifier>
+            <modifier type="set" value="0" field="e335-2401-dec4-2d28">
+              <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
               </conditions>
               <comment>In Disgrace All Are Equal</comment>
@@ -2089,6 +2095,12 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
                 <condition type="equalTo" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
               </conditions>
               <comment>In Disgrace All Are Equal</comment>
+            </modifier>
+            <modifier type="set" value="0" field="efa5-391f-c0d5-86f2">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="807e-0cf8-7f28-7b6d" shared="true" includeChildSelections="true"/>
+              </conditions>
+              <comment>Questoris household has no HQ choices</comment>
             </modifier>
           </modifiers>
           <constraints>
@@ -2238,7 +2250,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="b005-74c0-bea4-d9bb"/>
           </constraints>
           <modifiers>
-            <modifier type="set" value="2" field="ced2-b32d-8ebf-c863">
+            <modifier type="set" value="6" field="ced2-b32d-8ebf-c863">
               <conditions>
                 <condition type="atLeast" value="1" field="selections" scope="force" childId="e936-95f1-63a6-a606" shared="true" includeChildSelections="true"/>
               </conditions>
