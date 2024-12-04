@@ -4992,7 +4992,7 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <categoryLink targetId="11f2-472f-c1d1-9ae9" id="cbe2-a552-1e8b-9dc7" primary="false" name="Legiones Astartes"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry id="f511-e558-6bff-6543" name="Zardu Layak" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="f511-e558-6bff-6543" name="Zardu Layak" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="574e-7e54-7db7-60a3" type="max"/>
       </constraints>
@@ -5139,7 +5139,7 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         </entryLink>
         <entryLink id="e63d-82ae-8198-c313" name="Anaktis Kul Blade Slave" hidden="false" collective="false" import="true" targetId="4f8e-79b2-b286-d40e" type="selectionEntry">
           <modifiers>
-            <modifier type="set" field="name" value="2x Anaktis Kul Blade Slaves"/>
+            <modifier type="set" field="name" value="Anaktis Kul Blade Slave #1"/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2bdb-0c9e-4aed-7ea9" type="min"/>
@@ -5163,6 +5163,15 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
           </rules>
         </entryLink>
         <entryLink id="fa9b-e07e-79bd-bf59" name="Retinue" hidden="false" collective="false" import="true" targetId="bda8-b52d-c914-4ac2" type="selectionEntryGroup"/>
+        <entryLink id="8bf9-00c2-44af-c65b" name="Anaktis Kul Blade Slave" hidden="false" collective="false" import="true" targetId="4f8e-79b2-b286-d40e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="name" value="Anaktis Kul Blade Slave #2"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a2d9-c039-4ea0-23ea" type="min"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="20a2-709a-a0ae-00aa" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300"/>
