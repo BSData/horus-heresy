@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e545-295b-4cd9-f235" name="Daemons - Bound Daemons" revision="9" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e545-295b-4cd9-f235" name="Daemons - Bound Daemons" revision="10" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" type="catalogue">
   <entryLinks>
     <entryLink id="250f-d164-bb7e-7025" name="Bound Daemon Brutes" hidden="false" collective="false" import="false" targetId="519f-866e-e6fe-20e0" type="selectionEntry">
       <modifiers>
@@ -353,45 +353,6 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
               </modifiers>
             </infoLink>
           </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="429e-44ef-100f-e907" name="Brute Armaments" publicationId="cb13-da24-e6da-75b3" page="17" hidden="false" collective="true" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be07-5a75-77d5-c5c6" type="min"/>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91c5-2730-3016-1670" type="max"/>
-              </constraints>
-              <profiles>
-                <profile id="4ea5-c611-5cf7-ae76" name="Brute Armaments" publicationId="cb13-da24-e6da-75b3" page="17" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
-                  <characteristics>
-                    <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
-                    <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
-                    <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
-                    <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-handed, Murderous Strike (5+), Rending (6+)</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <rules>
-                <rule id="51e7-38d6-aa3f-1268" name="Brute Armaments" hidden="false">
-                  <description>All weapons listed here are counted as ‘Daemonic’ weapons for those rules that affect such weapons.</description>
-                </rule>
-              </rules>
-              <infoLinks>
-                <infoLink id="6dce-526c-6bf4-2b23" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Rending (6+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="5af1-a0d6-2cd8-2aa8" name="Murderous Strike (X)" hidden="false" targetId="93b9-1454-0e7c-42ae" type="rule">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Murderous Strike (5+)"/>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="7ed3-a83b-cd20-7335" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="45"/>
           </costs>
@@ -399,6 +360,9 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
             <categoryLink targetId="e699-d9cd-e68e-46d9" id="d711-9e00-4e7b-9608" name="Daemon Unit Type" primary="false"/>
             <categoryLink targetId="40f3-05e8-5ddc-636a" id="7c92-d8f4-4b19-82f0" name="Bound Sub-type" primary="false"/>
           </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Brute Armaments" hidden="false" id="ca28-a223-5bf2-7061" type="selectionEntry" targetId="663d-649f-e56a-8095"/>
+          </entryLinks>
         </selectionEntry>
         <selectionEntry id="6979-74bc-2519-6bba" name="Bound Daemon Regent" hidden="false" collective="false" import="true" type="model">
           <constraints>
@@ -474,7 +438,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
               </profiles>
               <infoLinks>
                 <infoLink id="66ca-585c-b316-9f75" name="Two-handed" hidden="false" targetId="4c23-e863-a569-7617" type="rule"/>
-                <infoLink id="a09b-6710-b278-acef" name="Brute Armaments" targetId="51e7-38d6-aa3f-1268" type="rule"/>
+                <infoLink name="Daemonic Armaments" id="98b2-caf4-0e68-8046" hidden="false" type="rule" targetId="e30b-4e6e-1845-e081"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -738,10 +702,41 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       </selectionEntries>
       <entryLinks>
         <entryLink id="7ee4-d117-f5ee-fec6" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Brute Armaments" hidden="false" id="b90f-25c1-086a-893e" type="selectionEntry" targetId="663d-649f-e56a-8095"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Brute Armaments" hidden="false" id="663d-649f-e56a-8095" publicationId="cb13-da24-e6da-75b3" page="18">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0987-0e69-34d6-dcd8" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b0d-7e61-907c-6384" includeChildSelections="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Brute Armaments" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="91d8-a78b-05f4-2795" publicationId="cb13-da24-e6da-75b3" page="18">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Melee</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">User</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Two-Handed, Murderous Strike (5+), Rending (6+)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Two-handed" id="59fb-b741-c32a-6a43" hidden="false" type="rule" targetId="4c23-e863-a569-7617"/>
+        <infoLink name="Murderous Strike (X)" id="e6b7-d581-1232-61cd" hidden="false" type="rule" targetId="93b9-1454-0e7c-42ae">
+          <modifiers>
+            <modifier type="set" value="Murderous Strike (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Rending (X)" id="d0db-1448-5e13-0a88" hidden="false" type="rule" targetId="0ac9-fab7-aef3-de1d">
+          <modifiers>
+            <modifier type="set" value="Rending (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Daemonic Armaments" id="ca29-e656-deb9-4632" hidden="false" type="rule" targetId="e30b-4e6e-1845-e081"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -771,6 +766,9 @@ During a Reaction made in any Phase, a player may not choose to activate a model
   <sharedRules>
     <rule id="e2de-47bf-2a1c-45e5" name="Bound Malefica" publicationId="cb13-da24-e6da-75b3" page="11" hidden="false">
       <description>Units entirely composed of models with the Bound Malefica special rule are considered to be part of the Ruinstorm Daemon Army List for the purposes of any special rule which allows Ruinstorm Daemon units to be included in a Detachment drawn from a different Army List, or which grants Ruinstorm Daemon units an alternative method of deploying from Reserves, such as the Legion Esoterist’s Breach the Veil Psychic Power or High Chaplain Erebus’ Harbinger of Chaos special rule (see page 321 of the Liber Hereticus: Traitor Legiones Astartes Army Book). Units selected in this manner retain the Agents of the Warmaster Faction and Bound Daemons Sub-faction.</description>
+    </rule>
+    <rule name="Daemonic Armaments" id="e30b-4e6e-1845-e081" hidden="false" publicationId="cb13-da24-e6da-75b3">
+      <description>All weapons listed here are counted as &quot;Daemonic&quot; weapons for those rules that affect such weapons.</description>
     </rule>
   </sharedRules>
   <catalogueLinks>
