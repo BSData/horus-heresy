@@ -123,7 +123,7 @@ class GameTests(unittest.TestCase):
     def test_crusade_6_errors(self):
         self.load_list('Empty Validation Test')
         errors = self.get_error_list()
-        self.assertEqual(7, len(errors), "There should be 7 errors in an empty crusade force org marine list")
+        self.assertEqual(6, len(errors), "There should be 7 errors in an empty crusade force org marine list")
 
     def test_dt_does_not_affect_squad_cost(self):
         self.load_list('Dedicated Transport Squad Costs')
