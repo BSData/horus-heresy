@@ -2137,9 +2137,6 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
           </constraints>
         </categoryLink>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
-      </constraints>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="ZM 1. Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
