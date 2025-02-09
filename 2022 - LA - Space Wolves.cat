@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ca15-13de-89cb-bbb2" name="LA -   VI: Space Wolves" revision="43" battleScribeVersion="2.03" authorName="Mr_Dark, UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ca15-13de-89cb-bbb2" name="LA -   VI: Space Wolves" revision="44" battleScribeVersion="2.03" authorName="" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="ff53-69d9-ec0b-9caa" name="VI: Space Wolves" hidden="false" collective="false" import="false" targetId="4916-965e-8339-44f6" type="selectionEntry">
       <modifiers>
@@ -4743,15 +4743,6 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="c388-fd8d-3c79-988c" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="4bbf-f3df-7b18-4a49" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fd6b-6711-c618-27f5" type="max"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05e4-4ca8-c17e-fa78" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="eab9-00c1-865d-7b0e" name="2) Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="cef9-cc05-66fc-915b">
@@ -4846,7 +4837,7 @@
                 <selectionEntryGroup id="d543-e85c-64b3-ecd8" name="3) Pistol Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="d6ee-cefb-93a1-9fb2">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6edc-b5ba-8e07-dba1" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae9e-5766-9972-d9f7" type="min"/>
+                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae9e-5766-9972-d9f7" type="min"/>
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="8fc4-5397-dc86-9f16" name="One in Five may take:" hidden="false" collective="false" import="true">
@@ -4900,6 +4891,18 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ae65-e750-3492-7e28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="717f-cf0a-1593-4bd8" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="e337-adf4-a11f-0280" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
@@ -5889,15 +5892,6 @@
                         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink id="ad50-9550-209a-7c6f" name="Augury Scanner" hidden="false" collective="false" import="true" targetId="67ee-7338-3b74-04b4" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="4dbc-6266-853a-5114" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d2ff-cb02-9ebd-9c60" type="max"/>
-                        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f42-e206-8eb6-78ad" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
-                      </costs>
-                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="26a9-2607-a964-ed94" name="1) Melee Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="fe60-df61-7f5c-00f0">
@@ -6004,7 +5998,7 @@
                 <selectionEntryGroup id="40bd-43db-c9d7-4c20" name="2) Pistol Options:" hidden="false" collective="false" import="true" defaultSelectionEntryId="eeed-bc3a-bfe5-9417">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b1-4c85-ed8d-24bc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837d-34ec-7a92-e130" type="min"/>
+                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="837d-34ec-7a92-e130" type="min"/>
                   </constraints>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="d861-c7ca-77ac-f16b" name="One in Five may take:" hidden="false" collective="false" import="true">
@@ -6151,6 +6145,18 @@
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04f6-3e65-f545-1dd8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="717f-cf0a-1593-4bd8" shared="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="e337-adf4-a11f-0280" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
               </entryLinks>
             </selectionEntry>
