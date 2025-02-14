@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="123" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="125" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -2137,9 +2137,6 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
           </constraints>
         </categoryLink>
       </categoryLinks>
-      <constraints>
-        <constraint type="max" value="1" field="forces" scope="roster" shared="true" id="a036-22f7-6cbf-6ebd"/>
-      </constraints>
     </forceEntry>
     <forceEntry id="5430-5be1-1613-be44" name="ZM 1. Mortalis Assault Force Organisation Chart" hidden="false">
       <categoryLinks>
@@ -2264,7 +2261,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
         </categoryLink>
         <categoryLink id="5993-fb7c-61e3-5ebe" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="5" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
+            <constraint field="selections" scope="force" value="6" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1123-aa10-36fb-11cb" type="max"/>
             <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="59b1-dec2-1330-6a5a" type="min"/>
           </constraints>
           <modifiers>
@@ -4112,7 +4109,6 @@ THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEF
       </profiles>
       <infoLinks>
         <infoLink id="bbbb-18a8-0f9b-d084" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
-        <infoLink id="0e9f-cc9d-d76a-0abf" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
         <infoLink id="45cf-4851-7209-02f5" name="Graviton Collapse" hidden="false" targetId="60d8-5964-8671-7f3b" type="rule"/>
         <infoLink id="d186-5492-2c42-c67f" name="Torsion Crusher" hidden="false" targetId="2cef-a40d-97b8-7d4e" type="rule"/>
         <infoLink id="1183-84e2-fdd7-3006" name="Ignores Cover" hidden="false" targetId="fdb5-59e2-c446-1cbc" type="rule"/>

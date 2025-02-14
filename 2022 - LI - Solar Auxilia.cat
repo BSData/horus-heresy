@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="43" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -107,6 +107,84 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arvus Lighter" hidden="false" id="c1d9-d061-447d-bbcc" collective="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Arvus Lighter" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="99db-9c91-e964-faa1">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Hover, Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">20</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point at the rear.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="3c21-205f-8b32-0bdc" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink name="Infantry Transport" id="79cd-68e6-ab7a-58af" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Vehicle:" hidden="false" id="5497-7c15-2c66-4d51" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink name="Hover Sub-type" hidden="false" id="c683-172e-25f5-de1f" targetId="3a7a-8bb7-b0d3-e2e7" primary="false"/>
+        <categoryLink targetId="20ef-cd01-a8da-376e" id="4a93-27cf-bba0-65d1" primary="true" name="Fast Attack:"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Searchlights" hidden="false" id="cab4-c042-3464-6dbf" collective="false" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd66-c9b0-d943-604b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7122-c2a9-050f-d168" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="May take any of the following" id="7516-b620-e1c2-dd2a" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Multi-Laser" hidden="false" id="bb66-76b7-f172-f946" collective="false" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="Hull (Rear) Multi-Laser" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb23-904e-59ed-677f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flare Launcher" hidden="false" id="bfc7-4472-0329-ebc4">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b3e-50bc-9be3-840a"/>
+              </constraints>
+              <profiles>
+                <profile name="Flare Launcher" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="039c-4c60-627f-356a">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a flare launcher gains a 5+ Invulnerable Save against attacks made as part of the Interceptor Advanced Reaction.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
@@ -2993,6 +3071,15 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Arvus Lighter" hidden="false" id="fce2-ef7d-dad2-897f" type="selectionEntry" targetId="29a6-90d8-f60a-beaa">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a09b-28bd-8ffc-f4f0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="ff50-83d5-369f-f7ca" name="One Veletarii in the unit may be upgraded to have a:" hidden="false" collective="false" import="true">
@@ -3994,6 +4081,15 @@
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Arvus Lighter" hidden="false" id="b613-6c7c-45f5-dc89" type="selectionEntry" targetId="29a6-90d8-f60a-beaa">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a09b-28bd-8ffc-f4f0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -4398,6 +4494,15 @@
                           </conditions>
                         </conditionGroup>
                       </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Arvus Lighter" hidden="false" id="df61-d432-4d2c-1603" type="selectionEntry" targetId="29a6-90d8-f60a-beaa">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="force" childId="a09b-28bd-8ffc-f4f0" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                 </entryLink>
@@ -11858,6 +11963,83 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
           </conditionGroups>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Arvus Lighter" hidden="false" id="29a6-90d8-f60a-beaa" collective="false">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="7b69-bf2f-4547-e83b" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Arvus Lighter" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle" hidden="false" id="76a7-43ef-bd5b-5a60">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Hover, Transport)</characteristic>
+            <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">20</characteristic>
+            <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
+            <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
+            <characteristic name="Side" typeId="f150-c0dc-c192-9cb3">11</characteristic>
+            <characteristic name="Rear" typeId="8d4e-2aea-fffc-d556">10</characteristic>
+            <characteristic name="HP" typeId="a76c-83b1-602f-9e62">2</characteristic>
+            <characteristic name="Transport Capacity" typeId="0c90-79e2-f768-e547">12</characteristic>
+            <characteristic name="Access Points" typeId="e217-1b1e-9494-3e3e">One Access Point at the rear.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="7606-55ad-742a-62c6" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule"/>
+        <infoLink name="Infantry Transport" id="24b5-6840-9ae5-7ac9" hidden="false" targetId="0c6b-9cc1-5801-3e83" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Vehicle:" hidden="false" id="5eee-65a8-6be1-182e" targetId="e2b6-b770-784c-9e95" primary="false"/>
+        <categoryLink name="Hover Sub-type" hidden="false" id="73ea-eb27-94df-0742" targetId="3a7a-8bb7-b0d3-e2e7" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Searchlights" hidden="false" id="8999-e126-c7f5-522c" collective="false" targetId="4ae3-79b4-6051-505e" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e148-d9b0-eb2b-ec50" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b368-ae79-8300-ea7d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="May take any of the following" id="2fe7-6e85-97f8-c79c" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink import="true" name="Multi-Laser" hidden="false" id="9a9b-900a-7f7b-6de6" collective="false" targetId="003b-af4b-0094-f5c3" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="Hull (Rear) Multi-Laser" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="acff-2f06-e030-eef5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Flare Launcher" hidden="false" id="28fa-984a-7237-c0d3">
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="74cf-a999-d9e2-1a31"/>
+              </constraints>
+              <profiles>
+                <profile name="Flare Launcher" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="82c3-546f-2b94-7852">
+                  <characteristics>
+                    <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a flare launcher gains a 5+ Invulnerable Save against attacks made as part of the Interceptor Advanced Reaction.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
