@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
-        <modifier type="set" field="20f0-fb34-27b7-a811" value="3">
+        <modifier typAs shown here:
+![image](https://github.com/user-attachments/assets/98ff0218-10b4-4d15-88d3-2592abf972c7)
+
+for some god forsaken reason the heavy flamer costs 10 pts a piece.. Sorry for making this finding
+
+## Fixed Units
+
+Imperial militia Leman Russ
+
+## Test Case
+
+Not tested, but as its a minor change I dont think it will be a problem.e="set" field="20f0-fb34-27b7-a811" value="3">
           <conditions>
             <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd6-8371-e5e5-7f0f" type="atLeast"/>
           </conditions>
@@ -2094,6 +2106,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             <modifier type="set" field="name" value="Furious Charge (1)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Support Squad" id="f5bd-db7e-ccbe-3e39" hidden="false" type="rule" targetId="768e-56d6-ca52-24ae"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="8fac-77b4-81d8-0791" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
@@ -2477,7 +2490,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">3</characteristic>
                 <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
                 <characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
                 <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">6</characteristic>
                 <characteristic name="Save" typeId="e593-6b3c-f169-04f0">5+</characteristic>
               </characteristics>
@@ -2594,6 +2607,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink import="true" name="Shotgun" hidden="false" id="5e24-38b9-0ffb-f023" collective="false" targetId="f0aa-947f-f493-f566" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="cf27-57a0-e409-0525" name="2) May Take" hidden="false" collective="false" import="true">
@@ -6236,7 +6250,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <profiles>
         <profile id="a27e-cead-d573-2463" name="Arvus Transport" publicationId="48c2-d023-0069-001a" page="25" hidden="false" typeId="2fae-b053-3f78-e7b2" typeName="Vehicle">
           <characteristics>
-            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Thiird-line, Hover, Transport)</characteristic>
+            <characteristic name="Unit Type" typeId="e555-4aed-dfcc-c0b4">Vehicle (Flyer, Third-line, Hover, Transport)</characteristic>
             <characteristic name="Move" typeId="3614-4a2d-bffb-90e4">20</characteristic>
             <characteristic name="BS" typeId="51fb-b7d9-aa59-863d">3</characteristic>
             <characteristic name="Front" typeId="0ef8-a648-01d0-08ee">11</characteristic>
@@ -7568,9 +7582,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
               </categoryLinks>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="d424-2660-1a6e-ae95" name="Provenance Options" hidden="false" collective="false" import="true" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup"/>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -7579,6 +7590,9 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <categoryLinks>
         <categoryLink name="SA or IM Unit" hidden="false" id="82a2-cd04-8cb1-47a6" targetId="4aca-2849-7f41-0200" primary="false"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Provenance Options" hidden="false" id="d424-2660-1a6e-ae95" collective="false" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="987d-3f99-2c52-3da4" name="IM - Sentinel Squadron" publicationId="48c2-d023-0069-001a" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -8035,7 +8049,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="725e-7672-9633-835e" type="max"/>
               </constraints>
               <modifiers>
-                <modifier type="set" field="725e-7672-9633-835e" value="3">
+                <modifier type="increment" field="725e-7672-9633-835e" value="3">
                   <repeats>
                     <repeat field="selections" scope="fbb6-c597-3edb-1506" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0f40-258b-c404-87ab" repeats="1" roundUp="false"/>
                   </repeats>
