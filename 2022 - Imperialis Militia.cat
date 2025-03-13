@@ -10121,6 +10121,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       </selectionEntries>
       <entryLinks>
         <entryLink id="93f1-4fba-7e2b-9f33" name="Provenance Options" hidden="false" collective="false" import="true" targetId="5fb4-282e-7957-1492" type="selectionEntryGroup"/>
+        <entryLink import="true" name="The Ætheric Dominion (X)" hidden="false" id="ad5d-1ed0-8998-fd46" type="selectionEntryGroup" targetId="002f-0e40-9d49-2a22"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -10621,7 +10622,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10630,7 +10631,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink id="7a15-dc82-ffcd-db05" name="Bound Sub-type" hidden="false" targetId="40f3-05e8-5ddc-636a" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c53d-e01a-7483-aa48" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
         <entryLink id="3d84-14ff-b8ef-51b1" name="Bound Daemon Brute" hidden="false" collective="false" import="true" targetId="12a1-9b89-fe2e-29dd" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -10655,7 +10655,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="850d-2b23-959e-b06d" targetId="caad-e621-38e5-cb5f"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Traitor" hidden="false" type="rule" id="fa15-d302-8a5d-cbc0" targetId="eff2-8b0e-21da-2f0d"/>
@@ -10671,9 +10670,10 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         </infoLink>
         <infoLink id="20ad-3b87-7f90-13ae" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4fb-66cd-e07d-609b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10682,7 +10682,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10696,7 +10696,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Daemon Brute" hidden="false" type="selectionEntry" id="8838-1f4d-99ad-c5a6" targetId="e3e-4f46-2300-a35"/>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="c199-83a6-b057-7da4" targetId="caad-e621-38e5-cb5f"/>
       </entryLinks>
       <infoLinks>
         <infoLink id="ce10-5041-d503-82f7" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -10713,12 +10712,12 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (1)">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="e4fb-66cd-e07d-609b" shared="true"/>
               </conditions>
             </modifier>
             <modifier type="set" field="name" value="Hammer of Wrath (2)">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="e4fb-66cd-e07d-609b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -10728,7 +10727,7 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10773,12 +10772,11 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="e10c-2d2d-4422-98bf" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Daemon Swarm" hidden="false" type="selectionEntry" id="9561-3d96-affe-6942" targetId="cb8c-b27a-ea4e-1c91"/>
       </entryLinks>
     </selectionEntry>
@@ -10790,7 +10788,6 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="f504-44e8-e7f5-54d3" primary="false" name="Daemon Unit Type"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="1a90-ab1a-5dff-166a" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Lesser Daemon" hidden="false" type="selectionEntry" id="9f17-1c62-e6ab-7996" targetId="5da5-c15b-dfe5-d1b5"/>
       </entryLinks>
       <selectionEntryGroups>
@@ -10821,9 +10818,10 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
         </infoLink>
         <infoLink id="f9e5-eb89-d5b3-e7f9" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" field="name" value="Hammer of Wrath (1)"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="e4fb-66cd-e07d-609b" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>

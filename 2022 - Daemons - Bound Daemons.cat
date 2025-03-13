@@ -295,7 +295,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf6-d802-d054-6a86" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -314,7 +314,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9231-183c-b97b-63f9" type="instanceOf"/>
+                    <condition field="selections" scope="89f7-b7a1-aab2-e47a" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf6-d802-d054-6a86" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -347,9 +347,24 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
             </infoLink>
             <infoLink id="9366-e6e8-3161-e418" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
             <infoLink id="9c3d-13ec-4b8a-6a23" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
-            <infoLink id="c1ff-7f6a-4dda-a429" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink name="Hammer of Wrath (X)" id="e109-ede2-f519-f47e" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1) [(2) if Infernal Tempest Dominion]"/>
+                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="89f7-b7a1-aab2-e47a" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Hammer of Wrath (X)" id="dec4-3894-b516-b609" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="89f7-b7a1-aab2-e47a" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -372,9 +387,9 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
           <profiles>
             <profile id="64ac-3e3a-7b9a-f6e6" name="Bound Daemon Regent" publicationId="cb13-da24-e6da-75b3" page="17" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
               <modifiers>
-                <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
+                <modifier type="append" value="(Heavy)" field="ddd7-6f5c-a939-b69e">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9231-183c-b97b-63f9" type="instanceOf"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="89f7-b7a1-aab2-e47a" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -406,9 +421,24 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
               </modifiers>
             </infoLink>
             <infoLink id="bfa4-05a9-a6cd-02a4" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink id="653b-ac44-d5ab-ee1c" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink name="Hammer of Wrath (X)" id="8054-b5ed-1933-f818" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1) [(2) if Infernal Tempest Dominion]"/>
+                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="89f7-b7a1-aab2-e47a" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Hammer of Wrath (X)" id="e937-da2a-d3b2-5b6c" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="89f7-b7a1-aab2-e47a" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -450,12 +480,55 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="a412-00f9-330a-a548" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="aa91-7f0d-cade-cbc5" name="Bound Ka’bandha" publicationId="cb13-da24-e6da-75b3" page="19" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -629,7 +702,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="519f-866e-e6fe-20e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf6-d802-d054-6a86" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -648,7 +721,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9231-183c-b97b-63f9" type="instanceOf"/>
+                    <condition field="selections" scope="519f-866e-e6fe-20e0" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf6-d802-d054-6a86" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -679,17 +752,27 @@ During a Reaction made in any Phase, a player may not choose to activate a model
                 <modifier type="set" field="name" value="Bulky (3)"/>
               </modifiers>
             </infoLink>
-            <infoLink id="2b07-17d2-c7c7-997e" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink id="9806-b0f1-d650-c1d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+            <infoLink name="Hammer of Wrath (X)" id="bc78-5f8a-e461-eca2" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1) [(2) if Infernal Tempest Dominion]"/>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition field="selections" scope="519f-866e-e6fe-20e0" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4fb-66cd-e07d-609b" type="equalTo"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="9806-b0f1-d650-c1d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+            <infoLink name="Hammer of Wrath (X)" id="8689-a8d7-fed4-0db4" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="40"/>
@@ -701,14 +784,64 @@ During a Reaction made in any Phase, a player may not choose to activate a model
           <entryLinks>
             <entryLink import="true" name="Brute Armaments" hidden="false" id="b90f-25c1-086a-893e" type="selectionEntry" targetId="663d-649f-e56a-8095"/>
           </entryLinks>
+          <modifiers>
+            <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="7ee4-d117-f5ee-fec6" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true" includeChildForces="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Brute Armaments" hidden="false" id="663d-649f-e56a-8095" publicationId="cb13-da24-e6da-75b3" page="18">
       <constraints>
