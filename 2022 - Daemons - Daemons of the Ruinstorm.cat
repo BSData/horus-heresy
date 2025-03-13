@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="14" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ac63-5340-2e9e-1eb6" name="Daemons - Daemons of the Ruinstorm" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="77" revision="15" battleScribeVersion="2.03" type="catalogue">
   <entryLinks>
     <entryLink import="false" name="Daemons of the Ruinstorm" hidden="false" type="selectionEntry" id="e271-f450-1c28-5b7b" targetId="afca-3047-fb26-d097">
       <constraints>
@@ -162,7 +162,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="2f3f-adc4-b19f-a5c7" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="2f3f-adc4-b19f-a5c7" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -179,7 +179,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="d12d-ef33-dfdb-2ec" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="c7e9-b5ee-aac-92c0" targetId="0176-56a3-d590-b103"/>
         <entryLink import="true" name="Warlord Traits (Ruinstorm Daemons)" hidden="false" type="selectionEntryGroup" id="2a1-8be4-17b-75ca" targetId="2f76-74c1-d329-d3ab"/>
       </entryLinks>
@@ -211,7 +210,7 @@
             <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -285,10 +284,56 @@
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Hierarch" hidden="false" id="ae8b-ee65-95b6-a8f9" publicationId="8775-88f5-cfdd-24f6" page="7">
       <selectionEntries>
@@ -315,7 +360,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="ae8b-ee65-95b6-a8f9" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="ae8b-ee65-95b6-a8f9" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -331,7 +376,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="d43f-71c8-cbf2-cff0" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="40ef-9284-1d09-74c0" targetId="9abc-11e8-9031-d104">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de9-d9cd-9f99-404d"/>
@@ -368,7 +412,7 @@
             <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -421,10 +465,56 @@
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harbinger" hidden="false" id="5a2e-abe2-3044-3c1c" publicationId="8775-88f5-cfdd-24f6" page="8">
       <selectionEntries>
@@ -451,7 +541,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="5a2e-abe2-3044-3c1c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="5a2e-abe2-3044-3c1c" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -473,7 +563,7 @@
                 <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -543,7 +633,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="5a2e-abe2-3044-3c1c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="5a2e-abe2-3044-3c1c" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -562,18 +652,24 @@
               </modifiers>
             </infoLink>
             <infoLink id="9e4d-875f-444c-e9ce" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink id="44f3-3000-56bb-5d25" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink name="Hammer of Wrath (X)" id="8fd5-2720-429c-209f" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" field="name" value="Hammer of Wrath (1)">
+                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="name" value="Hammer of Wrath (2)">
+              </modifiers>
+            </infoLink>
+            <infoLink name="Hammer of Wrath (X)" id="1ab2-8c64-cb89-261d" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
                   <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -601,19 +697,62 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="5d3d-4561-ca3-1b5a" targetId="caad-e621-38e5-cb5f"/>
-      </entryLinks>
       <categoryLinks>
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="e2f3-8a17-7b35-4909" primary="false" name="Daemon Unit Type"/>
       </categoryLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Brutes" hidden="false" id="2219-cb60-b52-a36c" publicationId="8775-88f5-cfdd-24f6" page="9">
       <selectionEntries>
@@ -643,7 +782,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="2219-cb60-b52-a36c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="2219-cb60-b52-a36c" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -657,9 +796,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="b5cc-4b7f-66f9-183f" targetId="caad-e621-38e5-cb5f"/>
-      </entryLinks>
       <categoryLinks>
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="eddf-34f6-417f-401a" primary="false" name="Daemon Unit Type"/>
       </categoryLinks>
@@ -675,25 +811,31 @@
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="fd20-b609-3248-6d51" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" id="4005-fbfc-51f8-3dc4" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (2)">
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="05eb-6421-0257-5bdc" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -713,13 +855,58 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Beasts" hidden="false" id="69ad-927-c71b-6b24" publicationId="8775-88f5-cfdd-24f6" page="10">
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="db7d-815a-fd7-6518" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Ætheric Flight" hidden="false" type="selectionEntry" id="7f27-c850-ccf-95ab" targetId="7647-8112-eaf7-fbea">
           <modifiers>
             <modifier type="increment" value="5" field="d2ee-04cb-5f8a-2642">
@@ -750,7 +937,7 @@
             <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -785,7 +972,7 @@
                   <modifiers>
                     <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                       <conditions>
-                        <condition field="selections" scope="69ad-927-c71b-6b24" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="69ad-927-c71b-6b24" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -831,7 +1018,7 @@
                   <modifiers>
                     <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                       <conditions>
-                        <condition field="selections" scope="69ad-927-c71b-6b24" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                        <condition type="instanceOf" value="1" field="selections" scope="69ad-927-c71b-6b24" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -862,10 +1049,56 @@
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Lesser Daemons" hidden="false" id="157c-7592-a6b9-f96" publicationId="8775-88f5-cfdd-24f6" page="11">
       <selectionEntries>
@@ -895,7 +1128,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="157c-7592-a6b9-f96" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="157c-7592-a6b9-f96" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -910,9 +1143,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="20"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="984b-1653-1706-eaf" targetId="caad-e621-38e5-cb5f"/>
-      </entryLinks>
       <categoryLinks>
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="83d4-7ef0-2bce-18cb" primary="false" name="Daemon Unit Type"/>
         <categoryLink targetId="6399-5c65-7833-1025" id="7bf1-d30-86a3-e2e5" primary="false" name="Line Sub-type"/>
@@ -929,7 +1159,7 @@
             <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -958,10 +1188,56 @@
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf6-d802-d054-6a86" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Swarms" hidden="false" id="bb35-e585-a226-28e" publicationId="8775-88f5-cfdd-24f6" page="12">
       <selectionEntries>
@@ -991,7 +1267,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="bb35-e585-a226-28e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="bb35-e585-a226-28e" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1007,9 +1283,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="8b54-9c7b-7706-f5fb" targetId="caad-e621-38e5-cb5f"/>
-      </entryLinks>
       <categoryLinks>
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="7e4d-5d59-2dfb-7bc" primary="false" name="Daemon Unit Type"/>
         <categoryLink targetId="6399-5c65-7833-1025" id="3401-3a7f-8da3-70a3" primary="false" name="Line Sub-type"/>
@@ -1029,7 +1302,7 @@
             <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1038,10 +1311,56 @@
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Cavalry" hidden="false" id="b7b5-c59a-768c-276c" publicationId="8775-88f5-cfdd-24f6" page="13">
       <selectionEntries>
@@ -1071,7 +1390,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="b7b5-c59a-768c-276c" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="b7b5-c59a-768c-276c" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1085,9 +1404,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="9090-c089-e5b6-db5" targetId="caad-e621-38e5-cb5f"/>
-      </entryLinks>
       <categoryLinks>
         <categoryLink targetId="e699-d9cd-e68e-46d9" id="9407-be20-96bd-e31" primary="false" name="Daemon Unit Type"/>
       </categoryLinks>
@@ -1123,7 +1439,7 @@
             <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1132,10 +1448,56 @@
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harriers" hidden="false" id="14c1-3063-c9b4-d99b" publicationId="8775-88f5-cfdd-24f6" page="14">
       <selectionEntries>
@@ -1162,7 +1524,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="14c1-3063-c9b4-d99b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="14c1-3063-c9b4-d99b" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1177,7 +1539,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="8599-7755-d965-7c69" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Immaterial Wings" hidden="false" type="selectionEntry" id="941f-9942-11d8-2dcd" targetId="fd64-626a-d3d4-9b8e">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a848-40a2-d07f-da6a"/>
@@ -1199,7 +1560,7 @@
             <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1228,10 +1589,56 @@
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Greater Ruinstorm Daemon Beast" hidden="false" id="41a0-6caa-af06-3684" publicationId="8775-88f5-cfdd-24f6" page="15">
       <selectionEntries>
@@ -1261,7 +1668,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="41a0-6caa-af06-3684" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="41a0-6caa-af06-3684" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1277,7 +1684,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="f88e-efeb-fa59-6265" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="35a5-f23c-e05c-e958" targetId="9abc-11e8-9031-d104">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9219-1720-fe80-925b"/>
@@ -1295,29 +1701,81 @@
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="fcac-c911-350e-eac7" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink id="3fca-6f8-15aa-91c0" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink name="Hammer of Wrath (X)" id="675e-0a1f-0703-ddf9" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (3)">
+            <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (3+1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
         </infoLink>
-        <infoLink id="3fca-6f8-15aa-91c0" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
+        <infoLink name="Hammer of Wrath (X)" id="07d5-ba21-25a0-addd" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Hammer of Wrath (3+1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Behemoth" hidden="false" id="240a-1822-9e4f-3080" publicationId="8775-88f5-cfdd-24f6" page="16">
       <selectionEntries>
@@ -1340,7 +1798,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="240a-1822-9e4f-3080" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="240a-1822-9e4f-3080" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1411,9 +1869,6 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="dc61-4e39-99b9-8398" targetId="caad-e621-38e5-cb5f"/>
-      </entryLinks>
       <infoLinks>
         <infoLink id="c667-25ba-81a5-446d" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
           <modifiers>
@@ -1421,16 +1876,6 @@
           </modifiers>
         </infoLink>
         <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="c1d7-f721-2ad5-2e98" targetId="c694-20c8-455-baca"/>
-        <infoLink id="9937-1e8e-33f9-57f5" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (3)"/>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="f8a7-a4c6-2d04-cf4e" name="It Will Not Die (X)" hidden="false" targetId="2784-d0be-a4e2-890f" type="rule">
           <modifiers>
             <modifier type="set" value="It Will Not Die (5+)" field="name"/>
@@ -1442,24 +1887,80 @@
             <modifier type="set" value="Bulky (7)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="6724-11c8-843c-fc0b" targetId="aec0-c3aa-1e4e-1779">
+        <infoLink name="Hammer of Wrath (X)" id="d834-1b25-d4f0-d8e5" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (4)" field="name"/>
+            <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="8c15-0fa5-5cca-ea1a" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="Hammer of Wrath (3+1)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Arch-Daemon" hidden="false" id="1fbb-b82e-ae1e-5a12" publicationId="8775-88f5-cfdd-24f6" page="17">
       <selectionEntries>
@@ -1482,7 +1983,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition field="selections" scope="1fbb-b82e-ae1e-5a12" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="1fbb-b82e-ae1e-5a12" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1519,18 +2020,24 @@
           </modifiers>
         </infoLink>
         <infoLink id="20df-2bd-59c2-ae77" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink id="97ec-1603-fd56-24b1" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+        <infoLink name="Hammer of Wrath (X)" id="49f2-61f9-7a5d-df07" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (D3)">
+            <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (D3+1)">
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="40c0-d4fd-30a8-87ea" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="set" value="Hammer of Wrath (3+1)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1541,7 +2048,6 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53f8-20f7-4962-f7c5"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="8100-95ec-9194-4e21" targetId="caad-e621-38e5-cb5f"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ruinstorm Arch-Daemon may take up to three of the following options" hidden="false" id="a55f-e665-3b09-a2a6">
@@ -1594,10 +2100,56 @@
       <modifiers>
         <modifier type="add" field="category" value="9231-183c-b97b-63f9">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ka’bandha Unbound" hidden="false" id="baa5-baed-1a62-c820" publicationId="8775-88f5-cfdd-24f6" page="18">
       <selectionEntries>
