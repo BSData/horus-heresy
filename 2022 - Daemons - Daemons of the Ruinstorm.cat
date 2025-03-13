@@ -1650,7 +1650,7 @@
         <infoLink id="c02d-11c2-315c-259f" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="25cc-41da-4e8-d8b8" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="Hammer of Wrath (1+1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
@@ -2853,6 +2853,18 @@ During a Reaction made in any Phase, a player may not choose to activate a model
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="165a-67fd-7320-7538"/>
       </constraints>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="bb47-3002-5fef-4b73" hidden="false" type="rule" targetId="676c-7b75-4b6f-9405">
+          <modifiers>
+            <modifier type="set" value="Bulky (2 or +1 if higher)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="8f8e-f995-49a3-a352" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (1 or +1 if higher)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Miasma of Rage" hidden="false" id="ce6-3fae-8519-e10d">
       <profiles>
