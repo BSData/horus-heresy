@@ -2618,7 +2618,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
         <rule name="How to add an allied or lord of war detachment THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
           <description>To add Lords of War or allied detachments, you now need to add the additional detachment to your list. To do this:
 In New Recruit:
-* Select List Options in the top left corner. 
+* Select List Options in the top right corner. 
 * Select &quot;Add Force&quot;
 * Select the appropriate faction.
 * Select the appropriate optional detachment (lord of war or allied) to add it to your list.
@@ -2626,11 +2626,7 @@ In New Recruit:
 On Battlescribe Mobile, after adding your initial detachment, press the + sign at the bottom left
 On Battlescribe Desktop, after adding your first force then just press add force again
 
-Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).
-
-
-
-</description>
+Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).</description>
         </rule>
       </rules>
       <modifiers>
