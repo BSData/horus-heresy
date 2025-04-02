@@ -2607,7 +2607,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;" hidden="false" id="7d8-ddbf-ce7b-78f9">
+    <selectionEntry type="upgrade" import="true" name="How to add an allied or lord of war detachment" hidden="false" id="7d8-ddbf-ce7b-78f9">
       <categoryLinks>
         <categoryLink targetId="ed41-7006-3494-4c24" id="8e06-717c-a608-c888" primary="true" name="Lords of War Have Moved to &quot;Lords of War Detachment&quot;"/>
       </categoryLinks>
@@ -2615,13 +2615,22 @@ If that test is failed, the unit suffers one Wound, allocated by the controllin
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edec-c227-3cb6-85ff"/>
       </constraints>
       <rules>
-        <rule name="LoW (where are they?) THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
-          <description>To add Lords of War you now need to add the additional detachment to your list. To do this:
+        <rule name="How to add an allied or lord of war detachment THIS ENTRY CAN BE REMOVED FROM YOUR ROSTER WITHOUT ISSUE" hidden="false" id="b1e1-9f1d-7934-c233">
+          <description>To add Lords of War or allied detachments, you now need to add the additional detachment to your list. To do this:
+In New Recruit:
+* Select List Options in the top left corner. 
+* Select &quot;Add Force&quot;
+* Select the appropriate faction.
+* Select the appropriate optional detachment (lord of war or allied) to add it to your list.
 
-A - On Mobile, after adding your initial detachment, press the + sign at the bottom left
-B - On Desktop after adding your first force then just press add force again
+On Battlescribe Mobile, after adding your initial detachment, press the + sign at the bottom left
+On Battlescribe Desktop, after adding your first force then just press add force again
+
 Then choose the army you wish to have a lord of war from, then pick &quot;Lord of War Detachment&quot;. This allows the choice of any LoW from any army as per the rules of HH2 (apart from the new Ruinstorm Deamons one can only be taken in a Lord of War Detachment for Ruinstorm Daemons).
-THIS IS A TEMPORARY NOTIFICATION THAT WILL BE REMOVED IN A FEW MONTHS WHEN HOPEFULLY EVERYONE WILL BE USED TO WHERE THE NEW LOCATION IS, AND I DON’T GET 100S OF BUG REPORTS FROM PEOPLE NOT BEING ABLE TO FIND THEIR LOW</description>
+
+
+
+</description>
         </rule>
       </rules>
       <modifiers>
