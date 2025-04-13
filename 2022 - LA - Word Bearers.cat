@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="45" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="46" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="821c-0c83-5ed0-ff6b" name="Harbinger of Chaos Restriction" hidden="false">
       <modifiers>
@@ -4830,15 +4830,15 @@ Psychic Weapon</description>
             <modifier type="set" field="name" value="It Will Not Die (5+)"/>
           </modifiers>
         </infoLink>
-        <infoLink id="6c02-a57a-95b5-bc2d" name="Hatred (X)" hidden="true" targetId="dc0b-fe69-6b71-e0a4" type="rule">
+        <infoLink id="6c02-a57a-95b5-bc2d" name="Hatred (X)" hidden="false" targetId="dc0b-fe69-6b71-e0a4" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Hatred (Everything)"/>
-            <modifier type="set" field="hidden" value="false">
+            <modifier type="set" field="name" value="Hatred (Everything) (See &quot;Jealous Command&quot;)"/>
+            <modifier type="set" field="hidden" value="true">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="e61d-db78-6f56-3c05" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-65f7-e452-51a5" type="equalTo"/>
+                    <condition field="selections" scope="e61d-db78-6f56-3c05" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="atLeast"/>
+                    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9289-65f7-e452-51a5" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -4930,7 +4930,7 @@ Psychic Weapon</description>
               <modifiers>
                 <modifier type="set" field="e8a6-1da9-d384-8727" value="9">
                   <conditions>
-                    <condition field="selections" scope="e61d-db78-6f56-3c05" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0176-56a3-d590-b103" type="equalTo"/>
+                    <condition type="atLeast" value="1" field="selections" scope="e61d-db78-6f56-3c05" childId="0176-56a3-d590-b103" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
                 <modifier type="set" field="cc42-7ed5-7092-5c84" value="6">
