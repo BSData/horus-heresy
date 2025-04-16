@@ -24,7 +24,7 @@ class GameTests(unittest.TestCase):
         driver.delete_all_cookies()
         self.wait = ui.WebDriverWait(driver, 30)  # timeout after 30 seconds
         self.driver = driver
-        driver.get("https://www.newrecruit.eu/app/MySystems")
+        driver.get("https://www.newrecruit.eu/app")
         print("Loading NR")
 
         driver.execute_script('localStorage.setItem("local", "true")')
