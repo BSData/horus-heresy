@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f84d-94cf-5ce6-b393" name="Imperialis Militia" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <categoryEntries>
     <categoryEntry id="58b3-196a-9732-2165" name="Rogue Psyker Daemons Restriction" publicationId="48c2-d023-0069-001a" page="15" hidden="false">
       <modifiers>
@@ -10931,11 +10931,17 @@ Note that only Militia Medicae selected as part of a Detachment with the Ogryn C
                     <condition type="equalTo" value="1" field="selections" scope="7ca9-9eae-7f93-79fa" childId="566b-4fc6-9d5c-10cd" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" value="3" field="51fb-b7d9-aa59-863d"/>
               </modifiers>
             </infoLink>
           </infoLinks>
           <entryLinks>
-            <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="b02d-4863-e6f-994" targetId="4ae3-79b4-6051-505e"/>
+            <entryLink import="true" name="Searchlights" hidden="false" type="selectionEntry" id="b02d-4863-e6f-994" targetId="4ae3-79b4-6051-505e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f42a-f1ad-bbb3-26a2" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d3f5-f84f-f804-ad97" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="125"/>
