@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="46" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6af7-3fee-5bc1-7533" name="LI - Solar Auxilia" revision="47" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="19f3-8727-02db-3ce5" name="Static Artillery" hidden="false">
       <rules>
@@ -4552,6 +4552,13 @@
                     <characteristic name="Ld" id="32f7-626e-240f-3c34" hidden="false" typeId="e8a6-1da9-d384-8727">7</characteristic>
                     <characteristic name="Save" id="a6d-9526-512e-4484" hidden="false" typeId="e593-6b3c-f169-04f0">3+</characteristic>
                   </characteristics>
+                  <modifiers>
+                    <modifier type="set" value="Cavalry (Mechanised) + (Heavy) from Reinforced Void Armor + Line (Solar Pattern Cohort)" field="ddd7-6f5c-a939-b69e">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="force" childId="a09b-28bd-8ffc-f4f0" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </profile>
               </profiles>
               <costs>
@@ -10988,6 +10995,11 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="de57-72ed-9c1a-995e" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2a1e-412f-fd41-17a4" type="max"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Vulcan Mega-Bolter" hidden="false" id="ca9d-2328-1d1b-0ac9" type="selectionEntry" targetId="b953-83d7-6cc1-5695">
+          <modifiers>
+            <modifier type="set" value="Centreline (Front) Mounted Vulcan mega-bolter" field="name"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <costs>

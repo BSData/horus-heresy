@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="39" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="d228-55e8-b58c-1b77" name="LA -  XIV: Death Guard" revision="40" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="fb89-32c1-bdc5-2e3d" name="Mortarion" hidden="false" collective="false" import="false" targetId="7427-bdfa-c359-ebb8" type="selectionEntry">
       <modifiers>
@@ -3836,6 +3836,30 @@ If this option is used then Mortarion is removed from the battlefield, leaving a
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="61c1-be9d-5c56-2bc3" type="max"/>
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Drop Pod" hidden="true" id="7dba-ac54-7f9f-c108" collective="false" targetId="83ac-f9cf-cc29-00a3" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="1977-49f2-7910-f177" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="lessThan" value="10" field="selections" scope="dd7b-fe21-cf53-0ebc" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="force" childId="e864-ddc1-da3a-138e" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                            <condition type="lessThan" value="10" field="selections" scope="dd7b-fe21-cf53-0ebc" childId="model" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>

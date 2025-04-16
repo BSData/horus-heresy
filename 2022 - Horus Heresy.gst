@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="125" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="126" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -518,7 +518,7 @@ During Reactions made in any Phase, a unit equipped with Jump Packs may not acti
       <rules>
         <rule id="e02b-5fd3-aa3b-4fc4" name="Skirmish Sub-type" publicationId="817a-6288-e016-7469" page="95" hidden="false">
           <description>• A unit that includes only models with the Skirmish Sub-type has a unit coherency range of 3&quot; rather than 2&quot;
-• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by tarrian by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
+• A unit that includes only models with the Skirmish Sub-type increases all Cover Saves granted by terrian by one (i.e, from 6+ to 5+). This only increase existing Cover Saves and does not grant one when in terrain that does not normally grant Cover Saves. This rule cannot increase a Cover Save to better than 2+.</description>
         </rule>
       </rules>
     </categoryEntry>
@@ -7510,7 +7510,6 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7ae-8da7-ad16-cea6" type="max"/>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2c74-7db8-469e-8327" type="max"/>
-        <constraint field="selections" scope="roster" value="3" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dadb-f5a9-20c8-f415" type="max"/>
       </constraints>
       <profiles>
         <profile id="9e5f-b65f-2f13-f24e" name="Advanced Reaction: Scornful Fire" publicationId="bde1-6db1-163b-3b76" page="17" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">

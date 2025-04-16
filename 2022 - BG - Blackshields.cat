@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="7" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="cd55-5578-4b1a-67a0" name="BG - Blackshields" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="104" revision="8" battleScribeVersion="2.03" type="catalogue">
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Retinue" hidden="false" id="5b3d-ea70-4774-c23d" collective="false" import="true">
       <comment>template_id_be38-a066-4f8e-ae54</comment>
@@ -2022,6 +2022,22 @@ When you do so, replace this model’s Legiones Astartes (Salamanders) special r
       <constraints>
         <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7fc3-26cb-8d07-533c" includeChildSelections="true"/>
       </constraints>
+    </entryLink>
+    <entryLink import="true" name="Decimator" hidden="false" id="f56d-7900-8a80-1070" type="selectionEntry" targetId="b1a5-42a-a6ee-2223">
+      <modifiers>
+        <modifier type="set" value="true" field="hidden">
+          <conditions>
+            <condition type="equalTo" value="0" field="selections" scope="roster" childId="bbbd-74d7-7754-8af4" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="168e-aded-bc6b-64c1" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Heavy Support:" hidden="false" id="0b7f-f04f-b898-d037" targetId="7031-469a-1aeb-eab0" primary="true"/>
+        <categoryLink name="Compulsory Heavy Support:" hidden="false" id="0915-0f77-7ebd-1c47" targetId="030f-3801-4f54-e7f8" primary="false"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <catalogueLinks>
