@@ -214,12 +214,68 @@
         </infoLink>
         <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="41e0-d71f-ba88-64a6" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="2f3f-adc4-b19f-a5c7" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="1" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="2f3f-adc4-b19f-a5c7" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="2f3f-adc4-b19f-a5c7" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="2" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="2f3f-adc4-b19f-a5c7" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value=" - Deflagerate [IT ✓]" field="name" join="">
               <conditions>
-                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="append" value="[IW ✓]" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="2f3f-adc4-b19f-a5c7" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IT X]" field="name" join="">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IW X]" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="2f3f-adc4-b19f-a5c7" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=")" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -423,12 +479,68 @@
         </infoLink>
         <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="9b4c-d419-6ff1-68b1" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
             <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="ae8b-ee65-95b6-a8f9" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="1" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="ae8b-ee65-95b6-a8f9" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="ae8b-ee65-95b6-a8f9" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="2" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="ae8b-ee65-95b6-a8f9" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value=" - Deflagerate [IT ✓]" field="name" join="">
               <conditions>
-                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
+            <modifier type="append" value="[IW ✓]" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="ae8b-ee65-95b6-a8f9" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IT X]" field="name" join="">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IW X]" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="ae8b-ee65-95b6-a8f9" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=")" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -555,7 +667,7 @@
               <modifiers>
                 <modifier type="append" field="ddd7-6f5c-a939-b69e" value="(Heavy)">
                   <conditions>
-                    <condition type="instanceOf" value="1" field="selections" scope="5a2e-abe2-3044-3c1c" childId="9231-183c-b97b-63f9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <condition type="instanceOf" value="1" field="selections" scope="45fa-e6f-ff0-9c02" childId="9231-183c-b97b-63f9" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -574,7 +686,7 @@
             <infoLink id="ae51-3edb-f81-998e" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
             <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="663e-f215-a5a3-5da9" targetId="aec0-c3aa-1e4e-1779">
               <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                <modifier type="set" value="Hammer of Wrath (1 - Deflagerate [IT ✓])" field="name"/>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
@@ -675,22 +787,17 @@
             <infoLink id="9e4d-875f-444c-e9ce" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
             <infoLink name="Hammer of Wrath (X)" id="8fd5-2720-429c-209f" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Hammer of Wrath (X)" id="1ab2-8c64-cb89-261d" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="Hammer of Wrath (" field="name"/>
+                <modifier type="append" value="1 [IT X])" field="name">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
+                <modifier type="append" value="2 - Deflagerate [IT ✓])" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -829,22 +936,17 @@
           <infoLinks>
             <infoLink name="Hammer of Wrath (X)" id="3747-569d-88cb-2a66" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Hammer of Wrath (X)" id="581e-cf77-39e0-5e02" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="Hammer of Wrath (" field="name"/>
+                <modifier type="append" value="1 [IT X])" field="name">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
+                <modifier type="append" value="2 - Deflagerate [IT ✓])" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -969,16 +1071,6 @@
           </modifiers>
         </infoLink>
         <infoLink id="62c4-c339-363b-79a8" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="71ec-9e8f-4c64-8e9d" targetId="aec0-c3aa-1e4e-1779">
-          <modifiers>
-            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Daemon Beasts" hidden="false" id="8d09-1913-b79f-5c35" defaultSelectionEntryId="e8d9-781b-531d-9386">
@@ -1034,6 +1126,18 @@
               <categoryLinks>
                 <categoryLink targetId="e699-d9cd-e68e-46d9" id="bf28-d2d0-4185-9f31" name="Daemon Unit Type" primary="false"/>
               </categoryLinks>
+              <infoLinks>
+                <infoLink name="Hammer of Wrath (X)" id="b498-6483-26a7-008a" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Hammer of Wrath (1 - Deflagerate [IT ✓])" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
             <selectionEntry type="model" import="true" name="Daemon Beast w/ Immaterial Flame" hidden="false" id="5828-5d74-9c9b-edc5" publicationId="8775-88f5-cfdd-24f6" page="10">
               <costs>
@@ -1087,24 +1191,24 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <infoLinks>
+                <infoLink name="Hammer of Wrath (X)" id="30fc-3179-c876-41e4" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" value="Hammer of Wrath (1 - Deflagerate [IT ✓])" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c742-33ce-5486-cd41"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f09-f2e2-9697-c2e"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Hammer of Wrath (X)" id="4bf3-8cfb-dae9-400c" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
@@ -1202,7 +1306,7 @@
           <infoLinks>
             <infoLink name="Hammer of Wrath (X)" id="f9e5-eb89-d5b3-e7f9" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                <modifier type="set" value="Hammer of Wrath (1 - Deflagerate [IT ✓])" field="name"/>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="notInstanceOf" value="1" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
@@ -1358,7 +1462,7 @@
           <infoLinks>
             <infoLink name="Hammer of Wrath (X)" id="ae97-f4e1-3942-7ee0" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+                <modifier type="set" value="Hammer of Wrath (1 - Deflagerate [IT ✓])" field="name"/>
                 <modifier type="set" value="true" field="hidden">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
@@ -1522,7 +1626,7 @@
         <infoLink id="1105-9717-b770-9f35" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="f808-d189-7f7d-f216" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+            <modifier type="set" value="Hammer of Wrath (1 - Deflagerate [IT ✓])" field="name"/>
             <modifier type="set" value="true" field="hidden">
               <conditions>
                 <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
@@ -1650,10 +1754,15 @@
         <infoLink id="c02d-11c2-315c-259f" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink name="Hammer of Wrath (X)" hidden="false" type="rule" id="25cc-41da-4e8-d8b8" targetId="aec0-c3aa-1e4e-1779">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (1+1)" field="name"/>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="1 [IW ✓] [IT X])" field="name">
               <conditions>
-                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2 [IW ✓] [IT ✓])" field="name">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1804,22 +1913,17 @@
         <infoLink id="3fca-6f8-15aa-91c0" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink name="Hammer of Wrath (X)" id="675e-0a1f-0703-ddf9" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
-            <modifier type="set" value="true" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Hammer of Wrath (X)" id="07d5-ba21-25a0-addd" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="3 [IT X])" field="name">
               <conditions>
                 <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="Hammer of Wrath (3+1)" field="name"/>
+            <modifier type="append" value="4 - Deflagerate [IT ✓])" field="name">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1996,22 +2100,68 @@
         </infoLink>
         <infoLink name="Hammer of Wrath (X)" id="d834-1b25-d4f0-d8e5" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="3" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="240a-1822-9e4f-3080" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="4" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="240a-1822-9e4f-3080" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="240a-1822-9e4f-3080" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="5" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="240a-1822-9e4f-3080" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value=" - Deflagerate [IT ✓]" field="name" join="">
               <conditions>
                 <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Hammer of Wrath (X)" id="8c15-0fa5-5cca-ea1a" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="append" value="[IW ✓]" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="240a-1822-9e4f-3080" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IT X]" field="name" join="">
               <conditions>
                 <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="Hammer of Wrath (3+1)" field="name"/>
+            <modifier type="append" value="[IW X]" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="240a-1822-9e4f-3080" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=")" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -2136,22 +2286,68 @@
         <infoLink id="20df-2bd-59c2-ae77" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
         <infoLink name="Hammer of Wrath (X)" id="49f2-61f9-7a5d-df07" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
-            <modifier type="set" value="Hammer of Wrath (3)" field="name"/>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="3" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="1fbb-b82e-ae1e-5a12" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="4" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="1fbb-b82e-ae1e-5a12" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="1fbb-b82e-ae1e-5a12" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="5" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="1fbb-b82e-ae1e-5a12" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value=" - Deflagerate [IT ✓]" field="name" join="">
               <conditions>
                 <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Hammer of Wrath (X)" id="40c0-d4fd-30a8-87ea" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" value="true" field="hidden">
+            <modifier type="append" value="[IW ✓]" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="1fbb-b82e-ae1e-5a12" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IT X]" field="name" join="">
               <conditions>
                 <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
               </conditions>
             </modifier>
-            <modifier type="set" value="Hammer of Wrath (3+1)" field="name"/>
+            <modifier type="append" value="[IW X]" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="1fbb-b82e-ae1e-5a12" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=")" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -2162,6 +2358,7 @@
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="53f8-20f7-4962-f7c5"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="The Ætheric Dominion (X)" hidden="false" id="716c-4b06-e82d-5dc7" type="selectionEntryGroup" targetId="002f-0e40-9d49-2a22"/>
       </entryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Ruinstorm Arch-Daemon may take up to three of the following options" hidden="false" id="a55f-e665-3b09-a2a6">
@@ -2859,11 +3056,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <modifier type="set" value="Bulky (2 or +1 if higher)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink name="Hammer of Wrath (X)" id="8f8e-f995-49a3-a352" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
-          <modifiers>
-            <modifier type="set" value="Hammer of Wrath (1 or +1 if higher)" field="name"/>
-          </modifiers>
-        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="8f8e-f995-49a3-a352" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Miasma of Rage" hidden="false" id="ce6-3fae-8519-e10d">

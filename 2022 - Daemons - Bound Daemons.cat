@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e545-295b-4cd9-f235" name="Daemons - Bound Daemons" revision="11" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e545-295b-4cd9-f235" name="Daemons - Bound Daemons" revision="12" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="56" type="catalogue">
   <entryLinks>
     <entryLink id="250f-d164-bb7e-7025" name="Bound Daemon Brutes" hidden="false" collective="false" import="false" targetId="519f-866e-e6fe-20e0" type="selectionEntry">
       <modifiers>
@@ -293,9 +293,9 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
     </selectionEntry>
     <selectionEntry id="89f7-b7a1-aab2-e47a" name="Bound Daemon Regent" publicationId="cb13-da24-e6da-75b3" page="17" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="ancestor" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8cf6-d802-d054-6a86" type="instanceOf"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -347,24 +347,19 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
             </infoLink>
             <infoLink id="9366-e6e8-3161-e418" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
             <infoLink id="9c3d-13ec-4b8a-6a23" name="Chosen Warriors" hidden="false" targetId="13d1-9270-6539-08ed" type="rule"/>
-            <infoLink name="Hammer of Wrath (X)" id="e109-ede2-f519-f47e" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink name="Hammer of Wrath (X)" id="cf37-6a2a-59e8-a5ed" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="Hammer of Wrath (" field="name"/>
+                <modifier type="append" value="1 [IT X])" field="name">
                   <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="89f7-b7a1-aab2-e47a" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Hammer of Wrath (X)" id="dec4-3894-b516-b609" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="append" value="2 - Deflagerate [IT ✓])" field="name">
                   <conditions>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="89f7-b7a1-aab2-e47a" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -376,7 +371,7 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
             <categoryLink targetId="40f3-05e8-5ddc-636a" id="7c92-d8f4-4b19-82f0" name="Bound Sub-type" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Brute Armaments" hidden="false" id="ca28-a223-5bf2-7061" type="selectionEntry" targetId="663d-649f-e56a-8095"/>
+            <entryLink import="true" name="Brute Armaments" hidden="false" id="ca28-a223-5bf2-7061" type="selectionEntry" targetId="663d-649f-e56a-8095" collective="true"/>
           </entryLinks>
           <modifiers>
             <modifier type="add" value="9231-183c-b97b-63f9" field="category">
@@ -428,24 +423,19 @@ The End and the Death – When fighting in a Challenge, successful Invulnerable 
               </modifiers>
             </infoLink>
             <infoLink id="bfa4-05a9-a6cd-02a4" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink name="Hammer of Wrath (X)" id="8054-b5ed-1933-f818" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink name="Hammer of Wrath (X)" id="9e35-b2b7-fdc4-cfce" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="Hammer of Wrath (" field="name"/>
+                <modifier type="append" value="1 [IT X])" field="name">
                   <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="89f7-b7a1-aab2-e47a" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Hammer of Wrath (X)" id="e937-da2a-d3b2-5b6c" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="append" value="2 - Deflagerate [IT ✓])" field="name">
                   <conditions>
-                    <condition type="notInstanceOf" value="0" field="selections" scope="89f7-b7a1-aab2-e47a" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -767,24 +757,19 @@ During a Reaction made in any Phase, a player may not choose to activate a model
               </modifiers>
             </infoLink>
             <infoLink id="9806-b0f1-d650-c1d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-            <infoLink name="Hammer of Wrath (X)" id="bc78-5f8a-e461-eca2" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+            <infoLink name="Hammer of Wrath (X)" id="a2b7-dc16-7e2b-598f" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
               <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
-                <modifier type="set" value="true" field="hidden">
-                  <conditions>
-                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Hammer of Wrath (X)" id="8689-a8d7-fed4-0db4" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
+                <modifier type="set" value="Hammer of Wrath (" field="name"/>
+                <modifier type="append" value="1 [IT X])" field="name">
                   <conditions>
                     <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" value="Hammer of Wrath (2)" field="name"/>
+                <modifier type="append" value="2 - Deflagerate [IT ✓])" field="name">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -796,7 +781,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
             <categoryLink targetId="40f3-05e8-5ddc-636a" id="776a-d8e9-4e56-8a41" name="Bound Sub-type" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Brute Armaments" hidden="false" id="b90f-25c1-086a-893e" type="selectionEntry" targetId="663d-649f-e56a-8095"/>
+            <entryLink import="true" name="Brute Armaments" hidden="false" id="b90f-25c1-086a-893e" type="selectionEntry" targetId="663d-649f-e56a-8095" collective="true"/>
           </entryLinks>
           <modifiers>
             <modifier type="add" value="9231-183c-b97b-63f9" field="category">
@@ -857,7 +842,7 @@ During a Reaction made in any Phase, a player may not choose to activate a model
         </modifierGroup>
       </modifierGroups>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Brute Armaments" hidden="false" id="663d-649f-e56a-8095" publicationId="cb13-da24-e6da-75b3" page="18">
+    <selectionEntry type="upgrade" import="true" name="Brute Armaments" hidden="false" id="663d-649f-e56a-8095" publicationId="cb13-da24-e6da-75b3" page="18" collective="true">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0987-0e69-34d6-dcd8" includeChildSelections="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b0d-7e61-907c-6384" includeChildSelections="false"/>
