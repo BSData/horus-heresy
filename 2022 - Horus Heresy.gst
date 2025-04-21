@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="126" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="127" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -920,7 +920,7 @@ Conversely, if an Independent Character joins a unit after that unit has been th
     </categoryEntry>
     <categoryEntry id="0ea2-efb5-b7af-226e" name="Fast Sub-type" hidden="false">
       <rules>
-        <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="false">
+        <rule id="2cbf-c1a1-844a-6456" name="Fast Vehicles" hidden="true">
           <description>When a Fast Vehicle moves, other than to pivot in place, it is always considered to have moved at Combat Speed regardless of how many inches it moves, unless it chooses to move Flat-out.
 In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</description>
         </rule>
@@ -1119,7 +1119,17 @@ In addition, when a Fast Vehicle moves, it may choose to move at Flat-out:</desc
         <constraint field="selections" scope="force" value="-1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6098-fe90-8855-def8" type="max"/>
       </constraints>
     </categoryEntry>
-    <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false"/>
+    <categoryEntry id="4303-1348-cce4-9501" name="Antigrav Sub-type" hidden="false">
+      <rules>
+        <rule name="Antigrav Sub-type" id="d33c-5dd3-b848-885d" hidden="false">
+          <description>The following rules apply to all models with the Antigrav
+sub-type:
+• A unit that includes only models with the Antigrav sub-type may ignore the effects of any and all terrain it passes over during movement, including passing over vertical terrain and Impassable Terrain without penalty
+or restriction. However, such units may not begin or end their movement in Impassable Terrain, and if beginning or ending their movement in Dangerous Terrain must take Dangerous Terrain tests as normal.
+• Models with the Antigrav sub-type may never benefit from Cover Saves of any kind.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry id="e333-681c-ddca-24f6" name="Crusade" hidden="false"/>
     <categoryEntry id="4aca-2849-7f41-0200" name="SA or IM Unit" hidden="false">
       <modifiers>

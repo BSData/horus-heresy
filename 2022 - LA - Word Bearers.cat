@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="46" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="1df7-bbbc-b70e-6a3f" name="LA -  XVII: Word Bearers" revision="47" battleScribeVersion="2.03" authorName="UrsinePatriarch" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="821c-0c83-5ed0-ff6b" name="Harbinger of Chaos Restriction" hidden="false">
       <modifiers>
@@ -3958,6 +3958,7 @@ In addition, once per battle, one friendly unit composed entirely of models with
                 </entryLink>
                 <entryLink id="6feb-3285-8e03-cde7" name="Devotion" hidden="false" collective="false" import="true" targetId="580d-f719-30eb-d878" type="selectionEntry"/>
                 <entryLink id="9843-329d-51b4-2149" name="Illuminarum" hidden="false" collective="false" import="true" targetId="4dd8-ebdd-1395-f138" type="selectionEntry"/>
+                <entryLink import="true" name="The Ætheric Dominion (X)" hidden="false" id="5cb9-c86f-a629-c8b3" type="selectionEntryGroup" targetId="002f-0e40-9d49-2a22"/>
               </entryLinks>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
@@ -4798,6 +4799,7 @@ Psychic Weapon</description>
           </profiles>
         </entryLink>
         <entryLink id="ea81-799d-c4ba-16ab" name="Retinue" hidden="false" collective="false" import="true" targetId="bda8-b52d-c914-4ac2" type="selectionEntryGroup"/>
+        <entryLink import="true" name="The Ætheric Dominion (X)" hidden="false" id="73ef-df1f-2835-6f36" type="selectionEntryGroup" targetId="002f-0e40-9d49-2a22"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
@@ -5806,9 +5808,9 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
     </selectionEntry>
     <selectionEntry id="0da5-927a-258d-8507" name="Bound Daemon Regent (Lorgar/Erebus)" publicationId="cb13-da24-e6da-75b3" page="17" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5817,19 +5819,64 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <categoryLink id="bda0-69f3-9a67-867f" name="Bound Sub-type" hidden="false" targetId="40f3-05e8-5ddc-636a" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="b66c-cc27-85cb-d896" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
         <entryLink id="d4e0-363a-09d2-2c94" name="Bound Daemon Attendant" hidden="false" collective="false" import="true" targetId="77cd-426a-d300-31a1" type="selectionEntry"/>
         <entryLink id="9d75-6fb5-326f-f5a7" name="Bound Daemon Regent" hidden="false" collective="false" import="true" targetId="6979-74bc-2519-6bba" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry id="fd8b-8d8d-901a-6ee3" name="Bound Daemon Brutes (Lorgar/Erebus)" publicationId="cb13-da24-e6da-75b3" page="18" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="equalTo"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -5838,12 +5885,57 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <categoryLink id="2c84-da60-2762-c184" name="Bound Sub-type" hidden="false" targetId="40f3-05e8-5ddc-636a" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8719-b207-984d-582c" name="The Ætheric Dominion (Unit)" hidden="false" collective="false" import="true" targetId="caad-e621-38e5-cb5f" type="selectionEntryGroup"/>
         <entryLink id="97a2-a51e-51dd-4680" name="Bound Daemon Brute" hidden="false" collective="false" import="true" targetId="12a1-9b89-fe2e-29dd" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Beasts (Lorgar/Erebus)" hidden="false" id="cca0-3900-65ca-bd5d">
       <costs>
@@ -5863,7 +5955,6 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="6d0c-433c-9ccc-2922" targetId="caad-e621-38e5-cb5f"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Traitor" hidden="false" type="rule" id="99b-377b-84f1-96c8" targetId="eff2-8b0e-21da-2f0d"/>
@@ -5877,23 +5968,60 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             <modifier type="set" value="Bulky (3)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="62dc-152c-b4f-6f9f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
       </infoLinks>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Brutes (Lorgar/Erebus)" hidden="false" id="c640-5d22-9d97-4959">
       <costs>
@@ -5904,8 +6032,12 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       </categoryLinks>
       <entryLinks>
         <entryLink import="true" name="Daemon Brute" hidden="false" type="selectionEntry" id="f0e3-7d1f-1f4d-ed7b" targetId="e3e-4f46-2300-a35"/>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="b6d8-cbc2-5c46-610e" targetId="caad-e621-38e5-cb5f"/>
-        <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="9071-3e03-be60-47f1" targetId="9abc-11e8-9031-d104"/>
+        <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="9071-3e03-be60-47f1" targetId="9abc-11e8-9031-d104">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5843-c53c-52fe-693f"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c370-f491-ade0-d30d"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink id="99d9-64d3-87a3-df20" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
@@ -5918,29 +6050,61 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             <modifier type="set" value="Bulky (3)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="b344-3aa5-a992-625c" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (2)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="4c67-dfc4-85f1-c053" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
       </infoLinks>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Greater Ruinstorm Daemon Beast (Lorgar)" hidden="false" id="59d-9e40-117a-7a34">
       <categoryLinks>
@@ -5948,28 +6112,28 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       </categoryLinks>
       <infoLinks>
         <infoLink id="2b72-655d-a776-8d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink id="abfe-21b8-5125-8e33" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (3)">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (3+1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="11f-8c8-ecbc-1c38" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="0b9d-67ab-0809-da53" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="3 [IT X])" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="4 - Deflagrate [IT ✓])" field="name">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="9f12-2cdf-442-88cb" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Infernal Armaments" hidden="false" type="selectionEntry" id="cc31-85a3-787b-16ff" targetId="9abc-11e8-9031-d104">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="71a4-ae7b-216d-b832"/>
@@ -5982,12 +6146,58 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="25"/>
       </costs>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Behemoth (Lorgar)" hidden="false" id="6344-7863-4f0b-deaa">
       <categoryLinks>
@@ -6001,20 +6211,6 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
           </modifiers>
         </infoLink>
         <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="4ded-82cc-a717-8fd0" targetId="c694-20c8-455-baca"/>
-        <infoLink id="da81-e148-36a0-be2d" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (3)">
-              <conditions>
-                <condition type="equalTo" value="0" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="name" value="Hammer of Wrath (3+1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="2cb8-9990-51b9-15c0" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
             <modifier type="set" value="Bulky (7)" field="name"/>
@@ -6025,9 +6221,74 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             <modifier type="set" field="name" value="Æthereal Invulnerability (4+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="a583-6931-ca6b-760b" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="3" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="6344-7863-4f0b-deaa" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="4" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="6344-7863-4f0b-deaa" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="6344-7863-4f0b-deaa" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="5" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="6344-7863-4f0b-deaa" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value=" - Deflagrate [IT ✓]" field="name" join="">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IW ✓]" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="6344-7863-4f0b-deaa" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IT X]" field="name" join="">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IW X]" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="6344-7863-4f0b-deaa" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=")" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="6121-d959-c07-24b9" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Ruinstorm Behemoth" hidden="false" type="selectionEntry" id="b160-c287-b0fa-a119" targetId="b128-73e-2b19-55c8"/>
         <entryLink import="true" name="May take up to two of the following options:" hidden="false" type="selectionEntryGroup" id="a6b0-48ff-1d92-7ee2" targetId="98ce-5174-21c-546a"/>
         <entryLink import="true" name="Weapon" hidden="false" type="selectionEntryGroup" id="e164-532-b8e-4a1c" targetId="d09c-34b9-8314-e1f8"/>
@@ -6036,12 +6297,58 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>
       </costs>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Cavalry (Lorgar)" hidden="false" id="f2d-471c-3b99-1752">
       <categoryLinks>
@@ -6049,29 +6356,82 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       </categoryLinks>
       <infoLinks>
         <infoLink id="ebc7-6015-e730-7897" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink id="4353-5a1f-63ab-ac62" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="e3c2-599f-4bce-7045" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="ef1b-a68a-3967-46ca" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (1 - Deflagrate [IT ✓])" field="name"/>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="7e7c-82db-b036-41bc" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Daemon Cavalry" hidden="false" type="selectionEntry" id="9c36-6a0b-a630-3abb" targetId="635d-bc63-b7de-84e3"/>
         <entryLink import="true" name="Weapons" hidden="false" type="selectionEntryGroup" id="add9-4e64-ccb6-e72f" targetId="a8a4-643c-91b2-9d35"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="50"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harbinger (Lorgar/Erebus)" hidden="false" id="8599-a03d-8af7-4ba1">
       <categoryLinks>
@@ -6081,7 +6441,6 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <infoLink id="bbf7-b35d-7a50-b5d5" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="ad72-3e47-ac6b-3054" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Harbinger" hidden="false" type="selectionEntry" id="b6c6-7d89-5cc4-e39a" targetId="45fa-e6f-ff0-9c02"/>
         <entryLink import="true" name="Daemon Attendant" hidden="false" type="selectionEntry" id="8d4e-e524-757f-7965" targetId="ddd6-2d23-531f-12b7"/>
       </entryLinks>
@@ -6089,12 +6448,58 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="135"/>
       </costs>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Hierarch (Lorgar/Erebus)" hidden="false" id="e9d5-f180-aedf-521b">
       <categoryLinks>
@@ -6108,15 +6513,6 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             <modifier type="set" value="It Will Not Die (6+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="3380-e19b-6292-405f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="e9d5-f180-aedf-521b" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="afb0-e428-5906-3599" targetId="c694-20c8-455-baca"/>
         <infoLink id="6184-1b08-73ad-d737" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
@@ -6128,9 +6524,74 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             <modifier type="set" field="name" value="Æthereal Invulnerability (4+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="2d30-2695-f364-0691" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="e9d5-f180-aedf-521b" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="1" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="e9d5-f180-aedf-521b" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="e9d5-f180-aedf-521b" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="2" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="e9d5-f180-aedf-521b" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value=" - Deflagrate [IT ✓]" field="name" join="">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IW ✓]" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="e9d5-f180-aedf-521b" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IT X]" field="name" join="">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IW X]" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="e9d5-f180-aedf-521b" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=")" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="3408-c5d2-efc9-37d7" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Warlord Traits (Ruinstorm Daemons)" hidden="false" type="selectionEntryGroup" id="52d1-64db-ca90-8225" targetId="2f76-74c1-d329-d3ab"/>
         <entryLink import="true" name="May take up to two of the following options:" hidden="false" type="selectionEntryGroup" id="499c-b32b-f7ee-c369" targetId="ea1-884d-4e8a-4a66"/>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="e075-f1fa-d916-b2d8" targetId="0176-56a3-d590-b103"/>
@@ -6143,15 +6604,61 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         <entryLink import="true" name="Hierarch" hidden="false" type="selectionEntry" id="2e71-3697-c5bd-80d8" targetId="bba5-7153-f7d2-facf"/>
       </entryLinks>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="250"/>
       </costs>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Harriers (Lorgar)" hidden="false" id="8c8f-683c-4690-4c3c">
       <categoryLinks>
@@ -6159,23 +6666,28 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       </categoryLinks>
       <infoLinks>
         <infoLink id="a5e9-89f4-2704-53fe" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink id="efbc-29d2-c618-5612" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink id="b042-313c-338c-37d" name="Æthereal Invulnerability (X)" hidden="false" targetId="e05e-ed23-64fb-a535" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Æthereal Invulnerability (5+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="27d3-9751-444b-c2f0" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="1 [IW ✓] [IT X])" field="name">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="2 - Deflagrate [IW ✓] [IT ✓])" field="name">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="adca-a6ea-b57b-2c90" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Weapons" hidden="false" type="selectionEntryGroup" id="5392-962a-ac73-e569" targetId="38df-f8ac-dd92-a3e5"/>
         <entryLink import="true" name="Immaterial Wings" hidden="false" type="selectionEntry" id="64bc-2cf6-17a7-d75d" targetId="fd64-626a-d3d4-9b8e">
           <constraints>
@@ -6187,6 +6699,59 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="150"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="false" name="Ruinstorm Lesser Daemons (Lorgar)" hidden="false" id="1aef-763e-42a7-b78f">
       <categoryLinks>
@@ -6202,7 +6767,6 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="65c2-a37f-615d-612f" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Lesser Daemon" hidden="false" type="selectionEntry" id="17ca-c2a2-11f3-c889" targetId="5da5-c15b-dfe5-d1b5"/>
       </entryLinks>
       <costs>
@@ -6229,12 +6793,58 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
         </selectionEntryGroup>
       </selectionEntryGroups>
       <modifiers>
-        <modifier type="add" field="category" value="9231-183c-b97b-63f9">
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
           <conditions>
-            <condition field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7db-bf16-47c5-dc05" type="atLeast"/>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
           </conditions>
         </modifier>
       </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Swarms (Lorgar)" hidden="false" id="646-b4d8-aea6-60a0">
       <categoryLinks>
@@ -6244,25 +6854,68 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       </categoryLinks>
       <infoLinks>
         <infoLink id="8f7c-636-d15e-b4ef" name="Traitor" hidden="false" targetId="eff2-8b0e-21da-2f0d" type="rule"/>
-        <infoLink id="66cd-6f27-7166-639f" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink name="Support Squad" hidden="false" type="rule" id="3717-b4c2-903d-7c9c" targetId="768e-56d6-ca52-24ae"/>
         <infoLink name="Swarm" hidden="false" type="rule" id="4c68-1d80-a45c-537" targetId="0bc2-fcb2-dd25-c10a"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="d0f5-88f9-92cf-c1f9" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Daemon Swarm" hidden="false" type="selectionEntry" id="c1ea-e0f0-b5aa-d8bf" targetId="cb8c-b27a-ea4e-1c91"/>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Ruinstorm Daemon Sovereign (Lorgar/Erebus)" hidden="false" id="e0f2-1da3-accb-7ac2">
       <categoryLinks>
@@ -6277,15 +6930,6 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             <modifier type="set" value="It Will Not Die (5+)" field="name"/>
           </modifiers>
         </infoLink>
-        <infoLink id="da14-3e86-ff62-45d2" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Hammer of Wrath (1)">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="e0f2-1da3-accb-7ac2" childId="e4fb-66cd-e07d-609b" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
         <infoLink name="Empyrean Avatar" hidden="false" type="rule" id="5b88-7169-d4a5-1152" targetId="c694-20c8-455-baca"/>
         <infoLink id="bc82-8ba6-e7df-849f" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
           <modifiers>
@@ -6297,9 +6941,74 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
             <modifier type="set" field="name" value="Æthereal Invulnerability (4+)"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="61a3-11ef-7c96-d2dc" hidden="false" type="rule" targetId="aec0-c3aa-1e4e-1779">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true"/>
+                    <condition type="equalTo" value="0" field="selections" scope="e0f2-1da3-accb-7ac2" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Hammer of Wrath (" field="name"/>
+            <modifier type="append" value="1" field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="1" field="selections" scope="e0f2-1da3-accb-7ac2" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                        <condition type="equalTo" value="0" field="selections" scope="e0f2-1da3-accb-7ac2" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value="2" field="name">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="e0f2-1da3-accb-7ac2" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="append" value=" - Deflagrate [IT ✓]" field="name" join="">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IW ✓]" field="name">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="e0f2-1da3-accb-7ac2" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IT X]" field="name" join="">
+              <conditions>
+                <condition type="notInstanceOf" value="0" field="selections" scope="ancestor" childId="6508-4f6a-0dc1-8f56" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value="[IW X]" field="name">
+              <conditions>
+                <condition type="equalTo" value="0" field="selections" scope="e0f2-1da3-accb-7ac2" childId="fd64-626a-d3d4-9b8e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="append" value=")" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="The Ætheric Dominion (Unit)" hidden="false" type="selectionEntryGroup" id="c6b5-1772-2956-768b" targetId="caad-e621-38e5-cb5f"/>
         <entryLink import="true" name="Warlord" hidden="false" type="selectionEntry" id="bf12-48da-af80-6ddf" targetId="0176-56a3-d590-b103"/>
         <entryLink import="true" name="Warlord Traits (Ruinstorm Daemons)" hidden="false" type="selectionEntryGroup" id="ee18-fe50-7b84-2f5d" targetId="2f76-74c1-d329-d3ab"/>
         <entryLink import="true" name="May take up to three of the following options:" hidden="false" type="selectionEntryGroup" id="1a32-1a58-e759-497" targetId="e1f6-c1d2-62c2-381b"/>
@@ -6309,6 +7018,59 @@ Threatening Entreaties - Kor Phaeron and the unit he has joined gain the Fearles
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="350"/>
       </costs>
+      <modifiers>
+        <modifier type="add" value="9231-183c-b97b-63f9" field="category">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="8cf6-d802-d054-6a86" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="add" value="c42-1919-c37e-51f0" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="ca6c-e8cf-7bc1-eaa0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="9556-82c1-c70a-126e" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="8ed0-3582-f536-c48e" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="f074-f60a-9aa6-c52a" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="3d70-1d54-a791-ac60" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="6508-4f6a-0dc1-8f56" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="e4fb-66cd-e07d-609b" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="bcf6-8350-9099-1e91" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="9508-8124-d34a-500a" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="8cf6-d802-d054-6a86" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="b7db-bf16-47c5-dc05" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="a1d4-4662-c944-19cc" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="1214-3abe-c6d1-2038" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="add" value="2774-1a32-f196-be76" field="category">
+              <conditions>
+                <condition type="greaterThan" value="0" field="selections" scope="force" childId="945c-b969-75eb-19d9" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
