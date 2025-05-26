@@ -1,14 +1,12 @@
 Horus Heresy
 ============
 
-[![Latest release](https://img.shields.io/github/release/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy/releases/latest)
-[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/horus-heresy/latest.svg?style=flat-square)](https://github.com/BSData/horus-heresy/releases)
-[![Open bugs](https://img.shields.io/github/issues/BSData/horus-heresy/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/horus-heresy/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Contributors](https://img.shields.io/github/contributors/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy/graphs/contributors)
-[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy/pulse/monthly)
-
+[![Latest release](https://img.shields.io/github/release/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy-2nd-edition/releases)
+[![Commits (since latest release)](https://img.shields.io/github/commits-since/BSData/horus-heresy/latest.svg?style=flat-square)](https://github.com/BSData/horus-heresy-2nd-edition/releases)
+[![Open bugs](https://img.shields.io/github/issues/BSData/horus-heresy/bug.svg?style=flat-square&label=bugs)](https://github.com/BSData/horus-heresy-2nd-edition/issues)
+[![Contributors](https://img.shields.io/github/contributors/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy-2nd-edition/graphs/contributors)
+[![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/horus-heresy.svg?style=flat-square)](https://github.com/BSData/horus-heresy-2nd-edition/pulse/monthly)
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
-
 
 
 ## Overview ##
@@ -76,22 +74,46 @@ To add a new test:
 ## References
 
 * Horus Heresy: Age of Darkness Rulebook
-* Liber Astartes
-* Liber Hereticus
+* [Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.2](https://assets.warhammer-community.com/horusheresy_faqs&errata_rulebook_eng_24.09-mx5kndri3o.pdf)
+* Liber Astartes (Book)
+* Liber Hereticus (Book)
 * "Both Astartes Army books" refers to the first section of both of the above books, as they are identical
-* Liber Mechanicum
-* [Legacies of The Age of Darkness Legions v1.1 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/RZRGS5ADYjwUb7Ry.pdf)
-* [Legacies of The Age of Darkness: Mechanicum v1.0 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/WJKYil2FehoZxrD9.pdf)
-* [Exemplary Battles of Age of Darkness: Unit Update v1.1 PDF](https://www.warhammer-community.com/wp-content/uploads/2022/09/n10JM7pGRr4EyfIh.pdf)
-* [Exemplary Battles - The Scouring of Gildens Star PDF](https://www.warhammer-community.com/wp-content/uploads/2022/06/TLbrp4me5GEfL37Q.pdf)
-* [Exemplary Battles in the Age of Darkness: The Battle of Trisolian: Vengeful Spirit](https://www.warhammer-community.com/wp-content/uploads/2022/07/6i9CeSwKmbWmzac4.pdf])
-* [Exemplary Battles in the Age of Darkness: The Axandrai IV Incident](https://www.warhammer-community.com/wp-content/uploads/2022/09/3mVvZrTG9XOWeVxv.pdf) 
-* [Ka'bandha Rules](https://www.warhammer-community.com/wp-content/uploads/2022/07/4uwEurgnIRQCzWHE.pdf)
-* Zone Mortalis (White Dwarf 477)
-* [Warhammer: The Horus Heresy – Age of Darkness Rulebook Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/7AX0peoK6m7C7uzw.pdf)
-* [Liber Astartes Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/yq5znaB0N5sLyARr.pdf)
-* [Liber Hereticus Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/3s4WA1UGgC15iDp2.pdf)
-* [Liber Mechanicum Errata and FAQ V1.0](https://www.warhammer-community.com/wp-content/uploads/2022/09/RQ0Pcrm0LJB5BwSG.pdf)
+* Liber Mechanicum (Book)
+* Liber Imperium (Book)
+* [Liber Astartes Errata and FAQ V1.2](https://assets.warhammer-community.com/horusheresy_faqs&errata_liberastartes_eng_24.09-oytusbjk5r.pdf)
+* [Liber Hereticus Errata and FAQ V1.2](https://assets.warhammer-community.com/horusheresy_faqs&errata_liberhereticus_eng_24.09-exfs3zjfaw.pdf)
+* [Liber Mechanicum Errata and FAQ V1.1](https://assets.warhammer-community.com/horusheresy_faqs&errata_libermechanicum_eng_24.09-ngyszpxnmn.pdf)
+* [Liber Imperium Errata and FAQ V1.1] (https://assets.warhammer-community.com/horusheresy_faqs&errata_liberimperium_eng_24.09-sgghybudv2.pdf)
+* [The Siege of Cthonia V1.0] (https://assets.warhammer-community.com/horusheresy_faqs&errata_siegeofcthonia_eng_24.09-684ujhnvfl.pdf)
+* [Warsmith Dominus] (https://assets.warhammer-community.com/horusheresy_additionalrules_warsmith_dominus_eng-9ngn2fiegx-mt2z5uei0r.pdf)
+* [Ka'bandha] (https://assets.warhammer-community.com/horusheresy_additionalrules_ka'bandha_eng_24.09-qn4rwnyoca.pdf)
+* [Legion Javelin] (https://assets.warhammer-community.com/horusheresy_additionalrules_legionjavelinsquadron_eng_24.09-hgogyoypdg.pdf)
+* [Arvus Lighter] (https://assets.warhammer-community.com/horusheresy_additionalrules_arvus_lighter_eng_05-jjogiky2h4-t4zpnlxhei.pdf)
+* [Legion Mastodon] (https://assets.warhammer-community.com/horusheresy_additionalrules_legionmastodon_eng_24.09-c0kpx1cgno.pdf)
+* [Legacies of The Age of Darkness Legions v1.3 PDF](https://assets.warhammer-community.com/dave-s-downloads-25-09/horusheresy_legaciesoftheageofdarkness_legionesastartes_eng_24.09.23.pdf)
+* [Legacies of The Age of Darkness: Imperialis Militia V1.1] (https://assets.warhammer-community.com/horusheresy_legaciesoftheageofdarkness_imperialismilitia_eng_24.09-tyq53ht49b.pdf)
+* [Legacies of The Age of Darkness: Mechanicum v1.0 PDF](https://assets.warhammer-community.com/horusheresy_legaciesoftheageofdarkness_mechanicum_eng_24.09-odihunq81s.pdf)
+* [Legacies of The Age of Darkness: Daemons of the Ruinstorm V1.0] (https://assets.warhammer-community.com/horusheresy_legaciesoftheageofdarkness_daemonsoftheruinstorm_eng_24.09-lufp0xm3vt.pdf)
+* [Legacies of The Age of Darkness: Solar Auxilia V1.1] (https://assets.warhammer-community.com/horusheresy_legaciesoftheageofdarkness_solarauxilia_eng_24.09-ws4kir7amo.pdf)
+
+
+* [Exemplary Battles of the Age of Darkness: The Axandria IV Incident] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thealexandriaivincident_eng_24.09-2q9tvfdyql.pdf) 
+
+* [Exemplary Battles of the Age of Darkness: The Depths of Tredecimmia] (https://assets.warhammer-community.com/dave-s-downloads-25-09/horusheresy_exemplarybattles_thedepthsoftredecimmia_eng_24.09.23.pdf)
+* [Exemplary Battles of the Age of Darkness: Liberation of Constanix II] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_liberationofconstanixii_eng_24.09-xn2k0tfbto.pdf)
+* [Exemplary Battles of the Age of Darkness: The Burning of Ohmn-Mat] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_theburningofohmn-mat_eng_24-vno3sfye0y.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Trisolian: Vengeful Spirit] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleoftrisolian_vengefulspirit_eng_24.09-frcwsgxbix.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Felweather Keep] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleforfelweatherkeep_eng_24.09-oqvigqdtrz.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Kalium Gate] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleforkaliumgate_eng_24.09-ygtmebjf82.pdf)
+* [Exemplary Battles of the Age of Darkness: The Scouring of Gilden's Star] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thescouringofgilden'sstar_eng_24.09-cgf4kmmr28.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Nyrcon City] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleofnyrconcity_eng_24.09-euuqt6gegh.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Perditus Umbral-51] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebattleofperditusumbral51_eng_24.09-g3s1261myg.pdf)
+* [Exemplary Battles of the Age of Darkness: The Breaking of the Perfect Fortress] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thebreakingoftheperfectfortress_eng_24.09-5ds3vom7i0.pdf)
+* [Exemplary Battles of the Age of Darkness: Assault On Castrum Velx] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_assaultoncastrumvelx_eng_24.09-qjasoqqvgz.pdf)
+* [Exemplary Battles of the Age of Darkness: The Death of Conopus] (https://assets.warhammer-community.com/horusheresy_exemplarybattles_thedeathofcanopus_eng_24.09-yq4yzvecwa.pdf)
+* [Exemplary Battles of the Age of Darkness: The Battle of Pluto: Hydra's Devestation] (https://assets.warhammer-community.com/dave-s-downloads-25-09/horusheresy_exemplarybattles_thebattieofpluto_hydra'sdevestation_eng_24.09.pdf)
+* [Exemplary Battles of Age of Darkness: Unit Update v1.1 PDF](https://assets.warhammer-community.com/horusheresy_exemplarybattles_exemplarybattlesunitupdate_eng_24.09-zvqxjklhwo.pdf)
+
 
 ## Links ##
 
