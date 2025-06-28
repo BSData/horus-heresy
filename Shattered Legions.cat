@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="115" revision="3" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="115" revision="4" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="6393-649c-7213-a327" importRootEntries="true"/>
   </catalogueLinks>
@@ -1575,6 +1575,27 @@
         <categoryLink name="Unit:" hidden="false" id="802f-badf-48c6-5744" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink name="Troops:" hidden="false" id="e4ad-b36a-d529-395b" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="false" name="Venerable Ancient Contemptor Dreadnought" hidden="true" id="ba77-baf0-31e5-52c9" collective="false" targetId="dad1-0807-e254-d498" type="selectionEntry">
+      <comment>template_id_fa70-d04e-4683-8eda</comment>
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>node_id_173d-02e3-4974-a502</comment>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+              <comment>node_id_9286-579f-4e52-8a67</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="0617-1bbc-ebb2-2080" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="HQ:" hidden="false" id="8153-e7a8-4716-532a" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink name="Compulsory HQ:" hidden="false" id="c4e0-6e12-fd45-0e50" targetId="f823-8c1d-6a87-26a1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord Traits" hidden="false" id="80a4-9056-e4f4-cfc4" type="selectionEntryGroup" targetId="769f-d9e4-f7ad-04b4"/>
+      </entryLinks>
     </entryLink>
   </entryLinks>
   <selectionEntries>
