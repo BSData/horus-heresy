@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="51" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="cd4d-8765-5387-8409" name="LA -  IX: Blood Angels" revision="52" battleScribeVersion="2.03" authorName="Jon K &quot;Alphalas&quot;" authorContact="Twitter: Alphalas_ Discord: Alphalas#8789" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="1900-3f09-f47b-bed2" name="Praetor" hidden="false" collective="false" import="false" targetId="03be-5d55-d05a-771d" type="selectionEntry">
       <comment>template_id_5798-3fc7-4d4c-ad41</comment>
@@ -5934,7 +5934,7 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
             </entryLink>
           </entryLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Any Sanguinary Guard in the unit may exchange his bolt pistol for one of the following:" id="3220-857b-42b2-a860">
+            <selectionEntryGroup name="Any Sanguinary Guard in the unit may exchange his bolt pistol for one of the following:" id="3220-857b-42b2-a860" defaultSelectionEntryId="9c1b-5988-48e7-a9f5">
               <entryLinks>
                 <entryLink name="Hand Flamer" hidden="false" type="selectionEntry" targetId="e337-adf4-a11f-0280" id="77f1-df01-4a9a-94a9">
                   <costs>
@@ -5974,11 +5974,38 @@ A unit selected in this manner is considered a &apos;Retinue Squad? The Retinue 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9390-4418-491d-b8dc"/>
               </constraints>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Melee Weapon" id="70c2-641c-bb92-e1f1" hidden="false">
+            <selectionEntryGroup name="Melee Weapon" id="70c2-641c-bb92-e1f1" hidden="false" defaultSelectionEntryId="2a9e-09c3-4ab3-a27a">
               <entryLinks>
-                <entryLink import="true" name="Perdition Weapon" hidden="false" id="2a9e-09c3-4ab3-a27a" type="selectionEntry" targetId="d93a-033b-233b-453a" defaultAmount="1">
+                <entryLink import="true" name="Axe Of Perdition" hidden="false" id="e979-31fb-cfda-33b2" collective="false" targetId="0478-8201-90fc-bfd5" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
                   <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72f2-a6ee-88e1-4a83" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1df1-afff-b6e9-7a2c"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Blade Of Perdition" hidden="false" id="99c9-f608-bf98-c93c" collective="false" targetId="7830-e9d6-7e07-ad2f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d866-ebbc-c0f5-e36d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Maul Of Perdition" hidden="false" id="e094-adda-f481-aca7" collective="false" targetId="1ea3-9a76-1597-a49a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9519-2e16-1c33-f9b5"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spear Of Perdition" hidden="false" id="377c-c4b4-06ce-9d0f" collective="false" targetId="cb7e-e113-9008-6bdc" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden"/>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b9bb-f4db-1dd1-aae3"/>
                   </constraints>
                 </entryLink>
               </entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="115" revision="2" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="67bb-e640-ef0a-0e16" name="Shattered Legions" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="115" revision="3" battleScribeVersion="2.03" type="catalogue">
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Legions Astartes" id="50ca-2201-2e00-f825" targetId="6393-649c-7213-a327" importRootEntries="true"/>
   </catalogueLinks>
@@ -1559,6 +1559,22 @@
       <entryLinks>
         <entryLink import="true" name="Retinue" hidden="false" id="feec-b4a7-9276-04bc" type="selectionEntryGroup" targetId="456b-39f3-0d4f-ba17"/>
       </entryLinks>
+    </entryLink>
+    <entryLink import="false" name="Contemptor Dreadnought Talon" hidden="true" id="e8f7-4552-7f3c-fc66" collective="false" targetId="d664-5692-cd41-f9be" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <comment>node_id_642c-0100-4ef3-abd5</comment>
+          <conditions>
+            <condition type="equalTo" value="1" field="selections" scope="force" childId="b5b7-3410-a8e5-95a6" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false">
+              <comment>node_id_3e51-8f78-4faa-9519</comment>
+            </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="Unit:" hidden="false" id="802f-badf-48c6-5744" targetId="36c3-e85e-97cc-c503" primary="false"/>
+        <categoryLink name="Troops:" hidden="false" id="e4ad-b36a-d529-395b" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+      </categoryLinks>
     </entryLink>
   </entryLinks>
   <selectionEntries>

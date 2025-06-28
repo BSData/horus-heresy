@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="127" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="128" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -2067,6 +2067,21 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
             <modifier type="increment" field="0bc1-40ca-638b-3578" value="2">
               <conditions>
                 <condition field="selections" scope="force" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76cd-5c38-ceac-a2b4" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="0bc1-40ca-638b-3578">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="force" childId="dfbc-8edd-e14f-fd80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="2" field="0bc1-40ca-638b-3578">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="force" childId="dfbc-8edd-e14f-fd80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="3" field="0bc1-40ca-638b-3578">
+              <conditions>
+                <condition type="equalTo" value="3" field="selections" scope="force" childId="dfbc-8edd-e14f-fd80" shared="true" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>

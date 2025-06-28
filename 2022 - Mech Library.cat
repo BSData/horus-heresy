@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="53" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3129-da35-55e0-642d" name="Mech Library" revision="54" battleScribeVersion="2.03" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <categoryEntries>
     <categoryEntry id="4086-0589-f010-e688" name="Titan Legion Min Troop/LoW" hidden="false"/>
     <categoryEntry id="57a1-ae47-ff1b-36e4" name="Cybertheurgist" publicationId="bde1-6db1-163b-3b76" page="92-96" hidden="false"/>
@@ -7096,6 +7096,7 @@ A unit composed entirely of models with Utan jump boosters may not Run. During R
                   <conditions>
                     <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b69-bf2f-4547-e83b" type="atLeast"/>
                     <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="11f2-472f-c1d1-9ae9" type="instanceOf"/>
+                    <condition type="greaterThan" value="6" field="selections" scope="25c8-3e0f-e22d-a7eb" childId="acc0-4cf8-5c18-a8d1" shared="true" includeChildSelections="true"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -9099,7 +9100,7 @@ Commanding Presence: Armiger Warglaives or Armiger Helverins units that have at 
             <rule name="Putrid Corruption (Dark Blessing)" hidden="false" id="ba33-7b89-512c-7bbf" publicationId="4934-46f7-208b-b4af" page="119">
               <description>A model with this upgrade must reduce its Movement Characteristic by -2 and gains the Unrelenting special rule.
 An Acastus Knight Porphyrion or Acastus Knight Asterius may not be given this Dark Blessing.
-Unrelenting: </description>
+Unrelenting:</description>
             </rule>
             <rule name="Unrelenting" id="4499-88a2-4705-ae43" hidden="false">
               <description>Each time a model with this special rule suffers an Explodes result on the Vehicle Damage chart, it loses 1 extra Hull Point instead of D3, in addition to the Hull Point it loses for the Penetrating Hit.</description>
