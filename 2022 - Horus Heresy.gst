@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="128" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="129" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -30,6 +30,7 @@
     <publication name="Campaigns in the Age of Darkness - The Battle for Beta-Garmon" hidden="false" id="d882-d2a-5da1-92c4" shortName="CotAoD - BBG" publicationDate="April 2024"/>
     <publication name="Exemplary Battles of the Age of Darkness - The Assault on Castrum Velx" id="2489-0c1d-8ed5-2515" hidden="false" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/06/zxc5pjdMmgEBrmJT.pdf" publicationDate="2024-06-11" publisher="Warhammer Community"/>
     <publication name="Campaigns in the Age of Darkness - Martian Civil War" id="4934-46f7-208b-b4af" hidden="false" shortName="CotAoD - MCW" publicationDate="Sept 2024"/>
+    <publication name="Legion Tarantula Sentry Gun Battery" id="5b2d-881e-a870-a7d1" hidden="false" publisherUrl="https://assets.warhammer-community.com/eng_jun25_thehorusheresy_additionalrules_tarantula-nq1r50lr4a-ec6sail0d9.pdf" publicationDate="June 2025"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -1167,8 +1168,7 @@ or restriction. However, such units may not begin or end their movement in Impas
       <profiles>
         <profile id="bbd6-2bc7-864d-067d" name="1) Reactions in Zone Mortalis" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
           <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions
-Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Warhammer: The Horus Heresy – Age of Darkness Rulebook. Instead, all armies may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle, any of the Advanced Reactions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook and any Army List specific Advanced Reactions.
 
 Base Reaction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
 In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one (1) Reaction in any single Phase.</characteristic>
@@ -7517,6 +7517,16 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
           </conditions>
         </modifier>
+        <modifier type="set" value="0" field="1028-fef6-d630-344c">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5617-ada9-bf10-f9b0" type="max"/>
@@ -8646,6 +8656,7 @@ A. No.</description>
         <infoLink id="f37d-5291-af5c-558a" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
         <infoLink id="b5ec-18f6-6724-bddc" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
         <infoLink id="ac6f-6993-213b-a2b9" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+        <infoLink name="Twin-linked" id="bd8a-a639-75fd-6fe5" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8669,6 +8680,7 @@ A. No.</description>
           </modifiers>
         </infoLink>
         <infoLink id="23c0-f57c-ce37-0701" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink name="Twin-linked" id="e2c8-e53c-e34c-1121" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9541,6 +9553,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="ce35-dd58-face-518e" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="4daa-26e1-fa26-7235" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink name="Twin-linked" id="3b59-67b8-85e0-6813" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9556,6 +9569,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="c617-962f-a9a8-cc64" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="3c22-f365-07f7-2117" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink name="Twin-linked" id="01d9-aa83-0ff3-7e8c" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11041,6 +11055,44 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Volkite Culverin" hidden="false" id="eb0b-f445-05c8-c9b8" collective="true">
+      <profiles>
+        <profile name="Twin-Linked Volkite Culverin" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e053-eb7d-ac5a-c443" publicationId="a716-c1c4-7b26-8424" page="134">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deflagrate" id="a4b8-8302-20a3-f6d5" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink name="Twin-linked" id="bcb7-d31d-380d-627a" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Volkite Culverin" hidden="false" id="6a2f-a817-fdac-0fe1" collective="false">
+      <profiles>
+        <profile name="Twin-Linked Volkite Culverin" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="60b1-fcfc-9490-1d5a" publicationId="a716-c1c4-7b26-8424" page="134">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deflagrate" id="1377-60c4-3da0-972e" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink name="Twin-linked" id="59df-6da5-5946-7aaf" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -16258,11 +16310,7 @@ Note that units that are not normally allowed to make a Sweeping Advance gain no
 
 All models in a Detachment with this Oath that do not have the Character Unit Sub-type suffer a penalty of -1 to their Leadership Characteristic.
 
-(Models from a Legion Apothecarion Detachment or Legion
-Techmarine Covenant do not gain any of the Characteristic
-bonuses granted by this Oath, despite having the Character
-Unit Sub-type, but nor do they suffer from any of the penalties
-applied to models without the Character Unit sub-type).</description>
+(Models from a Legion Apothecarion Detachment or Legion Techmarine Covenant do not gain any of the Characteristic bonuses granted by this Oath, despite having the Character Unit Sub-type, but nor do they suffer from any of the penalties applied to models without the Character Unit sub-type).</description>
             </rule>
           </rules>
           <constraints>
@@ -16389,8 +16437,7 @@ All models that exchange one or more weapons due to the strictures of this Oath 
           </constraints>
           <rules>
             <rule name="The Legacy of Nikaea" id="f49e-7926-5369-4b36" hidden="false">
-              <description>Any model with this Oath and the Character Unit Type may be given the Psyker Unit Sub-type and gains the Warp Torrent Psychic Weapon*. A model with this Oath and with both the Character Unit Type and the Independent Character special rule, gains the Warp Torrent Psychic
-Weapon* and may pay an additional cost of +25 points per model to also select one Psychic Discipline from those presented in the Horus Heresy: Age of Darkness rulebook. If this Oath is selected, then at least one model selected as a HQ choice must be given the Psyker Sub-type and at least two other models with the Character Unit Sub-type must be given the Psyker Sub-type.
+              <description>Any model with this Oath and the Character Unit Type may be given the Psyker Unit Sub-type and gains the Warp Torrent Psychic Weapon*. A model with this Oath and with both the Character Unit Type and the Independent Character special rule, gains the Warp Torrent Psychic Weapon* and may pay an additional cost of +25 points per model to also select one Psychic Discipline from those presented in the Horus Heresy: Age of Darkness rulebook. If this Oath is selected, then at least one model selected as a HQ choice must be given the Psyker Sub-type and at least two other models with the Character Unit Sub-type must be given the Psyker Sub-type.
 
 Note that models with this Oath do not gain access to the Aetheric Lightning Pyschic Weapon, unless another special rule would grant it to them or if they gain the Psyker Unit Sub-type from another source, such as the Librarian Consul upgrade.
 
@@ -18075,7 +18122,6 @@ A Detachment with this Oath may not be selected as part of any army that include
     </rule>
     <rule name="Panoply of Old (X)" hidden="false" id="b4f-fbc9-98a2-feb8">
       <description>Models with this Oath gain access to any unique Wargear options available to models with the Legiones Astartes (X) rule variant noted as part of this Oath.
-
 
 This does not allow those models to select Warlord Traits, Rites of War, Consul Types, Praetor upgrades, or other options available to models with that variant of the Legiones Astartes (X) special rule and does not allow the Detachment to include units restricted to Detachments of that Faction.</description>
     </rule>

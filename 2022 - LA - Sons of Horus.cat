@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="48" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <modifiers>
@@ -42,6 +42,7 @@
       <categoryLinks>
         <categoryLink id="114d-f93f-d7a5-80d7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
         <categoryLink id="f195-05cd-45e6-70af" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+        <categoryLink targetId="f823-8c1d-6a87-26a1" id="7a79-138f-f015-194b" primary="false" name="Compulsory HQ:"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="7742-6ac2-9a35-df68" name="Maloghurst the Twisted" hidden="false" collective="false" import="false" targetId="0b37-0420-b06a-fcc5" type="selectionEntry">
@@ -2259,9 +2260,6 @@
             <conditionGroup type="and">
               <comment>node_id_d12f-2c98-4e62-a716</comment>
               <conditions>
-                <condition field="selections" scope="roster" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d344-d97b-4687-8a62" type="greaterThan">
-                  <comment>node_id_d4d7-ba67-47aa-962f</comment>
-                </condition>
                 <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccb7-6c5c-76ce-5b77" type="equalTo">
                   <comment>node_id_1637-edee-457a-bb0d</comment>
                 </condition>
@@ -2271,12 +2269,10 @@
         </modifier>
       </modifiers>
       <categoryLinks>
-        <categoryLink id="c0c5-001d-4ffc-abc9" name="Fast Attack:" hidden="false" targetId="20ef-cd01-a8da-376e" primary="true">
-          <comment>template_id_f203-bc26-421f-b79e</comment>
-        </categoryLink>
         <categoryLink id="ce07-a5dd-45e6-a102" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_a53e-59d9-4ac2-a21f</comment>
         </categoryLink>
+        <categoryLink targetId="9b5d-fac7-799b-d7e7" id="bbdc-9cb7-edaf-49f6" primary="true" name="Troops:"/>
       </categoryLinks>
     </entryLink>
     <entryLink id="b38b-92a2-1f92-b780" name="Techmarine Covenant" hidden="false" collective="false" import="false" targetId="d39f-99d5-f7a4-7b86" type="selectionEntry">
