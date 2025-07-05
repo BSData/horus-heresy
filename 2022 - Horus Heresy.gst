@@ -1168,8 +1168,7 @@ or restriction. However, such units may not begin or end their movement in Impas
       <profiles>
         <profile id="bbd6-2bc7-864d-067d" name="1) Reactions in Zone Mortalis" hidden="false" typeId="90b9-7fab-87db-aed3" typeName="Reactions">
           <characteristics>
-            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Horus Heresy ~ Age of Darkness rulebook nor any army list specific Advanced Reactions
-Instead, all armies, regardless of Faction or size, may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle or any of the standard Advanced Reactions in the Horus Heresy - Age of Darkness rulebook.
+            <characteristic name="Description" typeId="c627-4637-8de5-65fb">When making Reactions during a Zone Mortalis battle, an army may not choose to use any of the Core Reactions presented in the Warhammer: The Horus Heresy – Age of Darkness Rulebook. Instead, all armies may only choose to use any or all of the Zone Mortalis Reactions as presented in this supplement during a Zone Mortalis battle, any of the Advanced Reactions in the Warhammer: The Horus Heresy – Age of Darkness Rulebook and any Army List specific Advanced Reactions.
 
 Base Reaction Allotment, Additional Reactions and Reaction Limited in Smaller Games.
 In games with a total army size of 1,000 points or fewer per player, any player may make one (1) Reaction in each Phase of their opponent&apos;s turn. This number may not be increased in any way. Regardless of any modifications to a player&apos;s Reaction Allotment or special rules granting additional Reactions, the Reactive player may never make more than one (1) Reaction in any single Phase.</characteristic>
@@ -7517,6 +7516,16 @@ Thaumaturge’s Cleansing (Psychic Weapon)</description>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
           </conditions>
+        </modifier>
+        <modifier type="set" value="0" field="1028-fef6-d630-344c">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="3410-6cb0-2f2b-a28a" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="ced-ce18-5d5b-e54" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <constraints>
@@ -16301,11 +16310,7 @@ Note that units that are not normally allowed to make a Sweeping Advance gain no
 
 All models in a Detachment with this Oath that do not have the Character Unit Sub-type suffer a penalty of -1 to their Leadership Characteristic.
 
-(Models from a Legion Apothecarion Detachment or Legion
-Techmarine Covenant do not gain any of the Characteristic
-bonuses granted by this Oath, despite having the Character
-Unit Sub-type, but nor do they suffer from any of the penalties
-applied to models without the Character Unit sub-type).</description>
+(Models from a Legion Apothecarion Detachment or Legion Techmarine Covenant do not gain any of the Characteristic bonuses granted by this Oath, despite having the Character Unit Sub-type, but nor do they suffer from any of the penalties applied to models without the Character Unit sub-type).</description>
             </rule>
           </rules>
           <constraints>
@@ -16432,8 +16437,7 @@ All models that exchange one or more weapons due to the strictures of this Oath 
           </constraints>
           <rules>
             <rule name="The Legacy of Nikaea" id="f49e-7926-5369-4b36" hidden="false">
-              <description>Any model with this Oath and the Character Unit Type may be given the Psyker Unit Sub-type and gains the Warp Torrent Psychic Weapon*. A model with this Oath and with both the Character Unit Type and the Independent Character special rule, gains the Warp Torrent Psychic
-Weapon* and may pay an additional cost of +25 points per model to also select one Psychic Discipline from those presented in the Horus Heresy: Age of Darkness rulebook. If this Oath is selected, then at least one model selected as a HQ choice must be given the Psyker Sub-type and at least two other models with the Character Unit Sub-type must be given the Psyker Sub-type.
+              <description>Any model with this Oath and the Character Unit Type may be given the Psyker Unit Sub-type and gains the Warp Torrent Psychic Weapon*. A model with this Oath and with both the Character Unit Type and the Independent Character special rule, gains the Warp Torrent Psychic Weapon* and may pay an additional cost of +25 points per model to also select one Psychic Discipline from those presented in the Horus Heresy: Age of Darkness rulebook. If this Oath is selected, then at least one model selected as a HQ choice must be given the Psyker Sub-type and at least two other models with the Character Unit Sub-type must be given the Psyker Sub-type.
 
 Note that models with this Oath do not gain access to the Aetheric Lightning Pyschic Weapon, unless another special rule would grant it to them or if they gain the Psyker Unit Sub-type from another source, such as the Librarian Consul upgrade.
 
@@ -18118,7 +18122,6 @@ A Detachment with this Oath may not be selected as part of any army that include
     </rule>
     <rule name="Panoply of Old (X)" hidden="false" id="b4f-fbc9-98a2-feb8">
       <description>Models with this Oath gain access to any unique Wargear options available to models with the Legiones Astartes (X) rule variant noted as part of this Oath.
-
 
 This does not allow those models to select Warlord Traits, Rites of War, Consul Types, Praetor upgrades, or other options available to models with that variant of the Legiones Astartes (X) special rule and does not allow the Detachment to include units restricted to Detachments of that Faction.</description>
     </rule>
