@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="128" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy (2022)" revision="129" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -30,6 +30,7 @@
     <publication name="Campaigns in the Age of Darkness - The Battle for Beta-Garmon" hidden="false" id="d882-d2a-5da1-92c4" shortName="CotAoD - BBG" publicationDate="April 2024"/>
     <publication name="Exemplary Battles of the Age of Darkness - The Assault on Castrum Velx" id="2489-0c1d-8ed5-2515" hidden="false" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2024/06/zxc5pjdMmgEBrmJT.pdf" publicationDate="2024-06-11" publisher="Warhammer Community"/>
     <publication name="Campaigns in the Age of Darkness - Martian Civil War" id="4934-46f7-208b-b4af" hidden="false" shortName="CotAoD - MCW" publicationDate="Sept 2024"/>
+    <publication name="Legion Tarantula Sentry Gun Battery" id="5b2d-881e-a870-a7d1" hidden="false" publisherUrl="https://assets.warhammer-community.com/eng_jun25_thehorusheresy_additionalrules_tarantula-nq1r50lr4a-ec6sail0d9.pdf" publicationDate="June 2025"/>
   </publications>
   <costTypes>
     <costType id="d2ee-04cb-5f8a-2642" name="Pts" defaultCostLimit="-1" hidden="false"/>
@@ -8646,6 +8647,7 @@ A. No.</description>
         <infoLink id="f37d-5291-af5c-558a" name="Fleshbane" hidden="false" targetId="40cd-9505-253c-e76f" type="rule"/>
         <infoLink id="b5ec-18f6-6724-bddc" name="Rad-Phage" hidden="false" targetId="8189-e963-d2e5-5d3d" type="rule"/>
         <infoLink id="ac6f-6993-213b-a2b9" name="Template Weapons" hidden="false" targetId="5e0e-88e6-db81-5a70" type="rule"/>
+        <infoLink name="Twin-linked" id="bd8a-a639-75fd-6fe5" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -8669,6 +8671,7 @@ A. No.</description>
           </modifiers>
         </infoLink>
         <infoLink id="23c0-f57c-ce37-0701" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+        <infoLink name="Twin-linked" id="e2c8-e53c-e34c-1121" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9541,6 +9544,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="ce35-dd58-face-518e" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="4daa-26e1-fa26-7235" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink name="Twin-linked" id="3b59-67b8-85e0-6813" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -9556,6 +9560,7 @@ Hull Mounted (Rear) Mounted Twin-linked Heavy Bolter or Heavy Flamers</character
         </infoLink>
         <infoLink id="c617-962f-a9a8-cc64" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
         <infoLink id="3c22-f365-07f7-2117" name="Instant Death" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule"/>
+        <infoLink name="Twin-linked" id="01d9-aa83-0ff3-7e8c" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
@@ -11041,6 +11046,44 @@ Where the effects of a Mutable Tactics trait contradict another, Flaws take prio
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Volkite Culverin" hidden="false" id="eb0b-f445-05c8-c9b8" collective="true">
+      <profiles>
+        <profile name="Twin-Linked Volkite Culverin" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="e053-eb7d-ac5a-c443" publicationId="a716-c1c4-7b26-8424" page="134">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deflagrate" id="a4b8-8302-20a3-f6d5" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink name="Twin-linked" id="bcb7-d31d-380d-627a" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked Volkite Culverin" hidden="false" id="6a2f-a817-fdac-0fe1" collective="false">
+      <profiles>
+        <profile name="Twin-Linked Volkite Culverin" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="60b1-fcfc-9490-1d5a" publicationId="a716-c1c4-7b26-8424" page="134">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">45&quot;</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">5</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 5, Deflagrate, Twin-linked</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deflagrate" id="1377-60c4-3da0-972e" hidden="false" targetId="60bc-f79a-67ae-be4f" type="rule"/>
+        <infoLink name="Twin-linked" id="59df-6da5-5946-7aaf" hidden="false" type="rule" targetId="8542-ee9d-e2fa-52fe"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
