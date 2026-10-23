@@ -15,20 +15,12 @@ jobs:
       - name: Checkout Repository Content
         uses: actions/checkout@v4
 
-      - name: Setup Java Environment
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Download and Run BattleScribe Indexer Jar
+      - name: Download and Run Community Indexer
         run: |
-          curl -L -o battlescribe-data-indexer.jar "https://battlescribe.net"
-          java -jar battlescribe-data-indexer.jar .
-          rm battlescribe-data-indexer.jar
-
-
-
+          curl -L -o bsdata-indexer https://github.com
+          chmod +x bsdata-indexer
+          ./bsdata-indexer .
+          rm bsdata-indexer
 
       - name: Commit and Push Updated Index
         uses: stefanzweifel/git-auto-commit-action@v5
