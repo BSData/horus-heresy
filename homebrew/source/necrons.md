@@ -24,6 +24,8 @@ Every unit in this document has **Dynasty (X)** and **Reanimation Protocols (5+)
 
 **Reanimation Protocols (X).** Each time a model with this rule would lose its last Wound, roll a D6; on a roll of X or more, it is not removed and stays in play with 1 Wound. Reanimation Protocols is not Feel No Pain: rules that ignore or negate Feel No Pain do not affect it. It is a Damage Mitigation roll: a model may make only a single Damage Mitigation roll of any type (including Feel No Pain) for any given Wound. It cannot be used against Instant Death or Destroyer attacks.
 
+**Supersonic.** When a model with this rule moves Flat Out, it must move at least 18" and may move up to 36". It may make a single pivot of up to 90 degrees at the start of its move, and must then move in a straight line. It may pivot and move over enemy models during its move, but may not end its move on top of an enemy model.
+
 **Tesla.** Each to-hit roll of 6 made with a weapon with the Tesla trait inflicts two additional hits on the target.
 
 **Unstoppable.** Necron units never become Pinned, but may not Advance.
@@ -1779,6 +1781,12 @@ Once per game, at the start of any phase, the bearer's unit may improve its Rean
 _Woven mesh of living metal laced through the bearer's body._
 
 The bearer adds 1 to its Armour Save, to a best of 2+.
+
+### Szarekh's Command Barge
+
+_The Silent King's throne, borne aloft on a floating barge of living metal._
+
+Szarekh's command barge works as a Catacomb Command Barge: Szarekh becomes Cavalry (Mechanised, Unique) with a Movement Characteristic of 14 and Hammer of Wrath (2), and the barge carries a twin-linked tesla destructor or a gauss cannon. He keeps his own Toughness, Wounds and Save.
 
 ### Translocation Shroud
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f234-916c-45d4-02ac" name="Homebrew - Necrons" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="6dbb-42c9-758d-cd66" name="Necrons for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Necrons" />
   </publications>
@@ -1972,6 +1972,15 @@
         <profile name="Sempiternal Weave" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="56cd-546c-7732-77c5">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The bearer adds 1 to its Armour Save, to a best of 2+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Szarekh's Command Barge" hidden="false" id="9c66-01a5-09df-af0d" publicationId="6dbb-42c9-758d-cd66">
+      <profiles>
+        <profile name="Szarekh's Command Barge" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="82d7-a888-e049-e5bc">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Szarekh's command barge works as a Catacomb Command Barge: Szarekh becomes Cavalry (Mechanised, Unique) with a Movement Characteristic of 14 and Hammer of Wrath (2), and the barge carries a twin-linked tesla destructor or a gauss cannon. He keeps his own Toughness, Wounds and Save.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6322,7 +6331,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9600-fd47-9e04-1e9a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Szarekh's command barge" hidden="false" id="c6c9-80b9-88ad-ad02" type="selectionEntry" targetId="a907-58c2-81f7-dbd3">
+            <entryLink import="true" name="Szarekh's Command Barge" hidden="false" id="c6c9-80b9-88ad-ad02" type="selectionEntry" targetId="9c66-01a5-09df-af0d">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d15c-b48f-21d5-2d6b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b0cf-a7a0-8c85-8ecb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6377,7 +6386,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="400" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Szarekh's command barge" hidden="false" id="a907-58c2-81f7-dbd3" publicationId="6dbb-42c9-758d-cd66" />
     <selectionEntry type="unit" import="true" name="Tesseract Vault" hidden="false" id="4cf4-5e34-5e19-bda5" publicationId="6dbb-42c9-758d-cd66">
       <rules>
         <rule name="Imprisoned C'tan" id="bd5b-aff8-7069-2bb2" hidden="false">
@@ -6492,6 +6500,9 @@
     <rule name="Reanimation Protocols (X)" id="02d0-b2f6-035f-b837" hidden="false" publicationId="6dbb-42c9-758d-cd66">
       <description>Each time a model with this rule would lose its last Wound, roll a D6; on a roll of X or more, it is not removed and stays in play with 1 Wound. Reanimation Protocols is not Feel No Pain: rules that ignore or negate Feel No Pain do not affect it. It is a Damage Mitigation roll: a model may make only a single Damage Mitigation roll of any type (including Feel No Pain) for any given Wound. It cannot be used against Instant Death or Destroyer attacks.</description>
     </rule>
+    <rule name="Supersonic" id="61f8-0325-467d-7580" hidden="false" publicationId="6dbb-42c9-758d-cd66">
+      <description>When a model with this rule moves Flat Out, it must move at least 18" and may move up to 36". It may make a single pivot of up to 90 degrees at the start of its move, and must then move in a straight line. It may pivot and move over enemy models during its move, but may not end its move on top of an enemy model.</description>
+    </rule>
     <rule name="Tesla" id="db2a-0b47-9acc-50a9" hidden="false" publicationId="6dbb-42c9-758d-cd66">
       <description>Each to-hit roll of 6 made with a weapon with the Tesla trait inflicts two additional hits on the target.</description>
     </rule>
@@ -6503,9 +6514,6 @@
     </rule>
     <rule name="Invulnerable Save (X)" id="bf2b-b1a4-ef3b-b16c" hidden="false" publicationId="6dbb-42c9-758d-cd66">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
-    </rule>
-    <rule name="Supersonic" id="61f8-0325-467d-7580" hidden="false" publicationId="6dbb-42c9-758d-cd66">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
     </rule>
   </sharedRules>
 </catalogue>
