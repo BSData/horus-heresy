@@ -2340,7 +2340,7 @@ Tyranid bio-titans are Infantry with the Monstrous and Gargantuan sub-types. The
 
 ## Biomorphs
 
-Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose.
+Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
 ### Adrenal Glands
 
