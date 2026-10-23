@@ -260,14 +260,14 @@ def add_rule(entry, name, text, key):
 # --------------------------------------------------------------------------- builder
 
 class Builder:
-    def __init__(self, doc_name, faction, text):
+    def __init__(self, doc_name, faction, text, revision=1):
         self.faction = faction
         self.sections = parse_doc(text)
         self.problems = []
         self.cat_id = make_id("catalogue", faction)
         self.root = ET.Element("catalogue", {
             "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-            "id": self.cat_id, "name": f"Homebrew - {faction}", "revision": "1",
+            "id": self.cat_id, "name": f"Homebrew - {faction}", "revision": str(revision),
             "battleScribeVersion": "2.03", "library": "false", "gameSystemId": GAME_SYSTEM_ID,
             "gameSystemRevision": GAME_SYSTEM_REVISION, "type": "catalogue",
             "authorName": "Isaac"})
@@ -280,6 +280,8 @@ class Builder:
         self.weapon_names = {}     # normalised name -> display name
         self.upgrades = {}         # normalised name -> shared entry id (biomorphs, misc)
         self.powers = []           # (name, id) psychic powers
+        self.universal = []        # biomorphs any model may buy: (name, id, cost rule)
+        self.biomorph_names = set()  # biomorphs are bought for the whole unit, unlike weapons
         self.scream_id = None
         self.units = {}            # unit name -> shared entry id
         self.shared_entries = ET.Element("sharedSelectionEntries")
@@ -393,10 +395,20 @@ class Builder:
                 eid = make_id("biomorph", self.faction, name)
                 e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
                        hidden=False, id=eid, publicationId=self.pub_id)
+                cost_line = next((strip_md(l) for l in sub["lines"] if l.startswith("**Cost:**")), None)
+                if cost_line:
+                    text = text.replace(cost_line, "").strip()
                 add_text_profile(e, WARGEAR_PROFILE, name, text, eid)
+                granted = re.search(r"gains the (.+?) special rule", text)
+                if granted:
+                    self.link_rule(e, granted.group(1), eid)
+                if cost_line:
+                    self.universal.append((name, eid, self.parse_cost_rule(cost_line)))
                 self.upgrades[norm(name)] = eid
+                self.biomorph_names.add(norm(name))
                 for alias in name.split(" and "):
                     self.upgrades.setdefault(norm(alias), eid)
+                    self.biomorph_names.add(norm(alias))
         psy = self.section("Psychic Discipline")
         if psy:
             for sub in psy["subs"]:
@@ -408,6 +420,61 @@ class Builder:
                        hidden=False, id=eid, publicationId=self.pub_id)
                 add_text_profile(e, PSY_POWER_PROFILE, name, " ".join(paragraphs(sub["lines"])), eid)
                 self.powers.append((name, eid))
+
+    @staticmethod
+    def parse_cost_rule(line):
+        """'+5 points per model, or +10 points per Monstrous model' or a scale by new Save."""
+        scale = re.findall(r"(\d)\+ (\d+) points?", line)
+        if "new Save" in line and scale:
+            return {"save": {int(sv): int(pts) for sv, pts in scale}}
+        base = re.search(r"\+(\d+) points per model", line)
+        monstrous = re.search(r"\+(\d+) points per Monstrous model", line)
+        return {"model": int(base.group(1)) if base else 0,
+                "monstrous": int(monstrous.group(1)) if monstrous else None}
+
+    def universal_options(self, ds, models):
+        """(model name, biomorph name, id, cost, new save) for every biomorph each model may buy."""
+        out = []
+        for mname, m in models.items():
+            for name, eid, rule in self.universal:
+                if "save" in rule:
+                    sv = re.match(r"(\d)\+", m["profile"]["stats"][9])
+                    if not sv or int(sv.group(1)) - 1 not in rule["save"]:
+                        continue
+                    new = int(sv.group(1)) - 1
+                    out.append((mname, name, eid, rule["save"][new], new))
+                else:
+                    granted = self.shared_entries.find(f"selectionEntry[@id='{eid}']/infoLinks/infoLink")
+                    if granted is not None and any(norm(r) == norm(granted.get("name")) for r in ds["rules"]):
+                        continue
+                    monstrous = "Monstrous" in m["types"] and rule["monstrous"] is not None
+                    out.append((mname, name, eid, rule["monstrous"] if monstrous else rule["model"], None))
+        return out
+
+    def is_biomorph(self, name):
+        parts = [p for p in re.split(r" or ", norm(re.sub(r"\s*\(.*?\)", "", name)))]
+        cands = []
+        for p in parts:
+            cands += [p, p.replace(" tail", "")] + list(singular(p))
+        return any(c in self.biomorph_names for c in cands)
+
+    def whole_unit_cost(self, e, uid, costs):
+        """Points for an upgrade the whole unit takes: its cost for each model in the unit."""
+        add_cost(e, 0)
+        mods = child(e, "modifiers")
+        for model_id, cost in costs.items():
+            mod = el(mods, "modifier", type="increment", field=PTS, value=cost)
+            el(el(mod, "repeats"), "repeat", field="selections", scope=uid, value=1, percentValue=False,
+               shared=True, includeChildSelections=True, includeChildForces=False, childId=model_id,
+               repeats=1, roundUp=False)
+
+    def per_model_limit(self, e, key, uid, model_id, per=1):
+        """Max 'per' selections for every model of one type in the unit."""
+        cid = add_constraint(e, "max", 0, make_id(key, "per model"), scope="parent", children=True)
+        mod = el(child(e, "modifiers"), "modifier", type="increment", field=cid, value=per)
+        reps = el(mod, "repeats")
+        el(reps, "repeat", field="selections", scope=uid, value=1, percentValue=False, shared=True,
+           includeChildSelections=True, includeChildForces=False, childId=model_id, repeats=1, roundUp=False)
 
     def build_army_rules(self):
         sec = self.section("Army-wide Special Rules")
@@ -542,8 +609,8 @@ class Builder:
         for cand in [t] + [t.replace(" tail", "")] + list(singular(t)):
             if cand in self.weapons:
                 return self.weapons[cand], n
-        if t.startswith("twin "):
-            wid, _ = self.find_weapon(t[5:])
+        if t.startswith(("twin ", "twin-linked ")):
+            wid, _ = self.find_weapon(t.split(" ", 1)[1])
             if wid:
                 return wid, n
         # "pincer tail" vs "prehensile pincer tail", plural forms of multi-word names
@@ -589,13 +656,15 @@ class Builder:
     # ---- units
 
     def link(self, parent_list, target, name, key, count=None, minimum=None, maximum=None,
-             cost_mod=None):
+             cost_mod=None, label=None):
         # Show the target's own name, not the doc's wording ("Wings (counts as a jump pack...)").
         found = self.shared_entries.find(f"selectionEntry[@id='{target}']")
         shown = found.get("name") if found is not None else name
-        twin = norm(name).startswith("twin ") and not norm(shown).startswith("twin")
+        twin = norm(name).startswith("twin") and not norm(shown).startswith("twin")
         if twin:
-            shown = name
+            shown = name[0].upper() + name[1:]
+        if label:
+            shown = label
         e = el(parent_list, "entryLink", import_=True, name=shown, hidden=False, id=make_id(key, "link", name),
                type="selectionEntry", targetId=target)
         lo = count if minimum is None else minimum
@@ -768,8 +837,45 @@ class Builder:
             first_psyker = next((n for n, o in models.items() if "Psyker" in o["types"]), None)
             multi = sum(max(o["max"], o["min"]) for o in models.values()) > 1
             target = (unit if multi else me) if mname == first_psyker else None
-            self.add_model_wargear(ds, me, m, key, target)
+            # In a unit of several models, weapon options are bought per model at unit level,
+            # so a unit of 10 can buy any number from 0 to 10 of each.
+            self.add_model_wargear(ds, me, m, key, target, unit if multi else None, len(models) > 1)
             add_cost(me, m["cost"])
+
+        # Biomorphs any model may buy (Dynamic Camouflage, Hardened Carapace). Like every
+        # biomorph, they are taken by every model in the unit and cost points per model.
+        multi = sum(max(o["max"], o["min"]) for o in models.values()) > 1
+        offers = {}
+        for mname, bname, eid, cost, new_save in self.universal_options(ds, models):
+            offers.setdefault((bname, eid), {})[mname] = (cost, new_save)
+        for (bname, eid), per_type in offers.items():
+            if len(per_type) < len(models):
+                continue  # some models in the unit cannot take it, so the unit cannot
+            if multi:
+                g = child(unit, "selectionEntryGroups").find(f"selectionEntryGroup[@id='{make_id(uid, 'biomorphs')}']")
+                if g is None:
+                    g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name="Biomorphs",
+                           hidden=False, id=make_id(uid, "biomorphs"))
+                e = self.link(child(g, "entryLinks"), eid, bname, uid, maximum=1)
+                self.whole_unit_cost(e, uid, {models[n]["id"]: c for n, (c, _) in per_type.items()})
+                scope = uid
+            else:
+                (mname, (cost, _)), = per_type.items()
+                me = unit.find(f"selectionEntries/selectionEntry[@id='{models[mname]['id']}']")
+                e = self.link(child(me, "entryLinks"), eid, bname, models[mname]["id"], maximum=1)
+                add_cost(e, cost)
+                scope = models[mname]["id"]
+            for mname, (_, new_save) in per_type.items():
+                if not new_save:
+                    continue
+                # Every model shows its improved Save once the unit has the carapace.
+                me = unit.find(f"selectionEntries/selectionEntry[@id='{models[mname]['id']}']")
+                prof = me.find("profiles/profile")
+                mod = el(child(prof, "modifiers"), "modifier", type="set", field=UNIT_CHARS[10][1],
+                         value=f"{new_save}+")
+                el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections",
+                   scope=scope, childId=eid, shared=True, includeChildSelections=True,
+                   includeChildForces=False)
 
         # Unit rules.
         for line in ds["rules"]:
@@ -780,13 +886,17 @@ class Builder:
             if n:
                 add_rule(unit, "Note", n, uid + n[:20])
 
-        # Unit-level upgrades.
+        # Unit-level upgrades; biomorphs go with the unit's other biomorphs.
         if unit_upgrades:
             groups = child(unit, "selectionEntryGroups")
-            gid = make_id(uid, "unit upgrades")
-            g = el(groups, "selectionEntryGroup", name="Unit Upgrades", hidden=False, id=gid)
-            links = el(g, "entryLinks")
             for name, cost, per_model in unit_upgrades:
+                bio = self.is_biomorph(name.replace(" for the whole unit", ""))
+                gid = make_id(uid, "biomorphs" if bio else "unit upgrades")
+                g = groups.find(f"selectionEntryGroup[@id='{gid}']")
+                if g is None:
+                    g = el(groups, "selectionEntryGroup", name="Biomorphs" if bio else "Unit Upgrades",
+                           hidden=False, id=gid)
+                links = child(g, "entryLinks")
                 target, _, _ = self.option_target(name.replace(" for the whole unit", ""), uid)
                 e = self.link(links, target, name.replace(" for the whole unit", ""), uid + "uu",
                               maximum=1)
@@ -849,7 +959,10 @@ class Builder:
         if ex:
             qualifier = (ex.group(1) or "").strip()
             what = ex.group(2)
-            items = [(n, c, ratio) for n, c in grp["items"]]
+            items = []
+            for n, c in grp["items"]:
+                im = re.search(r"\s*\(1 in (\d+) models\)", n)
+                items.append((n.replace(im.group(0), "") if im else n, c, int(im.group(1)) if im else ratio))
             for mname in subject_models:
                 # "Any Warrior may exchange its devourer" and "One in every three may exchange its
                 # devourer" are one choice of what replaces the devourer.
@@ -881,13 +994,15 @@ class Builder:
                 models[mname]["groups"].append({"kind": "take", "one_of": one_of, "items": rest,
                                                 "ratio": ratio, "title": header})
 
-    def add_model_wargear(self, ds, me, m, key, target_unit=None):
+    def add_model_wargear(self, ds, me, m, key, target_unit=None, per_model_unit=None, several_types=False):
         links = el(me, "entryLinks")
         groups = el(me, "selectionEntryGroups")
+        if per_model_unit is not None:
+            self.add_per_model_options(ds, per_model_unit, m, key, several_types)
         wargear = [w for w in m["wargear"] if "psychic scream" not in norm(w)]
         exchanges = [g for g in m["groups"] if g["kind"] == "exchange"]
         used = set()
-        for gi, g in enumerate(m["groups"]):
+        for gi, g in enumerate(m["groups"] if per_model_unit is None else []):
             gkey = make_id(m["id"], "group", str(gi))
             if g["kind"] == "exchange":
                 original = None
@@ -915,7 +1030,7 @@ class Builder:
                 add_constraint(ge, "max", size, gkey + "max")
                 gl = el(ge, "entryLinks")
                 if oid and not g["qualifier"].startswith("all"):
-                    twin = norm(original).startswith("twin ")
+                    twin = norm(original).startswith("twin") and not norm(self.weapon_names_for(oid, original)).startswith("twin")
                     e = el(gl, "entryLink", import_=True,
                            name=original if twin else self.weapon_names_for(oid, original), hidden=False,
                            id=make_id(gkey, "link", "default"), type="selectionEntry", targetId=oid)
@@ -1000,6 +1115,83 @@ class Builder:
         for container in (links, groups):
             if len(container) == 0:
                 me.remove(container)
+
+    def add_per_model_options(self, ds, unit, m, key, several_types):
+        """'Any Genestealer may...' options at unit level, each bought up to once per model."""
+        uid = unit.get("id")
+        prefix = f"{m['profile']['name']}: " if several_types else ""
+        groups = child(unit, "selectionEntryGroups")
+        for gi, g in enumerate(m["groups"]):
+            gkey = make_id(m["id"], "unit group", str(gi))
+            if g["kind"] == "exchange":
+                original = next((w for w in m["wargear"] if norm(g["what"]) in norm(w)
+                                 or any(c in norm(w) for c in singular(g["what"]))), None)
+                if original is None:
+                    self.problems.append(f"{ds['name']}: exchange of '{g['what']}' matches no wargear")
+                    continue
+                _, n = self.find_weapon(original)
+                per = 1 if g["qualifier"].startswith("one pair") else n
+                ge = el(groups, "selectionEntryGroup", name=f"{prefix}Exchange {g['what']}", hidden=False, id=gkey)
+                self.per_model_limit(ge, gkey, uid, m["id"], per)
+                plain = [(nm, c) for nm, c, r in g["items"] if not r]
+                for nm, c in plain:
+                    tid, _, _ = self.option_target(nm, key)
+                    add_cost(self.link(child(ge, "entryLinks"), tid, nm, gkey), self.cost(c))
+                # "One in every three" picks share one limit within the exchange.
+                ratios = {}
+                for nm, c, r in g["items"]:
+                    if r:
+                        ratios.setdefault(r, []).append((nm, c))
+                for r, items in ratios.items():
+                    skey = make_id(gkey, "ratio", str(r))
+                    sub = el(child(ge, "selectionEntryGroups"), "selectionEntryGroup",
+                             name=f"One in every {r}", hidden=False, id=skey)
+                    self.ratio_limit(sub, r, ds, m)
+                    for nm, c in items:
+                        tid, _, _ = self.option_target(nm, key)
+                        add_cost(self.link(child(sub, "entryLinks"), tid, nm, skey), self.cost(c))
+            else:
+                ge = el(groups, "selectionEntryGroup", name=f"{prefix}Options", hidden=False, id=gkey)
+                if g["one_of"]:
+                    self.per_model_limit(ge, gkey, uid, m["id"])
+                every_model = [o.get("id") for o in unit.findall("selectionEntries/selectionEntry")]
+                for nm, c in g["items"]:
+                    alts = self.either_or(nm)
+                    targets = alts or [self.option_target(nm, key)[0]]
+                    bio = self.is_biomorph(nm)
+                    holder = ge
+                    if bio:
+                        # Biomorphs are taken by every model in the unit, at their cost per model.
+                        holder = child(unit, "selectionEntryGroups").find(f"selectionEntryGroup[@id='{make_id(uid, 'biomorphs')}']")
+                        if holder is None:
+                            holder = el(groups, "selectionEntryGroup", name="Biomorphs", hidden=False,
+                                        id=make_id(uid, "biomorphs"))
+                    if alts:
+                        okey = make_id(gkey, nm)
+                        holder = el(child(holder, "selectionEntryGroups"), "selectionEntryGroup",
+                                    name=nm[0].upper() + nm[1:], hidden=False, id=okey)
+                        if bio:
+                            add_constraint(holder, "max", 1, okey + "max")
+                        else:
+                            self.per_model_limit(holder, okey, uid, m["id"])
+                    for tid in targets:
+                        e = self.link(child(holder, "entryLinks"), tid, re.sub(r"\s*\(\d.*\)$", "", nm), gkey + nm + tid)
+                        if bio:
+                            if not alts:
+                                add_constraint(e, "max", 1, e.get("id") + "max")
+                            rm = re.search(r"\((\d\+)\)", nm)
+                            if rm and nm.lower().startswith("regeneration"):
+                                self.link_rule(e, f"Regeneration ({rm.group(1)})", e.get("id"))
+                            self.whole_unit_cost(e, uid, {i: self.cost(c) for i in every_model})
+                            continue
+                        if not g["one_of"] and not alts:
+                            self.per_model_limit(e, e.get("id"), uid, m["id"])
+                        if g["ratio"]:
+                            self.ratio_limit(e, g["ratio"], ds, m)
+                        rm = re.search(r"\((\d\+)\)", nm)
+                        if rm and nm.lower().startswith("regeneration"):
+                            self.link_rule(e, f"Regeneration ({rm.group(1)})", e.get("id"))
+                        add_cost(e, self.cost(c))
 
     def either_or(self, name):
         left, sep, right = name.partition(" or ")
@@ -1172,7 +1364,8 @@ CATALOGUE_ORDER = ["readme", "publications", "costTypes", "profileTypes", "categ
                    "selectionEntries", "entryLinks", "rules", "infoLinks", "sharedSelectionEntries",
                    "sharedSelectionEntryGroups", "sharedRules", "sharedProfiles", "sharedInfoGroups"]
 ENTRY_ORDER = ["comment", "modifiers", "modifierGroups", "constraints", "profiles", "rules", "infoGroups",
-               "infoLinks", "categoryLinks", "selectionEntries", "selectionEntryGroups", "entryLinks", "costs"]
+               "infoLinks", "categoryLinks", "selectionEntries", "selectionEntryGroups", "entryLinks", "costs",
+               "characteristics"]
 MODIFIER_ORDER = ["comment", "repeats", "conditions", "conditionGroups"]
 
 
@@ -1194,14 +1387,30 @@ def main():
     first = next(l for l in text.splitlines() if l.startswith("# "))[2:].strip()
     faction = re.sub(r" for The Horus Heresy.*", "", first)
     doc_name = first + " — Homebrew Conversion"
-    b = Builder(doc_name, faction, text)
-    root = b.build()
-    ET.indent(root, space="  ")
-    body = ET.tostring(root, encoding="unicode")
+
+    # BattleScribe and NewRecruit only offer an update when the revision goes up, so a
+    # rebuild that changes anything gets the next revision number.
+    old_text, old_rev = None, 0
+    try:
+        old_text = open(out, encoding="utf-8").read()
+        old_rev = int(re.search(r'<catalogue [^>]*revision="(\d+)"', old_text).group(1))
+    except (OSError, AttributeError):
+        pass
+
+    def render(revision):
+        b = Builder(doc_name, faction, text, revision)
+        root = b.build()
+        ET.indent(root, space="  ")
+        body = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n' + ET.tostring(root, encoding="unicode") + "\n"
+        return b, body
+
+    b, body = render(max(old_rev, 1))
+    if old_text is not None and body.replace("\r\n", "\n") != old_text.replace("\r\n", "\n"):
+        b, body = render(old_rev + 1)
     with open(out, "w", encoding="utf-8", newline="\n") as f:
-        f.write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n')
-        f.write(body + "\n")
-    print(f"wrote {out}: {len(b.datasheets)} units, {len(b.weapons)} weapons", file=sys.stderr)
+        f.write(body)
+    rev = re.search(r'revision="(\d+)"', body).group(1)
+    print(f"wrote {out}: revision {rev}, {len(b.datasheets)} units, {len(b.weapons)} weapons", file=sys.stderr)
     for p in b.problems:
         print("  ! " + p, file=sys.stderr)
 

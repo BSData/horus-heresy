@@ -32,6 +32,8 @@ Every unit in this list has **Hive Fleet (X)**, and **Shadow in the Warp** if it
 
 **Shadow in the Warp.** Enemy Psykers within 12" of a model with this rule subtract 1 from their Leadership when making Psychic checks.
 
+**Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
+
 **Synapse Creature.** Friendly Tyranid units within 12" of one or more models with this rule automatically pass Morale checks and Pinning tests, and ignore Instinctive Behaviour. A Synapse creature itself is never affected by Instinctive Behaviour. Every model with this rule is also treated as a Character.
 
 **Unnatural Resilience.** The unit is immune to Instant Death. Whenever a model in the unit would suffer Instant Death, it suffers D3 wounds instead.
@@ -341,7 +343,7 @@ _The ground shakes, the earth splits, and the swarm erupts from below, burrowing
 | **The Hive Tyrant may exchange either pair of monstrous scything talons for:** |  |
 | – Monstrous rending claws | +5 points |
 | – Monstrous bonesword and lash whip | +15 points |
-| – Twin devourers with brainleech worms | +15 points |
+| – Twin-linked devourers with brainleech worms | +15 points |
 | – Heavy venom cannon | +25 points |
 | – Stranglethorn cannon | +20 points |
 | **The Hive Tyrant may take any of the following:** |  |
@@ -1079,8 +1081,9 @@ _A floating synapse beast wreathed in toxic spores, which drifts across the batt
 | **The Genestealers may take:** |  |
 | – Up to 15 additional Genestealers | +14 points each |
 | – Toxin sacs for the whole unit | +3 points per model |
-| **Any Genestealer may take:** |  |
+| **Any Genestealer may exchange its rending claws for:** |  |
 | – Scything talons | +2 points |
+| **Any Genestealer may take:** |  |
 | – Acid maw | +5 points |
 
 ### Hormagaunts — 50 pts
@@ -1400,7 +1403,7 @@ _This model may be selected as a Dedicated Transport for another unit, or as a F
 
 - Scything talons
 - Spore mine cysts
-- Twin stranglethorn cannons
+- Twin-linked stranglethorn cannons
 
 **Unit Type**
 
@@ -1417,8 +1420,8 @@ _This model may be selected as a Dedicated Transport for another unit, or as a F
 
 | Option | Cost |
 |---|---|
-| **The Harpy may exchange its twin stranglethorn cannons for:** |  |
-| – Twin heavy venom cannons | +10 points |
+| **The Harpy may exchange its twin-linked stranglethorn cannons for:** |  |
+| – Twin-linked heavy venom cannons | +10 points |
 
 ### Hive Crone — 155 pts
 
@@ -1811,7 +1814,7 @@ _The base cost is the Prime (50 points) and four Ravener Warriors (30 points eac
 | – Up to 2 additional Carnifexes | +120 points each |
 | **Any Carnifex may exchange either pair of monstrous scything talons for:** |  |
 | – Monstrous crushing claws | +5 points |
-| – Twin devourers with brainleech worms | +15 points |
+| – Twin-linked devourers with brainleech worms | +15 points |
 | – Stranglethorn cannon | +20 points |
 | – Heavy venom cannon | +25 points |
 | **Any Carnifex may take any of the following:** |  |
@@ -2337,7 +2340,7 @@ Tyranid bio-titans are Infantry with the Monstrous and Gargantuan sub-types. The
 
 ## Biomorphs
 
-Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose.
+Biomorphs are the Tyranid equivalent of wargear: organs, glands and growths bred into a creature for a purpose. A biomorph is taken by every model in the unit and costs its points for each model, unlike weapon options, which are bought model by model.
 
 ### Adrenal Glands
 
@@ -2345,11 +2348,13 @@ _Glands that flood the creature's body with stimulants, driving it into a killin
 
 A model with adrenal glands gains Fleet (1) and Furious Charge (1), or increases an existing value of either by 1.
 
-### Bone Mace and Thresher Scythe
+### Dynamic Camouflage
 
-_Massive bony tails, swung like clubs or blades at anything behind the creature._
+_Chameleonic scales that blend the creature into its surroundings._
 
-A model with a bone mace or thresher scythe tail makes additional Attacks in close combat as set by the Extra Attacks (X) rule on the tail's profile in the Bio-weapons armoury. A model may have only one tail biomorph.
+A model with dynamic camouflage gains the Stealth special rule (see Army-wide Special Rules). Any model may take it unless it already has Stealth.
+
+**Cost:** +5 points per model, or +10 points per Monstrous model.
 
 ### Flesh Hooks
 
@@ -2357,11 +2362,13 @@ _Barbed hooks fired on sinew cords to haul the creature over walls and barricade
 
 Flesh hooks count as frag grenades†.
 
-### Prehensile Pincer Tail
+### Hardened Carapace
 
-_A grasping tail that pins prey for the killing blow._
+_Layers of thickened chitin grown over the creature's vital organs._
 
-A model with a prehensile pincer tail makes additional Attacks in close combat as set by the Extra Attacks (X) rule on the tail's profile in the Bio-weapons armoury. A model may have only one tail biomorph.
+A model with a hardened carapace adds 1 to its Save, to a best of 2+. Any model with a Save worse than 2+ may take it.
+
+**Cost:** by the model's new Save: 5+ 2 points, 4+ 5 points, 3+ 10 points, 2+ 15 points per model.
 
 ### Regeneration
 
@@ -2397,7 +2404,7 @@ Gargoyles, Sky-Slasher Swarms, Tyranid Shrikes, Winged Tyranid Primes, the Paras
 
 ## Bio-weapons Armoury
 
-Tyranid weapons are living symbiotes, grown rather than built. Weapon special rules use their 2.0 names†; twin versions of a weapon have the Twin-linked special rule.
+Tyranid weapons are living symbiotes, grown rather than built. Weapon special rules use their 2.0 names†; twin-linked versions of a weapon have the Twin-linked special rule.
 
 ### Close Combat Weapons
 
@@ -2440,11 +2447,11 @@ _Bio-weapons grown for creatures that hunt tanks and titans._
 
 _Extra weapons that give a creature one more attack._
 
-Tails use the Extra Attacks (X) special rule shown on their profile (see Army-wide Special Rules). Each of the other weapons here makes one additional Attack with its own profile.
+Tails are weapon options, not biomorphs: a model that takes a tail keeps its other weapons and gains the tail as an extra weapon, bought per model. Tails use the Extra Attacks (X) special rule shown on their profile (see Army-wide Special Rules), and a model may have only one tail. Each of the other weapons here makes one additional Attack with its own profile.
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
-| Acid maw | – | User | 2 | Melee |
+| Acid maw | – | User | 4 | Melee, Rending (4+), Extra Attacks (1), Unwieldy |
 | Bone mace | – | 8 | 5 | Melee, Concussive, Extra Attacks (1) |
 | Bone mace (Ravener) | – | +1 | 4 | Melee, Concussive (1), Extra Attacks (2) |
 | Grasping tails (Malanthrope) | – | User | 5 | Melee, Poisoned (4+), Extra Attacks (2) |
@@ -2473,7 +2480,7 @@ A model with two pairs of the same talons or claws makes one additional Attack.
 | Prime talons | – | User | 4 | Melee, Shred |
 | Rending claws | – | User | – | Melee, Rending (6+) |
 | Screamer-killer talons | – | +1 | 2 | Melee, Shred |
-| Scything talons | – | User | – | Melee, Shred |
+| Scything talons | – | +1 | 6 | Melee, Shred |
 | Scything talons and crushing claws | – | +1 | 3 | Melee, Brutal (2) |
 | Scything talons and rending claws | – | User | 4 | Melee, Rending (6+) |
 | Shovelling claws | – | +2 | 3 | Melee |
@@ -2514,7 +2521,7 @@ _Living guns that fire beetles, spines and acid-filled grubs, carried by the swa
 | Spinemaw (Dimachaeron) | 12" | 5 | 4 | Assault 2 |
 | Spinemaws | 6" | 2 | – | Pistol 1 |
 | Stinger salvo | 24" | 5 | 4 | Assault 4 |
-| Twin devourers with brainleech worms | 18" | 6 | – | Assault 6, Twin-linked |
+| Twin-linked devourers with brainleech worms | 18" | 6 | – | Assault 6, Twin-linked |
 
 #### Bio-plasma, Acid and Flame
 
