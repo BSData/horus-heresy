@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -1946,6 +1946,21 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Twin-linked networked markerlight" hidden="false" id="9f51-3129-57f8-f15c" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Twin-linked networked markerlight" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d3a5-80f0-ddae-6bf9" publicationId="733a-d454-80f2-c90e">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">36"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Twin-linked; each hit places D3 Markerlight tokens</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Twin-linked" id="d69e-7798-7f77-333a" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Missile pod" hidden="false" id="ee7c-5056-7a11-708b" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Missile pod" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="3b19-57e5-876e-7276" publicationId="733a-d454-80f2-c90e">
@@ -2401,6 +2416,15 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Baggage Harness" hidden="false" id="2b26-7281-7e1d-a918" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Baggage Harness" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b01e-e323-4d2c-3b5d">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Packs, ammunition and supplies strapped to a Great Knarloc for the Kroot that march with it. - Leadership Aura: friendly Kroot units within 6" of the Great Knarloc add 1 to their Leadership. - Ammunition Supply: if a friendly Kroot Carnivore or Kroot auxiliary unit within 6" rolls a 1 to hit in the Shooting phase, it may re-roll that dice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Communion Helm" hidden="false" id="bbce-86aa-03be-66e5" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Communion Helm" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b804-485d-ee6e-4046">
@@ -2453,6 +2477,31 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Neocapacitor Shield" hidden="false" id="8017-3c79-1c67-c639" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Neocapacitor Shield" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="66c2-1f64-3597-6886">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A prototype shield projector carried by the Exemplars of the Twin Lance. The bearer has a 4+ Invulnerable Save, but suffers a wound for each roll of 1 made for that save. Its Armour Save is unchanged.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="85b4-97e3-9267-a40c" hidden="false" targetId="a806-8312-c10a-6b19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (4+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paradox of Duality" hidden="false" id="212a-1077-6bd7-cf5f" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Paradox of Duality" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="6863-abf6-445c-673f">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The staff of Aun'Va, whose paradoxical field turns aside fire aimed at the Ethereal Supreme. Whenever Aun'Va's unit suffers an unsaved wound from a Shooting Attack, roll a D6. If the result is equal to or higher than the attack's AP, the wound is negated, as though a cover save had been passed. A roll of 1 always fails.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Photon Grenades" hidden="false" id="6fc1-7d02-98ce-6693" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Photon Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="08b5-d0eb-d111-f1f2">
@@ -2467,6 +2516,24 @@
         <profile name="Point Defence Targeting Relay" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="16cc-c62c-3cf6-1fb8">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">An automated fire-control system for defensive fire. A vehicle with a point defence targeting relay adds 1 to its Ballistic Skill when firing Overwatch.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Repair Systems" hidden="false" id="bec3-d1a2-54c7-acfc" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Repair Systems" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3e4f-0442-8566-d5e3">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Tools and micro-fabricators that patch damaged machines in the field. At the start of your turn, the bearer's unit has It Will Not Die (6+) if it has a Wounds characteristic; a vehicle instead restores one lost Hull Point on a 6+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stealth Field Generator" hidden="false" id="ebfb-7d82-2516-125d" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Stealth Field Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b970-6a50-f11c-f65f">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A sensor-baffling field projected by the Ghostkeel's stealth drones. The bearer's unit has Shrouded (5+), or Shrouded (4+) if it did not move this turn. It may not be targeted by enemy units more than 24" away.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2504,6 +2571,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="62e5-784a-c9ca-cfdb" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (4)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combat Armour" hidden="false" id="c689-8682-73e3-c921" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2522,6 +2596,65 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="6be3-ae04-e723-e2a6" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (3)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ghostkeel Battlesuit" hidden="false" id="3c36-04dc-7a64-3b3b" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Ghostkeel Battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8931-a472-0c59-c65c">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The XV95, a massive stealth platform that uses its displacement thrusters to leap obstacles and reposition instantly. A Ghostkeel battlesuit confers a 3+ Armour Save, a 4+ Invulnerable Save against cover, a jet pack, Hammer of Wrath (2) and Bulky (4).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="abb0-a302-449e-5df2" hidden="false" targetId="a806-8312-c10a-6b19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (4+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="9a11-57bf-84f1-1f94" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="0dd6-c901-93e4-e2ef" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (4)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hazard Battlesuit" hidden="false" id="9fa6-fd55-ddbb-31bc" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Hazard Battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="9be9-7981-1576-64aa">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The XV9, a heavy close-support frame with high-yield thrusters for breaking defensive infantry frontlines. A Hazard battlesuit confers a 3+ Armour Save, a 5+ Invulnerable Save, a jet pack, Hammer of Wrath (2) and Bulky (3).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="d274-1efd-dd5d-2064" hidden="false" targetId="a806-8312-c10a-6b19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="9138-c406-84f7-dc03" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="3a72-1844-d378-66f3" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (3)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Iridium Armour" hidden="false" id="d622-9c99-9fd4-cb8c" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2532,6 +2665,22 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pilot Battlesuit" hidden="false" id="f3ef-6f26-84fa-d254" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Pilot Battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="16d3-a738-6e7c-2983">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The XV02, with no active propulsion system; it relies on a reinforced frame suited to standard mechanised transport hulls. A Pilot battlesuit confers a 3+ Armour Save and Bulky (2). It does not confer a jet pack.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="dcd3-75fa-f7b4-5efe" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Recon Armour" hidden="false" id="f202-6a4b-bc3d-8232" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Recon Armour" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="96fe-f122-62fa-c09d">
@@ -2541,6 +2690,32 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Riptide Battlesuit" hidden="false" id="75d5-0cef-9349-6301" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Riptide Battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bd7f-816d-bec0-93b5">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The XV104, a colossal heavy combat suit whose sheer kinetic mass turns vector-thrust landings into devastating impacts. A Riptide battlesuit confers a 2+ Armour Save, a 5+ Invulnerable Save (3+ when its Nova Reactor powers the shield), a jet pack, Hammer of Wrath (D3) and Bulky (6).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="4196-dd7c-0c9b-fea6" hidden="false" targetId="a806-8312-c10a-6b19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="c584-518e-439a-2e63" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (D3)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="c6ba-3fe5-e45f-73e8" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (6)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stealth Battlesuit" hidden="false" id="7a95-95e8-8bd1-7f3f" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Stealth Battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="3d34-ae65-0d4d-61ff">
@@ -2549,6 +2724,71 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="1ef3-ac17-d422-2c37" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (2)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stealth" id="6c87-9787-ff8e-15f0" hidden="false" targetId="600f-0f0c-0fc3-f7a2" type="rule" />
+        <infoLink name="Shrouded (X)" id="381b-bb1a-5c87-c18f" hidden="false" targetId="10c3-fdb0-089f-ca65" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Shrouded (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Supernova Battlesuit" hidden="false" id="7f5c-6925-9c59-455e" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Supernova Battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="2788-a066-4349-8764">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The XV-86 worn by Commander Farsight, an agile command chassis built for high-velocity redirection and aggressive vanguard strikes. A Supernova battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (1) and Bulky (3).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="431f-c947-e4ab-b55e" hidden="false" targetId="a806-8312-c10a-6b19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (4+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="4038-7119-199a-718f" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="ada8-440c-4ba9-42c1" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (3)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warmaker Battlesuit" hidden="false" id="e23a-97a4-b291-a277" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Warmaker Battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="018d-2af3-5959-2f0a">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The Twin Lance prototype, an experimental heavy platform cut down to Bulky (6) so it fits standard frontline transport bays. A Warmaker battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (D3+1) and Bulky (6).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="b003-3dea-4f6a-4c40" hidden="false" targetId="a806-8312-c10a-6b19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (4+)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hammer of Wrath (X)" id="1705-aa6d-5f94-c8a3" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Hammer of Wrath (D3+1)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bulky (X)" id="ee3b-4c83-384a-055c" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Bulky (6)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Command and control node" hidden="false" id="8887-780f-01d1-4b56" publicationId="733a-d454-80f2-c90e">
       <constraints>
@@ -3086,7 +3326,7 @@
             <categoryLink targetId="aa94-5c65-d1f1-46a4" id="3234-1288-3f32-ae8e" primary="false" name="Unique Sub-type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Paradox of Duality" hidden="false" id="811e-02ef-6032-0115" type="selectionEntry" targetId="4542-a1f2-e3af-7f65">
+            <entryLink import="true" name="Paradox of Duality" hidden="false" id="811e-02ef-6032-0115" type="selectionEntry" targetId="212a-1077-6bd7-cf5f">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="994d-17f3-40b5-20e7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ecd-4b70-90ef-60a3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3170,7 +3410,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="100" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Paradox of Duality" hidden="false" id="4542-a1f2-e3af-7f65" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="Cadre Fireblade" hidden="false" id="f11d-fc95-f79c-4839" publicationId="733a-d454-80f2-c90e">
       <rules>
         <rule name="Volley Fire" id="0a5a-887f-35b1-1b52" hidden="false">
@@ -4308,10 +4547,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e3a-5b5d-059b-02e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="XV-86 Supernova battlesuit" hidden="false" id="b588-a1db-182c-6b95" type="selectionEntry" targetId="f6aa-ddd7-f025-ef4e">
+            <entryLink import="true" name="Supernova Battlesuit" hidden="false" id="bc52-3421-cd5c-1b51" type="selectionEntry" targetId="7f5c-6925-9c59-455e">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e0ad-ce84-4e65-16e2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dd0e-4975-eb1b-4860" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d36-ba3a-d771-f23c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c0b-1c42-15a2-af39" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4323,15 +4562,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165" />
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="XV-86 Supernova battlesuit" hidden="false" id="f6aa-ddd7-f025-ef4e" publicationId="733a-d454-80f2-c90e">
-      <profiles>
-        <profile name="XV-86 Supernova battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b125-545c-8fc6-b665">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet pack</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Commander O'Vesa" hidden="false" id="0929-be35-e81a-d842" publicationId="733a-d454-80f2-c90e">
       <rules>
@@ -4420,10 +4650,10 @@
                 <infoLink name="Twin-linked" id="430b-42a5-5f50-ef24" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
               </infoLinks>
             </entryLink>
-            <entryLink import="true" name="XV104 Riptide battlesuit" hidden="false" id="80ce-3ed4-377a-d7d4" type="selectionEntry" targetId="a2e2-d5aa-ae1a-b585">
+            <entryLink import="true" name="Riptide Battlesuit" hidden="false" id="4e50-2083-cbf4-7259" type="selectionEntry" targetId="75d5-0cef-9349-6301">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="04f8-abed-4500-f7bf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2435-76b7-f78e-df54" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8369-3511-8326-8728" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3a80-c2f1-9c61-00bf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4474,15 +4704,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Riptide shield generator" hidden="false" id="e0f6-78af-3b7e-997f" publicationId="733a-d454-80f2-c90e" />
-    <selectionEntry type="upgrade" import="true" name="XV104 Riptide battlesuit" hidden="false" id="a2e2-d5aa-ae1a-b585" publicationId="733a-d454-80f2-c90e">
-      <profiles>
-        <profile name="XV104 Riptide battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7ac9-a887-6626-5b3e">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet pack</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="unit" import="true" name="Commander Shadowsun" hidden="false" id="e077-a563-56f5-384a" publicationId="733a-d454-80f2-c90e">
       <rules>
         <rule name="Master Strategist" id="98ae-a456-534c-fa96" hidden="false">
@@ -5575,10 +5796,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="96b4-b825-ed78-4881" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="XV02 Pilot battlesuit" hidden="false" id="0d3f-820c-9c53-87f1" type="selectionEntry" targetId="0d1d-1f1c-25aa-2673">
+            <entryLink import="true" name="Pilot Battlesuit" hidden="false" id="ab1a-ef92-d11a-dcad" type="selectionEntry" targetId="f3ef-6f26-84fa-d254">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="079f-5bd1-df10-451d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2ff8-ebda-dcb3-fd68" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="deae-3b14-5943-f982" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0684-9c56-7f73-7706" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5630,15 +5851,6 @@
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="120" />
       </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="XV02 Pilot battlesuit" hidden="false" id="0d1d-1f1c-25aa-2673" publicationId="733a-d454-80f2-c90e">
-      <profiles>
-        <profile name="XV02 Pilot battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="bcae-59de-0969-f937">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet pack</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Shas'o R'myr" hidden="false" id="1e18-565e-589d-5144" publicationId="733a-d454-80f2-c90e">
       <rules>
@@ -5927,10 +6139,10 @@
             <categoryLink targetId="e929-a5c3-451c-6f19" id="41c9-79cb-095c-d5b2" primary="false" name="Mechanised Unit Sub-type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Warmaker battlesuit" hidden="false" id="78de-8dad-e259-e44b" type="selectionEntry" targetId="5fb8-938b-0844-4411">
+            <entryLink import="true" name="Warmaker Battlesuit" hidden="false" id="7198-45a3-6e66-6df9" type="selectionEntry" targetId="e23a-97a4-b291-a277">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bdd-6c76-0171-5200" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0577-4ae3-a472-1e45" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6516-3bac-d450-d69d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3597-31dc-7e3d-9b5c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Fusion eliminator" hidden="false" id="bc52-16ab-5290-cafc" type="selectionEntry" targetId="9383-4c0f-8414-a78a">
@@ -5951,10 +6163,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dec6-0e1c-400d-261c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="neocapacitor shield" hidden="false" id="ff5f-18ed-c0cb-61bd" type="selectionEntry" targetId="af07-1267-4368-1085">
+            <entryLink import="true" name="Neocapacitor Shield" hidden="false" id="00c1-69ae-3aaa-9cb9" type="selectionEntry" targetId="8017-3c79-1c67-c639">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="682c-5ae9-a44b-d5cf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c41d-e480-def3-83ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="edcf-53b6-e103-b8c1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7f8b-f972-f3b1-5083" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -5992,10 +6204,10 @@
             <categoryLink targetId="e929-a5c3-451c-6f19" id="7868-0a7e-78bb-6c16" primary="false" name="Mechanised Unit Sub-type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Warmaker battlesuit" hidden="false" id="3ab8-7d71-6a76-4e1a" type="selectionEntry" targetId="5fb8-938b-0844-4411">
+            <entryLink import="true" name="Warmaker Battlesuit" hidden="false" id="3567-afab-ddf5-94be" type="selectionEntry" targetId="e23a-97a4-b291-a277">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="898e-c6d5-61a4-72c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da85-8275-9578-ac5f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="24e6-b4bb-0f82-0edc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aec5-c5cc-cfc1-1a7e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
             <entryLink import="true" name="Ion scattercannon" hidden="false" id="88e3-e199-2f61-ed50" type="selectionEntry" targetId="4312-64f9-4e4b-b06d">
@@ -6016,7 +6228,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d53d-e7e8-f7df-2da7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="neocapacitor shield" hidden="false" id="f434-01fe-9baf-3441" type="selectionEntry" targetId="af07-1267-4368-1085">
+            <entryLink import="true" name="Neocapacitor Shield" hidden="false" id="f434-01fe-9baf-3441" type="selectionEntry" targetId="8017-3c79-1c67-c639">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b86b-d1a5-86c6-c867" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b20-ae89-f6b0-a90e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6073,16 +6285,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="260" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warmaker battlesuit" hidden="false" id="5fb8-938b-0844-4411" publicationId="733a-d454-80f2-c90e">
-      <profiles>
-        <profile name="Warmaker battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="f522-ee07-775a-ce2d">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet pack</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="neocapacitor shield" hidden="false" id="af07-1267-4368-1085" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="Crisis Battlesuits" hidden="false" id="e153-5099-ee09-6d3d" publicationId="733a-d454-80f2-c90e">
       <infoLinks>
         <infoLink name="Xenos" id="de38-a656-6155-6bb7" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
@@ -7091,7 +7293,7 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="ff7a-fc2e-5237-106c" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Repair systems" hidden="false" id="b869-658f-4104-4f19" type="selectionEntry" targetId="adbe-637d-85ce-728f">
+            <entryLink import="true" name="Repair Systems" hidden="false" id="b869-658f-4104-4f19" type="selectionEntry" targetId="bec3-d1a2-54c7-acfc">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="591d-d74a-8654-18df" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3190-af8f-b386-4195" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7108,7 +7310,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Repair systems" hidden="false" id="adbe-637d-85ce-728f" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="Ethereal Guard" hidden="false" id="f81d-433f-6ad8-47a2" publicationId="733a-d454-80f2-c90e">
       <rules>
         <rule name="Honour Guard" id="31ef-789c-57f8-edfd" hidden="false">
@@ -7480,10 +7681,10 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="XV95 Ghostkeel battlesuit" hidden="false" id="a3ee-5fbb-90ea-bb4a" type="selectionEntry" targetId="cd40-d005-8dc7-e044">
+            <entryLink import="true" name="Ghostkeel Battlesuit" hidden="false" id="592f-4988-1a2b-a136" type="selectionEntry" targetId="3c36-04dc-7a64-3b3b">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="23fa-d098-671b-e6d3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="237a-9ef7-6767-2c15" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="109e-5a73-0769-1dd6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fec-4a73-9eae-deca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7517,10 +7718,10 @@
             <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="19f9-1223-cac7-30df" primary="false" name="Infantry Unit Type" />
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="stealth field generator" hidden="false" id="d3a5-a50f-631e-ceb2" type="selectionEntry" targetId="cdc0-937c-8a6e-9b91">
+            <entryLink import="true" name="Stealth Field Generator" hidden="false" id="e658-8c03-7b4c-0df8" type="selectionEntry" targetId="ebfb-7d82-2516-125d">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1bad-d2e1-5ecd-0b73" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2d7-6782-099f-1ae7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2add-b0e4-74cd-4ef4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ccd7-d301-a1e2-0477" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7553,16 +7754,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="XV95 Ghostkeel battlesuit" hidden="false" id="cd40-d005-8dc7-e044" publicationId="733a-d454-80f2-c90e">
-      <profiles>
-        <profile name="XV95 Ghostkeel battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="764b-01bb-f893-317c">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet pack</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="stealth field generator" hidden="false" id="cdc0-937c-8a6e-9b91" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="Kroot Farstalkers" hidden="false" id="b232-b486-0571-7e1b" publicationId="733a-d454-80f2-c90e">
       <rules>
         <rule name="Trackers" id="f718-4cf5-3ff4-822d" hidden="false">
@@ -7921,10 +8112,10 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ffb-b1c1-9558-88cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="XV104 Riptide battlesuit" hidden="false" id="3fba-f6f5-c22d-713a" type="selectionEntry" targetId="a2e2-d5aa-ae1a-b585">
+            <entryLink import="true" name="Riptide Battlesuit" hidden="false" id="8b74-71ff-5ef2-3e3d" type="selectionEntry" targetId="75d5-0cef-9349-6301">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="defb-d78c-9f13-d579" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a7d-8fb2-1f4d-9256" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d966-f792-72e0-395f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fd8-f69f-f4bd-6161" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8448,10 +8639,10 @@
                 <infoLink name="Twin-linked" id="7486-c324-374a-6694" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
               </infoLinks>
             </entryLink>
-            <entryLink import="true" name="XV9 Hazard battlesuit" hidden="false" id="db93-2f3e-ecda-70da" type="selectionEntry" targetId="ec49-2b55-00b8-32cf">
+            <entryLink import="true" name="Hazard Battlesuit" hidden="false" id="4e28-8249-62db-7f43" type="selectionEntry" targetId="9fa6-fd55-ddbb-31bc">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="150c-3045-abf1-ddc6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="67da-128a-4aab-fa7b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0535-88c0-a4b6-daeb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7423-ec74-8898-3fa8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8730,15 +8921,6 @@
           </constraints>
         </entryLink>
       </entryLinks>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="XV9 Hazard battlesuit" hidden="false" id="ec49-2b55-00b8-32cf" publicationId="733a-d454-80f2-c90e">
-      <profiles>
-        <profile name="XV9 Hazard battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="945a-a548-61f6-05ad">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">Jet pack</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="XV81 Crisis Battlesuits" hidden="false" id="76b6-afce-48fc-5ade" publicationId="733a-d454-80f2-c90e">
       <rules>
@@ -13000,7 +13182,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Baggage harness" hidden="false" id="da3c-f35e-9a9d-108b" type="selectionEntry" targetId="59e8-9a6a-cc93-e120">
+            <entryLink import="true" name="Baggage Harness" hidden="false" id="da3c-f35e-9a9d-108b" type="selectionEntry" targetId="2b26-7281-7e1d-a918">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46f6-c016-c5b9-7f95" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="698e-7469-02f6-0c0d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -13022,7 +13204,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Baggage harness" hidden="false" id="59e8-9a6a-cc93-e120" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="Hammerhead Gunship" hidden="false" id="855e-0bbc-6450-58ce" publicationId="733a-d454-80f2-c90e">
       <rules>
         <rule name="Drone Docking" id="41d3-14f8-f189-71dd" hidden="false">
@@ -13601,10 +13782,10 @@
                 <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1b8b-d563-e7ba-63d0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Two networked markerlights" hidden="false" id="c3ba-d458-069c-0cf3" type="selectionEntry" targetId="18c9-b1ed-080f-abfc">
+            <entryLink import="true" name="Twin-linked networked markerlight" hidden="false" id="a055-3e26-6a13-3b70" type="selectionEntry" targetId="9f51-3129-57f8-f15c">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="40ee-b59c-be57-e921" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4aa-419b-6433-dfd2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a84a-83a8-eb29-d98b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c9d-fbf7-2386-11d9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
           </entryLinks>
@@ -13679,7 +13860,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="115" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Two networked markerlights" hidden="false" id="18c9-b1ed-080f-abfc" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="Sniper Drone Team" hidden="false" id="07b4-eb7c-a207-81bf" publicationId="733a-d454-80f2-c90e">
       <infoLinks>
         <infoLink name="Xenos" id="ace5-3dcd-4cc9-73aa" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />

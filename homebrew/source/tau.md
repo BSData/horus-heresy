@@ -2303,7 +2303,7 @@ One of Farsight's Eight: the mind of a dead Broadside pilot, preserved in an AI 
 
 - Gun Drones: twin-linked pulse carbine
 - Six seeker missiles
-- Two networked markerlights
+- Twin-linked networked markerlight
 
 **Unit Type**
 
@@ -2791,6 +2791,13 @@ These datasheets bring the T'au Kill Teams to the battlefield as small specialis
 
 ### Items
 
+#### Baggage Harness
+
+Packs, ammunition and supplies strapped to a Great Knarloc for the Kroot that march with it.
+
+- **Leadership Aura:** friendly Kroot units within 6" of the Great Knarloc add 1 to their Leadership.
+- **Ammunition Supply:** if a friendly Kroot Carnivore or Kroot auxiliary unit within 6" rolls a 1 to hit in the Shooting phase, it may re-roll that dice.
+
 #### Communion Helm
 
 A helm that links the Oracle to the will of the Vespid hive.
@@ -2821,6 +2828,18 @@ A field medical kit carried by a Pathfinder Medical Technician.
 
 The bearer's unit has Feel No Pain (6+).
 
+#### Neocapacitor Shield
+
+A prototype shield projector carried by the Exemplars of the Twin Lance.
+
+The bearer has a 4+ Invulnerable Save, but suffers a wound for each roll of 1 made for that save. Its Armour Save is unchanged.
+
+#### Paradox of Duality
+
+The staff of Aun'Va, whose paradoxical field turns aside fire aimed at the Ethereal Supreme.
+
+Whenever Aun'Va's unit suffers an unsaved wound from a Shooting Attack, roll a D6. If the result is equal to or higher than the attack's AP, the wound is negated, as though a cover save had been passed. A roll of 1 always fails.
+
 #### Photon Grenades
 
 Grenades that release a blinding flash.
@@ -2832,6 +2851,18 @@ Enemy units that charge a unit with photon grenades do not gain the Initiative b
 An automated fire-control system for defensive fire.
 
 A vehicle with a point defence targeting relay adds 1 to its Ballistic Skill when firing Overwatch.
+
+#### Repair Systems
+
+Tools and micro-fabricators that patch damaged machines in the field.
+
+At the start of your turn, the bearer's unit has It Will Not Die (6+) if it has a Wounds characteristic; a vehicle instead restores one lost Hull Point on a 6+.
+
+#### Stealth Field Generator
+
+A sensor-baffling field projected by the Ghostkeel's stealth drones.
+
+The bearer's unit has Shrouded (5+), or Shrouded (4+) if it did not move this turn. It may not be targeted by enemy units more than 24" away.
 
 #### Ta'unar Shield Generator
 
@@ -2867,11 +2898,29 @@ The XV8 Crisis battlesuit, mainstay of the Fire Caste's elite.
 
 A Crisis battlesuit confers a 3+ Armour Save, a jet pack and Bulky (3).
 
+##### Ghostkeel Battlesuit
+
+The XV95, a massive stealth platform that uses its displacement thrusters to leap obstacles and reposition instantly.
+
+A Ghostkeel battlesuit confers a 3+ Armour Save, a 4+ Invulnerable Save against cover, a jet pack, Hammer of Wrath (2) and Bulky (4).
+
+##### Hazard Battlesuit
+
+The XV9, a heavy close-support frame with high-yield thrusters for breaking defensive infantry frontlines.
+
+A Hazard battlesuit confers a 3+ Armour Save, a 5+ Invulnerable Save, a jet pack, Hammer of Wrath (2) and Bulky (3).
+
 ##### Iridium Armour
 
 Dense iridium plating worn only by Commanders.
 
 A Commander with iridium armour has a 2+ Armour Save.
+
+##### Pilot Battlesuit
+
+The XV02, with no active propulsion system; it relies on a reinforced frame suited to standard mechanised transport hulls.
+
+A Pilot battlesuit confers a 3+ Armour Save and Bulky (2). It does not confer a jet pack.
 
 ##### Recon Armour
 
@@ -2879,11 +2928,29 @@ Light armour worn by Pathfinders and Ethereals, built for speed and stealth.
 
 Recon armour confers a 5+ Armour Save.
 
+##### Riptide Battlesuit
+
+The XV104, a colossal heavy combat suit whose sheer kinetic mass turns vector-thrust landings into devastating impacts.
+
+A Riptide battlesuit confers a 2+ Armour Save, a 5+ Invulnerable Save (3+ when its Nova Reactor powers the shield), a jet pack, Hammer of Wrath (D3) and Bulky (6).
+
 ##### Stealth Battlesuit
 
 The XV25 and XV22 stealth suits, cloaked by advanced sensor-baffling fields.
 
 A Stealth battlesuit confers a 3+ Armour Save, a jet pack, Bulky (2), Stealth and Shrouded (5+).
+
+##### Supernova Battlesuit
+
+The XV-86 worn by Commander Farsight, an agile command chassis built for high-velocity redirection and aggressive vanguard strikes.
+
+A Supernova battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (1) and Bulky (3).
+
+##### Warmaker Battlesuit
+
+The Twin Lance prototype, an experimental heavy platform cut down to Bulky (6) so it fits standard frontline transport bays.
+
+A Warmaker battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (D3+1) and Bulky (6).
 
 ### Battlesuit Armoury
 
@@ -3114,6 +3181,7 @@ Guided missiles and specialist weapons that let T'au firepower reach any target.
 | Destroyer missile | 120" | 10 | 1 | Heavy 1, Armourbane (Ranged), One Use |
 | High-yield missile pod | 36" | 7 | 4 | Heavy 1, Large Blast (5") |
 | Markerlight | 36" | – | – | Heavy 1; places Markerlight tokens |
+| Twin-linked networked markerlight | 36" | – | – | Heavy 1, Twin-linked; each hit places D3 Markerlight tokens |
 | Missile pod | 36" | 7 | 4 | Assault 1, Blast (3") |
 | Seeker missile | 72" | 8 | 3 | Heavy 1, One Use |
 | Smart missile system | 30" | 5 | 5 | Heavy 4, Indirect Fire, Barrage† |

@@ -657,6 +657,16 @@ class Builder:
                 granted = re.search(r"gains the (.+?) special rule", text)
                 if granted:
                     self.link_rule(e, granted.group(1), eid)
+                # "A Riptide battlesuit confers a 2+ Armour Save, a 5+ Invulnerable Save, a jet pack,
+                # Hammer of Wrath (D3) and Bulky (6)": the rules it names
+                inv = re.search(r"\b(\d)\+ Invulnerable Save", text)
+                if inv:
+                    self.link_rule(e, f"Invulnerable Save ({inv.group(1)}+)", eid)
+                conf = re.search(r"confers (.+?)\.(?:\s|$)", text)
+                for tok in re.split(r",\s*(?![^()]*\))|\s+and\s+", conf.group(1)) if conf else []:
+                    tok = re.sub(r"^an? ", "", tok.strip())
+                    if tok and not tok[0].isdigit() and self.rule_target(re.sub(r"\s*\(.*\)$", "", tok)):
+                        self.link_rule(e, tok[0].upper() + tok[1:], eid)
                 if cost_line:
                     self.universal.append((name, eid, self.parse_cost_rule(cost_line)))
                 save = re.search(r"(?:confers|has) an? (\d)\+ Armour Save", text)
