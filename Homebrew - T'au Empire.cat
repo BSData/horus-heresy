@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -1695,6 +1695,11 @@
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink name="Limited Ammunition (Limited Use)" id="a0e9-10b4-de51-08e7" hidden="false" targetId="03f7-3f04-b43b-91ff" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Limited Use" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Haywire" id="1b37-d5b6-79f1-17a9" hidden="false" targetId="1dd4-7a75-5c59-8425" type="rule" />
       </infoLinks>
     </selectionEntry>
@@ -1710,6 +1715,11 @@
         </profile>
       </profiles>
       <infoLinks>
+        <infoLink name="One Use/One Shot (Single Use)" id="8778-8085-ea53-6d16" hidden="false" targetId="c5b0-0198-8b8d-7972" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Single Use" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Armourbane (X)" id="22bc-bca1-29fd-907e" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Armourbane (Melee)" />
@@ -1898,6 +1908,11 @@
             <modifier type="set" field="name" value="Armourbane (Ranged)" />
           </modifiers>
         </infoLink>
+        <infoLink name="One Use/One Shot (Single Use)" id="d11e-a867-6507-4599" hidden="false" targetId="c5b0-0198-8b8d-7972" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="One Use" />
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="High-yield missile pod" hidden="false" id="3634-9dd7-2b3e-91a4" publicationId="733a-d454-80f2-c90e">
@@ -1961,6 +1976,13 @@
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="One Use/One Shot (Single Use)" id="cae7-75b9-5ba1-8d11" hidden="false" targetId="c5b0-0198-8b8d-7972" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="One Use" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Smart missile system" hidden="false" id="5731-8303-207d-9c0e" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -17324,8 +17346,14 @@
     <rule name="Jet Packs" id="cec5-f1a0-ee98-0e56" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>T'au battlesuits, drones and hover drones use the official 2.0 Jet Pack rules. Vespid use Vespid Wings instead (see Wargear). A unit entirely equipped with jet packs may increase its Movement Characteristic by 6, move over friendly and enemy models and units, and ignore terrain while moving in the Movement phase (Dangerous Terrain tests still apply when beginning or ending a move in it, and Difficult Terrain counts as Dangerous). After it has finished shooting in the Shooting phase, it may make an additional 6" move in the same way, whatever weapons it fired. During any Reaction that lets it move, the move is increased by 6". Models with jet packs gain Bulky (2), or Bulky (3) if they already have Bulky (2), and Deep Strike. T'au battlesuits do not gain Bulky this way; they use the Bulky value on their datasheet instead.</description>
     </rule>
+    <rule name="Limited Ammunition (Limited Use)" id="03f7-3f04-b43b-91ff" hidden="false" publicationId="733a-d454-80f2-c90e">
+      <description>Some weapons, either due to a restricted capacity to store shells, a terrifying rate of fire or a complex loading mechanism, are prone to running out of ammunition in the heat of battle. Once drained of their reserves, these weapons become little more than burdens to their wielders, impotent until the battle is concluded and specialised equipment can be used to replenish their stores. After all Shooting Attacks for a weapon with this special rule have been fully resolved, roll a D6, adding +1 if the weapon has fired before in the same battle. If the total of this roll is 6 or more then the weapon may no longer be used to make Shooting Attacks in this battle. If this weapon is unable to make further Shooting Attacks then it may not be targeted by a Weapon Destroyed result on the Vehicle Damage table, and for the purposes of such a result is treated as though it had already been destroyed.</description>
+    </rule>
     <rule name="Markerlights" id="055e-aced-4c7e-9337" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>When a model fires a markerlight, each hit places one Markerlight token on the target unit instead of causing damage. Tokens last until the end of the turn. Before another friendly unit shoots at the marked unit, it may spend tokens as follows (each token once): A seeker missile may instead spend one token to fire at Ballistic Skill 5, without line of sight to the target.</description>
+    </rule>
+    <rule name="One Use/One Shot (Single Use)" id="c5b0-0198-8b8d-7972" hidden="false" publicationId="733a-d454-80f2-c90e">
+      <description>Certain items can only be used once, so a general must choose wisely when to do so. A weapon or ability with this special rule can only be used once during the course of a battle. Once a weapon with the One Use or One Shot special rule has been used to attack, it is no longer counted as a weapon and may not be destroyed (for example, by rolls on the Vehicle Damage table) or repaired by any other rule or effect.</description>
     </rule>
     <rule name="Saviour Protocols" id="e16a-d6c3-1a81-796f" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>When a wound is allocated to a friendly T'au character or battlesuit within 3" of a friendly Drone, you may roll a D6; on a 2+, that wound is allocated to the Drone instead (use the Drone's save)†.</description>

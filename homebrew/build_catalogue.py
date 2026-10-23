@@ -451,7 +451,12 @@ class Builder:
         r = el(self.shared_rules, "rule", name=name, id=rid, hidden=False, publicationId=self.pub_id)
         d = el(r, "description")
         d.text = text
-        self.local_rules[norm(re.sub(r"\s*\(.*\)$", "", name))] = (rid, name)
+        base = re.sub(r"\s*\(.*\)$", "", name)
+        self.local_rules[norm(base)] = (rid, name)
+        # "Limited Ammunition (Limited Use)", "One Use/One Shot (Single Use)": every name works
+        alias = re.search(r"\(((?:[A-Z][a-z]+ ?)+)\)$", name)
+        for other in base.split("/")[1:] + base.split("/")[:1] + ([alias.group(1)] if alias else []):
+            self.local_rules.setdefault(norm(other), (rid, name))
         return rid
 
     def rule_target(self, base):

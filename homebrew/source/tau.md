@@ -52,6 +52,12 @@ Independent Characters can join other units. They cannot, however, join units th
 
 T'au battlesuits, drones and hover drones use the official 2.0 Jet Pack rules. Vespid use Vespid Wings instead (see Wargear). A unit entirely equipped with jet packs may increase its Movement Characteristic by 6, move over friendly and enemy models and units, and ignore terrain while moving in the Movement phase (Dangerous Terrain tests still apply when beginning or ending a move in it, and Difficult Terrain counts as Dangerous). After it has finished shooting in the Shooting phase, it may make an additional 6" move in the same way, whatever weapons it fired. During any Reaction that lets it move, the move is increased by 6". Models with jet packs gain Bulky (2), or Bulky (3) if they already have Bulky (2), and Deep Strike. T'au battlesuits do not gain Bulky this way; they use the Bulky value on their datasheet instead.
 
+#### Limited Ammunition (Limited Use)
+
+Some weapons, either due to a restricted capacity to store shells, a terrifying rate of fire or a complex loading mechanism, are prone to running out of ammunition in the heat of battle. Once drained of their reserves, these weapons become little more than burdens to their wielders, impotent until the battle is concluded and specialised equipment can be used to replenish their stores.
+
+After all Shooting Attacks for a weapon with this special rule have been fully resolved, roll a D6, adding +1 if the weapon has fired before in the same battle. If the total of this roll is 6 or more then the weapon may no longer be used to make Shooting Attacks in this battle. If this weapon is unable to make further Shooting Attacks then it may not be targeted by a Weapon Destroyed result on the Vehicle Damage table, and for the purposes of such a result is treated as though it had already been destroyed.
+
 #### Markerlights
 
 When a model fires a markerlight, each hit places one Markerlight token on the target unit instead of causing damage. Tokens last until the end of the turn. Before another friendly unit shoots at the marked unit, it may spend tokens as follows (each token once):
@@ -63,6 +69,12 @@ When a model fires a markerlight, each hit places one Markerlight token on the t
 | 3 | The target does not receive cover saves against this attack |
 
 A seeker missile may instead spend one token to fire at Ballistic Skill 5, without line of sight to the target.
+
+#### One Use/One Shot (Single Use)
+
+Certain items can only be used once, so a general must choose wisely when to do so.
+
+A weapon or ability with this special rule can only be used once during the course of a battle. Once a weapon with the One Use or One Shot special rule has been used to attack, it is no longer counted as a weapon and may not be destroyed (for example, by rolls on the Vehicle Damage table) or repaired by any other rule or effect.
 
 #### Saviour Protocols
 
