@@ -1,0 +1,40 @@
+name: Release Datafiles
+
+on: 
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate files
+        run: |
+          echo "GST files:"
+          find . -maxdepth 1 -name "*.gst"
+
+          echo "CAT files:"
+          find . -maxdepth 1 -name "*.cat"
+
+      - name: Package datafiles
+        run: |
+          mkdir package
+
+          find . -maxdepth 1 -name "*.gst" -exec cp {} package/ \;
+          find . -maxdepth 1 -name "*.cat" -exec cp {} package/ \;
+
+          cd package
+          zip -r ../catalogues.zip .
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: catalogues.zip
