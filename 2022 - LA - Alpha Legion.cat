@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="61" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="63" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -2359,6 +2359,38 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="5bf6-2d03-4d31-83b0" name="Saturnine Dreadnought" hidden="false" collective="false" import="false" targetId="a6a1-e9ed-e34f-d6c4" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="050b-9736-9d71-5081" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          </categoryLink>
+        <categoryLink id="1502-47c8-c244-4f41" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
+          </categoryLink>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="e833-3c0d-564a-ae07" name="Mastodon" hidden="false" collective="false" import="false" targetId="7f24-2b72-9128-5330" type="selectionEntry">
       <comment>template_id_547d-bdfe-4930-9b58</comment>
       <modifiers>
@@ -2562,6 +2594,34 @@
         <entryLink id="7ca2-2e61-4f1f-a997" name="Retinue" hidden="false" collective="false" import="true" targetId="09f9-933c-a88e-6e38" type="selectionEntryGroup">
           <comment>template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
         </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="5af9-d68d-7fc7-ed8a" name="Praetor in Saturnine Terminator Armour" hidden="false" collective="false" import="false" targetId="62c1-7532-c5b2-3f1d" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="30a4-8a28-04d3-6a68" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          </categoryLink>
+        <categoryLink id="6987-cdc0-fcc3-3042" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          </categoryLink>
+        <categoryLink id="c990-ff84-2b59-9177" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+          </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7e03-c971-cf54-6907" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="a1f6-6ccd-6b3e-aba2" type="selectionEntryGroup">
+          </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="2124-5d7a-a791-dfc7" name="Praetor, Tartaros" hidden="false" collective="false" import="false" targetId="3760-204e-444c-1044" type="selectionEntry">
@@ -3216,6 +3276,28 @@
         <categoryLink id="065e-83f3-4508-901b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_ec67-8573-4460-89db</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="243f-d0fd-6adf-457d" name="Saturnine Terminator Squad" hidden="false" collective="false" import="false" targetId="fd64-71b2-0635-0daf" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="9142-d994-e260-9310">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1af3-e23e-8831-e011" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5cd0-2d53-aa91-daae" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
+          </categoryLink>
+        <categoryLink id="7bb7-63cc-b6d3-ccbc" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink id="3e12-cfe5-d35d-2867" name="Terminator Tartaros Squad" hidden="false" collective="false" import="false" targetId="1a8e-0ded-a4dc-2b4e" type="selectionEntry">

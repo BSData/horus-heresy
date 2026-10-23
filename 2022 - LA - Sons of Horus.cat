@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="49" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="62c7-42f4-5523-af1b" name="LA -  XVI: Sons of Horus" revision="51" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="67" type="catalogue">
   <entryLinks>
     <entryLink id="c2a2-9b6d-b384-3f43" name="XVI: Sons of Horus" hidden="false" collective="false" import="false" targetId="01b4-57c7-bf61-2abf" type="selectionEntry">
       <modifiers>
@@ -1488,6 +1488,32 @@
         </categoryLink>
       </categoryLinks>
     </entryLink>
+    <entryLink id="84b0-7ba2-0c85-172f" name="Saturnine Dreadnought" hidden="false" collective="false" import="false" targetId="a6a1-e9ed-e34f-d6c4" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c36-fde3-14ed-4db4" type="equalTo">
+                  </condition>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="de60-7968-236a-c6ff" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          </categoryLink>
+        <categoryLink id="821c-23b6-9d1e-b146" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true">
+          </categoryLink>
+      </categoryLinks>
+    </entryLink>
     <entryLink id="9574-3763-b54a-dc08" name="Mastodon" hidden="false" collective="false" import="false" targetId="7f24-2b72-9128-5330" type="selectionEntry">
       <comment>template_id_547d-bdfe-4930-9b58</comment>
       <modifiers>
@@ -1713,6 +1739,28 @@
         <entryLink id="9b95-1a4a-4a12-b0a2" name="Retinue" hidden="false" collective="false" import="true" targetId="b574-7838-ac21-b8f6" type="selectionEntryGroup">
           <comment>template_id_5c5d-d6ce-4ee4-9846    template_targetId_be38-a066-4f8e-ae54</comment>
         </entryLink>
+      </entryLinks>
+    </entryLink>
+    <entryLink id="53d6-893f-ad73-832f" name="Praetor in Saturnine Terminator Armour" hidden="false" collective="false" import="false" targetId="62c1-7532-c5b2-3f1d" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f68e-6368-5a93-e0a3" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true">
+          </categoryLink>
+        <categoryLink id="49a6-6611-0367-0ccb" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          </categoryLink>
+        <categoryLink id="2953-48c6-8ba3-aaf3" name="Compulsory HQ:" hidden="false" targetId="f823-8c1d-6a87-26a1" primary="false">
+          </categoryLink>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2e71-1a09-6eae-d772" name="Warlord Traits" hidden="false" collective="false" import="true" targetId="9c74-1002-8103-2848" type="selectionEntryGroup">
+          </entryLink>
       </entryLinks>
     </entryLink>
     <entryLink id="d2a4-2d48-b694-6b53" name="Praetor, Tartaros" hidden="false" collective="false" import="false" targetId="3760-204e-444c-1044" type="selectionEntry">
@@ -2305,6 +2353,22 @@
         <categoryLink id="20ef-39af-426d-830e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
           <comment>template_id_ec67-8573-4460-89db</comment>
         </categoryLink>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1f35-e83a-dee0-5ea5" name="Saturnine Terminator Squad" hidden="false" collective="false" import="false" targetId="fd64-71b2-0635-0daf" type="selectionEntry">
+      <modifiers>
+        <modifier type="append" field="name" value="(Reserve Only)">
+          <conditions>
+            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dbde-0e4f-0b5a-43d2" type="equalTo">
+              </condition>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f14a-c29e-6808-ded3" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true">
+          </categoryLink>
+        <categoryLink id="0ce0-d597-733e-c53c" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false">
+          </categoryLink>
       </categoryLinks>
     </entryLink>
     <entryLink id="8f38-399f-db76-c24d" name="Terminator Indomitus Squad" hidden="true" collective="false" import="false" targetId="aa7f-bd4c-5231-d459" type="selectionEntry">

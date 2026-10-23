@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="212" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="214" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
+    <publication id="ecd9-109b-245d-4083" name="Saturnine Terminators and Dreadnought (Homebrew Conversion, Legends)" shortName="Saturnine (Legends)" publisher="Homebrew"/>
   </publications>
   <profileTypes>
     <profileType id="7002-2f9a-59c4-2742" name="Prosperine Arcana">
@@ -243,6 +244,7 @@ Additional rules are given to units based on Legion and Unit.</description>
     <categoryEntry name="SL:17 WB Hero" id="0ad8-b75f-f5df-9eba" hidden="false"/>
     <categoryEntry name="SL:18 Sal Hero" id="d668-fb0a-0b3e-00f3" hidden="false"/>
     <categoryEntry name="SL:20 AL Hero" id="c1a3-e5fd-cd35-d4e3" hidden="false"/>
+    <categoryEntry id="5292-382b-71f5-4b8f" name="Legends" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="f841-c259-ab0c-4d01" name="Legion Marauder Bomber" hidden="true" collective="false" import="true" targetId="6879-98bf-7e9c-7093" type="selectionEntry">
@@ -68064,6 +68066,804 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="165"/>
       </costs>
     </selectionEntry>
+<selectionEntry id="7112-6c13-99a7-1ba7" name="Plasma Bombard" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="d9b3-7fc0-a282-d56d" name="Plasma Bombard - Maximal Fire" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Barrage, Gets Hot, Rending (4+)</characteristic>
+</characteristics>
+</profile>
+<profile id="0a93-7504-e621-01d8" name="Plasma Bombard - Sustained Fire" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Barrage, Rending (6+)</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="b78a-0064-1eb7-52b9" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+<infoLink id="8126-2ed6-5669-a5fd" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+<infoLink id="5e01-bff4-8b53-be9b" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+<infoLink id="c98c-bae9-ca22-0b4b" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Rending (4+)"/>
+</modifiers>
+</infoLink>
+<infoLink id="4663-f459-ba08-a8e4" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Rending (6+)"/>
+</modifiers>
+</infoLink>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="d4ef-1a5c-49cd-e684" name="Twin Heavy Disintegrator" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="6a16-0fca-519e-77f5" name="Twin Heavy Disintegrator" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rending (5+), Gets Hot</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="8174-c0f1-7fd7-53a0" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Rending (5+)"/>
+</modifiers>
+</infoLink>
+<infoLink id="3f8c-df29-fbf4-6188" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="3351-cc7e-9ba8-c881" name="Saturnine Disruption Fist" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="5eba-eb51-86dc-02c5" name="Saturnine Disruption Fist" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">x2</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2), Unwieldy, Specialist Weapon</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="bc30-1db1-3fdb-193c" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Brutal (2)"/>
+</modifiers>
+</infoLink>
+<infoLink id="fb07-4705-7c78-6921" name="Unwieldy" hidden="false" targetId="1570-c21a-881f-8b8a" type="rule"/>
+<infoLink id="a68d-9920-d2a0-4a44" name="Specialist Weapon" hidden="false" targetId="1a1f-3c9b-b097-5886" type="rule"/>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="d9cd-6782-6a72-fc3a" name="Particle Shredder" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="0a08-eb46-e437-0dc5" name="Particle Shredder" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">8&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 3, Shred</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="c9b1-c32e-c036-a188" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="92d3-75d3-6bd8-e2d5" name="Heavy Plasma Bombard" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="8b60-f7ac-65ef-78e3" name="Heavy Plasma Bombard - Maximal Fire" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Barrage, Rending (4+), Gets Hot</characteristic>
+</characteristics>
+</profile>
+<profile id="ac07-88ca-3e37-fcbd" name="Heavy Plasma Bombard - Sustained Fire" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">48&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">7</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Barrage, Rending (6+)</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="c7ce-eef5-8031-35bb" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+<infoLink id="08e4-f12e-821b-504f" name="Barrage" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule"/>
+<infoLink id="f94e-45ec-bc22-6334" name="Gets Hot" hidden="false" targetId="679f-9d97-5ace-a652" type="rule"/>
+<infoLink id="10e4-133a-869a-5a02" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Rending (4+)"/>
+</modifiers>
+</infoLink>
+<infoLink id="c607-3522-2f05-a4d3" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Rending (6+)"/>
+</modifiers>
+</infoLink>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="368b-27b0-5bc2-e9b5" name="Disintegrator Cannon" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="ca7f-d1ce-0dd0-7948" name="Disintegrator Cannon" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">36&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">9</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 2, Rending (5+), Sunder</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="9dd4-d5a8-f41d-5e2a" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Rending (5+)"/>
+</modifiers>
+</infoLink>
+<infoLink id="0d38-f3df-481d-01ac" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="d740-dad7-e71a-5ccc" name="Inversion Beam" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="c44d-8ccb-4fd3-0791" name="Inversion Beam - Up to 18&quot;" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">18&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;)</characteristic>
+</characteristics>
+</profile>
+<profile id="f67f-5891-ea78-26ef" name="Inversion Beam - 18&quot; to 42&quot;" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">42&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;)</characteristic>
+</characteristics>
+</profile>
+<profile id="b566-dcb6-a63b-4f2d" name="Inversion Beam - 42&quot; to 72&quot;" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">72&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">2</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Blast (3&quot;), Rending (6+)</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="3086-c326-636a-d673" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+<infoLink id="d3f0-d460-e18f-22ca" name="Rending (X)" hidden="false" targetId="0ac9-fab7-aef3-de1d" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Rending (6+)"/>
+</modifiers>
+</infoLink>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="bfe3-048b-c8b4-a179" name="Graviton Pulveriser" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="f7dc-691f-e770-4f98" name="Graviton Pulveriser" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">24&quot;</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Heavy 1, Large Blast (5&quot;), Graviton, Concussive (2); gains Sunder if the Dreadnought did not move this turn</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="9308-eb51-7dd3-0d1d" name="Blast" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule"/>
+<infoLink id="b0cb-3367-8570-b74d" name="Graviton Pulse" hidden="false" targetId="5b9c-2738-616c-abdf" type="rule"/>
+<infoLink id="f32a-615f-ff91-5d1d" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Concussive (2)"/>
+</modifiers>
+</infoLink>
+<infoLink id="0f64-b727-5e82-cf5d" name="Sunder" hidden="false" targetId="20e2-75cf-bc16-cd8f" type="rule"/>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="e5e9-4b31-7e72-aa30" name="Photonic Incinerator" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="3a03-5fd2-cffb-6079" name="Photonic Incinerator" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Shred</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="947a-75b9-a6cc-48c1" name="Shred" hidden="false" targetId="5e7e-1628-8174-6f2c" type="rule"/>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="4d6a-0d6b-df44-6e6a" name="Concussive Resonator" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="1a70-8f59-77f7-37fc" name="Concussive Resonator" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">Template</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Concussive (1), Pinning</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="5b93-59ab-808b-dd5c" name="Concussive (X)" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Concussive (1)"/>
+</modifiers>
+</infoLink>
+<infoLink id="37b1-1bf2-da55-320e" name="Pinning" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule"/>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="bb16-e9cb-3483-9efb" name="Saturnine Dreadnought Fists" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="upgrade">
+<profiles>
+<profile id="97bb-c59d-9292-33a3" name="Saturnine Dreadnought Fists" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="1a1a-e592-2849-a5c0" typeName="Weapon">
+<characteristics>
+<characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+<characteristic name="Strength" typeId="24d9-b8e1-a355-2458">10</characteristic>
+<characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">3</characteristic>
+<characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Brutal (2)</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="7572-44c6-65a9-2c53" name="Brutal (X)" hidden="false" targetId="5079-1fec-d32b-8b84" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Brutal (2)"/>
+</modifiers>
+</infoLink>
+</infoLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="62c1-7532-c5b2-3f1d" name="Praetor in Saturnine Terminator Armour" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="unit">
+<infoLinks>
+<infoLink id="0bf6-b943-733b-d8d6" name="Relic (X)" hidden="false" targetId="7b74-beea-fbd2-2ae8" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Relic (1)"/>
+</modifiers>
+</infoLink>
+<infoLink id="0818-95e2-ca66-f787" name="Legends" hidden="false" targetId="6bd6-620e-c9db-b8e5" type="rule"/>
+<infoLink id="54f9-0e8c-02a5-bd46" name="Spearhead of Saturn" hidden="false" targetId="8d73-34de-1eac-b67d" type="rule"/>
+</infoLinks>
+<categoryLinks>
+<categoryLink id="437e-565b-bafb-85bf" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+<categoryLink id="3d1f-085c-6c8d-5a1b" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
+<categoryLink id="5d81-6d91-d6d6-917a" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+<categoryLink id="12bb-5a80-6104-3099" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+<categoryLink id="e703-ae66-bae1-7880" name="Legends" hidden="false" targetId="5292-382b-71f5-4b8f" primary="false"/>
+</categoryLinks>
+<selectionEntries>
+<selectionEntry id="97c5-ddd4-1e00-f322" name="Saturnine Praetor" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="model">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="805a-b786-f417-f7bb" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8b0-3db0-0499-af2a" type="max"/>
+</constraints>
+<profiles>
+<profile id="9af8-e7a8-a971-b5d7" name="Saturnine Praetor" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+<characteristics>
+<characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Independent Character)</characteristic>
+<characteristic name="Move" typeId="893e-2d76-8f04-44e5">5</characteristic>
+<characteristic name="WS" typeId="cc42-7ed5-7092-5c84">6</characteristic>
+<characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+<characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+<characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+<characteristic name="W" typeId="57ee-1126-32a9-5672">5</characteristic>
+<characteristic name="I" typeId="62d3-22d7-2d49-52dc">5</characteristic>
+<characteristic name="A" typeId="f111-2ce5-dd12-d6b0">4</characteristic>
+<characteristic name="Ld" typeId="e8a6-1da9-d384-8727">10</characteristic>
+<characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<infoLinks>
+<infoLink id="8eaf-73db-0c65-2ed1" name="Independent Character" hidden="false" targetId="c57d-4820-458a-7ab5" type="rule"/>
+<infoLink id="d6f0-6617-bedb-a683" name="Master of the Legion" hidden="false" targetId="c772-87ea-d49c-c7ba" type="rule"/>
+<infoLink id="f84d-60bb-f854-ab87" name="Saturnine Terminator Armour" hidden="false" targetId="3917-f2a2-5a53-b4ae" type="rule"/>
+<infoLink id="8cf1-b7ab-6dfa-6e10" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+<infoLink id="ccd7-9f9c-2d15-9ac4" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
+<infoLink id="448c-1d17-cd20-e290" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Bulky (3)"/>
+</modifiers>
+</infoLink>
+<infoLink id="e6a7-ea39-bc09-160b" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Firing Protocols (2)"/>
+</modifiers>
+</infoLink>
+<infoLink id="a183-7dc3-c613-c0ce" name="Slow and Purposeful" hidden="false" targetId="d69a-cfb3-db43-32c5" type="rule"/>
+</infoLinks>
+<categoryLinks>
+<categoryLink id="0d89-f585-d7d9-5399" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+<categoryLink id="3fcf-78b0-aa03-6e59" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+<categoryLink id="49e8-8439-24ef-5a88" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+<categoryLink id="fabf-b3d1-5026-331f" name="Independent Character" hidden="false" targetId="4f07-3d45-4f28-a0c6" primary="false"/>
+</categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="868b-b180-d37a-a8b1" name="Ranged Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a634-3c3b-2a93-937b">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6661-a2ec-c16c-e5a2" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54d2-cd79-dd49-0ac9" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="a634-3c3b-2a93-937b" name="Plasma Blaster" hidden="false" collective="false" import="true" targetId="cd52-e9e8-3ab1-995c" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="dfec-e0f1-6413-1b85" name="Plasma Bombard" hidden="false" collective="false" import="true" targetId="7112-6c13-99a7-1ba7" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+</costs>
+</entryLink>
+<entryLink id="f1b5-ef42-da1d-14e2" name="Twin Heavy Disintegrator" hidden="false" collective="false" import="true" targetId="d4ef-1a5c-49cd-e684" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="1b0a-7132-54e6-04b3" name="Melee Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2d9f-de30-5231-d717">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d613-eb4b-25a7-a4a9" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58a3-87a5-fb16-b7de" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="2d9f-de30-5231-d717" name="Saturnine Disruption Fist" hidden="false" collective="false" import="true" targetId="3351-cc7e-9ba8-c881" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="626e-5e70-4e41-7a40" name="Paragon Blade" hidden="false" collective="false" import="true" targetId="2ab9-0e45-405e-056b" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<entryLinks>
+<entryLink id="4a32-89ef-2d87-b787" name="Particle Shredder" hidden="false" collective="false" import="true" targetId="d9cd-6782-6a72-fc3a" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43bb-9f77-bd9e-60a6" type="max"/>
+</constraints>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="200.0"/>
+</costs>
+</selectionEntry>
+</selectionEntries>
+<selectionEntryGroups>
+<selectionEntryGroup id="4149-6668-0bb6-f7ac" name="Retinue" hidden="false" collective="false" import="true">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c9f-45be-65cd-c481" type="max"/>
+</constraints>
+<entryLinks>
+    <entryLink id="17ab-e62a-2424-27e2" name="Saturnine Terminator Squad" hidden="false" collective="false" import="true" targetId="fd64-71b2-0635-0daf" type="selectionEntry"/>
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="fd64-71b2-0635-0daf" name="Saturnine Terminator Squad" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="unit">
+<infoLinks>
+<infoLink id="29c2-0732-6bf6-242b" name="Relic (X)" hidden="false" targetId="7b74-beea-fbd2-2ae8" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Relic (1)"/>
+</modifiers>
+</infoLink>
+<infoLink id="a271-eb77-0de9-633c" name="Legends" hidden="false" targetId="6bd6-620e-c9db-b8e5" type="rule"/>
+<infoLink id="f706-b299-7011-fc24" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
+<infoLink id="663f-925a-bb5e-da3a" name="Saturnine Terminator Armour" hidden="false" targetId="3917-f2a2-5a53-b4ae" type="rule"/>
+<infoLink id="cc78-88fc-18ce-fab8" name="Relentless" hidden="false" targetId="7adf-ac9a-5035-522d" type="rule"/>
+<infoLink id="3bbd-f607-d1b7-cdba" name="Inexorable" hidden="false" targetId="d863-8a5e-ddb6-d5a4" type="rule"/>
+<infoLink id="78eb-4623-e6c0-8ef3" name="Bulky (X)" hidden="false" targetId="676c-7b75-4b6f-9405" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Bulky (3)"/>
+</modifiers>
+</infoLink>
+<infoLink id="9995-02b8-d0af-650d" name="Firing Protocols (X)" hidden="false" targetId="32a3-f599-5c92-2945" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Firing Protocols (2)"/>
+</modifiers>
+</infoLink>
+<infoLink id="350d-0fd7-b811-bb82" name="Slow and Purposeful" hidden="false" targetId="d69a-cfb3-db43-32c5" type="rule"/>
+</infoLinks>
+<categoryLinks>
+<categoryLink id="8e40-977d-069b-0630" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+<categoryLink id="f4b5-1819-9763-0f05" name="Terminators:" hidden="false" targetId="bab3-f50d-3e5f-2f78" primary="false"/>
+<categoryLink id="a2a2-d035-ae80-85f1" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+<categoryLink id="32dc-6a04-b38d-373c" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+<categoryLink id="74fb-2e25-8d06-2f2f" name="Legends" hidden="false" targetId="5292-382b-71f5-4b8f" primary="false"/>
+</categoryLinks>
+<selectionEntries>
+<selectionEntry id="5e6f-ae63-05a1-a799" name="Saturnine Sergeant" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="model">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e7d-5a4f-e399-cc54" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e2a-594e-7986-7896" type="max"/>
+</constraints>
+<profiles>
+<profile id="4358-93d0-2ac1-b37e" name="Saturnine Sergeant" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+<characteristics>
+<characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy, Character)</characteristic>
+<characteristic name="Move" typeId="893e-2d76-8f04-44e5">5</characteristic>
+<characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+<characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+<characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+<characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+<characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+<characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+<characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+<characteristic name="Ld" typeId="e8a6-1da9-d384-8727">9</characteristic>
+<characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<categoryLinks>
+<categoryLink id="e668-e718-35fc-ff78" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+<categoryLink id="a2cf-4eec-c69b-ed7e" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+<categoryLink id="7e3f-7a01-4ca0-9068" name="Character" hidden="false" targetId="f75a-d5c1-59ba-5c5a" primary="false"/>
+</categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="73ca-e8a0-d1a7-fa60" name="Second Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="21df-1a21-e41c-f3bc">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7815-3dfd-b08c-8c6d" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f93-0b0b-64ca-ad5d" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="21df-1a21-e41c-f3bc" name="Plasma Bombard" hidden="false" collective="false" import="true" targetId="7112-6c13-99a7-1ba7" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="3799-19cb-cc08-b594" name="Twin Heavy Disintegrator" hidden="false" collective="false" import="true" targetId="d4ef-1a5c-49cd-e684" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+</costs>
+</entryLink>
+<entryLink id="20a5-fa9f-fa32-39b3" name="Saturnine Disruption Fist" hidden="false" collective="false" import="true" targetId="3351-cc7e-9ba8-c881" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<entryLinks>
+<entryLink id="24af-5284-26b5-281d" name="Saturnine Disruption Fist" hidden="false" collective="false" import="true" targetId="3351-cc7e-9ba8-c881" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71ed-2840-38a8-d150" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0742-bcae-4d46-e9ee" type="max"/>
+</constraints>
+</entryLink>
+<entryLink id="67ac-7faf-224a-2402" name="Particle Shredder" hidden="false" collective="false" import="true" targetId="d9cd-6782-6a72-fc3a" type="selectionEntry">
+<modifiers>
+<modifier type="increment" field="d6b8-b341-009c-8a49" value="1">
+<conditions>
+<condition field="selections" scope="5e6f-ae63-05a1-a799" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3351-cc7e-9ba8-c881" type="atLeast"/>
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6b8-b341-009c-8a49" type="max"/>
+</constraints>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="70.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="757f-d406-0eb1-7f68" name="Saturnine Terminator" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="model">
+<constraints>
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a006-22f0-324a-a0c0" type="min"/>
+<constraint field="selections" scope="parent" value="8" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1448-60d5-5cd8-9778" type="max"/>
+</constraints>
+<profiles>
+<profile id="14a6-7392-a8bd-a018" name="Saturnine Terminator" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+<characteristics>
+<characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry (Heavy)</characteristic>
+<characteristic name="Move" typeId="893e-2d76-8f04-44e5">5</characteristic>
+<characteristic name="WS" typeId="cc42-7ed5-7092-5c84">4</characteristic>
+<characteristic name="BS" typeId="74ae-c840-0036-d244">4</characteristic>
+<characteristic name="S" typeId="e478-41d4-a092-48a8">5</characteristic>
+<characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">5</characteristic>
+<characteristic name="W" typeId="57ee-1126-32a9-5672">3</characteristic>
+<characteristic name="I" typeId="62d3-22d7-2d49-52dc">4</characteristic>
+<characteristic name="A" typeId="f111-2ce5-dd12-d6b0">2</characteristic>
+<characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+<characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<categoryLinks>
+<categoryLink id="47d6-1743-b315-e84c" name="Infantry Unit Type" hidden="false" targetId="8b4f-bfe2-ce7b-f1b1" primary="false"/>
+<categoryLink id="f166-4298-36ca-969c" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+</categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="5972-fe31-f12a-ee46" name="Second Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="240d-e66a-bdf7-3dd1">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee40-5933-1b2c-c0be" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c287-181c-5018-f167" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="240d-e66a-bdf7-3dd1" name="Plasma Bombard" hidden="false" collective="false" import="true" targetId="7112-6c13-99a7-1ba7" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="2044-2851-a3a4-be4c" name="Twin Heavy Disintegrator" hidden="false" collective="false" import="true" targetId="d4ef-1a5c-49cd-e684" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+</costs>
+</entryLink>
+<entryLink id="091c-857d-85a9-370b" name="Saturnine Disruption Fist" hidden="false" collective="false" import="true" targetId="3351-cc7e-9ba8-c881" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<entryLinks>
+<entryLink id="6fc5-2501-d85b-5886" name="Saturnine Disruption Fist" hidden="false" collective="false" import="true" targetId="3351-cc7e-9ba8-c881" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ba8-2d19-0e09-9ae5" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2a-9d16-ae3b-3a2e" type="max"/>
+</constraints>
+</entryLink>
+<entryLink id="bd07-114a-006c-3156" name="Particle Shredder" hidden="false" collective="false" import="true" targetId="d9cd-6782-6a72-fc3a" type="selectionEntry">
+<modifiers>
+<modifier type="increment" field="16ed-cdf5-3438-d44e" value="1">
+<conditions>
+<condition field="selections" scope="757f-d406-0eb1-7f68" value="2" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3351-cc7e-9ba8-c881" type="atLeast"/>
+</conditions>
+</modifier>
+</modifiers>
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16ed-cdf5-3438-d44e" type="max"/>
+</constraints>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="60.0"/>
+</costs>
+</selectionEntry>
+</selectionEntries>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
+<selectionEntry id="a6a1-e9ed-e34f-d6c4" name="Saturnine Dreadnought" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="unit">
+<infoLinks>
+<infoLink id="cfb5-c0be-5c1e-49a8" name="Relic (X)" hidden="false" targetId="7b74-beea-fbd2-2ae8" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Relic (2)"/>
+</modifiers>
+</infoLink>
+<infoLink id="34c0-213d-ce2b-4431" name="Legends" hidden="false" targetId="6bd6-620e-c9db-b8e5" type="rule"/>
+<infoLink id="0af3-8bad-d03e-5004" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Hammer of Wrath (4)"/>
+</modifiers>
+</infoLink>
+<infoLink id="f0fc-593a-873f-d441" name="Thermal Diffraction Field" hidden="false" targetId="261a-aaba-ab5f-13a7" type="rule"/>
+</infoLinks>
+<categoryLinks>
+<categoryLink id="be3e-46d2-e9e4-8b38" name="Legiones Astartes" hidden="false" targetId="11f2-472f-c1d1-9ae9" primary="false"/>
+<categoryLink id="f582-de87-eaeb-20b9" name="Dreadnought Unit Type" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
+<categoryLink id="c240-f1e5-4f6f-8ffd" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+<categoryLink id="b448-7d1a-8028-c98a" name="Legends" hidden="false" targetId="5292-382b-71f5-4b8f" primary="false"/>
+</categoryLinks>
+<selectionEntries>
+<selectionEntry id="8e29-7da7-4017-7529" name="Saturnine Dreadnought" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="model">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cbe-06e0-9454-0bdb" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5923-eca4-4b9b-7d37" type="max"/>
+</constraints>
+<profiles>
+<profile id="b4ed-72f8-aa82-7d35" name="Saturnine Dreadnought" publicationId="ecd9-109b-245d-4083" hidden="false" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit">
+<characteristics>
+<characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Dreadnought (Heavy)</characteristic>
+<characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+<characteristic name="WS" typeId="cc42-7ed5-7092-5c84">5</characteristic>
+<characteristic name="BS" typeId="74ae-c840-0036-d244">5</characteristic>
+<characteristic name="S" typeId="e478-41d4-a092-48a8">8</characteristic>
+<characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">8</characteristic>
+<characteristic name="W" typeId="57ee-1126-32a9-5672">7</characteristic>
+<characteristic name="I" typeId="62d3-22d7-2d49-52dc">3</characteristic>
+<characteristic name="A" typeId="f111-2ce5-dd12-d6b0">3</characteristic>
+<characteristic name="Ld" typeId="e8a6-1da9-d384-8727">8</characteristic>
+<characteristic name="Save" typeId="e593-6b3c-f169-04f0">2+</characteristic>
+</characteristics>
+</profile>
+</profiles>
+<categoryLinks>
+<categoryLink id="8c9b-88a2-f70e-4b54" name="Dreadnought Unit Type" hidden="false" targetId="4280-4963-02b5-e31d" primary="false"/>
+<categoryLink id="44a1-a81f-85a8-1cee" name="Heavy Sub-type" hidden="false" targetId="9231-183c-b97b-63f9" primary="false"/>
+</categoryLinks>
+<selectionEntryGroups>
+<selectionEntryGroup id="4877-b67e-7d31-b42c" name="Primary Weapon 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5f6-381f-46fa-50de">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1965-b2e2-676b-d7f8" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="293e-e565-9481-e658" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="a5f6-381f-46fa-50de" name="Heavy Plasma Bombard" hidden="false" collective="false" import="true" targetId="92d3-75d3-6bd8-e2d5" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="7857-a00c-fd28-a512" name="Disintegrator Cannon" hidden="false" collective="false" import="true" targetId="368b-27b0-5bc2-e9b5" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="cc6a-d9c6-577b-9091" name="Primary Weapon 2 (may be exchanged)" hidden="false" collective="false" import="true" defaultSelectionEntryId="2721-7a64-4e9b-4e58">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92c1-18e3-fe43-e189" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e64d-fd47-c40d-3dd9" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="2721-7a64-4e9b-4e58" name="Heavy Plasma Bombard" hidden="false" collective="false" import="true" targetId="92d3-75d3-6bd8-e2d5" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="9415-a1e5-18bb-6448" name="Disintegrator Cannon" hidden="false" collective="false" import="true" targetId="368b-27b0-5bc2-e9b5" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="35fa-df78-5a3d-7598" name="Inversion Beam" hidden="false" collective="false" import="true" targetId="d740-dad7-e71a-5ccc" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10.0"/>
+</costs>
+</entryLink>
+<entryLink id="7a11-8fd0-2de1-e16d" name="Graviton Pulveriser" hidden="false" collective="false" import="true" targetId="bfe3-048b-c8b4-a179" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="3d25-1ae9-d5ca-14f0" name="Support Weapon 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="4d28-2f54-cb2f-ef96">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75ad-c057-20f3-2033" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8228-34de-dc28-bd32" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="4d28-2f54-cb2f-ef96" name="Photonic Incinerator" hidden="false" collective="false" import="true" targetId="e5e9-4b31-7e72-aa30" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="e321-81a7-fee0-f6c7" name="Concussive Resonator" hidden="false" collective="false" import="true" targetId="4d6a-0d6b-df44-6e6a" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+<selectionEntryGroup id="04f7-9f51-aca4-da07" name="Support Weapon 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="080c-5eef-f0e1-ff76">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0cd-d290-0f40-1932" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e742-6588-7d4c-3000" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="080c-5eef-f0e1-ff76" name="Photonic Incinerator" hidden="false" collective="false" import="true" targetId="e5e9-4b31-7e72-aa30" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+<entryLink id="ede8-ee9b-5392-a45c" name="Concussive Resonator" hidden="false" collective="false" import="true" targetId="4d6a-0d6b-df44-6e6a" type="selectionEntry">
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<entryLinks>
+<entryLink id="6dce-c634-8b3d-5c5e" name="Saturnine Dreadnought Fists" hidden="false" collective="false" import="true" targetId="bb16-e9cb-3483-9efb" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="243a-fed1-760e-acf2" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c514-2c83-dae5-ef97" type="max"/>
+</constraints>
+</entryLink>
+<entryLink id="3b4b-cbf1-de89-bc91" name="Atomantic Deflector" hidden="false" collective="false" import="true" targetId="38fb-9a0b-edef-a497" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52e8-0a58-5140-dbc4" type="min"/>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47f4-00b1-46b4-16ba" type="max"/>
+</constraints>
+</entryLink>
+<entryLink id="760c-a58f-d14f-be87" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" targetId="1bf8-72f8-c331-6900" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ca0-2d17-46a7-7490" type="max"/>
+</constraints>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5.0"/>
+</costs>
+</entryLink>
+</entryLinks>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="325.0"/>
+</costs>
+</selectionEntry>
+</selectionEntries>
+<selectionEntryGroups>
+<selectionEntryGroup id="5cf5-d26a-7554-65ba" name="Dedicated Transport" hidden="false" collective="false" import="true">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8dc8-b8c2-5516-6052" type="max"/>
+</constraints>
+<entryLinks>
+<entryLink id="3937-93ef-b794-56f9" name="Dreadnought Drop Pod" hidden="false" collective="false" import="true" targetId="1ffe-82e4-12db-538d" type="selectionEntry">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5358-5b29-ade8-eaea" type="max"/>
+</constraints>
+</entryLink>
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
+<costs>
+<cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
+</costs>
+</selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="61a2-7005-1e6c-c08e" name="Hexagrammaton Choice:" hidden="true" collective="false" import="true">
@@ -74453,6 +75253,21 @@ When included in a Shattered Legions Detachment, this model must represent the L
     <rule name="Lethal Exposure" hidden="false" id="5ec4-39ed-2360-824c" publicationId="d882-d2a-5da1-92c4">
       <description>If a unit makes attacks with one or more weapons with this special rule as part of a Shooting attack in any Phase, including as part of a Reaction, roll a D6. If the result is equal to or less than the number of weapons in the unit with the Lethal Exposure special rule, the unit suffers a single Wound with no Saves or Damage Mitigation rolls allowed - this wound is allocated to any model in the unit by the controlling player.</description>
     </rule>
+<rule id="3917-f2a2-5a53-b4ae" name="Saturnine Terminator Armour" publicationId="ecd9-109b-245d-4083" hidden="false">
+<description>A model in Saturnine Terminator armour has a 2+ Armour Save and a 4+ Invulnerable Save, and adds 1 to its Toughness (already included in its profile). It gains the Heavy sub-type and the Bulky (3), Firing Protocols (2) and Slow and Purposeful special rules, and is immune to the Concussive special rule.</description>
+</rule>
+<rule id="8d73-34de-1eac-b67d" name="Spearhead of Saturn" publicationId="ecd9-109b-245d-4083" hidden="false">
+<description>The Praetor and any Saturnine Terminator Squad he has joined gain Deep Strike.</description>
+</rule>
+<rule id="261a-aaba-ab5f-13a7" name="Thermal Diffraction Field" publicationId="ecd9-109b-245d-4083" hidden="false">
+<description>Weapons with the Las, Plasma, Melta or Flame traits subtract 1 from their Strength when targeting the Saturnine Dreadnought. In addition, when the Dreadnought rolls for Gets Hot, it may re-roll the result.</description>
+</rule>
+<rule id="6bd6-620e-c9db-b8e5" name="Legends" publicationId="ecd9-109b-245d-4083" hidden="false">
+<description>This unit is a Legends unit: a homebrew conversion of a Horus Heresy 3.0 unit (the Age of Darkness: Saturnine box), with playtest profiles and points. Use it only with your opponent&apos;s agreement.</description>
+</rule>
+<rule id="7b74-beea-fbd2-2ae8" name="Relic (X)" publicationId="ecd9-109b-245d-4083" hidden="false">
+<description>Ancient artifacts of irreplaceable cultural significance, standard-bearing icons of legendary crusades, or individual warriors carrying the heavy burden of a Legion&apos;s legacy—the loss of such prizes is a catastrophic blow to morale and a major triumph for the foe. If a unit with this Special Rule is destroyed by any means, the opposing player immediately scores a number of additional Victory Points equal to the value of X specified in brackets (e.g., Relic (2) scores 2 additional Victory Points). These Victory Points are awarded in addition to any Victory Points normally scored for destroying the unit (such as those gained from the Price of Failure, Slay the Warlord, or standard Mission-specific objectives). If multiple units with this Special Rule are destroyed during a single battle, the opposing player scores the additional Victory Points for each unit individually.</description>
+</rule>
   </sharedRules>
   <catalogueLinks>
     <catalogueLink id="60d6-cab6-4580-b772" name="Mech Library" targetId="3129-da35-55e0-642d" type="catalogue" importRootEntries="true"/>
