@@ -24,8 +24,15 @@ jobs:
         run: |
           npx bsdata-indexer .
 
+      #- name: Commit and Push Updated Index
+       # uses: stefanzweifel/git-auto-commit-action@v5
+       # with:
+       #   commit_message: "automated: update index.bsi"
+       #   file_pattern: "index.bsi index.xml" # Ensures only the manifest and zipped package update
+
+
       - name: Commit and Push Updated Index
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "automated: update index.bsi"
-          file_pattern: "index.bsi index.xml" # Ensures only the manifest and zipped package update
+          # Removing file_pattern forces it to look at all new or modified files in the root folder
