@@ -22,6 +22,9 @@ loading. The script prints anything in the doc it could not place.
   slot and points. A unit's starting cost always matches the doc.
 - Options: extra models, weapon exchanges (including "one in every three"),
   per-model and whole-unit upgrades, and model upgrades such as the Neurothrope.
+  "Each type only once" limits are enforced.
+- Dedicated Transports: units that fit in a Mycetic Spore or Tyrannocyte (20
+  Infantry models or one Monstrous model) may take one.
 - The army selection: hive fleet (with its rules, advanced reaction and warlord
   trait), Rite of War, warlord trait, and the army-wide advanced reaction.
 - Weapons and psychic powers from the doc's armoury, linked to the core rules
