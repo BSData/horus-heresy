@@ -1,28 +1,40 @@
-name: Generate BattleScribe Index
+name: Release Datafiles
 
 on:
   push:
-    branches:
-      - main # Change this to 'master' if your repo uses the older default branch name
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
 
 jobs:
-  build-index:
+  release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Grants the action permission to commit the index file back to your repo
 
     steps:
-      - name: Checkout Repository Content
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download and Run Community Indexer
+      - name: Validate files
         run: |
-          curl -L -o bsdata-indexer "https://github.com"
-          chmod +x bsdata-indexer
-          ./bsdata-indexer .
-          rm bsdata-indexer
+          echo "GST files:"
+          find . -maxdepth 1 -name "*.gst"
 
-      - name: Commit and Push Updated Index
-        uses: stefanzweifel/git-auto-commit-action@v5
+          echo "CAT files:"
+          find . -maxdepth 1 -name "*.cat"
+
+      - name: Package datafiles
+        run: |
+          mkdir package
+
+          find . -maxdepth 1 -name "*.gst" -exec cp {} package/ \;
+          find . -maxdepth 1 -name "*.cat" -exec cp {} package/ \;
+
+          cd package
+          zip -r ../catalogues.zip .
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
         with:
-          commit_message: "automated: update index.bsi"
+          files: catalogues.zip
