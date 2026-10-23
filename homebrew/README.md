@@ -13,6 +13,7 @@ replace its file in `source/`, and run from the repo root:
 python3 homebrew/build_catalogue.py homebrew/source/tyranids.md "Homebrew - Tyranids.cat"
 python3 homebrew/build_catalogue.py homebrew/source/orks.md "Homebrew - Orks.cat"
 python3 homebrew/build_catalogue.py homebrew/source/necrons.md "Homebrew - Necrons.cat"
+python3 homebrew/build_catalogue.py homebrew/source/tau.md "Homebrew - T'au Empire.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -57,6 +58,19 @@ loading. The script prints anything in the doc it could not place.
 - Named abilities in a "Power | Effect" table (the Powers of the C'tan) are given to
   the datasheets that list them, or offered as a pick when a datasheet says "of your
   choice". Rites of War may be headings or bold paragraphs.
+
+- Drones (T'au) are models with the profiles and kit from the doc's Drones section. Fixed
+  drones come with their unit; drones a unit may buy sit in a Drones group with its limit
+  ("up to two", "two per battlesuit", "one each of"). A vehicle that exchanges its Gun
+  Drones for a weapon loses them, and the Droneport swaps drones at the difference in cost.
+- Battlesuit Armoury weapons and support systems are a pick list on the units that use it
+  (four for a Commander, three per Crisis battlesuit). Rows of a "Unit | Option | Cost" table
+  are added to the datasheets they name.
+- Kill Teams: "9 models chosen from..." is a group of exactly that many, each specialist at
+  most once. A model whose wargear reads "X or Y" chooses one.
+- Weapons that keep their official 2.0 profile (the flamer) link to the game system's entry.
+  A T'au weapon that shares its name with an official weapon keeps the doc's profile and is
+  named "Tau X" (Tau Close combat weapon, Tau Neutron blaster).
 
 ## Not enforced
 
