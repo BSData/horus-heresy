@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -2628,7 +2628,7 @@
       <profiles>
         <profile name="Stikkbomb Flinga" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="024a-f90e-08cc-86d0">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle with a stikkbomb flinga may fire it using the stikkbomb flinga profile in the Ork Armoury. Any Ork vehicle may take one.</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a stikkbomb flinga may fire it using the stikkbomb flinga profile in the Ork Armoury. Any Ork vehicle, Dreadnought or Speed Freek buggy may take one.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -8144,7 +8144,27 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups />
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" hidden="false" id="2b2d-d53f-baf9-2f6f">
+          <entryLinks>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="7b77-9a28-1ce0-ff44" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <modifiers>
+                <modifier type="increment" field="5e8d-97b3-6e8d-d3a0" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="c729-1716-f837-447b" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="173d-6176-5cc1-de7b" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5e8d-97b3-6e8d-d3a0" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
@@ -8653,7 +8673,27 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups />
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" hidden="false" id="93fa-2155-ab42-9ed8">
+          <entryLinks>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="f534-560b-03b2-45ca" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <modifiers>
+                <modifier type="increment" field="ff59-54f1-823d-f908" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="05b9-5f21-120f-90d3" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="407e-d609-f2ca-af47" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ff59-54f1-823d-f908" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
@@ -8739,7 +8779,27 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups />
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" hidden="false" id="807b-a7aa-786b-76b6">
+          <entryLinks>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="7eeb-768a-1c1f-4922" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <modifiers>
+                <modifier type="increment" field="f2c6-9dfc-5859-91ac" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="9845-6e70-267c-e086" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="742d-8cd9-f8f6-4df3" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f2c6-9dfc-5859-91ac" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
@@ -8825,7 +8885,27 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups />
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Wargear" hidden="false" id="7725-d3ce-8090-c41a">
+          <entryLinks>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="6265-c5f4-8693-2814" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <modifiers>
+                <modifier type="increment" field="717c-70b0-d8ce-90ed" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="beaf-0acb-2f19-bb3e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b865-010c-816f-91f3" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="717c-70b0-d8ce-90ed" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
@@ -9764,6 +9844,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b26f-c157-69d5-9ac0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="fa3b-c03a-1812-6a78" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6645-921f-3226-16d1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -10012,6 +10100,14 @@
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="8941-dd0a-66c6-2e3e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="5bbd-71fe-168c-401d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="64c3-1504-03dc-402c" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2207-338a-9584-bd2c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -10673,6 +10769,25 @@
               </modifiers>
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ebb7-45b0-d2b9-2441" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Wargear" hidden="false" id="90a1-d6c4-ce5d-434c">
+          <entryLinks>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="322b-b517-a85d-15b2" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <modifiers>
+                <modifier type="increment" field="186a-9e2e-fcc7-d6a1" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="dfb9-1c6b-1b26-a03e" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adbd-0684-ed06-8ca2" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="186a-9e2e-fcc7-d6a1" percentValue="false" includeChildSelections="true" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />

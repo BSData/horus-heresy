@@ -2829,9 +2829,9 @@ Units disembarking from a vehicle with a stikkbomb chukka count as having stikkb
 
 _A crude launcher bolted to a vehicle, lobbing stikkbombz at anyone nearby._
 
-A vehicle with a stikkbomb flinga may fire it using the stikkbomb flinga profile in the Ork Armoury. Any Ork vehicle may take one.
+A model with a stikkbomb flinga may fire it using the stikkbomb flinga profile in the Ork Armoury. Any Ork vehicle, Dreadnought or Speed Freek buggy may take one.
 
-**Cost:** +5 points per model; vehicles only.
+**Cost:** +5 points per model; vehicles, Dreadnoughts and buggies only.
 
 ### Stikkbombz
 

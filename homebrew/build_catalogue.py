@@ -616,7 +616,18 @@ class Builder:
         monstrous = re.search(r"\+(\d+) points per Monstrous model", line)
         return {"model": int(base.group(1)) if base else 0,
                 "monstrous": int(monstrous.group(1)) if monstrous else None,
-                "vehicles": "vehicles only" in line.lower()}
+                "only": Builder.only_types(line)}
+
+    @staticmethod
+    def only_types(line):
+        """'vehicles, Dreadnoughts and buggies only' -> the unit types that may take it."""
+        m = re.search(r"; (.+?) only", line)
+        if not m:
+            return None
+        words = {"vehicle": "Vehicle", "dreadnought": "Dreadnought", "bugg": "Mechanised",
+                 "mechanised": "Mechanised", "monstrous": "Monstrous", "infantry": "Infantry",
+                 "cavalry": "Cavalry"}
+        return [t for k, t in words.items() if k in m.group(1).lower()]
 
     def universal_options(self, ds, models):
         """(model name, biomorph name, id, cost, new save) for every biomorph each model may buy."""
@@ -632,8 +643,10 @@ class Builder:
                     new = int(sv.group(1)) - 1
                     out.append((mname, name, eid, rule["save"][new], new))
                 else:
-                    if rule.get("vehicles") and not re.search(r"\bVehicle\b", m["types"]):
+                    if rule.get("only") and not any(re.search(r"\b" + t + r"\b", m["types"]) for t in rule["only"]):
                         continue
+                    if any(norm(w) == norm(name) for w in m["wargear"]):
+                        continue  # already carries one (the Kustom Boosta-blasta's flinga)
                     granted = self.shared_entries.find(f"selectionEntry[@id='{eid}']/infoLinks/infoLink")
                     if granted is not None and any(norm(r) == norm(granted.get("name")) for r in ds["rules"]):
                         continue
@@ -1152,7 +1165,18 @@ class Builder:
         for (bname, eid), per_type in offers.items():
             if len(per_type) < len(models):
                 continue  # some models in the unit cannot take it, so the unit cannot
-            if multi:
+            if multi and norm(bname) not in self.biomorph_names:
+                # Ork wargear in a squadron: bought model by model
+                g = child(unit, "selectionEntryGroups").find(f"selectionEntryGroup[@id='{make_id(uid, 'wargear')}']")
+                if g is None:
+                    g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name="Wargear",
+                           hidden=False, id=make_id(uid, "wargear"))
+                for n, (c, _) in per_type.items():
+                    e = self.link(child(g, "entryLinks"), eid, bname, uid + n, label=bname)
+                    self.per_model_limit(e, e.get("id"), uid, models[n]["id"])
+                    add_cost(e, c)
+                scope = uid
+            elif multi:
                 g = child(unit, "selectionEntryGroups").find(f"selectionEntryGroup[@id='{make_id(uid, 'biomorphs')}']")
                 if g is None:
                     g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name="Biomorphs",
