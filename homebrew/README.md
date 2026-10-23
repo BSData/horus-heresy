@@ -11,6 +11,7 @@ replace its file in `source/`, and run from the repo root:
 
 ```
 python3 homebrew/build_catalogue.py homebrew/source/tyranids.md "Homebrew - Tyranids.cat"
+python3 homebrew/build_catalogue.py homebrew/source/orks.md "Homebrew - Orks.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -37,6 +38,20 @@ loading. The script prints anything in the doc it could not place.
   trait), Rite of War, warlord trait, and the army-wide advanced reaction.
 - Weapons and psychic powers from the doc's armoury, linked to the core rules
   in `2022 - Horus Heresy.gst` wherever a rule of the same name exists.
+
+- Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Leagues of
+  Votann) take the Xenos allegiance added to `2022 - Horus Heresy.gst`: their army
+  selection makes Xenos required for the force, and every unit has the Xenos rule.
+
+- Vehicles, Dreadnoughts, Knights and Titans get the game system's Vehicle or Knights
+  and Titans profile, and their sub-types (Fast, Flyer, Transport...) as categories.
+- Models bought as options (ammo runts, grot oilers, Spanners) are their own model
+  entries, with the kit and unit type their wargear entry gives them. Linked counts
+  are kept: each Mek Gun brings 2 Gretchin crew, and Gretchin get a Runtherd per 10.
+- Datasheets that name their Dedicated Transports get exactly those, each offered
+  only while the unit fits inside it (a Trukk holds 12).
+- Kombi-weapons, artefacts (one of each per army) and wargear that confers an Armour
+  Save ('eavy armour, mega armour) are handled; the Save shows on the profile.
 
 ## Not enforced
 

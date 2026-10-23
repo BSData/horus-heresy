@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="129" battleScribeVersion="2.03" type="gameSystem">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="28d4-bd2e-4858-ece6" name="Horus Heresy - Izzy Juan (2026)" revision="131" battleScribeVersion="2.03" type="gameSystem">
   <publications>
     <publication name="Github" hidden="false" id="e2a4-ac85-1bef-22f5" publisherUrl="https://github.com/BSData/horus-heresy" shortName="BSData/horus-heresy"/>
     <publication id="e77a-823a-da94-16b9" name="Warhammer: The Horus Heresy - Age of Darkness Rulebook" shortName="Main Rules" publicationDate="June 2022"/>
@@ -1477,6 +1477,7 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
       </rules>
     </categoryEntry>
     <categoryEntry name="Shattered Legion Primary Detachment" id="c248-15b0-d8ed-8990" hidden="false"/>
+    <categoryEntry id="3c8e-5a1d-9b47-e2f0" name="Xenos Army" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="d926-652f-8436-30ce" name="1. Crusade Force Organisation Chart" hidden="false">
@@ -2573,8 +2574,14 @@ If that test is failed, the unit suffers one Wound, allocated by the controlling
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Beholden to None" hidden="true" id="ca61-ace9-f76b-16c5" type="selectionEntry" targetId="956a-36dc-217e-63b1"/>
+            <entryLink import="true" name="Xenos" hidden="false" id="7d21-c6b8-4e05-a913" type="selectionEntry" targetId="b94f-0e7a-62d3-c815"/>
           </entryLinks>
           <modifiers>
+            <modifier type="set" value="7d21-c6b8-4e05-a913" field="defaultSelectionEntryId">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="force" childId="3c8e-5a1d-9b47-e2f0" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
             <modifier type="set" value="ca61-ace9-f76b-16c5" field="defaultSelectionEntryId">
               <conditionGroups>
                 <conditionGroup type="and">
@@ -3035,6 +3042,25 @@ Then choose the army you wish to have a lord of war from, then pick &quot;Lord o
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
+    <selectionEntry id="b94f-0e7a-62d3-c815" name="Xenos" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="51d7-a2e9-0c48-f36b" value="1">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="force" childId="3c8e-5a1d-9b47-e2f0" shared="true" includeChildSelections="true" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f6c-93b2-d8a4-7e15" type="max"/>
+        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51d7-a2e9-0c48-f36b" type="min"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="a3e8-61f0-4cd9-b752" name="Xenos" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="d0b6-712f-0b12-a308" name="Loyalist" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="e537-c291-62d8-d539" value="1">
@@ -17221,6 +17247,9 @@ Special rules that are removed:
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
+    <rule id="e6a0-8f13-d5c2-4b79" name="Xenos" hidden="false">
+      <description>A model with this special rule may only be included in an army that has the Xenos Allegiance. An army with the Xenos Allegiance is neither Loyalist nor Traitor: rules that only affect Loyalist or Traitor models do not affect it.</description>
+    </rule>
     <rule id="0ac9-fab7-aef3-de1d" name="Rending (X)" publicationId="e77a-823a-da94-16b9" page="246" hidden="false">
       <description>If a model has the Rending special rule, or is attacking with a Melee weapon that has the Rending special rule, there is a chance that their close combat attacks will strike a critical blow. For each To Wound roll equal to or higher than the value listed, the target automatically suffers a Wound, regardless of its Toughness. The controlling player may choose to resolve these Wounds at AP 2 instead of the weapon’s normal AP value.
 Similarly, if a model makes a Shooting Attack with a weapon that has the Rending special rule, a To Wound roll of equal to or greater than the listed value wounds automatically, regardless of Toughness, and is resolved at AP 2.
