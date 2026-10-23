@@ -42,6 +42,12 @@ Kroot and Vespid fight for the Greater Good, but not as T'au. They do not gain S
 
 A unit with this special rule may include models with the Drone sub-type, either as part of its Unit Composition or bought from its Options, up to the number its datasheet allows. These drones follow the Drone (sub-type) rules for drones taken as part of a parent unit.
 
+#### Firing Protocols (X)
+
+Those warriors or war engines equipped with multiple weapons often incorporate sophisticated tracking systems, or have received advanced training to allow them to wield them all simultaneously on the battlefield.
+
+When making a Shooting Attack, a model with this special rule may attack with a number of different weapons equal to the value of this special rule. This rule does not allow a single weapon to be attacked with more than once, and only applies if the model is equipped with more than one weapon. For example, as part of a single Shooting Attack, a model with the Firing Protocols (2) special rule may attack with up to two different weapons.
+
 #### Independent Character
 
 Mighty heroes go where they are needed, being at the forefront of the most vital charges and leading their troops to victory.
@@ -1944,7 +1950,7 @@ Each Piranha carries two Gun Drones, using the Gun Drone profile and the Drone D
 
 - Deep Strike
 - Drone Controller
-- Fire Protocols (2)
+- Firing Protocols (2)
 - Scout
 - Sept (X)
 

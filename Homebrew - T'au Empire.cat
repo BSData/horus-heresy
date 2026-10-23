@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -11751,7 +11751,11 @@
         <infoLink name="Xenos" id="54c3-129b-70c5-a92a" hidden="false" targetId="e6a0-8f13-d5c2-4b79" type="rule" />
         <infoLink name="Deep Strike" id="c210-8789-e906-136f" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
         <infoLink name="Drone Controller" id="5b5a-f757-9261-3fcb" hidden="false" targetId="c521-c1b6-bf08-26db" type="rule" />
-        <infoLink name="Fire Protocols (2)" id="a257-a0c8-341a-7fd6" hidden="false" targetId="a273-e206-b7d4-f59f" type="rule" />
+        <infoLink name="Firing Protocols (X)" id="8f11-0236-0596-006e" hidden="false" targetId="a88a-ab72-b320-b540" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Firing Protocols (2)" />
+          </modifiers>
+        </infoLink>
         <infoLink name="Scout" id="86c4-4a39-9aa6-606b" hidden="false" targetId="aacf-9a7e-982d-b793" type="rule" />
         <infoLink name="Sept (X)" id="47dd-1dfa-0df2-0624" hidden="false" targetId="de79-d017-7909-4d83" type="rule" />
       </infoLinks>
@@ -17340,6 +17344,9 @@
     <rule name="Drone Controller" id="c521-c1b6-bf08-26db" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>A unit with this special rule may include models with the Drone sub-type, either as part of its Unit Composition or bought from its Options, up to the number its datasheet allows. These drones follow the Drone (sub-type) rules for drones taken as part of a parent unit.</description>
     </rule>
+    <rule name="Firing Protocols (X)" id="a88a-ab72-b320-b540" hidden="false" publicationId="733a-d454-80f2-c90e">
+      <description>Those warriors or war engines equipped with multiple weapons often incorporate sophisticated tracking systems, or have received advanced training to allow them to wield them all simultaneously on the battlefield. When making a Shooting Attack, a model with this special rule may attack with a number of different weapons equal to the value of this special rule. This rule does not allow a single weapon to be attacked with more than once, and only applies if the model is equipped with more than one weapon. For example, as part of a single Shooting Attack, a model with the Firing Protocols (2) special rule may attack with up to two different weapons.</description>
+    </rule>
     <rule name="Independent Character" id="b727-3ecd-322d-d367" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>Mighty heroes go where they are needed, being at the forefront of the most vital charges and leading their troops to victory. Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multi-character unit.</description>
     </rule>
@@ -17384,9 +17391,6 @@
     </rule>
     <rule name="Ethereal Invocations" id="9f28-c50f-1271-9511" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>Ethereals are not psykers; their power comes from the total devotion of the T'au. At the start of your Movement phase, each Ethereal may make one invocation. It takes a Leadership test; if it passes, the invocation affects every friendly T'au unit (not Auxiliaries) within 12" until the start of your next turn. Aun'Va may make two invocations each turn. Failed Invocations. If the Leadership test fails, the invocation has no effect, and the Ethereal may not invoke again until your next turn.</description>
-    </rule>
-    <rule name="Fire Protocols (2)" id="a273-e206-b7d4-f59f" hidden="false" publicationId="733a-d454-80f2-c90e">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
     </rule>
   </sharedRules>
 </catalogue>
