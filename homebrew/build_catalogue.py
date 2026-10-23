@@ -16,7 +16,13 @@ import sys
 import xml.etree.ElementTree as ET
 
 GAME_SYSTEM_ID = "28d4-bd2e-4858-ece6"
-GAME_SYSTEM_REVISION = "129"
+GAME_SYSTEM_REVISION = "130"  # the first revision with the Xenos allegiance
+
+# Factions that take the Xenos allegiance. Their army selection carries the Xenos Army
+# category, which makes the game system require Xenos for that force, and every unit
+# links the Xenos rule.
+XENOS_FACTIONS = {"Tyranids", "Orks", "Necrons", "T'au Empire", "Drukhari", "Leagues of Votann"}
+XENOS_ARMY_CATEGORY = ("3c8e-5a1d-9b47-e2f0", "Xenos Army")
 PTS = "d2ee-04cb-5f8a-2642"
 
 UNIT_PROFILE = "4bb2-cb95-e6c8-5a21"
@@ -519,6 +525,8 @@ class Builder:
         add_constraint(army, "min", 1, eid + "min", scope="force", children=True)
         add_constraint(army, "max", 1, eid + "max", scope="force", children=True)
         add_category(army, *ALLEGIANCE_CATEGORY, eid, primary=True)
+        if self.faction in XENOS_FACTIONS:
+            add_category(army, *XENOS_ARMY_CATEGORY, eid)
         add_cost(army, 0)
         groups = el(army, "selectionEntryGroups")
 
@@ -878,6 +886,8 @@ class Builder:
                    includeChildForces=False)
 
         # Unit rules.
+        if self.faction in XENOS_FACTIONS:
+            self.link_rule(unit, "Xenos", uid)
         for line in ds["rules"]:
             self.add_unit_rule(unit, line, uid, ds)
         if ds["transport"]:

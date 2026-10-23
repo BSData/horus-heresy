@@ -38,6 +38,10 @@ loading. The script prints anything in the doc it could not place.
 - Weapons and psychic powers from the doc's armoury, linked to the core rules
   in `2022 - Horus Heresy.gst` wherever a rule of the same name exists.
 
+- Xenos factions (Tyranids, Orks, Necrons, T'au Empire, Drukhari, Leagues of
+  Votann) take the Xenos allegiance added to `2022 - Horus Heresy.gst`: their army
+  selection makes Xenos required for the force, and every unit has the Xenos rule.
+
 ## Not enforced
 
 - Rite of War effects and limitations are shown as text only.
