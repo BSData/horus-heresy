@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -2529,6 +2529,22 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Riptide Shield Generator" hidden="false" id="ce4b-3131-66c9-381b" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Riptide Shield Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="fa1f-0a5f-e90a-a4a0">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The shield projector built into Commander O'Vesa's Riptide. The bearer has a 4+ Invulnerable Save.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Invulnerable Save (X)" id="fe59-598b-d253-28f5" hidden="false" targetId="a806-8312-c10a-6b19" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (4+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stealth Field Generator" hidden="false" id="ebfb-7d82-2516-125d" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Stealth Field Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b970-6a50-f11c-f65f">
@@ -2537,6 +2553,22 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stormsurge Shield Generator" hidden="false" id="a337-ee0e-8f4d-da14" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Stormsurge Shield Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="68ce-54c5-2d7d-0302">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The shield projectors of the KV128 Stormsurge. The bearer gains the Void Shields (2) special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" id="ca30-d8cd-c3fe-8e7c" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Void Shields (2)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ta'unar Shield Generator" hidden="false" id="9b49-d994-3473-41b0" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -2608,16 +2640,11 @@
       <profiles>
         <profile name="Ghostkeel Battlesuit" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="8931-a472-0c59-c65c">
           <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The XV95, a massive stealth platform that uses its displacement thrusters to leap obstacles and reposition instantly. A Ghostkeel battlesuit confers a 3+ Armour Save, a 4+ Invulnerable Save against cover, a jet pack, Hammer of Wrath (2) and Bulky (4).</characteristic>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The XV95, a massive stealth platform that uses its displacement thrusters to leap obstacles and reposition instantly. A Ghostkeel battlesuit confers a 3+ Armour Save, a jet pack, Hammer of Wrath (2) and Bulky (4).</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Invulnerable Save (X)" id="abb0-a302-449e-5df2" hidden="false" targetId="a806-8312-c10a-6b19" type="rule">
-          <modifiers>
-            <modifier type="set" field="name" value="Invulnerable Save (4+)" />
-          </modifiers>
-        </infoLink>
         <infoLink name="Hammer of Wrath (X)" id="9a11-57bf-84f1-1f94" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Hammer of Wrath (2)" />
@@ -4635,7 +4662,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59c1-8b6c-d2a4-a290" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Riptide shield generator" hidden="false" id="c95d-96e6-f217-638f" type="selectionEntry" targetId="e0f6-78af-3b7e-997f">
+            <entryLink import="true" name="Riptide Shield Generator" hidden="false" id="c95d-96e6-f217-638f" type="selectionEntry" targetId="ce4b-3131-66c9-381b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="37d6-b7f1-cea0-f991" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f98e-f5d9-3583-359e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4703,7 +4730,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="300" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Riptide shield generator" hidden="false" id="e0f6-78af-3b7e-997f" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="Commander Shadowsun" hidden="false" id="e077-a563-56f5-384a" publicationId="733a-d454-80f2-c90e">
       <rules>
         <rule name="Master Strategist" id="98ae-a456-534c-fa96" hidden="false">
@@ -8106,7 +8132,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Riptide shield generator" hidden="false" id="119d-c8e7-e986-784b" type="selectionEntry" targetId="e0f6-78af-3b7e-997f">
+            <entryLink import="true" name="Riptide Shield Generator" hidden="false" id="119d-c8e7-e986-784b" type="selectionEntry" targetId="ce4b-3131-66c9-381b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cf3b-07c1-a792-5b6e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ffb-b1c1-9558-88cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14047,7 +14073,7 @@
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Riptide shield generator" hidden="false" id="2418-8aa0-3076-46b9" type="selectionEntry" targetId="e0f6-78af-3b7e-997f">
+            <entryLink import="true" name="Riptide Shield Generator" hidden="false" id="2418-8aa0-3076-46b9" type="selectionEntry" targetId="ce4b-3131-66c9-381b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0516-a447-0dd8-9757" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8232-8ed5-ca62-25b7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14271,7 +14297,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9781-bc76-84d7-ca6d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Riptide shield generator" hidden="false" id="e515-21c8-ee5a-2f87" type="selectionEntry" targetId="e0f6-78af-3b7e-997f">
+            <entryLink import="true" name="Riptide Shield Generator" hidden="false" id="e515-21c8-ee5a-2f87" type="selectionEntry" targetId="ce4b-3131-66c9-381b">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="528d-d78e-2650-aa7e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1325-c61b-1b0c-54c0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14595,7 +14621,7 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e20e-9a41-2b66-6453" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stormsurge shield generator" hidden="false" id="50e8-ad34-45d9-eeca" type="selectionEntry" targetId="a403-962c-aeaf-c78e">
+            <entryLink import="true" name="Stormsurge Shield Generator" hidden="false" id="50e8-ad34-45d9-eeca" type="selectionEntry" targetId="a337-ee0e-8f4d-da14">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06bf-4ecd-3df5-5280" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d82e-03aa-c470-4aac" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14627,7 +14653,6 @@
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Stormsurge shield generator" hidden="false" id="a403-962c-aeaf-c78e" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="KX139 Ta'unar Supremacy Armour" hidden="false" id="b8f4-232c-fa0e-f2d3" publicationId="733a-d454-80f2-c90e">
       <rules>
         <rule name="Shield Generator" id="cfbb-1fc4-41f6-9c3b" hidden="false">

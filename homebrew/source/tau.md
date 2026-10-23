@@ -2858,11 +2858,23 @@ Tools and micro-fabricators that patch damaged machines in the field.
 
 At the start of your turn, the bearer's unit has It Will Not Die (6+) if it has a Wounds characteristic; a vehicle instead restores one lost Hull Point on a 6+.
 
+#### Riptide Shield Generator
+
+The shield projector built into Commander O'Vesa's Riptide.
+
+The bearer has a 4+ Invulnerable Save.
+
 #### Stealth Field Generator
 
 A sensor-baffling field projected by the Ghostkeel's stealth drones.
 
 The bearer's unit has Shrouded (5+), or Shrouded (4+) if it did not move this turn. It may not be targeted by enemy units more than 24" away.
+
+#### Stormsurge Shield Generator
+
+The shield projectors of the KV128 Stormsurge.
+
+The bearer gains the Void Shields (2) special rule.
 
 #### Ta'unar Shield Generator
 
@@ -2902,7 +2914,7 @@ A Crisis battlesuit confers a 3+ Armour Save, a jet pack and Bulky (3).
 
 The XV95, a massive stealth platform that uses its displacement thrusters to leap obstacles and reposition instantly.
 
-A Ghostkeel battlesuit confers a 3+ Armour Save, a 4+ Invulnerable Save against cover, a jet pack, Hammer of Wrath (2) and Bulky (4).
+A Ghostkeel battlesuit confers a 3+ Armour Save, a jet pack, Hammer of Wrath (2) and Bulky (4).
 
 ##### Hazard Battlesuit
 
