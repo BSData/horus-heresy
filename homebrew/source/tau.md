@@ -2914,13 +2914,13 @@ A Crisis battlesuit confers a 3+ Armour Save, a jet pack and Bulky (3).
 
 The XV95, a massive stealth platform that uses its displacement thrusters to leap obstacles and reposition instantly.
 
-A Ghostkeel battlesuit confers a 3+ Armour Save, a jet pack, Hammer of Wrath (2) and Bulky (4).
+A Ghostkeel battlesuit confers a 3+ Armour Save, a jet pack, Hammer of Wrath (2) and Bulky (8).
 
 ##### Hazard Battlesuit
 
 The XV9, a heavy close-support frame with high-yield thrusters for breaking defensive infantry frontlines.
 
-A Hazard battlesuit confers a 3+ Armour Save, a 5+ Invulnerable Save, a jet pack, Hammer of Wrath (2) and Bulky (3).
+A Hazard battlesuit confers a 3+ Armour Save, a 5+ Invulnerable Save, a jet pack, Hammer of Wrath (2) and Bulky (4).
 
 ##### Iridium Armour
 
@@ -2932,7 +2932,7 @@ A Commander with iridium armour has a 2+ Armour Save.
 
 The XV02, with no active propulsion system; it relies on a reinforced frame suited to standard mechanised transport hulls.
 
-A Pilot battlesuit confers a 3+ Armour Save and Bulky (2). It does not confer a jet pack.
+A Pilot battlesuit confers a 3+ Armour Save and Bulky (4). It does not confer a jet pack.
 
 ##### Recon Armour
 
@@ -2944,7 +2944,7 @@ Recon armour confers a 5+ Armour Save.
 
 The XV104, a colossal heavy combat suit whose sheer kinetic mass turns vector-thrust landings into devastating impacts.
 
-A Riptide battlesuit confers a 2+ Armour Save, a 5+ Invulnerable Save (3+ when its Nova Reactor powers the shield), a jet pack, Hammer of Wrath (D3) and Bulky (6).
+A Riptide battlesuit confers a 2+ Armour Save, a 5+ Invulnerable Save (3+ when its Nova Reactor powers the shield), a jet pack, Hammer of Wrath (D3) and Bulky (8).
 
 ##### Stealth Battlesuit
 
@@ -2956,13 +2956,13 @@ A Stealth battlesuit confers a 3+ Armour Save, a jet pack, Bulky (2), Stealth an
 
 The XV-86 worn by Commander Farsight, an agile command chassis built for high-velocity redirection and aggressive vanguard strikes.
 
-A Supernova battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (1) and Bulky (3).
+A Supernova battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (1) and Bulky (4).
 
 ##### Warmaker Battlesuit
 
-The Twin Lance prototype, an experimental heavy platform cut down to Bulky (6) so it fits standard frontline transport bays.
+The Twin Lance prototype, an experimental heavy platform cut down to Bulky (4) so it fits standard frontline transport bays.
 
-A Warmaker battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (D3+1) and Bulky (6).
+A Warmaker battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (D3+1) and Bulky (4).
 
 ### Battlesuit Armoury
 
