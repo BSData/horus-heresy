@@ -12,6 +12,7 @@ replace its file in `source/`, and run from the repo root:
 ```
 python3 homebrew/build_catalogue.py homebrew/source/tyranids.md "Homebrew - Tyranids.cat"
 python3 homebrew/build_catalogue.py homebrew/source/orks.md "Homebrew - Orks.cat"
+python3 homebrew/build_catalogue.py homebrew/source/necrons.md "Homebrew - Necrons.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -52,6 +53,10 @@ loading. The script prints anything in the doc it could not place.
   only while the unit fits inside it (a Trukk holds 12).
 - Kombi-weapons, artefacts (one of each per army) and wargear that confers an Armour
   Save ('eavy armour, mega armour) are handled; the Save shows on the profile.
+
+- Named abilities in a "Power | Effect" table (the Powers of the C'tan) are given to
+  the datasheets that list them, or offered as a pick when a datasheet says "of your
+  choice". Rites of War may be headings or bold paragraphs.
 
 ## Not enforced
 

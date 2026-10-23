@@ -144,8 +144,13 @@ def forms(text):
     t = norm(re.sub(r"\s*\(.*?\)", "", text))
     out = set(singular(t))
     words = t.split()
+    def word_forms(w):
+        f = list(singular(w))
+        if w.endswith("s") and not w.endswith("ss") and len(w) > 3:
+            f.append(w[:-1])  # "rods"
+        return f
     if len(words) <= 5:
-        out |= {" ".join(c) for c in itertools.product(*[list(singular(w)) for w in words])}
+        out |= {" ".join(c) for c in itertools.product(*[word_forms(w) for w in words])}
     return out
 
 
@@ -430,6 +435,9 @@ class Builder:
                     else:
                         self.power_rows.append((r[0], f"{r[2]} phase. {r[3]}"))
         names = {norm(r["name"]) for r in rows}
+        # "Spear of the Void Dragon (melee)" and "(ranged)" are one weapon even with no plain row
+        mode_bases = [norm(m.group(1)) for r in rows for m in [re.fullmatch(r"(.+?) \(([a-z][^)]*)\)", r["name"])] if m]
+        names |= {b for b in mode_bases if mode_bases.count(b) > 1}
         grouped = {}
         for r in rows:
             name = r["name"]
@@ -453,6 +461,7 @@ class Builder:
             eid = make_id("weapon", self.faction, name)
             e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
                    hidden=False, id=eid, publicationId=self.pub_id)
+            linked = set()
             for p in profiles:
                 psychic = p.get("psychic_weapon") or "Psychic" in p["type"]
                 ptype, pchars, tname = ((PSY_WEAPON_PROFILE, PSY_WEAPON_CHARS, "Psychic Weapon") if psychic
@@ -468,8 +477,9 @@ class Builder:
                 for tok in re.split(r",\s*(?![^()]*\))", rules_part):
                     tok = tok.replace("†", "").strip()
                     first = tok.split(" ")[0]
-                    if first in WEAPON_TYPES or not tok:
+                    if first in WEAPON_TYPES or not tok or tok in linked:
                         continue
+                    linked.add(tok)  # two profiles may share a rule (rod of covenant)
                     self.link_rule(e, tok, eid)
             self.weapons[key] = eid
             self.weapon_names[key] = name
@@ -590,6 +600,47 @@ class Builder:
             for ln in psy["lines"]:
                 for m in re.finditer(r"also knows (.+?)\.", ln):
                     self.restricted_powers.add(norm(m.group(1)))
+
+    def build_power_tables(self):
+        """'### Powers of the C'tan' with a Power | Effect table: abilities datasheets name."""
+        self.special_powers = {}
+        for sec in self.sections:
+            for sub in sec["subs"]:
+                for header, rows in section_tables({"lines": sub["lines"], "subs": []}):
+                    if header[:2] != ["Power", "Effect"]:
+                        continue
+                    intro = " ".join(paragraphs(sub["lines"]))
+                    for r in rows:
+                        eid = make_id("power", self.faction, r[0])
+                        e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=r[0],
+                               hidden=False, id=eid, publicationId=self.pub_id)
+                        add_text_profile(e, WARGEAR_PROFILE, r[0], r[1], eid)
+                        self.special_powers[norm(r[0])] = (r[0], eid, sub["title"])
+
+    def add_named_powers(self, ds, unit, models):
+        """'Powers of the C'tan: knows Cosmic Fire and Transdimensional Thunderbolt', or
+        'knows three Powers of the C'tan of your choice'."""
+        if not getattr(self, "special_powers", None):
+            return
+        me = unit.find("selectionEntries/selectionEntry")
+        for line in ds["rules"]:
+            choice = re.search(r"knows (\w+) (Powers of [^,]+?) of your choice", line)
+            if choice:
+                n = NUMBER_WORDS.get(choice.group(1).lower(), 1)
+                gkey = make_id(me.get("id"), "powers", choice.group(2))
+                g = el(child(me, "selectionEntryGroups"), "selectionEntryGroup", name=choice.group(2), hidden=False, id=gkey)
+                add_constraint(g, "min", n, gkey + "min")
+                add_constraint(g, "max", n, gkey + "max")
+                for pname, eid, _ in self.special_powers.values():
+                    self.link(child(g, "entryLinks"), eid, pname, gkey, maximum=1)
+                continue
+            known = re.search(r"knows (.+)$", line)
+            if not known:
+                continue
+            for part in re.split(r",\s*| and ", known.group(1)):
+                hit = self.special_powers.get(norm(part.strip()))
+                if hit:
+                    self.link(child(me, "entryLinks"), hit[1], hit[0], me.get("id"), count=1)
 
     def build_artefacts(self, header, rows, text):
         """A table of artefacts (Artefact | Who | Effect | Cost): one of each per army."""
@@ -774,6 +825,19 @@ class Builder:
                 add_cost(f, 0)
 
         rites = [sub for s in self.sections for sub in s["subs"] if sub["title"].startswith("Rite of War: ")]
+        if not rites:
+            # "**Canoptek Harvest.** Requires ... Benefit: ... Limitation: ..." after "may take one Rite of War"
+            for sec in self.sections:
+                idx = next((i for i, l in enumerate(sec["lines"]) if "Rite of War" in l and not l.startswith("**")), None)
+                if idx is None:
+                    continue
+                for name, text in self.rule_paragraphs(sec["lines"][idx + 1:]):
+                    parts = re.split(r"\s*(?=Benefit:|Limitations?:)", text)
+                    lines = [f"- {p.split(':', 1)[1].strip()}" for p in parts if p.startswith("Benefit")]
+                    limits = [f"- {p}" for p in parts if not p.startswith(("Benefit", "Limitation"))]
+                    limits += [f"- {p.split(':', 1)[1].strip()}" for p in parts if p.startswith("Limitation")]
+                    rites.append({"title": "Rite of War: " + name,
+                                  "lines": ["**Effects**"] + lines + ["**Limitations**"] + limits})
         if rites:
             rid = make_id(eid, "rites")
             g = el(groups, "selectionEntryGroup", name="Rite of War", hidden=False, id=rid)
@@ -1154,7 +1218,10 @@ class Builder:
             add_constraint(g, "min", 1, lkey + "min")
             add_constraint(g, "max", 1, lkey + "max")
             for alt in ds["loadouts"]:
-                self.wrapper(child(g, "entryLinks"), alt, lkey, alt, ds)
+                e = self.wrapper(child(g, "entryLinks"), alt, lkey, alt, ds)
+                cost = ds.get("loadout_costs", {}).get(alt)
+                if cost:  # a whole-unit swap priced per model
+                    self.whole_unit_cost(e, uid, {o["id"]: cost for o in self.fighting_models(models)})
 
         # Biomorphs any model may buy (Dynamic Camouflage, Hardened Carapace). Like every
         # biomorph, they are taken by every model in the unit and cost points per model.
@@ -1201,6 +1268,8 @@ class Builder:
                 el(el(mod, "conditions"), "condition", type="atLeast", value=1, field="selections",
                    scope=scope, childId=eid, shared=True, includeChildSelections=True,
                    includeChildForces=False)
+
+        self.add_named_powers(ds, unit, models)
 
         # Unit rules.
         if self.faction in XENOS_FACTIONS:
@@ -1299,6 +1368,14 @@ class Builder:
 
         ex = re.search(r"may exchange (?:his |its |their )?(either pair of |one pair of |either |all \w+ |one of its )?(.+?) for", header)
         replaced = "replaced with" in header
+        if ex and re.match(r"The (entire|whole) unit", header):
+            what = ex.group(2)
+            original = next((w for w in models[subject_models[0]]["wargear"] if forms(w) & forms(what)), what)
+            ds["loadouts"] = [original] + [n for n, c in grp["items"]]
+            ds["loadout_costs"] = {n: self.cost(c) for n, c in grp["items"]}
+            for mm in models.values():
+                mm["wargear"] = [w for w in mm["wargear"] if w != original]
+            return
         one_of = "one of the following" in header
         if replaced:
             # "Any Ravener Warrior may be replaced with (each type only once)"
@@ -1573,7 +1650,7 @@ class Builder:
             if g["kind"] == "exchange":
                 whats = [g["what"]] + g["what"].split(" or ")
                 original = next((w for w in m["wargear"] for wt in whats if norm(wt) in norm(w)
-                                 or any(c in norm(w) for c in singular(wt))), None)
+                                 or any(c in norm(w) for c in singular(wt)) or forms(wt) & forms(w)), None)
                 if original is None and " or " not in g["what"] and not ds.get("loadouts"):
                     self.problems.append(f"{ds['name']}: exchange of '{g['what']}' matches no wargear")
                     continue
@@ -1768,6 +1845,9 @@ class Builder:
         e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name, hidden=False,
                id=eid, publicationId=self.pub_id)
         parts = [(wid, n)] if wid else [self.find_weapon(x) for x in label.split(" and ")]
+        if not wid:
+            # "Hyperphase sword and dispersion shield": a weapon and a piece of wargear
+            parts = [(w, k) if w else (self.find_upgrade(x), 1) for (w, k), x in zip(parts, label.split(" and "))]
         if all(w for w, _ in parts):
             links = el(e, "entryLinks")
             for w, k in parts:
@@ -1811,7 +1891,8 @@ class Builder:
         ref = re.fullmatch(r"(.+?) \(as (.+?)\)", line)
         if ref:
             for other in self.datasheets:
-                if norm(other["name"]) in (norm(ref.group(2)),) or norm(ref.group(2)) in list(singular(other["name"])):
+                if (norm(other["name"]) in (norm(ref.group(2)),) or norm(ref.group(2)) in list(singular(other["name"]))
+                        or norm(other["name"]).endswith(" " + norm(ref.group(2)))):  # "the Nightbringer"
                     for r in other["rules"]:
                         if r.startswith(ref.group(1) + ":"):
                             add_rule(unit, ref.group(1), r.partition(": ")[2].replace("†", ""), uid)
@@ -1895,7 +1976,7 @@ class Builder:
                     limit = int(lm.group(1))
                 e = self.link(gl, self.units[t["name"]], t["name"], gid, maximum=1)
                 if limit:
-                    cid = make_id(gid, t["name"], "max", "max")
+                    cid = e.find("constraints/constraint[@type='max']").get("id")
                     mod = el(child(e, "modifiers"), "modifier", type="set", field=cid, value=0)
                     el(el(mod, "conditions"), "condition", type="greaterThan", value=limit, field="selections",
                        scope=uid, childId="model", shared=True, includeChildSelections=True,
@@ -1944,6 +2025,7 @@ class Builder:
         self.build_army_rules()
         self.build_weapons()
         self.build_upgrades()
+        self.build_power_tables()
         self.datasheets = []
         for s in self.sections:
             if s["title"] in SLOTS or s["title"] == "Dedicated Transports":
