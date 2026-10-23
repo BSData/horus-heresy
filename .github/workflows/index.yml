@@ -15,24 +15,19 @@ jobs:
       - name: Checkout Repository Content
         uses: actions/checkout@v4
 
-      - name: Setup Node.js Environment
-        uses: actions/setup-node@v4
+      - name: Setup Java Environment
+        uses: actions/setup-java@v4
         with:
-          node-version: 20
+          distribution: 'temurin'
+          java-version: '17'
 
-      - name: Install and Run bsdata-indexer
+      - name: Download and Run BattleScribe Indexer Jar
         run: |
-          npx bsdata-indexer .
-
-      #- name: Commit and Push Updated Index
-       # uses: stefanzweifel/git-auto-commit-action@v5
-       # with:
-       #   commit_message: "automated: update index.bsi"
-       #   file_pattern: "index.bsi index.xml" # Ensures only the manifest and zipped package update
-
+          curl -L -o battlescribe-data-indexer.jar "https://battlescribe.net"
+          java -jar battlescribe-data-indexer.jar .
+          rm battlescribe-data-indexer.jar
 
       - name: Commit and Push Updated Index
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "automated: update index.bsi"
-          # Removing file_pattern forces it to look at all new or modified files in the root folder
