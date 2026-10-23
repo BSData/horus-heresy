@@ -1,0 +1,25 @@
+name: Generate BattleScribe Index
+
+on:
+  push:
+    branches:
+      - main # Change this to 'master' if your repo uses the older default branch name
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grants the action permission to commit the index file back to your repo
+
+    steps:
+      - name: Checkout Repository Content
+        uses: actions/checkout@v4
+
+      - name: Run BattleScribe Indexer
+        uses: BSData/bsdata-indexer-action@v1 # Official community indexer action
+
+      - name: Commit and Push Updated Index
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "automated: update index.bsi"
+          file_pattern: "index.bsi index.xml" # Ensures only the manifest and zipped package update
