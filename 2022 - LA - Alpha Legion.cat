@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="64" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="9c06-1c61-d01d-8445" name="LA - XX: Alpha Legion" revision="65" battleScribeVersion="2.03" authorName="Alphalas" authorContact="BSData Developers Discord" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="70" type="catalogue">
   <categoryEntries>
     <categoryEntry id="2275-5253-2421-7383" name="Rewards of Trechery" hidden="false">
       <modifiers>
@@ -112,6 +112,20 @@
       <categoryLinks>
         <categoryLink id="e87e-6482-7fb1-d401" name="Allegiance:" hidden="false" targetId="e90d-e5a8-f42d-da84" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="9c54-5cb9-7ae3-5563" name="Legiones Hereticus (Alpha Legion)" hidden="false" collective="false" import="true" targetId="afcb-0613-1704-fb78" type="selectionEntry">
+        <modifiers>
+        <modifier type="set" field="hidden" value="true">
+        <conditions>
+        <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+        </conditions>
+        </modifier>
+        </modifiers>
+        <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e5f-63a8-afd0-2711" type="max"/>
+        </constraints>
+        </entryLink>
+      </entryLinks>
     </entryLink>
     <entryLink id="ce80-6491-c668-2eb3" name="Crimson Paladins" hidden="true" collective="false" import="false" targetId="33fe-9683-bde5-95ca" type="selectionEntry">
       <modifiers>
@@ -5526,6 +5540,278 @@
         <categoryLink id="0392-cbcd-073b-274a" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
         <categoryLink id="2e0a-3f43-aaa0-53e3" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink id="c369-14e9-df5f-370d" name="Chaos Hellwright" hidden="false" collective="false" import="false" targetId="7c74-83ea-f665-1408" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="3c44-5060-6eba-9a42" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+    <categoryLink id="0882-34f0-4516-ae37" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="47ab-8b6d-ecd5-ef2f" name="Master of Possession" hidden="false" collective="false" import="false" targetId="106c-c2ce-3f17-fef6" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="837d-cd3b-3b20-5a20" name="HQ:" hidden="false" targetId="4f85-eb33-30c9-8f51" primary="true"/>
+    <categoryLink id="fa93-3540-a271-415a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="3ab9-4cef-2d48-f8c2" name="Chaos Decimator" hidden="false" collective="false" import="false" targetId="5791-e649-4992-89fd" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="78de-cffb-71b6-9945" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+    <categoryLink id="1088-961a-2067-0517" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="caea-3d92-786b-b651" name="Greater Possessed" hidden="false" collective="false" import="false" targetId="c3ed-17c1-2aa5-2f11" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="ffd3-31b5-b16f-24de" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+    <categoryLink id="9578-d47f-7783-e1b7" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="ff61-9004-bb43-a9fc" name="Helbrute" hidden="false" collective="false" import="false" targetId="0bf8-8c4a-b990-206d" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="892b-098c-a0ca-7259" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+    <categoryLink id="35e8-61b3-874a-119a" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="33a0-ba41-301f-9d54" name="Hellforged Contemptor Dreadnought" hidden="false" collective="false" import="false" targetId="328d-84f9-bf64-e026" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="07e1-81c8-a601-7056" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+    <categoryLink id="dc48-df48-c6ed-c01b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="f4cf-e5a7-364f-63de" name="Mutilators" hidden="false" collective="false" import="false" targetId="9db3-f952-a1e7-93c0" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="e6e4-19ce-6637-5fdf" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+    <categoryLink id="fa1e-8947-f0e0-284b" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="9944-81bc-f2c6-3f9e" name="Possessed" hidden="false" collective="false" import="false" targetId="44e8-bf19-f6d7-817c" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="0d55-5229-b48a-b476" name="Elites:" hidden="false" targetId="7aee-565f-b0ae-294e" primary="true"/>
+    <categoryLink id="6691-7910-bb6e-7302" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="8334-9171-71b8-9a25" name="Heretic Astartes" hidden="false" collective="false" import="false" targetId="2c1d-2670-2098-8536" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="dbf6-d764-6287-5cb5" name="Troops:" hidden="false" targetId="9b5d-fac7-799b-d7e7" primary="true"/>
+    <categoryLink id="8ac0-d785-c655-6cd6" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="8a1e-3baa-a07f-c71f" name="Defiler" hidden="false" collective="false" import="false" targetId="38f7-d80e-defa-094d" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="c2a6-9ab4-17e1-fe92" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+    <categoryLink id="4f96-3fe4-700c-9d20" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="dac4-814c-884c-ae37" name="Forgefiend" hidden="false" collective="false" import="false" targetId="d01f-69c6-b395-00c2" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="6fb2-32b3-6402-043b" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+    <categoryLink id="b035-8b18-53c2-3490" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="75b0-b06d-c08e-9bf2" name="Hellforged Deredeo Dreadnought" hidden="false" collective="false" import="false" targetId="61af-2c09-7163-d9bc" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="ecfd-4c25-49dc-a31a" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+    <categoryLink id="a37d-6e1c-bd94-7e8d" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="d345-03bc-f898-aff8" name="Hellforged Leviathan Dreadnought" hidden="false" collective="false" import="false" targetId="2f7c-74a3-9ecd-cc41" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="f756-2e1b-6f03-54d8" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+    <categoryLink id="1447-1317-301f-046f" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="f590-c995-ca1a-f775" name="Maulerfiend" hidden="false" collective="false" import="false" targetId="9cf6-f406-ae3a-2726" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="b124-d2ea-3688-bf2b" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+    <categoryLink id="c85a-ead3-f823-e95e" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="0241-95c7-1259-ddd4" name="Obliterators" hidden="false" collective="false" import="false" targetId="aa17-c5fd-078b-bf6c" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="f275-f3e6-25ca-6401" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+    <categoryLink id="2cad-2688-bbb9-1096" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
+    </entryLink>
+    <entryLink id="a79c-e26c-f8db-499a" name="Venomcrawler" hidden="false" collective="false" import="false" targetId="c1df-b273-84dc-f29f" type="selectionEntry">
+    <modifiers>
+    <modifier type="set" field="hidden" value="true">
+    <conditionGroups>
+    <conditionGroup type="or">
+    <conditions>
+    <condition field="selections" scope="force" value="0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9c0-0c5a-3e24-58c7" type="equalTo"/>
+    </conditions>
+    </conditionGroup>
+    </conditionGroups>
+    </modifier>
+    </modifiers>
+    <categoryLinks>
+    <categoryLink id="88f4-c72b-b8c8-b818" name="Heavy Support:" hidden="false" targetId="7031-469a-1aeb-eab0" primary="true"/>
+    <categoryLink id="bec8-22aa-3c43-2a41" name="Unit:" hidden="false" targetId="36c3-e85e-97cc-c503" primary="false"/>
+    </categoryLinks>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
