@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="ce7b-7026-eda3-920e" name="Homebrew - T'au Empire" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="733a-d454-80f2-c90e" name="T'au Empire for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - T'au Empire" />
   </publications>
@@ -1687,10 +1687,10 @@
       <profiles>
         <profile name="EMP grenade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5808-0993-2278-9652" publicationId="733a-d454-80f2-c90e">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6"</characteristic>
-            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">6</characteristic>
-            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Haywire†, One Use</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">-</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Limited Use, Haywire</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1702,19 +1702,20 @@
       <profiles>
         <profile name="Fusion grenade" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="491b-2e39-7d70-3cf5" publicationId="733a-d454-80f2-c90e">
           <characteristics>
-            <characteristic name="Range" typeId="95ba-cda7-b831-6066">6"</characteristic>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
             <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">8</characteristic>
             <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">1</characteristic>
-            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Armourbane (Ranged), One Use</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Single Use, Armourbane (Melee), Instant Death</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Armourbane (X)" id="dca2-817a-5116-5e1c" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
+        <infoLink name="Armourbane (X)" id="22bc-bca1-29fd-907e" hidden="false" targetId="cb59-f920-f071-7cd4" type="rule">
           <modifiers>
-            <modifier type="set" field="name" value="Armourbane (Ranged)" />
+            <modifier type="set" field="name" value="Armourbane (Melee)" />
           </modifiers>
         </infoLink>
+        <infoLink name="Instant Death" id="3eef-55be-8c24-8841" hidden="false" targetId="9e96-fff1-b916-d9a3" type="rule" />
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kill Team close combat blade" hidden="false" id="0dc0-c7ef-506b-84e8" publicationId="733a-d454-80f2-c90e">
@@ -2378,6 +2379,22 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Communion Helm" hidden="false" id="bbce-86aa-03be-66e5" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Communion Helm" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b804-485d-ee6e-4046">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A helm that links the Oracle to the will of the Vespid hive. The bearer gains the Adamantium Will (5+) special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Adamantium Will (X+)" id="fcc8-5cf3-5634-73ef" hidden="false" targetId="4380-44a5-f01a-d964" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Adamantium Will (5+)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Disruption Pod" hidden="false" id="1b2c-2470-fa32-e61c" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Disruption Pod" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="698c-714f-1ea6-fec8">
@@ -2405,6 +2422,15 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Medi-pack" hidden="false" id="d653-f0cb-e4cd-c580" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Medi-pack" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="dd25-c74a-1723-f464">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A field medical kit carried by a Pathfinder Medical Technician. The bearer's unit has Feel No Pain (6+).</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Photon Grenades" hidden="false" id="6fc1-7d02-98ce-6693" publicationId="733a-d454-80f2-c90e">
       <profiles>
         <profile name="Photon Grenades" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="08b5-d0eb-d111-f1f2">
@@ -2422,6 +2448,22 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ta'unar Shield Generator" hidden="false" id="9b49-d994-3473-41b0" publicationId="733a-d454-80f2-c90e">
+      <profiles>
+        <profile name="Ta'unar Shield Generator" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="a90f-eda6-bede-c6eb">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">The layered shield projectors of the Ta'unar Supremacy Armour. The bearer gains the Void Shields (6) special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Void Shields" id="e9d6-38cc-4762-ef9e" hidden="false" targetId="c503-f5b8-3da0-16e6" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Void Shields (6)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vespid Wings" hidden="false" id="788e-9a00-9be3-ad94" publicationId="733a-d454-80f2-c90e">
       <profiles>
@@ -9842,7 +9884,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Unit Upgrades" hidden="false" id="9d96-fd37-ef53-e201">
           <entryLinks>
-            <entryLink import="true" name="EMP grenade" hidden="false" id="c561-6882-a0c6-412c" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+            <entryLink import="true" name="EMP grenade" hidden="false" id="008b-c82c-cbc5-5ad5" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
@@ -9857,7 +9899,7 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="419b-256e-12dc-de9e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5def-98df-e33d-39c1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -10746,7 +10788,7 @@
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="15" />
               </costs>
             </entryLink>
-            <entryLink import="true" name="EMP grenade" hidden="false" id="299a-dc9c-f6da-1515" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+            <entryLink import="true" name="EMP grenade" hidden="false" id="bde8-ada7-b17d-614f" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
@@ -10761,7 +10803,7 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5f41-05ad-ad6b-b660" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d58-9c40-0950-0000" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -11637,7 +11679,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Unit Upgrades" hidden="false" id="de13-2c11-698b-d9ea">
           <entryLinks>
-            <entryLink import="true" name="EMP grenade" hidden="false" id="0edd-2836-ffcf-2dd5" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+            <entryLink import="true" name="EMP grenade" hidden="false" id="f758-f3b6-f7f6-adb4" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
@@ -11650,7 +11692,7 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbaf-d37c-08a3-0bb6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3aa5-9985-51e4-96ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -14532,7 +14574,7 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f965-12a4-435b-0c7c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Ta'unar shield generator" hidden="false" id="ec51-3203-d5bf-8099" type="selectionEntry" targetId="2141-80d4-4375-0bd3">
+            <entryLink import="true" name="Ta'unar Shield Generator" hidden="false" id="ec51-3203-d5bf-8099" type="selectionEntry" targetId="9b49-d994-3473-41b0">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="aef3-dfeb-2e09-d961" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="088b-3670-a897-7744" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -14566,7 +14608,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="650" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ta'unar shield generator" hidden="false" id="2141-80d4-4375-0bd3" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="unit" import="true" name="Tidewall Droneport" hidden="false" id="0cd7-f3e4-d4ef-07ce" publicationId="733a-d454-80f2-c90e">
       <rules>
         <rule name="Drone Launch" id="a9f6-37c0-d043-d79a" hidden="false">
@@ -16021,7 +16062,7 @@
         </selectionEntryGroup>
         <selectionEntryGroup name="Unit Upgrades" hidden="false" id="0555-37e9-b363-a49b">
           <entryLinks>
-            <entryLink import="true" name="EMP grenade" hidden="false" id="0ed1-291a-d9f0-c9f3" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
+            <entryLink import="true" name="EMP grenade" hidden="false" id="36d2-bacd-5e06-6483" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
               <modifiers>
                 <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="2">
                   <repeats>
@@ -16038,7 +16079,7 @@
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a9ab-378a-daf1-352c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f40-5b20-6f7f-4173" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
               <costs>
                 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -16419,10 +16460,16 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e45e-5a62-627f-21f4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="EMP and fusion grenades" hidden="false" id="ee60-a641-3c74-81fe" type="selectionEntry" targetId="7ec3-2fd6-4f37-1da7">
+                <entryLink import="true" name="EMP grenade" hidden="false" id="8673-1282-30bf-e762" type="selectionEntry" targetId="1063-8dd9-dffb-6c30">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6562-c375-2a30-e0f2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b06-b740-0e08-4fea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db91-cc56-e5db-a4f8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ac-b028-3cbe-2323" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Fusion grenade" hidden="false" id="ef33-c590-77aa-071c" type="selectionEntry" targetId="3706-ce46-c059-0ebb">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d326-2592-975a-525d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7674-cf9d-ac47-0fd5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Markerlight" hidden="false" id="c6fd-0202-0e21-fc38" type="selectionEntry" targetId="8dd6-6e07-6920-7831">
@@ -16587,10 +16634,10 @@
                 <categoryLink targetId="59a4-7b61-600a-c457" id="d5ea-c21d-c8eb-1bef" primary="false" name="Skirmish Sub-type" />
               </categoryLinks>
               <entryLinks>
-                <entryLink import="true" name="medi-pack" hidden="false" id="b65a-3c06-17ff-7661" type="selectionEntry" targetId="1294-ad6c-3900-5951">
+                <entryLink import="true" name="Medi-pack" hidden="false" id="16d9-49af-bdfb-3750" type="selectionEntry" targetId="d653-f0cb-e4cd-c580">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="776f-876c-fdfd-dc0a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="723e-8baa-cac2-3b0e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c788-7db6-70d7-5598" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d12b-4d65-a5d3-4df0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
                 <entryLink import="true" name="Pulse carbine" hidden="false" id="63f9-534b-d4c8-085a" type="selectionEntry" targetId="841d-336f-13a6-d9a5">
@@ -16987,8 +17034,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="130" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="EMP and fusion grenades" hidden="false" id="7ec3-2fd6-4f37-1da7" publicationId="733a-d454-80f2-c90e" />
-    <selectionEntry type="upgrade" import="true" name="medi-pack" hidden="false" id="1294-ad6c-3900-5951" publicationId="733a-d454-80f2-c90e" />
     <selectionEntry type="upgrade" import="true" name="Ion rifle" hidden="false" id="4c3c-073c-4f84-472a" publicationId="733a-d454-80f2-c90e">
       <entryLinks>
         <entryLink import="true" name="Ion rifle" hidden="false" id="017a-168c-1881-92e1" type="selectionEntry" targetId="df7d-075a-6892-b2fa">
@@ -17241,10 +17286,10 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6aae-fa26-6427-4506" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
-                <entryLink import="true" name="communion helm" hidden="false" id="415e-abf0-332f-53f8" type="selectionEntry" targetId="b120-e5dc-9b19-def8">
+                <entryLink import="true" name="Communion Helm" hidden="false" id="05a8-7e69-45c7-7d8c" type="selectionEntry" targetId="bbce-86aa-03be-66e5">
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6aff-9d06-cd75-59b9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c280-dab3-9d6c-f305" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1301-e674-3c67-d6b4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d10e-c0b1-33f4-cad6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -17259,7 +17304,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="110" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="communion helm" hidden="false" id="b120-e5dc-9b19-def8" publicationId="733a-d454-80f2-c90e" />
   </sharedSelectionEntries>
   <sharedRules>
     <rule name="Battlesuits" id="8797-8fec-3f62-3b7f" hidden="false" publicationId="733a-d454-80f2-c90e">
@@ -17274,6 +17318,9 @@
     <rule name="Drone Controller" id="c521-c1b6-bf08-26db" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>A unit with this special rule may include models with the Drone sub-type, either as part of its Unit Composition or bought from its Options, up to the number its datasheet allows. These drones follow the Drone (sub-type) rules for drones taken as part of a parent unit.</description>
     </rule>
+    <rule name="Independent Character" id="b727-3ecd-322d-d367" hidden="false" publicationId="733a-d454-80f2-c90e">
+      <description>Mighty heroes go where they are needed, being at the forefront of the most vital charges and leading their troops to victory. Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multi-character unit.</description>
+    </rule>
     <rule name="Jet Packs" id="cec5-f1a0-ee98-0e56" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>T'au battlesuits, drones and hover drones use the official 2.0 Jet Pack rules. Vespid use Vespid Wings instead (see Wargear). A unit entirely equipped with jet packs may increase its Movement Characteristic by 6, move over friendly and enemy models and units, and ignore terrain while moving in the Movement phase (Dangerous Terrain tests still apply when beginning or ending a move in it, and Difficult Terrain counts as Dangerous). After it has finished shooting in the Shooting phase, it may make an additional 6" move in the same way, whatever weapons it fired. During any Reaction that lets it move, the move is increased by 6". Models with jet packs gain Bulky (2), or Bulky (3) if they already have Bulky (2), and Deep Strike. T'au battlesuits do not gain Bulky this way; they use the Bulky value on their datasheet instead.</description>
     </rule>
@@ -17285,6 +17332,12 @@
     </rule>
     <rule name="Sept (X)" id="de79-d017-7909-4d83" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>When building an army, choose one Sept for each detachment. Every T'au unit in that detachment (not Auxiliaries) gains Sept (X), where X is the chosen Sept. Commander Farsight and his Bodyguard may only join a Farsight Enclaves detachment; Commander Shadowsun, Aun'Va and Longstrike may only join a T'au Sept detachment. Other Unique characters may join any Sept.</description>
+    </rule>
+    <rule name="Stealth" id="600f-0f0c-0fc3-f7a2" hidden="false" publicationId="733a-d454-80f2-c90e">
+      <description>If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.</description>
+    </rule>
+    <rule name="Tidewall Mobility" id="1189-b9e2-9645-15bd" hidden="false" publicationId="733a-d454-80f2-c90e">
+      <description>- The Movement Mechanic: In the Movement phase, if a qualifying T'au unit is entirely on top of the Tidewall section, the piece of terrain itself can be moved up to 6". Unlike regular vehicles, it can drift or glide in any direction to reposition your battle line or glide closer to an objective. - Shooting Privileges: Models occupying the moving Tidewall are treated as Stationary during the following Shooting phase. Fire Warriors or Pathfinders may move up to 6" along with their bunker and still fire their weapons at full efficiency (Rapid Fire weapons at maximum range, Heavy weapons without Snap Shots).</description>
     </rule>
     <rule name="Drone Support" id="674a-b1a0-56b7-c85b" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>A unit that may take drones lists how many in its Options. Drones taken this way are models in that unit: they move and shoot with it and are counted for its Morale checks. If the rest of the unit is destroyed, any remaining drones are removed as casualties.</description>
@@ -17302,18 +17355,9 @@
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
     </rule>
     <rule name="Ethereal Invocations" id="9f28-c50f-1271-9511" hidden="false" publicationId="733a-d454-80f2-c90e">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
-    </rule>
-    <rule name="Independent Character" id="b727-3ecd-322d-d367" hidden="false" publicationId="733a-d454-80f2-c90e">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
-    </rule>
-    <rule name="Stealth" id="600f-0f0c-0fc3-f7a2" hidden="false" publicationId="733a-d454-80f2-c90e">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
+      <description>Ethereals are not psykers; their power comes from the total devotion of the T'au. At the start of your Movement phase, each Ethereal may make one invocation. It takes a Leadership test; if it passes, the invocation affects every friendly T'au unit (not Auxiliaries) within 12" until the start of your next turn. Aun'Va may make two invocations each turn. Failed Invocations. If the Leadership test fails, the invocation has no effect, and the Ethereal may not invoke again until your next turn.</description>
     </rule>
     <rule name="Fire Protocols (2)" id="a273-e206-b7d4-f59f" hidden="false" publicationId="733a-d454-80f2-c90e">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
-    </rule>
-    <rule name="Tidewall Mobility" id="1189-b9e2-9645-15bd" hidden="false" publicationId="733a-d454-80f2-c90e">
       <description>Listed on this datasheet but not defined in the conversion doc.</description>
     </rule>
   </sharedRules>

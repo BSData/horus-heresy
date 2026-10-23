@@ -697,6 +697,9 @@ class Builder:
                     if header[:2] not in (["Power", "Effect"], ["Invocation", "Effect"]):
                         continue
                     intro = " ".join(paragraphs(sub["lines"]))
+                    if header[0] == "Invocation" and norm(sub["title"]) not in self.local_rules:
+                        # "Ethereal Invocations": datasheets name the rule, and get the table with it
+                        self.define_rule(sub["title"], intro)
                     for r in rows:
                         eid = make_id("power", self.faction, r[0])
                         e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=r[0],

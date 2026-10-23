@@ -42,6 +42,12 @@ Kroot and Vespid fight for the Greater Good, but not as T'au. They do not gain S
 
 A unit with this special rule may include models with the Drone sub-type, either as part of its Unit Composition or bought from its Options, up to the number its datasheet allows. These drones follow the Drone (sub-type) rules for drones taken as part of a parent unit.
 
+#### Independent Character
+
+Mighty heroes go where they are needed, being at the forefront of the most vital charges and leading their troops to victory.
+
+Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multi-character unit.
+
 #### Jet Packs
 
 T'au battlesuits, drones and hover drones use the official 2.0 Jet Pack rules. Vespid use Vespid Wings instead (see Wargear). A unit entirely equipped with jet packs may increase its Movement Characteristic by 6, move over friendly and enemy models and units, and ignore terrain while moving in the Movement phase (Dangerous Terrain tests still apply when beginning or ending a move in it, and Difficult Terrain counts as Dangerous). After it has finished shooting in the Shooting phase, it may make an additional 6" move in the same way, whatever weapons it fired. During any Reaction that lets it move, the move is increased by 6". Models with jet packs gain Bulky (2), or Bulky (3) if they already have Bulky (2), and Deep Strike. T'au battlesuits do not gain Bulky this way; they use the Bulky value on their datasheet instead.
@@ -65,6 +71,15 @@ When a wound is allocated to a friendly T'au character or battlesuit within 3" o
 #### Sept (X)
 
 When building an army, choose one Sept for each detachment. Every T'au unit in that detachment (not Auxiliaries) gains Sept (X), where X is the chosen Sept. Commander Farsight and his Bodyguard may only join a Farsight Enclaves detachment; Commander Shadowsun, Aun'Va and Longstrike may only join a T'au Sept detachment. Other Unique characters may join any Sept.
+
+#### Stealth
+
+If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
+
+#### Tidewall Mobility
+
+- **The Movement Mechanic:** In the Movement phase, if a qualifying T'au unit is entirely on top of the Tidewall section, the piece of terrain itself can be moved up to 6". Unlike regular vehicles, it can drift or glide in any direction to reposition your battle line or glide closer to an objective.
+- **Shooting Privileges:** Models occupying the moving Tidewall are treated as Stationary during the following Shooting phase. Fire Warriors or Pathfinders may move up to 6" along with their bunker and still fire their weapons at full efficiency (Rapid Fire weapons at maximum range, Heavy weapons without Snap Shots).
 
 ### Advanced Reactions
 
@@ -2680,7 +2695,7 @@ These datasheets bring the T'au Kill Teams to the battlefield as small specialis
 
 **Wargear**
 
-- Assault Grenadier: pulse carbine, EMP and fusion grenades
+- Assault Grenadier: pulse carbine, EMP grenades, fusion grenades
 - Blooded: pulse carbine, Kill Team close combat blade
 - Every model: pulse carbine, markerlight, recon armour, photon grenades, unless noted below
 - Marksman: pulse rifle with targeting optics, instead of pulse carbine and markerlight
@@ -2758,6 +2773,12 @@ These datasheets bring the T'au Kill Teams to the battlefield as small specialis
 
 ### Items
 
+#### Communion Helm
+
+A helm that links the Oracle to the will of the Vespid hive.
+
+The bearer gains the Adamantium Will (5+) special rule.
+
 #### Disruption Pod
 
 A vehicle-mounted system that distorts the vehicle's image.
@@ -2776,6 +2797,12 @@ A personal drone that carries an Ethereal into battle.
 
 An Ethereal with a hover drone counts as having a jet pack.
 
+#### Medi-pack
+
+A field medical kit carried by a Pathfinder Medical Technician.
+
+The bearer's unit has Feel No Pain (6+).
+
 #### Photon Grenades
 
 Grenades that release a blinding flash.
@@ -2787,6 +2814,12 @@ Enemy units that charge a unit with photon grenades do not gain the Initiative b
 An automated fire-control system for defensive fire.
 
 A vehicle with a point defence targeting relay adds 1 to its Ballistic Skill when firing Overwatch.
+
+#### Ta'unar Shield Generator
+
+The layered shield projectors of the Ta'unar Supremacy Armour.
+
+The bearer gains the Void Shields (6) special rule.
 
 #### Vespid Wings
 
@@ -2903,7 +2936,7 @@ One Commander, Cadre Fireblade or Ethereal (not a Unique character) may take one
 | Riptide, Y'vahra, R'varna | A seeker missile | +8 points |
 | Stealth Battlesuits | The Shas'vre may take one support system | See Battlesuit Armoury |
 | Strike Team, Breacher Team, Pathfinders | The Shas'ui may take a target lock (may shoot a different target from his unit) | +5 points |
-| Strike Team, Breacher Team, Pathfinders, Hunter Cadre | EMP grenades for the whole unit (as krak grenades with Haywire†, usable only against vehicles) | +2 points per model |
+| Strike Team, Breacher Team, Pathfinders, Hunter Cadre | EMP grenades for the whole unit | +2 points per model |
 | Vespid Stingwings | The Strain Leader may take a neutron grenade launcher instead of his neutron blaster | +5 points |
 
 #### Vehicle Battle Systems
@@ -3041,8 +3074,8 @@ Specialist weapons carried by the Kill Team units.
 |---|---|---|---|---|
 | Accelerator bow | 24" | 4 | 5 | Assault 1, Rending (6+) |
 | Dvorgite skinner | Template | 4 | 5 | Assault 1, Shred |
-| EMP grenade | 6" | 6 | 4 | Assault 1, Haywire†, One Use |
-| Fusion grenade | 6" | 8 | 1 | Assault 1, Armourbane (Ranged), One Use |
+| EMP grenade | – | – | – | Melee, Limited Use, Haywire |
+| Fusion grenade | – | 8 | 1 | Melee, Single Use, Armourbane (Melee), Instant Death |
 | Kill Team close combat blade | – | User | 5 | Melee |
 | Kroot long blade | – | +1 | 4 | Melee, Two-handed |
 | Kroot pistol | 12" | 4 | 6 | Pistol 1 |
