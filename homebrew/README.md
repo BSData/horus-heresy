@@ -13,7 +13,8 @@ replace its file in `source/`, and run from the repo root:
 python3 homebrew/build_catalogue.py homebrew/source/tyranids.md "Homebrew - Tyranids.cat"
 ```
 
-IDs come from entry names, so rebuilding keeps them stable and saved rosters keep
+Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
+NewRecruit offer the update. IDs come from entry names, so rebuilding keeps them stable and saved rosters keep
 loading. The script prints anything in the doc it could not place.
 
 ## What the catalogue covers
@@ -22,8 +23,9 @@ loading. The script prints anything in the doc it could not place.
   slot and points. A unit's starting cost always matches the doc.
 - In units of several models, weapon options are bought per model: a unit of 10
   can buy any number from 0 to 10 of each.
-- Biomorphs (everything in the doc's Biomorphs section, tails included) are taken
-  by every model in the unit, and cost their points for each model.
+- Biomorphs (everything in the doc's Biomorphs section) are taken by every model
+  in the unit, and cost their points for each model. Tails are weapon options:
+  bought per model, added to the model's other weapons.
 - Biomorphs with a **Cost:** line in the doc (Dynamic Camouflage, Hardened
   Carapace) are offered to every unit whose models can all use them.
 - Options: extra models, weapon exchanges (including "one in every three"),

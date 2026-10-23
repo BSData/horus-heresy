@@ -260,14 +260,14 @@ def add_rule(entry, name, text, key):
 # --------------------------------------------------------------------------- builder
 
 class Builder:
-    def __init__(self, doc_name, faction, text):
+    def __init__(self, doc_name, faction, text, revision=1):
         self.faction = faction
         self.sections = parse_doc(text)
         self.problems = []
         self.cat_id = make_id("catalogue", faction)
         self.root = ET.Element("catalogue", {
             "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
-            "id": self.cat_id, "name": f"Homebrew - {faction}", "revision": "1",
+            "id": self.cat_id, "name": f"Homebrew - {faction}", "revision": str(revision),
             "battleScribeVersion": "2.03", "library": "false", "gameSystemId": GAME_SYSTEM_ID,
             "gameSystemRevision": GAME_SYSTEM_REVISION, "type": "catalogue",
             "authorName": "Isaac"})
@@ -1387,14 +1387,30 @@ def main():
     first = next(l for l in text.splitlines() if l.startswith("# "))[2:].strip()
     faction = re.sub(r" for The Horus Heresy.*", "", first)
     doc_name = first + " — Homebrew Conversion"
-    b = Builder(doc_name, faction, text)
-    root = b.build()
-    ET.indent(root, space="  ")
-    body = ET.tostring(root, encoding="unicode")
+
+    # BattleScribe and NewRecruit only offer an update when the revision goes up, so a
+    # rebuild that changes anything gets the next revision number.
+    old_text, old_rev = None, 0
+    try:
+        old_text = open(out, encoding="utf-8").read()
+        old_rev = int(re.search(r'<catalogue [^>]*revision="(\d+)"', old_text).group(1))
+    except (OSError, AttributeError):
+        pass
+
+    def render(revision):
+        b = Builder(doc_name, faction, text, revision)
+        root = b.build()
+        ET.indent(root, space="  ")
+        body = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n' + ET.tostring(root, encoding="unicode") + "\n"
+        return b, body
+
+    b, body = render(max(old_rev, 1))
+    if old_text is not None and body.replace("\r\n", "\n") != old_text.replace("\r\n", "\n"):
+        b, body = render(old_rev + 1)
     with open(out, "w", encoding="utf-8", newline="\n") as f:
-        f.write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n')
-        f.write(body + "\n")
-    print(f"wrote {out}: {len(b.datasheets)} units, {len(b.weapons)} weapons", file=sys.stderr)
+        f.write(body)
+    rev = re.search(r'revision="(\d+)"', body).group(1)
+    print(f"wrote {out}: revision {rev}, {len(b.datasheets)} units, {len(b.weapons)} weapons", file=sys.stderr)
     for p in b.problems:
         print("  ! " + p, file=sys.stderr)
 

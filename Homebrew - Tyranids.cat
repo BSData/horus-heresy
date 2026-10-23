@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="129" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="129" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -2343,15 +2343,6 @@
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bone Mace and Thresher Scythe" hidden="false" id="36e7-a4db-5d93-146b" publicationId="7478-cf16-4f88-170b">
-      <profiles>
-        <profile name="Bone Mace and Thresher Scythe" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="ff1a-6094-218e-11af">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a bone mace or thresher scythe tail makes additional Attacks in close combat as set by the Extra Attacks (X) rule on the tail's profile in the Bio-weapons armoury. A model may have only one tail biomorph.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dynamic Camouflage" hidden="false" id="e29e-5b38-88bf-c84d" publicationId="7478-cf16-4f88-170b">
       <profiles>
         <profile name="Dynamic Camouflage" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="b87b-52ce-d588-23fd">
@@ -2378,15 +2369,6 @@
         <profile name="Hardened Carapace" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="7d72-6c1a-1c28-0656">
           <characteristics>
             <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a hardened carapace adds 1 to its Save, to a best of 2+. Any model with a Save worse than 2+ may take it.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Prehensile Pincer Tail" hidden="false" id="c858-9743-0561-0ff7" publicationId="7478-cf16-4f88-170b">
-      <profiles>
-        <profile name="Prehensile Pincer Tail" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="75f4-c5ef-26a4-976a">
-          <characteristics>
-            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A model with a prehensile pincer tail makes additional Attacks in close combat as set by the Extra Attacks (X) rule on the tail's profile in the Bio-weapons armoury. A model may have only one tail biomorph.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -9549,6 +9531,32 @@
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Options" hidden="false" id="020f-d1e5-f993-3aab">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Thresher scythe or bone mace tail" hidden="false" id="b3b8-7408-48d2-c5b6">
+              <modifiers>
+                <modifier type="increment" field="e486-1609-db3a-d507" value="1">
+                  <repeats>
+                    <repeat field="selections" scope="f4e9-2333-7b1d-a4ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db60-1cdf-cb5c-e4be" repeats="1" roundUp="false" />
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="e486-1609-db3a-d507" percentValue="false" includeChildSelections="true" includeChildForces="false" />
+              </constraints>
+              <entryLinks>
+                <entryLink import="true" name="Thresher scythe" hidden="false" id="ba1d-85e5-0800-ae6b" type="selectionEntry" targetId="e021-804c-34ca-96d8">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Bone mace" hidden="false" id="dd73-1ce9-d89e-e5ab" type="selectionEntry" targetId="4a4b-7a78-6135-f665">
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="10" />
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Bio-plasma" hidden="false" id="1063-b654-46f2-1fe5" type="selectionEntry" targetId="f7cf-a219-768e-dc35">
               <modifiers>
@@ -9568,39 +9576,6 @@
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorphs" hidden="false" id="35d6-7ac9-45e4-1f3f">
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Thresher scythe or bone mace tail" hidden="false" id="b3b8-7408-48d2-c5b6">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3774-504b-8265-a8c5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-              <entryLinks>
-                <entryLink import="true" name="Thresher scythe" hidden="false" id="ba1d-85e5-0800-ae6b" type="selectionEntry" targetId="e021-804c-34ca-96d8">
-                  <modifiers>
-                    <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                      <repeats>
-                        <repeat field="selections" scope="f4e9-2333-7b1d-a4ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db60-1cdf-cb5c-e4be" repeats="1" roundUp="false" />
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-                <entryLink import="true" name="Bone mace" hidden="false" id="dd73-1ce9-d89e-e5ab" type="selectionEntry" targetId="4a4b-7a78-6135-f665">
-                  <modifiers>
-                    <modifier type="increment" field="d2ee-04cb-5f8a-2642" value="10">
-                      <repeats>
-                        <repeat field="selections" scope="f4e9-2333-7b1d-a4ee" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db60-1cdf-cb5c-e4be" repeats="1" roundUp="false" />
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <entryLinks>
             <entryLink import="true" name="Spine Banks" hidden="false" id="e7e7-447e-cdf8-48e5" type="selectionEntry" targetId="932f-22c7-261a-c9a7">
               <modifiers>

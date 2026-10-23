@@ -2348,12 +2348,6 @@ _Glands that flood the creature's body with stimulants, driving it into a killin
 
 A model with adrenal glands gains Fleet (1) and Furious Charge (1), or increases an existing value of either by 1.
 
-### Bone Mace and Thresher Scythe
-
-_Massive bony tails, swung like clubs or blades at anything behind the creature._
-
-A model with a bone mace or thresher scythe tail makes additional Attacks in close combat as set by the Extra Attacks (X) rule on the tail's profile in the Bio-weapons armoury. A model may have only one tail biomorph.
-
 ### Dynamic Camouflage
 
 _Chameleonic scales that blend the creature into its surroundings._
@@ -2375,12 +2369,6 @@ _Layers of thickened chitin grown over the creature's vital organs._
 A model with a hardened carapace adds 1 to its Save, to a best of 2+. Any model with a Save worse than 2+ may take it.
 
 **Cost:** by the model's new Save: 5+ 2 points, 4+ 5 points, 3+ 10 points, 2+ 15 points per model.
-
-### Prehensile Pincer Tail
-
-_A grasping tail that pins prey for the killing blow._
-
-A model with a prehensile pincer tail makes additional Attacks in close combat as set by the Extra Attacks (X) rule on the tail's profile in the Bio-weapons armoury. A model may have only one tail biomorph.
 
 ### Regeneration
 
@@ -2459,7 +2447,7 @@ _Bio-weapons grown for creatures that hunt tanks and titans._
 
 _Extra weapons that give a creature one more attack._
 
-Tails use the Extra Attacks (X) special rule shown on their profile (see Army-wide Special Rules). Each of the other weapons here makes one additional Attack with its own profile.
+Tails are weapon options, not biomorphs: a model that takes a tail keeps its other weapons and gains the tail as an extra weapon, bought per model. Tails use the Extra Attacks (X) special rule shown on their profile (see Army-wide Special Rules), and a model may have only one tail. Each of the other weapons here makes one additional Attack with its own profile.
 
 | Weapon | Range | Str | AP | Type |
 |---|---|---|---|---|
