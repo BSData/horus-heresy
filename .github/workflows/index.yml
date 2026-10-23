@@ -15,8 +15,14 @@ jobs:
       - name: Checkout Repository Content
         uses: actions/checkout@v4
 
-      - name: Run BattleScribe Indexer
-        uses: BSData/bsdata-indexer-action@v1 # Official community indexer action
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install and Run bsdata-indexer
+        run: |
+          npx bsdata-indexer .
 
       - name: Commit and Push Updated Index
         uses: stefanzweifel/git-auto-commit-action@v5
