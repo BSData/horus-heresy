@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="129" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="3478-feaf-71ac-bc80" name="Homebrew - Tyranids" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="129" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="7478-cf16-4f88-170b" name="Tyranids for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Tyranids" />
   </publications>
@@ -2195,6 +2195,26 @@
         <infoLink name="Concussive (X)" id="e462-039a-079b-b02b" hidden="false" targetId="7ce5-1bfb-64e6-f826" type="rule">
           <modifiers>
             <modifier type="set" field="name" value="Concussive (2)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spore mine cysts" hidden="false" id="6ca8-3de3-bb7c-85d1" publicationId="7478-cf16-4f88-170b">
+      <profiles>
+        <profile name="Spore mine cysts" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5be5-5e63-9405-2c37" publicationId="7478-cf16-4f88-170b">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">Special</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">4</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">4</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Barrage, Large Blast (5"); see the Harpy's Spore Mine Cysts rule</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Barrage" id="472e-4407-f131-ed60" hidden="false" targetId="7255-b5ee-c3f4-3037" type="rule" />
+        <infoLink name="Blast" id="0dc7-be73-4f2a-dd67" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Blast (5&quot;)" />
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -7673,6 +7693,9 @@
         <rule name="Sonic Screech" id="3bd8-9418-cc0f-c353" hidden="false">
           <description>Enemy units within 12" subtract 2 from their Initiative in the Assault phase</description>
         </rule>
+        <rule name="Spore Mine Cysts" id="6d33-51bf-d793-759c" hidden="false">
+          <description>Once per turn, after the Harpy moves in your Movement phase, centre a Large Blast (5") marker on one enemy model it moved over, then scatter it D6". Each unit under the marker is hit as by the spore mine cysts profile. If no models are under the marker's final position, place D3 Spore Mines wholly under it as a new Spore Mines unit. Using the cysts counts as firing one weapon in the following Shooting phase, and the Harpy's other weapons may target a different unit</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink name="Deep Strike" id="55c0-50c6-5096-2f71" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />
@@ -7756,7 +7779,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfb3-871b-775a-91a6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Spore mine cysts" hidden="false" id="bd00-756c-3abf-c750" type="selectionEntry" targetId="a63a-5edb-141a-369f">
+            <entryLink import="true" name="Spore mine cysts" hidden="false" id="bd00-756c-3abf-c750" type="selectionEntry" targetId="6ca8-3de3-bb7c-85d1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="64ee-3482-8bdb-5183" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5be-76a4-84c7-8b8e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7814,7 +7837,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="155" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Spore mine cysts" hidden="false" id="a63a-5edb-141a-369f" publicationId="7478-cf16-4f88-170b" />
     <selectionEntry type="unit" import="true" name="Hive Crone" hidden="false" id="c31d-6f01-1f8d-56cc" publicationId="7478-cf16-4f88-170b">
       <infoLinks>
         <infoLink name="Deep Strike" id="9ffe-cd4a-f334-ce14" hidden="false" targetId="f1e1-986f-c783-ca9e" type="rule" />

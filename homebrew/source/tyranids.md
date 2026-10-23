@@ -1415,6 +1415,7 @@ _This model may be selected as a Dedicated Transport for another unit, or as a F
 - Hive Fleet (X)
 - Instinctive Behaviour (Hunt)
 - Sonic Screech: enemy units within 12" subtract 2 from their Initiative in the Assault phase
+- Spore Mine Cysts: once per turn, after the Harpy moves in your Movement phase, centre a Large Blast (5") marker on one enemy model it moved over, then scatter it D6". Each unit under the marker is hit as by the spore mine cysts profile. If no models are under the marker's final position, place D3 Spore Mines wholly under it as a new Spore Mines unit. Using the cysts counts as firing one weapon in the following Shooting phase, and the Harpy's other weapons may target a different unit†
 
 **Options**
 
@@ -2553,6 +2554,7 @@ _Heavy bio-artillery that hurls crystal shards or seed-pods that burst into stra
 | Impaler cannon | 36" | 8 | 4 | Heavy 2, Barrage |
 | Rupture cannon | 48" | 10 | 3 | Heavy 2, Sunder |
 | Shockcannon | 24" | 7 | 4 | Assault 3, Concussive (2) |
+| Spore mine cysts | Special | 4 | 4 | Assault 1, Barrage, Large Blast (5"); see the Harpy's Spore Mine Cysts rule |
 | Spore mine launcher | 48" | 4 | 4 | Heavy 1, Barrage, Large Blast (5") |
 | Stranglethorn cannon | 36" | 7 | 5 | Assault 1, Large Blast (5"), Pinning |
 | Toxic glands | 6" | 3 | – | Assault 4, Poisoned (3+) |
