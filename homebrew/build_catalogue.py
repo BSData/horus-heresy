@@ -116,6 +116,15 @@ def load_gst_rules(path=GST_FILE):
     return rules
 
 
+def load_gst_inner_rules(path=GST_FILE):
+    """Rules the game system defines inside an entry rather than as shared rules (Independent Character)."""
+    ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
+    rules = {}
+    for r in ET.parse(path).getroot().iter(ns + "rule"):
+        rules.setdefault(norm(r.get("name")), (r.get("id"), r.get("name")))
+    return rules
+
+
 def load_gst_weapons(path=GST_FILE):
     """Weapons the game system defines with their official profiles (flamer), by name."""
     ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
@@ -124,6 +133,23 @@ def load_gst_weapons(path=GST_FILE):
         if any(p.get("typeName") == "Weapon" for p in e.findall(f"{ns}profiles/{ns}profile")):
             weapons.setdefault(norm(e.get("name")), e.get("id"))
     return weapons
+
+
+def load_gst_wargear(path=GST_FILE):
+    """Wargear the game system defines (frag grenades, smoke launchers), by name."""
+    ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
+    items = {}
+    for e in ET.parse(path).getroot().find(ns + "sharedSelectionEntries"):
+        if any(p.get("typeName") == "Wargear Item" for p in e.findall(f"{ns}profiles/{ns}profile")):
+            items.setdefault(norm(e.get("name")), e.get("id"))
+    return items
+
+
+# 40k names for weapons 2.0 has under another name
+OFFICIAL_ALIASES = {"storm bolter": "combi-bolter", "boltgun": "bolter", "force stave": "force staff"}
+
+# Where a weapon is mounted is not part of its name: "Hull (Front) Mounted heavy bolter" is a heavy bolter.
+MOUNT = r"^(?:hull mounted|hull \(front\) mounted|pintle mounted|sponson mounted|turret mounted|co-axial) "
 
 
 def load_official_weapon_names(root=None):
@@ -160,7 +186,7 @@ def norm(s):
 
 def singular(word):
     w = norm(word)
-    for a, b in (("ies", "y"), ("es", ""), ("s", ""), ("z", "")):
+    for a, b in (("men", "man"), ("ies", "y"), ("es", ""), ("s", ""), ("z", "")):
         if w.endswith(a) and len(w) > (3 if a == "z" else 4):
             yield w[: -len(a)] + b
     yield w
@@ -197,7 +223,7 @@ def split_table(lines):
         if not ln.startswith("|"):
             continue
         cells = [c.strip() for c in ln.strip().strip("|").split("|")]
-        if all(re.fullmatch(r"-+", c) for c in cells):
+        if all(re.fullmatch(r":?-+:?", c) for c in cells):
             continue
         rows.append(cells)
     return rows
@@ -420,6 +446,8 @@ class Builder:
         self.local_rules = {}      # name -> id, catalogue sharedRules
         self.gst_rules = load_gst_rules()
         self.gst_weapons = load_gst_weapons()
+        self.gst_wargear = load_gst_wargear()
+        self.gst_inner_rules = load_gst_inner_rules()
         self.weapons = {}          # normalised name -> shared entry id
         self.weapon_names = {}     # normalised name -> display name
         self.upgrades = {}         # normalised name -> shared entry id (biomorphs, misc)
@@ -508,7 +536,10 @@ class Builder:
                     continue
                 for r in prows:
                     if "weapon" in r[1].lower():
+                        if norm(r[0]) in {norm(x["name"]) for x in rows}:
+                            continue  # the armoury gives its profile too
                         parts = [x.strip() for x in r[3].split(",")]
+                        parts[0] = re.sub(r"^[A-Za-z ]+:\s*", "", parts[0])  # "Beam: 24\""
                         rows.append({"name": r[0], "range": parts[0], "str": parts[1].lstrip("S"),
                                      "ap": parts[2].lstrip("AP"), "type": ", ".join(parts[3:]),
                                      "psychic_weapon": True})
@@ -1388,8 +1419,13 @@ class Builder:
                 if key.endswith(cand) or cand.endswith(key) and len(key) > 6:
                     if key == cand or key.rstrip("s") == cand.rstrip("s"):
                         return self.weapons[key], n
+        if re.match(MOUNT, t):
+            wid, _ = self.find_weapon(re.sub(MOUNT, "", t))
+            if wid:
+                return wid, n
         # a weapon that keeps its official 2.0 profile
         for cand in [t] + list(singular(t)):
+            cand = OFFICIAL_ALIASES.get(cand, cand)
             if cand in self.gst_weapons:
                 return self.gst_weapons[cand], n
         return None, n
@@ -1399,6 +1435,9 @@ class Builder:
         for cand in [t] + list(singular(t)):
             if cand in self.upgrades:
                 return self.upgrades[cand]
+        for cand in [t] + list(singular(t)):
+            if cand in self.gst_wargear and not any(c in self.upgrades for c in singular(t)):
+                return self.gst_wargear[cand]
         if t.startswith("regeneration"):
             return self.upgrades.get("regeneration")
         coded = re.sub(r"^[a-z]{2}-?\d+\w* ", "", t)  # "xv8 crisis battlesuit"
@@ -1589,7 +1628,24 @@ class Builder:
                 wargear += [a, b]
             else:
                 wargear.append(line)
-        ds["wargear"] = wargear
+        ds["wargear"] = []
+        for line in wargear:
+            g = re.fullmatch(r"(\w+) and (\w+) grenades", line, re.I)
+            ds["wargear"] += [f"{g.group(1)} grenades", f"{g.group(2).capitalize()} grenades"] if g else [line]
+        # "Laspistol and close combat weapon (Sergeant only)": that model's weapons in place of the others'
+        def only_model(x):  # "Sergeant" is the Veteran Sergeant
+            return model_for(x, exact=True) or next((n for n in models if norm(n).endswith(" " + norm(x))), None)
+        only = [(l, re.fullmatch(r"(.+?) \((.+?) only\)", l)) for l in ds["wargear"] if ": " not in l]
+        only = [(l, m) for l, m in only if m and only_model(m.group(2))]
+        if only:
+            common = [l for l in ds["wargear"] if ": " not in l and l not in [x for x, _ in only]]
+            gear = [c for c in common if not self.find_weapon(c)[0] or "grenade" in norm(c)]
+            lines = []
+            for l, m in only:
+                lines.append(f"{only_model(m.group(2))}: " + ", ".join(gear + re.split(r" and ", m.group(1))))
+            others = [n for n in models if not any(only_model(m.group(2)) == n for _, m in only)]
+            lines += [f"{n}: " + ", ".join(common) for n in others]
+            ds["wargear"] = [l for l in ds["wargear"] if ": " in l] + lines
         # "Every model: pulse carbine, markerlight, ..., unless noted below"
         every = next((l for l in ds["wargear"] if l.startswith("Every model: ")), None)
         if every:
@@ -2361,6 +2417,8 @@ class Builder:
                     alt_list = self.alternatives(nm, ds)
                     alts = [a for a, _, _ in alt_list] if alt_list else None
                     alt_cost = {a: ac for a, _, ac in alt_list} if alt_list else {}
+                    official = set(self.gst_weapons.values())  # only official picks need their own name
+                    alt_label = {a: lb for a, lb, _ in alt_list if lb and a in official} if alt_list else {}
                     targets = alts or [self.option_target(nm, key)[0]]
                     bio = self.is_biomorph(nm)
                     holder = ge
@@ -2379,7 +2437,7 @@ class Builder:
                         else:
                             self.per_model_limit(holder, okey, uid, m["id"])
                     for tid in targets:
-                        e = self.link(child(holder, "entryLinks"), tid, re.sub(r"\s*\(\d.*\)$", "", nm), gkey + nm + tid)
+                        e = self.link(child(holder, "entryLinks"), tid, alt_label.get(tid) or re.sub(r"\s*\(\d.*\)$", "", nm), gkey + nm + tid)
                         if bio:
                             if not alts:
                                 add_constraint(e, "max", 1, e.get("id") + "max")
@@ -2424,7 +2482,14 @@ class Builder:
         'Kombi-weapon (rokkit or skorcha)', 'One Orky Artefact'."""
         alts = self.either_or(name)
         if alts:
-            return [(a, None, None) for a in alts]
+            # official weapons have no local name: "Pintle Mounted storm bolter or heavy stubber" names each pick
+            left, _, right = name.partition(" or ")
+            labels = left.split(", ") + [right]
+            mount = re.match(MOUNT, norm(labels[0]))
+            if mount:
+                labels = [labels[0]] + [x if re.match(MOUNT, norm(x)) else labels[0][:mount.end()] + x for x in labels[1:]]
+            local = set(self.weapons.values())
+            return [(a, None if a in local else lbl[0].upper() + lbl[1:], None) for a, lbl in zip(alts, labels)]
         km = re.match(r"(\w+)-weapon(?: \((.+)\))?$", name.strip(), re.I)
         if km:
             prefix = norm(km.group(1)) + "-"
@@ -2482,6 +2547,11 @@ class Builder:
         left, sep, right = name.partition(" or ")
         if not sep:
             return None
+        if ", " in left:
+            # "Flamer, grenade launcher or sniper rifle": one pick of three
+            parts = left.split(", ") + [right]
+            wids = [self.find_weapon(x)[0] for x in parts]
+            return wids if all(wids) and len(set(wids)) == len(wids) else None
         rwid, _ = self.find_weapon(right)
         tail = right.split()[-1]
         lwid, _ = self.find_weapon(left)
@@ -2589,6 +2659,11 @@ class Builder:
                 first = re.split(r"[;:]", line)[0]
                 title = first if len(first.split()) <= 5 else "Note"
             add_rule(unit, title, line, uid + line[:30])
+            return
+        inner = self.gst_inner_rules.get(norm(line))
+        if inner:  # a datasheet rule the game system defines inside one of its entries
+            el(child(unit, "infoLinks"), "infoLink", name=inner[1], id=make_id(uid, "info", line), hidden=False,
+               targetId=inner[0], type="rule")
             return
         if True:
             self.problems.append(f"{ds['name']}: rule '{line}' is not defined in the doc")

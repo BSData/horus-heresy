@@ -14,6 +14,7 @@ python3 homebrew/build_catalogue.py homebrew/source/tyranids.md "Homebrew - Tyra
 python3 homebrew/build_catalogue.py homebrew/source/orks.md "Homebrew - Orks.cat"
 python3 homebrew/build_catalogue.py homebrew/source/necrons.md "Homebrew - Necrons.cat"
 python3 homebrew/build_catalogue.py homebrew/source/tau.md "Homebrew - T'au Empire.cat"
+python3 homebrew/build_catalogue.py homebrew/source/astra-militarum.md "Homebrew - Astra Militarum.cat"
 ```
 
 Each rebuild that changes the catalogue raises its `revision`, so BattleScribe and
@@ -71,6 +72,12 @@ loading. The script prints anything in the doc it could not place.
 - Weapons that keep their official 2.0 profile (the flamer) link to the game system's entry.
   A T'au weapon that shares its name with an official weapon keeps the doc's profile and is
   named "Tau X" (Tau Close combat weapon, Tau Neutron blaster).
+
+- Astra Militarum is not Xenos: the army may be Loyalist or Traitor. Weapons that keep their
+  official 2.0 profile link to the game system under its 2.0 name (a storm bolter is the combi-bolter,
+  a boltgun the bolter, a force stave the force staff), and a weapon's mount is not part of its name
+  ("Hull (Front) Mounted heavy bolter" is the official heavy bolter). Wargear marked "(Sergeant only)"
+  replaces that model's weapons, and "Flamer, grenade launcher or sniper rifle" is one pick of three.
 
 ## Not enforced
 
