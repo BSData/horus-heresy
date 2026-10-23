@@ -12,6 +12,7 @@ working. Anything the parser cannot place is listed on stderr.
 """
 import hashlib
 import itertools
+import os
 import re
 import sys
 import xml.etree.ElementTree as ET
@@ -68,6 +69,7 @@ SLOTS = {
     "Heavy Support": [("7031-469a-1aeb-eab0", "Heavy Support:", True)],
     "Lords of War": [("c658-dc6b-727b-c488", "Lords of War:", True),
                      ("2eaf-32d6-9d1d-d906", "LoW & Primarchs (25% Limit)", False)],
+    "Fortifications": [("a24f-12d8-36c1-f477", "Fortification:", True)],
 }
 UNIT_CATEGORY = ("36c3-e85e-97cc-c503", "Unit:")
 ALLEGIANCE_CATEGORY = ("e90d-e5a8-f42d-da84", "Allegiance:")
@@ -114,8 +116,33 @@ def load_gst_rules(path=GST_FILE):
     return rules
 
 
+def load_gst_weapons(path=GST_FILE):
+    """Weapons the game system defines with their official profiles (flamer), by name."""
+    ns = "{http://www.battlescribe.net/schema/gameSystemSchema}"
+    weapons = {}
+    for e in ET.parse(path).getroot().find(ns + "sharedSelectionEntries"):
+        if any(p.get("typeName") == "Weapon" for p in e.findall(f"{ns}profiles/{ns}profile")):
+            weapons.setdefault(norm(e.get("name")), e.get("id"))
+    return weapons
+
+
+def load_official_weapon_names(root=None):
+    """Every weapon profile name in the game system and the official catalogues."""
+    root = root or os.path.dirname(GST_FILE) or "."
+    names = set()
+    for f in os.listdir(root):
+        if f.endswith((".cat", ".gst")) and not f.startswith("Homebrew"):
+            for m in re.finditer(r'<profile [^>]*name="([^"]+)"[^>]*typeName="Weapon"', open(os.path.join(root, f), encoding="utf-8").read()):
+                names.add(norm(m.group(1).replace("&apos;", "'")))
+    return names
+
+
 # Weapon types are not special rules.
 WEAPON_TYPES = {"Melee", "Assault", "Heavy", "Pistol", "Rapid Fire", "Salvo", "Psychic"}
+
+# Factions whose own weapons share a name with an official 2.0 weapon: theirs keep the
+# doc's profile and take this prefix ("Tau Plasma rifle").
+WEAPON_PREFIX = {"T'au Empire": "Tau"}
 
 NUMBER_WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6}
 
@@ -154,6 +181,10 @@ def forms(text):
     return out
 
 
+def singular_name(text):
+    return re.sub(r"s$", "", text.strip())
+
+
 def strip_md(s):
     return s.replace("**", "").replace("_", "").strip()
 
@@ -172,8 +203,38 @@ def split_table(lines):
     return rows
 
 
+def normalise_headings(text):
+    """Docs that put their datasheets one heading level deeper ('#### Commander — 85 pts')
+    are promoted a level, so slots and datasheets read like the other docs. Sections under
+    '## Wargear' keep 'Wargear' in their name, so they are still read as wargear."""
+    lines = text.splitlines()
+    if not any(re.match(r"#### .+ — \d+ pts", l) for l in lines):
+        return text
+    out, parent, stack = [], None, []
+    for ln in lines:
+        m = re.match(r"(#{2,6}) (.+)", ln)
+        if m:  # '### Armour' then '##### Combat Armour': no level skipped
+            level = len(m.group(1))
+            while stack and stack[-1][0] >= level:
+                stack.pop()
+            new = min(level, stack[-1][1] + 1) if stack else level
+            stack.append((level, new))
+            ln = "#" * new + " " + m.group(2)
+            m = re.match(r"(#{2,6}) (.+)", ln)
+        if m and len(m.group(1)) == 2:
+            parent = m.group(2).strip()
+        if m and len(m.group(1)) >= 3:
+            title = m.group(2).strip()
+            if len(m.group(1)) == 3 and parent == "Wargear" and "Armoury" not in title and "Wargear" not in title:
+                title += " Wargear"
+            ln = "#" * (len(m.group(1)) - 1) + " " + title
+        out.append(ln)
+    return "\n".join(out)
+
+
 def parse_doc(text):
     """Split the doc into its ## sections, then ### sub-sections."""
+    text = normalise_headings(text)
     sections = []
     cur = None
     sub = None
@@ -197,7 +258,9 @@ def blocks(lines):
     out = {"_pre": []}
     key = "_pre"
     for ln in lines:
-        m = re.fullmatch(r"\*\*([A-Za-z ]+)\*\*", ln.strip())
+        m = re.fullmatch(r"\*\*([A-Za-z ]+)\*\*", ln.strip()) or re.fullmatch(
+            r"(Unit Composition|Wargear|Unit Type|Special Rules|Options|Dedicated Transport|Transport|Access Points)",
+            ln.strip())
         if m:
             key = m.group(1)
             out[key] = []
@@ -214,8 +277,12 @@ def parse_datasheet(title, lines, slot):
     m = re.fullmatch(r"(.+?) — (\d+) pts", title)
     if not m:
         return None
+    name = m.group(1).strip()
+    km = re.fullmatch(r"(.+?) \((HQ|Elites|Troops|Fast Attack|Heavy Support|Lords of War)\)", name)
+    if km:
+        name, slot = km.group(1), km.group(2)
     b = blocks(lines)
-    ds = {"name": m.group(1).strip(), "points": int(m.group(2)), "slot": slot,
+    ds = {"name": name, "points": int(m.group(2)), "slot": slot,
           "notes": [strip_md(l) for l in b["_pre"] if l.startswith("_")]}
     stat_rows = split_table(b["_pre"])
     ds["profiles"] = []
@@ -352,6 +419,7 @@ class Builder:
         el(pubs, "publication", id=self.pub_id, name=doc_name, shortName=f"HB - {faction}")
         self.local_rules = {}      # name -> id, catalogue sharedRules
         self.gst_rules = load_gst_rules()
+        self.gst_weapons = load_gst_weapons()
         self.weapons = {}          # normalised name -> shared entry id
         self.weapon_names = {}     # normalised name -> display name
         self.upgrades = {}         # normalised name -> shared entry id (biomorphs, misc)
@@ -363,6 +431,11 @@ class Builder:
         self.shared_entries = ET.Element("sharedSelectionEntries")
         self.shared_rules = ET.Element("sharedRules")
 
+    def official_weapon_names(self):
+        if not hasattr(self, "_official"):
+            self._official = load_official_weapon_names()
+        return self._official
+
     def section(self, title):
         for s in self.sections:
             if s["title"].startswith(title):
@@ -373,6 +446,8 @@ class Builder:
 
     def define_rule(self, name, text):
         rid = make_id("rule", self.faction, name)
+        if self.shared_rules.find(f"rule[@id='{rid}']") is not None:
+            return rid  # defined twice in the doc (Sept (X))
         r = el(self.shared_rules, "rule", name=name, id=rid, hidden=False, publicationId=self.pub_id)
         d = el(r, "description")
         d.text = text
@@ -407,14 +482,14 @@ class Builder:
     # ---- weapons
 
     def wargear_sections(self):
-        return [s for s in self.sections if s["title"] == "Biomorphs" or s["title"].endswith("Wargear")]
+        return [s for s in self.sections if s["title"] == "Biomorphs" or "Wargear" in s["title"]]
 
     def build_weapons(self):
         rows, aux = [], []
-        arm = next((s for s in self.sections if "Armoury" in s["title"]), None)
-        if arm:
-            w, aux = parse_weapon_tables(arm)
+        for arm in [s for s in self.sections if "Armoury" in s["title"]]:
+            w, a = parse_weapon_tables(arm)
             rows += w
+            aux += a
         for ws in self.wargear_sections():
             rows += parse_weapon_tables(ws)[0]  # e.g. the tankhammer, listed as wargear
         psy = self.section("Psychic Discipline")
@@ -458,6 +533,10 @@ class Builder:
             grouped.setdefault(norm(parent), (parent, []))[1].append(dict(r, profile=pname))
         self.psychic_weapons = []
         for key, (name, profiles) in grouped.items():
+            prefix = WEAPON_PREFIX.get(self.faction)
+            if prefix and key in self.official_weapon_names():
+                profiles = [dict(p, profile=f"{prefix} {p['profile']}") for p in profiles]
+                name = f"{prefix} {name}"
             eid = make_id("weapon", self.faction, name)
             e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
                    hidden=False, id=eid, publicationId=self.pub_id)
@@ -510,6 +589,8 @@ class Builder:
 
     def build_upgrades(self):
         self.artefacts = []
+        self.artefact_bearers = []
+        self.vehicle_systems = []
         self.save_change = {}  # wargear id -> the Armour Save it confers
         self.attendant_wargear = {}  # an attendant model's own kit, from its wargear entry
         self.attendant_types = {}
@@ -548,8 +629,14 @@ class Builder:
                 if kind:
                     self.attendant_types[norm(name)] = kind[0].partition(": ")[2] or kind[0]
                 for header, arows in tables:
-                    if header[0] in ("Artefact", "Relic"):
+                    if header[0] in ("Artefact", "Relic", "Signature system"):
                         self.build_artefacts(header, arows, text)
+                        who = re.search(r"One (.+?) \(not a Unique character\) may take", text or "")
+                        if who:
+                            self.artefact_bearers = [w.strip() for w in re.split(r",| or ", who.group(1)) if w.strip()]
+                        text = None
+                    elif header[0] == "Vehicle battle system":
+                        self.build_vehicle_systems(arows, text)
                         text = None
                 if text is None:
                     continue
@@ -605,9 +692,9 @@ class Builder:
         """'### Powers of the C'tan' with a Power | Effect table: abilities datasheets name."""
         self.special_powers = {}
         for sec in self.sections:
-            for sub in sec["subs"]:
+            for sub in [{"title": sec["title"], "lines": sec["lines"]}] + sec["subs"]:
                 for header, rows in section_tables({"lines": sub["lines"], "subs": []}):
-                    if header[:2] != ["Power", "Effect"]:
+                    if header[:2] not in (["Power", "Effect"], ["Invocation", "Effect"]):
                         continue
                     intro = " ".join(paragraphs(sub["lines"]))
                     for r in rows:
@@ -624,6 +711,12 @@ class Builder:
             return
         me = unit.find("selectionEntries/selectionEntry")
         for line in ds["rules"]:
+            # "Ethereal Invocations": the datasheet names the whole table
+            whole = [v for v in self.special_powers.values() if norm(v[2]) == norm(re.sub(r"\s*\(.*\)$", "", line))]
+            for pname, eid, _ in whole:
+                self.link(child(me, "entryLinks"), eid, pname, me.get("id"), count=1)
+            if whole:
+                continue
             choice = re.search(r"knows (\w+) (Powers of [^,]+?) of your choice", line)
             if choice:
                 n = NUMBER_WORDS.get(choice.group(1).lower(), 1)
@@ -641,6 +734,359 @@ class Builder:
                 hit = self.special_powers.get(norm(part.strip()))
                 if hit:
                     self.link(child(me, "entryLinks"), hit[1], hit[0], me.get("id"), count=1)
+
+    def build_suit_armoury(self):
+        """'Battlesuit Armoury': Weapon | Cost and Support system | Effect | Cost tables. Options
+        that cost 'varies' or 'See Battlesuit Armoury' choose from this list."""
+        self.suit_armoury = []
+        for sec in [s for s in self.sections if "Armoury" in s["title"]]:
+            for header, rows in section_tables(sec):
+                if header == ["Weapon", "Cost"]:
+                    for r in rows:
+                        wid = self.find_weapon(r[0])[0]
+                        if wid:
+                            self.suit_armoury.append((r[0], wid, self.cost(r[1]), "weapon"))
+                        else:
+                            self.problems.append(f"Battlesuit Armoury: no profile for '{r[0]}'")
+                elif header[0] == "Support system":
+                    for r in rows:
+                        name = r[0].rstrip("*").strip()
+                        eid = make_id("system", self.faction, name)
+                        e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True,
+                               name=name, hidden=False, id=eid, publicationId=self.pub_id)
+                        add_text_profile(e, WARGEAR_PROFILE, name, r[1], eid)
+                        save = re.search(r"(\d)\+ Armour Save", r[1])
+                        if save:
+                            self.save_change[eid] = int(save.group(1))
+                        self.upgrades.setdefault(norm(re.sub(r"\s*\(.*\)$", "", name)), eid)
+                        self.suit_armoury.append((name, eid, self.cost(r[2] if len(r) > 2 else ""), "system"))
+
+    def is_suit_armoury(self, name, cost):
+        n = norm(name)
+        return bool(getattr(self, "suit_armoury", None)) and (
+            "varies" in cost.lower() or "battlesuit armoury" in cost.lower()
+            or n.startswith(("support system", "battlesuit weapons", "one support system")))
+
+    def suit_armoury_group(self, parent, key, title, systems_only=False):
+        """A group of every Battlesuit Armoury weapon and system, each at its cost."""
+        g = el(child(parent, "selectionEntryGroups"), "selectionEntryGroup", name=title, hidden=False, id=key)
+        commander = getattr(self, "_suit_commander", False)
+        for name, eid, cost, kind in self.suit_armoury:
+            if systems_only and kind != "system":
+                continue
+            if "Commanders only" in name and not commander:
+                continue
+            add_cost(self.link(child(g, "entryLinks"), eid, name, key), cost)
+        return g
+
+    def add_listed_options(self):
+        """A 'Unit | Option | Cost' table in the wargear: each row becomes an option on the
+        datasheets it names, worded the way datasheets word their own options."""
+        for sec in self.wargear_sections():
+            for header, rows in section_tables(sec):
+                if header[:2] != ["Unit", "Option"]:
+                    continue
+                for r in rows:
+                    opt, cost = r[1], r[2] if len(r) > 2 else ""
+                    for uname in [u.strip() for u in r[0].split(",")]:
+                        ds = next((d for d in self.datasheets if norm(d["name"]) == norm(uname)), None) or \
+                            next((d for d in self.datasheets if norm(d["name"]).endswith(" " + norm(uname))), None)
+                        if not ds:
+                            self.problems.append(f"Unit Options: no datasheet '{uname}'")
+                            continue
+                        ds["options"] += self.option_rows(ds["name"], opt, cost)
+
+    @staticmethod
+    def option_rows(unit, opt, cost):
+        def row(h, *items):
+            return [[f"**{h}:**", ""]] + [[f"– {i[0].upper() + i[1:]}", c] for i, c in items]
+        m = re.match(r"(Any \w+|The [\w'-]+) may take (?:an? |one )?(.+)$", opt)
+        if m and "support system" in m.group(2):
+            return row(f"{m.group(1)} may take up to one of the following", ("Support systems", cost))
+        if m:
+            return row(f"{m.group(1)} may take", (m.group(2), cost))
+        m = re.match(r"May exchange (?:its|his) (.+?) for (.+)$", opt)
+        if m:
+            return row(f"The {unit} may exchange its {m.group(1)} for", (m.group(2), cost))
+        m = re.match(r"The ([\w'-]+(?: [\w'-]+)?) may take (?:an? )?(.+?) instead of (?:his|its) (.+)$", opt)
+        if m:
+            return row(f"The {m.group(1)} may exchange his {m.group(3)} for", (m.group(2), cost))
+        m = re.match(r"Up to (\w+) support systems?$", opt)
+        if m:
+            return row(f"The {unit} may take up to {m.group(1)} of the following", ("Support systems", cost))
+        # "Up to 10 Kroot Hounds and up to 3 Krootox Riders may join the unit" at "+6 / +35"
+        parts = re.findall(r"[Uu]p to (\d+) ([\w' -]+?)(?= and |\s+may join|$)", opt)
+        costs = [c.strip() for c in cost.split("/")]
+        if len(parts) > 1 and len(costs) == len(parts):
+            return row(f"The {unit} may take", *[(f"Up to {n} additional {w}", c + (" points each" if "point" not in c else ""))
+                                                 for (n, w), c in zip(parts, costs)])
+        return row(f"The {unit} may take", (re.sub(r"^An? ", "", opt), cost))
+
+    # ---- drones
+
+    def build_drones(self):
+        """The Drones section: 'Drone | Equipment | Effect | Cost' and the drone profiles."""
+        self.drones = {}
+        sec = next((s for s in self.sections if s["title"] == "Drones"), None)
+        if not sec:
+            return
+        profiles = {}
+        for header, rows in section_tables(sec):
+            if header[:2] == ["Drone", "Equipment"]:
+                for r in rows:
+                    self.drones[norm(r[0])] = {"name": r[0], "equipment": [e.strip() for e in r[1].split(", ")],
+                                               "effect": r[2], "cost": self.cost(r[3])}
+            elif "WS" in header:
+                for r in rows:
+                    values = dict(zip(header[1:], r[1:]))
+                    profiles[norm(r[0])] = {"name": r[0], "stats": r[1:11], "base": values.get("Base", ""),
+                                            "values": values, "kind": "unit"}
+        for k, d in self.drones.items():
+            d["profile"] = profiles.get(k)
+            # equipment that is neither a weapon nor known wargear carries the drone's effect
+            for item in d["equipment"]:
+                if not self.find_weapon(item)[0] and not self.find_upgrade(item):
+                    text = d["effect"] if d["effect"] not in ("–", "-", "") else item
+                    eid = self.generic_upgrade(f"{item[0].upper() + item[1:]} ({text})", k)
+                    self.upgrades.setdefault(norm(item), eid)
+
+    def drone_names(self, text):
+        """'Gun, Marker or Shield Drones' -> the drone table names."""
+        text = re.sub(r"^(?:up to \w+ (?:additional )?|\d+ )", "", text.strip(), flags=re.I)
+        text = re.sub(r"^drones?(?:,)? (?:chosen )?from:? ", "", text, flags=re.I)
+        text = re.sub(r"\s*\(.*?\)", "", text)
+        names = []
+        for part in re.split(r", | or | and ", text):
+            part = re.sub(r"\bDrones?$", "", part.strip()).strip()
+            d = self.drones.get(norm(part + " Drone"))
+            if not d:
+                return None
+            names.append(d["name"])
+        return names
+
+    def prepare_drones(self, ds):
+        """Give a datasheet the drones it names: profiles, kit and types from the Drones section
+        for its fixed drones, and drone groups for the drones its options let it buy."""
+        if not getattr(self, "drones", None):
+            return []
+        specs = []
+        comp = []
+        for line in ds["composition"]:
+            m = re.match(r"(\d+) drones, chosen from (.+)$", line)
+            if m and self.drone_names(m.group(2)):
+                specs.append({"types": self.drone_names(m.group(2)), "min": int(m.group(1)),
+                              "max": int(m.group(1)), "chosen": True})
+                continue
+            parts = re.split(r" and (?=\d)", re.sub(r"\s*\((?:free|use .*?)\)$", "", line))
+            for part in parts:
+                pm = re.match(r"(\d+) (.+?)s?$", part)
+                d = self.drones.get(norm(pm.group(2))) if pm else None
+                if d:
+                    self.give_drone(ds, d)
+                comp.append(part)
+        ds["composition"] = comp
+        rows, keep, header = ds["options"], [], None
+        for row in rows:
+            label = strip_md(row[0]).rstrip(":")
+            cost = row[1] if len(row) > 1 else ""
+            if not row[0].startswith(("–", "-")):
+                header = (label, len(keep))
+                keep.append(row)
+                continue
+            item = label.lstrip("– ").strip()
+            names = self.drone_names(item) if "drone cost" in cost.lower() else None
+            if not names:
+                keep.append(row)
+                continue
+            hl = header[0] if header else ""
+            spec = {"types": names, "min": 0, "max": self.count_word(item) if re.match(r"up to", item, re.I)
+                    else (self.count_word(hl.split("may take")[-1]) if "drones from" in hl else len(names) == 1 and 1),
+                    "each": "one each of" in hl,
+                    "per_suit": hl.lower().startswith("for each battlesuit") or hl.startswith("Any ")}
+            if "difference in drone costs" in cost.lower():
+                spec["swap"] = True
+            chosen = next((sp for sp in specs if sp.get("chosen") and set(sp["types"]) == set(names)), None)
+            if chosen and "additional" in item:
+                chosen["max"] += spec["max"] or 0
+            elif spec["each"] and specs and specs[-1].get("each"):
+                specs[-1]["types"] += names
+            else:
+                specs.append(spec)
+        # drop headers whose rows were all drones
+        ds["options"] = [r for i, r in enumerate(keep)
+                         if r[0].startswith(("–", "-")) or (i + 1 < len(keep) and keep[i + 1][0].startswith(("–", "-")))
+                         or not r[0].startswith("**")]
+        for row in rows:
+            if "difference in drone costs" in (row[1] if len(row) > 1 else "").lower():
+                spec = {"types": self.drone_names(strip_md(row[0]).lstrip("– ")), "swap": True}
+                specs = [sp for sp in specs if not sp.get("swap")] + [spec]
+        for sp in specs:
+            for n in sp["types"]:
+                self.give_drone(ds, self.drones[norm(n)], fixed=False)
+        # "The Devilfish may exchange its two Gun Drones for": the drones go if it does
+        swaps = []
+        keep, cur = [], None
+        for row in ds["options"]:
+            hm = re.match(r"The (.+?) may exchange its (\w+) ([\w-]+ Drones) for", strip_md(row[0]))
+            if hm:
+                cur = {"drones_off": singular_name(hm.group(3)), "holder": hm.group(1), "items": []}
+                swaps.append(cur)
+                continue
+            if cur is not None and row[0].startswith(("–", "-")):
+                cur["items"].append((strip_md(row[0]).lstrip("– ").strip(), row[1] if len(row) > 1 else ""))
+                continue
+            cur = None
+            keep.append(row)
+        ds["options"] = keep
+        return specs + swaps
+
+    def give_drone(self, ds, d, fixed=True):
+        """Add a drone's profile, kit and unit type to a datasheet, unless it has its own."""
+        name = d["name"]
+        have = next((p for p in ds["profiles"] if norm(p["name"]) == norm(name)), None)
+        if have and have.get("kind", "unit") == "unit":
+            return
+        prof = dict(d["profile"], name=name)
+        if have:  # a Gun Drone row in the Devilfish's vehicle table
+            ds["profiles"][ds["profiles"].index(have)] = prof
+        else:
+            ds["profiles"].append(prof)
+        if not fixed:
+            ds.setdefault("bought_drones", []).append(name)
+        if not any(forms(l.partition(": ")[0]) & forms(name) for l in ds["wargear"] if ": " in l):
+            ds["wargear"].append(f"{name}: " + ", ".join(d["equipment"]))
+        if not any(forms(l.partition(": ")[0]) & forms(name) for l in ds["types"] if ": " in l):
+            typ = next((l.partition(": ")[2] for l in ds["types"] if norm(l.partition(": ")[0]) == "drones"),
+                       "Infantry (Drone)")
+            if ds["types"] and ": " not in ds["types"][0]:
+                ds["types"][0] = f"{ds['name']}: {ds['types'][0]}" if len(ds["profiles"]) else ds["types"][0]
+            ds["types"].append(f"{name}: {typ}")
+
+    def apply_drone_specs(self, ds, unit, uid, models, specs):
+        """Drone groups after the model entries: a group per option, its drones bought as models."""
+        ses = unit.find("selectionEntries")
+        suits = [m["id"] for m in models.values() if m["min"] > 0 and "Drone" not in m["types"]]
+        for i, sp in enumerate(specs):
+            if "drones_off" in sp:
+                drone = models.get(sp["drones_off"])
+                holder = next((m for n, m in models.items() if forms(n) & forms(sp["holder"])), None)
+                if not drone or not holder:
+                    self.problems.append(f"{ds['name']}: drone exchange '{sp['holder']}'")
+                    continue
+                he = ses.find(f"selectionEntry[@id='{holder['id']}']")
+                gkey = make_id(uid, "drone swap", str(i))
+                g = el(child(he, "selectionEntryGroups"), "selectionEntryGroup",
+                       name=f"Exchange {sp['drones_off']}s", hidden=False, id=gkey)
+                add_constraint(g, "max", 1, gkey + "max")
+                targets = []
+                for name, cost in sp["items"]:
+                    target, n, _ = self.option_target(name, gkey)
+                    e = self.link(child(g, "entryLinks"), target, name, gkey, count=n if n > 1 else None)
+                    add_cost(e, self.cost(cost))
+                    targets.append(target)
+                de = ses.find(f"selectionEntry[@id='{drone['id']}']")
+                mods = child(de, "modifiers")
+                for c in de.find("constraints"):
+                    mod = el(mods, "modifier", type="set", field=c.get("id"), value=0)
+                    cg = el(el(el(mod, "conditionGroups"), "conditionGroup", type="or"), "conditions")
+                    for t in targets:
+                        el(cg, "condition", type="atLeast", value=1, field="selections", scope=uid,
+                           childId=t, shared=True, includeChildSelections=True, includeChildForces=False)
+                continue
+            if sp.get("swap"):
+                # "may exchange any of its Gun Drones for Marker, Shield or Missile Drones"
+                base = next((m for m in models.values() if m["min"] > 0 and "Drone" in m["types"]), None)
+                for n in sp["types"]:
+                    m = models[n]
+                    me = ses.find(f"selectionEntry[@id='{m['id']}']")
+                    me.find("constraints/constraint[@type='max']").set("value", str(base["min"]))
+                    me.find("costs/cost").set("value", str(float(self.drones[norm(n)]["cost"] - self.drones[norm(base['profile']['name'])]["cost"])))
+                    bm = ses.find(f"selectionEntry[@id='{base['id']}']")
+                    for c in bm.find("constraints"):
+                        mod = el(child(bm, "modifiers"), "modifier", type="decrement", field=c.get("id"), value=1)
+                        el(el(mod, "repeats"), "repeat", field="selections", scope=uid, value=1, percentValue=False,
+                           shared=True, includeChildSelections=True, includeChildForces=False,
+                           childId=m["id"], repeats=1, roundUp=False)
+                continue
+            gkey = make_id(uid, "drones", str(i))
+            g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name="Drones", hidden=False, id=gkey)
+            gses = el(g, "selectionEntries")
+            for n in sp["types"]:
+                m = models[n]
+                me = ses.find(f"selectionEntry[@id='{m['id']}']")
+                ses.remove(me)
+                gses.append(me)
+                me.find("costs/cost").set("value", str(float(self.drones[norm(n)]["cost"])))
+                me.find("constraints/constraint[@type='max']").set("value", str(1 if sp.get("each") else (sp["max"] or 1)))
+            if sp.get("each"):
+                continue
+            if sp["min"]:
+                add_constraint(g, "min", sp["min"], gkey + "min")
+            if sp.get("per_suit"):
+                # "For each battlesuit, the unit may take up to two drones"
+                c = add_constraint(g, "max", 0, gkey + "max")
+                mod = el(el(g, "modifiers"), "modifier", type="increment", field=make_id(gkey + "max", "max"),
+                         value=sp["max"])
+                reps = el(mod, "repeats")
+                for sid in suits:
+                    el(reps, "repeat", field="selections", scope=uid, value=1, percentValue=False, shared=True,
+                       includeChildSelections=True, includeChildForces=False, childId=sid, repeats=1, roundUp=False)
+                for me in gses:
+                    me.find("constraints/constraint[@type='max']").set("value", "-1")
+            elif sp["max"]:
+                add_constraint(g, "max", sp["max"], gkey + "max")
+
+    def build_vehicle_systems(self, rows, text):
+        """'Any T'au vehicle that is not a Flyer may take any of the following, each once'."""
+        self.vehicle_systems_no_flyers = "not a Flyer" in (text or "")
+        for r in rows:
+            name, effect, cost = r[0], r[1], r[2] if len(r) > 2 else ""
+            wid = self.weapons.get(norm(name))
+            eid = make_id("vehicle system", self.faction, name)
+            e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
+                   hidden=False, id=eid, publicationId=self.pub_id)
+            add_text_profile(e, WARGEAR_PROFILE, name, effect, eid)
+            if wid:
+                self.link(child(e, "entryLinks"), wid, name, eid, count=1)
+            up_to = re.search(r"up to (\w+) per", effect)
+            self.vehicle_systems.append((name, eid, self.cost(cost), NUMBER_WORDS.get(up_to.group(1), 1) if up_to else 1))
+
+    def drop_vehicle_system_options(self, ds):
+        """A vehicle that gets the Vehicle Battle Systems does not list them again from its own
+        Options (the Devilfish's seeker missiles and disruption pod)."""
+        if not self.vehicle_systems or not ds["types"]:
+            return
+        main = ds["types"][0].partition(": ")[2] or ds["types"][0]
+        if not re.search(r"\bVehicle\b", main) or (self.vehicle_systems_no_flyers and "Flyer" in main):
+            return
+        names = {norm(v[0]) for v in self.vehicle_systems}
+        def covered(label):
+            t = norm(re.sub(r"\s*\(.*\)$", "", re.sub(r"^– ?(Up to \w+ )?", "", strip_md(label))))
+            return any(c in names for c in [t] + list(singular(t)))
+        rows = [r for r in ds["options"] if not (r[0].startswith(("–", "-")) and covered(r[0]))]
+        ds["options"] = [r for i, r in enumerate(rows) if r[0].startswith(("–", "-")) or not r[0].startswith("**")
+                         or (i + 1 < len(rows) and rows[i + 1][0].startswith(("–", "-")))]
+
+    def add_unit_extras(self, ds, unit, models):
+        """Signature systems for the bearers their table names; vehicle battle systems."""
+        me = unit.find("selectionEntries/selectionEntry")
+        m0 = next(iter(models.values()))
+        unique = "Unique" in m0["types"]
+        if self.artefacts and self.artefact_bearers and not unique and \
+                any(norm(ds["name"]) == norm(b) for b in self.artefact_bearers):
+            gkey = make_id(me.get("id"), "signature")
+            g = el(child(me, "selectionEntryGroups"), "selectionEntryGroup", name="Signature System",
+                   hidden=False, id=gkey)
+            add_constraint(g, "max", 1, gkey + "max")
+            for aname, eid, cost in self.artefacts:
+                add_cost(self.link(child(g, "entryLinks"), eid, aname, gkey, maximum=1), cost)
+        if self.vehicle_systems and re.search(r"\bVehicle\b", m0["types"]) and \
+                not (self.vehicle_systems_no_flyers and "Flyer" in m0["types"]):
+            gkey = make_id(me.get("id"), "vehicle systems")
+            g = el(child(me, "selectionEntryGroups"), "selectionEntryGroup", name="Vehicle Battle Systems",
+                   hidden=False, id=gkey)
+            for vname, eid, cost, most in self.vehicle_systems:
+                add_cost(self.link(child(g, "entryLinks"), eid, vname, gkey, maximum=most), cost)
 
     def build_artefacts(self, header, rows, text):
         """A table of artefacts (Artefact | Who | Effect | Cost): one of each per army."""
@@ -761,6 +1207,18 @@ class Builder:
         sec = self.section("Army-wide Special Rules")
         for name, text in self.rule_paragraphs(sec["lines"] if sec else []):
             self.define_rule(name, text)
+        # Rules written as headings ("### Jet Packs" under "## Special Rules"), unit types
+        # ("### Battlesuits (type)") and paragraph rules in sub-sections ("Drone Rules")
+        for s in self.sections:
+            if s["title"] in ("Special Rules", "Types"):
+                for sub in s["subs"]:
+                    name = re.sub(r"\s*\((?:sub-)?type\)$", "", sub["title"])
+                    if norm(name) not in self.local_rules or name.endswith("(X)"):
+                        self.define_rule(name, " ".join(paragraphs(sub["lines"])))
+            for sub in s["subs"]:
+                if sub["title"].endswith("Rules"):
+                    for name, text in self.rule_paragraphs(sub["lines"]):
+                        self.define_rule(name, text)
         psy = self.section("Psychic Discipline")
         if psy:
             for name, text in self.rule_paragraphs(psy["lines"]):
@@ -776,6 +1234,15 @@ class Builder:
         self.define_rule("Invulnerable Save (X)",
                          "The model has an Invulnerable Save of X, which may be taken against any "
                          "Wound instead of its armour save.")
+
+    @staticmethod
+    def rite_from_text(name, text):
+        """'Requires ... Benefit: ... Limitation: ...' as Effects and Limitations."""
+        parts = re.split(r"\s*(?=Benefit:|Limitations?:)", text)
+        lines = [f"- {p.split(':', 1)[1].strip()}" for p in parts if p.startswith("Benefit")]
+        limits = [f"- {p}" for p in parts if not p.startswith(("Benefit", "Limitation"))]
+        limits += [f"- {p.split(':', 1)[1].strip()}" for p in parts if p.startswith("Limitation")]
+        return {"title": "Rite of War: " + name, "lines": ["**Effects**"] + lines + ["**Limitations**"] + limits}
 
     def build_army_entry(self):
         """The root selection: hive fleet, Rite of War, warlord trait and army reactions."""
@@ -793,7 +1260,7 @@ class Builder:
 
         react = self.section("Advanced Reaction")
         if react:
-            for ln in react["lines"]:
+            for ln in react["lines"] + [l for sub in react["subs"] for l in sub["lines"]]:
                 m = re.match(r"\*\*(.+?)\*\* (.+)", ln)
                 if m:
                     add_text_profile(army, REACTION_PROFILE, m.group(1), strip_md(m.group(2)), eid)
@@ -825,6 +1292,11 @@ class Builder:
                 add_cost(f, 0)
 
         rites = [sub for s in self.sections for sub in s["subs"] if sub["title"].startswith("Rite of War: ")]
+        rite_sec = next((s for s in self.sections if s["title"] == "Rites of War" and s["subs"]), None)
+        if not rites and rite_sec:
+            # "### Hunter Cadre" then "Requires ... Benefit: ... Limitation: ..."
+            for sub in rite_sec["subs"]:
+                rites.append(self.rite_from_text(sub["title"], " ".join(paragraphs(sub["lines"]))))
         if not rites:
             # "**Canoptek Harvest.** Requires ... Benefit: ... Limitation: ..." after "may take one Rite of War"
             for sec in self.sections:
@@ -832,12 +1304,7 @@ class Builder:
                 if idx is None:
                     continue
                 for name, text in self.rule_paragraphs(sec["lines"][idx + 1:]):
-                    parts = re.split(r"\s*(?=Benefit:|Limitations?:)", text)
-                    lines = [f"- {p.split(':', 1)[1].strip()}" for p in parts if p.startswith("Benefit")]
-                    limits = [f"- {p}" for p in parts if not p.startswith(("Benefit", "Limitation"))]
-                    limits += [f"- {p.split(':', 1)[1].strip()}" for p in parts if p.startswith("Limitation")]
-                    rites.append({"title": "Rite of War: " + name,
-                                  "lines": ["**Effects**"] + lines + ["**Limitations**"] + limits})
+                    rites.append(self.rite_from_text(name, text))
         if rites:
             rid = make_id(eid, "rites")
             g = el(groups, "selectionEntryGroup", name="Rite of War", hidden=False, id=rid)
@@ -903,6 +1370,10 @@ class Builder:
                 if key.endswith(cand) or cand.endswith(key) and len(key) > 6:
                     if key == cand or key.rstrip("s") == cand.rstrip("s"):
                         return self.weapons[key], n
+        # a weapon that keeps its official 2.0 profile
+        for cand in [t] + list(singular(t)):
+            if cand in self.gst_weapons:
+                return self.gst_weapons[cand], n
         return None, n
 
     def find_upgrade(self, text):
@@ -912,6 +1383,9 @@ class Builder:
                 return self.upgrades[cand]
         if t.startswith("regeneration"):
             return self.upgrades.get("regeneration")
+        coded = re.sub(r"^[a-z]{2}-?\d+\w* ", "", t)  # "xv8 crisis battlesuit"
+        if coded != t:
+            return self.find_upgrade(coded)
         return None
 
     def generic_upgrade(self, name, key):
@@ -983,6 +1457,9 @@ class Builder:
                   hidden=False, id=uid, publicationId=self.pub_id)
         key = uid
 
+        self._suit_commander = "commander" in norm(ds["name"])
+        drone_specs = self.prepare_drones(ds)
+        self.drop_vehicle_system_options(ds)
         # Model types and their counts.
         profiles = ds["profiles"]
         models = {}
@@ -1010,7 +1487,30 @@ class Builder:
                     return mname
             return None
 
+        pools = []
         for line in ds["composition"]:
+            pm = re.match(r"(\d+) models chosen from (.+)$", line)
+            if pm:
+                # "9 models chosen from Kroot Warriors, the specialists above (each at most once)
+                # and up to 2 Kroot Hounds"
+                total, members = int(pm.group(1)), {}
+                for part in re.split(r", | and (?=up to|\d|the )|\s+and\s+(?=[A-Z])", pm.group(2)):
+                    part = part.strip()
+                    if part.startswith("the specialists"):
+                        named = {n for l in ds["composition"] for n in models if forms(n) & forms(l)}
+                        for n in models:
+                            if (not models[n]["min"] and n not in named and n not in members
+                                    and n not in ds.get("bought_drones", [])):
+                                members[n] = 1
+                        continue
+                    um = re.match(r"(?:up to (\d+)|(\d+)) (.+)$", part)
+                    who = model_for(um.group(3) if um else part)
+                    if who:
+                        members[who] = int(um.group(1) or um.group(2)) if um else total
+                for n, cap in members.items():
+                    models[n]["pool"], models[n]["pool_max"], models[n]["max"] = len(pools), cap, cap
+                pools.append((total, list(members)))
+                continue
             m = re.match(r"(\d+) (.+?)(?:,|$| chosen)", line)
             if not m:
                 self.problems.append(f"{ds['name']}: composition '{line}'")
@@ -1028,7 +1528,7 @@ class Builder:
                 continue
             models[mname]["min"] += n
             models[mname]["max"] += n
-        if not any(m["min"] for m in models.values()) and models:
+        if not any(m["min"] for m in models.values()) and models and not any(sp.get("chosen") for sp in drone_specs):
             first = next(iter(models.values()))
             first["min"] = first["max"] = 1
 
@@ -1059,12 +1559,57 @@ class Builder:
         # Wargear: either shared by every model or "Model: a, b and c".
         shared_wargear = []
         ds["loadouts"] = []
+        wargear = []
+        for line in ds["wargear"]:
+            if "(bought below)" in line:
+                continue  # "Up to four weapons ... from the Battlesuit Armoury (bought below)"
+            a, sep, b = line.partition(" with ")
+            b = re.sub(r"^an? ", "", b)
+            if sep and ": " not in line and " or " not in line and not self.find_upgrade(line) and (self.find_upgrade(b) or self.find_weapon(b)[0]) and (
+                    self.find_upgrade(a) or self.find_weapon(b)[0]):
+                # "XV8 Crisis battlesuit (jet pack) with iridium armour", "Baggage harness with a Kroot gun"
+                wargear += [a, b]
+            else:
+                wargear.append(line)
+        ds["wargear"] = wargear
+        # "Every model: pulse carbine, markerlight, ..., unless noted below"
+        every = next((l for l in ds["wargear"] if l.startswith("Every model: ")), None)
+        if every:
+            common = [i for i in every.partition(": ")[2].replace(", unless noted below", "").split(", ")]
+            out = []
+            for line in ds["wargear"]:
+                if line is every:
+                    out += common
+                    continue
+                who, sep, rest = line.partition(": ")
+                if sep and not any(self.drones.get(c) for c in [norm(who)] + list(singular(who))):
+                    inst = re.search(r",? instead of (.+)$", rest)
+                    rest = rest[:inst.start()] if inst else rest
+                    gone = {norm(x) for x in re.split(r" and |, ", inst.group(1))} if inst else set()
+                    items = rest.split(", ")
+                    line = f"{who}: " + ", ".join(items + [c for c in common if norm(c) not in gone
+                                                           and norm(c) not in map(norm, items)])
+                out.append(line)
+            ds["wargear"] = out
+        split = []
+        for line in ds["wargear"]:
+            who, sep, rest = line.partition(": ")
+            names = re.split(r", | and ", who) if sep else []
+            if len(names) > 1 and all(model_for(n, exact=True) for n in names):
+                split += [f"{n}: {rest}" for n in names]  # "Kroot Warriors, Cold-blooded, Tracker: ..."
+            else:
+                split.append(line)
+        ds["wargear"] = split
         for line in ds["wargear"]:
             if ", or " in line:
                 ds["loadouts"] = [a.strip() for a in re.sub(r"\s*\(.*?\)$", "", line).split(", or ")]
                 continue
             mname, sep, rest = line.partition(": ")
             target = (models.get(mname) or models.get(model_for(mname, exact=True) or "")) if sep else None
+            if sep and not target:
+                # "Shield Drones" for the Earth Caste Pilot Shield Drones
+                tail = next((n for n in models if any(norm(n).endswith(c) for c in singular(mname))), None)
+                target = models.get(tail)
             if target:
                 items = re.split(r", ", rest)
                 target["wargear"] += [i for i in items if norm(i) != "none"]
@@ -1082,9 +1627,15 @@ class Builder:
         for row in ds["options"]:
             label = strip_md(row[0])
             cost_txt = row[1] if len(row) > 1 else ""
-            if row[0].startswith("**"):
+            # a header row, bold or not ("One Shas'ui may be upgraded to a Crisis Shas'vre")
+            if row[0].startswith("**") or not row[0].startswith(("–", "-")):
                 mode = {"label": label, "items": []}
                 header = label.rstrip(":")
+                who = re.match(r"(One .+? may be upgraded to an? (.+?)), who may take$", header)
+                if who:
+                    # "One Shas'la may be upgraded to a Shas'ui, who may take:" - the upgrade, then
+                    # the options that follow belong to the Shas'ui
+                    header = who.group(1)
                 hm = re.match(r"One (.+?) may be upgraded to an? (.+?)(?: \((.+)\))?$", header)
                 if hm:
                     src, dst = model_for(hm.group(1)), model_for(hm.group(2))
@@ -1101,6 +1652,9 @@ class Builder:
                     else:
                         self.problems.append(f"{ds['name']}: upgrade header '{header}'")
                     mode = None
+                    if who:
+                        mode = {"label": label, "items": [], "header": f"The {who.group(2)} may take"}
+                        extra_groups.append(mode)
                     continue
                 mode["header"] = header
                 extra_groups.append(mode)
@@ -1112,6 +1666,14 @@ class Builder:
 
         for grp in extra_groups:
             self.apply_option_group(ds, unit, models, model_for, grp, unit_upgrades)
+        for n in [n for n, m in models.items() if "pool" in m]:
+            m = models[n]
+            if m["max"] > m["pool_max"]:
+                # "Up to 5 additional Kroot Warriors" at +8 each, beyond the 9 in the points
+                extra = dict(m, max=m["max"] - m["pool_max"], display=n, id=make_id(uid, "model", n, "additional"))
+                del extra["pool"]
+                models[n + " (additional)"] = extra
+                m["max"], m["cost"] = m["pool_max"], 0
 
         # Models bought as options carry their own kit, not the unit's: a Spanner "armed with
         # a big shoota", an ammo runt with the grot blasta its wargear entry gives it.
@@ -1120,7 +1682,7 @@ class Builder:
                 continue
             if m.get("armed"):
                 m["wargear"] = [m["armed"]] + [w for w in shared_wargear if not self.find_weapon(w)[0]]
-            elif m["min"] == 0 and not m["replaces"] and not m.get("follows"):
+            elif m["min"] == 0 and not m["replaces"] and not m.get("follows") and "pool" not in m and not m.get("display"):
                 m["wargear"] = list(self.attendant_wargear.get(norm(m["profile"]["name"]), []))
                 # ...and its own unit type, not the boss's
                 own_type = self.attendant_types.get(norm(m["profile"]["name"]))
@@ -1130,6 +1692,10 @@ class Builder:
         # Unit-level costs: the unit carries the listed points minus what its starting models
         # cost, so the starting unit always totals the doc's points.
         base = ds["points"] - sum(m["min"] * m["cost"] for m in models.values() if not m["replaces"])
+        # "4 drones, chosen from Gun, Marker and Shield Drones" are in the unit's points
+        for sp in drone_specs:
+            if sp.get("chosen"):
+                base -= sp["min"] * min(self.drones[norm(n)]["cost"] for n in sp["types"])
         for m in models.values():
             if m["replaces"]:
                 base_model = models[m["replaces"]]
@@ -1139,8 +1705,8 @@ class Builder:
         # Model entries.
         ses = el(unit, "selectionEntries")
         for mname, m in models.items():
-            me = el(ses, "selectionEntry", type="model", import_=True, name=mname, hidden=False, id=m["id"],
-                    publicationId=self.pub_id)
+            me = el(ses, "selectionEntry", type="model", import_=True, name=m.get("display", mname), hidden=False,
+                    id=m["id"], publicationId=self.pub_id)
             add_constraint(me, "min", m["min"], m["id"] + "min")
             cmax = add_constraint(me, "max", max(m["max"], m["min"]), m["id"] + "max")
             cmin = make_id(m["id"] + "min", "min")
@@ -1193,8 +1759,9 @@ class Builder:
             for (cname, cid), val in zip(pchars, values):
                 c = el(chars, "characteristic", name=cname, typeId=cid)
                 c.text = val
+            kinds = re.sub(r"\bBattlesuit\b", "Infantry, Heavy, Mechanised", m["types"])
             for word, (cat, cname) in TYPE_CATEGORIES.items():
-                if re.search(r"\b" + re.escape(word) + r"\b", m["types"]):
+                if re.search(r"\b" + re.escape(word) + r"\b", kinds):
                     if word == "Character" and "Independent Character" in m["types"]:
                         continue
                     add_category(me, cat, cname, m["id"])
@@ -1208,6 +1775,17 @@ class Builder:
             if m.get("note"):
                 add_rule(me, mname, m["note"][0].upper() + m["note"][1:], m["id"])
             add_cost(me, m["cost"])
+
+        for pi, (total, members) in enumerate(pools):
+            pkey = make_id(uid, "pool", str(pi))
+            g = el(child(unit, "selectionEntryGroups"), "selectionEntryGroup", name="Unit Members", hidden=False, id=pkey)
+            add_constraint(g, "min", total, pkey + "min")
+            add_constraint(g, "max", total, pkey + "max")
+            gses = el(g, "selectionEntries")
+            for n in members:
+                me = ses.find(f"selectionEntry[@id='{models[n]['id']}']")
+                ses.remove(me)
+                gses.append(me)
 
         # "Slugga and choppa, or shoota (all models alike)": one loadout for the whole unit.
         if ds.get("loadouts"):
@@ -1270,6 +1848,8 @@ class Builder:
                    includeChildForces=False)
 
         self.add_named_powers(ds, unit, models)
+        self.add_unit_extras(ds, unit, models)
+        self.apply_drone_specs(ds, unit, uid, models, drone_specs)
 
         # Unit rules.
         if self.faction in XENOS_FACTIONS:
@@ -1314,6 +1894,11 @@ class Builder:
         return uid
 
     @staticmethod
+    def count_word(text):
+        m = re.search(r"\b(one|two|three|four|five|six|\d+)\b", text.lower())
+        return (NUMBER_WORDS.get(m.group(1)) or int(m.group(1))) if m else None
+
+    @staticmethod
     def cost(txt):
         m = re.search(r"\+?(\d+)", txt or "")
         return int(m.group(1)) if m else 0
@@ -1321,7 +1906,10 @@ class Builder:
     @staticmethod
     def fighting_models(models):
         """The unit's own models, not attendants bought as options (an ammo runt, a grot oiler)."""
-        return [m for m in models.values() if (m["min"] > 0 or m["replaces"] or m.get("extra")) and not m.get("attendant")]
+        own = [m for m in models.values() if (m["min"] > 0 or m["replaces"] or m.get("extra")) and not m.get("attendant")]
+        # drones riding with a vehicle or battlesuits are not what its options are for
+        crew = [m for m in own if "(Drone)" not in m["types"]]
+        return crew or own
 
     def apply_option_group(self, ds, unit, models, model_for, grp, unit_upgrades):
         header = grp["header"]
@@ -1337,7 +1925,7 @@ class Builder:
         m = m or re.match(r"Up to (\w+) (.+?) may", header)
         if m and subject is None:
             fixed, subject = NUMBER_WORDS.get(m.group(1), self.cost(m.group(1)) or 1), m.group(2)
-        m = m or re.match(r"(Any|One|Each|An?|The) (.+?)(?: in every (\w+))? may", header)
+        m = m or re.match(r"(Any|One|Each|An?|The) (.+?)(?: in every (\w+))? (?:may|must)", header)
         if m and subject is None:
             subject = m.group(2)
             if m.group(3):
@@ -1351,8 +1939,17 @@ class Builder:
             mname = model_for(subject, exact=True)
             if not mname and determiner in ("Any", "Each", "One"):
                 mname = model_for(subject)  # "Any Stone-crusher" is a Stone-crusher Carnifex
+            if not mname:  # "The Shas'vre" is the Stealth Shas'vre
+                mname = next((n for n in models if norm(n).endswith(" " + norm(subject))), None)
+            crew = [n for n, mm in models.items() if mm["min"] > 0 and "(Drone)" not in mm["types"]]
+            if not mname and determiner in ("Any", "Each") and len(crew) == 1 and norm(subject) in norm(ds["name"]):
+                mname = crew[0]  # "Any TX-42" in a squadron of Piranha TX-42s
             if mname:
                 subject_models = [mname]
+            # "Any Broadside" is the Broadside Shas'ui and the Broadside Shas'vre
+            several = [n for n in models if re.search(r"(^| )" + re.escape(norm(singular_name(subject or ""))) + r"( |$)", norm(n))]
+            if determiner in ("Any", "Each") and len(several) > 1:
+                subject_models = several
         per_unit = False
         if not subject_models and determiner in ("Any", "Each") and norm(subject or "") in ("model", "models"):
             # "Any model may take": every kind of model in the unit, not its attendants
@@ -1365,6 +1962,8 @@ class Builder:
         gm = re.search(r"up to (\w+) of the following", header)
         if gm:
             group_max = NUMBER_WORDS.get(gm.group(1), self.cost(gm.group(1)))
+        if determiner == "Each" and norm(subject or "") in ("model", "models") and not subject_models:
+            subject_models = [n for n, mm in models.items() if mm["min"] > 0 or mm["replaces"]]
 
         ex = re.search(r"may exchange (?:his |its |their )?(either pair of |one pair of |either |all \w+ |one of its )?(.+?) for", header)
         replaced = "replaced with" in header
@@ -1376,7 +1975,7 @@ class Builder:
             for mm in models.values():
                 mm["wargear"] = [w for w in mm["wargear"] if w != original]
             return
-        one_of = "one of the following" in header
+        one_of = "one of the following" in header or "choose one" in header
         if replaced:
             # "Any Ravener Warrior may be replaced with (each type only once)"
             base = subject_models[0]
@@ -1411,9 +2010,9 @@ class Builder:
         for name, cost in grp["items"]:
             # "Up to 15 additional Genestealers", "Up to 3 Spanners, each armed with a big shoota",
             # "Up to 5 additional Mek Gunz, each with 2 Gretchin crew", "Up to 2 bomb squigs"
-            am = re.match(r"Up to (\d+) (?:additional )?(.+?)(?:, each (?:armed )?with (?:an? )?(.+))?$", name)
+            am = re.match(r"Up to (\d+|two|three|four|five|six) (?:additional )?(.+?)(?:, each (?:armed )?with (?:an? )?(.+))?$", name)
             if am:
-                count, what, each = int(am.group(1)), am.group(2), am.group(3)
+                count, what, each = NUMBER_WORDS.get(am.group(1)) or int(am.group(1)), am.group(2), am.group(3)
                 mname = model_for(what, exact=True)
                 if not mname:
                     mname = self.model_without_profile(ds, models, what, each)
@@ -1474,6 +2073,21 @@ class Builder:
         """A model the doc names but gives no profile row: it uses the profile of the model it
         replaces (or the unit's main one) and the unit type its datasheet lists for it."""
         name = next((n for n in self.pending_types if forms(n) & forms(what)), None)
+        if not name and not base:
+            # a model with a datasheet of its own (Kroot Hounds joining Kroot Carnivores)
+            found = next(((p, d) for k, (p, d) in getattr(self, "profile_index", {}).items()
+                          if forms(k) & forms(what) and d is not ds), None)
+            if found:
+                p, other = found
+                types = next((l.partition(": ")[2] for l in other["types"]
+                              if forms(l.partition(": ")[0]) & forms(p["name"])), other["types"][0].partition(": ")[2])
+                models[p["name"]] = {"profile": p, "min": 0, "max": 0, "cost": 0,
+                                     "id": make_id(self.units[ds["name"]], "model", p["name"]),
+                                     "wargear": [l.partition(": ")[2] if ": " in l else l for l in other["wargear"]
+                                                 if ": " not in l or forms(l.partition(": ")[0]) & forms(p["name"])],
+                                     "types": types, "replaces": None,
+                                     "groups": [], "own_wargear": True}
+                return p["name"]
         if base:
             name = name or what[0].upper() + what[1:]
             self.pending_types.setdefault(name, models[base]["types"])
@@ -1556,7 +2170,20 @@ class Builder:
                 if g.get("group_max"):
                     add_constraint(ge, "max", g["group_max"], gkey + "max")
                 gl = el(ge, "entryLinks")
+                armoury = [it for it in g["items"] if self.is_suit_armoury(it[0], it[1])]
+                if armoury:
+                    # "The Commander must take up to four of the following": the Battlesuit Armoury
+                    akey = make_id(gkey, "armoury")
+                    systems_only = all("system" in norm(it[0]) and "weapon" not in norm(it[0]) for it in armoury)
+                    ag = self.suit_armoury_group(ge, akey, "Battlesuit Armoury", systems_only)
+                    most = g.get("group_max") or self.count_word(armoury[0][0])
+                    if most:
+                        add_constraint(ag, "max", most, akey + "max")
+                    if "must take" in g.get("title", ""):
+                        add_constraint(ag, "min", 1, akey + "min")
                 for name, cost, imax in g["items"]:
+                    if (name, cost, imax) in armoury:
+                        continue
                     # "Thresher scythe or bone mace tail", "Kombi-weapon", "One Orky Artefact":
                     # one pick from several entries.
                     alts = self.alternatives(name, ds)
@@ -1583,6 +2210,17 @@ class Builder:
         seen = set()
         for w in wargear:
             if w in used:
+                continue
+            left, sep, right = w.partition(" or ")
+            if sep and not self.find_weapon(w)[0] and not self.find_upgrade(w):
+                # "Kroot rifle or Kroot pistol and ritual blade": the model takes one
+                ckey = make_id(m["id"], "choice", w)
+                g = el(groups, "selectionEntryGroup", name=w[0].upper() + w[1:], hidden=False, id=ckey,
+                       defaultSelectionEntryId=make_id(ckey, "link", left))
+                add_constraint(g, "min", 1, ckey + "min")
+                add_constraint(g, "max", 1, ckey + "max")
+                for alt in (left, right):
+                    self.wrapper(child(g, "entryLinks"), alt, ckey, alt, ds)
                 continue
             wid, n = self.find_weapon(w)
             if wid:
@@ -1648,7 +2286,7 @@ class Builder:
         for gi, g in enumerate(m["groups"]):
             gkey = make_id(m["id"], "unit group", str(gi))
             if g["kind"] == "exchange":
-                whats = [g["what"]] + g["what"].split(" or ")
+                whats = [g["what"]] + g["what"].split(" or ") + g["what"].split(" and ")[:1]
                 original = next((w for w in m["wargear"] for wt in whats if norm(wt) in norm(w)
                                  or any(c in norm(w) for c in singular(wt)) or forms(wt) & forms(w)), None)
                 if original is None and " or " not in g["what"] and not ds.get("loadouts"):
@@ -1684,10 +2322,24 @@ class Builder:
                 ge = el(groups, "selectionEntryGroup", name=f"{prefix}Options", hidden=False, id=gkey)
                 if g["one_of"]:
                     self.per_model_limit(ge, gkey, uid, m["id"])
-                if g.get("group_max"):
+                if g.get("group_max") and g.get("title", "").startswith("Each model"):
+                    self.per_model_limit(ge, gkey + "each", uid, m["id"], g["group_max"])
+                elif g.get("group_max"):
                     add_constraint(ge, "max", g["group_max"], gkey + "max")
                 every_model = [o.get("id") for o in unit.findall("selectionEntries/selectionEntry")]
+                armoury = [it for it in g["items"] if self.is_suit_armoury(it[0], it[1])]
+                if armoury:
+                    akey = make_id(gkey, "armoury")
+                    systems_only = all("system" in norm(it[0]) and "weapon" not in norm(it[0]) for it in armoury)
+                    ag = self.suit_armoury_group(ge, akey, f"{prefix}Battlesuit Armoury", systems_only)
+                    per = g.get("group_max") or self.count_word(armoury[0][0]) or 1
+                    if g.get("fixed"):
+                        add_constraint(ag, "max", g["fixed"] * per, akey + "fixed")
+                    else:
+                        self.per_model_limit(ag, akey, uid, m["id"], per)
                 for nm, c, imax in g["items"]:
+                    if (nm, c, imax) in armoury:
+                        continue
                     alt_list = self.alternatives(nm, ds)
                     alts = [a for a, _, _ in alt_list] if alt_list else None
                     alt_cost = {a: ac for a, _, ac in alt_list} if alt_list else {}
@@ -1720,8 +2372,8 @@ class Builder:
                             continue
                         if g.get("fixed") and not alts:
                             add_constraint(e, "max", g["fixed"], e.get("id") + "fixed")  # one in the unit
-                        elif imax and not alts:
-                            add_constraint(e, "max", imax, e.get("id") + "imax")
+                        elif imax and not alts:  # "Any TX-42 may take up to two seeker missiles": each
+                            self.per_model_limit(e, e.get("id") + "imax", uid, m["id"], imax)
                         elif not g["one_of"] and not alts:
                             self.per_model_limit(e, e.get("id"), uid, m["id"])
                         if g["ratio"]:
@@ -2025,14 +2677,23 @@ class Builder:
         self.build_army_rules()
         self.build_weapons()
         self.build_upgrades()
+        self.build_suit_armoury()
+        self.build_drones()
         self.build_power_tables()
         self.datasheets = []
         for s in self.sections:
-            if s["title"] in SLOTS or s["title"] == "Dedicated Transports":
+            if s["title"] in SLOTS or s["title"] in ("Dedicated Transports", "Kill Team Units"):
                 for sub in s["subs"]:
                     ds = parse_datasheet(sub["title"], sub["lines"], s["title"])
                     if ds:
                         self.datasheets.append(ds)
+        self.add_listed_options()
+        self.profile_index = {}
+        for ds in self.datasheets:
+            for p in ds["profiles"]:
+                k = norm(p["name"])
+                if k not in self.profile_index or forms(ds["name"]) & forms(p["name"]):
+                    self.profile_index[k] = (p, ds)
         for ds in self.datasheets:
             self.units[ds["name"]] = make_id("unit", self.faction, ds["name"])
         for ds in self.datasheets:
