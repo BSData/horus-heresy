@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -2353,6 +2353,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Deff rolla" hidden="false" id="8c50-3dc1-668a-e2b7" type="selectionEntry" targetId="5135-ed40-b48a-4e54">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="99b4-e3d8-101f-8719" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9ff6-1e97-a023-9e2d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Dok's Tools" hidden="false" id="bf21-85ba-b63a-bf2c" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -2422,6 +2430,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Grabbin' klaw" hidden="false" id="6637-d928-7176-fdd7" type="selectionEntry" targetId="cb3d-c317-cbe1-231d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e2d5-a4dd-2a42-188c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="452d-98b0-404b-2167" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Grot Oiler" hidden="false" id="9d07-ca90-e7a2-472c" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -2608,6 +2624,23 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stikkbomb Flinga" hidden="false" id="057d-0d95-c700-485e" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Stikkbomb Flinga" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="024a-f90e-08cc-86d0">
+          <characteristics>
+            <characteristic name="Description" typeId="347e-ee4a-764f-6be3">A vehicle with a stikkbomb flinga may fire it using the stikkbomb flinga profile in the Ork Armoury. Any Ork vehicle may take one.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Stikkbomb flinga" hidden="false" id="9da5-efe0-76cb-d090" type="selectionEntry" targetId="92c7-b271-8572-ee11">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="89d5-1807-c035-578e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a8d1-519b-9ef2-1c97" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Stikkbombz" hidden="false" id="960a-b583-75a7-cab5" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Stikkbombz" typeId="2a1f-7837-f0ef-be44" typeName="Wargear Item" hidden="false" id="402d-9eb8-e4a2-4e62">
@@ -2671,6 +2704,14 @@
           </characteristics>
         </profile>
       </profiles>
+      <entryLinks>
+        <entryLink import="true" name="Wreckin' ball" hidden="false" id="de2e-3042-af41-dc4e" type="selectionEntry" targetId="af08-16c7-9e1f-7635">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41c6-b41c-15d1-d4e9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93d9-5376-0251-c077" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Da Jump" hidden="false" id="920b-c0d6-3639-f13b" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -6039,50 +6080,6 @@
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Ammo Runt" hidden="false" id="32d0-9779-6962-c6bc" publicationId="96d0-c462-d158-fbad">
-          <modifiers>
-            <modifier type="increment" field="2f84-bcc0-b06c-92d2" value="1">
-              <repeats>
-                <repeat field="selections" scope="9e43-2dd3-c19a-e5db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e1-0f9a-bdb0-8ea7" repeats="1" roundUp="false" />
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="23aa-13f0-119b-153f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2f84-bcc0-b06c-92d2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-          </constraints>
-          <profiles>
-            <profile name="Ammo Runt" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="61da-fc62-92fd-31ec" publicationId="96d0-c462-d158-fbad">
-              <characteristics>
-                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
-                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
-                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">2</characteristic>
-                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
-                <characteristic name="S" typeId="e478-41d4-a092-48a8">2</characteristic>
-                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">2</characteristic>
-                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
-                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">2</characteristic>
-                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
-                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
-                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">–</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <categoryLinks>
-            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="40cc-4d02-d537-2f4e" primary="false" name="Infantry Unit Type" />
-          </categoryLinks>
-          <entryLinks>
-            <entryLink import="true" name="Grot blasta" hidden="false" id="37ce-f6d5-69ff-7f59" type="selectionEntry" targetId="849d-828e-ed2d-1f49">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a16c-c457-e965-fa16" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="930a-a8f4-e188-5bf8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-              </constraints>
-            </entryLink>
-          </entryLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
-          </costs>
-        </selectionEntry>
         <selectionEntry type="model" import="true" name="Painboy on Warbike" hidden="false" id="51ee-205e-2414-4a30" publicationId="96d0-c462-d158-fbad">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="cd36-b858-d2ff-0393" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6141,6 +6138,50 @@
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="55" />
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Ammo Runt" hidden="false" id="32d0-9779-6962-c6bc" publicationId="96d0-c462-d158-fbad">
+          <modifiers>
+            <modifier type="increment" field="2f84-bcc0-b06c-92d2" value="1">
+              <repeats>
+                <repeat field="selections" scope="9e43-2dd3-c19a-e5db" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66e1-0f9a-bdb0-8ea7" repeats="1" roundUp="false" />
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="23aa-13f0-119b-153f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2f84-bcc0-b06c-92d2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+          <profiles>
+            <profile name="Ammo Runt" typeId="4bb2-cb95-e6c8-5a21" typeName="Unit" hidden="false" id="61da-fc62-92fd-31ec" publicationId="96d0-c462-d158-fbad">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="ddd7-6f5c-a939-b69e">Infantry</characteristic>
+                <characteristic name="Move" typeId="893e-2d76-8f04-44e5">6</characteristic>
+                <characteristic name="WS" typeId="cc42-7ed5-7092-5c84">2</characteristic>
+                <characteristic name="BS" typeId="74ae-c840-0036-d244">3</characteristic>
+                <characteristic name="S" typeId="e478-41d4-a092-48a8">2</characteristic>
+                <characteristic name="T" typeId="c32b-5fdd-3fbe-9b1f">2</characteristic>
+                <characteristic name="W" typeId="57ee-1126-32a9-5672">1</characteristic>
+                <characteristic name="I" typeId="62d3-22d7-2d49-52dc">2</characteristic>
+                <characteristic name="A" typeId="f111-2ce5-dd12-d6b0">1</characteristic>
+                <characteristic name="Ld" typeId="e8a6-1da9-d384-8727">5</characteristic>
+                <characteristic name="Save" typeId="e593-6b3c-f169-04f0">–</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="8b4f-bfe2-ce7b-f1b1" id="40cc-4d02-d537-2f4e" primary="false" name="Infantry Unit Type" />
+          </categoryLinks>
+          <entryLinks>
+            <entryLink import="true" name="Grot blasta" hidden="false" id="37ce-f6d5-69ff-7f59" type="selectionEntry" targetId="849d-828e-ed2d-1f49">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a16c-c457-e965-fa16" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="930a-a8f4-e188-5bf8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="3" />
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7921,6 +7962,16 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="2323-3ca7-9319-2258" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7da1-ac8f-6aa3-5999" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
@@ -7999,6 +8050,14 @@
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="4263-c24a-77f8-06d2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6be6-38f6-4809-216c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="398f-cc1c-fdc3-2d39" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="993c-4b58-a9db-f0d5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -8169,6 +8228,14 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7ac2-ae37-4de9-0505" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="9090-0902-324b-5a8c" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d0b1-537e-b37d-ff40" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -8265,6 +8332,14 @@
                 <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0bcf-5133-2f67-e9e5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="29fb-8a22-d5c5-1352" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="3b38-ac0c-6318-8400" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d74-211b-86b9-14cb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -9392,6 +9467,14 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="273c-3b5c-7e18-4c09" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="4c64-96fe-6c4e-7201" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="565e-cda4-6165-2a83" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -9596,6 +9679,16 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="a842-82fe-649f-49b7" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beff-bbb0-8a52-8377" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
           </costs>
@@ -9799,6 +9892,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="88f0-03bf-2604-59a2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c62-6bbf-1612-56cc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="4422-f526-b924-bc95" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d9a8-1fe7-e538-9207" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -10275,6 +10376,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9890-3880-f4e5-8f89" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="cfd9-ddd4-e4c7-3554" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1db2-1659-09c1-acee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -10354,6 +10463,14 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bbbc-9022-cbed-17c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="6446-7188-a4c3-14fc" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fedb-f0ea-5c2f-6399" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -10432,6 +10549,14 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b129-fd75-f638-bae8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a50d-bb1f-5c86-38a4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
+            </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="a613-3e52-e5d2-3caa" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a77-ebdb-1203-cf84" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -11202,6 +11327,14 @@
                 <infoLink name="Twin-linked" id="4a7b-3ad6-3a4c-3c08" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
               </infoLinks>
             </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="87e4-a0bc-1252-8f23" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50c4-dc24-6e38-aeda" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0" />
@@ -11322,6 +11455,14 @@
               <infoLinks>
                 <infoLink name="Twin-linked" id="0d03-d9bc-5f48-93d2" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
               </infoLinks>
+            </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="c64c-bcf8-256d-da4c" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d4c-b86b-1da2-c2b1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>
@@ -11459,6 +11600,14 @@
               <infoLinks>
                 <infoLink name="Twin-linked" id="d6f5-eea7-b7d2-45b6" hidden="false" targetId="8542-ee9d-e2fa-52fe" type="rule" />
               </infoLinks>
+            </entryLink>
+            <entryLink import="true" name="Stikkbomb Flinga" hidden="false" id="7d48-e856-1588-b921" type="selectionEntry" targetId="057d-0d95-c700-485e">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6b6a-3487-9872-1e28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
+              </costs>
             </entryLink>
           </entryLinks>
           <costs>

@@ -550,6 +550,8 @@ class Builder:
                 if cost_line:
                     text = text.replace(cost_line, "").strip()
                 add_text_profile(e, WARGEAR_PROFILE, name, text, eid)
+                if norm(name) in self.weapons:  # "Stikkbomb Flinga": the upgrade fires the weapon
+                    self.link(child(e, "entryLinks"), self.weapons[norm(name)], name, eid, count=1)
                 granted = re.search(r"gains the (.+?) special rule", text)
                 if granted:
                     self.link_rule(e, granted.group(1), eid)
@@ -613,7 +615,8 @@ class Builder:
         base = re.search(r"\+(\d+) points per model", line)
         monstrous = re.search(r"\+(\d+) points per Monstrous model", line)
         return {"model": int(base.group(1)) if base else 0,
-                "monstrous": int(monstrous.group(1)) if monstrous else None}
+                "monstrous": int(monstrous.group(1)) if monstrous else None,
+                "vehicles": "vehicles only" in line.lower()}
 
     def universal_options(self, ds, models):
         """(model name, biomorph name, id, cost, new save) for every biomorph each model may buy."""
@@ -629,6 +632,8 @@ class Builder:
                     new = int(sv.group(1)) - 1
                     out.append((mname, name, eid, rule["save"][new], new))
                 else:
+                    if rule.get("vehicles") and not re.search(r"\bVehicle\b", m["types"]):
+                        continue
                     granted = self.shared_entries.find(f"selectionEntry[@id='{eid}']/infoLinks/infoLink")
                     if granted is not None and any(norm(r) == norm(granted.get("name")) for r in ds["rules"]):
                         continue

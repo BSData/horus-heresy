@@ -1140,6 +1140,7 @@ _The biggest, meanest Speed Freeks, who have earned (or taken) the fastest bikes
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | Nob on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 3 | 7 | 4+ | 75x42mm |
 | Boss Nob on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 4 | 8 | 4+ | 75x42mm |
+| Painboy on Warbike | 14 | 4 | 2 | 4 | 5 | 2 | 3 | 3 | 7 | 4+ | 75x42mm |
 | Ammo Runt | 6 | 2 | 3 | 2 | 2 | 1 | 2 | 1 | 5 | – | 25mm |
 
 **Unit Composition**
@@ -2823,6 +2824,14 @@ A Gretchin unit whose Runtherd has a squig hound may re-roll failed Morale check
 _A launcher that hurls stikkbombz ahead of a charge._
 
 Units disembarking from a vehicle with a stikkbomb chukka count as having stikkbombz when they charge in the same turn.
+
+### Stikkbomb Flinga
+
+_A crude launcher bolted to a vehicle, lobbing stikkbombz at anyone nearby._
+
+A vehicle with a stikkbomb flinga may fire it using the stikkbomb flinga profile in the Ork Armoury. Any Ork vehicle may take one.
+
+**Cost:** +5 points per model; vehicles only.
 
 ### Stikkbombz
 
