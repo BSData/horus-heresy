@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="674d-7094-c86d-3ace" name="Homebrew - Orks" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="130" type="catalogue" authorName="Isaac">
   <publications>
     <publication id="96d0-c462-d158-fbad" name="Orks for The Horus Heresy 2.0 — Homebrew Conversion" shortName="HB - Orks" />
   </publications>
@@ -1691,6 +1691,26 @@
         </profile>
       </profiles>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Stikkbomb flinga" hidden="false" id="92c7-b271-8572-ee11" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Stikkbomb flinga" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="d269-38ed-9126-3ebf" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Assault 1, Blast (3"), Pinning</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast" id="59af-c4cb-c050-341e" hidden="false" targetId="1d9a-73ef-5f4f-8bd8" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Blast (3&quot;)" />
+          </modifiers>
+        </infoLink>
+        <infoLink name="Pinning" id="f807-4ac7-88c4-a32e" hidden="false" targetId="1c96-205c-59a0-3cf2" type="rule" />
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Thump gun" hidden="false" id="74e7-4847-fb4d-fc04" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Thump gun" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="626a-9be2-17c5-20a1" publicationId="96d0-c462-d158-fbad">
@@ -2097,6 +2117,56 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Butcha Boyz' choppas" hidden="false" id="dd0f-6cc5-19c2-4a3f" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Butcha Boyz' choppas" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="7af9-7b2d-5ba8-86f7" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">5</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Deck Crew (4)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deck Crew (X)" id="4a40-a64d-3800-cb11" hidden="false" targetId="9aaf-3ec9-c252-3334" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Deck Crew (4)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Saddlegit's slugga" hidden="false" id="9d6c-82e9-83ae-55e7" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Saddlegit's slugga" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="fcef-4981-82d3-b8fc" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">12"</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Pistol, Assault 1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Saddlegit's shiv" hidden="false" id="d5dd-8d5c-b84b-5467" publicationId="96d0-c462-d158-fbad">
+      <profiles>
+        <profile name="Saddlegit's shiv" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="343d-af3a-fb7b-5c22" publicationId="96d0-c462-d158-fbad">
+          <characteristics>
+            <characteristic name="Range" typeId="95ba-cda7-b831-6066">-</characteristic>
+            <characteristic name="Strength" typeId="24d9-b8e1-a355-2458">3</characteristic>
+            <characteristic name="AP" typeId="f7a6-e0d8-7973-cd8d">-</characteristic>
+            <characteristic name="Type" typeId="2f86-c8b4-b3b4-3ff9">Melee, Deck Crew (1)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deck Crew (X)" id="a4d7-ce42-7e5d-81b8" hidden="false" targetId="9aaf-3ec9-c252-3334" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Deck Crew (1)" />
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Tankhammer" hidden="false" id="f3a6-c0b2-2587-6c74" publicationId="96d0-c462-d158-fbad">
       <profiles>
         <profile name="Tankhammer" typeId="1a1a-e592-2849-a5c0" typeName="Weapon" hidden="false" id="5fdc-2651-3ac9-9ced" publicationId="96d0-c462-d158-fbad">
@@ -2255,6 +2325,16 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Butcha Boyz" hidden="false" id="8380-3be4-4807-34fe" publicationId="96d0-c462-d158-fbad">
+      <entryLinks>
+        <entryLink import="true" name="Butcha Boyz' choppas" hidden="false" id="e6d9-ac62-ac35-8738" type="selectionEntry" targetId="dd0f-6cc5-19c2-4a3f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b14f-934c-d905-9936" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="358c-48d4-1882-b903" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cybork Body" hidden="false" id="db38-ed87-8517-73be" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -2493,6 +2573,22 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Saddlegit with Slugga" hidden="false" id="e58f-3b1c-c87c-b156" publicationId="96d0-c462-d158-fbad">
+      <entryLinks>
+        <entryLink import="true" name="Saddlegit's slugga" hidden="false" id="d751-a7a7-788a-c4c8" type="selectionEntry" targetId="9d6c-82e9-83ae-55e7">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5153-ee2d-abc3-4df3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="afa8-3963-9b3e-21ba" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Saddlegit's shiv" hidden="false" id="ec80-5df8-4e22-a77c" type="selectionEntry" targetId="d5dd-8d5c-b84b-5467">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2dfb-559a-d0ec-fb71" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a09a-b9c9-197e-1b32" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Squig Hound" hidden="false" id="95d9-0a4c-52a0-f977" publicationId="96d0-c462-d158-fbad">
       <profiles>
@@ -8381,7 +8477,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a48d-eebd-5785-f476" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Stikkbomb flinga" hidden="false" id="82b9-93a7-55b0-e689" type="selectionEntry" targetId="e4c5-313d-d7d1-e871">
+            <entryLink import="true" name="Stikkbomb flinga" hidden="false" id="82b9-93a7-55b0-e689" type="selectionEntry" targetId="92c7-b271-8572-ee11">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8fe-113c-29e8-07d3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a7a-9ece-13c0-bfdd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8398,7 +8494,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Stikkbomb flinga" hidden="false" id="e4c5-313d-d7d1-e871" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Megatrakk Scrapjet" hidden="false" id="05b9-5f21-120f-90d3" publicationId="96d0-c462-d158-fbad">
       <rules>
         <rule name="Fly-By" id="9d68-4db3-6c84-b163" hidden="false">
@@ -8721,7 +8816,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d3ed-ee46-928b-f1f9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Saddlegit with slugga" hidden="false" id="13ba-7870-207a-1234" type="selectionEntry" targetId="8db7-c586-31b6-ada5">
+            <entryLink import="true" name="Saddlegit with Slugga" hidden="false" id="13ba-7870-207a-1234" type="selectionEntry" targetId="e58f-3b1c-c87c-b156">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="98b9-6a72-a763-14be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="75f8-8478-5f58-f73c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8783,7 +8878,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac39-331d-83e1-1c9a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Saddlegit with slugga" hidden="false" id="1af0-b688-620c-e6dc" type="selectionEntry" targetId="8db7-c586-31b6-ada5">
+            <entryLink import="true" name="Saddlegit with Slugga" hidden="false" id="1af0-b688-620c-e6dc" type="selectionEntry" targetId="e58f-3b1c-c87c-b156">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e96-30b8-82dd-b947" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="830b-7255-797b-cbd9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8831,7 +8926,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="5" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Saddlegit with slugga" hidden="false" id="8db7-c586-31b6-ada5" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Stormboyz" hidden="false" id="48ab-8983-6176-3321" publicationId="96d0-c462-d158-fbad">
       <rules>
         <rule name="Full Throttle" id="0e81-6b7b-017f-504b" hidden="false">
@@ -10242,7 +10336,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b96-801f-ebaf-f665" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Butcha boyz" hidden="false" id="8219-5c49-f917-e7cb" type="selectionEntry" targetId="4c6a-873a-84ce-bc2f">
+            <entryLink import="true" name="Butcha Boyz" hidden="false" id="8219-5c49-f917-e7cb" type="selectionEntry" targetId="8380-3be4-4807-34fe">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8a61-8efa-9535-b1c5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84a6-f3bd-4dcf-b82c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10270,7 +10364,6 @@
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="145" />
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Butcha boyz" hidden="false" id="4c6a-873a-84ce-bc2f" publicationId="96d0-c462-d158-fbad" />
     <selectionEntry type="unit" import="true" name="Kill Rig" hidden="false" id="5bd7-cabc-87b8-7639" publicationId="96d0-c462-d158-fbad">
       <rules>
         <rule name="Wartotem" id="00ba-541c-ed52-39b0" hidden="false">
@@ -10328,7 +10421,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="15c5-b3bc-2780-2657" percentValue="false" includeChildSelections="false" includeChildForces="false" />
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Butcha boyz" hidden="false" id="f259-73ef-81a2-e8d2" type="selectionEntry" targetId="4c6a-873a-84ce-bc2f">
+            <entryLink import="true" name="Butcha Boyz" hidden="false" id="f259-73ef-81a2-e8d2" type="selectionEntry" targetId="8380-3be4-4807-34fe">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07f5-f1c2-842f-de87" percentValue="false" includeChildSelections="false" includeChildForces="false" />
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="649d-8d58-beff-e62f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -11415,23 +11508,26 @@
     <rule name="Ramshackle (X)" id="a24d-bb55-ef95-085b" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>When an Ork vehicle with this rule suffers a penetrating hit, roll a D6 before rolling on the Vehicle Damage table†. On a roll of X or more, the hit is treated as a glancing hit instead. Knights and Titans have Ramshackle (5+); all other Ork vehicles have Ramshackle (6+). On a model with a Wounds Characteristic (such as the Speed Freek buggies), Ramshackle (X) is a damage mitigation rule instead: each time the model would lose a Wound, roll a D6; on a roll of X or more, that Wound is not lost. Ramshackle is not Feel No Pain: rules that ignore or negate Feel No Pain do not affect it. It is a Damage Mitigation roll: a model may make only a single Damage Mitigation roll of any type (including Feel No Pain) for any given Wound.</description>
     </rule>
+    <rule name="Deck Crew (X)" id="9aaf-3ec9-c252-3334" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>This weapon can only be used if the vehicle is locked in combat or has been charged. In the Initiative 1 step of the Fight sub-phase, the vehicle model makes a fixed number of attacks equal to X using this profile. These attacks hit automatically if the vehicle is stationary, or hit on a 4+ if the vehicle moved in the preceding Movement phase. These attacks do not benefit from charging or any army-wide special rules.</description>
+    </rule>
+    <rule name="Open-topped" id="792a-d019-9e41-d7f8" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>The vehicle gains the Assault Vehicle special rule, but adds 1 to its rolls on the Vehicle Damage table when it suffers a penetrating hit. The entire vehicle counts as its Access Point.</description>
+    </rule>
     <rule name="Stealth" id="4f86-aae1-17da-67cb" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.</description>
     </rule>
+    <rule name="Tank Hunters" id="cb2f-190f-9b7f-0f1e" hidden="false" publicationId="96d0-c462-d158-fbad">
+      <description>The model's attacks gain the Sunder special rule. If a weapon already has Sunder, add 1 to its Armour Penetration rolls instead.</description>
+    </rule>
     <rule name="Waaagh! Energy" id="22d5-a04c-eb29-712d" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>When a Weirdboy makes a Psychic check, count the friendly Ork models within 12" of him. He gains +1 Leadership for every full 10 models, to a maximum of +3. His Leadership can never be raised above 10 by this rule. The power of the Waaagh! is hard to control: an Ork Psychic check suffers Perils of the Warp on any double, even if the check is passed. Every Weirdboy knows the first two entries. A Weirdboy with the Warphead upgrade also knows Fists of Gork. Power: Kind, Phase, Effect. Da Jump: Psychic power, Movement, Select one friendly Ork unit within 12" of the Weirdboy, plus one more for each +1 of his current Waaagh! Energy bonus. Remove the selected units from the battlefield and place them in Reserves. Roll for them as normal for Reserves, adding the Waaagh! Energy bonus to each roll; when they arrive, they enter play by Deep Strike as normal. The Waaagh! Energy bonus is fixed when Da Jump is cast, and that same value is used for these Reserves rolls.. Fists of Gork: Psychic power, Assault, Until end of phase the Weirdboy has +2 Strength and +2 Attacks.. Frazzle: Psychic weapon, Shooting, Template, S5, AP4, Assault 1, Pinning.</description>
+      <description>When a Weirdboy makes a Psychic check, count the friendly Ork models within 12" of him. He gains +1 Leadership for every full 10 models, to a maximum of +3. His Leadership can never be raised above 10 by this rule. The power of the Waaagh! is hard to control: an Ork Psychic check suffers Perils of the Warp on any double, even if the check is passed. Every Weirdboy knows Da Jump and Frazzle. A Weirdboy with the Warphead upgrade also knows Fists of Gork. Power: Kind, Phase, Effect. Da Jump: Psychic power, Movement, Select one friendly Ork unit within 12" of the Weirdboy, plus one more for each +1 of his current Waaagh! Energy bonus. Remove the selected units from the battlefield and place them in Reserves. Roll for them as normal for Reserves, adding the Waaagh! Energy bonus to each roll; when they arrive, they enter play by Deep Strike as normal. The Waaagh! Energy bonus is fixed when Da Jump is cast, and that same value is used for these Reserves rolls.. Fists of Gork: Psychic power, Assault, Until end of phase the Weirdboy has +2 Strength and +2 Attacks.. Frazzle: Psychic weapon, Shooting, Template, S5, AP4, Assault 1, Pinning.</description>
     </rule>
     <rule name="Klan (X)" id="a734-620c-db79-3594" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>When building an army, choose one Klan for its Primary Detachment; an Allied Detachment may choose a different Klan. Every unit in that detachment with the Mob Rule special rule, and every Ork vehicle and Dreadnought, gains Klan (X), where X is the chosen Klan. Gretchin units and Gretchin crew never gain Klan (X).</description>
     </rule>
     <rule name="Invulnerable Save (X)" id="85f3-c187-c717-378e" hidden="false" publicationId="96d0-c462-d158-fbad">
       <description>The model has an Invulnerable Save of X, which may be taken against any Wound instead of its armour save.</description>
-    </rule>
-    <rule name="Tank Hunters" id="cb2f-190f-9b7f-0f1e" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
-    </rule>
-    <rule name="Open-topped" id="792a-d019-9e41-d7f8" hidden="false" publicationId="96d0-c462-d158-fbad">
-      <description>Listed on this datasheet but not defined in the conversion doc.</description>
     </rule>
   </sharedRules>
 </catalogue>

@@ -61,7 +61,13 @@ If a Weapon Destroyed result is repaired, that weapon may not be used to attack 
 
 **Ramshackle (X).** When an Ork vehicle with this rule suffers a penetrating hit, roll a D6 before rolling on the Vehicle Damage table†. On a roll of X or more, the hit is treated as a glancing hit instead. Knights and Titans have Ramshackle (5+); all other Ork vehicles have Ramshackle (6+). On a model with a Wounds Characteristic (such as the Speed Freek buggies), Ramshackle (X) is a damage mitigation rule instead: each time the model would lose a Wound, roll a D6; on a roll of X or more, that Wound is not lost. Ramshackle is not Feel No Pain: rules that ignore or negate Feel No Pain do not affect it. It is a Damage Mitigation roll: a model may make only a single Damage Mitigation roll of any type (including Feel No Pain) for any given Wound.
 
+**Deck Crew (X).** This weapon can only be used if the vehicle is locked in combat or has been charged. In the Initiative 1 step of the Fight sub-phase, the vehicle model makes a fixed number of attacks equal to X using this profile. These attacks hit automatically if the vehicle is stationary, or hit on a 4+ if the vehicle moved in the preceding Movement phase. These attacks do not benefit from charging or any army-wide special rules.
+
+**Open-topped.** The vehicle gains the Assault Vehicle special rule, but adds 1 to its rolls on the Vehicle Damage table when it suffers a penetrating hit. The entire vehicle counts as its Access Point.
+
 **Stealth.** If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
+
+**Tank Hunters.** The model's attacks gain the Sunder special rule. If a weapon already has Sunder, add 1 to its Armour Penetration rolls instead.
 
 ## Advanced Reaction: Get Stuck In
 
@@ -77,7 +83,7 @@ There is no psychic phase in 2.0. A Weirdboy uses his powers in the phase each o
 
 **Waaagh! Energy.** When a Weirdboy makes a Psychic check, count the friendly Ork models within 12" of him. He gains +1 Leadership for every full 10 models, to a maximum of +3. His Leadership can never be raised above 10 by this rule. The power of the Waaagh! is hard to control: an Ork Psychic check suffers Perils of the Warp on any double, even if the check is passed.
 
-Every Weirdboy knows the first two entries. A Weirdboy with the Warphead upgrade also knows Fists of Gork.
+Every Weirdboy knows Da Jump and Frazzle. A Weirdboy with the Warphead upgrade also knows Fists of Gork.
 
 | Power | Kind | Phase | Effect |
 |---|---|---|---|
@@ -2648,6 +2654,14 @@ _A pole hung with trophies, used to remind lesser Orks who's in charge by hittin
 
 Once per turn, a unit that includes at least one model with a bosspole may re-roll a failed Morale check or Pinning test. If the re-roll also fails, the unit may still use Breakin' Heads.
 
+### Butcha Boyz
+
+_A mob of Boyz riding a Rig's deck, hacking at anything that comes close._
+
+| Weapon | Range | Str | AP | Type |
+|---|---|---|---|---|
+| Butcha Boyz' choppas | – | 5 | – | Melee, Deck Crew (4) |
+
 ### Cybork Body
 
 _Bionik limbs and iron plates bolted on by an enthusiastic Painboy._
@@ -2788,6 +2802,15 @@ A model with a rokk-pack may still Advance if it would normally be able to (this
 Any model with a rokk-pack also gains the Bulky (2), Hammer of Wrath (1) and Deep Strike special rules; if it already has Bulky (2), it gains Bulky (3) instead.
 
 During a Reaction made in any phase, a player may not activate a model's rokk-pack to gain any bonus to its Movement Characteristic. Models with rokk-packs deployed as part of a Deep Strike Assault are considered to have activated their rokk-packs in the turn they enter play.
+
+### Saddlegit with Slugga
+
+_A grot clinging to the back of a squighog, shooting and stabbing at whatever it can reach._
+
+| Weapon | Range | Str | AP | Type |
+|---|---|---|---|---|
+| Saddlegit's slugga | 12" | 3 | – | Pistol, Assault 1 |
+| Saddlegit's shiv | – | 3 | – | Melee, Deck Crew (1) |
 
 ### Squig Hound
 
@@ -2993,6 +3016,7 @@ _Heavy guns, mortars and launchers, from wagon-mounted kannons to the Stompa's b
 | Lobba | 48" | 5 | 5 | Heavy 1, Barrage, Blast (3") |
 | Squig launchas | 48" | 5 | 5 | Heavy D6, Barrage, Blast (3") |
 | Stikka kannon | 24" | 7 | 4 | Heavy 2 |
+| Stikkbomb flinga | 12" | 3 | – | Assault 1, Blast (3"), Pinning |
 | Thump gun | 18" | 6 | 5 | Assault 1, Blast (3") |
 
 #### Kombi-weapons

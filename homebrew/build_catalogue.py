@@ -508,8 +508,19 @@ class Builder:
             for sub in bio["subs"]:
                 name = sub["title"]
                 tables = section_tables({"lines": sub["lines"], "subs": []})
-                if any(h[0] == "Weapon" for h, _ in tables):
-                    continue  # a weapon, built with the armoury
+                weapon_rows = [r[0] for h, rows in tables if h[0] == "Weapon" for r in rows]
+                if weapon_rows and norm(name) in self.weapons:
+                    continue  # a weapon (the tankhammer), built with the armoury
+                if weapon_rows:
+                    # Wargear made of weapons ("Saddlegit with Slugga": a slugga and a shiv)
+                    eid = make_id("wargear", self.faction, name)
+                    e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=name,
+                           hidden=False, id=eid, publicationId=self.pub_id)
+                    links = el(e, "entryLinks")
+                    for wname in weapon_rows:
+                        self.link(links, self.weapons[norm(wname)], wname, eid, count=1)
+                    self.upgrades[norm(name)] = eid
+                    continue
                 # A wargear entry may carry a datasheet for an attendant model (an ammo runt);
                 # its rules text is what comes before that.
                 own = []
