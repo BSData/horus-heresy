@@ -451,7 +451,12 @@ class Builder:
         r = el(self.shared_rules, "rule", name=name, id=rid, hidden=False, publicationId=self.pub_id)
         d = el(r, "description")
         d.text = text
-        self.local_rules[norm(re.sub(r"\s*\(.*\)$", "", name))] = (rid, name)
+        base = re.sub(r"\s*\(.*\)$", "", name)
+        self.local_rules[norm(base)] = (rid, name)
+        # "Limited Ammunition (Limited Use)", "One Use/One Shot (Single Use)": every name works
+        alias = re.search(r"\(((?:[A-Z][a-z]+ ?)+)\)$", name)
+        for other in base.split("/")[1:] + base.split("/")[:1] + ([alias.group(1)] if alias else []):
+            self.local_rules.setdefault(norm(other), (rid, name))
         return rid
 
     def rule_target(self, base):
@@ -652,6 +657,16 @@ class Builder:
                 granted = re.search(r"gains the (.+?) special rule", text)
                 if granted:
                     self.link_rule(e, granted.group(1), eid)
+                # "A Riptide battlesuit confers a 2+ Armour Save, a 5+ Invulnerable Save, a jet pack,
+                # Hammer of Wrath (D3) and Bulky (6)": the rules it names
+                inv = re.search(r"\b(\d)\+ Invulnerable Save", text)
+                if inv:
+                    self.link_rule(e, f"Invulnerable Save ({inv.group(1)}+)", eid)
+                conf = re.search(r"confers (.+?)\.(?:\s|$)", text)
+                for tok in re.split(r",\s*(?![^()]*\))|\s+and\s+", conf.group(1)) if conf else []:
+                    tok = re.sub(r"^an? ", "", tok.strip())
+                    if tok and not tok[0].isdigit() and self.rule_target(re.sub(r"\s*\(.*\)$", "", tok)):
+                        self.link_rule(e, tok[0].upper() + tok[1:], eid)
                 if cost_line:
                     self.universal.append((name, eid, self.parse_cost_rule(cost_line)))
                 save = re.search(r"(?:confers|has) an? (\d)\+ Armour Save", text)
@@ -697,6 +712,9 @@ class Builder:
                     if header[:2] not in (["Power", "Effect"], ["Invocation", "Effect"]):
                         continue
                     intro = " ".join(paragraphs(sub["lines"]))
+                    if header[0] == "Invocation" and norm(sub["title"]) not in self.local_rules:
+                        # "Ethereal Invocations": datasheets name the rule, and get the table with it
+                        self.define_rule(sub["title"], intro)
                     for r in rows:
                         eid = make_id("power", self.faction, r[0])
                         e = el(self.shared_entries, "selectionEntry", type="upgrade", import_=True, name=r[0],

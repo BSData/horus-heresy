@@ -42,9 +42,27 @@ Kroot and Vespid fight for the Greater Good, but not as T'au. They do not gain S
 
 A unit with this special rule may include models with the Drone sub-type, either as part of its Unit Composition or bought from its Options, up to the number its datasheet allows. These drones follow the Drone (sub-type) rules for drones taken as part of a parent unit.
 
+#### Firing Protocols (X)
+
+Those warriors or war engines equipped with multiple weapons often incorporate sophisticated tracking systems, or have received advanced training to allow them to wield them all simultaneously on the battlefield.
+
+When making a Shooting Attack, a model with this special rule may attack with a number of different weapons equal to the value of this special rule. This rule does not allow a single weapon to be attacked with more than once, and only applies if the model is equipped with more than one weapon. For example, as part of a single Shooting Attack, a model with the Firing Protocols (2) special rule may attack with up to two different weapons.
+
+#### Independent Character
+
+Mighty heroes go where they are needed, being at the forefront of the most vital charges and leading their troops to victory.
+
+Independent Characters can join other units. They cannot, however, join units that contain Vehicles, Dreadnoughts, Automata or any model with the Monstrous sub-type (unless the Independent Character also has that Unit Type or sub-type). They can join other Independent Characters though to form a powerful multi-character unit.
+
 #### Jet Packs
 
 T'au battlesuits, drones and hover drones use the official 2.0 Jet Pack rules. Vespid use Vespid Wings instead (see Wargear). A unit entirely equipped with jet packs may increase its Movement Characteristic by 6, move over friendly and enemy models and units, and ignore terrain while moving in the Movement phase (Dangerous Terrain tests still apply when beginning or ending a move in it, and Difficult Terrain counts as Dangerous). After it has finished shooting in the Shooting phase, it may make an additional 6" move in the same way, whatever weapons it fired. During any Reaction that lets it move, the move is increased by 6". Models with jet packs gain Bulky (2), or Bulky (3) if they already have Bulky (2), and Deep Strike. T'au battlesuits do not gain Bulky this way; they use the Bulky value on their datasheet instead.
+
+#### Limited Ammunition (Limited Use)
+
+Some weapons, either due to a restricted capacity to store shells, a terrifying rate of fire or a complex loading mechanism, are prone to running out of ammunition in the heat of battle. Once drained of their reserves, these weapons become little more than burdens to their wielders, impotent until the battle is concluded and specialised equipment can be used to replenish their stores.
+
+After all Shooting Attacks for a weapon with this special rule have been fully resolved, roll a D6, adding +1 if the weapon has fired before in the same battle. If the total of this roll is 6 or more then the weapon may no longer be used to make Shooting Attacks in this battle. If this weapon is unable to make further Shooting Attacks then it may not be targeted by a Weapon Destroyed result on the Vehicle Damage table, and for the purposes of such a result is treated as though it had already been destroyed.
 
 #### Markerlights
 
@@ -58,6 +76,12 @@ When a model fires a markerlight, each hit places one Markerlight token on the t
 
 A seeker missile may instead spend one token to fire at Ballistic Skill 5, without line of sight to the target.
 
+#### One Use/One Shot (Single Use)
+
+Certain items can only be used once, so a general must choose wisely when to do so.
+
+A weapon or ability with this special rule can only be used once during the course of a battle. Once a weapon with the One Use or One Shot special rule has been used to attack, it is no longer counted as a weapon and may not be destroyed (for example, by rolls on the Vehicle Damage table) or repaired by any other rule or effect.
+
 #### Saviour Protocols
 
 When a wound is allocated to a friendly T'au character or battlesuit within 3" of a friendly Drone, you may roll a D6; on a 2+, that wound is allocated to the Drone instead (use the Drone's save)†.
@@ -65,6 +89,15 @@ When a wound is allocated to a friendly T'au character or battlesuit within 3" o
 #### Sept (X)
 
 When building an army, choose one Sept for each detachment. Every T'au unit in that detachment (not Auxiliaries) gains Sept (X), where X is the chosen Sept. Commander Farsight and his Bodyguard may only join a Farsight Enclaves detachment; Commander Shadowsun, Aun'Va and Longstrike may only join a T'au Sept detachment. Other Unique characters may join any Sept.
+
+#### Stealth
+
+If the model has not moved this turn, it cannot be targeted by ranged attacks from more than 12" away.
+
+#### Tidewall Mobility
+
+- **The Movement Mechanic:** In the Movement phase, if a qualifying T'au unit is entirely on top of the Tidewall section, the piece of terrain itself can be moved up to 6". Unlike regular vehicles, it can drift or glide in any direction to reposition your battle line or glide closer to an objective.
+- **Shooting Privileges:** Models occupying the moving Tidewall are treated as Stationary during the following Shooting phase. Fire Warriors or Pathfinders may move up to 6" along with their bunker and still fire their weapons at full efficiency (Rapid Fire weapons at maximum range, Heavy weapons without Snap Shots).
 
 ### Advanced Reactions
 
@@ -1917,7 +1950,7 @@ Each Piranha carries two Gun Drones, using the Gun Drone profile and the Drone D
 
 - Deep Strike
 - Drone Controller
-- Fire Protocols (2)
+- Firing Protocols (2)
 - Scout
 - Sept (X)
 
@@ -2270,7 +2303,7 @@ One of Farsight's Eight: the mind of a dead Broadside pilot, preserved in an AI 
 
 - Gun Drones: twin-linked pulse carbine
 - Six seeker missiles
-- Two networked markerlights
+- Twin-linked networked markerlight
 
 **Unit Type**
 
@@ -2680,7 +2713,7 @@ These datasheets bring the T'au Kill Teams to the battlefield as small specialis
 
 **Wargear**
 
-- Assault Grenadier: pulse carbine, EMP and fusion grenades
+- Assault Grenadier: pulse carbine, EMP grenades, fusion grenades
 - Blooded: pulse carbine, Kill Team close combat blade
 - Every model: pulse carbine, markerlight, recon armour, photon grenades, unless noted below
 - Marksman: pulse rifle with targeting optics, instead of pulse carbine and markerlight
@@ -2758,6 +2791,19 @@ These datasheets bring the T'au Kill Teams to the battlefield as small specialis
 
 ### Items
 
+#### Baggage Harness
+
+Packs, ammunition and supplies strapped to a Great Knarloc for the Kroot that march with it.
+
+- **Leadership Aura:** friendly Kroot units within 6" of the Great Knarloc add 1 to their Leadership.
+- **Ammunition Supply:** if a friendly Kroot Carnivore or Kroot auxiliary unit within 6" rolls a 1 to hit in the Shooting phase, it may re-roll that dice.
+
+#### Communion Helm
+
+A helm that links the Oracle to the will of the Vespid hive.
+
+The bearer gains the Adamantium Will (5+) special rule.
+
 #### Disruption Pod
 
 A vehicle-mounted system that distorts the vehicle's image.
@@ -2776,6 +2822,24 @@ A personal drone that carries an Ethereal into battle.
 
 An Ethereal with a hover drone counts as having a jet pack.
 
+#### Medi-pack
+
+A field medical kit carried by a Pathfinder Medical Technician.
+
+The bearer's unit has Feel No Pain (6+).
+
+#### Neocapacitor Shield
+
+A prototype shield projector carried by the Exemplars of the Twin Lance.
+
+The bearer has a 4+ Invulnerable Save, but suffers a wound for each roll of 1 made for that save. Its Armour Save is unchanged.
+
+#### Paradox of Duality
+
+The staff of Aun'Va, whose paradoxical field turns aside fire aimed at the Ethereal Supreme.
+
+Whenever Aun'Va's unit suffers an unsaved wound from a Shooting Attack, roll a D6. If the result is equal to or higher than the attack's AP, the wound is negated, as though a cover save had been passed. A roll of 1 always fails.
+
 #### Photon Grenades
 
 Grenades that release a blinding flash.
@@ -2787,6 +2851,36 @@ Enemy units that charge a unit with photon grenades do not gain the Initiative b
 An automated fire-control system for defensive fire.
 
 A vehicle with a point defence targeting relay adds 1 to its Ballistic Skill when firing Overwatch.
+
+#### Repair Systems
+
+Tools and micro-fabricators that patch damaged machines in the field.
+
+At the start of your turn, the bearer's unit has It Will Not Die (6+) if it has a Wounds characteristic; a vehicle instead restores one lost Hull Point on a 6+.
+
+#### Riptide Shield Generator
+
+The shield projector built into Commander O'Vesa's Riptide.
+
+The bearer has a 4+ Invulnerable Save.
+
+#### Stealth Field Generator
+
+A sensor-baffling field projected by the Ghostkeel's stealth drones.
+
+The bearer's unit has Shrouded (5+), or Shrouded (4+) if it did not move this turn. It may not be targeted by enemy units more than 24" away.
+
+#### Stormsurge Shield Generator
+
+The shield projectors of the KV128 Stormsurge.
+
+The bearer gains the Void Shields (2) special rule.
+
+#### Ta'unar Shield Generator
+
+The layered shield projectors of the Ta'unar Supremacy Armour.
+
+The bearer gains the Void Shields (6) special rule.
 
 #### Vespid Wings
 
@@ -2816,11 +2910,29 @@ The XV8 Crisis battlesuit, mainstay of the Fire Caste's elite.
 
 A Crisis battlesuit confers a 3+ Armour Save, a jet pack and Bulky (3).
 
+##### Ghostkeel Battlesuit
+
+The XV95, a massive stealth platform that uses its displacement thrusters to leap obstacles and reposition instantly.
+
+A Ghostkeel battlesuit confers a 3+ Armour Save, a jet pack, Hammer of Wrath (2) and Bulky (8).
+
+##### Hazard Battlesuit
+
+The XV9, a heavy close-support frame with high-yield thrusters for breaking defensive infantry frontlines.
+
+A Hazard battlesuit confers a 3+ Armour Save, a 5+ Invulnerable Save, a jet pack, Hammer of Wrath (2) and Bulky (4).
+
 ##### Iridium Armour
 
 Dense iridium plating worn only by Commanders.
 
 A Commander with iridium armour has a 2+ Armour Save.
+
+##### Pilot Battlesuit
+
+The XV02, with no active propulsion system; it relies on a reinforced frame suited to standard mechanised transport hulls.
+
+A Pilot battlesuit confers a 3+ Armour Save and Bulky (4). It does not confer a jet pack.
 
 ##### Recon Armour
 
@@ -2828,11 +2940,29 @@ Light armour worn by Pathfinders and Ethereals, built for speed and stealth.
 
 Recon armour confers a 5+ Armour Save.
 
+##### Riptide Battlesuit
+
+The XV104, a colossal heavy combat suit whose sheer kinetic mass turns vector-thrust landings into devastating impacts.
+
+A Riptide battlesuit confers a 2+ Armour Save, a 5+ Invulnerable Save (3+ when its Nova Reactor powers the shield), a jet pack, Hammer of Wrath (D3) and Bulky (8).
+
 ##### Stealth Battlesuit
 
 The XV25 and XV22 stealth suits, cloaked by advanced sensor-baffling fields.
 
 A Stealth battlesuit confers a 3+ Armour Save, a jet pack, Bulky (2), Stealth and Shrouded (5+).
+
+##### Supernova Battlesuit
+
+The XV-86 worn by Commander Farsight, an agile command chassis built for high-velocity redirection and aggressive vanguard strikes.
+
+A Supernova battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (1) and Bulky (4).
+
+##### Warmaker Battlesuit
+
+The Twin Lance prototype, an experimental heavy platform cut down to Bulky (4) so it fits standard frontline transport bays.
+
+A Warmaker battlesuit confers a 2+ Armour Save, a 4+ Invulnerable Save, a jet pack, Hammer of Wrath (D3+1) and Bulky (4).
 
 ### Battlesuit Armoury
 
@@ -2903,7 +3033,7 @@ One Commander, Cadre Fireblade or Ethereal (not a Unique character) may take one
 | Riptide, Y'vahra, R'varna | A seeker missile | +8 points |
 | Stealth Battlesuits | The Shas'vre may take one support system | See Battlesuit Armoury |
 | Strike Team, Breacher Team, Pathfinders | The Shas'ui may take a target lock (may shoot a different target from his unit) | +5 points |
-| Strike Team, Breacher Team, Pathfinders, Hunter Cadre | EMP grenades for the whole unit (as krak grenades with Haywire†, usable only against vehicles) | +2 points per model |
+| Strike Team, Breacher Team, Pathfinders, Hunter Cadre | EMP grenades for the whole unit | +2 points per model |
 | Vespid Stingwings | The Strain Leader may take a neutron grenade launcher instead of his neutron blaster | +5 points |
 
 #### Vehicle Battle Systems
@@ -3041,8 +3171,8 @@ Specialist weapons carried by the Kill Team units.
 |---|---|---|---|---|
 | Accelerator bow | 24" | 4 | 5 | Assault 1, Rending (6+) |
 | Dvorgite skinner | Template | 4 | 5 | Assault 1, Shred |
-| EMP grenade | 6" | 6 | 4 | Assault 1, Haywire†, One Use |
-| Fusion grenade | 6" | 8 | 1 | Assault 1, Armourbane (Ranged), One Use |
+| EMP grenade | – | – | – | Melee, Limited Use, Haywire |
+| Fusion grenade | – | 8 | 1 | Melee, Single Use, Armourbane (Melee), Instant Death |
 | Kill Team close combat blade | – | User | 5 | Melee |
 | Kroot long blade | – | +1 | 4 | Melee, Two-handed |
 | Kroot pistol | 12" | 4 | 6 | Pistol 1 |
@@ -3063,6 +3193,7 @@ Guided missiles and specialist weapons that let T'au firepower reach any target.
 | Destroyer missile | 120" | 10 | 1 | Heavy 1, Armourbane (Ranged), One Use |
 | High-yield missile pod | 36" | 7 | 4 | Heavy 1, Large Blast (5") |
 | Markerlight | 36" | – | – | Heavy 1; places Markerlight tokens |
+| Twin-linked networked markerlight | 36" | – | – | Heavy 1, Twin-linked; each hit places D3 Markerlight tokens |
 | Missile pod | 36" | 7 | 4 | Assault 1, Blast (3") |
 | Seeker missile | 72" | 8 | 3 | Heavy 1, One Use |
 | Smart missile system | 30" | 5 | 5 | Heavy 4, Indirect Fire, Barrage† |
