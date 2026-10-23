@@ -20,10 +20,12 @@ loading. The script prints anything in the doc it could not place.
 
 - Every datasheet, with its profiles, wargear, special rules, Force Organisation
   slot and points. A unit's starting cost always matches the doc.
-- In units of several models, weapon options and per-model biomorphs are bought
-  per model: a unit of 10 can buy any number from 0 to 10 of each.
+- In units of several models, weapon options are bought per model: a unit of 10
+  can buy any number from 0 to 10 of each.
+- Biomorphs (everything in the doc's Biomorphs section, tails included) are taken
+  by every model in the unit, and cost their points for each model.
 - Biomorphs with a **Cost:** line in the doc (Dynamic Camouflage, Hardened
-  Carapace) are offered to every model that can use them, priced per model.
+  Carapace) are offered to every unit whose models can all use them.
 - Options: extra models, weapon exchanges (including "one in every three"),
   per-model and whole-unit upgrades, and model upgrades such as the Neurothrope.
   "Each type only once" limits are enforced.
