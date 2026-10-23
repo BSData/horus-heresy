@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="213" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="6393-649c-7213-a327" name="Legions Astartes" revision="214" battleScribeVersion="2.03" authorName="Various" authorUrl="https://github.com/BSData/horus-heresy" library="true" gameSystemId="28d4-bd2e-4858-ece6" gameSystemRevision="71" type="catalogue">
   <publications>
     <publication id="0594-a9b0-6f10-090e" name="Legion Javelin Squadron update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/hd7WOnm2lKCHkskG.pdf"/>
     <publication id="acdb-27b7-6b7e-932f" name="Legion Mastodon update" publisher="Warhammer Community Downloads" publicationDate="May 2023" publisherUrl="https://www.warhammer-community.com/wp-content/uploads/2023/05/AopGHpxowuowkwJw.pdf"/>
@@ -68359,6 +68359,11 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
 </selectionEntry>
 <selectionEntry id="62c1-7532-c5b2-3f1d" name="Praetor in Saturnine Terminator Armour" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="unit">
 <infoLinks>
+<infoLink id="0bf6-b943-733b-d8d6" name="Relic (X)" hidden="false" targetId="7b74-beea-fbd2-2ae8" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Relic (1)"/>
+</modifiers>
+</infoLink>
 <infoLink id="0818-95e2-ca66-f787" name="Legends" hidden="false" targetId="6bd6-620e-c9db-b8e5" type="rule"/>
 <infoLink id="54f9-0e8c-02a5-bd46" name="Spearhead of Saturn" hidden="false" targetId="8d73-34de-1eac-b67d" type="rule"/>
 </infoLinks>
@@ -68474,12 +68479,27 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
 </costs>
 </selectionEntry>
 </selectionEntries>
+<selectionEntryGroups>
+<selectionEntryGroup id="4149-6668-0bb6-f7ac" name="Retinue" hidden="false" collective="false" import="true">
+<constraints>
+<constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5c9f-45be-65cd-c481" type="max"/>
+</constraints>
+<entryLinks>
+    <entryLink id="17ab-e62a-2424-27e2" name="Saturnine Terminator Squad" hidden="false" collective="false" import="true" targetId="fd64-71b2-0635-0daf" type="selectionEntry"/>
+</entryLinks>
+</selectionEntryGroup>
+</selectionEntryGroups>
 <costs>
 <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0.0"/>
 </costs>
 </selectionEntry>
 <selectionEntry id="fd64-71b2-0635-0daf" name="Saturnine Terminator Squad" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="unit">
 <infoLinks>
+<infoLink id="29c2-0732-6bf6-242b" name="Relic (X)" hidden="false" targetId="7b74-beea-fbd2-2ae8" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Relic (1)"/>
+</modifiers>
+</infoLink>
 <infoLink id="a271-eb77-0de9-633c" name="Legends" hidden="false" targetId="6bd6-620e-c9db-b8e5" type="rule"/>
 <infoLink id="f706-b299-7011-fc24" name="Support Squad" hidden="false" targetId="768e-56d6-ca52-24ae" type="rule"/>
 <infoLink id="663f-925a-bb5e-da3a" name="Saturnine Terminator Armour" hidden="false" targetId="3917-f2a2-5a53-b4ae" type="rule"/>
@@ -68669,6 +68689,11 @@ In addition, Kaedes Nex can be included as part of a Blackshields Detachment (se
 </selectionEntry>
 <selectionEntry id="a6a1-e9ed-e34f-d6c4" name="Saturnine Dreadnought" publicationId="ecd9-109b-245d-4083" hidden="false" collective="false" import="true" type="unit">
 <infoLinks>
+<infoLink id="cfb5-c0be-5c1e-49a8" name="Relic (X)" hidden="false" targetId="7b74-beea-fbd2-2ae8" type="rule">
+<modifiers>
+<modifier type="set" field="name" value="Relic (2)"/>
+</modifiers>
+</infoLink>
 <infoLink id="34c0-213d-ce2b-4431" name="Legends" hidden="false" targetId="6bd6-620e-c9db-b8e5" type="rule"/>
 <infoLink id="0af3-8bad-d03e-5004" name="Hammer of Wrath (X)" hidden="false" targetId="aec0-c3aa-1e4e-1779" type="rule">
 <modifiers>
@@ -75239,6 +75264,9 @@ When included in a Shattered Legions Detachment, this model must represent the L
 </rule>
 <rule id="6bd6-620e-c9db-b8e5" name="Legends" publicationId="ecd9-109b-245d-4083" hidden="false">
 <description>This unit is a Legends unit: a homebrew conversion of a Horus Heresy 3.0 unit (the Age of Darkness: Saturnine box), with playtest profiles and points. Use it only with your opponent&apos;s agreement.</description>
+</rule>
+<rule id="7b74-beea-fbd2-2ae8" name="Relic (X)" publicationId="ecd9-109b-245d-4083" hidden="false">
+<description>Ancient artifacts of irreplaceable cultural significance, standard-bearing icons of legendary crusades, or individual warriors carrying the heavy burden of a Legion&apos;s legacy—the loss of such prizes is a catastrophic blow to morale and a major triumph for the foe. If a unit with this Special Rule is destroyed by any means, the opposing player immediately scores a number of additional Victory Points equal to the value of X specified in brackets (e.g., Relic (2) scores 2 additional Victory Points). These Victory Points are awarded in addition to any Victory Points normally scored for destroying the unit (such as those gained from the Price of Failure, Slay the Warlord, or standard Mission-specific objectives). If multiple units with this Special Rule are destroyed during a single battle, the opposing player scores the additional Victory Points for each unit individually.</description>
 </rule>
   </sharedRules>
   <catalogueLinks>
